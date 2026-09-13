@@ -45,3 +45,4 @@ cmd /c start "" /min C:\DaveLM-CADAVER\phase2a_t24_inventory_unlikelihood_lr3p75
 ```
 
 That command would see all three `FINAL_STATUS` files and would not train. Do not run it until CONTINUE.
+`n## T28 FAST V2 (2026-09-13)`nRebuilt from untouched T24 runner; vectorized suffix hard-negative margin (M=1.0, lambda=0.5) only. Seeds 850001-850003 all completed update 1000. Pointer/forced-choice and TRAIN16/language/binding remained healthy; exact generation remained T24-like (36/35/40 of 128). Classification: T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL. Protected T3_TEST, T2_EVAL_TEST, FINAL, sacred remained locked. Bundle: C:\DaveLM-CADAVER\phase2a_t28_fast_v2.`n

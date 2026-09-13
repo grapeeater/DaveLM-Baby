@@ -69,3 +69,4 @@ Question (do not run): does inventory unlikelihood lift exact above T18 36–40 
 - Audits: `vnext_60m_audit/`, `BABY_REPO_MIGRATION_AUDIT.md`, `forensics/`, `mistral_treatment_design_audit_v1/`, `comparative_model_anatomy_post_sf2_v1/`, `overnight_reproducibility_resolution_v1/`.
 
 Qwen/Smol notes are advisory. Baby evidence outranks them. Do not copy foreign weights.
+`n## T28 FAST V2 (2026-09-13)`nRebuilt from untouched T24 runner; vectorized suffix hard-negative margin (M=1.0, lambda=0.5) only. Seeds 850001-850003 all completed update 1000. Pointer/forced-choice and TRAIN16/language/binding remained healthy; exact generation remained T24-like (36/35/40 of 128). Classification: T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL. Protected T3_TEST, T2_EVAL_TEST, FINAL, sacred remained locked. Bundle: C:\DaveLM-CADAVER\phase2a_t28_fast_v2.`n

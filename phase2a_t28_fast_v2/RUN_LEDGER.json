@@ -1,0 +1,70 @@
+{
+  "study": "T28_SUFFIX_HARD_NEGATIVE_MARGIN_FAST_V2",
+  "protocol": "C:\\DaveLM-CADAVER\\phase2a_t28_fast_v2\\PROTOCOL.json",
+  "runs": {
+    "850001": {
+      "seed": 850001,
+      "update": 1000,
+      "classification": "T24_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 112,
+      "dev_native": 88,
+      "dev_exact": 36,
+      "dev_ce": 1.2536188259720802,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "850002": {
+      "seed": 850002,
+      "update": 1000,
+      "classification": "T24_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 108,
+      "dev_native": 82,
+      "dev_exact": 35,
+      "dev_ce": 1.2593662559986114,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "850003": {
+      "seed": 850003,
+      "update": 1000,
+      "classification": "T24_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 116,
+      "dev_native": 82,
+      "dev_exact": 40,
+      "dev_ce": 1.2565930172801019,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false
+}
