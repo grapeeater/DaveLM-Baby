@@ -1,6 +1,6 @@
 {
   "study": "BABY_VNEXT_PHASE2A_T22_FIRSTTWO_ANSWERCE_LR3P75E5_1K_V1",
-  "status": "PAUSED_QUIESCENT_SEED810001_U550",
+  "status": "STUDY_COMPLETE_T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
   "scientific_question": "T21 first-token through-base recovered BOS toward T18 and exact to 27/29/26. T21X leftover is T18X diverge (Wes→Walt, Skye→Sky). If the first TWO answer tokens go through the base and the tail stop-grads, does exact rise toward T18 36-40 without T19 representation tax?",
   "earned_by": "T21_REPRESENTATION_SUCCESS_OUTPUT_FAIL + T21X. Exact 27/29/26. BOS 79/59/72. Diverge 52/30/46.",
   "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},

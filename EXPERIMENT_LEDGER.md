@@ -43,18 +43,18 @@ Scientific directory names are frozen. This is an index, not a rename map. Check
 | T20X | `phase2a_t20x_generation_failmode_v1` | COMPLETE | First-token BOS **42/34/37**; dominant `other_then_eos` |
 | T21 | `phase2a_t21_hybrid_answerce_lr3p75e5_1k_v1` | `T21_REPRESENTATION_SUCCESS_OUTPUT_FAIL` | language 3/3, representation **3/3**, exact **27/29/26** |
 | T21X | `phase2a_t21x_generation_failmode_v1` | COMPLETE | First-token BOS **79/59/72**; leftover diverge 52/30/46 + other_then_eos |
+| T22 | `phase2a_t22_firsttwo_answerce_lr3p75e5_1k_v1` | `T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL` | language 3/3, representation **2/3**, exact **21/31/26**; first-two through-base closed |
+| T22X | `phase2a_t22x_generation_failmode_v1` | COMPLETE | BOS **66/65/73**; leftover still diverge 45/34/47 + other_then_eos; CE-span family closed |
 
-Do **not** parent T14–T21 OUTPUT_FAIL checkpoints.
+Do **not** parent T14–T22 OUTPUT_FAIL checkpoints (including 810001–810003).
 
-## Phase 2A — live (paused)
+## Phase 2A — live
 
 | ID | Directory | State |
 |---|---|---|
-| T22 | `phase2a_t22_firsttwo_answerce_lr3p75e5_1k_v1` | **PAUSED.** 810001 Phase A, `rolling_restart` `completed=550`. SHA-256 `ff1000a8…`. Last eval U500 `checkpoint_0500` SHA-256 `0ba71d09…`. **810002/810003 never started.** |
-| T22X | — | **Not launched.** |
-| T23 | — | **Not launched.** |
+| T23 | `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1` | **LIVE.** T18 full-span CE + in-row rival unlikelihood. Seeds 820001–820003. |
 
-Question (do not run): first **two** answer tokens through the base, tail stop-grad — does exact rise toward T18 36–40 without T19 representation tax?
+Question: does rival-token unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
 
 ## Closed historical lineages (Category B/C)
 

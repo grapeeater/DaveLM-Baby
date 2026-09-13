@@ -1,0 +1,29 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T23_CANDIDATE_UNLIKELIHOOD_LR3P75E5_1K_V1",
+  "status": "WATCHDOG_LAUNCHED_SEED820001",
+  "scientific_question": "CE-span isolations are closed (T20/T21/T22/T18/T19). T22X leftover is still T18X diverge plus other_then_eos (Wes→Walt, Skye→Seth, Ava→York). Does T18 full-span through-base CE plus in-row wrong-candidate unlikelihood at aligned answer positions lift exact above T18 36-40 while holding language and representation ≥2/3?",
+  "earned_by": "T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL + T22X. Exact 21/31/26. BOS 66/65/73. Leftover diverge 45/34/47 + other_then_eos. CE-span-count family closed.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14", "T15", "T16", "T17", "T18", "T19", "T20", "T21", "T22", "730002", "760001-760003", "770001-770003", "780001-780003", "790001-790003", "800001-800003", "810001-810003"],
+  "phase_a": {"updates": "1-750", "freeze": "blocks 0-3 and all 984321 binding params", "train": "blocks 4-11 + embeddings + final_norm + language_head", "trainable": 40849664, "frozen": 20670721},
+  "phase_b": {"after_eval": 750, "action": "copy Phase1G weights into blocks 8-11, freeze them, rebuild AdamW", "train": "blocks 4-7 + embeddings + final_norm + language_head", "trainable": 21163264, "frozen": 40357121},
+  "objective": {
+    "lambda_ptr": 1.0,
+    "lambda_ans": 1.0,
+    "lambda_unl": 1.0,
+    "answer_ce": "teacher-forced CE on correct candidate_token_ids + EOS only (not prompt); full span through the base (T18)",
+    "unlikelihood": "mean -log(1-p) over in-row wrong-candidate tokens at the same answer offset as the gold span; gold token excluded; through the base",
+    "language": "9 qa : 1 language CE",
+    "lr": 3.75e-5
+  },
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded; independent-item QA batches",
+  "seeds": [820001, 820002, 820003],
+  "schedule": {"total_updates": 1000, "qa_updates": 900, "language_updates": 100, "qa_batch": 32, "eval_points": [0, 100, 300, 500, 750, 1000], "lr": 3.75e-5, "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

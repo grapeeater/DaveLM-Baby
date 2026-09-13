@@ -1,0 +1,8 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T22X_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "T22 exact 21/31/26 did not recover T18. Is leftover still T18X/T21X first_token_correct_then_diverge, or did first-two through-base change the fail-mode split?",
+  "earned_by": "T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Exact 21/31/26. Representation 2/3 (T21 was 3/3).",
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T22 checkpoints", "unseal TEST", "retokenize", "copy Qwen or Smol", "relaunch T4-T22"]
+}

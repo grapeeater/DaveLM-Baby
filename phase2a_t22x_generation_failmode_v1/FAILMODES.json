@@ -1,0 +1,223 @@
+{
+  "test_loaded": false,
+  "seeds": {
+    "810001": {
+      "exact_ok": 21,
+      "generation_modes": {
+        "other_then_eos": 45,
+        "first_token_correct_then_diverge": 45,
+        "exact": 21,
+        "wrong_candidate_first_token": 10,
+        "wrong_candidate": 6,
+        "unterminated_other": 1
+      },
+      "first_token": {
+        "not_target_bos": 62,
+        "target_bos": 66
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Va."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": " He sees a big hill."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Vic."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Lily."
+        }
+      ]
+    },
+    "810002": {
+      "exact_ok": 31,
+      "generation_modes": {
+        "other_then_eos": 34,
+        "exact": 31,
+        "first_token_correct_then_diverge": 34,
+        "wrong_candidate": 15,
+        "wrong_candidate_first_token": 13,
+        "unterminated_other": 1
+      },
+      "first_token": {
+        "not_target_bos": 63,
+        "target_bos": 65
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " aca."
+        },
+        {
+          "id": "DI01:a1:q0:o0",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI01:a1:q0:o1",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        }
+      ]
+    },
+    "810003": {
+      "exact_ok": 26,
+      "generation_modes": {
+        "other_then_eos": 30,
+        "first_token_correct_then_diverge": 47,
+        "exact": 26,
+        "wrong_candidate_first_token": 16,
+        "wrong_candidate": 9
+      },
+      "first_token": {
+        "not_target_bos": 55,
+        "target_bos": 73
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Vela."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " L."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Vela."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        }
+      ]
+    }
+  }
+}

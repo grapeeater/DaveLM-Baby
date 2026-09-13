@@ -1,0 +1,26 @@
+{
+  "status": "WATCHDOG_STARTED",
+  "study": "BABY_VNEXT_PHASE2A_T23_CANDIDATE_UNLIKELIHOOD_LR3P75E5_1K_V1",
+  "seeds": [
+    820001,
+    820002,
+    820003
+  ],
+  "runs": {},
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "phase_a_updates": "1-750",
+    "phase_a_trainable": 40849664,
+    "phase_b_after": 750,
+    "phase_b_trainable": 21163264
+  },
+  "pointer_keys": "fact_clause_name_through_period_token_18",
+  "language_mix": "9_qa_1_lang",
+  "lr": 3.75e-05,
+  "lambda_ans": 1.0,
+  "lambda_unl": 1.0,
+  "answer_ce": "t18_fullspan_through_base_plus_inrow_rival_unlikelihood",
+  "total_updates": 1000
+}

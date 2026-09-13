@@ -12,3 +12,6 @@ Do not parent T14–T21 OUTPUT_FAIL. Do not copy Qwen/Smol. Do not open TEST unl
 ## Pause (user order; do not resume until CONTINUE)
 Physically quiescent 2026-09-13 after U550 `rolling_restart` persist (Phase A). Watchdog 23396 and 810001 runner stopped. 810002/810003 never started. No T23. See `T22_PAUSE.md`.
 
+## Terminal (2026-09-13T06:14:55Z)
+User CONTINUE. Resumed from U550 SHA `ff1000a8…` unchanged. `STUDY_COMPLETE T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL`. Language 3/3. Representation **2/3**. Exact **21/31/26** — no T18 recovery, no lift vs T21 27/29/26. Closed: first-two through-base recovers T18 exact. Do not parent 810001–810003. Next: T22X.
+
