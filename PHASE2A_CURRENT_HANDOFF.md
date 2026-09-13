@@ -34,6 +34,8 @@ T24 is now scientifically classified `T24_REPRESENTATION_SUCCESS_OUTPUT_FAIL` fr
 
 T24X read-only generation fail-mode audit is complete at `phase2a_t24x_generation_failmode_v1`. It used only the authorized DEV panel and preserved all locks. The dominant residual is first-token-correct-then-diverge; no treatment was run.
 
+Owner authority (2026-09-13): the autonomous agent may design, freeze, implement, and execute the highest-information Baby-native successor when no pre-existing protocol exists, without waiting for additional approval. Existing scientific gates and protected-material locks remain in force.
+
 Resume artifact (last seed): `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1_run_seed830003\rolling_restart.pt` SHA256 `e00f9b625d31c9c5615d3c639422362b585c92427828c254dc639704b9a186c9` (415,491,817 bytes, `completed=1000` phase B). Pause record: `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1\T24_PAUSE.md`.
 
 Resume command (documented, **not run**):

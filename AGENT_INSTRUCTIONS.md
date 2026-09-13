@@ -31,6 +31,8 @@ SHA-256 `c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1`
 
 T24 `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1`, seeds 830001–830003. Stay until terminal, then T24X if leftover earns it.
 
+When a terminal study earns a successor but no successor protocol exists, the autonomous agent is authorized and expected to design, prospectively freeze, implement, and execute the highest-information Baby-native successor. This authority was explicitly granted by the owner on 2026-09-13; all gates and protected-material locks still apply.
+
 ## What belongs in git vs disk
 
 Tracked: source, protocols, reports, compact data, tokenizer under `DaveLM-v0.9/tokenizer/`, `TEST_SEAL.json`, onboarding docs.  

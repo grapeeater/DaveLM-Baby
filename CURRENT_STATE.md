@@ -4,6 +4,8 @@
 
 This file matches [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOFF.md). Pause record: [`phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1/T24_PAUSE.md`](phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1/T24_PAUSE.md).
 
+Owner authority (2026-09-13): when a terminal study earns a successor but no protocol exists, the autonomous agent may design, freeze, implement, and execute the highest-information Baby-native successor without waiting for further approval. Existing gates and protected-data locks remain mandatory.
+
 ## Parent (Phase1G)
 
 | | |
