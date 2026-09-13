@@ -1,0 +1,75 @@
+{
+  "dataset": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\ENGLISH_DEV.jsonl",
+  "rows": 128,
+  "models": {
+    "Pilot1": {
+      "checkpoint": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "aligned": {
+        "token_targets": 3796,
+        "mean_loss": 3.3923267810688884,
+        "ppl": 29.73505881322187,
+        "teacher_forced_top1_accuracy": 0.26580611169652263,
+        "mean_top1_probability": 0.3415358275080883,
+        "mean_top1_margin_logit": 1.0699234089183105,
+        "mean_gold_probability": 0.16092391260305872,
+        "mean_entropy": 2.9163153983016663
+      },
+      "shifted_copy": {
+        "token_targets": 3796,
+        "mean_loss": 8.950145661140017,
+        "ppl": 7709.014683197918,
+        "teacher_forced_top1_accuracy": 0.004214963119072708,
+        "mean_top1_probability": 0.3311851509504248,
+        "mean_top1_margin_logit": 1.0010270338792067,
+        "mean_gold_probability": 0.0029583710890549878,
+        "mean_entropy": 2.9311152338604782
+      }
+    },
+    "HR1": {
+      "checkpoint": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\run\\checkpoint_500.pt",
+      "aligned": {
+        "token_targets": 3796,
+        "mean_loss": 8.638086863639357,
+        "ppl": 5642.524572845713,
+        "teacher_forced_top1_accuracy": 0.005795574288724974,
+        "mean_top1_probability": 0.7360345259607153,
+        "mean_top1_margin_logit": 5.076477886879281,
+        "mean_gold_probability": 0.005038837502829267,
+        "mean_entropy": 2.0091492599632015
+      },
+      "shifted_copy": {
+        "token_targets": 3796,
+        "mean_loss": 0.5553804644794685,
+        "ppl": 1.7426038575358864,
+        "teacher_forced_top1_accuracy": 0.9496838777660696,
+        "mean_top1_probability": 0.7670673655760175,
+        "mean_top1_margin_logit": 5.24888927592367,
+        "mean_gold_probability": 0.7651934930220544,
+        "mean_entropy": 1.7955274993928643
+      }
+    },
+    "HR2": {
+      "checkpoint": "C:\\DaveLM-CADAVER\\human_readiness_hr2_seed87005_v7\\run\\checkpoint_500.pt",
+      "aligned": {
+        "token_targets": 3796,
+        "mean_loss": 10.805966344095758,
+        "ppl": 49314.15034476795,
+        "teacher_forced_top1_accuracy": 0.0055321390937829295,
+        "mean_top1_probability": 0.9189853969690546,
+        "mean_top1_margin_logit": 7.3836635191649105,
+        "mean_gold_probability": 0.005229362258167488,
+        "mean_entropy": 0.6443504759584513
+      },
+      "shifted_copy": {
+        "token_targets": 3796,
+        "mean_loss": 0.09255132283249946,
+        "ppl": 1.0969694396944123,
+        "teacher_forced_top1_accuracy": 0.9944678609062171,
+        "mean_top1_probability": 0.9496408187174822,
+        "mean_top1_margin_logit": 7.6269931290750135,
+        "mean_gold_probability": 0.9495145357572116,
+        "mean_entropy": 0.4307468201262431
+      }
+    }
+  }
+}

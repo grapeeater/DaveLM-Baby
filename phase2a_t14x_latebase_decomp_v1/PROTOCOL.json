@@ -1,0 +1,19 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T14X_LATEBASE_DECOMP_V1",
+  "status": "DECOMP_COMPLETE",
+  "mode": "READ_ONLY",
+  "scientific_question": "Within trainable late base (blocks 4-11 plus embed/final_norm/language_head), do the parameters carrying counterfactual reversal gain differ from those causing language degradation, or are both behaviors the same substrate?",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "does_not_train": true,
+  "does_not_load_test": true,
+  "does_not_parent": ["730001", "730002", "730003", "T12", "T13", "T10 U750"],
+  "primary_near_miss": "phase2a_t14_factclause_pointer_lr3p75e5_750_v1_run_seed730001/checkpoints/checkpoint_0750.pt",
+  "primary_language_safe_rep": "phase2a_t14_factclause_pointer_lr3p75e5_750_v1_run_seed730002/checkpoints/checkpoint_0750.pt",
+  "analyses": [
+    "parameter_drift_vs_phase1g_by_block_module",
+    "intermediate_checkpoint_comparison_T10_T12_T13_T14",
+    "pointer_margin_vs_language_ce_gradient_conflict_on_trainable_late_base",
+    "read_only_phase1g_reversion_patches_on_730001_and_key_730002"
+  ],
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

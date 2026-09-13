@@ -1,0 +1,17 @@
+{
+  "bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v1",
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "902d6d5759e996eeb138e7752eb12401cb629c92578bafffd79e13c7a4278ab9",
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "protocol_sha256": "ae85f996b32034ef108064833989a2e9722f54b6a576236d2e9161b0daea9e23",
+  "readiness_dev_receipt_sha256": "7004430a38c4f6562eb50bef6a51e893a08b1300dab44f99361b803fd509e85b",
+  "sacred_accessed": false,
+  "scientific_delta": "English scope expands from blocks 4-7 to blocks 3-7 only.",
+  "scientific_specification_unchanged_from": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1",
+  "sha256sums_sha256": "b9931d22f2921ee5a0266b0e02144afbe7412add2074ff2bdd080985f59ae00e",
+  "status": "HR3_BLOCK3_PREFLIGHT_PASS",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

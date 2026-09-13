@@ -1,0 +1,18 @@
+{
+  "final_sacred": "NOT_ACCESSED",
+  "historical_panels": "LOCKED_UNSCORED",
+  "predecessor": "C:\\DaveLM-CADAVER\\sf11_narrow_breadth_widening_v1",
+  "predecessor_receipt_sha256": "73c9896d9ca74ffd1b01e3c2e0c07746a2e7c7bfd83be8d904ab66879312acd4",
+  "sole_scientific_change": "R_name term defined in PROTOCOL.json and CONTROLLER.py",
+  "study": "SF12_ANSWER_VOCAB_RETENTION_V1",
+  "unchanged_payload_hashes": {
+    "D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "DEV_ORDER.json": "8031e735736925ff76c0ec7e86bcef3376ef3bb676566fbf04eff9770093a717",
+    "DEV_SURFACE.json": "d0677e641204f7e31921d1fe91771e910373fc96877310631ca20a105dd0735a",
+    "KL_POOL.json": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "SCHEDULE.json": "19041e6e8563b13aede5ce007bb6dda190f5bd8e21b12dc77759d98a6e81aa7d",
+    "SF2_ENGINE.py": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7",
+    "TRAIN.json": "523dbf5e325c55e6208559a2125919902572523f050d5c4da2cf14bf8898fc82",
+    "TRAIN16_RETENTION.json": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd"
+  }
+}

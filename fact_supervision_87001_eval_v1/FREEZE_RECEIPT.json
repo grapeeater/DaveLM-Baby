@@ -1,0 +1,11 @@
+{
+  "status": "EVALUATION_COMPLETE_PRIMARY_BINDING_AND_DIAGNOSTICS",
+  "bundle": "fact_supervision_87001_eval_v1",
+  "source_bundle": "fact_supervision_87001_corrected_v8",
+  "manifest_sha256": "4b1c4c2afecba6fe5c0fa636b9535016052a4093231e8a05203dcda4ab662b59",
+  "training_updates": 0,
+  "sacred_access": false,
+  "confirmation_accessed": false,
+  "classification": "ACQUISITION_FAIL_BINDING_PASS",
+  "payload_count": 15
+}

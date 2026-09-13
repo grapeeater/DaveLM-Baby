@@ -1,0 +1,9 @@
+{
+  "classification": "RETENTION_POSITION_COVERAGE_INSUFFICIENT",
+  "final_accessed": false,
+  "manifest_sha256": "f5466f8ac24635d654b53146707ec2b4735e68fd31eee2f37f71cc2feaf96433",
+  "runs": 3,
+  "sacred_accessed": false,
+  "sealed_study_receipt_sha256": "b581fa3d852efb4436495d852a8f2ab883fd1048ece0af944a856aa676348c63",
+  "status": "SF13_EXECUTION_AND_CLASSIFICATION_COMPLETE"
+}

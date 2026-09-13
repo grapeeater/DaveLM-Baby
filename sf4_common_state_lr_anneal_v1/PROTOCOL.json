@@ -1,0 +1,61 @@
+{
+  "study": "SF4_COMMON_STATE_LATE_ENGLISH_LR_V1",
+  "base_bundle": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011",
+  "parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "hypothesis": "Reducing late English step size may avoid an Owen-side boundary offset while preserving acquired context-conditioned selection and SF2 retention. Settling/overshoot is a hypothesis, not established dynamics.",
+  "single_variable": "English-update learning-rate sequence at global updates 101-200",
+  "common_trajectory": "Two independent fresh Pilot1 runs, same current runtime, seed87011, exact SF2 updates1-100; neither continues past100. Compare all model/optimizer/RNG/controller tensors and scalars exactly. First run is predesignated common state, never choose by outcomes.",
+  "branch_state": "Preserve complete update100 restart: model, optimizer, Python/CPU/GPU RNG, scope, completed update, English index, protocol/input/schedule provenance. Both branches load identical values; no optimizer reset. Only arm provenance label differs.",
+  "branch_freeze": "After common-state exact equality and all common100 gates pass, seal COMMON_STATE.pt, both initial branch states, equality report and branch receipt before either continuation. Both real load-only preflights must restore identical model/optimizer/RNG before any branch update. Since update101 has identical LR, preserve its complete state in both arms and require exact equality before treatment update102 (the first differing LR).",
+  "control": "Continuation101-200 at5e-5 for every update.",
+  "treatment": "Continuation101-200: English ordinal j=1..90 uses5e-5*(90-j)/89; binding LR remains5e-5. At j90 zero LR advances optimizer moments/step but not parameters, as normal AdamW semantics. No alternative floor/curve or tuning.",
+  "interpretation_of_variable": "This changes cumulative late English step size and its temporal profile, including scaled decoupled decay and relative effective binding step pressure. It does not isolate annealing shape from total step size. No claim otherwise.",
+  "data": "Exact frozen SF1 TRAIN16 twice/update (32), exact binding schedule32docs/update; exact SF2 KL rows/160 positions/English update; no regenerated data.",
+  "schedule": "Global200:20*(9English+1binding), common100 then100/arm. Two common-prefix validation replicas add100 infrastructure-validation updates, not another treatment arm.",
+  "objective": "Exact pinned SF2 full-vocabulary mean causal CE over four answer tokens+EOS plus1.0*D_KL(student||Pilot1) on160 ordinary positions, full1024 support,T1,float64 KL accumulation. Teacher eval+no_grad; student KL eval with gradients; factual CE train mode. Binding exact pinned causal answerCE+LAM1.0536573711078283 hard-min localization.",
+  "scope": "English train token/position embeddings, blocks4-7, final norm, untied head; blocks0-3 and T13 specialized localizer/retrieval frozen with gradNone and optimizer inactivity. Binding all parameters. Same both arms.",
+  "optimizer": "AdamW5e-5 common/control; betas(.9,.999),eps1e-8,wd.05,amsgradFalse,foreachFalse,fusedFalse; clip2.0, one persistent optimizer state restored exactly per branch; no LR scheduler object.",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "seed": 87011,
+    "PYTHONHASHSEED": "87011",
+    "deterministic_algorithms": true,
+    "TF32": false,
+    "autocast": false,
+    "process": "fresh process per common replica and arm; same RNG state restored at branch; no NumPy RNG used"
+  },
+  "evaluations": {
+    "common": [
+      0,
+      100
+    ],
+    "arm_full": [
+      100,
+      200
+    ],
+    "arm_train_only": [
+      125,
+      150,
+      175
+    ],
+    "order": "common_a then common_b; exact comparison+branch freeze; both load-only preflights; control then treatment; after both endpoints committed and classified, eligible-arm-only transfer in HELDOUT,ALTERNATE,COPY,COMPETING order. No interim selection.",
+    "rng": "All eval must leave RNG state exactly unchanged."
+  },
+  "gates": {
+    "acquisition": "At fixed200 correct16/16 AND exact16/16 AND reversal8/8 AND complete families4/4; positive four-token LL margin, ties fail; greedy normalEOS,max32, exact candidate+EOS.",
+    "binding": "Each80-doc pool independently answer>=76 AND BD>=76 AND collapse0 at0/100/200; never average.",
+    "language": "aligned DEV mean of four batchCEs over first128 rows <= own common update0CE+.25 at100/200; preserve historical reduction.",
+    "d3": "mean four-name mass<=.01 at100/200; prospective safety ceiling adopted from SF3 and SF2 predicted signature, not retroactive SF2 gate.",
+    "common_guard": "Stop if correct<10 AND exact<10 at100; exact common-state equality and exact loaded-branch equality required.",
+    "transfer": "Per arm only if ALL endpoint acquisition/retention gates pass. Both arm endpoints must first exist. No pooled qualification; no endpoint early stopping."
+  },
+  "statistics": "Raw item/pair/family counts and paired arm differences; four family-level mean margins and per-pair outcomes; no population-generalization p-values or precision claims from four repeatedly trained families/one seed. Report residual and all other items, not only residual.",
+  "stopping": "Any mandatory integrity/baseline/common-state/determinism/safety failure is HARD STOP. No tolerance relaxation, rescue, extra arms, or followup. Fixed endpoint selection only. Resume latest committed state only, no replay; missing scheduled eval only.",
+  "classification": "Treatment passes acquisition only at16/16,16/16,8/8,4/4 with retention. Treatment/control contrast is within this state+seed+budget only. If both fail, pair completed acquisition fail. If treatment fails while control passes, no annealing benefit. Historical SF2_FAIL and SF3_HARD_STOP unchanged.",
+  "final_access": false,
+  "sacred_access": false,
+  "locked_panels": "Do not parse/score before gate. Byte hash integrity checks permitted; inherited semantic/overlap validation used without opening panels."
+}

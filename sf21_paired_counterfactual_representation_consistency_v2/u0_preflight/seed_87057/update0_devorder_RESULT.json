@@ -1,0 +1,72 @@
+{
+  "correct": 9,
+  "exact": 3,
+  "families": 0,
+  "family_count": 2,
+  "immediate_eos": 0,
+  "mean_margin": 0.2063642574212281,
+  "mean_mass": 0.11656232032822085,
+  "min_margin": -6.267575963400304,
+  "n": 16,
+  "pairs": 8,
+  "reversals": 2,
+  "subgroups": {
+    "order0:copy": {
+      "correct": 1,
+      "exact": 0,
+      "families": 0,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": -2.5766379656270146,
+      "mean_mass": 0.023470264497577685,
+      "min_margin": -6.267575963400304,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 0,
+      "ties": 0
+    },
+    "order0:fact": {
+      "correct": 4,
+      "exact": 3,
+      "families": 2,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 3.8590097289416008,
+      "mean_mass": 0.3585418604044728,
+      "min_margin": 0.48781722667627037,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 2,
+      "ties": 0
+    },
+    "order1:copy": {
+      "correct": 2,
+      "exact": 0,
+      "families": 0,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 0.11869816575199366,
+      "mean_mass": 0.009960016032647822,
+      "min_margin": -3.913091268390417,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 0,
+      "ties": 0
+    },
+    "order1:fact": {
+      "correct": 2,
+      "exact": 0,
+      "families": 0,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": -0.5756128993816674,
+      "mean_mass": 0.07427714037818514,
+      "min_margin": -2.5681325290352106,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 0,
+      "ties": 0
+    }
+  },
+  "ties": 0
+}

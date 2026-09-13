@@ -1,0 +1,14 @@
+{
+  "checkpoint_and_memory_unchanged": true,
+  "checkpoint_sha256_after": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "controlled_items": 352,
+  "elapsed_seconds": 37.687999999994645,
+  "forward_calls": 750,
+  "frozen_material_unchanged": true,
+  "model_source_hashes_unchanged": true,
+  "naturalistic_items": 24,
+  "sacred_material_accessed": false,
+  "state_digest_after": "2951670c33f51ef81c6d19aed230036876f8a27073a64035afb9183d4a6aedb6",
+  "status": "COMPLETE",
+  "training": false
+}

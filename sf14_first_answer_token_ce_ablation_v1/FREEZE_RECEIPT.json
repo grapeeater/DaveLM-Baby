@@ -1,0 +1,12 @@
+{
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "d1ff4932e38d366296046170a3dfda6f990d371baa5b6c8ed29db436a1f09323",
+  "optimizer_created": false,
+  "sacred_accessed": false,
+  "sealed_utc": "2026-09-08T21:03:21.455323+00:00",
+  "sole_scientific_change": "first answer-name CE label masked on English updates",
+  "status": "SF14_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF14_FIRST_ANSWER_TOKEN_CE_ABLATION_V1",
+  "updates": 0
+}

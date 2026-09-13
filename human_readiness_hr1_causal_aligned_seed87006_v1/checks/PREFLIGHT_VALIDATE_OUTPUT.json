@@ -1,0 +1,151 @@
+{
+  "status": "CAUSAL_ALIGNMENT_PREFLIGHT_PASS_NO_TRAINING",
+  "checks": {
+    "data/ENGLISH_TRAIN.jsonl": {
+      "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+      "exists": true
+    },
+    "data/ENGLISH_DEV.jsonl": {
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+      "exists": true
+    },
+    "data/ENGLISH_SCHEDULE.json": {
+      "sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+      "exists": true
+    },
+    "data/BINDING_SCHEDULE.json": {
+      "sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+      "exists": true
+    },
+    "data/binding_rehearsal.json": {
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+      "exists": true
+    },
+    "data/binding_dev_pilot0.json": {
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+      "exists": true
+    },
+    "data/binding_dev_pilot1.json": {
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+      "exists": true
+    },
+    "data/PILOT1_MATERIAL_MANIFEST.json": {
+      "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2",
+      "exists": true
+    },
+    "data/PILOT1_TRAINING_SPEC.json": {
+      "sha256": "0f731ffde8dcd924e174a3b0b910d125311651b682bef5c6e80107606a18c680",
+      "exists": true
+    },
+    "data/CORPUS_MANIFEST.json": {
+      "sha256": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708",
+      "exists": true
+    },
+    "byte_for_byte_inheritance": true,
+    "parent": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+      "loaded": false
+    },
+    "tokenizer": {
+      "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+    },
+    "datasets_and_schedules": {
+      "train_records": 149014,
+      "dev_records": 15866,
+      "english_batches": 450,
+      "binding_quartets": 80,
+      "binding_documents": 320,
+      "binding_batches": 50
+    },
+    "alignment_sanity": {
+      "text": "A cat sat.",
+      "token_ids": [
+        37,
+        268,
+        265,
+        269,
+        265,
+        18
+      ],
+      "x": [
+        2,
+        37,
+        268,
+        265,
+        269,
+        265,
+        18,
+        0
+      ],
+      "y": [
+        37,
+        268,
+        265,
+        269,
+        265,
+        18,
+        3,
+        -100
+      ],
+      "transitions": [
+        [
+          2,
+          37
+        ],
+        [
+          37,
+          268
+        ],
+        [
+          268,
+          265
+        ],
+        [
+          265,
+          269
+        ],
+        [
+          269,
+          265
+        ],
+        [
+          265,
+          18
+        ],
+        [
+          18,
+          3
+        ]
+      ],
+      "eos_only_final": true,
+      "padding_ignored": true,
+      "old_shift_rejected": true
+    },
+    "source_alignment": {
+      "hr1_shifted_occurrences": 2,
+      "hr2_shifted_occurrences": 2,
+      "corrected_aligned_occurrences": 2,
+      "corrected_shifted_occurrences": 0,
+      "train_dev_objective_expression_count": 2
+    },
+    "source_wiring": {
+      "bundle_protocol_and_data_paths": true,
+      "stale_hr1_paths_rejected": true
+    },
+    "sealed_material": {
+      "final_battery_accessed": false,
+      "sacred_material_accessed": false
+    }
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "cuda_available": true,
+    "checkpoint_loaded": false,
+    "optimizer_created": false,
+    "optimizer_updates": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "correction": "Read the existing authoritative nested binding summary fields answer_exact/both_distinct/slot_collapse. No score, gate, classification rule, checkpoint, or model evaluation changed.",
+  "defect": "Frozen reporter expected nonexistent short binding summary keys answer/both_distinct/collapse at the gate wrapper level.",
+  "inference_replayed": false,
+  "source_manifest_sha256": "140847565ebb512d42cd3a9aeb8e555e2e4600232349362fb36c343952d41123",
+  "source_receipt_sha256": "a1d1423a2997c6f830f2d49661a0bd700fab64ca4c56a073293bcfd9db45e7cc",
+  "source_reporter_sha256": "60a528d718ff321d76672d255058ac90a483ad5c4589ce9dbba3bb641204d0e1",
+  "source_study": "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1",
+  "training_replayed": false,
+  "type": "MECHANICAL_REPORTING_HOTFIX"
+}

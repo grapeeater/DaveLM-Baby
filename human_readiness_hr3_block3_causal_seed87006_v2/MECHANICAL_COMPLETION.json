@@ -1,0 +1,14 @@
+{
+  "checkpoint_loaded": false,
+  "correction": "pin exact authoritative C:\\DaveLM-CADAVER\\treatment13_config.py as sources/treatment13_config.py",
+  "failure": "ModuleNotFoundError: treatment13_config before checkpoint loading",
+  "final_accessed": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "predecessor_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v1",
+  "predecessor_receipt_sha256": "ab25d55074e34c34c4788b20fb6784623e5a57f18f38b4fad1315ca360dba0a6",
+  "sacred_accessed": false,
+  "scientific_values_changed": false,
+  "source_sha256": "eb3a87f99ff23011a381dcffc52a530a7a654e7d130fe6d4a6e3c76067949e2e",
+  "status": "MECHANICAL_COMPLETION_ONLY"
+}

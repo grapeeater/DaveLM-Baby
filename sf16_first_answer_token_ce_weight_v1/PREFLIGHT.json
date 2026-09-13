@@ -1,0 +1,78 @@
+{
+  "checks": {
+    "byte_identical_sf15_scientific_payload": [
+      "D3_SELECTION.json",
+      "DEV_ORDER.json",
+      "DEV_SURFACE.json",
+      "EXTERNAL_INPUTS.json",
+      "KL_POOL_MANIFEST.json",
+      "KL_POOL.json",
+      "SCHEDULE.json",
+      "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py",
+      "SF2_PROTOCOL.json",
+      "TRAIN.json",
+      "TRAIN16_RETENTION.json"
+    ],
+    "checkpoint_loaded": false,
+    "final_accessed": false,
+    "isolated_variable": {
+      "ce_weight_sum": 148.5,
+      "first_answer_positions_weight_0_125": 36,
+      "kl_distinct_source_rows": 160,
+      "kl_positions": 160,
+      "later_response_punctuation_eos_positions_weight_1": 144,
+      "margin_active_at_first_name": true,
+      "margin_mock_value": 1.0,
+      "sf13_weight1_endpoint_reproduction": true,
+      "sf14_weight0_endpoint_reproduction": true
+    },
+    "optimizer_created": false,
+    "parents": {
+      "87041": {
+        "sf8_seed": 87017,
+        "sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d"
+      },
+      "87042": {
+        "sf8_seed": 87018,
+        "sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102"
+      },
+      "87043": {
+        "sf8_seed": 87019,
+        "sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+      }
+    },
+    "reporter_smoke": "PASS",
+    "runtime": {
+      "device": "AMD Radeon RX 9060 XT",
+      "python": "3.12.14",
+      "tokenizers": "0.23.1",
+      "torch": "2.12.0+rocm7.14.0"
+    },
+    "sacred_accessed": false,
+    "tokenizer": {
+      "name_first_token_ids": {
+        "Alex": 314,
+        "Mia": 925,
+        "Nora": 512,
+        "Owen": 536
+      },
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+    },
+    "unchanged_settings": {
+      "D3_training_calls": 0,
+      "binding": true,
+      "broad_kl": true,
+      "gates": true,
+      "margin": true,
+      "optimizer": true,
+      "schedule": true
+    },
+    "updates": 0
+  },
+  "status": "SF16_PROSPECTIVE_PREFLIGHT_PASS",
+  "warnings": [
+    "The 0.125 CE weight is normalized by total token weight. This exact interpolation reproduces SF14 at weight 0 and SF13 at weight 1.",
+    "U0 evidence is inherited from actual sealed evaluation of identical parent bytes/data/evaluator and is independently asserted again by each run before optimizer creation."
+  ]
+}

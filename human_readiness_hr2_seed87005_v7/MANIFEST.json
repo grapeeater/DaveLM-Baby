@@ -1,0 +1,38 @@
+{
+  "BINDING_SCHEDULE.json": {
+    "sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+    "bytes": 82183
+  },
+  "ENGLISH_DEV.jsonl": {
+    "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "bytes": 3310121
+  },
+  "ENGLISH_SCHEDULE.json": {
+    "sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+    "bytes": 1118634
+  },
+  "ENGLISH_TRAIN.jsonl": {
+    "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+    "bytes": 30855743
+  },
+  "HR1_PARENT.pt": {
+    "sha256": "468035373a74b6bf501ac6654c25d101a4cdf361e076e3b681c15bf71b4d3e8e",
+    "bytes": 64514303
+  },
+  "HR2_PROTOCOL.json": {
+    "sha256": "c16df0eee419a2530774bae137990056bcfd09d0273572edc72b4b50c526c24f",
+    "bytes": 1597
+  },
+  "HR2_PROTOCOL.md": {
+    "sha256": "d7a6c5f8ecc6ca6e434844ca628080f00ce25f6b47045707ca3545ce683abf9b",
+    "bytes": 1676
+  },
+  "HR2_TRAIN.py": {
+    "sha256": "41560c549b56cd9695ca3c997da240c12b93f05ce08b112e3ee7dc1e22eed809",
+    "bytes": 7076
+  },
+  "HR2_VALIDATE.py": {
+    "sha256": "e4cea27d1d754e62232bd232547fd602bfceaed5bea7e3e19cac143c62923c8e",
+    "bytes": 1254
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "status": "MINIMAL_LEXICAL_PAIR_FREEZE_COMPLETE_PREEXECUTION_ONLY",
+ "bundle": "fact_supervision_87001_minimal_lexical_pair_seed87002",
+ "items_one_sha256": "b4b6ae674fae3c9d5fcd02304daf8aebc61e545c9cbe04c614f2c3897f670d4c",
+ "items_two_sha256": "0e631e7fb5de8a16f08c7d7665d42759701d6b37ff4ab2634756edf3abe097db",
+ "validation_sha256": "448e81e163126b5f14bce3631f21651e322716a8120c61feba79e90f3f94a947",
+ "manifest_sha256": "12e50ad447ab39fe6e3d47e871078f2dfc281bb6f212120009b504ccda476261",
+ "protocol_sha256": "69b179c9573a3b03102d83855caa1cfc6dd53caa67d04c5b34fd6a694469c61e",
+ "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false
+}

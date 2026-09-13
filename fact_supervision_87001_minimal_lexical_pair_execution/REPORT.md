@@ -1,0 +1,602 @@
+# Fork L2 minimal-lexical paired diagnostic - read-only execution
+
+## Pilot1 parent
+{
+ "ONE": {
+  "all": {
+   "n": 48,
+   "correct": 24,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 24,
+   "mean_margin": 0.19510622012118498,
+   "median_margin": 0.4084947407245636,
+   "min_margin": -9.985512733459473,
+   "max_margin": 10.700765609741211,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "object": {
+   "n": 24,
+   "correct": 12,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": 0.3239206907649835,
+   "median_margin": 0.11816602945327759,
+   "min_margin": -9.873176395893097,
+   "max_margin": 10.700765609741211,
+   "correct_index": {
+    "0": 12,
+    "1": 12
+   },
+   "correct_name": {
+    "Alex": 6,
+    "Mia": 6,
+    "Nora": 6,
+    "Owen": 6
+   }
+  },
+  "predicate": {
+   "n": 24,
+   "correct": 12,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": 0.06629174947738647,
+   "median_margin": 0.4084947407245636,
+   "min_margin": -9.985512733459473,
+   "max_margin": 8.28326153755188,
+   "correct_index": {
+    "0": 12,
+    "1": 12
+   },
+   "correct_name": {
+    "Alex": 6,
+    "Mia": 6,
+    "Nora": 6,
+    "Owen": 6
+   }
+  },
+  "greedy_exact": 0
+ },
+ "TWO": {
+  "all": {
+   "n": 96,
+   "correct": 48,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 24,
+   "mean_margin": 0.08899373250703017,
+   "median_margin": 0.09550011157989502,
+   "min_margin": -10.27908182144165,
+   "max_margin": 10.06125944852829,
+   "correct_index": {
+    "0": 48,
+    "1": 48
+   },
+   "correct_name": {
+    "Alex": 24,
+    "Mia": 24,
+    "Nora": 24,
+    "Owen": 24
+   }
+  },
+  "object": {
+   "n": 48,
+   "correct": 24,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": -0.25655000160137814,
+   "median_margin": 0.09550011157989502,
+   "min_margin": -10.27908182144165,
+   "max_margin": 10.06125944852829,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "predicate": {
+   "n": 48,
+   "correct": 24,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": 0.43453746661543846,
+   "median_margin": 0.46170923113822937,
+   "min_margin": -8.362922012805939,
+   "max_margin": 8.447683095932007,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "row_order_0": {
+   "n": 48,
+   "correct": 24,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 24,
+   "mean_margin": 0.054908511539300285,
+   "median_margin": -0.07079207897186279,
+   "min_margin": -10.27908182144165,
+   "max_margin": 9.502411484718323,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "row_order_1": {
+   "n": 48,
+   "correct": 24,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 24,
+   "mean_margin": 0.12307895347476006,
+   "median_margin": 0.09550011157989502,
+   "min_margin": -9.776444435119629,
+   "max_margin": 10.06125944852829,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "greedy_exact": 0
+ }
+}
+## factual-500
+{
+ "ONE": {
+  "all": {
+   "n": 48,
+   "correct": 45,
+   "accuracy": 0.9375,
+   "ties": 0,
+   "families_complete": 21,
+   "families_total": 24,
+   "mean_margin": 1.0556667152923183,
+   "median_margin": 0.9966585209331242,
+   "min_margin": -0.4333531417651102,
+   "max_margin": 2.5496531665266957,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "object": {
+   "n": 24,
+   "correct": 22,
+   "accuracy": 0.9166666666666666,
+   "ties": 0,
+   "families_complete": 10,
+   "families_total": 12,
+   "mean_margin": 1.025364641296619,
+   "median_margin": 0.9059718873177189,
+   "min_margin": -0.4333531417651102,
+   "max_margin": 2.5378721028973814,
+   "correct_index": {
+    "0": 12,
+    "1": 12
+   },
+   "correct_name": {
+    "Alex": 6,
+    "Mia": 6,
+    "Nora": 6,
+    "Owen": 6
+   }
+  },
+  "predicate": {
+   "n": 24,
+   "correct": 23,
+   "accuracy": 0.9583333333333334,
+   "ties": 0,
+   "families_complete": 11,
+   "families_total": 12,
+   "mean_margin": 1.0859687892880174,
+   "median_margin": 1.0256017325009452,
+   "min_margin": -0.4333531417651102,
+   "max_margin": 2.5496531665266957,
+   "correct_index": {
+    "0": 12,
+    "1": 12
+   },
+   "correct_name": {
+    "Alex": 6,
+    "Mia": 6,
+    "Nora": 6,
+    "Owen": 6
+   }
+  },
+  "greedy_exact": 38
+ },
+ "TWO": {
+  "all": {
+   "n": 96,
+   "correct": 53,
+   "accuracy": 0.5520833333333334,
+   "ties": 0,
+   "families_complete": 1,
+   "families_total": 24,
+   "mean_margin": 0.0032873450528920025,
+   "median_margin": 0.04115055766305886,
+   "min_margin": -1.5463081094785593,
+   "max_margin": 1.7404459775134455,
+   "correct_index": {
+    "0": 48,
+    "1": 48
+   },
+   "correct_name": {
+    "Alex": 24,
+    "Mia": 24,
+    "Nora": 24,
+    "Owen": 24
+   }
+  },
+  "object": {
+   "n": 48,
+   "correct": 29,
+   "accuracy": 0.6041666666666666,
+   "ties": 0,
+   "families_complete": 1,
+   "families_total": 12,
+   "mean_margin": 0.047984786716369854,
+   "median_margin": 0.07790205485071056,
+   "min_margin": -1.5463081094785593,
+   "max_margin": 1.5017458570073359,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "predicate": {
+   "n": 48,
+   "correct": 24,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": -0.041410096610585846,
+   "median_margin": -0.008565933661884628,
+   "min_margin": -1.5323793292045593,
+   "max_margin": 1.7404459775134455,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "row_order_0": {
+   "n": 48,
+   "correct": 38,
+   "accuracy": 0.7916666666666666,
+   "ties": 0,
+   "families_complete": 14,
+   "families_total": 24,
+   "mean_margin": 0.4587886951597587,
+   "median_margin": 0.40681736305123195,
+   "min_margin": -1.11914526153123,
+   "max_margin": 1.7404459775134455,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "row_order_1": {
+   "n": 48,
+   "correct": 15,
+   "accuracy": 0.3125,
+   "ties": 0,
+   "families_complete": 1,
+   "families_total": 24,
+   "mean_margin": -0.4522140050539747,
+   "median_margin": -0.4373530571028823,
+   "min_margin": -1.5463081094785593,
+   "max_margin": 0.7965220147743821,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "greedy_exact": 46
+ }
+}
+## control-500
+{
+ "ONE": {
+  "all": {
+   "n": 48,
+   "correct": 46,
+   "accuracy": 0.9583333333333334,
+   "ties": 0,
+   "families_complete": 22,
+   "families_total": 24,
+   "mean_margin": 1.0725262646262006,
+   "median_margin": 1.0625722744734958,
+   "min_margin": -0.1622825941303745,
+   "max_margin": 2.301615104021039,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "object": {
+   "n": 24,
+   "correct": 23,
+   "accuracy": 0.9583333333333334,
+   "ties": 0,
+   "families_complete": 11,
+   "families_total": 12,
+   "mean_margin": 1.0492354028853395,
+   "median_margin": 1.0625722744734958,
+   "min_margin": -0.1622825941303745,
+   "max_margin": 2.203397571807727,
+   "correct_index": {
+    "0": 12,
+    "1": 12
+   },
+   "correct_name": {
+    "Alex": 6,
+    "Mia": 6,
+    "Nora": 6,
+    "Owen": 6
+   }
+  },
+  "predicate": {
+   "n": 24,
+   "correct": 23,
+   "accuracy": 0.9583333333333334,
+   "ties": 0,
+   "families_complete": 11,
+   "families_total": 12,
+   "mean_margin": 1.0958171263670617,
+   "median_margin": 1.0797231887408998,
+   "min_margin": -0.1622825941303745,
+   "max_margin": 2.301615104021039,
+   "correct_index": {
+    "0": 12,
+    "1": 12
+   },
+   "correct_name": {
+    "Alex": 6,
+    "Mia": 6,
+    "Nora": 6,
+    "Owen": 6
+   }
+  },
+  "greedy_exact": 40
+ },
+ "TWO": {
+  "all": {
+   "n": 96,
+   "correct": 48,
+   "accuracy": 0.5,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 24,
+   "mean_margin": 0.005681721160878321,
+   "median_margin": 0.0292787160287844,
+   "min_margin": -1.8714342825114727,
+   "max_margin": 1.9779556312423665,
+   "correct_index": {
+    "0": 48,
+    "1": 48
+   },
+   "correct_name": {
+    "Alex": 24,
+    "Mia": 24,
+    "Nora": 24,
+    "Owen": 24
+   }
+  },
+  "object": {
+   "n": 48,
+   "correct": 26,
+   "accuracy": 0.5416666666666666,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": 0.07443414803795652,
+   "median_margin": 0.15761341512552463,
+   "min_margin": -1.5339070180198178,
+   "max_margin": 1.6065495536022354,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "predicate": {
+   "n": 48,
+   "correct": 22,
+   "accuracy": 0.4583333333333333,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 12,
+   "mean_margin": -0.06307070571619988,
+   "median_margin": -0.08093674277188256,
+   "min_margin": -1.8714342825114727,
+   "max_margin": 1.9779556312423665,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "row_order_0": {
+   "n": 48,
+   "correct": 39,
+   "accuracy": 0.8125,
+   "ties": 0,
+   "families_complete": 15,
+   "families_total": 24,
+   "mean_margin": 0.5550544037032523,
+   "median_margin": 0.44289702766400296,
+   "min_margin": -0.7872415985621046,
+   "max_margin": 1.9779556312423665,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "row_order_1": {
+   "n": 48,
+   "correct": 9,
+   "accuracy": 0.1875,
+   "ties": 0,
+   "families_complete": 0,
+   "families_total": 24,
+   "mean_margin": -0.5436909613814956,
+   "median_margin": -0.48843363123887684,
+   "min_margin": -1.8714342825114727,
+   "max_margin": 0.47300960263237357,
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "greedy_exact": 44
+ }
+}
+## Descriptive comparisons (A/C/gloss)
+{
+ "Pilot1 parent": {
+  "ONE_accuracy": 0.5,
+  "TWO_accuracy": 0.5,
+  "A_accuracy": 0.5833333333333334,
+  "C_accuracy": 0.5208333333333334,
+  "gloss_accuracy": 0.5,
+  "ONE_greedy_exact": 0,
+  "TWO_greedy_exact": 0,
+  "A_greedy_exact": 0,
+  "C_greedy_exact": 0,
+  "gloss_greedy_exact": 0,
+  "ONE_mean_margin": 0.19510622012118498,
+  "TWO_mean_margin": 0.08899373250703017
+ },
+ "factual-500": {
+  "ONE_accuracy": 0.9375,
+  "TWO_accuracy": 0.5520833333333334,
+  "A_accuracy": 0.875,
+  "C_accuracy": 0.4479166666666667,
+  "gloss_accuracy": 0.5,
+  "ONE_greedy_exact": 38,
+  "TWO_greedy_exact": 46,
+  "A_greedy_exact": 37,
+  "C_greedy_exact": 40,
+  "gloss_greedy_exact": 29,
+  "ONE_mean_margin": 1.0556667152923183,
+  "TWO_mean_margin": 0.0032873450528920025
+ },
+ "control-500": {
+  "ONE_accuracy": 0.9583333333333334,
+  "TWO_accuracy": 0.5,
+  "A_accuracy": 0.8958333333333334,
+  "C_accuracy": 0.5208333333333334,
+  "gloss_accuracy": 0.5,
+  "ONE_greedy_exact": 40,
+  "TWO_greedy_exact": 44,
+  "A_greedy_exact": 41,
+  "C_greedy_exact": 47,
+  "gloss_greedy_exact": 38,
+  "ONE_mean_margin": 1.0725262646262006,
+  "TWO_mean_margin": 0.005681721160878321
+ }
+}

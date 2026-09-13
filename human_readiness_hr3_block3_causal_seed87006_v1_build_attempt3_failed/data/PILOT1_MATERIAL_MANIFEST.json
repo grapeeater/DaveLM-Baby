@@ -1,0 +1,47 @@
+{
+  "pilot": "Language Pilot 1",
+  "seed": 8380,
+  "source_manifest": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\CORPUS_MANIFEST.json",
+  "tokenizer_path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "language_train_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "language_dev_sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+  "binding_rehearsal_sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+  "binding_dev_sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+  "binding_namespace": "pilot1_*",
+  "generator": "existing T13 grammar/build_member_doc; new deterministic seed bases rehearsal=1700000000, dev=2700000000",
+  "rehearsal_quartets": 80,
+  "rehearsal_documents": 320,
+  "dev_quartets": 20,
+  "dev_documents": 80,
+  "layouts_rehearsal": [
+    "p40_b4",
+    "p42_b5",
+    "p44_b6",
+    "p46_b7",
+    "p48_b8",
+    "p50_b9",
+    "p52_b10",
+    "p54_b11"
+  ],
+  "layouts_dev": [
+    "p56_b12",
+    "p58_b13"
+  ],
+  "prior_pool_files_checked": [
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_rehearsal.json",
+    "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_retention_quartet_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_training_quartet_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment11_answer_only_strict_counterfactual_binding_seed8380\\treatment11_retention_quartet_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment11_answer_only_strict_counterfactual_binding_seed8380\\treatment11_training_quartet_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment12_frozen_geometry_generalization\\novel_geometry_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_retention_quartet_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_training_quartet_pool.json",
+    "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json"
+  ],
+  "prior_token_array_overlaps": {},
+  "language_exact_array_overlap": 0,
+  "sacred_behavior_evaluated": false,
+  "sacred_pool_used_only_for_token_array_disjointness": true
+}

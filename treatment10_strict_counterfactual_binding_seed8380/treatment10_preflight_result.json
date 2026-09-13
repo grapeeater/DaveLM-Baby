@@ -1,0 +1,738 @@
+{
+ "treatment": "treatment10_strict_counterfactual_binding",
+ "status": "TREATMENT10_PREFLIGHT_PASS",
+ "generator_result_path": "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_generator_result.json",
+ "train_pool_sha256": "03ed49abcf6458362fe4f29b44ec2a5e2bfa9e05ad6788b9d2e6ff37c7bcfc17",
+ "retention_pool_sha256": "48731fbc1a37b5902f4827069e51a7dff1bd1d19c3ff1ed2d29b8e0d0a996de6",
+ "schedule_sha256": "d1d3616e49cdc5fb447028e2975e6c1771c704d2ff8bfcbad5c8814504b4478e",
+ "start_checkpoint": {
+  "path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+  "expected_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+  "observed_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+ },
+ "train": {
+  "quartets": 200,
+  "documents": 800,
+  "orientation_document_counts": {
+   "1": 400,
+   "2": 400
+  },
+  "query_slot_document_counts": {
+   "0": 400,
+   "1": 400
+  },
+  "per_query_identity": [
+   {
+    "query_key_token": 428,
+    "query_word": "event",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 779,
+    "query_word": "background",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 900,
+    "query_word": "groups",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 974,
+    "query_word": "num",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 1004,
+    "query_word": "several",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   }
+  ]
+ },
+ "retention": {
+  "quartets": 40,
+  "documents": 160,
+  "orientation_document_counts": {
+   "1": 80,
+   "2": 80
+  },
+  "query_slot_document_counts": {
+   "0": 80,
+   "1": 80
+  },
+  "overlap_with_training": 0
+ },
+ "schedule": {
+  "steps": 1000,
+  "batch_size": 32,
+  "quartets_per_step": 8,
+  "presentations_per_quartet": 40,
+  "document_events": 32000,
+  "exposure_min": 40,
+  "exposure_max": 40
+ },
+ "anti_shortcut_contract": {
+  "unit": "unique training documents",
+  "orientation_document_counts": {
+   "1": 400,
+   "2": 400
+  },
+  "query_slot_document_counts": {
+   "0": 400,
+   "1": 400
+  },
+  "query_identity_count": 5,
+  "per_query_identity": [
+   {
+    "query_key_token": 428,
+    "query_word": "event",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 779,
+    "query_word": "background",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 900,
+    "query_word": "groups",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 974,
+    "query_word": "num",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   },
+   {
+    "query_key_token": 1004,
+    "query_word": "several",
+    "document_count": 160,
+    "distinct_target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "distinct_target_count": 5,
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    },
+    "distinct_candidate_sets": [
+     [
+      583,
+      778
+     ],
+     [
+      583,
+      788
+     ],
+     [
+      583,
+      959
+     ],
+     [
+      583,
+      1002
+     ],
+     [
+      778,
+      788
+     ],
+     [
+      778,
+      959
+     ],
+     [
+      778,
+      1002
+     ],
+     [
+      788,
+      959
+     ],
+     [
+      788,
+      1002
+     ],
+     [
+      959,
+      1002
+     ]
+    ]
+   }
+  ],
+  "checks_passed": true
+ },
+ "candidate_set_orientation_balance": {
+  "[788, 1002]": {
+   "1": 40,
+   "2": 40
+  },
+  "[583, 1002]": {
+   "1": 40,
+   "2": 40
+  },
+  "[778, 1002]": {
+   "1": 40,
+   "2": 40
+  },
+  "[959, 1002]": {
+   "1": 40,
+   "2": 40
+  },
+  "[583, 788]": {
+   "1": 40,
+   "2": 40
+  },
+  "[778, 788]": {
+   "1": 40,
+   "2": 40
+  },
+  "[788, 959]": {
+   "1": 40,
+   "2": 40
+  },
+  "[583, 778]": {
+   "1": 40,
+   "2": 40
+  },
+  "[583, 959]": {
+   "1": 40,
+   "2": 40
+  },
+  "[778, 959]": {
+   "1": 40,
+   "2": 40
+  }
+ },
+ "matched_quartet_diff_validation": "passed for train and retention pools",
+ "note": "Structural preflight only. No model, checkpoint, or behavioral outcome used."
+}

@@ -1,0 +1,30 @@
+{
+  "correct": 12,
+  "exact": 12,
+  "families": 2,
+  "family_count": 4,
+  "immediate_eos": 0,
+  "mean_margin": 0.3881077141413698,
+  "mean_mass": 0.5909942004301012,
+  "min_margin": -0.368218480842188,
+  "n": 16,
+  "pairs": 8,
+  "reversals": 4,
+  "subgroups": {
+    "familiar_cloze": {
+      "correct": 12,
+      "exact": 12,
+      "families": 2,
+      "family_count": 4,
+      "immediate_eos": 0,
+      "mean_margin": 0.3881077141413698,
+      "mean_mass": 0.5909942004301012,
+      "min_margin": -0.368218480842188,
+      "n": 16,
+      "pairs": 8,
+      "reversals": 4,
+      "ties": 0
+    }
+  },
+  "ties": 0
+}

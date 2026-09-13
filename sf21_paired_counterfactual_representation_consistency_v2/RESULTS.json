@@ -1,0 +1,2018 @@
+{
+  "classification": "RETENTION_REGRESSION_10M_SERIES_CLOSED",
+  "controller_sha256": "ba6053e0f69d6de59ad50d64a2a005efbe0d8689cf212774f48d9fd22bcec52d",
+  "cross_seed": {
+    "endpoint_passes": 0,
+    "retention_failures": 3,
+    "u200_reached": 1
+  },
+  "final_accessed": false,
+  "locked_transfer": "LOCKED_UNSCORED",
+  "manifest_sha256": "c8ec8255e3143dacbe1a89987b97d6516ae5c52e0db253d89be3c646f7bc2081",
+  "receipt_sha256": "ee019f73f645af564317d199695607b39333a2fe1073ca2283e179ec3a0ee90d",
+  "runs": [
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\runs\\seed_87056_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "db5037def67f32f819420381e24e0d6095699343db74a262d467b2252d0bd0a6",
+      "completed": 100,
+      "consistency": {
+        "final_consistency_loss": 0.2524108588695526,
+        "final_pair_cosine": 0.747589111328125,
+        "mean_consistency_loss": 0.2873089826769299,
+        "mean_pair_cosine": 0.7126910183164809,
+        "mean_weighted_consistency": 0.028730898764398362
+      },
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": true,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": false
+      },
+      "seed": 87056,
+      "snapshots": [
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.007036717671962123,
+            "mean_entropy": 2.8127532401122153,
+            "mean_eos_probability": 0.001767161737854489,
+            "mean_true_next_probability": 0.1334390382900441,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.001807325439137475,
+              "Mia": 0.0028332657115400783,
+              "Nora": 0.0017122710340558012,
+              "Owen": 0.0006838553986634466
+            }
+          },
+          "gates": null,
+          "language": {
+            "batch_losses": [
+              3.748203992843628,
+              3.3880622386932373,
+              3.586591958999634,
+              3.626347064971924
+            ],
+            "loss": 3.5873013138771057,
+            "perplexity": 36.136423354684176,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 9,
+            "exact": 3,
+            "fact_exact": 3,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 1,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -2.5985370890120976,
+                "mean_mass": 0.03147470996275605,
+                "min_margin": -6.420525236055255,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 3,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 3.7384909481625073,
+                "mean_mass": 0.3685673632443805,
+                "min_margin": 0.1820051718968898,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.14231171924620867,
+                "mean_mass": 0.01504655251227072,
+                "min_margin": -3.649634293280542,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.6140474213752896,
+                "mean_mass": 0.093720730503946,
+                "min_margin": -2.300770426169038,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 12,
+            "exact": 5,
+            "subgroups": {
+              "active_qa": {
+                "correct": 3,
+                "exact": 0,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 2.230531723354943,
+                "mean_mass": 0.008945975523419244,
+                "min_margin": -0.0021947347559034824,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 3,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 3.83066632450209,
+                "mean_mass": 0.40741410432768943,
+                "min_margin": 3.506218812079169,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 3,
+                "exact": 2,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.7265479485504329,
+                "mean_mass": 0.1411181462402228,
+                "min_margin": -1.7557302732020617,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.2219009893888142,
+                "mean_mass": 0.004481418517688541,
+                "min_margin": -2.992212568060495,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 0
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.002186790794697302,
+            "mean_entropy": 2.6753655835054815,
+            "mean_eos_probability": 0.0016597492102881847,
+            "mean_true_next_probability": 0.12559225376685124,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0005311393409721532,
+              "Mia": 0.001055745196854918,
+              "Nora": 0.00037787924048549026,
+              "Owen": 0.00022202701161228022
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": false,
+            "d3": true,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": false
+          },
+          "language": {
+            "batch_losses": [
+              3.8369948863983154,
+              3.472308397293091,
+              3.658769369125366,
+              3.745763063430786
+            ],
+            "loss": 3.6784589290618896,
+            "perplexity": 39.585343220795664,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 8,
+            "exact": 2,
+            "fact_exact": 2,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 0,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -3.382721118396148,
+                "mean_mass": 0.04255204057699127,
+                "min_margin": -7.8778215777128935,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.4256064428482205,
+                "mean_mass": 0.10309419432841226,
+                "min_margin": 1.3017686232924461,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.17987904930487275,
+                "mean_mass": 0.014154130978086777,
+                "min_margin": -5.460361693054438,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.4803871917538345,
+                "mean_mass": 0.0053032695775967545,
+                "min_margin": -3.778412416577339,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 11,
+            "exact": 2,
+            "subgroups": {
+              "active_qa": {
+                "correct": 3,
+                "exact": 0,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 1.9998354802373797,
+                "mean_mass": 0.01598482288266952,
+                "min_margin": -1.0548089509829879,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.3992116746958345,
+                "mean_mass": 0.15127528937231988,
+                "min_margin": 2.29511696472764,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.4133360283449292,
+                "mean_mass": 0.008526615539228096,
+                "min_margin": -3.654534077271819,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.07842131052166224,
+                "mean_mass": 0.0015607883302318822,
+                "min_margin": -1.8580242097377777,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 13,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 100
+        }
+      ],
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.002186790794697302,
+          "mean_entropy": 2.6753655835054815,
+          "mean_eos_probability": 0.0016597492102881847,
+          "mean_true_next_probability": 0.12559225376685124,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0005311393409721532,
+            "Mia": 0.001055745196854918,
+            "Nora": 0.00037787924048549026,
+            "Owen": 0.00022202701161228022
+          }
+        },
+        "gates": {
+          "binding": {
+            "pilot0": true,
+            "pilot1": true
+          },
+          "continue": false,
+          "d3": true,
+          "dev_order": false,
+          "dev_surface": false,
+          "development_gain": false,
+          "endpoint_pass": false,
+          "language": true,
+          "retention_acquisition": false
+        },
+        "language": {
+          "batch_losses": [
+            3.8369948863983154,
+            3.472308397293091,
+            3.658769369125366,
+            3.745763063430786
+          ],
+          "loss": 3.6784589290618896,
+          "perplexity": 39.585343220795664,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 8,
+          "exact": 2,
+          "fact_exact": 2,
+          "subgroups": {
+            "order0:copy": {
+              "correct": 0,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": -3.382721118396148,
+              "mean_mass": 0.04255204057699127,
+              "min_margin": -7.8778215777128935,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "order0:fact": {
+              "correct": 4,
+              "exact": 2,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 4.4256064428482205,
+              "mean_mass": 0.10309419432841226,
+              "min_margin": 1.3017686232924461,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "order1:copy": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.17987904930487275,
+              "mean_mass": 0.014154130978086777,
+              "min_margin": -5.460361693054438,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "order1:fact": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": -0.4803871917538345,
+              "mean_mass": 0.0053032695775967545,
+              "min_margin": -3.778412416577339,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            }
+          }
+        },
+        "surface": {
+          "correct": 11,
+          "exact": 2,
+          "subgroups": {
+            "active_qa": {
+              "correct": 3,
+              "exact": 0,
+              "families": 1,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 1.9998354802373797,
+              "mean_mass": 0.01598482288266952,
+              "min_margin": -1.0548089509829879,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 1,
+              "ties": 0
+            },
+            "cloze": {
+              "correct": 4,
+              "exact": 2,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 4.3992116746958345,
+              "mean_mass": 0.15127528937231988,
+              "min_margin": 2.29511696472764,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "passive_cloze": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.4133360283449292,
+              "mean_mass": 0.008526615539228096,
+              "min_margin": -3.654534077271819,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "passive_qa": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.07842131052166224,
+              "mean_mass": 0.0015607883302318822,
+              "min_margin": -1.8580242097377777,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            }
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 13,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 100
+      }
+    },
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\runs\\seed_87057_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "5467687bbd3282fb4fb4cc1b31a8463b6b591c379593adebd4cddec18b8a488f",
+      "completed": 100,
+      "consistency": {
+        "final_consistency_loss": 0.29880785942077637,
+        "final_pair_cosine": 0.7011922001838684,
+        "mean_consistency_loss": 0.298819880021943,
+        "mean_pair_cosine": 0.7011801176600986,
+        "mean_weighted_consistency": 0.029881988424393865
+      },
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": true,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": false
+      },
+      "seed": 87057,
+      "snapshots": [
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.006672408242356376,
+            "mean_entropy": 2.796943365887273,
+            "mean_eos_probability": 0.0016619437573144602,
+            "mean_true_next_probability": 0.13545253721068828,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0016973070395719936,
+              "Mia": 0.002682281030823741,
+              "Nora": 0.0017170548236129513,
+              "Owen": 0.0005757652613638253
+            }
+          },
+          "gates": null,
+          "language": {
+            "batch_losses": [
+              3.736370801925659,
+              3.376737594604492,
+              3.5661802291870117,
+              3.619130849838257
+            ],
+            "loss": 3.574604868888855,
+            "perplexity": 35.68051954657961,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 9,
+            "exact": 3,
+            "fact_exact": 3,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 1,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -2.5766379656270146,
+                "mean_mass": 0.023470264497577685,
+                "min_margin": -6.267575963400304,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 3,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 3.8590097289416008,
+                "mean_mass": 0.3585418604044728,
+                "min_margin": 0.48781722667627037,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.11869816575199366,
+                "mean_mass": 0.009960016032647822,
+                "min_margin": -3.913091268390417,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.5756128993816674,
+                "mean_mass": 0.07427714037818514,
+                "min_margin": -2.5681325290352106,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 13,
+            "exact": 4,
+            "subgroups": {
+              "active_qa": {
+                "correct": 4,
+                "exact": 0,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 2.2878929855069146,
+                "mean_mass": 0.0058837218450843885,
+                "min_margin": 0.31118119321763515,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 3,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.027627223986201,
+                "mean_mass": 0.39921469512771773,
+                "min_margin": 3.627775783184916,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 3,
+                "exact": 1,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.6950944351265207,
+                "mean_mass": 0.1071173593092232,
+                "min_margin": -1.7639895752072334,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.22712558251805604,
+                "mean_mass": 0.0027657544595892695,
+                "min_margin": -2.914682364789769,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 0
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.002376479044884583,
+            "mean_entropy": 2.610038955346681,
+            "mean_eos_probability": 0.0015491742879708698,
+            "mean_true_next_probability": 0.12678013098409302,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0005424408980351236,
+              "Mia": 0.0011643937623631029,
+              "Nora": 0.000421055698295425,
+              "Owen": 0.0002485887145118604
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": false,
+            "d3": true,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": false
+          },
+          "language": {
+            "batch_losses": [
+              3.890230894088745,
+              3.5214455127716064,
+              3.6969099044799805,
+              3.801759719848633
+            ],
+            "loss": 3.727586507797241,
+            "perplexity": 41.57863725310731,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 8,
+            "exact": 2,
+            "fact_exact": 2,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 0,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -3.4476539528695866,
+                "mean_mass": 0.049284962165566666,
+                "min_margin": -7.680119950324297,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.717938656220213,
+                "mean_mass": 0.11334951385453952,
+                "min_margin": 1.3973500337451696,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.18166225776076317,
+                "mean_mass": 0.012887122927552928,
+                "min_margin": -5.153237298130989,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.47755753993988037,
+                "mean_mass": 0.006333465973014262,
+                "min_margin": -5.051716590300202,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 10,
+            "exact": 2,
+            "subgroups": {
+              "active_qa": {
+                "correct": 3,
+                "exact": 0,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 2.102468623779714,
+                "mean_mass": 0.016703644085337768,
+                "min_margin": -0.9190803989768028,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.475669605657458,
+                "mean_mass": 0.14913323299836725,
+                "min_margin": 2.926624307408929,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.5002025759313256,
+                "mean_mass": 0.010211577905850065,
+                "min_margin": -5.565793437883258,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 1,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.1521715112030506,
+                "mean_mass": 0.0021174701857538617,
+                "min_margin": -1.545246884226799,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 13,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 100
+        }
+      ],
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.002376479044884583,
+          "mean_entropy": 2.610038955346681,
+          "mean_eos_probability": 0.0015491742879708698,
+          "mean_true_next_probability": 0.12678013098409302,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0005424408980351236,
+            "Mia": 0.0011643937623631029,
+            "Nora": 0.000421055698295425,
+            "Owen": 0.0002485887145118604
+          }
+        },
+        "gates": {
+          "binding": {
+            "pilot0": true,
+            "pilot1": true
+          },
+          "continue": false,
+          "d3": true,
+          "dev_order": false,
+          "dev_surface": false,
+          "development_gain": false,
+          "endpoint_pass": false,
+          "language": true,
+          "retention_acquisition": false
+        },
+        "language": {
+          "batch_losses": [
+            3.890230894088745,
+            3.5214455127716064,
+            3.6969099044799805,
+            3.801759719848633
+          ],
+          "loss": 3.727586507797241,
+          "perplexity": 41.57863725310731,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 8,
+          "exact": 2,
+          "fact_exact": 2,
+          "subgroups": {
+            "order0:copy": {
+              "correct": 0,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": -3.4476539528695866,
+              "mean_mass": 0.049284962165566666,
+              "min_margin": -7.680119950324297,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "order0:fact": {
+              "correct": 4,
+              "exact": 2,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 4.717938656220213,
+              "mean_mass": 0.11334951385453952,
+              "min_margin": 1.3973500337451696,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "order1:copy": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.18166225776076317,
+              "mean_mass": 0.012887122927552928,
+              "min_margin": -5.153237298130989,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "order1:fact": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": -0.47755753993988037,
+              "mean_mass": 0.006333465973014262,
+              "min_margin": -5.051716590300202,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            }
+          }
+        },
+        "surface": {
+          "correct": 10,
+          "exact": 2,
+          "subgroups": {
+            "active_qa": {
+              "correct": 3,
+              "exact": 0,
+              "families": 1,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 2.102468623779714,
+              "mean_mass": 0.016703644085337768,
+              "min_margin": -0.9190803989768028,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 1,
+              "ties": 0
+            },
+            "cloze": {
+              "correct": 4,
+              "exact": 2,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 4.475669605657458,
+              "mean_mass": 0.14913323299836725,
+              "min_margin": 2.926624307408929,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "passive_cloze": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.5002025759313256,
+              "mean_mass": 0.010211577905850065,
+              "min_margin": -5.565793437883258,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "passive_qa": {
+              "correct": 1,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.1521715112030506,
+              "mean_mass": 0.0021174701857538617,
+              "min_margin": -1.545246884226799,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            }
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 13,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 100
+      }
+    },
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\runs\\seed_87058_curriculum\\checkpoint_200.pt",
+      "checkpoint_sha256": "69d6ae55ae96367a3fbe59193ce1b647b333ec91ef07df7910c9295030bbd4ef",
+      "completed": 200,
+      "consistency": {
+        "final_consistency_loss": 0.24025081098079681,
+        "final_pair_cosine": 0.759749174118042,
+        "mean_consistency_loss": 0.2698724182943503,
+        "mean_pair_cosine": 0.730127579636044,
+        "mean_weighted_consistency": 0.02698724219161603
+      },
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": true,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": false
+      },
+      "seed": 87058,
+      "snapshots": [
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.007839491795780695,
+            "mean_entropy": 2.807910793228075,
+            "mean_eos_probability": 0.002095643633439892,
+            "mean_true_next_probability": 0.13269910424624154,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0018889631974815524,
+              "Mia": 0.0029714606508496333,
+              "Nora": 0.0022813516559289093,
+              "Owen": 0.0006977163453769641
+            }
+          },
+          "gates": null,
+          "language": {
+            "batch_losses": [
+              3.7511818408966064,
+              3.4004034996032715,
+              3.5899367332458496,
+              3.638371706008911
+            ],
+            "loss": 3.5949734449386597,
+            "perplexity": 36.41473297957166,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 8,
+            "exact": 3,
+            "fact_exact": 3,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 1,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -2.5095002890739124,
+                "mean_mass": 0.030683163741188034,
+                "min_margin": -5.810241937637329,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 3,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 3.899684874457307,
+                "mean_mass": 0.37505341838752354,
+                "min_margin": 0.23685766384005547,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.2349868797173258,
+                "mean_mass": 0.010870726304204187,
+                "min_margin": -2.8232609080150723,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 1,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.7027349306154065,
+                "mean_mass": 0.08743799479245491,
+                "min_margin": -2.443002125248313,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 13,
+            "exact": 5,
+            "subgroups": {
+              "active_qa": {
+                "correct": 4,
+                "exact": 0,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 2.4326052683172747,
+                "mean_mass": 0.01361238378186233,
+                "min_margin": 0.453714850358665,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 3,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.145615820918465,
+                "mean_mass": 0.4145461957706573,
+                "min_margin": 3.8847670945106074,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 3,
+                "exact": 2,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.7722235091496259,
+                "mean_mass": 0.13492641859487983,
+                "min_margin": -2.0381662286818027,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.24051582248648629,
+                "mean_mass": 0.004451776212796053,
+                "min_margin": -3.1103359409607947,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 0
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.0019395782928679495,
+            "mean_entropy": 2.6235080453334376,
+            "mean_eos_probability": 0.0018326892779048296,
+            "mean_true_next_probability": 0.12515666139638437,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.00042695210495513614,
+              "Mia": 0.0009243076014473495,
+              "Nora": 0.0003811151402222934,
+              "Owen": 0.0002072034567476566
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": true,
+            "d3": true,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": true
+          },
+          "language": {
+            "batch_losses": [
+              3.9066321849823,
+              3.539740562438965,
+              3.7016079425811768,
+              3.7977781295776367
+            ],
+            "loss": 3.7364397048950195,
+            "perplexity": 41.94837539109584,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 8,
+            "exact": 2,
+            "fact_exact": 2,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 0,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -3.400898480671458,
+                "mean_mass": 0.04723758992443493,
+                "min_margin": -7.644186183810234,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.672322033438832,
+                "mean_mass": 0.12109529933532508,
+                "min_margin": 1.3093534987419844,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.28952442575246096,
+                "mean_mass": 0.010122667729291901,
+                "min_margin": -4.490304150618613,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.6415909752249718,
+                "mean_mass": 0.007083777900716254,
+                "min_margin": -3.4809731878340244,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 12,
+            "exact": 2,
+            "subgroups": {
+              "active_qa": {
+                "correct": 3,
+                "exact": 0,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 2.1034904620610178,
+                "mean_mass": 0.020497703935663417,
+                "min_margin": -0.8859714139252901,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 4.561637399252504,
+                "mean_mass": 0.1592687752581933,
+                "min_margin": 2.8171654753386974,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 3,
+                "exact": 0,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.583864634623751,
+                "mean_mass": 0.01002198440696337,
+                "min_margin": -5.358734356239438,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.1457329757977277,
+                "mean_mass": 0.002334363902850794,
+                "min_margin": -0.8270371407270432,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 100
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.002425671584052047,
+            "mean_entropy": 2.514964197674999,
+            "mean_eos_probability": 0.0013115739320518436,
+            "mean_true_next_probability": 0.1305781056864006,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0005614817162263863,
+              "Mia": 0.0010259240326547792,
+              "Nora": 0.00044821636531980347,
+              "Owen": 0.00039004952175816787
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": false,
+            "d3": true,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": false
+          },
+          "language": {
+            "batch_losses": [
+              3.988673686981201,
+              3.605853796005249,
+              3.7955853939056396,
+              3.8922338485717773
+            ],
+            "loss": 3.820586681365967,
+            "perplexity": 45.630971309986116,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 8,
+            "exact": 2,
+            "fact_exact": 2,
+            "subgroups": {
+              "order0:copy": {
+                "correct": 0,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -4.520100175635889,
+                "mean_mass": 0.053633227259519495,
+                "min_margin": -7.926331356167793,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order0:fact": {
+                "correct": 4,
+                "exact": 2,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 5.566514206351712,
+                "mean_mass": 0.16004660058388803,
+                "min_margin": 1.874902855604887,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "order1:copy": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.3027834383537993,
+                "mean_mass": 0.008768043043833792,
+                "min_margin": -4.517198033630848,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              },
+              "order1:fact": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": -0.7799466012511402,
+                "mean_mass": 0.012046531328284182,
+                "min_margin": -3.54245731793344,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "surface": {
+            "correct": 13,
+            "exact": 1,
+            "subgroups": {
+              "active_qa": {
+                "correct": 4,
+                "exact": 0,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 2.734413323691115,
+                "mean_mass": 0.008958643420518119,
+                "min_margin": 0.7856910768896341,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "cloze": {
+                "correct": 4,
+                "exact": 1,
+                "families": 2,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 5.658016360364854,
+                "mean_mass": 0.1682811583305308,
+                "min_margin": 3.910494279116392,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 2,
+                "ties": 0
+              },
+              "passive_cloze": {
+                "correct": 3,
+                "exact": 0,
+                "families": 1,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 1.0082948152557947,
+                "mean_mass": 0.01631408951879159,
+                "min_margin": -4.965458186343312,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 1,
+                "ties": 0
+              },
+              "passive_qa": {
+                "correct": 2,
+                "exact": 0,
+                "families": 0,
+                "family_count": 2,
+                "immediate_eos": 0,
+                "mean_margin": 0.09970264486037195,
+                "mean_mass": 0.0022907394646774696,
+                "min_margin": -1.9076398760080338,
+                "n": 4,
+                "pairs": 2,
+                "reversals": 0,
+                "ties": 0
+              }
+            }
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 8,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 200
+        }
+      ],
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.002425671584052047,
+          "mean_entropy": 2.514964197674999,
+          "mean_eos_probability": 0.0013115739320518436,
+          "mean_true_next_probability": 0.1305781056864006,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0005614817162263863,
+            "Mia": 0.0010259240326547792,
+            "Nora": 0.00044821636531980347,
+            "Owen": 0.00039004952175816787
+          }
+        },
+        "gates": {
+          "binding": {
+            "pilot0": true,
+            "pilot1": true
+          },
+          "continue": false,
+          "d3": true,
+          "dev_order": false,
+          "dev_surface": false,
+          "development_gain": false,
+          "endpoint_pass": false,
+          "language": true,
+          "retention_acquisition": false
+        },
+        "language": {
+          "batch_losses": [
+            3.988673686981201,
+            3.605853796005249,
+            3.7955853939056396,
+            3.8922338485717773
+          ],
+          "loss": 3.820586681365967,
+          "perplexity": 45.630971309986116,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 8,
+          "exact": 2,
+          "fact_exact": 2,
+          "subgroups": {
+            "order0:copy": {
+              "correct": 0,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": -4.520100175635889,
+              "mean_mass": 0.053633227259519495,
+              "min_margin": -7.926331356167793,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "order0:fact": {
+              "correct": 4,
+              "exact": 2,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 5.566514206351712,
+              "mean_mass": 0.16004660058388803,
+              "min_margin": 1.874902855604887,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "order1:copy": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.3027834383537993,
+              "mean_mass": 0.008768043043833792,
+              "min_margin": -4.517198033630848,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            },
+            "order1:fact": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": -0.7799466012511402,
+              "mean_mass": 0.012046531328284182,
+              "min_margin": -3.54245731793344,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            }
+          }
+        },
+        "surface": {
+          "correct": 13,
+          "exact": 1,
+          "subgroups": {
+            "active_qa": {
+              "correct": 4,
+              "exact": 0,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 2.734413323691115,
+              "mean_mass": 0.008958643420518119,
+              "min_margin": 0.7856910768896341,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "cloze": {
+              "correct": 4,
+              "exact": 1,
+              "families": 2,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 5.658016360364854,
+              "mean_mass": 0.1682811583305308,
+              "min_margin": 3.910494279116392,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 2,
+              "ties": 0
+            },
+            "passive_cloze": {
+              "correct": 3,
+              "exact": 0,
+              "families": 1,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 1.0082948152557947,
+              "mean_mass": 0.01631408951879159,
+              "min_margin": -4.965458186343312,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 1,
+              "ties": 0
+            },
+            "passive_qa": {
+              "correct": 2,
+              "exact": 0,
+              "families": 0,
+              "family_count": 2,
+              "immediate_eos": 0,
+              "mean_margin": 0.09970264486037195,
+              "mean_mass": 0.0022907394646774696,
+              "min_margin": -1.9076398760080338,
+              "n": 4,
+              "pairs": 2,
+              "reversals": 0,
+              "ties": 0
+            }
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 8,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      }
+    }
+  ],
+  "sacred_accessed": false,
+  "series_status": "10.6M_FACTUAL_SUPERVISION_SERIES_CLOSED"
+}

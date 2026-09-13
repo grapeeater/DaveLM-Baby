@@ -1,0 +1,95 @@
+{
+  "Pilot1 parent": {
+    "items": 192,
+    "correct": 95,
+    "accuracy": 0.4947916666666667,
+    "ties": 0,
+    "families_complete": 0,
+    "families_total": 24,
+    "reversal_pairs": 0,
+    "reversal_both_correct": 0,
+    "reversal_rate": null,
+    "mean_margin": 0.08391453232616186,
+    "binding": {
+      "pilot0_dev": {
+        "n": 80,
+        "answer_exact": 80,
+        "answer_accuracy": 1.0,
+        "BD": 80,
+        "EO": 0,
+        "collapse": 0
+      },
+      "pilot1_dev": {
+        "n": 80,
+        "answer_exact": 80,
+        "answer_accuracy": 1.0,
+        "BD": 80,
+        "EO": 0,
+        "collapse": 0
+      }
+    },
+    "greedy_exact": 0
+  },
+  "Factual": {
+    "items": 192,
+    "correct": 97,
+    "accuracy": 0.5052083333333334,
+    "ties": 0,
+    "families_complete": 0,
+    "families_total": 24,
+    "reversal_pairs": 0,
+    "reversal_both_correct": 0,
+    "reversal_rate": null,
+    "mean_margin": 0.003403881709800771,
+    "binding": {
+      "pilot0_dev": {
+        "n": 80,
+        "answer_exact": 80,
+        "answer_accuracy": 1.0,
+        "BD": 80,
+        "EO": 0,
+        "collapse": 0
+      },
+      "pilot1_dev": {
+        "n": 80,
+        "answer_exact": 80,
+        "answer_accuracy": 1.0,
+        "BD": 80,
+        "EO": 0,
+        "collapse": 0
+      }
+    },
+    "greedy_exact": 74
+  },
+  "Control": {
+    "items": 192,
+    "correct": 97,
+    "accuracy": 0.5052083333333334,
+    "ties": 0,
+    "families_complete": 0,
+    "families_total": 24,
+    "reversal_pairs": 0,
+    "reversal_both_correct": 0,
+    "reversal_rate": null,
+    "mean_margin": -0.021204435219412215,
+    "binding": {
+      "pilot0_dev": {
+        "n": 80,
+        "answer_exact": 80,
+        "answer_accuracy": 1.0,
+        "BD": 80,
+        "EO": 0,
+        "collapse": 0
+      },
+      "pilot1_dev": {
+        "n": 80,
+        "answer_exact": 80,
+        "answer_accuracy": 1.0,
+        "BD": 80,
+        "EO": 0,
+        "collapse": 0
+      }
+    },
+    "greedy_exact": 88
+  }
+}

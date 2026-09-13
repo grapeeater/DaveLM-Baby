@@ -1,0 +1,81 @@
+{
+  "Pilot1_parent": {
+    "alex_correct_count": 4,
+    "mean_first_margin_alex_owen_alex_items": 0.8424511551856995,
+    "mean_first_margin_alex_owen_owen_items": 0.8123810291290283,
+    "mean_ll4_alex_prob": 3.264958104409743e-05,
+    "mean_ll4_margin_alex_owen_alex_items": 1.1952004730701447,
+    "mean_ll4_margin_alex_owen_owen_items": 1.0477021485567093,
+    "mean_ll4_owen_prob": 1.4207267156507442e-05,
+    "mia_correct_count": 4,
+    "n_alex": 4,
+    "n_owen": 4,
+    "nora_correct_count": 0,
+    "owen_correct_count": 1
+  },
+  "SF1_u100": {
+    "alex_correct_count": 4,
+    "mean_first_margin_alex_owen_alex_items": 0.515876293182373,
+    "mean_first_margin_alex_owen_owen_items": 0.2853360176086426,
+    "mean_ll4_alex_prob": 0.3680160604417324,
+    "mean_ll4_margin_alex_owen_alex_items": 0.5044768971856683,
+    "mean_ll4_margin_alex_owen_owen_items": 0.27302087558200583,
+    "mean_ll4_owen_prob": 0.24659453704953194,
+    "mia_correct_count": 4,
+    "n_alex": 4,
+    "n_owen": 4,
+    "nora_correct_count": 4,
+    "owen_correct_count": 0
+  },
+  "SF2_u100": {
+    "alex_correct_count": 4,
+    "mean_first_margin_alex_owen_alex_items": 0.4531373977661133,
+    "mean_first_margin_alex_owen_owen_items": 0.27978038787841797,
+    "mean_ll4_alex_prob": 0.30690693110227585,
+    "mean_ll4_margin_alex_owen_alex_items": 0.4030264226021245,
+    "mean_ll4_margin_alex_owen_owen_items": 0.22437542071565986,
+    "mean_ll4_owen_prob": 0.21171955578029156,
+    "mia_correct_count": 4,
+    "n_alex": 4,
+    "n_owen": 4,
+    "nora_correct_count": 3,
+    "owen_correct_count": 0
+  },
+  "SF2_u200": {
+    "alex_correct_count": 3,
+    "mean_first_margin_alex_owen_alex_items": 0.09542155265808105,
+    "mean_first_margin_alex_owen_owen_items": -0.5111610889434814,
+    "mean_ll4_alex_prob": 0.39558735489845276,
+    "mean_ll4_margin_alex_owen_alex_items": 0.0952061588759534,
+    "mean_ll4_margin_alex_owen_owen_items": -0.5163732648070436,
+    "mean_ll4_owen_prob": 0.484449777752161,
+    "mia_correct_count": 4,
+    "n_alex": 4,
+    "n_owen": 4,
+    "nora_correct_count": 4,
+    "owen_correct_count": 4
+  },
+  "SF2_u200_cell_midpoints_alex_owen_margin": {
+    "small drum|carried": {
+      "alex_item_margin": 0.17810168687719852,
+      "midpoint": -0.12470901943743229,
+      "owen_item_margin": -0.4275197257520631
+    },
+    "small drum|found": {
+      "alex_item_margin": 0.04860193468630314,
+      "midpoint": -0.28732746944297105,
+      "owen_item_margin": -0.6232568735722452
+    },
+    "wooden boat|carried": {
+      "alex_item_margin": -0.030072169145569205,
+      "midpoint": -0.32133154303301126,
+      "owen_item_margin": -0.6125909169204533
+    },
+    "wooden boat|found": {
+      "alex_item_margin": 0.18419318308588117,
+      "midpoint": -0.10896617994876578,
+      "owen_item_margin": -0.40212554298341274
+    }
+  },
+  "checkpoint_sparsity_note": "Only checkpoints Pilot1(=SF2u0), SF1u100, SF2u100, SF2u200 exist and were used. SF2 has no finer temporal resolution (rolling restart.pt only holds the final state); intra-100-update boundary movement is not resolvable from existing artifacts."
+}

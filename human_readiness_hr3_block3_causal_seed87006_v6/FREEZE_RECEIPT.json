@@ -1,0 +1,18 @@
+{
+  "bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v6",
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "60cd6a600b1dd03bedd274084b8eb007e0ce7c5b2e7a4b80546e8e8d06442ca0",
+  "mechanical_completion_only": true,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "predecessor_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v5",
+  "predecessor_receipt_sha256": "c59524b964f74f7c00b6de9cb9607821a745a36e9296d8ae175a7659fea0bd36",
+  "protocol_sha256": "62f120973f92508b015830cf7a84a445369900660339c9f7ce268d6f12da4e68",
+  "readiness_dev_receipt_sha256": "7004430a38c4f6562eb50bef6a51e893a08b1300dab44f99361b803fd509e85b",
+  "sacred_accessed": false,
+  "sha256sums_sha256": "051ebf3060efa2ed1bd71eeb2c8064b9f9af4498e5f95d06e39f75ce2ac9ab1b",
+  "status": "HR3_BLOCK3_PREFLIGHT_PASS",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

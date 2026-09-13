@@ -1,0 +1,9 @@
+{
+  "algorithm": "fixed semantic family list plus deterministic generation-prompt shuffle using Python random.Random(87010); answer keys are derived from rendered factual prompt semantics",
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "model_behavior_accessed": false,
+  "outcome_blind": true,
+  "sacred_accessed": false,
+  "seed": 87010
+}

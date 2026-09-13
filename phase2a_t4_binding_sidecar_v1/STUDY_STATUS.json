@@ -1,0 +1,46 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T4_BINDING_SIDECAR_V1",
+  "study_classification": "T4_FAIL_NO_ROUTING",
+  "runs": {
+    "630001": {
+      "seed": 630001,
+      "update": 500,
+      "classification": "T4_FAIL_NO_ROUTING",
+      "test_opened": false,
+      "t3_test_loaded": false,
+      "dev_loc": 64,
+      "dev_native": 62,
+      "dev_exact": 0,
+      "dev_ce": 1.2040123894810677,
+      "base_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+    },
+    "630002": {
+      "seed": 630002,
+      "update": 500,
+      "classification": "T4_FAIL_NO_ROUTING",
+      "test_opened": false,
+      "t3_test_loaded": false,
+      "dev_loc": 64,
+      "dev_native": 62,
+      "dev_exact": 0,
+      "dev_ce": 1.2040123894810677,
+      "base_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+    },
+    "630003": {
+      "seed": 630003,
+      "update": 500,
+      "classification": "T4_FAIL_NO_ROUTING",
+      "test_opened": false,
+      "t3_test_loaded": false,
+      "dev_loc": 64,
+      "dev_native": 64,
+      "dev_exact": 0,
+      "dev_ce": 1.2040123894810677,
+      "base_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+    }
+  },
+  "test_opened": false
+}

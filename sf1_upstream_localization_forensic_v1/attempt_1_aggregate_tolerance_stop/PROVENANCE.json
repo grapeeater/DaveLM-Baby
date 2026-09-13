@@ -1,0 +1,91 @@
+{
+  "architecture": {
+    "P": {
+      "base": "DaveLMV082",
+      "blocks": 8,
+      "context_size": 256,
+      "embedding_shape": [
+        1024,
+        320
+      ],
+      "final_norm": "ExplicitLayerNorm",
+      "head_shape": [
+        1024,
+        320
+      ],
+      "input_output_tied_object": false,
+      "input_output_tied_storage": false,
+      "language_head": "Linear",
+      "position_shape": [
+        256,
+        320
+      ],
+      "t13_auxiliary_parameters": [
+        "localizer.u",
+        "localizer.q",
+        "localizer.bs",
+        "localizer.ba",
+        "wq.weight",
+        "wk.weight",
+        "wv.weight",
+        "wo.weight"
+      ],
+      "wrapper": "Treatment13Model"
+    },
+    "S": {
+      "base": "DaveLMV082",
+      "blocks": 8,
+      "context_size": 256,
+      "embedding_shape": [
+        1024,
+        320
+      ],
+      "final_norm": "ExplicitLayerNorm",
+      "head_shape": [
+        1024,
+        320
+      ],
+      "input_output_tied_object": false,
+      "input_output_tied_storage": false,
+      "language_head": "Linear",
+      "position_shape": [
+        256,
+        320
+      ],
+      "t13_auxiliary_parameters": [
+        "localizer.u",
+        "localizer.q",
+        "localizer.bs",
+        "localizer.ba",
+        "wq.weight",
+        "wk.weight",
+        "wv.weight",
+        "wo.weight"
+      ],
+      "wrapper": "Treatment13Model"
+    },
+    "ordinary_language_execution_graph": [
+      "token_embedding + position_embedding",
+      "embedding_dropout",
+      "block_0.norm1->attention->residual; norm2->MLP->residual",
+      "block_1.norm1->attention->residual; norm2->MLP->residual",
+      "block_2.norm1->attention->residual; norm2->MLP->residual",
+      "block_3.norm1->attention->residual; norm2->MLP->residual",
+      "block_4.norm1->attention->residual; norm2->MLP->residual",
+      "block_5.norm1->attention->residual; norm2->MLP->residual",
+      "block_6.norm1->attention->residual; norm2->MLP->residual",
+      "block_7.norm1->attention->residual; norm2->MLP->residual",
+      "final_norm",
+      "untied language_head"
+    ],
+    "t13_role": "Treatment13Model registers a final_norm hook and invokes localizer/wq/wk/wv/wo only in its specialized forward(input_ids,qpos,anspos). All authorized factual, D3, and language endpoints call base_model directly; T13 localization/retrieval parameters are registered but inactive in these interventions."
+  },
+  "inputs": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\TRAIN.json": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\data\\ENGLISH_DEV.jsonl": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  }
+}

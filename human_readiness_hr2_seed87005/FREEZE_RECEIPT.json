@@ -1,0 +1,10 @@
+{
+  "seed": 87005,
+  "version": "HR-2",
+  "status": "HR2_READY_FOR_EXECUTION",
+  "manifest_sha256": "dd5d377528ffb891eb68d595af48b69454a1db6658f1e65d1715b521c73f4a43",
+  "final_battery_accessed": false,
+  "sha256sums_sha256": "e03455926142f0efec29a6e632221f1fa59042915b37c7baba080b5f92fa3c18",
+  "optimizer_updates": 0,
+  "parent_sha256": "468035373a74b6bf501ac6654c25d101a4cdf361e076e3b681c15bf71b4d3e8e"
+}

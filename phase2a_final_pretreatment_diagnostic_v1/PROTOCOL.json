@@ -1,0 +1,20 @@
+{
+  "autograd": false,
+  "checkpoints": {
+    "U0_Phase1G_U6000": {
+      "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+      "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+    },
+    "U100_T2": {
+      "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase2a_t2_ctxbind_v1_run_seed610005\\checkpoints\\checkpoint_0100.pt",
+      "sha256": "83428b4e60a97385359be19d4d8312998bfd27d668480d6c4e3790d2489fdd42"
+    }
+  },
+  "locked_material": "T2-EVAL-TEST, transfer/copy panels, FINAL, sacred unopened/unscored",
+  "optimizer": false,
+  "position": "final unpadded prompt token; causal state predicting first answer token",
+  "primary": "family-disjoint ridge per actual block/final_norm; 12 train families, 4 test; twins together",
+  "secondary": "one fixed quadratic ridge on final_norm after linear null; shuffled labels control",
+  "status": "FROZEN_READ_ONLY_PHASE2A_FINAL_PRETREATMENT_DIAGNOSTIC",
+  "training": false
+}

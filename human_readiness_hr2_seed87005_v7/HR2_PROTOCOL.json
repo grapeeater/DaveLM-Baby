@@ -1,0 +1,37 @@
+{
+  "version": "HR-2",
+  "seed": 87005,
+  "parent": "HR1_PARENT.pt",
+  "parent_sha256": "468035373a74b6bf501ac6654c25d101a4cdf361e076e3b681c15bf71b4d3e8e",
+  "tokenizer_path": "C:\\\\DaveLM-v0.9\\\\tokenizer\\\\v0_7\\\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "updates": 500,
+  "english_updates": 450,
+  "binding_updates": 50,
+  "cadence": "9 English then 1 binding x 50",
+  "english_schedule_sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+  "binding_schedule_sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+  "objective": "full-vocabulary causal CE + recent-token unlikelihood weight 0.10 on previous 8 positions during English; established T13 answer CE + hard-min localization during binding",
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5E-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1E-08,
+    "weight_decay": 0.05
+  },
+  "clip_norm": 2.0,
+  "english_scope": "embeddings, positions, blocks 4-7, final norm, language head; blocks 0-3 and localization/retrieval frozen",
+  "binding_scope": "full established T13 scope",
+  "dev_points": [
+    0,
+    100,
+    500
+  ],
+  "final_battery_accessed": false,
+  "parent_path": "C:\\DaveLM-CADAVER\\human_readiness_hr2_seed87005_v7\\HR1_PARENT.pt",
+  "binding_pool_path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+  "binding_pool_sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+}

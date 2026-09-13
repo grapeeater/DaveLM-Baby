@@ -1,0 +1,34 @@
+{
+  "status": "PILOT1_PRETREATMENT_PASS",
+  "optimizer_created": false,
+  "optimizer_steps": 0,
+  "retention_evaluated": false,
+  "canonical_checkpoint_sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "language_train_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "language_dev_sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+  "binding_rehearsal_sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+  "binding_dev_sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+  "schedule": "9 language then 1 binding, repeated for exactly 1000 updates",
+  "protected_language_blocks": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "language_gradient_scope": {
+    "block0_zero": true,
+    "block3_zero": true,
+    "block4_nonzero": true,
+    "language_head_nonzero": true,
+    "localizer_zero": true,
+    "retrieval_zero": true
+  },
+  "binding_gradient_scope": {
+    "block0_nonzero": true,
+    "block3_nonzero": true,
+    "block4_nonzero": true,
+    "localizer_nonzero": true,
+    "retrieval_nonzero": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "audit": "sf2_residual_item_autopsy_v1",
+  "date": "2026-09-07",
+  "mode": "read-only; no training, no checkpoint modification, no locked/FINAL/sacred access; no SF3 design",
+  "inputs": {
+    "sf2_run_dir": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2",
+    "sf2_run_outputs": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run",
+    "sf1_bundle": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011",
+    "sf1_run": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run",
+    "parent_ckpt": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "checkpoints_used": {
+      "Pilot1_parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "SF1_u100": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt",
+      "SF2_u100": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+      "SF2_u200": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_200.pt"
+    },
+    "schedule": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\SCHEDULE.json (identical for SF1 and SF2 runs)",
+    "train_records": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\TRAIN.json (16 authorized records only)",
+    "raw_outputs_used": [
+      "single_fact_acquisition_sf1_seed87011_run\\update0_acquisition_RAW.jsonl",
+      "single_fact_acquisition_sf1_seed87011_run\\update100_acquisition_RAW.jsonl",
+      "sf2_kl_parent_retention_run_v2\\run\\update0_acquisition_RAW.jsonl",
+      "sf2_kl_parent_retention_run_v2\\run\\update100_acquisition_RAW.jsonl",
+      "sf2_kl_parent_retention_run_v2\\run\\update200_acquisition_RAW.jsonl"
+    ]
+  },
+  "source_hashes": {
+    "parent_ckpt_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "sf1_ckpt_100_sha256": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "sf2_ckpt_100_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "sf2_ckpt_200_sha256": "1710a183c757da9d9b2b1deaaced1a49898c91c0ffaf3e3227af8cdb44a9c28d",
+    "train_json_sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+    "schedule_json_sha256": "91dad3510e7997b0d55ab53e6189db9337857d582c9399a720723412f70a7ab6",
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "venv": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv"
+  },
+  "notes": [
+    "ITEM_TRAJECTORIES.jsonl and OUTPUT_PATH_ANALYSIS.json were produced by READ-ONLY eval-mode forward passes on the four authorized checkpoints using base_model only (no T13 path, no optimizer, no grad, no weight writes).",
+    "SF2 u0 weights are identical to the Pilot1 parent (KL==0 baseline verified in the SF2 run), so Pilot1-parent measurements serve as the SF2-u0 trajectory point.",
+    "SF2's frozen classification SF2_ACQUISITION_FAIL is preserved and not reinterpreted.",
+    "No locked transfer/copy/competing-name panel, FINAL, or sacred material was opened; no architecture or checkpoint was modified."
+  ]
+}

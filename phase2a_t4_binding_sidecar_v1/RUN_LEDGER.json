@@ -1,0 +1,20 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study_classification": "T4_FAIL_NO_ROUTING",
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "u500_checkpoint_sha256": {
+    "630001": "356a340432f5a79ee193d1a20f87e301d688c88ef624fa42509baa1a903eaf55",
+    "630002": "bedb8b3505ed9c634583212a90ae1b9f60d0a006ce1e177cdbc9250b65ba8b00",
+    "630003": "ec5d736662d6355b3286c08c016159ba6451f6826b1f2aec8451ab817dd67597"
+  },
+  "runs": {
+    "630001": {"classification": "T4_FAIL_NO_ROUTING", "loc": 64, "native": 62, "dev_ce": 1.2040123894810677, "base_intact": true},
+    "630002": {"classification": "T4_FAIL_NO_ROUTING", "loc": 64, "native": 62, "dev_ce": 1.2040123894810677, "base_intact": true},
+    "630003": {"classification": "T4_FAIL_NO_ROUTING", "loc": 64, "native": 64, "dev_ce": 1.2040123894810677, "base_intact": true}
+  },
+  "weight_check": "same_base true; same_bind false; bind max abs delta ~0.013 across seeds; not a no-update failure",
+  "next_treatment": "phase2a_t5_latebase_binding_v1",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

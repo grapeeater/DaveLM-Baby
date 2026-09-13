@@ -1,0 +1,26 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T3_REBUILT_EXPLICIT_REPRESENTATION_FORMING_V1",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "checkpoint_loaded": false,
+  "optimizer_created": false,
+  "training_performed": false,
+  "locked_material_accessed": false,
+  "test_opened": false,
+  "file_sha256": {
+    "PROTOCOL.json": "9bed5cce873a98960e313a8d14c9731ae294b6ea9e0f923f7cdd8e827de73345",
+    "DECISION_LEDGER.md": "6b44e7f184c481cd39383c9d07c79e7f55276f5f2e908bace31c13c8add9004c",
+    "BUILD_T3_BUNDLE.py": "70620151b478bb2e6548e27bcf394a62b548f8574e5e1aa009c25d4eda2840d9",
+    "T3_RUNNER.py": "9dc9a500994395e3320459da3a9fbbfded9c75b49ef1f72a9118a250a1b8729d",
+    "qa_train.jsonl": "343d99f06374739e1c0ff420a431f6d50e9696c807ed38666d34bf363b84c7af",
+    "qa_dev.jsonl": "309f55dec7057b39b2972034e1f62753fc4edae989679c5f0d4fed85d2a25f99",
+    "qa_test.jsonl": "6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb",
+    "acq16.json": "af054f3b90e46edd71107c1baffb92a8b75c3ebd3cc714829d62c3f0795824b3",
+    "panels.json": "2d9e6d9a90b43974bcae1dc9b6d568281b7f66ce074731b328d73b9324504535",
+    "update_kinds.json": "69d9f6a9d56acfbad9bf9daca0409cde85a799c75da86c7592ed6041509b739d",
+    "qa_schedules.json": "d04d98633b54168e8caf1684a5802f56d301c4574f4a1d316be08c3cbcbaf3f5",
+    "rehearsal_index.json": "8f83019b8afda0a768a49938cbbbda21f88f2e0d7e5d6d2af3294749cc9a36f4",
+    "audits.json": "91764054774b25d40ebcb51d809e4cca4cd5feb1001046360c5678bfcecc74a3",
+    "TEST_SEAL.json": "d5b58f48306603090f095cb23d1a324638f0b8601fd617667227ffee58db7948"
+  }
+}

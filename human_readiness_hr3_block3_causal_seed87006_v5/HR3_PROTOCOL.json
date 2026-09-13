@@ -1,0 +1,145 @@
+{
+  "data": {
+    "binding_dev_pools": {
+      "pilot0": "data/binding_dev_pilot0.json",
+      "pilot1": "data/binding_dev_pilot1.json"
+    },
+    "binding_rehearsal": "data/binding_rehearsal.json",
+    "binding_schedule": "data/BINDING_SCHEDULE.json",
+    "english_dev": "data/ENGLISH_DEV.jsonl",
+    "english_schedule": "data/ENGLISH_SCHEDULE.json",
+    "english_train": "data/ENGLISH_TRAIN.jsonl"
+  },
+  "evaluation": {
+    "binding_each_pool": "answer >=76/80; BOTH_DISTINCT >=76/80; slot collapse = 0 independently on both pools",
+    "checkpoint_selection": "earliest among updates 100, 250, 500 that passes all frozen machine readiness and binding gates; final readiness eligibility additionally requires the frozen blinded review. No post-hoc selection.",
+    "human_review_gates": "two blinded reviewers must independently mark at least 14/20 complete, 14/20 relevant, and 12/20 both complete and relevant; disagreement fails the affected item. Raw outputs are retained; human review is required before a HUMAN_TEST_READY claim.",
+    "readiness_dev": "frozen prospective v2 only; FINAL is sealed and never opened",
+    "readiness_machine_gates": {
+      "aligned_tinystories_loss_max": 3.25,
+      "continuity_correct_min": "10/12",
+      "continuity_greedy_exact_min": "9/12",
+      "fact_complete_families_min": "4/6",
+      "fact_correct_min": "20/24",
+      "fact_greedy_exact_min": "18/24",
+      "fact_reversal_pairs_min": "10/12",
+      "generation_automatic_non_degenerate_min": "16/20",
+      "generation_non_immediate_eos_min": "16/20",
+      "instruction_correct_min": "10/12",
+      "instruction_greedy_exact_min": "9/12"
+    },
+    "training_diagnostics_at_updates": [
+      0,
+      100,
+      250,
+      500
+    ]
+  },
+  "frozen_payload_hashes": {
+    "data/BINDING_SCHEDULE.json": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+    "data/CORPUS_MANIFEST.json": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708",
+    "data/ENGLISH_DEV.jsonl": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "data/ENGLISH_SCHEDULE.json": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+    "data/ENGLISH_TRAIN.jsonl": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+    "data/PILOT1_MATERIAL_MANIFEST.json": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2",
+    "data/PILOT1_TRAINING_SPEC.json": "0f731ffde8dcd924e174a3b0b910d125311651b682bef5c6e80107606a18c680",
+    "data/binding_dev_pilot0.json": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+    "data/binding_dev_pilot1.json": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+    "data/binding_rehearsal.json": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+    "sources/CAUSAL_ALIGNED_TRAIN_REFERENCE.py": "cae950446c1fa0aae0a57982149b7127d3225f2916494d51903672b2bf8e0acd",
+    "sources/EVALUATE_HR3.py": "3b55e0aebaea9cc9d65f45c7d549f80ed07277612e968639df595bd1109a5762",
+    "sources/PINNED_PILOT1_BINDING_IMPLEMENTATION.py": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+    "sources/PREFLIGHT_VALIDATOR.py": "c5adcaf017233e9538b8ec1f7b8c594b71023af518cf54ea1101882e37977861",
+    "sources/TRAIN_HR3.py": "8d8561b488329e8757e42b7980b9f141be775d8c6e9e23b3c918733cd04d359a",
+    "sources/hr3_block3_runtime.py": "a4562728fd7bdb33c483350f4052941e71c9335b7bcbc25b56996ad44e08a8df",
+    "sources/treatment13_config.py": "eb3a87f99ff23011a381dcffc52a530a7a654e7d130fe6d4a6e3c76067949e2e",
+    "sources/treatment13_model.py": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70"
+  },
+  "hypothesis": "Allowing exactly transformer block 3 to adapt during English updates may improve contextual-language acquisition relative to the corrected aligned HR-1 protected scope, while binding rehearsal protects established T13 behavior.",
+  "mechanical_completion": {
+    "accepted_predecessor_protocol_sha256": "1fa2b8fa2268c8870cb28a4dc7b138ba2875226c9f552442ff67f301d2e7d281",
+    "correction": "restore_rng moves saved torch_rng_cpu back to CPU before torch.set_rng_state.",
+    "predecessor": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v4",
+    "predecessor_receipt_sha256": "3a14257e7c6ef6764e2964e2882e7253cf41ccb454220af7b6a29ae9a8c409fa",
+    "reason": "v4 resume loaded CPU RNG state through map_location=cuda; torch.set_rng_state requires a CPU byte tensor.",
+    "scientific_specification_changed": false
+  },
+  "parent_path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_rationale": "Pilot 1 is the only defensible language parent: it has direct language-acquisition evidence and passed both nonsacred binding pools. The aligned HR-1 descendant is an evaluation baseline, not a parent, because it did not meet contextual behavior criteria.",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "preflight_constraints": {
+    "checkpoint_loaded": false,
+    "final_accessed": false,
+    "optimizer_created": false,
+    "optimizer_updates": 0,
+    "sacred_accessed": false
+  },
+  "readiness_dev": {
+    "final_accessed_during_construction": false,
+    "path": "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010",
+    "receipt_sha256": "7004430a38c4f6562eb50bef6a51e893a08b1300dab44f99361b803fd509e85b",
+    "receipt_status": "FROZEN_PROSPECTIVE_READINESS_DEV_V2"
+  },
+  "scientific_delta_from_corrected_aligned_hr1": "English updates newly train block 3. Blocks 0-2 remain frozen; all other data, objective, schedule, optimizer, cadence, runtime, binding rehearsal, and gates are byte-for-byte inherited.",
+  "source_predecessor": {
+    "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1",
+    "receipt_sha256": "69a98108c093c712d2871a20392bb3a64dea440a4ba52ca02372aa3a88aa81df",
+    "receipt_status": "CAUSAL_ALIGNMENT_PREFLIGHT_PASS_NO_TRAINING"
+  },
+  "status": "HR3_BLOCK3_PROSPECTIVE_PROTOCOL",
+  "stopping": {
+    "if_no_checkpoint_passes": "preserve and classify as failed bounded scope treatment; diagnose before another treatment",
+    "no_adaptive_hyperparameter_or_scope_change": true,
+    "no_final_access": true,
+    "no_sacred_access": true,
+    "stop_on_binding_failure": true,
+    "stop_on_integrity_or_provenance_failure": true
+  },
+  "tokenizer_path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "training": {
+    "binding_batch_size": 32,
+    "binding_scope": "full established T13 trainable scope restored every tenth update",
+    "binding_updates": 50,
+    "cadence": "50 cycles of nine literal English updates followed by one literal binding update",
+    "english_batch_size": 64,
+    "english_scope": "train token embeddings, positional embeddings, transformer blocks 3-7, final normalization, language head; freeze transformer blocks 0-2 and specialized localizer/retrieval parameters",
+    "english_updates": 450,
+    "gradient_clip_norm": 2.0,
+    "objective": {
+      "binding": "exact pinned Pilot-1 answer causal CE + LAM 1.0536573711078283 times hard-min permutation-invariant localization loss",
+      "english": "z=[BOS=2]+content+[EOS=3]; x=z[:-1], y=z[1:] at the same positions; mean full-vocabulary CE over every content target and final EOS, padded labels=-100"
+    },
+    "optimizer": {
+      "amsgrad": false,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": false,
+      "fused": false,
+      "lr": 5e-05,
+      "scheduler": null,
+      "state": "one fresh optimizer persists continuously across all 500 updates",
+      "type": "AdamW",
+      "weight_decay": 0.05
+    },
+    "runtime": {
+      "autocast": false,
+      "data_loader_shuffle": false,
+      "deterministic_algorithms": true,
+      "device": "cuda",
+      "float32": true,
+      "num_workers": 0,
+      "python": "3.12",
+      "python_bytecode": "PYTHONDONTWRITEBYTECODE=1 and python -B are required for all frozen-bundle execution, validation, training, and evaluation commands",
+      "tf32": false,
+      "tokenizers": "0.23.1",
+      "torch": "2.12.0+rocm7.14.0"
+    },
+    "seed": 87006,
+    "updates": 500
+  },
+  "version": "HR-3-block3-causal-v5"
+}

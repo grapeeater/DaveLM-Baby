@@ -1,0 +1,216 @@
+{
+  "checkpoint": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "family": "fact:F01",
+  "losses": {
+    "scheduled_sentence_ce": 3.301978826522827,
+    "factual_answer_nll": 7.311526298522949,
+    "factual_pair_logistic": 0.9343763589859009,
+    "scheduled_binding_objective": 0.020290663465857506
+  },
+  "gradient_norms": {
+    "scheduled_sentence_ce": {
+      "token_embedding": 0.03570101782679558,
+      "position_embedding": 0.03668983653187752,
+      "block_0": 0.7350175380706787,
+      "block_1": 0.6255533695220947,
+      "block_2": 0.8172932267189026,
+      "block_3": 1.1327714920043945,
+      "block_4": 0.8567082285881042,
+      "block_5": 0.8161565661430359,
+      "block_6": 0.7151255011558533,
+      "block_7": 0.6862577199935913,
+      "final_norm": 0.06771903485059738,
+      "language_head": 1.0164086818695068,
+      "specialized": 0.0
+    },
+    "factual_answer_nll": {
+      "token_embedding": 0.5428948998451233,
+      "position_embedding": 0.5202739238739014,
+      "block_0": 7.64993953704834,
+      "block_1": 6.852470397949219,
+      "block_2": 10.300057411193848,
+      "block_3": 13.742321014404297,
+      "block_4": 10.368587493896484,
+      "block_5": 10.213747024536133,
+      "block_6": 9.349626541137695,
+      "block_7": 7.538520812988281,
+      "final_norm": 0.6427993178367615,
+      "language_head": 9.263063430786133,
+      "specialized": 0.0
+    },
+    "factual_pair_logistic": {
+      "token_embedding": 0.9998345375061035,
+      "position_embedding": 0.9708232879638672,
+      "block_0": 14.298047065734863,
+      "block_1": 14.161904335021973,
+      "block_2": 22.171207427978516,
+      "block_3": 29.01451301574707,
+      "block_4": 21.73990821838379,
+      "block_5": 20.993701934814453,
+      "block_6": 19.134737014770508,
+      "block_7": 15.004133224487305,
+      "final_norm": 0.9335927367210388,
+      "language_head": 16.40634536743164,
+      "specialized": 0.0
+    },
+    "scheduled_binding_objective": {
+      "token_embedding": 0.005507301073521376,
+      "position_embedding": 0.0037290959153324366,
+      "block_0": 0.07987327873706818,
+      "block_1": 0.08250344544649124,
+      "block_2": 0.102386973798275,
+      "block_3": 0.12117184698581696,
+      "block_4": 0.10243763029575348,
+      "block_5": 0.11235696822404861,
+      "block_6": 0.10914085060358047,
+      "block_7": 0.12336480617523193,
+      "final_norm": 0.020413026213645935,
+      "language_head": 0.49470943212509155,
+      "specialized": 0.22922058403491974
+    }
+  },
+  "cosine_with_pair_logistic_gradient": {
+    "scheduled_sentence_ce": {
+      "token_embedding": -0.06325878947973251,
+      "position_embedding": 0.0157304760068655,
+      "block_0": 0.016928868368268013,
+      "block_1": 0.036700062453746796,
+      "block_2": 0.07313595712184906,
+      "block_3": 0.1129281222820282,
+      "block_4": 0.10854030400514603,
+      "block_5": 0.038007304072380066,
+      "block_6": 0.03141395375132561,
+      "block_7": 0.07081149518489838,
+      "final_norm": 0.09489035606384277,
+      "language_head": 0.023238256573677063,
+      "specialized": null
+    },
+    "scheduled_binding_objective": {
+      "token_embedding": 0.08572947978973389,
+      "position_embedding": 0.016908954828977585,
+      "block_0": 0.041392236948013306,
+      "block_1": -0.03098263218998909,
+      "block_2": -0.05224260687828064,
+      "block_3": -0.06494106352329254,
+      "block_4": -0.06245216354727745,
+      "block_5": -0.01374970655888319,
+      "block_6": 0.01638496108353138,
+      "block_7": 0.01935172639787197,
+      "final_norm": 0.13344164192676544,
+      "language_head": 1.0354866390116513e-05,
+      "specialized": null
+    },
+    "factual_answer_nll": {
+      "token_embedding": 0.3440161347389221,
+      "position_embedding": 0.3179173469543457,
+      "block_0": 0.27268069982528687,
+      "block_1": 0.2390466332435608,
+      "block_2": 0.22964182496070862,
+      "block_3": 0.21043668687343597,
+      "block_4": 0.24026137590408325,
+      "block_5": 0.2242465615272522,
+      "block_6": 0.14696431159973145,
+      "block_7": 0.11054384708404541,
+      "final_norm": -0.12405851483345032,
+      "language_head": -0.1722259819507599,
+      "specialized": null
+    }
+  },
+  "assignment_hidden_contrasts": [
+    {
+      "query": 0,
+      "layers": {
+        "block_0": {
+          "relative_l2": 0.012397127225995064,
+          "cosine": 0.9999231696128845
+        },
+        "block_1": {
+          "relative_l2": 0.02165037952363491,
+          "cosine": 0.9997702836990356
+        },
+        "block_2": {
+          "relative_l2": 0.011158964596688747,
+          "cosine": 0.9999387264251709
+        },
+        "block_3": {
+          "relative_l2": 0.01018758025020361,
+          "cosine": 0.9999482035636902
+        },
+        "block_4": {
+          "relative_l2": 0.026497075334191322,
+          "cosine": 0.9997138381004333
+        },
+        "block_5": {
+          "relative_l2": 0.08512450009584427,
+          "cosine": 0.9968283176422119
+        },
+        "block_6": {
+          "relative_l2": 0.12206374108791351,
+          "cosine": 0.9935322403907776
+        },
+        "block_7": {
+          "relative_l2": 0.11098354309797287,
+          "cosine": 0.9939682483673096
+        },
+        "final_norm": {
+          "relative_l2": 0.10738114267587662,
+          "cosine": 0.9942330121994019
+        },
+        "logits": {
+          "relative_l2": 0.04212745279073715,
+          "cosine": 0.9992238879203796
+        }
+      }
+    },
+    {
+      "query": 1,
+      "layers": {
+        "block_0": {
+          "relative_l2": 0.01244503352791071,
+          "cosine": 0.9999229311943054
+        },
+        "block_1": {
+          "relative_l2": 0.021564368158578873,
+          "cosine": 0.9997712969779968
+        },
+        "block_2": {
+          "relative_l2": 0.011055589653551579,
+          "cosine": 0.9999389052391052
+        },
+        "block_3": {
+          "relative_l2": 0.010271484963595867,
+          "cosine": 0.999947726726532
+        },
+        "block_4": {
+          "relative_l2": 0.028370825573801994,
+          "cosine": 0.9996940493583679
+        },
+        "block_5": {
+          "relative_l2": 0.08835326880216599,
+          "cosine": 0.9965749382972717
+        },
+        "block_6": {
+          "relative_l2": 0.12144170701503754,
+          "cosine": 0.9935113787651062
+        },
+        "block_7": {
+          "relative_l2": 0.16481173038482666,
+          "cosine": 0.9870976805686951
+        },
+        "final_norm": {
+          "relative_l2": 0.15712356567382812,
+          "cosine": 0.9876519441604614
+        },
+        "logits": {
+          "relative_l2": 0.06759122014045715,
+          "cosine": 0.9978574514389038
+        }
+      }
+    }
+  ],
+  "weights_bitwise_unchanged": true,
+  "checkpoint_hash_unchanged": true,
+  "optimizer_created": false,
+  "note": "All-parameter eval-mode derivative diagnostics. Protected groups were enabled for differentiation only; no optimizer or .grad accumulation. Gradients are local derivatives, not AdamW update predictions."
+}

@@ -1,0 +1,23 @@
+{
+  "accepted_predecessor_protocol_sha256s": [
+    "62f120973f92508b015830cf7a84a445369900660339c9f7ce268d6f12da4e68",
+    "bc517e33a68b813adfbb666785c94d2ab92d2d683244f33a3d77731d43d92b23",
+    "1fa2b8fa2268c8870cb28a4dc7b138ba2875226c9f552442ff67f301d2e7d281"
+  ],
+  "bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v7",
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "ea714d991ec9b50c7708253f7516d3cf596c4ccb185e3a745132be683833e5b8",
+  "mechanical_completion_only": true,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "predecessor_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v6",
+  "predecessor_receipt_sha256": "0c679de9d32aeac911f8246a75ebb9a437b1dadf1b5347948aa4f18c9773dd8e",
+  "protocol_sha256": "796134ce03f3ff4ff0ad74a288ceed9a378aa5680d0991d7ebfc4f157a4ec9fc",
+  "readiness_dev_receipt_sha256": "7004430a38c4f6562eb50bef6a51e893a08b1300dab44f99361b803fd509e85b",
+  "sacred_accessed": false,
+  "sha256sums_sha256": "a72caa6f52230b43f14015a59b94a26bb0d1267d569b3ec857e9f224625332e3",
+  "status": "HR3_BLOCK3_PREFLIGHT_PASS",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

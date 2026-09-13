@@ -1,0 +1,819 @@
+Lily found a red ball. Lily looked at the red ball.
+Lily found a red ball. Lily carried the red ball.
+Lily found a red ball. Lily found the red ball.
+Lily found a blue ball. Lily played with the blue ball.
+Lily found a blue ball. Lily carried the blue ball.
+Lily found a blue ball. Lily found the blue ball.
+Lily found a green ball. Lily played with the green ball.
+Lily found a green ball. Lily looked at the green ball.
+Lily found a green ball. Lily found the green ball.
+Lily found a yellow ball. Lily played with the yellow ball.
+Lily found a yellow ball. Lily looked at the yellow ball.
+Lily found a yellow ball. Lily carried the yellow ball.
+Lily found a red book. Lily played with the red book.
+Lily found a red book. Lily looked at the red book.
+Lily found a red book. Lily carried the red book.
+Lily found a red book. Lily found the red book.
+Lily found a blue book. Lily looked at the blue book.
+Lily found a blue book. Lily carried the blue book.
+Lily found a blue book. Lily found the blue book.
+Lily found a green book. Lily played with the green book.
+Lily found a green book. Lily carried the green book.
+Lily found a green book. Lily found the green book.
+Lily found a yellow book. Lily played with the yellow book.
+Lily found a yellow book. Lily looked at the yellow book.
+Lily found a yellow book. Lily found the yellow book.
+Lily found a red toy. Lily played with the red toy.
+Lily found a red toy. Lily looked at the red toy.
+Lily found a red toy. Lily carried the red toy.
+Lily found a blue toy. Lily played with the blue toy.
+Lily found a blue toy. Lily looked at the blue toy.
+Lily found a blue toy. Lily carried the blue toy.
+Lily found a blue toy. Lily found the blue toy.
+Lily found a green toy. Lily looked at the green toy.
+Lily found a green toy. Lily carried the green toy.
+Lily found a green toy. Lily found the green toy.
+Lily found a yellow toy. Lily played with the yellow toy.
+Lily found a yellow toy. Lily carried the yellow toy.
+Lily found a yellow toy. Lily found the yellow toy.
+Lily found a red hat. Lily played with the red hat.
+Lily found a red hat. Lily looked at the red hat.
+Lily found a red hat. Lily found the red hat.
+Lily found a blue hat. Lily played with the blue hat.
+Lily found a blue hat. Lily looked at the blue hat.
+Lily found a blue hat. Lily carried the blue hat.
+Lily found a green hat. Lily played with the green hat.
+Lily found a green hat. Lily looked at the green hat.
+Lily found a green hat. Lily carried the green hat.
+Lily found a green hat. Lily found the green hat.
+Lily found a yellow hat. Lily looked at the yellow hat.
+Lily found a yellow hat. Lily carried the yellow hat.
+Lily found a yellow hat. Lily found the yellow hat.
+Lily found a red kite. Lily played with the red kite.
+Lily found a red kite. Lily carried the red kite.
+Lily found a red kite. Lily found the red kite.
+Lily found a blue kite. Lily played with the blue kite.
+Lily found a blue kite. Lily looked at the blue kite.
+Lily found a blue kite. Lily found the blue kite.
+Lily found a green kite. Lily played with the green kite.
+Lily found a green kite. Lily looked at the green kite.
+Lily found a green kite. Lily carried the green kite.
+Lily found a yellow kite. Lily played with the yellow kite.
+Lily found a yellow kite. Lily looked at the yellow kite.
+Lily found a yellow kite. Lily carried the yellow kite.
+Lily found a yellow kite. Lily found the yellow kite.
+Lily found a red car. Lily looked at the red car.
+Lily found a red car. Lily carried the red car.
+Lily found a red car. Lily found the red car.
+Lily found a blue car. Lily played with the blue car.
+Lily found a blue car. Lily carried the blue car.
+Lily found a blue car. Lily found the blue car.
+Lily found a green car. Lily played with the green car.
+Lily found a green car. Lily looked at the green car.
+Lily found a green car. Lily found the green car.
+Lily found a yellow car. Lily played with the yellow car.
+Lily found a yellow car. Lily looked at the yellow car.
+Lily found a yellow car. Lily carried the yellow car.
+Lily found a red box. Lily played with the red box.
+Lily found a red box. Lily looked at the red box.
+Lily found a red box. Lily carried the red box.
+Lily found a red box. Lily found the red box.
+Lily found a blue box. Lily looked at the blue box.
+Lily found a blue box. Lily carried the blue box.
+Lily found a blue box. Lily found the blue box.
+Lily found a green box. Lily played with the green box.
+Lily found a green box. Lily carried the green box.
+Lily found a green box. Lily found the green box.
+Lily found a yellow box. Lily played with the yellow box.
+Lily found a yellow box. Lily looked at the yellow box.
+Lily found a yellow box. Lily found the yellow box.
+Lily found a red fish. Lily played with the red fish.
+Lily found a red fish. Lily looked at the red fish.
+Lily found a red fish. Lily carried the red fish.
+Lily found a blue fish. Lily played with the blue fish.
+Lily found a blue fish. Lily looked at the blue fish.
+Lily found a blue fish. Lily carried the blue fish.
+Lily found a blue fish. Lily found the blue fish.
+Lily found a green fish. Lily looked at the green fish.
+Lily found a green fish. Lily carried the green fish.
+Lily found a green fish. Lily found the green fish.
+Lily found a yellow fish. Lily played with the yellow fish.
+Lily found a yellow fish. Lily carried the yellow fish.
+Lily found a yellow fish. Lily found the yellow fish.
+Mia found a red ball. Mia played with the red ball.
+Mia found a red ball. Mia looked at the red ball.
+Mia found a red ball. Mia found the red ball.
+Mia found a blue ball. Mia played with the blue ball.
+Mia found a blue ball. Mia looked at the blue ball.
+Mia found a blue ball. Mia carried the blue ball.
+Mia found a green ball. Mia played with the green ball.
+Mia found a green ball. Mia looked at the green ball.
+Mia found a green ball. Mia carried the green ball.
+Mia found a green ball. Mia found the green ball.
+Mia found a yellow ball. Mia looked at the yellow ball.
+Mia found a yellow ball. Mia carried the yellow ball.
+Mia found a yellow ball. Mia found the yellow ball.
+Mia found a red book. Mia played with the red book.
+Mia found a red book. Mia carried the red book.
+Mia found a red book. Mia found the red book.
+Mia found a blue book. Mia played with the blue book.
+Mia found a blue book. Mia looked at the blue book.
+Mia found a blue book. Mia found the blue book.
+Mia found a green book. Mia played with the green book.
+Mia found a green book. Mia looked at the green book.
+Mia found a green book. Mia carried the green book.
+Mia found a yellow book. Mia played with the yellow book.
+Mia found a yellow book. Mia looked at the yellow book.
+Mia found a yellow book. Mia carried the yellow book.
+Mia found a yellow book. Mia found the yellow book.
+Mia found a red toy. Mia looked at the red toy.
+Mia found a red toy. Mia carried the red toy.
+Mia found a red toy. Mia found the red toy.
+Mia found a blue toy. Mia played with the blue toy.
+Mia found a blue toy. Mia carried the blue toy.
+Mia found a blue toy. Mia found the blue toy.
+Mia found a green toy. Mia played with the green toy.
+Mia found a green toy. Mia looked at the green toy.
+Mia found a green toy. Mia found the green toy.
+Mia found a yellow toy. Mia played with the yellow toy.
+Mia found a yellow toy. Mia looked at the yellow toy.
+Mia found a yellow toy. Mia carried the yellow toy.
+Mia found a red hat. Mia played with the red hat.
+Mia found a red hat. Mia looked at the red hat.
+Mia found a red hat. Mia carried the red hat.
+Mia found a red hat. Mia found the red hat.
+Mia found a blue hat. Mia looked at the blue hat.
+Mia found a blue hat. Mia carried the blue hat.
+Mia found a blue hat. Mia found the blue hat.
+Mia found a green hat. Mia played with the green hat.
+Mia found a green hat. Mia carried the green hat.
+Mia found a green hat. Mia found the green hat.
+Mia found a yellow hat. Mia played with the yellow hat.
+Mia found a yellow hat. Mia looked at the yellow hat.
+Mia found a yellow hat. Mia found the yellow hat.
+Mia found a red kite. Mia played with the red kite.
+Mia found a red kite. Mia looked at the red kite.
+Mia found a red kite. Mia carried the red kite.
+Mia found a blue kite. Mia played with the blue kite.
+Mia found a blue kite. Mia looked at the blue kite.
+Mia found a blue kite. Mia carried the blue kite.
+Mia found a blue kite. Mia found the blue kite.
+Mia found a green kite. Mia looked at the green kite.
+Mia found a green kite. Mia carried the green kite.
+Mia found a green kite. Mia found the green kite.
+Mia found a yellow kite. Mia played with the yellow kite.
+Mia found a yellow kite. Mia carried the yellow kite.
+Mia found a yellow kite. Mia found the yellow kite.
+Mia found a red car. Mia played with the red car.
+Mia found a red car. Mia looked at the red car.
+Mia found a red car. Mia found the red car.
+Mia found a blue car. Mia played with the blue car.
+Mia found a blue car. Mia looked at the blue car.
+Mia found a blue car. Mia carried the blue car.
+Mia found a green car. Mia played with the green car.
+Mia found a green car. Mia looked at the green car.
+Mia found a green car. Mia carried the green car.
+Mia found a green car. Mia found the green car.
+Mia found a yellow car. Mia looked at the yellow car.
+Mia found a yellow car. Mia carried the yellow car.
+Mia found a yellow car. Mia found the yellow car.
+Mia found a red box. Mia played with the red box.
+Mia found a red box. Mia carried the red box.
+Mia found a red box. Mia found the red box.
+Mia found a blue box. Mia played with the blue box.
+Mia found a blue box. Mia looked at the blue box.
+Mia found a blue box. Mia found the blue box.
+Mia found a green box. Mia played with the green box.
+Mia found a green box. Mia looked at the green box.
+Mia found a green box. Mia carried the green box.
+Mia found a yellow box. Mia played with the yellow box.
+Mia found a yellow box. Mia looked at the yellow box.
+Mia found a yellow box. Mia carried the yellow box.
+Mia found a yellow box. Mia found the yellow box.
+Mia found a red fish. Mia looked at the red fish.
+Mia found a red fish. Mia carried the red fish.
+Mia found a red fish. Mia found the red fish.
+Mia found a blue fish. Mia played with the blue fish.
+Mia found a blue fish. Mia carried the blue fish.
+Mia found a blue fish. Mia found the blue fish.
+Mia found a green fish. Mia played with the green fish.
+Mia found a green fish. Mia looked at the green fish.
+Mia found a green fish. Mia found the green fish.
+Mia found a yellow fish. Mia played with the yellow fish.
+Mia found a yellow fish. Mia looked at the yellow fish.
+Mia found a yellow fish. Mia carried the yellow fish.
+Sam found a red ball. Sam played with the red ball.
+Sam found a red ball. Sam looked at the red ball.
+Sam found a red ball. Sam carried the red ball.
+Sam found a red ball. Sam found the red ball.
+Sam found a blue ball. Sam looked at the blue ball.
+Sam found a blue ball. Sam carried the blue ball.
+Sam found a blue ball. Sam found the blue ball.
+Sam found a green ball. Sam played with the green ball.
+Sam found a green ball. Sam carried the green ball.
+Sam found a green ball. Sam found the green ball.
+Sam found a yellow ball. Sam played with the yellow ball.
+Sam found a yellow ball. Sam looked at the yellow ball.
+Sam found a yellow ball. Sam found the yellow ball.
+Sam found a red book. Sam played with the red book.
+Sam found a red book. Sam looked at the red book.
+Sam found a red book. Sam carried the red book.
+Sam found a blue book. Sam played with the blue book.
+Sam found a blue book. Sam looked at the blue book.
+Sam found a blue book. Sam carried the blue book.
+Sam found a blue book. Sam found the blue book.
+Sam found a green book. Sam looked at the green book.
+Sam found a green book. Sam carried the green book.
+Sam found a green book. Sam found the green book.
+Sam found a yellow book. Sam played with the yellow book.
+Sam found a yellow book. Sam carried the yellow book.
+Sam found a yellow book. Sam found the yellow book.
+Sam found a red toy. Sam played with the red toy.
+Sam found a red toy. Sam looked at the red toy.
+Sam found a red toy. Sam found the red toy.
+Sam found a blue toy. Sam played with the blue toy.
+Sam found a blue toy. Sam looked at the blue toy.
+Sam found a blue toy. Sam carried the blue toy.
+Sam found a green toy. Sam played with the green toy.
+Sam found a green toy. Sam looked at the green toy.
+Sam found a green toy. Sam carried the green toy.
+Sam found a green toy. Sam found the green toy.
+Sam found a yellow toy. Sam looked at the yellow toy.
+Sam found a yellow toy. Sam carried the yellow toy.
+Sam found a yellow toy. Sam found the yellow toy.
+Sam found a red hat. Sam played with the red hat.
+Sam found a red hat. Sam carried the red hat.
+Sam found a red hat. Sam found the red hat.
+Sam found a blue hat. Sam played with the blue hat.
+Sam found a blue hat. Sam looked at the blue hat.
+Sam found a blue hat. Sam found the blue hat.
+Sam found a green hat. Sam played with the green hat.
+Sam found a green hat. Sam looked at the green hat.
+Sam found a green hat. Sam carried the green hat.
+Sam found a yellow hat. Sam played with the yellow hat.
+Sam found a yellow hat. Sam looked at the yellow hat.
+Sam found a yellow hat. Sam carried the yellow hat.
+Sam found a yellow hat. Sam found the yellow hat.
+Sam found a red kite. Sam looked at the red kite.
+Sam found a red kite. Sam carried the red kite.
+Sam found a red kite. Sam found the red kite.
+Sam found a blue kite. Sam played with the blue kite.
+Sam found a blue kite. Sam carried the blue kite.
+Sam found a blue kite. Sam found the blue kite.
+Sam found a green kite. Sam played with the green kite.
+Sam found a green kite. Sam looked at the green kite.
+Sam found a green kite. Sam found the green kite.
+Sam found a yellow kite. Sam played with the yellow kite.
+Sam found a yellow kite. Sam looked at the yellow kite.
+Sam found a yellow kite. Sam carried the yellow kite.
+Sam found a red car. Sam played with the red car.
+Sam found a red car. Sam looked at the red car.
+Sam found a red car. Sam carried the red car.
+Sam found a red car. Sam found the red car.
+Sam found a blue car. Sam looked at the blue car.
+Sam found a blue car. Sam carried the blue car.
+Sam found a blue car. Sam found the blue car.
+Sam found a green car. Sam played with the green car.
+Sam found a green car. Sam carried the green car.
+Sam found a green car. Sam found the green car.
+Sam found a yellow car. Sam played with the yellow car.
+Sam found a yellow car. Sam looked at the yellow car.
+Sam found a yellow car. Sam found the yellow car.
+Sam found a red box. Sam played with the red box.
+Sam found a red box. Sam looked at the red box.
+Sam found a red box. Sam carried the red box.
+Sam found a blue box. Sam played with the blue box.
+Sam found a blue box. Sam looked at the blue box.
+Sam found a blue box. Sam carried the blue box.
+Sam found a blue box. Sam found the blue box.
+Sam found a green box. Sam looked at the green box.
+Sam found a green box. Sam carried the green box.
+Sam found a green box. Sam found the green box.
+Sam found a yellow box. Sam played with the yellow box.
+Sam found a yellow box. Sam carried the yellow box.
+Sam found a yellow box. Sam found the yellow box.
+Sam found a red fish. Sam played with the red fish.
+Sam found a red fish. Sam looked at the red fish.
+Sam found a red fish. Sam found the red fish.
+Sam found a blue fish. Sam played with the blue fish.
+Sam found a blue fish. Sam looked at the blue fish.
+Sam found a blue fish. Sam carried the blue fish.
+Sam found a green fish. Sam played with the green fish.
+Sam found a green fish. Sam looked at the green fish.
+Sam found a green fish. Sam carried the green fish.
+Sam found a green fish. Sam found the green fish.
+Sam found a yellow fish. Sam looked at the yellow fish.
+Sam found a yellow fish. Sam carried the yellow fish.
+Sam found a yellow fish. Sam found the yellow fish.
+Tom found a red ball. Tom played with the red ball.
+Tom found a red ball. Tom carried the red ball.
+Tom found a red ball. Tom found the red ball.
+Tom found a blue ball. Tom played with the blue ball.
+Tom found a blue ball. Tom looked at the blue ball.
+Tom found a blue ball. Tom found the blue ball.
+Tom found a green ball. Tom played with the green ball.
+Tom found a green ball. Tom looked at the green ball.
+Tom found a green ball. Tom carried the green ball.
+Tom found a yellow ball. Tom played with the yellow ball.
+Tom found a yellow ball. Tom looked at the yellow ball.
+Tom found a yellow ball. Tom carried the yellow ball.
+Tom found a yellow ball. Tom found the yellow ball.
+Tom found a red book. Tom looked at the red book.
+Tom found a red book. Tom carried the red book.
+Tom found a red book. Tom found the red book.
+Tom found a blue book. Tom played with the blue book.
+Tom found a blue book. Tom carried the blue book.
+Tom found a blue book. Tom found the blue book.
+Tom found a green book. Tom played with the green book.
+Tom found a green book. Tom looked at the green book.
+Tom found a green book. Tom found the green book.
+Tom found a yellow book. Tom played with the yellow book.
+Tom found a yellow book. Tom looked at the yellow book.
+Tom found a yellow book. Tom carried the yellow book.
+Tom found a red toy. Tom played with the red toy.
+Tom found a red toy. Tom looked at the red toy.
+Tom found a red toy. Tom carried the red toy.
+Tom found a red toy. Tom found the red toy.
+Tom found a blue toy. Tom looked at the blue toy.
+Tom found a blue toy. Tom carried the blue toy.
+Tom found a blue toy. Tom found the blue toy.
+Tom found a green toy. Tom played with the green toy.
+Tom found a green toy. Tom carried the green toy.
+Tom found a green toy. Tom found the green toy.
+Tom found a yellow toy. Tom played with the yellow toy.
+Tom found a yellow toy. Tom looked at the yellow toy.
+Tom found a yellow toy. Tom found the yellow toy.
+Tom found a red hat. Tom played with the red hat.
+Tom found a red hat. Tom looked at the red hat.
+Tom found a red hat. Tom carried the red hat.
+Tom found a blue hat. Tom played with the blue hat.
+Tom found a blue hat. Tom looked at the blue hat.
+Tom found a blue hat. Tom carried the blue hat.
+Tom found a blue hat. Tom found the blue hat.
+Tom found a green hat. Tom looked at the green hat.
+Tom found a green hat. Tom carried the green hat.
+Tom found a green hat. Tom found the green hat.
+Tom found a yellow hat. Tom played with the yellow hat.
+Tom found a yellow hat. Tom carried the yellow hat.
+Tom found a yellow hat. Tom found the yellow hat.
+Tom found a red kite. Tom played with the red kite.
+Tom found a red kite. Tom looked at the red kite.
+Tom found a red kite. Tom found the red kite.
+Tom found a blue kite. Tom played with the blue kite.
+Tom found a blue kite. Tom looked at the blue kite.
+Tom found a blue kite. Tom carried the blue kite.
+Tom found a green kite. Tom played with the green kite.
+Tom found a green kite. Tom looked at the green kite.
+Tom found a green kite. Tom carried the green kite.
+Tom found a green kite. Tom found the green kite.
+Tom found a yellow kite. Tom looked at the yellow kite.
+Tom found a yellow kite. Tom carried the yellow kite.
+Tom found a yellow kite. Tom found the yellow kite.
+Tom found a red car. Tom played with the red car.
+Tom found a red car. Tom carried the red car.
+Tom found a red car. Tom found the red car.
+Tom found a blue car. Tom played with the blue car.
+Tom found a blue car. Tom looked at the blue car.
+Tom found a blue car. Tom found the blue car.
+Tom found a green car. Tom played with the green car.
+Tom found a green car. Tom looked at the green car.
+Tom found a green car. Tom carried the green car.
+Tom found a yellow car. Tom played with the yellow car.
+Tom found a yellow car. Tom looked at the yellow car.
+Tom found a yellow car. Tom carried the yellow car.
+Tom found a yellow car. Tom found the yellow car.
+Tom found a red box. Tom looked at the red box.
+Tom found a red box. Tom carried the red box.
+Tom found a red box. Tom found the red box.
+Tom found a blue box. Tom played with the blue box.
+Tom found a blue box. Tom carried the blue box.
+Tom found a blue box. Tom found the blue box.
+Tom found a green box. Tom played with the green box.
+Tom found a green box. Tom looked at the green box.
+Tom found a green box. Tom found the green box.
+Tom found a yellow box. Tom played with the yellow box.
+Tom found a yellow box. Tom looked at the yellow box.
+Tom found a yellow box. Tom carried the yellow box.
+Tom found a red fish. Tom played with the red fish.
+Tom found a red fish. Tom looked at the red fish.
+Tom found a red fish. Tom carried the red fish.
+Tom found a red fish. Tom found the red fish.
+Tom found a blue fish. Tom looked at the blue fish.
+Tom found a blue fish. Tom carried the blue fish.
+Tom found a blue fish. Tom found the blue fish.
+Tom found a green fish. Tom played with the green fish.
+Tom found a green fish. Tom carried the green fish.
+Tom found a green fish. Tom found the green fish.
+Tom found a yellow fish. Tom played with the yellow fish.
+Tom found a yellow fish. Tom looked at the yellow fish.
+Tom found a yellow fish. Tom found the yellow fish.
+Nora found a red ball. Nora played with the red ball.
+Nora found a red ball. Nora looked at the red ball.
+Nora found a red ball. Nora carried the red ball.
+Nora found a blue ball. Nora played with the blue ball.
+Nora found a blue ball. Nora looked at the blue ball.
+Nora found a blue ball. Nora carried the blue ball.
+Nora found a blue ball. Nora found the blue ball.
+Nora found a green ball. Nora looked at the green ball.
+Nora found a green ball. Nora carried the green ball.
+Nora found a green ball. Nora found the green ball.
+Nora found a yellow ball. Nora played with the yellow ball.
+Nora found a yellow ball. Nora carried the yellow ball.
+Nora found a yellow ball. Nora found the yellow ball.
+Nora found a red book. Nora played with the red book.
+Nora found a red book. Nora looked at the red book.
+Nora found a red book. Nora found the red book.
+Nora found a blue book. Nora played with the blue book.
+Nora found a blue book. Nora looked at the blue book.
+Nora found a blue book. Nora carried the blue book.
+Nora found a green book. Nora played with the green book.
+Nora found a green book. Nora looked at the green book.
+Nora found a green book. Nora carried the green book.
+Nora found a green book. Nora found the green book.
+Nora found a yellow book. Nora looked at the yellow book.
+Nora found a yellow book. Nora carried the yellow book.
+Nora found a yellow book. Nora found the yellow book.
+Nora found a red toy. Nora played with the red toy.
+Nora found a red toy. Nora carried the red toy.
+Nora found a red toy. Nora found the red toy.
+Nora found a blue toy. Nora played with the blue toy.
+Nora found a blue toy. Nora looked at the blue toy.
+Nora found a blue toy. Nora found the blue toy.
+Nora found a green toy. Nora played with the green toy.
+Nora found a green toy. Nora looked at the green toy.
+Nora found a green toy. Nora carried the green toy.
+Nora found a yellow toy. Nora played with the yellow toy.
+Nora found a yellow toy. Nora looked at the yellow toy.
+Nora found a yellow toy. Nora carried the yellow toy.
+Nora found a yellow toy. Nora found the yellow toy.
+Nora found a red hat. Nora looked at the red hat.
+Nora found a red hat. Nora carried the red hat.
+Nora found a red hat. Nora found the red hat.
+Nora found a blue hat. Nora played with the blue hat.
+Nora found a blue hat. Nora carried the blue hat.
+Nora found a blue hat. Nora found the blue hat.
+Nora found a green hat. Nora played with the green hat.
+Nora found a green hat. Nora looked at the green hat.
+Nora found a green hat. Nora found the green hat.
+Nora found a yellow hat. Nora played with the yellow hat.
+Nora found a yellow hat. Nora looked at the yellow hat.
+Nora found a yellow hat. Nora carried the yellow hat.
+Nora found a red kite. Nora played with the red kite.
+Nora found a red kite. Nora looked at the red kite.
+Nora found a red kite. Nora carried the red kite.
+Nora found a red kite. Nora found the red kite.
+Nora found a blue kite. Nora looked at the blue kite.
+Nora found a blue kite. Nora carried the blue kite.
+Nora found a blue kite. Nora found the blue kite.
+Nora found a green kite. Nora played with the green kite.
+Nora found a green kite. Nora carried the green kite.
+Nora found a green kite. Nora found the green kite.
+Nora found a yellow kite. Nora played with the yellow kite.
+Nora found a yellow kite. Nora looked at the yellow kite.
+Nora found a yellow kite. Nora found the yellow kite.
+Nora found a red car. Nora played with the red car.
+Nora found a red car. Nora looked at the red car.
+Nora found a red car. Nora carried the red car.
+Nora found a blue car. Nora played with the blue car.
+Nora found a blue car. Nora looked at the blue car.
+Nora found a blue car. Nora carried the blue car.
+Nora found a blue car. Nora found the blue car.
+Nora found a green car. Nora looked at the green car.
+Nora found a green car. Nora carried the green car.
+Nora found a green car. Nora found the green car.
+Nora found a yellow car. Nora played with the yellow car.
+Nora found a yellow car. Nora carried the yellow car.
+Nora found a yellow car. Nora found the yellow car.
+Nora found a red box. Nora played with the red box.
+Nora found a red box. Nora looked at the red box.
+Nora found a red box. Nora found the red box.
+Nora found a blue box. Nora played with the blue box.
+Nora found a blue box. Nora looked at the blue box.
+Nora found a blue box. Nora carried the blue box.
+Nora found a green box. Nora played with the green box.
+Nora found a green box. Nora looked at the green box.
+Nora found a green box. Nora carried the green box.
+Nora found a green box. Nora found the green box.
+Nora found a yellow box. Nora looked at the yellow box.
+Nora found a yellow box. Nora carried the yellow box.
+Nora found a yellow box. Nora found the yellow box.
+Nora found a red fish. Nora played with the red fish.
+Nora found a red fish. Nora carried the red fish.
+Nora found a red fish. Nora found the red fish.
+Nora found a blue fish. Nora played with the blue fish.
+Nora found a blue fish. Nora looked at the blue fish.
+Nora found a blue fish. Nora found the blue fish.
+Nora found a green fish. Nora played with the green fish.
+Nora found a green fish. Nora looked at the green fish.
+Nora found a green fish. Nora carried the green fish.
+Nora found a yellow fish. Nora played with the yellow fish.
+Nora found a yellow fish. Nora looked at the yellow fish.
+Nora found a yellow fish. Nora carried the yellow fish.
+Nora found a yellow fish. Nora found the yellow fish.
+Owen found a red ball. Owen looked at the red ball.
+Owen found a red ball. Owen carried the red ball.
+Owen found a red ball. Owen found the red ball.
+Owen found a blue ball. Owen played with the blue ball.
+Owen found a blue ball. Owen carried the blue ball.
+Owen found a blue ball. Owen found the blue ball.
+Owen found a green ball. Owen played with the green ball.
+Owen found a green ball. Owen looked at the green ball.
+Owen found a green ball. Owen found the green ball.
+Owen found a yellow ball. Owen played with the yellow ball.
+Owen found a yellow ball. Owen looked at the yellow ball.
+Owen found a yellow ball. Owen carried the yellow ball.
+Owen found a red book. Owen played with the red book.
+Owen found a red book. Owen looked at the red book.
+Owen found a red book. Owen carried the red book.
+Owen found a red book. Owen found the red book.
+Owen found a blue book. Owen looked at the blue book.
+Owen found a blue book. Owen carried the blue book.
+Owen found a blue book. Owen found the blue book.
+Owen found a green book. Owen played with the green book.
+Owen found a green book. Owen carried the green book.
+Owen found a green book. Owen found the green book.
+Owen found a yellow book. Owen played with the yellow book.
+Owen found a yellow book. Owen looked at the yellow book.
+Owen found a yellow book. Owen found the yellow book.
+Owen found a red toy. Owen played with the red toy.
+Owen found a red toy. Owen looked at the red toy.
+Owen found a red toy. Owen carried the red toy.
+Owen found a blue toy. Owen played with the blue toy.
+Owen found a blue toy. Owen looked at the blue toy.
+Owen found a blue toy. Owen carried the blue toy.
+Owen found a blue toy. Owen found the blue toy.
+Owen found a green toy. Owen looked at the green toy.
+Owen found a green toy. Owen carried the green toy.
+Owen found a green toy. Owen found the green toy.
+Owen found a yellow toy. Owen played with the yellow toy.
+Owen found a yellow toy. Owen carried the yellow toy.
+Owen found a yellow toy. Owen found the yellow toy.
+Owen found a red hat. Owen played with the red hat.
+Owen found a red hat. Owen looked at the red hat.
+Owen found a red hat. Owen found the red hat.
+Owen found a blue hat. Owen played with the blue hat.
+Owen found a blue hat. Owen looked at the blue hat.
+Owen found a blue hat. Owen carried the blue hat.
+Owen found a green hat. Owen played with the green hat.
+Owen found a green hat. Owen looked at the green hat.
+Owen found a green hat. Owen carried the green hat.
+Owen found a green hat. Owen found the green hat.
+Owen found a yellow hat. Owen looked at the yellow hat.
+Owen found a yellow hat. Owen carried the yellow hat.
+Owen found a yellow hat. Owen found the yellow hat.
+Owen found a red kite. Owen played with the red kite.
+Owen found a red kite. Owen carried the red kite.
+Owen found a red kite. Owen found the red kite.
+Owen found a blue kite. Owen played with the blue kite.
+Owen found a blue kite. Owen looked at the blue kite.
+Owen found a blue kite. Owen found the blue kite.
+Owen found a green kite. Owen played with the green kite.
+Owen found a green kite. Owen looked at the green kite.
+Owen found a green kite. Owen carried the green kite.
+Owen found a yellow kite. Owen played with the yellow kite.
+Owen found a yellow kite. Owen looked at the yellow kite.
+Owen found a yellow kite. Owen carried the yellow kite.
+Owen found a yellow kite. Owen found the yellow kite.
+Owen found a red car. Owen looked at the red car.
+Owen found a red car. Owen carried the red car.
+Owen found a red car. Owen found the red car.
+Owen found a blue car. Owen played with the blue car.
+Owen found a blue car. Owen carried the blue car.
+Owen found a blue car. Owen found the blue car.
+Owen found a green car. Owen played with the green car.
+Owen found a green car. Owen looked at the green car.
+Owen found a green car. Owen found the green car.
+Owen found a yellow car. Owen played with the yellow car.
+Owen found a yellow car. Owen looked at the yellow car.
+Owen found a yellow car. Owen carried the yellow car.
+Owen found a red box. Owen played with the red box.
+Owen found a red box. Owen looked at the red box.
+Owen found a red box. Owen carried the red box.
+Owen found a red box. Owen found the red box.
+Owen found a blue box. Owen looked at the blue box.
+Owen found a blue box. Owen carried the blue box.
+Owen found a blue box. Owen found the blue box.
+Owen found a green box. Owen played with the green box.
+Owen found a green box. Owen carried the green box.
+Owen found a green box. Owen found the green box.
+Owen found a yellow box. Owen played with the yellow box.
+Owen found a yellow box. Owen looked at the yellow box.
+Owen found a yellow box. Owen found the yellow box.
+Owen found a red fish. Owen played with the red fish.
+Owen found a red fish. Owen looked at the red fish.
+Owen found a red fish. Owen carried the red fish.
+Owen found a blue fish. Owen played with the blue fish.
+Owen found a blue fish. Owen looked at the blue fish.
+Owen found a blue fish. Owen carried the blue fish.
+Owen found a blue fish. Owen found the blue fish.
+Owen found a green fish. Owen looked at the green fish.
+Owen found a green fish. Owen carried the green fish.
+Owen found a green fish. Owen found the green fish.
+Owen found a yellow fish. Owen played with the yellow fish.
+Owen found a yellow fish. Owen carried the yellow fish.
+Owen found a yellow fish. Owen found the yellow fish.
+Zoe found a red ball. Zoe played with the red ball.
+Zoe found a red ball. Zoe looked at the red ball.
+Zoe found a red ball. Zoe found the red ball.
+Zoe found a blue ball. Zoe played with the blue ball.
+Zoe found a blue ball. Zoe looked at the blue ball.
+Zoe found a blue ball. Zoe carried the blue ball.
+Zoe found a green ball. Zoe played with the green ball.
+Zoe found a green ball. Zoe looked at the green ball.
+Zoe found a green ball. Zoe carried the green ball.
+Zoe found a green ball. Zoe found the green ball.
+Zoe found a yellow ball. Zoe looked at the yellow ball.
+Zoe found a yellow ball. Zoe carried the yellow ball.
+Zoe found a yellow ball. Zoe found the yellow ball.
+Zoe found a red book. Zoe played with the red book.
+Zoe found a red book. Zoe carried the red book.
+Zoe found a red book. Zoe found the red book.
+Zoe found a blue book. Zoe played with the blue book.
+Zoe found a blue book. Zoe looked at the blue book.
+Zoe found a blue book. Zoe found the blue book.
+Zoe found a green book. Zoe played with the green book.
+Zoe found a green book. Zoe looked at the green book.
+Zoe found a green book. Zoe carried the green book.
+Zoe found a yellow book. Zoe played with the yellow book.
+Zoe found a yellow book. Zoe looked at the yellow book.
+Zoe found a yellow book. Zoe carried the yellow book.
+Zoe found a yellow book. Zoe found the yellow book.
+Zoe found a red toy. Zoe looked at the red toy.
+Zoe found a red toy. Zoe carried the red toy.
+Zoe found a red toy. Zoe found the red toy.
+Zoe found a blue toy. Zoe played with the blue toy.
+Zoe found a blue toy. Zoe carried the blue toy.
+Zoe found a blue toy. Zoe found the blue toy.
+Zoe found a green toy. Zoe played with the green toy.
+Zoe found a green toy. Zoe looked at the green toy.
+Zoe found a green toy. Zoe found the green toy.
+Zoe found a yellow toy. Zoe played with the yellow toy.
+Zoe found a yellow toy. Zoe looked at the yellow toy.
+Zoe found a yellow toy. Zoe carried the yellow toy.
+Zoe found a red hat. Zoe played with the red hat.
+Zoe found a red hat. Zoe looked at the red hat.
+Zoe found a red hat. Zoe carried the red hat.
+Zoe found a red hat. Zoe found the red hat.
+Zoe found a blue hat. Zoe looked at the blue hat.
+Zoe found a blue hat. Zoe carried the blue hat.
+Zoe found a blue hat. Zoe found the blue hat.
+Zoe found a green hat. Zoe played with the green hat.
+Zoe found a green hat. Zoe carried the green hat.
+Zoe found a green hat. Zoe found the green hat.
+Zoe found a yellow hat. Zoe played with the yellow hat.
+Zoe found a yellow hat. Zoe looked at the yellow hat.
+Zoe found a yellow hat. Zoe found the yellow hat.
+Zoe found a red kite. Zoe played with the red kite.
+Zoe found a red kite. Zoe looked at the red kite.
+Zoe found a red kite. Zoe carried the red kite.
+Zoe found a blue kite. Zoe played with the blue kite.
+Zoe found a blue kite. Zoe looked at the blue kite.
+Zoe found a blue kite. Zoe carried the blue kite.
+Zoe found a blue kite. Zoe found the blue kite.
+Zoe found a green kite. Zoe looked at the green kite.
+Zoe found a green kite. Zoe carried the green kite.
+Zoe found a green kite. Zoe found the green kite.
+Zoe found a yellow kite. Zoe played with the yellow kite.
+Zoe found a yellow kite. Zoe carried the yellow kite.
+Zoe found a yellow kite. Zoe found the yellow kite.
+Zoe found a red car. Zoe played with the red car.
+Zoe found a red car. Zoe looked at the red car.
+Zoe found a red car. Zoe found the red car.
+Zoe found a blue car. Zoe played with the blue car.
+Zoe found a blue car. Zoe looked at the blue car.
+Zoe found a blue car. Zoe carried the blue car.
+Zoe found a green car. Zoe played with the green car.
+Zoe found a green car. Zoe looked at the green car.
+Zoe found a green car. Zoe carried the green car.
+Zoe found a green car. Zoe found the green car.
+Zoe found a yellow car. Zoe looked at the yellow car.
+Zoe found a yellow car. Zoe carried the yellow car.
+Zoe found a yellow car. Zoe found the yellow car.
+Zoe found a red box. Zoe played with the red box.
+Zoe found a red box. Zoe carried the red box.
+Zoe found a red box. Zoe found the red box.
+Zoe found a blue box. Zoe played with the blue box.
+Zoe found a blue box. Zoe looked at the blue box.
+Zoe found a blue box. Zoe found the blue box.
+Zoe found a green box. Zoe played with the green box.
+Zoe found a green box. Zoe looked at the green box.
+Zoe found a green box. Zoe carried the green box.
+Zoe found a yellow box. Zoe played with the yellow box.
+Zoe found a yellow box. Zoe looked at the yellow box.
+Zoe found a yellow box. Zoe carried the yellow box.
+Zoe found a yellow box. Zoe found the yellow box.
+Zoe found a red fish. Zoe looked at the red fish.
+Zoe found a red fish. Zoe carried the red fish.
+Zoe found a red fish. Zoe found the red fish.
+Zoe found a blue fish. Zoe played with the blue fish.
+Zoe found a blue fish. Zoe carried the blue fish.
+Zoe found a blue fish. Zoe found the blue fish.
+Zoe found a green fish. Zoe played with the green fish.
+Zoe found a green fish. Zoe looked at the green fish.
+Zoe found a green fish. Zoe found the green fish.
+Zoe found a yellow fish. Zoe played with the yellow fish.
+Zoe found a yellow fish. Zoe looked at the yellow fish.
+Zoe found a yellow fish. Zoe carried the yellow fish.
+Alex found a red ball. Alex played with the red ball.
+Alex found a red ball. Alex looked at the red ball.
+Alex found a red ball. Alex carried the red ball.
+Alex found a red ball. Alex found the red ball.
+Alex found a blue ball. Alex looked at the blue ball.
+Alex found a blue ball. Alex carried the blue ball.
+Alex found a blue ball. Alex found the blue ball.
+Alex found a green ball. Alex played with the green ball.
+Alex found a green ball. Alex carried the green ball.
+Alex found a green ball. Alex found the green ball.
+Alex found a yellow ball. Alex played with the yellow ball.
+Alex found a yellow ball. Alex looked at the yellow ball.
+Alex found a yellow ball. Alex found the yellow ball.
+Alex found a red book. Alex played with the red book.
+Alex found a red book. Alex looked at the red book.
+Alex found a red book. Alex carried the red book.
+Alex found a blue book. Alex played with the blue book.
+Alex found a blue book. Alex looked at the blue book.
+Alex found a blue book. Alex carried the blue book.
+Alex found a blue book. Alex found the blue book.
+Alex found a green book. Alex looked at the green book.
+Alex found a green book. Alex carried the green book.
+Alex found a green book. Alex found the green book.
+Alex found a yellow book. Alex played with the yellow book.
+Alex found a yellow book. Alex carried the yellow book.
+Alex found a yellow book. Alex found the yellow book.
+Alex found a red toy. Alex played with the red toy.
+Alex found a red toy. Alex looked at the red toy.
+Alex found a red toy. Alex found the red toy.
+Alex found a blue toy. Alex played with the blue toy.
+Alex found a blue toy. Alex looked at the blue toy.
+Alex found a blue toy. Alex carried the blue toy.
+Alex found a green toy. Alex played with the green toy.
+Alex found a green toy. Alex looked at the green toy.
+Alex found a green toy. Alex carried the green toy.
+Alex found a green toy. Alex found the green toy.
+Alex found a yellow toy. Alex looked at the yellow toy.
+Alex found a yellow toy. Alex carried the yellow toy.
+Alex found a yellow toy. Alex found the yellow toy.
+Alex found a red hat. Alex played with the red hat.
+Alex found a red hat. Alex carried the red hat.
+Alex found a red hat. Alex found the red hat.
+Alex found a blue hat. Alex played with the blue hat.
+Alex found a blue hat. Alex looked at the blue hat.
+Alex found a blue hat. Alex found the blue hat.
+Alex found a green hat. Alex played with the green hat.
+Alex found a green hat. Alex looked at the green hat.
+Alex found a green hat. Alex carried the green hat.
+Alex found a yellow hat. Alex played with the yellow hat.
+Alex found a yellow hat. Alex looked at the yellow hat.
+Alex found a yellow hat. Alex carried the yellow hat.
+Alex found a yellow hat. Alex found the yellow hat.
+Alex found a red kite. Alex looked at the red kite.
+Alex found a red kite. Alex carried the red kite.
+Alex found a red kite. Alex found the red kite.
+Alex found a blue kite. Alex played with the blue kite.
+Alex found a blue kite. Alex carried the blue kite.
+Alex found a blue kite. Alex found the blue kite.
+Alex found a green kite. Alex played with the green kite.
+Alex found a green kite. Alex looked at the green kite.
+Alex found a green kite. Alex found the green kite.
+Alex found a yellow kite. Alex played with the yellow kite.
+Alex found a yellow kite. Alex looked at the yellow kite.
+Alex found a yellow kite. Alex carried the yellow kite.
+Alex found a red car. Alex played with the red car.
+Alex found a red car. Alex looked at the red car.
+Alex found a red car. Alex carried the red car.
+Alex found a red car. Alex found the red car.
+Alex found a blue car. Alex looked at the blue car.
+Alex found a blue car. Alex carried the blue car.
+Alex found a blue car. Alex found the blue car.
+Alex found a green car. Alex played with the green car.
+Alex found a green car. Alex carried the green car.
+Alex found a green car. Alex found the green car.
+Alex found a yellow car. Alex played with the yellow car.
+Alex found a yellow car. Alex looked at the yellow car.
+Alex found a yellow car. Alex found the yellow car.
+Alex found a red box. Alex played with the red box.
+Alex found a red box. Alex looked at the red box.
+Alex found a red box. Alex carried the red box.
+Alex found a blue box. Alex played with the blue box.
+Alex found a blue box. Alex looked at the blue box.
+Alex found a blue box. Alex carried the blue box.
+Alex found a blue box. Alex found the blue box.
+Alex found a green box. Alex looked at the green box.
+Alex found a green box. Alex carried the green box.
+Alex found a green box. Alex found the green box.
+Alex found a yellow box. Alex played with the yellow box.
+Alex found a yellow box. Alex carried the yellow box.
+Alex found a yellow box. Alex found the yellow box.
+Alex found a red fish. Alex played with the red fish.
+Alex found a red fish. Alex looked at the red fish.
+Alex found a red fish. Alex found the red fish.
+Alex found a blue fish. Alex played with the blue fish.
+Alex found a blue fish. Alex looked at the blue fish.
+Alex found a blue fish. Alex carried the blue fish.
+Alex found a green fish. Alex played with the green fish.
+Alex found a green fish. Alex looked at the green fish.
+Alex found a green fish. Alex carried the green fish.
+Alex found a green fish. Alex found the green fish.
+Alex found a yellow fish. Alex looked at the yellow fish.
+Alex found a yellow fish. Alex carried the yellow fish.
+Alex found a yellow fish. Alex found the yellow fish.

@@ -1,0 +1,30 @@
+{
+  "completed_update": 100,
+  "param_groups": [
+    {
+      "amsgrad": false,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "capturable": false,
+      "decoupled_weight_decay": true,
+      "differentiable": false,
+      "eps": 1e-08,
+      "foreach": false,
+      "fused": false,
+      "lr": 5e-05,
+      "maximize": false,
+      "param_count_ids": 334,
+      "weight_decay": 0.05
+    }
+  ],
+  "provenance": {
+    "parent": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "protocol": "5c236478bb7370f514745bcc32463f4e0c860e25f65bbfffa2ceed1d6ccd785f",
+    "receipt": "45d6a1ae10dc37f6fe3dad8d48dbdc71fe9bd48b763f02d77687918cf6c4b5d1",
+    "schedule": "91dad3510e7997b0d55ab53e6189db9337857d582c9399a720723412f70a7ab6"
+  },
+  "scope_at_checkpoint": "binding",
+  "state_entries": 334
+}

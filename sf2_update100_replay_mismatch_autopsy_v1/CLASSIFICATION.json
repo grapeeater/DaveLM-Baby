@@ -1,0 +1,22 @@
+{
+  "question_7_classification": "B — exact replay of historical SF2 is IMPOSSIBLE from surviving historical state under the current environment",
+  "sub_classification_note": "With an unresolved low-level element (the specific changed kernel/driver/autotuning state is unidentified), but the recoverability classification itself is B, not C, because: (i) continuation was already impossible (historical u100 optimizer/RNG state was never preserved; checkpoint_100 carries model tensors only), and (ii) three independent current-environment replays (A, B, SF3) are mutually bitwise-identical yet collectively differ from the historical run, establishing that the historical environment numeric state no longer exists and no mechanical correction is identifiable.",
+  "evidence": {
+    "self_replay_deterministic": true,
+    "replayA_equals_replayB_bitwise": true,
+    "replayA_equals_sf3_replay_bitwise": true,
+    "historical_vs_current_mismatched_tensors": 334,
+    "historical_vs_current_max_abs": 0.0009046792984008789,
+    "first_metric_divergence_update": 2,
+    "update0_artifacts_identical_all_runs": true,
+    "sf3_gate_verdict": "SF3_HARD_STOP_UPDATE100_REPLAY_MISMATCH upheld; zero annealed updates ran; LR-annealing hypothesis remains UNTESTED."
+  },
+  "checkpoint_sha256s": {
+    "historical_sf2_u100": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "sf3_replay_u100": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+    "replayA_u100": "df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd",
+    "replayB_u100": "62c1d5b0a17c418a4bb5df449622aa0bae976e08d887fbbf940458118283c704"
+  },
+  "forward_recommendation_family_only": "Fresh matched-control branches from a newly frozen common trajectory: freeze one fresh replay, verify self-consistency with a second replay (bitwise), then branch control vs treatment from that fresh common state so both arms share identical environment numerics. Do not reuse an exact-tensor-match-against-a-historical-checkpoint gate on this hardware/stack.",
+  "do_not": ["resume SF3", "train any treatment", "alter the frozen SF3 classification", "weaken any gate", "open transfer panels", "access FINAL/sacred"]
+}

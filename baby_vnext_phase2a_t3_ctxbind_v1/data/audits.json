@@ -1,0 +1,104 @@
+{
+  "train_assign_flip_pairs": 192,
+  "train_query_flip_pairs": 192,
+  "train_ci_balance": {
+    "0": 192,
+    "1": 192
+  },
+  "train_name_balance": {
+    "Ann": 32,
+    "Zoe": 44,
+    "Noah": 32,
+    "Sara": 40,
+    "Lily": 32,
+    "Tom": 32,
+    "Owen": 48,
+    "Max": 28,
+    "Ivy": 12,
+    "Sam": 32,
+    "Ben": 32,
+    "Mia": 20
+  },
+  "train_order_balance": {
+    "0": 192,
+    "1": 192
+  },
+  "train_query_balance": {
+    "0": 192,
+    "1": 192
+  },
+  "train_kind_balance": {
+    "P": 192,
+    "T": 192
+  },
+  "train_families_with_query_only_ci": 0,
+  "train_families": 48,
+  "dev_assign_flip_pairs": 64,
+  "dev_query_flip_pairs": 64,
+  "dev_ci_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "dev_name_balance": {
+    "Lily": 4,
+    "Max": 12,
+    "Ann": 12,
+    "Sam": 24,
+    "Ben": 16,
+    "Tom": 4,
+    "Sara": 16,
+    "Owen": 12,
+    "Mia": 8,
+    "Noah": 12,
+    "Ivy": 4,
+    "Zoe": 4
+  },
+  "dev_order_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "dev_query_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "dev_kind_balance": {
+    "P": 64,
+    "T": 64
+  },
+  "dev_families_with_query_only_ci": 0,
+  "dev_families": 16,
+  "test_assign_flip_pairs": 64,
+  "test_query_flip_pairs": 64,
+  "test_ci_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "test_name_balance": {
+    "Owen": 8,
+    "Sara": 8,
+    "Noah": 24,
+    "Ivy": 16,
+    "Sam": 12,
+    "Ann": 8,
+    "Zoe": 20,
+    "Ben": 12,
+    "Lily": 8,
+    "Mia": 4,
+    "Max": 4,
+    "Tom": 4
+  },
+  "test_order_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "test_query_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "test_kind_balance": {
+    "P": 64,
+    "T": 64
+  },
+  "test_families_with_query_only_ci": 0,
+  "test_families": 16
+}

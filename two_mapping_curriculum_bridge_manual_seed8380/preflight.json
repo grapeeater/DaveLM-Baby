@@ -1,0 +1,11 @@
+{
+  "mode": "PREFLIGHT",
+  "optimizer_steps": 0,
+  "passed": true,
+  "phase1_supervised_tokens": 3088000,
+  "phase2_supervised_tokens": 3088000,
+  "schedule_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+  "sealed_evaluation_opened": false,
+  "starting_checkpoint": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+  "starting_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+}

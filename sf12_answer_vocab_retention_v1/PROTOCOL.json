@@ -1,0 +1,135 @@
+{
+  "answer_vocabulary_retention": {
+    "coverage_limit": "Does not change or test corpus coverage/disjointness; it addresses only aggregate answer-vocabulary under-attention/dilution on existing KL positions.",
+    "delta": 0.001,
+    "implementation": "reuse the exact student/teacher distributions already computed for full KL; no additional forward",
+    "lambda_name": 1.0,
+    "name_token_ids": {
+      "Alex": 314,
+      "Mia": 925,
+      "Nora": 512,
+      "Owen": 536
+    },
+    "positions": 160,
+    "sampling": "identical frozen SF11 KL selection on every English update",
+    "teacher": "frozen Pilot1 parent used by existing KL"
+  },
+  "binding": "unchanged pinned answer CE + 1.0536573711078283 hard-min localization; both nonsacred DEV pools",
+  "classification": {
+    "otherwise": "MIXED_OR_UNRESOLVED",
+    "partial_widening_rationale": "12 surface exact and 8 order exact each strictly exceed the best frozen SF11 u100 values (11 and7), while the inherited +4/+4 own-baseline development-gain requirement prevents a favorable starting point from qualifying alone.",
+    "priority1": "INCONCLUSIVE_EARLY_STOP if any run lacks a scientific classification due to mechanical/integrity failure",
+    "priority2": "RETENTION_REGRESSION if any run fails TRAIN16, language, or either binding pool at a required checkpoint",
+    "priority3": "ANSWER_VOCAB_RETENTION_SUPPORTED_FULL_ENDPOINT if >=2/3 runs reach u200 and pass every frozen endpoint gate",
+    "priority4": "ANSWER_VOCAB_RETENTION_WEAKENED if D3 exceeds .01 in >=2/3 runs",
+    "priority5": "ANSWER_VOCAB_RETENTION_SUPPORTED_PARTIAL_WIDENING if >=2/3 runs reach u200 with D3/TRAIN16/language/binding green, SF11 development gain, DEV_SURFACE exact>=12 and DEV_ORDER exact>=8",
+    "priority6": "WIDENING_STALLED_UNDER_RETENTION if >=2/3 runs reach u200 with D3/TRAIN16/language/binding green but fewer than2 meet partial-widening criteria"
+  },
+  "created_utc": "2026-09-08T16:56:54.617612+00:00",
+  "curriculum": "Choose exactly SF10 new shard0 (first canonical object/verb combination per name pair), retain all four surfaces and both orders x both queries for both actor assignments. No outcome-based selection. TRAIN16 retention shard rotation/order and padding unchanged from SF10.",
+  "dev": {
+    "content": {
+      "A": [
+        "lifted",
+        "the paper kite"
+      ],
+      "B": [
+        "washed",
+        "the red basket"
+      ]
+    },
+    "order": 16,
+    "rule": "Same SF9 renderers, disjoint verbs/objects from SF9/SF10 training/dev and originalTRAIN16. One complete namepair x surface/order-query family per group; 8reversal pairs and2complete8-item families per panel. Freeze before any parent output. No historical DEV scored in SF11.",
+    "surface": 16
+  },
+  "english_objective": "Frozen SF11 mean causal answer4tokens+EOS CE +1.0 D_KL(P_student||P_Pilot1) over the same160frozenpositions +.25 mean max(0,1-first-answer gap) +1.0 mean max(0,sum_N P_student-sum_N P_teacher-.001).",
+  "evaluation": "0/100/200: unchangedTRAIN16, newDEV_SURFACE16, newDEV_ORDER16, identical128alignedTinyStoriesDEV, frozenD3256, both80docbindingpools. Exact candidate4token likelihood excludingEOS; margin>0; normalgreedy32 exactcandidate+EOS. Family/pair summaries descriptive; no broader English claim.",
+  "evaluation_updates": [
+    0,
+    100,
+    200
+  ],
+  "gates": {
+    "binding_each_pool": "answer>=76, BD>=76, collapse==0",
+    "continue": "retention_acquisition AND language AND d3 AND binding pass at 100/200; regression stop otherwise",
+    "d3": "four-name mass <= .01",
+    "dev_order": "exact>=13/16 AND fact>=7/8 AND copy>=7/8 AND each order>=7/8 AND each order:query cell>=3/4",
+    "dev_surface": "correct>=15/16 AND exact>=13/16 AND each surface exact>=3/4",
+    "development_gain": "At200 exact surface>=ownu0+4 AND exact order>=ownu0+4 (25 percentage point gain per panel). No adaptation to baseline results.",
+    "endpoint_pass": "u200 AND allretention AND dev_surface AND dev_order AND development_gain",
+    "language": "CE <= own update0 CE + .25",
+    "retention_acquisition": "TRAIN16 panel: correct==16 AND exact==16 AND reversals==8 AND families==4 (unchanged acquisition gate; must be preserved)"
+  },
+  "hypothesis": "Dedicated teacher-anchored retention of the four trained answer-token classes is sufficient, under the frozen SF11 curriculum and recipe, to contain the previously replicated D3 regression while retaining widening behavior.",
+  "kl_data": "unchanged KL_POOL.json 165363 positions/741 rows, 160 per English index 1..180",
+  "limits": "Three parent replications, no population certainty. Comparison to SF10 is historical, not concurrent same-seed breadthrandomization; a selectedsubset cannot isolate cardinality from lexicalcontent/topology. Support is bounded practical evidence, never proof of a general breadth mechanism.",
+  "manipulated_variable": "Add lambda_name * mean ReLU(S_student-S_teacher-delta) at the same frozen 160 KL positions, where N={314,536,925,512}, delta=.001 and lambda_name=1.0. No second forward and no change to full-KL semantics or sampling.",
+  "margin": {
+    "M": 1.0,
+    "lambda_margin": 0.25,
+    "mechanics": "Pinned SF10 first-answer full-vocabulary logsoftmax hinge mean over36; unchanged."
+  },
+  "minimum_breadth": "Four answer identities x four surface categories=16; four identities x two source orders x two query sources=16 competing items. These32 are the minimum for complete name-counterbalanced SF9-category coverage. Add all16 historical preservation items=48. This is minimum within the inherited two-arm-name-pair template structure, not a universal combinatorial lower bound.",
+  "next_action_rule": "Freeze SF12 classification, then recommend exactly one review/action appropriate to it. Do not execute it.",
+  "optimizer": {
+    "amsgrad": false,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "foreach": false,
+    "fused": false,
+    "gradient_clip": 2.0,
+    "lr": 5e-05,
+    "state": "fresh optimizer per run",
+    "type": "AdamW",
+    "weight_decay": 0.05
+  },
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "persistence": "Inherited SF10 full atomic rolling restart eachupdate plus permanent100/200. Sequential blocking child execution; explicit durable ledger before launch/PID/end/status. Exactlyone launchperseed; no auto-restart/replay of valid failures. Mechanical interruption reported with committedstate preserved.",
+  "runs": [
+    {
+      "arm": "curriculum",
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "seed": 87029
+    },
+    {
+      "arm": "curriculum",
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "seed": 87030
+    },
+    {
+      "arm": "curriculum",
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "seed": 87031
+    }
+  ],
+  "runtime": {
+    "autocast": false,
+    "deterministic_algorithms": true,
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "float32": true,
+    "python": "3.12.14",
+    "tf32": false,
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "sampling": "200updates,20cycles9English+1binding. 180English batches of36: fixed32new + originalSF10 rotating4TRAIN records. 5760new+720preservation=6480total. Eachnew180presentations; eachTRAIN1645presentations. Binding entries and shared pad values unchanged.",
+  "scope": "unchanged PINNED_MASKING.set_scope (English = all base_model params except blocks0-3; binding = all)",
+  "seeds": [
+    87029,
+    87030,
+    87031
+  ],
+  "stopping": "Stop eachrun at100/200 on any retention failure; no widening early stop. Full endpoint200only. Other independent runs continue after valid scientificfailure. No rescue, no replacementseed, no postresultcurriculumchange.",
+  "study": "SF12_ANSWER_VOCAB_RETENTION_V1",
+  "telemetry": "At u0/u100/u200 evaluate R_name on the fixed first160 KL positions. During training record actual scheduled mean S_student, S_teacher, raw excess, active fraction, active-only excess, R_name and weighted contribution. Descriptive only.",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "transfer": "All historicalSF1transfer and historicalSF9/SF10DEV remain unscored in SF11. No optional reevaluation is authorized by this package. FINAL/sacred never accessed."
+}

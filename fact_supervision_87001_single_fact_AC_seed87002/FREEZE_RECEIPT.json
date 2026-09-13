@@ -1,0 +1,15 @@
+{
+ "status": "SINGLE_FACT_AC_FREEZE_COMPLETE_PREEXECUTION_ONLY",
+ "bundle": "fact_supervision_87001_single_fact_AC_seed87002",
+ "items_a_sha256": "902a6ed4ef94ba6b7321df5a7504a8b4d6dfcdedfff21dd46148e5e7d2313b08",
+ "items_c_sha256": "7845ff6cd6aecb9ea59e2b84cad602622d9f04b8491eff694eb40c064a29d66d",
+ "validation_sha256": "a3c56998bb45f6e8e34e91fa29be48c53a12f239aa9fac6dc6258edc104f3eb2",
+ "manifest_sha256": "f6239e6a43fc7de4e35905e7ad07868af3af1b883887347074652a3a9343a160",
+ "protocol_sha256": "2130de6bea36c55237cee54300d2430846364ce3b78c4a5a3c00839011ef0415",
+ "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false
+}

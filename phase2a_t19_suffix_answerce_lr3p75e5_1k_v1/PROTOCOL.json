@@ -1,0 +1,21 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T19_SUFFIX_ANSWERCE_LR3P75E5_1K_V1",
+  "status": "TERMINAL_T19_FAIL_NO_REPRESENTATION",
+  "scientific_question": "Given T18 taught answer-start (~76-84/128 first-token BOS) but leftover exact fails complete the wrong word (Skye->Sky, Sal->Salt), does suffix-weighted answer CE (1.0 first token, 3.0 rest+period+EOS) raise DEV exact while holding T17/T18 language-safe representation?",
+  "earned_by": "T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Exact 36/36/40. T18X: first_token_correct_then_diverge 40-44 is the dominant residual. Uniform more CE is the wrong next axis.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14", "T15", "T16", "T17", "T18", "730002", "760001-760003", "770001-770003"],
+  "phase_a": {"updates": "1-750", "trainable": 40849664, "frozen": 20670721},
+  "phase_b": {"after_eval": 750, "trainable": 21163264, "frozen": 40357121},
+  "objective": {"lambda_ptr": 1.0, "lambda_ans": 1.0, "answer_suffix_w": 3.0, "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "seeds": [780001, 780002, 780003],
+  "schedule": {"total_updates": 1000, "eval_points": [0, 100, 300, 500, 750, 1000], "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T19_FULL_SUCCESS", "T19_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T19_FAIL_NO_REPRESENTATION", "T19_LANGUAGE_REGRESSION", "T19_SHORTCUT_FAILURE", "T19_HARD_STOP"],
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; >=2 LANGUAGE_REGRESSION; >=2 SHORTCUT; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

@@ -1,0 +1,40 @@
+{
+  "both_sides_gradient": true,
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "lambda_consistency": 0.1,
+  "locked_transfer": "LOCKED_UNSCORED",
+  "optimizer_created": false,
+  "paired_records": 32,
+  "pairs": 16,
+  "parents_verified": 3,
+  "representation": "final_norm output at final prompt/query token",
+  "sacred_accessed": false,
+  "schedule": {
+    "binding": 20,
+    "english": 180
+  },
+  "seeds": [
+    87056,
+    87057,
+    87058
+  ],
+  "sf20_payloads_byte_identical": [
+    "TRAIN.json",
+    "SCHEDULE.json",
+    "D3_SELECTION.json",
+    "DEV_ORDER.json",
+    "DEV_SURFACE.json",
+    "KL_POOL.json",
+    "KL_POOL_MANIFEST.json",
+    "SF13_KL_SCHEDULE.json",
+    "SF2_ENGINE.py",
+    "SF2_PROTOCOL.json",
+    "TRAIN16_RETENTION.json",
+    "IDENTITY_ASSIGNMENT.json",
+    "TOKENIZATION_MATCH.json"
+  ],
+  "status": "SF21_STATIC_PREFLIGHT_PASS",
+  "synthetic_identical_loss": 0.0,
+  "updates": 0
+}

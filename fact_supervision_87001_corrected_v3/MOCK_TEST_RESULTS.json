@@ -1,0 +1,24 @@
+{
+  "baby_imported": false,
+  "backward_called": false,
+  "checkpoint_loaded": false,
+  "mock_tensor_checks": [
+    "five response/EOS targets only",
+    "right padding ignored",
+    "candidate likelihood positions and full-vocabulary denominator",
+    "EOS probability/rank/tie",
+    "scope and gradient clearing",
+    "durable no-replay journal"
+  ],
+  "negative_tests": [
+    "wrong_final_answer",
+    "query_predicate_not_asserted",
+    "malformed_fact",
+    "informative_control",
+    "broken_assignment_reversal",
+    "unbalanced_control_target_twins"
+  ],
+  "optimizer_created": false,
+  "status": "PASS",
+  "torch_version": "2.12.0+rocm7.14.0"
+}

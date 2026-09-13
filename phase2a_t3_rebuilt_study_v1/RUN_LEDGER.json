@@ -1,0 +1,30 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study_classification": "T3_LANGUAGE_REGRESSION",
+  "decision": "REBUILD_AND_RUN_T3",
+  "test_opened": false,
+  "binding_training_in_t3": false,
+  "seeds": [620001, 620002, 620003],
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "ledger_correction": "TRAINING_FAILED_SEED_620001 was a post-FINAL_STATUS KeyError on missing runs; not a scientific failure. Watchdog completed 620002 and 620003.",
+  "u500_checkpoint_sha256": {
+    "620001": "24d813270a41b4d0b341f160a5a61b7fa9653afa54863ce3e1a5d434057095ed",
+    "620002": "9611eaa4a2fb6ba6216a08c8958734ae9a06e2287151f72dc54236d63b11de09",
+    "620003": "6b73b1959a32efa792314e669e808bd3a3d90be4aa5f4859762485b4998a5821"
+  },
+  "test_seal_sha256": "6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb",
+  "test_status": "SEALED_UNOPENED",
+  "runs": {
+    "620001": {"update": 500, "classification": "T3_LANGUAGE_REGRESSION", "pointer": 99, "native": 88, "exact": 0, "dev_ce": 1.3048416718840599, "binding_intact": true},
+    "620002": {"update": 500, "classification": "T3_LANGUAGE_REGRESSION", "pointer": 97, "native": 87, "exact": 0, "dev_ce": 1.301182608306408, "binding_intact": true},
+    "620003": {"update": 500, "classification": "T3_LANGUAGE_REGRESSION", "pointer": 102, "native": 96, "exact": 0, "dev_ce": 1.3075882866978645, "binding_intact": true}
+  },
+  "next_treatment": "phase2a_t4_binding_sidecar_v1 on Phase1G parent, not T3 descendants",
+  "locks": {
+    "T2_EVAL_TEST": "LOCKED_UNOPENED",
+    "FINAL": "LOCKED",
+    "sacred": "LOCKED",
+    "T3_TEST": "SEALED_UNOPENED"
+  }
+}

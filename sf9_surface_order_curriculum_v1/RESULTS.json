@@ -1,0 +1,59 @@
+{
+  "classification": "RETENTION_REGRESSION",
+  "runs": {
+    "seed_87020_curriculum": {
+      "status": "STOP_REGRESSION",
+      "completed": 100,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "checkpoint_sha256": "6cb3e2ff33d505e7f9691e50373017d5dd1909a74b0da648a6852e0b339a4bab"
+    },
+    "seed_87021_curriculum": {
+      "status": "STOP_REGRESSION",
+      "completed": 100,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "checkpoint_sha256": "ec6afe66610f9bafec5ee028136a9521a3dcb13a79223a80aa06b7291ac90c67"
+    },
+    "seed_87022_curriculum": {
+      "status": "STOP_REGRESSION",
+      "completed": 100,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "checkpoint_sha256": "90a2368fb8abc099bb1433ff0847c1fc969e1b9ae0c554b59abcddb01a737e9a"
+    }
+  }
+}

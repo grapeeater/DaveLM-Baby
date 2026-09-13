@@ -1,0 +1,70 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T10_FACTCLAUSE_POINTER_1K_V1",
+  "study_classification": "T10_LANGUAGE_REGRESSION",
+  "runs": {
+    "690001": {
+      "seed": 690001,
+      "update": 1000,
+      "classification": "T10_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 98,
+      "dev_native": 83,
+      "dev_exact": 0,
+      "dev_ce": 1.300571346282959,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "690002": {
+      "seed": 690002,
+      "update": 1000,
+      "classification": "T10_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 108,
+      "dev_native": 89,
+      "dev_exact": 0,
+      "dev_ce": 1.306801150739193,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "690003": {
+      "seed": 690003,
+      "update": 1000,
+      "classification": "T10_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 115,
+      "dev_native": 88,
+      "dev_exact": 0,
+      "dev_ce": 1.301492078602314,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false
+}

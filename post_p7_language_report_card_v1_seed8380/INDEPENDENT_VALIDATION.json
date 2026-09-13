@@ -1,0 +1,19 @@
+{
+  "candidate_lengths": [
+    3,
+    3
+  ],
+  "controlled_items": 288,
+  "exact_prompt_overlap_count": 0,
+  "families": 36,
+  "inference_run": false,
+  "max_completed_input_tokens": 61,
+  "model_loaded": false,
+  "naturalistic_items": 24,
+  "p7_checkpoint_sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "sacred_exam_accessed": false,
+  "status": "PASS_PREEXECUTION_ONLY",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "training_run": false,
+  "unique_prompts": 312
+}

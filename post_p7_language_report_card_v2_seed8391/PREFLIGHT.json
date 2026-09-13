@@ -1,0 +1,21 @@
+{
+  "context_limit": 256,
+  "encode_decode_roundtrips": "PASS",
+  "equal_completion_tokens": 3,
+  "independent": {
+    "contradictory_or_ambiguous_controlled_prompts": 0,
+    "controlled_keys_checked": 352,
+    "fact_order_assignment_query_and_distractor_transformations": "PASS",
+    "families_checked": 36,
+    "inverted_keys_rejected": 352,
+    "key_disagreements": 0
+  },
+  "max_controlled_completed_length": 64,
+  "naturalistic_review": "24 prompts manually inspected before behavior; no internally conflicting facts or unresolved pronoun-dependent questions; multiple valid continuations intentionally allowed",
+  "no_inference": true,
+  "no_training": true,
+  "prefix_completion_token_boundary": "PASS",
+  "sacred_material_accessed": false,
+  "status": "PASS_NO_MODEL_ACCESS",
+  "unique_prompts": 376
+}

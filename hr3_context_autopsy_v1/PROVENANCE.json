@@ -1,0 +1,12 @@
+{
+  "status": "BOUNDED_AUTOPSY_COMPLETE",
+  "input_comparison_sha256": "d22fc52652936a9fc55e4dad2fb0222121ac31d06e48325202cf8b59795a8b65",
+  "bundle_receipt_sha256": "7d147dd92af73d3d1979c5b012b2fbd8e258efad8ff9650f8c3de244be862df9",
+  "source_sha256": "a8c1d787436e1325ac44c5fc1a034b024b39829ac6262ff4661d9ccf352e9390",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.12.0+rocm7.14.0",
+  "checkpoint_updates": 0,
+  "optimizer_created": false,
+  "final_accessed": false,
+  "sacred_accessed": false
+}

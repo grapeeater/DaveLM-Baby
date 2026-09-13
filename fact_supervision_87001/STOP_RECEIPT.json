@@ -1,0 +1,109 @@
+{
+  "all_scientific_rows_preserved": "construction_candidates.json",
+  "duplicate_prompts": {
+    "Alex carried the green kite and then went home.": [
+      {
+        "id": "primary:object:05d281489eef0c36:natural:0",
+        "partition": "primary"
+      },
+      {
+        "id": "confirmation:object:db28775c46f974a0:natural:0",
+        "partition": "confirmation"
+      }
+    ],
+    "Alex found the blue car and then went home.": [
+      {
+        "id": "primary:object:3f82d20bfbec8130:natural:0",
+        "partition": "primary"
+      },
+      {
+        "id": "primary:object:bc18fa029f491c3c:natural:0",
+        "partition": "primary"
+      }
+    ],
+    "Mia carried the green kite and then went home.": [
+      {
+        "id": "primary:object:5da5bc579e457903:natural:1",
+        "partition": "primary"
+      },
+      {
+        "id": "primary:object:6d86b84b933b6239:natural:0",
+        "partition": "primary"
+      }
+    ],
+    "Mia found the yellow fish and then went home.": [
+      {
+        "id": "primary:object:bc18fa029f491c3c:natural:1",
+        "partition": "primary"
+      },
+      {
+        "id": "confirmation:object:67aa650ce5dfa88a:natural:1",
+        "partition": "confirmation"
+      }
+    ],
+    "Nora found the blue toy and then went home.": [
+      {
+        "id": "primary:object:3f82d20bfbec8130:natural:1",
+        "partition": "primary"
+      },
+      {
+        "id": "primary:object:3f77991481777ead:natural:0",
+        "partition": "primary"
+      }
+    ],
+    "Owen found the green kite and then went home.": [
+      {
+        "id": "primary:object:3f77991481777ead:natural:1",
+        "partition": "primary"
+      },
+      {
+        "id": "confirmation:object:d2fc2b7f99370272:natural:1",
+        "partition": "confirmation"
+      }
+    ]
+  },
+  "historical_overlap_hits": 0,
+  "inventoried_historical_sources": 66,
+  "mechanical_corrections": [
+    "Explicit UTF-8 tokenizer JSON reading replaced Windows implicit cp1252; tokenizer bytes unchanged.",
+    "The corpus reader explicitly allowlists the four historical Pilot 0/1 nonsacred binding JSON files present in the old audit. It decodes their document token arrays; no treatment or sacred files are opened."
+  ],
+  "naturalistic_partition_counts": {
+    "confirmation": {
+      "items": 16,
+      "unique": 16
+    },
+    "primary": {
+      "items": 16,
+      "unique": 13
+    }
+  },
+  "no_checkpoint_loaded": true,
+  "no_inference": true,
+  "no_sacred_access": true,
+  "no_training": true,
+  "not_completed": [
+    "final schedules",
+    "mock harness test execution",
+    "complete runtime and training runner freeze",
+    "pretraining scientific freeze"
+  ],
+  "passing_checks": {
+    "answer_key_disagreements": 0,
+    "control_independence": "exact target twins for each input and candidate pair",
+    "cross_arm_cues_targets_candidates": "PASS",
+    "family_arm_groups": 216,
+    "rows_checked": 1728,
+    "transformations": "PASS"
+  },
+  "primary_confirmation_shared_prompts": [
+    "Alex carried the green kite and then went home.",
+    "Mia found the yellow fish and then went home.",
+    "Owen found the green kite and then went home."
+  ],
+  "reason": [
+    "Duplicate naturalistic prompts under prescribed first-eight-family construction"
+  ],
+  "required_review": "Approve a revised naturalistic construction/uniqueness rule. No revised rule has been selected or executed.",
+  "status": "STOP_NOT_FROZEN_NOT_READY_FOR_TRAINING"
+}

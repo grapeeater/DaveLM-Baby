@@ -1,0 +1,49 @@
+{
+  "status": "NONSOURCE_SUPPRESSION_CORRECTIVE_PREFLIGHT_PASS_AWAITING_AUTHORIZATION",
+  "corrective_reason": "removed implementation-added absolute lambda range; preserved calibration formula",
+  "optimizer_steps_so_far": 0,
+  "no_training": true,
+  "optimizer_created": false,
+  "no_retention_behavior_used": true,
+  "hashes": {
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\checkpoints\\learned_mapping_row_localization\\seed_8380\\latest.pt": "cf53eef03adf874255cd54508fc7948dfd1e4926a57537f7e2f828f5f582adab",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_training_quartet_pool.json": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_retention_quartet_pool.json": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_frozen_schedule.json": "6157dce61d990b2d96ef91470a80a973bd5e96339d406bceb9fdc75e020cea42",
+    "C:\\DaveLM-CADAVER\\treatment13_distinct_localization_supervision_seed8380\\PREFLIGHT_AUDIT.json": "9ff86d9deb63ab02a3c72d4d00f60ea49a44631f94176725f91bcc7449e795a5",
+    "C:\\DaveLM-CADAVER\\treatment13_distinct_localization_supervision_seed8380\\FINAL_FROZEN_RETENTION_RESULTS.json": "5363a0d432e815ae2a15701d14ac05650a98e738fd48ebae6736d40730fab20c",
+    "C:\\DaveLM-CADAVER\\treatment13_model.py": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+    "C:\\DaveLM-CADAVER\\treatment13_preflight.py": "690f7315bc035d149a5d350387f333253254786b6b3c0b0b1d350440578cae10"
+  },
+  "counts": {
+    "train_docs": 800,
+    "retention_docs": 320,
+    "schedule_steps": 1000,
+    "batch_size": 32
+  },
+  "starting_checkpoint_sha256": "cf53eef03adf874255cd54508fc7948dfd1e4926a57537f7e2f828f5f582adab",
+  "lambda_existing": 1.0536573711078283,
+  "initial_mean_answer_loss": 18.947120666503906,
+  "initial_mean_existing_localization_loss": 3.1528666019439697,
+  "initial_mean_filler_loss": 0.08533847332000732,
+  "G_existing": 8.442181587219238,
+  "G_filler_raw": 0.28524884581565857,
+  "lambda_filler": 2.9595848365588058,
+  "weighted_gradient_ratio": 0.1,
+  "calibration_formula": "0.10*G_existing/G_filler_raw",
+  "forward_inputs": "input_ids,qpos,anspos only",
+  "synthetic_tests": {
+    "swap_labels_invariant": true,
+    "distinct_better_than_wrong": true,
+    "strongest_non_source_monotonic": true,
+    "position_agnostic": true,
+    "no_special_positions": true
+  },
+  "mask_audit": {
+    "exactly_two_sources_excluded": true,
+    "all_other_valid_candidates_included": true
+  },
+  "gradient_calibration_zero_update": true,
+  "lambda_frozen": true,
+  "checkpoint_step": 1000
+}

@@ -1,0 +1,131 @@
+{
+  "binding": "unchanged pinned answer CE + 1.0536573711078283 hard-min localization; both nonsacred DEV pools",
+  "classification": {
+    "otherwise": "MIXED_OR_UNRESOLVED",
+    "priority1": "MECHANICAL_INCOMPLETE if execution or integrity prevents valid classification",
+    "priority2": "RETENTION_REGRESSION if any frozen TRAIN16, language, or binding retention gate fails",
+    "priority3": "FIRST_TOKEN_CE_INTERPOLATION_SUPPORTED if >=2/3 branches reach u200 and pass all frozen endpoint gates including D3<=0.010",
+    "priority4": "FIRST_TOKEN_CE_INTERPOLATION_INSUFFICIENT if >=2/3 valid branches either fail D3 while retention and widening survive, or reproduce SF14-like exact-generation failure (surface exact<=2/16 and order exact<=2/16) while D3 and retention remain green"
+  },
+  "created_utc": "2026-09-08T22:47:17.630257+00:00",
+  "curriculum": "Identical SF11 48-item widening curriculum (16 preservation + 32 widening items). Choose exactly the SF11 frozen items; all four surfaces and both orders x both queries for both actor assignments. No outcome-based selection.",
+  "dev": {
+    "content": {
+      "A": [
+        "lifted",
+        "the paper kite"
+      ],
+      "B": [
+        "washed",
+        "the red basket"
+      ]
+    },
+    "order": 16,
+    "rule": "Same SF9 renderers, disjoint verbs/objects from SF9/SF10 training/dev and original TRAIN16. One complete namepair x surface/order-query family per group; 8 reversal pairs and 2 complete 8-item families per panel. Freeze before any parent output. No historical DEV scored in SF13.",
+    "surface": 16
+  },
+  "english_objective": "Weighted-mean causal CE with per-record response weights [0.125,1,1,1,1] +1.0 full-vocabulary forward KL on the frozen broad-coverage 160 positions +0.25 first-answer-token hinge with M=1.0. No R_name.",
+  "evaluation": "0/100/200: unchanged TRAIN16, frozen DEV_SURFACE16, frozen DEV_ORDER16, identical 128 aligned TinyStoriesDEV, frozen D3 256, both 80-doc binding pools. Exact candidate 4-token likelihood excluding EOS; margin>0; normal greedy32 exact candidate+EOS. Family/pair summaries descriptive; no broader English claim.",
+  "evaluation_updates": [
+    0,
+    100,
+    200
+  ],
+  "first_answer_ce": {
+    "binding_updates": "unchanged",
+    "endpoint_equivalence": "weight 0 exactly reproduces sealed SF14 CE; weight 1 exactly reproduces sealed SF13 CE",
+    "later_candidate_punctuation_eos_weight": 1.0,
+    "margin_at_first_token": "unchanged",
+    "normalization": "sum weighted token CE divided by sum of supervised token weights (36*4.125 per English update)",
+    "scope": "all 36 records in each widening English update, including the four scheduled TRAIN16 preservation records",
+    "weight": 0.125
+  },
+  "gates": {
+    "binding_each_pool": "answer>=76, BD>=76, collapse==0",
+    "continue": "retention_acquisition AND language AND d3 AND binding pass at 100/200; regression stop otherwise",
+    "d3": "four-name mass <= .01",
+    "dev_order": "exact>=13/16 AND fact>=7/8 AND copy>=7/8 AND each order>=7/8 AND each order:query cell>=3/4",
+    "dev_surface": "correct>=15/16 AND exact>=13/16 AND each surface exact>=3/4",
+    "development_gain": "At200 exact surface>=ownu0+4 AND exact order>=ownu0+4 (25 percentage point gain per panel). No adaptation to baseline results.",
+    "endpoint_pass": "u200 AND all retention AND dev_surface AND dev_order AND development_gain",
+    "language": "CE <= own update0 CE + .25",
+    "retention_acquisition": "TRAIN16 panel: correct==16 AND exact==16 AND reversals==8 AND families==4 (unchanged acquisition gate; must be preserved)"
+  },
+  "hypothesis": "A 0.125 first-answer-name CE weight can preserve the SF15 exact-generation recovery while restoring durable D3 containment (<=0.010) at U100 and U200.",
+  "interpretation": "Success supports only that a 0.125 first-answer-token CE weight was sufficient under SF16 to preserve D3 while recovering exact factual generation/retention and maintaining tested language, binding, and widening behavior. Failure reports the observed tradeoff; it does not establish optimality, sole causation, a scaling law, or a capacity limit.",
+  "kl_data": "Unchanged KL_POOL.json 165363 positions/741 rows; SF13 sampling geometry: frozen SF13_KL_SCHEDULE.json (180 updates x 160 existing entries, 160 distinct source rows/update, deterministic, row+column provenance only).",
+  "limits": "Three parent replications, no population certainty. Comparison to SF11/SF12 is the same legal pool with sampling geometry as the only change; support is bounded practical evidence, never proof of a general coverage mechanism.",
+  "manipulated_variable": "Relative to sealed SF15, change only the first answer-name causal CE position weight from 0.25 to 0.125 on every English update.",
+  "margin": {
+    "M": 1.0,
+    "lambda_margin": 0.25,
+    "mechanics": "Pinned SF10 first-answer full-vocabulary logsoftmax hinge mean over 36; unchanged."
+  },
+  "next_action_rule": "Freeze and report SF16 only. SF16 is the final simple first-answer-token CE dose interpolation in this program: no automatic micro-dose sweep (0.10/0.15/0.1875/etc.) follows a failure. If insufficient, preserve the result and recommend SF17 move to a different treatment mechanism class. Do not run SF17 automatically.",
+  "optimizer": {
+    "amsgrad": false,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "foreach": false,
+    "fused": false,
+    "gradient_clip": 2.0,
+    "lr": 5e-05,
+    "state": "fresh optimizer per run",
+    "type": "AdamW",
+    "weight_decay": 0.05
+  },
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "persistence": "Inherited SF11 full atomic rolling restart each update plus permanent 100/200. Sequential blocking child execution; explicit durable ledger before launch/PID/end/status. Exactly one launch per seed; no auto-restart/replay of valid failures. Mechanical interruption reported with committed state preserved.",
+  "runs": [
+    {
+      "arm": "curriculum",
+      "d3_reference": 0.007036717671962123,
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "parent_sf8_seed": 87017,
+      "seed": 87041
+    },
+    {
+      "arm": "curriculum",
+      "d3_reference": 0.006672408242356376,
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "parent_sf8_seed": 87018,
+      "seed": 87042
+    },
+    {
+      "arm": "curriculum",
+      "d3_reference": 0.007839491795780695,
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "parent_sf8_seed": 87019,
+      "seed": 87043
+    }
+  ],
+  "runtime": {
+    "autocast": false,
+    "deterministic_algorithms": true,
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "float32": true,
+    "python": "3.12.14",
+    "tf32": false,
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "sampling": "200 updates, 20 cycles of 9 English + 1 binding. 180 English batches of 36: fixed 32 new + original SF11 rotating 4 TRAIN16 records. 5760 new + 720 preservation = 6480 total. Each new 180 presentations; each TRAIN16 45 presentations. Binding entries and shared pad values unchanged.",
+  "scope": "unchanged PINNED_MASKING.set_scope (English = all base_model params except blocks0-3; binding = all)",
+  "seeds": [
+    87041,
+    87042,
+    87043
+  ],
+  "stopping": "Stop each run at 100/200 on any retention failure; no widening early stop. Full endpoint 200 only. Other independent runs continue after valid scientific failure. No rescue, no replacement seed, no post-result curriculum change.",
+  "study": "SF16_FIRST_ANSWER_TOKEN_CE_INTERPOLATION_V1",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "transfer": "All historical SF1 transfer and historical SF9/SF10/SF11 DEV remain unscored in SF13. No optional reevaluation is authorized by this package. FINAL/sacred never accessed."
+}

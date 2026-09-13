@@ -1,0 +1,28 @@
+{
+  "binding_batches_reconstructed": 50,
+  "checkpoint_loaded": false,
+  "english_batches_reconstructed": 450,
+  "forbidden_tokens": [],
+  "functional_symbols": [
+    "verify_bundle",
+    "load_config",
+    "records",
+    "reconstruct",
+    "set_scope",
+    "mask_english",
+    "atomic_replace",
+    "load_parent_model",
+    "make_optimizer",
+    "dev_eval",
+    "run",
+    "main"
+  ],
+  "inference": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "placeholder_scan": "PASS",
+  "sacred_access": false,
+  "schedule_consumed": 500,
+  "status": "PASS",
+  "top_level_mock_status": "MOCK_0_UPDATE_PASS"
+}

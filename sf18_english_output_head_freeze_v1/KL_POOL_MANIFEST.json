@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "dev_monitor_rows_checked": 128,
+    "disjointness_violations": 0,
+    "pool_entries": 165363,
+    "rejected_empty_or_long": 8259,
+    "retained_rows": 741,
+    "sf1_train_prompts_checked": 16,
+    "source_rows": 9000
+  },
+  "minimum_pool_required": 28800,
+  "rule": {
+    "aligned_form": "z=[2]+token_ids+[3]; labeled columns j=0..len(token_ids) (column j predicts z[j+1]); count per row = len(token_ids)+1",
+    "disjointness": "exact token-array inequality vs first-128 ENGLISH_DEV.jsonl monitor rows and vs all 16 SF1 TRAIN prompt_token_ids arrays; violations => STOP",
+    "lambda_kl": 1.0,
+    "ordering": "row-major over retained rows in file order",
+    "per_update_rotation": "English update u in 1..180 -> start=((u-1)*160) mod |P|; take next 160 entries of P (wrap at end)",
+    "retention_filter": "rows with 2 <= len(token_ids) <= 254, in file order",
+    "source": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+    "source_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+  }
+}

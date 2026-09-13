@@ -1,0 +1,85 @@
+{
+  "D3_language_position_groups": [
+    "final_predictive",
+    "all_prior_context",
+    "all_positions"
+  ],
+  "D3_scoring": "first next-token logits/softmax on the exact prior 256 positions; trained-name mass and individual names",
+  "authorized_inputs": {
+    "D3": "exact frozen 256 unrelated TinyStories positions from prior forensic",
+    "factual": "exact 16 SF1 TRAIN records",
+    "language": "same aligned first 128 TinyStories DEV records used by prior SF1 forensics"
+  },
+  "baseline_requirements": {
+    "all_positions_cross_patch_aggregate_tolerance": 1e-05,
+    "policy": "failure seals uninterpreted results; tolerances may not be silently changed",
+    "prior_cross_run_aggregate_tolerance": 1e-05,
+    "same_source_manual_patch_max_abs_logit": 1e-06
+  },
+  "directions": {
+    "P_into_S": "compute both states through site, replace selected SF1 recipient positions with Pilot1 donor positions, then run SF1 suffix",
+    "S_into_P": "compute both states through site, replace selected Pilot1 recipient positions with SF1 donor positions, then run Pilot1 suffix"
+  },
+  "factual_position_groups": [
+    "final_predictive",
+    "factual_subject",
+    "factual_object_first",
+    "queried_object_repeat",
+    "object_all_mentions",
+    "predicate_relation",
+    "remaining_prompt_context",
+    "all_nonfinal_context",
+    "answer_generation_path",
+    "all_positions"
+  ],
+  "factual_scoring": {
+    "candidate": "sum four candidate-token conditional log probabilities, excluding EOS; positive correct-minus-distractor wins",
+    "exact_answer_eos": "greedy from BOS+exact prompt, ordinary EOS, max32; exact iff generated ids equal correct four-token candidate then EOS",
+    "pairs": "both assignment reversals must have positive sequence margin"
+  },
+  "forbidden": [
+    "training",
+    "optimizer",
+    "autograd",
+    "weight mutation",
+    "locked SF1 panels",
+    "FINAL",
+    "sacred material",
+    "treatment design"
+  ],
+  "interpretive_limit": "inference-time causal sufficiency under hybrids only; no training-time-site or held-out-generalization claim",
+  "language_scoring": "correctly aligned causal next-token CE on the same four batches of 32 records",
+  "name": "SF1_TOKEN_POSITION_PATCHING_FORENSIC_V1",
+  "output_paths": [
+    "Pilot1 final_norm+untied head",
+    "SF1 final_norm+untied head"
+  ],
+  "patch_semantics": "torch.where on a frozen boolean [batch,time] position mask at the named residual boundary; recipient suffix remains fixed",
+  "sites": [
+    {
+      "name": "after_block_4_attention_residual",
+      "stage": 8
+    },
+    {
+      "name": "after_block_4_mlp_residual",
+      "stage": 9
+    },
+    {
+      "name": "after_block_5_attention_residual",
+      "stage": 10
+    },
+    {
+      "name": "after_block_5_mlp_residual",
+      "stage": 11
+    },
+    {
+      "name": "after_block_7_attention_residual",
+      "stage": 14
+    },
+    {
+      "name": "after_block_7_mlp_residual",
+      "stage": 15
+    }
+  ],
+  "status": "FROZEN_BEFORE_CHECKPOINT_LOAD"
+}

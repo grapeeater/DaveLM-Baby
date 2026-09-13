@@ -1,0 +1,19 @@
+{
+ "status": "PRETREATMENT_PASS",
+ "experiment": "treatment13_distinct_localization_supervision_seed8380",
+ "train_docs": 800,
+ "retention_docs": 320,
+ "schedule_steps": 1000,
+ "train_pool_sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+ "retention_pool_sha256": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+ "schedule_sha256": "6157dce61d990b2d96ef91470a80a973bd5e96339d406bceb9fdc75e020cea42",
+ "prior_t13_preflight_sha256": "fc04b9c375a649c59be45dd7499fd3608e21a0a6867de50e2fa0d2f4c2928a8c",
+ "initial_mean_answer_loss": 7.465176582336426,
+ "initial_mean_localization_loss": 7.085013389587402,
+ "lambda": 1.0536573711078283,
+ "permutation_invariance_test": true,
+ "gradient_test": true,
+ "optimizer_steps_so_far": 0,
+ "forward_inputs": "input_ids,qpos,anspos only",
+ "no_retention_behavior_used": true
+}

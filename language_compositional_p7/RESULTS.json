@@ -1,0 +1,76 @@
+{
+  "parent_sha256": "da009100412fba2adcf58823aefd37cc9486ef7aff39672361ce6111773c6a3b",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "synthetic_train_sha256": "337a24425fb8bd5e8b2c6b31518c23e99be3a22d0499ca9aea3d226c10af2489",
+  "train_examples": 1640,
+  "heldout_examples": 408,
+  "heldout_prompts": [
+    "Lily found a red ball. Lily picked up the red ball.",
+    "Lily played with the red ball. Lily had fun with the red ball.",
+    "Lily looked for the yellow toy. Lily searched for the yellow toy.",
+    "Lily put the green hat on the table. Lily looked at the green hat.",
+    "Lily liked the blue kite. Lily played with the blue kite.",
+    "Lily carried the red car. Lily put down the red car.",
+    "Lily picked up the yellow fish. Lily carried the yellow fish.",
+    "Mia saw a yellow book. Mia smiled at the yellow book.",
+    "Mia found a green toy. Mia picked up the green toy.",
+    "Mia played with the green toy. Mia had fun with the green toy.",
+    "Mia looked for the blue hat. Mia searched for the blue hat.",
+    "Mia put the red kite on the table. Mia looked at the red kite."
+  ],
+  "updates": 500,
+  "seed": 8380,
+  "lr": 5e-05,
+  "varied_relations": 8,
+  "elapsed_seconds": 110.17696809768677,
+  "generations": [
+    {
+      "prompt": "Lily found a red ball. Lily picked up the red ball.",
+      "output": "Lily found a red ball. Lily picked up the red ball."
+    },
+    {
+      "prompt": "Lily played with the red ball. Lily had fun with the red ball.",
+      "output": "Lily played with the red ball. Lily had fun with the red ball."
+    },
+    {
+      "prompt": "Lily looked for the yellow toy. Lily searched for the yellow toy.",
+      "output": "Lily looked for the yellow toy. Lily searched for the yellow toy."
+    },
+    {
+      "prompt": "Lily put the green hat on the table. Lily looked at the green hat.",
+      "output": "Lily put the green hat on the table. Lily looked at the green hat."
+    },
+    {
+      "prompt": "Lily liked the blue kite. Lily played with the blue kite.",
+      "output": "Lily liked the blue kite. Lily played with the blue kite."
+    },
+    {
+      "prompt": "Lily carried the red car. Lily put down the red car.",
+      "output": "Lily carried the red car. Lily put down the red car."
+    },
+    {
+      "prompt": "Lily picked up the yellow fish. Lily carried the yellow fish.",
+      "output": "Lily picked up the yellow fish. Lily carried the yellow fish."
+    },
+    {
+      "prompt": "Mia saw a yellow book. Mia smiled at the yellow book.",
+      "output": "Mia saw a yellow book. Mia smiled at the yellow book."
+    },
+    {
+      "prompt": "Mia found a green toy. Mia picked up the green toy.",
+      "output": "Mia found a green toy. Mia picked up the green toy."
+    },
+    {
+      "prompt": "Mia played with the green toy. Mia had fun with the green toy.",
+      "output": "Mia played with the green toy. Mia had fun with the green toy."
+    },
+    {
+      "prompt": "Mia looked for the blue hat. Mia searched for the blue hat.",
+      "output": "Mia looked for the blue hat. Mia searched for the blue hat."
+    },
+    {
+      "prompt": "Mia put the red kite on the table. Mia looked at the red kite.",
+      "output": "Mia put the red kite on the table. Mia looked at the red kite."
+    }
+  ]
+}

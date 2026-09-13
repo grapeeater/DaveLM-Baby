@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "updates": 500,
+  "english_batches": 450,
+  "binding_batches": 50,
+  "dev_points": [
+    0,
+    100,
+    500
+  ],
+  "primary_locked": true,
+  "confirmation_locked": true,
+  "sacred_locked": true
+}

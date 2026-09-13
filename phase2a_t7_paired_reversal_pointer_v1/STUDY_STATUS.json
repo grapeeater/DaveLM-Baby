@@ -1,0 +1,70 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T7_PAIRED_REVERSAL_POINTER_V1",
+  "study_classification": "T7_FAIL_NO_REPRESENTATION",
+  "runs": {
+    "660001": {
+      "seed": 660001,
+      "update": 500,
+      "classification": "T7_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 63,
+      "dev_native": 65,
+      "dev_exact": 0,
+      "dev_ce": 1.2435010626912117,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "660002": {
+      "seed": 660002,
+      "update": 500,
+      "classification": "T7_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 87,
+      "dev_native": 75,
+      "dev_exact": 0,
+      "dev_ce": 1.262509186565876,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "660003": {
+      "seed": 660003,
+      "update": 500,
+      "classification": "T7_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 84,
+      "dev_native": 75,
+      "dev_exact": 0,
+      "dev_ce": 1.2607614800333977,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false
+}

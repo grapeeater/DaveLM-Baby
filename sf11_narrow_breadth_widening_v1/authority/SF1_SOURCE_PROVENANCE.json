@@ -1,0 +1,9 @@
+{
+  "predecessor": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v7",
+  "receipt": "7d147dd92af73d3d1979c5b012b2fbd8e258efad8ff9650f8c3de244be862df9",
+  "masking_scope_source": "C:\\DaveLM-CADAVER\\fact_supervision_87001_corrected_v8\\harness.py",
+  "masking_scope_sha256": "89a951d7c2058c2e67ce0f02bfc8039920c7a96bcd4053135b636304aefe6c10",
+  "staircase_report_sha256": "ee47bc011fbc32d401b4c0faada47ffe251bad999d2393d7dcd0893266991018",
+  "autopsy_report_sha256": "e78418a723ee06e2caf722a40c04aea1a3bb07553073a9f1d1962d6a343ebac3",
+  "training_definition_delta": "Two-fact/isolated sentence tasks replaced by bounded 16-item single-fact response curriculum; scope/objective/optimizer policies use verified prior implementations. No architecture or tokenizer changes."
+}

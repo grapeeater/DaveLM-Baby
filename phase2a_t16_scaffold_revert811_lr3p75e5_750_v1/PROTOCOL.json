@@ -1,0 +1,23 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T16_SCAFFOLD_REVERT811_LR3P75E5_750_V1",
+  "status": "STUDY_COMPLETE_T16_FAIL_NO_REPRESENTATION",
+  "scientific_question": "If blocks 8-11 must move while the 4-7 reversal pathway forms, but Phase1G 8-11 are a better endpoint (T14X), does a prospective two-phase schedule — train 4-11 for 500 updates, then revert/freeze 8-11 at Phase1G and train 4-7 for 250 more — produce >=2/3 language-safe representation?",
+  "earned_by": "T15_FAIL_NO_REPRESENTATION 3/3 (freeze 8-11 from init holds language, kills reversals). T15X: T15 4-7 RMS matches T14; 8-11 bit-identical. T14X: post-hoc 8-11 revert improved CE and rev on 730002. Qwen D1 is advisory only.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14 checkpoints", "T15 checkpoints", "T14X patched weights", "730002"],
+  "phase_a": {"updates": "1-500", "freeze": "blocks 0-3 and all 984321 binding params", "train": "blocks 4-11 + embeddings + final_norm + language_head", "trainable": 40849664, "frozen": 20670721},
+  "phase_b": {"after_eval": 500, "action": "copy Phase1G weights into blocks 8-11, freeze them, rebuild AdamW", "train": "blocks 4-7 + embeddings + final_norm + language_head", "trainable": 21163264, "frozen": 40357121},
+  "pointer_keys": {"definition": "for each mention_span_bos, indices from mention start through next token id 18 (period), exclusive of decision_position_bos", "period_token_id": 18},
+  "objective": {"lambda_ptr": 1.0, "margin_M": 1.0, "layout": "none", "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded; independent-item QA batches",
+  "seeds": [750001, 750002, 750003],
+  "schedule": {"total_updates": 750, "qa_updates": 675, "language_updates": 75, "qa_batch": 32, "eval_points": [0, 100, 300, 500, 750], "lr": 3.75e-5, "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T16_FULL_SUCCESS", "T16_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T16_FAIL_NO_REPRESENTATION", "T16_LANGUAGE_REGRESSION", "T16_SHORTCUT_FAILURE", "T16_HARD_STOP"],
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; >=2 LANGUAGE_REGRESSION; >=2 SHORTCUT; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

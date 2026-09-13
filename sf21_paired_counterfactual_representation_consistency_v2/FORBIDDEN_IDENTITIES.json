@@ -1,0 +1,59 @@
+{
+  "identities": [
+    "Alex",
+    "Ash",
+    "Ben",
+    "Cal",
+    "Cam",
+    "Chip",
+    "Cory",
+    "Ike",
+    "Ira",
+    "Mia",
+    "Ned",
+    "Neil",
+    "Nora",
+    "Owen",
+    "Ron",
+    "Sam",
+    "Sid",
+    "Tim",
+    "Tom",
+    "Will"
+  ],
+  "lexicon_sources": [
+    {
+      "identities": [],
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json",
+      "sha256": "6376b5a8612682c17f06a5af80419dc20e1dd02fe539940903c957bb6458cbdd"
+    },
+    {
+      "identities": [
+        "Ben",
+        "Sam",
+        "Tim",
+        "Tom"
+      ],
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\LEXICON.json",
+      "sha256": "44c860dd913dbf58057059f7ab0aec145454688ce38326cb4bdfd0e2f7861a8d"
+    },
+    {
+      "identities": [
+        "Ash",
+        "Cal",
+        "Cam",
+        "Chip",
+        "Cory",
+        "Ike",
+        "Ira",
+        "Ned",
+        "Neil",
+        "Ron",
+        "Sid",
+        "Will"
+      ],
+      "path": "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\LEXICON.json",
+      "sha256": "21db8a226e5ee4d66ff6852437e9d95f32d181f505e20ea30845be345a027432"
+    }
+  ]
+}

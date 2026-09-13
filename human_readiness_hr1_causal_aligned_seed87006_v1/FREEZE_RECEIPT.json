@@ -1,0 +1,24 @@
+{
+  "format": "preflight-freeze-receipt-v1",
+  "status": "CAUSAL_ALIGNMENT_PREFLIGHT_PASS_NO_TRAINING",
+  "bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1",
+  "protocol": "HR1_CAUSAL_ALIGNED_PROTOCOL.json",
+  "protocol_sha256": "55bcd999987613df835754bd5865c2676fe13fbd1d7d482f7afe5866775d34f5",
+  "manifest": "MANIFEST.json",
+  "manifest_sha256": "a71a0d194634a95252c5b83d465209ed0a3e58a5b2551c28f9408084a80cfd41",
+  "sha256sums": "SHA256SUMS.txt",
+  "sha256sums_sha256": "fa92cf95126389bc1d1d50e02b5e84a622f69f2dd82c5d2a20ec9869bad008fb",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1"
+  },
+  "checkpoint_loaded": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "behavioral_inference": false,
+  "sacred_material_accessed": false,
+  "final_readiness_battery_accessed": false
+}

@@ -1,0 +1,17 @@
+{
+ "status": "TRAINED",
+ "steps": 1000,
+ "batch_size": 32,
+ "final_checkpoint_sha256": "5d1866b6be77b84603ae8f404622a7ab43ba4f30c3bc08095d415871e800f9dc",
+ "total_supervised_tokens": 6144000,
+ "final_step": {
+  "step": 1000,
+  "loss": 0.07439447194337845,
+  "token_accuracy": 0.97802734375,
+  "supervised_tokens": 6144,
+  "elapsed_seconds": 381.42642307281494
+ },
+ "average_loss": 1.4008406382501126,
+ "average_token_accuracy": 0.6531980794270834,
+ "note": "Ordinary autoregressive objective; no architectural change."
+}

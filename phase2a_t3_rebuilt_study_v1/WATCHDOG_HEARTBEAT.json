@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-11T08:29:13Z",
+  "pid": 17172,
+  "live_cmds": [],
+  "seed620001_complete": true,
+  "seed620002_complete": true,
+  "seed620003_complete": true,
+  "seed620001_latest": {
+    "update": 500,
+    "kind": "lang",
+    "loss": 0.8900325000286102,
+    "grad_norm": 0.6814301609992981
+  },
+  "study_owner_live": false
+}

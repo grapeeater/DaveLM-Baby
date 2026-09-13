@@ -1,0 +1,12 @@
+{
+  "input_checkpoint_hashes": {
+    "Pilot1": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "SF1_update100": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e"
+  },
+  "manifest_sha256": "670671a7d6f2ed094abf071bd6b36b4c1adeeff3b991e3b737324d8d15499be7",
+  "no_locked_panel": true,
+  "no_optimizer": true,
+  "no_training": true,
+  "payload_files": 14,
+  "status": "SF1_COMPONENT_SWAP_FORENSIC_COMPLETE"
+}

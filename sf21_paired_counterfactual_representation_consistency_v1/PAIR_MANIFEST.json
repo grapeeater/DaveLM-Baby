@@ -1,0 +1,335 @@
+{
+  "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V1",
+  "created_utc": "2026-09-09T06:00:00.000000+00:00",
+  "description": "Deterministic positive pairs for counterfactual representation consistency. Each pair consists of records sharing the same structural template (pair_id) but with different identity assignments. Representations are compared at position = prefix_length - 1 (last context token before answer generation).",
+  "pairing_rule": "Records grouped by pair_id from TRAIN.json. Each pair_id group contains exactly 2 records with the same template but different identity assignments (from the SF20 16-name set or original TRAIN16 set).",
+  "representation_target": "Hidden state at position = prefix_length - 1, where prefix_length = 1 + len(prompt_token_ids). This is the last context token before answer generation, matching the position used for the SF20 margin hinge.",
+  "normalization": "L2 normalization of hidden vectors before cosine similarity.",
+  "loss_form": "L_consistency = mean(1 - cos_sim(v_i, v_j)) over all positive pairs present in the English batch.",
+  "lambda_consistency": 0.1,
+  "pairs": [
+    {
+      "pair_id": "TRAIN:g0:carried:small drum",
+      "template": "TRAIN:g0:carried",
+      "records": [
+        {
+          "id": "TRAIN:g0:carried:small drum:a0",
+          "actor": "Alex",
+          "correct_answer": "Alex",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        },
+        {
+          "id": "TRAIN:g0:carried:small drum:a1",
+          "actor": "Owen",
+          "correct_answer": "Owen",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Alex vs Owen) with same predicate (carried) and object (small drum). Same template structure, different identity fillers."
+    },
+    {
+      "pair_id": "TRAIN:g0:carried:wooden boat",
+      "template": "TRAIN:g0:carried",
+      "records": [
+        {
+          "id": "TRAIN:g0:carried:wooden boat:a0",
+          "actor": "Alex",
+          "correct_answer": "Alex",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        },
+        {
+          "id": "TRAIN:g0:carried:wooden boat:a1",
+          "actor": "Owen",
+          "correct_answer": "Owen",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Alex vs Owen) with same predicate (carried) and object (wooden boat)."
+    },
+    {
+      "pair_id": "TRAIN:g0:found:small drum",
+      "template": "TRAIN:g0:found",
+      "records": [
+        {
+          "id": "TRAIN:g0:found:small drum:a0",
+          "actor": "Alex",
+          "correct_answer": "Alex",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        },
+        {
+          "id": "TRAIN:g0:found:small drum:a1",
+          "actor": "Owen",
+          "correct_answer": "Owen",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Alex vs Owen) with same predicate (found) and object (small drum)."
+    },
+    {
+      "pair_id": "TRAIN:g0:found:wooden boat",
+      "template": "TRAIN:g0:found",
+      "records": [
+        {
+          "id": "TRAIN:g0:found:wooden boat:a0",
+          "actor": "Alex",
+          "correct_answer": "Alex",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        },
+        {
+          "id": "TRAIN:g0:found:wooden boat:a1",
+          "actor": "Owen",
+          "correct_answer": "Owen",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Alex vs Owen) with same predicate (found) and object (wooden boat)."
+    },
+    {
+      "pair_id": "TRAIN:g1:carried:round plate",
+      "template": "TRAIN:g1:carried",
+      "records": [
+        {
+          "id": "TRAIN:g1:carried:round plate:a0",
+          "actor": "Mia",
+          "correct_answer": "Mia",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        },
+        {
+          "id": "TRAIN:g1:carried:round plate:a1",
+          "actor": "Nora",
+          "correct_answer": "Nora",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Mia vs Nora) with same predicate (carried) and object (round plate)."
+    },
+    {
+      "pair_id": "TRAIN:g1:carried:soft scarf",
+      "template": "TRAIN:g1:carried",
+      "records": [
+        {
+          "id": "TRAIN:g1:carried:soft scarf:a0",
+          "actor": "Mia",
+          "correct_answer": "Mia",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        },
+        {
+          "id": "TRAIN:g1:carried:soft scarf:a1",
+          "actor": "Nora",
+          "correct_answer": "Nora",
+          "prompt_token_ids_length": 23,
+          "representation_position": 22
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Mia vs Nora) with same predicate (carried) and object (soft scarf)."
+    },
+    {
+      "pair_id": "TRAIN:g1:found:round plate",
+      "template": "TRAIN:g1:found",
+      "records": [
+        {
+          "id": "TRAIN:g1:found:round plate:a0",
+          "actor": "Mia",
+          "correct_answer": "Mia",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        },
+        {
+          "id": "TRAIN:g1:found:round plate:a1",
+          "actor": "Nora",
+          "correct_answer": "Nora",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Mia vs Nora) with same predicate (found) and object (round plate)."
+    },
+    {
+      "pair_id": "TRAIN:g1:found:soft scarf",
+      "template": "TRAIN:g1:found",
+      "records": [
+        {
+          "id": "TRAIN:g1:found:soft scarf:a0",
+          "actor": "Mia",
+          "correct_answer": "Mia",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        },
+        {
+          "id": "TRAIN:g1:found:soft scarf:a1",
+          "actor": "Nora",
+          "correct_answer": "Nora",
+          "prompt_token_ids_length": 27,
+          "representation_position": 26
+        }
+      ],
+      "identity_assignment_proof": "Different actors (Mia vs Nora) with same predicate (found) and object (soft scarf)."
+    }
+  ],
+  "widening_pairs": [
+    {
+      "pair_id": "SF20:surface:A:painted:tin_cup:cloze",
+      "template": "surface:A:painted:tin_cup:cloze",
+      "records": [
+        {"id": "SF20:surface:A:painted:tin_cup:cloze:Sara", "actor": "Sara", "correct_answer": "Sara"},
+        {"id": "SF20:surface:A:painted:tin_cup:cloze:Bob", "actor": "Bob", "correct_answer": "Bob"}
+      ],
+      "identity_assignment_proof": "Different actors from SF20 16-name set (Sara vs Bob) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:A:painted:tin_cup:active_qa",
+      "template": "surface:A:painted:tin_cup:active_qa",
+      "records": [
+        {"id": "SF20:surface:A:painted:tin_cup:active_qa:Billy", "actor": "Billy", "correct_answer": "Billy"},
+        {"id": "SF20:surface:A:painted:tin_cup:active_qa:Tony", "actor": "Tony", "correct_answer": "Tony"}
+      ],
+      "identity_assignment_proof": "Different actors (Billy vs Tony) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:A:painted:tin_cup:passive_cloze",
+      "template": "surface:A:painted:tin_cup:passive_cloze",
+      "records": [
+        {"id": "SF20:surface:A:painted:tin_cup:passive_cloze:Fred", "actor": "Fred", "correct_answer": "Fred"},
+        {"id": "SF20:surface:A:painted:tin_cup:passive_cloze:Tina", "actor": "Tina", "correct_answer": "Tina"}
+      ],
+      "identity_assignment_proof": "Different actors (Fred vs Tina) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:A:painted:tin_cup:passive_qa",
+      "template": "surface:A:painted:tin_cup:passive_qa",
+      "records": [
+        {"id": "SF20:surface:A:painted:tin_cup:passive_qa:Steve", "actor": "Steve", "correct_answer": "Steve"},
+        {"id": "SF20:surface:A:painted:tin_cup:passive_qa:Remy", "actor": "Remy", "correct_answer": "Remy"}
+      ],
+      "identity_assignment_proof": "Different actors (Steve vs Remy) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:B:bought:green_ball:cloze",
+      "template": "surface:B:bought:green_ball:cloze",
+      "records": [
+        {"id": "SF20:surface:B:bought:green_ball:cloze:Susan", "actor": "Susan", "correct_answer": "Susan"},
+        {"id": "SF20:surface:B:bought:green_ball:cloze:Ralph", "actor": "Ralph", "correct_answer": "Ralph"}
+      ],
+      "identity_assignment_proof": "Different actors (Susan vs Ralph) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:B:bought:green_ball:active_qa",
+      "template": "surface:B:bought:green_ball:active_qa",
+      "records": [
+        {"id": "SF20:surface:B:bought:green_ball:active_qa:Colin", "actor": "Colin", "correct_answer": "Colin"},
+        {"id": "SF20:surface:B:bought:green_ball:active_qa:Faye", "actor": "Faye", "correct_answer": "Faye"}
+      ],
+      "identity_assignment_proof": "Different actors (Colin vs Faye) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:B:bought:green_ball:passive_cloze",
+      "template": "surface:B:bought:green_ball:passive_cloze",
+      "records": [
+        {"id": "SF20:surface:B:bought:green_ball:passive_cloze:Carl", "actor": "Carl", "correct_answer": "Carl"},
+        {"id": "SF20:surface:B:bought:green_ball:passive_cloze:Wendy", "actor": "Wendy", "correct_answer": "Wendy"}
+      ],
+      "identity_assignment_proof": "Different actors (Carl vs Wendy) with same template."
+    },
+    {
+      "pair_id": "SF20:surface:B:bought:green_ball:passive_qa",
+      "template": "surface:B:bought:green_ball:passive_qa",
+      "records": [
+        {"id": "SF20:surface:B:bought:green_ball:passive_qa:Cathy", "actor": "Cathy", "correct_answer": "Cathy"},
+        {"id": "SF20:surface:B:bought:green_ball:passive_qa:Tara", "actor": "Tara", "correct_answer": "Tara"}
+      ],
+      "identity_assignment_proof": "Different actors (Cathy vs Tara) with same template."
+    },
+    {
+      "pair_id": "SF20:competing:A:painted:tin_cup:order0:fact",
+      "template": "competing:A:painted:tin_cup:order0:fact",
+      "records": [
+        {"id": "SF20:competing:A:painted:tin_cup:order0:fact:Sara", "actors": ["Sara", "Tony"], "correct_answer": "Sara"},
+        {"id": "SF20:competing:A:painted:tin_cup:order0:fact:Tony", "actors": ["Sara", "Tony"], "correct_answer": "Tony"}
+      ],
+      "identity_assignment_proof": "Same competing template with swapped identity assignments (Sara/Tony vs Tony/Sara)."
+    },
+    {
+      "pair_id": "SF20:competing:A:painted:tin_cup:order0:copy",
+      "template": "competing:A:painted:tin_cup:order0:copy",
+      "records": [
+        {"id": "SF20:competing:A:painted:tin_cup:order0:copy:Bob", "actors": ["Bob", "Fred"], "correct_answer": "Fred"},
+        {"id": "SF20:competing:A:painted:tin_cup:order0:copy:Fred", "actors": ["Bob", "Fred"], "correct_answer": "Bob"}
+      ],
+      "identity_assignment_proof": "Same competing copy template with swapped identity assignments."
+    },
+    {
+      "pair_id": "SF20:competing:A:painted:tin_cup:order1:fact",
+      "template": "competing:A:painted:tin_cup:order1:fact",
+      "records": [
+        {"id": "SF20:competing:A:painted:tin_cup:order1:fact:Billy", "actors": ["Billy", "Steve"], "correct_answer": "Billy"},
+        {"id": "SF20:competing:A:painted:tin_cup:order1:fact:Steve", "actors": ["Billy", "Steve"], "correct_answer": "Steve"}
+      ],
+      "identity_assignment_proof": "Same competing template order1:fact with swapped identities."
+    },
+    {
+      "pair_id": "SF20:competing:A:painted:tin_cup:order1:copy",
+      "template": "competing:A:painted:tin_cup:order1:copy",
+      "records": [
+        {"id": "SF20:competing:A:painted:tin_cup:order1:copy:Tina", "actors": ["Tina", "Remy"], "correct_answer": "Remy"},
+        {"id": "SF20:competing:A:painted:tin_cup:order1:copy:Remy", "actors": ["Tina", "Remy"], "correct_answer": "Tina"}
+      ],
+      "identity_assignment_proof": "Same competing template order1:copy with swapped identities."
+    },
+    {
+      "pair_id": "SF20:competing:B:bought:green_ball:order0:fact",
+      "template": "competing:B:bought:green_ball:order0:fact",
+      "records": [
+        {"id": "SF20:competing:B:bought:green_ball:order0:fact:Susan", "actors": ["Susan", "Colin"], "correct_answer": "Susan"},
+        {"id": "SF20:competing:B:bought:green_ball:order0:fact:Colin", "actors": ["Susan", "Colin"], "correct_answer": "Colin"}
+      ],
+      "identity_assignment_proof": "Same competing template with swapped identities (Susan/Colin)."
+    },
+    {
+      "pair_id": "SF20:competing:B:bought:green_ball:order0:copy",
+      "template": "competing:B:bought:green_ball:order0:copy",
+      "records": [
+        {"id": "SF20:competing:B:bought:green_ball:order0:copy:Ralph", "actors": ["Ralph", "Wendy"], "correct_answer": "Wendy"},
+        {"id": "SF20:competing:B:bought:green_ball:order0:copy:Wendy", "actors": ["Ralph", "Wendy"], "correct_answer": "Ralph"}
+      ],
+      "identity_assignment_proof": "Same competing template with swapped identities."
+    },
+    {
+      "pair_id": "SF20:competing:B:bought:green_ball:order1:fact",
+      "template": "competing:B:bought:green_ball:order1:fact",
+      "records": [
+        {"id": "SF20:competing:B:bought:green_ball:order1:fact:Faye", "actors": ["Faye", "Cathy"], "correct_answer": "Faye"},
+        {"id": "SF20:competing:B:bought:green_ball:order1:fact:Cathy", "actors": ["Faye", "Cathy"], "correct_answer": "Cathy"}
+      ],
+      "identity_assignment_proof": "Same competing template with swapped identities."
+    },
+    {
+      "pair_id": "SF20:competing:B:bought:green_ball:order1:copy",
+      "template": "competing:B:bought:green_ball:order1:copy",
+      "records": [
+        {"id": "SF20:competing:B:bought:green_ball:order1:copy:Carl", "actors": ["Carl", "Tara"], "correct_answer": "Tara"},
+        {"id": "SF20:competing:B:bought:green_ball:order1:copy:Tara", "actors": ["Carl", "Tara"], "correct_answer": "Carl"}
+      ],
+      "identity_assignment_proof": "Same competing template with swapped identities."
+    }
+  ],
+  "total_pairs": 24,
+  "total_records": 48,
+  "validation": {
+    "all_pairs_same_template": true,
+    "all_pairs_differ_in_identity": true,
+    "all_pairs_same_length": true,
+    "no_self_pairs": true,
+    "deterministic_ordering": true
+  }
+}

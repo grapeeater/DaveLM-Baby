@@ -1,0 +1,28 @@
+{
+  "authoritative_predecessor": "C:\\DaveLM-CADAVER\\sf20_identity_heldout_balanced_entity_rotation_v2",
+  "copied_payloads": {
+    "D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "DEV_ORDER.json": "8031e735736925ff76c0ec7e86bcef3376ef3bb676566fbf04eff9770093a717",
+    "DEV_SURFACE.json": "d0677e641204f7e31921d1fe91771e910373fc96877310631ca20a105dd0735a",
+    "EXTERNAL_INPUTS.json": "d426439aa823fdd259027d5dc4055afac5c049ae7463bdb393f11917ce02459b",
+    "FORBIDDEN_IDENTITIES.json": "a31e9496a54c6bdcc47ec27a08b064c75285fde8baf8cef76107bc21b4f0e4eb",
+    "IDENTITY_ASSIGNMENT.json": "a9f22a073ec9d7b53700418c46e7b207d54d446be7ceb76a41939311c8bfa34d",
+    "KL_POOL.json": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "KL_POOL_MANIFEST.json": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+    "NAME_CENSUS.json": "2cd7b23ced0e297db6820845a39fa915e7650f25c45cf7ed80d44029d317d266",
+    "SCHEDULE.json": "0f71073fdafbe8733dbae97d27b92490b2e4725650737fb0f1b4d99ab5396688",
+    "SF13_KL_SCHEDULE.json": "aaeb59b44c8683c0564fe487f631158360169a522b9bcd98e98d9cdb342018eb",
+    "SF2_ENGINE.py": "8141234f1f0d6f0dba8f429dfc6923e4bd90743d6d4d238f7ae9a169834cd551",
+    "SF2_PROTOCOL.json": "9c74f171cffdcf08189191a906ea71854b040d7200a7789d980e9c9a0f26f132",
+    "TOKENIZATION_MATCH.json": "9f319fbb611a3ab145e10064ceb0d85c1fcdb448efd0d8d67c5949dc790aff77",
+    "TRAIN.json": "7a5c69498b7b2fb813bd1465ef50d2e3f8e599993f90875009573f84c498aa9d",
+    "TRAIN16_RETENTION.json": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd"
+  },
+  "final_accessed": false,
+  "pair_manifest_sha256": "e39e12f8a000e6f5d1c4fa525e0b556349933b4ee730a42c8e59f062e4a9caf5",
+  "predecessor_manifest_sha256": "a97cbc26f56f944a1283ab93d5c9f040f8b5ac59d8fe00d166adde1ad539fa79",
+  "predecessor_receipt_sha256": "37e9ced4fe8656bc64777ef81cc463153e874b498056bfea9c25000fb4d6d9d7",
+  "sacred_accessed": false,
+  "scientific_change": "paired counterfactual representation consistency only",
+  "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V2"
+}

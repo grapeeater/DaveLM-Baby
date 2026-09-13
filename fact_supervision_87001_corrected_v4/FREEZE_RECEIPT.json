@@ -1,0 +1,12 @@
+{
+  "behavioral_inference": false,
+  "bundle": "fact_supervision_87001_corrected_v4",
+  "checkpoint_loaded": false,
+  "manifest_sha256": "6cd6e5dbc02ec2ff12abafeda31f9ef6f12392663164032b4e3aeda9a75a95d7",
+  "non_circular_chain": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> SHA256SUMS.txt -> payload",
+  "optimizer_created": false,
+  "optimizer_update": false,
+  "payload_count": 23,
+  "sacred_access": false,
+  "status": "PASS_EXECUTABLE_PRETRAINING_FREEZE"
+}

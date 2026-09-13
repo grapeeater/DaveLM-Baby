@@ -1,0 +1,1502 @@
+{
+  "Factual87002": {
+    "factual_dev": {
+      "complete_families": 0,
+      "correct": 46,
+      "eos_probability_mean": 0.0005003687019022133,
+      "exact_answer_prefix": 42,
+      "exact_answer_then_eos": 42,
+      "families": {
+        "dev:object:1bc35d6281095e1f": {
+          "correct": 3,
+          "total": 8
+        },
+        "dev:object:34c9c5ab3612827e": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:object:42847c188349093f": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:object:58f69e8ec0192386": {
+          "correct": 3,
+          "total": 8
+        },
+        "dev:object:86aa15961eb3776c": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:object:d65e8ca9fef62163": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:predicate:5de131554f093884": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:predicate:885f3ba72c84e7c5": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:predicate:88a0ba0fb6f9ca04": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:predicate:a764f89808b86bc8": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:predicate:aa54a5203f5f7c18": {
+          "correct": 4,
+          "total": 8
+        },
+        "dev:predicate:ced3f575f881817e": {
+          "correct": 4,
+          "total": 8
+        }
+      },
+      "family_count": 12,
+      "first_candidate_mass_mean": 0.6885392625505725,
+      "first_logit_margin_mean": -0.0016810297966003418,
+      "first_top1_eos": 0,
+      "first_top1_outside_candidates": 6,
+      "full_vocab_first_top1_correct": 42,
+      "items": 96,
+      "margin": {
+        "max": 1.760958531696815,
+        "mean": -0.0016570131980794638,
+        "median": -0.06592301852651872,
+        "min": -1.8124715740268584
+      },
+      "reversal_pairs": 48,
+      "reversals": 8,
+      "sequence_candidate_mass_mean": 0.6872747678833973,
+      "strata": {
+        "object": {
+          "complete_families": 0,
+          "correct": 22,
+          "eos_probability_mean": 0.00040820198046276346,
+          "exact_answer_prefix": 20,
+          "exact_answer_then_eos": 20,
+          "families": {
+            "dev:object:1bc35d6281095e1f": {
+              "correct": 3,
+              "total": 8
+            },
+            "dev:object:34c9c5ab3612827e": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:object:42847c188349093f": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:object:58f69e8ec0192386": {
+              "correct": 3,
+              "total": 8
+            },
+            "dev:object:86aa15961eb3776c": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:object:d65e8ca9fef62163": {
+              "correct": 4,
+              "total": 8
+            }
+          },
+          "family_count": 6,
+          "first_candidate_mass_mean": 0.6710390026370684,
+          "first_logit_margin_mean": -0.002531150976816813,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 2,
+          "full_vocab_first_top1_correct": 20,
+          "items": 48,
+          "margin": {
+            "max": 1.5564122506184503,
+            "mean": -0.0025077459401169713,
+            "median": -0.07132264685060363,
+            "min": -1.5514837965602055
+          },
+          "reversal_pairs": 24,
+          "reversals": 4,
+          "sequence_candidate_mass_mean": 0.6697642770152863,
+          "ties": 0
+        },
+        "predicate": {
+          "complete_families": 0,
+          "correct": 24,
+          "eos_probability_mean": 0.0005925354233416632,
+          "exact_answer_prefix": 22,
+          "exact_answer_then_eos": 22,
+          "families": {
+            "dev:predicate:5de131554f093884": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:predicate:885f3ba72c84e7c5": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:predicate:88a0ba0fb6f9ca04": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:predicate:a764f89808b86bc8": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:predicate:aa54a5203f5f7c18": {
+              "correct": 4,
+              "total": 8
+            },
+            "dev:predicate:ced3f575f881817e": {
+              "correct": 4,
+              "total": 8
+            }
+          },
+          "family_count": 6,
+          "first_candidate_mass_mean": 0.7060395224640766,
+          "first_logit_margin_mean": -0.0008309086163838705,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 4,
+          "full_vocab_first_top1_correct": 22,
+          "items": 48,
+          "margin": {
+            "max": 1.760958531696815,
+            "mean": -0.000806280456041956,
+            "median": -0.02706359296280425,
+            "min": -1.8124715740268584
+          },
+          "reversal_pairs": 24,
+          "reversals": 4,
+          "sequence_candidate_mass_mean": 0.7047852587515082,
+          "ties": 0
+        }
+      },
+      "ties": 0
+    },
+    "single_fact": {
+      "complete_families": 0,
+      "correct": 44,
+      "eos_probability_mean": 0.0011227367363630947,
+      "exact_answer_prefix": 22,
+      "exact_answer_then_eos": 22,
+      "families": {
+        "SF:0:carried": {
+          "correct": 12,
+          "total": 16
+        },
+        "SF:0:found": {
+          "correct": 13,
+          "total": 16
+        },
+        "SF:1:carried": {
+          "correct": 9,
+          "total": 16
+        },
+        "SF:1:found": {
+          "correct": 10,
+          "total": 16
+        }
+      },
+      "family_count": 4,
+      "first_candidate_mass_mean": 0.38204058101109695,
+      "first_logit_margin_mean": 0.8083587512373924,
+      "first_top1_eos": 0,
+      "first_top1_outside_candidates": 36,
+      "full_vocab_first_top1_correct": 22,
+      "items": 64,
+      "margin": {
+        "max": 4.113819040998351,
+        "mean": 0.8087574359678911,
+        "median": 0.7293130830366863,
+        "min": -1.9693828498129733
+      },
+      "prospective_flag": "INCONCLUSIVE_OR_MIXED",
+      "reversal_pairs": 32,
+      "reversals": 12,
+      "sequence_candidate_mass_mean": 0.3811033238853302,
+      "strata": {
+        "active:cloze": {
+          "complete_families": 2,
+          "correct": 14,
+          "eos_probability_mean": 0.0004261844551365357,
+          "exact_answer_prefix": 10,
+          "exact_answer_then_eos": 10,
+          "families": {
+            "SF:0:carried": {
+              "correct": 4,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 4,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 3,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 3,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.5656268652528524,
+          "first_logit_margin_mean": 1.212559163570404,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 6,
+          "full_vocab_first_top1_correct": 10,
+          "items": 16,
+          "margin": {
+            "max": 2.371386471175356,
+            "mean": 1.2130646443674777,
+            "median": 1.2954656553920358,
+            "min": -0.319428803777555
+          },
+          "reversal_pairs": 8,
+          "reversals": 6,
+          "sequence_candidate_mass_mean": 0.5641858032095449,
+          "ties": 0
+        },
+        "active:qa": {
+          "complete_families": 0,
+          "correct": 10,
+          "eos_probability_mean": 0.0010954573983781302,
+          "exact_answer_prefix": 2,
+          "exact_answer_then_eos": 2,
+          "families": {
+            "SF:0:carried": {
+              "correct": 3,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 3,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.16061272769002244,
+          "first_logit_margin_mean": 0.7794879674911499,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 12,
+          "full_vocab_first_top1_correct": 2,
+          "items": 16,
+          "margin": {
+            "max": 4.113819040998351,
+            "mean": 0.779784893773467,
+            "median": 0.15050123116816394,
+            "min": -1.6715759867220186
+          },
+          "reversal_pairs": 8,
+          "reversals": 2,
+          "sequence_candidate_mass_mean": 0.16018908180237226,
+          "ties": 0
+        },
+        "passive:cloze": {
+          "complete_families": 0,
+          "correct": 11,
+          "eos_probability_mean": 0.0003194886667188257,
+          "exact_answer_prefix": 8,
+          "exact_answer_then_eos": 8,
+          "families": {
+            "SF:0:carried": {
+              "correct": 3,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 3,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 3,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.5441402979195118,
+          "first_logit_margin_mean": 0.7856570482254028,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 6,
+          "full_vocab_first_top1_correct": 8,
+          "items": 16,
+          "margin": {
+            "max": 2.262207010615384,
+            "mean": 0.7861895824516978,
+            "median": 0.9447994155780179,
+            "min": -0.6562732890597545
+          },
+          "reversal_pairs": 8,
+          "reversals": 3,
+          "sequence_candidate_mass_mean": 0.5428407863300211,
+          "ties": 0
+        },
+        "passive:qa": {
+          "complete_families": 0,
+          "correct": 9,
+          "eos_probability_mean": 0.002649816425218887,
+          "exact_answer_prefix": 2,
+          "exact_answer_then_eos": 2,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 3,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.2577824331820011,
+          "first_logit_margin_mean": 0.4557308256626129,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 12,
+          "full_vocab_first_top1_correct": 2,
+          "items": 16,
+          "margin": {
+            "max": 2.7747514428629074,
+            "mean": 0.4559906232789217,
+            "median": 0.48694540082942694,
+            "min": -1.9693828498129733
+          },
+          "reversal_pairs": 8,
+          "reversals": 1,
+          "sequence_candidate_mass_mean": 0.25719762419938247,
+          "ties": 0
+        }
+      },
+      "ties": 0
+    },
+    "training": {
+      "complete_families": 0,
+      "correct": 193,
+      "eos_probability_mean": 0.00041203935194289443,
+      "exact_answer_prefix": 168,
+      "exact_answer_then_eos": 168,
+      "families": {
+        "train:object:012f1a4462b5fafa": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:07a829571ba85af3": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:1218b9250b12abe0": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:133a46b0518b59a9": {
+          "correct": 3,
+          "total": 8
+        },
+        "train:object:1a65edb0d020c579": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:3b55a30ceb426a8e": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:3eb5a2beaffe5ba4": {
+          "correct": 3,
+          "total": 8
+        },
+        "train:object:43c1222335256870": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:5c6facb9476e24b3": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:681f0e41bb297188": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:687ace4f36d2c4e0": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:7609d0fd2e6c09ea": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:8ba36f21fbbde7b5": {
+          "correct": 3,
+          "total": 8
+        },
+        "train:object:8ca3813729cf7fdf": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:9eef552fd87bdb92": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:a7e5764f5b452690": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:b2a14246db813f19": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:c18d89a1e5fbba95": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:d7f8a0d7efc25d91": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:df9ca8aa02c3d325": {
+          "correct": 3,
+          "total": 8
+        },
+        "train:object:eafede49db65d585": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:eca44699d7aacc20": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:ee3a241952129d9e": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:object:f07a684481a4b437": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:005d48160e60a515": {
+          "correct": 5,
+          "total": 8
+        },
+        "train:predicate:071b08205436913e": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:1434af621d5e776d": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:21598a3e38fe447f": {
+          "correct": 5,
+          "total": 8
+        },
+        "train:predicate:4c23888c03b00b07": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:5581c16bddd596bf": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:77873f8d9b211f67": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:8285562c85697052": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:82c60e810c796848": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:86797208beb924b1": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:87dee0d7ea9745f5": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:8871780070f4235a": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:8f4c4f833f4ee5d8": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:951a4a8145a5f1ea": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:a7dd8e2ee703c0ab": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:b8c7a85c50f78594": {
+          "correct": 5,
+          "total": 8
+        },
+        "train:predicate:bfc480a80bbc9a87": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:c0299a910c391626": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:c89f47b6ce33958f": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:cd6841461b70c5d5": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:dd8bd1ce80aca559": {
+          "correct": 5,
+          "total": 8
+        },
+        "train:predicate:e39e09383b25631d": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:ee500e205fbca00b": {
+          "correct": 4,
+          "total": 8
+        },
+        "train:predicate:f79e9bbde09dc83c": {
+          "correct": 5,
+          "total": 8
+        }
+      },
+      "family_count": 48,
+      "first_candidate_mass_mean": 0.6956407816614956,
+      "first_logit_margin_mean": -0.001445189118385315,
+      "first_top1_eos": 0,
+      "first_top1_outside_candidates": 46,
+      "full_vocab_first_top1_correct": 168,
+      "items": 384,
+      "margin": {
+        "max": 1.853257118491456,
+        "mean": -0.0014436492666618506,
+        "median": 0.007008880718785804,
+        "min": -1.9088107575080357
+      },
+      "reversal_pairs": 192,
+      "reversals": 38,
+      "sequence_candidate_mass_mean": 0.6944952023483009,
+      "strata": {
+        "object": {
+          "complete_families": 0,
+          "correct": 92,
+          "eos_probability_mean": 0.00039777598840373685,
+          "exact_answer_prefix": 82,
+          "exact_answer_then_eos": 82,
+          "families": {
+            "train:object:012f1a4462b5fafa": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:07a829571ba85af3": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:1218b9250b12abe0": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:133a46b0518b59a9": {
+              "correct": 3,
+              "total": 8
+            },
+            "train:object:1a65edb0d020c579": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:3b55a30ceb426a8e": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:3eb5a2beaffe5ba4": {
+              "correct": 3,
+              "total": 8
+            },
+            "train:object:43c1222335256870": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:5c6facb9476e24b3": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:681f0e41bb297188": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:687ace4f36d2c4e0": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:7609d0fd2e6c09ea": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:8ba36f21fbbde7b5": {
+              "correct": 3,
+              "total": 8
+            },
+            "train:object:8ca3813729cf7fdf": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:9eef552fd87bdb92": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:a7e5764f5b452690": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:b2a14246db813f19": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:c18d89a1e5fbba95": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:d7f8a0d7efc25d91": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:df9ca8aa02c3d325": {
+              "correct": 3,
+              "total": 8
+            },
+            "train:object:eafede49db65d585": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:eca44699d7aacc20": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:ee3a241952129d9e": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:object:f07a684481a4b437": {
+              "correct": 4,
+              "total": 8
+            }
+          },
+          "family_count": 24,
+          "first_candidate_mass_mean": 0.6911366179895898,
+          "first_logit_margin_mean": -0.0037603924671808877,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 23,
+          "full_vocab_first_top1_correct": 82,
+          "items": 192,
+          "margin": {
+            "max": 1.853257118491456,
+            "mean": -0.003754701905487915,
+            "median": -0.03758931792253861,
+            "min": -1.7962685532111209
+          },
+          "reversal_pairs": 96,
+          "reversals": 18,
+          "sequence_candidate_mass_mean": 0.6899992307171813,
+          "ties": 0
+        },
+        "predicate": {
+          "complete_families": 0,
+          "correct": 101,
+          "eos_probability_mean": 0.000426302715482052,
+          "exact_answer_prefix": 86,
+          "exact_answer_then_eos": 86,
+          "families": {
+            "train:predicate:005d48160e60a515": {
+              "correct": 5,
+              "total": 8
+            },
+            "train:predicate:071b08205436913e": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:1434af621d5e776d": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:21598a3e38fe447f": {
+              "correct": 5,
+              "total": 8
+            },
+            "train:predicate:4c23888c03b00b07": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:5581c16bddd596bf": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:77873f8d9b211f67": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:8285562c85697052": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:82c60e810c796848": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:86797208beb924b1": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:87dee0d7ea9745f5": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:8871780070f4235a": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:8f4c4f833f4ee5d8": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:951a4a8145a5f1ea": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:a7dd8e2ee703c0ab": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:b8c7a85c50f78594": {
+              "correct": 5,
+              "total": 8
+            },
+            "train:predicate:bfc480a80bbc9a87": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:c0299a910c391626": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:c89f47b6ce33958f": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:cd6841461b70c5d5": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:dd8bd1ce80aca559": {
+              "correct": 5,
+              "total": 8
+            },
+            "train:predicate:e39e09383b25631d": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:ee500e205fbca00b": {
+              "correct": 4,
+              "total": 8
+            },
+            "train:predicate:f79e9bbde09dc83c": {
+              "correct": 5,
+              "total": 8
+            }
+          },
+          "family_count": 24,
+          "first_candidate_mass_mean": 0.7001449453334013,
+          "first_logit_margin_mean": 0.0008700142304102579,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 23,
+          "full_vocab_first_top1_correct": 86,
+          "items": 192,
+          "margin": {
+            "max": 1.824823610673775,
+            "mean": 0.0008674033721642141,
+            "median": 0.031252891014446504,
+            "min": -1.9088107575080357
+          },
+          "reversal_pairs": 96,
+          "reversals": 20,
+          "sequence_candidate_mass_mean": 0.6989911739794205,
+          "ties": 0
+        }
+      },
+      "ties": 0
+    }
+  },
+  "HR1_aligned": {
+    "single_fact": {
+      "complete_families": 0,
+      "correct": 32,
+      "eos_probability_mean": 0.0001744155405276615,
+      "exact_answer_prefix": 0,
+      "exact_answer_then_eos": 0,
+      "families": {
+        "SF:0:carried": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:0:found": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:1:carried": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:1:found": {
+          "correct": 8,
+          "total": 16
+        }
+      },
+      "family_count": 4,
+      "first_candidate_mass_mean": 0.0016138254659381346,
+      "first_logit_margin_mean": -0.002767711877822876,
+      "first_top1_eos": 0,
+      "first_top1_outside_candidates": 64,
+      "full_vocab_first_top1_correct": 0,
+      "items": 64,
+      "margin": {
+        "max": 15.425362825393677,
+        "mean": -0.06871409807354212,
+        "median": -0.09026658535003662,
+        "min": -15.849744319915771
+      },
+      "prospective_flag": "APPROXIMATELY_CHANCE",
+      "reversal_pairs": 32,
+      "reversals": 0,
+      "sequence_candidate_mass_mean": 1.4705263879226756e-06,
+      "strata": {
+        "active:cloze": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 8.696473457803222e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00012817997526326508,
+          "first_logit_margin_mean": 0.009257331490516663,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 11.681403398513794,
+            "mean": 0.00477687269449234,
+            "median": -0.09026658535003662,
+            "min": -11.16228711605072
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 1.84741627706184e-08,
+          "ties": 0
+        },
+        "active:qa": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 0.0003222042664674518,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.0031416009878739715,
+          "first_logit_margin_mean": -0.018430761992931366,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 15.099006533622742,
+            "mean": -0.21804311126470566,
+            "median": 0.05005323886871338,
+            "min": -15.849744319915771
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 2.6286567700140265e-06,
+          "ties": 0
+        },
+        "passive:cloze": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 9.213712758082693e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00011223995420550636,
+          "first_logit_margin_mean": -0.0015306919813156128,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 11.178868174552917,
+            "mean": -0.03414188325405121,
+            "median": -0.0017226338386535645,
+            "min": -11.21843957901001
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 1.0467368598858223e-08,
+          "ties": 0
+        },
+        "passive:qa": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 0.0003575477094273083,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.0030732809464097954,
+          "first_logit_margin_mean": -0.00036672502756118774,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 15.425362825393677,
+            "mean": -0.027448270469903946,
+            "median": -0.08468365669250488,
+            "min": -15.505282878875732
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 3.224507250307199e-06,
+          "ties": 0
+        }
+      },
+      "ties": 0
+    }
+  },
+  "HR3": {
+    "single_fact": {
+      "complete_families": 0,
+      "correct": 32,
+      "eos_probability_mean": 0.00015331844627297642,
+      "exact_answer_prefix": 0,
+      "exact_answer_then_eos": 0,
+      "families": {
+        "SF:0:carried": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:0:found": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:1:carried": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:1:found": {
+          "correct": 8,
+          "total": 16
+        }
+      },
+      "family_count": 4,
+      "first_candidate_mass_mean": 0.0011546324458322488,
+      "first_logit_margin_mean": -0.017151527106761932,
+      "first_top1_eos": 0,
+      "first_top1_outside_candidates": 64,
+      "full_vocab_first_top1_correct": 0,
+      "items": 64,
+      "margin": {
+        "max": 15.251149415969849,
+        "mean": 0.06736755184829235,
+        "median": 0.23038190603256226,
+        "min": -15.088927149772644
+      },
+      "prospective_flag": "APPROXIMATELY_CHANCE",
+      "reversal_pairs": 32,
+      "reversals": 0,
+      "sequence_candidate_mass_mean": 5.497110458790315e-07,
+      "strata": {
+        "active:cloze": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 6.119349677646824e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00012239842817507451,
+          "first_logit_margin_mean": -0.002245858311653137,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 11.536650896072388,
+            "mean": 0.1574496030807495,
+            "median": 0.23038190603256226,
+            "min": -10.580567836761475
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 1.205262880340515e-08,
+          "ties": 0
+        },
+        "active:qa": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 0.00027332588251738343,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.0022553926792170387,
+          "first_logit_margin_mean": -0.06255041062831879,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 15.251149415969849,
+            "mean": 0.09579617530107498,
+            "median": 0.09358537197113037,
+            "min": -14.64589548110962
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 8.796883426411938e-07,
+          "ties": 0
+        },
+        "passive:cloze": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 6.974145065896664e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00010748332442744868,
+          "first_logit_margin_mean": -0.003942497074604034,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 10.69870150089264,
+            "mean": 0.007579393684864044,
+            "median": 0.1055145263671875,
+            "min": -10.683440923690796
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 5.733560904124451e-09,
+          "ties": 0
+        },
+        "passive:qa": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 0.00032685440783097874,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.0021332553515094332,
+          "first_logit_margin_mean": 0.00013265758752822876,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 15.168477892875671,
+            "mean": 0.008645035326480865,
+            "median": 0.025525212287902832,
+            "min": -15.088927149772644
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 1.3013696511674024e-06,
+          "ties": 0
+        }
+      },
+      "ties": 0
+    }
+  },
+  "Pilot1": {
+    "single_fact": {
+      "complete_families": 0,
+      "correct": 32,
+      "eos_probability_mean": 8.308026400172253e-06,
+      "exact_answer_prefix": 0,
+      "exact_answer_then_eos": 0,
+      "families": {
+        "SF:0:carried": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:0:found": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:1:carried": {
+          "correct": 8,
+          "total": 16
+        },
+        "SF:1:found": {
+          "correct": 8,
+          "total": 16
+        }
+      },
+      "family_count": 4,
+      "first_candidate_mass_mean": 0.0002436610962490704,
+      "first_logit_margin_mean": 0.009086526930332184,
+      "first_top1_eos": 0,
+      "first_top1_outside_candidates": 64,
+      "full_vocab_first_top1_correct": 0,
+      "items": 64,
+      "margin": {
+        "max": 10.360957503318787,
+        "mean": 0.02594509907066822,
+        "median": -0.10774445533752441,
+        "min": -9.960268497467041
+      },
+      "prospective_flag": "APPROXIMATELY_CHANCE",
+      "reversal_pairs": 32,
+      "reversals": 0,
+      "sequence_candidate_mass_mean": 7.932083646710637e-09,
+      "strata": {
+        "active:cloze": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 4.833120399894142e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00016445159690192668,
+          "first_logit_margin_mean": -0.02945636212825775,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 8.158209919929504,
+            "mean": 0.09424422681331635,
+            "median": -0.10774445533752441,
+            "min": -8.310782432556152
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 2.7198412120103825e-09,
+          "ties": 0
+        },
+        "active:qa": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 9.590977107620802e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00027679750928655267,
+          "first_logit_margin_mean": 0.048811689019203186,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 10.360957503318787,
+            "mean": 0.0503050833940506,
+            "median": 0.10770070552825928,
+            "min": -9.900470852851868
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 7.814452960771658e-09,
+          "ties": 0
+        },
+        "passive:cloze": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 3.9006396832519385e-06,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00012943608294335718,
+          "first_logit_margin_mean": -4.105269908905029e-05,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 8.554810762405396,
+            "mean": -0.026921451091766357,
+            "median": -0.09531456232070923,
+            "min": -8.50316298007965
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 2.592867262293987e-09,
+          "ties": 0
+        },
+        "passive:qa": {
+          "complete_families": 0,
+          "correct": 8,
+          "eos_probability_mean": 1.4907368409922128e-05,
+          "exact_answer_prefix": 0,
+          "exact_answer_then_eos": 0,
+          "families": {
+            "SF:0:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:0:found": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:carried": {
+              "correct": 2,
+              "total": 4
+            },
+            "SF:1:found": {
+              "correct": 2,
+              "total": 4
+            }
+          },
+          "family_count": 4,
+          "first_candidate_mass_mean": 0.00040395919586444506,
+          "first_logit_margin_mean": 0.01703183352947235,
+          "first_top1_eos": 0,
+          "first_top1_outside_candidates": 16,
+          "full_vocab_first_top1_correct": 0,
+          "items": 16,
+          "margin": {
+            "max": 9.884052872657776,
+            "mean": -0.013847462832927704,
+            "median": -0.08253979682922363,
+            "min": -9.960268497467041
+          },
+          "reversal_pairs": 8,
+          "reversals": 0,
+          "sequence_candidate_mass_mean": 1.860117315176652e-08,
+          "ties": 0
+        }
+      },
+      "ties": 0
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T2_CTXBIND_V1",
+  "status": "PROSPECTIVE_READY_TO_TRAIN",
+  "objective": {
+    "type": "length_normalized_hardest_distractor_pairwise_margin_hinge",
+    "M": 1.0,
+    "candidate_score": "mean per-token log-likelihood of canonical ' Name.' including trailing period, excluding EOS",
+    "qa_loss": "mean over items of max(0, M - (s_correct - max_distractor s))",
+    "no_prompt_ce": true,
+    "no_continuation_ce": true,
+    "no_eos_supervision": true,
+    "no_kl": true,
+    "no_localization_term": true
+  },
+  "parent": {
+    "checkpoint": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "model_state_digest": "0101cec9e3220c1de1a0d8abc4e241e2fad32127b7358bc5a2944a34c5a5b953",
+    "completed_update": 6000,
+    "eval_dev_ce": 1.2040123894810677
+  },
+  "architecture": {
+    "bundle": "C:\\DaveLM-CADAVER\\baby_vnext_60m_design_v1",
+    "config_sha256": "8d7e1cbc604c9bf9f1942d4afc01817b20af17d8805a984f7ae57b1254f957b4",
+    "trainable_base": 60536064,
+    "frozen_binding": 984321
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "seeds": {
+    "primary": 610005,
+    "panel": 61000211,
+    "train_schedule": 61000212,
+    "rehearsal": 61000213,
+    "train_family": 61000214,
+    "reserved_replication": 610006
+  },
+  "data": {
+    "qa_train": {
+      "file": "data/qa_train.jsonl",
+      "sha256": "c323ce7531cfd936f12b5995b6ab8e4a9c6093d27f2d64eabefc54b2bd6d1333",
+      "items": 9464
+    },
+    "qa_dev": {
+      "file": "data/qa_dev.jsonl",
+      "sha256": "af9c7fd1b48d8b49d0c6f49e9c281e15dcb7eeb110b1dd6ccde43e6c1d57de12"
+    },
+    "qa_test": {
+      "file": "data/qa_test.jsonl",
+      "sha256": "44106b0f623a4405791f65a49ed4e98f5da34d79bb6f15b832043b9f989bb5ce"
+    },
+    "qa_audit_dev": {
+      "file": "data/qa_audit_dev.jsonl",
+      "sha256": "ede7d51f91710c97125242f8470ea05052674a66b96f28a0b78327d6d1486740"
+    },
+    "qa_audit_test": {
+      "file": "data/qa_audit_test.jsonl",
+      "sha256": "765ea0005719a2a6e78021a7f103c133b3dbb43d481ddc7302d67dfa18c11cb2"
+    },
+    "qa_novel_dev": {
+      "file": "data/qa_novel_dev.jsonl",
+      "sha256": "216496027617cb57a53137bdea62a5352ac48aa7ae0767a0a26c9d03d37b8d15"
+    },
+    "qa_novel_test": {
+      "file": "data/qa_novel_test.jsonl",
+      "sha256": "d23746112ffbd0a6a25cf87213a71e446e0cb935124926872e3d20e492490e63"
+    },
+    "qa_schedule": {
+      "file": "data/qa_schedule.bin",
+      "sha256": "aa2d5a78094d61ed265b020cfda816a5c13ec921ddc28748edb0415ed7cba37b"
+    },
+    "update_kinds": {
+      "file": "data/update_kinds.json",
+      "sha256": "e6dec2dfd2a6fa8294b510e0797d3267d5b09ffca0508d2fcb50b0093a70bd0e"
+    },
+    "rehearsal_windows": {
+      "file": "data/rehearsal_windows.bin",
+      "sha256": "439ebb92bde0586a2cdc51b4c25ddd1a1e9b61d708209a2b579a93fe4b31d342"
+    },
+    "panel_stats": {
+      "file": "data/PANEL_STATS.json",
+      "sha256": "674ba9f0d9ba4047aae84107ff357ebee8eceb8818d4b7b679f02353bb61cf5b"
+    },
+    "L_Q": 104,
+    "qa_batch": 32,
+    "qa_updates": 450,
+    "lang_updates": 50
+  },
+  "language_rehearsal": {
+    "stream": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_TRAIN_STREAM.u16",
+    "stream_sha256": "5f36b283cebe00d88445383166257fbb9831b759657a28c745f3d888f9626a41",
+    "context": 256,
+    "effective_batch": 64
+  },
+  "language_eval": {
+    "dev_stream": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_DEV_STREAM.u16",
+    "dev_stream_sha256": "4e9834d43ec80a0eea5e1a5a59c284f8f76f5f84bffcf979e4686661d71b6017",
+    "selection": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\EVAL_WINDOW_STARTS.u32",
+    "selection_sha256": "744904653ed11605025318cd4e5579ef6a33bd516575834086daa24b61a76681",
+    "prompts": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\GENERATION_PROMPTS.json",
+    "prompts_sha256": "6bcc77244efc5dad70ef905d275aeed6495b16c76decc4ae2e1684aaaa83cf51",
+    "dev_windows": 1280,
+    "train_windows": 320
+  },
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "gradient_clip": 2.0
+  },
+  "schedule": {
+    "max_updates": 500,
+    "cadence": "9 qa : 1 language",
+    "qa_batch": 32,
+    "lang_batch": 64,
+    "lang_context": 256
+  },
+  "checkpointing": {
+    "rolling_interval": 50,
+    "eval_points": [
+      0,
+      100,
+      250,
+      500
+    ]
+  },
+  "scope": "all base_model parameters trainable; all binding/localizer parameters frozen",
+  "gates": {
+    "u100": {
+      "lang_dev_ce_max": 1.3,
+      "ab_acc_min": 0.56,
+      "ab_margin_min": 0.15,
+      "v1_dc_min": 1.0,
+      "v1_dm_max": 0.1
+    },
+    "u250": {
+      "lang_dev_ce_max": 1.3,
+      "abcde_acc_min": 0.5,
+      "abcde_margin_min": 0.2,
+      "aud_acc_min": 0.35,
+      "aud_margin_min": 0.0,
+      "v1_dc_min": 1.0,
+      "v1_dm_max": 0.1
+    },
+    "final": {
+      "lang_dev_ce_max": 1.3,
+      "ab_acc_min": 0.8,
+      "ab_margin_min": 0.5,
+      "abcde_acc_min": 0.65,
+      "per_level_min": 0.5,
+      "aud_acc_min": 0.55,
+      "aud_margin_min": 0.1,
+      "novel_acc_min": 0.65,
+      "reversal_min": 0.7,
+      "v1_dm_min": 0.3,
+      "v1_dc_min": 1.0,
+      "v1_dm_max": 0.1,
+      "monotonic_tol": 0.05,
+      "gen_non_imm_eos": 10,
+      "gen_no_triple": 10,
+      "gen_no_repeat_trigram": 6,
+      "test_core_min": 0.6,
+      "test_aud_min": 0.5,
+      "test_novel_min": 0.6
+    }
+  },
+  "panel_structure": {
+    "ab_count": 160,
+    "abcde_count": 400,
+    "audit_dev": 120,
+    "novel_dev": 120,
+    "test_core": 320,
+    "test_audit": 60,
+    "test_novel": 60,
+    "ab_chance": 0.5,
+    "abcde_chance": 0.4,
+    "aud_chance": 0.25,
+    "novel_chance": 0.5
+  },
+  "locks": {
+    "historical_transfer": "LOCKED_UNSCORED",
+    "final_and_sacred": "LOCKED_UNACCESSED",
+    "synthetic_binding_panels": "LOCKED_UNACCESSED",
+    "v1_qa_eval_test": "LOCKED_UNOPENED"
+  }
+}

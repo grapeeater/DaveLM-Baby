@@ -1,0 +1,32 @@
+{
+  "artifacts": {
+    "EXECUTION_RECEIPT.json": {
+      "bytes": 685,
+      "sha256": "77548c1ba382874fb68ec2a7ab4e9d3cf74a63bd117f6ea3f86ef451604b3898"
+    },
+    "LOAD_RECEIPT.json": {
+      "bytes": 331,
+      "sha256": "545362bce9a05ff749b6d848325496b663fbfb3249bb01108093f38062cb6b20"
+    },
+    "PREFLIGHT_RECEIPT.json": {
+      "bytes": 1840,
+      "sha256": "fab66cccbb792278f024b4cec147463f84950c1f5448352a5e0b1a27f523a1fb"
+    },
+    "RAW_SCORES.jsonl": {
+      "bytes": 540433,
+      "sha256": "fb33cb23853cbab7c301c680d8c37101d62d2673bf23bd988029030f811e3a4d"
+    },
+    "REPORT.md": {
+      "bytes": 5510,
+      "sha256": "7610ab41cc9644579010a82aadea5dd9361679b8f93b14d19c3426c9a4688dbe"
+    },
+    "SUMMARY.json": {
+      "bytes": 76893,
+      "sha256": "4d0f70684d9873f241510bd14bdd8f0fb04995385a2b840e3af3631658e9cd59"
+    }
+  },
+  "checkpoint_sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "receipt_correction": "Removed self-referential detached checksum and self-hash fields; OUTPUT_SHA256SUMS.txt independently verifies all listed artifacts.",
+  "runner_sha256": "30330c7e649a6a94c307ba8fc1af17d95ca60ced5457a08b3caa87222c8c979f",
+  "status": "COMPLETE"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "HR2_READY_FOR_EXECUTION",
+  "version": "HR-2-v7",
+  "seed": 87005,
+  "parent_sha256": "468035373a74b6bf501ac6654c25d101a4cdf361e076e3b681c15bf71b4d3e8e",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "manifest_sha256": "3df21af2e8fec058b9fdb24a322fcd9f1c92e90f1eaeb45c79cf243d809814e7",
+  "sha256sums_sha256": "4e94521c167f1c252b15d785b6bf4896b553fa2c85e3dc6800910ef472fa97f2",
+  "scientific_scope": "bounded sentence-level language treatment with established T13 rehearsal",
+  "final_battery_accessed": false,
+  "checkpoint_loaded": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0
+}

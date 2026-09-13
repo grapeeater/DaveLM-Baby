@@ -1,0 +1,100 @@
+{
+  "experiment": "DaveLM v0.9 Treatment #6",
+  "treatment": "answer-signal amplification",
+  "scientific_question": "Does amplifying the existing T5 answer-selection objective by the frozen 191:1 position-count ratio make paired counterfactual query binding learnable on the training task?",
+  "classification": "TRAINING COMPLETE \u2014 FINAL RETENTION AUDIT REQUIRED",
+  "seed": 8380,
+  "schedule_seed": 8382,
+  "steps": 1000,
+  "batch_size": 32,
+  "pairs_per_batch": 16,
+  "pair_presentations": 16000,
+  "scheduled_examples": 32000,
+  "supervised_tokens": 6144000,
+  "nonanswer_supervised_tokens": 6112000,
+  "answer_substitutions": 32000,
+  "trainer": {
+    "path": "C:\\DaveLM-CADAVER\\treatment6_train.py",
+    "sha256": "0bd511eadc2bb37198795f9a11ec3e0066f8f60b2e85dd5a6be21828628e9a78"
+  },
+  "starting_checkpoint": {
+    "path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+    "sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+  },
+  "pair_pool": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json",
+    "sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307"
+  },
+  "frozen_schedule": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_frozen_schedule.json",
+    "sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12"
+  },
+  "parameter_count": 10594944,
+  "architecture_construction": "original_run.build_model(\"untied\")",
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.05,
+    "gradient_clip": 2.0,
+    "scheduler": null
+  },
+  "objective": {
+    "raw_answer": "membership + selector",
+    "answer_weight": 191.0,
+    "weighted_answer": "191.0 * (membership + selector)",
+    "membership": "logsumexp(full vocab) - logsumexp(correct,distractor)",
+    "selector": "relu(0.5 - (correct-distractor))",
+    "margin": 0.5,
+    "original_answer_ce_retained": false,
+    "nonanswer": "ordinary full-vocabulary CE",
+    "nonanswer_ce_weight": 1.0,
+    "reduction": "mean over all 192 causal positions after answer replacement"
+  },
+  "retention_gate": {
+    "correct_gt_distractor_fraction_min": 0.95,
+    "required_logit_margin": 0.5,
+    "margin_satisfied_fraction_min": 0.9
+  },
+  "runtime_seconds": 398.05364860000554,
+  "final_step_metrics": {
+    "loss": 2.8814170360565186,
+    "answer_weight": 191.0,
+    "mean_membership_loss": 0.11273175477981567,
+    "mean_selector_loss": 0.9063451290130615,
+    "mean_raw_answer_replacement_loss": 1.0190768241882324,
+    "mean_weighted_answer_replacement_loss": 194.6436767578125,
+    "mean_original_answer_ce_removed": 1.0728851556777954,
+    "mean_nonanswer_ce": 1.877426028251648,
+    "nonanswer_loss_contribution_to_total": 1.8676478862762451,
+    "weighted_answer_loss_contribution_to_total": 1.0137691497802734,
+    "correct_gt_distractor_fraction": 0.5625,
+    "margin_satisfied_fraction": 0.375,
+    "mean_candidate_mass": 0.8943060636520386,
+    "mean_correct_probability": 0.4595540761947632,
+    "mean_distractor_probability": 0.4347519874572754,
+    "mean_logit_delta": 0.10018371045589447,
+    "full_vocab_top1_fraction": 0.5625,
+    "mean_target_rank": 1.4375,
+    "median_target_rank": 1.0,
+    "slot0_correct_gt_distractor_fraction": 0.5625,
+    "slot0_margin_satisfied_fraction": 0.375,
+    "slot0_mean_logit_delta": 0.2606292963027954,
+    "slot1_correct_gt_distractor_fraction": 0.5625,
+    "slot1_margin_satisfied_fraction": 0.375,
+    "slot1_mean_logit_delta": -0.06026187539100647,
+    "step": 1000,
+    "gradient_norm_pre_clip": 4.127935886383057,
+    "step_seconds": 0.3858786999990116,
+    "cumulative_supervised_tokens": 6144000,
+    "cumulative_nonanswer_tokens": 6112000,
+    "cumulative_answer_substitutions": 32000
+  },
+  "candidate_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\treatment6_answer_signal_amplification_seed8380\\checkpoints\\answer_signal_amplification\\seed_8380\\latest.pt",
+    "sha256": "6c2498fef822897abb672d2ef25a4a88a63f66d57d441814372e59f91c995535"
+  },
+  "training_metrics": "C:\\DaveLM-CADAVER\\treatment6_answer_signal_amplification_seed8380\\treatment6_training_metrics.jsonl",
+  "positive_controls_evaluated": false,
+  "sealed_axes_loaded": false,
+  "sealed_evaluation": false
+}

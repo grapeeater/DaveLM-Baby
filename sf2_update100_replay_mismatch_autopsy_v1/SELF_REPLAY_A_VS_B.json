@@ -1,0 +1,29 @@
+{
+  "test": "current-runtime self-reproducibility: replay the frozen SF2 engine twice from identical Pilot1 inputs under identical environment/settings",
+  "engine": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\SF2_ENGINE.py (frozen, sha256 150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7, verified unchanged)",
+  "runtime": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv (Python 3.12.14, torch 2.12.0+rocm7.14.0, tokenizers 0.23.1, CUDA AMD Radeon RX 9060 XT, PYTHONHASHSEED=87011)",
+  "replay_A_out": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_A",
+  "replay_B_out": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_B",
+  "updates_run_each": 200,
+  "u100_checkpoint_comparison": {
+    "bitwise_equal_all_414_tensors": true,
+    "mismatched_tensors": 0,
+    "max_abs": 0.0,
+    "mean_abs": 0.0,
+    "rms": 0.0
+  },
+  "metric_comparison_200_records": {
+    "differing_record_count": 0,
+    "first_divergence": null,
+    "max_abs_delta_per_field": {}
+  },
+  "behavioral_comparison": {
+    "replay_A_status": "SF2_ACQUISITION_FAIL (15/16 at u200, same as historical SF2 run)",
+    "replay_B_status": "SF2_ACQUISITION_FAIL (15/16 at u200, same as historical SF2 run)"
+  },
+  "cross_check_with_sf3_replay": {
+    "replay_A_u100_vs_sf3_replay_u100": "bitwise equal, all 414 tensors, max_abs 0.0",
+    "meaning": "The SF3 controller's updates 1-100 are numerically identical to the frozen SF2 engine under the current environment; SF3's replay was faithful."
+  },
+  "verdict": "A == B exactly. The current runtime is deterministic against itself."
+}

@@ -1,0 +1,28 @@
+{
+  "answer_reversing_twins": 64,
+  "assignment_twins": 64,
+  "candidate_position_balance": {
+    "0": 64,
+    "1": 64
+  },
+  "families": 16,
+  "family_size": 8,
+  "forbidden_panels": "T2-EVAL-TEST, FINAL, sacred, historical locked panels not read/scored",
+  "name_balance": {
+    "Finn": 32,
+    "Iris": 32,
+    "Max": 32,
+    "Maya": 32,
+    "Nina": 32,
+    "Ruth": 32,
+    "Sara": 32,
+    "Walt": 32
+  },
+  "query_counterfactuals": 64,
+  "rows": 128,
+  "selection": "fixed Cartesian construction, no checkpoint outputs or locked outcomes consulted",
+  "template_balance": {
+    "active": 64,
+    "passive": 64
+  }
+}

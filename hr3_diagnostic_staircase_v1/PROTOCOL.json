@@ -1,0 +1,47 @@
+{
+  "status": "FROZEN_DIAGNOSTIC_STAIRCASE",
+  "stage1": "Evaluate factual87002 on all 384 factual training rows, plus 96 factual DEV rows as diagnostic. No control prompts or Confirmation scoring. No suitable frozen training evaluator exists; preserve training target semantics via validated harness alignment.",
+  "stage2": "64 single-fact actor-retrieval items, 4 families of 16, 32 actor reversal pairs; two name pairs, two predicates, two objects, active/passive fact wording, cloze/QA cues. No random sampling.",
+  "checkpoints": {
+    "Pilot1": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+    },
+    "HR1_aligned": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_execution\\run_factual\\checkpoint_500.pt",
+      "sha256": "eec87f940822938911e34126ba855630473c94867f3e2d267a97e3d288b5652d"
+    },
+    "HR3": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr3_causal_seed87006_execution_v7\\checkpoint_500.pt",
+      "sha256": "23726ce76ff789bbe05d44340952a1763b7231584b0c91ff8e15f5c64e6ef93d"
+    },
+    "Factual87002": {
+      "path": "C:\\DaveLM-CADAVER\\fact_supervision_87001_corrected_v8\\run_factual\\checkpoint_500.pt",
+      "sha256": "3ae30ae847d3129d7715173ddbfbbaf6b7490772dc850e361a5a2d785b991123"
+    }
+  },
+  "runtime_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v7",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "scoring": {
+    "candidate": "sum all 4 candidate log probabilities, EOS excluded; positive signed margin wins, zero fails; no length normalization or prior subtraction",
+    "exact_answer": "raw greedy first four tokens equal correct candidate; separately exact candidate then immediate EOS; greedy max32 normal EOS",
+    "full_vocab_top1": "first answer position argmax equals correct first candidate token; distinct first token IDs make signed correct-vs-alternative first-logit margin meaningful",
+    "mass": "first-step candidate-token mass and full four-token candidate-sequence mass are both absolute probabilities, not candidate renormalization",
+    "reversal": "both members correct; every pair counted once",
+    "families": "all members correct",
+    "raw": "save per-token full-vocabulary ranks, log probabilities, logits; EOS probability/rank; all greedy IDs/text; persist each item before aggregation"
+  },
+  "diagnostic_flags": {
+    "clearly_acquired_on_this_battery": "per checkpoint: restricted correct >=56/64, reversal >=24/32, and >=12/16 restricted correct in EACH active/passive x cloze/QA stratum. These are prospective descriptive staircase flags, not readiness gates or inferential population claims.",
+    "approximately_chance": "28..36/64 restricted correct and <=4/32 successful reversals",
+    "otherwise": "inconclusive or mixed; no automatic two-fact objective-treatment authorization",
+    "mixed_models": "acquisition in factual descendant cannot establish acquisition in Pilot1 or HR descendants; report separately and stop for parent/next-diagnostic decision",
+    "uncertainty": "report raw counts and family/format profiles, no IID item CI due dependence and only four lexical families"
+  },
+  "future_ab_constraints": "Corrected-HR1/Pilot1 mask blocks0-3 frozen, identical arms; strict counterbalancing; full-vocabulary answer CE retained, never naked margin; candidate membership preserved; any coefficient calibrated once on deterministic training-only step0 gradient norms before DEV; freeze paired binary/reversal statistics and effect sizes; readiness gates unchanged.",
+  "no_optimizer": true,
+  "no_training": true,
+  "final_access": false,
+  "sacred_access": false
+}

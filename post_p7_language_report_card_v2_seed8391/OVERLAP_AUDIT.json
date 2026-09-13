@@ -1,0 +1,162 @@
+{
+  "completed_sequence_overlaps": 0,
+  "full_prompt_overlaps": 0,
+  "limitation": "Sentence/phrase familiarity is allowed and reported. Exact nonoverlap does not prove semantic novelty. Corpus scope is listed local artifacts.",
+  "normalization": "Unicode casefold then collapse whitespace; substring within decoded text fields; NUL separates records",
+  "sources": [
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p6\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "b7f24295fcff6b479d887a56e766222566d2a27f582f1e5e6828bc8ea1dd6dd3"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 232,
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p6\\TRAIN_TEXT.txt",
+      "prompt_overlap": [],
+      "sha256": "f849540384fe0b247387eba583c2e053313650db4cbdcbf0cc42a3041122523e"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\FIXED_PANEL_RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "25df0ce359aa3ff719e8d2e500a510f58c63ea4530b66036077a4b1186e50a0f"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\NATURAL_TRANSFER_RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "8b051491a88d0bafa676a76ec4c5a61fc57d0fc802e4212f1f1366c5da436031"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "8379fb6b7e742e5b1320d675a392a8f22f911164362616e9a3f512bcda331901"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 232,
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\TRAIN_TEXT.txt",
+      "prompt_overlap": [],
+      "sha256": "337a24425fb8bd5e8b2c6b31518c23e99be3a22d0499ca9aea3d226c10af2489"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 4,
+      "path": "C:\\DaveLM-CADAVER\\language_consistency_p1\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "79a530d01eef61ab603a7b3a4d90725750ad0cce938ebf9f3bf64cf790c9aa8f"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 252,
+      "path": "C:\\DaveLM-CADAVER\\language_consistency_p1\\TRAIN_TEXT.txt",
+      "prompt_overlap": [],
+      "sha256": "8945658582acc8436bf09cbec37858f499a2ebe6742797daf249ea347038c552"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_continuation_p0_v1\\HELDOUT_PANEL.json",
+      "prompt_overlap": [],
+      "sha256": "41ca1445e4251a705b21d071bd681546c9e302a65fea71ce5af6ba9b6ed7d242"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_continuation_p0_v1\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "71afdf52fea9caa8acb64d56003ebd6f7b31f418f8a55b5a91b8456c5d81df57"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_mixed_p2\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "939a216725ac2aa5a8a7fc1cfaa9ec5d5101a7ea03ee1c4271694638ab05fd9a"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_dev.jsonl",
+      "prompt_overlap": [],
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_train.jsonl",
+      "prompt_overlap": [],
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl",
+      "prompt_overlap": [],
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+      "prompt_overlap": [],
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_sentencebound_p5\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "4195cdf0b74b4c0b34e86b3fbce6ebbf4c828b467be4911c1052eba2da7b1989"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_storybound_p3\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "6916c1168684a030ad9e9f2c9a0b41451089e72eacf5cd7f7803af7694a722d0"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_storybound_p3\\SAMPLED_PANEL.json",
+      "prompt_overlap": [],
+      "sha256": "9cace6ee531ccb3f698d13716bc02991acec2033b82d9a89c6cac3344481adbf"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\language_unlikelihood_p4\\RESULTS.json",
+      "prompt_overlap": [],
+      "sha256": "9db4f4d4d7a21ffb17efe7166c95f3f05a83e0034b85c83b7afaed84c348ad12"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 276,
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\ITEMS.jsonl",
+      "prompt_overlap": [],
+      "sha256": "ed51478b0e8a2407b3660d03ee3b56a63ba246c9ad47d154bde4c52a3d627387"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 0,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\ITEMS.jsonl",
+      "prompt_overlap": [],
+      "sha256": "5e6669275562044012113a353996e627a1b9faad28b6b4664328d27e268a509a"
+    },
+    {
+      "completed_overlap": [],
+      "items_with_any_fact_substring_overlap_diagnostic": 276,
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380_execution_p7\\RAW_SCORES.jsonl",
+      "prompt_overlap": [],
+      "sha256": "fb33cb23853cbab7c301c680d8c37101d62d2673bf23bd988029030f811e3a4d"
+    }
+  ]
+}

@@ -1,0 +1,983 @@
+{
+  "count_rule": "case-sensitive (?<![A-Za-z])WORD(?![A-Za-z]); stories counted once",
+  "eligibility": {
+    "dev_used_for_selection": false,
+    "spaced_word_tokens": 2,
+    "train_occurrences_min": 100,
+    "train_stories_min": 50,
+    "within_pair_max_frequency_ratio": 2
+  },
+  "eligible_pairs": {
+    "animals": [
+      [
+        "bear",
+        "cat"
+      ],
+      [
+        "bear",
+        "fish"
+      ],
+      [
+        "cat",
+        "fish"
+      ]
+    ],
+    "names": [
+      [
+        "Ben",
+        "Sam"
+      ],
+      [
+        "Ben",
+        "Tim"
+      ],
+      [
+        "Ben",
+        "Tom"
+      ],
+      [
+        "Sam",
+        "Tim"
+      ],
+      [
+        "Sam",
+        "Tom"
+      ],
+      [
+        "Tim",
+        "Tom"
+      ]
+    ],
+    "objects": [
+      [
+        "bag",
+        "book"
+      ],
+      [
+        "bag",
+        "hat"
+      ],
+      [
+        "ball",
+        "car"
+      ],
+      [
+        "ball",
+        "toy"
+      ],
+      [
+        "book",
+        "hat"
+      ],
+      [
+        "car",
+        "toy"
+      ]
+    ],
+    "places": [
+      [
+        "bed",
+        "room"
+      ],
+      [
+        "cave",
+        "shop"
+      ],
+      [
+        "cave",
+        "yard"
+      ],
+      [
+        "shop",
+        "yard"
+      ]
+    ]
+  },
+  "schema_version": 1,
+  "words": {
+    "Ben": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 344,
+          "stories": 46
+        },
+        "train": {
+          "occurrences": 4168,
+          "stories": 546
+        }
+      },
+      "strings": {
+        "bare": "Ben",
+        "completed": " Ben.",
+        "leading_space": " Ben"
+      },
+      "token_ids": {
+        "bare": [
+          38,
+          274
+        ],
+        "completed": [
+          532,
+          274,
+          18
+        ],
+        "leading_space": [
+          532,
+          274
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "B",
+          "en"
+        ],
+        "completed": [
+          "ĠB",
+          "en",
+          "."
+        ],
+        "leading_space": [
+          "ĠB",
+          "en"
+        ]
+      }
+    },
+    "Sam": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 189,
+          "stories": 29
+        },
+        "train": {
+          "occurrences": 2136,
+          "stories": 313
+        }
+      },
+      "strings": {
+        "bare": "Sam",
+        "completed": " Sam.",
+        "leading_space": " Sam"
+      },
+      "token_ids": {
+        "bare": [
+          55,
+          339
+        ],
+        "completed": [
+          527,
+          339,
+          18
+        ],
+        "leading_space": [
+          527,
+          339
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "S",
+          "am"
+        ],
+        "completed": [
+          "ĠS",
+          "am",
+          "."
+        ],
+        "leading_space": [
+          "ĠS",
+          "am"
+        ]
+      }
+    },
+    "Tim": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 288,
+          "stories": 40
+        },
+        "train": {
+          "occurrences": 2453,
+          "stories": 360
+        }
+      },
+      "strings": {
+        "bare": "Tim",
+        "completed": " Tim.",
+        "leading_space": " Tim"
+      },
+      "token_ids": {
+        "bare": [
+          56,
+          337
+        ],
+        "completed": [
+          525,
+          337,
+          18
+        ],
+        "leading_space": [
+          525,
+          337
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "T",
+          "im"
+        ],
+        "completed": [
+          "ĠT",
+          "im",
+          "."
+        ],
+        "leading_space": [
+          "ĠT",
+          "im"
+        ]
+      }
+    },
+    "Tom": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 531,
+          "stories": 65
+        },
+        "train": {
+          "occurrences": 3991,
+          "stories": 536
+        }
+      },
+      "strings": {
+        "bare": "Tom",
+        "completed": " Tom.",
+        "leading_space": " Tom"
+      },
+      "token_ids": {
+        "bare": [
+          56,
+          295
+        ],
+        "completed": [
+          525,
+          295,
+          18
+        ],
+        "leading_space": [
+          525,
+          295
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "T",
+          "om"
+        ],
+        "completed": [
+          "ĠT",
+          "om",
+          "."
+        ],
+        "leading_space": [
+          "ĠT",
+          "om"
+        ]
+      }
+    },
+    "bag": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 30,
+          "stories": 19
+        },
+        "train": {
+          "occurrences": 307,
+          "stories": 170
+        }
+      },
+      "strings": {
+        "bare": "bag",
+        "completed": " bag.",
+        "leading_space": " bag"
+      },
+      "token_ids": {
+        "bare": [
+          70,
+          408
+        ],
+        "completed": [
+          281,
+          408,
+          18
+        ],
+        "leading_space": [
+          281,
+          408
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "b",
+          "ag"
+        ],
+        "completed": [
+          "Ġb",
+          "ag",
+          "."
+        ],
+        "leading_space": [
+          "Ġb",
+          "ag"
+        ]
+      }
+    },
+    "ball": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 142,
+          "stories": 38
+        },
+        "train": {
+          "occurrences": 1376,
+          "stories": 388
+        }
+      },
+      "strings": {
+        "bare": "ball",
+        "completed": " ball.",
+        "leading_space": " ball"
+      },
+      "token_ids": {
+        "bare": [
+          70,
+          452
+        ],
+        "completed": [
+          281,
+          452,
+          18
+        ],
+        "leading_space": [
+          281,
+          452
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "b",
+          "all"
+        ],
+        "completed": [
+          "Ġb",
+          "all",
+          "."
+        ],
+        "leading_space": [
+          "Ġb",
+          "all"
+        ]
+      }
+    },
+    "bear": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 76,
+          "stories": 29
+        },
+        "train": {
+          "occurrences": 1278,
+          "stories": 353
+        }
+      },
+      "strings": {
+        "bare": "bear",
+        "completed": " bear.",
+        "leading_space": " bear"
+      },
+      "token_ids": {
+        "bare": [
+          70,
+          73,
+          285
+        ],
+        "completed": [
+          319,
+          285,
+          18
+        ],
+        "leading_space": [
+          319,
+          285
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "b",
+          "e",
+          "ar"
+        ],
+        "completed": [
+          "Ġbe",
+          "ar",
+          "."
+        ],
+        "leading_space": [
+          "Ġbe",
+          "ar"
+        ]
+      }
+    },
+    "bed": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 50,
+          "stories": 31
+        },
+        "train": {
+          "occurrences": 683,
+          "stories": 408
+        }
+      },
+      "strings": {
+        "bare": "bed",
+        "completed": " bed.",
+        "leading_space": " bed"
+      },
+      "token_ids": {
+        "bare": [
+          70,
+          278
+        ],
+        "completed": [
+          281,
+          278,
+          18
+        ],
+        "leading_space": [
+          281,
+          278
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "b",
+          "ed"
+        ],
+        "completed": [
+          "Ġb",
+          "ed",
+          "."
+        ],
+        "leading_space": [
+          "Ġb",
+          "ed"
+        ]
+      }
+    },
+    "book": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 42,
+          "stories": 16
+        },
+        "train": {
+          "occurrences": 373,
+          "stories": 140
+        }
+      },
+      "strings": {
+        "bare": "book",
+        "completed": " book.",
+        "leading_space": " book"
+      },
+      "token_ids": {
+        "bare": [
+          70,
+          485
+        ],
+        "completed": [
+          281,
+          485,
+          18
+        ],
+        "leading_space": [
+          281,
+          485
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "b",
+          "ook"
+        ],
+        "completed": [
+          "Ġb",
+          "ook",
+          "."
+        ],
+        "leading_space": [
+          "Ġb",
+          "ook"
+        ]
+      }
+    },
+    "car": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 166,
+          "stories": 51
+        },
+        "train": {
+          "occurrences": 1461,
+          "stories": 450
+        }
+      },
+      "strings": {
+        "bare": "car",
+        "completed": " car.",
+        "leading_space": " car"
+      },
+      "token_ids": {
+        "bare": [
+          71,
+          285
+        ],
+        "completed": [
+          268,
+          285,
+          18
+        ],
+        "leading_space": [
+          268,
+          285
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "c",
+          "ar"
+        ],
+        "completed": [
+          "Ġc",
+          "ar",
+          "."
+        ],
+        "leading_space": [
+          "Ġc",
+          "ar"
+        ]
+      }
+    },
+    "cat": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 125,
+          "stories": 35
+        },
+        "train": {
+          "occurrences": 1121,
+          "stories": 333
+        }
+      },
+      "strings": {
+        "bare": "cat",
+        "completed": " cat.",
+        "leading_space": " cat"
+      },
+      "token_ids": {
+        "bare": [
+          71,
+          265
+        ],
+        "completed": [
+          268,
+          265,
+          18
+        ],
+        "leading_space": [
+          268,
+          265
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "c",
+          "at"
+        ],
+        "completed": [
+          "Ġc",
+          "at",
+          "."
+        ],
+        "leading_space": [
+          "Ġc",
+          "at"
+        ]
+      }
+    },
+    "cave": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 13,
+          "stories": 5
+        },
+        "train": {
+          "occurrences": 183,
+          "stories": 64
+        }
+      },
+      "strings": {
+        "bare": "cave",
+        "completed": " cave.",
+        "leading_space": " cave"
+      },
+      "token_ids": {
+        "bare": [
+          398,
+          403
+        ],
+        "completed": [
+          511,
+          403,
+          18
+        ],
+        "leading_space": [
+          511,
+          403
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "ca",
+          "ve"
+        ],
+        "completed": [
+          "Ġca",
+          "ve",
+          "."
+        ],
+        "leading_space": [
+          "Ġca",
+          "ve"
+        ]
+      }
+    },
+    "fish": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 58,
+          "stories": 23
+        },
+        "train": {
+          "occurrences": 680,
+          "stories": 202
+        }
+      },
+      "strings": {
+        "bare": "fish",
+        "completed": " fish.",
+        "leading_space": " fish"
+      },
+      "token_ids": {
+        "bare": [
+          74,
+          795
+        ],
+        "completed": [
+          291,
+          795,
+          18
+        ],
+        "leading_space": [
+          291,
+          795
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "f",
+          "ish"
+        ],
+        "completed": [
+          "Ġf",
+          "ish",
+          "."
+        ],
+        "leading_space": [
+          "Ġf",
+          "ish"
+        ]
+      }
+    },
+    "hat": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 51,
+          "stories": 18
+        },
+        "train": {
+          "occurrences": 380,
+          "stories": 195
+        }
+      },
+      "strings": {
+        "bare": "hat",
+        "completed": " hat.",
+        "leading_space": " hat"
+      },
+      "token_ids": {
+        "bare": [
+          494
+        ],
+        "completed": [
+          356,
+          265,
+          18
+        ],
+        "leading_space": [
+          356,
+          265
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "hat"
+        ],
+        "completed": [
+          "Ġh",
+          "at",
+          "."
+        ],
+        "leading_space": [
+          "Ġh",
+          "at"
+        ]
+      }
+    },
+    "room": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 113,
+          "stories": 72
+        },
+        "train": {
+          "occurrences": 1306,
+          "stories": 801
+        }
+      },
+      "strings": {
+        "bare": "room",
+        "completed": " room.",
+        "leading_space": " room"
+      },
+      "token_ids": {
+        "bare": [
+          313,
+          295
+        ],
+        "completed": [
+          942,
+          295,
+          18
+        ],
+        "leading_space": [
+          942,
+          295
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "ro",
+          "om"
+        ],
+        "completed": [
+          "Ġro",
+          "om",
+          "."
+        ],
+        "leading_space": [
+          "Ġro",
+          "om"
+        ]
+      }
+    },
+    "shop": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 31,
+          "stories": 13
+        },
+        "train": {
+          "occurrences": 149,
+          "stories": 77
+        }
+      },
+      "strings": {
+        "bare": "shop",
+        "completed": " shop.",
+        "leading_space": " shop"
+      },
+      "token_ids": {
+        "bare": [
+          87,
+          76,
+          1001
+        ],
+        "completed": [
+          373,
+          1001,
+          18
+        ],
+        "leading_space": [
+          373,
+          1001
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "s",
+          "h",
+          "op"
+        ],
+        "completed": [
+          "Ġsh",
+          "op",
+          "."
+        ],
+        "leading_space": [
+          "Ġsh",
+          "op"
+        ]
+      }
+    },
+    "toy": {
+      "answer_candidate": false,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 187,
+          "stories": 80
+        },
+        "train": {
+          "occurrences": 1700,
+          "stories": 777
+        }
+      },
+      "strings": {
+        "bare": "toy",
+        "completed": " toy.",
+        "leading_space": " toy"
+      },
+      "token_ids": {
+        "bare": [
+          638,
+          93
+        ],
+        "completed": [
+          304,
+          93,
+          18
+        ],
+        "leading_space": [
+          304,
+          93
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "to",
+          "y"
+        ],
+        "completed": [
+          "Ġto",
+          "y",
+          "."
+        ],
+        "leading_space": [
+          "Ġto",
+          "y"
+        ]
+      }
+    },
+    "yard": {
+      "answer_candidate": true,
+      "eligible": true,
+      "frequencies": {
+        "dev": {
+          "occurrences": 20,
+          "stories": 17
+        },
+        "train": {
+          "occurrences": 225,
+          "stories": 137
+        }
+      },
+      "strings": {
+        "bare": "yard",
+        "completed": " yard.",
+        "leading_space": " yard"
+      },
+      "token_ids": {
+        "bare": [
+          93,
+          609
+        ],
+        "completed": [
+          715,
+          609,
+          18
+        ],
+        "leading_space": [
+          715,
+          609
+        ]
+      },
+      "tokens": {
+        "bare": [
+          "y",
+          "ard"
+        ],
+        "completed": [
+          "Ġy",
+          "ard",
+          "."
+        ],
+        "leading_space": [
+          "Ġy",
+          "ard"
+        ]
+      }
+    }
+  }
+}

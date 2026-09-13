@@ -1,0 +1,24 @@
+{
+  "classification": "D1_LINEAR_RELATIONAL_SIGNAL_ABSENT",
+  "created_utc": "2026-09-10T06:11:14Z",
+  "historical_row_probe_sha256": "7db79d2001770aa3b39721dc2e7d16d00dda2aa07ca93a1698c4a6fe799c8d67",
+  "inputs": {
+    "pilot": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "t2": "83428b4e60a97385359be19d4d8312998bfd27d668480d6c4e3790d2489fdd42",
+    "tokenizer": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "locked_access": {
+    "final": false,
+    "sacred": false,
+    "t2_eval_test": false
+  },
+  "model_access": "read-only inference, no autograd",
+  "script": "C:\\DaveLM-v0.10\\phase2a_final_diagnostic.py",
+  "script_sha256": "eed5a1159465cf1c64136249aac373d58ecaddcb9a8500fccfe759144f296a60",
+  "source_hashes": {
+    "finalize_phase2a.py": "2b6b623ad365cdbe3575eb4e5e5e548c5f6110865c2640a4e53a7e4c2fae0058",
+    "historical_row_probe": "C:\\DaveLM-CADAVER\\treatment4_query_separability_probe.py",
+    "phase2a_final_diagnostic.py": "eed5a1159465cf1c64136249aac373d58ecaddcb9a8500fccfe759144f296a60",
+    "phase2a_nonlinear_probe.py": "1d4ebb471dba6f9c3ccce870c15ccc36de5d5e504e7432f1ad9d460e1d7692a7"
+  }
+}

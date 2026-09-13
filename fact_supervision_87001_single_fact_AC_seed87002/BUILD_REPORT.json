@@ -1,0 +1,58 @@
+{
+ "status": "SINGLE_FACT_AC_BUILD_COMPLETE",
+ "neutral_template": "{name} sat down.",
+ "source": {
+  "items_sha256": "2dab70739e9c0ffe1ad3154076ec613a10a4964fa1138e9c7b40d8a5e55f518d",
+  "partition": "primary",
+  "arm": "factual",
+  "families": 24
+ },
+ "counts": {
+  "A": 48,
+  "C": 96
+ },
+ "balance": {
+  "A": {
+   "n": 48,
+   "families": 24,
+   "items_per_family": [
+    2
+   ],
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   }
+  },
+  "C": {
+   "n": 96,
+   "families": 24,
+   "items_per_family": [
+    4
+   ],
+   "correct_index": {
+    "0": 48,
+    "1": 48
+   },
+   "correct_name": {
+    "Alex": 24,
+    "Mia": 24,
+    "Nora": 24,
+    "Owen": 24
+   }
+  }
+ },
+ "overlap": {
+  "exact_two_fact_prompt_hits": 0,
+  "A_prompt_is_substring_of_source": 24,
+  "C_prompt_is_substring_of_source": 0,
+  "tinystories_hits": 0,
+  "p7_train_text_hits": 0,
+  "note": "A/C prompts are derived substrings of factual Primary two-fact prompts by construction; no fresh lexical novelty is claimed."
+ }
+}

@@ -1,0 +1,104 @@
+{
+  "Pilot1": {
+    "greedy": {
+      "n": 5,
+      "mean_loop_onset": 99,
+      "mean_length": 32,
+      "mean_entropy_first5": 2.8169364130496977,
+      "mean_entropy_last5": 2.4742133975028993,
+      "mean_top1": 0.3606215360108763,
+      "immediate_eos": 0,
+      "outputs": [
+        "The dog ran to the park because the big and fun. He wanted to the bird and wered and wered. He w",
+        "Mia found a red ball and fun.\nThenax and her mom and her mom. her mom and her mom. They were",
+        "The small cat sat on the mat. It was veryoneyone to gok. He his mom and her mom. He wanted to",
+        "A boy opened the box and wered. He wanted to the bird and wered. He wanted to go. H",
+        "Tell me one thing about a sunny day. He wanted to play with a big big big big big big big"
+      ]
+    },
+    "temp07_top20": {
+      "n": 5,
+      "mean_loop_onset": 99,
+      "mean_length": 32,
+      "mean_entropy_first5": 1.7479371746815742,
+      "mean_entropy_last5": 1.4605391846597195,
+      "mean_top1": 0.5189208553172648,
+      "immediate_eos": 0,
+      "outputs": [
+        "The dog ran to the park because the big and fun. He wanted to the bird and wered and wered. He w",
+        "Mia found a red ball and fun.\nThenax and her mom and her mom. her mom and her mom. They were",
+        "The small cat sat on the mat. It was veryoneyone to gok. He his mom and her mom. He wanted to",
+        "A boy opened the box and wered. He wanted to the bird and wered. He wanted to go. H",
+        "Tell me one thing about a sunny day. He wanted to play with a big big big big big big big"
+      ]
+    }
+  },
+  "HR1": {
+    "greedy": {
+      "n": 5,
+      "mean_loop_onset": 2,
+      "mean_length": 32,
+      "mean_entropy_first5": 0.9453205384314061,
+      "mean_entropy_last5": 1.2669743621349334,
+      "mean_top1": 0.8678167184290941,
+      "immediate_eos": 0,
+      "outputs": [
+        "The dog ran to the park because made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made",
+        "Mia found a red ball and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "The small cat sat on the mat. It to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to",
+        "A boy opened the box and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "Tell me one thing about a sunny day................................."
+      ]
+    },
+    "temp07_top20": {
+      "n": 5,
+      "mean_loop_onset": 2,
+      "mean_length": 32,
+      "mean_entropy_first5": 0.1805440241866745,
+      "mean_entropy_last5": 0.13935676606372,
+      "mean_top1": 0.978736568428576,
+      "immediate_eos": 0,
+      "outputs": [
+        "The dog ran to the park because made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made",
+        "Mia found a red ball and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "The small cat sat on the mat. It to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to",
+        "A boy opened the box and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "Tell me one thing about a sunny day................................."
+      ]
+    }
+  },
+  "HR2": {
+    "greedy": {
+      "n": 5,
+      "mean_loop_onset": 2,
+      "mean_length": 32,
+      "mean_entropy_first5": 0.6813292198628187,
+      "mean_entropy_last5": 1.3843487967550754,
+      "mean_top1": 0.877214667329099,
+      "immediate_eos": 0,
+      "outputs": [
+        "The dog ran to the park because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because",
+        "Mia found a red ball and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "The small cat sat on the mat. It down down down down down down down down down down down down down down down down down down down down down down down down down down down down down down down down",
+        "A boy opened the box and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "Tell me one thing about a sunny day................................."
+      ]
+    },
+    "temp07_top20": {
+      "n": 5,
+      "mean_loop_onset": 2,
+      "mean_length": 32,
+      "mean_entropy_first5": 0.12878197254161933,
+      "mean_entropy_last5": 0.06532888273708522,
+      "mean_top1": 0.9897112373262644,
+      "immediate_eos": 0,
+      "outputs": [
+        "The dog ran to the park because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because because",
+        "Mia found a red ball and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "The small cat sat on the mat. It down down down down down down down down down down down down down down down down down down down down down down down down down down down down down down down down",
+        "A boy opened the box and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+        "Tell me one thing about a sunny day................................."
+      ]
+    }
+  }
+}

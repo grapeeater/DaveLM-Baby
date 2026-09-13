@@ -1,0 +1,42 @@
+{
+ "status": "VALIDATION_PASS",
+ "neutral_template": "{name} sat down.",
+ "A": {
+  "tag": "A",
+  "n": 48,
+  "families": 24,
+  "correct_index": {
+   "0": 24,
+   "1": 24
+  },
+  "correct_name": {
+   "Alex": 12,
+   "Mia": 12,
+   "Nora": 12,
+   "Owen": 12
+  }
+ },
+ "C": {
+  "tag": "C",
+  "n": 96,
+  "families": 24,
+  "correct_index": {
+   "0": 48,
+   "1": 48
+  },
+  "correct_name": {
+   "Alex": 24,
+   "Mia": 24,
+   "Nora": 24,
+   "Owen": 24
+  }
+ },
+ "C_neutral_position_balance": {
+  "0": 48,
+  "1": 48
+ },
+ "entailment": "every A/C correct candidate is the actor of the retained factual sentence",
+ "neutral_contract": "C neutral sentence mentions only the other name and cannot answer/contradict the query",
+ "candidates_valid": "candidate strings round-trip to their frozen token ids",
+ "original_reversal_query_do_not_transfer": "the original two-fact relational reversal and the original query dimension do not transfer unchanged; candidate-index/name balance is reported instead"
+}

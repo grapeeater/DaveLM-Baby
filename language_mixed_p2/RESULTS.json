@@ -1,0 +1,54 @@
+{
+  "parent_sha256": "55811114404642ea93e98cec53f2782d4b69aa8daacb96e7cf42554e181098d2",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "tiny_train_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "synthetic_sha256": "3cd2ffde15fe13aa7500161fc69bdb9fcbd2eccb95651fd4e9620933a1d4eb11",
+  "updates": 500,
+  "schedule": "9 TinyStories batches then 1 consistency batch",
+  "seed": 8380,
+  "panel_prompts": [
+    "Zoe found a yellow kite.",
+    "Alex found a green book.",
+    "Nora found a red car.",
+    "Owen found a blue box.",
+    "Mia found a green fish.",
+    "Sam found a yellow hat.",
+    "Lily found a blue car.",
+    "Tom found a red kite."
+  ],
+  "elapsed_seconds": 532.4905154705048,
+  "generations": [
+    {
+      "prompt": "Zoe found a yellow kite.",
+      "output": "Zoe found a yellow kite. Zoe found the yellow kite.Zoe found a yellow kite"
+    },
+    {
+      "prompt": "Alex found a green book.",
+      "output": "Alex found a green book. Nora played with the green book.Alex found a green book."
+    },
+    {
+      "prompt": "Nora found a red car.",
+      "output": "Nora found a red car. Nora found the red car.Nora found a red car. Nora pl"
+    },
+    {
+      "prompt": "Owen found a blue box.",
+      "output": "Owen found a blue box. Owen played with the blue box.Owen found a blue bo"
+    },
+    {
+      "prompt": "Mia found a green fish.",
+      "output": "Mia found a green fish. Mia played with the green fish.Mia found a green fish."
+    },
+    {
+      "prompt": "Sam found a yellow hat.",
+      "output": "Sam found a yellow hat. Sam played with the yellow hat.Sam found a yellow hat. Sam"
+    },
+    {
+      "prompt": "Lily found a blue car.",
+      "output": "Lily found a blue car. Lily looked at the blue car.Lily found a blue car"
+    },
+    {
+      "prompt": "Tom found a red kite.",
+      "output": "Tom found a red kite. Tom looked at the red kite.Tom found a red kite. Tom"
+    }
+  ]
+}

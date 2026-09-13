@@ -1,0 +1,14 @@
+{
+  "Pilot1_parent": {
+    "one_candidate_for_entire_family": 5,
+    "period_margin_mean_absolute": 1.4560838714241982
+  },
+  "HR1_causal_aligned_500": {
+    "one_candidate_for_entire_family": 6,
+    "period_margin_mean_absolute": 0.7127182434002558
+  },
+  "HR3_block3_update_500": {
+    "one_candidate_for_entire_family": 6,
+    "period_margin_mean_absolute": 0.9392450476686159
+  }
+}

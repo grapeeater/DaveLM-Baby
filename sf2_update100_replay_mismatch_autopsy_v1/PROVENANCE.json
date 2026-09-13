@@ -1,0 +1,33 @@
+{
+  "audit": "sf2_update100_replay_mismatch_autopsy_v1",
+  "date": "2026-09-07",
+  "mode": "strictly forensic and read-only. The ONLY new computation performed was the mission-authorized diagnostic replay of the frozen SF2 engine (two fresh 200-update replays, u100 checkpoints used for comparison) plus read-only tensor/metric/hash comparisons. No SF4 design, no treatment, no annealing, no transfer panels, no FINAL/sacred access, no checkpoint mutation.",
+  "authoritative_inputs": [
+    "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\ (frozen SF2 run + engine + KL pool)",
+    "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1\\ (SF3 hard-stop package: FINAL_REPORT.md, EXECUTION_PROVENANCE.json, PROTOCOL.json, PRETRAIN_SHA256SUMS.txt, SF3_ENGINE.py, MECHANICAL_CORRECTIONS.md, RESULTS.jsonl, run\\*)",
+    "C:\\DaveLM-CADAVER\\sf2_residual_item_autopsy_v1\\ (prior autopsy; referenced, unmodified)",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\ (SF1 bundle, read-only --bundle input)",
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt (parent)"
+  ],
+  "key_hashes_verified_during_audit": {
+    "frozen_sf2_engine_sha256": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7",
+    "sf2_package_manifest": "all listed hashes verified",
+    "historical_sf2_ckpt100": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "historical_sf2_ckpt200": "1710a183c757da9d9b2b1deaaced1a49898c91c0ffaf3e3227af8cdb44a9c28d",
+    "sf3_replay_ckpt100": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+    "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "sf3_frozen_base_matches_sf1_bundle_hashes": true,
+    "sf3_kl_pool_sha256_matches_sf2": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06"
+  },
+  "diagnostic_replays": {
+    "replay_A": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_A (frozen SF2 engine, --bundle SF1, 200 updates, status SF2_ACQUISITION_FAIL)",
+    "replay_B": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_B (same, independent process)",
+    "runtime": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv (Python 3.12.14, torch 2.12.0+rocm7.14.0, tokenizers 0.23.1, CUDA RX 9060 XT, PYTHONHASHSEED=87011)"
+  },
+  "frozen_classifications_preserved": {
+    "sf2": "SF2_ACQUISITION_FAIL",
+    "sf3": "SF3_HARD_STOP_UPDATE100_REPLAY_MISMATCH (upheld; zero annealed updates ran; annealing hypothesis UNTESTED)"
+  },
+  "no_access": ["HELDOUT/ALTERNATE/COPY/COMPETING transfer panels (SF3 frozen_base copies exist but were NOT opened or scored)", "FINAL", "sacred material"]
+}

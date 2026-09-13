@@ -1,0 +1,75 @@
+{
+  "parent_sha256": "da009100412fba2adcf58823aefd37cc9486ef7aff39672361ce6111773c6a3b",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "synthetic_train_sha256": "f849540384fe0b247387eba583c2e053313650db4cbdcbf0cc42a3041122523e",
+  "train_examples": 1640,
+  "heldout_prompts": [
+    "Lily found a red ball.",
+    "Lily found a red car.",
+    "Mia found a blue hat.",
+    "Sam found a yellow ball.",
+    "Sam found a yellow car.",
+    "Tom found a blue book.",
+    "Tom found a blue box.",
+    "Nora found a yellow hat.",
+    "Owen found a red ball.",
+    "Owen found a red car.",
+    "Zoe found a blue hat.",
+    "Alex found a yellow ball."
+  ],
+  "updates": 500,
+  "seed": 8380,
+  "lr": 5e-05,
+  "frames": 8,
+  "elapsed_seconds": 110.2695803642273,
+  "generations": [
+    {
+      "prompt": "Lily found a red ball.",
+      "output": "Lily found a red ball. Lily was happy to see it."
+    },
+    {
+      "prompt": "Lily found a red car.",
+      "output": "Lily found a red car. Lily was happy to see it."
+    },
+    {
+      "prompt": "Mia found a blue hat.",
+      "output": "Mia found a blue hat. Mia was happy to see it."
+    },
+    {
+      "prompt": "Sam found a yellow ball.",
+      "output": "Sam found a yellow ball. Sam was happy to see it."
+    },
+    {
+      "prompt": "Sam found a yellow car.",
+      "output": "Sam found a yellow car. Sam was happy to see it."
+    },
+    {
+      "prompt": "Tom found a blue book.",
+      "output": "Tom found a blue book. Tom was happy to see it."
+    },
+    {
+      "prompt": "Tom found a blue box.",
+      "output": "Tom found a blue box. Tom was happy to see it."
+    },
+    {
+      "prompt": "Nora found a yellow hat.",
+      "output": "Nora found a yellow hat. Nora was happy to see it."
+    },
+    {
+      "prompt": "Owen found a red ball.",
+      "output": "Owen found a red ball. Owen was happy to see it."
+    },
+    {
+      "prompt": "Owen found a red car.",
+      "output": "Owen found a red car. Owen was happy to see it."
+    },
+    {
+      "prompt": "Zoe found a blue hat.",
+      "output": "Zoe found a blue hat. Zoe was happy to see it."
+    },
+    {
+      "prompt": "Alex found a yellow ball.",
+      "output": "Alex found a yellow ball. Alex was happy to see it."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "correct": 13,
+  "exact": 5,
+  "families": 0,
+  "family_count": 2,
+  "immediate_eos": 0,
+  "mean_margin": 1.897740105217963,
+  "mean_mass": 0.1418841935900489,
+  "min_margin": -3.1103359409607947,
+  "n": 16,
+  "pairs": 8,
+  "reversals": 5,
+  "subgroups": {
+    "active_qa": {
+      "correct": 4,
+      "exact": 0,
+      "families": 2,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 2.4326052683172747,
+      "mean_mass": 0.01361238378186233,
+      "min_margin": 0.453714850358665,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 2,
+      "ties": 0
+    },
+    "cloze": {
+      "correct": 4,
+      "exact": 3,
+      "families": 2,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 4.145615820918465,
+      "mean_mass": 0.4145461957706573,
+      "min_margin": 3.8847670945106074,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 2,
+      "ties": 0
+    },
+    "passive_cloze": {
+      "correct": 3,
+      "exact": 2,
+      "families": 1,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 0.7722235091496259,
+      "mean_mass": 0.13492641859487983,
+      "min_margin": -2.0381662286818027,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 1,
+      "ties": 0
+    },
+    "passive_qa": {
+      "correct": 2,
+      "exact": 0,
+      "families": 0,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 0.24051582248648629,
+      "mean_mass": 0.004451776212796053,
+      "min_margin": -3.1103359409607947,
+      "n": 4,
+      "pairs": 2,
+      "reversals": 0,
+      "ties": 0
+    }
+  },
+  "ties": 0
+}

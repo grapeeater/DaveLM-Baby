@@ -1,0 +1,39 @@
+{
+  "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V1",
+  "status": "SF21_PROSPECTIVE_PREFLIGHT_PASS",
+  "preflight_status": "PASSED",
+  "scientific_variable": "Add ONE paired counterfactual representation consistency term (lambda=0.1) to SF20 objective. All other SF20 parameters remain unchanged.",
+  "sole_change_from_SF20": "consistency_term added to English loss; no changes to curriculum, identities, schedule, CE, margin, KL, optimizer, gates, or evaluator.",
+  "pair_manifest": "PAIR_MANIFEST.json",
+  "pair_manifest_sha256": "1da1d2925cedcde4d8214e1ccae05851992b5cf986e6c344c579ae22ae141589",
+  "lambda_consistency": 0.1,
+  "representation_target": "logits at position = prefix_length - 1 (last context token before answer generation)",
+  "normalization": "L2 normalization",
+  "loss_form": "mean(1 - cos_sim(v_i, v_j)) over positive pairs",
+  "frozen_SF20_components": {
+    "curriculum": "TRAIN.json (48 records: 16 TRAIN16 + 32 widening)",
+    "identity_assignment": "IDENTITY_ASSIGNMENT.json (16-name balanced set)",
+    "schedule": "SCHEDULE.json (200 updates: 180 English + 20 binding)",
+    "margin_M": 1.0,
+    "lambda_margin": 0.25,
+    "lambda_KL": 1.0,
+    "KL_positions_per_update": 160,
+    "optimizer": "AdamW lr=5e-5 betas=(0.9,0.999) eps=1e-8 wd=0.05",
+    "gradient_clip": 2.0,
+    "gates": "unchanged from SF20/SF13",
+    "evaluator": "unchanged from SF20",
+    "tokenizer": "unchanged (e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b)",
+    "parents": {
+      "87053": "SF8 87017 (9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d)",
+      "87054": "SF8 87018 (839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102)",
+      "87055": "SF8 87019 (eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517)"
+    }
+  },
+  "manifest_sha256": "5be38ba10a94c9cb811eb631c7fe1ed87b39aa8dbf59610b1c048f04c2212de4",
+  "freeze_receipt_sha256": "7b799f0e46eb7b9fa4ef368f7eca61b60839507ebdb2c2a1ebf660febd822624",
+  "freeze_receipt_sidecar_sha256": "18e136a73f6ef887a1858f9007cc18410af365bf2c1944c890eaa6744cdb3897",
+  "checksum_chain": "INTEGRITY_VERIFIED",
+  "seal_utc": "2026-09-09T06:30:00.000000+00:00",
+  "mechanical_completion": true,
+  "training_not_started": true
+}

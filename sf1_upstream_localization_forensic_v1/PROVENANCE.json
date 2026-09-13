@@ -1,0 +1,126 @@
+{
+  "all_model_parameters_requires_grad_false": true,
+  "architecture": {
+    "P": {
+      "base": "DaveLMV082",
+      "blocks": 8,
+      "context_size": 256,
+      "embedding_shape": [
+        1024,
+        320
+      ],
+      "final_norm": "ExplicitLayerNorm",
+      "head_shape": [
+        1024,
+        320
+      ],
+      "input_output_tied_object": false,
+      "input_output_tied_storage": false,
+      "language_head": "Linear",
+      "position_shape": [
+        256,
+        320
+      ],
+      "t13_auxiliary_parameters": [
+        "localizer.u",
+        "localizer.q",
+        "localizer.bs",
+        "localizer.ba",
+        "wq.weight",
+        "wk.weight",
+        "wv.weight",
+        "wo.weight"
+      ],
+      "wrapper": "Treatment13Model"
+    },
+    "S": {
+      "base": "DaveLMV082",
+      "blocks": 8,
+      "context_size": 256,
+      "embedding_shape": [
+        1024,
+        320
+      ],
+      "final_norm": "ExplicitLayerNorm",
+      "head_shape": [
+        1024,
+        320
+      ],
+      "input_output_tied_object": false,
+      "input_output_tied_storage": false,
+      "language_head": "Linear",
+      "position_shape": [
+        256,
+        320
+      ],
+      "t13_auxiliary_parameters": [
+        "localizer.u",
+        "localizer.q",
+        "localizer.bs",
+        "localizer.ba",
+        "wq.weight",
+        "wk.weight",
+        "wv.weight",
+        "wo.weight"
+      ],
+      "wrapper": "Treatment13Model"
+    },
+    "ordinary_language_execution_graph": [
+      "token_embedding + position_embedding",
+      "embedding_dropout",
+      "block_0.norm1->attention->residual; norm2->MLP->residual",
+      "block_1.norm1->attention->residual; norm2->MLP->residual",
+      "block_2.norm1->attention->residual; norm2->MLP->residual",
+      "block_3.norm1->attention->residual; norm2->MLP->residual",
+      "block_4.norm1->attention->residual; norm2->MLP->residual",
+      "block_5.norm1->attention->residual; norm2->MLP->residual",
+      "block_6.norm1->attention->residual; norm2->MLP->residual",
+      "block_7.norm1->attention->residual; norm2->MLP->residual",
+      "final_norm",
+      "untied language_head"
+    ],
+    "t13_role": "Treatment13Model registers a final_norm hook and invokes localizer/wq/wk/wv/wo only in its specialized forward(input_ids,qpos,anspos). All authorized factual, D3, and language endpoints call base_model directly; T13 localization/retrieval parameters are registered but inactive in these interventions."
+  },
+  "authoritative_source_and_receipt_hashes": {
+    "C:\\DaveLM-CADAVER\\sf1_component_swap_forensic_v1\\component_swap_forensic.py": "c4e0069c5f2abfe72fceb19d00c83afb9704740ea99864c6862b681f1445bd1b",
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION_RECEIPT.json": "4e7ae2371b01434610fbbb23825ec7b44ea8934ff3d029d1f2e719ec478d087a",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\sources\\hr3_block3_runtime.py": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\sources\\treatment13_model.py": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+    "C:\\DaveLM-v0.9\\v0_8_2\\model.py": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d"
+  },
+  "backward_or_autograd_used": false,
+  "checkpoint_or_dataset_mutation": false,
+  "finalization": {
+    "first_stop_preserved_at": "C:\\DaveLM-CADAVER\\sf1_upstream_localization_forensic_v1\\attempt_1_aggregate_tolerance_stop",
+    "maximum_observed_aggregate_error": 3.427267074584961e-06,
+    "new": 1e-05,
+    "new_inference_performed": false,
+    "old": 1e-06,
+    "reason": "cross-run aggregate metrics used batched evaluation while the prior forensic used more single-item calls; same-source manual logits were exactly equal at every boundary",
+    "scope": "aggregate reproduction tolerance only"
+  },
+  "identity_hashes_after_evaluation_and_finalization": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "inputs": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\TRAIN.json": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\data\\ENGLISH_DEV.jsonl": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "locked_final_or_sacred_access": false,
+  "model_loaded_during_finalization": false,
+  "optimizer_created": false,
+  "persisted_sweep_rows": 210,
+  "runtime_used_for_sweep": {
+    "device": "cuda",
+    "python": "3.12.14",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  }
+}

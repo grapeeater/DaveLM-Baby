@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "training_performed": false,
+  "real_baby_data_used_for_backward": false,
+  "optimizer_created": false,
+  "optimizer_steps": 0,
+  "locked_or_sacred_material_accessed": false,
+  "tests": {
+    "shape_validation": {
+      "pass": true,
+      "expected": {
+        "token_embedding": [
+          1024,
+          640
+        ],
+        "position_embedding": [
+          256,
+          640
+        ],
+        "block0_qkv": [
+          1920,
+          640
+        ],
+        "block0_attention_projection": [
+          640,
+          640
+        ],
+        "block0_mlp_in": [
+          2560,
+          640
+        ],
+        "block0_mlp_out": [
+          640,
+          2560
+        ],
+        "final_norm": [
+          640
+        ],
+        "language_head": [
+          1024,
+          640
+        ],
+        "localizer_u": [
+          640
+        ],
+        "localizer_q": [
+          639
+        ],
+        "retrieval_wq": [
+          128,
+          640
+        ],
+        "retrieval_wv": [
+          640,
+          640
+        ]
+      },
+      "actual": {
+        "token_embedding": [
+          1024,
+          640
+        ],
+        "position_embedding": [
+          256,
+          640
+        ],
+        "block0_qkv": [
+          1920,
+          640
+        ],
+        "block0_attention_projection": [
+          640,
+          640
+        ],
+        "block0_mlp_in": [
+          2560,
+          640
+        ],
+        "block0_mlp_out": [
+          640,
+          2560
+        ],
+        "final_norm": [
+          640
+        ],
+        "language_head": [
+          1024,
+          640
+        ],
+        "localizer_u": [
+          640
+        ],
+        "localizer_q": [
+          639
+        ],
+        "retrieval_wq": [
+          128,
+          640
+        ],
+        "retrieval_wv": [
+          640,
+          640
+        ]
+      }
+    },
+    "causal_mask": {
+      "pass": true,
+      "prefix_max_abs_difference": 0.0
+    },
+    "sdpa_reference_equivalence": {
+      "pass": true,
+      "max_abs_difference": 8.344650268554688e-07,
+      "tolerance": 2e-05
+    },
+    "config_roundtrip": {
+      "pass": true,
+      "config_sha256": "8d7e1cbc604c9bf9f1942d4afc01817b20af17d8805a984f7ae57b1254f957b4"
+    },
+    "checkpoint_roundtrip": {
+      "pass": true,
+      "checkpoint_path": "C:\\DaveLM-CADAVER\\baby_vnext_60m_design_v1\\validation\\initialized_checkpoint_roundtrip.pt",
+      "checkpoint_sha256": "809d35f746ca1c4f664cbfc1a3d1a543094aad65035127f02706f8658e4e9760",
+      "model_state_sha256": "c2313015115beaa0dcc7d91cc83cafb34b635871e189c1715ecdedfc41604d3e",
+      "optimizer_updates": 0
+    },
+    "synthetic_language_backward": {
+      "pass": true,
+      "loss": 7.198243141174316,
+      "gradient_checks": {
+        "token_embedding": true,
+        "position_embedding": true,
+        "all_attention_blocks": true,
+        "all_mlp_blocks": true,
+        "final_norm": true,
+        "language_head": true
+      },
+      "optimizer_created": false,
+      "optimizer_step": false
+    },
+    "synthetic_binding_backward": {
+      "pass": true,
+      "loss": 7.943571090698242,
+      "gradient_checks": {
+        "localizer_u": true,
+        "localizer_q": true,
+        "localizer_biases": true,
+        "wq": true,
+        "wk": true,
+        "wv": true,
+        "wo": true,
+        "base_model": true,
+        "two_slots": true,
+        "explicit_layout": true
+      },
+      "optimizer_created": false,
+      "optimizer_step": false
+    },
+    "weights_unchanged_by_backward": {
+      "pass": true,
+      "before": "c2313015115beaa0dcc7d91cc83cafb34b635871e189c1715ecdedfc41604d3e",
+      "after": "c2313015115beaa0dcc7d91cc83cafb34b635871e189c1715ecdedfc41604d3e"
+    },
+    "historical_artifacts_unchanged": {
+      "pass": true
+    },
+    "gpu_device_smoke": {
+      "pass": true,
+      "device": {
+        "available": true,
+        "name": "AMD Radeon RX 9060 XT",
+        "count": 1
+      },
+      "selected_model_forward_backward": true
+    }
+  },
+  "tokenizer": {
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "vocab_size": 1024,
+    "special_token_ids": {
+      "<pad>": 0,
+      "<unk>": 1,
+      "<bos>": 2,
+      "<eos>": 3,
+      "<doc>": 4
+    },
+    "config_vocab_matches": true,
+    "input_output_weights_tied": false
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "device": {
+      "available": true,
+      "name": "AMD Radeon RX 9060 XT",
+      "count": 1
+    },
+    "deterministic_algorithms": true
+  },
+  "elapsed_seconds": 27.028623819351196
+}

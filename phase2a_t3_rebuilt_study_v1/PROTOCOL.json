@@ -1,0 +1,110 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T3_REBUILT_EXPLICIT_REPRESENTATION_FORMING_V1",
+  "status": "STUDY_COMPLETE_T3_LANGUAGE_REGRESSION",
+  "scientific_question": "Can explicit base-model relational representation supervision produce held-out counterfactual identity selection and improve native output, when the experiment is actually valid (disjoint names/families, seed-specific schedules, complete evaluator)?",
+  "sole_intervention": "parameter-free normalized query-to-candidate pointer loss added to the frozen T2 candidate-margin treatment; binding/localizer remains frozen",
+  "decision": "REBUILD_AND_RUN_T3",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "lineage": "Phase1G U6000 best; no T2 descendant"
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "objective": {
+    "lambda_ptr": 1.0,
+    "temperature": 1.0,
+    "margin_M": 1.0,
+    "native": "T2 length-normalized hardest-distractor pairwise margin hinge, M=1.0; no prompt/continuation CE, no EOS supervision, no KL, no localization term",
+    "pointer": "q=final_norm at BOS-prefixed index len(prompt_token_ids); k+/k- = mean final_norm over first defining name-token span excluding punctuation; L_ptr=-log softmax cosine; gradients to q and both anchors; no trainable pointer head"
+  },
+  "scope": {
+    "trainable": "all base_model parameters (60536064)",
+    "frozen": "all 984321 binding/localizer parameters"
+  },
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "betas": [0.9, 0.999],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "clip_norm": 2.0,
+    "scheduler": "none"
+  },
+  "schedule": {
+    "total_updates": 500,
+    "qa_updates": 450,
+    "language_updates": 50,
+    "cadence": "9 qa then 1 language",
+    "qa_batch": 32,
+    "language_batch": 64,
+    "eval_points": [0, 100, 300, 500]
+  },
+  "seeds": {
+    "runs": [620001, 620002, 620003],
+    "train_names": 620101,
+    "dev_names": 620102,
+    "test_names": 620103,
+    "schedule_rule": "seed-specific deterministic permutation of the identical frozen train corpus; language rehearsal windows shared"
+  },
+  "corpus": {
+    "train_families": 48,
+    "dev_families": 16,
+    "test_families": 16,
+    "family_size": 8,
+    "train_rows": 384,
+    "dev_rows": 128,
+    "test_rows": 128,
+    "train_names": 16,
+    "dev_names": 8,
+    "test_names": 8,
+    "name_rule": "disjoint across train/dev/test",
+    "train_templates": ["active", "passive"],
+    "heldout_templates": ["owns", "locative"],
+    "acq16": "4 train families, assignment x query at fact_order=0 (16 rows), included in training"
+  },
+  "gates": {
+    "representation_dev": {
+      "retrieval_min": "96/128",
+      "reversal_min": "48/64",
+      "complete_families_min": "8/16",
+      "name_disjoint_min": "48/64",
+      "template_disjoint_min": "48/64"
+    },
+    "native_dev": {
+      "forced_choice_min": "96/128",
+      "reversal_min": "48/64",
+      "exact_answer_eos_min": "80/128"
+    },
+    "native_acq16": {
+      "correct_min": "16/16",
+      "exact_answer_eos_min": "16/16",
+      "reversals_min": "8/8",
+      "families_min": "4/4"
+    },
+    "language": "DEV CE <= min(1.30, own U0 + 0.25); terminal train-dev gap <= 0.5",
+    "binding": "all non-base_model parameters byte-identical to parent at every eval; NOT_APPLICABLE_UNTRAINED behaviorally",
+    "shortcut": "if representation gates would pass but a nuisance probe accuracy is within 0.02 of pointer retrieval, classify T3_SHORTCUT_FAILURE"
+  },
+  "stopping": {
+    "u100": "descriptive; stop only nonfinite, binding-identity break, or DEV CE > 1.50",
+    "terminal": "classify at U500 from frozen gates; no post-result rescue",
+    "test_policy": "TEST scored once only after terminal DEV commit and only if DEV representation AND native gates pass"
+  },
+  "status_classes": [
+    "T3_FULL_SUCCESS",
+    "T3_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+    "T3_FAIL_NO_REPRESENTATION",
+    "T3_SHORTCUT_FAILURE",
+    "T3_LANGUAGE_REGRESSION",
+    "T3_HARD_STOP"
+  ],
+  "locks": {
+    "T2_EVAL_TEST": "LOCKED_UNOPENED",
+    "FINAL": "LOCKED",
+    "sacred": "LOCKED",
+    "historical_transfer": "LOCKED_UNSCORED"
+  }
+}

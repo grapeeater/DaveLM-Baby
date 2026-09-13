@@ -1,0 +1,27 @@
+{
+  "classification": "SF3_HARD_STOP_UPDATE100_REPLAY_MISMATCH",
+  "bundle": "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1",
+  "pretrain_receipt_sha256": "bb677918631a3143d9e3bf86dfc45e0cf6eeddc134acb7ce3df05109fb632f35",
+  "pretrain_manifest_sha256": "d257582b042b6a452cfe39c1fd975c4488515aaf04edef9fbf2df6e4ff01b835",
+  "controller_sha256": "fcd974e54fb64fb27655021551a62771c4a0ea01b137f42485976216a719b769",
+  "protocol_sha256": "7b92763f8d73967024ea9a9415a77dab48b7de49aaf073d7f613d38ebeb12e10",
+  "parent_sha256_before_after": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer_sha256_before_after": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "sf3_replay_checkpoint_100_sha256": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+  "sf2_reference_checkpoint_100_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+  "rolling_restart_sha256": "c5a548888646098d73b93a40c9bf736d4a667440f0048b488303d7efd461846b",
+  "training_metrics_sha256": "25cfcd206dd708f003d04559be49b22d1eb3ae5add85d816309d59d22b19d446",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "device": "AMD Radeon RX 9060 XT",
+    "pythonhashseed": "87011"
+  },
+  "committed_updates": 100,
+  "annealed_updates": 0,
+  "optimizer_updates_after_treatment_divergence": 0,
+  "locked_transfer_panels_accessed": false,
+  "final_accessed": false,
+  "sacred_accessed": false
+}

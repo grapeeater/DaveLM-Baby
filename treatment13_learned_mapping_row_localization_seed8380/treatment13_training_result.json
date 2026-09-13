@@ -1,0 +1,19 @@
+{
+ "status": "TREATMENT13_TRAINED",
+ "steps": 1000,
+ "batch_size": 32,
+ "seed": 8380,
+ "schedule_sha256": "6157dce61d990b2d96ef91470a80a973bd5e96339d406bceb9fdc75e020cea42",
+ "final_checkpoint_sha256": "cf53eef03adf874255cd54508fc7948dfd1e4926a57537f7e2f828f5f582adab",
+ "final_step": {
+  "answer_ce_loss": 0.32543283700942993,
+  "answer_accuracy": 0.8125,
+  "target_gt_distractor_rate": 0.8125,
+  "mean_target_distractor_margin": 3.371917247772217,
+  "localizer_mean_max_attention": 0.7126305103302002,
+  "retrieval_argmax_rate": 0.375,
+  "supervised_answer_decisions": 32,
+  "step": 1000,
+  "elapsed_seconds": 231.69059872627258
+ }
+}

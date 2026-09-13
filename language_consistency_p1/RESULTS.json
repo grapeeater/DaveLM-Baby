@@ -1,0 +1,78 @@
+{
+  "parent_sha256": "f536a61015da40a48e298f37a5273f7e213ea696149c7136c44ffc7ce75403ee",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "synthetic_train_sha256": "8945658582acc8436bf09cbec37858f499a2ebe6742797daf249ea347038c552",
+  "train_examples": 819,
+  "heldout_examples": 205,
+  "updates": 500,
+  "seed": 8380,
+  "lr": 0.0003,
+  "weight_decay": 0.05,
+  "batch": 64,
+  "context": 256,
+  "panel_prompts": [
+    "Lily found a red ball.",
+    "Lily found a red toy.",
+    "Lily found a blue kite.",
+    "Lily found a green box.",
+    "Mia found a yellow ball.",
+    "Mia found a yellow toy.",
+    "Mia found a red car.",
+    "Mia found a blue fish.",
+    "Sam found a green book.",
+    "Sam found a green hat.",
+    "Sam found a yellow car.",
+    "Tom found a red ball."
+  ],
+  "elapsed_seconds": 534.5188133716583,
+  "generations": [
+    {
+      "prompt": "Lily found a red ball.",
+      "output": "Lily found a red ball. Lily looked at the red ball.Lily found a red"
+    },
+    {
+      "prompt": "Lily found a red toy.",
+      "output": "Lily found a red toy. Lily played with the red toy.Lily found a red"
+    },
+    {
+      "prompt": "Lily found a blue kite.",
+      "output": "Lily found a blue kite. Lily carried the blue kite.Lily found a"
+    },
+    {
+      "prompt": "Lily found a green box.",
+      "output": "Lily found a green box. Lily looked at the green box.Lily found a"
+    },
+    {
+      "prompt": "Mia found a yellow ball.",
+      "output": "Mia found a yellow ball. Mia carried the yellow ball.Mia found a yel"
+    },
+    {
+      "prompt": "Mia found a yellow toy.",
+      "output": "Mia found a yellow toy. Mia carried the yellow toy.Mia found a yel"
+    },
+    {
+      "prompt": "Mia found a red car.",
+      "output": "Mia found a red car. Mia found the red car.Mia found a blue car"
+    },
+    {
+      "prompt": "Mia found a blue fish.",
+      "output": "Mia found a blue fish. Mia carried the blue fish.Mia found a bl"
+    },
+    {
+      "prompt": "Sam found a green book.",
+      "output": "Sam found a green book. Sam carried the green book.Sam found a green b"
+    },
+    {
+      "prompt": "Sam found a green hat.",
+      "output": "Sam found a green hat. Sam found the green hat.Sam found a yellow hat."
+    },
+    {
+      "prompt": "Sam found a yellow car.",
+      "output": "Sam found a yellow car. Sam found the yellow car.Sam found a red box."
+    },
+    {
+      "prompt": "Tom found a red ball.",
+      "output": "Tom found a red ball. Tom carried the red ball.Tom found a red ball."
+    }
+  ]
+}

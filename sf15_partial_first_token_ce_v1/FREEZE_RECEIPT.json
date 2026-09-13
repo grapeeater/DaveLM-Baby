@@ -1,0 +1,12 @@
+{
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "11ef8fdb73de3f1de1309bc1c653154f76af0f79be58080344dfa197ab4f718f",
+  "optimizer_created": false,
+  "sacred_accessed": false,
+  "sealed_utc": "2026-09-08T21:52:32.777220+00:00",
+  "sole_scientific_change": "first answer-name CE weight changed from 0.0 to 0.25 on English updates",
+  "status": "SF15_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF15_PARTIAL_FIRST_ANSWER_TOKEN_CE_RESTORATION_V1",
+  "updates": 0
+}

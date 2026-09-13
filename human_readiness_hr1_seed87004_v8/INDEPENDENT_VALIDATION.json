@@ -1,0 +1,12 @@
+{
+  "status": "INDEPENDENT_VALIDATION_PASS",
+  "train_records": 149014,
+  "dev_records": 15866,
+  "english_batches": 450,
+  "binding_batches": 50,
+  "updates": 500,
+  "final_battery_accessed": false,
+  "parent_sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "hr1_builder_sha256": "446c1b28c458af9671f42eb102e88fdbe198f26f0221dde5f45b1f9458f1e27d"
+}

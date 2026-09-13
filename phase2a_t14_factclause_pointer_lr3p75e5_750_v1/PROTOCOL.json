@@ -1,0 +1,20 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T14_FACTCLAUSE_POINTER_LR3P75E5_750_V1",
+  "status": "STUDY_COMPLETE_T14_FAIL_NO_REPRESENTATION",
+  "scientific_question": "With T9 fact-clause late-base pointer and 9:1 language, does the midpoint lr 3.75e-5 at 750 updates produce >=2/3 representation without DEV CE > 1.30 or gap > 0.5?",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "scope": {"freeze": "base_model.blocks.0-3 and all 984321 binding params", "train": "late base only", "trainable": 40849664, "frozen": 20670721},
+  "pointer_keys": {"definition": "for each mention_span_bos, indices from mention start through next token id 18 (period), exclusive of decision_position_bos", "period_token_id": 18},
+  "objective": {"lambda_ptr": 1.0, "margin_M": 1.0, "layout": "none", "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded; independent-item QA batches",
+  "seeds": [730001, 730002, 730003],
+  "schedule": {"total_updates": 750, "qa_updates": 675, "language_updates": 75, "qa_batch": 32, "eval_points": [0, 100, 300, 500, 750], "lr": 3.75e-5, "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T14_FULL_SUCCESS", "T14_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T14_FAIL_NO_REPRESENTATION", "T14_LANGUAGE_REGRESSION", "T14_SHORTCUT_FAILURE", "T14_HARD_STOP"],
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; >=2 LANGUAGE_REGRESSION; >=2 SHORTCUT; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

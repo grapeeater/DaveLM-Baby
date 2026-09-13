@@ -1,0 +1,62 @@
+{
+  "experiment": "DaveLM v0.9 Treatment #7",
+  "treatment": "Direct Query-to-Logit Pathway",
+  "status": "PREFLIGHT_PASS",
+  "scientific_hypothesis": "A direct trainable route from the native query-token embedding to answer-position vocabulary logits may be sufficient to break the paired reciprocal-selection failure seen in Treatments 5 and 6.",
+  "single_substantive_change": {
+    "module": "Linear(320 -> 1024, bias=True)",
+    "input": "existing native query-token embedding",
+    "output": "full-vocabulary logit bias",
+    "application": "answer position only",
+    "explicit_candidate_information_supplied": false,
+    "explicit_target_information_supplied": false,
+    "explicit_distractor_information_supplied": false,
+    "explicit_query_slot_label_supplied": false
+  },
+  "frozen_contract": {
+    "pair_pool_sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307",
+    "schedule_sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12",
+    "start_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+    "steps": 1000,
+    "batch_size": 32,
+    "pairs_per_batch": 16,
+    "events": 32000,
+    "slot0_events": 16000,
+    "slot1_events": 16000,
+    "total_supervised_positions": 6144000,
+    "answer_replacements": 32000,
+    "ordinary_nonanswer_ce_positions": 6112000,
+    "answer_weight": 191.0,
+    "margin": 0.5
+  },
+  "hashes_observed": {
+    "pair_pool_sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307",
+    "schedule_sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12",
+    "start_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+  },
+  "model_contract": {
+    "base_parameter_count": 10594944,
+    "query_projection_parameter_count": 328704,
+    "total_parameter_count": 10923648,
+    "projection_weight_shape": [
+      1024,
+      320
+    ],
+    "projection_bias_shape": [
+      1024
+    ]
+  },
+  "future_retention_gate": {
+    "correct_gt_distractor_fraction_min": 0.95,
+    "required_logit_margin": 0.5,
+    "margin_satisfied_fraction_min": 0.9
+  },
+  "safety": {
+    "training_performed": false,
+    "optimizer_created": false,
+    "backward_called": false,
+    "positive_controls_evaluated": false,
+    "sealed_evaluation_opened": false,
+    "protected_source_modified": false
+  }
+}

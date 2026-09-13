@@ -1,0 +1,17 @@
+{
+  "scope": "Existing nonsacred readiness facts and frozen scheduled training records only; no optimizer or weight changes.",
+  "selection": "All 24 saved fact scores on Pilot1, corrected HR1, HR3-500. Gradient/representation diagnostics: first lexicographic fact family, all four members; first literal English and binding batches.",
+  "measurements": [
+    "canonical candidate preference vs matched reversal changes",
+    "word-only vs period contribution",
+    "absolute candidate sequence mass",
+    "training exposure counts",
+    "last-cue residual/logit changes",
+    "eval-mode gradients of existing sentence CE, binding objective, factual answer NLL, and candidate-pair logistic loss"
+  ],
+  "limitations": "Diagnostic gradient losses do not authorize a training objective. Single-family/single-batch gradients cannot establish global interference or representation sufficiency. No trained probe or gradient update.",
+  "decision": "Train only if one smallest treatment is uniquely justified. Otherwise report scientific fork.",
+  "final_access": false,
+  "sacred_access": false,
+  "source_sha256": "a8c1d787436e1325ac44c5fc1a034b024b39829ac6262ff4661d9ccf352e9390"
+}

@@ -1,0 +1,44 @@
+{
+  "version": "HR-1",
+  "seed": 87004,
+  "parent_path": "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt",
+  "parent_sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+  "tokenizer_path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "updates": 500,
+  "english_updates": 450,
+  "binding_updates": 50,
+  "cadence": "9 English then 1 binding, repeated 50 cycles",
+  "english_batch_size": 64,
+  "english_data": "Pilot1 TinyStories train stories split deterministically at sentence boundaries; 1-96 tokenizer tokens; materialized records",
+  "english_objective": "full-vocabulary causal CE over sentence token targets and final EOS; BOS once; no intermediate EOS supervision",
+  "binding_pool_path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+  "binding_pool_sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+  "binding_batch_size": 32,
+  "binding_objective": "authoritative Pilot1 answer CE plus hard-min permutation-invariant localization; weight LAM=1.0536573711078283",
+  "english_scope": "embeddings, positional embeddings, blocks 4-7, final norm, language head; blocks 0-3 and localizer/retrieval frozen",
+  "binding_scope": "full established T13 scope",
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false
+  },
+  "clip_norm": 2.0,
+  "device": "cuda",
+  "deterministic": true,
+  "dev_points": [
+    0,
+    100,
+    500
+  ],
+  "final_battery": "sealed; inaccessible during HR-1 development",
+  "stopping": "stop on preregistered DEV readiness or binding failure; no final-battery access"
+}

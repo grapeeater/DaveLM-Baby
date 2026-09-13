@@ -1,0 +1,53 @@
+{
+ "status": "MINIMAL_LEXICAL_PAIR_BUILD_COMPLETE",
+ "fork": "L2 (article-retained minimal lexical rows; query unchanged)",
+ "row_syntax": "<name> <predicate> the <description>",
+ "counts": {
+  "ONE": 48,
+  "TWO": 96
+ },
+ "balance": {
+  "ONE": {
+   "correct_index": {
+    "0": 24,
+    "1": 24
+   },
+   "correct_name": {
+    "Alex": 12,
+    "Mia": 12,
+    "Nora": 12,
+    "Owen": 12
+   },
+   "stratum": {
+    "object": 24,
+    "predicate": 24
+   }
+  },
+  "TWO": {
+   "correct_index": {
+    "0": 48,
+    "1": 48
+   },
+   "correct_name": {
+    "Alex": 24,
+    "Mia": 24,
+    "Nora": 24,
+    "Owen": 24
+   },
+   "row_order": {
+    "0": 48,
+    "1": 48
+   },
+   "stratum": {
+    "object": 48,
+    "predicate": 48
+   }
+  }
+ },
+ "overlap": {
+  "two_fact_hits": 0,
+  "tinystories_hits": 0,
+  "p7_hits": 0,
+  "note": "lexical re-encoding of factual-arm Primary; not fresh lexical material"
+ }
+}

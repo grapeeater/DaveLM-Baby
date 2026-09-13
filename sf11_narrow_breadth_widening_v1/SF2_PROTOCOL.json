@@ -1,0 +1,68 @@
+{
+  "run_id": "sf2_kl_parent_retention_run_v2",
+  "frozen_protocol_source": "C:\\DaveLM-CADAVER\\sf2_kl_treatment_preflight_review_v1\\FROZEN_PROTOCOL_DRAFT.md",
+  "authority": "APPROVE_WITH_MECHANICAL_CORRECTIONS (sf2_kl_treatment_preflight_review_v1); corrections M1-M10 resolved in FROZEN_PROTOCOL_DRAFT.md",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "sf1_bundle": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "seed": 87011,
+    "pythonhashseed": "87011"
+  },
+  "kl": {
+    "direction": "D_KL(P_student || P_teacher), forward KL",
+    "temperature": 1.0,
+    "support": "full 1024-class softmax/log-softmax of untied language head logits",
+    "lambda_kl": 1.0,
+    "lambda_fixed": true,
+    "positions_per_english_update": 160,
+    "student_mode": "eval (dropout off) with grad enabled; teacher eval + torch.no_grad; then m.train() for factual CE",
+    "precision": "float64 accumulation over the 160 selected positions; mean; cast scalar to float32",
+    "pool_path": "KL_POOL.json",
+    "pool_sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "pool_manifest_sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+    "applied_on": "English factual updates only (updates of kind 'english', sequential index 1..180)",
+    "teacher": "separate DaveLMV082 build_model('untied') loaded from parent base_model.* keys; eval; requires_grad_(False); never in optimizer; no shared Parameter/storage with student"
+  },
+  "d3": {
+    "selection_manifest": "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json",
+    "measured_at_updates": [0, 100, 200],
+    "baseline_mean_four_name_mass": 0.000907,
+    "tolerance_abs": 0.0001
+  },
+  "baseline_reproduction_M9": {
+    "acquisition_correct": 9,
+    "acquisition_exact": 0,
+    "aligned_ce": 3.3907,
+    "aligned_ce_tolerance_rel": 0.0001,
+    "binding_gate": "both pools PASS",
+    "kl_zero_tolerance": 1e-9
+  },
+  "gates": {
+    "endpoint_update": 200,
+    "endpoint": "correct==16 AND exact==16 AND reversals==8 AND families==4",
+    "language_stop": "aligned_CE > update0_aligned_CE + 0.25 at update 100 or 200",
+    "binding_stop": "any pool answer<76 OR BD<76 OR collapse>0 at update 100 or 200",
+    "acquisition_guard_update100": "if (correct < 10) AND (exact < 10): STOP (additive; does not weaken any gate)"
+  },
+  "schedule": "200 updates = 20 x (9 English + 1 binding); SF1 SCHEDULE.json (read-only from SF1 bundle); English batch = 16 records x2",
+  "optimizer": "fresh AdamW lr 5e-5 betas(0.9,0.999) eps1e-8 wd0.05 amsgrad=False foreach=False fused=False; clip 2.0; one step/update",
+  "scope": "English: every base_model param except base_model.blocks.{0..3}; T13 wq/wk/wv/wo/localizer frozen. Binding: full. (PINNED_MASKING.set_scope)",
+  "transfer_panels": "HELDOUT16/ALTERNATE48/COPY8/COMPETING64 remain frozen; opened only if endpoint + language + binding pass at 200 (identical SF1 rule); readiness FINAL/sacred never accessed",
+  "evals": "rolling restart every update; permanent checkpoints + full evaluation at updates 0/100/200; D3 diagnostic at 0/100/200",
+  "notes": [
+    "No locked panel, FINAL, or sacred material is opened.",
+    "No head-freeze fallback exists in this harness (M7).",
+    "No lambda sweep or post-hoc adjustment is permitted (M5).",
+    "SF1 comparison valid only at update 0 and update 100 (SF1 stopped at 100; it has no update-200)."
+  ]
+}

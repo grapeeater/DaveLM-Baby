@@ -1,0 +1,54 @@
+{
+  "audit": "comparative_model_anatomy_post_sf2_v1",
+  "date": "2026-09-07",
+  "mode": "read-only comparative anatomy; NO training, NO SF3 design/implementation, NO checkpoint modification, NO locked-panel/FINAL/sacred access, NO copying/transplanting/distillation from reference models",
+  "authoritative_baby_context": {
+    "sf2_run": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2",
+    "sf2_autopsy": "C:\\DaveLM-CADAVER\\sf2_residual_item_autopsy_v1",
+    "sf2_classification": "SF2_ACQUISITION_FAIL (unchanged, not reinterpreted)"
+  },
+  "evidence_classes_used": {
+    "LOCAL": "directly observed on this machine (LM Studio hub metadata, GGUF header/metadata/tensor inventory, local READMEs)",
+    "DOC": "creator-documented or public primary source (Hugging Face model cards, official blogs, GitHub, arXiv abstracts)",
+    "INF": "inference",
+    "UNKNOWN": "not found in the sources consulted; not filled with typical practice"
+  },
+  "local_paths_inspected": [
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\ibm\\granite-3.1-8b\\manifest.json",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\ibm\\granite-3.1-8b\\model.yaml",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\ibm\\granite-3.1-8b\\README.md",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\qwen\\qwen3-8b\\manifest.json",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\qwen\\qwen3-8b\\model.yaml",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\qwen\\qwen3-8b\\README.md",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\liquid\\lfm2-24b-a2b\\manifest.json",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\liquid\\lfm2-24b-a2b\\model.yaml",
+    "C:\\Users\\jdman\\.lmstudio\\hub\\models\\liquid\\lfm2-24b-a2b\\README.md",
+    "C:\\Users\\jdman\\.lmstudio\\models\\lmstudio-community\\granite-3.1-8b-instruct-GGUF\\granite-3.1-8b-instruct-Q4_K_M.gguf (header/metadata/362-tensor inventory only; payload not read)",
+    "C:\\Users\\jdman\\.lmstudio\\models\\lmstudio-community\\Qwen3-8B-GGUF\\Qwen3-8B-Q4_K_M.gguf (header/metadata/399-tensor inventory only; payload not read)",
+    "C:\\Users\\jdman\\.lmstudio\\models\\lmstudio-community\\LFM2-24B-A2B-GGUF\\LFM2-24B-A2B-Q4_K_M.gguf (header/metadata/428-tensor inventory only; payload not read)"
+  ],
+  "local_artifact_hashes": {
+    "granite_gguf": "71d205af3019b8e722273b79f518e86099a4771ca01f60ca12f1aa7d42ae773e",
+    "qwen3_gguf": "a7676d257b10f3ce23aedba45e64ba61a5aa295f0009d87c5627f6c026a8f35f",
+    "lfm2_gguf": "eb4d2d4d4e61b795726c2f526c4434ca6bc725ad7a783691b58681f025cf58f2",
+    "granite_model_yaml": "84ac5145284c4a934318a6fd49a933741852b9ff8602e4f3685854ea2feae8dc",
+    "qwen3_model_yaml": "1a43e0ec4c7cc43134eef85aefba11ec33a99fed1933e17e054f36c409baaef5",
+    "lfm2_model_yaml": "dda1cb2a6a631df9605b6e4fb1a437dd0d40de8b9f681230e6432446b11421a5"
+  },
+  "gguf_metadata_fingerprints_were_parsed_into": "C:\\Users\\jdman\\AppData\\Local\\Temp\\opencode\\granite_gguf.json / qwen3_gguf.json / lfm2_gguf.json / lfm2_names.txt (temporary working files, not part of this report)",
+  "external_primary_sources_consulted": [
+    "https://huggingface.co/ibm-granite/granite-3.1-8b-instruct/raw/main/README.md (model card: architecture incl. shared embeddings, GQA, SwiGLU, RMSNorm, 12T tokens, SFT+RL+merging)",
+    "https://github.com/ibm-granite/granite-3.0-language-models (README: 12T tokens, 2-stage data mixture per MiniCPM/JetMoE, muP + power scheduler, SFT/PPO/best-of-N/BRAIn/merging post-training)",
+    "https://arxiv.org/abs/2505.09388 (Qwen3 Technical Report abstract: thinking/non-thinking unification; small models leverage flagship knowledge)",
+    "https://qwenlm.github.io/blog/qwen3/ (Qwen3 blog: tie-embedding table per size; ~36T tokens; S1/S2/S3 pretraining stages; 4-stage post-training incl. thinking-mode fusion; 119 languages)",
+    "https://huggingface.co/LiquidAI/LFM2-24B-A2B/raw/main/README.md (LFM2-24B-A2B card: 40 layers = 30 conv + 10 attn; 17T tokens; BF16/FP8; 32K context)",
+    "https://arxiv.org/abs/2511.23404 (LFM2 Technical Report abstract: hybrid gated short conv + few GQA blocks; tempered decoupled top-K KD avoiding support mismatch; curriculum; 3-stage post-training)"
+  ],
+  "notes": [
+    "No reference-model weight file payload was read; only GGUF headers/metadata/tensor inventories.",
+    "No proprietary/non-public information was accessed; only public model cards, official blogs, arXiv abstracts, and local LM Studio metadata.",
+    "The 24B-A2B context-length discrepancy (GGUF metadata 128000 vs card 32768) is recorded but not resolved here.",
+    "Per-model exact optimizer/LR/warmup/decay numbers for Qwen3 and LFM2, and Granite numeric schedule values, are marked UNKNOWN (not disclosed in the primary sources consulted).",
+    "All training-technique claims are attributed to creator documentation; no technique is inferred from final weights alone."
+  ]
+}

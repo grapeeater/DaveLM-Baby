@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "sealed_chain_checked": false,
+  "model_loaded": true,
+  "initialized_checkpoint_optimizer_updates": 0,
+  "scope": {
+    "trainable": 60536064,
+    "frozen": 984321
+  },
+  "stream_lengths": {
+    "train": 3576861,
+    "dev": 390340
+  },
+  "schedule_shape": [
+    6000,
+    64
+  ],
+  "schedule_all_resolves": true,
+  "lr_boundaries": {
+    "update1": 1.4999999999999998e-06,
+    "update200": 0.0003,
+    "update201": 0.00029999998019624607,
+    "update6000": 2.9999999999999997e-05
+  },
+  "runner_required_functions_present": [
+    "atomic_torch_save",
+    "build_optimizer",
+    "configure_runtime",
+    "evaluate_checkpoint",
+    "load_all",
+    "lr_for_update",
+    "make_restart",
+    "restore_restart",
+    "run_training",
+    "set_phase1_scope",
+    "verify_integrity_chain"
+  ],
+  "runner_completeness": true,
+  "restart_fixture_roundtrip": true,
+  "restart_provenance_mismatch_rejected": true,
+  "optimizer_created": false,
+  "optimizer_steps": 0,
+  "training_performed": false,
+  "chain": {
+    "preseal": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "protocol": "one hidden-layer tanh MLP, 8 units, family-disjoint 12/4 split, twins together; probe only, no Baby mutation",
+  "results": [
+    {
+      "checkpoint": "Pilot1",
+      "layer": "final_norm",
+      "family_grouped_nonlinear_accuracy": 0.5,
+      "shuffled_label_accuracy": 0.5,
+      "feature_map": "fixed quadratic on 8 standardized axes",
+      "ridge_lambda": 5.0,
+      "seed": 610321
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "final_norm",
+      "family_grouped_nonlinear_accuracy": 0.5625,
+      "shuffled_label_accuracy": 0.5,
+      "feature_map": "fixed quadratic on 8 standardized axes",
+      "ridge_lambda": 5.0,
+      "seed": 610321
+    }
+  ],
+  "trigger": "linear/geometric family-disjoint result was null",
+  "passed": true
+}

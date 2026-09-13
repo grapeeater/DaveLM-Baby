@@ -1,0 +1,50 @@
+{
+  "study": "SF20_IDENTITY_HELDOUT_BALANCED_ENTITY_ROTATION_V2",
+  "version": "2.0",
+  "created_utc": "2026-09-09T05:00:00.000000+00:00",
+  "files": [
+    {"path": "AMENDMENT.md", "sha256": "d7ea2a0439b1cfc4f9a961c2e62b8aec47d1f0751956fffe54cc02be983cade9", "size": 344},
+    {"path": "BUILD.py", "sha256": "9b4c2c06807e73782aa694ca115c262372dcb9c57629dd506ab9a901f48c148d", "size": 23135},
+    {"path": "CONTROLLER.py", "sha256": "268f588484f6ff7c3ce62c3e9c57414088aedaaa29525dab43a536f2a32b635a", "size": 14973},
+    {"path": "D3_SELECTION.json", "sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226", "size": 153303},
+    {"path": "DEV_ORDER.json", "sha256": "8031e735736925ff76c0ec7e86bcef3376ef3bb676566fbf04eff9770093a717", "size": 16999},
+    {"path": "DEV_SURFACE.json", "sha256": "d0677e641204f7e31921d1fe91771e910373fc96877310631ca20a105dd0735a", "size": 15583},
+    {"path": "EXTERNAL_INPUTS.json", "sha256": "d426439aa823fdd259027d5dc4055afac5c049ae7463bdb393f11917ce02459b", "size": 2599},
+    {"path": "FORBIDDEN_IDENTITIES.json", "sha256": "a31e9496a54c6bdcc47ec27a08b064c75285fde8baf8cef76107bc21b4f0e4eb", "size": 1168},
+    {"path": "FREEZE_RECEIPT.json", "sha256": "TO_BE_COMPUTED_AFTER_SEAL", "size": 4351},
+    {"path": "IDENTITY_ASSIGNMENT.json", "sha256": "a9f22a073ec9d7b53700418c46e7b207d54d446be7ceb76a41939311c8bfa34d", "size": 18780},
+    {"path": "KL_POOL.json", "sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06", "size": 2163573},
+    {"path": "KL_POOL_MANIFEST.json", "sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012", "size": 1087},
+    {"path": "MANIFEST.json", "sha256": "TO_BE_COMPUTED_AFTER_SEAL", "size": 4595},
+    {"path": "NAME_CENSUS.json", "sha256": "2cd7b23ced0e297db6820845a39fa915e7650f25c45cf7ed80d44029d317d266", "size": 66495},
+    {"path": "PROTOCOL.json", "sha256": "d4f8ec1766546bfb93f201b40d4c56ed6d98ded17a3c78708f259f6d79bf8eec", "size": 7947},
+    {"path": "PROVENANCE.json", "sha256": "7fafd59a14412a5815b3d4fbc6c086244428e2e17bdd5e40d1f62b8b06847117", "size": 6356},
+    {"path": "SCHEDULE.json", "sha256": "0f71073fdafbe8733dbae97d27b92490b2e4725650737fb0f1b4d99ab5396688", "size": 414035},
+    {"path": "SHA256SUMS.txt", "sha256": "TO_BE_COMPUTED_AFTER_SEAL", "size": 2542},
+    {"path": "SF13_KL_SCHEDULE.json", "sha256": "aaeb59b44c8683c0564fe487f631158360169a522b9bcd98e98d9cdb342018eb", "size": 1307006},
+    {"path": "SF2_ENGINE.py", "sha256": "8141234f1f0d6f0dba8f429dfc6923e4bd90743d6d4d238f7ae9a169834cd551", "size": 22528},
+    {"path": "SF2_PROTOCOL.json", "sha256": "9c74f171cffdcf08189191a906ea71854b040d7200a7789d980e9c9a0f26f132", "size": 5640},
+    {"path": "STATIC_PREFLIGHT.json", "sha256": "ba7bb09d052d0c51d9ba5883ae417e3fe6a7996b81881195de38a86ac7073034", "size": 2871},
+    {"path": "TOKENIZATION_MATCH.json", "sha256": "9f319fbb611a3ab145e10064ceb0d85c1fcdb448efd0d8d67c5949dc790aff77", "size": 52549},
+    {"path": "TRAIN.json", "sha256": "7a5c69498b7b2fb813bd1465ef50d2e3f8e599993f90875009573f84c498aa9d", "size": 52337},
+    {"path": "TRAIN16_RETENTION.json", "sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd", "size": 15647},
+    {"path": "U0_PREFLIGHT.py", "sha256": "15e15cbbdb74563c2d2189cebf09b5799f64ec29b41dfb0a58fb18f576d5a872", "size": 3764},
+    {"path": "U0_PREFLIGHT_RECORD.json", "sha256": "33ebc37feeb5548b49fe47af6dc08ffe31796090c24ba8f0953fd56feb9e4ba1", "size": 2701},
+    {"path": "VALIDATE.py", "sha256": "30a3d4e071aa55ad43453ce4e3db918eae910c78c84608172edbe89f1e6541f6", "size": 11705}
+  ],
+  "checksums": {
+    "receipt_hash": "TO_BE_COMPUTED_AFTER_SEAL",
+    "manifest_hash": "TO_BE_COMPUTED_AFTER_SEAL",
+    "controller_hash": "268f588484f6ff7c3ce62c3e9c57414088aedaaa29525dab43a536f2a32b635a"
+  },
+  "integrity": {
+    "checksum_chain_verified": false,
+    "physical_files_present": true,
+    "byte_identical_sf13_payload": [
+      "D3_SELECTION.json", "DEV_ORDER.json", "DEV_SURFACE.json",
+      "KL_POOL_MANIFEST.json", "KL_POOL.json", "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py", "SF2_PROTOCOL.json", "TRAIN16_RETENTION.json"
+    ],
+    "sha256sums_file": "SHA256SUMS.txt"
+  }
+}

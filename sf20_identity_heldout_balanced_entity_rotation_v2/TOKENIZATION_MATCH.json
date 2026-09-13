@@ -1,0 +1,2732 @@
+{
+  "all_first_answer_tokens_distinct_within_item": true,
+  "all_prompt_lengths_unchanged": true,
+  "all_surrounding_tokenization_unchanged": true,
+  "records": [
+    {
+      "answer_first_token_ids": [
+        527,
+        532
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          285,
+          69,
+          18
+        ],
+        [
+          532,
+          83,
+          70,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:cloze:Sara",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Sara",
+          "slot": 0,
+          "token_ids": [
+            55,
+            285,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:cloze:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            37,
+            290,
+            92
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        532,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          532,
+          316,
+          362,
+          18
+        ],
+        [
+          525,
+          266,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:active_qa:Billy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Billy",
+          "slot": 0,
+          "token_ids": [
+            38,
+            316,
+            362
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 27,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:active_qa:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            37,
+            290,
+            92
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 27,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        508,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          508,
+          264,
+          72,
+          18
+        ],
+        [
+          525,
+          267,
+          69,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_cloze:Fred",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Fred",
+          "slot": 0,
+          "token_ids": [
+            508,
+            264,
+            72
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 33,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_cloze:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 33,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        1019
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          474,
+          403,
+          18
+        ],
+        [
+          1019,
+          438,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_qa:Steve",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            32
+          ],
+          "name": "Steve",
+          "slot": 0,
+          "token_ids": [
+            527,
+            474,
+            403
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_qa:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        532
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          285,
+          69,
+          18
+        ],
+        [
+          532,
+          83,
+          70,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:cloze:Bob",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            3
+          ],
+          "name": "Bob",
+          "slot": 1,
+          "token_ids": [
+            38,
+            83,
+            70
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:cloze:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            51,
+            91,
+            274
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        532,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          532,
+          316,
+          362,
+          18
+        ],
+        [
+          525,
+          266,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:active_qa:Tony",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Tony",
+          "slot": 1,
+          "token_ids": [
+            56,
+            266,
+            93
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 27,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:active_qa:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            51,
+            91,
+            274
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 27,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        508,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          508,
+          264,
+          72,
+          18
+        ],
+        [
+          525,
+          267,
+          69,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_cloze:Tina",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Tina",
+          "slot": 1,
+          "token_ids": [
+            525,
+            267,
+            69
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 33,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_cloze:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 33,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        1019
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          474,
+          403,
+          18
+        ],
+        [
+          1019,
+          438,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_qa:Remy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Remy",
+          "slot": 1,
+          "token_ids": [
+            1019,
+            438,
+            93
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_qa:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            26,
+            31
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        1019
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          297,
+          275,
+          18
+        ],
+        [
+          1019,
+          293,
+          703,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:cloze:Susan",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Susan",
+          "slot": 0,
+          "token_ids": [
+            55,
+            297,
+            275
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:cloze:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            3
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            49,
+            77,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        508
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          352,
+          267,
+          18
+        ],
+        [
+          508,
+          624,
+          73,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:active_qa:Colin",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Colin",
+          "slot": 0,
+          "token_ids": [
+            39,
+            352,
+            267
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 27,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:active_qa:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            3
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            49,
+            77,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 27,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        679
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          285,
+          80,
+          18
+        ],
+        [
+          679,
+          560,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:passive_cloze:Carl",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            33
+          ],
+          "name": "Carl",
+          "slot": 0,
+          "token_ids": [
+            651,
+            285,
+            80
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 33,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:passive_cloze:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            32
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 33,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          820,
+          93,
+          18
+        ],
+        [
+          525,
+          285,
+          69,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:passive_qa:Cathy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            34
+          ],
+          "name": "Cathy",
+          "slot": 0,
+          "token_ids": [
+            651,
+            820,
+            93
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:passive_qa:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            32
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        1019
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          297,
+          275,
+          18
+        ],
+        [
+          1019,
+          293,
+          703,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:cloze:Ralph",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Ralph",
+          "slot": 1,
+          "token_ids": [
+            54,
+            293,
+            703
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:cloze:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            50,
+            276,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        508
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          352,
+          267,
+          18
+        ],
+        [
+          508,
+          624,
+          73,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:active_qa:Faye",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Faye",
+          "slot": 1,
+          "token_ids": [
+            42,
+            624,
+            73
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "new_prompt_tokens": 27,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:active_qa:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            50,
+            276,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "source_prompt_tokens": 27,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        679
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          285,
+          80,
+          18
+        ],
+        [
+          679,
+          560,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:passive_cloze:Wendy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            34
+          ],
+          "name": "Wendy",
+          "slot": 1,
+          "token_ids": [
+            679,
+            560,
+            93
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 33,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:passive_cloze:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            33
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 33,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          820,
+          93,
+          18
+        ],
+        [
+          525,
+          285,
+          69,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:surface:B:bought:green_ball:passive_qa:Tara",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            33
+          ],
+          "name": "Tara",
+          "slot": 1,
+          "token_ids": [
+            525,
+            285,
+            69
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "new_prompt_tokens": 30,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:surface:B:bought:green_ball:passive_qa:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            28,
+            33
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "source_prompt_tokens": 30,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          285,
+          69,
+          18
+        ],
+        [
+          525,
+          266,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:fact:Sara",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Sara",
+          "slot": 0,
+          "token_ids": [
+            55,
+            285,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            42
+          ],
+          "name": "Tony",
+          "slot": 1,
+          "token_ids": [
+            525,
+            266,
+            93
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:fact:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            37,
+            290,
+            92
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            42
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        532,
+        508
+      ],
+      "candidate_token_ids": [
+        [
+          532,
+          83,
+          70,
+          18
+        ],
+        [
+          508,
+          264,
+          72,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:copy:Bob",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            3
+          ],
+          "name": "Bob",
+          "slot": 0,
+          "token_ids": [
+            38,
+            83,
+            70
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            36,
+            41
+          ],
+          "name": "Fred",
+          "slot": 1,
+          "token_ids": [
+            508,
+            264,
+            72
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:copy:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            37,
+            290,
+            92
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            42
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        532,
+        527
+      ],
+      "candidate_token_ids": [
+        [
+          532,
+          316,
+          362,
+          18
+        ],
+        [
+          527,
+          474,
+          403,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:fact:Billy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            17
+          ],
+          "name": "Steve",
+          "slot": 1,
+          "token_ids": [
+            527,
+            474,
+            403
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            18,
+            24
+          ],
+          "name": "Billy",
+          "slot": 0,
+          "token_ids": [
+            532,
+            316,
+            362
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:fact:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        525,
+        1019
+      ],
+      "candidate_token_ids": [
+        [
+          525,
+          267,
+          69,
+          18
+        ],
+        [
+          1019,
+          438,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:copy:Tina",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Remy",
+          "slot": 1,
+          "token_ids": [
+            1019,
+            438,
+            93
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Tina",
+          "slot": 0,
+          "token_ids": [
+            525,
+            267,
+            69
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:copy:Alex",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          285,
+          69,
+          18
+        ],
+        [
+          525,
+          266,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:fact:Tony",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Tony",
+          "slot": 1,
+          "token_ids": [
+            56,
+            266,
+            93
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            42
+          ],
+          "name": "Sara",
+          "slot": 0,
+          "token_ids": [
+            527,
+            285,
+            69
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:fact:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            51,
+            91,
+            274
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            42
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        532,
+        508
+      ],
+      "candidate_token_ids": [
+        [
+          532,
+          83,
+          70,
+          18
+        ],
+        [
+          508,
+          264,
+          72,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:copy:Fred",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Fred",
+          "slot": 1,
+          "token_ids": [
+            42,
+            264,
+            72
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            41
+          ],
+          "name": "Bob",
+          "slot": 0,
+          "token_ids": [
+            532,
+            83,
+            70
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:copy:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            51,
+            91,
+            274
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            37,
+            42
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        532,
+        527
+      ],
+      "candidate_token_ids": [
+        [
+          532,
+          316,
+          362,
+          18
+        ],
+        [
+          527,
+          474,
+          403,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:fact:Steve",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            17
+          ],
+          "name": "Billy",
+          "slot": 0,
+          "token_ids": [
+            532,
+            316,
+            362
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            18,
+            24
+          ],
+          "name": "Steve",
+          "slot": 1,
+          "token_ids": [
+            527,
+            474,
+            403
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:fact:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        525,
+        1019
+      ],
+      "candidate_token_ids": [
+        [
+          525,
+          267,
+          69,
+          18
+        ],
+        [
+          1019,
+          438,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:copy:Remy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Tina",
+          "slot": 0,
+          "token_ids": [
+            525,
+            267,
+            69
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Remy",
+          "slot": 1,
+          "token_ids": [
+            1019,
+            438,
+            93
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:copy:Owen",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Alex",
+          "slot": 0,
+          "token_ids": [
+            314,
+            290,
+            92
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Owen",
+          "slot": 1,
+          "token_ids": [
+            536,
+            91,
+            274
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        651
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          297,
+          275,
+          18
+        ],
+        [
+          651,
+          352,
+          267,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order0:fact:Susan",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Susan",
+          "slot": 0,
+          "token_ids": [
+            55,
+            297,
+            275
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            40,
+            46
+          ],
+          "name": "Colin",
+          "slot": 1,
+          "token_ids": [
+            651,
+            352,
+            267
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order0:fact:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            3
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            49,
+            77,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            38,
+            43
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        1019,
+        679
+      ],
+      "candidate_token_ids": [
+        [
+          1019,
+          293,
+          703,
+          18
+        ],
+        [
+          679,
+          560,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order0:copy:Ralph",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Ralph",
+          "slot": 0,
+          "token_ids": [
+            54,
+            293,
+            703
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            40,
+            46
+          ],
+          "name": "Wendy",
+          "slot": 1,
+          "token_ids": [
+            679,
+            560,
+            93
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order0:copy:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            3
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            49,
+            77,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            38,
+            43
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        508,
+        651
+      ],
+      "candidate_token_ids": [
+        [
+          508,
+          624,
+          73,
+          18
+        ],
+        [
+          651,
+          820,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order1:fact:Faye",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            17
+          ],
+          "name": "Cathy",
+          "slot": 1,
+          "token_ids": [
+            651,
+            820,
+            93
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            18,
+            23
+          ],
+          "name": "Faye",
+          "slot": 0,
+          "token_ids": [
+            508,
+            624,
+            73
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order1:fact:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            21
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          285,
+          80,
+          18
+        ],
+        [
+          525,
+          285,
+          69,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order1:copy:Carl",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Tara",
+          "slot": 1,
+          "token_ids": [
+            525,
+            285,
+            69
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Carl",
+          "slot": 0,
+          "token_ids": [
+            651,
+            285,
+            80
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order1:copy:Mia",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            21
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        527,
+        651
+      ],
+      "candidate_token_ids": [
+        [
+          527,
+          297,
+          275,
+          18
+        ],
+        [
+          651,
+          352,
+          267,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order0:fact:Colin",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Colin",
+          "slot": 1,
+          "token_ids": [
+            39,
+            352,
+            267
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            40,
+            46
+          ],
+          "name": "Susan",
+          "slot": 0,
+          "token_ids": [
+            527,
+            297,
+            275
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order0:fact:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            50,
+            276,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            39,
+            43
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        1019,
+        679
+      ],
+      "candidate_token_ids": [
+        [
+          1019,
+          293,
+          703,
+          18
+        ],
+        [
+          679,
+          560,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order0:copy:Wendy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            5
+          ],
+          "name": "Wendy",
+          "slot": 1,
+          "token_ids": [
+            59,
+            560,
+            93
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            40,
+            46
+          ],
+          "name": "Ralph",
+          "slot": 0,
+          "token_ids": [
+            1019,
+            293,
+            703
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order0:copy:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            0,
+            4
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            50,
+            276,
+            69
+          ],
+          "token_indexes": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "char_span": [
+            39,
+            43
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            19,
+            20,
+            21
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        508,
+        651
+      ],
+      "candidate_token_ids": [
+        [
+          508,
+          624,
+          73,
+          18
+        ],
+        [
+          651,
+          820,
+          93,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order1:fact:Cathy",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Faye",
+          "slot": 0,
+          "token_ids": [
+            508,
+            624,
+            73
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            23
+          ],
+          "name": "Cathy",
+          "slot": 1,
+          "token_ids": [
+            651,
+            820,
+            93
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 40,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order1:fact:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            15
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            16,
+            21
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 40,
+      "surrounding_tokenization_unchanged": true
+    },
+    {
+      "answer_first_token_ids": [
+        651,
+        525
+      ],
+      "candidate_token_ids": [
+        [
+          651,
+          285,
+          80,
+          18
+        ],
+        [
+          525,
+          285,
+          69,
+          18
+        ]
+      ],
+      "first_answer_tokens_distinct": true,
+      "item_id": "SF20:competing:B:bought:green_ball:order1:copy:Tara",
+      "new_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            16
+          ],
+          "name": "Carl",
+          "slot": 0,
+          "token_ids": [
+            651,
+            285,
+            80
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            17,
+            22
+          ],
+          "name": "Tara",
+          "slot": 1,
+          "token_ids": [
+            525,
+            285,
+            69
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "new_prompt_tokens": 35,
+      "prompt_length_unchanged": true,
+      "source_id": "SF9:competing:B:bought:green_ball:order1:copy:Nora",
+      "source_identity_occurrences": [
+        {
+          "char_span": [
+            11,
+            15
+          ],
+          "name": "Mia",
+          "slot": 0,
+          "token_ids": [
+            925,
+            77,
+            69
+          ],
+          "token_indexes": [
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "char_span": [
+            16,
+            21
+          ],
+          "name": "Nora",
+          "slot": 1,
+          "token_ids": [
+            512,
+            276,
+            69
+          ],
+          "token_indexes": [
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "source_prompt_tokens": 35,
+      "surrounding_tokenization_unchanged": true
+    }
+  ],
+  "required_abstract_geometry": {
+    "candidate_with_period": 4,
+    "leading_space": 3,
+    "sentence_start": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "BABY_VNEXT_60M_CANDIDATE_FROZEN",
+  "sealed_utc": "2026-09-09T09:49:50.990822+00:00",
+  "bundle": "C:\\DaveLM-CADAVER\\baby_vnext_60m_design_v1",
+  "design_type": "CLEANER_CAPACITY_SUCCESSOR",
+  "trained_parameters": 61520385,
+  "base_parameters": 60536064,
+  "binding_parameters": 984321,
+  "config_sha256": "8d7e1cbc604c9bf9f1942d4afc01817b20af17d8805a984f7ae57b1254f957b4",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "initialized_checkpoint_sha256": "809d35f746ca1c4f664cbfc1a3d1a543094aad65035127f02706f8658e4e9760",
+  "initialized_model_state_sha256": "c2313015115beaa0dcc7d91cc83cafb34b635871e189c1715ecdedfc41604d3e",
+  "manifest_sha256": "a4a9fb219f082e1936bf7341f42d82354fc2c7cf8d6f9b0d03c84e815117cad4",
+  "manifest_payload_files": 29,
+  "validation_status": "PASS",
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "real_data_training": false,
+  "locked_or_sacred_material_accessed": false
+}

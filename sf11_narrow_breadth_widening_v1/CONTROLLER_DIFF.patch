@@ -1,0 +1,75 @@
+--- SF10/CONTROLLER.py
++++ SF11/CONTROLLER.py
+@@ -1,8 +1,4 @@
+-"""SF10 independent continuations: SAME SF9 curriculum content, SAME lambda=0.25/M=1.0 margin
+-recipe, SAME KL/binding/scope/optimizer. ONLY change: each English update trains a deterministic
+-36-item balanced shard (1/4 of the 144-item curriculum) instead of all 144 items, cycled across
+-updates. Parents are fresh SF8 lambda=0.25 checkpoints (not the D3-polluted SF9 checkpoints).
+-"""
++"""SF11: narrower curriculum; identical SF10 loss, optimizer, scope and persistence."""
+ import argparse, hashlib, json, math, os, platform, sys
+ from collections import Counter
+ from pathlib import Path
+@@ -42,7 +38,7 @@
+     if sealed:
+         assert sha(H / 'FREEZE_RECEIPT.json') == (H / 'FREEZE_RECEIPT.sha256').read_text().split()[0]
+         receipt = read(H / 'FREEZE_RECEIPT.json')
+-        assert receipt['status'] == 'SF10_PROSPECTIVE_PREFLIGHT_PASS'
++        assert receipt['status'] == 'SF11_PROSPECTIVE_PREFLIGHT_PASS'
+         assert sha(H / 'SHA256SUMS.txt') == receipt['manifest_sha256']
+         for line in (H / 'SHA256SUMS.txt').read_text().splitlines():
+             h, n = line.split('  ', 1)
+@@ -66,7 +62,7 @@
+     dev_order = read(H / 'DEV_ORDER.json')
+     pool = read(H / 'data/binding_rehearsal.json')['quartets']
+     kl, oldproto = E.load_kl_pool()
+-    assert len(items) == len(idx) == 144
++    assert len(items) == len(idx) == 48
+     assert len(train16) == 16 and len(dev_surface) == 16 and len(dev_order) == 16
+     assert len(pool) == 80 and sum(len(q['docs']) for q in pool) == 320
+     ei = 0
+@@ -86,7 +82,8 @@
+             docs = rt.binding_docs_for_batch(pool, u['quartets'], u['documents'])
+             assert len(docs) == 32 and len(set(d['doc_id'] for d in docs)) == 32
+     assert ei == 180
+-    assert set(exposure.values()) == {45} and len(exposure) == 144
++    assert len(exposure) == 48
++    assert all(exposure[r['id']] == (45 if r['id'].startswith('TRAIN:') else 180) for r in items)
+     return schedule, items, idx, train16, dev_surface, dev_order, pool, kl, oldproto
+ 
+ 
+@@ -95,14 +92,14 @@
+ 
+ 
+ def dev_surface_gate(agg):
+-    return agg['correct'] >= 15 and agg['exact'] >= 13
++    return agg['correct'] >= 15 and agg['exact'] >= 13 and all(agg['subgroups'][s]['exact'] >= 3 for s in ['cloze','active_qa','passive_cloze','passive_qa'])
+ 
+ 
+ def dev_order_gate(agg):
+     sg = agg['subgroups']
+     fact = sg.get('order0:fact', {}).get('exact', 0) + sg.get('order1:fact', {}).get('exact', 0)
+     copy = sg.get('order0:copy', {}).get('exact', 0) + sg.get('order1:copy', {}).get('exact', 0)
+-    return agg['exact'] >= 13 and fact >= 7 and copy >= 7
++    return agg['exact'] >= 13 and fact >= 7 and copy >= 7 and all(sg[o+':fact']['exact']+sg[o+':copy']['exact']>=7 for o in ['order0','order1']) and all(sg[o+':'+q]['exact']>=3 for o in ['order0','order1'] for q in ['fact','copy'])
+ 
+ 
+ def gates(ret, dsurf, dord, checks, d3, base_loss, u):
+@@ -160,7 +157,7 @@
+     schedule, items, idx, train16, dev_surface, dev_order, pool, kl, oldproto = load_inputs()
+     rt.configure_runtime(a.seed)
+     if a.mode == 'preload':
+-        print('SF10_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
++        print('SF11_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
+     out = H / 'runs' / f'seed_{a.seed}_curriculum'
+     out.mkdir(parents=True, exist_ok=True)
+     provenance = {'parent_checkpoint': run['parent_checkpoint'], 'parent_checkpoint_sha256': run['parent_checkpoint_sha256'],
+@@ -219,6 +216,8 @@
+         else: hp.write_text(sha(cp) + '\n', encoding='utf-8')
+         ret, dsurf, dord, ch, d3 = run_eval(m, train16, dev_surface, dev_order, tok, device, out, u)
+         g = gates(ret, dsurf, dord, ch, d3, base_loss, u)
++        g['development_gain'] = dsurf['exact'] >= read(out/'update0_devsurface_RESULT.json')['exact']+4 and dord['exact'] >= read(out/'update0_devorder_RESULT.json')['exact']+4
++        g['endpoint_pass'] = g['endpoint_pass'] and g['development_gain']
+         rt.atomic_json(g, out / f'update{u}_GATES.json')
+         print('EVALUATED', a.seed, u, json.dumps({'train16': {'correct': ret['correct'], 'exact': ret['exact'], 'reversals': ret['reversals'], 'families': ret['families']},
+             'dev_surface': {'correct': dsurf['correct'], 'exact': dsurf['exact']},

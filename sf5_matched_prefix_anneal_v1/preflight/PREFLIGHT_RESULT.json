@@ -1,0 +1,19 @@
+{
+  "arm_updates": 3,
+  "exact": false,
+  "prefix_updates": 12,
+  "seed": 87999,
+  "status": "SF5_PREFLIGHT_FORK_IDENTITY_FAIL",
+  "trialA": {
+    "english_index": 14,
+    "model": "f61bbabe53c0de8c791a10720dc09b8bab617938d9b28e0f7c75c21b7f160f92",
+    "optimizer": "70f4efb41d43cb9acbeadd7e99ccce883ae6fd32c9d379212cf0155c7564c235",
+    "rng": "aa8c0e8d0c6790d2fb63df1b653d7ddb867ea6efe87dadb38ee2d61ba922874a"
+  },
+  "trialB": {
+    "english_index": 14,
+    "model": "022d98a97efc956ea022f41bac5875fe2fe1290c6e6954d7347fa1c3539013d8",
+    "optimizer": "bbd77083ffc08cddc8c1feeda6c39ca82c2671632fd3dfaf4e5874792174870b",
+    "rng": "aa8c0e8d0c6790d2fb63df1b653d7ddb867ea6efe87dadb38ee2d61ba922874a"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "behavioral_inference": false,
+  "bundle": "fact_supervision_87001_corrected_v5",
+  "checkpoint_loaded": false,
+  "immutable_predecessor": "fact_supervision_87001_corrected_v4",
+  "manifest_sha256": "57916cd14b48e7e36c1bf3cb91beba0115e00aca1946a37d1397ca9ab89e5483",
+  "non_circular_chain": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> SHA256SUMS.txt -> payload",
+  "optimizer_created": false,
+  "optimizer_update": false,
+  "payload_count": 27,
+  "sacred_access": false,
+  "scientific_specification_changed": false,
+  "seed_87002_executed": false,
+  "status": "FULLY_EXECUTABLE_PRETRAINING_FREEZE_COMPLETE"
+}

@@ -1,0 +1,44 @@
+{
+  "byte_fallback": false,
+  "candidate_token_ids": {
+    " Alex.": [
+      314,
+      290,
+      92,
+      18
+    ],
+    " Owen.": [
+      536,
+      91,
+      274,
+      18
+    ]
+  },
+  "colors": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+  ],
+  "names": [
+    "Alex",
+    "Mia",
+    "Nora",
+    "Owen"
+  ],
+  "objects": [
+    "ball",
+    "book",
+    "box",
+    "car",
+    "fish",
+    "hat",
+    "kite",
+    "toy"
+  ],
+  "predicates": [
+    "found",
+    "carried"
+  ],
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

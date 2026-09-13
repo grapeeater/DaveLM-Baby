@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "training_and_dev_use_same_aligned_expression": true,
+  "source_check": {
+    "hr1_shifted_occurrences": 2,
+    "hr2_shifted_occurrences": 2,
+    "corrected_aligned_occurrences": 2,
+    "corrected_shifted_occurrences": 0,
+    "train_dev_objective_expression_count": 2
+  },
+  "reference_module": "sources/CAUSAL_ALIGNMENT.py"
+}

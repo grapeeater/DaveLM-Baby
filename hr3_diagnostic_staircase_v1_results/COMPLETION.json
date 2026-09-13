@@ -1,0 +1,9 @@
+{
+  "checkpoint_hashes_reverified": true,
+  "final_accessed": false,
+  "optimizer_created": false,
+  "raw_sha256": "89ac6fd2329627e72092092943b40cccbfa4cb436d6c7a88618b8eafb7b2e51d",
+  "sacred_accessed": false,
+  "status": "STAIRCASE_COMPLETE",
+  "weight_updates": 0
+}

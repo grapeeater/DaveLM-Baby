@@ -1,0 +1,6 @@
+{
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "test_loaded": false,
+  "primary_near_miss": "C:\\DaveLM-CADAVER\\phase2a_t14_factclause_pointer_lr3p75e5_750_v1_run_seed730001\\checkpoints\\checkpoint_0750.pt",
+  "primary_rep_success": "C:\\DaveLM-CADAVER\\phase2a_t14_factclause_pointer_lr3p75e5_750_v1_run_seed730002\\checkpoints\\checkpoint_0750.pt"
+}

@@ -1,0 +1,70 @@
+{
+  "manual_graph": {
+    "by_source_boundary": {
+      "P:after_block_0_attention_residual": 0.0,
+      "P:after_block_0_mlp_residual": 0.0,
+      "P:after_block_1_attention_residual": 0.0,
+      "P:after_block_1_mlp_residual": 0.0,
+      "P:after_block_2_attention_residual": 0.0,
+      "P:after_block_2_mlp_residual": 0.0,
+      "P:after_block_3_attention_residual": 0.0,
+      "P:after_block_3_mlp_residual": 0.0,
+      "P:after_block_4_attention_residual": 0.0,
+      "P:after_block_4_mlp_residual": 0.0,
+      "P:after_block_5_attention_residual": 0.0,
+      "P:after_block_5_mlp_residual": 0.0,
+      "P:after_block_6_attention_residual": 0.0,
+      "P:after_block_6_mlp_residual": 0.0,
+      "P:after_block_7_attention_residual": 0.0,
+      "P:after_block_7_mlp_residual": 0.0,
+      "P:embedding_output": 0.0,
+      "S:after_block_0_attention_residual": 0.0,
+      "S:after_block_0_mlp_residual": 0.0,
+      "S:after_block_1_attention_residual": 0.0,
+      "S:after_block_1_mlp_residual": 0.0,
+      "S:after_block_2_attention_residual": 0.0,
+      "S:after_block_2_mlp_residual": 0.0,
+      "S:after_block_3_attention_residual": 0.0,
+      "S:after_block_3_mlp_residual": 0.0,
+      "S:after_block_4_attention_residual": 0.0,
+      "S:after_block_4_mlp_residual": 0.0,
+      "S:after_block_5_attention_residual": 0.0,
+      "S:after_block_5_mlp_residual": 0.0,
+      "S:after_block_6_attention_residual": 0.0,
+      "S:after_block_6_mlp_residual": 0.0,
+      "S:after_block_7_attention_residual": 0.0,
+      "S:after_block_7_mlp_residual": 0.0,
+      "S:embedding_output": 0.0
+    },
+    "max_abs_logit_error": 0.0,
+    "pass": true,
+    "tolerance": 1e-06
+  },
+  "pass": false,
+  "prior_endpoint": {
+    "checks": {
+      "native_P": {
+        "errors": {
+          "d3_entropy": 2.441229298710823e-07,
+          "d3_four_name_mass": 3.185129937577358e-10,
+          "factual_mean_sequence_margin": 4.917383193969727e-07,
+          "factual_owen_margin": 3.427267074584961e-06,
+          "language_ce": 1.1920928955078125e-07
+        },
+        "max_abs_error": 3.427267074584961e-06
+      },
+      "native_S": {
+        "errors": {
+          "d3_entropy": 1.208536559715867e-07,
+          "d3_four_name_mass": 8.84542217249873e-09,
+          "factual_mean_sequence_margin": 1.3685275916941464e-06,
+          "factual_owen_margin": 1.7195707187056541e-06,
+          "language_ce": 0.0
+        },
+        "max_abs_error": 1.7195707187056541e-06
+      }
+    },
+    "pass": false,
+    "tolerance": 1e-06
+  }
+}

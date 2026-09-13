@@ -1,0 +1,40 @@
+{
+  "run_id": "sf2_kl_parent_retention_run_v1",
+  "date": "2026-09-07",
+  "protocol_source": "C:\\DaveLM-CADAVER\\sf2_kl_treatment_preflight_review_v1\\FROZEN_PROTOCOL_DRAFT.md",
+  "overall": "PREFLIGHT_FAIL",
+  "training_began": false,
+  "update_reached": null,
+  "stop_reason": "ENVIRONMENT_GATE_FAILURE_PYTHON_3_12_14_UNAVAILABLE",
+  "gates": {
+    "review_package_integrity": "PASS",
+    "parent_checkpoint_hash": "PASS",
+    "tokenizer_hash": "PASS",
+    "sf1_train_protocol_schedule_hashes": "PASS",
+    "sf1_english_dev_hash": "PASS",
+    "pilot1_language_train_dev_hashes": "PASS",
+    "sf1_external_hashes": "PASS",
+    "sf1_bundle_manifest": "PASS",
+    "runtime_torch_2_12_0_rocm7_14_0": "PASS",
+    "runtime_cuda_available": "PASS",
+    "runtime_tokenizers_0_23_1": "PASS",
+    "runtime_python_3_12_14": "FAIL",
+    "runtime_python_actual": "3.12.0"
+  },
+  "harness": {
+    "authoritative": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\ENGINE.py",
+    "failing_line": 110,
+    "failing_assert": "assert platform.python_version()=='3.12.14' and tokenizers.__version__=='0.23.1'",
+    "raw_capture": "run\\env_gate_preload_attempt.txt"
+  },
+  "not_reached": [
+    "sf2_harness_implementation_M1-M10",
+    "retention_pool_materialization_and_hash",
+    "frozen_executable_hash",
+    "unit_deterministic_preflight_checks",
+    "update0_baseline_reproduction_M9",
+    "training"
+  ],
+  "note": "Per the mission HARD STOP rule, no protocol value, lambda, data, gate, tolerance, or harness line was changed to work around the missing Python 3.12.14 interpreter. Implementation and freeze of the SF2 harness were deliberately deferred until the pinned runtime is available, to avoid freezing an unvalidatable artifact.",
+  "required_next_step": "Provide Python 3.12.14 + torch 2.12.0+rocm7.14.0 + tokenizers 0.23.1 (CUDA) environment, then execute SF2 steps 1-5 exactly as frozen."
+}

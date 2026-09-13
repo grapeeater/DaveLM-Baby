@@ -1,0 +1,32 @@
+{
+  "activation": "relu",
+  "architecture": "baby_vnext_capacity_successor_v1",
+  "attention_backend": "sdpa",
+  "attention_dropout": 0.05,
+  "attention_output_bias": true,
+  "binding": {
+    "enabled": true,
+    "layout_interface": "explicit_key_value_positions_v1",
+    "localizer": "orthogonal_two_slot",
+    "localizer_initialization": "normal_std_d_model_neg_half",
+    "num_slots": 2,
+    "retrieval_dim": 128
+  },
+  "context_length": 256,
+  "d_mlp": 2560,
+  "d_model": 640,
+  "embedding_dropout": 0.05,
+  "initialization": "pytorch_module_defaults_v1",
+  "lm_head_bias": true,
+  "mlp_bias": true,
+  "n_heads": 10,
+  "n_layers": 12,
+  "norm_epsilon": 1e-05,
+  "norm_placement": "pre_norm",
+  "norm_type": "explicit_layer_norm",
+  "position_method": "learned_absolute",
+  "qkv_bias": false,
+  "residual_dropout": 0.05,
+  "tie_embeddings": false,
+  "vocab_size": 1024
+}

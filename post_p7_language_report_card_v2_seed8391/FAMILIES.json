@@ -1,0 +1,470 @@
+[
+  {
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "family_id": "near_distribution:lex00",
+    "lexical_id": 0,
+    "objects": [
+      "box",
+      "kite"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "yellow",
+      "blue"
+    ],
+    "family_id": "near_distribution:lex01",
+    "lexical_id": 1,
+    "objects": [
+      "box",
+      "hat"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "near_distribution:lex02",
+    "lexical_id": 2,
+    "objects": [
+      "car",
+      "toy"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "family_id": "near_distribution:lex03",
+    "lexical_id": 3,
+    "objects": [
+      "book",
+      "kite"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "family_id": "near_distribution:lex04",
+    "lexical_id": 4,
+    "objects": [
+      "ball",
+      "fish"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "near_distribution:lex05",
+    "lexical_id": 5,
+    "objects": [
+      "hat",
+      "toy"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "family_id": "near_distribution:lex06",
+    "lexical_id": 6,
+    "objects": [
+      "ball",
+      "box"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "green",
+      "red"
+    ],
+    "family_id": "near_distribution:lex07",
+    "lexical_id": 7,
+    "objects": [
+      "car",
+      "fish"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "family_id": "near_distribution:lex08",
+    "lexical_id": 8,
+    "objects": [
+      "ball",
+      "fish"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "red",
+      "green"
+    ],
+    "family_id": "near_distribution:lex09",
+    "lexical_id": 9,
+    "objects": [
+      "car",
+      "toy"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "family_id": "near_distribution:lex10",
+    "lexical_id": 10,
+    "objects": [
+      "ball",
+      "toy"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "family_id": "near_distribution:lex11",
+    "lexical_id": 11,
+    "objects": [
+      "box",
+      "hat"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "yellow",
+      "blue"
+    ],
+    "family_id": "counterfactual:lex12",
+    "lexical_id": 12,
+    "objects": [
+      "car",
+      "fish"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "yellow",
+      "blue"
+    ],
+    "family_id": "counterfactual:lex13",
+    "lexical_id": 13,
+    "objects": [
+      "book",
+      "toy"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "family_id": "counterfactual:lex14",
+    "lexical_id": 14,
+    "objects": [
+      "book",
+      "fish"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "yellow",
+      "green"
+    ],
+    "family_id": "counterfactual:lex15",
+    "lexical_id": 15,
+    "objects": [
+      "ball",
+      "hat"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "family_id": "counterfactual:lex16",
+    "lexical_id": 16,
+    "objects": [
+      "box",
+      "fish"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "family_id": "counterfactual:lex17",
+    "lexical_id": 17,
+    "objects": [
+      "fish",
+      "kite"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "counterfactual:lex18",
+    "lexical_id": 18,
+    "objects": [
+      "car",
+      "fish"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "blue",
+      "red"
+    ],
+    "family_id": "counterfactual:lex19",
+    "lexical_id": 19,
+    "objects": [
+      "hat",
+      "kite"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "family_id": "surface_form:lex00",
+    "lexical_id": 0,
+    "objects": [
+      "box",
+      "kite"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "yellow",
+      "blue"
+    ],
+    "family_id": "surface_form:lex01",
+    "lexical_id": 1,
+    "objects": [
+      "box",
+      "hat"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "surface_form:lex02",
+    "lexical_id": 2,
+    "objects": [
+      "car",
+      "toy"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "family_id": "surface_form:lex03",
+    "lexical_id": 3,
+    "objects": [
+      "book",
+      "kite"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "family_id": "surface_form:lex04",
+    "lexical_id": 4,
+    "objects": [
+      "ball",
+      "fish"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "surface_form:lex05",
+    "lexical_id": 5,
+    "objects": [
+      "hat",
+      "toy"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "family_id": "surface_form:lex06",
+    "lexical_id": 6,
+    "objects": [
+      "ball",
+      "box"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "green",
+      "red"
+    ],
+    "family_id": "surface_form:lex07",
+    "lexical_id": 7,
+    "objects": [
+      "car",
+      "fish"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "family_id": "distractor:lex00",
+    "lexical_id": 0,
+    "objects": [
+      "box",
+      "kite"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "yellow",
+      "blue"
+    ],
+    "family_id": "distractor:lex01",
+    "lexical_id": 1,
+    "objects": [
+      "box",
+      "hat"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "distractor:lex02",
+    "lexical_id": 2,
+    "objects": [
+      "car",
+      "toy"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "family_id": "distractor:lex03",
+    "lexical_id": 3,
+    "objects": [
+      "book",
+      "kite"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "family_id": "distractor:lex04",
+    "lexical_id": 4,
+    "objects": [
+      "ball",
+      "fish"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "distractor:lex05",
+    "lexical_id": 5,
+    "objects": [
+      "hat",
+      "toy"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "family_id": "distractor:lex06",
+    "lexical_id": 6,
+    "objects": [
+      "ball",
+      "box"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "green",
+      "red"
+    ],
+    "family_id": "distractor:lex07",
+    "lexical_id": 7,
+    "objects": [
+      "car",
+      "fish"
+    ],
+    "section": "distractor"
+  }
+]

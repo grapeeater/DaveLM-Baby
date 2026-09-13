@@ -1,0 +1,191 @@
+{
+  "train_items": 9528,
+  "per_level_train": {
+    "A": 1200,
+    "B": 1192,
+    "C": 1200,
+    "D": 1138,
+    "E": 1200,
+    "F": 1198,
+    "G": 1200,
+    "H": 1200
+  },
+  "dev_stats": {
+    "A": {
+      "n": 80,
+      "ratio": 2.0,
+      "correct": {
+        "Lily": 4,
+        "Sara": 8,
+        "Ann": 8,
+        "Zoe": 8,
+        "Ivy": 8,
+        "Tom": 4,
+        "Ben": 4,
+        "Noah": 8,
+        "Sam": 8,
+        "Max": 8,
+        "Owen": 8,
+        "Mia": 4
+      }
+    },
+    "B": {
+      "n": 80,
+      "ratio": 2.0,
+      "correct": {
+        "Sara": 8,
+        "Lily": 4,
+        "Ann": 8,
+        "Zoe": 8,
+        "Ivy": 8,
+        "Tom": 4,
+        "Noah": 8,
+        "Ben": 4,
+        "Sam": 8,
+        "Max": 8,
+        "Owen": 8,
+        "Mia": 4
+      }
+    },
+    "C": {
+      "n": 80,
+      "ratio": 1.333,
+      "correct": {
+        "Ann": 6,
+        "Owen": 8,
+        "Ivy": 6,
+        "Noah": 8,
+        "Tom": 8,
+        "Max": 8,
+        "Ben": 6,
+        "Sam": 6,
+        "Zoe": 6,
+        "Lily": 6,
+        "Sara": 6,
+        "Mia": 6
+      }
+    },
+    "D": {
+      "n": 80,
+      "ratio": 2.0,
+      "correct": {
+        "Sara": 8,
+        "Lily": 4,
+        "Ann": 8,
+        "Zoe": 8,
+        "Ivy": 8,
+        "Tom": 4,
+        "Noah": 8,
+        "Ben": 4,
+        "Sam": 8,
+        "Max": 8,
+        "Owen": 8,
+        "Mia": 4
+      }
+    },
+    "E": {
+      "n": 80,
+      "ratio": 1.333,
+      "correct": {
+        "Ann": 6,
+        "Owen": 8,
+        "Ivy": 6,
+        "Noah": 8,
+        "Tom": 8,
+        "Max": 8,
+        "Ben": 6,
+        "Sam": 6,
+        "Zoe": 6,
+        "Lily": 6,
+        "Sara": 6,
+        "Mia": 6
+      }
+    },
+    "F": {
+      "n": 80,
+      "ratio": 2.0,
+      "correct": {
+        "Sara": 8,
+        "Lily": 4,
+        "Ann": 8,
+        "Zoe": 8,
+        "Ivy": 8,
+        "Tom": 4,
+        "Noah": 8,
+        "Ben": 4,
+        "Sam": 8,
+        "Max": 8,
+        "Owen": 8,
+        "Mia": 4
+      }
+    },
+    "G": {
+      "n": 80,
+      "ratio": 1.333,
+      "correct": {
+        "Noah": 8,
+        "Owen": 8,
+        "Ivy": 6,
+        "Ann": 6,
+        "Tom": 8,
+        "Zoe": 6,
+        "Ben": 6,
+        "Sam": 6,
+        "Max": 8,
+        "Sara": 6,
+        "Lily": 6,
+        "Mia": 6
+      }
+    },
+    "H": {
+      "n": 80,
+      "ratio": 1.8,
+      "correct": {
+        "Ben": 6,
+        "Noah": 7,
+        "Sam": 7,
+        "Lily": 9,
+        "Zoe": 6,
+        "Max": 6,
+        "Tom": 9,
+        "Ann": 5,
+        "Mia": 6,
+        "Ivy": 8,
+        "Sara": 6,
+        "Owen": 5
+      }
+    }
+  },
+  "qa_dev": 640,
+  "qa_test": 320,
+  "qa_audit_dev": 120,
+  "qa_audit_test": 60,
+  "audit_dev_correct": {
+    "Ben": 8,
+    "Zoe": 11,
+    "Owen": 12,
+    "Mia": 12,
+    "Max": 8,
+    "Ann": 10,
+    "Lily": 8,
+    "Tom": 10,
+    "Sam": 11,
+    "Noah": 12,
+    "Ivy": 10,
+    "Sara": 8
+  },
+  "pool_sizes": {
+    "s1": 2392,
+    "s2": 5930,
+    "s3new": 3598,
+    "s3old": 5930
+  },
+  "L_Q": 105,
+  "rehearsal_stream_tokens": 8354565,
+  "kind_counts": {
+    "qa_s1": 90,
+    "qa_s3": 225,
+    "qa_s2": 135,
+    "lang": 50
+  }
+}

@@ -1,0 +1,157 @@
+{
+ "provenance": {
+  "train_pool_sha256": "8f5d60de10fe2fdc8e772a9c1fc3e9f07861edd1583d7c413a095c2f55c6903c",
+  "retention_pool_sha256": "c341d7308b145bd3c633b62d56e01391f4b05635bfcf2edfb146bcd9f2de4e69",
+  "train_documents": 800,
+  "retention_documents": 160
+ },
+ "unique_layout_signatures": {
+  "train": 20,
+  "retention": 20,
+  "retention_also_in_train": 20,
+  "retention_not_in_train_count": 0,
+  "retention_not_in_train": []
+ },
+ "unique_full_signatures": {
+  "train": 80,
+  "retention": 80,
+  "retention_also_in_train": 80,
+  "retention_not_in_train_count": 0,
+  "retention_not_in_train": []
+ },
+ "absolute_position_coverage": {
+  "q": {
+   "train_distinct": 8,
+   "retention_distinct": 8,
+   "retention_values_missing_from_train": []
+  },
+  "answer_causal": {
+   "train_distinct": 8,
+   "retention_distinct": 8,
+   "retention_values_missing_from_train": []
+  },
+  "k0": {
+   "train_distinct": 5,
+   "retention_distinct": 5,
+   "retention_values_missing_from_train": []
+  },
+  "v0": {
+   "train_distinct": 5,
+   "retention_distinct": 5,
+   "retention_values_missing_from_train": []
+  },
+  "k1": {
+   "train_distinct": 5,
+   "retention_distinct": 5,
+   "retention_values_missing_from_train": []
+  },
+  "v1": {
+   "train_distinct": 5,
+   "retention_distinct": 5,
+   "retention_values_missing_from_train": []
+  }
+ },
+ "all_absolute_positions_reused_in_retention": true,
+ "relative_distance_coverage": {
+  "q_to_k0": {
+   "train_distinct": 4,
+   "retention_distinct": 4,
+   "retention_values_missing_from_train": []
+  },
+  "q_to_k1": {
+   "train_distinct": 4,
+   "retention_distinct": 4,
+   "retention_values_missing_from_train": []
+  },
+  "q_to_v0": {
+   "train_distinct": 4,
+   "retention_distinct": 4,
+   "retention_values_missing_from_train": []
+  },
+  "q_to_v1": {
+   "train_distinct": 4,
+   "retention_distinct": 4,
+   "retention_values_missing_from_train": []
+  },
+  "k0_to_v0": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_values_missing_from_train": []
+  },
+  "k1_to_v1": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_values_missing_from_train": []
+  },
+  "row0_to_row1_spacing": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_values_missing_from_train": []
+  },
+  "row0_val_to_row1_val_spacing": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_values_missing_from_train": []
+  },
+  "query_to_answer": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_values_missing_from_train": []
+  }
+ },
+ "relative_distance_combos_reused_in_retention": true,
+ "relative_distance_combo_report": {
+  "q_to_k0+q_to_k1": {
+   "train_distinct": 4,
+   "retention_distinct": 4,
+   "retention_combos_missing_from_train": []
+  },
+  "q_to_v0+q_to_v1": {
+   "train_distinct": 4,
+   "retention_distinct": 4,
+   "retention_combos_missing_from_train": []
+  },
+  "k0_to_v0+k1_to_v1": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_combos_missing_from_train": []
+  },
+  "row0_to_row1_spacing+row0_val_to_row1_val_spacing": {
+   "train_distinct": 1,
+   "retention_distinct": 1,
+   "retention_combos_missing_from_train": []
+  }
+ },
+ "retention_has_genuinely_unseen_geometry": false,
+ "deterministic_relationships": {
+  "layout_signatures_total": 20,
+  "layout_signatures_with_single_query_slot": 0,
+  "query_slot_deterministic_given_layout": false,
+  "layout_signatures_with_single_orientation": 0,
+  "orientation_deterministic_given_layout": false,
+  "target_row_set_sizes_given_layout": [
+   2
+  ],
+  "target_row_deterministic_given_layout": false
+ },
+ "query_slot_counts": {
+  "train": {
+   "0": 400,
+   "1": 400
+  },
+  "retention": {
+   "0": 80,
+   "1": 80
+  }
+ },
+ "orientation_counts": {
+  "train": {
+   "1": 400,
+   "2": 400
+  },
+  "retention": {
+   "1": 80,
+   "2": 80
+  }
+ }
+}

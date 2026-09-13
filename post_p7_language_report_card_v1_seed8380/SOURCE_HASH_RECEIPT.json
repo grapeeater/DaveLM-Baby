@@ -1,0 +1,27 @@
+{
+  "construction_source": {
+    "path": "C:\\DaveLM-CADAVER\\build_post_p7_report_card.py",
+    "sha256": "859fd0334f4b88cdd1d3a3e2f4ebecf2e2aeaa8acf14bf86c597282f1c50099d"
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "p7_train_text": {
+    "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\TRAIN_TEXT.txt",
+    "sha256": "337a24425fb8bd5e8b2c6b31518c23e99be3a22d0499ca9aea3d226c10af2489"
+  },
+  "tinystories_train": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_train.jsonl",
+    "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+  },
+  "tinystories_dev": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_dev.jsonl",
+    "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+  },
+  "p7_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\latest.pt",
+    "sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e"
+  },
+  "behavior_accessed": false
+}

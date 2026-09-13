@@ -1,0 +1,19 @@
+{
+  "Pilot0": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "hash": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+    "record": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\pilot_run\\RESULTS.json",
+    "record_hash": "5c72db6d3ae93e07bd52451422c38e56f38c4d13a3b53626cce014900c71049f"
+  },
+  "Pilot1": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "hash": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "record": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\RESULTS.json",
+    "record_hash": "726142fd3847a4f546082bbae2c12d7f560232ba8182c9da1739705408002220"
+  },
+  "both_starting_hashes": [
+    "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+    "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430"
+  ],
+  "finding": "769bd01 is Pilot0; 2281d20 is Pilot1. They are distinct descendants of the same Graduate parent, not two versions of Pilot1."
+}

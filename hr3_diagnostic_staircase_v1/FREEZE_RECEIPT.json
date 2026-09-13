@@ -1,0 +1,5 @@
+{
+  "status": "FROZEN_DIAGNOSTIC_STAIRCASE",
+  "manifest_sha256": "334f852b06d09e944a15effd773ff266f56c23fcedd29c46518e49de0a74c103",
+  "model_behavior_accessed_during_build": false
+}

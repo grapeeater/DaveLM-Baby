@@ -1,0 +1,14 @@
+python.exe : Traceback (most recent call last):
+At line:3 char:1
++ & "C:\DaveLM\.venv\Scripts\python.exe" -B "C:\DaveLM-CADAVER\single_f ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\DaveLM-CADAVER\single_fact_acquisition_sf1_seed87011\ENGINE.py", line 171, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "C:\DaveLM-CADAVER\single_fact_acquisition_sf1_seed87011\ENGINE.py", line 110, in main
+    assert platform.python_version()=='3.12.14' and tokenizers.__version__=='0.23.1'
+AssertionError
+

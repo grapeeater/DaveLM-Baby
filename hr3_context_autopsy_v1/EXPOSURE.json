@@ -1,0 +1,21 @@
+{
+  "pool_records": 149014,
+  "presentations": 28800,
+  "unique_presented_records": 28800,
+  "presentation_multiplicity": {
+    "1": 28800
+  },
+  "supervised_content_tokens": 672319,
+  "supervised_eos_tokens": 28800,
+  "max_content_length": 95,
+  "records_with_internal_sentence_boundary": 0,
+  "records_with_question_mark": 867,
+  "scheduled_multi_record_contexts": 0,
+  "explicit_matched_english_counterfactual_families": 0,
+  "english_updates": 450,
+  "binding_updates": 50,
+  "binding_document_presentations": 1600,
+  "source_builder": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004\\HR1_BUILD_SOURCE.py",
+  "source_builder_sha256": "446c1b28c458af9671f42eb102e88fdbe198f26f0221dde5f45b1f9458f1e27d",
+  "objective": "English mean CE per supervised token, one sentence per independent batch row, BOS and final EOS; binding separate mean answer CE + 1.0536573711078283 localization. No English candidate contrast or factual task mixer."
+}

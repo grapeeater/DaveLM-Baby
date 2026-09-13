@@ -1,0 +1,21 @@
+{
+  "status": "TREATMENT_TRAINED",
+  "steps": 1000,
+  "lambda_existing": 1.0536573711078283,
+  "lambda_filler": 2.9595848365588058,
+  "final_checkpoint_sha256": "ad0fe0743c2335e4a2268aeb589c80faf7ff23dc82be4394b2150b179ceb7f4f",
+  "runtime_seconds": 762.6649374961853,
+  "final_step": {
+    "step": 1000,
+    "L_total": 0.0002461886324454099,
+    "L_answer": 1.3019775906286668e-05,
+    "L_existing": 0.0002058667450910434,
+    "L_filler": 5.492613126989454e-06,
+    "answer_accuracy": 1.0,
+    "both_distinct_rate": 1.0,
+    "exactly_one_rate": 0.0,
+    "slot_collapse_rate": 0.0,
+    "neither_rate": 0.0,
+    "grad_norm": 0.002552169607952237
+  }
+}

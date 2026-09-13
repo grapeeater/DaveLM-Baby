@@ -1,0 +1,12 @@
+{
+ "status": "VALIDATION_PASS",
+ "one_items": 48,
+ "two_items": 96,
+ "one_families": 24,
+ "one_items_per_family": 2,
+ "two_families": 24,
+ "two_items_per_family": 4,
+ "one_actor_set_size_2_per_family": true,
+ "correct_name_token_sequence_present_in_prompt": true,
+ "notes": "correct-name token sequences located by the frozen candidate token ids (name tokens without the trailing period); no model was loaded"
+}

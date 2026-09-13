@@ -1,0 +1,27 @@
+{
+  "final_sacred": "LOCKED_NOT_ACCESSED",
+  "fresh_seeds": [
+    87047,
+    87048,
+    87049
+  ],
+  "predecessor": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1",
+  "predecessor_manifest_sha256": "f9a6fbbc08a92f80876bb5666116d274023834909a9cfcbfca78b6dfb7575e71",
+  "predecessor_receipt_sha256": "b581fa3d852efb4436495d852a8f2ab883fd1048ece0af944a856aa676348c63",
+  "sole_scientific_change": "freeze untied language head during English updates only",
+  "study": "SF18_ENGLISH_OUTPUT_HEAD_FREEZE_V1",
+  "unchanged_payload_hashes": {
+    "D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "DEV_ORDER.json": "8031e735736925ff76c0ec7e86bcef3376ef3bb676566fbf04eff9770093a717",
+    "DEV_SURFACE.json": "d0677e641204f7e31921d1fe91771e910373fc96877310631ca20a105dd0735a",
+    "EXTERNAL_INPUTS.json": "0c945c427d7195d6f342b2c73c5c72d615e7a448be24fd36f02bd701e9e38670",
+    "KL_POOL.json": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "KL_POOL_MANIFEST.json": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+    "SCHEDULE.json": "19041e6e8563b13aede5ce007bb6dda190f5bd8e21b12dc77759d98a6e81aa7d",
+    "SF13_KL_SCHEDULE.json": "aaeb59b44c8683c0564fe487f631158360169a522b9bcd98e98d9cdb342018eb",
+    "SF2_ENGINE.py": "8141234f1f0d6f0dba8f429dfc6923e4bd90743d6d4d238f7ae9a169834cd551",
+    "SF2_PROTOCOL.json": "9c74f171cffdcf08189191a906ea71854b040d7200a7789d980e9c9a0f26f132",
+    "TRAIN.json": "523dbf5e325c55e6208559a2125919902572523f050d5c4da2cf14bf8898fc82",
+    "TRAIN16_RETENTION.json": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd"
+  }
+}

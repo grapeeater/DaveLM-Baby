@@ -1,0 +1,37 @@
+{
+  "authorized": {
+    "d3": "exact prior D3_SELECTION.json 256 positions",
+    "factual": "exact 16 SF1 TRAIN.json items",
+    "language": "first 128 authorized aligned ENGLISH_DEV records"
+  },
+  "baseline_reproduction_tolerance_max_abs_logit": 1e-06,
+  "candidate_scoring": "sum four candidate-token log probabilities excluding EOS; positive correct-minus-distractor margin wins",
+  "conditions": [
+    "PPP",
+    "PPS",
+    "PSP",
+    "PSS",
+    "SPP",
+    "SPS",
+    "SSP",
+    "SSS"
+  ],
+  "factorial": {
+    "position_0": "upstream embeddings+positions+blocks P/S",
+    "position_1": "final_norm affine parameters P/S",
+    "position_2": "untied language_head weight+bias P/S"
+  },
+  "forbidden": [
+    "training",
+    "optimizer",
+    "autograd",
+    "weight mutation",
+    "SF1 HELDOUT/ALTERNATE/COPY/COMPETING",
+    "FINAL",
+    "sacred"
+  ],
+  "generation": "greedy from BOS+exact prompt, normal EOS, max32; exact iff exact candidate tokens then EOS",
+  "intercept": "immediately before base_model.final_norm",
+  "language": "same four batches of 32 first-128 DEV records; mean of batch causal CE, plus pooled per-token records",
+  "name": "SF1_COMPONENT_SWAP_FORENSIC_V1"
+}

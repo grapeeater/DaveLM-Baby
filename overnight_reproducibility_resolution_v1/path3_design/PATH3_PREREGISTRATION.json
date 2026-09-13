@@ -1,0 +1,60 @@
+{
+  "study_id": "SF5_MATCHED_PREFIX_ANNEAL_V1",
+  "status": "FROZEN_DESIGN_ONLY_NOT_EXECUTED",
+  "frozen_by": "overnight_reproducibility_resolution_v1 (PATH 3)",
+  "date_frozen": "2026-09-07",
+  "scientific_question": "Does linearly annealing ONLY the late English learning rate (global updates 101-200, English ordinal j=1..90: lr=5e-5*(90-j)/89, binding LR constant 5e-5) prevent the constant-LR Owen-side boundary sweep that left SF2 at 15/16, while preserving SF2 retention?",
+  "historical_classifications_preserved": {
+    "SF2": "SF2_ACQUISITION_FAIL",
+    "SF3": "SF3_HARD_STOP_UPDATE100_REPLAY_MISMATCH",
+    "SF4": "SF4_HARD_STOP_COMMON_STATE_REPRODUCTION_MISMATCH"
+  },
+  "rationale_for_matched_prefix": "PATH1: cross-process bitwise identity is stochastic on this ROCm/torch stack and no runtime fix was found; PATH2: no independently justifiable numerical-equivalence standard exists. A single-process fork gives both arms an EXACT shared in-process prefix, so only the LR schedule differs. Post-fork stochastic divergence is identically distributed across arms and bounded at endpoint level by the measured cross-mode noise floor (<=6.97e-3 nats/item at u200, zero margin-sign flips), 10-100x smaller than the boundary movements the hypothesis concerns.",
+  "seeds": [87011, 87012, 87013],
+  "seed_policy": "chosen and frozen before any treatment outcome; distinct; no post-outcome selection",
+  "design_per_seed": {
+    "step1": "fresh process, runtime identical to SF2/SF3/SF4; configure_runtime(seed), PYTHONHASHSEED=seed",
+    "step2": "shared prefix: global updates 1-100 with exact SF2 semantics (frozen SF2 engine code path; data/schedule/KL/objective/scope/optimizer/dropout modes unchanged)",
+    "step3": "at update 100, capture full in-process snapshot (model, optimizer, RNG, english_index, scope, provenance) BEFORE any RNG-consuming evaluation; snapshot consumes no training RNG",
+    "step4": "arm A (control): restore snapshot; updates 101-200 at constant English LR 5e-5",
+    "step5": "arm B (treatment): restore the SAME snapshot; updates 101-200 English LR lr(j)=5e-5*(90-j)/89, j=1..90; binding LR 5e-5",
+    "step6": "evaluate both arms at update 200 with identical frozen endpoint definitions"
+  },
+  "replicate_count": 3,
+  "replicate_count_justification": "3 shared prefixes + 6 arm continuations (~2-4 min each on this machine); each seed is an independent draw of dropout/initialization noise; results are exact paired counts, not population inference",
+  "preserved_identities": {
+    "parent": {"path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt", "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"},
+    "tokenizer": {"path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json", "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"},
+    "schedule": {"path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\SCHEDULE.json", "sha256": "91dad3510e7997b0d55ab53e6189db9337857d582c9399a720723412f70a7ab6"},
+    "train": {"path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\TRAIN.json", "sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd"},
+    "kl_pool": {"path": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\KL_POOL.json", "sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06"},
+    "kl_pool_manifest": {"path": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\KL_POOL_MANIFEST.json", "sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012"}
+  },
+  "preserved_semantics": {
+    "objective_english": "causal answer+EOS CE (5 positions) + 1.0 x forward KL D_KL(student||Pilot1) over 160 frozen ordinary positions/English update; student KL in eval mode with grads; factual CE in train mode; T=1; full 1024-class support; float64 KL accumulation (unchanged)",
+    "objective_binding": "pinned T13 answer CE + LAM 1.0536573711078283 hard-min localization (unchanged)",
+    "scope": "English trains embeddings, blocks 4-7, final norm, untied head; blocks 0-3 and T13 frozen. Binding full scope.",
+    "optimizer": "fresh AdamW 5e-5 betas(.9,.999) eps1e-8 wd.05 amsgrad=False foreach=False fused=False; clip 2.0; one persistent state per arm from the shared snapshot; no scheduler object",
+    "schedule": "global 200 updates = 20x(9 English + 1 binding); shared prefix = updates 1-100; arm window = 101-200"
+  },
+  "gates_per_arm": {
+    "acquisition_endpoint": "correct==16 AND exact==16 AND reversals==8 AND families==4 at update 200",
+    "language": "aligned DEV CE <= own update-0 CE + 0.25 at updates 100/200",
+    "d3": "mean four-name mass <= 0.01 at updates 100/200",
+    "binding": "each pool independently answer>=76 AND BD>=76 AND collapse==0 at updates 0/100/200",
+    "prefix_acquisition_guard": "if correct<10 AND exact<10 at update 100, stop",
+    "transfer_lock": "HELDOUT16/ALTERNATE48/COPY8/COMPETING64 open per-arm ONLY if that arm passes ALL endpoint gates at 200; else locked"
+  },
+  "endpoints": {
+    "primary_per_replicate": "binary endpoint-gate pass at update 200, control vs treatment (all acquisition AND retention gates); reported per arm per seed",
+    "secondary": "per-item margins at updates 125/150/175/200 for all 16 TRAIN items; four AO cell midpoints; Owen/Alex subgroup margins; margin of residual item TRAIN:g0:carried:wooden boat:a0; language CE, D3 mass, binding summaries at 200"
+  },
+  "decision_rule": {
+    "support": "treatment passes the endpoint acquisition gate in >=2 of 3 replicates while its matched control does not, and treatment never fails where control passes",
+    "weak_or_no_support": "both arms pass in all replicates where control passes, or both fail in all replicates (report margins descriptively)",
+    "harm": "treatment fails in any replicate where control passes (>=1 such pair)",
+    "statistics": "exact counts and margins only; no p-values, no population generalization claims"
+  },
+  "not_executed_by_this_mission": true,
+  "next_action_at_execution_time": "build and freeze an SF5 controller derived from the frozen SF2 engine that adds full-snapshot capture at update 100, in-process snapshot restore, and per-arm LR selection after the fork, with updates 1-100 loop, objectives, scope, evaluation and gate code byte-identical to the frozen controller logic; then run the design. Not performed here."
+}

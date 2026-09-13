@@ -1,0 +1,24 @@
+{
+  "binding_pool": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+    "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+  },
+  "parent_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "pilot1_binding_objective": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\run.py",
+    "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+    "symbols": [
+      "rowpos",
+      "loc_loss",
+      "LAM",
+      "answer CE binding path"
+    ]
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  }
+}

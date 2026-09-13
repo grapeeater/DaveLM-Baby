@@ -1,0 +1,16 @@
+{
+  "behavioral_inference": false,
+  "bundle": "fact_supervision_87001_corrected_v8",
+  "checkpoint_loaded": false,
+  "immutable_predecessor": "fact_supervision_87001_corrected_v7",
+  "manifest_sha256": "c980316d9e53c3768cf69615bd11df595c9c1100da4471fe46b797de7f660999",
+  "mechanical_change": "Added uniquely recoverable binding-reference index, imported torch.nn.functional as F, and moved reconstructed English tensors to the selected device",
+  "non_circular_chain": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> SHA256SUMS.txt -> payload",
+  "optimizer_created": false,
+  "optimizer_update": false,
+  "payload_count": 29,
+  "sacred_access": false,
+  "scientific_specification_changed": false,
+  "seed_87002_executed": false,
+  "status": "FULLY_EXECUTABLE_PRETRAINING_FREEZE_COMPLETE"
+}

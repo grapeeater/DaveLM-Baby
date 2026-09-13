@@ -1,0 +1,167 @@
+{
+  "architecture": {
+    "Pilot1": {
+      "base_class": "DaveLMV082",
+      "base_parameter_count": 10594944,
+      "block_count": 8,
+      "context_size": 256,
+      "final_norm_bias_shape": [
+        320
+      ],
+      "final_norm_class": "ExplicitLayerNorm",
+      "final_norm_eps": 1e-05,
+      "final_norm_weight_shape": [
+        320
+      ],
+      "intercept": "output of blocks(x), immediately before ExplicitLayerNorm final_norm",
+      "language_head_bias_shape": [
+        1024
+      ],
+      "language_head_class": "Linear",
+      "language_head_weight_shape": [
+        1024,
+        320
+      ],
+      "position_embedding_shape": [
+        256,
+        320
+      ],
+      "readout_path": "blocks(x) -> final_norm(hidden) -> language_head(normalized); language_head swaps include weight and bias",
+      "tied_weight_object": false,
+      "tied_weight_storage": false,
+      "token_embedding_shape": [
+        1024,
+        320
+      ],
+      "wrapper_class": "Treatment13Model",
+      "wrapper_parameter_count": 10841345
+    },
+    "SF1": {
+      "base_class": "DaveLMV082",
+      "base_parameter_count": 10594944,
+      "block_count": 8,
+      "context_size": 256,
+      "final_norm_bias_shape": [
+        320
+      ],
+      "final_norm_class": "ExplicitLayerNorm",
+      "final_norm_eps": 1e-05,
+      "final_norm_weight_shape": [
+        320
+      ],
+      "intercept": "output of blocks(x), immediately before ExplicitLayerNorm final_norm",
+      "language_head_bias_shape": [
+        1024
+      ],
+      "language_head_class": "Linear",
+      "language_head_weight_shape": [
+        1024,
+        320
+      ],
+      "position_embedding_shape": [
+        256,
+        320
+      ],
+      "readout_path": "blocks(x) -> final_norm(hidden) -> language_head(normalized); language_head swaps include weight and bias",
+      "tied_weight_object": false,
+      "tied_weight_storage": false,
+      "token_embedding_shape": [
+        1024,
+        320
+      ],
+      "wrapper_class": "Treatment13Model",
+      "wrapper_parameter_count": 10841345
+    }
+  },
+  "authoritative_hashes": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\data\\ENGLISH_DEV.jsonl": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "authorized_inputs_only": true,
+  "autograd_used": false,
+  "excluded": [
+    "SF1 HELDOUT",
+    "SF1 ALTERNATE",
+    "SF1 COPY",
+    "SF1 COMPETING",
+    "readiness FINAL",
+    "sacred material"
+  ],
+  "inputs": {
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_PARENT.jsonl": {
+      "bytes": 501958,
+      "sha256": "6f4f6ec7e6c5744331c03f99403a68ae2f67b145c9d6cee330d2403a14af7570"
+    },
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json": {
+      "bytes": 153303,
+      "sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226"
+    },
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION_RECEIPT.json": {
+      "bytes": 428,
+      "sha256": "4e7ae2371b01434610fbbb23825ec7b44ea8934ff3d029d1f2e719ec478d087a"
+    },
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SF1.jsonl": {
+      "bytes": 499108,
+      "sha256": "1e6a0c2f4e7ee834c71efd21de72ec1a8e92128d5fe9e6ce4ce16cf46dca2a7e"
+    },
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D4_PARENT.jsonl": {
+      "bytes": 29345,
+      "sha256": "beea9c0d29ab1912986ca13e4bc49ce90562e3f096baffb025d92cfc35de1fcf"
+    },
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D4_SF1.jsonl": {
+      "bytes": 28793,
+      "sha256": "21680ef85378f2a1cf3b219238195f8802ffe80c4e0b76d1e881affcb3f1fa08"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\PROTOCOL.json": {
+      "bytes": 6813,
+      "sha256": "5c236478bb7370f514745bcc32463f4e0c860e25f65bbfffa2ceed1d6ccd785f"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\TRAIN.json": {
+      "bytes": 15647,
+      "sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\data\\ENGLISH_DEV.jsonl": {
+      "bytes": 3310121,
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\sources\\hr3_block3_runtime.py": {
+      "bytes": 11732,
+      "sha256": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\sources\\treatment13_model.py": {
+      "bytes": 5995,
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\update0_checks.json": {
+      "bytes": 111458,
+      "sha256": "76dacfe7e48db760d29ac3b7ddc00ce81701e5a76e82ffad3ce9007181676c67"
+    },
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\update100_checks.json": {
+      "bytes": 111457,
+      "sha256": "34757f29c45761870af1487ca62b47d072739df646b5182a63f3b552fa8f6111"
+    },
+    "C:\\DaveLM-v0.9\\v0_2_1\\model.py": {
+      "bytes": 1885,
+      "sha256": "29369e640298cb22cbdacbb826f908451ff58a5724544ed823d6e0938b51491e"
+    },
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": {
+      "bytes": 5576,
+      "sha256": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283"
+    },
+    "C:\\DaveLM-v0.9\\v0_8_2\\model.py": {
+      "bytes": 2574,
+      "sha256": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d"
+    }
+  },
+  "optimizer_created": false,
+  "runtime": {
+    "cuda": true,
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "weights_saved_or_mutated": false
+}

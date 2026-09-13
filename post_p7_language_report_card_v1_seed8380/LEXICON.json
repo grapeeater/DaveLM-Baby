@@ -1,0 +1,217 @@
+{
+  "actions": [
+    "found",
+    "saw",
+    "carried",
+    "played with",
+    "looked for",
+    "opened",
+    "shared",
+    "saved"
+  ],
+  "colors": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+  ],
+  "names": [
+    "Ben",
+    "Sam",
+    "Tim",
+    "Tom"
+  ],
+  "objects": [
+    "ball",
+    "book",
+    "box",
+    "car",
+    "fish",
+    "hat",
+    "kite",
+    "toy"
+  ],
+  "tokenization": {
+    "Ben": {
+      "leading_space_ids": [
+        532,
+        274
+      ],
+      "roundtrip": true
+    },
+    "Sam": {
+      "leading_space_ids": [
+        527,
+        339
+      ],
+      "roundtrip": true
+    },
+    "Tim": {
+      "leading_space_ids": [
+        525,
+        337
+      ],
+      "roundtrip": true
+    },
+    "Tom": {
+      "leading_space_ids": [
+        525,
+        295
+      ],
+      "roundtrip": true
+    },
+    "ball": {
+      "leading_space_ids": [
+        281,
+        452
+      ],
+      "roundtrip": true
+    },
+    "blue": {
+      "leading_space_ids": [
+        281,
+        80,
+        667
+      ],
+      "roundtrip": true
+    },
+    "book": {
+      "leading_space_ids": [
+        281,
+        485
+      ],
+      "roundtrip": true
+    },
+    "box": {
+      "leading_space_ids": [
+        281,
+        83,
+        92
+      ],
+      "roundtrip": true
+    },
+    "car": {
+      "leading_space_ids": [
+        268,
+        285
+      ],
+      "roundtrip": true
+    },
+    "carried": {
+      "leading_space_ids": [
+        268,
+        285,
+        405,
+        278
+      ],
+      "roundtrip": true
+    },
+    "fish": {
+      "leading_space_ids": [
+        291,
+        795
+      ],
+      "roundtrip": true
+    },
+    "found": {
+      "leading_space_ids": [
+        291,
+        421
+      ],
+      "roundtrip": true
+    },
+    "green": {
+      "leading_space_ids": [
+        347,
+        264,
+        274
+      ],
+      "roundtrip": true
+    },
+    "hat": {
+      "leading_space_ids": [
+        356,
+        265
+      ],
+      "roundtrip": true
+    },
+    "kite": {
+      "leading_space_ids": [
+        917,
+        284,
+        73
+      ],
+      "roundtrip": true
+    },
+    "looked for": {
+      "leading_space_ids": [
+        340,
+        485,
+        278,
+        419
+      ],
+      "roundtrip": true
+    },
+    "opened": {
+      "leading_space_ids": [
+        300,
+        84,
+        274,
+        278
+      ],
+      "roundtrip": true
+    },
+    "played with": {
+      "leading_space_ids": [
+        493,
+        624,
+        278,
+        322
+      ],
+      "roundtrip": true
+    },
+    "red": {
+      "leading_space_ids": [
+        279,
+        72
+      ],
+      "roundtrip": true
+    },
+    "saved": {
+      "leading_space_ids": [
+        541,
+        531
+      ],
+      "roundtrip": true
+    },
+    "saw": {
+      "leading_space_ids": [
+        541,
+        91
+      ],
+      "roundtrip": true
+    },
+    "shared": {
+      "leading_space_ids": [
+        373,
+        557
+      ],
+      "roundtrip": true
+    },
+    "toy": {
+      "leading_space_ids": [
+        304,
+        93
+      ],
+      "roundtrip": true
+    },
+    "yellow": {
+      "leading_space_ids": [
+        715,
+        462,
+        479
+      ],
+      "roundtrip": true
+    }
+  }
+}

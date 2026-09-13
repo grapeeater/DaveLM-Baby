@@ -1,0 +1,80 @@
+{
+  "bundle": "human_test_readiness_v2_seed87010",
+  "payload": [
+    {
+      "bytes": 22797,
+      "path": "BUILD_READINESS_V2.py",
+      "sha256": "1d34d873196f26f51f43ea819c57938504055eba15faaaa4ad9755f426a2773d"
+    },
+    {
+      "bytes": 354,
+      "path": "CONSTRUCTION.json",
+      "sha256": "f9a5fca1a4718ee8e26fe6394f7ea46f12597f35931df168522d7253128b61c9"
+    },
+    {
+      "bytes": 6584,
+      "path": "DEV_CONTINUITY.jsonl",
+      "sha256": "f7eafe912eaa7dc4a1f2b1a469dda53b8d12a2dad85183dac8f374fa6829eddd"
+    },
+    {
+      "bytes": 17912,
+      "path": "DEV_FACTS.jsonl",
+      "sha256": "4d074feb74e70e99ce4b98ec35f90448eb3ea73021cb4e0d6c10c59be48574cc"
+    },
+    {
+      "bytes": 5391,
+      "path": "DEV_GENERATION.jsonl",
+      "sha256": "0fe8e604b04ce0275549d25578ce6acf47e48966ec00187a2b649b478633218a"
+    },
+    {
+      "bytes": 5859,
+      "path": "DEV_INSTRUCTIONS.jsonl",
+      "sha256": "06760c86216738a6da09090d8a65c10692f35ebc32682d5b037891977fde6127"
+    },
+    {
+      "bytes": 35746,
+      "path": "DEV_ITEMS.jsonl",
+      "sha256": "0e98bd3ed855437194bb58b2f6cec321c4061290391614ff88c891070b63db94"
+    },
+    {
+      "bytes": 697,
+      "path": "ERRATUM.md",
+      "sha256": "92cbc30c2d0b0ebd317bd3c1df0bf3fc8e7744f4c788967b669ea808246a1dee"
+    },
+    {
+      "bytes": 950,
+      "path": "HUMAN_REVIEW_RUBRIC.md",
+      "sha256": "ecc27376a0c3dca0c795c643cdb6d945eae232af8ff33bf3894cb87bc035db39"
+    },
+    {
+      "bytes": 747,
+      "path": "INDEPENDENT_VALIDATION.json",
+      "sha256": "16d9947a61e277f2e0f2d25e731018a7918fd7c94835325295932080a803b621"
+    },
+    {
+      "bytes": 8151,
+      "path": "INDEPENDENT_VALIDATOR.py",
+      "sha256": "6173987078da4ef7a659c17f80322ecf2d1610a43ee3839bef50628f9fca0f30"
+    },
+    {
+      "bytes": 566,
+      "path": "LEXICON.json",
+      "sha256": "21db8a226e5ee4d66ff6852437e9d95f32d181f505e20ea30845be345a027432"
+    },
+    {
+      "bytes": 2965,
+      "path": "OVERLAP_AUDIT.json",
+      "sha256": "7825257244b565395259d1cad555dc87b9e167272e52402d3d7d30efb80f8b52"
+    },
+    {
+      "bytes": 681,
+      "path": "PREFLIGHT.json",
+      "sha256": "b512a68afff71b07ed6bc939e13f18e7b46471944a057ad3ca3272d630aff61c"
+    },
+    {
+      "bytes": 2334,
+      "path": "PROTOCOL.md",
+      "sha256": "6b82d2a75255e78092930d0d70a6c0b08df1fa7502a4dc8b0ba0bfe2cea211d5"
+    }
+  ]
+}

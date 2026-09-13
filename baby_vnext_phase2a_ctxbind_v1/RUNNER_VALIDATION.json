@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": {
+    "trainable": 60536064,
+    "frozen": 984321
+  },
+  "scope_ok": true,
+  "qa_dev_items": 640,
+  "qa_test_items": 320,
+  "audit_dev": 120,
+  "audit_test": 60,
+  "train_items": 9528,
+  "L_Q": 105,
+  "lang_dev_stream_tokens": 390340,
+  "rehearsal_stream_tokens": 8354565,
+  "optimizer_created": false,
+  "training_performed": false
+}

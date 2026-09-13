@@ -1,0 +1,11162 @@
+[
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 37,
+    "fact_order": 0,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a0:q0:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the red ball. Max has the blue book. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF00_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 37,
+    "fact_order": 1,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a0:q0:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the blue book. Sara has the red ball. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF00_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a0:q1:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the red ball. Max has the blue book. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF00_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a0:q1:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the blue book. Sara has the red ball. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF00_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 37,
+    "fact_order": 0,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a1:q0:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the red ball. Sara has the blue book. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF00_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 37,
+    "fact_order": 1,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a1:q0:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the blue book. Max has the red ball. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF00_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a1:q1:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the red ball. Sara has the blue book. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF00_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF00_active",
+    "id": "CF00_active:a1:q1:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the blue book. Max has the red ball. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF00_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 37,
+    "fact_order": 0,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a0:q0:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red ball is with Sara. The blue book is with Max. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF00_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 37,
+    "fact_order": 1,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a0:q0:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue book is with Max. The red ball is with Sara. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF00_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a0:q1:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red ball is with Sara. The blue book is with Max. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF00_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a0:q1:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue book is with Max. The red ball is with Sara. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF00_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 37,
+    "fact_order": 0,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a1:q0:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red ball is with Max. The blue book is with Sara. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF00_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 1,
+    "correct_name": "Max",
+    "decision_position": 37,
+    "fact_order": 1,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a1:q0:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue book is with Sara. The red ball is with Max. Who has the red ball? Answer:",
+    "prompt_len": 38,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF00_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a1:q1:o0",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red ball is with Max. The blue book is with Sara. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF00_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        925,
+        69,
+        92,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Max"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF00_passive",
+    "id": "CF00_passive:a1:q1:o1",
+    "names": [
+      "Sara",
+      "Max"
+    ],
+    "objects": [
+      "red ball",
+      "blue book"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue book is with Sara. The red ball is with Max. Who has the blue book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      485,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF00_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a0:q0:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the green kite. Ruth has the yellow hat. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF01_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a0:q0:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the yellow hat. Walt has the green kite. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF01_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a0:q1:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the green kite. Ruth has the yellow hat. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF01_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a0:q1:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the yellow hat. Walt has the green kite. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF01_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a1:q0:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the green kite. Walt has the yellow hat. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF01_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a1:q0:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the yellow hat. Ruth has the green kite. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF01_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a1:q1:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the green kite. Walt has the yellow hat. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF01_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF01_active",
+    "id": "CF01_active:a1:q1:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the yellow hat. Ruth has the green kite. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF01_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a0:q0:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green kite is with Walt. The yellow hat is with Ruth. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF01_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a0:q0:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow hat is with Ruth. The green kite is with Walt. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF01_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a0:q1:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green kite is with Walt. The yellow hat is with Ruth. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF01_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a0:q1:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow hat is with Ruth. The green kite is with Walt. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF01_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a1:q0:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green kite is with Ruth. The yellow hat is with Walt. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF01_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a1:q0:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow hat is with Walt. The green kite is with Ruth. Who has the green kite? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF01_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a1:q1:o0",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green kite is with Ruth. The yellow hat is with Walt. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF01_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        679,
+        293,
+        88,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Walt",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Walt",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF01_passive",
+    "id": "CF01_passive:a1:q1:o1",
+    "names": [
+      "Walt",
+      "Ruth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow hat"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow hat is with Walt. The green kite is with Ruth. Who has the yellow hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      356,
+      265,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF01_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a0:q0:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the red box. Iris has the blue car. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF02_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a0:q0:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the blue car. Finn has the red box. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF02_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a0:q1:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the red box. Iris has the blue car. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF02_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a0:q1:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the blue car. Finn has the red box. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF02_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a1:q0:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the red box. Finn has the blue car. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF02_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a1:q0:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the blue car. Iris has the red box. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF02_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a1:q1:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the red box. Finn has the blue car. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF02_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_active",
+    "id": "CF02_active:a1:q1:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the blue car. Iris has the red box. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF02_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a0:q0:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red box is with Finn. The blue car is with Iris. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF02_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a0:q0:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue car is with Iris. The red box is with Finn. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF02_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a0:q1:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red box is with Finn. The blue car is with Iris. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF02_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a0:q1:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue car is with Iris. The red box is with Finn. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF02_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a1:q0:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red box is with Iris. The blue car is with Finn. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF02_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 1,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a1:q0:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue car is with Finn. The red box is with Iris. Who has the red box? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF02_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a1:q1:o0",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red box is with Iris. The blue car is with Finn. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF02_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        459,
+        86,
+        294,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Iris"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF02_passive",
+    "id": "CF02_passive:a1:q1:o1",
+    "names": [
+      "Finn",
+      "Iris"
+    ],
+    "objects": [
+      "red box",
+      "blue car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue car is with Finn. The red box is with Iris. Who has the blue car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      268,
+      285,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      279,
+      72,
+      281,
+      83,
+      92,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF02_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a0:q0:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the green book. Nina has the yellow ball. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF03_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a0:q0:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the yellow ball. Maya has the green book. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF03_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a0:q1:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the green book. Nina has the yellow ball. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF03_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a0:q1:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the yellow ball. Maya has the green book. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF03_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a1:q0:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the green book. Maya has the yellow ball. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF03_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a1:q0:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the yellow ball. Nina has the green book. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF03_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a1:q1:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the green book. Maya has the yellow ball. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF03_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_active",
+    "id": "CF03_active:a1:q1:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the yellow ball. Nina has the green book. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF03_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a0:q0:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green book is with Maya. The yellow ball is with Nina. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF03_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a0:q0:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow ball is with Nina. The green book is with Maya. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF03_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a0:q1:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green book is with Maya. The yellow ball is with Nina. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF03_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a0:q1:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow ball is with Nina. The green book is with Maya. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF03_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a1:q0:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green book is with Nina. The yellow ball is with Maya. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF03_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a1:q0:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow ball is with Maya. The green book is with Nina. Who has the green book? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF03_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a1:q1:o0",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green book is with Nina. The yellow ball is with Maya. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF03_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        624,
+        69,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Maya",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Maya",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF03_passive",
+    "id": "CF03_passive:a1:q1:o1",
+    "names": [
+      "Maya",
+      "Nina"
+    ],
+    "objects": [
+      "green book",
+      "yellow ball"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow ball is with Maya. The green book is with Nina. Who has the yellow ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      452,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      485,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF03_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a0:q0:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the yellow car. Walt has the red kite. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF04_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a0:q0:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the red kite. Sara has the yellow car. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF04_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a0:q1:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the yellow car. Walt has the red kite. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF04_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a0:q1:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the red kite. Sara has the yellow car. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF04_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a1:q0:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the yellow car. Sara has the red kite. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF04_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a1:q0:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the red kite. Walt has the yellow car. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF04_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a1:q1:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Walt has the yellow car. Sara has the red kite. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      59,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      527,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF04_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_active",
+    "id": "CF04_active:a1:q1:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Sara has the red kite. Walt has the yellow car. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      55,
+      285,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      18,
+      679,
+      293,
+      88,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF04_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a0:q0:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow car is with Sara. The red kite is with Walt. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF04_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a0:q0:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red kite is with Walt. The yellow car is with Sara. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF04_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a0:q1:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow car is with Sara. The red kite is with Walt. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF04_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a0:q1:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red kite is with Walt. The yellow car is with Sara. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF04_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a1:q0:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow car is with Walt. The red kite is with Sara. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF04_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 1,
+    "correct_name": "Walt",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a1:q0:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red kite is with Sara. The yellow car is with Walt. Who has the yellow car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF04_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a1:q1:o0",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow car is with Walt. The red kite is with Sara. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      312,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF04_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        527,
+        285,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "candidates": [
+      "Sara",
+      "Walt"
+    ],
+    "correct_index": 0,
+    "correct_name": "Sara",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF04_passive",
+    "id": "CF04_passive:a1:q1:o1",
+    "names": [
+      "Sara",
+      "Walt"
+    ],
+    "objects": [
+      "yellow car",
+      "red kite"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red kite is with Sara. The yellow car is with Walt. Who has the red kite? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      285,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      268,
+      285,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF04_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a0:q0:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the blue hat. Ruth has the green box. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF05_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a0:q0:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the green box. Max has the blue hat. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF05_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a0:q1:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the blue hat. Ruth has the green box. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF05_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a0:q1:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the green box. Max has the blue hat. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF05_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a1:q0:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the blue hat. Max has the green box. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF05_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a1:q0:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the green box. Ruth has the blue hat. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF05_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a1:q1:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Ruth has the blue hat. Max has the green box. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      54,
+      324,
+      76,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      925,
+      69,
+      92,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF05_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF05_active",
+    "id": "CF05_active:a1:q1:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Max has the green box. Ruth has the blue hat. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      49,
+      69,
+      92,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      1019,
+      324,
+      76,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF05_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a0:q0:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue hat is with Max. The green box is with Ruth. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF05_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a0:q0:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green box is with Ruth. The blue hat is with Max. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF05_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a0:q1:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue hat is with Max. The green box is with Ruth. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF05_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a0:q1:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green box is with Ruth. The blue hat is with Max. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF05_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a1:q0:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue hat is with Ruth. The green box is with Max. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF05_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 1,
+    "correct_name": "Ruth",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a1:q0:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green box is with Max. The blue hat is with Ruth. Who has the blue hat? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF05_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 41,
+    "fact_order": 0,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a1:q1:o0",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue hat is with Ruth. The green box is with Max. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF05_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        925,
+        69,
+        92,
+        18
+      ],
+      [
+        1019,
+        324,
+        76,
+        18
+      ]
+    ],
+    "candidates": [
+      "Max",
+      "Ruth"
+    ],
+    "correct_index": 0,
+    "correct_name": "Max",
+    "decision_position": 41,
+    "fact_order": 1,
+    "family_id": "CF05_passive",
+    "id": "CF05_passive:a1:q1:o1",
+    "names": [
+      "Max",
+      "Ruth"
+    ],
+    "objects": [
+      "blue hat",
+      "green box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green box is with Max. The blue hat is with Ruth. Who has the green box? Answer:",
+    "prompt_len": 42,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      69,
+      92,
+      18,
+      312,
+      281,
+      80,
+      667,
+      356,
+      265,
+      336,
+      322,
+      1019,
+      324,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF05_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a0:q0:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the red book. Maya has the yellow box. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF06_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a0:q0:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the yellow box. Finn has the red book. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF06_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a0:q1:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the red book. Maya has the yellow box. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF06_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a0:q1:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the yellow box. Finn has the red book. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF06_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a1:q0:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the red book. Finn has the yellow box. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF06_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a1:q0:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the yellow box. Maya has the red book. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF06_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a1:q1:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Maya has the red book. Finn has the yellow box. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      49,
+      624,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      508,
+      267,
+      82,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF06_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF06_active",
+    "id": "CF06_active:a1:q1:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Finn has the yellow box. Maya has the red book. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      42,
+      267,
+      82,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      18,
+      925,
+      624,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF06_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a0:q0:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red book is with Finn. The yellow box is with Maya. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF06_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a0:q0:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow box is with Maya. The red book is with Finn. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF06_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a0:q1:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red book is with Finn. The yellow box is with Maya. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF06_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a0:q1:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow box is with Maya. The red book is with Finn. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF06_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 38,
+    "fact_order": 0,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a1:q0:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red book is with Maya. The yellow box is with Finn. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF06_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 1,
+    "correct_name": "Maya",
+    "decision_position": 38,
+    "fact_order": 1,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a1:q0:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow box is with Finn. The red book is with Maya. Who has the red book? Answer:",
+    "prompt_len": 39,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF06_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 40,
+    "fact_order": 0,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a1:q1:o0",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The red book is with Maya. The yellow box is with Finn. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      312,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF06_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        508,
+        267,
+        82,
+        18
+      ],
+      [
+        925,
+        624,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Finn",
+      "Maya"
+    ],
+    "correct_index": 0,
+    "correct_name": "Finn",
+    "decision_position": 40,
+    "fact_order": 1,
+    "family_id": "CF06_passive",
+    "id": "CF06_passive:a1:q1:o1",
+    "names": [
+      "Finn",
+      "Maya"
+    ],
+    "objects": [
+      "red book",
+      "yellow box"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The yellow box is with Finn. The red book is with Maya. Who has the yellow box? Answer:",
+    "prompt_len": 41,
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      336,
+      322,
+      508,
+      267,
+      82,
+      18,
+      312,
+      279,
+      72,
+      281,
+      485,
+      336,
+      322,
+      925,
+      624,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF06_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a0:q0:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the blue ball. Nina has the green car. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF07_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a0:q0:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the green car. Iris has the blue ball. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF07_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a0:q1:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the blue ball. Nina has the green car. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF07_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a0:q1:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the green car. Iris has the blue ball. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF07_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a1:q0:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the blue ball. Iris has the green car. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF07_active:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a1:q0:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the green car. Nina has the blue ball. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "active",
+    "twin_id": "CF07_active:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a1:q1:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Nina has the blue ball. Iris has the green car. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      50,
+      267,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      459,
+      86,
+      294,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF07_active:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_active",
+    "id": "CF07_active:a1:q1:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "Iris has the green car. Nina has the blue ball. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      45,
+      86,
+      294,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      18,
+      512,
+      267,
+      69,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "active",
+    "twin_id": "CF07_active:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a0:q0:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue ball is with Iris. The green car is with Nina. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF07_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a0:q0:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green car is with Nina. The blue ball is with Iris. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF07_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a0:q1:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue ball is with Iris. The green car is with Nina. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF07_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 0,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a0:q1:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green car is with Nina. The blue ball is with Iris. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF07_passive:q1:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a1:q0:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue ball is with Nina. The green car is with Iris. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF07_passive:q0:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 1,
+    "correct_name": "Nina",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a1:q0:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green car is with Iris. The blue ball is with Nina. Who has the blue ball? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      281,
+      80,
+      667,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 0,
+    "template": "passive",
+    "twin_id": "CF07_passive:q0:o1"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 0,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a1:q1:o0",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The blue ball is with Nina. The green car is with Iris. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF07_passive:q1:o0"
+  },
+  {
+    "answer_len": [
+      4,
+      4
+    ],
+    "assignment": 1,
+    "candidate_token_ids": [
+      [
+        459,
+        86,
+        294,
+        18
+      ],
+      [
+        512,
+        267,
+        69,
+        18
+      ]
+    ],
+    "candidates": [
+      "Iris",
+      "Nina"
+    ],
+    "correct_index": 0,
+    "correct_name": "Iris",
+    "decision_position": 39,
+    "fact_order": 1,
+    "family_id": "CF07_passive",
+    "id": "CF07_passive:a1:q1:o1",
+    "names": [
+      "Iris",
+      "Nina"
+    ],
+    "objects": [
+      "blue ball",
+      "green car"
+    ],
+    "pair_role": "assignment_twin",
+    "prompt": "The green car is with Iris. The blue ball is with Nina. Who has the green car? Answer:",
+    "prompt_len": 40,
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      268,
+      285,
+      336,
+      322,
+      459,
+      86,
+      294,
+      18,
+      312,
+      281,
+      80,
+      667,
+      281,
+      452,
+      336,
+      322,
+      512,
+      267,
+      69,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      268,
+      285,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "query_index": 1,
+    "template": "passive",
+    "twin_id": "CF07_passive:q1:o1"
+  }
+]

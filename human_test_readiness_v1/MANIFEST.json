@@ -1,0 +1,17 @@
+[
+  {
+    "file": "DEV_ITEMS.jsonl",
+    "sha256": "f42780d57f2f16d8a08086d76ea513cebc41c977ef0623667260f95cfaaec3ee",
+    "bytes": 3028
+  },
+  {
+    "file": "FINAL_ITEMS.jsonl",
+    "sha256": "02bccff7e09a2c926e2377d9d2acb544897c55163f35302999fa0aef8abc3b2c",
+    "bytes": 853
+  },
+  {
+    "file": "PROTOCOL.md",
+    "sha256": "7dcce1a8dfd7c8a580388c2ca8e714ceeec2164b9ebd6146ef5bd9db2a876a42",
+    "bytes": 1167
+  }
+]

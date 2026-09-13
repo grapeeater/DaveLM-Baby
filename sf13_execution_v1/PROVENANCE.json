@@ -1,0 +1,10 @@
+{
+  "purpose": "Mechanical sequential launcher and execution ledger for sealed SF13",
+  "scientific_logic": false,
+  "sealed_study": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1",
+  "runtime": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+  "seeds": [87032, 87033, 87034],
+  "controller_arguments": ["--arm", "curriculum", "--mode", "train"],
+  "retry_policy": "none",
+  "final_or_sacred_access": false
+}

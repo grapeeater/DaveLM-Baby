@@ -1,0 +1,3730 @@
+{
+  "eligible_count": 30,
+  "eligible_ranked": [
+    {
+      "candidate_with_period_ids": [
+        527,
+        285,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        285,
+        69
+      ],
+      "name": "Sara",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        285,
+        69
+      ],
+      "train_occurrences": 1086,
+      "train_stories": 134
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        83,
+        70,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        83,
+        70
+      ],
+      "name": "Bob",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        83,
+        70
+      ],
+      "train_occurrences": 644,
+      "train_stories": 100
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        316,
+        362,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        316,
+        362
+      ],
+      "name": "Billy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        316,
+        362
+      ],
+      "train_occurrences": 446,
+      "train_stories": 81
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        266,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        266,
+        93
+      ],
+      "name": "Tony",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        266,
+        93
+      ],
+      "train_occurrences": 72,
+      "train_stories": 12
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        264,
+        72,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        508,
+        264,
+        72
+      ],
+      "name": "Fred",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        264,
+        72
+      ],
+      "train_occurrences": 54,
+      "train_stories": 11
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        267,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        267,
+        69
+      ],
+      "name": "Tina",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        267,
+        69
+      ],
+      "train_occurrences": 58,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        474,
+        403,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        474,
+        403
+      ],
+      "name": "Steve",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        474,
+        403
+      ],
+      "train_occurrences": 51,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        297,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        297,
+        275
+      ],
+      "name": "Susan",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        297,
+        275
+      ],
+      "train_occurrences": 18,
+      "train_stories": 4
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        438,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        438,
+        93
+      ],
+      "name": "Remy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        438,
+        93
+      ],
+      "train_occurrences": 25,
+      "train_stories": 3
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        293,
+        703,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        293,
+        703
+      ],
+      "name": "Ralph",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        293,
+        703
+      ],
+      "train_occurrences": 14,
+      "train_stories": 3
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        352,
+        267,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        352,
+        267
+      ],
+      "name": "Colin",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        352,
+        267
+      ],
+      "train_occurrences": 17,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        624,
+        73,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        508,
+        624,
+        73
+      ],
+      "name": "Faye",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        624,
+        73
+      ],
+      "train_occurrences": 16,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        285,
+        80,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        285,
+        80
+      ],
+      "name": "Carl",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        285,
+        80
+      ],
+      "train_occurrences": 15,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        679,
+        560,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        679,
+        560,
+        93
+      ],
+      "name": "Wendy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        59,
+        560,
+        93
+      ],
+      "train_occurrences": 12,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        820,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        820,
+        93
+      ],
+      "name": "Cathy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        820,
+        93
+      ],
+      "train_occurrences": 11,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        285,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        285,
+        69
+      ],
+      "name": "Tara",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        285,
+        69
+      ],
+      "train_occurrences": 11,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        310,
+        76,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        310,
+        76
+      ],
+      "name": "Beth",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        310,
+        76
+      ],
+      "train_occurrences": 8,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        282,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        508,
+        282,
+        69
+      ],
+      "name": "Fiona",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        282,
+        69
+      ],
+      "train_occurrences": 9,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        324,
+        76,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        324,
+        76
+      ],
+      "name": "Ruth",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        324,
+        76
+      ],
+      "train_occurrences": 8,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        76,
+        348,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        76,
+        348
+      ],
+      "name": "Chad",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        76,
+        348
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        69,
+        463,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        69,
+        463
+      ],
+      "name": "Ravi",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        69,
+        463
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        321,
+        79,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        321,
+        79
+      ],
+      "name": "Rick",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        321,
+        79
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        468,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        468,
+        93
+      ],
+      "name": "Riley",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        468,
+        93
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        284,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        284,
+        69
+      ],
+      "name": "Rita",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        284,
+        69
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        80,
+        366,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        80,
+        366
+      ],
+      "name": "Clare",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        80,
+        366
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        73,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        73,
+        275
+      ],
+      "name": "Sean",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        73,
+        275
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        679,
+        316,
+        479,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        679,
+        316,
+        479
+      ],
+      "name": "Willow",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        59,
+        316,
+        479
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        405,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        405,
+        275
+      ],
+      "name": "Brian",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        405,
+        275
+      ],
+      "train_occurrences": 5,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        93,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        93,
+        275
+      ],
+      "name": "Ryan",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        93,
+        275
+      ],
+      "train_occurrences": 5,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        316,
+        362,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        316,
+        362
+      ],
+      "name": "Tilly",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        316,
+        362
+      ],
+      "train_occurrences": 5,
+      "train_stories": 1
+    }
+  ],
+  "full_reference_census": [
+    {
+      "candidate_with_period_ids": [
+        314,
+        72,
+        339,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        314,
+        72,
+        339
+      ],
+      "name": "Adam",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        37,
+        72,
+        339
+      ],
+      "train_occurrences": 22,
+      "train_stories": 4
+    },
+    {
+      "candidate_with_period_ids": [
+        314,
+        311,
+        306,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        314,
+        311,
+        306
+      ],
+      "name": "Alice",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        37,
+        311,
+        306
+      ],
+      "train_occurrences": 130,
+      "train_stories": 23
+    },
+    {
+      "candidate_with_period_ids": [
+        314,
+        81,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        314,
+        81,
+        93
+      ],
+      "name": "Amy",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        37,
+        81,
+        93
+      ],
+      "train_occurrences": 441,
+      "train_stories": 68
+    },
+    {
+      "candidate_with_period_ids": [
+        314,
+        90,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        314,
+        90,
+        69
+      ],
+      "name": "Ava",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        37,
+        90,
+        69
+      ],
+      "train_occurrences": 0,
+      "train_stories": 0
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        274,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        532,
+        274
+      ],
+      "name": "Ben",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        274
+      ],
+      "train_occurrences": 4168,
+      "train_stories": 546
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        310,
+        76,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        310,
+        76
+      ],
+      "name": "Beth",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        310,
+        76
+      ],
+      "train_occurrences": 8,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        316,
+        362,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        316,
+        362
+      ],
+      "name": "Billy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        316,
+        362
+      ],
+      "train_occurrences": 446,
+      "train_stories": 81
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        83,
+        70,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        83,
+        70
+      ],
+      "name": "Bob",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        83,
+        70
+      ],
+      "train_occurrences": 644,
+      "train_stories": 100
+    },
+    {
+      "candidate_with_period_ids": [
+        532,
+        405,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        532,
+        405,
+        275
+      ],
+      "name": "Brian",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        38,
+        405,
+        275
+      ],
+      "train_occurrences": 5,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        285,
+        80,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        285,
+        80
+      ],
+      "name": "Carl",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        285,
+        80
+      ],
+      "train_occurrences": 15,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        820,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        820,
+        93
+      ],
+      "name": "Cathy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        820,
+        93
+      ],
+      "train_occurrences": 11,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        76,
+        348,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        76,
+        348
+      ],
+      "name": "Chad",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        76,
+        348
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        76,
+        285,
+        311,
+        73,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        5,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        651,
+        76,
+        285,
+        311,
+        73
+      ],
+      "name": "Charlie",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        76,
+        285,
+        311,
+        73
+      ],
+      "train_occurrences": 48,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        76,
+        80,
+        83,
+        73,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        5,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        651,
+        76,
+        80,
+        83,
+        73
+      ],
+      "name": "Chloe",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        76,
+        80,
+        83,
+        73
+      ],
+      "train_occurrences": 14,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        80,
+        366,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        80,
+        366
+      ],
+      "name": "Clare",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        80,
+        366
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        651,
+        352,
+        267,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        651,
+        352,
+        267
+      ],
+      "name": "Colin",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        39,
+        352,
+        267
+      ],
+      "train_occurrences": 17,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        40,
+        275,
+        77,
+        462,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        40,
+        275,
+        77,
+        462
+      ],
+      "name": "Daniel",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        40,
+        275,
+        77,
+        462
+      ],
+      "train_occurrences": 4,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        40,
+        69,
+        90,
+        296,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        40,
+        69,
+        90,
+        296
+      ],
+      "name": "David",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        40,
+        69,
+        90,
+        296
+      ],
+      "train_occurrences": 45,
+      "train_stories": 7
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        41,
+        80,
+        80,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        41,
+        80,
+        80,
+        69
+      ],
+      "name": "Ella",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        41,
+        80,
+        80,
+        69
+      ],
+      "train_occurrences": 101,
+      "train_stories": 14
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        41,
+        81,
+        81,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        41,
+        81,
+        81,
+        69
+      ],
+      "name": "Emma",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        41,
+        81,
+        81,
+        69
+      ],
+      "train_occurrences": 215,
+      "train_stories": 41
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        41,
+        81,
+        316,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        41,
+        81,
+        316,
+        93
+      ],
+      "name": "Emily",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        41,
+        81,
+        316,
+        93
+      ],
+      "train_occurrences": 184,
+      "train_stories": 30
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        41,
+        848,
+        275,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        41,
+        848,
+        275
+      ],
+      "name": "Ethan",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        41,
+        848,
+        275
+      ],
+      "train_occurrences": 4,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        41,
+        90,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        41,
+        90,
+        69
+      ],
+      "name": "Eva",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        41,
+        90,
+        69
+      ],
+      "train_occurrences": 11,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        624,
+        73,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        508,
+        624,
+        73
+      ],
+      "name": "Faye",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        624,
+        73
+      ],
+      "train_occurrences": 16,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        282,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        508,
+        282,
+        69
+      ],
+      "name": "Fiona",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        282,
+        69
+      ],
+      "train_occurrences": 9,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        86,
+        275,
+        79,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        508,
+        86,
+        275,
+        79
+      ],
+      "name": "Frank",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        86,
+        275,
+        79
+      ],
+      "train_occurrences": 40,
+      "train_stories": 6
+    },
+    {
+      "candidate_with_period_ids": [
+        508,
+        264,
+        72,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        508,
+        264,
+        72
+      ],
+      "name": "Fred",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        42,
+        264,
+        72
+      ],
+      "train_occurrences": 54,
+      "train_stories": 11
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        43,
+        73,
+        276,
+        75,
+        73,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        5,
+        6,
+        7
+      ],
+      "leading_space_ids": [
+        225,
+        43,
+        73,
+        276,
+        75,
+        73
+      ],
+      "name": "George",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        43,
+        73,
+        276,
+        75,
+        73
+      ],
+      "train_occurrences": 64,
+      "train_stories": 11
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        43,
+        360,
+        306,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        43,
+        360,
+        306
+      ],
+      "name": "Grace",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        43,
+        360,
+        306
+      ],
+      "train_occurrences": 23,
+      "train_stories": 5
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        44,
+        285,
+        86,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        44,
+        285,
+        86,
+        93
+      ],
+      "name": "Harry",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        44,
+        285,
+        86,
+        93
+      ],
+      "train_occurrences": 57,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        44,
+        274,
+        86,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        44,
+        274,
+        86,
+        93
+      ],
+      "name": "Henry",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        44,
+        274,
+        86,
+        93
+      ],
+      "train_occurrences": 46,
+      "train_stories": 6
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        46,
+        550,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        2,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        225,
+        46,
+        550
+      ],
+      "name": "Jack",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        46,
+        550
+      ],
+      "train_occurrences": 1613,
+      "train_stories": 268
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        46,
+        69,
+        71,
+        83,
+        70,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        5,
+        6,
+        7
+      ],
+      "leading_space_ids": [
+        225,
+        46,
+        69,
+        71,
+        83,
+        70
+      ],
+      "name": "Jacob",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        46,
+        69,
+        71,
+        83,
+        70
+      ],
+      "train_occurrences": 16,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        46,
+        339,
+        273,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        46,
+        339,
+        273
+      ],
+      "name": "James",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        46,
+        339,
+        273
+      ],
+      "train_occurrences": 14,
+      "train_stories": 4
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        46,
+        275,
+        73,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        46,
+        275,
+        73
+      ],
+      "name": "Jane",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        46,
+        275,
+        73
+      ],
+      "train_occurrences": 640,
+      "train_stories": 100
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        46,
+        83,
+        76,
+        82,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        46,
+        83,
+        76,
+        82
+      ],
+      "name": "John",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        46,
+        83,
+        76,
+        82
+      ],
+      "train_occurrences": 986,
+      "train_stories": 174
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        46,
+        89,
+        311,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        46,
+        89,
+        311,
+        69
+      ],
+      "name": "Julia",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        46,
+        89,
+        311,
+        69
+      ],
+      "train_occurrences": 8,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        47,
+        369,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        2,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        225,
+        47,
+        369
+      ],
+      "name": "Kate",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        47,
+        369
+      ],
+      "train_occurrences": 34,
+      "train_stories": 8
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        48,
+        750,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        2,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        225,
+        48,
+        750
+      ],
+      "name": "Leo",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        48,
+        750
+      ],
+      "train_occurrences": 100,
+      "train_stories": 14
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        48,
+        77,
+        339,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        48,
+        77,
+        339
+      ],
+      "name": "Liam",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        48,
+        77,
+        339
+      ],
+      "train_occurrences": 4,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        48,
+        316,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        48,
+        316,
+        93
+      ],
+      "name": "Lily",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        48,
+        316,
+        93
+      ],
+      "train_occurrences": 12568,
+      "train_stories": 1889
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        48,
+        89,
+        71,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        225,
+        48,
+        89,
+        71,
+        93
+      ],
+      "name": "Lucy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        48,
+        89,
+        71,
+        93
+      ],
+      "train_occurrences": 856,
+      "train_stories": 148
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        48,
+        89,
+        453,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        48,
+        89,
+        453
+      ],
+      "name": "Luke",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        48,
+        89,
+        453
+      ],
+      "train_occurrences": 15,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        614,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        614,
+        93
+      ],
+      "name": "Mandy",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        614,
+        93
+      ],
+      "train_occurrences": 106,
+      "train_stories": 18
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        285,
+        79,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        285,
+        79
+      ],
+      "name": "Mark",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        285,
+        79
+      ],
+      "train_occurrences": 138,
+      "train_stories": 25
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        454,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        925,
+        454
+      ],
+      "name": "Mary",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        454
+      ],
+      "train_occurrences": 195,
+      "train_stories": 31
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        69,
+        92,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        69,
+        92
+      ],
+      "name": "Max",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        69,
+        92
+      ],
+      "train_occurrences": 2054,
+      "train_stories": 291
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        73,
+        652,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        73,
+        652
+      ],
+      "name": "Megan",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        73,
+        652
+      ],
+      "train_occurrences": 10,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        77,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        77,
+        69
+      ],
+      "name": "Mia",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        77,
+        69
+      ],
+      "train_occurrences": 1190,
+      "train_stories": 167
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        77,
+        453,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        77,
+        453
+      ],
+      "name": "Mike",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        77,
+        453
+      ],
+      "train_occurrences": 54,
+      "train_stories": 9
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        316,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        316,
+        69
+      ],
+      "name": "Mila",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        316,
+        69
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        925,
+        352,
+        362,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        925,
+        352,
+        362
+      ],
+      "name": "Molly",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        49,
+        352,
+        362
+      ],
+      "train_occurrences": 409,
+      "train_stories": 60
+    },
+    {
+      "candidate_with_period_ids": [
+        512,
+        820,
+        275,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        512,
+        820,
+        275
+      ],
+      "name": "Nathan",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        50,
+        820,
+        275
+      ],
+      "train_occurrences": 2,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        563,
+        316,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        3,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        563,
+        316
+      ],
+      "name": "Neil",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        50,
+        73,
+        316
+      ],
+      "train_occurrences": 0,
+      "train_stories": 0
+    },
+    {
+      "candidate_with_period_ids": [
+        512,
+        267,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        512,
+        267,
+        69
+      ],
+      "name": "Nina",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        50,
+        267,
+        69
+      ],
+      "train_occurrences": 51,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        512,
+        276,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        512,
+        276,
+        69
+      ],
+      "name": "Nora",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        50,
+        276,
+        69
+      ],
+      "train_occurrences": 0,
+      "train_stories": 0
+    },
+    {
+      "candidate_with_period_ids": [
+        536,
+        311,
+        430,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        536,
+        311,
+        430
+      ],
+      "name": "Oliver",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        51,
+        311,
+        430
+      ],
+      "train_occurrences": 9,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        536,
+        91,
+        274,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        536,
+        91,
+        274
+      ],
+      "name": "Owen",
+      "original_answer_first_token_collision": true,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        51,
+        91,
+        274
+      ],
+      "train_occurrences": 7,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        52,
+        69,
+        330,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        52,
+        69,
+        330
+      ],
+      "name": "Paul",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        52,
+        69,
+        330
+      ],
+      "train_occurrences": 30,
+      "train_stories": 6
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        52,
+        310,
+        270,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        52,
+        310,
+        270
+      ],
+      "name": "Peter",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        52,
+        310,
+        270
+      ],
+      "train_occurrences": 129,
+      "train_stories": 22
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        293,
+        703,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        293,
+        703
+      ],
+      "name": "Ralph",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        293,
+        703
+      ],
+      "train_occurrences": 14,
+      "train_stories": 3
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        69,
+        463,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        69,
+        463
+      ],
+      "name": "Ravi",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        69,
+        463
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        438,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        438,
+        93
+      ],
+      "name": "Remy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        438,
+        93
+      ],
+      "train_occurrences": 25,
+      "train_stories": 3
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        321,
+        79,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        321,
+        79
+      ],
+      "name": "Rick",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        321,
+        79
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        468,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        468,
+        93
+      ],
+      "name": "Riley",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        468,
+        93
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        284,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        284,
+        69
+      ],
+      "name": "Rita",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        284,
+        69
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        83,
+        70,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        83,
+        70
+      ],
+      "name": "Rob",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        83,
+        70
+      ],
+      "train_occurrences": 3,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        636,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        1019,
+        636
+      ],
+      "name": "Rose",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        636
+      ],
+      "train_occurrences": 73,
+      "train_stories": 12
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        89,
+        70,
+        93,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        1019,
+        89,
+        70,
+        93
+      ],
+      "name": "Ruby",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        89,
+        70,
+        93
+      ],
+      "train_occurrences": 51,
+      "train_stories": 8
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        324,
+        76,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        324,
+        76
+      ],
+      "name": "Ruth",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        324,
+        76
+      ],
+      "train_occurrences": 8,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        1019,
+        93,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        1019,
+        93,
+        275
+      ],
+      "name": "Ryan",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        54,
+        93,
+        275
+      ],
+      "train_occurrences": 5,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        339,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        527,
+        339
+      ],
+      "name": "Sam",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        339
+      ],
+      "train_occurrences": 2136,
+      "train_stories": 313
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        285,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        285,
+        69
+      ],
+      "name": "Sara",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        285,
+        69
+      ],
+      "train_occurrences": 1086,
+      "train_stories": 134
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        285,
+        69,
+        76,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        527,
+        285,
+        69,
+        76
+      ],
+      "name": "Sarah",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        285,
+        69,
+        76
+      ],
+      "train_occurrences": 671,
+      "train_stories": 125
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        73,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        73,
+        275
+      ],
+      "name": "Sean",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        73,
+        275
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        83,
+        703,
+        77,
+        69,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        527,
+        83,
+        703,
+        77,
+        69
+      ],
+      "name": "Sophia",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        879,
+        703,
+        77,
+        69
+      ],
+      "train_occurrences": 10,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        83,
+        703,
+        77,
+        73,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        5,
+        6
+      ],
+      "leading_space_ids": [
+        527,
+        83,
+        703,
+        77,
+        73
+      ],
+      "name": "Sophie",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        879,
+        703,
+        77,
+        73
+      ],
+      "train_occurrences": 89,
+      "train_stories": 14
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        474,
+        403,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        474,
+        403
+      ],
+      "name": "Steve",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        474,
+        403
+      ],
+      "train_occurrences": 51,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        527,
+        297,
+        275,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        527,
+        297,
+        275
+      ],
+      "name": "Susan",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        55,
+        297,
+        275
+      ],
+      "train_occurrences": 18,
+      "train_stories": 4
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        285,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        285,
+        69
+      ],
+      "name": "Tara",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        285,
+        69
+      ],
+      "train_occurrences": 11,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        278,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        525,
+        278
+      ],
+      "name": "Ted",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        278
+      ],
+      "train_occurrences": 41,
+      "train_stories": 5
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        316,
+        362,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        316,
+        362
+      ],
+      "name": "Tilly",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        316,
+        362
+      ],
+      "train_occurrences": 5,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        337,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        525,
+        337
+      ],
+      "name": "Tim",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        337
+      ],
+      "train_occurrences": 2453,
+      "train_stories": 360
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        267,
+        69,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        267,
+        69
+      ],
+      "name": "Tina",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        267,
+        69
+      ],
+      "train_occurrences": 58,
+      "train_stories": 10
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        295,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": true,
+      "geometry": [
+        2,
+        2,
+        3
+      ],
+      "leading_space_ids": [
+        525,
+        295
+      ],
+      "name": "Tom",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        295
+      ],
+      "train_occurrences": 3991,
+      "train_stories": 536
+    },
+    {
+      "candidate_with_period_ids": [
+        525,
+        266,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        525,
+        266,
+        93
+      ],
+      "name": "Tony",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        56,
+        266,
+        93
+      ],
+      "train_occurrences": 72,
+      "train_stories": 12
+    },
+    {
+      "candidate_with_period_ids": [
+        679,
+        560,
+        93,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        679,
+        560,
+        93
+      ],
+      "name": "Wendy",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        59,
+        560,
+        93
+      ],
+      "train_occurrences": 12,
+      "train_stories": 2
+    },
+    {
+      "candidate_with_period_ids": [
+        679,
+        316,
+        311,
+        339,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        4,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        679,
+        316,
+        311,
+        339
+      ],
+      "name": "William",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        59,
+        316,
+        311,
+        339
+      ],
+      "train_occurrences": 7,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        679,
+        316,
+        479,
+        18
+      ],
+      "eligible": true,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        3,
+        4
+      ],
+      "leading_space_ids": [
+        679,
+        316,
+        479
+      ],
+      "name": "Willow",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        59,
+        316,
+        479
+      ],
+      "train_occurrences": 6,
+      "train_stories": 1
+    },
+    {
+      "candidate_with_period_ids": [
+        225,
+        62,
+        83,
+        73,
+        18
+      ],
+      "eligible": false,
+      "forbidden_identity": false,
+      "geometry": [
+        3,
+        4,
+        5
+      ],
+      "leading_space_ids": [
+        225,
+        62,
+        83,
+        73
+      ],
+      "name": "Zoe",
+      "original_answer_first_token_collision": false,
+      "roundtrip": true,
+      "sentence_start_ids": [
+        62,
+        83,
+        73
+      ],
+      "train_occurrences": 39,
+      "train_stories": 6
+    }
+  ],
+  "original_answer_first_token_ids": [
+    314,
+    512,
+    536,
+    925
+  ],
+  "selected": [
+    "Sara",
+    "Bob",
+    "Billy",
+    "Tony",
+    "Fred",
+    "Tina",
+    "Steve",
+    "Susan",
+    "Remy",
+    "Ralph",
+    "Colin",
+    "Faye",
+    "Carl",
+    "Wendy",
+    "Cathy",
+    "Tara"
+  ],
+  "selection_rule": "From a fixed conservative common-given-name list, require exact 3/3/4 roundtrip geometry, >=5 case-sensitive TinyStories TRAIN occurrences, no frozen-lexicon identity collision, and no collision with the four original answer first-token IDs; rank by descending TRAIN story count, then occurrences, then name. Select first 16.",
+  "source": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+  "source_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+}

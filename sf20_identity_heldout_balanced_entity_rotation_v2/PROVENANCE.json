@@ -1,0 +1,146 @@
+{
+  "checkpoint_loaded": false,
+  "copied_payloads": [
+    {
+      "destination": "D3_SELECTION.json",
+      "sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\D3_SELECTION.json"
+    },
+    {
+      "destination": "DEV_ORDER.json",
+      "sha256": "8031e735736925ff76c0ec7e86bcef3376ef3bb676566fbf04eff9770093a717",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\DEV_ORDER.json"
+    },
+    {
+      "destination": "DEV_SURFACE.json",
+      "sha256": "d0677e641204f7e31921d1fe91771e910373fc96877310631ca20a105dd0735a",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\DEV_SURFACE.json"
+    },
+    {
+      "destination": "EXTERNAL_INPUTS.json",
+      "sha256": "0c945c427d7195d6f342b2c73c5c72d615e7a448be24fd36f02bd701e9e38670",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\EXTERNAL_INPUTS.json"
+    },
+    {
+      "destination": "KL_POOL_MANIFEST.json",
+      "sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\KL_POOL_MANIFEST.json"
+    },
+    {
+      "destination": "KL_POOL.json",
+      "sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\KL_POOL.json"
+    },
+    {
+      "destination": "SF13_KL_SCHEDULE.json",
+      "sha256": "aaeb59b44c8683c0564fe487f631158360169a522b9bcd98e98d9cdb342018eb",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\SF13_KL_SCHEDULE.json"
+    },
+    {
+      "destination": "SF2_ENGINE.py",
+      "sha256": "8141234f1f0d6f0dba8f429dfc6923e4bd90743d6d4d238f7ae9a169834cd551",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\SF2_ENGINE.py"
+    },
+    {
+      "destination": "SF2_PROTOCOL.json",
+      "sha256": "9c74f171cffdcf08189191a906ea71854b040d7200a7789d980e9c9a0f26f132",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\SF2_PROTOCOL.json"
+    },
+    {
+      "destination": "TRAIN16_RETENTION.json",
+      "sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\TRAIN16_RETENTION.json"
+    },
+    {
+      "destination": "data/binding_dev_pilot0.json",
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\data\\binding_dev_pilot0.json"
+    },
+    {
+      "destination": "data/binding_dev_pilot1.json",
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\data\\binding_dev_pilot1.json"
+    },
+    {
+      "destination": "data/binding_rehearsal.json",
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\data\\binding_rehearsal.json"
+    },
+    {
+      "destination": "data/ENGLISH_DEV.jsonl",
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\data\\ENGLISH_DEV.jsonl"
+    },
+    {
+      "destination": "sources/hr3_block3_runtime.py",
+      "sha256": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\sources\\hr3_block3_runtime.py"
+    },
+    {
+      "destination": "sources/PINNED_MASKING.py",
+      "sha256": "89a951d7c2058c2e67ce0f02bfc8039920c7a96bcd4053135b636304aefe6c10",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\sources\\PINNED_MASKING.py"
+    },
+    {
+      "destination": "sources/PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\sources\\PINNED_PILOT1_BINDING_IMPLEMENTATION.py"
+    },
+    {
+      "destination": "sources/treatment13_config.py",
+      "sha256": "eb3a87f99ff23011a381dcffc52a530a7a654e7d130fe6d4a6e3c76067949e2e",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\sources\\treatment13_config.py"
+    },
+    {
+      "destination": "sources/treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+      "source": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\sources\\treatment13_model.py"
+    }
+  ],
+  "final_or_sacred_accessed": false,
+  "forbidden_lexicon_sources": [
+    {
+      "identities": [],
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json",
+      "sha256": "6376b5a8612682c17f06a5af80419dc20e1dd02fe539940903c957bb6458cbdd"
+    },
+    {
+      "identities": [
+        "Ben",
+        "Sam",
+        "Tim",
+        "Tom"
+      ],
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\LEXICON.json",
+      "sha256": "44c860dd913dbf58057059f7ab0aec145454688ce38326cb4bdfd0e2f7861a8d"
+    },
+    {
+      "identities": [
+        "Ash",
+        "Cal",
+        "Cam",
+        "Chip",
+        "Cory",
+        "Ike",
+        "Ira",
+        "Ned",
+        "Neil",
+        "Ron",
+        "Sid",
+        "Will"
+      ],
+      "path": "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\LEXICON.json",
+      "sha256": "21db8a226e5ee4d66ff6852437e9d95f32d181f505e20ea30845be345a027432"
+    }
+  ],
+  "model_outputs_used_for_selection": false,
+  "optimizer_created": false,
+  "selection_source": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+  "selection_source_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "sf13_manifest_sha256": "f9a6fbbc08a92f80876bb5666116d274023834909a9cfcbfca78b6dfb7575e71",
+  "sf13_receipt_sha256": "b581fa3d852efb4436495d852a8f2ab883fd1048ece0af944a856aa676348c63",
+  "source_controller_sha256": "e360848014f7cd05a8900f3fcf42f469acbf4928ba44ef7c2cb0d500863dfa05",
+  "study": "SF20_IDENTITY_HELDOUT_BALANCED_ENTITY_ROTATION_V2",
+  "treatment_outcomes_exist": false,
+  "updates": 0
+}

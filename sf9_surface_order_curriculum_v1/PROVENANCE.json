@@ -1,0 +1,28 @@
+{
+  "reused_byte_identical": [
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\SF2_ENGINE.py", "destination": "SF2_ENGINE.py", "sha256": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\SF2_PROTOCOL.json", "destination": "SF2_PROTOCOL.json", "sha256": "7c32745f90ed8c640e35bd480bd5b952b4a1a565da20d0e694f17c4927691420"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\KL_POOL.json", "destination": "KL_POOL.json", "sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\KL_POOL_MANIFEST.json", "destination": "KL_POOL_MANIFEST.json", "sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\D3_SELECTION.json", "destination": "D3_SELECTION.json", "sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\EXTERNAL_INPUTS.json", "destination": "EXTERNAL_INPUTS.json", "sha256": "0df020cdbf21548bee53436c551cd4ee4ade1361b01f714cc015a19176e50d1e"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\data\\binding_dev_pilot0.json", "destination": "data/binding_dev_pilot0.json", "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\data\\binding_dev_pilot1.json", "destination": "data/binding_dev_pilot1.json", "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\data\\binding_rehearsal.json", "destination": "data/binding_rehearsal.json", "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\data\\ENGLISH_DEV.jsonl", "destination": "data/ENGLISH_DEV.jsonl", "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\sources\\hr3_block3_runtime.py", "destination": "sources/hr3_block3_runtime.py", "sha256": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\sources\\PINNED_MASKING.py", "destination": "sources/PINNED_MASKING.py", "sha256": "89a951d7c2058c2e67ce0f02bfc8039920c7a96bcd4053135b636304aefe6c10"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\sources\\PINNED_PILOT1_BINDING_IMPLEMENTATION.py", "destination": "sources/PINNED_PILOT1_BINDING_IMPLEMENTATION.py", "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\sources\\treatment13_config.py", "destination": "sources/treatment13_config.py", "sha256": "eb3a87f99ff23011a381dcffc52a530a7a654e7d130fe6d4a6e3c76067949e2e"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\sources\\treatment13_model.py", "destination": "sources/treatment13_model.py", "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\authority\\SF1_PREFLIGHT.json", "destination": "authority/SF1_PREFLIGHT.json", "sha256": "e5f2606d08b6eaf498a9059971c1acf6833200653948644d290608be74e4609e"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\authority\\SF1_PROTOCOL.json", "destination": "authority/SF1_PROTOCOL.json", "sha256": "5c236478bb7370f514745bcc32463f4e0c860e25f65bbfffa2ceed1d6ccd785f"},
+    {"source": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\authority\\SF1_SOURCE_PROVENANCE.json", "destination": "authority/SF1_SOURCE_PROVENANCE.json", "sha256": "9d2b71f3dfbce3b6f97d6e9dc3d4ce15c8120a4d596749661da0f843f6b4007e"}
+  ],
+  "evidence_hashes_note": "All reused files verified byte-identical to sealed SF8 copies (which are byte-identical to sealed SF6/SF2/SF1). SF8 and the SF8 transfer-evaluation directory remain sealed and unmodified.",
+  "locked_files_not_copied_or_parsed": true,
+  "historical_artifacts_unchanged": true,
+  "sf8_untouched": true,
+  "new_files_this_study": ["PROTOCOL.json", "CONTROLLER.py", "CURRICULUM.py", "TRAIN.json", "SCHEDULE.json", "DEV_SURFACE.json", "DEV_ORDER.json", "TRAIN16_RETENTION.json", "CURRICULUM_MANIFEST.json", "PREFLIGHT.py", "SEAL.py", "LAUNCH.py", "REPORTER.py", "INDEPENDENT_REVIEW.json", "PROVENANCE.json"],
+  "scientific_change_summary": "Curriculum breadth only. Same factual-selection rule, same lambda=0.25/M=1.0 margin, same KL/binding/scope/optimizer, now supervised over 144 items = 16 original TRAIN16 + 64 new surface-form items (cloze/active_qa/passive_cloze/passive_qa) + 64 new competing-order items (order0/order1 x fact/copy) built from NEW objects/verbs disjoint from all frozen panels. Parent = distinct SF8 lambda=0.25 checkpoints (fresh optimizer, fixed seed mapping)."
+}

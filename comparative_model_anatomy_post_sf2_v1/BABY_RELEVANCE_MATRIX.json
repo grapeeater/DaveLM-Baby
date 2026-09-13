@@ -1,0 +1,75 @@
+{
+  "classification_labels": ["DIRECTLY RELEVANT", "PLAUSIBLY RELEVANT", "INTERESTING BUT CURRENTLY IRRELEVANT", "NOT APPLICABLE", "INSUFFICIENT EVIDENCE"],
+  "matrix": [
+    {
+      "mechanism": "Granite muP + power LR scheduler (late-stage decay, non-cosine)",
+      "model": "granite",
+      "classification": "DIRECTLY RELEVANT",
+      "evidence": "Granite 3.0 GitHub: 'maximum update parameterization and a power scheduler' [DOC]. Baby SF2 ran constant LR and swept the boundary monotonically past balance; LR decay is a candidate whose shape family (power vs cosine) is now documented as design choice [LOCAL/DOC].",
+      "baby_analogy_strength": "moderate - schedule family evidence only; pretraining regime vs 200-update fine-tune"
+    },
+    {
+      "mechanism": "Qwen3 staged pretraining (S1/S2/S3) + dedicated 'thinking-mode fusion' SFT stage mixing new and old data",
+      "model": "qwen3",
+      "classification": "DIRECTLY RELEVANT",
+      "evidence": "Qwen3 blog/report: 3 pretraining stages; post-training includes a fusion SFT stage that mixes long-CoT data with ordinary instruction data [DOC].",
+      "baby_analogy_strength": "moderate - supports the replay/mixed-rehearsal family and a 'dedicated mixing stage' structure"
+    },
+    {
+      "mechanism": "LFM2 tempered, decoupled Top-K KD 'that avoids support mismatch'",
+      "model": "lfm2",
+      "classification": "DIRECTLY RELEVANT",
+      "evidence": "LFM2 Technical Report abstract [DOC].",
+      "baby_analogy_strength": "moderate - corroborates SF2's restriction of KL to ordinary positions (avoids factual support mismatch) and flags temperature/top-k as design levers"
+    },
+    {
+      "mechanism": "Qwen3 + LFM2 small-model-from-teacher distillation (family-level)",
+      "model": "qwen3, lfm2",
+      "classification": "PLAUSIBLY RELEVANT",
+      "evidence": "Qwen3 abstract statement [DOC]; LFM2 KD objective [DOC].",
+      "baby_analogy_strength": "weak-to-moderate - cross-model KD differs from Baby's same-model KL-to-own-parent"
+    },
+    {
+      "mechanism": "Granite constant embedding/logit/residual scaling (embedding_scale 12, logit_scale 16, residual_scale 0.22)",
+      "model": "granite",
+      "classification": "PLAUSIBLY RELEVANT (as scale-discipline theme only)",
+      "evidence": "GGUF metadata [LOCAL]; muP context [INF].",
+      "baby_analogy_strength": "weak - a constant multiplicative logit scale is boundary-neutral (monotone); cannot correct a -0.03-nat offset"
+    },
+    {
+      "mechanism": "Qwen3/LFM2 per-head QK-norm; LFM2 token-embedding norm",
+      "model": "qwen3, lfm2",
+      "classification": "INTERESTING BUT CURRENTLY IRRELEVANT",
+      "evidence": "GGUF tensor inventories show attn_q_norm/attn_k_norm (and LFM2 token_embd_norm) [LOCAL].",
+      "baby_analogy_strength": "weak - addresses attention/activation stability; SF2 residual is an output-layer boundary offset, not an attention spike"
+    },
+    {
+      "mechanism": "Granite 2-stage data mixture; LFM2 curriculum difficulty-ordered data",
+      "model": "granite, lfm2",
+      "classification": "INTERESTING BUT CURRENTLY IRRELEVANT (for the specific residual)",
+      "evidence": "Granite GitHub [DOC]; LFM2 report abstract [DOC].",
+      "baby_analogy_strength": "weak - all 16 SF2 items co-exposed equally; no difficulty-ordering evidence implicated"
+    },
+    {
+      "mechanism": "Tied vs untied embeddings",
+      "model": "granite (tied), qwen3-8B (untied), lfm2 (appears tied)",
+      "classification": "NOT APPLICABLE",
+      "evidence": "Granite card 'shared input/output embeddings' [DOC]; Qwen3 blog table (8B untied, <=4B tied) [DOC]; LFM2 GGUF (no separate output.weight) [LOCAL].",
+      "baby_analogy_strength": "none - no cross-model consensus; tie choice flips within one family by scale"
+    },
+    {
+      "mechanism": "LFM2 length-normalized preference optimization / model merging (post-training)",
+      "model": "lfm2",
+      "classification": "NOT APPLICABLE",
+      "evidence": "LFM2 report abstract [DOC].",
+      "baby_analogy_strength": "none - alignment-stage techniques unrelated to a 2-class factual boundary"
+    },
+    {
+      "mechanism": "Exact optimizer/peak-LR/warmup/decay values for Qwen3 and LFM2; Granite numeric schedule",
+      "model": "qwen3, lfm2, granite",
+      "classification": "INSUFFICIENT EVIDENCE",
+      "evidence": "Not disclosed in the primary sources consulted (marked UNKNOWN in per-model docs).",
+      "baby_analogy_strength": "n/a - cannot transfer undisclosed hyperparameters"
+    }
+  ]
+}

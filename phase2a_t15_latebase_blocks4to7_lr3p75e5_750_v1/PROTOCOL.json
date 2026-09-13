@@ -1,0 +1,21 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T15_LATEBASE_BLOCKS4TO7_LR3P75E5_750_V1",
+  "status": "STUDY_COMPLETE_T15_FAIL_NO_REPRESENTATION",
+  "scientific_question": "With T9 fact-clause pointer, 9:1 language, and lr 3.75e-5, does freezing blocks 8-11 (plus 0-3 and binding) at Phase1G let blocks 4-7 produce >=2/3 language-safe representation?",
+  "earned_by": "T14X read-only decomp: block 4 necessary for reversals; reverting 8-11 improved language and, on 730002, reversals. Gradient conflict localized to 8-11 vs aligned block 4.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "scope": {"freeze": "base_model.blocks.0-3, base_model.blocks.8-11, and all 984321 binding params", "train": "blocks 4-7 + embeddings + final_norm + language_head", "trainable": 21163264, "frozen": 40357121},
+  "pointer_keys": {"definition": "for each mention_span_bos, indices from mention start through next token id 18 (period), exclusive of decision_position_bos", "period_token_id": 18},
+  "objective": {"lambda_ptr": 1.0, "margin_M": 1.0, "layout": "none", "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded; independent-item QA batches",
+  "seeds": [740001, 740002, 740003],
+  "schedule": {"total_updates": 750, "qa_updates": 675, "language_updates": 75, "qa_batch": 32, "eval_points": [0, 100, 300, 500, 750], "lr": 3.75e-5, "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T15_FULL_SUCCESS", "T15_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T15_FAIL_NO_REPRESENTATION", "T15_LANGUAGE_REGRESSION", "T15_SHORTCUT_FAILURE", "T15_HARD_STOP"],
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; >=2 LANGUAGE_REGRESSION; >=2 SHORTCUT; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

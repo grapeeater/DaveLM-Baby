@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "continuity": 12,
+    "fact": 24,
+    "generation": 20,
+    "instruction": 12,
+    "total": 68
+  },
+  "fact_family_count": 6,
+  "final_accessed": false,
+  "negative_tests": [
+    "wrong_answer_key_rejected",
+    "wrong_predicate_rejected",
+    "missing_query_object_rejected",
+    "broken_reversal_rejected",
+    "unequal_candidate_length_rejected"
+  ],
+  "reversal_pair_count": 12,
+  "sacred_accessed": false,
+  "status": "PASS_INDEPENDENT_SEMANTIC_VALIDATION",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "unique_normalized_prompt_count": 68,
+  "validator": "INDEPENDENT_VALIDATOR.py",
+  "validator_sha256": "6173987078da4ef7a659c17f80322ecf2d1610a43ee3839bef50628f9fca0f30"
+}

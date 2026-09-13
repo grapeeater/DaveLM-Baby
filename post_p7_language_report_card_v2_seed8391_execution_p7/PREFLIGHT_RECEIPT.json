@@ -1,0 +1,37 @@
+{
+  "checkpoint_sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "detached_sha256": "e3ab16daeb7c1f54e136db68daecf348383fa0f830810cc5e200d10f84dcc151",
+  "frozen_artifacts": {
+    "FAMILIES.json": "a6b2a6a4ba1218be18c0635e1c2b6690bfbaef8759603059383bf67b7d85814e",
+    "FREEZE_RECEIPT.json": "5cfe722e62dd9a232e0961c2625d98484a091329ac9e8a31e7ecae8d12588f82",
+    "ITEMS.jsonl": "f8d3e14cd645b6ebb8cc5142fc05f420be37f1a3f09cddeebb2ede443d266452",
+    "LEXICON.json": "64ac5e03d7e92239244c2f973bd8c3b04b1d5834f654867b693ef8595cc6059c",
+    "MANIFEST.json": "96c6acecd7f9d77917fb0c6692eccd68bc133f6e7665b93359703680665e8187",
+    "OVERLAP_AUDIT.json": "0cc75e2f538ca43148908a98b2533ad1c24499b456a553b6d56fe80266acc083",
+    "PREFLIGHT.json": "b276a6490a304f4d3e40b432f6acacad018f5c61d897ffc9e3c61b0e17db5d68",
+    "PROTOCOL.md": "30f0351a950ce039db09686d4ac1c39ac7ca7378c1bca6e2193d09908a6ba7e4",
+    "build_post_p7_v2.py": "5a7673afcdac05f04e8d4a8015c661cbf0ed34fed6bbef60cc8b78cfcbd20c7c",
+    "post_p7_v2_independent_validator.py": "8c84361f94cf36308e56838f54988c359d91d48d242d7521dd33a7102e2167ab"
+  },
+  "independent_semantics": {
+    "contradictory_or_ambiguous_controlled_prompts": 0,
+    "controlled_keys_checked": 352,
+    "fact_order_assignment_query_and_distractor_transformations": "PASS",
+    "families_checked": 36,
+    "inverted_keys_rejected": 352,
+    "key_disagreements": 0
+  },
+  "no_sacred_material": true,
+  "punctuation_note": "Token 901 contains a question mark followed by a quote. Stop on it and retain the entire token verbatim.",
+  "punctuation_stop_tokens": {
+    "5": "!",
+    "18": ".",
+    "35": "?",
+    "901": "?\""
+  },
+  "read_only_flags": true,
+  "source_hashes": true,
+  "status": "PASS_BEFORE_MODEL_LOAD",
+  "token_boundaries": true,
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

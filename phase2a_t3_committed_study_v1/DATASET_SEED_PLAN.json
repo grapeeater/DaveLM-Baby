@@ -1,0 +1,9 @@
+{
+  "status": "PROSPECTIVE_DESIGN_NOT_MATERIALIZED",
+  "train_generator_seed": 620101,
+  "dev_generator_seed": 620102,
+  "test_generator_seed": 620103,
+  "selection_rule": "Use the lexically sorted eligible names from the hashed authorized nonsacred allowlist after deterministic exclusion of frozen identities and forbidden-panel identities; select the required disjoint names per split. No model outputs, outcomes, or locked panels are consulted.",
+  "split_rule": "Family-disjoint; names disjoint across train/dev/test; template-disjoint where generator supports it; twins remain within one split.",
+  "materialization": "Implementation stage must emit exact row manifests, token-span maps, and hashes before optimizer step 1. This design pass intentionally does not generate data or load a checkpoint."
+}

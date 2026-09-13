@@ -1,0 +1,18 @@
+{
+  "accepted_protocol_hashes": [
+    "62f120973f92508b015830cf7a84a445369900660339c9f7ce268d6f12da4e68",
+    "bc517e33a68b813adfbb666785c94d2ab92d2d683244f33a3d77731d43d92b23",
+    "1fa2b8fa2268c8870cb28a4dc7b138ba2875226c9f552442ff67f301d2e7d281"
+  ],
+  "checkpoint_loaded_during_preflight": false,
+  "final_accessed": false,
+  "optimizer_created_during_preflight": false,
+  "optimizer_updates_during_preflight": 0,
+  "predecessor_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v6",
+  "predecessor_receipt_sha256": "0c679de9d32aeac911f8246a75ebb9a437b1dadf1b5347948aa4f18c9773dd8e",
+  "sacred_accessed": false,
+  "scientific_values_changed": false,
+  "status": "MECHANICAL_PREDECESSOR_PROTOCOL_CHAIN_COMPLETION_ONLY",
+  "valid_restart_completed_update": 297,
+  "valid_restart_state": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_execution_v4"
+}

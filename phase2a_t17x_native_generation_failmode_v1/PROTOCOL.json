@@ -1,0 +1,11 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T17X_NATIVE_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "On T17 U1000, when pointer and native forced-choice are already correct, what does greedy generation emit instead of answer+EOS, and does that justify adding teacher-forced answer CE to the T17 recipe?",
+  "earned_by": "T17_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Representation 2/3, language 3/3, exact 0. QA updates are pointer+margin only; language_head has no pointer gradient.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "inputs": ["T17 U1000 checkpoints and item_results for 760001-760003", "qa_dev.jsonl"],
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T17 checkpoints", "unseal TEST", "change QA mix", "copy Qwen"],
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

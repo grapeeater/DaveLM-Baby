@@ -1,0 +1,103 @@
+{
+  "experiment": "DaveLM v0.9 Treatment #6",
+  "audit": "exact final historical training-retention audit",
+  "treatment": "answer-signal amplification",
+  "classification": "FINAL_TRAINING_RETENTION_BELOW_GATE",
+  "hashes": {
+    "pair_pool_sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307",
+    "schedule_sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12",
+    "final_checkpoint_sha256": "6c2498fef822897abb672d2ef25a4a88a63f66d57d441814372e59f91c995535"
+  },
+  "checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\treatment6_answer_signal_amplification_seed8380\\checkpoints\\answer_signal_amplification\\seed_8380\\latest.pt",
+    "sha256": "6c2498fef822897abb672d2ef25a4a88a63f66d57d441814372e59f91c995535"
+  },
+  "pair_pool": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json",
+    "sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307"
+  },
+  "frozen_schedule": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_frozen_schedule.json",
+    "sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12"
+  },
+  "parameter_count": 10594944,
+  "architecture_construction": "original_run.build_model(\"untied\")",
+  "answer_weight": 191.0,
+  "margin": 0.5,
+  "historical_event_count": 32000,
+  "slot_0_events": 16000,
+  "slot_1_events": 16000,
+  "total_supervised_positions": 6144000,
+  "answer_replacements": 32000,
+  "ordinary_nonanswer_ce_positions": 6112000,
+  "retention_gate": {
+    "correct_gt_distractor_fraction_min": 0.95,
+    "required_logit_margin": 0.5,
+    "margin_satisfied_fraction_min": 0.9,
+    "correct_gate_pass": false,
+    "margin_gate_pass": false,
+    "overall_pass": false
+  },
+  "overall": {
+    "events": 32000,
+    "full_vocab_top1_fraction": 0.54653125,
+    "full_vocab_top5_fraction": 1.0,
+    "correct_gt_distractor_fraction": 0.54653125,
+    "margin_satisfied_fraction": 0.4131875,
+    "mean_candidate_mass": 0.9114761004447937,
+    "mean_membership_loss": 0.09386776542663575,
+    "mean_selector_loss": 0.7621181859970093,
+    "mean_raw_answer_replacement_loss": 0.855985951423645,
+    "mean_target_probability": 0.48305401992797853,
+    "mean_distractor_probability": 0.42842207980155944,
+    "mean_logit_delta": 0.16784566015005112,
+    "mean_target_rank": 1.454125,
+    "median_target_rank": 1.0
+  },
+  "slot_0": {
+    "events": 16000,
+    "full_vocab_top1_fraction": 0.55,
+    "full_vocab_top5_fraction": 1.0,
+    "correct_gt_distractor_fraction": 0.55,
+    "margin_satisfied_fraction": 0.4145625,
+    "mean_candidate_mass": 0.9112010836601258,
+    "mean_membership_loss": 0.09419950014352799,
+    "mean_selector_loss": 0.7547979505062103,
+    "mean_raw_answer_replacement_loss": 0.8489974508285523,
+    "mean_target_probability": 0.484160076379776,
+    "mean_distractor_probability": 0.4270410068035126,
+    "mean_logit_delta": 0.17913026854395867,
+    "mean_target_rank": 1.450625,
+    "median_target_rank": 1.0
+  },
+  "slot_1": {
+    "events": 16000,
+    "full_vocab_top1_fraction": 0.5430625,
+    "full_vocab_top5_fraction": 1.0,
+    "correct_gt_distractor_fraction": 0.5430625,
+    "margin_satisfied_fraction": 0.4118125,
+    "mean_candidate_mass": 0.9117511186599732,
+    "mean_membership_loss": 0.09353603082895279,
+    "mean_selector_loss": 0.7694384188652038,
+    "mean_raw_answer_replacement_loss": 0.8629744534492493,
+    "mean_target_probability": 0.4819479644298553,
+    "mean_distractor_probability": 0.42980315566062927,
+    "mean_logit_delta": 0.15656105041503907,
+    "mean_target_rank": 1.457625,
+    "median_target_rank": 1.0
+  },
+  "execution": {
+    "device": "cuda",
+    "batch_size": 256,
+    "model_eval": true,
+    "inference_mode": true,
+    "optimizer_created": false,
+    "backward_called": false,
+    "training_performed": false,
+    "positive_controls_evaluated": false,
+    "sealed_evaluation_loaded": false,
+    "evaluation_runtime_seconds": 132.22028679999494,
+    "total_runtime_seconds": 134.07872409999982
+  },
+  "next_action": "STOP before positive controls. Treatment 6 did not demonstrate strong final retention of the paired training task. Positive controls remain unopened. Sealed evaluation remains closed."
+}

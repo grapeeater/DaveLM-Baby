@@ -1,0 +1,7 @@
+{
+  "checkpoint_sha256": "0c929dcc9ab1db21b5e18f0ba70caedda9da4bb134f16896e5f1bc8b95db461b",
+  "completed": 100,
+  "restart_sha256": "43c921283013ff88e6a92a30c24ddbc14fe6c0d02c8eda64b02f8b9b0d60e8b6",
+  "status": "COMMON_COMPLETE",
+  "transfer_opened": false
+}

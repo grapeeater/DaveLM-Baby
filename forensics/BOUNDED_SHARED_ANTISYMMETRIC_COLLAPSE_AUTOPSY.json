@@ -1,0 +1,2185 @@
+{
+  "status": "BOUNDED_SHARED_ANTISYMMETRIC_COLLAPSE_AUTOPSY",
+  "sources": {
+    "C:\\DaveLM-CADAVER\\treatment13_distinct_localization_supervision_seed8380\\FINAL_FROZEN_RETENTION_RESULTS.json": "5363a0d432e815ae2a15701d14ac05650a98e738fd48ebae6736d40730fab20c",
+    "C:\\DaveLM-CADAVER\\treatment13_bounded_shared_antisymmetric_seed8380\\FINAL_FROZEN_RETENTION_RESULTS.json": "977ebd2a7a28dc8f0f38adff28f3c051aa5fa54a8aaf346082a85fc50ea63544"
+  },
+  "document_count": 320,
+  "transitions": {
+    "BOTH_DISTINCT -> BOTH_DISTINCT": 254,
+    "EXACTLY_ONE -> BOTH_DISTINCT": 22,
+    "BOTH_DISTINCT -> SLOT_COLLAPSE": 24,
+    "BOTH_DISTINCT -> EXACTLY_ONE": 12,
+    "EXACTLY_ONE -> SLOT_COLLAPSE": 8
+  },
+  "transition_answer_correctness": {
+    "BOTH_DISTINCT -> BOTH_DISTINCT": {
+      "1->1": 247,
+      "1->0": 7
+    },
+    "EXACTLY_ONE -> BOTH_DISTINCT": {
+      "1->1": 13,
+      "0->1": 9
+    },
+    "BOTH_DISTINCT -> SLOT_COLLAPSE": {
+      "1->0": 12,
+      "1->1": 12
+    },
+    "BOTH_DISTINCT -> EXACTLY_ONE": {
+      "1->1": 7,
+      "1->0": 5
+    },
+    "EXACTLY_ONE -> SLOT_COLLAPSE": {
+      "0->0": 2,
+      "1->1": 2,
+      "0->1": 2,
+      "1->0": 2
+    }
+  },
+  "new_collapse_quartets": [
+    "t13_retention:qt_000016",
+    "t13_retention:qt_000019",
+    "t13_retention:qt_000025",
+    "t13_retention:qt_000047",
+    "t13_retention:qt_000050",
+    "t13_retention:qt_000055",
+    "t13_retention:qt_000064",
+    "t13_retention:qt_000073"
+  ],
+  "repaired_quartets": [
+    "t13_retention:qt_000012",
+    "t13_retention:qt_000040",
+    "t13_retention:qt_000042",
+    "t13_retention:qt_000052",
+    "t13_retention:qt_000066",
+    "t13_retention:qt_000068"
+  ],
+  "damaged_quartets": [
+    "t13_retention:qt_000016",
+    "t13_retention:qt_000019",
+    "t13_retention:qt_000025",
+    "t13_retention:qt_000034",
+    "t13_retention:qt_000043",
+    "t13_retention:qt_000046",
+    "t13_retention:qt_000047",
+    "t13_retention:qt_000050",
+    "t13_retention:qt_000055"
+  ],
+  "collapse_counts": {
+    "total": 32,
+    "onto_true0": 8,
+    "onto_true1": 24,
+    "onto_other": 0,
+    "query_relevant": 16,
+    "non_query_relevant": 16,
+    "earlier": 32,
+    "later": 0
+  },
+  "collapse_by_layout": {
+    "p20_b8": 8,
+    "p24_b10": 4,
+    "p32_b12": 4,
+    "p16_b12": 8,
+    "p24_b8": 4,
+    "p32_b8": 4
+  },
+  "collapse_by_query_slot": {
+    "1": 16,
+    "0": 16
+  },
+  "collapse_by_orientation": {
+    "1": 16,
+    "2": 16
+  },
+  "collapse_info": [
+    {
+      "doc_id": "t13_retention:qt_000016:o1_k0",
+      "quartet_id": "t13_retention:qt_000016",
+      "layout": "p20_b8",
+      "member": "o1_k0",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 31,
+      "bounded_pos1": 31,
+      "collapsed_true_source": "true0",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.35725146532058716,
+        0.6427485942840576
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000016:o1_k1",
+      "quartet_id": "t13_retention:qt_000016",
+      "layout": "p20_b8",
+      "member": "o1_k1",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 31,
+      "bounded_pos1": 31,
+      "collapsed_true_source": "true0",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.648910403251648,
+        0.35108959674835205
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000016:o2_k0",
+      "quartet_id": "t13_retention:qt_000016",
+      "layout": "p20_b8",
+      "member": "o2_k0",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 31,
+      "bounded_pos1": 31,
+      "collapsed_true_source": "true0",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.34627223014831543,
+        0.6537277102470398
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000016:o2_k1",
+      "quartet_id": "t13_retention:qt_000016",
+      "layout": "p20_b8",
+      "member": "o2_k1",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 31,
+      "bounded_pos1": 31,
+      "collapsed_true_source": "true0",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.6558263301849365,
+        0.3441736400127411
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000019:o1_k0",
+      "quartet_id": "t13_retention:qt_000019",
+      "layout": "p20_b8",
+      "member": "o1_k0",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 43,
+      "bounded_pos1": 43,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.48909229040145874,
+        0.5109077095985413
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000019:o1_k1",
+      "quartet_id": "t13_retention:qt_000019",
+      "layout": "p20_b8",
+      "member": "o1_k1",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 43,
+      "bounded_pos1": 43,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.5167067050933838,
+        0.4832933247089386
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000019:o2_k0",
+      "quartet_id": "t13_retention:qt_000019",
+      "layout": "p20_b8",
+      "member": "o2_k0",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 43,
+      "bounded_pos1": 43,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.48835742473602295,
+        0.511642575263977
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000019:o2_k1",
+      "quartet_id": "t13_retention:qt_000019",
+      "layout": "p20_b8",
+      "member": "o2_k1",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 31,
+      "true1": 43,
+      "champion_pos0": 43,
+      "champion_pos1": 31,
+      "bounded_pos0": 43,
+      "bounded_pos1": 43,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.5182628631591797,
+        0.4817371666431427
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000025:o1_k0",
+      "quartet_id": "t13_retention:qt_000025",
+      "layout": "p24_b10",
+      "member": "o1_k0",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 35,
+      "bounded_pos0": 35,
+      "bounded_pos1": 35,
+      "collapsed_true_source": "true0",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.4565768241882324,
+        0.5434231758117676
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000025:o1_k1",
+      "quartet_id": "t13_retention:qt_000025",
+      "layout": "p24_b10",
+      "member": "o1_k1",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 35,
+      "bounded_pos0": 35,
+      "bounded_pos1": 35,
+      "collapsed_true_source": "true0",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.5505302548408508,
+        0.44946977496147156
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000025:o2_k0",
+      "quartet_id": "t13_retention:qt_000025",
+      "layout": "p24_b10",
+      "member": "o2_k0",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 35,
+      "bounded_pos0": 35,
+      "bounded_pos1": 35,
+      "collapsed_true_source": "true0",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.4560314416885376,
+        0.5439685583114624
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000025:o2_k1",
+      "quartet_id": "t13_retention:qt_000025",
+      "layout": "p24_b10",
+      "member": "o2_k1",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 35,
+      "bounded_pos0": 35,
+      "bounded_pos1": 35,
+      "collapsed_true_source": "true0",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.552460253238678,
+        0.447539746761322
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000047:o1_k0",
+      "quartet_id": "t13_retention:qt_000047",
+      "layout": "p32_b12",
+      "member": "o1_k0",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 43,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.46667516231536865,
+        0.5333248376846313
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000047:o1_k1",
+      "quartet_id": "t13_retention:qt_000047",
+      "layout": "p32_b12",
+      "member": "o1_k1",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 43,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.39146682620048523,
+        0.6085332036018372
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000047:o2_k0",
+      "quartet_id": "t13_retention:qt_000047",
+      "layout": "p32_b12",
+      "member": "o2_k0",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 43,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.4777183532714844,
+        0.5222816467285156
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000047:o2_k1",
+      "quartet_id": "t13_retention:qt_000047",
+      "layout": "p32_b12",
+      "member": "o2_k1",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 43,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.4282079339027405,
+        0.5717920660972595
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000050:o1_k0",
+      "quartet_id": "t13_retention:qt_000050",
+      "layout": "p16_b12",
+      "member": "o1_k0",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.7443640232086182,
+        0.25563597679138184
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000050:o1_k1",
+      "quartet_id": "t13_retention:qt_000050",
+      "layout": "p16_b12",
+      "member": "o1_k1",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.2385958582162857,
+        0.7614041566848755
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000050:o2_k0",
+      "quartet_id": "t13_retention:qt_000050",
+      "layout": "p16_b12",
+      "member": "o2_k0",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.7403407096862793,
+        0.2596593201160431
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000050:o2_k1",
+      "quartet_id": "t13_retention:qt_000050",
+      "layout": "p16_b12",
+      "member": "o2_k1",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.2415674328804016,
+        0.7584325075149536
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000055:o1_k0",
+      "quartet_id": "t13_retention:qt_000055",
+      "layout": "p16_b12",
+      "member": "o1_k0",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.49587932229042053,
+        0.5041206479072571
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000055:o1_k1",
+      "quartet_id": "t13_retention:qt_000055",
+      "layout": "p16_b12",
+      "member": "o1_k1",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.5070362091064453,
+        0.4929637908935547
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000055:o2_k0",
+      "quartet_id": "t13_retention:qt_000055",
+      "layout": "p16_b12",
+      "member": "o2_k0",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.49571216106414795,
+        0.504287838935852
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000055:o2_k1",
+      "quartet_id": "t13_retention:qt_000055",
+      "layout": "p16_b12",
+      "member": "o2_k1",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 27,
+      "true1": 39,
+      "champion_pos0": 39,
+      "champion_pos1": 27,
+      "bounded_pos0": 39,
+      "bounded_pos1": 39,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.5065039396286011,
+        0.4934960901737213
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000064:o1_k0",
+      "quartet_id": "t13_retention:qt_000064",
+      "layout": "p24_b8",
+      "member": "o1_k0",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 20,
+      "bounded_pos0": 47,
+      "bounded_pos1": 47,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.4996776580810547,
+        0.5003223419189453
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000064:o1_k1",
+      "quartet_id": "t13_retention:qt_000064",
+      "layout": "p24_b8",
+      "member": "o1_k1",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 20,
+      "bounded_pos0": 47,
+      "bounded_pos1": 47,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.5160853266716003,
+        0.48391470313072205
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000064:o2_k0",
+      "quartet_id": "t13_retention:qt_000064",
+      "layout": "p24_b8",
+      "member": "o2_k0",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 20,
+      "bounded_pos0": 47,
+      "bounded_pos1": 47,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.49784502387046814,
+        0.5021550059318542
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000064:o2_k1",
+      "quartet_id": "t13_retention:qt_000064",
+      "layout": "p24_b8",
+      "member": "o2_k1",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 35,
+      "true1": 47,
+      "champion_pos0": 47,
+      "champion_pos1": 20,
+      "bounded_pos0": 47,
+      "bounded_pos1": 47,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.51534503698349,
+        0.4846549332141876
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000073:o1_k0",
+      "quartet_id": "t13_retention:qt_000073",
+      "layout": "p32_b8",
+      "member": "o1_k0",
+      "query_slot": 0,
+      "orientation": 1,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 22,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.4099860191345215,
+        0.5900140404701233
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000073:o1_k1",
+      "quartet_id": "t13_retention:qt_000073",
+      "layout": "p32_b8",
+      "member": "o1_k1",
+      "query_slot": 1,
+      "orientation": 1,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 22,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.5936313271522522,
+        0.406368613243103
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000073:o2_k0",
+      "quartet_id": "t13_retention:qt_000073",
+      "layout": "p32_b8",
+      "member": "o2_k0",
+      "query_slot": 0,
+      "orientation": 2,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 22,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": false,
+      "earlier_source": "true0",
+      "answer_correct": false,
+      "row_weights": [
+        0.4118119180202484,
+        0.588188111782074
+      ]
+    },
+    {
+      "doc_id": "t13_retention:qt_000073:o2_k1",
+      "quartet_id": "t13_retention:qt_000073",
+      "layout": "p32_b8",
+      "member": "o2_k1",
+      "query_slot": 1,
+      "orientation": 2,
+      "true0": 43,
+      "true1": 55,
+      "champion_pos0": 55,
+      "champion_pos1": 22,
+      "bounded_pos0": 55,
+      "bounded_pos1": 55,
+      "collapsed_true_source": "true1",
+      "query_relevant": true,
+      "earlier_source": "true0",
+      "answer_correct": true,
+      "row_weights": [
+        0.5953248143196106,
+        0.404675155878067
+      ]
+    }
+  ],
+  "wrong_non_source_destinations": {
+    "19": 4,
+    "76": 4,
+    "62": 4
+  },
+  "old_exactly_one_to_new": {
+    "BOTH_DISTINCT": 22,
+    "SLOT_COLLAPSE": 8
+  },
+  "bd_answer_errors": [
+    {
+      "doc_id": "t13_retention:qt_000028:o1_k1",
+      "quartet_id": "t13_retention:qt_000028",
+      "layout": "p24_b10",
+      "query_slot": 1,
+      "orientation": 1,
+      "pos0": 47,
+      "pos1": 35,
+      "true0": 35,
+      "true1": 47,
+      "row_weights": [
+        0.5604589581489563,
+        0.4395410716533661
+      ],
+      "selected_slot": 0,
+      "selected_true_source": 47,
+      "selected_row_correct": true,
+      "query_row_correct": true,
+      "answer_correct": false,
+      "predicted": 583,
+      "target": 959,
+      "distractor": 583
+    },
+    {
+      "doc_id": "t13_retention:qt_000028:o2_k0",
+      "quartet_id": "t13_retention:qt_000028",
+      "layout": "p24_b10",
+      "query_slot": 0,
+      "orientation": 2,
+      "pos0": 47,
+      "pos1": 35,
+      "true0": 35,
+      "true1": 47,
+      "row_weights": [
+        0.4313184320926666,
+        0.568681538105011
+      ],
+      "selected_slot": 1,
+      "selected_true_source": 35,
+      "selected_row_correct": true,
+      "query_row_correct": true,
+      "answer_correct": false,
+      "predicted": 583,
+      "target": 959,
+      "distractor": 583
+    },
+    {
+      "doc_id": "t13_retention:qt_000041:o2_k1",
+      "quartet_id": "t13_retention:qt_000041",
+      "layout": "p32_b12",
+      "query_slot": 0,
+      "orientation": 2,
+      "pos0": 55,
+      "pos1": 43,
+      "true0": 43,
+      "true1": 55,
+      "row_weights": [
+        1.2041818081343081e-05,
+        0.9999879598617554
+      ],
+      "selected_slot": 1,
+      "selected_true_source": 43,
+      "selected_row_correct": true,
+      "query_row_correct": true,
+      "answer_correct": false,
+      "predicted": 1002,
+      "target": 959,
+      "distractor": 1002
+    },
+    {
+      "doc_id": "t13_retention:qt_000061:o1_k0",
+      "quartet_id": "t13_retention:qt_000061",
+      "layout": "p24_b8",
+      "query_slot": 1,
+      "orientation": 1,
+      "pos0": 35,
+      "pos1": 47,
+      "true0": 35,
+      "true1": 47,
+      "row_weights": [
+        0.25678831338882446,
+        0.7432116866111755
+      ],
+      "selected_slot": 1,
+      "selected_true_source": 47,
+      "selected_row_correct": true,
+      "query_row_correct": true,
+      "answer_correct": false,
+      "predicted": 1002,
+      "target": 583,
+      "distractor": 1002
+    },
+    {
+      "doc_id": "t13_retention:qt_000075:o1_k0",
+      "quartet_id": "t13_retention:qt_000075",
+      "layout": "p32_b8",
+      "query_slot": 0,
+      "orientation": 1,
+      "pos0": 55,
+      "pos1": 43,
+      "true0": 43,
+      "true1": 55,
+      "row_weights": [
+        0.5023294687271118,
+        0.49767056107521057
+      ],
+      "selected_slot": 0,
+      "selected_true_source": 55,
+      "selected_row_correct": true,
+      "query_row_correct": false,
+      "answer_correct": false,
+      "predicted": 1002,
+      "target": 959,
+      "distractor": 1002
+    },
+    {
+      "doc_id": "t13_retention:qt_000075:o2_k1",
+      "quartet_id": "t13_retention:qt_000075",
+      "layout": "p32_b8",
+      "query_slot": 1,
+      "orientation": 2,
+      "pos0": 55,
+      "pos1": 43,
+      "true0": 43,
+      "true1": 55,
+      "row_weights": [
+        0.5799074172973633,
+        0.4200925827026367
+      ],
+      "selected_slot": 0,
+      "selected_true_source": 55,
+      "selected_row_correct": true,
+      "query_row_correct": true,
+      "answer_correct": false,
+      "predicted": 1002,
+      "target": 959,
+      "distractor": 1002
+    },
+    {
+      "doc_id": "t13_retention:qt_000078:o1_k1",
+      "quartet_id": "t13_retention:qt_000078",
+      "layout": "p32_b8",
+      "query_slot": 0,
+      "orientation": 1,
+      "pos0": 55,
+      "pos1": 43,
+      "true0": 43,
+      "true1": 55,
+      "row_weights": [
+        3.66838721674867e-05,
+        0.9999632835388184
+      ],
+      "selected_slot": 1,
+      "selected_true_source": 43,
+      "selected_row_correct": true,
+      "query_row_correct": true,
+      "answer_correct": false,
+      "predicted": 583,
+      "target": 959,
+      "distractor": 583
+    }
+  ],
+  "quartet_classes": {
+    "stable_success": 63,
+    "repaired": 6,
+    "damaged": 9,
+    "persistent_failure": 2
+  },
+  "quartet_details": {
+    "t13_retention:qt_000000": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000001": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000002": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000003": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000004": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000005": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000006": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000007": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000008": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000009": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000010": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000011": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000012": {
+      "classification": "repaired",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000013": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000014": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000015": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000016": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000017": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000018": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000019": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000020": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000021": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000022": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000023": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000024": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000025": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000026": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000027": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000028": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000029": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000030": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000031": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000032": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000033": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000034": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ]
+    },
+    "t13_retention:qt_000035": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000036": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000037": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000038": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000039": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000040": {
+      "classification": "repaired",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000041": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000042": {
+      "classification": "repaired",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000043": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ]
+    },
+    "t13_retention:qt_000044": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000045": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000046": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ]
+    },
+    "t13_retention:qt_000047": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000048": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000049": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000050": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000051": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000052": {
+      "classification": "repaired",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000053": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000054": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000055": {
+      "classification": "damaged",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000056": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000057": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000058": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000059": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000060": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000061": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000062": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000063": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000064": {
+      "classification": "persistent_failure",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000065": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000066": {
+      "classification": "repaired",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000067": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000068": {
+      "classification": "repaired",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000069": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000070": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000071": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000072": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000073": {
+      "classification": "persistent_failure",
+      "old_categories": [
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE",
+        "EXACTLY_ONE"
+      ],
+      "new_categories": [
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE",
+        "SLOT_COLLAPSE"
+      ]
+    },
+    "t13_retention:qt_000074": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000075": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000076": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000077": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000078": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    },
+    "t13_retention:qt_000079": {
+      "classification": "stable_success",
+      "old_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ],
+      "new_categories": [
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT",
+        "BOTH_DISTINCT"
+      ]
+    }
+  },
+  "saved_scorer_decomposition_available": false,
+  "rho_saturation_metrics_available": false,
+  "retention_rerun": false,
+  "model_loaded": false,
+  "optimizer_created": false
+}

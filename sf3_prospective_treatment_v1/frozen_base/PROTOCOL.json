@@ -1,0 +1,51 @@
+{
+  "name": "SF1",
+  "seed": 87011,
+  "parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "external_hashes": {
+    "C:\\DaveLM-v0.9\\v0_8_2\\__init__.py": "7c47dc732ea59f3d46769a53c5077cb886151f235e75b222270cc8aaf7cef87b",
+    "C:\\DaveLM-v0.9\\v0_7\\__init__.py": "e859a14f534dd8e04db5c8abe62019815cfb0b71dbb6ac0c48b46fd8a6edcf8d",
+    "C:\\DaveLM-v0.9\\v0_2_1\\__init__.py": "2ba1884227fa40b0b1b59b9343bccb2076369e336f20fe17db9ad6fde940eb90",
+    "C:\\DaveLM-v0.9\\v0_2\\__init__.py": "e950992c38ab51fb241a30b87e8bb9415388dfa5d6e20a01d7e082ad1a46eeff",
+    "C:\\DaveLM-v0.9\\v0_2\\model.py": "28ee99e6e73c4e8e4955a4bda66a787afde2d7edef23049ac9b2ed2a2c3d3146",
+    "C:\\DaveLM-v0.9\\v0_2_1\\model.py": "29369e640298cb22cbdacbb826f908451ff58a5724544ed823d6e0938b51491e",
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+    "C:\\DaveLM-v0.9\\v0_8\\__init__.py": "0f633cca96d11ce146b0e0b38b0c6de7cf80e9add09dece764899c9217f32acf",
+    "C:\\DaveLM-v0.9\\v0_8\\config.py": "7ca019f4cb800f0f30eefb5cbf9abaf9c296cd7aba5a3bf37c7d5cb31e997ddc",
+    "C:\\DaveLM-v0.9\\v0_8_2\\config.py": "da9c48edd107c7e9d638ad345802a04e23cb19044b9c83a69789e83b2f313798",
+    "C:\\DaveLM-v0.9\\v0_8_2\\model.py": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d"
+  },
+  "hypothesis": "Repeated balanced single-fact answer supervision is sufficient to acquire the trained ordinary-English-to-name response interface while retaining nonsacred binding. This is an engineering acquisition test, not readiness or a discrimination-loss comparison.",
+  "rationale": "Earlier two-fact answer CE failed even on its own training distribution; isolated-sentence HR runs had no explicit factual training. Reduce contextual selection complexity to one actor and one relation, retain correct response CE and Pilot1 scope. Alternative objectives/scopes are not manipulated.",
+  "curriculum": "16 training records, four complete actor-pair/relation families, two objects x two actor assignments each; one familiar active-voice declarative cloze. 180 English updates, 32 records each, every training record twice per update (360 presentations each). No separate sentence-training mixture; measure language cost explicitly.",
+  "schedule": "200 updates, 20 cycles of nine factual English then one binding. Frozen English order seed87012; binding quartet order seed87013, two permutations of 80 quartets ->20 batches of eight quartets. Training stochastic seed87011. No resampling during execution.",
+  "objective": "Pinned prepare_example/pad_batch: BOS+prompt+four candidate tokens+EOS; x=sequence[:-1], labels ignored for context then candidate+EOS shifted correctly. Mean full-vocabulary CE over five response/EOS tokens per row. No contrastive term, prior subtraction or length normalization. Binding exact pinned answer CE + LAM1.0536573711078283 localization.",
+  "scope": "Pinned v8 harness set_scope: English train every base_model parameter except blocks0-3; all specialized parameters frozen. Binding all parameters active. Frozen grad=None, optimizer moments/step and parameter values checked unchanged on every English update.",
+  "optimizer": "fresh AdamW lr5e-5 betas(.9,.999) eps1e-8 wd.05 amsgrad=False foreach=False fused=False; continuous state, no scheduler; clip currently gradient-bearing parameters to2.0. float32 deterministic GPU; no autocast/TF32; no DataLoader; seed Python/torch CPU/GPU87011; Pythonhashseed87011.",
+  "gate": "At fixed update200: 16/16 candidate correctness, 8/8 both-correct reversals, 4/4 complete families, 16/16 greedy exact candidate then EOS. No best-checkpoint selection. These are own-training-family acquisition criteria, not population generalization or readiness.",
+  "scoring": "Candidate likelihood sum four tokens, excludeEOS, positive margin wins/ties fail; raw first-step candidate mass and full candidate-sequence mass; normal greedymax32 EOS, no repair. Reversal both-correct counts pairs once. Save every prompt/score/generation.",
+  "monitoring": "At0/100/200 evaluate training acquisition, identical first128 TinyStoriesDEV sentence rows via pinned aligned_dev_loss, and BOTH frozen nonsacred binding pools separately. Human-readiness and FINAL batteries are not evaluated.",
+  "safety_gates": "Each binding pool answer>=76/80,BD>=76/80,collapse=0; no averaging. Language loss <=actual update0 loss+0.25 nats (PPL ratio<=exp(.25)); stop at100 or200 if exceeded. This is a new prospective SF1 cost guard, not a change to readiness gates.",
+  "evaluation_order": "Only if endpoint acquisition AND language/binding checks pass: HELDOUT16, ALTERNATE48 (passive cloze16,activeQA16,passiveQA16), COPY8 isolated card-name control, COMPETING64 same factual/card context with fact-vs-copy queries and card-before/after fact. All frozen before training. Transfer diagnostic and raw subgroup reporting; no additional acquisition/readiness claim from them.",
+  "interpretation": "Training gate failure: stop/preserve and diagnose no automatic objective/scope escalation. Training success alone can be name copying. Heldout success establishes tested familiar actor/object recombination only; alternate results cue/wording specific. Competing fact/copy cues must switch answers in identical contexts to provide evidence beyond copying sole name or fixed mention. Do not call SF1 HUMAN_TEST_READY.",
+  "persistence": "atomic fsync rolling restart after every successful update, including model/optimizer/RNG and parent/protocol/schedule/receipt hashes. One rolling plus permanent100/200. Resume only latest valid committed; committed+1 next; evaluations raw durably per item and independently resumed; commit optimizer update before scheduled evaluation. Corrupt provenance stops. Final checkpoint hash committed before transfer. No update500/seed87003/replication.",
+  "counts": {
+    "TRAIN": 16,
+    "HELDOUT": 16,
+    "ALTERNATE": 48,
+    "COPY": 8,
+    "COMPETING": 64
+  },
+  "negative_tests": {
+    "wrong_key": "REJECTED",
+    "wrong_predicate": "REJECTED",
+    "wrong_object": "REJECTED",
+    "extra_claim": "REJECTED"
+  },
+  "overlap_policy": "zero complete prompt overlap/substrings in listed nonsacred material; constituent words/clauses may overlap; no unseen vocabulary claim. Train actor/object combinations disjoint from heldout; alternate shares heldout semantics intentionally. Copy shares training actors/objects intentionally.",
+  "final_access": false,
+  "sacred_access": false
+}

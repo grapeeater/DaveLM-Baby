@@ -1,0 +1,129 @@
+{
+ "status": "TREATMENT13_LOCALIZATION_PREFLIGHT_PASS",
+ "experiment": "treatment13_learned_mapping_row_localization",
+ "removed_scaffold": "T12 supplied exact mapping-row source-key and value positions (row0/row1 source and value). T13 does not receive any mapping-row position.",
+ "still_supplied": "final query-key position (qdp) and answer prediction position; both are public grammar locations.",
+ "localization_mechanism": "two learned row-slot attention distributions over candidate token positions before the query (learned localizer), no absolute-position rule and no row label.",
+ "value_pairing": "once a candidate source position is weighted, its row-local value is the hidden state at position + ROW_VALUE_OFFSET (=4), a fixed public grammar offset verified on every row of every document; it does not reveal which row matches the query.",
+ "selection_after_localization": "T12-style query-conditioned retrieval scores the two localized row-slot source representations against the final query and retrieves the weighted value mixture.",
+ "provenance": {
+  "train_pool_sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+  "retention_pool_sha256": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+  "baseline_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+  "train_quartets": 200,
+  "train_documents": 800,
+  "retention_quartets": 80,
+  "retention_documents": 320
+ },
+ "geometry": {
+  "train_layout_signatures": 20,
+  "retention_layout_signatures": 8,
+  "retention_unseen_vs_train": 8,
+  "retention_overlap_with_train": 0,
+  "train_distinct_mapping_source_positions": 10,
+  "train_distinct_mapping_value_positions": 10,
+  "train_layout_combo_counts": {
+   "p10_b3": 40,
+   "p10_b4": 40,
+   "p10_b5": 40,
+   "p10_b6": 40,
+   "p11_b3": 40,
+   "p11_b4": 40,
+   "p11_b5": 40,
+   "p11_b6": 40,
+   "p12_b3": 40,
+   "p12_b4": 40,
+   "p12_b5": 40,
+   "p12_b6": 40,
+   "p8_b3": 40,
+   "p8_b4": 40,
+   "p8_b5": 40,
+   "p8_b6": 40,
+   "p9_b3": 40,
+   "p9_b4": 40,
+   "p9_b5": 40,
+   "p9_b6": 40
+  },
+  "retention_layout_combo_counts": {
+   "p16_b12": 40,
+   "p16_b8": 40,
+   "p20_b8": 40,
+   "p24_b10": 40,
+   "p24_b8": 40,
+   "p28_b10": 40,
+   "p32_b12": 40,
+   "p32_b8": 40
+  }
+ },
+ "determinism_checks": {
+  "train_sigs_with_both_query_slots": 20,
+  "retention_sigs_with_both_query_slots": 8,
+  "train_sigs_with_both_orientations": 20,
+  "retention_sigs_with_both_orientations": 8,
+  "token_array_overlap_train_retention": 0,
+  "grammar_row_value_offset_violations": 0,
+  "fixed_absolute_position_rule_possible": false
+ },
+ "orientation_counts": {
+  "train": {
+   "1": 400,
+   "2": 400
+  },
+  "retention": {
+   "1": 160,
+   "2": 160
+  }
+ },
+ "query_slot_counts": {
+  "train": {
+   "0": 400,
+   "1": 400
+  },
+  "retention": {
+   "0": 160,
+   "1": 160
+  }
+ },
+ "smoke": {
+  "input_ids_shape": [
+   32,
+   193
+  ],
+  "logits_shape": [
+   32,
+   193,
+   1024
+  ],
+  "localization_attention_shape": [
+   32,
+   188,
+   2
+  ],
+  "slot_scores_shape": [
+   32,
+   2
+  ],
+  "row_weights_shape": [
+   32,
+   2
+  ],
+  "retrieved_shape": [
+   32,
+   320
+  ],
+  "valid_candidate_count_min": 45,
+  "all_finite": true,
+  "no_optimizer_step": true,
+  "no_backward": true,
+  "device": "cpu",
+  "device_name": "AMD Radeon RX 9060 XT"
+ },
+ "parameter_counts": {
+  "base_model_untied": 10594944,
+  "t12_retrieval_module_reference": 245760,
+  "t13_total_model": 10841346,
+  "t13_new_parameters": 246402,
+  "delta_vs_t12": 642
+ },
+ "no_label_leakage": "model forward receives only input_ids, query position, and answer position; no correct-row label, target token, or candidate identity is passed."
+}

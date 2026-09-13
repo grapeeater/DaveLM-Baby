@@ -1,0 +1,86 @@
+{
+  "architecture": {
+    "base_parameter_count": 10594944,
+    "base_transformer_forward_rewritten": false,
+    "key_value_source": "base_model.final_norm outputs strictly before answer_causal_position",
+    "native_nonanswer_logits_modified": false,
+    "normal_language_head_reused": true,
+    "output_operation": "adjusted_answer_logits = base_model.language_head(augmented_answer_hidden)",
+    "query_source": "base_model.final_norm output at answer_causal_position",
+    "residual_operation": "augmented_answer_hidden = base_answer_hidden + retrieved_context",
+    "retrieval_active_only_at_answer_positions": true,
+    "retrieval_memory_strictly_before_answer_position": true,
+    "retrieval_module": "single learned nn.MultiheadAttention(embed_dim=320, num_heads=1, batch_first=True, bias=True)",
+    "retrieval_parameter_count": 410880,
+    "total_parameter_count": 11005824
+  },
+  "evaluation_sequence": {
+    "first": "exact all-32000 final training retention audit",
+    "if_retention_fails": "STOP; no positive controls; sealed evaluation closed",
+    "if_retention_passes": "run unchanged positive controls",
+    "sealed_evaluation_condition": "positive controls must pass first"
+  },
+  "final_retention_gate": {
+    "correct_over_distractor_min": 0.95,
+    "exact_scheduled_events": 32000,
+    "fail_classification": "FINAL_TRAINING_RETENTION_BELOW_GATE",
+    "fraction_raw_delta_ge_0_5_min": 0.9,
+    "pass_classification": "STRONG_FINAL_TRAINING_RETENTION"
+  },
+  "forbidden_retrieval_inputs": [
+    "target_token_id",
+    "distractor_token_id",
+    "candidate_pair",
+    "query_slot",
+    "pair_id",
+    "mapping metadata",
+    "mapping key positions",
+    "mapping value positions",
+    "query_difference_position"
+  ],
+  "frozen_artifacts": {
+    "pair_pool_path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json",
+    "pair_pool_sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307",
+    "schedule_path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_frozen_schedule.json",
+    "schedule_sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12",
+    "start_checkpoint_path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+    "start_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+  },
+  "hypothesis": "The remaining reciprocal-binding failure is caused by the absence of a reliable content-addressable retrieval operation at the answer position.",
+  "objective": {
+    "answer_membership_loss": "logsumexp(full_vocab_logits) - logsumexp([correct_logit, distractor_logit])",
+    "answer_replacement": "membership_loss + selector_loss",
+    "answer_selector_loss": "relu(0.5 - (correct_logit - distractor_logit))",
+    "answer_weight_lambda": 191.0,
+    "ordinary_nonanswer_objective": "native full-vocabulary cross entropy",
+    "reduction": "ordinary CE table over all 192 causal positions; replace answer-position CE with 191*(membership+selector); mean over Bx192"
+  },
+  "preflight": {
+    "backward_performed": false,
+    "dry_forward_only": true,
+    "optimizer_created": false,
+    "positive_controls_opened": false,
+    "sealed_evaluation_opened": false,
+    "training_performed": false
+  },
+  "single_architectural_intervention": "One learned single-head answer-position retrieval module operating over strictly prior final contextual hidden states.",
+  "t8_query_logit_projection_retained": false,
+  "training": {
+    "answer_weight_lambda": 191.0,
+    "batch_size": 32,
+    "grad_clip": 2.0,
+    "learning_rate": 0.0003,
+    "optimizer": "AdamW",
+    "pairs_per_batch": 16,
+    "schedule_seed": 8382,
+    "scheduled_examples": 32000,
+    "selector_margin": 0.5,
+    "slot0_presentations": 16000,
+    "slot1_presentations": 16000,
+    "steps": 1000,
+    "train_seed": 8380,
+    "weight_decay": 0.05
+  },
+  "treatment": 9,
+  "treatment_name": "answer_position_content_addressable_retrieval"
+}

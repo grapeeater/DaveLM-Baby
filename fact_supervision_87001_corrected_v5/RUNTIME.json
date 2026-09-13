@@ -1,0 +1,6 @@
+{
+  "determinism": "torch.use_deterministic_algorithms(True); no autocast; no TF32",
+  "python": "3.12",
+  "tokenizers": "0.23.1",
+  "torch": "2.12.0+rocm7.14.0"
+}

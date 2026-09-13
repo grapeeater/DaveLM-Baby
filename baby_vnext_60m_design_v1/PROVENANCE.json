@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "authoritative_inputs_before": {
+    "research_model_source": {
+      "path": "C:\\DaveLM-v0.9\\v0_7\\model.py",
+      "sha256": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+      "size_bytes": 5576,
+      "mtime_ns": 1787854202747566800
+    },
+    "research_config_source": {
+      "path": "C:\\DaveLM-v0.9\\v0_8\\config.py",
+      "sha256": "7ca019f4cb800f0f30eefb5cbf9abaf9c296cd7aba5a3bf37c7d5cb31e997ddc",
+      "size_bytes": 4320,
+      "mtime_ns": 1787886005743831400
+    },
+    "t13_model_source": {
+      "path": "C:\\DaveLM-CADAVER\\treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+      "size_bytes": 5995,
+      "mtime_ns": 1788532644990996100
+    },
+    "pinned_pilot1_binding": {
+      "path": "C:\\DaveLM-CADAVER\\fact_supervision_87001_eval_v1\\PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "size_bytes": 17005,
+      "mtime_ns": 1788639738882764700
+    },
+    "pilot1_runner": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\run.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "size_bytes": 17005,
+      "mtime_ns": 1788571086235295400
+    },
+    "pilot1_language_train": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "size_bytes": 24980023,
+      "mtime_ns": 1788570892222582200
+    },
+    "pilot1_language_dev": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl",
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "size_bytes": 2726093,
+      "mtime_ns": 1788570892224582800
+    },
+    "pilot1_checkpoint": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+      "size_bytes": 64504479,
+      "mtime_ns": 1788572037342276600
+    },
+    "t13_graduate_checkpoint": {
+      "path": "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt",
+      "sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+      "size_bytes": 64504479,
+      "mtime_ns": 1788554886434861100
+    },
+    "vnext_audit_facts": {
+      "path": "C:\\DaveLM-CADAVER\\vnext_60m_audit\\VNEXT_AUDIT_FACTS.json",
+      "sha256": "b4e10eae1c7cd8b220791d7225e34c7e810962e0110de2ec951aacbdbff9cce7",
+      "size_bytes": 29366,
+      "mtime_ns": 1788945414448660900
+    }
+  },
+  "authoritative_inputs_after": {
+    "research_model_source": {
+      "path": "C:\\DaveLM-v0.9\\v0_7\\model.py",
+      "sha256": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+      "size_bytes": 5576,
+      "mtime_ns": 1787854202747566800
+    },
+    "research_config_source": {
+      "path": "C:\\DaveLM-v0.9\\v0_8\\config.py",
+      "sha256": "7ca019f4cb800f0f30eefb5cbf9abaf9c296cd7aba5a3bf37c7d5cb31e997ddc",
+      "size_bytes": 4320,
+      "mtime_ns": 1787886005743831400
+    },
+    "t13_model_source": {
+      "path": "C:\\DaveLM-CADAVER\\treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+      "size_bytes": 5995,
+      "mtime_ns": 1788532644990996100
+    },
+    "pinned_pilot1_binding": {
+      "path": "C:\\DaveLM-CADAVER\\fact_supervision_87001_eval_v1\\PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "size_bytes": 17005,
+      "mtime_ns": 1788639738882764700
+    },
+    "pilot1_runner": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\run.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "size_bytes": 17005,
+      "mtime_ns": 1788571086235295400
+    },
+    "pilot1_language_train": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "size_bytes": 24980023,
+      "mtime_ns": 1788570892222582200
+    },
+    "pilot1_language_dev": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl",
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "size_bytes": 2726093,
+      "mtime_ns": 1788570892224582800
+    },
+    "pilot1_checkpoint": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+      "size_bytes": 64504479,
+      "mtime_ns": 1788572037342276600
+    },
+    "t13_graduate_checkpoint": {
+      "path": "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt",
+      "sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+      "size_bytes": 64504479,
+      "mtime_ns": 1788554886434861100
+    },
+    "vnext_audit_facts": {
+      "path": "C:\\DaveLM-CADAVER\\vnext_60m_audit\\VNEXT_AUDIT_FACTS.json",
+      "sha256": "b4e10eae1c7cd8b220791d7225e34c7e810962e0110de2ec951aacbdbff9cce7",
+      "size_bytes": 29366,
+      "mtime_ns": 1788945414448660900
+    }
+  },
+  "historical_artifacts_unchanged": true,
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "size_bytes": 55710,
+    "mtime_ns": 1787789861414531300
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "device": {
+      "available": true,
+      "name": "AMD Radeon RX 9060 XT",
+      "count": 1
+    },
+    "deterministic_algorithms": true
+  },
+  "initialization_seed": 600001,
+  "forbidden_material_accessed": false
+}

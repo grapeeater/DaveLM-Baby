@@ -1,0 +1,26 @@
+{"id":"gen0","task":"generation","prompt":"The dog found a red ball. The dog was"}
+{"id":"gen1","task":"generation","prompt":"A little girl opened the door. She"}
+{"id":"gen2","task":"generation","prompt":"Mia was happy because"}
+{"id":"gen3","task":"generation","prompt":"Tell me one thing about a cat."}
+{"id":"gen4","task":"generation","prompt":"What should Sam do if his toy breaks?"}
+{"id":"gen5","task":"generation","prompt":"Say hello in one short sentence."}
+{"id":"gen6","task":"generation","prompt":"The boy carried the blue box. He"}
+{"id":"gen7","task":"generation","prompt":"Lily went to the park and"}
+{"correct":0,"id":"fact8","task":"fact","candidates":[" Alex."," Owen."],"prompt":"Alex has the red ball. Owen has the blue kite. The red ball belongs to"}
+{"correct":1,"id":"fact9","task":"fact","candidates":[" Alex."," Owen."],"prompt":"Owen has the red ball. Alex has the blue kite. The red ball belongs to"}
+{"correct":0,"id":"fact10","task":"fact","candidates":[" Mia."," Nora."],"prompt":"Mia has the green hat. Nora has the yellow book. The green hat belongs to"}
+{"correct":1,"id":"fact11","task":"fact","candidates":[" Mia."," Nora."],"prompt":"Nora has the green hat. Mia has the yellow book. The green hat belongs to"}
+{"correct":0,"id":"fact12","task":"fact","candidates":[" Leo."," Ava."],"prompt":"Leo has the small car. Ava has the big box. The small car belongs to"}
+{"correct":1,"id":"fact13","task":"fact","candidates":[" Leo."," Ava."],"prompt":"Ava has the small car. Leo has the big box. The small car belongs to"}
+{"correct":0,"id":"fact14","task":"fact","candidates":[" Sam."," Zoe."],"prompt":"Sam has the old door. Zoe has the new cup. The old door belongs to"}
+{"correct":1,"id":"fact15","task":"fact","candidates":[" Sam."," Zoe."],"prompt":"Zoe has the old door. Sam has the new cup. The old door belongs to"}
+{"correct":0,"id":"fact16","task":"fact","candidates":[" Ben."," Lily."],"prompt":"Ben has the soft toy. Lily has the bright fish. The soft toy belongs to"}
+{"correct":1,"id":"fact17","task":"fact","candidates":[" Ben."," Lily."],"prompt":"Lily has the soft toy. Ben has the bright fish. The soft toy belongs to"}
+{"id":"inst18","task":"instruction","prompt":"Answer with exactly one word: blue"}
+{"id":"inst19","task":"instruction","prompt":"Write a short greeting:"}
+{"id":"inst20","task":"instruction","prompt":"Complete with yes or no: The sky is above us,"}
+{"id":"inst21","task":"instruction","prompt":"Answer with the animal: A dog is an"}
+{"id":"turn22","task":"continuity","prompt":"User: My name is Alex. Assistant: Hello Alex. User: What is my name? Assistant:"}
+{"id":"turn23","task":"continuity","prompt":"User: I like red balls. Assistant: Nice. User: What do I like? Assistant:"}
+{"id":"turn24","task":"continuity","prompt":"User: The cat is in the box. Assistant: Okay. User: Where is the cat? Assistant:"}
+{"id":"turn25","task":"continuity","prompt":"User: Call me Mia. Assistant: Hi Mia. User: Who should I call you? Assistant:"}

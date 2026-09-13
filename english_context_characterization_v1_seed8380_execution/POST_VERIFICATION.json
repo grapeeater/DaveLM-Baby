@@ -1,0 +1,327 @@
+{
+  "backward_passes": 0,
+  "behavioral_scores_produced": 0,
+  "checkpoint_deserializations": 0,
+  "corpus": {
+    "lexicon_words_verified": 18,
+    "overlap": {
+      "atomic_fact": {
+        "distinct_strings": 55,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      },
+      "two_fact_context": {
+        "distinct_strings": 160,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      },
+      "whole_prompt": {
+        "distinct_strings": 832,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      },
+      "whole_prompt_plus_either_candidate": {
+        "distinct_strings": 1664,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      }
+    },
+    "overlap_method": "Exact atomic-fact scans plus verified constituent containment for longer strings",
+    "source_partition_reproduced": true,
+    "stored_story_token_arrays_verified": 10000,
+    "whitelist_and_ordinary_phrase_counts_reproduced": true
+  },
+  "current_actual_file_hashes": {
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\FAMILIES.json": {
+      "bytes": 31564,
+      "sha256": "c21006dd345219bdb50eec5b01870206c51aa12cf48b5178eeefa03a747f31f9"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\ITEMS.jsonl": {
+      "bytes": 744100,
+      "sha256": "5e6669275562044012113a353996e627a1b9faad28b6b4664328d27e268a509a"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json": {
+      "bytes": 16757,
+      "sha256": "6376b5a8612682c17f06a5af80419dc20e1dd02fe539940903c957bb6458cbdd"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\MANIFEST.json": {
+      "bytes": 17100,
+      "sha256": "777213e605dadc0f86bbe330608a11d6e00a8f09e1264fb5895092531e12be9c"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PRIORS.jsonl": {
+      "bytes": 113365,
+      "sha256": "da476f147a40d7bc3e37187e0d98811a526af0ce59b28a395bc70826828e7902"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PROTOCOL.md": {
+      "bytes": 30898,
+      "sha256": "ced4af59529bd2ede5540dd6697b9ecd7dfba176075ceb902000caea1b255f77"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\build_and_validate.py": {
+      "bytes": 34172,
+      "sha256": "00959ec8c0f581aa69eb3719ee4e03466bbca4bdaec2aea206563e2454e4296d"
+    },
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\english_scoring.py": {
+      "bytes": 8701,
+      "sha256": "0594a85ccbc6cc34b476b0e4a14eb3e6c3136c9c9fd3cbf435b9af6020f1034d"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\CORPUS_MANIFEST.json": {
+      "bytes": 2314,
+      "sha256": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\TinyStories-valid.txt": {
+      "bytes": 19447282,
+      "sha256": "94e431816c4cce81ff71e4408ff8d3bda9a42e8d2663986697c3954288cb38b4"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json": {
+      "bytes": 252683,
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_rehearsal.json": {
+      "bytes": 1015917,
+      "sha256": "07b2b1c0605d36ffffc6de582b8e1e752d3b55101e71d4c7ed0d477ea304e7ad"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_dev.jsonl": {
+      "bytes": 2726093,
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_train.jsonl": {
+      "bytes": 24980023,
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": {
+      "bytes": 64504479,
+      "sha256": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PILOT1_MATERIAL_MANIFEST.json": {
+      "bytes": 2530,
+      "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json": {
+      "bytes": 252824,
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json": {
+      "bytes": 1017158,
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl": {
+      "bytes": 2726093,
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl": {
+      "bytes": 24980023,
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": {
+      "bytes": 64504479,
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+    },
+    "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_training_quartet_pool.json": {
+      "bytes": 2677733,
+      "sha256": "03ed49abcf6458362fe4f29b44ec2a5e2bfa9e05ad6788b9d2e6ff37c7bcfc17"
+    },
+    "C:\\DaveLM-CADAVER\\treatment11_answer_only_strict_counterfactual_binding_seed8380\\treatment11_training_quartet_pool.json": {
+      "bytes": 2688942,
+      "sha256": "8f5d60de10fe2fdc8e772a9c1fc3e9f07861edd1583d7c413a095c2f55c6903c"
+    },
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_training_quartet_pool.json": {
+      "bytes": 2517744,
+      "sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3"
+    },
+    "C:\\DaveLM-CADAVER\\treatment13_model.py": {
+      "bytes": 5995,
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70"
+    },
+    "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt": {
+      "bytes": 64504479,
+      "sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430"
+    },
+    "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json": {
+      "bytes": 11463992,
+      "sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307"
+    },
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": {
+      "bytes": 55710,
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+    },
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": {
+      "bytes": 5576,
+      "sha256": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283"
+    }
+  },
+  "detached_receipt_sha256": "26cf767af6f85738c52e506f6dcfe2a34fbcce40a9b2829101408038cfa81e1b",
+  "elapsed_seconds": 7.64100000000326,
+  "exam_directory": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380",
+  "input_files_modified": false,
+  "material": {
+    "contextual_items": 832,
+    "family_frame_groups": 104,
+    "item_counts_by_task_frame": {
+      "location/core": 128,
+      "location/frame_holdout": 128,
+      "location/qa": 128,
+      "naming/core": 64,
+      "possession/core": 128,
+      "possession/frame_holdout": 128,
+      "possession/qa": 128
+    },
+    "items_per_family_frame": 8,
+    "logical_priors": 208,
+    "prior_counts_by_task_frame": {
+      "location/core": 32,
+      "location/frame_holdout": 32,
+      "location/qa": 32,
+      "naming/core": 16,
+      "possession/core": 32,
+      "possession/frame_holdout": 32,
+      "possession/qa": 32
+    },
+    "reversal_pairs_per_family_frame": 4,
+    "total_reversal_pairs": 416,
+    "unique_contextual_prompts": 832,
+    "unique_prior_prompt_candidate_pairs": 128,
+    "unique_prior_prompts": 33
+  },
+  "model_forward_calls": 0,
+  "model_instantiations": 0,
+  "nonsacred_binding": {
+    "dev_documents": [
+      80,
+      80
+    ],
+    "dev_intersection": 0,
+    "known_training_sets_checked": 6,
+    "training_intersections": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "optimizer_creations": 0,
+  "runtime": {
+    "executable": "C:\\Users\\jdman\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+    "tokenizers": "0.23.1",
+    "torch": "2.9.1+rocmsdk20260116",
+    "torch_imported_by_verifier": false
+  },
+  "sacred_exam_opened": false,
+  "sealed_payload_count": 10,
+  "sealed_payloads": {
+    "FAMILIES.json": {
+      "bytes": 31564,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\FAMILIES.json",
+      "sha256": "c21006dd345219bdb50eec5b01870206c51aa12cf48b5178eeefa03a747f31f9"
+    },
+    "FREEZE_RECEIPT.md": {
+      "bytes": 8815,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\FREEZE_RECEIPT.md",
+      "sha256": "a54882c6a4b7b5f7258e81097c18f49a2319ee11839302ad83fe57ab377bf53f"
+    },
+    "ITEMS.jsonl": {
+      "bytes": 744100,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\ITEMS.jsonl",
+      "sha256": "5e6669275562044012113a353996e627a1b9faad28b6b4664328d27e268a509a"
+    },
+    "LEXICON.json": {
+      "bytes": 16757,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json",
+      "sha256": "6376b5a8612682c17f06a5af80419dc20e1dd02fe539940903c957bb6458cbdd"
+    },
+    "MANIFEST.json": {
+      "bytes": 17100,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\MANIFEST.json",
+      "sha256": "777213e605dadc0f86bbe330608a11d6e00a8f09e1264fb5895092531e12be9c"
+    },
+    "PREFLIGHT.json": {
+      "bytes": 181659,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PREFLIGHT.json",
+      "sha256": "fcdcd782db1fc6f425c13e93ca4dc8947a836e3503013b8635d51edb7c2db42f"
+    },
+    "PRIORS.jsonl": {
+      "bytes": 113365,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PRIORS.jsonl",
+      "sha256": "da476f147a40d7bc3e37187e0d98811a526af0ce59b28a395bc70826828e7902"
+    },
+    "PROTOCOL.md": {
+      "bytes": 30898,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PROTOCOL.md",
+      "sha256": "ced4af59529bd2ede5540dd6697b9ecd7dfba176075ceb902000caea1b255f77"
+    },
+    "implementation/build_and_validate.py": {
+      "bytes": 34172,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\build_and_validate.py",
+      "sha256": "00959ec8c0f581aa69eb3719ee4e03466bbca4bdaec2aea206563e2454e4296d"
+    },
+    "implementation/english_scoring.py": {
+      "bytes": 8701,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\english_scoring.py",
+      "sha256": "0594a85ccbc6cc34b476b0e4a14eb3e6c3136c9c9fd3cbf435b9af6020f1034d"
+    }
+  },
+  "status": "PASS_EXECUTION_INPUT_VERIFICATION",
+  "tokenizer": {
+    "bos_id": 2,
+    "boundary_checks": 2080,
+    "boundary_failures": 0,
+    "byte_fallback": false,
+    "candidate_completed_token_lengths": [
+      3
+    ],
+    "candidate_word_token_lengths": [
+      2
+    ],
+    "encode_decode_checks": 5200,
+    "eos_id": 3,
+    "max_completed_input_including_bos": 30,
+    "max_contextual_completed_input_including_bos": 30,
+    "min_completed_input_including_bos": 9,
+    "pre_tokenizer": "ByteLevel",
+    "roundtrip_failures": 0,
+    "vocabulary_size": 1024
+  },
+  "verified_at_utc": "2026-09-05T04:45:37.615610+00:00",
+  "verified_nested_hash_records": 59,
+  "verified_unique_input_files": 29
+}

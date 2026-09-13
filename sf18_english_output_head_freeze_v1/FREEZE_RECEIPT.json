@@ -1,0 +1,12 @@
+{
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "24e3ef0e1d539b72b939cc4c9a1c2fbc083652b93cc6730359c2b3a679bd0f6e",
+  "optimizer_created": false,
+  "sacred_accessed": false,
+  "sealed_utc": "2026-09-09T02:50:48.263731+00:00",
+  "sole_scientific_change": "untied language head frozen during English updates only",
+  "status": "SF18_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF18_ENGLISH_OUTPUT_HEAD_FREEZE_V1",
+  "updates": 0
+}

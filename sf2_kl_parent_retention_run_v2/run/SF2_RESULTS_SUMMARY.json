@@ -1,0 +1,40 @@
+{
+  "run_id": "sf2_kl_parent_retention_run_v2",
+  "preflight": "PASS",
+  "training_began": true,
+  "updates_completed": 200,
+  "final_status": "SF2_ACQUISITION_FAIL",
+  "stop_reason": "endpoint acquisition gate unmet at fixed update 200 (15/16 correct, 15/16 exact, 7/8 reversals, 3/4 families); no earlier stop fired",
+  "transfer_opened": false,
+  "baseline_reproduction": "PASS (acquisition 9/16 exact 0; aligned CE 3.3907; D3 mass 0.000907; binding gates PASS; KL==0)",
+  "metrics": {
+    "u100": {"correct": 11, "exact": 10, "reversals": 3, "families": 1, "lang_CE": 3.5741, "lang_PPL": 35.66, "d3_mass": 0.009711, "binding": "PASS both pools"},
+    "u200": {"correct": 15, "exact": 15, "reversals": 7, "families": 3, "lang_CE": 3.5647, "lang_PPL": 35.33, "d3_mass": 0.006963, "binding": "PASS both pools"}
+  },
+  "comparisons": {
+    "pilot1_u0": {"correct": 9, "exact": 0, "lang_CE": 3.3907, "d3_mass": 0.000907},
+    "sf1_u100": {"correct": 12, "exact": 12, "reversals": 4, "families": 2, "lang_CE": 4.6529, "lang_PPL": 104.89, "d3_mass": 0.0678, "owen_correct": "0/4"},
+    "sf2_u100": {"correct": 11, "exact": 10, "reversals": 3, "families": 1, "lang_CE": 3.5741, "lang_PPL": 35.66, "d3_mass": 0.009711, "owen_correct": "0/4 (mean margin -0.224)"},
+    "sf2_u200": {"correct": 15, "exact": 15, "reversals": 7, "families": 3, "lang_CE": 3.5647, "lang_PPL": 35.33, "d3_mass": 0.006963, "owen_correct": "4/4 (mean margin +0.516)", "alex_correct": "3/4"}
+  },
+  "kl_retention": {
+    "per_english_update_mean_kl": 0.16712,
+    "kl_min_max": [0.0, 0.48308],
+    "last10_eng_loss_mean": 0.30127,
+    "last10_eng_ce_mean": 0.19646,
+    "last10_eng_kl_mean": 0.1048
+  },
+  "signatures": {
+    "S1_d3_le_0.01_at_100": "MET (0.009711)",
+    "S2_lang_ce_le_3.6407_at_100_and_200": "MET (3.5741 / 3.5647)",
+    "S3_acq_ge_12_at_100_and_16_at_200": "NOT MET (11/16 at 100; 15/16 at 200)",
+    "S4_owen_ge_1_at_100_and_margin_ge_0_by_200": "PARTIAL (0/4 at 100 margin -0.224; 4/4 at 200 margin +0.516; no single-name concentration)",
+    "S5_binding": "MET (80/80 answer & BD, 0 collapse, both pools, 0/100/200)",
+    "F1_acquisition_choke": "NOT OBSERVED (constraint did not block conditional learning)",
+    "F2_language_still_blows": "NOT OBSERVED (KL bound the damage)",
+    "F3_d3_high_while_lang_passes": "NOT OBSERVED (D3 ~0.007-0.0097)",
+    "F4_16/16_but_owen_0": "NOT APPLICABLE (Owen recovered 4/4)"
+  },
+  "hypothesis_verdict": "SUPPORTED (mechanism) / PARTIAL (endpoint): KL-retention suppressed D3 pollution ~7-10x, held aligned CE near parent (3.57 vs SF1 4.65), preserved binding, and eliminated the SF1 Alex/Owen default (Owen-correct 0/4 -> 4/4 by update 200) while acquisition improved 9->15/16; the pre-registered endpoint gate (16/16/8/4) was NOT reached at update 200 (single residual error: one Alex-correct item produced Owen).",
+  "evidence_limits": "Training-family records only; HELDOUT16/ALTERNATE48/COPY8/COMPETING64 remained locked (transfer_opened=false). No held-out or generalization claim. No FINAL/sacred access."
+}

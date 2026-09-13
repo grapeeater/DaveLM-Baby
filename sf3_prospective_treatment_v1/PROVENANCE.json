@@ -1,0 +1,42 @@
+{
+  "run_id": "sf3_prospective_treatment_v1",
+  "created": "2026-09-07",
+  "authoritative_parent": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "authoritative_sf2": {
+    "directory": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2",
+    "freeze_receipt_sha256": "d6aa3b140ebc587a4b3d4e3c6c0bc16f15cd0a7731640352949e89df1dec8e8e",
+    "payload_manifest_sha256": "68530f5cff861b5aa0ab25a556d5bc0241e32aa6a8384a3174a67b8c12852557",
+    "engine_sha256": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7",
+    "checkpoint_100_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "checkpoint_200_sha256": "1710a183c757da9d9b2b1deaaced1a49898c91c0ffaf3e3227af8cdb44a9c28d",
+    "preserved_classification": "SF2_ACQUISITION_FAIL"
+  },
+  "copied_sf1_bundle": {
+    "source": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011",
+    "destination": "frozen_base",
+    "source_receipt_sha256": "45d6a1ae10dc37f6fe3dad8d48dbdc71fe9bd48b763f02d77687918cf6c4b5d1",
+    "source_manifest_sha256": "0c06c30dee015a4f55f5b672c80dc7715ea541bd2dc096ddf64f758c81afa4f9",
+    "copy_policy": "all receipt-listed payload files copied byte-for-byte; receipt verified in place"
+  },
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "schedule_sha256": "91dad3510e7997b0d55ab53e6189db9337857d582c9399a720723412f70a7ab6",
+  "train_sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+  "kl_pool_sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+  "kl_pool_manifest_sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+  "d3_selection": {
+    "path": "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json",
+    "sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226"
+  },
+  "evidence": {
+    "sf2_results_summary_sha256": "23509a48aa103f11b342af339bb0c6febcc8dcc03acb99c4f2b9321434787052",
+    "sf2_residual_autopsy_report_sha256": "5bc6e4c84faf913c1826d08ee691fa64206344f8443d872f7982bdcbc5e5007e",
+    "comparative_anatomy_background_sha256": "970ba3fbaeb0214b062d0b56bbdd083311cd14940fb501cc8a48ebed300a5484"
+  },
+  "scientific_change_from_sf2": "Only the post-update-100 English learning-rate sequence. Binding LR and every other scientific choice are unchanged.",
+  "locked_panels": ["HELDOUT16", "ALTERNATE48", "COPY8", "COMPETING64"],
+  "final_access": false,
+  "sacred_access": false
+}

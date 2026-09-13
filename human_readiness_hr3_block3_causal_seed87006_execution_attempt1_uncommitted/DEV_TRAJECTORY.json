@@ -1,0 +1,16 @@
+{
+  "0": {
+    "aligned_tinystories": {
+      "batch_losses": [
+        3.5113742351531982,
+        3.181760787963867,
+        3.422119617462158,
+        3.4473869800567627
+      ],
+      "loss": 3.3906604051589966,
+      "perplexity": 29.68555028889874,
+      "records": 128
+    },
+    "checkpoint": "immutable Pilot 1 parent"
+  }
+}

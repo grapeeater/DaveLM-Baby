@@ -1,0 +1,56 @@
+{
+  "parent_sha256": "f536a61015da40a48e298f37a5273f7e213ea696149c7136c44ffc7ce75403ee",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "tiny_train_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "updates": 500,
+  "batch": 32,
+  "objective": "complete story starts with BOS/EOS and masked padding",
+  "seed": 8380,
+  "lr": 0.0001,
+  "weight_decay": 0.05,
+  "panel_prompts": [
+    "Once upon a time, there was a little girl named Zoe.",
+    "Once upon a time, there was a little boy named Alex.",
+    "A cat found a blue ball.",
+    "A dog found a red hat.",
+    "Mia went to the park with her mother.",
+    "Leo saw a bird in the yard.",
+    "The little girl dropped her book.",
+    "Sam was sad because his toy broke."
+  ],
+  "elapsed_seconds": 254.63946890830994,
+  "generations": [
+    {
+      "prompt": "Once upon a time, there was a little girl named Zoe.",
+      "output": "Once upon a time, there was a little girl named Zoe. She loved to play outside in the sunshine. One day, she saw a big, big, blue bl"
+    },
+    {
+      "prompt": "Once upon a time, there was a little boy named Alex.",
+      "output": "Once upon a time, there was a little boy named Alex. He loved to play outside in the sun. One day, he saw a big, big, big, black dog"
+    },
+    {
+      "prompt": "A cat found a blue ball.",
+      "output": "A cat found a blue ball. It was a big, blue ball. The ball was very happy. The ball was big and blue. The ball was "
+    },
+    {
+      "prompt": "A dog found a red hat.",
+      "output": "A dog found a red hat. He was very excited. He wanted to go to the hat and go to the hat. He went to the"
+    },
+    {
+      "prompt": "Mia went to the park with her mother.",
+      "output": "Mia went to the park with her mother. She saw a big box with a big box. It was a big, box. He wanted to play"
+    },
+    {
+      "prompt": "Leo saw a bird in the yard.",
+      "output": "Leo saw a bird in the yard. He was very excited. He wanted to go to the bird, but he couldn't fly. He w"
+    },
+    {
+      "prompt": "The little girl dropped her book.",
+      "output": "The little girl dropped her book. She was so excited to go to the park. She went to the park with her mom. She saw a big bo"
+    },
+    {
+      "prompt": "Sam was sad because his toy broke.",
+      "output": "Sam was sad because his toy broke. He had a big box of toys. He wanted to play with his toys, but he did not want to"
+    }
+  ]
+}

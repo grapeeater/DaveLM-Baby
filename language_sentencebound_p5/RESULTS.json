@@ -1,0 +1,40 @@
+{
+  "parent_sha256": "4e408f86785f76d9ffdc02dcb309201f6f0c7cc44505bd47bc004362f28717f6",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "tiny_train_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "sentence_count": 147521,
+  "updates": 500,
+  "objective": "natural TinyStories sentence segments with BOS/EOS",
+  "seed": 8380,
+  "lr": 5e-05,
+  "panel_prompts": [
+    "The little girl was happy because",
+    "The dog found a red ball and",
+    "One day, the boy went to the park and",
+    "Mia was sad, but",
+    "The cat saw a bird and"
+  ],
+  "elapsed_seconds": 110.37227630615234,
+  "generations": [
+    {
+      "prompt": "The little girl was happy because",
+      "output": "The little girl was happy because she had a great time."
+    },
+    {
+      "prompt": "The dog found a red ball and",
+      "output": "The dog found a red ball and a ball."
+    },
+    {
+      "prompt": "One day, the boy went to the park and",
+      "output": "One day, the boy went to the park and saw a big dog."
+    },
+    {
+      "prompt": "Mia was sad, but",
+      "output": "Mia was sad, but she didn't know what to do."
+    },
+    {
+      "prompt": "The cat saw a bird and",
+      "output": "The cat saw a bird and wanted to help the bird."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+ "status": "PREEXECUTION_ONLY",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "optimizer_created": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false,
+ "checkpoints": {
+  "Pilot1 parent": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "factual-500": "3ae30ae847d3129d7715173ddbfbbaf6b7490772dc850e361a5a2d785b991123",
+  "control-500": "c888e3b4cf20860b8d1d0651e418be931da7e8db2acc1c32625edb29701f1530"
+ },
+ "scorer": {
+  "evaluator": "fact_supervision_87001_eval_v1/EVALUATE.py",
+  "evaluator_sha256": "3563cb58334cd9753ca8ebff7fe49987a0f0ccb535abdfdf9a149cc1541a497b",
+  "pinned_binding_impl": "fact_supervision_87001_eval_v1/PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+  "pinned_binding_impl_sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+  "semantics": "candidate conditional LL over response tokens + EOS (English base_model path); signed margin; correct iff margin>0; tie==0; greedy argmax<=32 stop EOS"
+ }
+}

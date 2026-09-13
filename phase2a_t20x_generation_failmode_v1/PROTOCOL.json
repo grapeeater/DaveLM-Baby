@@ -1,0 +1,8 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T20X_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "T20 exact collapsed to 9/10/13 after readout-only CE. Did leftover revert to T17X TinyStories continuation, or stay T18X first_token_correct_then_diverge at much lower exact?",
+  "earned_by": "T20_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Exact 9/10/13 vs T18 36/36/40. Representation recovered 2/3.",
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T20 checkpoints", "unseal TEST", "retokenize", "copy Qwen or Smol", "relaunch T4-T20"]
+}

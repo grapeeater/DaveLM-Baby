@@ -1,0 +1,8 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T16X_REVERSAL_FAIL_OVERLAP_V1",
+  "status": "COMPLETE",
+  "kind": "read_only_diagnostic",
+  "scientific_question": "Are T16 reversal misses a stable DEV hard set, and did Phase B recover pairs?",
+  "does_not": ["train", "load T3 TEST", "parent T16"],
+  "locks": {"T3_TEST": "SEALED_UNOPENED"}
+}

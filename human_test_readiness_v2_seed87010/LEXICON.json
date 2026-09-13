@@ -1,0 +1,35 @@
+{
+  "candidate_length_rule": "each within-item pair must have equal token sequence length, including leading space and terminal period",
+  "construction_seed": 87010,
+  "fact_name_pairs": [
+    [
+      "Ash",
+      "Cal"
+    ],
+    [
+      "Cam",
+      "Chip"
+    ],
+    [
+      "Cory",
+      "Ike"
+    ],
+    [
+      "Ira",
+      "Neil"
+    ],
+    [
+      "Ned",
+      "Ron"
+    ],
+    [
+      "Sid",
+      "Will"
+    ]
+  ],
+  "relations": [
+    "found",
+    "carried"
+  ],
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

@@ -1,0 +1,498 @@
+[
+  {
+    "id": "COPY:g0:small drum:a0",
+    "family_id": "COPY:g0",
+    "pair_id": "COPY:g0:small drum",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the small drum says Alex.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      965,
+      286,
+      86,
+      642,
+      541,
+      93,
+      87,
+      314,
+      290,
+      92,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Alex.",
+      " Owen."
+    ],
+    "candidate_token_ids": [
+      [
+        314,
+        290,
+        92,
+        18
+      ],
+      [
+        536,
+        91,
+        274,
+        18
+      ]
+    ],
+    "correct_index": 0,
+    "assignment": 0,
+    "actor": "Alex",
+    "object": "small drum",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g0:small drum:a1",
+    "family_id": "COPY:g0",
+    "pair_id": "COPY:g0:small drum",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the small drum says Owen.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      965,
+      286,
+      86,
+      642,
+      541,
+      93,
+      87,
+      536,
+      91,
+      274,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Alex.",
+      " Owen."
+    ],
+    "candidate_token_ids": [
+      [
+        314,
+        290,
+        92,
+        18
+      ],
+      [
+        536,
+        91,
+        274,
+        18
+      ]
+    ],
+    "correct_index": 1,
+    "assignment": 1,
+    "actor": "Owen",
+    "object": "small drum",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g0:wooden boat:a0",
+    "family_id": "COPY:g0",
+    "pair_id": "COPY:g0:wooden boat",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the wooden boat says Alex.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      272,
+      632,
+      274,
+      281,
+      83,
+      265,
+      541,
+      93,
+      87,
+      314,
+      290,
+      92,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Alex.",
+      " Owen."
+    ],
+    "candidate_token_ids": [
+      [
+        314,
+        290,
+        92,
+        18
+      ],
+      [
+        536,
+        91,
+        274,
+        18
+      ]
+    ],
+    "correct_index": 0,
+    "assignment": 0,
+    "actor": "Alex",
+    "object": "wooden boat",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g0:wooden boat:a1",
+    "family_id": "COPY:g0",
+    "pair_id": "COPY:g0:wooden boat",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the wooden boat says Owen.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      272,
+      632,
+      274,
+      281,
+      83,
+      265,
+      541,
+      93,
+      87,
+      536,
+      91,
+      274,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Alex.",
+      " Owen."
+    ],
+    "candidate_token_ids": [
+      [
+        314,
+        290,
+        92,
+        18
+      ],
+      [
+        536,
+        91,
+        274,
+        18
+      ]
+    ],
+    "correct_index": 1,
+    "assignment": 1,
+    "actor": "Owen",
+    "object": "wooden boat",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g1:soft scarf:a0",
+    "family_id": "COPY:g1",
+    "pair_id": "COPY:g1:soft scarf",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the soft scarf says Mia.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      537,
+      786,
+      269,
+      71,
+      285,
+      74,
+      541,
+      93,
+      87,
+      925,
+      77,
+      69,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Mia.",
+      " Nora."
+    ],
+    "candidate_token_ids": [
+      [
+        925,
+        77,
+        69,
+        18
+      ],
+      [
+        512,
+        276,
+        69,
+        18
+      ]
+    ],
+    "correct_index": 0,
+    "assignment": 0,
+    "actor": "Mia",
+    "object": "soft scarf",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g1:soft scarf:a1",
+    "family_id": "COPY:g1",
+    "pair_id": "COPY:g1:soft scarf",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the soft scarf says Nora.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      537,
+      786,
+      269,
+      71,
+      285,
+      74,
+      541,
+      93,
+      87,
+      512,
+      276,
+      69,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Mia.",
+      " Nora."
+    ],
+    "candidate_token_ids": [
+      [
+        925,
+        77,
+        69,
+        18
+      ],
+      [
+        512,
+        276,
+        69,
+        18
+      ]
+    ],
+    "correct_index": 1,
+    "assignment": 1,
+    "actor": "Nora",
+    "object": "soft scarf",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g1:round plate:a0",
+    "family_id": "COPY:g1",
+    "pair_id": "COPY:g1:round plate",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the round plate says Mia.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      436,
+      421,
+      493,
+      369,
+      541,
+      93,
+      87,
+      925,
+      77,
+      69,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Mia.",
+      " Nora."
+    ],
+    "candidate_token_ids": [
+      [
+        925,
+        77,
+        69,
+        18
+      ],
+      [
+        512,
+        276,
+        69,
+        18
+      ]
+    ],
+    "correct_index": 0,
+    "assignment": 0,
+    "actor": "Mia",
+    "object": "round plate",
+    "predicate": "found"
+  },
+  {
+    "id": "COPY:g1:round plate:a1",
+    "family_id": "COPY:g1",
+    "pair_id": "COPY:g1:round plate",
+    "subgroup": "isolated_card_copy",
+    "arm": "factual",
+    "prompt": "A card for the round plate says Nora.\nCopy the name on the card:",
+    "prompt_token_ids": [
+      37,
+      268,
+      609,
+      419,
+      271,
+      436,
+      421,
+      493,
+      369,
+      541,
+      93,
+      87,
+      512,
+      276,
+      69,
+      18,
+      203,
+      39,
+      1001,
+      93,
+      271,
+      292,
+      559,
+      354,
+      271,
+      268,
+      609,
+      30
+    ],
+    "candidates": [
+      " Mia.",
+      " Nora."
+    ],
+    "candidate_token_ids": [
+      [
+        925,
+        77,
+        69,
+        18
+      ],
+      [
+        512,
+        276,
+        69,
+        18
+      ]
+    ],
+    "correct_index": 1,
+    "assignment": 1,
+    "actor": "Nora",
+    "object": "round plate",
+    "predicate": "found"
+  }
+]

@@ -1,0 +1,268 @@
+{
+  "candidate_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\two_mapping_membership_margin_manual_seed8380\\checkpoints\\membership_margin\\seed_8380\\latest.pt",
+    "sha256": "2a3f7a24b793016d952a05ec32d84b57b0f6fd84af45d730a61c4b0a294b1476"
+  },
+  "datasets": {
+    "supported_relation_withheld_geometry": {
+      "baby_top1_accuracy": 0.4967447817325592,
+      "examples": 1536,
+      "probe": {
+        "layers": {
+          "block_0": {
+            "held_out_accuracy": 0.6678832173347473,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": -0.02731371857225895,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_1": {
+            "held_out_accuracy": 0.6021897792816162,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": -0.0095696821808815,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_2": {
+            "held_out_accuracy": 0.5656934380531311,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.03298531845211983,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_3": {
+            "held_out_accuracy": 0.6058394312858582,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.06346026808023453,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_4": {
+            "held_out_accuracy": 0.6423357725143433,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.04835239425301552,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_5": {
+            "held_out_accuracy": 0.6423357725143433,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.036364272236824036,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_6": {
+            "held_out_accuracy": 0.6678832173347473,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.08214530348777771,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "block_7": {
+            "held_out_accuracy": 0.6277372241020203,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.12929649651050568,
+            "test_examples": 274,
+            "train_examples": 1262
+          },
+          "final_norm": {
+            "held_out_accuracy": 0.6131386756896973,
+            "majority_baseline": 0.525547444820404,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.12302391231060028,
+            "test_examples": 274,
+            "train_examples": 1262
+          }
+        },
+        "split": {
+          "num_folds": 5,
+          "strategy": "candidate_pair_grouped_sha256_5fold",
+          "test_examples": 274,
+          "test_fold": 0,
+          "test_majority_baseline": 0.525547444820404,
+          "train_examples": 1262
+        }
+      }
+    },
+    "trained_anchors": {
+      "baby_top1_accuracy": 0.52734375,
+      "examples": 256,
+      "probe": {
+        "layers": {
+          "block_0": {
+            "held_out_accuracy": 0.6829268336296082,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.06063166633248329,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_1": {
+            "held_out_accuracy": 0.6585366129875183,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.13862596452236176,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_2": {
+            "held_out_accuracy": 0.5853658318519592,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.044847242534160614,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_3": {
+            "held_out_accuracy": 0.7560975551605225,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.1170707643032074,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_4": {
+            "held_out_accuracy": 0.7560975551605225,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.10048939287662506,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_5": {
+            "held_out_accuracy": 0.6829268336296082,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.013323132880032063,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_6": {
+            "held_out_accuracy": 0.7317073345184326,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.15507005155086517,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "block_7": {
+            "held_out_accuracy": 0.6829268336296082,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.11274095624685287,
+            "test_examples": 41,
+            "train_examples": 215
+          },
+          "final_norm": {
+            "held_out_accuracy": 0.7317073345184326,
+            "majority_baseline": 0.6097561120986938,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.1244916245341301,
+            "test_examples": 41,
+            "train_examples": 215
+          }
+        },
+        "split": {
+          "num_folds": 5,
+          "strategy": "candidate_pair_grouped_sha256_5fold",
+          "test_examples": 41,
+          "test_fold": 0,
+          "test_majority_baseline": 0.6097561120986938,
+          "train_examples": 215
+        }
+      }
+    },
+    "training_records": {
+      "baby_top1_accuracy": 0.986328125,
+      "examples": 1536,
+      "probe": {
+        "layers": {
+          "block_0": {
+            "held_out_accuracy": 0.5189003348350525,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.10293839871883392,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_1": {
+            "held_out_accuracy": 0.4845360815525055,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.01714123971760273,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_2": {
+            "held_out_accuracy": 0.5120275020599365,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.03777306526899338,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_3": {
+            "held_out_accuracy": 0.5051546096801758,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.0010663942666724324,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_4": {
+            "held_out_accuracy": 0.5085910558700562,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.032817963510751724,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_5": {
+            "held_out_accuracy": 0.5085910558700562,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.04359680414199829,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_6": {
+            "held_out_accuracy": 0.5876288414001465,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.1753331869840622,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "block_7": {
+            "held_out_accuracy": 0.6323024034500122,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.305745393037796,
+            "test_examples": 291,
+            "train_examples": 1245
+          },
+          "final_norm": {
+            "held_out_accuracy": 0.6185566782951355,
+            "majority_baseline": 0.5017182230949402,
+            "probe_score_vs_canonical_logit_delta_pearson": 0.2961607575416565,
+            "test_examples": 291,
+            "train_examples": 1245
+          }
+        },
+        "split": {
+          "num_folds": 5,
+          "strategy": "candidate_pair_grouped_sha256_5fold",
+          "test_examples": 291,
+          "test_fold": 0,
+          "test_majority_baseline": 0.5017182230949402,
+          "train_examples": 1245
+        }
+      }
+    }
+  },
+  "device": "cuda",
+  "diagnosis": {
+    "classification": "AMBIGUOUS",
+    "rationale": "The linear probe does not cleanly isolate a single representation-vs-readout failure mode under the predefined diagnostic thresholds."
+  },
+  "diagnostic": "query_separability_probe",
+  "experiment": "DaveLM v0.9 Treatment #4",
+  "probe": {
+    "ridge": 0.001,
+    "split_strategy": "candidate-pair-grouped deterministic SHA256 5-fold; fold 0 held out",
+    "type": "closed_form_ridge_linear"
+  },
+  "safety": {
+    "baby_optimizer_created": false,
+    "baby_read_only": true,
+    "backward_calls": 0,
+    "checkpoint_modified": false,
+    "gradients_enabled": false,
+    "novel_pools_constructed": false,
+    "probe_optimizer_created": false,
+    "sealed_evaluation_opened": false,
+    "shortcut_controls_constructed": false
+  }
+}

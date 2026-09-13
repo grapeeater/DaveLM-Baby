@@ -1,0 +1,26 @@
+{
+  "v8_receipt_sha256": "b0ab9c3063716dd390c8c982539801db34cb739815362b4314846515d58772e6",
+  "training_rows_per_arm": 384,
+  "training_families_per_arm": 48,
+  "object_families": 24,
+  "predicate_families": 24,
+  "family_size": 8,
+  "family_transformations": "assignment x query x fact order, 2x2x2",
+  "format": "two-fact declarative cloze; factual entailed; control omits queried description and presents each identical prefix with both targets",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "training": "500 updates, 450 English/50 binding, 9:1; 32 English records per batch (2 complete families from each stratum); AdamW lr5e-5 wd0.05 betas0.9/0.999 eps1e-8 clip2; blocks0-3 protected on English, full T13 on binding",
+  "objective": "four answer tokens plus final EOS, context labels ignored, correct causal alignment; pinned binding CE + hard-min localizer",
+  "dev500": {
+    "step": 500,
+    "arm": "factual",
+    "status": "persisted",
+    "primary_accessed": false,
+    "confirmation_accessed": false
+  },
+  "dev_limitation": "This file stores no measured DEV score. No per-update loss file exists in preserved run_factual directory. Checkpoint metadata will be recorded mechanically at inference load.",
+  "historical_acquisition_report": "C:\\DaveLM-CADAVER\\fact_supervision_87001_eval_v1\\REPORT.md",
+  "hr3_distinction": "HR3 data are isolated TinyStories sentences, not two-fact QA. V8 is a different explicit two-fact cloze treatment."
+}

@@ -1,0 +1,87 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T15_LATEBASE_BLOCKS4TO7_LR3P75E5_750_V1",
+  "seeds": [
+    740001,
+    740002,
+    740003
+  ],
+  "runs": {
+    "740001": {
+      "seed": 740001,
+      "update": 750,
+      "classification": "T15_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 102,
+      "dev_native": 93,
+      "dev_exact": 0,
+      "dev_ce": 1.2460687324404716,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "740002": {
+      "seed": 740002,
+      "update": 750,
+      "classification": "T15_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 104,
+      "dev_native": 78,
+      "dev_exact": 0,
+      "dev_ce": 1.2418787583708764,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "740003": {
+      "seed": 740003,
+      "update": 750,
+      "classification": "T15_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 103,
+      "dev_native": 76,
+      "dev_exact": 0,
+      "dev_ce": 1.239515332877636,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 21163264,
+    "frozen": 40357121
+  },
+  "pointer_keys": "fact_clause_name_through_period_token_18",
+  "language_mix": "9_qa_1_lang",
+  "lr": 3.75e-05,
+  "total_updates": 750,
+  "failed_returncode": null,
+  "study_classification": "T15_FAIL_NO_REPRESENTATION"
+}

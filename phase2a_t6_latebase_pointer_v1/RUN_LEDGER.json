@@ -1,0 +1,90 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T6_LATEBASE_POINTER_V1",
+  "seeds": [
+    650001,
+    650002,
+    650003
+  ],
+  "runs": {
+    "650001": {
+      "seed": 650001,
+      "update": 500,
+      "classification": "T6_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 92,
+      "dev_native": 72,
+      "dev_exact": 0,
+      "dev_ce": 1.2690835997462273,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "650002": {
+      "seed": 650002,
+      "update": 500,
+      "classification": "T6_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 105,
+      "dev_native": 94,
+      "dev_exact": 0,
+      "dev_ce": 1.2637041449546813,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "650003": {
+      "seed": 650003,
+      "update": 500,
+      "classification": "T6_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 85,
+      "dev_native": 70,
+      "dev_exact": 0,
+      "dev_ce": 1.264419586956501,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "failed_returncode": null,
+  "study_classification": "T6_FAIL_NO_REPRESENTATION",
+  "u500_checkpoint_sha256": {
+    "650001": "8e1ff05990a2a31bd851c4cdeb16f7335575afc7fe905d304934f2259f85d8e0",
+    "650002": "c975ce33285c71421a5d392c5a7648198dc8f456f38839ee1bb81dc7ae2579d4",
+    "650003": "a7ae2eb0e5deb994f86e7e8fb6b833490c8ce776f262fbb365c561cb6e4dd1a7"
+  },
+  "weight_check": "early_same true; bind_same true; late_same false; late max ~0.011",
+  "next_treatment": "phase2a_t7_paired_reversal_pointer_v1"
+}

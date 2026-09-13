@@ -1,0 +1,32 @@
+{
+  "autocast": false,
+  "base_only_strict_load": true,
+  "batch_size": 1,
+  "device": "cuda:0",
+  "device_name": "AMD Radeon RX 9060 XT",
+  "model_dtype": "float32",
+  "model_sources": {
+    "C:\\DaveLM-v0.9\\v0_2_1\\__init__.py": "2ba1884227fa40b0b1b59b9343bccb2076369e336f20fe17db9ad6fde940eb90",
+    "C:\\DaveLM-v0.9\\v0_2_1\\model.py": "29369e640298cb22cbdacbb826f908451ff58a5724544ed823d6e0938b51491e",
+    "C:\\DaveLM-v0.9\\v0_7\\__init__.py": "e859a14f534dd8e04db5c8abe62019815cfb0b71dbb6ac0c48b46fd8a6edcf8d",
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+    "C:\\DaveLM-v0.9\\v0_8_2\\__init__.py": "7c47dc732ea59f3d46769a53c5077cb886151f235e75b222270cc8aaf7cef87b",
+    "C:\\DaveLM-v0.9\\v0_8_2\\config.py": "da9c48edd107c7e9d638ad345802a04e23cb19044b9c83a69789e83b2f313798",
+    "C:\\DaveLM-v0.9\\v0_8_2\\model.py": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d"
+  },
+  "padding": false,
+  "punctuation_stop_ids": [
+    5,
+    18,
+    35,
+    901
+  ],
+  "python": "3.12.14",
+  "runner_sha256": "2e3869c6d906b5867849bb47a2b0f18d48ae432216477bcf0f8d778f52d76bfa",
+  "score_dtype": "CPU float64 log_softmax and sum",
+  "state_digest_before": "2951670c33f51ef81c6d19aed230036876f8a27073a64035afb9183d4a6aedb6",
+  "tf32": false,
+  "tokenizers": "0.23.1",
+  "torch": "2.12.0+rocm7.14.0",
+  "truncation": false
+}

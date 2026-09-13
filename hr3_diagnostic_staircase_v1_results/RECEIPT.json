@@ -1,0 +1,11 @@
+{
+  "status": "STAIRCASE_COMPLETE_AB_DEFERRED_SCIENTIFIC_FORK",
+  "manifest_sha256": "1bac16219864e8d0285f8e0b8f1856877d7f6a35b65f7c93b4ef4d952be01353",
+  "report_sha256": "ee47bc011fbc32d401b4c0faada47ffe251bad999d2393d7dcd0893266991018",
+  "frozen_battery_receipt_sha256": "3586b986c4f08a887da641bfab6dad3cbd673cfb5fea57b618a6ffd4c25208e7",
+  "raw_sha256": "89ac6fd2329627e72092092943b40cccbfa4cb436d6c7a88618b8eafb7b2e51d",
+  "checkpoint_updates": 0,
+  "optimizer_created": false,
+  "final_access": false,
+  "sacred_access": false
+}

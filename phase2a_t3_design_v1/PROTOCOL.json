@@ -1,0 +1,125 @@
+{
+  "binding": {
+    "gate": "report both existing nonsacred pools; no worse than U0 by >2 items/pool; collapse=0; no binding-acquisition claim",
+    "params": "all 984321 binding/localizer parameters frozen; no T3 binding training"
+  },
+  "corpus": {
+    "construction": "corrected generator: assignment x query x fact-order x template; name-swap families; fixed candidate order; deterministic IDs; family/name/template-disjoint splits",
+    "dev_families": 16,
+    "dev_names": 8,
+    "dev_rows": 128,
+    "family_size": 8,
+    "templates": 4,
+    "test_families": 16,
+    "test_names": 8,
+    "test_rows": 128,
+    "train_families": 48,
+    "train_names": 16,
+    "train_rows": 384
+  },
+  "gates": {
+    "native_dev": {
+      "exact_answer_eos_min": "80/128",
+      "forced_choice_min": "96/128",
+      "reversal_min": "48/64"
+    },
+    "native_train16": {
+      "correct_min": "16/16",
+      "exact_answer_eos_min": "16/16",
+      "families_min": "4/4",
+      "reversals_min": "8/8"
+    },
+    "representation_dev": {
+      "complete_families_min": "8/16",
+      "name_disjoint_min": "48/64",
+      "retrieval_min": "96/128",
+      "reversal_min": "48/64",
+      "template_disjoint_min": "48/64"
+    },
+    "retention": "TRAIN16 not primary T3 corpus; language and binding preservation are mandatory",
+    "shortcut": "nuisance probes must not explain held-out relational result; failure is T3_SHORTCUT_FAILURE"
+  },
+  "language": {
+    "gate": "DEV CE <= own U0 + 0.25 nat at required checkpoints; no nonfinite metrics; terminal train-dev gap <=0.5",
+    "source": "authoritative Phase1G language stream/evaluator"
+  },
+  "location": {
+    "anchor": "first defining factual mention of each candidate; mean over every name token in the span, including leading-space subtoken and excluding punctuation; exact token spans saved per row",
+    "answer_state_excluded": true,
+    "decision": "BOS-prefixed index len(prompt_token_ids), final_norm output at final context/query token; predicts first answer token"
+  },
+  "locks": {
+    "FINAL": "LOCKED",
+    "T2_EVAL_TEST": "LOCKED_UNOPENED",
+    "historical_transfer": "LOCKED_UNSCORED",
+    "sacred": "LOCKED"
+  },
+  "objective": {
+    "lambda_ptr": 1.0,
+    "native": "T2 length-normalized hardest-distractor pairwise margin hinge, M=1.0; no prompt/continuation CE, no EOS supervision, no KL, no localization term",
+    "new": "For each QA row, q=final_norm hidden at final prompt token; k+ and k- are mean final_norm states over the full token span of each candidate first factual mention. L_ptr=-log(exp(cos(q,k+)/tau)/(exp(cos(q,k+)/tau)+exp(cos(q,k-)/tau)))",
+    "normalization": "L2 cosine; no trainable pointer head; gradients to q and both anchors",
+    "scope": "base model only; binding/localizer frozen",
+    "temperature": 1.0
+  },
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "clip_norm": 2.0,
+    "eps": 1e-08,
+    "lr": 5e-05,
+    "scheduler": "none",
+    "type": "AdamW",
+    "weight_decay": 0.05
+  },
+  "parent": {
+    "lineage": "Phase1G U6000 best; no T2 descendant",
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+  },
+  "schedule": {
+    "cadence": "9 corrected contextual QA updates then 1 Phase1G language rehearsal",
+    "checkpoint_points": [
+      0,
+      100,
+      300,
+      500
+    ],
+    "language_batch": 64,
+    "language_updates": 50,
+    "qa_batch": 32,
+    "qa_updates": 450,
+    "total_updates": 500
+  },
+  "scientific_question": "Can explicit base-model relational representation supervision produce held-out counterfactual identity selection and improve native output?",
+  "seeds": {
+    "runs": [
+      620001,
+      620002,
+      620003
+    ],
+    "schedule_seed_rule": "seed-specific deterministic family permutation; identical corpus and rule"
+  },
+  "sole_intervention": "parameter-free normalized query-to-candidate pointer loss added to the frozen T2 candidate-margin treatment",
+  "status": "DESIGN_READY_NOT_IMPLEMENTED_NOT_TRAINED",
+  "status_classes": [
+    "T3_FULL_SUCCESS",
+    "T3_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+    "T3_FAIL_NO_REPRESENTATION",
+    "T3_SHORTCUT_FAILURE",
+    "T3_LANGUAGE_REGRESSION",
+    "T3_HARD_STOP"
+  ],
+  "stopping": {
+    "early_u100": "descriptive only; stop only integrity/nonfinite or catastrophic language/binding failure",
+    "terminal": "classify at U500; no post-result rescue, gate movement, or locked-panel access",
+    "test_policy": "T3 TEST scored once only after terminal commit and only if DEV representation/native gates pass"
+  },
+  "study": "BABY_VNEXT_PHASE2A_T3_EXPLICIT_REPRESENTATION_FORMING_V1",
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  }
+}

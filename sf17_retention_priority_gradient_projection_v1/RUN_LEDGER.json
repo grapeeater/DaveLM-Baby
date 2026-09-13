@@ -1,0 +1,71 @@
+[
+  {
+    "checkpoint_sha256": "c57ec0d48cec0df5a73b679783905c656ef117c293e5315a91510178616c3bc2",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf17_retention_priority_gradient_projection_v1\\CONTROLLER.py",
+      "--seed",
+      "87044",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-09T02:22:36.906906+00:00",
+    "parent_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "pid": 11236,
+    "returncode": 0,
+    "seed": 87044,
+    "start": "2026-09-09T02:17:04.288945+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "checkpoint_sha256": "683dbbdd3749ce1b048fcf9e98d96da48c4358a9ded2bf7584b939b55e50c9af",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf17_retention_priority_gradient_projection_v1\\CONTROLLER.py",
+      "--seed",
+      "87045",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-09T02:28:03.330923+00:00",
+    "parent_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+    "pid": 13724,
+    "returncode": 0,
+    "seed": 87045,
+    "start": "2026-09-09T02:22:36.988129+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "checkpoint_sha256": "584995430d51bc715a3aa710ed30fb63b5817f4850bc75bb8298265b03460db6",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf17_retention_priority_gradient_projection_v1\\CONTROLLER.py",
+      "--seed",
+      "87046",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-09T02:33:17.968552+00:00",
+    "parent_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+    "pid": 28900,
+    "returncode": 0,
+    "seed": 87046,
+    "start": "2026-09-09T02:28:03.413373+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "pilot0_dev": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+    "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e"
+  },
+  "pilot1_dev": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json",
+    "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+  },
+  "pilot1_rehearsal": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+    "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+  }
+}

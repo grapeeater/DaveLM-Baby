@@ -1,0 +1,90 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T18_T17RECIPE_ANSWERCE_LR3P75E5_1K_V1",
+  "seeds": [
+    770001,
+    770002,
+    770003
+  ],
+  "runs": {
+    "770001": {
+      "seed": 770001,
+      "update": 1000,
+      "classification": "T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 116,
+      "dev_native": 86,
+      "dev_exact": 36,
+      "dev_ce": 1.2545090153813363,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "770002": {
+      "seed": 770002,
+      "update": 1000,
+      "classification": "T18_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 108,
+      "dev_native": 81,
+      "dev_exact": 36,
+      "dev_ce": 1.2549894779920578,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "770003": {
+      "seed": 770003,
+      "update": 1000,
+      "classification": "T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 114,
+      "dev_native": 86,
+      "dev_exact": 40,
+      "dev_ce": 1.2546135678887367,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "phase_a_updates": "1-750",
+    "phase_a_trainable": 40849664,
+    "phase_b_after": 750,
+    "phase_b_trainable": 21163264
+  },
+  "pointer_keys": "fact_clause_name_through_period_token_18",
+  "language_mix": "9_qa_1_lang",
+  "lr": 3.75e-05,
+  "lambda_ans": 1.0,
+  "total_updates": 1000,
+  "failed_returncode": null,
+  "study_classification": "T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL"
+}

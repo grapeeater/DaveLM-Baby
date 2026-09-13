@@ -1,0 +1,8 @@
+{
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "tokenizer": {"path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json", "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"},
+  "objective": {"lambda_ptr": 1.0, "temperature": 1.0, "margin_M": 1.0},
+  "schedule": {"total_updates": 500, "qa_updates": 450, "language_updates": 50, "cadence": "9:1", "qa_batch": 32, "language_batch": 64},
+  "seeds": [620001,620002,620003],
+  "status": "SEALED_T3_COMMITTED_STUDY"
+}

@@ -1,0 +1,328 @@
+{
+  "version": "0.7",
+  "decision": "retain byte-identical v0.6.1 1,024-piece byte-level BPE",
+  "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "vocabulary_size": 1024,
+  "unknown_behavior": "byte fallback; no unknown tokens in controlled audits",
+  "train_tokens": 10848890,
+  "validation_tokens": 2012036,
+  "train_bytes_per_token": 2.5911008407311718,
+  "validation_bytes_per_token": 2.6428721951297094,
+  "examples": [
+    {
+      "text": "A computer processes information by following instructions.",
+      "token_count": 13,
+      "ids": [
+        37,
+        579,
+        683,
+        273,
+        934,
+        807,
+        570,
+        289,
+        540,
+        86,
+        89,
+        836,
+        18
+      ],
+      "tokens": [
+        "A",
+        "\u0120computer",
+        "\u0120process",
+        "es",
+        "\u0120information",
+        "\u0120by",
+        "\u0120follow",
+        "ing",
+        "\u0120inst",
+        "r",
+        "u",
+        "ctions",
+        "."
+      ],
+      "round_trip": "A computer processes information by following instructions."
+    },
+    {
+      "text": "The early fact remains important after several later sentences.",
+      "token_count": 21,
+      "ids": [
+        305,
+        745,
+        362,
+        889,
+        279,
+        81,
+        413,
+        87,
+        225,
+        337,
+        84,
+        483,
+        392,
+        616,
+        1004,
+        983,
+        269,
+        299,
+        274,
+        562,
+        18
+      ],
+      "tokens": [
+        "The",
+        "\u0120ear",
+        "ly",
+        "\u0120fact",
+        "\u0120re",
+        "m",
+        "ain",
+        "s",
+        "\u0120",
+        "im",
+        "p",
+        "ort",
+        "ant",
+        "\u0120after",
+        "\u0120several",
+        "\u0120later",
+        "\u0120s",
+        "ent",
+        "en",
+        "ces",
+        "."
+      ],
+      "round_trip": "The early fact remains important after several later sentences."
+    },
+    {
+      "text": "A marble is inside a pouch, and the pouch is inside a chest.",
+      "token_count": 22,
+      "ids": [
+        37,
+        280,
+        285,
+        376,
+        336,
+        938,
+        262,
+        287,
+        277,
+        395,
+        16,
+        302,
+        271,
+        287,
+        277,
+        395,
+        336,
+        938,
+        262,
+        789,
+        377,
+        18
+      ],
+      "tokens": [
+        "A",
+        "\u0120m",
+        "ar",
+        "ble",
+        "\u0120is",
+        "\u0120inside",
+        "\u0120a",
+        "\u0120p",
+        "ou",
+        "ch",
+        ",",
+        "\u0120and",
+        "\u0120the",
+        "\u0120p",
+        "ou",
+        "ch",
+        "\u0120is",
+        "\u0120inside",
+        "\u0120a",
+        "\u0120che",
+        "st",
+        "."
+      ],
+      "round_trip": "A marble is inside a pouch, and the pouch is inside a chest."
+    },
+    {
+      "text": "6 + 8 = 14.",
+      "token_count": 11,
+      "ids": [
+        26,
+        225,
+        15,
+        225,
+        28,
+        225,
+        33,
+        225,
+        21,
+        24,
+        18
+      ],
+      "tokens": [
+        "6",
+        "\u0120",
+        "+",
+        "\u0120",
+        "8",
+        "\u0120",
+        "=",
+        "\u0120",
+        "1",
+        "4",
+        "."
+      ],
+      "round_trip": "6 + 8 = 14."
+    },
+    {
+      "text": "Warmup raises the learning rate before cosine decay lowers it.",
+      "token_count": 26,
+      "ids": [
+        59,
+        285,
+        81,
+        666,
+        859,
+        294,
+        273,
+        271,
+        739,
+        285,
+        82,
+        289,
+        436,
+        369,
+        607,
+        268,
+        389,
+        530,
+        432,
+        398,
+        93,
+        340,
+        355,
+        657,
+        374,
+        18
+      ],
+      "tokens": [
+        "W",
+        "ar",
+        "m",
+        "up",
+        "\u0120ra",
+        "is",
+        "es",
+        "\u0120the",
+        "\u0120le",
+        "ar",
+        "n",
+        "ing",
+        "\u0120r",
+        "ate",
+        "\u0120before",
+        "\u0120c",
+        "os",
+        "ine",
+        "\u0120de",
+        "ca",
+        "y",
+        "\u0120l",
+        "ow",
+        "ers",
+        "\u0120it",
+        "."
+      ],
+      "round_trip": "Warmup raises the learning rate before cosine decay lowers it."
+    }
+  ],
+  "fragments": {
+    "computer": {
+      "text": "computer",
+      "token_count": 4,
+      "ids": [
+        71,
+        295,
+        84,
+        576
+      ],
+      "tokens": [
+        "c",
+        "om",
+        "p",
+        "uter"
+      ],
+      "round_trip": "computer"
+    },
+    "coreference": {
+      "text": "coreference",
+      "token_count": 3,
+      "ids": [
+        71,
+        357,
+        489
+      ],
+      "tokens": [
+        "c",
+        "ore",
+        "ference"
+      ],
+      "round_trip": "coreference"
+    },
+    "temperature": {
+      "text": "temperature",
+      "token_count": 2,
+      "ids": [
+        88,
+        798
+      ],
+      "tokens": [
+        "t",
+        "emperature"
+      ],
+      "round_trip": "temperature"
+    },
+    "256": {
+      "text": "256",
+      "token_count": 3,
+      "ids": [
+        22,
+        25,
+        26
+      ],
+      "tokens": [
+        "2",
+        "5",
+        "6"
+      ],
+      "round_trip": "256"
+    },
+    "+": {
+      "text": "+",
+      "token_count": 1,
+      "ids": [
+        15
+      ],
+      "tokens": [
+        "+"
+      ],
+      "round_trip": "+"
+    },
+    "=": {
+      "text": "=",
+      "token_count": 1,
+      "ids": [
+        33
+      ],
+      "tokens": [
+        "="
+      ],
+      "round_trip": "="
+    }
+  }
+}

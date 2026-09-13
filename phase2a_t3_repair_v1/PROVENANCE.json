@@ -1,0 +1,12 @@
+{
+  "status": "PHASE2A_T3_INFRASTRUCTURE_BLOCKED",
+  "prior_bundle": "C:\\DaveLM-CADAVER\\phase2a_t3_committed_study_v1",
+  "required_missing": [
+    "TRAIN16 panel",
+    "nonsacred binding pools",
+    "complete shortcut/generalization evaluator inputs"
+  ],
+  "training_in_this_repair": false,
+  "optimizer_created_in_repair": false,
+  "locked_material_accessed": false
+}

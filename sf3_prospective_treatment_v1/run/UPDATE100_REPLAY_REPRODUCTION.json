@@ -1,0 +1,90 @@
+{
+  "exact_tensor_match": false,
+  "max_abs": 0.0009046792984008789,
+  "mismatched_tensor_count": 334,
+  "mismatches": [
+    {
+      "max_abs": 0.0009046792984008789,
+      "name": "base_model.token_embedding.weight"
+    },
+    {
+      "max_abs": 0.00035774707794189453,
+      "name": "base_model.position_embedding.weight"
+    },
+    {
+      "max_abs": 7.193535566329956e-06,
+      "name": "base_model.blocks.0.attention.heads.0.key.weight"
+    },
+    {
+      "max_abs": 1.1710450053215027e-05,
+      "name": "base_model.blocks.0.attention.heads.0.query.weight"
+    },
+    {
+      "max_abs": 7.0873647928237915e-06,
+      "name": "base_model.blocks.0.attention.heads.0.value.weight"
+    },
+    {
+      "max_abs": 7.219146937131882e-06,
+      "name": "base_model.blocks.0.attention.heads.1.key.weight"
+    },
+    {
+      "max_abs": 6.880611181259155e-06,
+      "name": "base_model.blocks.0.attention.heads.1.query.weight"
+    },
+    {
+      "max_abs": 4.89410012960434e-06,
+      "name": "base_model.blocks.0.attention.heads.1.value.weight"
+    },
+    {
+      "max_abs": 1.1663883924484253e-05,
+      "name": "base_model.blocks.0.attention.heads.2.key.weight"
+    },
+    {
+      "max_abs": 1.6596168279647827e-06,
+      "name": "base_model.blocks.0.attention.heads.2.query.weight"
+    },
+    {
+      "max_abs": 4.289671778678894e-06,
+      "name": "base_model.blocks.0.attention.heads.2.value.weight"
+    },
+    {
+      "max_abs": 3.952533006668091e-06,
+      "name": "base_model.blocks.0.attention.heads.3.key.weight"
+    },
+    {
+      "max_abs": 6.595626473426819e-06,
+      "name": "base_model.blocks.0.attention.heads.3.query.weight"
+    },
+    {
+      "max_abs": 1.9785016775131226e-05,
+      "name": "base_model.blocks.0.attention.heads.3.value.weight"
+    },
+    {
+      "max_abs": 3.266613930463791e-06,
+      "name": "base_model.blocks.0.attention.heads.4.key.weight"
+    },
+    {
+      "max_abs": 1.6160309314727783e-05,
+      "name": "base_model.blocks.0.attention.heads.4.query.weight"
+    },
+    {
+      "max_abs": 4.462897777557373e-06,
+      "name": "base_model.blocks.0.attention.heads.4.value.weight"
+    },
+    {
+      "max_abs": 7.145106792449951e-06,
+      "name": "base_model.blocks.0.attention.heads.5.key.weight"
+    },
+    {
+      "max_abs": 4.2691826820373535e-06,
+      "name": "base_model.blocks.0.attention.heads.5.query.weight"
+    },
+    {
+      "max_abs": 1.086108386516571e-05,
+      "name": "base_model.blocks.0.attention.heads.5.value.weight"
+    }
+  ],
+  "reference_path": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+  "reference_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+  "tensor_count": 414
+}

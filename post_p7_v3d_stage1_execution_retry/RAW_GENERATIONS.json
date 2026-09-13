@@ -1,0 +1,1767 @@
+[
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:00",
+    "prompt": "Sam carried a green book to the porch, then sat beside the door.",
+    "generated_token_ids": [
+      586,
+      516,
+      635,
+      516,
+      69,
+      342,
+      289,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      635,
+      516,
+      788,
+      18
+    ],
+    "continuation": " proc while cla whileapping while cla while while while cla while cla while under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:01",
+    "prompt": "Tom found a yellow hat under the chair and brushed off the dust.",
+    "generated_token_ids": [
+      586,
+      516,
+      635,
+      516,
+      788,
+      18
+    ],
+    "continuation": " proc while cla while under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:02",
+    "prompt": "Lily saw a red kite caught in a low branch and reached toward it.",
+    "generated_token_ids": [
+      586,
+      788,
+      18
+    ],
+    "continuation": " proc under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:03",
+    "prompt": "Mia put a blue toy on the shelf so her little brother could see it.",
+    "generated_token_ids": [
+      586,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      635,
+      516,
+      635,
+      635,
+      516,
+      635,
+      516,
+      635,
+      635,
+      516,
+      516,
+      635,
+      635,
+      18
+    ],
+    "continuation": " proc while cla while while while cla while cla while cla cla while cla while cla cla while while cla cla."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:04",
+    "prompt": "Sam looked for his red ball behind the sofa but it was not there.",
+    "generated_token_ids": [
+      586,
+      516,
+      37,
+      635,
+      635,
+      516,
+      69,
+      342,
+      289,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      635,
+      516,
+      788,
+      18
+    ],
+    "continuation": " proc whileA cla cla whileapping while cla while while while cla while cla while under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:05",
+    "prompt": "Tom opened a small box and saw his missing green car inside.",
+    "generated_token_ids": [
+      586,
+      788,
+      18
+    ],
+    "continuation": " proc under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:06",
+    "prompt": "Lily carried a yellow book into the kitchen to show her father.",
+    "generated_token_ids": [
+      585,
+      516,
+      516,
+      69,
+      342,
+      289,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      635,
+      516,
+      788,
+      18
+    ],
+    "continuation": " appe while whileapping while cla while while while cla while cla while under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:07",
+    "prompt": "Mia found a blue hat on the steps and called to its owner.",
+    "generated_token_ids": [
+      586,
+      516,
+      37,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583
+    ],
+    "continuation": " proc whileA than> than> than> than> than> than> than> than> than> than> than> than> than> than> than"
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:08",
+    "prompt": "Rain began while Sam was outside, so he hurried toward the house.",
+    "generated_token_ids": [
+      586,
+      516,
+      635,
+      516,
+      69,
+      342,
+      289,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      635,
+      516,
+      635,
+      635,
+      516,
+      635,
+      516,
+      635,
+      635,
+      516,
+      516,
+      635,
+      635,
+      18
+    ],
+    "continuation": " proc while cla whileapping while cla while while while cla while cla while cla cla while cla while cla cla while while cla cla."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:09",
+    "prompt": "Tom was cold after his walk and reached for a dry coat.",
+    "generated_token_ids": [
+      516,
+      635,
+      788,
+      18
+    ],
+    "continuation": " while cla under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:10",
+    "prompt": "Lily could not reach the toy on the high shelf and asked for help.",
+    "generated_token_ids": [
+      586,
+      516,
+      37,
+      635,
+      635,
+      516,
+      69,
+      342,
+      289,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      635,
+      516,
+      788,
+      18
+    ],
+    "continuation": " proc whileA cla cla whileapping while cla while while while cla while cla while under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:11",
+    "prompt": "Mia heard her friend calling from the gate and turned around.",
+    "generated_token_ids": [
+      586,
+      516,
+      516,
+      635,
+      516,
+      37,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34,
+      583,
+      34
+    ],
+    "continuation": " proc while while cla whileA than> than> than> than> than> than> than> than> than> than> than> than> than>"
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:12",
+    "prompt": "Sam spilled water on the table and went to get a cloth.",
+    "generated_token_ids": [
+      586,
+      516,
+      516,
+      635,
+      516,
+      516,
+      516,
+      37,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203,
+      778,
+      203
+    ],
+    "continuation": " proc while while cla while while whileA reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n reliable\n"
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:13",
+    "prompt": "Tom noticed that his friend had no lunch and moved his plate closer.",
+    "generated_token_ids": [
+      586,
+      788,
+      18
+    ],
+    "continuation": " proc under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:14",
+    "prompt": "Lily saw that the plant was dry and filled a small cup with water.",
+    "generated_token_ids": [
+      586,
+      516,
+      516,
+      516,
+      37,
+      788,
+      18
+    ],
+    "continuation": " proc while while whileA under."
+  },
+  {
+    "checkpoint": "graduate",
+    "item_id": "naturalistic:15",
+    "prompt": "Mia was tired after playing outside and lay down on her bed.",
+    "generated_token_ids": [
+      586,
+      516,
+      635,
+      516,
+      635,
+      516,
+      69,
+      342,
+      289,
+      516,
+      635,
+      516,
+      516,
+      516,
+      635,
+      516,
+      788,
+      18
+    ],
+    "continuation": " proc while cla while cla whileapping while cla while while while cla while under."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:00",
+    "prompt": "Sam carried a green book to the porch, then sat beside the door.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      332,
+      71,
+      284,
+      278,
+      304,
+      347,
+      83,
+      304,
+      271,
+      514,
+      79,
+      18
+    ],
+    "continuation": " He was so excited to go to the park."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:01",
+    "prompt": "Tom found a yellow hat under the chair and brushed off the dust.",
+    "generated_token_ids": [
+      794,
+      407,
+      262,
+      281,
+      77,
+      75,
+      16,
+      537,
+      269,
+      71,
+      557,
+      18
+    ],
+    "continuation": " It was a big, so scared."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:02",
+    "prompt": "Lily saw a red kite caught in a low branch and reached toward it.",
+    "generated_token_ids": [
+      203,
+      6,
+      48,
+      485,
+      16,
+      532,
+      274,
+      16,
+      459,
+      11,
+      81,
+      269,
+      276,
+      86,
+      93,
+      18
+    ],
+    "continuation": "\n\"Look, Ben, I'm sorry."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:03",
+    "prompt": "Mia put a blue toy on the shelf so her little brother could see it.",
+    "generated_token_ids": [
+      527,
+      263,
+      407,
+      537,
+      984,
+      93,
+      317,
+      269,
+      263,
+      407,
+      225,
+      430,
+      93,
+      984,
+      93,
+      18
+    ],
+    "continuation": " She was so happy that she was very happy."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:04",
+    "prompt": "Sam looked for his red ball behind the sofa but it was not there.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      225,
+      430,
+      93,
+      984,
+      93,
+      18
+    ],
+    "continuation": " He was very happy."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:05",
+    "prompt": "Tom opened a small box and saw his missing green car inside.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      302,
+      397,
+      356,
+      348,
+      262,
+      281,
+      77,
+      75,
+      281,
+      83,
+      92,
+      18
+    ],
+    "continuation": " He was so happy and he had a big box."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:06",
+    "prompt": "Lily carried a yellow book into the kitchen to show her father.",
+    "generated_token_ids": [
+      527,
+      263,
+      407,
+      537,
+      984,
+      93,
+      302,
+      269,
+      263,
+      356,
+      348,
+      262,
+      281,
+      77,
+      75,
+      281,
+      77,
+      75,
+      281,
+      77,
+      75,
+      281,
+      83,
+      92,
+      18
+    ],
+    "continuation": " She was so happy and she had a big big big box."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:07",
+    "prompt": "Mia found a blue hat on the steps and called to its owner.",
+    "generated_token_ids": [
+      203,
+      6,
+      51,
+      47,
+      16,
+      459,
+      11,
+      81,
+      269,
+      276,
+      86,
+      93,
+      16,
+      459,
+      272,
+      392,
+      304,
+      493,
+      624,
+      322,
+      715,
+      277,
+      18
+    ],
+    "continuation": "\n\"OK, I'm sorry, I want to play with you."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:08",
+    "prompt": "Rain began while Sam was outside, so he hurried toward the house.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      302,
+      397,
+      878,
+      82,
+      11,
+      88,
+      272,
+      69,
+      284,
+      304,
+      347,
+      83,
+      304,
+      271,
+      272,
+      276,
+      329,
+      18
+    ],
+    "continuation": " He was so happy and he couldn't wait to go to the world."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:09",
+    "prompt": "Tom was cold after his walk and reached for a dry coat.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      332,
+      71,
+      284,
+      278,
+      304,
+      347,
+      83,
+      304,
+      271,
+      269,
+      79,
+      93,
+      18
+    ],
+    "continuation": " He was so excited to go to the sky."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:10",
+    "prompt": "Lily could not reach the toy on the high shelf and asked for help.",
+    "generated_token_ids": [
+      203,
+      6,
+      48,
+      485,
+      16,
+      459,
+      11,
+      81,
+      269,
+      276,
+      86,
+      93,
+      16,
+      459,
+      272,
+      392,
+      304,
+      347,
+      83,
+      304,
+      271,
+      269,
+      79,
+      93,
+      18
+    ],
+    "continuation": "\n\"Look, I'm sorry, I want to go to the sky."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:11",
+    "prompt": "Mia heard her friend calling from the gate and turned around.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      225,
+      430,
+      93,
+      984,
+      93,
+      18
+    ],
+    "continuation": " He was very happy."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:12",
+    "prompt": "Sam spilled water on the table and went to get a cloth.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      332,
+      71,
+      284,
+      278,
+      304,
+      347,
+      83,
+      304,
+      271,
+      514,
+      79,
+      18
+    ],
+    "continuation": " He was so excited to go to the park."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:13",
+    "prompt": "Tom noticed that his friend had no lunch and moved his plate closer.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      225,
+      430,
+      93,
+      984,
+      93,
+      302,
+      397,
+      878,
+      82,
+      11,
+      88,
+      272,
+      69,
+      284,
+      304,
+      493,
+      624,
+      322,
+      356,
+      294,
+      372,
+      77,
+      560,
+      87,
+      18
+    ],
+    "continuation": " He was very happy and he couldn't wait to play with his friends."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:14",
+    "prompt": "Lily saw that the plant was dry and filled a small cup with water.",
+    "generated_token_ids": [
+      527,
+      263,
+      407,
+      225,
+      430,
+      93,
+      984,
+      93,
+      302,
+      269,
+      71,
+      557,
+      18
+    ],
+    "continuation": " She was very happy and scared."
+  },
+  {
+    "checkpoint": "pilot0",
+    "item_id": "naturalistic:15",
+    "prompt": "Mia was tired after playing outside and lay down on her bed.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      332,
+      71,
+      284,
+      278,
+      304,
+      347,
+      83,
+      304,
+      271,
+      514,
+      79,
+      18
+    ],
+    "continuation": " He was so excited to go to the park."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:00",
+    "prompt": "Sam carried a green book to the porch, then sat beside the door.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      77,
+      75,
+      281,
+      368,
+      72,
+      302,
+      272,
+      396,
+      72,
+      18
+    ],
+    "continuation": " He wanted to the big bird and wered."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:01",
+    "prompt": "Tom found a yellow hat under the chair and brushed off the dust.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      302,
+      272,
+      392,
+      278,
+      304,
+      493,
+      624,
+      322,
+      225,
+      358,
+      18
+    ],
+    "continuation": " He was so happy and wanted to play with her."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:02",
+    "prompt": "Lily saw a red kite caught in a low branch and reached toward it.",
+    "generated_token_ids": [
+      527,
+      263,
+      272,
+      392,
+      278,
+      304,
+      83,
+      79,
+      18
+    ],
+    "continuation": " She wanted took."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:03",
+    "prompt": "Mia put a blue toy on the shelf so her little brother could see it.",
+    "generated_token_ids": [
+      527,
+      263,
+      272,
+      392,
+      278,
+      304,
+      347,
+      308,
+      225,
+      358,
+      280,
+      295,
+      302,
+      225,
+      358,
+      280,
+      295,
+      18
+    ],
+    "continuation": " She wanted to got her mom and her mom."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:04",
+    "prompt": "Sam looked for his red ball behind the sofa but it was not there.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      368,
+      72,
+      302,
+      356,
+      294,
+      280,
+      295,
+      18
+    ],
+    "continuation": " He wanted to the bird and his mom."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:05",
+    "prompt": "Tom opened a small box and saw his missing green car inside.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      18
+    ],
+    "continuation": " He was so happy."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:06",
+    "prompt": "Lily carried a yellow book into the kitchen to show her father.",
+    "generated_token_ids": [
+      527,
+      263,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      77,
+      75,
+      281,
+      368,
+      72,
+      302,
+      269,
+      263,
+      72,
+      18
+    ],
+    "continuation": " She wanted to the big bird and shed."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:07",
+    "prompt": "Mia found a blue hat on the steps and called to its owner.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      368,
+      72,
+      302,
+      272,
+      396,
+      537,
+      984,
+      93,
+      18
+    ],
+    "continuation": " He wanted to the bird and were so happy."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:08",
+    "prompt": "Rain began while Sam was outside, so he hurried toward the house.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      18
+    ],
+    "continuation": " He was so happy."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:09",
+    "prompt": "Tom was cold after his walk and reached for a dry coat.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      302,
+      272,
+      392,
+      278,
+      304,
+      347,
+      83,
+      18
+    ],
+    "continuation": " He was so happy and wanted to go."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:10",
+    "prompt": "Lily could not reach the toy on the high shelf and asked for help.",
+    "generated_token_ids": [
+      527,
+      263,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      77,
+      75,
+      281,
+      77,
+      75,
+      281,
+      368,
+      72,
+      302,
+      269,
+      263,
+      72,
+      18
+    ],
+    "continuation": " She wanted to the big big bird and shed."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:11",
+    "prompt": "Mia heard her friend calling from the gate and turned around.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      77,
+      75,
+      302,
+      272,
+      396,
+      72,
+      302,
+      356,
+      294,
+      280,
+      295,
+      18
+    ],
+    "continuation": " He wanted to the big and wered and his mom."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:12",
+    "prompt": "Sam spilled water on the table and went to get a cloth.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      407,
+      537,
+      984,
+      93,
+      18
+    ],
+    "continuation": " He was so happy."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:13",
+    "prompt": "Tom noticed that his friend had no lunch and moved his plate closer.",
+    "generated_token_ids": [
+      845,
+      272,
+      396,
+      225,
+      358,
+      280,
+      295,
+      302,
+      225,
+      358,
+      280,
+      295,
+      81,
+      93,
+      18
+    ],
+    "continuation": " They were her mom and her mommy."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:14",
+    "prompt": "Lily saw that the plant was dry and filled a small cup with water.",
+    "generated_token_ids": [
+      203,
+      305,
+      340,
+      284,
+      88,
+      290,
+      347,
+      368,
+      80,
+      292,
+      77,
+      306,
+      18
+    ],
+    "continuation": "\nThe little girl nice."
+  },
+  {
+    "checkpoint": "pilot1",
+    "item_id": "naturalistic:15",
+    "prompt": "Mia was tired after playing outside and lay down on her bed.",
+    "generated_token_ids": [
+      225,
+      44,
+      73,
+      272,
+      392,
+      278,
+      304,
+      271,
+      281,
+      368,
+      72,
+      302,
+      269,
+      71,
+      557,
+      18
+    ],
+    "continuation": " He wanted to the bird and scared."
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:00",
+    "prompt": "Sam carried a green book to the porch, then sat beside the door.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:01",
+    "prompt": "Tom found a yellow hat under the chair and brushed off the dust.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:02",
+    "prompt": "Lily saw a red kite caught in a low branch and reached toward it.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:03",
+    "prompt": "Mia put a blue toy on the shelf so her little brother could see it.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:04",
+    "prompt": "Sam looked for his red ball behind the sofa but it was not there.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:05",
+    "prompt": "Tom opened a small box and saw his missing green car inside.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:06",
+    "prompt": "Lily carried a yellow book into the kitchen to show her father.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:07",
+    "prompt": "Mia found a blue hat on the steps and called to its owner.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:08",
+    "prompt": "Rain began while Sam was outside, so he hurried toward the house.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:09",
+    "prompt": "Tom was cold after his walk and reached for a dry coat.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:10",
+    "prompt": "Lily could not reach the toy on the high shelf and asked for help.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:11",
+    "prompt": "Mia heard her friend calling from the gate and turned around.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:12",
+    "prompt": "Sam spilled water on the table and went to get a cloth.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:13",
+    "prompt": "Tom noticed that his friend had no lunch and moved his plate closer.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:14",
+    "prompt": "Lily saw that the plant was dry and filled a small cup with water.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p5",
+    "item_id": "naturalistic:15",
+    "prompt": "Mia was tired after playing outside and lay down on her bed.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:00",
+    "prompt": "Sam carried a green book to the porch, then sat beside the door.",
+    "generated_token_ids": [
+      527,
+      339,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Sam was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:01",
+    "prompt": "Tom found a yellow hat under the chair and brushed off the dust.",
+    "generated_token_ids": [
+      525,
+      295,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Tom was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:02",
+    "prompt": "Lily saw a red kite caught in a low branch and reached toward it.",
+    "generated_token_ids": [
+      225,
+      48,
+      316,
+      93,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Lily was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:03",
+    "prompt": "Mia put a blue toy on the shelf so her little brother could see it.",
+    "generated_token_ids": [
+      925,
+      77,
+      69,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Mia was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:04",
+    "prompt": "Sam looked for his red ball behind the sofa but it was not there.",
+    "generated_token_ids": [
+      527,
+      339,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Sam was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:05",
+    "prompt": "Tom opened a small box and saw his missing green car inside.",
+    "generated_token_ids": [
+      525,
+      295,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Tom was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:06",
+    "prompt": "Lily carried a yellow book into the kitchen to show her father.",
+    "generated_token_ids": [
+      225,
+      48,
+      316,
+      93,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Lily was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:07",
+    "prompt": "Mia found a blue hat on the steps and called to its owner.",
+    "generated_token_ids": [
+      925,
+      77,
+      69,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Mia was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:08",
+    "prompt": "Rain began while Sam was outside, so he hurried toward the house.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:09",
+    "prompt": "Tom was cold after his walk and reached for a dry coat.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:10",
+    "prompt": "Lily could not reach the toy on the high shelf and asked for help.",
+    "generated_token_ids": [
+      225,
+      48,
+      316,
+      93,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Lily was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:11",
+    "prompt": "Mia heard her friend calling from the gate and turned around.",
+    "generated_token_ids": [
+      925,
+      77,
+      69,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Mia was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:12",
+    "prompt": "Sam spilled water on the table and went to get a cloth.",
+    "generated_token_ids": [
+      527,
+      339,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Sam was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:13",
+    "prompt": "Tom noticed that his friend had no lunch and moved his plate closer.",
+    "generated_token_ids": [
+      525,
+      295,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Tom was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:14",
+    "prompt": "Lily saw that the plant was dry and filled a small cup with water.",
+    "generated_token_ids": [
+      225,
+      48,
+      316,
+      93,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Lily was happy to see it."
+  },
+  {
+    "checkpoint": "p6",
+    "item_id": "naturalistic:15",
+    "prompt": "Mia was tired after playing outside and lay down on her bed.",
+    "generated_token_ids": [
+      925,
+      77,
+      69,
+      407,
+      984,
+      93,
+      304,
+      523,
+      73,
+      374,
+      18
+    ],
+    "continuation": " Mia was happy to see it."
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:00",
+    "prompt": "Sam carried a green book to the porch, then sat beside the door.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:01",
+    "prompt": "Tom found a yellow hat under the chair and brushed off the dust.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:02",
+    "prompt": "Lily saw a red kite caught in a low branch and reached toward it.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:03",
+    "prompt": "Mia put a blue toy on the shelf so her little brother could see it.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:04",
+    "prompt": "Sam looked for his red ball behind the sofa but it was not there.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:05",
+    "prompt": "Tom opened a small box and saw his missing green car inside.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:06",
+    "prompt": "Lily carried a yellow book into the kitchen to show her father.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:07",
+    "prompt": "Mia found a blue hat on the steps and called to its owner.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:08",
+    "prompt": "Rain began while Sam was outside, so he hurried toward the house.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:09",
+    "prompt": "Tom was cold after his walk and reached for a dry coat.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:10",
+    "prompt": "Lily could not reach the toy on the high shelf and asked for help.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:11",
+    "prompt": "Mia heard her friend calling from the gate and turned around.",
+    "generated_token_ids": [
+      925,
+      77,
+      69,
+      287,
+      324,
+      806,
+      271,
+      347,
+      264,
+      274,
+      281,
+      452,
+      18
+    ],
+    "continuation": " Mia put down the green ball."
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:12",
+    "prompt": "Sam spilled water on the table and went to get a cloth.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:13",
+    "prompt": "Tom noticed that his friend had no lunch and moved his plate closer.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:14",
+    "prompt": "Lily saw that the plant was dry and filled a small cup with water.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  },
+  {
+    "checkpoint": "p7",
+    "item_id": "naturalistic:15",
+    "prompt": "Mia was tired after playing outside and lay down on her bed.",
+    "generated_token_ids": [
+      3
+    ],
+    "continuation": ""
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "byte_identical_sf13_payload": [
+      "D3_SELECTION.json",
+      "DEV_ORDER.json",
+      "DEV_SURFACE.json",
+      "EXTERNAL_INPUTS.json",
+      "KL_POOL_MANIFEST.json",
+      "KL_POOL.json",
+      "SCHEDULE.json",
+      "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py",
+      "SF2_PROTOCOL.json",
+      "TRAIN.json",
+      "TRAIN16_RETENTION.json"
+    ],
+    "checkpoint_loaded": false,
+    "final_accessed": false,
+    "isolated_variable": {
+      "D3_training_calls": 0,
+      "all_scientific_settings_equal_sf13": true,
+      "binding_backward_unchanged": true,
+      "factual_loss": "CE + .25 margin M=1",
+      "global_projection_only_on_conflict": true,
+      "kl_positions": 160,
+      "retention_loss": "1.0 forward KL"
+    },
+    "optimizer_created": false,
+    "parents": {
+      "87044": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "87045": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "87046": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+    },
+    "projection_mock": {
+      "conflict_detected": true,
+      "nonconflict_exact_sum": true,
+      "projected_factual_dot_retention": 0.0,
+      "retention_gradient_unchanged": true,
+      "single_objective_gradient_unchanged": true
+    },
+    "reporter_smoke": "PASS",
+    "runtime": {
+      "gpu": "AMD Radeon RX 9060 XT",
+      "python": "3.12.14",
+      "tokenizers": "0.23.1",
+      "torch": "2.12.0+rocm7.14.0"
+    },
+    "sacred_accessed": false,
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "updates": 0
+  },
+  "status": "SF17_PROSPECTIVE_PREFLIGHT_PASS",
+  "warnings": [
+    "This is deterministic retention-priority global gradient projection, not randomized symmetric PCGrad. The distinction is frozen before outcomes.",
+    "U0 is inherited from actual evaluation of identical parents and rerun by each sealed branch before optimizer construction."
+  ]
+}

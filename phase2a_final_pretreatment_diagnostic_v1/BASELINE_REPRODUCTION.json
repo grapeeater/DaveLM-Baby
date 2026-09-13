@@ -1,0 +1,9 @@
+{
+  "device": "cuda",
+  "max_abs_hidden_reextract": 0.0,
+  "max_abs_logit_reextract": 0.0,
+  "passed": true,
+  "pilot_hash": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "positions": "last token of unpadded prompt; model logits at that causal position predict first answer token",
+  "t2_hash": "83428b4e60a97385359be19d4d8312998bfd27d668480d6c4e3790d2489fdd42"
+}

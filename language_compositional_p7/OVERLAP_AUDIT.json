@@ -1,0 +1,89 @@
+{
+  "rows": [
+    {
+      "prompt": "Lily found a red ball.",
+      "response": "Lily picked up the red ball.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Lily played with the red ball.",
+      "response": "Lily had fun with the red ball.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Lily looked for the yellow toy.",
+      "response": "Lily searched for the yellow toy.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Lily put the green hat on the table.",
+      "response": "Lily looked at the green hat.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Lily liked the blue kite.",
+      "response": "Lily played with the blue kite.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Lily carried the red car.",
+      "response": "Lily put down the red car.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Lily picked up the yellow fish.",
+      "response": "Lily carried the yellow fish.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Mia saw a yellow book.",
+      "response": "Mia smiled at the yellow book.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Mia found a green toy.",
+      "response": "Mia picked up the green toy.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Mia played with the green toy.",
+      "response": "Mia had fun with the green toy.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Mia looked for the blue hat.",
+      "response": "Mia searched for the blue hat.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    },
+    {
+      "prompt": "Mia put the red kite on the table.",
+      "response": "Mia looked at the red kite.",
+      "full_exact_synthetic": false,
+      "full_exact_tinystories": false,
+      "response_exact_synthetic": false
+    }
+  ],
+  "full_sequence_exact_overlap_count": 0
+}

@@ -1,0 +1,243 @@
+{
+  "authorized_axes": [
+    "trained_anchors",
+    "supported_relation_withheld_geometry"
+  ],
+  "authorized_record_counts": {
+    "supported_relation_withheld_geometry": 1536,
+    "trained_anchors": 256
+  },
+  "candidate_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\two_mapping_membership_margin_manual_seed8380\\checkpoints\\membership_margin\\seed_8380\\latest.pt",
+    "sha256": "2a3f7a24b793016d952a05ec32d84b57b0f6fd84af45d730a61c4b0a294b1476"
+  },
+  "classification": "INCONCLUSIVE / POSITIVE-CONTROL FAILURE",
+  "evaluation": {
+    "supported_relation_withheld_geometry": {
+      "by_cell": {
+        "q120_d60": {
+          "distractor_capture": 72,
+          "distractor_capture_rate": 0.5625,
+          "exact": 49,
+          "exact_accuracy": 0.3828125,
+          "examples": 128,
+          "target_probability_mean": 0.3286800143733899,
+          "target_rank_mean": 4.1796875,
+          "target_rank_median": 2.0
+        },
+        "q120_d66": {
+          "distractor_capture": 51,
+          "distractor_capture_rate": 0.3984375,
+          "exact": 71,
+          "exact_accuracy": 0.5546875,
+          "examples": 128,
+          "target_probability_mean": 0.43550149002712146,
+          "target_rank_mean": 3.5859375,
+          "target_rank_median": 1.0
+        },
+        "q120_d72": {
+          "distractor_capture": 51,
+          "distractor_capture_rate": 0.3984375,
+          "exact": 66,
+          "exact_accuracy": 0.515625,
+          "examples": 128,
+          "target_probability_mean": 0.39551959994562935,
+          "target_rank_mean": 3.71875,
+          "target_rank_median": 1.0
+        },
+        "q128_d60": {
+          "distractor_capture": 69,
+          "distractor_capture_rate": 0.5390625,
+          "exact": 54,
+          "exact_accuracy": 0.421875,
+          "examples": 128,
+          "target_probability_mean": 0.362628629456319,
+          "target_rank_mean": 4.0390625,
+          "target_rank_median": 2.0
+        },
+        "q128_d66": {
+          "distractor_capture": 55,
+          "distractor_capture_rate": 0.4296875,
+          "exact": 67,
+          "exact_accuracy": 0.5234375,
+          "examples": 128,
+          "target_probability_mean": 0.46164760515165426,
+          "target_rank_mean": 3.328125,
+          "target_rank_median": 1.0
+        },
+        "q128_d72": {
+          "distractor_capture": 44,
+          "distractor_capture_rate": 0.34375,
+          "exact": 83,
+          "exact_accuracy": 0.6484375,
+          "examples": 128,
+          "target_probability_mean": 0.5305987700693322,
+          "target_rank_mean": 3.484375,
+          "target_rank_median": 1.0
+        },
+        "q140_d60": {
+          "distractor_capture": 52,
+          "distractor_capture_rate": 0.40625,
+          "exact": 71,
+          "exact_accuracy": 0.5546875,
+          "examples": 128,
+          "target_probability_mean": 0.45922153363926554,
+          "target_rank_mean": 2.5859375,
+          "target_rank_median": 1.0
+        },
+        "q140_d66": {
+          "distractor_capture": 81,
+          "distractor_capture_rate": 0.6328125,
+          "exact": 41,
+          "exact_accuracy": 0.3203125,
+          "examples": 128,
+          "target_probability_mean": 0.2336116368560397,
+          "target_rank_mean": 5.6875,
+          "target_rank_median": 2.0
+        },
+        "q140_d72": {
+          "distractor_capture": 64,
+          "distractor_capture_rate": 0.5,
+          "exact": 61,
+          "exact_accuracy": 0.4765625,
+          "examples": 128,
+          "target_probability_mean": 0.40297012815827316,
+          "target_rank_mean": 3.421875,
+          "target_rank_median": 2.0
+        },
+        "q152_d60": {
+          "distractor_capture": 66,
+          "distractor_capture_rate": 0.515625,
+          "exact": 57,
+          "exact_accuracy": 0.4453125,
+          "examples": 128,
+          "target_probability_mean": 0.3530923758558515,
+          "target_rank_mean": 4.515625,
+          "target_rank_median": 2.0
+        },
+        "q152_d66": {
+          "distractor_capture": 53,
+          "distractor_capture_rate": 0.4140625,
+          "exact": 66,
+          "exact_accuracy": 0.515625,
+          "examples": 128,
+          "target_probability_mean": 0.4082047133576907,
+          "target_rank_mean": 3.7734375,
+          "target_rank_median": 1.0
+        },
+        "q152_d72": {
+          "distractor_capture": 45,
+          "distractor_capture_rate": 0.3515625,
+          "exact": 77,
+          "exact_accuracy": 0.6015625,
+          "examples": 128,
+          "target_probability_mean": 0.4694072727957064,
+          "target_rank_mean": 2.375,
+          "target_rank_median": 1.0
+        }
+      },
+      "by_query_slot": {
+        "0": {
+          "distractor_errors": 346,
+          "distractor_share_among_errors": 0.8963730569948186,
+          "errors": 386,
+          "exact": 382,
+          "exact_accuracy": 0.4973958333333333,
+          "examples": 768
+        },
+        "1": {
+          "distractor_errors": 357,
+          "distractor_share_among_errors": 0.9224806201550387,
+          "errors": 387,
+          "exact": 381,
+          "exact_accuracy": 0.49609375,
+          "examples": 768
+        }
+      },
+      "distractor_capture": 703,
+      "distractor_capture_rate": 0.4576822916666667,
+      "distractor_errors": 703,
+      "distractor_share_among_errors": 0.9094437257438551,
+      "errors": 773,
+      "exact": 763,
+      "exact_accuracy": 0.4967447916666667,
+      "examples": 1536,
+      "target_probability_mean": 0.4034236474738561,
+      "target_rank_mean": 3.724609375,
+      "target_rank_median": 2.0
+    },
+    "trained_anchors": {
+      "by_cell": {
+        "q128_d48": {
+          "distractor_capture": 47,
+          "distractor_capture_rate": 0.3671875,
+          "exact": 77,
+          "exact_accuracy": 0.6015625,
+          "examples": 128,
+          "target_probability_mean": 0.49913782442160937,
+          "target_rank_mean": 2.578125,
+          "target_rank_median": 1.0
+        },
+        "q152_d54": {
+          "distractor_capture": 58,
+          "distractor_capture_rate": 0.453125,
+          "exact": 58,
+          "exact_accuracy": 0.453125,
+          "examples": 128,
+          "target_probability_mean": 0.3801585111385748,
+          "target_rank_mean": 3.2890625,
+          "target_rank_median": 2.0
+        }
+      },
+      "by_query_slot": {
+        "0": {
+          "distractor_errors": 59,
+          "distractor_share_among_errors": 0.9516129032258065,
+          "errors": 62,
+          "exact": 66,
+          "exact_accuracy": 0.515625,
+          "examples": 128
+        },
+        "1": {
+          "distractor_errors": 46,
+          "distractor_share_among_errors": 0.7796610169491526,
+          "errors": 59,
+          "exact": 69,
+          "exact_accuracy": 0.5390625,
+          "examples": 128
+        }
+      },
+      "distractor_capture": 105,
+      "distractor_capture_rate": 0.41015625,
+      "distractor_errors": 105,
+      "distractor_share_among_errors": 0.8677685950413223,
+      "errors": 121,
+      "exact": 135,
+      "exact_accuracy": 0.52734375,
+      "examples": 256,
+      "target_probability_mean": 0.4396481677800921,
+      "target_rank_mean": 2.93359375,
+      "target_rank_median": 1.0
+    }
+  },
+  "evaluation_stage": "frozen_native_positive_controls",
+  "experiment": "DaveLM v0.9 Treatment #4",
+  "gates": {
+    "supported_withheld_geometry_pass": false,
+    "supported_withheld_geometry_required": 0.9,
+    "trained_anchors_pass": false,
+    "trained_anchors_required": 0.95
+  },
+  "parameter_count": 10594944,
+  "positive_control_valid": false,
+  "rationale": "At least one frozen positive-control gate failed. Novel and shortcut-control pools remain sealed.",
+  "sealed_axes_constructed": false,
+  "sealed_evaluation_opened": false,
+  "training_provenance": {
+    "answer_substitutions": 32000,
+    "schedule_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+    "start_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+    "steps": 1000,
+    "supervised_tokens": 6176000
+  }
+}

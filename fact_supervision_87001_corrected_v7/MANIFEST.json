@@ -1,0 +1,49 @@
+{
+  "checkpoint_loaded": false,
+  "counts": {
+    "confirmation": 192,
+    "controlled_total": 1728,
+    "development": 96,
+    "naturalistic_confirmation": 16,
+    "naturalistic_primary": 16,
+    "primary": 192,
+    "training": 384
+  },
+  "inference": false,
+  "naturalistic_family_ids": {
+    "confirmation": [
+      "confirmation:object:1ab7c4cd7b78bfd3",
+      "confirmation:object:90e51b1ada2f6a9a",
+      "confirmation:object:d2fc2b7f99370272",
+      "confirmation:object:ed3662a8cb0c6428",
+      "confirmation:object:84887373ac29a086",
+      "confirmation:object:9673f9c8ce5ee287",
+      "confirmation:object:db28775c46f974a0",
+      "confirmation:object:bbe6c8915e16e191"
+    ],
+    "primary": [
+      "primary:object:3f82d20bfbec8130",
+      "primary:object:ee1543aaeb77df2c",
+      "primary:object:5da5bc579e457903",
+      "primary:object:a014debeb8d97958",
+      "primary:object:1bdf1a55c33ecd48",
+      "primary:object:13410aed2940d960",
+      "primary:object:05d281489eef0c36",
+      "primary:object:31df82ee73ef5a9a"
+    ]
+  },
+  "parent_checkpoint": {
+    "name": "Language Pilot 1",
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "sacred_material_accessed": false,
+  "seed": 87001,
+  "tokenizer": {
+    "byte_fallback": false,
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "training": false,
+  "version": "corrected_v3"
+}

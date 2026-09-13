@@ -1,0 +1,5 @@
+{
+  "detached_receipt_file_sha256": "7b84160b25ed05ca49019df60fef37b11da5bfee22246c8c98e40e066546f0a6",
+  "manifest_sha256": "48662539ecd5cbd2a1fcbaec28cd33cc59c0854a0c3f980ae8226c4b26bfcc23",
+  "receipt_sha256": "dbd9baae92b332f904e1a86e4529e62dd66825a81bc6bb3f0a27ee6a81c2d1be"
+}

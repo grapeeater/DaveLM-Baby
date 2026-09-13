@@ -1,0 +1,23 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T18_T17RECIPE_ANSWERCE_LR3P75E5_1K_V1",
+  "status": "TERMINAL_T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+  "scientific_question": "Given T17's language-safe representation 2/3 and T17X showing greedy generation continues Phase1G stories after Answer:, does adding answer-span teacher-forced CE (lambda_ans=1.0) to the unchanged T17 two-phase recipe produce native/exact gains while holding language and representation?",
+  "earned_by": "T17_REPRESENTATION_SUCCESS_OUTPUT_FAIL 2/3. T17X: exact 0 is unterminated language continuation; PNe 80-81/128. QA was pointer+margin only; language_head has no pointer gradient.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14 checkpoints", "T15 checkpoints", "T16 checkpoints", "T17 checkpoints", "730002", "760001", "760002", "760003"],
+  "phase_a": {"updates": "1-750", "freeze": "blocks 0-3 and all 984321 binding params", "train": "blocks 4-11 + embeddings + final_norm + language_head", "trainable": 40849664, "frozen": 20670721},
+  "phase_b": {"after_eval": 750, "action": "copy Phase1G weights into blocks 8-11, freeze them, rebuild AdamW", "train": "blocks 4-7 + embeddings + final_norm + language_head", "trainable": 21163264, "frozen": 40357121},
+  "pointer_keys": {"definition": "for each mention_span_bos, indices from mention start through next token id 18 (period), exclusive of decision_position_bos", "period_token_id": 18},
+  "objective": {"lambda_ptr": 1.0, "lambda_ans": 1.0, "answer_ce": "teacher-forced CE on correct candidate_token_ids + EOS only (not prompt)", "margin_M": 1.0, "layout": "none", "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded; independent-item QA batches; same mix as T17 (no template reweight)",
+  "seeds": [770001, 770002, 770003],
+  "schedule": {"total_updates": 1000, "qa_updates": 900, "language_updates": 100, "qa_batch": 32, "eval_points": [0, 100, 300, 500, 750, 1000], "lr": 3.75e-5, "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T18_FULL_SUCCESS", "T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T18_FAIL_NO_REPRESENTATION", "T18_LANGUAGE_REGRESSION", "T18_SHORTCUT_FAILURE", "T18_HARD_STOP"],
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; >=2 LANGUAGE_REGRESSION; >=2 SHORTCUT; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

@@ -1,0 +1,25 @@
+{
+  "all_exact": false,
+  "checks": {
+    "all100_metric_records_exact": false,
+    "completed": true,
+    "d3_update0_RAW.jsonl": true,
+    "d3_update100_RAW.jsonl": false,
+    "english_index": true,
+    "model": false,
+    "optimizer": false,
+    "provenance": true,
+    "rng": true,
+    "scope": true,
+    "update0_acquisition_RAW.jsonl": true,
+    "update0_checks.json": true,
+    "update100_acquisition_RAW.jsonl": false,
+    "update100_checks.json": false
+  },
+  "model_tensors": 414,
+  "optimizer_parameters": 334,
+  "source_sha256": {
+    "common_a": "43c921283013ff88e6a92a30c24ddbc14fe6c0d02c8eda64b02f8b9b0d60e8b6",
+    "common_b": "6d2ae12dc911669d7cc453587e6fcd65d517e7e609235db9309263ed6ddaa35d"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "anchor_distractor_capture": {
+    "distractor_target_errors": 98,
+    "distractor_target_share_of_errors": 0.9423076923076923,
+    "incorrect": 104
+  },
+  "checkpoint": "C:\\DaveLM-CADAVER\\two_mapping_curriculum_bridge_manual_seed8380\\checkpoints\\curriculum\\seed_8380\\latest.pt",
+  "checkpoint_sha256": "2499edb529b629bb07353cfc802932e7f101f813ba8626aaf2069e320f5930fb",
+  "classification": "INCONCLUSIVE_POSITIVE_CONTROL_FAILURE",
+  "positive_control_valid": false,
+  "runtime_seconds": 639.7055167999933,
+  "schedule_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+  "sealed_evaluation_opened": false,
+  "supported_distractor_capture": {
+    "distractor_target_errors": 736,
+    "distractor_target_share_of_errors": 0.9533678756476683,
+    "incorrect": 772
+  },
+  "supported_relation_withheld_geometry": {
+    "exact": 764,
+    "exact_accuracy": 0.4973958333333333,
+    "examples": 1536
+  },
+  "trained_anchors": {
+    "exact": 152,
+    "exact_accuracy": 0.59375,
+    "examples": 256
+  }
+}

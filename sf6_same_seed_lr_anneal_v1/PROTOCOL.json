@@ -1,0 +1,106 @@
+{
+  "study": "SF6_SAME_SEED_INDEPENDENT_LATE_ENGLISH_LR_ANNEAL_V1",
+  "created_utc": "2026-09-08T04:43:06.483859+00:00",
+  "hypothesis": "Reducing late English step size may improve the weakest factual margin/full acquisition while preserving retention. Constant-LR overshoot is a hypothesis, not an established cause.",
+  "manipulated_variable": "English AdamW learning rate after global update100 only; LR-scaled weight decay consequently changes as an inseparable part of this LR intervention.",
+  "parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runtime": {
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "float32": true,
+    "autocast": false,
+    "tf32": false,
+    "deterministic_algorithms": true
+  },
+  "runs": [
+    {
+      "seed": 87011,
+      "arm": "control"
+    },
+    {
+      "seed": 87011,
+      "arm": "anneal"
+    },
+    {
+      "seed": 87012,
+      "arm": "anneal"
+    },
+    {
+      "seed": 87012,
+      "arm": "control"
+    },
+    {
+      "seed": 87013,
+      "arm": "control"
+    },
+    {
+      "seed": 87013,
+      "arm": "anneal"
+    }
+  ],
+  "seeds": [
+    87011,
+    87012,
+    87013
+  ],
+  "pairing": "Same stochastic seed within pair; independent fresh processes/parent/optimizer. No branch, shared mutable state, historical replay, or cross-run tensor-equality prerequisite. Materialized data order is identical across all runs.",
+  "schedule": "Consume unchanged SCHEDULE.json: 200 updates=180 English+20 binding; bindings10,20,...,200. Every English batch is all16 TRAIN records twice, in literal ordering.",
+  "lr": "Control5e-5 throughout. Anneal English updates1..1005e-5; post100 English ordinal j=1..90:5e-5*(90-j)/89. Thus update1015e-5,update199zero,update200binding5e-5. Consume LR_SCHEDULE.json.",
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false,
+    "gradient_clip": 2.0,
+    "state": "one fresh optimizer per run; continuous state; inactive grad=None and unchanged parameters/moments/step; zero-lr English update still computes gradients and advances active Adam state exactly once"
+  },
+  "english_objective": "Pinned prepare_example/pad_batch full-vocabulary causal CE over four response tokens+EOS only, mean supervised tokens; plus lambda1 D_KL(student||Pilot1), full1024support,T1,mean160positions,float64 accumulation->float32 scalar. Student KL eval with gradients; teacher separate/frozen/eval/no_grad; factual CE train mode. No new replay/objective.",
+  "kl_data": "Unchanged KL_POOL.json165363positions/741rows; select160 in frozen rotation per English index1..180. No resampling.",
+  "binding": "Unchanged pinned answer causal CE +1.0536573711078283 hard-min permutation-invariant localization. Same frozen rehearsal identities/order. Both nonsacred DEV pools separately.",
+  "scope": "PINNED_MASKING.set_scope only: English every base_model parameter exceptblocks0..3; all specializedlocalizer/wq/wk/wv/wo frozen. Binding all parameters active. Do not call HR3 block3 scope.",
+  "evaluation_updates": [
+    0,
+    100,
+    200
+  ],
+  "evaluation": "Pinned SF2 panel/score/checks/measure_d3. TRAIN16 only, aligned first128TinyStoriesDEV with mean4batchlosses, frozenD3positions256, both80documentbindingpools. No intermediate acquisition probes.",
+  "baseline": "Native parent per-run9correct/0exact; alignedCE3.3907 relative tolerance1e-4; binding pass; D3.000907 absolute tolerance1e-4; teacherKLabs<1e-9. These are intact parent/output controls, not trajectory comparisons.",
+  "gates": {
+    "acquisition200": {
+      "correct": 16,
+      "exact": 16,
+      "reversals": 8,
+      "families": 4
+    },
+    "language100_200": "CE<=ownupdate0CE+.25",
+    "binding_each_pool100_200": "answer>=76,BD>=76,collapse==0",
+    "d3_100_200": "four-name mass<=.01 (explicit SF5/current-request gate; SF2 itself recorded D3 diagnostically)",
+    "acquisition_guard100": "STOP arm if correct<10 AND exact<10"
+  },
+  "stopping": "No endpoint selection. Each run stops at200 or its frozen100/200guard. Other preregistered independent runs continue after a scientific arm failure. Integrity/provenance/nonfinite/runtime failure halts study for mechanical resolution or report. No extra seeds/retries chosen by outcome/no rescue.",
+  "transfer": "All HELDOUT/ALTERNATE/COPY/COMPETING remain LOCKED_UNSCORED throughout this study, including on acquisition success; report acquisition to user first. FINAL/sacred never accessed.",
+  "persistence": "Atomic fsync rolling full model/optimizer/Python+CPU+GPU RNG,completed,scope,provenance aftereveryupdate; permanent100/200model+hash. Resume only latest valid committed state, nextcompleted+1. Diagnostics persisted independently; completed raw item results reused. No state forks. Corrupt restart stops. Metrics included in rolling state permit missing post-commit log recovery.",
+  "primary_comparison": "Raw paired all-gate endpoint success for eachseed; treatment-only/control-only/both/neither counts. All6fixed before outcomes. Acquisition success is an individual endpoint classification, not proof that LR schedule caused success.",
+  "secondary_comparison": "Per-item endpoint sequence margins; mean/minmargin; previously identified residual TRAIN:g0:carried:wooden boat:a0; raw reversal/family/exact counts; language,D3,binding. For all16items report paired delta200,delta100,delta200-delta100 descriptively.",
+  "numerical_uncertainty": "Update100 pair differences arise before LR divergence under identical intended conditions and measure observed numerical variability. Report maxabs/meanabs margin offsets and counts. Historical observed<=.00697nat at200 is context, NOT a guaranteed bound. Endpoint changes comparable to prefix offsets are numerically fragile; no equality gate/no exclusions. Prefix-adjusted differences are descriptive, not an estimate with certified confidence. N3 cannot establish statistical certainty or generalization.",
+  "study_interpretation": {
+    "SUGGESTIVE_ANNEAL_BENEFIT": "atleast2treatment-only fullgate successes and0control-only successes",
+    "CONTROL_FAVORED_OR_MIXED": "anycontrol-only fullgate success; report if treatment-only also occurs",
+    "INCONCLUSIVE": "allotherpatterns, including bothpass/bothfail; do not equate inconclusive with equivalence",
+    "statistical_limit": "No population pvalue/CI; rawN3pairs and margins only. No claim of a proven optimization mechanism.",
+    "INCONCLUSIVE_EARLY_STOP": "Takes priority if any arm stops before200: report all runs and gates, but the planned3complete endpoint pairs were not obtained; no seed replacement or claim that a pre-intervention failure was caused by LR."
+  },
+  "history": "SF1STOP_REGRESSION,SF2ACQUISITION_FAIL,SF3/SF4hardstops,SF5failedprefork remain unchanged; no exactrootcause inferred."
+}

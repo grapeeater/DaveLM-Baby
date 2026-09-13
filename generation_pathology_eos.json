@@ -1,0 +1,113 @@
+{
+  "Pilot1": [
+    {
+      "prompt": "The dog ran to the park because",
+      "eos_probability": 1.7092703501475626e-06,
+      "eos_rank": 755,
+      "top1_token": 271,
+      "top1_probability": 0.11026059836149216
+    },
+    {
+      "prompt": "Mia found a red ball and",
+      "eos_probability": 1.0842081792361569e-05,
+      "eos_rank": 316,
+      "top1_token": 291,
+      "top1_probability": 0.06296376138925552
+    },
+    {
+      "prompt": "The small cat sat on the mat. It",
+      "eos_probability": 2.30444152293785e-06,
+      "eos_rank": 586,
+      "top1_token": 407,
+      "top1_probability": 0.5367810130119324
+    },
+    {
+      "prompt": "A boy opened the box and",
+      "eos_probability": 1.1167627235408872e-05,
+      "eos_rank": 336,
+      "top1_token": 272,
+      "top1_probability": 0.055554796010255814
+    },
+    {
+      "prompt": "Tell me one thing about a sunny day.",
+      "eos_probability": 0.028518078848719597,
+      "eos_rank": 8,
+      "top1_token": 225,
+      "top1_probability": 0.34859585762023926
+    }
+  ],
+  "HR1": [
+    {
+      "prompt": "The dog ran to the park because",
+      "eos_probability": 0.0006403253064490855,
+      "eos_rank": 152,
+      "top1_token": 650,
+      "top1_probability": 0.4653659760951996
+    },
+    {
+      "prompt": "Mia found a red ball and",
+      "eos_probability": 2.5296971216448583e-05,
+      "eos_rank": 130,
+      "top1_token": 302,
+      "top1_probability": 0.9827653765678406
+    },
+    {
+      "prompt": "The small cat sat on the mat. It",
+      "eos_probability": 0.000260733999311924,
+      "eos_rank": 922,
+      "top1_token": 304,
+      "top1_probability": 0.010603002272546291
+    },
+    {
+      "prompt": "A boy opened the box and",
+      "eos_probability": 1.0045302587968763e-05,
+      "eos_rank": 376,
+      "top1_token": 302,
+      "top1_probability": 0.9808587431907654
+    },
+    {
+      "prompt": "Tell me one thing about a sunny day.",
+      "eos_probability": 7.722434929746669e-06,
+      "eos_rank": 203,
+      "top1_token": 18,
+      "top1_probability": 0.9916782379150391
+    }
+  ],
+  "HR2": [
+    {
+      "prompt": "The dog ran to the park because",
+      "eos_probability": 0.00012572036939673126,
+      "eos_rank": 98,
+      "top1_token": 439,
+      "top1_probability": 0.9019041657447815
+    },
+    {
+      "prompt": "Mia found a red ball and",
+      "eos_probability": 7.029629614407895e-06,
+      "eos_rank": 107,
+      "top1_token": 302,
+      "top1_probability": 0.9961782693862915
+    },
+    {
+      "prompt": "The small cat sat on the mat. It",
+      "eos_probability": 0.00013320484140422195,
+      "eos_rank": 985,
+      "top1_token": 806,
+      "top1_probability": 0.01508994959294796
+    },
+    {
+      "prompt": "A boy opened the box and",
+      "eos_probability": 2.6534407879807986e-06,
+      "eos_rank": 269,
+      "top1_token": 302,
+      "top1_probability": 0.9960145950317383
+    },
+    {
+      "prompt": "Tell me one thing about a sunny day.",
+      "eos_probability": 1.5595937838952523e-06,
+      "eos_rank": 112,
+      "top1_token": 18,
+      "top1_probability": 0.99904865026474
+    }
+  ]
+}

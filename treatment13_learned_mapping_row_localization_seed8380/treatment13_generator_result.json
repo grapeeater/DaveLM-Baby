@@ -1,0 +1,13 @@
+{
+ "status": "TREATMENT13_GENERATOR_PASS",
+ "experiment": "treatment13_learned_mapping_row_localization",
+ "train_quartets": 200,
+ "train_documents": 800,
+ "retention_quartets": 80,
+ "retention_documents": 320,
+ "train_layout_combos": 20,
+ "retention_layout_combos": 8,
+ "train_pool_sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+ "retention_pool_sha256": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+ "train_retention_token_overlap": 0
+}

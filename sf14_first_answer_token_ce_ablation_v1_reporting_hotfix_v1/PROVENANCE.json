@@ -1,0 +1,9 @@
+{
+  "inference_replayed": false,
+  "scientific_change": false,
+  "source_receipt_sha256": "bfd2c8db4e2c6c6628737d657c918135815c7a089cb24502577f838cb627728e",
+  "source_reporter_sha256": "8b998239501e8d4f67928b0854b0227fe4eda84db89f3c647cae6ae1b1bf369c",
+  "source_study": "C:\\DaveLM-CADAVER\\sf14_first_answer_token_ce_ablation_v1",
+  "training_replayed": false,
+  "type": "ADDITIVE_REPORTING_ONLY_CORRECTION"
+}

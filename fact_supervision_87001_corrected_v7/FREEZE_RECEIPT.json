@@ -1,0 +1,17 @@
+{
+  "behavioral_inference": false,
+  "binding_references_provenance": "Copied byte-identically from corrected_v3 BINDING_REFERENCES.json; references established Pilot 1 rehearsal and both nonsacred DEV pools",
+  "bundle": "fact_supervision_87001_corrected_v7",
+  "checkpoint_loaded": false,
+  "immutable_predecessor": "fact_supervision_87001_corrected_v6",
+  "manifest_sha256": "4610395c044752de9437967298d1518caa2aad91dd5dbbb7ec9a20b4bbf7adab",
+  "mechanical_change": "Added uniquely recoverable BINDING_REFERENCES.json and imported torch.nn.functional as F for controller execution",
+  "non_circular_chain": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> SHA256SUMS.txt -> payload",
+  "optimizer_created": false,
+  "optimizer_update": false,
+  "payload_count": 29,
+  "sacred_access": false,
+  "scientific_specification_changed": false,
+  "seed_87002_executed": false,
+  "status": "FULLY_EXECUTABLE_PRETRAINING_FREEZE_COMPLETE"
+}

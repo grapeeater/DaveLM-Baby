@@ -1,0 +1,36 @@
+{
+  "functional": {
+    "PPP": {
+      "calls": 836,
+      "elements": 39452672,
+      "max_abs_logit_error": 0.0,
+      "mean_abs_logit_error": 0.0,
+      "sum_abs_error": 0.0
+    },
+    "SSS": {
+      "calls": 404,
+      "elements": 17776640,
+      "max_abs_logit_error": 0.0,
+      "mean_abs_logit_error": 0.0,
+      "sum_abs_error": 0.0
+    }
+  },
+  "pass": true,
+  "prior_artifacts": {
+    "PPP": {
+      "language_ce_abs_error": 0.0,
+      "new_language_ce": 3.3906604051589966,
+      "prior_d3_max_abs_error": 0.0,
+      "prior_d4_max_abs_error": 0.0,
+      "prior_language_ce": 3.3906604051589966
+    },
+    "SSS": {
+      "language_ce_abs_error": 0.0,
+      "new_language_ce": 4.65291690826416,
+      "prior_d3_max_abs_error": 0.0,
+      "prior_d4_max_abs_error": 0.0,
+      "prior_language_ce": 4.65291690826416
+    }
+  },
+  "tolerance": 1e-06
+}

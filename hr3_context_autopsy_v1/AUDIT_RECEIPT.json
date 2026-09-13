@@ -1,0 +1,9 @@
+{
+  "status": "SCIENTIFIC_FORK_REQUIRES_DECISION",
+  "manifest_sha256": "08613f397581d7dfa4c51344e0f6085236805f49ea0119f770af353560ddf8d8",
+  "report_sha256": "e78418a723ee06e2caf722a40c04aea1a3bb07553073a9f1d1962d6a343ebac3",
+  "weight_updates": 0,
+  "optimizer_created": false,
+  "final_access": false,
+  "sacred_access": false
+}

@@ -1,0 +1,13 @@
+{
+  "checkpoint_loaded_during_preflight": false,
+  "correction_source": "C:\\DaveLM-CADAVER\\hr3_block3_runtime.py",
+  "failed_resume_record": "C:\\DaveLM-CADAVER\\human_readiness_hr3_causal_seed87006_execution_v5_failed_cuda_rng",
+  "final_accessed": false,
+  "optimizer_created_during_preflight": false,
+  "optimizer_updates_during_preflight": 0,
+  "predecessor_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v5",
+  "predecessor_receipt_sha256": "c59524b964f74f7c00b6de9cb9607821a745a36e9296d8ae175a7659fea0bd36",
+  "sacred_accessed": false,
+  "scientific_values_changed": false,
+  "status": "MECHANICAL_CUDA_RNG_RESUME_COMPLETION_ONLY"
+}

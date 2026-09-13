@@ -1,0 +1,40 @@
+{
+  "backward_passes": 0,
+  "counterpart_invariants": {
+    "document_length_changes": 0,
+    "mapping_order_changes": 0,
+    "physical_query_index_changes": 0,
+    "query_slot_flips": 1536,
+    "relation_set_changes": 0,
+    "target_distance_deltas": {
+      "-12": 768,
+      "12": 768
+    }
+  },
+  "counterparts": 1536,
+  "experiment": "DaveLM v0.9 Treatment #2 paired query-swap preflight",
+  "model_built": false,
+  "optimizer_built": false,
+  "optimizer_steps": 0,
+  "paired_schedule": {
+    "base_documents_per_step": 16,
+    "base_supervised_tokens": 3088000,
+    "counterpart_supervised_tokens": 3088000,
+    "counterparts_per_step": 16,
+    "seed": 8381,
+    "sha256": "4f26e9a72302be779a0b9edf25c8307b4ec9071712f49ee75763701be4c7b5e6",
+    "steps": 1000,
+    "total_documents_per_step": 32,
+    "total_supervised_tokens": 6176000
+  },
+  "passed": true,
+  "positive_control_leakage_audit": {
+    "counterpart_exposure_count": 1536,
+    "intersection_count": 0,
+    "supported_exposure_count": 768
+  },
+  "sealed_evaluation_opened": false,
+  "starting_checkpoint": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+  "starting_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+  "training_records": 1536
+}

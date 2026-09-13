@@ -1,0 +1,170 @@
+{
+  "d3_entropy": {
+    "condition_values": {
+      "PPP": 3.0031634081387892,
+      "PPS": 2.9343328970717266,
+      "PSP": 2.997003334807232,
+      "PSS": 2.9268240452511236,
+      "SPP": 2.9685409511148464,
+      "SPS": 2.5038418402400566,
+      "SSP": 2.956157938519027,
+      "SSS": 2.4907115147216246
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": -0.009795565816602902,
+      "norm_x_head": -0.0005240228529146407,
+      "output_head": -0.26728883382384083,
+      "three_way": 0.0001503663916082587,
+      "upstream": -0.2355178601683292,
+      "upstream_x_head": -0.19778393351225532,
+      "upstream_x_norm": -0.002961103240522789
+    }
+  },
+  "d3_four_name_probability": {
+    "condition_values": {
+      "PPP": 0.0009072396332621135,
+      "PPS": 0.0017859636500272558,
+      "PSP": 0.0009136896654129423,
+      "PSS": 0.0018049946814744366,
+      "SPP": 0.036394350289342015,
+      "SPS": 0.0672855288456411,
+      "SSP": 0.03670657907445474,
+      "SSS": 0.06783318697198659
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": 0.00022134199376405705,
+      "norm_x_head": 6.200258513228141e-05,
+      "output_head": 0.015946953871664393,
+      "three_way": 5.5712085484105334e-05,
+      "upstream": 0.05070193938781192,
+      "upstream_x_head": 0.015061939355251075,
+      "upstream_x_norm": 0.00020860146196505225
+    }
+  },
+  "d3_true_next_probability": {
+    "condition_values": {
+      "PPP": 0.14008497568366618,
+      "PPS": 0.14252567016168793,
+      "PSP": 0.1403799949619131,
+      "PSS": 0.14283514573841138,
+      "SPP": 0.08011895040516492,
+      "SPS": 0.07930651925651588,
+      "SSP": 0.08025291577428106,
+      "SSS": 0.07938238554854493
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": 0.00020358162902889276,
+      "norm_x_head": -1.0910694652643826e-05,
+      "output_head": 0.0008032209700337134,
+      "three_way": -1.813884389090248e-05,
+      "upstream": -0.06169125389029295,
+      "upstream_x_head": -0.0016447016572262996,
+      "upstream_x_norm": -9.866579845629886e-05
+    }
+  },
+  "factual_overall_mean_sequence_margin": {
+    "condition_values": {
+      "PPP": 0.05529525503516197,
+      "PPS": 0.09054040536284447,
+      "PSP": 0.055549025535583496,
+      "PSS": 0.09104475937783718,
+      "SPP": 0.37932629938586615,
+      "SPS": 0.3875023932341719,
+      "SSP": 0.37986916342924815,
+      "SSS": 0.3881077141413698
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": 0.0004765773664985318,
+      "norm_x_head": 7.826009459677152e-05,
+      "output_head": 0.021788882182590896,
+      "three_way": -4.703166268882342e-05,
+      "upstream": 0.3105940312198072,
+      "upstream_x_head": -0.013581559902377194,
+      "upstream_x_norm": 9.751510879141279e-05
+    }
+  },
+  "factual_overall_sequence_accuracy": {
+    "condition_values": {
+      "PPP": 0.5625,
+      "PPS": 0.5625,
+      "PSP": 0.5625,
+      "PSS": 0.5625,
+      "SPP": 0.75,
+      "SPS": 0.75,
+      "SSP": 0.75,
+      "SSS": 0.75
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": 0.0,
+      "norm_x_head": 0.0,
+      "output_head": 0.0,
+      "three_way": 0.0,
+      "upstream": 0.1875,
+      "upstream_x_head": 0.0,
+      "upstream_x_norm": 0.0
+    }
+  },
+  "factual_owen_mean_first_margin": {
+    "condition_values": {
+      "PPP": -0.8123810291290283,
+      "PPS": -0.7614404261112213,
+      "PSP": -0.8082084059715271,
+      "PSS": -0.7569803297519684,
+      "SPP": -0.39022278785705566,
+      "SPS": -0.2895185947418213,
+      "SSP": -0.3864619731903076,
+      "SSS": -0.2853360176086426
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": 0.004144027829170227,
+      "norm_x_head": 0.00017730891704559326,
+      "output_head": 0.07599970698356628,
+      "three_way": 3.357231616973877e-05,
+      "upstream": 0.4468677043914795,
+      "upstream_x_head": 0.024915367364883423,
+      "upstream_x_norm": -0.00017233192920684814
+    }
+  },
+  "factual_owen_mean_sequence_margin": {
+    "condition_values": {
+      "PPP": -1.0477021485567093,
+      "PPS": -1.2336591258645058,
+      "PSP": -1.0531773269176483,
+      "PSS": -1.2378481850028038,
+      "SPP": -0.3448159495019354,
+      "SPS": -0.27682830751291476,
+      "SSP": -0.34219267999287695,
+      "SSS": -0.27302087558200583
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": -0.0008083840148174204,
+      "norm_x_head": 0.0006175704111228697,
+      "output_head": -0.058367097248265054,
+      "three_way": -2.5489200197625905e-05,
+      "upstream": 0.8338822434379836,
+      "upstream_x_head": 0.12694682044821093,
+      "upstream_x_norm": 0.00402373473480111
+    }
+  },
+  "language_established_ce": {
+    "condition_values": {
+      "PPP": 3.3906604051589966,
+      "PPS": 3.3886572122573853,
+      "PSP": 3.39125519990921,
+      "PSS": 3.389926016330719,
+      "SPP": 4.276861071586609,
+      "SPS": 4.64162290096283,
+      "SSP": 4.284506678581238,
+      "SSS": 4.65291690826416
+    },
+    "effects_S_minus_P_or_difference_of_differences": {
+      "final_norm": 0.005200803279876709,
+      "norm_x_head": 0.0010806024074554443,
+      "output_head": 0.18245992064476013,
+      "three_way": 0.0007435977458953857,
+      "upstream": 1.0738521814346313,
+      "upstream_x_head": 0.1841261088848114,
+      "upstream_x_norm": 0.004269003868103027
+    }
+  }
+}

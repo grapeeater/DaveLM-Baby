@@ -1,0 +1,68 @@
+[
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf11_narrow_breadth_widening_v1\\CONTROLLER.py",
+      "--seed",
+      "87026",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T09:48:54.997302+00:00",
+    "parent_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "pid": 3292,
+    "returncode": 0,
+    "seed": 87026,
+    "start": "2026-09-08T09:46:24.447138+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf11_narrow_breadth_widening_v1\\CONTROLLER.py",
+      "--seed",
+      "87027",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T09:51:23.425499+00:00",
+    "parent_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+    "pid": 29872,
+    "returncode": 0,
+    "seed": 87027,
+    "start": "2026-09-08T09:48:55.041964+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf11_narrow_breadth_widening_v1\\CONTROLLER.py",
+      "--seed",
+      "87028",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T09:53:52.775150+00:00",
+    "parent_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+    "pid": 2384,
+    "returncode": 0,
+    "seed": 87028,
+    "start": "2026-09-08T09:51:23.502734+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  }
+]

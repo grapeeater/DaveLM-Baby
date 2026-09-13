@@ -1,0 +1,389 @@
+{
+  "pairs": [
+    {
+      "correct_answer_a": " Bob.",
+      "correct_answer_b": " Fred.",
+      "identities_a": [
+        "Bob",
+        "Fred"
+      ],
+      "identities_b": [
+        "Bob",
+        "Fred"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:A:painted:tin_cup:order0:copy",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:A:painted:tin_cup:order0:copy:Fred",
+      "record_b": "SF20:competing:A:painted:tin_cup:order0:copy:Bob",
+      "representation_position_a": 35,
+      "representation_position_b": 35,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "order0:copy"
+      }
+    },
+    {
+      "correct_answer_a": " Sara.",
+      "correct_answer_b": " Tony.",
+      "identities_a": [
+        "Sara",
+        "Tony"
+      ],
+      "identities_b": [
+        "Sara",
+        "Tony"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:A:painted:tin_cup:order0:fact",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:A:painted:tin_cup:order0:fact:Sara",
+      "record_b": "SF20:competing:A:painted:tin_cup:order0:fact:Tony",
+      "representation_position_a": 40,
+      "representation_position_b": 40,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "order0:fact"
+      }
+    },
+    {
+      "correct_answer_a": " Tina.",
+      "correct_answer_b": " Remy.",
+      "identities_a": [
+        "Tina",
+        "Remy"
+      ],
+      "identities_b": [
+        "Tina",
+        "Remy"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:A:painted:tin_cup:order1:copy",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:A:painted:tin_cup:order1:copy:Remy",
+      "record_b": "SF20:competing:A:painted:tin_cup:order1:copy:Tina",
+      "representation_position_a": 35,
+      "representation_position_b": 35,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "order1:copy"
+      }
+    },
+    {
+      "correct_answer_a": " Billy.",
+      "correct_answer_b": " Steve.",
+      "identities_a": [
+        "Billy",
+        "Steve"
+      ],
+      "identities_b": [
+        "Billy",
+        "Steve"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:A:painted:tin_cup:order1:fact",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:A:painted:tin_cup:order1:fact:Billy",
+      "record_b": "SF20:competing:A:painted:tin_cup:order1:fact:Steve",
+      "representation_position_a": 40,
+      "representation_position_b": 40,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "order1:fact"
+      }
+    },
+    {
+      "correct_answer_a": " Ralph.",
+      "correct_answer_b": " Wendy.",
+      "identities_a": [
+        "Ralph",
+        "Wendy"
+      ],
+      "identities_b": [
+        "Ralph",
+        "Wendy"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:B:bought:green_ball:order0:copy",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:B:bought:green_ball:order0:copy:Wendy",
+      "record_b": "SF20:competing:B:bought:green_ball:order0:copy:Ralph",
+      "representation_position_a": 35,
+      "representation_position_b": 35,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "order0:copy"
+      }
+    },
+    {
+      "correct_answer_a": " Susan.",
+      "correct_answer_b": " Colin.",
+      "identities_a": [
+        "Susan",
+        "Colin"
+      ],
+      "identities_b": [
+        "Susan",
+        "Colin"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:B:bought:green_ball:order0:fact",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:B:bought:green_ball:order0:fact:Susan",
+      "record_b": "SF20:competing:B:bought:green_ball:order0:fact:Colin",
+      "representation_position_a": 40,
+      "representation_position_b": 40,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "order0:fact"
+      }
+    },
+    {
+      "correct_answer_a": " Carl.",
+      "correct_answer_b": " Tara.",
+      "identities_a": [
+        "Carl",
+        "Tara"
+      ],
+      "identities_b": [
+        "Carl",
+        "Tara"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:B:bought:green_ball:order1:copy",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:B:bought:green_ball:order1:copy:Tara",
+      "record_b": "SF20:competing:B:bought:green_ball:order1:copy:Carl",
+      "representation_position_a": 35,
+      "representation_position_b": 35,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "order1:copy"
+      }
+    },
+    {
+      "correct_answer_a": " Faye.",
+      "correct_answer_b": " Cathy.",
+      "identities_a": [
+        "Faye",
+        "Cathy"
+      ],
+      "identities_b": [
+        "Faye",
+        "Cathy"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:competing:B:bought:green_ball:order1:fact",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:competing:B:bought:green_ball:order1:fact:Faye",
+      "record_b": "SF20:competing:B:bought:green_ball:order1:fact:Cathy",
+      "representation_position_a": 40,
+      "representation_position_b": 40,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "order1:fact"
+      }
+    },
+    {
+      "correct_answer_a": " Billy.",
+      "correct_answer_b": " Tony.",
+      "identities_a": [
+        "Billy",
+        "Tony"
+      ],
+      "identities_b": [
+        "Billy",
+        "Tony"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:A:painted:tin_cup:active_qa",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:A:painted:tin_cup:active_qa:Billy",
+      "record_b": "SF20:surface:A:painted:tin_cup:active_qa:Tony",
+      "representation_position_a": 27,
+      "representation_position_b": 27,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "active_qa"
+      }
+    },
+    {
+      "correct_answer_a": " Sara.",
+      "correct_answer_b": " Bob.",
+      "identities_a": [
+        "Sara",
+        "Bob"
+      ],
+      "identities_b": [
+        "Sara",
+        "Bob"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:A:painted:tin_cup:cloze",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:A:painted:tin_cup:cloze:Sara",
+      "record_b": "SF20:surface:A:painted:tin_cup:cloze:Bob",
+      "representation_position_a": 30,
+      "representation_position_b": 30,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "cloze"
+      }
+    },
+    {
+      "correct_answer_a": " Fred.",
+      "correct_answer_b": " Tina.",
+      "identities_a": [
+        "Fred",
+        "Tina"
+      ],
+      "identities_b": [
+        "Fred",
+        "Tina"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:A:painted:tin_cup:passive_cloze",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:A:painted:tin_cup:passive_cloze:Fred",
+      "record_b": "SF20:surface:A:painted:tin_cup:passive_cloze:Tina",
+      "representation_position_a": 33,
+      "representation_position_b": 33,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "passive_cloze"
+      }
+    },
+    {
+      "correct_answer_a": " Steve.",
+      "correct_answer_b": " Remy.",
+      "identities_a": [
+        "Steve",
+        "Remy"
+      ],
+      "identities_b": [
+        "Steve",
+        "Remy"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:A:painted:tin_cup:passive_qa",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:A:painted:tin_cup:passive_qa:Steve",
+      "record_b": "SF20:surface:A:painted:tin_cup:passive_qa:Remy",
+      "representation_position_a": 30,
+      "representation_position_b": 30,
+      "structural_group": {
+        "object": "the tin cup",
+        "predicate": "painted",
+        "subgroup": "passive_qa"
+      }
+    },
+    {
+      "correct_answer_a": " Colin.",
+      "correct_answer_b": " Faye.",
+      "identities_a": [
+        "Colin",
+        "Faye"
+      ],
+      "identities_b": [
+        "Colin",
+        "Faye"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:B:bought:green_ball:active_qa",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:B:bought:green_ball:active_qa:Colin",
+      "record_b": "SF20:surface:B:bought:green_ball:active_qa:Faye",
+      "representation_position_a": 27,
+      "representation_position_b": 27,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "active_qa"
+      }
+    },
+    {
+      "correct_answer_a": " Susan.",
+      "correct_answer_b": " Ralph.",
+      "identities_a": [
+        "Susan",
+        "Ralph"
+      ],
+      "identities_b": [
+        "Susan",
+        "Ralph"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:B:bought:green_ball:cloze",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:B:bought:green_ball:cloze:Susan",
+      "record_b": "SF20:surface:B:bought:green_ball:cloze:Ralph",
+      "representation_position_a": 30,
+      "representation_position_b": 30,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "cloze"
+      }
+    },
+    {
+      "correct_answer_a": " Carl.",
+      "correct_answer_b": " Wendy.",
+      "identities_a": [
+        "Carl",
+        "Wendy"
+      ],
+      "identities_b": [
+        "Carl",
+        "Wendy"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:B:bought:green_ball:passive_cloze",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:B:bought:green_ball:passive_cloze:Carl",
+      "record_b": "SF20:surface:B:bought:green_ball:passive_cloze:Wendy",
+      "representation_position_a": 33,
+      "representation_position_b": 33,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "passive_cloze"
+      }
+    },
+    {
+      "correct_answer_a": " Cathy.",
+      "correct_answer_b": " Tara.",
+      "identities_a": [
+        "Cathy",
+        "Tara"
+      ],
+      "identities_b": [
+        "Cathy",
+        "Tara"
+      ],
+      "identity_assignment_differs": true,
+      "pair_id": "SF20:surface:B:bought:green_ball:passive_qa",
+      "position_semantics": "zero-based BOS-prefixed final prompt/query token; its logits predict first answer token",
+      "record_a": "SF20:surface:B:bought:green_ball:passive_qa:Cathy",
+      "record_b": "SF20:surface:B:bought:green_ball:passive_qa:Tara",
+      "representation_position_a": 30,
+      "representation_position_b": 30,
+      "structural_group": {
+        "object": "the green ball",
+        "predicate": "bought",
+        "subgroup": "passive_qa"
+      }
+    }
+  ],
+  "rule": "Pair the two assignment-reversal records sharing each frozen SF20 pair_id; every widening record occurs exactly once."
+}

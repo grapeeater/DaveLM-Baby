@@ -1,0 +1,132 @@
+{
+  "status": "PHASE2A_T2_U0_BASELINE_FROZEN",
+  "primary_u0": {
+    "dev_ce": 1.2040123894810677,
+    "train_ce": 0.9477690190076828,
+    "dev_perplexity": 3.3334652864621144,
+    "qa_dev": {
+      "accuracy": 0.4328125,
+      "n": 640,
+      "margin": -0.1534246614202857,
+      "confidence": -2.197804912738502,
+      "per_level": {
+        "A": {
+          "correct": 40,
+          "n": 80,
+          "accuracy": 0.5,
+          "margin": -0.01651366949081421
+        },
+        "B": {
+          "correct": 47,
+          "n": 80,
+          "accuracy": 0.5875,
+          "margin": 0.15600523427128793
+        },
+        "C": {
+          "correct": 19,
+          "n": 80,
+          "accuracy": 0.2375,
+          "margin": -0.7747417241334915
+        },
+        "D": {
+          "correct": 54,
+          "n": 80,
+          "accuracy": 0.675,
+          "margin": 0.7882981300354004
+        },
+        "E": {
+          "correct": 23,
+          "n": 80,
+          "accuracy": 0.2875,
+          "margin": -0.6016148164868355
+        },
+        "F": {
+          "correct": 53,
+          "n": 80,
+          "accuracy": 0.6625,
+          "margin": 0.5782232359051704
+        },
+        "G": {
+          "correct": 22,
+          "n": 80,
+          "accuracy": 0.275,
+          "margin": -0.7275433287024498
+        },
+        "H": {
+          "correct": 19,
+          "n": 80,
+          "accuracy": 0.2375,
+          "margin": -0.6295103527605533
+        }
+      }
+    },
+    "qa_aud": {
+      "accuracy": 0.19166666666666668,
+      "n": 120,
+      "margin": -0.9730695317188899,
+      "confidence": -2.0054651985565823,
+      "per_level": {
+        "AUD": {
+          "correct": 23,
+          "n": 120,
+          "accuracy": 0.19166666666666668,
+          "margin": -0.9730695317188899
+        }
+      }
+    },
+    "qa_novel": {
+      "accuracy": 0.4666666666666667,
+      "n": 120,
+      "margin": 0.0068893969058990475,
+      "confidence": -2.0231373171011606,
+      "per_level": {
+        "NOV": {
+          "correct": 56,
+          "n": 120,
+          "accuracy": 0.4666666666666667,
+          "margin": 0.0068893969058990475
+        }
+      }
+    },
+    "aggregate": {
+      "ab": 0.54375,
+      "ab_margin": 0.06974578239023685,
+      "abcde": 0.4575,
+      "abcde_margin": -0.08971336916089058,
+      "overall": 0.4328125,
+      "audit": 0.19166666666666668,
+      "audit_margin": -0.9730695317188899,
+      "novel": 0.4666666666666667,
+      "novel_margin": 0.0068893969058990475,
+      "per_level": {
+        "A": 0.5,
+        "B": 0.5875,
+        "C": 0.2375,
+        "D": 0.675,
+        "E": 0.2875,
+        "F": 0.6625,
+        "G": 0.275,
+        "H": 0.2375
+      }
+    },
+    "reversal": {
+      "pairs": 80,
+      "rate": 0.0875
+    },
+    "generation": {
+      "non_immediate_eos": 10,
+      "no_three_identical": 10,
+      "no_repeat_trigram": 6
+    },
+    "update": 0,
+    "binding_intact": true
+  },
+  "scope": {
+    "trainable": 60536064,
+    "frozen": 984321
+  },
+  "test_contents_loaded": false,
+  "optimizer_created": false,
+  "optimizer_steps": 0,
+  "training_performed": false
+}

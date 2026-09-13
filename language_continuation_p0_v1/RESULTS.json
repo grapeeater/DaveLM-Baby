@@ -1,0 +1,33 @@
+{
+  "parent": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "train_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "dev_sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+  "updates": 1000,
+  "lr": 0.0003,
+  "weight_decay": 0.05,
+  "batch": 64,
+  "context": 256,
+  "seed": 8380,
+  "device": "cuda:0",
+  "pre_ppl": 2.221677225828171,
+  "pre_generations": {
+    "Hello, my name is": "Hello, my name is very boy. He wanted to play with his toys. He wanted to go to the park. He wanted to play with h",
+    "The dog is": "The dog is very dad. He likes to play with his friends. He says, \"It's too, I want to go to the park",
+    "Two plus two is": "Two plus two is a big boat. He wanted to go to the boat. He wanted to go to the boat. He wanted to go to",
+    "Tell me something.": "Tell me something. She liked to play with her toys. She wanted to go to the park. She saw a big big bird and scared. S",
+    "Why did the dog run?": "Why did the dog run? It was a big boy. He was so excited to go to the boat. He was so excited to go to the boat. H",
+    "I am happy because": "I am happy because she wanted to go to the park. She wanted to go to the park. She saw a big big ball. She was sad and sc"
+  },
+  "post_ppl": 1.7010557264089585,
+  "post_generations": {
+    "Hello, my name is": "Hello, my name is Max. He is very sad. He likes to play with his toys. He likes to play with his toys. H",
+    "The dog is": "The dog is a big boy. He likes to play with his toys. He is a big boy. He likes to play with his",
+    "Two plus two is": "Two plus two is a big, boy named Tim. He likes to play with his toys. One day, Tim wants to play with his toys",
+    "Tell me something.": "Tell me something. He wanted to go on a big box. He wanted to go to the park. He wanted to go to the park. H",
+    "Why did the dog run?": "Why did the dog run? He was very sad. He wanted to go to the park. He saw a big box with a big box. He",
+    "I am happy because": "I am happy because it was a good friend. Lily was very happy and wanted to play with her toys. She wanted to play with her toys,"
+  },
+  "elapsed_seconds": 1083.4134712219238
+}

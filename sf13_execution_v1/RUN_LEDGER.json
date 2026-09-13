@@ -1,0 +1,71 @@
+[
+  {
+    "checkpoint": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\runs\\seed_87032_curriculum\\checkpoint_100.pt",
+    "checkpoint_sha256": "a56c03af6c6e4600c0cd15797001f68592107a823746819bb5b97f52f85b3a81",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\CONTROLLER.py",
+      "--seed",
+      "87032",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T20:20:46.172247+00:00",
+    "pid": 5492,
+    "returncode": 0,
+    "seed": 87032,
+    "start": "2026-09-08T20:14:46.019571+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "checkpoint": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\runs\\seed_87033_curriculum\\checkpoint_100.pt",
+    "checkpoint_sha256": "d07febc0c85912e83a02b995be504c4dd60509da62de3bf6094a3f65773172ec",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\CONTROLLER.py",
+      "--seed",
+      "87033",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T20:26:29.792290+00:00",
+    "pid": 19672,
+    "returncode": 0,
+    "seed": 87033,
+    "start": "2026-09-08T20:20:46.216290+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "checkpoint": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\runs\\seed_87034_curriculum\\checkpoint_100.pt",
+    "checkpoint_sha256": "9bd38e0274d8038e9c1180d8057212fcdc898e1219342b80da20e679aea7db32",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\CONTROLLER.py",
+      "--seed",
+      "87034",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T20:32:01.858576+00:00",
+    "pid": 27032,
+    "returncode": 0,
+    "seed": 87034,
+    "start": "2026-09-08T20:26:29.835882+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  }
+]

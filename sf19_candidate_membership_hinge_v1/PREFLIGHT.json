@@ -1,0 +1,62 @@
+{
+  "checks": {
+    "byte_identical_sf14_payload": [
+      "D3_SELECTION.json",
+      "DEV_ORDER.json",
+      "DEV_SURFACE.json",
+      "EXTERNAL_INPUTS.json",
+      "KL_POOL_MANIFEST.json",
+      "KL_POOL.json",
+      "SCHEDULE.json",
+      "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py",
+      "SF2_PROTOCOL.json",
+      "TRAIN.json",
+      "TRAIN16_RETENTION.json"
+    ],
+    "checkpoint_loaded": false,
+    "final_accessed": false,
+    "objective_isolation": {
+      "M_membership": 1.0,
+      "broad_KL_positions": 160,
+      "first_answer_CE_positions": 0,
+      "lambda_membership": 0.25,
+      "later_CE_positions": 144,
+      "membership_mock_active_loss": 1.0,
+      "membership_mock_satisfied_loss": 0.0,
+      "membership_terms": 36,
+      "pairwise_M": 1.0,
+      "pairwise_lambda": 0.25,
+      "pairwise_margin_active": true
+    },
+    "optimizer_created": false,
+    "parents": {
+      "87050": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "87051": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "87052": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+    },
+    "reporter_smoke": "PASS",
+    "runtime": {
+      "gpu": "AMD Radeon RX 9060 XT",
+      "python": "3.12.14",
+      "tokenizers": "0.23.1",
+      "torch": "2.12.0+rocm7.14.0"
+    },
+    "sacred_accessed": false,
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "unchanged_settings": {
+      "D3_training_calls": 0,
+      "binding": true,
+      "gates": true,
+      "optimizer": true,
+      "schedule": true,
+      "scope": true
+    },
+    "updates": 0
+  },
+  "status": "SF19_PROSPECTIVE_PREFLIGHT_PASS",
+  "warnings": [
+    "The new relative membership hinge uses the established lambda=.25 and M=1.0 without a dose sweep. First-answer CE remains zero.",
+    "U0 is inherited from actual identical-parent evaluation and rerun by every branch."
+  ]
+}

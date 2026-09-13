@@ -1,0 +1,59 @@
+{
+  "reference": "historical SF2 u100 checkpoint_100.pt (sha256 ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4)",
+  "total_tensors": 414,
+  "comparisons": [
+    {
+      "vs": "replayA_u100 (df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd)",
+      "bitwise_equal": false,
+      "mismatched_tensors": 334,
+      "max_abs": 0.0009046792984008789,
+      "mean_abs": 1.0777848604458758e-06,
+      "rms": 4.1942220868031705e-06
+    },
+    {
+      "vs": "replayB_u100 (62c1d5b0a17c418a4bb5df449622aa0bae976e08d887fbbf940458118283c704)",
+      "bitwise_equal": false,
+      "mismatched_tensors": 334,
+      "max_abs": 0.0009046792984008789,
+      "mean_abs": 1.0777848604458758e-06,
+      "rms": 4.1942220868031705e-06
+    },
+    {
+      "vs": "sf3_replay_u100 (a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a)",
+      "bitwise_equal": false,
+      "mismatched_tensors": 334,
+      "max_abs": 0.0009046792984008789,
+      "mean_abs": 1.0777848604458758e-06,
+      "rms": 4.1942220868031705e-06
+    },
+    {
+      "vs": "replayB (self-replay pair, reference=replayA)",
+      "bitwise_equal": true,
+      "mismatched_tensors": 0,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0
+    }
+  ],
+  "per_component_max_abs_delta_historical_vs_replay": {
+    "token_embedding": {"n_tensors": 1, "mismatched": 1, "max_abs": 0.0009046792984008789},
+    "position_embedding": {"n_tensors": 1, "mismatched": 1, "max_abs": 0.00035774707794189453},
+    "blocks0": {"n_tensors": 50, "mismatched": 40, "max_abs": 4.735216498374939e-05},
+    "blocks1": {"n_tensors": 50, "mismatched": 40, "max_abs": 7.329322397708893e-05},
+    "blocks2": {"n_tensors": 50, "mismatched": 40, "max_abs": 8.555129170417786e-05},
+    "blocks3": {"n_tensors": 50, "mismatched": 40, "max_abs": 7.943878881633282e-05},
+    "blocks4": {"n_tensors": 50, "mismatched": 40, "max_abs": 0.0008523811120539904},
+    "blocks5": {"n_tensors": 50, "mismatched": 40, "max_abs": 0.0006136428564786911},
+    "blocks6": {"n_tensors": 50, "mismatched": 40, "max_abs": 0.0003834664821624756},
+    "blocks7": {"n_tensors": 50, "mismatched": 40, "max_abs": 0.00018976256251335144},
+    "final_norm": {"n_tensors": 2, "mismatched": 2, "max_abs": 2.384185791015625e-06},
+    "language_head": {"n_tensors": 2, "mismatched": 2, "max_abs": 2.7321279048919678e-05},
+    "t13_special": {"n_tensors": 8, "mismatched": 8, "max_abs": 0.00021122395992279053}
+  },
+  "interpretation": {
+    "english_updated_groups": "token/position embeddings, blocks4-7, final_norm, language_head -> largest deltas (up to 9.0e-4)",
+    "binding_only_updated_groups": "blocks0-3 (frozen on English), T13 localizer/retrieval -> smaller but nonzero deltas (4.7e-5 .. 2.1e-4)",
+    "exact_tensors_are": "the 80 per-head causal attention mask buffers (non-parameter, equal to parent in both runs); every trainable parameter diverged",
+    "conclusion": "Divergence is diffuse across every parameter updated by either objective, scaled by update frequency; consistent with per-step numeric noise in training ops (backward/optimizer), not with a code/RNG/data difference."
+  }
+}

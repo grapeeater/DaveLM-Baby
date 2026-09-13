@@ -1,0 +1,71 @@
+[
+  {
+    "checkpoint_sha256": "a4c33ac929ded041c07e9178cfda4b9003c5d1aa5b4bc8fd91f996b4f61bba39",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf19_candidate_membership_hinge_v1\\CONTROLLER.py",
+      "--seed",
+      "87050",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 200,
+    "end": "2026-09-09T03:24:57.419157+00:00",
+    "parent_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "pid": 22992,
+    "returncode": 0,
+    "seed": 87050,
+    "start": "2026-09-09T03:15:01.233400+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "checkpoint_sha256": "c9058c0464da97ee923d8676deebb7010f511e8ee813d1606b0bd272f23bf020",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf19_candidate_membership_hinge_v1\\CONTROLLER.py",
+      "--seed",
+      "87051",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 200,
+    "end": "2026-09-09T03:34:34.695204+00:00",
+    "parent_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+    "pid": 33604,
+    "returncode": 0,
+    "seed": 87051,
+    "start": "2026-09-09T03:24:57.469859+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "checkpoint_sha256": "124eac55f520630303add83580a77c8041bdcc786dfaa8907758791ecb213d49",
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf19_candidate_membership_hinge_v1\\CONTROLLER.py",
+      "--seed",
+      "87052",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-09T03:39:59.274160+00:00",
+    "parent_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+    "pid": 33328,
+    "returncode": 0,
+    "seed": 87052,
+    "start": "2026-09-09T03:34:34.755706+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  }
+]

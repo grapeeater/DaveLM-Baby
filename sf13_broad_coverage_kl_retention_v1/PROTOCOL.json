@@ -1,0 +1,102 @@
+{
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runtime": {
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "float32": true,
+    "autocast": false,
+    "tf32": false,
+    "deterministic_algorithms": true
+  },
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "betas": [0.9, 0.999],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false,
+    "gradient_clip": 2.0,
+    "state": "fresh optimizer per run"
+  },
+  "kl_data": "Unchanged KL_POOL.json 165363 positions/741 rows; SF13 sampling geometry: frozen SF13_KL_SCHEDULE.json (180 updates x 160 existing entries, 160 distinct source rows/update, deterministic, row+column provenance only).",
+  "binding": "unchanged pinned answer CE + 1.0536573711078283 hard-min localization; both nonsacred DEV pools",
+  "scope": "unchanged PINNED_MASKING.set_scope (English = all base_model params except blocks0-3; binding = all)",
+  "evaluation_updates": [0, 100, 200],
+  "study": "SF13_BROAD_COVERAGE_KL_RETENTION_V1",
+  "created_utc": "2026-09-08T00:00:00.000000+00:00",
+  "runs": [
+    {
+      "seed": 87032,
+      "arm": "curriculum",
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "d3_reference": 0.007036717671962123
+    },
+    {
+      "seed": 87033,
+      "arm": "curriculum",
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "d3_reference": 0.006672408242356376
+    },
+    {
+      "seed": 87034,
+      "arm": "curriculum",
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "d3_reference": 0.007839491795780695
+    }
+  ],
+  "seeds": [87032, 87033, 87034],
+  "hypothesis": "At fixed retention compute (160 positions/update) and fixed lambda_KL=1.0, broader mechanical distribution of KL retention positions across the existing ordinary-English pool contains the widening-induced D3 regression while preserving TRAIN16/language/binding and enabling widening. SF13 tests retention-position coverage/sampling geometry as the cause of D3 instability.",
+  "manipulated_variable": "RETENTION POSITION COVERAGE / SAMPLING GEOMETRY: contiguous sequential 160-entry slice (SF11/SF12) -> frozen deterministic row-distributed 160 entries/update across 160 distinct source rows with cycling valid within-row columns (SF13). Same legal pool, same budget, same loss.",
+  "curriculum": "Identical SF11 48-item widening curriculum (16 preservation + 32 widening items). Choose exactly the SF11 frozen items; all four surfaces and both orders x both queries for both actor assignments. No outcome-based selection.",
+  "sampling": "200 updates, 20 cycles of 9 English + 1 binding. 180 English batches of 36: fixed 32 new + original SF11 rotating 4 TRAIN16 records. 5760 new + 720 preservation = 6480 total. Each new 180 presentations; each TRAIN16 45 presentations. Binding entries and shared pad values unchanged.",
+  "margin": {
+    "lambda_margin": 0.25,
+    "M": 1.0,
+    "mechanics": "Pinned SF10 first-answer full-vocabulary logsoftmax hinge mean over 36; unchanged."
+  },
+  "english_objective": "Unchanged SF11 mean causal answer 4 tokens + EOS CE + 1.0 student||Pilot1 KL over 160 frozen positions + 0.25 mean max(0,1-first-answer-gap). No optimizer state inherited; fresh AdamW 5e-5, unchanged settings. No SF12 R_name term.",
+  "dev": {
+    "surface": 16,
+    "order": 16,
+    "content": {
+      "A": ["lifted", "the paper kite"],
+      "B": ["washed", "the red basket"]
+    },
+    "rule": "Same SF9 renderers, disjoint verbs/objects from SF9/SF10 training/dev and original TRAIN16. One complete namepair x surface/order-query family per group; 8 reversal pairs and 2 complete 8-item families per panel. Freeze before any parent output. No historical DEV scored in SF13."
+  },
+  "gates": {
+    "retention_acquisition": "TRAIN16 panel: correct==16 AND exact==16 AND reversals==8 AND families==4 (unchanged acquisition gate; must be preserved)",
+    "language": "CE <= own update0 CE + .25",
+    "d3": "four-name mass <= .01",
+    "binding_each_pool": "answer>=76, BD>=76, collapse==0",
+    "dev_surface": "correct>=15/16 AND exact>=13/16 AND each surface exact>=3/4",
+    "dev_order": "exact>=13/16 AND fact>=7/8 AND copy>=7/8 AND each order>=7/8 AND each order:query cell>=3/4",
+    "development_gain": "At200 exact surface>=ownu0+4 AND exact order>=ownu0+4 (25 percentage point gain per panel). No adaptation to baseline results.",
+    "continue": "retention_acquisition AND language AND d3 AND binding pass at 100/200; regression stop otherwise",
+    "endpoint_pass": "u200 AND all retention AND dev_surface AND dev_order AND development_gain"
+  },
+  "evaluation": "0/100/200: unchanged TRAIN16, frozen DEV_SURFACE16, frozen DEV_ORDER16, identical 128 aligned TinyStoriesDEV, frozen D3 256, both 80-doc binding pools. Exact candidate 4-token likelihood excluding EOS; margin>0; normal greedy32 exact candidate+EOS. Family/pair summaries descriptive; no broader English claim.",
+  "stopping": "Stop each run at 100/200 on any retention failure; no widening early stop. Full endpoint 200 only. Other independent runs continue after valid scientific failure. No rescue, no replacement seed, no post-result curriculum change.",
+  "transfer": "All historical SF1 transfer and historical SF9/SF10/SF11 DEV remain unscored in SF13. No optional reevaluation is authorized by this package. FINAL/sacred never accessed.",
+  "persistence": "Inherited SF11 full atomic rolling restart each update plus permanent 100/200. Sequential blocking child execution; explicit durable ledger before launch/PID/end/status. Exactly one launch per seed; no auto-restart/replay of valid failures. Mechanical interruption reported with committed state preserved.",
+  "classification": {
+    "priority1": "MECHANICAL_INCOMPLETE if any run lacks classified endpoint due execution failure",
+    "priority2": "RETENTION_REGRESSION if any TRAIN16/language/binding failure",
+    "priority3": "BROAD_COVERAGE_RETENTION_SUPPORTED if >=2/3 reach 200 and all frozen endpoint gates including D3 <= .01",
+    "priority4": "RETENTION_POSITION_COVERAGE_INSUFFICIENT if replicated D3 regression (>=2 D3 failures) despite preserved acquisition/language/binding and widening movement; SUBSTANTIALLY_INSUFFICIENT if >=2 final D3 >= .018 (matching historical magnitude)",
+    "otherwise": "If all D3 safe and 0 complete endpoints: WIDENING_INCOMPLETE; other patterns MIXED_OR_UNRESOLVED"
+  },
+  "interpretation": "If >=2/3 complete U200 with all frozen endpoint gates: BROAD_COVERAGE_RETENTION_SUPPORTED. If replicated D3 regression occurs despite preserved acquisition/language/binding and widening movement, the narrow conclusion is RETENTION_POSITION_COVERAGE_INSUFFICIENT: broader retention-position coverage was insufficient to contain the widening-induced D3 regression, weakening retention-position coverage as the primary explanation. Do not claim a deeper causal mechanism. Preserve mechanical-incomplete and safety-stop precedence. No numeric gate changes.",
+  "limits": "Three parent replications, no population certainty. Comparison to SF11/SF12 is the same legal pool with sampling geometry as the only change; support is bounded practical evidence, never proof of a general coverage mechanism.",
+  "next_action_rule": "If BROAD_COVERAGE_RETENTION_SUPPORTED: review frozen result before any transfer authorization. If RETENTION_POSITION_COVERAGE_INSUFFICIENT: preregister one WIDENING-SUPERVISION REDESIGN review (model training objective for alternate surfaces/source order/fact-vs-card queries) before any further training. If other retention failure: review that safety failure. No action executed after report."
+}

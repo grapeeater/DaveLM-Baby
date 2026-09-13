@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "checkpoint_hashes": {
+    "graduate": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+    "pilot0": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+    "pilot1": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "p5": "da009100412fba2adcf58823aefd37cc9486ef7aff39672361ce6111773c6a3b",
+    "p6": "e708f00bdab4c4325382f3ceb724ad377360daf8ff2f6c14278cc17e692a9930",
+    "p7": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e"
+  },
+  "reference_hashes": {
+    "pilot0_dev": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+    "pilot1_dev": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+  }
+}

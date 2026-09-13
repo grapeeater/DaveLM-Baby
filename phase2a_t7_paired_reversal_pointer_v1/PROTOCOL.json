@@ -1,0 +1,24 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T7_PAIRED_REVERSAL_POINTER_V1",
+  "status": "STUDY_COMPLETE_T7_FAIL_NO_REPRESENTATION",
+  "scientific_question": "With T6 late-base pointer scope, does training complete assignment pairs together raise DEV pointer reversals to >=48/64 without DEV CE > 1.30?",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "scope": {
+    "freeze": "base_model.blocks.0-3 and all 984321 binding params",
+    "train": "late base only",
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "objective": {"lambda_ptr": 1.0, "margin_M": 1.0, "layout": "none", "language": "9 qa : 1 language CE"},
+  "qa_batch": "16 complete assignment pairs flattened to 32 items; pair members adjacent",
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded",
+  "seeds": [660001, 660002, 660003],
+  "schedule": {"total_updates": 500, "qa_updates": 450, "language_updates": 50, "eval_points": [0, 100, 300, 500], "lr": 5e-5},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T7_FULL_SUCCESS", "T7_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T7_FAIL_NO_REPRESENTATION", "T7_LANGUAGE_REGRESSION", "T7_SHORTCUT_FAILURE", "T7_HARD_STOP"],
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

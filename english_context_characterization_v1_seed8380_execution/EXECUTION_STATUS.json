@@ -1,0 +1,78 @@
+{
+  "backward": false,
+  "binding_documents_per_checkpoint": 160,
+  "checkpoint_post_verification": {
+    "graduate": {
+      "checkpoint_bytes_unchanged": true,
+      "checkpoint_sha256_after": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+      "in_memory_state_unchanged": true,
+      "state_digest_after": "e077f5612922d8ec4c36f344ad52ffcf89a9202095d7460706d5561e0b067908"
+    },
+    "pilot0": {
+      "checkpoint_bytes_unchanged": true,
+      "checkpoint_sha256_after": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+      "in_memory_state_unchanged": true,
+      "state_digest_after": "18107d7c22cf6528f5b97df10b36509afa6f0c2ab8c0adc0d6f1b58f30621235"
+    },
+    "pilot1": {
+      "checkpoint_bytes_unchanged": true,
+      "checkpoint_sha256_after": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+      "in_memory_state_unchanged": true,
+      "state_digest_after": "d3a17cf9adf0c2af1b4280091b3e20f639670617b6e79abb0f02231a28bfa555"
+    }
+  },
+  "checkpoints_order": [
+    "graduate",
+    "pilot0",
+    "pilot1"
+  ],
+  "contextual_comparisons_per_checkpoint": 832,
+  "elapsed_seconds": 151.04699999999866,
+  "english_forward_counts": {
+    "graduate": {
+      "base_model": 2080,
+      "wrapper_or_specialized": 0
+    },
+    "pilot0": {
+      "base_model": 2080,
+      "wrapper_or_specialized": 0
+    },
+    "pilot1": {
+      "base_model": 2080,
+      "wrapper_or_specialized": 0
+    }
+  },
+  "finished_utc": "2026-09-05T04:45:37.663657+00:00",
+  "frozen_artifacts_modified": false,
+  "generation": false,
+  "implementation_sources_unchanged": true,
+  "logical_prior_comparisons_per_checkpoint": 208,
+  "mechanical_corrections": [],
+  "optimizer_created": false,
+  "raw_score_rows": 3120,
+  "runtime": {
+    "autocast": false,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": false,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "device": "cuda:0",
+    "device_name": "AMD Radeon RX 9060 XT",
+    "english_forward_path": "model.base_model(input_ids)",
+    "float32_matmul_precision": "highest",
+    "fp64_log_softmax_device_probe_passed": true,
+    "hip": "7.2.26024-f6f897bd3d",
+    "log_softmax_and_sum_dtype": "float64",
+    "model_dtype": "float32",
+    "padding": false,
+    "python": "3.12.0",
+    "sequence_batch_size": 1,
+    "tokenizers": "0.23.1",
+    "torch_version": "2.9.1+rocmsdk20260116",
+    "truncation": false
+  },
+  "sacred_exam_opened": false,
+  "started_utc": "2026-09-05T04:43:06.619306+00:00",
+  "status": "SCORING_COMPLETE",
+  "training": false
+}

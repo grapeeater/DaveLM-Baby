@@ -1,0 +1,13 @@
+{
+  "checkpoint_loaded_during_preflight": false,
+  "correction_source": "C:\\DaveLM-CADAVER\\hr3_block3_runtime.py",
+  "final_accessed": false,
+  "optimizer_created_during_preflight": false,
+  "optimizer_updates_during_preflight": 0,
+  "predecessor_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_v3",
+  "predecessor_receipt_sha256": "c406c1cabeb6d239d20172fd84f40ea17e3e38f735734a780775fc56c55baf88",
+  "sacred_accessed": false,
+  "scientific_values_changed": false,
+  "status": "MECHANICAL_PERSISTENCE_COMPLETION_ONLY",
+  "uncommitted_execution_record": "C:\\DaveLM-CADAVER\\human_readiness_hr3_block3_causal_seed87006_execution_attempt1_uncommitted"
+}

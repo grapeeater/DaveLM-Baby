@@ -1,0 +1,42 @@
+{
+  "alignment_transitions": [
+    [
+      2,
+      37
+    ],
+    [
+      37,
+      268
+    ],
+    [
+      268,
+      18
+    ],
+    [
+      18,
+      3
+    ]
+  ],
+  "binding_batches": 50,
+  "binding_quartets": 80,
+  "checkpoint_loaded": false,
+  "dev_records": 15866,
+  "english_batches": 450,
+  "final_accessed": false,
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "readiness_dev_receipt_sha256": "7004430a38c4f6562eb50bef6a51e893a08b1300dab44f99361b803fd509e85b",
+  "readiness_dev_status": "FROZEN_PROSPECTIVE_READINESS_DEV_V2",
+  "runtime": {
+    "cuda_available": true,
+    "python": "3.12.14",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "sacred_accessed": false,
+  "scope": "English trainable blocks 3-7; blocks 0-2 and T13 localization/retrieval frozen. Binding full scope.",
+  "status": "PASS_HR3_BLOCK3_PREFLIGHT_NO_CHECKPOINT_NO_OPTIMIZER",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "train_records": 149014
+}

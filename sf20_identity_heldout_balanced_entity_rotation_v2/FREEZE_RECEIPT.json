@@ -1,0 +1,87 @@
+{
+  "study": "SF20_IDENTITY_HELDOUT_BALANCED_ENTITY_ROTATION_V2",
+  "status": "SF20_PROSPECTIVE_PREFLIGHT_PASS",
+  "preflight_status": "SF20_STATIC_PREFLIGHT_PASS",
+  "u0_reproduction": {
+    "completed": true,
+    "executed_utc": "2026-09-09T04:53:40.321015+00:00",
+    "branches": {
+      "87053": {
+        "reproduces_parent": true,
+        "d3_measured": 0.007036717671962123,
+        "d3_reference": 0.007036717671962123,
+        "d3_diff": 0.0,
+        "train16": {"correct": 16, "exact": 16, "families": 4, "reversals": 8},
+        "language_ce": 3.5873013138771057,
+        "binding": {"pilot0": true, "pilot1": true},
+        "dev_surface": {"correct": 12, "exact": 5},
+        "dev_order": {"correct": 9, "exact": 3},
+        "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d"
+      },
+      "87054": {
+        "reproduces_parent": true,
+        "d3_measured": 0.006672408242356376,
+        "d3_reference": 0.006672408242356376,
+        "d3_diff": 0.0,
+        "train16": {"correct": 16, "exact": 16, "families": 4, "reversals": 8},
+        "language_ce": 3.574604868888855,
+        "binding": {"pilot0": true, "pilot1": true},
+        "dev_surface": {"correct": 13, "exact": 4},
+        "dev_order": {"correct": 9, "exact": 3},
+        "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102"
+      },
+      "87055": {
+        "reproduces_parent": true,
+        "d3_measured": 0.007839491795780695,
+        "d3_reference": 0.007839491795780695,
+        "d3_diff": 0.0,
+        "train16": {"correct": 16, "exact": 16, "families": 4, "reversals": 8},
+        "language_ce": 3.5949734449386597,
+        "binding": {"pilot0": true, "pilot1": true},
+        "dev_surface": {"correct": 13, "exact": 5},
+        "dev_order": {"correct": 8, "exact": 3},
+        "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+      }
+    },
+    "summary": "3/3 branches exactly reproduce their SF8-low parent U0 language and D3 references, preserve perfect TRAIN16, and pass both binding pools."
+  },
+  "selected_names": [
+    "Sara", "Bob", "Billy", "Tony", "Fred", "Tina", "Steve", "Susan",
+    "Remy", "Ralph", "Colin", "Faye", "Carl", "Wendy", "Cathy", "Tara"
+  ],
+  "geometry": "3/3/4",
+  "identity_balance": "16x4/2/2",
+  "scientific_variable": "Identity set in the 32 widening records: Alex/Owen/Mia/Nora -> fixed balanced 16-name set. The 16 TRAIN16 preservation records remain byte-identical.",
+  "fences": {
+    "D3_training_calls": 0,
+    "evaluator_unchanged": true,
+    "final_or_sacred": "PROHIBITED",
+    "gates_unchanged": true,
+    "gradient_projection": false,
+    "head_freeze": false,
+    "historical_transfer": "LOCKED_UNSCORED",
+    "membership_hinge": false,
+    "no_R_name": true
+  },
+  "hashes": {
+    "tokenizer": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "protocol": "d4f8ec1766546bfb93f201b40d4c56ed6d98ded17a3c78708f259f6d79bf8eec",
+    "controller": "268f588484f6ff7c3ce62c3e9c57414088aedaaa29525dab43a536f2a32b635a",
+    "identity_assignment": "a9f22a073ec9d7b53700418c46e7b207d54d446be7ceb76a41939311c8bfa34d",
+    "tokenization_match": "9f319fbb611a3ab145e10064ceb0d85c1fcdb448efd0d8d67c5949dc790aff77",
+    "static_preflight": "ba7bb09d052d0c51d9ba5883ae417e3fe6a7996b81881195de38a86ac7073034",
+    "u0_preflight_record": "33ebc37feeb5548b49fe47af6dc08ffe31796090c24ba8f0953fd56feb9e4ba1"
+  },
+  "manifest_sha256": "a97cbc26f56f944a1283ab93d5c9f040f8b5ac59d8fe00d166adde1ad539fa79",
+  "manifest_files": [
+    "AMENDMENT.md", "BUILD.py", "CONTROLLER.py", "D3_SELECTION.json", "DEV_ORDER.json",
+    "DEV_SURFACE.json", "EXTERNAL_INPUTS.json", "FORBIDDEN_IDENTITIES.json", "FREEZE_RECEIPT.json",
+    "IDENTITY_ASSIGNMENT.json", "KL_POOL.json", "KL_POOL_MANIFEST.json", "MANIFEST.json",
+    "NAME_CENSUS.json", "PROTOCOL.json", "PROVENANCE.json", "SCHEDULE.json", "SF13_KL_SCHEDULE.json",
+    "SF2_ENGINE.py", "SF2_PROTOCOL.json", "STATIC_PREFLIGHT.json", "TOKENIZATION_MATCH.json",
+    "TRAIN.json", "TRAIN16_RETENTION.json", "U0_PREFLIGHT.py", "U0_PREFLIGHT_RECORD.json", "VALIDATE.py"
+  ],
+  "seal_utc": "2026-09-09T05:00:00.000000+00:00",
+  "mechanical_completion": true,
+  "training_not_started": true
+}

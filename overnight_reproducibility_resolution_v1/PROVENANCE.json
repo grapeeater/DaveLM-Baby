@@ -1,0 +1,48 @@
+{
+  "mission": "overnight_reproducibility_resolution_v1",
+  "date": "2026-09-07",
+  "outcome": "PATH 3 passed as a frozen design (single successful path); PATH 1 failed/infeasible; PATH 2 failed/not justifiable; PATH 4 not reached.",
+  "authoritative_inputs_inspected": {
+    "sf2_run": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2",
+    "sf2_residual_autopsy": "C:\\DaveLM-CADAVER\\sf2_residual_item_autopsy_v1",
+    "sf2_replay_mismatch_autopsy": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1",
+    "sf3_package": "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1",
+    "sf3_plus_package": "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1+",
+    "sf4_package": "C:\\DaveLM-CADAVER\\sf4_common_state_lr_anneal_v1",
+    "comparative_anatomy": "C:\\DaveLM-CADAVER\\comparative_model_anatomy_post_sf2_v1",
+    "sf1_bundle": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011",
+    "pilot1_parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt"
+  },
+  "hash_verifications_performed": {
+    "sf2_engine": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7 (verified unchanged)",
+    "sf2_package_manifest": "all listed hashes verified",
+    "historical_sf2_ckpt100": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "sf3_replay_ckpt100": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+    "sf4_common_a_ckpt100": "0c929dcc9ab1db21b5e18f0ba70caedda9da4bb134f16896e5f1bc8b95db461b",
+    "sf4_common_b_ckpt100": "3dfd1ca2df088e860ee22a198a3feb4a163df9bf2200d5fd19880205c3bbdb1c",
+    "probe_1a_ckpt100": "bbaeefefd262080f7b023f31821c40298c08031384739ca1fa2309217bad100a",
+    "probe_1b_ckpt100": "80ae7794c4ec21a133931f229628ba94e7f66aecad626757f6b529f8cef55c74",
+    "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "diagnostic_work_performed": {
+    "probe_replays": ["probe_1a", "probe_1b"] + ["probe8 x7 (mode survey)", "probe8g x4", "probe8g2 x6", "kltest x6 (TORCH_BLAS_PREFER_HIPBLASLT=0)"],
+    "pairwise_cluster_matrix": "8 u100 checkpoints compared pairwise (hist, A, B, SF3, SF4a, SF4b, p1a, p1b)",
+    "mode_noise_floor": "per-item margin deltas at u100/u200 across modes; zero sign flips",
+    "note": "All diagnostic runs were confined to this mission directory; each probe created its own run outputs; no authoritative artifact was modified."
+  },
+  "classifications_preserved": {
+    "SF2": "SF2_ACQUISITION_FAIL",
+    "SF3": "SF3_HARD_STOP_UPDATE100_REPLAY_MISMATCH",
+    "SF4": "SF4_HARD_STOP_COMMON_STATE_REPRODUCTION_MISMATCH"
+  },
+  "safety_confirmation": {
+    "final_accessed": false,
+    "sacred_accessed": false,
+    "locked_transfer_panels_opened": false,
+    "historical_gates_weakened": false,
+    "treatment_executed": false,
+    "sf5_controller_written": false,
+    "scientific_artifacts_modified": false
+  }
+}

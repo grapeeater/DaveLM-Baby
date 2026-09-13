@@ -1,0 +1,15 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T3_EXPLICIT_REPRESENTATION_FORMING_V1",
+  "classification": "T3_HARD_STOP",
+  "reason": "Committed runner lacked complete frozen evaluator metrics and independent seed outputs were byte-identical.",
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "checkpoint_sha256": "1a4d52116677760f3c1663dfa0988a32ce68a0953ad07e5b20d1e3586cbd226b",
+  "updates": {
+    "620001": 500,
+    "620002": 500,
+    "620003": 500
+  },
+  "locked_material_accessed": false,
+  "training_performed": true
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "family_id": "near_distribution:v3fam00",
+    "objects": [
+      "box",
+      "kite"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "yellow",
+      "blue"
+    ],
+    "family_id": "near_distribution:v3fam01",
+    "objects": [
+      "box",
+      "hat"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "near_distribution:v3fam02",
+    "objects": [
+      "car",
+      "toy"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "red",
+      "yellow"
+    ],
+    "family_id": "near_distribution:v3fam03",
+    "objects": [
+      "book",
+      "kite"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "near_distribution"
+  },
+  {
+    "colors": [
+      "yellow",
+      "red"
+    ],
+    "family_id": "counterfactual:v3fam04",
+    "objects": [
+      "ball",
+      "fish"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "blue",
+      "yellow"
+    ],
+    "family_id": "counterfactual:v3fam05",
+    "objects": [
+      "hat",
+      "toy"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "counterfactual"
+  },
+  {
+    "colors": [
+      "blue",
+      "green"
+    ],
+    "family_id": "surface_form:v3fam06",
+    "objects": [
+      "ball",
+      "box"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "green",
+      "red"
+    ],
+    "family_id": "surface_form:v3fam07",
+    "objects": [
+      "car",
+      "fish"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "surface_form"
+  },
+  {
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "family_id": "distractor:v3fam00",
+    "objects": [
+      "ball",
+      "fish"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "red",
+      "green"
+    ],
+    "family_id": "distractor:v3fam01",
+    "objects": [
+      "car",
+      "toy"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "green",
+      "yellow"
+    ],
+    "family_id": "distractor:v3fam02",
+    "objects": [
+      "ball",
+      "toy"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "distractor"
+  },
+  {
+    "colors": [
+      "green",
+      "blue"
+    ],
+    "family_id": "distractor:v3fam03",
+    "objects": [
+      "box",
+      "hat"
+    ],
+    "relations": [
+      "found",
+      "carried"
+    ],
+    "section": "distractor"
+  }
+]

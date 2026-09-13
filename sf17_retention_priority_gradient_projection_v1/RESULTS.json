@@ -1,0 +1,782 @@
+{
+  "classification": "RETENTION_PRIORITY_PROJECTION_INSUFFICIENT",
+  "controller_sha256": "508d772805d0a8873743d457bea111f25f780ec64a76e1d013d304a942715a68",
+  "cross_seed": {
+    "d3_failures": 3,
+    "endpoint_passes": 0,
+    "retention_failures": 0,
+    "widening_movement": 3
+  },
+  "final_accessed": false,
+  "locked_transfer": "LOCKED_UNSCORED",
+  "manifest_sha256": "d60fb34ed3aa4e384f299ae3df2a76455699731eeaa0749fbea63784980f3617",
+  "receipt_sha256": "04de20616e263e564753a08549054b3c85fc44e475b91a7456074add22c1fde4",
+  "runs": [
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf17_retention_priority_gradient_projection_v1\\runs\\seed_87044_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "c57ec0d48cec0df5a73b679783905c656ef117c293e5315a91510178616c3bc2",
+      "completed": 100,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "projection": {
+        "conflict_fraction": 0.7666666666666667,
+        "conflict_updates": 69,
+        "english_updates": 90,
+        "mean_gradient_cosine": -0.10264070383964435,
+        "mean_projection_coefficient": 0.14908228951052477
+      },
+      "seed": 87044,
+      "snapshots": [
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.007036717671962123,
+            "mean_entropy": 2.8127532401122153,
+            "mean_eos_probability": 0.001767161737854489,
+            "mean_true_next_probability": 0.1334390382900441,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.001807325439137475,
+              "Mia": 0.0028332657115400783,
+              "Nora": 0.0017122710340558012,
+              "Owen": 0.0006838553986634466
+            }
+          },
+          "gates": null,
+          "language": {
+            "batch_losses": [
+              3.748203992843628,
+              3.3880622386932373,
+              3.586591958999634,
+              3.626347064971924
+            ],
+            "loss": 3.5873013138771057,
+            "perplexity": 36.136423354684176,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 9,
+            "exact": 3,
+            "fact_exact": 3
+          },
+          "surface": {
+            "correct": 12,
+            "exact": 5
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 0
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.01541140528221474,
+            "mean_entropy": 2.7299626767635345,
+            "mean_eos_probability": 0.002090208077132144,
+            "mean_true_next_probability": 0.1324032815954146,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.004518510252636665,
+              "Mia": 0.006833168756578384,
+              "Nora": 0.0022514094151511177,
+              "Owen": 0.00180831664106601
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": false,
+            "d3": false,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": true
+          },
+          "language": {
+            "batch_losses": [
+              3.7803890705108643,
+              3.430657148361206,
+              3.6086912155151367,
+              3.663062334060669
+            ],
+            "loss": 3.620699942111969,
+            "perplexity": 37.363711106456314,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 1,
+            "correct": 9,
+            "exact": 5,
+            "fact_exact": 4
+          },
+          "surface": {
+            "correct": 14,
+            "exact": 11
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 100
+        }
+      ],
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.01541140528221474,
+          "mean_entropy": 2.7299626767635345,
+          "mean_eos_probability": 0.002090208077132144,
+          "mean_true_next_probability": 0.1324032815954146,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.004518510252636665,
+            "Mia": 0.006833168756578384,
+            "Nora": 0.0022514094151511177,
+            "Owen": 0.00180831664106601
+          }
+        },
+        "gates": {
+          "binding": {
+            "pilot0": true,
+            "pilot1": true
+          },
+          "continue": false,
+          "d3": false,
+          "dev_order": false,
+          "dev_surface": false,
+          "development_gain": false,
+          "endpoint_pass": false,
+          "language": true,
+          "retention_acquisition": true
+        },
+        "language": {
+          "batch_losses": [
+            3.7803890705108643,
+            3.430657148361206,
+            3.6086912155151367,
+            3.663062334060669
+          ],
+          "loss": 3.620699942111969,
+          "perplexity": 37.363711106456314,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 1,
+          "correct": 9,
+          "exact": 5,
+          "fact_exact": 4
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 11
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 100
+      },
+      "widening_movement": true
+    },
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf17_retention_priority_gradient_projection_v1\\runs\\seed_87045_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "683dbbdd3749ce1b048fcf9e98d96da48c4358a9ded2bf7584b939b55e50c9af",
+      "completed": 100,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "projection": {
+        "conflict_fraction": 0.6888888888888889,
+        "conflict_updates": 62,
+        "english_updates": 90,
+        "mean_gradient_cosine": -0.08557950366590834,
+        "mean_projection_coefficient": 0.13676626176650464
+      },
+      "seed": 87045,
+      "snapshots": [
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.006672408242356376,
+            "mean_entropy": 2.796943365887273,
+            "mean_eos_probability": 0.0016619437573144602,
+            "mean_true_next_probability": 0.13545253721068828,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0016973070395719936,
+              "Mia": 0.002682281030823741,
+              "Nora": 0.0017170548236129513,
+              "Owen": 0.0005757652613638253
+            }
+          },
+          "gates": null,
+          "language": {
+            "batch_losses": [
+              3.736370801925659,
+              3.376737594604492,
+              3.5661802291870117,
+              3.619130849838257
+            ],
+            "loss": 3.574604868888855,
+            "perplexity": 35.68051954657961,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 9,
+            "exact": 3,
+            "fact_exact": 3
+          },
+          "surface": {
+            "correct": 13,
+            "exact": 4
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 0
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.015082639065120418,
+            "mean_entropy": 2.702846691274317,
+            "mean_eos_probability": 0.0018218040511876477,
+            "mean_true_next_probability": 0.13462288024552738,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.004438916170993346,
+              "Mia": 0.006830925480357186,
+              "Nora": 0.002173793893361309,
+              "Owen": 0.001639003481371859
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": false,
+            "d3": false,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": true
+          },
+          "language": {
+            "batch_losses": [
+              3.7850501537323,
+              3.4371337890625,
+              3.6125807762145996,
+              3.671755075454712
+            ],
+            "loss": 3.626629948616028,
+            "perplexity": 37.58593640385092,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 1,
+            "correct": 8,
+            "exact": 4,
+            "fact_exact": 3
+          },
+          "surface": {
+            "correct": 14,
+            "exact": 11
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 100
+        }
+      ],
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.015082639065120418,
+          "mean_entropy": 2.702846691274317,
+          "mean_eos_probability": 0.0018218040511876477,
+          "mean_true_next_probability": 0.13462288024552738,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.004438916170993346,
+            "Mia": 0.006830925480357186,
+            "Nora": 0.002173793893361309,
+            "Owen": 0.001639003481371859
+          }
+        },
+        "gates": {
+          "binding": {
+            "pilot0": true,
+            "pilot1": true
+          },
+          "continue": false,
+          "d3": false,
+          "dev_order": false,
+          "dev_surface": false,
+          "development_gain": false,
+          "endpoint_pass": false,
+          "language": true,
+          "retention_acquisition": true
+        },
+        "language": {
+          "batch_losses": [
+            3.7850501537323,
+            3.4371337890625,
+            3.6125807762145996,
+            3.671755075454712
+          ],
+          "loss": 3.626629948616028,
+          "perplexity": 37.58593640385092,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 1,
+          "correct": 8,
+          "exact": 4,
+          "fact_exact": 3
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 11
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 100
+      },
+      "widening_movement": true
+    },
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf17_retention_priority_gradient_projection_v1\\runs\\seed_87046_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "584995430d51bc715a3aa710ed30fb63b5817f4850bc75bb8298265b03460db6",
+      "completed": 100,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "projection": {
+        "conflict_fraction": 0.8,
+        "conflict_updates": 72,
+        "english_updates": 90,
+        "mean_gradient_cosine": -0.10134691262413334,
+        "mean_projection_coefficient": 0.13880054390502405
+      },
+      "seed": 87046,
+      "snapshots": [
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.007839491795780695,
+            "mean_entropy": 2.807910793228075,
+            "mean_eos_probability": 0.002095643633439892,
+            "mean_true_next_probability": 0.13269910424624154,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0018889631974815524,
+              "Mia": 0.0029714606508496333,
+              "Nora": 0.0022813516559289093,
+              "Owen": 0.0006977163453769641
+            }
+          },
+          "gates": null,
+          "language": {
+            "batch_losses": [
+              3.7511818408966064,
+              3.4004034996032715,
+              3.5899367332458496,
+              3.638371706008911
+            ],
+            "loss": 3.5949734449386597,
+            "perplexity": 36.41473297957166,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 0,
+            "correct": 8,
+            "exact": 3,
+            "fact_exact": 3
+          },
+          "surface": {
+            "correct": 13,
+            "exact": 5
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 0
+        },
+        {
+          "binding": {
+            "pilot0": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            },
+            "pilot1": {
+              "answer_exact": 80,
+              "both_distinct": 80,
+              "complete_quartets": 20,
+              "downstream_answer_correct_conditional_on_bd": 1.0,
+              "queried_row_selection_conditional_on_bd": 1.0,
+              "slot_collapse": 0,
+              "strict_reversal_both_correct": 40,
+              "strict_reversal_pairs": 40
+            }
+          },
+          "d3": {
+            "mean_combined_name_probability": 0.01309366699877157,
+            "mean_entropy": 2.6937660642142873,
+            "mean_eos_probability": 0.0018037631745313615,
+            "mean_true_next_probability": 0.13151013237269504,
+            "n": 256,
+            "per_name_mean_probability": {
+              "Alex": 0.0034525965717492058,
+              "Mia": 0.005341645564477804,
+              "Nora": 0.002484892399526595,
+              "Owen": 0.0018145325772948029
+            }
+          },
+          "gates": {
+            "binding": {
+              "pilot0": true,
+              "pilot1": true
+            },
+            "continue": false,
+            "d3": false,
+            "dev_order": false,
+            "dev_surface": false,
+            "development_gain": false,
+            "endpoint_pass": false,
+            "language": true,
+            "retention_acquisition": true
+          },
+          "language": {
+            "batch_losses": [
+              3.8113112449645996,
+              3.4757211208343506,
+              3.6415395736694336,
+              3.703479051589966
+            ],
+            "loss": 3.6580127477645874,
+            "perplexity": 38.78419226508772,
+            "records": 128
+          },
+          "order": {
+            "copy_exact": 1,
+            "correct": 10,
+            "exact": 5,
+            "fact_exact": 4
+          },
+          "surface": {
+            "correct": 14,
+            "exact": 11
+          },
+          "train16": {
+            "correct": 16,
+            "exact": 16,
+            "families": 4,
+            "reversals": 8
+          },
+          "update": 100
+        }
+      ],
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.01309366699877157,
+          "mean_entropy": 2.6937660642142873,
+          "mean_eos_probability": 0.0018037631745313615,
+          "mean_true_next_probability": 0.13151013237269504,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0034525965717492058,
+            "Mia": 0.005341645564477804,
+            "Nora": 0.002484892399526595,
+            "Owen": 0.0018145325772948029
+          }
+        },
+        "gates": {
+          "binding": {
+            "pilot0": true,
+            "pilot1": true
+          },
+          "continue": false,
+          "d3": false,
+          "dev_order": false,
+          "dev_surface": false,
+          "development_gain": false,
+          "endpoint_pass": false,
+          "language": true,
+          "retention_acquisition": true
+        },
+        "language": {
+          "batch_losses": [
+            3.8113112449645996,
+            3.4757211208343506,
+            3.6415395736694336,
+            3.703479051589966
+          ],
+          "loss": 3.6580127477645874,
+          "perplexity": 38.78419226508772,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 1,
+          "correct": 10,
+          "exact": 5,
+          "fact_exact": 4
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 11
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 100
+      },
+      "widening_movement": true
+    }
+  ],
+  "sacred_accessed": false
+}

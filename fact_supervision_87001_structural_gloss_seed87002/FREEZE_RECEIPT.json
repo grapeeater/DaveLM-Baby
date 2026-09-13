@@ -1,0 +1,14 @@
+{
+ "status": "STRUCTURAL_GLOSS_FREEZE_COMPLETE_PREEXECUTION_ONLY",
+ "bundle": "fact_supervision_87001_structural_gloss_seed87002",
+ "items_sha256": "55ac367a307f9dde55041f9f22feca2995334b7430bf0eab71b986869234d2aa",
+ "validation_sha256": "8241fdbf7cef8786c9d9f1fceff955ec1b6192053ec82159307146c46bf97360",
+ "manifest_sha256": "5b877f85071588636528a6e1b6eeed9ec6a0158153c59063cc3c44cb1df24163",
+ "protocol_sha256": "b6234784077729eab030637133c70ed68c4aba3187b80db81c6b0e5d59206117",
+ "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false
+}

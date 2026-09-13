@@ -1,0 +1,513 @@
+{
+  "checkpoint_pairs": [
+    {
+      "label": "historical_sf2_u100_vs_replayA_u100",
+      "a": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+      "b": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_A\\checkpoint_100.pt",
+      "a_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+      "b_sha256": "df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd",
+      "tensor_count": 414,
+      "mismatched_tensors": 334,
+      "bitwise_equal": false,
+      "max_abs": 0.0009046792984008789,
+      "mean_abs": 1.0777848604458758e-06,
+      "rms": 4.1942220868031705e-06,
+      "per_component": {
+        "blocks0": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 4.735216498374939e-05
+        },
+        "blocks1": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 7.329322397708893e-05
+        },
+        "blocks2": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 8.555129170417786e-05
+        },
+        "blocks3": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 7.943878881633282e-05
+        },
+        "blocks4": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0008523811120539904
+        },
+        "blocks5": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0006136428564786911
+        },
+        "blocks6": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0003834664821624756
+        },
+        "blocks7": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.00018976256251335144
+        },
+        "final_norm": {
+          "n_tensors": 2,
+          "mismatched": 2,
+          "max_abs": 2.384185791015625e-06
+        },
+        "language_head": {
+          "n_tensors": 2,
+          "mismatched": 2,
+          "max_abs": 2.7321279048919678e-05
+        },
+        "position_embedding": {
+          "n_tensors": 1,
+          "mismatched": 1,
+          "max_abs": 0.00035774707794189453
+        },
+        "t13_special": {
+          "n_tensors": 8,
+          "mismatched": 8,
+          "max_abs": 0.00021122395992279053
+        },
+        "token_embedding": {
+          "n_tensors": 1,
+          "mismatched": 1,
+          "max_abs": 0.0009046792984008789
+        }
+      }
+    },
+    {
+      "label": "historical_sf2_u100_vs_replayB_u100",
+      "a": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+      "b": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_B\\checkpoint_100.pt",
+      "a_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+      "b_sha256": "62c1d5b0a17c418a4bb5df449622aa0bae976e08d887fbbf940458118283c704",
+      "tensor_count": 414,
+      "mismatched_tensors": 334,
+      "bitwise_equal": false,
+      "max_abs": 0.0009046792984008789,
+      "mean_abs": 1.0777848604458758e-06,
+      "rms": 4.1942220868031705e-06,
+      "per_component": {
+        "blocks0": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 4.735216498374939e-05
+        },
+        "blocks1": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 7.329322397708893e-05
+        },
+        "blocks2": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 8.555129170417786e-05
+        },
+        "blocks3": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 7.943878881633282e-05
+        },
+        "blocks4": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0008523811120539904
+        },
+        "blocks5": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0006136428564786911
+        },
+        "blocks6": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0003834664821624756
+        },
+        "blocks7": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.00018976256251335144
+        },
+        "final_norm": {
+          "n_tensors": 2,
+          "mismatched": 2,
+          "max_abs": 2.384185791015625e-06
+        },
+        "language_head": {
+          "n_tensors": 2,
+          "mismatched": 2,
+          "max_abs": 2.7321279048919678e-05
+        },
+        "position_embedding": {
+          "n_tensors": 1,
+          "mismatched": 1,
+          "max_abs": 0.00035774707794189453
+        },
+        "t13_special": {
+          "n_tensors": 8,
+          "mismatched": 8,
+          "max_abs": 0.00021122395992279053
+        },
+        "token_embedding": {
+          "n_tensors": 1,
+          "mismatched": 1,
+          "max_abs": 0.0009046792984008789
+        }
+      }
+    },
+    {
+      "label": "historical_sf2_u100_vs_sf3replay_u100",
+      "a": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+      "b": "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1\\run\\checkpoint_100.pt",
+      "a_sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+      "b_sha256": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+      "tensor_count": 414,
+      "mismatched_tensors": 334,
+      "bitwise_equal": false,
+      "max_abs": 0.0009046792984008789,
+      "mean_abs": 1.0777848604458758e-06,
+      "rms": 4.1942220868031705e-06,
+      "per_component": {
+        "blocks0": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 4.735216498374939e-05
+        },
+        "blocks1": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 7.329322397708893e-05
+        },
+        "blocks2": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 8.555129170417786e-05
+        },
+        "blocks3": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 7.943878881633282e-05
+        },
+        "blocks4": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0008523811120539904
+        },
+        "blocks5": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0006136428564786911
+        },
+        "blocks6": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.0003834664821624756
+        },
+        "blocks7": {
+          "n_tensors": 50,
+          "mismatched": 40,
+          "max_abs": 0.00018976256251335144
+        },
+        "final_norm": {
+          "n_tensors": 2,
+          "mismatched": 2,
+          "max_abs": 2.384185791015625e-06
+        },
+        "language_head": {
+          "n_tensors": 2,
+          "mismatched": 2,
+          "max_abs": 2.7321279048919678e-05
+        },
+        "position_embedding": {
+          "n_tensors": 1,
+          "mismatched": 1,
+          "max_abs": 0.00035774707794189453
+        },
+        "t13_special": {
+          "n_tensors": 8,
+          "mismatched": 8,
+          "max_abs": 0.00021122395992279053
+        },
+        "token_embedding": {
+          "n_tensors": 1,
+          "mismatched": 1,
+          "max_abs": 0.0009046792984008789
+        }
+      }
+    },
+    {
+      "label": "replayA_vs_replayB",
+      "a": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_A\\checkpoint_100.pt",
+      "b": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_B\\checkpoint_100.pt",
+      "a_sha256": "df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd",
+      "b_sha256": "62c1d5b0a17c418a4bb5df449622aa0bae976e08d887fbbf940458118283c704",
+      "tensor_count": 414,
+      "mismatched_tensors": 0,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "per_component": {
+        "blocks0": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks1": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks2": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks3": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks4": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks5": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks6": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks7": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "final_norm": {
+          "n_tensors": 2,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "language_head": {
+          "n_tensors": 2,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "position_embedding": {
+          "n_tensors": 1,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "t13_special": {
+          "n_tensors": 8,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "token_embedding": {
+          "n_tensors": 1,
+          "mismatched": 0,
+          "max_abs": 0.0
+        }
+      }
+    },
+    {
+      "label": "replayA_vs_sf3replay",
+      "a": "C:\\DaveLM-CADAVER\\sf2_update100_replay_mismatch_autopsy_v1\\replay_A\\checkpoint_100.pt",
+      "b": "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1\\run\\checkpoint_100.pt",
+      "a_sha256": "df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd",
+      "b_sha256": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+      "tensor_count": 414,
+      "mismatched_tensors": 0,
+      "bitwise_equal": true,
+      "max_abs": 0.0,
+      "mean_abs": 0.0,
+      "rms": 0.0,
+      "per_component": {
+        "blocks0": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks1": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks2": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks3": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks4": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks5": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks6": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "blocks7": {
+          "n_tensors": 50,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "final_norm": {
+          "n_tensors": 2,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "language_head": {
+          "n_tensors": 2,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "position_embedding": {
+          "n_tensors": 1,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "t13_special": {
+          "n_tensors": 8,
+          "mismatched": 0,
+          "max_abs": 0.0
+        },
+        "token_embedding": {
+          "n_tensors": 1,
+          "mismatched": 0,
+          "max_abs": 0.0
+        }
+      }
+    }
+  ],
+  "metric_pairs": [
+    {
+      "label": "historical_vs_replayA",
+      "a_records": 200,
+      "b_records": 200,
+      "compared": 200,
+      "diff_record_count": 747,
+      "first_divergence": {
+        "update": 2,
+        "kind": "english",
+        "field": "kl",
+        "a": 0.002166416496038437,
+        "b": 0.002166415099054575,
+        "delta": 1.3969838619232178e-09
+      },
+      "max_abs_delta_per_field": {
+        "kl": 0.00018873810768127441,
+        "grad_norm": 0.012416839599609375,
+        "loss": 0.00022605061531066895,
+        "ce": 9.752810001373291e-05
+      }
+    },
+    {
+      "label": "replayA_vs_replayB",
+      "a_records": 200,
+      "b_records": 200,
+      "compared": 200,
+      "diff_record_count": 0,
+      "first_divergence": null,
+      "max_abs_delta_per_field": {}
+    },
+    {
+      "label": "historical_vs_sf3replay",
+      "a_records": 200,
+      "b_records": 100,
+      "compared": 100,
+      "diff_record_count": 367,
+      "first_divergence": {
+        "update": 2,
+        "kind": "english",
+        "field": "kl",
+        "a": 0.002166416496038437,
+        "b": 0.002166415099054575,
+        "delta": 1.3969838619232178e-09
+      },
+      "max_abs_delta_per_field": {
+        "kl": 0.0001434236764907837,
+        "grad_norm": 0.012416839599609375,
+        "loss": 0.00015813112258911133,
+        "ce": 6.41942024230957e-05
+      }
+    }
+  ],
+  "state_inventory": [
+    {
+      "label": "historical_sf2",
+      "checkpoint_top_keys": [
+        "model_state_dict",
+        "provenance",
+        "update"
+      ],
+      "checkpoint_has_model_state": true,
+      "checkpoint_has_optimizer": false,
+      "checkpoint_has_rng": false,
+      "checkpoint_update_field": 100,
+      "restart_top_keys": [
+        "completed",
+        "model",
+        "optimizer",
+        "provenance",
+        "rng",
+        "scope"
+      ],
+      "restart_completed": 200,
+      "restart_has_model": true,
+      "restart_has_optimizer": true,
+      "restart_has_rng": true
+    },
+    {
+      "label": "sf3_replay",
+      "checkpoint_top_keys": [
+        "model_state_dict",
+        "provenance",
+        "update"
+      ],
+      "checkpoint_has_model_state": true,
+      "checkpoint_has_optimizer": false,
+      "checkpoint_has_rng": false,
+      "checkpoint_update_field": 100,
+      "restart_top_keys": [
+        "completed",
+        "model",
+        "optimizer",
+        "provenance",
+        "rng",
+        "scope"
+      ],
+      "restart_completed": 100,
+      "restart_has_model": true,
+      "restart_has_optimizer": true,
+      "restart_has_rng": true
+    }
+  ],
+  "checkpoint_sha256s": {
+    "historical_sf2_u100": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "sf3_replay_u100": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+    "replayA_u100": "df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd",
+    "replayB_u100": "62c1d5b0a17c418a4bb5df449622aa0bae976e08d887fbbf940458118283c704"
+  }
+}

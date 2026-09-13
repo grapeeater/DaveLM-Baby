@@ -1,0 +1,10 @@
+{
+  "control_count": 8,
+  "model_loaded": false,
+  "optimizer_created": false,
+  "position_count": 256,
+  "selection_seed": "deterministic index rule; no RNG",
+  "selection_sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+  "source_sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

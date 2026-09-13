@@ -1,0 +1,24 @@
+{
+ "status": "TREATMENT11_TRAINED",
+ "steps": 1000,
+ "batch_size": 32,
+ "objective": "answer_only_causal_cross_entropy",
+ "supervised_answer_decisions": 32000,
+ "final_checkpoint_sha256": "c312b0f8318ca10f1ca29ae14514da0a6382474aa75768fb9fcbc4088b95b22c",
+ "final_step": {
+  "answer_ce_loss": 0.7168020009994507,
+  "answer_accuracy": 0.5,
+  "target_gt_distractor_rate": 0.5,
+  "mean_target_distractor_margin": -0.033198267221450806,
+  "supervised_answer_decisions": 32,
+  "selected_logits_shape": [
+   32,
+   1024
+  ],
+  "target_shape": [
+   32
+  ],
+  "step": 1000,
+  "elapsed_seconds": 475.50228095054626
+ }
+}

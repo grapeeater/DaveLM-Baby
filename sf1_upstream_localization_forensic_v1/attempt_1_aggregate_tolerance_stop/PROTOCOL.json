@@ -1,0 +1,54 @@
+{
+  "authorized_inputs": {
+    "D3": "exact frozen prior 256 positions",
+    "factual": "exact 16 SF1 TRAIN items",
+    "language": "authorized aligned first 128 TinyStories DEV records"
+  },
+  "baseline_controls": [
+    "native Pilot1",
+    "native SF1",
+    "same-source manual path at every boundary",
+    "prior-forensic endpoint reproduction"
+  ],
+  "boundaries": [
+    "embedding_output",
+    "after_block_0_attention_residual",
+    "after_block_0_mlp_residual",
+    "after_block_1_attention_residual",
+    "after_block_1_mlp_residual",
+    "after_block_2_attention_residual",
+    "after_block_2_mlp_residual",
+    "after_block_3_attention_residual",
+    "after_block_3_mlp_residual",
+    "after_block_4_attention_residual",
+    "after_block_4_mlp_residual",
+    "after_block_5_attention_residual",
+    "after_block_5_mlp_residual",
+    "after_block_6_attention_residual",
+    "after_block_6_mlp_residual",
+    "after_block_7_attention_residual",
+    "after_block_7_mlp_residual"
+  ],
+  "candidate_scoring": "sum established four-token candidate conditional log probabilities; positive correct-minus-distractor margin is correct",
+  "directions": [
+    "Pilot1 prefix -> SF1 suffix",
+    "SF1 prefix -> Pilot1 suffix"
+  ],
+  "forbidden": [
+    "optimizer",
+    "autograd",
+    "training",
+    "weight mutation",
+    "locked SF1 panels",
+    "FINAL",
+    "sacred material",
+    "treatment implementation"
+  ],
+  "interpretive_rule": "inference-time causal sufficiency/localization only; never infer training-time site from splice depth",
+  "language_scoring": "aligned causal next-token CE on same four batches of 32 authorized DEV records",
+  "name": "SF1_UPSTREAM_LOCALIZATION_FORENSIC_V1",
+  "output_paths": [
+    "Pilot1 final_norm+head",
+    "SF1 final_norm+head"
+  ]
+}

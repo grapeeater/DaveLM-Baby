@@ -1,0 +1,43 @@
+{
+  "checkpoint_loaded": false,
+  "counts": {
+    "batch": 36,
+    "dev_order": 16,
+    "dev_surface": 16,
+    "new": 32,
+    "presentations": 6480,
+    "retention": 16,
+    "train": 48
+  },
+  "mechanical": "all200schedule records; name/category/batchbalance; exactSF10trainingloop; objectives/scopes; masking; tokenizer; gates; binding; runtime PASS",
+  "negative_tests": {
+    "broken_assignment_reversal": "REJECTED",
+    "mismatched_query_object": "REJECTED",
+    "wrong_cue": "REJECTED",
+    "wrong_key": "REJECTED",
+    "wrong_predicate": "REJECTED"
+  },
+  "optimizer_created": false,
+  "overlap": {
+    "TinyStories_full_prompt_substrings": [],
+    "TinyStories_source_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+    "dev_historical_sf9_sf10": 0,
+    "locked_fence": "verified SF9-subset provenance + disjoint known original object/predicate domain; locked panels not opened; no semantic/near-duplicate independence claim",
+    "train_dev": 0
+  },
+  "parent_hashes": {
+    "87026": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "87027": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+    "87028": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+  },
+  "reporter_smoke": "ALL_SMOKE_TESTS_PASS: missingu0gates, partial/full trajectories, full report rendering, classification priority, no model operations\n",
+  "runtime": {
+    "gpu": "AMD Radeon RX 9060 XT",
+    "python": "3.12.14",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "semantic_validation": "all80 final rendered prompts independently parsed; answer keys/reversals validated",
+  "status": "PASS",
+  "updates": 0
+}

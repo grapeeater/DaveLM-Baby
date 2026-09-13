@@ -1,0 +1,3763 @@
+{
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "checkpoints": {
+    "Pilot1": {
+      "checkpoint_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+      "greedy": [
+        {
+          "prompt": "The dog ran to the park because",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "The dog ran to the park because the big and fun. He wanted to the bird and wered and wered. He w",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.11026059836149216,
+              "top1_margin": 0.02231348305940628,
+              "entropy": 3.7860398292541504
+            },
+            {
+              "step": 2,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.111328125,
+              "top1_margin": 0.048050738871097565,
+              "entropy": 3.951781749725342
+            },
+            {
+              "step": 3,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.20872920751571655,
+              "top1_margin": 0.05499446392059326,
+              "entropy": 3.047452926635742
+            },
+            {
+              "step": 4,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.869573712348938,
+              "top1_margin": 0.8524215221405029,
+              "entropy": 0.8515329360961914
+            },
+            {
+              "step": 5,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.12883003056049347,
+              "top1_margin": 0.013122588396072388,
+              "entropy": 3.9384028911590576
+            },
+            {
+              "step": 6,
+              "token_id": 291,
+              "token": " f",
+              "top1_probability": 0.06005999445915222,
+              "top1_margin": 0.0003628730773925781,
+              "entropy": 4.104909896850586
+            },
+            {
+              "step": 7,
+              "token_id": 359,
+              "token": "un",
+              "top1_probability": 0.1434335559606552,
+              "top1_margin": 0.0818956270813942,
+              "entropy": 3.7499196529388428
+            },
+            {
+              "step": 8,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.3310556709766388,
+              "top1_margin": 0.25509512424468994,
+              "entropy": 3.2238669395446777
+            },
+            {
+              "step": 9,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.2519511878490448,
+              "top1_margin": 0.08248156309127808,
+              "entropy": 2.404151678085327
+            },
+            {
+              "step": 10,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.6529924869537354,
+              "top1_margin": 0.49122270941734314,
+              "entropy": 1.3141409158706665
+            },
+            {
+              "step": 11,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9677382707595825,
+              "top1_margin": 0.9598756432533264,
+              "entropy": 0.2381426841020584
+            },
+            {
+              "step": 12,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.0973210334777832,
+              "top1_margin": 0.006836950778961182,
+              "entropy": 3.9210076332092285
+            },
+            {
+              "step": 13,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.42074859142303467,
+              "top1_margin": 0.3279916048049927,
+              "entropy": 2.4673924446105957
+            },
+            {
+              "step": 14,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.9467153549194336,
+              "top1_margin": 0.9121361374855042,
+              "entropy": 0.32426878809928894
+            },
+            {
+              "step": 15,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.5321339964866638,
+              "top1_margin": 0.4679903984069824,
+              "entropy": 2.317959785461426
+            },
+            {
+              "step": 16,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.10079333186149597,
+              "top1_margin": 0.03283366560935974,
+              "entropy": 3.9291229248046875
+            },
+            {
+              "step": 17,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.14850154519081116,
+              "top1_margin": 0.07926326990127563,
+              "entropy": 3.822381019592285
+            },
+            {
+              "step": 18,
+              "token_id": 368,
+              "token": "ir",
+              "top1_probability": 0.19811184704303741,
+              "top1_margin": 0.05255343019962311,
+              "entropy": 3.1332993507385254
+            },
+            {
+              "step": 19,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.9119118452072144,
+              "top1_margin": 0.8994561433792114,
+              "entropy": 0.5985441207885742
+            },
+            {
+              "step": 20,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.17795659601688385,
+              "top1_margin": 0.09885742515325546,
+              "entropy": 3.890981435775757
+            },
+            {
+              "step": 21,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.05653928592801094,
+              "top1_margin": 0.0006509236991405487,
+              "entropy": 4.148636341094971
+            },
+            {
+              "step": 22,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.23710066080093384,
+              "top1_margin": 0.11011330783367157,
+              "entropy": 2.994035243988037
+            },
+            {
+              "step": 23,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.3481437861919403,
+              "top1_margin": 0.2663271427154541,
+              "entropy": 3.091590404510498
+            },
+            {
+              "step": 24,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.15117990970611572,
+              "top1_margin": 0.038800448179244995,
+              "entropy": 3.924032688140869
+            },
+            {
+              "step": 25,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.05729682371020317,
+              "top1_margin": 0.006100963801145554,
+              "entropy": 4.148340225219727
+            },
+            {
+              "step": 26,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.2004372477531433,
+              "top1_margin": 0.07734627276659012,
+              "entropy": 3.0585155487060547
+            },
+            {
+              "step": 27,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.2138030230998993,
+              "top1_margin": 0.10979407280683517,
+              "entropy": 3.4405980110168457
+            },
+            {
+              "step": 28,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.10585767775774002,
+              "top1_margin": 0.03936631232500076,
+              "entropy": 4.229789733886719
+            },
+            {
+              "step": 29,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.36032265424728394,
+              "top1_margin": 0.1407424360513687,
+              "entropy": 2.1698124408721924
+            },
+            {
+              "step": 30,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.7214636206626892,
+              "top1_margin": 0.6119746565818787,
+              "entropy": 1.2183178663253784
+            },
+            {
+              "step": 31,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9581801891326904,
+              "top1_margin": 0.9391142725944519,
+              "entropy": 0.2709069848060608
+            },
+            {
+              "step": 32,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.09874768555164337,
+              "top1_margin": 0.01357065886259079,
+              "entropy": 3.9649100303649902
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Mia found a red ball and",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "Mia found a red ball and fun.\nThenax and her mom and her mom. her mom and her mom. They were",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 291,
+              "token": " f",
+              "top1_probability": 0.06296376138925552,
+              "top1_margin": 0.002987965941429138,
+              "entropy": 4.02956485748291
+            },
+            {
+              "step": 2,
+              "token_id": 359,
+              "token": "un",
+              "top1_probability": 0.22404344379901886,
+              "top1_margin": 0.04933610558509827,
+              "entropy": 3.0311288833618164
+            },
+            {
+              "step": 3,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.35697874426841736,
+              "top1_margin": 0.2802562415599823,
+              "entropy": 3.2805700302124023
+            },
+            {
+              "step": 4,
+              "token_id": 203,
+              "token": "\n",
+              "top1_probability": 0.21334058046340942,
+              "top1_margin": 0.05053719878196716,
+              "entropy": 2.4142961502075195
+            },
+            {
+              "step": 5,
+              "token_id": 305,
+              "token": "The",
+              "top1_probability": 0.16556334495544434,
+              "top1_margin": 0.01791873574256897,
+              "entropy": 2.622222661972046
+            },
+            {
+              "step": 6,
+              "token_id": 82,
+              "token": "n",
+              "top1_probability": 0.2859148681163788,
+              "top1_margin": 0.13671834766864777,
+              "entropy": 3.3709053993225098
+            },
+            {
+              "step": 7,
+              "token_id": 69,
+              "token": "a",
+              "top1_probability": 0.22095999121665955,
+              "top1_margin": 0.07982119917869568,
+              "entropy": 3.455718517303467
+            },
+            {
+              "step": 8,
+              "token_id": 92,
+              "token": "x",
+              "top1_probability": 0.14892379939556122,
+              "top1_margin": 0.0695793479681015,
+              "entropy": 3.923893451690674
+            },
+            {
+              "step": 9,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.20324628055095673,
+              "top1_margin": 0.01055075228214264,
+              "entropy": 3.491097927093506
+            },
+            {
+              "step": 10,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.10187853127717972,
+              "top1_margin": 0.03842809796333313,
+              "entropy": 4.099488258361816
+            },
+            {
+              "step": 11,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.18257972598075867,
+              "top1_margin": 0.030476823449134827,
+              "entropy": 2.861048936843872
+            },
+            {
+              "step": 12,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.23175905644893646,
+              "top1_margin": 0.1686633825302124,
+              "entropy": 3.577465772628784
+            },
+            {
+              "step": 13,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.4309869706630707,
+              "top1_margin": 0.34504199028015137,
+              "entropy": 2.702345371246338
+            },
+            {
+              "step": 14,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.19367392361164093,
+              "top1_margin": 0.003339916467666626,
+              "entropy": 3.2143635749816895
+            },
+            {
+              "step": 15,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.09406041353940964,
+              "top1_margin": 0.03776645287871361,
+              "entropy": 4.127185821533203
+            },
+            {
+              "step": 16,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.41178637742996216,
+              "top1_margin": 0.3160381019115448,
+              "entropy": 2.421504020690918
+            },
+            {
+              "step": 17,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.20075666904449463,
+              "top1_margin": 0.12141615897417068,
+              "entropy": 3.61783504486084
+            },
+            {
+              "step": 18,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.5906709432601929,
+              "top1_margin": 0.5317092537879944,
+              "entropy": 2.159759044647217
+            },
+            {
+              "step": 19,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.2280455231666565,
+              "top1_margin": 0.0632086992263794,
+              "entropy": 3.3017945289611816
+            },
+            {
+              "step": 20,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.22924786806106567,
+              "top1_margin": 0.013195335865020752,
+              "entropy": 2.370999336242676
+            },
+            {
+              "step": 21,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.4292999505996704,
+              "top1_margin": 0.3417356610298157,
+              "entropy": 2.3800835609436035
+            },
+            {
+              "step": 22,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.2889125347137451,
+              "top1_margin": 0.21285459399223328,
+              "entropy": 3.318235158920288
+            },
+            {
+              "step": 23,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.7300629019737244,
+              "top1_margin": 0.6914176344871521,
+              "entropy": 1.5221176147460938
+            },
+            {
+              "step": 24,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.16056989133358002,
+              "top1_margin": 0.005516648292541504,
+              "entropy": 3.3044915199279785
+            },
+            {
+              "step": 25,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.1359032541513443,
+              "top1_margin": 0.08157758414745331,
+              "entropy": 4.085463523864746
+            },
+            {
+              "step": 26,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.31937354803085327,
+              "top1_margin": 0.19072547554969788,
+              "entropy": 2.5990865230560303
+            },
+            {
+              "step": 27,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.3042176067829132,
+              "top1_margin": 0.22316348552703857,
+              "entropy": 3.2618391513824463
+            },
+            {
+              "step": 28,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.6508957743644714,
+              "top1_margin": 0.6013163924217224,
+              "entropy": 1.891003131866455
+            },
+            {
+              "step": 29,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.2341887205839157,
+              "top1_margin": 0.0900590717792511,
+              "entropy": 3.2370266914367676
+            },
+            {
+              "step": 30,
+              "token_id": 845,
+              "token": " They",
+              "top1_probability": 0.2683870196342468,
+              "top1_margin": 0.02729472517967224,
+              "entropy": 2.318863868713379
+            },
+            {
+              "step": 31,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.18458706140518188,
+              "top1_margin": 0.09142149239778519,
+              "entropy": 3.66508150100708
+            },
+            {
+              "step": 32,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.387442409992218,
+              "top1_margin": 0.1940249651670456,
+              "entropy": 2.387568473815918
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "The small cat sat on the mat. It",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "The small cat sat on the mat. It was veryoneyone to gok. He his mom and her mom. He wanted to",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 407,
+              "token": " was",
+              "top1_probability": 0.5367810130119324,
+              "top1_margin": 0.41556453704833984,
+              "entropy": 2.2685370445251465
+            },
+            {
+              "step": 2,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.22366225719451904,
+              "top1_margin": 0.04741433262825012,
+              "entropy": 3.1708335876464844
+            },
+            {
+              "step": 3,
+              "token_id": 430,
+              "token": "ver",
+              "top1_probability": 0.3797629773616791,
+              "top1_margin": 0.22624070942401886,
+              "entropy": 2.3609962463378906
+            },
+            {
+              "step": 4,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.9840258955955505,
+              "top1_margin": 0.9825271964073181,
+              "entropy": 0.15194544196128845
+            },
+            {
+              "step": 5,
+              "token_id": 484,
+              "token": "one",
+              "top1_probability": 0.09426935762166977,
+              "top1_margin": 0.021288499236106873,
+              "entropy": 4.165548324584961
+            },
+            {
+              "step": 6,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.24223209917545319,
+              "top1_margin": 0.10955536365509033,
+              "entropy": 3.5995469093322754
+            },
+            {
+              "step": 7,
+              "token_id": 484,
+              "token": "one",
+              "top1_probability": 0.10959498584270477,
+              "top1_margin": 0.036985740065574646,
+              "entropy": 4.125202655792236
+            },
+            {
+              "step": 8,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.13350066542625427,
+              "top1_margin": 0.04286456108093262,
+              "entropy": 4.098948955535889
+            },
+            {
+              "step": 9,
+              "token_id": 347,
+              "token": " g",
+              "top1_probability": 0.07423720508813858,
+              "top1_margin": 0.010030075907707214,
+              "entropy": 4.033791542053223
+            },
+            {
+              "step": 10,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.20011070370674133,
+              "top1_margin": 0.06606794893741608,
+              "entropy": 3.0113155841827393
+            },
+            {
+              "step": 11,
+              "token_id": 79,
+              "token": "k",
+              "top1_probability": 0.1932574361562729,
+              "top1_margin": 0.12210023403167725,
+              "entropy": 3.938711643218994
+            },
+            {
+              "step": 12,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.19488373398780823,
+              "top1_margin": 0.10951133817434311,
+              "entropy": 3.438030481338501
+            },
+            {
+              "step": 13,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.387961745262146,
+              "top1_margin": 0.2529905438423157,
+              "entropy": 2.2111096382141113
+            },
+            {
+              "step": 14,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.15242472290992737,
+              "top1_margin": 0.006841257214546204,
+              "entropy": 2.716825008392334
+            },
+            {
+              "step": 15,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9402880668640137,
+              "top1_margin": 0.9185454249382019,
+              "entropy": 0.35732409358024597
+            },
+            {
+              "step": 16,
+              "token_id": 356,
+              "token": " h",
+              "top1_probability": 0.07739777863025665,
+              "top1_margin": 0.0011984184384346008,
+              "entropy": 4.176567077636719
+            },
+            {
+              "step": 17,
+              "token_id": 294,
+              "token": "is",
+              "top1_probability": 0.35419169068336487,
+              "top1_margin": 0.10965943336486816,
+              "entropy": 2.2683281898498535
+            },
+            {
+              "step": 18,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.2299109697341919,
+              "top1_margin": 0.1122453361749649,
+              "entropy": 3.368840217590332
+            },
+            {
+              "step": 19,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.5255035758018494,
+              "top1_margin": 0.43078532814979553,
+              "entropy": 2.373687505722046
+            },
+            {
+              "step": 20,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.29236385226249695,
+              "top1_margin": 0.17868676781654358,
+              "entropy": 3.170985698699951
+            },
+            {
+              "step": 21,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.06569914519786835,
+              "top1_margin": 0.006871562451124191,
+              "entropy": 4.189275741577148
+            },
+            {
+              "step": 22,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.24892768263816833,
+              "top1_margin": 0.08751744031906128,
+              "entropy": 2.6592817306518555
+            },
+            {
+              "step": 23,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.15031518042087555,
+              "top1_margin": 0.05227082222700119,
+              "entropy": 3.6077730655670166
+            },
+            {
+              "step": 24,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.7974536418914795,
+              "top1_margin": 0.7653415203094482,
+              "entropy": 1.1997437477111816
+            },
+            {
+              "step": 25,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.17270249128341675,
+              "top1_margin": 0.03027135133743286,
+              "entropy": 3.346177101135254
+            },
+            {
+              "step": 26,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.5923855304718018,
+              "top1_margin": 0.47355684638023376,
+              "entropy": 1.7229771614074707
+            },
+            {
+              "step": 27,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.5864518880844116,
+              "top1_margin": 0.4608958959579468,
+              "entropy": 1.716897964477539
+            },
+            {
+              "step": 28,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9375123381614685,
+              "top1_margin": 0.9062801599502563,
+              "entropy": 0.36476385593414307
+            },
+            {
+              "step": 29,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.11809990555047989,
+              "top1_margin": 0.04569658637046814,
+              "entropy": 3.93758225440979
+            },
+            {
+              "step": 30,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.294211745262146,
+              "top1_margin": 0.1780131459236145,
+              "entropy": 2.765254497528076
+            },
+            {
+              "step": 31,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.8955823183059692,
+              "top1_margin": 0.811861515045166,
+              "entropy": 0.47123146057128906
+            },
+            {
+              "step": 32,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.5330047607421875,
+              "top1_margin": 0.47302940487861633,
+              "entropy": 2.295286178588867
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "A boy opened the box and",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "A boy opened the box and wered. He wanted to the bird and wered. He wanted to go. H",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.055554796010255814,
+              "top1_margin": 0.0043931081891059875,
+              "entropy": 4.084182262420654
+            },
+            {
+              "step": 2,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.3030020296573639,
+              "top1_margin": 0.2261875867843628,
+              "entropy": 2.879201650619507
+            },
+            {
+              "step": 3,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.31890687346458435,
+              "top1_margin": 0.25632593035697937,
+              "entropy": 3.397590160369873
+            },
+            {
+              "step": 4,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.22835025191307068,
+              "top1_margin": 0.13995638489723206,
+              "entropy": 3.7575933933258057
+            },
+            {
+              "step": 5,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.21684546768665314,
+              "top1_margin": 0.011358916759490967,
+              "entropy": 2.3950884342193604
+            },
+            {
+              "step": 6,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.5856623649597168,
+              "top1_margin": 0.4607044458389282,
+              "entropy": 1.5780733823776245
+            },
+            {
+              "step": 7,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9589731693267822,
+              "top1_margin": 0.9466964602470398,
+              "entropy": 0.2803150415420532
+            },
+            {
+              "step": 8,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.10368379205465317,
+              "top1_margin": 0.02891436219215393,
+              "entropy": 3.9283933639526367
+            },
+            {
+              "step": 9,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.4622122049331665,
+              "top1_margin": 0.358693391084671,
+              "entropy": 2.3190770149230957
+            },
+            {
+              "step": 10,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.9403600692749023,
+              "top1_margin": 0.897821307182312,
+              "entropy": 0.3389982581138611
+            },
+            {
+              "step": 11,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.5761678218841553,
+              "top1_margin": 0.5304587483406067,
+              "entropy": 2.1707921028137207
+            },
+            {
+              "step": 12,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.0883774682879448,
+              "top1_margin": 0.01999550312757492,
+              "entropy": 3.9810283184051514
+            },
+            {
+              "step": 13,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.15510326623916626,
+              "top1_margin": 0.08180034905672073,
+              "entropy": 3.8145840167999268
+            },
+            {
+              "step": 14,
+              "token_id": 368,
+              "token": "ir",
+              "top1_probability": 0.19108857214450836,
+              "top1_margin": 0.020980075001716614,
+              "entropy": 3.040515899658203
+            },
+            {
+              "step": 15,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.8952442407608032,
+              "top1_margin": 0.8804463148117065,
+              "entropy": 0.6963821053504944
+            },
+            {
+              "step": 16,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.1619812399148941,
+              "top1_margin": 0.06627627462148666,
+              "entropy": 3.9266982078552246
+            },
+            {
+              "step": 17,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.06074080243706703,
+              "top1_margin": 0.004819765686988831,
+              "entropy": 4.150277137756348
+            },
+            {
+              "step": 18,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.2187439501285553,
+              "top1_margin": 0.11418498307466507,
+              "entropy": 3.0768826007843018
+            },
+            {
+              "step": 19,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.20173652470111847,
+              "top1_margin": 0.11952393501996994,
+              "entropy": 3.4922566413879395
+            },
+            {
+              "step": 20,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.13320916891098022,
+              "top1_margin": 0.011215172708034515,
+              "entropy": 3.9762485027313232
+            },
+            {
+              "step": 21,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.37113744020462036,
+              "top1_margin": 0.09486213326454163,
+              "entropy": 2.0215446949005127
+            },
+            {
+              "step": 22,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.46815651655197144,
+              "top1_margin": 0.3750622868537903,
+              "entropy": 2.1945135593414307
+            },
+            {
+              "step": 23,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9594466686248779,
+              "top1_margin": 0.9474905729293823,
+              "entropy": 0.26767510175704956
+            },
+            {
+              "step": 24,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.07915118336677551,
+              "top1_margin": 0.008905842900276184,
+              "entropy": 4.251815319061279
+            },
+            {
+              "step": 25,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.20285315811634064,
+              "top1_margin": 0.07596996426582336,
+              "entropy": 3.077240228652954
+            },
+            {
+              "step": 26,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.8779211044311523,
+              "top1_margin": 0.787659227848053,
+              "entropy": 0.5792728066444397
+            },
+            {
+              "step": 27,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.4705127477645874,
+              "top1_margin": 0.41097718477249146,
+              "entropy": 2.55159592628479
+            },
+            {
+              "step": 28,
+              "token_id": 347,
+              "token": " g",
+              "top1_probability": 0.065614253282547,
+              "top1_margin": 0.0009967684745788574,
+              "entropy": 4.0125579833984375
+            },
+            {
+              "step": 29,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.1574041098356247,
+              "top1_margin": 0.027631938457489014,
+              "entropy": 3.0062246322631836
+            },
+            {
+              "step": 30,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.11404211819171906,
+              "top1_margin": 0.019117802381515503,
+              "entropy": 4.0522284507751465
+            },
+            {
+              "step": 31,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.44279149174690247,
+              "top1_margin": 0.18304845690727234,
+              "entropy": 1.8698008060455322
+            },
+            {
+              "step": 32,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.36469581723213196,
+              "top1_margin": 0.21172280609607697,
+              "entropy": 2.3887529373168945
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Tell me one thing about a sunny day.",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "Tell me one thing about a sunny day. He wanted to play with a big big big big big big big",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.34859585762023926,
+              "top1_margin": 0.20639154314994812,
+              "entropy": 2.2679452896118164
+            },
+            {
+              "step": 2,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.35169801115989685,
+              "top1_margin": 0.08193480968475342,
+              "entropy": 2.0964102745056152
+            },
+            {
+              "step": 3,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9471167922019958,
+              "top1_margin": 0.9313970804214478,
+              "entropy": 0.3369014859199524
+            },
+            {
+              "step": 4,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.1263662725687027,
+              "top1_margin": 0.05916344374418259,
+              "entropy": 3.942852020263672
+            },
+            {
+              "step": 5,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.4814399182796478,
+              "top1_margin": 0.38482365012168884,
+              "entropy": 2.194791793823242
+            },
+            {
+              "step": 6,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.7839396595954895,
+              "top1_margin": 0.5996702909469604,
+              "entropy": 0.7569398880004883
+            },
+            {
+              "step": 7,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.6303395628929138,
+              "top1_margin": 0.5854101181030273,
+              "entropy": 1.9790692329406738
+            },
+            {
+              "step": 8,
+              "token_id": 493,
+              "token": " pl",
+              "top1_probability": 0.07631851732730865,
+              "top1_margin": 0.0037236660718917847,
+              "entropy": 3.9975993633270264
+            },
+            {
+              "step": 9,
+              "token_id": 624,
+              "token": "ay",
+              "top1_probability": 0.9718727469444275,
+              "top1_margin": 0.959429919719696,
+              "entropy": 0.20521309971809387
+            },
+            {
+              "step": 10,
+              "token_id": 322,
+              "token": " with",
+              "top1_probability": 0.4478180706501007,
+              "top1_margin": 0.37846964597702026,
+              "entropy": 2.5607659816741943
+            },
+            {
+              "step": 11,
+              "token_id": 262,
+              "token": " a",
+              "top1_probability": 0.23376357555389404,
+              "top1_margin": 0.018621698021888733,
+              "entropy": 2.701249361038208
+            },
+            {
+              "step": 12,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.20305688679218292,
+              "top1_margin": 0.09998220950365067,
+              "entropy": 3.642671585083008
+            },
+            {
+              "step": 13,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.34057947993278503,
+              "top1_margin": 0.18509867787361145,
+              "entropy": 2.745490074157715
+            },
+            {
+              "step": 14,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8416569232940674,
+              "top1_margin": 0.8198729753494263,
+              "entropy": 0.9740137457847595
+            },
+            {
+              "step": 15,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.15133757889270782,
+              "top1_margin": 0.014191776514053345,
+              "entropy": 3.7862589359283447
+            },
+            {
+              "step": 16,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.36012759804725647,
+              "top1_margin": 0.22207045555114746,
+              "entropy": 2.7159054279327393
+            },
+            {
+              "step": 17,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8569811582565308,
+              "top1_margin": 0.8399839401245117,
+              "entropy": 0.8997350931167603
+            },
+            {
+              "step": 18,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.18427714705467224,
+              "top1_margin": 0.09473638981580734,
+              "entropy": 3.7458956241607666
+            },
+            {
+              "step": 19,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.28250882029533386,
+              "top1_margin": 0.13668189942836761,
+              "entropy": 2.924149751663208
+            },
+            {
+              "step": 20,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8762646913528442,
+              "top1_margin": 0.8603792190551758,
+              "entropy": 0.792914867401123
+            },
+            {
+              "step": 21,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.16251520812511444,
+              "top1_margin": 0.0821881964802742,
+              "entropy": 3.855454444885254
+            },
+            {
+              "step": 22,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.2678551971912384,
+              "top1_margin": 0.11145995557308197,
+              "entropy": 2.9487922191619873
+            },
+            {
+              "step": 23,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8909585475921631,
+              "top1_margin": 0.87767493724823,
+              "entropy": 0.7184222936630249
+            },
+            {
+              "step": 24,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.19774717092514038,
+              "top1_margin": 0.14430727064609528,
+              "entropy": 3.860015869140625
+            },
+            {
+              "step": 25,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.2532200217247009,
+              "top1_margin": 0.09869049489498138,
+              "entropy": 2.994668483734131
+            },
+            {
+              "step": 26,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9154675006866455,
+              "top1_margin": 0.9059198498725891,
+              "entropy": 0.5840295553207397
+            },
+            {
+              "step": 27,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.15813979506492615,
+              "top1_margin": 0.05987761169672012,
+              "entropy": 3.7708559036254883
+            },
+            {
+              "step": 28,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.24460676312446594,
+              "top1_margin": 0.0474960058927536,
+              "entropy": 2.989193916320801
+            },
+            {
+              "step": 29,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8736289739608765,
+              "top1_margin": 0.8548151850700378,
+              "entropy": 0.8060011863708496
+            },
+            {
+              "step": 30,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.19769275188446045,
+              "top1_margin": 0.12181681394577026,
+              "entropy": 3.7500524520874023
+            },
+            {
+              "step": 31,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.27105194330215454,
+              "top1_margin": 0.12507852911949158,
+              "entropy": 2.980269193649292
+            },
+            {
+              "step": 32,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8716835379600525,
+              "top1_margin": 0.8514085412025452,
+              "entropy": 0.8128544092178345
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        }
+      ],
+      "temperature07_top20": [
+        {
+          "prompt": "The dog ran to the park because",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "The dog ran to the park because the big and fun. He wanted to the bird and wered and wered. He w",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.19419987499713898,
+              "top1_margin": 0.05360645055770874,
+              "entropy": 2.499778985977173
+            },
+            {
+              "step": 2,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.23866114020347595,
+              "top1_margin": 0.13218000531196594,
+              "entropy": 2.6439335346221924
+            },
+            {
+              "step": 3,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.3393969237804413,
+              "top1_margin": 0.1201278418302536,
+              "entropy": 2.021552324295044
+            },
+            {
+              "step": 4,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9837585091590881,
+              "top1_margin": 0.9801511168479919,
+              "entropy": 0.12091154605150223
+            },
+            {
+              "step": 5,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.2546136677265167,
+              "top1_margin": 0.03622478246688843,
+              "entropy": 2.214042901992798
+            },
+            {
+              "step": 6,
+              "token_id": 291,
+              "token": " f",
+              "top1_probability": 0.11108119040727615,
+              "top1_margin": 0.0009575262665748596,
+              "entropy": 2.8593337535858154
+            },
+            {
+              "step": 7,
+              "token_id": 359,
+              "token": "un",
+              "top1_probability": 0.299479216337204,
+              "top1_margin": 0.2100754678249359,
+              "entropy": 2.5683281421661377
+            },
+            {
+              "step": 8,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.6303026080131531,
+              "top1_margin": 0.5533462166786194,
+              "entropy": 1.5278294086456299
+            },
+            {
+              "step": 9,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.3582344055175781,
+              "top1_margin": 0.15493686497211456,
+              "entropy": 1.9659475088119507
+            },
+            {
+              "step": 10,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.8263044357299805,
+              "top1_margin": 0.7137376666069031,
+              "entropy": 0.6586440801620483
+            },
+            {
+              "step": 11,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9971345663070679,
+              "top1_margin": 0.9961047172546387,
+              "entropy": 0.02372961863875389
+            },
+            {
+              "step": 12,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.1917644441127777,
+              "top1_margin": 0.01895172894001007,
+              "entropy": 2.5465211868286133
+            },
+            {
+              "step": 13,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.6779670715332031,
+              "top1_margin": 0.5997863411903381,
+              "entropy": 1.3530426025390625
+            },
+            {
+              "step": 14,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.9906625151634216,
+              "top1_margin": 0.9819027781486511,
+              "entropy": 0.0564182810485363
+            },
+            {
+              "step": 15,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.8280218839645386,
+              "top1_margin": 0.7877155542373657,
+              "entropy": 0.8792929649353027
+            },
+            {
+              "step": 16,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.20535369217395782,
+              "top1_margin": 0.08841484785079956,
+              "entropy": 2.642514228820801
+            },
+            {
+              "step": 17,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.32063624262809753,
+              "top1_margin": 0.21283943951129913,
+              "entropy": 2.4959568977355957
+            },
+            {
+              "step": 18,
+              "token_id": 368,
+              "token": "ir",
+              "top1_probability": 0.33093369007110596,
+              "top1_margin": 0.11787767708301544,
+              "entropy": 2.0646560192108154
+            },
+            {
+              "step": 19,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.9901911616325378,
+              "top1_margin": 0.9880431890487671,
+              "entropy": 0.07634174823760986
+            },
+            {
+              "step": 20,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.40486910939216614,
+              "top1_margin": 0.27773720026016235,
+              "entropy": 2.218472957611084
+            },
+            {
+              "step": 21,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.10695875436067581,
+              "top1_margin": 0.0017547979950904846,
+              "entropy": 2.8421881198883057
+            },
+            {
+              "step": 22,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.4028598964214325,
+              "top1_margin": 0.23775310814380646,
+              "entropy": 2.113126039505005
+            },
+            {
+              "step": 23,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.6438071131706238,
+              "top1_margin": 0.5624673366546631,
+              "entropy": 1.4894945621490479
+            },
+            {
+              "step": 24,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.3270704746246338,
+              "top1_margin": 0.11296337842941284,
+              "entropy": 2.2526724338531494
+            },
+            {
+              "step": 25,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.10810311138629913,
+              "top1_margin": 0.01606084406375885,
+              "entropy": 2.878666400909424
+            },
+            {
+              "step": 26,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.33203011751174927,
+              "top1_margin": 0.16657717525959015,
+              "entropy": 2.2639267444610596
+            },
+            {
+              "step": 27,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.403868705034256,
+              "top1_margin": 0.25959792733192444,
+              "entropy": 2.0461111068725586
+            },
+            {
+              "step": 28,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.2416861355304718,
+              "top1_margin": 0.11730869114398956,
+              "entropy": 2.5149056911468506
+            },
+            {
+              "step": 29,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.5180291533470154,
+              "top1_margin": 0.26271742582321167,
+              "entropy": 1.5233981609344482
+            },
+            {
+              "step": 30,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.8969187140464783,
+              "top1_margin": 0.8362484574317932,
+              "entropy": 0.4825255870819092
+            },
+            {
+              "step": 31,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.994560182094574,
+              "top1_margin": 0.9908673763275146,
+              "entropy": 0.039585504680871964
+            },
+            {
+              "step": 32,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.20044012367725372,
+              "top1_margin": 0.03816056251525879,
+              "entropy": 2.62461519241333
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Mia found a red ball and",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "Mia found a red ball and fun.\nThenax and her mom and her mom. her mom and her mom. They were",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 291,
+              "token": " f",
+              "top1_probability": 0.11167075484991074,
+              "top1_margin": 0.007492788136005402,
+              "entropy": 2.838935375213623
+            },
+            {
+              "step": 2,
+              "token_id": 359,
+              "token": "un",
+              "top1_probability": 0.3704919219017029,
+              "top1_margin": 0.11079740524291992,
+              "entropy": 1.9096285104751587
+            },
+            {
+              "step": 3,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.6977662444114685,
+              "top1_margin": 0.620172917842865,
+              "entropy": 1.359250545501709
+            },
+            {
+              "step": 4,
+              "token_id": 203,
+              "token": "\n",
+              "top1_probability": 0.2862095236778259,
+              "top1_margin": 0.09169366955757141,
+              "entropy": 2.0289978981018066
+            },
+            {
+              "step": 5,
+              "token_id": 305,
+              "token": "The",
+              "top1_probability": 0.22120313346385956,
+              "top1_margin": 0.0333905965089798,
+              "entropy": 2.311110496520996
+            },
+            {
+              "step": 6,
+              "token_id": 82,
+              "token": "n",
+              "top1_probability": 0.539958119392395,
+              "top1_margin": 0.32674193382263184,
+              "entropy": 1.6252673864364624
+            },
+            {
+              "step": 7,
+              "token_id": 69,
+              "token": "a",
+              "top1_probability": 0.41154319047927856,
+              "top1_margin": 0.19461332261562347,
+              "entropy": 1.9525617361068726
+            },
+            {
+              "step": 8,
+              "token_id": 92,
+              "token": "x",
+              "top1_probability": 0.3259115517139435,
+              "top1_margin": 0.19333697855472565,
+              "entropy": 2.425760269165039
+            },
+            {
+              "step": 9,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.36996325850486755,
+              "top1_margin": 0.02712804079055786,
+              "entropy": 1.7276495695114136
+            },
+            {
+              "step": 10,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.23516367375850677,
+              "top1_margin": 0.11560329794883728,
+              "entropy": 2.663236618041992
+            },
+            {
+              "step": 11,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.26985105872154236,
+              "top1_margin": 0.06196907162666321,
+              "entropy": 2.2299985885620117
+            },
+            {
+              "step": 12,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.4902586340904236,
+              "top1_margin": 0.41383472084999084,
+              "entropy": 2.0380754470825195
+            },
+            {
+              "step": 13,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.7400817275047302,
+              "top1_margin": 0.6661328673362732,
+              "entropy": 1.1915336847305298
+            },
+            {
+              "step": 14,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.31152501702308655,
+              "top1_margin": 0.0076462626457214355,
+              "entropy": 1.8801769018173218
+            },
+            {
+              "step": 15,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.21272920072078705,
+              "top1_margin": 0.11055664718151093,
+              "entropy": 2.705994129180908
+            },
+            {
+              "step": 16,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.6562581062316895,
+              "top1_margin": 0.5745967626571655,
+              "entropy": 1.41022527217865
+            },
+            {
+              "step": 17,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.41331854462623596,
+              "top1_margin": 0.30358970165252686,
+              "entropy": 2.204577684402466
+            },
+            {
+              "step": 18,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.8821192383766174,
+              "top1_margin": 0.849321186542511,
+              "entropy": 0.6532502770423889
+            },
+            {
+              "step": 19,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.40513432025909424,
+              "top1_margin": 0.1503240168094635,
+              "entropy": 1.8487268686294556
+            },
+            {
+              "step": 20,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.3006746470928192,
+              "top1_margin": 0.024415433406829834,
+              "entropy": 1.8173502683639526
+            },
+            {
+              "step": 21,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.6828302145004272,
+              "top1_margin": 0.6123643517494202,
+              "entropy": 1.3604822158813477
+            },
+            {
+              "step": 22,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.5678694844245911,
+              "top1_margin": 0.4834938049316406,
+              "entropy": 1.7596503496170044
+            },
+            {
+              "step": 23,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.9434725046157837,
+              "top1_margin": 0.9292984008789062,
+              "entropy": 0.35240042209625244
+            },
+            {
+              "step": 24,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.2523174583911896,
+              "top1_margin": 0.012292221188545227,
+              "entropy": 2.0363330841064453
+            },
+            {
+              "step": 25,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.33782660961151123,
+              "top1_margin": 0.24666722118854523,
+              "entropy": 2.4761080741882324
+            },
+            {
+              "step": 26,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.5126605033874512,
+              "top1_margin": 0.3728005290031433,
+              "entropy": 1.7724586725234985
+            },
+            {
+              "step": 27,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.5914772152900696,
+              "top1_margin": 0.5020738840103149,
+              "entropy": 1.6793770790100098
+            },
+            {
+              "step": 28,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.912468671798706,
+              "top1_margin": 0.8894131779670715,
+              "entropy": 0.5104224681854248
+            },
+            {
+              "step": 29,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.4067358374595642,
+              "top1_margin": 0.20342910289764404,
+              "entropy": 1.8120222091674805
+            },
+            {
+              "step": 30,
+              "token_id": 845,
+              "token": " They",
+              "top1_probability": 0.36286163330078125,
+              "top1_margin": 0.051546066999435425,
+              "entropy": 1.6987082958221436
+            },
+            {
+              "step": 31,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.39863917231559753,
+              "top1_margin": 0.24854235351085663,
+              "entropy": 2.1907958984375
+            },
+            {
+              "step": 32,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.5930795669555664,
+              "top1_margin": 0.3732448220252991,
+              "entropy": 1.3882737159729004
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "The small cat sat on the mat. It",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "The small cat sat on the mat. It was veryoneyone to gok. He his mom and her mom. He wanted to",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 407,
+              "token": " was",
+              "top1_probability": 0.8120841979980469,
+              "top1_margin": 0.7151654958724976,
+              "entropy": 0.8050967454910278
+            },
+            {
+              "step": 2,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.3799927234649658,
+              "top1_margin": 0.1096201241016388,
+              "entropy": 1.819462776184082
+            },
+            {
+              "step": 3,
+              "token_id": 430,
+              "token": "ver",
+              "top1_probability": 0.5850111842155457,
+              "top1_margin": 0.42459502816200256,
+              "entropy": 1.4868777990341187
+            },
+            {
+              "step": 4,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.9995750188827515,
+              "top1_margin": 0.9994806051254272,
+              "entropy": 0.0047479965724051
+            },
+            {
+              "step": 5,
+              "token_id": 484,
+              "token": "one",
+              "top1_probability": 0.21580301225185394,
+              "top1_margin": 0.06609150767326355,
+              "entropy": 2.6762337684631348
+            },
+            {
+              "step": 6,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.49038177728652954,
+              "top1_margin": 0.28286510705947876,
+              "entropy": 1.7410552501678467
+            },
+            {
+              "step": 7,
+              "token_id": 484,
+              "token": "one",
+              "top1_probability": 0.2552025616168976,
+              "top1_margin": 0.11347372829914093,
+              "entropy": 2.602789878845215
+            },
+            {
+              "step": 8,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.29080963134765625,
+              "top1_margin": 0.12356634438037872,
+              "entropy": 2.2797985076904297
+            },
+            {
+              "step": 9,
+              "token_id": 347,
+              "token": " g",
+              "top1_probability": 0.14486528933048248,
+              "top1_margin": 0.0271291583776474,
+              "entropy": 2.7993147373199463
+            },
+            {
+              "step": 10,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.3197820484638214,
+              "top1_margin": 0.13937896490097046,
+              "entropy": 2.198836326599121
+            },
+            {
+              "step": 11,
+              "token_id": 79,
+              "token": "k",
+              "top1_probability": 0.45675042271614075,
+              "top1_margin": 0.34715384244918823,
+              "entropy": 2.082366466522217
+            },
+            {
+              "step": 12,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.3633015751838684,
+              "top1_margin": 0.2515678107738495,
+              "entropy": 2.2430243492126465
+            },
+            {
+              "step": 13,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.5817627906799316,
+              "top1_margin": 0.4530333876609802,
+              "entropy": 1.5211141109466553
+            },
+            {
+              "step": 14,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.20046617090702057,
+              "top1_margin": 0.012728765606880188,
+              "entropy": 2.2581703662872314
+            },
+            {
+              "step": 15,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.99073326587677,
+              "top1_margin": 0.9861740469932556,
+              "entropy": 0.06396004557609558
+            },
+            {
+              "step": 16,
+              "token_id": 356,
+              "token": " h",
+              "top1_probability": 0.16554631292819977,
+              "top1_margin": 0.0036496222019195557,
+              "entropy": 2.6622958183288574
+            },
+            {
+              "step": 17,
+              "token_id": 294,
+              "token": "is",
+              "top1_probability": 0.5059401988983154,
+              "top1_margin": 0.20792442560195923,
+              "entropy": 1.404967188835144
+            },
+            {
+              "step": 18,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.4358869791030884,
+              "top1_margin": 0.26847440004348755,
+              "entropy": 2.0289149284362793
+            },
+            {
+              "step": 19,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.8284241557121277,
+              "top1_margin": 0.7567780613899231,
+              "entropy": 0.8469235897064209
+            },
+            {
+              "step": 20,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.5401689410209656,
+              "top1_margin": 0.40006279945373535,
+              "entropy": 1.7242672443389893
+            },
+            {
+              "step": 21,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.13757474720478058,
+              "top1_margin": 0.020085632801055908,
+              "entropy": 2.8094801902770996
+            },
+            {
+              "step": 22,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.3794766366481781,
+              "top1_margin": 0.1751095950603485,
+              "entropy": 1.9927103519439697
+            },
+            {
+              "step": 23,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.2788717448711395,
+              "top1_margin": 0.1274145394563675,
+              "entropy": 2.340268611907959
+            },
+            {
+              "step": 24,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.9648906588554382,
+              "top1_margin": 0.955082893371582,
+              "entropy": 0.23247817158699036
+            },
+            {
+              "step": 25,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.28489378094673157,
+              "top1_margin": 0.06856195628643036,
+              "entropy": 2.0545504093170166
+            },
+            {
+              "step": 26,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.8206482529640198,
+              "top1_margin": 0.7379555702209473,
+              "entropy": 0.819065511226654
+            },
+            {
+              "step": 27,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.8084735870361328,
+              "top1_margin": 0.7190633416175842,
+              "entropy": 0.8352811336517334
+            },
+            {
+              "step": 28,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9893171787261963,
+              "top1_margin": 0.9816471338272095,
+              "entropy": 0.06945452094078064
+            },
+            {
+              "step": 29,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.2556358575820923,
+              "top1_margin": 0.12855994701385498,
+              "entropy": 2.5744121074676514
+            },
+            {
+              "step": 30,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.4833820164203644,
+              "top1_margin": 0.3551725149154663,
+              "entropy": 1.7871057987213135
+            },
+            {
+              "step": 31,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.9663753509521484,
+              "top1_margin": 0.9336596131324768,
+              "entropy": 0.15311795473098755
+            },
+            {
+              "step": 32,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.8243697881698608,
+              "top1_margin": 0.7879989147186279,
+              "entropy": 0.8845512866973877
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "A boy opened the box and",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "A boy opened the box and wered. He wanted to the bird and wered. He wanted to go. H",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.09680718928575516,
+              "top1_margin": 0.010747864842414856,
+              "entropy": 2.890200614929199
+            },
+            {
+              "step": 2,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.5282009840011597,
+              "top1_margin": 0.4538363218307495,
+              "entropy": 1.8944149017333984
+            },
+            {
+              "step": 3,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.6432428359985352,
+              "top1_margin": 0.5804286003112793,
+              "entropy": 1.5374808311462402
+            },
+            {
+              "step": 4,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.5054944157600403,
+              "top1_margin": 0.3752112090587616,
+              "entropy": 1.875104308128357
+            },
+            {
+              "step": 5,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.28675541281700134,
+              "top1_margin": 0.021215170621871948,
+              "entropy": 1.9427471160888672
+            },
+            {
+              "step": 6,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.7855049967765808,
+              "top1_margin": 0.6990591883659363,
+              "entropy": 0.8584221601486206
+            },
+            {
+              "step": 7,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9954783916473389,
+              "top1_margin": 0.9935098886489868,
+              "entropy": 0.035285767167806625
+            },
+            {
+              "step": 8,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.21005012094974518,
+              "top1_margin": 0.07838079333305359,
+              "entropy": 2.5933585166931152
+            },
+            {
+              "step": 9,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.722072422504425,
+              "top1_margin": 0.6369069814682007,
+              "entropy": 1.1984083652496338
+            },
+            {
+              "step": 10,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.9876667857170105,
+              "top1_margin": 0.9758123159408569,
+              "entropy": 0.0695449560880661
+            },
+            {
+              "step": 11,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.8643314838409424,
+              "top1_margin": 0.8411857485771179,
+              "entropy": 0.7412111759185791
+            },
+            {
+              "step": 12,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.17855297029018402,
+              "top1_margin": 0.05478043109178543,
+              "entropy": 2.7041540145874023
+            },
+            {
+              "step": 13,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.3395998477935791,
+              "top1_margin": 0.2231959104537964,
+              "entropy": 2.4549098014831543
+            },
+            {
+              "step": 14,
+              "token_id": 368,
+              "token": "ir",
+              "top1_probability": 0.29819270968437195,
+              "top1_margin": 0.04564592242240906,
+              "entropy": 1.97495436668396
+            },
+            {
+              "step": 15,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.9873181581497192,
+              "top1_margin": 0.9845055341720581,
+              "entropy": 0.09566773474216461
+            },
+            {
+              "step": 16,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.36065223813056946,
+              "top1_margin": 0.19058647751808167,
+              "entropy": 2.2507219314575195
+            },
+            {
+              "step": 17,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.11858545988798141,
+              "top1_margin": 0.013210289180278778,
+              "entropy": 2.841116189956665
+            },
+            {
+              "step": 18,
+              "token_id": 396,
+              "token": "ere",
+              "top1_probability": 0.37572184205055237,
+              "top1_margin": 0.24483299255371094,
+              "entropy": 2.209320545196533
+            },
+            {
+              "step": 19,
+              "token_id": 72,
+              "token": "d",
+              "top1_probability": 0.3862527906894684,
+              "top1_margin": 0.2791135609149933,
+              "entropy": 2.159642219543457
+            },
+            {
+              "step": 20,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.2811446785926819,
+              "top1_margin": 0.03319433331489563,
+              "entropy": 2.277719497680664
+            },
+            {
+              "step": 21,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.5045479536056519,
+              "top1_margin": 0.1735920011997223,
+              "entropy": 1.3711726665496826
+            },
+            {
+              "step": 22,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.7164933085441589,
+              "top1_margin": 0.6451892256736755,
+              "entropy": 1.2274808883666992
+            },
+            {
+              "step": 23,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9952872395515442,
+              "top1_margin": 0.9933934211730957,
+              "entropy": 0.03666649013757706
+            },
+            {
+              "step": 24,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.18037356436252594,
+              "top1_margin": 0.028278261423110962,
+              "entropy": 2.7087953090667725
+            },
+            {
+              "step": 25,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.34050074219703674,
+              "top1_margin": 0.16631726920604706,
+              "entropy": 2.251922369003296
+            },
+            {
+              "step": 26,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.9614267945289612,
+              "top1_margin": 0.9241397976875305,
+              "entropy": 0.17229436337947845
+            },
+            {
+              "step": 27,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.7770040035247803,
+              "top1_margin": 0.7364663481712341,
+              "entropy": 1.1007837057113647
+            },
+            {
+              "step": 28,
+              "token_id": 347,
+              "token": " g",
+              "top1_probability": 0.12156353145837784,
+              "top1_margin": 0.002629578113555908,
+              "entropy": 2.808572292327881
+            },
+            {
+              "step": 29,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.22994330525398254,
+              "top1_margin": 0.055418580770492554,
+              "entropy": 2.312232255935669
+            },
+            {
+              "step": 30,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.24249762296676636,
+              "top1_margin": 0.05591645836830139,
+              "entropy": 2.402927875518799
+            },
+            {
+              "step": 31,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.6024622321128845,
+              "top1_margin": 0.3212762475013733,
+              "entropy": 1.178160309791565
+            },
+            {
+              "step": 32,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.5604496598243713,
+              "top1_margin": 0.3984501361846924,
+              "entropy": 1.5522491931915283
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Tell me one thing about a sunny day.",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "Tell me one thing about a sunny day. He wanted to play with a big big big big big big big",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.5202670693397522,
+              "top1_margin": 0.3757474422454834,
+              "entropy": 1.6644762754440308
+            },
+            {
+              "step": 2,
+              "token_id": 44,
+              "token": "H",
+              "top1_probability": 0.480800598859787,
+              "top1_margin": 0.1516369879245758,
+              "entropy": 1.4304519891738892
+            },
+            {
+              "step": 3,
+              "token_id": 73,
+              "token": "e",
+              "top1_probability": 0.9929311275482178,
+              "top1_margin": 0.9900858998298645,
+              "entropy": 0.051471177488565445
+            },
+            {
+              "step": 4,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.284611314535141,
+              "top1_margin": 0.16913962364196777,
+              "entropy": 2.529653787612915
+            },
+            {
+              "step": 5,
+              "token_id": 392,
+              "token": "ant",
+              "top1_probability": 0.7327520847320557,
+              "top1_margin": 0.6588698029518127,
+              "entropy": 1.1418671607971191
+            },
+            {
+              "step": 6,
+              "token_id": 278,
+              "token": "ed",
+              "top1_probability": 0.886791467666626,
+              "top1_margin": 0.774720311164856,
+              "entropy": 0.36242011189460754
+            },
+            {
+              "step": 7,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.9000373482704163,
+              "top1_margin": 0.8793537020683289,
+              "entropy": 0.5747724771499634
+            },
+            {
+              "step": 8,
+              "token_id": 493,
+              "token": " pl",
+              "top1_probability": 0.1505095213651657,
+              "top1_margin": 0.010379955172538757,
+              "entropy": 2.7388720512390137
+            },
+            {
+              "step": 9,
+              "token_id": 624,
+              "token": "ay",
+              "top1_probability": 0.9973734617233276,
+              "top1_margin": 0.9954009652137756,
+              "entropy": 0.021075833588838577
+            },
+            {
+              "step": 10,
+              "token_id": 322,
+              "token": " with",
+              "top1_probability": 0.7360105514526367,
+              "top1_margin": 0.6847658753395081,
+              "entropy": 1.199030876159668
+            },
+            {
+              "step": 11,
+              "token_id": 262,
+              "token": " a",
+              "top1_probability": 0.3294045627117157,
+              "top1_margin": 0.03683653473854065,
+              "entropy": 1.6376500129699707
+            },
+            {
+              "step": 12,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.42499205470085144,
+              "top1_margin": 0.2636618912220001,
+              "entropy": 2.0398635864257812
+            },
+            {
+              "step": 13,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.568842887878418,
+              "top1_margin": 0.38327455520629883,
+              "entropy": 1.5335420370101929
+            },
+            {
+              "step": 14,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9758864641189575,
+              "top1_margin": 0.970611035823822,
+              "entropy": 0.16972947120666504
+            },
+            {
+              "step": 15,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.2885403037071228,
+              "top1_margin": 0.03786313533782959,
+              "entropy": 2.156582832336426
+            },
+            {
+              "step": 16,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.6053803563117981,
+              "top1_margin": 0.45150303840637207,
+              "entropy": 1.4754292964935303
+            },
+            {
+              "step": 17,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9799887537956238,
+              "top1_margin": 0.9763667583465576,
+              "entropy": 0.1454479694366455
+            },
+            {
+              "step": 18,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.3818816840648651,
+              "top1_margin": 0.2456926554441452,
+              "entropy": 2.1686244010925293
+            },
+            {
+              "step": 19,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.4811747074127197,
+              "top1_margin": 0.2940956950187683,
+              "entropy": 1.755308747291565
+            },
+            {
+              "step": 20,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9840618371963501,
+              "top1_margin": 0.9808631539344788,
+              "entropy": 0.1190015971660614
+            },
+            {
+              "step": 21,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.340455025434494,
+              "top1_margin": 0.216040700674057,
+              "entropy": 2.3022842407226562
+            },
+            {
+              "step": 22,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.4551357626914978,
+              "top1_margin": 0.24411889910697937,
+              "entropy": 1.8346805572509766
+            },
+            {
+              "step": 23,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9871646165847778,
+              "top1_margin": 0.984737753868103,
+              "entropy": 0.09916781634092331
+            },
+            {
+              "step": 24,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.44524434208869934,
+              "top1_margin": 0.37656593322753906,
+              "entropy": 2.173067092895508
+            },
+            {
+              "step": 25,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.4312891364097595,
+              "top1_margin": 0.2182990312576294,
+              "entropy": 1.88570237159729
+            },
+            {
+              "step": 26,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9915252923965454,
+              "top1_margin": 0.9900622963905334,
+              "entropy": 0.06883561611175537
+            },
+            {
+              "step": 27,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.3115786015987396,
+              "top1_margin": 0.15369156002998352,
+              "entropy": 2.2394962310791016
+            },
+            {
+              "step": 28,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.4055858850479126,
+              "top1_margin": 0.10763642191886902,
+              "entropy": 1.8113144636154175
+            },
+            {
+              "step": 29,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9833487272262573,
+              "top1_margin": 0.9792609214782715,
+              "entropy": 0.12280537933111191
+            },
+            {
+              "step": 30,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.4209790825843811,
+              "top1_margin": 0.31379348039627075,
+              "entropy": 2.1437177658081055
+            },
+            {
+              "step": 31,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.46583181619644165,
+              "top1_margin": 0.2734076976776123,
+              "entropy": 1.800520658493042
+            },
+            {
+              "step": 32,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9824172854423523,
+              "top1_margin": 0.977858304977417,
+              "entropy": 0.12708503007888794
+            }
+          ],
+          "length": 32,
+          "immediate_eos": false
+        }
+      ]
+    },
+    "HR1_causal_aligned_500": {
+      "checkpoint_sha256": "eec87f940822938911e34126ba855630473c94867f3e2d267a97e3d288b5652d",
+      "greedy": [
+        {
+          "prompt": "The dog ran to the park because",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "The dog ran to the park because heard a big big big boy.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 397,
+              "token": " he",
+              "top1_probability": 0.4064578413963318,
+              "top1_margin": 0.26324695348739624,
+              "entropy": 2.3979272842407227
+            },
+            {
+              "step": 2,
+              "token_id": 609,
+              "token": "ard",
+              "top1_probability": 0.2096157819032669,
+              "top1_margin": 0.059003859758377075,
+              "entropy": 3.3666019439697266
+            },
+            {
+              "step": 3,
+              "token_id": 262,
+              "token": " a",
+              "top1_probability": 0.24865148961544037,
+              "top1_margin": 0.16214367747306824,
+              "entropy": 3.4501614570617676
+            },
+            {
+              "step": 4,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.16478034853935242,
+              "top1_margin": 0.05220648646354675,
+              "entropy": 3.778888463973999
+            },
+            {
+              "step": 5,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.3929482698440552,
+              "top1_margin": 0.2670421600341797,
+              "entropy": 2.665647029876709
+            },
+            {
+              "step": 6,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9220706820487976,
+              "top1_margin": 0.909935474395752,
+              "entropy": 0.5355595350265503
+            },
+            {
+              "step": 7,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.1446409523487091,
+              "top1_margin": 0.0762529969215393,
+              "entropy": 3.9842958450317383
+            },
+            {
+              "step": 8,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.3228512406349182,
+              "top1_margin": 0.18914659321308136,
+              "entropy": 2.87223219871521
+            },
+            {
+              "step": 9,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9035448431968689,
+              "top1_margin": 0.8884326219558716,
+              "entropy": 0.6403229236602783
+            },
+            {
+              "step": 10,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.17246119678020477,
+              "top1_margin": 0.10408347100019455,
+              "entropy": 3.9166572093963623
+            },
+            {
+              "step": 11,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.20693521201610565,
+              "top1_margin": 0.04735773801803589,
+              "entropy": 3.1597611904144287
+            },
+            {
+              "step": 12,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8803114891052246,
+              "top1_margin": 0.8539928793907166,
+              "entropy": 0.7583134174346924
+            },
+            {
+              "step": 13,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.09444242715835571,
+              "top1_margin": 0.0119156613945961,
+              "entropy": 4.095116138458252
+            },
+            {
+              "step": 14,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.18472237884998322,
+              "top1_margin": 0.05817638337612152,
+              "entropy": 3.244597911834717
+            },
+            {
+              "step": 15,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.14509697258472443,
+              "top1_margin": 0.0211494043469429,
+              "entropy": 3.7671804428100586
+            },
+            {
+              "step": 16,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.1929907202720642,
+              "top1_margin": 0.09424781799316406,
+              "entropy": 3.9450204372406006
+            },
+            {
+              "step": 17,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.982124388217926,
+              "top1_margin": 0.9717355370521545,
+              "entropy": 0.12319143116474152
+            }
+          ],
+          "length": 17,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Mia found a red ball and",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "Mia found a red ball and the big big boys.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.06495852023363113,
+              "top1_margin": 0.007806960493326187,
+              "entropy": 4.130373954772949
+            },
+            {
+              "step": 2,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.13775336742401123,
+              "top1_margin": 0.03605341911315918,
+              "entropy": 3.746066093444824
+            },
+            {
+              "step": 3,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.24439534544944763,
+              "top1_margin": 0.12954065203666687,
+              "entropy": 3.1813764572143555
+            },
+            {
+              "step": 4,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8548031449317932,
+              "top1_margin": 0.8237481117248535,
+              "entropy": 0.8792166113853455
+            },
+            {
+              "step": 5,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.11170326918363571,
+              "top1_margin": 0.027660943567752838,
+              "entropy": 4.0926995277404785
+            },
+            {
+              "step": 6,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.12759526073932648,
+              "top1_margin": 0.016783490777015686,
+              "entropy": 3.414607524871826
+            },
+            {
+              "step": 7,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.8395786285400391,
+              "top1_margin": 0.80536288022995,
+              "entropy": 0.9500324726104736
+            },
+            {
+              "step": 8,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.11593642830848694,
+              "top1_margin": 0.036755919456481934,
+              "entropy": 4.11217737197876
+            },
+            {
+              "step": 9,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.11466849595308304,
+              "top1_margin": 0.008329540491104126,
+              "entropy": 3.437368154525757
+            },
+            {
+              "step": 10,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.35091373324394226,
+              "top1_margin": 0.28459644317626953,
+              "entropy": 3.271080493927002
+            },
+            {
+              "step": 11,
+              "token_id": 87,
+              "token": "s",
+              "top1_probability": 0.2524944245815277,
+              "top1_margin": 0.14526522159576416,
+              "entropy": 3.5449609756469727
+            },
+            {
+              "step": 12,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.31512993574142456,
+              "top1_margin": 0.1624125838279724,
+              "entropy": 3.225836992263794
+            },
+            {
+              "step": 13,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9752801656723022,
+              "top1_margin": 0.9582897424697876,
+              "entropy": 0.1526230275630951
+            }
+          ],
+          "length": 13,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "The small cat sat on the mat. It",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "The small cat sat on the mat. It was very and she went to play with her mommy.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 407,
+              "token": " was",
+              "top1_probability": 0.548941969871521,
+              "top1_margin": 0.42210453748703003,
+              "entropy": 2.2016053199768066
+            },
+            {
+              "step": 2,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.1511181890964508,
+              "top1_margin": 0.023058593273162842,
+              "entropy": 3.584779739379883
+            },
+            {
+              "step": 3,
+              "token_id": 430,
+              "token": "ver",
+              "top1_probability": 0.6966794729232788,
+              "top1_margin": 0.635297954082489,
+              "entropy": 1.5197755098342896
+            },
+            {
+              "step": 4,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.98031085729599,
+              "top1_margin": 0.9769148826599121,
+              "entropy": 0.1763674020767212
+            },
+            {
+              "step": 5,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.0928608775138855,
+              "top1_margin": 0.025113269686698914,
+              "entropy": 4.126871585845947
+            },
+            {
+              "step": 6,
+              "token_id": 269,
+              "token": " s",
+              "top1_probability": 0.06924326717853546,
+              "top1_margin": 0.00818418338894844,
+              "entropy": 4.184807300567627
+            },
+            {
+              "step": 7,
+              "token_id": 263,
+              "token": "he",
+              "top1_probability": 0.18802402913570404,
+              "top1_margin": 0.04021422564983368,
+              "entropy": 3.08949613571167
+            },
+            {
+              "step": 8,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.07423920929431915,
+              "top1_margin": 0.004805624485015869,
+              "entropy": 3.962555170059204
+            },
+            {
+              "step": 9,
+              "token_id": 299,
+              "token": "ent",
+              "top1_probability": 0.3092460036277771,
+              "top1_margin": 0.061644092202186584,
+              "entropy": 2.307295799255371
+            },
+            {
+              "step": 10,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.5059360265731812,
+              "top1_margin": 0.3680103123188019,
+              "entropy": 2.286466121673584
+            },
+            {
+              "step": 11,
+              "token_id": 493,
+              "token": " pl",
+              "top1_probability": 0.11818257719278336,
+              "top1_margin": 0.026384755969047546,
+              "entropy": 3.874433755874634
+            },
+            {
+              "step": 12,
+              "token_id": 624,
+              "token": "ay",
+              "top1_probability": 0.8473584651947021,
+              "top1_margin": 0.7747178673744202,
+              "entropy": 0.8375627398490906
+            },
+            {
+              "step": 13,
+              "token_id": 322,
+              "token": " with",
+              "top1_probability": 0.29898110032081604,
+              "top1_margin": 0.199440136551857,
+              "entropy": 2.9687509536743164
+            },
+            {
+              "step": 14,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.47405895590782166,
+              "top1_margin": 0.33847782015800476,
+              "entropy": 2.292585849761963
+            },
+            {
+              "step": 15,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.7060061693191528,
+              "top1_margin": 0.6258171796798706,
+              "entropy": 1.4095594882965088
+            },
+            {
+              "step": 16,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.1632496565580368,
+              "top1_margin": 0.051832884550094604,
+              "entropy": 3.6501612663269043
+            },
+            {
+              "step": 17,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.588066041469574,
+              "top1_margin": 0.5118133425712585,
+              "entropy": 2.125932216644287
+            },
+            {
+              "step": 18,
+              "token_id": 81,
+              "token": "m",
+              "top1_probability": 0.2530183792114258,
+              "top1_margin": 0.09579376876354218,
+              "entropy": 3.2509591579437256
+            },
+            {
+              "step": 19,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.7796701788902283,
+              "top1_margin": 0.7435732483863831,
+              "entropy": 1.353257179260254
+            },
+            {
+              "step": 20,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.1777515858411789,
+              "top1_margin": 0.07354053854942322,
+              "entropy": 3.9375391006469727
+            },
+            {
+              "step": 21,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9940406680107117,
+              "top1_margin": 0.9917623400688171,
+              "entropy": 0.05154389888048172
+            }
+          ],
+          "length": 21,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "A boy opened the box and",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "A boy opened the box and the boys.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.0697670429944992,
+              "top1_margin": 0.013289220631122589,
+              "entropy": 4.132699489593506
+            },
+            {
+              "step": 2,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.15942257642745972,
+              "top1_margin": 0.08606119453907013,
+              "entropy": 3.7408454418182373
+            },
+            {
+              "step": 3,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.18046370148658752,
+              "top1_margin": 0.061499275267124176,
+              "entropy": 3.308980941772461
+            },
+            {
+              "step": 4,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.24174679815769196,
+              "top1_margin": 0.114781454205513,
+              "entropy": 3.3427600860595703
+            },
+            {
+              "step": 5,
+              "token_id": 87,
+              "token": "s",
+              "top1_probability": 0.13625659048557281,
+              "top1_margin": 0.0653008222579956,
+              "entropy": 4.172724723815918
+            },
+            {
+              "step": 6,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.3806130886077881,
+              "top1_margin": 0.3014659881591797,
+              "entropy": 3.2105979919433594
+            },
+            {
+              "step": 7,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9722417593002319,
+              "top1_margin": 0.9530162215232849,
+              "entropy": 0.16844284534454346
+            }
+          ],
+          "length": 7,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Tell me one thing about a sunny day.",
+          "mode": {
+            "temperature": 1.0,
+            "top_k": null
+          },
+          "decoded": "Tell me one thing about a sunny day.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9222765564918518,
+              "top1_margin": 0.8562861084938049,
+              "entropy": 0.3425118327140808
+            }
+          ],
+          "length": 1,
+          "immediate_eos": true
+        }
+      ],
+      "temperature07_top20": [
+        {
+          "prompt": "The dog ran to the park because",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "The dog ran to the park because heard a big big big boy.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 397,
+              "token": " he",
+              "top1_probability": 0.6202074885368347,
+              "top1_margin": 0.48046189546585083,
+              "entropy": 1.2956799268722534
+            },
+            {
+              "step": 2,
+              "token_id": 609,
+              "token": "ard",
+              "top1_probability": 0.3802661597728729,
+              "top1_margin": 0.143131285905838,
+              "entropy": 2.038254976272583
+            },
+            {
+              "step": 3,
+              "token_id": 262,
+              "token": " a",
+              "top1_probability": 0.5029940605163574,
+              "top1_margin": 0.3916897475719452,
+              "entropy": 1.9090656042099
+            },
+            {
+              "step": 4,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.35559380054473877,
+              "top1_margin": 0.1492595076560974,
+              "entropy": 2.2339088916778564
+            },
+            {
+              "step": 5,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.6626981496810913,
+              "top1_margin": 0.5323246717453003,
+              "entropy": 1.3680951595306396
+            },
+            {
+              "step": 6,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.991990327835083,
+              "top1_margin": 0.989949643611908,
+              "entropy": 0.0641326755285263
+            },
+            {
+              "step": 7,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.3217104971408844,
+              "top1_margin": 0.21137017011642456,
+              "entropy": 2.464454412460327
+            },
+            {
+              "step": 8,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.5635088682174683,
+              "top1_margin": 0.4035664200782776,
+              "entropy": 1.6312776803970337
+            },
+            {
+              "step": 9,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9888494610786438,
+              "top1_margin": 0.9859846234321594,
+              "entropy": 0.08580547571182251
+            },
+            {
+              "step": 10,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.38886764645576477,
+              "top1_margin": 0.28515422344207764,
+              "entropy": 2.310262680053711
+            },
+            {
+              "step": 11,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.3577221930027008,
+              "top1_margin": 0.11094014346599579,
+              "entropy": 2.05178165435791
+            },
+            {
+              "step": 12,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.9835206270217896,
+              "top1_margin": 0.9769877195358276,
+              "entropy": 0.11685685813426971
+            },
+            {
+              "step": 13,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.1837746649980545,
+              "top1_margin": 0.03220552206039429,
+              "entropy": 2.5007970333099365
+            },
+            {
+              "step": 14,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.32415837049484253,
+              "top1_margin": 0.1353224664926529,
+              "entropy": 2.276233196258545
+            },
+            {
+              "step": 15,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.281857967376709,
+              "top1_margin": 0.05680394172668457,
+              "entropy": 2.2790915966033936
+            },
+            {
+              "step": 16,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.46408334374427795,
+              "top1_margin": 0.2859119772911072,
+              "entropy": 1.9829351902008057
+            },
+            {
+              "step": 17,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9981693625450134,
+              "top1_margin": 0.9966664910316467,
+              "entropy": 0.01487584225833416
+            }
+          ],
+          "length": 17,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Mia found a red ball and",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "Mia found a red ball and the big big boys.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.12810204923152924,
+              "top1_margin": 0.02141396701335907,
+              "entropy": 2.8395423889160156
+            },
+            {
+              "step": 2,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.2768700122833252,
+              "top1_margin": 0.09738980233669281,
+              "entropy": 2.4774229526519775
+            },
+            {
+              "step": 3,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.45629191398620605,
+              "top1_margin": 0.301142156124115,
+              "entropy": 2.0112922191619873
+            },
+            {
+              "step": 4,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.976419985294342,
+              "top1_margin": 0.9678521156311035,
+              "entropy": 0.1577553004026413
+            },
+            {
+              "step": 5,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.24117262661457062,
+              "top1_margin": 0.08055156469345093,
+              "entropy": 2.576873302459717
+            },
+            {
+              "step": 6,
+              "token_id": 77,
+              "token": "i",
+              "top1_probability": 0.21155132353305817,
+              "top1_margin": 0.03860257565975189,
+              "entropy": 2.4448399543762207
+            },
+            {
+              "step": 7,
+              "token_id": 75,
+              "token": "g",
+              "top1_probability": 0.972068727016449,
+              "top1_margin": 0.9620175361633301,
+              "entropy": 0.18238583207130432
+            },
+            {
+              "step": 8,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.25043854117393494,
+              "top1_margin": 0.10518476366996765,
+              "entropy": 2.508861541748047
+            },
+            {
+              "step": 9,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.18556831777095795,
+              "top1_margin": 0.018952712416648865,
+              "entropy": 2.497880458831787
+            },
+            {
+              "step": 10,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.6931505799293518,
+              "top1_margin": 0.6290073394775391,
+              "entropy": 1.407745361328125
+            },
+            {
+              "step": 11,
+              "token_id": 87,
+              "token": "s",
+              "top1_probability": 0.523638129234314,
+              "top1_margin": 0.3695780634880066,
+              "entropy": 1.7633702754974365
+            },
+            {
+              "step": 12,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.5872975587844849,
+              "top1_margin": 0.37864312529563904,
+              "entropy": 1.4337928295135498
+            },
+            {
+              "step": 13,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9965828657150269,
+              "top1_margin": 0.993522584438324,
+              "entropy": 0.024652589112520218
+            }
+          ],
+          "length": 13,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "The small cat sat on the mat. It",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "The small cat sat on the mat. It was very and she went to play with her mommy.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 407,
+              "token": " was",
+              "top1_probability": 0.8218054175376892,
+              "top1_margin": 0.7204612493515015,
+              "entropy": 0.7740843296051025
+            },
+            {
+              "step": 2,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.2772591710090637,
+              "top1_margin": 0.058399856090545654,
+              "entropy": 2.2029941082000732
+            },
+            {
+              "step": 3,
+              "token_id": 430,
+              "token": "ver",
+              "top1_probability": 0.9129393696784973,
+              "top1_margin": 0.8845402002334595,
+              "entropy": 0.4935445189476013
+            },
+            {
+              "step": 4,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.9992052316665649,
+              "top1_margin": 0.9988998770713806,
+              "entropy": 0.007949456572532654
+            },
+            {
+              "step": 5,
+              "token_id": 302,
+              "token": " and",
+              "top1_probability": 0.19104306399822235,
+              "top1_margin": 0.0692831352353096,
+              "entropy": 2.6133933067321777
+            },
+            {
+              "step": 6,
+              "token_id": 269,
+              "token": " s",
+              "top1_probability": 0.14589424431324005,
+              "top1_margin": 0.023995503783226013,
+              "entropy": 2.785141944885254
+            },
+            {
+              "step": 7,
+              "token_id": 263,
+              "token": "he",
+              "top1_probability": 0.2990627586841583,
+              "top1_margin": 0.08700117468833923,
+              "entropy": 2.0802316665649414
+            },
+            {
+              "step": 8,
+              "token_id": 272,
+              "token": " w",
+              "top1_probability": 0.14015589654445648,
+              "top1_margin": 0.012778624892234802,
+              "entropy": 2.704969882965088
+            },
+            {
+              "step": 9,
+              "token_id": 299,
+              "token": "ent",
+              "top1_probability": 0.4296434819698334,
+              "top1_margin": 0.1169063150882721,
+              "entropy": 1.5184342861175537
+            },
+            {
+              "step": 10,
+              "token_id": 304,
+              "token": " to",
+              "top1_probability": 0.7690567374229431,
+              "top1_margin": 0.6489407420158386,
+              "entropy": 0.9584596157073975
+            },
+            {
+              "step": 11,
+              "token_id": 493,
+              "token": " pl",
+              "top1_probability": 0.24895186722278595,
+              "top1_margin": 0.07542341947555542,
+              "entropy": 2.493774652481079
+            },
+            {
+              "step": 12,
+              "token_id": 624,
+              "token": "ay",
+              "top1_probability": 0.9639942049980164,
+              "top1_margin": 0.935157299041748,
+              "entropy": 0.18762625753879547
+            },
+            {
+              "step": 13,
+              "token_id": 322,
+              "token": " with",
+              "top1_probability": 0.5203816294670105,
+              "top1_margin": 0.4122440814971924,
+              "entropy": 1.7465534210205078
+            },
+            {
+              "step": 14,
+              "token_id": 225,
+              "token": " ",
+              "top1_probability": 0.7183061838150024,
+              "top1_margin": 0.5981653332710266,
+              "entropy": 1.0559401512145996
+            },
+            {
+              "step": 15,
+              "token_id": 358,
+              "token": "her",
+              "top1_probability": 0.9054795503616333,
+              "top1_margin": 0.8649924993515015,
+              "entropy": 0.4865058660507202
+            },
+            {
+              "step": 16,
+              "token_id": 280,
+              "token": " m",
+              "top1_probability": 0.3185485899448395,
+              "top1_margin": 0.13397341966629028,
+              "entropy": 2.263759136199951
+            },
+            {
+              "step": 17,
+              "token_id": 295,
+              "token": "om",
+              "top1_probability": 0.8746031522750854,
+              "top1_margin": 0.8273507356643677,
+              "entropy": 0.664535641670227
+            },
+            {
+              "step": 18,
+              "token_id": 81,
+              "token": "m",
+              "top1_probability": 0.4501906931400299,
+              "top1_margin": 0.22204701602458954,
+              "entropy": 1.7892528772354126
+            },
+            {
+              "step": 19,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.9634289741516113,
+              "top1_margin": 0.951475977897644,
+              "entropy": 0.236240416765213
+            },
+            {
+              "step": 20,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.41480839252471924,
+              "top1_margin": 0.22136129438877106,
+              "entropy": 2.0862579345703125
+            },
+            {
+              "step": 21,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9997202157974243,
+              "top1_margin": 0.9995508790016174,
+              "entropy": 0.002987185027450323
+            }
+          ],
+          "length": 21,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "A boy opened the box and",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "A boy opened the box and the boys.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 271,
+              "token": " the",
+              "top1_probability": 0.1417306512594223,
+              "top1_margin": 0.03693079948425293,
+              "entropy": 2.826303005218506
+            },
+            {
+              "step": 2,
+              "token_id": 281,
+              "token": " b",
+              "top1_probability": 0.3390641510486603,
+              "top1_margin": 0.22718843817710876,
+              "entropy": 2.4201207160949707
+            },
+            {
+              "step": 3,
+              "token_id": 83,
+              "token": "o",
+              "top1_probability": 0.3239460587501526,
+              "top1_margin": 0.14532190561294556,
+              "entropy": 2.279933452606201
+            },
+            {
+              "step": 4,
+              "token_id": 93,
+              "token": "y",
+              "top1_probability": 0.45872026681900024,
+              "top1_margin": 0.27590543031692505,
+              "entropy": 1.9278953075408936
+            },
+            {
+              "step": 5,
+              "token_id": 87,
+              "token": "s",
+              "top1_probability": 0.34080296754837036,
+              "top1_margin": 0.20662251114845276,
+              "entropy": 2.392341136932373
+            },
+            {
+              "step": 6,
+              "token_id": 18,
+              "token": ".",
+              "top1_probability": 0.7379111051559448,
+              "top1_margin": 0.6596314907073975,
+              "entropy": 1.2086241245269775
+            },
+            {
+              "step": 7,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9959275126457214,
+              "top1_margin": 0.9922623634338379,
+              "entropy": 0.028560172766447067
+            }
+          ],
+          "length": 7,
+          "immediate_eos": false
+        },
+        {
+          "prompt": "Tell me one thing about a sunny day.",
+          "mode": {
+            "temperature": 0.7,
+            "top_k": 20
+          },
+          "decoded": "Tell me one thing about a sunny day.",
+          "rows": [
+            {
+              "step": 1,
+              "token_id": 3,
+              "token": "",
+              "top1_probability": 0.9768313765525818,
+              "top1_margin": 0.9542597532272339,
+              "entropy": 0.11419810354709625
+            }
+          ],
+          "length": 1,
+          "immediate_eos": true
+        }
+      ]
+    }
+  }
+}

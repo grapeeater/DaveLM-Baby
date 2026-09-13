@@ -1,0 +1,24 @@
+{
+  "controlled_items": 352,
+  "counts": {
+    "counterfactual": 64,
+    "distractor": 128,
+    "naturalistic": 24,
+    "near_distribution": 96,
+    "surface_form": 64
+  },
+  "families": 36,
+  "model_behavior_accessed": false,
+  "p7_archive": {
+    "path": "C:\\DaveLM-CADAVER\\archive\\DAVELM_P7_MILESTONE_seed8380\\davelm_p7_latest.pt",
+    "sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e"
+  },
+  "seed": 8391,
+  "tokenizer": {
+    "byte_fallback": false,
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "total_items": 376,
+  "version": 2
+}

@@ -1,0 +1,71 @@
+# --- Model weights / checkpoints / large binaries ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+rolling_restart.pt
+
+# --- Run-seed trees and execution run dirs (local-only) ---
+*_run_seed*/
+**/*_run_seed*/
+**/run_seed*/
+**/*_preflight_seed*/
+**/runs/
+**/*_runs/
+
+# --- Bundled runtimes / environments / caches ---
+sf2_runtime/
+archive/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+**/venv/
+**/.venv/
+
+# --- Nested v0.9 snapshot: keep tokenizer only ---
+/DaveLM-v0.9/**
+!/DaveLM-v0.9/tokenizer/
+!/DaveLM-v0.9/tokenizer/**
+
+# --- Large generated / census dumps ---
+t5_t8_structural_census.json
+**/d3_update*_RAW.json
+# HR English train: 26 byte-identical copies (SHA-256 31617e70…); see artifacts/LOCAL_ONLY.md
+**/ENGLISH_TRAIN.jsonl
+# Phase1G tokenizer-source JSONL (build input for LANGUAGE_TRAIN_STREAM.u16); see artifacts/LOCAL_ONLY.md
+baby_vnext_phase1g_language_v1/data/LANGUAGE_TRAIN_SOURCE.jsonl
+baby_vnext_phase1g_language_v1/LANGUAGE_TRAIN_SOURCE.jsonl
+
+# --- Logs / accidental dumps ---
+*.log
+*.err
+9bqwen3.5logs.txt
+python1.txt
+python2.txt
+
+# --- Secrets / agent / local tool state ---
+.env
+.env.*
+secrets
+secrets/
+**/secrets/
+.aider.*
+.aider*
+.config/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+mistral_baby_history.json
+
+# --- Protected TEST bytes (seal JSON is tracked; bytes are not) ---
+**/qa_test.jsonl
+
+# --- OS ---
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp

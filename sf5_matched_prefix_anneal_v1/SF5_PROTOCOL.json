@@ -1,0 +1,61 @@
+{
+  "study": "SF5_MATCHED_PREFIX_ANNEAL_V1",
+  "design_source": "C:\\DaveLM-CADAVER\\overnight_reproducibility_resolution_v1\\path3_design\\PATH3_PREREGISTRATION.json (frozen) and PATH3_DESIGN.md",
+  "status": "FROZEN_PROTOCOL_FOR_EXECUTION",
+  "date_frozen": "2026-09-07",
+  "audit_result": "Independent audit PASSED. Single-process matched-prefix fork removes the historical-prefix confound; snapshot/restore of model+optimizer+RNG+training index is exact in-process (validated by preflight); arms differ only by English LR schedule after global update 100; all SF2 data/objective/KL/scope/binding/optimizer/evaluation/gate/transfer semantics preserved (verified against frozen SF2/SF3/SF4 code); seeds/endpoints/decision rule were frozen prospectively; eval RNG-invariance is enforced; matched-step-101 equality gate and per-arm output isolation added as mechanical integrity checks.",
+  "hypothesis": "Linearly annealing only the late English learning rate (global updates 101-200, English ordinal j=1..90: lr=5e-5*(90-j)/89, binding LR constant 5e-5) prevents the constant-LR Owen-side boundary sweep that left SF2 at 15/16 (one Alex-correct near-tie missed), while preserving SF2 retention.",
+  "historical_classifications_preserved": {
+    "SF2": "SF2_ACQUISITION_FAIL",
+    "SF3": "SF3_HARD_STOP_UPDATE100_REPLAY_MISMATCH",
+    "SF4": "SF4_HARD_STOP_COMMON_STATE_REPRODUCTION_MISMATCH"
+  },
+  "seeds": [87011, 87012, 87013],
+  "seed_policy": "fixed prospectively; one fresh process per seed; no outcome-based selection",
+  "per_seed_design": {
+    "prefix": "global updates 1-100 with byte-identical SF2 semantics (frozen SF2_ENGINE code path: data/schedule/KL pool/objective/scope/optimizer/dropout modes unchanged)",
+    "snapshot_at_100": "capture full in-process state after update 100 (model, optimizer, Python/CPU/GPU RNG, english_index=90, completed=100, scope) BEFORE any RNG-consuming evaluation; capture consumes no training RNG",
+    "arm_control": "restore snapshot; global updates 101-200 at constant English LR 5e-5",
+    "arm_treatment": "restore the SAME snapshot; global updates 101-200 with English LR lr=5e-5*(90-j)/89 for post-100 English ordinal j=1..90 (first 5e-5, last 0); binding LR stays 5e-5",
+    "fork_integrity": "matched-step-101 gate: update 101 has identical LR (5e-5) in both arms; after the treatment arm's update-101 step, require full model+optimizer+RNG state equality with the control arm's update-101 state; mismatch = HARD STOP (restore bug or rare numeric event; not an outcome decision)"
+  },
+  "replicate_count": 3,
+  "preserved_identities": {
+    "parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt sha256 2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json sha256 e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "schedule": "SF1 bundle SCHEDULE.json sha256 91dad3510e7997b0d55ab53e6189db9337857d582c9399a720723412f70a7ab6",
+    "train": "SF1 bundle TRAIN.json sha256 08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+    "kl_pool": "KL_POOL.json sha256 aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "kl_manifest": "KL_POOL_MANIFEST.json sha256 cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+    "d3_selection": "D3_SELECTION.json sha256 3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226"
+  },
+  "preserved_semantics": {
+    "objective_english": "causal answer+EOS CE (5 positions) + 1.0 x forward KL D_KL(student||Pilot1) over 160 frozen ordinary positions per English update; student KL in eval mode with grads; factual CE in train mode; T=1; full 1024-class support; float64 KL accumulation",
+    "objective_binding": "pinned T13 answer causal CE + LAM 1.0536573711078283 hard-min localization objective",
+    "scope": "English trains token/position embeddings, blocks 4-7, final norm, untied language head; blocks 0-3 and T13 localizer/retrieval frozen. Binding restores full scope.",
+    "optimizer": "fresh AdamW 5e-5 betas(.9,.999) eps1e-8 wd.05 amsgrad=False foreach=False fused=False; gradient clip 2.0; one persistent state per arm from the shared snapshot; no LR scheduler object (per-update group LR assignment only)",
+    "schedule": "global 200 updates = 20x(9 English + 1 binding); prefix 1-100; arm window 101-200",
+    "data": "16 SF1 TRAIN records x2 per English update (frozen SF1 SCHEDULE); binding rehearsal/dev pools unchanged"
+  },
+  "evaluation_and_gates": {
+    "update0": "baseline reproduction M9: acquisition 9/16 correct, 0/16 exact; aligned DEV CE 3.3907 within 1e-4 rel; D3 four-name mass 0.000907 within 1e-4 abs; binding both pools PASS; KL==0 within 1e-9",
+    "update100_prefix": "full checks: language <= own update0 CE + 0.25; D3 <= 0.01; binding each pool answer>=76 AND BD>=76 AND collapse==0; acquisition guard (correct<10 AND exact<10) -> stop",
+    "arm_trajectory": "acquisition panel at 125/150/175/200 (margins recorded; descriptive only)",
+    "arm_update200": "full checks: language, D3, binding, acquisition endpoint (correct==16 AND exact==16 AND reversals==8 AND families==4)",
+    "arm_endpoint_pass": "acquisition endpoint AND language AND D3 AND binding all pass at 200",
+    "rng_invariance": "every evaluation must leave Python/CPU/GPU RNG state unchanged; violation = HARD STOP"
+  },
+  "primary_endpoint_per_replicate": "binary endpoint-gate pass at update 200 for control vs treatment (acquisition AND retention gates), reported per arm per seed",
+  "secondary_endpoints": "per-item margins at 100/125/150/175/200 for all 16 TRAIN items; four AO cell midpoints; Owen/Alex subgroup margins; margin of residual item TRAIN:g0:carried:wooden boat:a0; language CE, D3 mass, binding summaries at 200",
+  "decision_rule": {
+    "SUPPORT": "treatment passes the full endpoint gate in >=2 of 3 replicates while its matched control does not, and treatment never fails where control passes",
+    "WEAK_NO_SUPPORT": "both arms pass in all replicates where control passes, or both fail in all replicates",
+    "HARM": "treatment fails in >=1 replicate where control passes",
+    "statistics": "exact counts and margins only; no p-values; no population generalization claims"
+  },
+  "transfer_lock": "HELDOUT16/ALTERNATE48/COPY8/COMPETING64 open per arm ONLY if that arm passes ALL endpoint gates at 200; otherwise remain locked. FINAL and sacred never accessed.",
+  "execution_order": "freeze -> preflight (fork/restore/arm-equality integrity, seed 87999, prefix truncated at update 12) -> seed 87011 -> seed 87012 -> seed 87013 -> finalize (decision rule) -> report. No retries chosen by outcome; no extra seeds; no schedule change; no follow-up experiment.",
+  "no_go": ["architecture change", "data change", "objective change", "gate weakening", "KL change", "tuning", "additional treatment", "SF6"],
+  "final_access": false,
+  "sacred_access": false
+}

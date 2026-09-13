@@ -1,0 +1,93 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T11_FACTCLAUSE_POINTER_4TO1_750_V1",
+  "seeds": [
+    700001,
+    700002,
+    700003
+  ],
+  "runs": {
+    "700001": {
+      "seed": 700001,
+      "update": 750,
+      "classification": "T11_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 107,
+      "dev_native": 85,
+      "dev_exact": 0,
+      "dev_ce": 1.3392335042357444,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "b8363465571ef947c5a977c651f31e8f4f42f8b4e1ca9118538940a19eef0724",
+      "u750_checkpoint_sha256": "47b99ecbd4b2ff19446628ea08735a049dec50757f4e3baa89fe714b8965ec18"
+    },
+    "700002": {
+      "seed": 700002,
+      "update": 750,
+      "classification": "T11_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 106,
+      "dev_native": 85,
+      "dev_exact": 0,
+      "dev_ce": 1.3272113487124444,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "650e55bc49608738b4bc34b76a400c5a22f326481cf084fe61175c3cc7ada8d7",
+      "u750_checkpoint_sha256": "354a40b27f0a3bc20881061a5d1a0d0fc46e63029e78fd6e02a37038755dc892"
+    },
+    "700003": {
+      "seed": 700003,
+      "update": 750,
+      "classification": "T11_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 112,
+      "dev_native": 76,
+      "dev_exact": 0,
+      "dev_ce": 1.3477894753217696,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "aff85867f2bb693819a54d7845a8461abeec5e49fcbcbd05724d2ccb52418e53",
+      "u750_checkpoint_sha256": "e73e17af7e6f077d520bbe75314377aa598f9c78e7dfc042159a7b3ef4dbec32"
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "pointer_keys": "fact_clause_name_through_period_token_18",
+  "language_mix": "4_qa_1_lang",
+  "total_updates": 750,
+  "failed_returncode": null,
+  "study_classification": "T11_LANGUAGE_REGRESSION",
+  "next_treatment": "phase2a_t12_factclause_pointer_lr2p5e5_750_v1"
+}

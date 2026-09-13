@@ -1,0 +1,98 @@
+{
+  "classification_frozen": "SF2_ACQUISITION_FAIL (unchanged; not reinterpreted)",
+  "residual_item": "TRAIN:g0:carried:wooden boat:a0",
+  "ranking": [
+    {
+      "rank": 1,
+      "explanation": "Global Alex/Owen decision-boundary imbalance (group-level Owen-side offset)",
+      "label": "SUPPORT",
+      "evidence": [
+        "At SF2_u200 the Alex-minus-Owen sequence (ll4) margin midpoints of ALL four g0 cells are negative: small drum|carried -0.125, small drum|found -0.287, wooden boat|carried -0.321, wooden boat|found -0.109 (BOUNDARY_TRAJECTORY.json).",
+        "All four Owen-correct items sit far on the Owen side (ll4 margins -0.40 to -0.62) while all four Alex-correct items sit at or near zero (+0.049,+0.178,+0.184,-0.030).",
+        "The boundary moved as a group between SF2_u100 and SF2_u200: mean Alex-item margin +0.403 -> +0.095; mean Owen-item margin +0.224 -> -0.516 (BOUNDARY_TRAJECTORY.json).",
+        "The failed item is the lowest-margin Alex item; it was also the lowest-margin Alex item at u100 (+0.228 vs siblings +0.408..+0.514)."
+      ],
+      "confidence": "high"
+    },
+    {
+      "rank": 2,
+      "explanation": "Near-boundary optimization miss (the item is a genuine near-tie, not materially wrong)",
+      "label": "SUPPORT",
+      "evidence": [
+        "At SF2_u200 first-token probabilities on the failed item are Alex 0.4207 vs Owen 0.4402 (ratio 1.046); sequence margin -0.030 nats (ITEM_TRAJECTORIES.jsonl, MATCHED_PAIR_ANALYSIS.json).",
+        "|margin| ~0.03 is an order of magnitude smaller than the Owen-side margins of all four Owen items (0.40-0.62) and of the Mia/Nora margins (1.8-2.8).",
+        "Whether 'insufficient settling' vs 'converged to an offset boundary' is NOT resolvable from existing checkpoints (only u0/u100/u200 exist; SF2 has no finer temporal resolution)."
+      ],
+      "confidence": "high on near-tie; unresolved on settling"
+    },
+    {
+      "rank": 3,
+      "explanation": "Output-head/readout contribution (marginal tipping factor, not origin)",
+      "label": "WEAK SUPPORT (contributory)",
+      "evidence": [
+        "2x2x2 component swap on the failed item: with SF2 upstream + Pilot1 head (SPP) margin = +0.108 (Alex correct); with SF2 head added (SSS) margin = -0.045 (fail). The SF2 head contributes about -0.13 to -0.15 on this item (OUTPUT_PATH_ANALYSIS.json).",
+        "Upstream is the dominant mover: replacing only upstream (P->S) moves the failed item from +0.73 (PPP) to +0.108 (SPP).",
+        "Conclusion mirrors the SF1 component-swap forensic: upstream-dominant with a material output-head interaction; the head is the 'last straw' that tips the weakest item."
+      ],
+      "confidence": "high"
+    },
+    {
+      "rank": 4,
+      "explanation": "Item-specific contextual/object/token geometry",
+      "label": "WEAK SUPPORT",
+      "evidence": [
+        "The failed item is the consistently weakest Alex item (lowest margin at both u100 and u200), so item-specific conditioning orders which item sits at the boundary.",
+        "But it is NOT structurally unique: predicate 'carried' and object 'wooden boat' appear elsewhere in g0; the cell (wooden boat, carried) is not a unique combination. The second-weakest Alex item (found:small drum, margin +0.049) uses different object/predicate yet nearly failed, so no single geometry determines the failure.",
+        "Cell subject-conditioning (Owen-minus-Alex margin) is strongest in the failed cell (-0.58) and in found:small drum (-0.67), i.e., not unique."
+      ],
+      "confidence": "moderate"
+    },
+    {
+      "rank": 5,
+      "explanation": "Constant-learning-rate instability",
+      "label": "UNRESOLVED",
+      "evidence": [
+        "TRAIN_METRICS show smooth, monotonic English loss/CE decline with no sign of divergence; grad norms stable (~0.5-1.8).",
+        "But only u0/u100/u200 SF2 checkpoints exist, so update-to-update oscillation of item margins cannot be observed; constant-LR instability cannot be confirmed or excluded as a contributor."
+      ],
+      "confidence": "low"
+    },
+    {
+      "rank": 6,
+      "explanation": "Stochastic training-order / recency imbalance (Gemini hypothesis)",
+      "label": "CONTRADICTED",
+      "evidence": [
+        "The frozen SF1/SF2 SCHEDULE.json gives every one of the 16 TRAIN records exactly twice in every one of the 180 English updates (verified: every_english_batch_contains_all_16_twice = true; per-item presentations = 180) (TRAINING_ORDER_AUDIT.json).",
+        "Item-level recency imbalance is therefore structurally impossible: no item can have a later last exposure or more late-training exposure than any other.",
+        "Within-batch positions of the failed item vary across the last 10 English updates (12 distinct positions over 20 slots), so no fixed positional bias exists."
+      ],
+      "confidence": "high (contradicted structurally)"
+    },
+    {
+      "rank": 7,
+      "explanation": "Lack of symmetric pair batching",
+      "label": "WEAKENED",
+      "evidence": [
+        "Both members of every counterfactual pair (a0 and a1) appear in every English batch, so exposure symmetry already holds and did not prevent the asymmetric boundary (TRAINING_ORDER_AUDIT.json).",
+        "If interpreted as 'needs a pairwise/contrastive loss term' that is a distinct claim with no supporting evidence in this autopsy and negative precedent from treatments 5-11 in the harder binding task."
+      ],
+      "confidence": "high (exposure-level claim weakened)"
+    },
+    {
+      "rank": 8,
+      "explanation": "Other evidence-supported mechanism (KL removed the Alex prior; factual CE then overshot to an Owen-lean boundary)",
+      "label": "SUPPORT (synthesis)",
+      "evidence": [
+        "SF1_u100: Alex default, all 8 AO items Alex-leaning (mean margins Alex +0.50, Owen +0.27), Owen-correct 0/4.",
+        "SF2_u100: same qualitative state (Alex +0.40, Owen +0.22), Owen 0/4, but language CE and D3 pollution already controlled.",
+        "SF2_u100 -> u200: mean AO Alex-Owen margin sweeps from +0.40/+0.22 to +0.095/-0.52; every cell midpoint goes negative; Owen reaches 4/4 and one Alex item (the weakest) crosses to -0.03.",
+        "Interpretation: KL retention suppressed the unconditional name prior and forced subject-conditional acquisition; the factual CE, which had to push Owen hard to overcome the inherited Alex default, overshot the balanced boundary by ~0.1-0.3 nats toward Owen, leaving a single near-tie Alex error that the output head tips across."
+      ],
+      "confidence": "high for the sweep and offset; the 'overshoot' wording is inference from the monotonic u100->u200 sweep"
+    }
+  ],
+  "falsification_notes": {
+    "annealing": "A future annealed run that still ends with a negative Alex margin on this item would falsify the settling/annealing family; a fine-grained (per-25-update) trajectory would be needed to confirm monotonicity within u100-u200, which existing checkpoints cannot provide.",
+    "margin_objective": "Evidence here only shows the residual is a small-margin near-tie; it does not establish that a pairwise-margin loss would behave well in this single-fact interface (prior pairwise/discrimination losses failed in the harder two-fact binding task)."
+  }
+}

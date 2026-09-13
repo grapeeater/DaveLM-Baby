@@ -1,0 +1,34 @@
+{
+  "candidate_checkpoint": "C:\\DaveLM-CADAVER\\two_mapping_query_swap_manual_seed8380\\checkpoints\\paired_query_swap\\seed_8380\\latest.pt",
+  "candidate_checkpoint_sha256": "bd8b2ab93f4a2eff7bc32f83c4230d5c142b8adfbea5be9a68787a102d473693",
+  "classification": "INCONCLUSIVE / POSITIVE-CONTROL FAILURE",
+  "experiment": "DaveLM v0.9 Treatment #2 paired query-swap",
+  "paired_schedule_sha256": "4f26e9a72302be779a0b9edf25c8307b4ec9071712f49ee75763701be4c7b5e6",
+  "positive_controls": {
+    "overall_gate_pass": false,
+    "supported_relation_withheld_geometry": {
+      "distractor_target_errors": 778,
+      "distractor_target_share_among_errors": 0.9974358974358974,
+      "exact": 756,
+      "exact_accuracy": 0.4921875,
+      "examples": 1536,
+      "gate": 0.9,
+      "gate_pass": false,
+      "incorrect": 780
+    },
+    "trained_anchors": {
+      "distractor_target_errors": 146,
+      "distractor_target_share_among_errors": 1.0,
+      "exact": 110,
+      "exact_accuracy": 0.4296875,
+      "examples": 256,
+      "gate": 0.95,
+      "gate_pass": false,
+      "incorrect": 146
+    }
+  },
+  "sealed_evaluation_opened": false,
+  "sealed_evaluation_performed": false,
+  "starting_checkpoint_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+  "training_rerun": false
+}

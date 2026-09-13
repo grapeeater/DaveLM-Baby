@@ -1,0 +1,18 @@
+{
+  "binding": 50,
+  "binding_quartet_placements": 400,
+  "checkpoint_loaded": false,
+  "english": 450,
+  "english_family_placements": {
+    "object": 900,
+    "predicate": 900
+  },
+  "inference": false,
+  "mock_model_loaded": false,
+  "optimizer_created": false,
+  "optimizer_update": false,
+  "sacred_access": false,
+  "static_schedule_test": "PASS",
+  "status": "PASS",
+  "updates": 500
+}

@@ -1,0 +1,95 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T10_FACTCLAUSE_POINTER_1K_V1",
+  "seeds": [
+    690001,
+    690002,
+    690003
+  ],
+  "runs": {
+    "690001": {
+      "seed": 690001,
+      "update": 1000,
+      "classification": "T10_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 98,
+      "dev_native": 83,
+      "dev_exact": 0,
+      "dev_ce": 1.300571346282959,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "5850860482acc079d4d80b838a4a2ef8ae6476f3df0af095c9fab092ebd3fb8a",
+      "u750_checkpoint_sha256": "89091f031e72f4d77075e053147aeb851d5e102a8f011d45c6294814f57f7984",
+      "u1000_checkpoint_sha256": "3c58f0502ce6fdebdd14cc9897fc68b0dd9fbc8b8713f32ea047b25d524af0b1"
+    },
+    "690002": {
+      "seed": 690002,
+      "update": 1000,
+      "classification": "T10_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 108,
+      "dev_native": 89,
+      "dev_exact": 0,
+      "dev_ce": 1.306801150739193,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "b9d3ac80e5c43abc7cec339d704bc2b5c9463ac549b3c9a9326440e23090180a",
+      "u750_checkpoint_sha256": "71002ea41c3dd4ba07696ae85ce69c273dec3bcbffc3793bc70a452bc621aeec",
+      "u1000_checkpoint_sha256": "99e057f42be7712945e0e7ad5c891989deef36a11cb4c97472c6ccffb9baf9f2"
+    },
+    "690003": {
+      "seed": 690003,
+      "update": 1000,
+      "classification": "T10_LANGUAGE_REGRESSION",
+      "stop_code": "language_ce_gt_1_30",
+      "test_opened": false,
+      "dev_pointer": 115,
+      "dev_native": 88,
+      "dev_exact": 0,
+      "dev_ce": 1.301492078602314,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "2800c4b63e591d5851317e63ed07a05c9742be507998e4763ba9bded7e0b76b7",
+      "u750_checkpoint_sha256": "e7564c0e18b1bd9624fb0c6d52296a0439d6e67adff85374fc14bc9c536d64ba",
+      "u1000_checkpoint_sha256": "d416100e2f085f472ba66fe5138398ab6acf5bfa468f1668c4483c31d60fbea1"
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "pointer_keys": "fact_clause_name_through_period_token_18",
+  "total_updates": 1000,
+  "failed_returncode": null,
+  "study_classification": "T10_LANGUAGE_REGRESSION",
+  "next_treatment": "phase2a_t11_factclause_pointer_4to1_750_v1"
+}

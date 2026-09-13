@@ -1,0 +1,9 @@
+{
+  "family_grouped_split_accuracy": 0.5,
+  "leakage_injected_accuracy": 1.0,
+  "leakage_removed_accuracy": 0.5625,
+  "negative_shuffled_accuracy": 0.46875,
+  "pass": true,
+  "positive_separable_accuracy": 1.0,
+  "random_row_split_accuracy": 0.46875
+}

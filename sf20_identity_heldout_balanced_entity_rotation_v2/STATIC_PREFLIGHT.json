@@ -1,0 +1,102 @@
+{
+  "checks": {
+    "balance": {
+      "candidate_appearances_each": 4,
+      "correct_each": 2,
+      "correct_index": {
+        "0": 16,
+        "1": 16
+      },
+      "distractor_each": 2,
+      "order_correct_each": 1,
+      "order_distractor_each": 1,
+      "surface_correct_each": 1,
+      "surface_distractor_each": 1
+    },
+    "byte_identical_sf13_payload": [
+      "D3_SELECTION.json",
+      "DEV_ORDER.json",
+      "DEV_SURFACE.json",
+      "KL_POOL_MANIFEST.json",
+      "KL_POOL.json",
+      "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py",
+      "SF2_PROTOCOL.json",
+      "TRAIN16_RETENTION.json"
+    ],
+    "checkpoint_loaded": false,
+    "fences": {
+      "D3_training_calls": 0,
+      "evaluator_unchanged": true,
+      "final_or_sacred": "PROHIBITED",
+      "gates_unchanged": true,
+      "historical_transfer": "LOCKED_UNSCORED",
+      "run_directory_exists": false
+    },
+    "final_accessed": false,
+    "identity_only_transformation": {
+      "dev_panels_byte_identical": true,
+      "preservation_items_byte_equivalent": 16,
+      "widening_items_template_equivalent": 32
+    },
+    "names": {
+      "count": 16,
+      "geometry": "3/3/4",
+      "original_first_token_collision": false,
+      "selected": [
+        "Sara",
+        "Bob",
+        "Billy",
+        "Tony",
+        "Fred",
+        "Tina",
+        "Steve",
+        "Susan",
+        "Remy",
+        "Ralph",
+        "Colin",
+        "Faye",
+        "Carl",
+        "Wendy",
+        "Cathy",
+        "Tara"
+      ]
+    },
+    "optimizer_created": false,
+    "parents": {
+      "87053": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "87054": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "87055": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+    },
+    "runtime": {
+      "gpu": "AMD Radeon RX 9060 XT",
+      "python": "3.12.14",
+      "tokenizers": "0.23.1",
+      "torch": "2.12.0+rocm7.14.0"
+    },
+    "sacred_accessed": false,
+    "schedule_and_objective": {
+      "KL_positions": 160,
+      "M": 1.0,
+      "batch": 36,
+      "binding": 20,
+      "controller_exact_sf13_mechanical_derivative": true,
+      "english": 180,
+      "full_first_answer_ce": true,
+      "lambda_KL": 1.0,
+      "lambda_margin": 0.25,
+      "max_pad": 47,
+      "membership_hinge": false,
+      "supervised_tokens_per_english_batch": 180,
+      "updates": 200
+    },
+    "treatment_outcomes_scored": false,
+    "updates": 0
+  },
+  "status": "SF20_STATIC_PREFLIGHT_PASS",
+  "warnings": [
+    "Name selection excludes the four original first-answer token IDs so the D3 token classes receive no direct widening target pressure.",
+    "TinyStories occurrence frequency is a lexical eligibility/ranking input only; no model logits or evaluation outcomes were used.",
+    "Optional new-name probability telemetry was omitted."
+  ]
+}

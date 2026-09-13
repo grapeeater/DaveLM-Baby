@@ -1,0 +1,9118 @@
+{
+  "answer_key_consistency": {
+    "failures": 0,
+    "independent_mapping_lookup_items_checked": 832,
+    "xor_equation_items_checked": 832
+  },
+  "backward_passes": 0,
+  "behavioral_scores_produced": 0,
+  "checkpoint_deserializations": 0,
+  "checkpoint_hashes_after": {
+    "graduate": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+    "pilot0": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+    "pilot1": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "checkpoint_hashes_before": {
+    "graduate": {
+      "bytes": 64504479,
+      "expected_hash_matched": true,
+      "expected_sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+      "path": "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt",
+      "sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430"
+    },
+    "pilot0": {
+      "bytes": 64504479,
+      "expected_hash_matched": true,
+      "expected_sha256": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5"
+    },
+    "pilot1": {
+      "bytes": 64504479,
+      "expected_hash_matched": true,
+      "expected_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+    }
+  },
+  "common_binding_reference": {
+    "binding_evaluation_performed": false,
+    "dev_intersection": 0,
+    "historical_manifest_sacred_disjointness_claim": "Recorded previously; not reopened or recomputed in this freeze",
+    "references": {
+      "pilot0_dev": {
+        "bytes": 252683,
+        "documents": 80,
+        "expected_hash_matched": true,
+        "expected_sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+        "layouts": {
+          "p56_b12": 40,
+          "p58_b13": 40
+        },
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+        "quartet_ids": [
+          "pilot_dev:qt_000000",
+          "pilot_dev:qt_000001",
+          "pilot_dev:qt_000002",
+          "pilot_dev:qt_000003",
+          "pilot_dev:qt_000004",
+          "pilot_dev:qt_000005",
+          "pilot_dev:qt_000006",
+          "pilot_dev:qt_000007",
+          "pilot_dev:qt_000008",
+          "pilot_dev:qt_000009",
+          "pilot_dev:qt_000010",
+          "pilot_dev:qt_000011",
+          "pilot_dev:qt_000012",
+          "pilot_dev:qt_000013",
+          "pilot_dev:qt_000014",
+          "pilot_dev:qt_000015",
+          "pilot_dev:qt_000016",
+          "pilot_dev:qt_000017",
+          "pilot_dev:qt_000018",
+          "pilot_dev:qt_000019"
+        ],
+        "quartets": 20,
+        "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+        "status": "nonsacred_existing_development_reference"
+      },
+      "pilot1_dev": {
+        "bytes": 252824,
+        "documents": 80,
+        "expected_hash_matched": true,
+        "expected_sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+        "layouts": {
+          "p56_b12": 40,
+          "p58_b13": 40
+        },
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json",
+        "quartet_ids": [
+          "pilot1_dev:qt_000000",
+          "pilot1_dev:qt_000001",
+          "pilot1_dev:qt_000002",
+          "pilot1_dev:qt_000003",
+          "pilot1_dev:qt_000004",
+          "pilot1_dev:qt_000005",
+          "pilot1_dev:qt_000006",
+          "pilot1_dev:qt_000007",
+          "pilot1_dev:qt_000008",
+          "pilot1_dev:qt_000009",
+          "pilot1_dev:qt_000010",
+          "pilot1_dev:qt_000011",
+          "pilot1_dev:qt_000012",
+          "pilot1_dev:qt_000013",
+          "pilot1_dev:qt_000014",
+          "pilot1_dev:qt_000015",
+          "pilot1_dev:qt_000016",
+          "pilot1_dev:qt_000017",
+          "pilot1_dev:qt_000018",
+          "pilot1_dev:qt_000019"
+        ],
+        "quartets": 20,
+        "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+        "status": "nonsacred_existing_development_reference"
+      }
+    },
+    "report_separately": true,
+    "sacred_behavior_evaluated": false,
+    "sacred_exam_opened": false,
+    "training_checks": [
+      {
+        "bytes": 1015917,
+        "expected_hash_matched": true,
+        "expected_sha256": "07b2b1c0605d36ffffc6de582b8e1e752d3b55101e71d4c7ed0d477ea304e7ad",
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_rehearsal.json",
+        "pilot0_dev_overlap": 0,
+        "pilot1_dev_overlap": 0,
+        "sha256": "07b2b1c0605d36ffffc6de582b8e1e752d3b55101e71d4c7ed0d477ea304e7ad",
+        "unique_arrays": 320
+      },
+      {
+        "bytes": 1017158,
+        "expected_hash_matched": true,
+        "expected_sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+        "pilot0_dev_overlap": 0,
+        "pilot1_dev_overlap": 0,
+        "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+        "unique_arrays": 320
+      },
+      {
+        "bytes": 2677733,
+        "expected_hash_matched": true,
+        "expected_sha256": null,
+        "path": "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_training_quartet_pool.json",
+        "pilot0_dev_overlap": 0,
+        "pilot1_dev_overlap": 0,
+        "sha256": "03ed49abcf6458362fe4f29b44ec2a5e2bfa9e05ad6788b9d2e6ff37c7bcfc17",
+        "unique_arrays": 800
+      },
+      {
+        "bytes": 2688942,
+        "expected_hash_matched": true,
+        "expected_sha256": null,
+        "path": "C:\\DaveLM-CADAVER\\treatment11_answer_only_strict_counterfactual_binding_seed8380\\treatment11_training_quartet_pool.json",
+        "pilot0_dev_overlap": 0,
+        "pilot1_dev_overlap": 0,
+        "sha256": "8f5d60de10fe2fdc8e772a9c1fc3e9f07861edd1583d7c413a095c2f55c6903c",
+        "unique_arrays": 800
+      },
+      {
+        "bytes": 2517744,
+        "expected_hash_matched": true,
+        "expected_sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+        "path": "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_training_quartet_pool.json",
+        "pilot0_dev_overlap": 0,
+        "pilot1_dev_overlap": 0,
+        "sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+        "unique_arrays": 800
+      },
+      {
+        "bytes": 11463992,
+        "expected_hash_matched": true,
+        "expected_sha256": null,
+        "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json",
+        "pilot0_dev_overlap": 0,
+        "pilot1_dev_overlap": 0,
+        "sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307",
+        "unique_arrays": 3072
+      }
+    ]
+  },
+  "contextual_items": 832,
+  "corpus": {
+    "normalization": "re.sub(r'\\s+', ' ', text).strip().casefold()",
+    "ordinary_phrase_counts": {
+      "can be found in the": {
+        "dev": 0,
+        "train": 0
+      },
+      "has the": {
+        "dev": 0,
+        "train": 11
+      },
+      "is called": {
+        "dev": 3,
+        "train": 4
+      },
+      "is in the": {
+        "dev": 4,
+        "train": 22
+      },
+      "is with": {
+        "dev": 0,
+        "train": 1
+      },
+      "the name of": {
+        "dev": 1,
+        "train": 3
+      },
+      "the person with": {
+        "dev": 0,
+        "train": 1
+      },
+      "where is": {
+        "dev": 2,
+        "train": 43
+      },
+      "who has": {
+        "dev": 0,
+        "train": 11
+      }
+    },
+    "overlap": {
+      "atomic_fact": {
+        "distinct_strings": 55,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      },
+      "two_fact_context": {
+        "distinct_strings": 160,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      },
+      "whole_prompt": {
+        "distinct_strings": 832,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      },
+      "whole_prompt_plus_either_candidate": {
+        "distinct_strings": 1664,
+        "results": {
+          "dev": {
+            "matched_test_strings": 0,
+            "matches": []
+          },
+          "train": {
+            "matched_test_strings": 0,
+            "matches": []
+          }
+        }
+      }
+    },
+    "scope": "Exact normalized strings and explicit whitelist regexes; no claim of semantic or near-duplicate absence",
+    "source_partition_reproduced": true,
+    "stored_story_token_arrays_verified": 10000,
+    "train_dev_exact_story_overlap": 0,
+    "whitelist_template_counts": {
+      "location_core_query": {
+        "counts": {
+          "dev": 1,
+          "train": 0
+        },
+        "regex": "(?<![a-z])(ben|sam|tim|tom) is in the(?![a-z])"
+      },
+      "location_fact": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])(ben|sam|tim|tom) is in the (bed|cave|room|shop|yard)\\.(?![a-z])"
+      },
+      "location_holdout_query": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])(ben|sam|tim|tom) can be found in the(?![a-z])"
+      },
+      "location_qa": {
+        "counts": {
+          "dev": 0,
+          "train": 2
+        },
+        "regex": "(?<![a-z])where is (ben|sam|tim|tom)\\?(?![a-z])"
+      },
+      "naming_fact": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])the (bear|cat|fish) is called (ben|sam|tim|tom)\\.(?![a-z])"
+      },
+      "naming_query": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])the name of the (bear|cat|fish) is(?![a-z])"
+      },
+      "possession_core_query": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])the person with the (bag|ball|book|car|hat|toy) is(?![a-z])"
+      },
+      "possession_fact": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])(ben|sam|tim|tom) has the (bag|ball|book|car|hat|toy)\\.(?![a-z])"
+      },
+      "possession_holdout_query": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])the (bag|ball|book|car|hat|toy) is with(?![a-z])"
+      },
+      "possession_qa": {
+        "counts": {
+          "dev": 0,
+          "train": 0
+        },
+        "regex": "(?<![a-z])who has the (bag|ball|book|car|hat|toy)\\?(?![a-z])"
+      }
+    }
+  },
+  "family_frame_groups": 104,
+  "headline": "Material integrity only; zero checkpoint/model evaluation and zero behavioral scores",
+  "item_counts_by_task_frame": {
+    "location/core": 128,
+    "location/frame_holdout": 128,
+    "location/qa": 128,
+    "naming/core": 64,
+    "possession/core": 128,
+    "possession/frame_holdout": 128,
+    "possession/qa": 128
+  },
+  "items_per_family_frame": 8,
+  "logical_priors": 208,
+  "mechanical_corrections": [],
+  "model_forward_calls": 0,
+  "model_instantiations": 0,
+  "optimizer_creations": 0,
+  "ordinary_path_isolation": {
+    "base_forward_review": "v0_7.model.DaveLM.forward lines105-114 returns language_head(final_norm(blocks(embeddings))); T13 final_norm capture hook returns None and does not modify output.",
+    "base_forward_source": {
+      "bytes": 5576,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-v0.9\\v0_7\\model.py",
+      "sha256": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283"
+    },
+    "forward_expression": "model.base_model(input_ids)",
+    "optimizer_or_backward_or_load_calls": 0,
+    "scope": "AST and source inspection; scorer not imported or executed; no dynamic checkpoint validation claimed",
+    "source": {
+      "bytes": 8701,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\english_scoring.py",
+      "sha256": "0594a85ccbc6cc34b476b0e4a14eb3e6c3136c9c9fd3cbf435b9af6020f1034d"
+    },
+    "status": "PASS_STATIC_SOURCE_AUDIT",
+    "top_level_execution_calls": 0,
+    "wrapper_forward_calls": 0,
+    "wrapper_source": {
+      "bytes": 5995,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70"
+    }
+  },
+  "per_family_frame_balancing": [
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Sam"
+        }
+      ],
+      "family_id": "naming:f000",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Tom"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Tom"
+        }
+      ],
+      "family_id": "naming:f001",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Tim"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Tim"
+        }
+      ],
+      "family_id": "naming:f002",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Sam"
+        }
+      ],
+      "family_id": "naming:f003",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "bear",
+          "value": "Tim"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Tim"
+        }
+      ],
+      "family_id": "naming:f004",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Tim"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Tim"
+        }
+      ],
+      "family_id": "naming:f005",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Tom"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Ben"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Tom"
+        }
+      ],
+      "family_id": "naming:f006",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "cat",
+          "value": "Tim"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Sam"
+        },
+        {
+          "count": 4,
+          "entity": "fish",
+          "value": "Tim"
+        }
+      ],
+      "family_id": "naming:f007",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        }
+      ],
+      "family_id": "possession:f000",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        }
+      ],
+      "family_id": "possession:f000",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        }
+      ],
+      "family_id": "possession:f000",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f001",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f001",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f001",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f002",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f002",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f002",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f003",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f003",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f003",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        }
+      ],
+      "family_id": "possession:f004",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        }
+      ],
+      "family_id": "possession:f004",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        }
+      ],
+      "family_id": "possession:f004",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f005",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f005",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f005",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f006",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f006",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f006",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f007",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f007",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Ben": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f007",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f008",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f008",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f008",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f009",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f009",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f009",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f010",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f010",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bag"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f010",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        }
+      ],
+      "family_id": "possession:f011",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        }
+      ],
+      "family_id": "possession:f011",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        }
+      ],
+      "family_id": "possession:f011",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f012",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f012",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f012",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f013",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f013",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "hat"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "book"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "hat"
+        }
+      ],
+      "family_id": "possession:f013",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f014",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f014",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Sam": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "toy"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "toy"
+        }
+      ],
+      "family_id": "possession:f014",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        }
+      ],
+      "family_id": "possession:f015",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        }
+      ],
+      "family_id": "possession:f015",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "Tim": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "Tom": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "car"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "ball"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "car"
+        }
+      ],
+      "family_id": "possession:f015",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f000",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f000",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f000",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f001",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f001",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f001",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f002",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f002",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f002",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f003",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f003",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f003",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f004",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f004",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f004",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f005",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f005",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f005",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f006",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f006",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Ben",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f006",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f007",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f007",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f007",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f008",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f008",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f008",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f009",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f009",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f009",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f010",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f010",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f010",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f011",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f011",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        }
+      ],
+      "family_id": "location:f011",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f012",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f012",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Sam",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f012",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f013",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f013",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "bed": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "room": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "room"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "bed"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "room"
+        }
+      ],
+      "family_id": "location:f013",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f014",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f014",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "cave": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "cave"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f014",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f015",
+      "frame": "core",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f015",
+      "frame": "frame_holdout",
+      "items": 8,
+      "reversal_pairs": 4
+    },
+    {
+      "binary_factor_counts": {
+        "assignment": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_candidate_mention_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "correct_index": {
+          "0": 4,
+          "1": 4
+        },
+        "fact_order": {
+          "0": 4,
+          "1": 4
+        },
+        "queried_fact_rank": {
+          "0": 4,
+          "1": 4
+        },
+        "query_index": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "candidate_correct_incorrect_counts": {
+        "shop": {
+          "correct": 4,
+          "incorrect": 4
+        },
+        "yard": {
+          "correct": 4,
+          "incorrect": 4
+        }
+      },
+      "candidate_mention_rank_counts": {
+        "0": {
+          "0": 4,
+          "1": 4
+        },
+        "1": {
+          "0": 4,
+          "1": 4
+        }
+      },
+      "entity_value_role_counts": [
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tim",
+          "value": "yard"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "shop"
+        },
+        {
+          "count": 4,
+          "entity": "Tom",
+          "value": "yard"
+        }
+      ],
+      "family_id": "location:f015",
+      "frame": "qa",
+      "items": 8,
+      "reversal_pairs": 4
+    }
+  ],
+  "prior_counts_by_task_frame": {
+    "location/core": 32,
+    "location/frame_holdout": 32,
+    "location/qa": 32,
+    "naming/core": 16,
+    "possession/core": 32,
+    "possession/frame_holdout": 32,
+    "possession/qa": 32
+  },
+  "reversal_pairs_per_family_frame": 4,
+  "sacred_exam_opened": false,
+  "schema_version": 1,
+  "selected_family_identities": [
+    {
+      "candidates": [
+        "Ben",
+        "Sam"
+      ],
+      "eligible_universe_index": 0,
+      "entities": [
+        "bear",
+        "cat"
+      ],
+      "family_id": "naming:f000",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Ben",
+        "Sam"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tom"
+      ],
+      "eligible_universe_index": 2,
+      "entities": [
+        "bear",
+        "cat"
+      ],
+      "family_id": "naming:f001",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tim"
+      ],
+      "eligible_universe_index": 3,
+      "entities": [
+        "bear",
+        "cat"
+      ],
+      "family_id": "naming:f002",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Sam"
+      ],
+      "eligible_universe_index": 6,
+      "entities": [
+        "bear",
+        "fish"
+      ],
+      "family_id": "naming:f003",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Ben",
+        "Sam"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tim"
+      ],
+      "eligible_universe_index": 9,
+      "entities": [
+        "bear",
+        "fish"
+      ],
+      "family_id": "naming:f004",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tim"
+      ],
+      "eligible_universe_index": 13,
+      "entities": [
+        "cat",
+        "fish"
+      ],
+      "family_id": "naming:f005",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tom"
+      ],
+      "eligible_universe_index": 14,
+      "entities": [
+        "cat",
+        "fish"
+      ],
+      "family_id": "naming:f006",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tim"
+      ],
+      "eligible_universe_index": 15,
+      "entities": [
+        "cat",
+        "fish"
+      ],
+      "family_id": "naming:f007",
+      "frames": [
+        "core"
+      ],
+      "task": "naming",
+      "values": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Sam"
+      ],
+      "eligible_universe_index": 0,
+      "entities": [
+        "Ben",
+        "Sam"
+      ],
+      "family_id": "possession:f000",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "book"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Sam"
+      ],
+      "eligible_universe_index": 1,
+      "entities": [
+        "Ben",
+        "Sam"
+      ],
+      "family_id": "possession:f001",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Sam"
+      ],
+      "eligible_universe_index": 5,
+      "entities": [
+        "Ben",
+        "Sam"
+      ],
+      "family_id": "possession:f002",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "car",
+        "toy"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tim"
+      ],
+      "eligible_universe_index": 7,
+      "entities": [
+        "Ben",
+        "Tim"
+      ],
+      "family_id": "possession:f003",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tom"
+      ],
+      "eligible_universe_index": 12,
+      "entities": [
+        "Ben",
+        "Tom"
+      ],
+      "family_id": "possession:f004",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "book"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tom"
+      ],
+      "eligible_universe_index": 13,
+      "entities": [
+        "Ben",
+        "Tom"
+      ],
+      "family_id": "possession:f005",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tom"
+      ],
+      "eligible_universe_index": 15,
+      "entities": [
+        "Ben",
+        "Tom"
+      ],
+      "family_id": "possession:f006",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "ball",
+        "toy"
+      ]
+    },
+    {
+      "candidates": [
+        "Ben",
+        "Tom"
+      ],
+      "eligible_universe_index": 16,
+      "entities": [
+        "Ben",
+        "Tom"
+      ],
+      "family_id": "possession:f007",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "book",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tim"
+      ],
+      "eligible_universe_index": 19,
+      "entities": [
+        "Sam",
+        "Tim"
+      ],
+      "family_id": "possession:f008",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tim"
+      ],
+      "eligible_universe_index": 22,
+      "entities": [
+        "Sam",
+        "Tim"
+      ],
+      "family_id": "possession:f009",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "book",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tom"
+      ],
+      "eligible_universe_index": 25,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "possession:f010",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "bag",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tom"
+      ],
+      "eligible_universe_index": 26,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "possession:f011",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "ball",
+        "car"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tom"
+      ],
+      "eligible_universe_index": 27,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "possession:f012",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "ball",
+        "toy"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tom"
+      ],
+      "eligible_universe_index": 28,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "possession:f013",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "book",
+        "hat"
+      ]
+    },
+    {
+      "candidates": [
+        "Sam",
+        "Tom"
+      ],
+      "eligible_universe_index": 29,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "possession:f014",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "car",
+        "toy"
+      ]
+    },
+    {
+      "candidates": [
+        "Tim",
+        "Tom"
+      ],
+      "eligible_universe_index": 32,
+      "entities": [
+        "Tim",
+        "Tom"
+      ],
+      "family_id": "possession:f015",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "possession",
+      "values": [
+        "ball",
+        "car"
+      ]
+    },
+    {
+      "candidates": [
+        "bed",
+        "room"
+      ],
+      "eligible_universe_index": 0,
+      "entities": [
+        "Ben",
+        "Sam"
+      ],
+      "family_id": "location:f000",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "bed",
+        "room"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "yard"
+      ],
+      "eligible_universe_index": 2,
+      "entities": [
+        "Ben",
+        "Sam"
+      ],
+      "family_id": "location:f001",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "shop",
+        "yard"
+      ],
+      "eligible_universe_index": 3,
+      "entities": [
+        "Ben",
+        "Sam"
+      ],
+      "family_id": "location:f002",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "shop",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "yard"
+      ],
+      "eligible_universe_index": 6,
+      "entities": [
+        "Ben",
+        "Tim"
+      ],
+      "family_id": "location:f003",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "shop",
+        "yard"
+      ],
+      "eligible_universe_index": 7,
+      "entities": [
+        "Ben",
+        "Tim"
+      ],
+      "family_id": "location:f004",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "shop",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "shop"
+      ],
+      "eligible_universe_index": 9,
+      "entities": [
+        "Ben",
+        "Tom"
+      ],
+      "family_id": "location:f005",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "shop"
+      ]
+    },
+    {
+      "candidates": [
+        "shop",
+        "yard"
+      ],
+      "eligible_universe_index": 11,
+      "entities": [
+        "Ben",
+        "Tom"
+      ],
+      "family_id": "location:f006",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "shop",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "shop"
+      ],
+      "eligible_universe_index": 13,
+      "entities": [
+        "Sam",
+        "Tim"
+      ],
+      "family_id": "location:f007",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "shop"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "yard"
+      ],
+      "eligible_universe_index": 14,
+      "entities": [
+        "Sam",
+        "Tim"
+      ],
+      "family_id": "location:f008",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "shop",
+        "yard"
+      ],
+      "eligible_universe_index": 15,
+      "entities": [
+        "Sam",
+        "Tim"
+      ],
+      "family_id": "location:f009",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "shop",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "bed",
+        "room"
+      ],
+      "eligible_universe_index": 16,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "location:f010",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "bed",
+        "room"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "shop"
+      ],
+      "eligible_universe_index": 17,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "location:f011",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "shop"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "yard"
+      ],
+      "eligible_universe_index": 18,
+      "entities": [
+        "Sam",
+        "Tom"
+      ],
+      "family_id": "location:f012",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "bed",
+        "room"
+      ],
+      "eligible_universe_index": 20,
+      "entities": [
+        "Tim",
+        "Tom"
+      ],
+      "family_id": "location:f013",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "bed",
+        "room"
+      ]
+    },
+    {
+      "candidates": [
+        "cave",
+        "yard"
+      ],
+      "eligible_universe_index": 22,
+      "entities": [
+        "Tim",
+        "Tom"
+      ],
+      "family_id": "location:f014",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "cave",
+        "yard"
+      ]
+    },
+    {
+      "candidates": [
+        "shop",
+        "yard"
+      ],
+      "eligible_universe_index": 23,
+      "entities": [
+        "Tim",
+        "Tom"
+      ],
+      "family_id": "location:f015",
+      "frames": [
+        "core",
+        "frame_holdout",
+        "qa"
+      ],
+      "task": "location",
+      "values": [
+        "shop",
+        "yard"
+      ]
+    }
+  ],
+  "source_hashes": {
+    "dev": {
+      "bytes": 2726093,
+      "expected_hash_matched": true,
+      "expected_sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_dev.jsonl",
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+    },
+    "pilot0_manifest": {
+      "bytes": 2314,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\CORPUS_MANIFEST.json",
+      "sha256": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708"
+    },
+    "pilot1_dev_copy": {
+      "bytes": 2726093,
+      "expected_hash_matched": true,
+      "expected_sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl",
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+    },
+    "pilot1_manifest": {
+      "bytes": 2530,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PILOT1_MATERIAL_MANIFEST.json",
+      "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2"
+    },
+    "pilot1_train_copy": {
+      "bytes": 24980023,
+      "expected_hash_matched": true,
+      "expected_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+    },
+    "source_corpus": {
+      "bytes": 19447282,
+      "expected_hash_matched": true,
+      "expected_sha256": "94e431816c4cce81ff71e4408ff8d3bda9a42e8d2663986697c3954288cb38b4",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\TinyStories-valid.txt",
+      "sha256": "94e431816c4cce81ff71e4408ff8d3bda9a42e8d2663986697c3954288cb38b4"
+    },
+    "tokenizer": {
+      "bytes": 55710,
+      "expected_hash_matched": true,
+      "expected_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+      "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+    },
+    "train": {
+      "bytes": 24980023,
+      "expected_hash_matched": true,
+      "expected_sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_train.jsonl",
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+    }
+  },
+  "status": "PASS_PRE_EXECUTION_MATERIAL_VALIDATION",
+  "tokenizer": {
+    "bos_id": 2,
+    "boundary_checks": 2080,
+    "boundary_failures": 0,
+    "byte_fallback": false,
+    "candidate_completed_token_lengths": [
+      3
+    ],
+    "candidate_word_token_lengths": [
+      2
+    ],
+    "encode_decode_checks": 5200,
+    "eos_id": 3,
+    "max_completed_input_including_bos": 30,
+    "max_contextual_completed_input_including_bos": 30,
+    "min_completed_input_including_bos": 9,
+    "pre_tokenizer": "ByteLevel",
+    "roundtrip_failures": 0,
+    "vocabulary_size": 1024
+  },
+  "total_reversal_pairs": 416,
+  "unique_contextual_prompts": 832,
+  "unique_prior_prompt_candidate_pairs": 128,
+  "unique_prior_prompts": 33,
+  "validated_artifact_hashes_excluding_this_file": {
+    "FAMILIES.json": {
+      "bytes": 31564,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\FAMILIES.json",
+      "sha256": "c21006dd345219bdb50eec5b01870206c51aa12cf48b5178eeefa03a747f31f9"
+    },
+    "ITEMS.jsonl": {
+      "bytes": 744100,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\ITEMS.jsonl",
+      "sha256": "5e6669275562044012113a353996e627a1b9faad28b6b4664328d27e268a509a"
+    },
+    "LEXICON.json": {
+      "bytes": 16757,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json",
+      "sha256": "6376b5a8612682c17f06a5af80419dc20e1dd02fe539940903c957bb6458cbdd"
+    },
+    "MANIFEST.json": {
+      "bytes": 17100,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\MANIFEST.json",
+      "sha256": "777213e605dadc0f86bbe330608a11d6e00a8f09e1264fb5895092531e12be9c"
+    },
+    "PRIORS.jsonl": {
+      "bytes": 113365,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PRIORS.jsonl",
+      "sha256": "da476f147a40d7bc3e37187e0d98811a526af0ce59b28a395bc70826828e7902"
+    },
+    "PROTOCOL.md": {
+      "bytes": 30898,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PROTOCOL.md",
+      "sha256": "ced4af59529bd2ede5540dd6697b9ecd7dfba176075ceb902000caea1b255f77"
+    },
+    "implementation/build_and_validate.py": {
+      "bytes": 34172,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\build_and_validate.py",
+      "sha256": "00959ec8c0f581aa69eb3719ee4e03466bbca4bdaec2aea206563e2454e4296d"
+    },
+    "implementation/english_scoring.py": {
+      "bytes": 8701,
+      "expected_hash_matched": true,
+      "expected_sha256": null,
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\implementation\\english_scoring.py",
+      "sha256": "0594a85ccbc6cc34b476b0e4a14eb3e6c3136c9c9fd3cbf435b9af6020f1034d"
+    }
+  }
+}

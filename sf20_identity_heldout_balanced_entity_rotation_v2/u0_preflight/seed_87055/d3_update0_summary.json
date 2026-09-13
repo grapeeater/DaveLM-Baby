@@ -1,0 +1,13 @@
+{
+  "mean_combined_name_probability": 0.007839491795780695,
+  "mean_entropy": 2.807910793228075,
+  "mean_eos_probability": 0.002095643633439892,
+  "mean_true_next_probability": 0.13269910424624154,
+  "n": 256,
+  "per_name_mean_probability": {
+    "Alex": 0.0018889631974815524,
+    "Mia": 0.0029714606508496333,
+    "Nora": 0.0022813516559289093,
+    "Owen": 0.0006977163453769641
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "action": "started",
+    "returncode": 0,
+    "seed": 87023,
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "action": "started",
+    "returncode": 0,
+    "seed": 87024,
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "action": "started",
+    "returncode": 0,
+    "seed": 87025,
+    "status": "STOP_REGRESSION"
+  }
+]

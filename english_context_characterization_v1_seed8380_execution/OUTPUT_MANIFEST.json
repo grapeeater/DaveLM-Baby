@@ -1,0 +1,65 @@
+{
+  "backward": false,
+  "binding_documents_per_checkpoint": 160,
+  "checkpoint_sha256_after": {
+    "graduate": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+    "pilot0": "769bd01efd28e7888064c0d5fe1dd0d85a4344e2039aef04bcbf7d9e906f47f5",
+    "pilot1": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "contextual_prompts_per_checkpoint": 832,
+  "english_comparisons_per_checkpoint": 1040,
+  "english_path": "model.base_model(input_ids)",
+  "frozen_artifacts_modified": false,
+  "frozen_detached_sha256sumstxt_sha256": "26cf767af6f85738c52e506f6dcfe2a34fbcce40a9b2829101408038cfa81e1b",
+  "generation": false,
+  "logical_prior_comparisons_per_checkpoint": 208,
+  "mechanical_corrections": [
+    "Runner accepted verifier status PASS_EXECUTION_INPUT_VERIFICATION (interface-label correction only).",
+    "Report aggregator mapped sealed frame name frame_holdout (internal reserve shorthand mismatch only)."
+  ],
+  "optimizer_created": false,
+  "output_manifest_excludes_self_hash": true,
+  "outputs": {
+    "BINDING_REFERENCE_RESULTS.json": {
+      "bytes": 315183,
+      "sha256": "9a12319d6a90d86beccc7be044fe6fefe55f03e0774fb5b8e5caa49b408a45be"
+    },
+    "EXECUTION_STATUS.json": {
+      "bytes": 2574,
+      "sha256": "55b09a1f28ead97af93742aff34a87baac511b6eb60f5d07be72328280737594"
+    },
+    "FAMILY_RESULTS.csv": {
+      "bytes": 62087,
+      "sha256": "115d74d696ac8740fb5188edc8e4070a2e94780ccef43cd5a22c97f1f134424f"
+    },
+    "POST_VERIFICATION.json": {
+      "bytes": 12736,
+      "sha256": "412f1e2cf28d0b3e3679873e74ceae701307abbcd47317f642a21ccf552b59db"
+    },
+    "RAW_SCORES.jsonl": {
+      "bytes": 7228819,
+      "sha256": "ee2e8fa339b8c28963d7bf3b1be36eae7999f81cb4147875a58fbedef85f227c"
+    },
+    "REPORT.md": {
+      "bytes": 30238,
+      "sha256": "4e071e511c3f2466e33c9f54c60353b9ea807414a044e263ec4573471b3bda3b"
+    },
+    "RUNTIME_AND_LOAD_RECEIPT.json": {
+      "bytes": 4049,
+      "sha256": "943168c06c3fc51dea18c9688f363a72b289f8f302604ae855ad7e1326575b52"
+    },
+    "SUMMARY.json": {
+      "bytes": 2125081,
+      "sha256": "c33046484d9f683a8426cdbbf36298ee9283213f4c06f43301bf0d11244347e5"
+    },
+    "VERIFICATION.json": {
+      "bytes": 12737,
+      "sha256": "91b7d1c62546beba1030ba622d9d8bf76e5b928569788e6bf2286e9f2956a062"
+    }
+  },
+  "protocol_id": "english_context_characterization_v1_seed8380",
+  "sacred_exam_opened": false,
+  "specialized_path_calls": 0,
+  "status": "FROZEN_ENGLISH_CONTEXT_CHARACTERIZATION_COMPLETE",
+  "training": false
+}

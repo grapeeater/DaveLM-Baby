@@ -1,0 +1,96 @@
+--- SF13/CONTROLLER.py
++++ SF17/CONTROLLER.py
+@@ -38,11 +38,31 @@
+     return torch.stack(gaps).mean()
+ 
+ 
++
++def retention_priority_project(factual_grads, retention_grads):
++    """Project only factual gradient against fixed retention gradient on global conflict."""
++    pairs=[(gf,gr) for gf,gr in zip(factual_grads,retention_grads) if gf is not None and gr is not None]
++    anchor=next(g for g in list(factual_grads)+list(retention_grads) if g is not None)
++    dot=sum(((gf*gr).sum(dtype=torch.float64) for gf,gr in pairs), anchor.new_zeros((),dtype=torch.float64))
++    fact_norm2=sum((gf*gf).sum(dtype=torch.float64) for gf in factual_grads if gf is not None)
++    ret_norm2=sum((gr*gr).sum(dtype=torch.float64) for gr in retention_grads if gr is not None)
++    conflict=bool(dot.detach().item()<0.0 and ret_norm2.detach().item()>0.0)
++    coefficient=(-dot/ret_norm2) if conflict else dot.new_zeros(())
++    combined=[]
++    for gf,gr in zip(factual_grads,retention_grads):
++        if gf is None and gr is None: combined.append(None)
++        elif gf is None: combined.append(gr)
++        elif gr is None: combined.append(gf)
++        else: combined.append(gf + coefficient.to(gf.dtype)*gr + gr if conflict else gf+gr)
++    cosine=float((dot/torch.sqrt(fact_norm2*ret_norm2)).detach()) if fact_norm2.detach().item()>0 and ret_norm2.detach().item()>0 else 0.0
++    telemetry={'gradient_dot':float(dot.detach()),'gradient_cosine':cosine,'gradient_conflict':conflict,'projection_coefficient':float(coefficient.detach()),'factual_grad_norm':float(torch.sqrt(fact_norm2).detach()),'retention_grad_norm':float(torch.sqrt(ret_norm2).detach())}
++    return combined,telemetry
++
+ def verify(sealed=True):
+     if sealed:
+         assert sha(H / 'FREEZE_RECEIPT.json') == (H / 'FREEZE_RECEIPT.sha256').read_text().split()[0]
+         receipt = read(H / 'FREEZE_RECEIPT.json')
+-        assert receipt['status'] == 'SF13_PROSPECTIVE_PREFLIGHT_PASS'
++        assert receipt['status'] == 'SF17_PROSPECTIVE_PREFLIGHT_PASS'
+         assert sha(H / 'SHA256SUMS.txt') == receipt['manifest_sha256']
+         for line in (H / 'SHA256SUMS.txt').read_text().splitlines():
+             h, n = line.split('  ', 1)
+@@ -161,14 +181,15 @@
+     schedule, items, idx, train16, dev_surface, dev_order, pool, kl, oldproto = load_inputs()
+     rt.configure_runtime(a.seed)
+     if a.mode == 'preload':
+-        print('SF13_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
++        print('SF17_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
+     out = H / 'runs' / f'seed_{a.seed}_curriculum'
+     out.mkdir(parents=True, exist_ok=True)
+     provenance = {'parent_checkpoint': run['parent_checkpoint'], 'parent_checkpoint_sha256': run['parent_checkpoint_sha256'],
+                   'protocol': sha(H / 'PROTOCOL.json'), 'receipt': sha(H / 'FREEZE_RECEIPT.json'),
+                   'schedule': sha(H / 'SCHEDULE.json'), 'curriculum': sha(H / 'TRAIN.json'),
+                   'controller': sha(Path(__file__)), 'seed': a.seed, 'arm': a.arm,
+-                  'kl_pool': sha(H / 'KL_POOL.json'), 'margin_M': MARGIN_M, 'lambda_margin': LAMBDA_MARGIN}
++                  'kl_pool': sha(H / 'KL_POOL.json'), 'margin_M': MARGIN_M, 'lambda_margin': LAMBDA_MARGIN,
++                  'gradient_composition': 'retention_priority_global_conflict_projection'}
+     pp = out / 'PROVENANCE.json'
+     if pp.exists(): assert read(pp) == provenance
+     else: rt.atomic_json(provenance, pp)
+@@ -248,6 +269,8 @@
+         inactive = {n: (x.detach().clone(), {k: v.clone() if torch.is_tensor(v) else v for k, v in opt.state.get(x, {}).items()}) for n, x in m.named_parameters() if not x.requires_grad}
+         for group in opt.param_groups: group['lr'] = 5e-5
+         ce = kl_val = margin_loss = None
++        projection_telemetry = None
++        manual_english_gradients = False
+         if u['kind'] == 'english':
+             english_index += 1
+             m.eval()
+@@ -258,14 +281,21 @@
+             x = x.to(device); y = y.to(device)
+             logits = m.base_model(x)
+             ce = F.cross_entropy(logits.reshape(-1, 1024), y.reshape(-1), ignore_index=-100)
+-            loss = ce + E.LAMBDA_KL * kl_val
+             margin_loss = margin_hinge_term(logits, u['ids'], idx)
+-            loss = loss + LAMBDA_MARGIN * margin_loss
++            factual_loss = ce + LAMBDA_MARGIN * margin_loss
++            retention_loss = E.LAMBDA_KL * kl_val
++            loss = factual_loss + retention_loss
++            active = [x for x in m.parameters() if x.requires_grad]
++            factual_grads = torch.autograd.grad(factual_loss, active, allow_unused=True)
++            retention_grads = torch.autograd.grad(retention_loss, active, allow_unused=True)
++            combined_grads, projection_telemetry = retention_priority_project(factual_grads, retention_grads)
++            for param, grad in zip(active, combined_grads): param.grad = grad
++            manual_english_gradients = True
+         else:
+             m.train()
+             loss, _ = rt.binding_loss(m, rt.binding_docs_for_batch(pool, u['quartets'], u['documents']), device, pin)
+         assert torch.isfinite(loss), 'nonfinite loss'
+-        loss.backward()
++        if not manual_english_gradients: loss.backward()
+         assert all(x.grad is None for x in m.parameters() if not x.requires_grad)
+         norm = torch.nn.utils.clip_grad_norm_([x for x in m.parameters() if x.grad is not None], 2.0)
+         assert torch.isfinite(norm), 'nonfinite gradient norm'
+@@ -279,7 +309,7 @@
+         number = u['update']
+         rec = {'update': number, 'kind': u['kind'], 'lr': 5e-5, 'loss': float(loss.detach()), 'grad_norm': float(norm)}
+         if ce is not None: rec.update(ce=float(ce.detach()), kl=float(kl_val.detach()), shard=u.get('shard'))
+-        if margin_loss is not None: rec.update(margin_loss=float(margin_loss.detach()))
++        if margin_loss is not None: rec.update(margin_loss=float(margin_loss.detach()), **projection_telemetry)
+         commit(number, rec); append_metric(out, rec)
+         if number % 25 == 0: print('COMMITTED', a.seed, number, flush=True)
+         if number in [100, 200] and not endpoint(number): return

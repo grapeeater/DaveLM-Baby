@@ -1,0 +1,68 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T3_REBUILT_EXPLICIT_REPRESENTATION_FORMING_V1",
+  "study_classification": "T3_LANGUAGE_REGRESSION",
+  "seed_classifications": [
+    "T3_LANGUAGE_REGRESSION",
+    "T3_LANGUAGE_REGRESSION",
+    "T3_LANGUAGE_REGRESSION"
+  ],
+  "runs": {
+    "620001": {
+      "seed": 620001,
+      "update": 500,
+      "classification": "T3_LANGUAGE_REGRESSION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 99,
+      "dev_native": 88,
+      "dev_exact": 0,
+      "dev_ce": 1.3048416718840599,
+      "binding_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    },
+    "620002": {
+      "seed": 620002,
+      "update": 500,
+      "classification": "T3_LANGUAGE_REGRESSION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 97,
+      "dev_native": 87,
+      "dev_exact": 0,
+      "dev_ce": 1.301182608306408,
+      "binding_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    },
+    "620003": {
+      "seed": 620003,
+      "update": 500,
+      "classification": "T3_LANGUAGE_REGRESSION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 102,
+      "dev_native": 96,
+      "dev_exact": 0,
+      "dev_ce": 1.3075882866978645,
+      "binding_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    }
+  },
+  "test_opened": false,
+  "watchdog_pid": 17172,
+  "next": "TEST stays sealed unless DEV representation AND native gates passed. Binding training is not authorized yet."
+}

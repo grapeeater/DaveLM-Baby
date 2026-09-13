@@ -1,0 +1,77 @@
+{
+  "study": "SF8_LOWDOSE_TRANSFER_EVAL_V1",
+  "checkpoints": {
+    "87017": {
+      "path": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "status": "ACQUISITION_SUCCESS"
+    },
+    "87018": {
+      "path": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "status": "ACQUISITION_SUCCESS"
+    },
+    "87019": {
+      "path": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt",
+      "sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "status": "ACQUISITION_SUCCESS"
+    }
+  },
+  "panels": {
+    "HELDOUT": {
+      "path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\HELDOUT.json",
+      "sha256": "631824cc6b31e97285bee95b706c292a0e98d1db3ce9a60ba0d3b59607c00844",
+      "count": 16
+    },
+    "ALTERNATE": {
+      "path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\ALTERNATE.json",
+      "sha256": "8d52e399601b9eb1a070b6ad8b633348062cd2b57b73c8972be73db1c475788d",
+      "count": 48
+    },
+    "COPY": {
+      "path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\COPY.json",
+      "sha256": "20adab41a6f23e22c72cca2409dc7651744eadc721e0187582ddd8901310d904",
+      "count": 8
+    },
+    "COMPETING": {
+      "path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\COMPETING.json",
+      "sha256": "5d46ff80b35209720ffe856ca9e1f321607b6b1faa19203ca72789220281d7e8",
+      "count": 64
+    }
+  },
+  "evaluator_sha256": "cba7611413df12596e1ecf9a1102bc8d1e29e8b2bc4ffec795fd49718c5c4027",
+  "engine_sha256": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7",
+  "transfer": "HELDOUT16+ALTERNATE48+COPY8+COMPETING64",
+  "final_sacred_accessed": false,
+  "output_manifest_sha256": "ae41d87989b00250064d6e338c475df357ba058e917a8674208f41f6ae719617",
+  "files": [
+    "RESULTS.json",
+    "TRANSFER_REPORT.md",
+    "TRANSFER_EVAL.py",
+    "ANALYZE.py",
+    "raw/seed_87017_low/alternate_RAW.jsonl",
+    "raw/seed_87017_low/alternate_RESULT.json",
+    "raw/seed_87017_low/competing_RAW.jsonl",
+    "raw/seed_87017_low/competing_RESULT.json",
+    "raw/seed_87017_low/copy_RAW.jsonl",
+    "raw/seed_87017_low/copy_RESULT.json",
+    "raw/seed_87017_low/heldout_RAW.jsonl",
+    "raw/seed_87017_low/heldout_RESULT.json",
+    "raw/seed_87018_low/alternate_RAW.jsonl",
+    "raw/seed_87018_low/alternate_RESULT.json",
+    "raw/seed_87018_low/competing_RAW.jsonl",
+    "raw/seed_87018_low/competing_RESULT.json",
+    "raw/seed_87018_low/copy_RAW.jsonl",
+    "raw/seed_87018_low/copy_RESULT.json",
+    "raw/seed_87018_low/heldout_RAW.jsonl",
+    "raw/seed_87018_low/heldout_RESULT.json",
+    "raw/seed_87019_low/alternate_RAW.jsonl",
+    "raw/seed_87019_low/alternate_RESULT.json",
+    "raw/seed_87019_low/competing_RAW.jsonl",
+    "raw/seed_87019_low/competing_RESULT.json",
+    "raw/seed_87019_low/copy_RAW.jsonl",
+    "raw/seed_87019_low/copy_RESULT.json",
+    "raw/seed_87019_low/heldout_RAW.jsonl",
+    "raw/seed_87019_low/heldout_RESULT.json"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "Pilot1": {
+    "base_class": "DaveLMV082",
+    "base_parameter_count": 10594944,
+    "block_count": 8,
+    "context_size": 256,
+    "final_norm_bias_shape": [
+      320
+    ],
+    "final_norm_class": "ExplicitLayerNorm",
+    "final_norm_eps": 1e-05,
+    "final_norm_weight_shape": [
+      320
+    ],
+    "intercept": "output of blocks(x), immediately before ExplicitLayerNorm final_norm",
+    "language_head_bias_shape": [
+      1024
+    ],
+    "language_head_class": "Linear",
+    "language_head_weight_shape": [
+      1024,
+      320
+    ],
+    "position_embedding_shape": [
+      256,
+      320
+    ],
+    "readout_path": "blocks(x) -> final_norm(hidden) -> language_head(normalized); language_head swaps include weight and bias",
+    "tied_weight_object": false,
+    "tied_weight_storage": false,
+    "token_embedding_shape": [
+      1024,
+      320
+    ],
+    "wrapper_class": "Treatment13Model",
+    "wrapper_parameter_count": 10841345
+  },
+  "SF1": {
+    "base_class": "DaveLMV082",
+    "base_parameter_count": 10594944,
+    "block_count": 8,
+    "context_size": 256,
+    "final_norm_bias_shape": [
+      320
+    ],
+    "final_norm_class": "ExplicitLayerNorm",
+    "final_norm_eps": 1e-05,
+    "final_norm_weight_shape": [
+      320
+    ],
+    "intercept": "output of blocks(x), immediately before ExplicitLayerNorm final_norm",
+    "language_head_bias_shape": [
+      1024
+    ],
+    "language_head_class": "Linear",
+    "language_head_weight_shape": [
+      1024,
+      320
+    ],
+    "position_embedding_shape": [
+      256,
+      320
+    ],
+    "readout_path": "blocks(x) -> final_norm(hidden) -> language_head(normalized); language_head swaps include weight and bias",
+    "tied_weight_object": false,
+    "tied_weight_storage": false,
+    "token_embedding_shape": [
+      1024,
+      320
+    ],
+    "wrapper_class": "Treatment13Model",
+    "wrapper_parameter_count": 10841345
+  }
+}

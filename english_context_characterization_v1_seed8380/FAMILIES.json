@@ -1,0 +1,1675 @@
+{
+  "sampling": "Fresh Python3.12 random.Random(8380).sample(sorted Cartesian product,n) per task; sorted sample",
+  "schema_version": 1,
+  "seed": 8380,
+  "tasks": {
+    "location": {
+      "eligible_universe": [
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "shop",
+            "yard"
+          ]
+        }
+      ],
+      "eligible_universe_size": 24,
+      "sample_size": 16,
+      "selected_families": [
+        {
+          "candidates": [
+            "bed",
+            "room"
+          ],
+          "eligible_universe_index": 0,
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "family_id": "location:f000",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "yard"
+          ],
+          "eligible_universe_index": 2,
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "family_id": "location:f001",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "shop",
+            "yard"
+          ],
+          "eligible_universe_index": 3,
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "family_id": "location:f002",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "yard"
+          ],
+          "eligible_universe_index": 6,
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "family_id": "location:f003",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "shop",
+            "yard"
+          ],
+          "eligible_universe_index": 7,
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "family_id": "location:f004",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "shop"
+          ],
+          "eligible_universe_index": 9,
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "family_id": "location:f005",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "candidates": [
+            "shop",
+            "yard"
+          ],
+          "eligible_universe_index": 11,
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "family_id": "location:f006",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "shop"
+          ],
+          "eligible_universe_index": 13,
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "family_id": "location:f007",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "yard"
+          ],
+          "eligible_universe_index": 14,
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "family_id": "location:f008",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "shop",
+            "yard"
+          ],
+          "eligible_universe_index": 15,
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "family_id": "location:f009",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "shop",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "bed",
+            "room"
+          ],
+          "eligible_universe_index": 16,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "location:f010",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "shop"
+          ],
+          "eligible_universe_index": 17,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "location:f011",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "shop"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "yard"
+          ],
+          "eligible_universe_index": 18,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "location:f012",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "bed",
+            "room"
+          ],
+          "eligible_universe_index": 20,
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "family_id": "location:f013",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "bed",
+            "room"
+          ]
+        },
+        {
+          "candidates": [
+            "cave",
+            "yard"
+          ],
+          "eligible_universe_index": 22,
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "family_id": "location:f014",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "cave",
+            "yard"
+          ]
+        },
+        {
+          "candidates": [
+            "shop",
+            "yard"
+          ],
+          "eligible_universe_index": 23,
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "family_id": "location:f015",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "location",
+          "values": [
+            "shop",
+            "yard"
+          ]
+        }
+      ]
+    },
+    "naming": {
+      "eligible_universe": [
+        {
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "values": [
+            "Ben",
+            "Sam"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "values": [
+            "Ben",
+            "Tim"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "values": [
+            "Ben",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "values": [
+            "Sam",
+            "Tim"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "values": [
+            "Sam",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "values": [
+            "Tim",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "values": [
+            "Ben",
+            "Sam"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "values": [
+            "Ben",
+            "Tim"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "values": [
+            "Ben",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "values": [
+            "Sam",
+            "Tim"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "values": [
+            "Sam",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "values": [
+            "Tim",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "values": [
+            "Ben",
+            "Sam"
+          ]
+        },
+        {
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "values": [
+            "Ben",
+            "Tim"
+          ]
+        },
+        {
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "values": [
+            "Ben",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "values": [
+            "Sam",
+            "Tim"
+          ]
+        },
+        {
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "values": [
+            "Sam",
+            "Tom"
+          ]
+        },
+        {
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "values": [
+            "Tim",
+            "Tom"
+          ]
+        }
+      ],
+      "eligible_universe_size": 18,
+      "sample_size": 8,
+      "selected_families": [
+        {
+          "candidates": [
+            "Ben",
+            "Sam"
+          ],
+          "eligible_universe_index": 0,
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "family_id": "naming:f000",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Ben",
+            "Sam"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tom"
+          ],
+          "eligible_universe_index": 2,
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "family_id": "naming:f001",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Ben",
+            "Tom"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tim"
+          ],
+          "eligible_universe_index": 3,
+          "entities": [
+            "bear",
+            "cat"
+          ],
+          "family_id": "naming:f002",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Sam",
+            "Tim"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Sam"
+          ],
+          "eligible_universe_index": 6,
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "family_id": "naming:f003",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Ben",
+            "Sam"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tim"
+          ],
+          "eligible_universe_index": 9,
+          "entities": [
+            "bear",
+            "fish"
+          ],
+          "family_id": "naming:f004",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Sam",
+            "Tim"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tim"
+          ],
+          "eligible_universe_index": 13,
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "family_id": "naming:f005",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Ben",
+            "Tim"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tom"
+          ],
+          "eligible_universe_index": 14,
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "family_id": "naming:f006",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Ben",
+            "Tom"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tim"
+          ],
+          "eligible_universe_index": 15,
+          "entities": [
+            "cat",
+            "fish"
+          ],
+          "family_id": "naming:f007",
+          "frames": [
+            "core"
+          ],
+          "task": "naming",
+          "values": [
+            "Sam",
+            "Tim"
+          ]
+        }
+      ]
+    },
+    "possession": {
+      "eligible_universe": [
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "values": [
+            "car",
+            "toy"
+          ]
+        }
+      ],
+      "eligible_universe_size": 36,
+      "sample_size": 16,
+      "selected_families": [
+        {
+          "candidates": [
+            "Ben",
+            "Sam"
+          ],
+          "eligible_universe_index": 0,
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "family_id": "possession:f000",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Sam"
+          ],
+          "eligible_universe_index": 1,
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "family_id": "possession:f001",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Sam"
+          ],
+          "eligible_universe_index": 5,
+          "entities": [
+            "Ben",
+            "Sam"
+          ],
+          "family_id": "possession:f002",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tim"
+          ],
+          "eligible_universe_index": 7,
+          "entities": [
+            "Ben",
+            "Tim"
+          ],
+          "family_id": "possession:f003",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tom"
+          ],
+          "eligible_universe_index": 12,
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "family_id": "possession:f004",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "book"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tom"
+          ],
+          "eligible_universe_index": 13,
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "family_id": "possession:f005",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tom"
+          ],
+          "eligible_universe_index": 15,
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "family_id": "possession:f006",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "candidates": [
+            "Ben",
+            "Tom"
+          ],
+          "eligible_universe_index": 16,
+          "entities": [
+            "Ben",
+            "Tom"
+          ],
+          "family_id": "possession:f007",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tim"
+          ],
+          "eligible_universe_index": 19,
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "family_id": "possession:f008",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tim"
+          ],
+          "eligible_universe_index": 22,
+          "entities": [
+            "Sam",
+            "Tim"
+          ],
+          "family_id": "possession:f009",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tom"
+          ],
+          "eligible_universe_index": 25,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "possession:f010",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "bag",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tom"
+          ],
+          "eligible_universe_index": 26,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "possession:f011",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "ball",
+            "car"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tom"
+          ],
+          "eligible_universe_index": 27,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "possession:f012",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "ball",
+            "toy"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tom"
+          ],
+          "eligible_universe_index": 28,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "possession:f013",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "book",
+            "hat"
+          ]
+        },
+        {
+          "candidates": [
+            "Sam",
+            "Tom"
+          ],
+          "eligible_universe_index": 29,
+          "entities": [
+            "Sam",
+            "Tom"
+          ],
+          "family_id": "possession:f014",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "car",
+            "toy"
+          ]
+        },
+        {
+          "candidates": [
+            "Tim",
+            "Tom"
+          ],
+          "eligible_universe_index": 32,
+          "entities": [
+            "Tim",
+            "Tom"
+          ],
+          "family_id": "possession:f015",
+          "frames": [
+            "core",
+            "frame_holdout",
+            "qa"
+          ],
+          "task": "possession",
+          "values": [
+            "ball",
+            "car"
+          ]
+        }
+      ]
+    }
+  }
+}

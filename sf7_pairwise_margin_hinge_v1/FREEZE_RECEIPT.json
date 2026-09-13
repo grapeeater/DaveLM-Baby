@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-08T05:59:49.044975+00:00",
+  "historical_artifacts_unchanged": true,
+  "manifest_sha256": "71da0a0ce35689b30da8c87d063bbe6e5b3af47d88d59a2e39f382a1722954e9",
+  "no_training_before_freeze": true,
+  "payload_files": 30,
+  "protocol_sha256": "54a1550b81b8c21ff98bedbb630c29ed2d6b55da26eafe7f463cf50fdb10c5ea",
+  "status": "SF7_PROSPECTIVE_PREFLIGHT_PASS"
+}

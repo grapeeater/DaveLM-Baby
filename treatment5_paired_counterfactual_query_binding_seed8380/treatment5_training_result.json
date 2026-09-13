@@ -1,0 +1,81 @@
+{
+  "experiment": "DaveLM v0.9 Treatment #5",
+  "treatment": "paired counterfactual query binding",
+  "classification": "TRAINING COMPLETE \u2014 POSITIVE CONTROLS NOT YET EVALUATED",
+  "seed": 8380,
+  "schedule_seed": 8382,
+  "steps": 1000,
+  "batch_size": 32,
+  "pairs_per_batch": 16,
+  "pair_presentations": 16000,
+  "scheduled_examples": 32000,
+  "supervised_tokens": 6144000,
+  "nonanswer_supervised_tokens": 6112000,
+  "answer_substitutions": 32000,
+  "starting_checkpoint": {
+    "path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+    "sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+  },
+  "pair_pool": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json",
+    "sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307"
+  },
+  "frozen_schedule": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_frozen_schedule.json",
+    "sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12"
+  },
+  "parameter_count": 10594944,
+  "architecture_construction": "original_run.build_model(\"untied\")",
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.05,
+    "gradient_clip": 2.0,
+    "scheduler": null
+  },
+  "objective": {
+    "answer": "membership + selector",
+    "membership": "logsumexp(full vocab) - logsumexp(correct,distractor)",
+    "selector": "relu(0.5 - (correct-distractor))",
+    "original_answer_ce_retained": false,
+    "nonanswer": "ordinary full-vocabulary CE"
+  },
+  "runtime_seconds": 403.4549535999977,
+  "final_step_metrics": {
+    "loss": 1.7498233318328857,
+    "mean_membership_loss": 0.19212746620178223,
+    "mean_selector_loss": 1.0673097372055054,
+    "mean_answer_replacement_loss": 1.259437084197998,
+    "mean_original_answer_ce_removed": 1.2537627220153809,
+    "correct_gt_distractor_fraction": 0.375,
+    "margin_satisfied_fraction": 0.28125,
+    "mean_candidate_mass": 0.8291549682617188,
+    "mean_correct_probability": 0.3987988829612732,
+    "mean_distractor_probability": 0.43035614490509033,
+    "mean_logit_delta": 0.007062315940856934,
+    "full_vocab_top1_fraction": 0.375,
+    "mean_target_rank": 1.65625,
+    "median_target_rank": 2.0,
+    "mean_nonanswer_ce": 1.7523906230926514,
+    "slot0_correct_gt_distractor_fraction": 0.375,
+    "slot0_margin_satisfied_fraction": 0.3125,
+    "slot0_mean_logit_delta": 0.4541071653366089,
+    "slot1_correct_gt_distractor_fraction": 0.375,
+    "slot1_margin_satisfied_fraction": 0.25,
+    "slot1_mean_logit_delta": -0.439982533454895,
+    "step": 1000,
+    "gradient_norm_pre_clip": 0.3362176716327667,
+    "step_seconds": 0.39243290000013076,
+    "cumulative_supervised_tokens": 6144000,
+    "cumulative_nonanswer_tokens": 6112000,
+    "cumulative_answer_substitutions": 32000
+  },
+  "candidate_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_paired_counterfactual_query_binding_seed8380\\checkpoints\\paired_counterfactual\\seed_8380\\latest.pt",
+    "sha256": "cfe1e99f17c02ee7fc7ab6869eb367960d4e98fc477bb9d22173a978361f077a"
+  },
+  "training_metrics": "C:\\DaveLM-CADAVER\\treatment5_paired_counterfactual_query_binding_seed8380\\treatment5_training_metrics.jsonl",
+  "positive_controls_evaluated": false,
+  "sealed_axes_loaded": false,
+  "sealed_evaluation": false
+}

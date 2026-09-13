@@ -1,0 +1,15 @@
+{
+  "model_behavior_accessed": false,
+  "runtime": {
+    "python": "3.12.14",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "sources": {
+    "build.py": "f2b6bfb6f89699e29107fa62b4b41ab1d23fa2c9dec15180d20d88fbf931b346",
+    "finalize_freeze.py": "ad7fbb2adbf507751064ab69b97f1afbbe6acc9963a2b8717ef998d0e2d6b7bd",
+    "harness.py": "89a951d7c2058c2e67ce0f02bfc8039920c7a96bcd4053135b636304aefe6c10",
+    "independent_validator.py": "a9afae88acd17e8baeb62f7128e15561141b270c4423ccd4c327c0a986ed4d8a",
+    "test_pretraining.py": "b2e893e4bd73562f09fc5da59e99e038c17bd2ee4644c16ca68575c821f576aa"
+  }
+}

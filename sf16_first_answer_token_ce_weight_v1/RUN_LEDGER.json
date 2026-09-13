@@ -1,0 +1,20 @@
+[
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf16_first_answer_token_ce_weight_v1\\CONTROLLER.py",
+      "--seed",
+      "87041",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "parent_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "pid": 26464,
+    "seed": 87041,
+    "start": "2026-09-08T22:50:17.021945+00:00",
+    "state": "RUNNING"
+  }
+]

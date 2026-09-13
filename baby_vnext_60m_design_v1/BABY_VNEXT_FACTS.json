@@ -1,0 +1,73 @@
+{
+  "status": "PASS_WITH_UNCERTAINTIES",
+  "training_authorized": false,
+  "training_performed": false,
+  "design_type": "CLEANER_CAPACITY_SUCCESSOR",
+  "output_directory": "C:\\DaveLM-CADAVER\\baby_vnext_60m_design_v1",
+  "selected_candidate": {
+    "architecture": "baby_vnext_capacity_successor_v1",
+    "trained_parameters": 61520385,
+    "base_parameters": 60536064,
+    "binding_parameters": 984321,
+    "n_layers": 12,
+    "d_model": 640,
+    "n_heads": 10,
+    "head_dim": 64,
+    "d_mlp": 2560,
+    "vocab_size": 1024,
+    "context_length": 256,
+    "activation": "relu",
+    "norm": "explicit pre-LayerNorm",
+    "position": "learned absolute",
+    "tie_embeddings": false,
+    "dropout": 0.05,
+    "attention_backend": "sdpa_with_reference_equivalence_path",
+    "binding_slots": 2,
+    "binding_retrieval_dim": 128,
+    "binding_layout": "explicit_key_value_positions_v1"
+  },
+  "tokenizer": {
+    "decision": "preserve",
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "initialization": {
+    "decision": "from_scratch",
+    "validation_seed": 600001,
+    "weight_morphism": false,
+    "partial_transplant": false,
+    "distillation_initialization": false
+  },
+  "language_pipeline_evidence": {
+    "pilot1_documents": 9000,
+    "encoded_train_stream_tokens": 3576861,
+    "pilot1_language_updates": 900,
+    "pilot1_batch": 64,
+    "pilot1_context": 256,
+    "pilot1_presented_positions": 14745600,
+    "pilot1_presented_positions_per_research_baby_parameter": 1.36,
+    "same_schedule_positions_per_vnext_parameter": 0.24,
+    "bounded_recommended_language_updates": 6000,
+    "bounded_recommended_presented_positions": 98304000,
+    "bounded_recommended_positions_per_vnext_parameter": 1.60,
+    "warning": "This is a bounded capacity-test floor, not compute-optimal pretraining; corpus repetition risk remains."
+  },
+  "hardware": {
+    "target": "AMD Radeon RX 9060 XT 16GB",
+    "validated_device": "AMD Radeon RX 9060 XT",
+    "runtime": "Python 3.12.14; torch 2.12.0+rocm7.14.0; tokenizers 0.23.1",
+    "fp32_training_state_mib_excluding_activations": 938.73,
+    "fp32_training_state_plus_no_grad_teacher_mib_excluding_activations": 1173.41,
+    "recommended_initial_language_microbatch": 8,
+    "recommended_effective_language_batch": 64,
+    "precision": "float32 baseline"
+  },
+  "validation": {
+    "status": "PASS",
+    "optimizer_created": false,
+    "optimizer_steps": 0,
+    "real_data_training": false,
+    "locked_or_sacred_access": false,
+    "historical_artifacts_unchanged": true
+  }
+}

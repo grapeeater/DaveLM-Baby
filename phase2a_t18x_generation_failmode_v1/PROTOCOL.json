@@ -1,0 +1,9 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T18X_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "On T18 U1000, are the remaining exact fails still Phase1G story continuation (T17X mode), or prefix-correct / missing-EOS / wrong-candidate? Does the first generated token match the answer BOS on exact hits vs misses?",
+  "earned_by": "T18_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Exact 36/36/40 vs T17's 0. Native FC unchanged. Need a fail-mode split before another train.",
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T18 checkpoints", "unseal TEST", "change QA mix", "copy Qwen or Smol"],
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

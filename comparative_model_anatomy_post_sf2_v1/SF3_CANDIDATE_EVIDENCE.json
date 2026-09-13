@@ -1,0 +1,62 @@
+{
+  "header": "SF3 candidate treatment families - comparative/literature evidence ONLY. This does NOT override Baby's direct experimental evidence (SF1/SF2). Verdicts are about whether reference-model design evidence leans for/against each family, not a decision.",
+  "candidates": [
+    {
+      "id": 1,
+      "family": "LR annealing / decay",
+      "verdict": "SLIGHTLY STRENGTHENS",
+      "evidence": "Granite documents 'maximal update parameterization and a power LR scheduler' (a deliberate non-cosine late-training decay) [DOC]. No reference model in this set uses cosine specifically; Qwen3/LFM2 schedules UNKNOWN. Baby SF2 ran constant LR and swept monotonically past balance (autopsy).",
+      "reason": "Confirms LR decay is a legitimate, production-used schedule family and that cosine is only one member; it does NOT establish that annealing fixes a near-boundary miss.",
+      "falsifier_if_adopted": "an annealed run that still ends with negative Alex margin on the residual item"
+    },
+    {
+      "id": 2,
+      "family": "Output-head constraint or freezing",
+      "verdict": "NEUTRAL",
+      "evidence": "No reference model freezes/constrains the head during specialization. Granite's constant logit_scale is boundary-neutral (monotone) [INF]. Tied/untied shows no consensus (Granite tied; Qwen3-8B untied; LFM2 appears tied).",
+      "reason": "Comparative anatomy gives no support for a head fix; Baby's own component-swap shows the head is only the marginal tipping factor, consistent with 'neutral'."
+    },
+    {
+      "id": 3,
+      "family": "Pairwise/contrastive margin objective",
+      "verdict": "NEUTRAL",
+      "evidence": "None of the three models documents a token-level pairwise-margin CE objective in base training. LFM2's 'length-normalized preference optimization' is pairwise but in the alignment stage, a different regime [DOC].",
+      "reason": "No comparative support or refutation for a margin loss in a small factual fine-tune; Baby's own prior pairwise/discrimination losses failed in the harder binding task."
+    },
+    {
+      "id": 4,
+      "family": "Additional CE training",
+      "verdict": "SLIGHTLY WEAKENS",
+      "evidence": "All three models add substantial NEW data between stages (Qwen3 S2 raises STEM/code/reasoning share; Granite 2-stage mixture; LFM2 curriculum data) [DOC].",
+      "reason": "The convergent principle is 'continued training should come with a changed/expanded mixture', which argues against simply adding more CE on the identical 16 records."
+    },
+    {
+      "id": 5,
+      "family": "Replay / mixed ordinary-language rehearsal",
+      "verdict": "STRENGTHENS",
+      "evidence": "Qwen3's 'thinking-mode fusion' SFT stage explicitly mixes the new-capability data with prior instruction data to retain both behaviors [DOC]; Granite and LFM2 also restructure data mixtures across stages.",
+      "reason": "Provides an independent, documented precedent for retention-by-data-mixing in a dedicated stage. Caveat: Baby's Pilot0/1 already showed naive mixing is delicate; and reference mixing is at SFT scale on large data."
+    },
+    {
+      "id": 6,
+      "family": "Continued parent-distribution KL",
+      "verdict": "NEUTRAL",
+      "evidence": "No reference model uses self-KL to an earlier snapshot. Qwen3/LFM2 use cross-model KD (Qwen3 abstract; LFM2 report) and LFM2 emphasizes 'avoid support mismatch' [DOC].",
+      "reason": "No direct analog either way; LFM2's support-mismatch note is a design caution for any future KL placement/strength, not evidence for or against continuing SF2's exact KL."
+    },
+    {
+      "id": 7,
+      "family": "Staged or changing KL strength",
+      "verdict": "NEUTRAL",
+      "evidence": "No reference model documents scheduling the strength of a self-distillation/retention term [UNKNOWN/absent].",
+      "reason": "No comparative evidence; only Baby's own run informs this."
+    },
+    {
+      "id": 8,
+      "family": "Other mechanism discovered in references",
+      "verdict": "SEE NOTE",
+      "evidence": "Two candidate ideas surfaced: (a) LFM2 tempered/decoupled top-K KD as a design template for future retention terms [DOC]; (b) a 'dedicated late fusion stage with fixed language fraction' as a structural alternative to interleaving or KL [INF from Qwen3 pattern].",
+      "reason": "Both are new framings worth carrying into SF3 design space, clearly labeled as speculation where inference-based."
+    }
+  ]
+}

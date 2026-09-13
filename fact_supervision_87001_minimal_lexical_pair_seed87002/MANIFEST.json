@@ -1,0 +1,28 @@
+{
+ "protocol_id": "fact_supervision_87001_minimal_lexical_pair_seed87002",
+ "fork": "L2",
+ "status": "PREEXECUTION_ONLY",
+ "source": "factual-arm Primary only",
+ "row_syntax": "<name> <predicate> the <description>",
+ "counts": {
+  "ONE": 48,
+  "TWO": 96,
+  "ONE_families": 24,
+  "TWO_families": 24
+ },
+ "checkpoint_set": {
+  "Pilot1 parent": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "factual-500": "3ae30ae847d3129d7715173ddbfbbaf6b7490772dc850e361a5a2d785b991123",
+  "control-500": "c888e3b4cf20860b8d1d0651e418be931da7e8db2acc1c32625edb29701f1530"
+ },
+ "scorer": {
+  "evaluator_sha256": "3563cb58334cd9753ca8ebff7fe49987a0f0ccb535abdfdf9a149cc1541a497b",
+  "semantics": "candidate conditional LL over response tokens + EOS (English base_model path); signed margin; correct iff margin>0; tie==0; greedy argmax<=32 stop EOS"
+ },
+ "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false
+}

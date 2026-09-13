@@ -1,0 +1,20 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T10_FACTCLAUSE_POINTER_1K_V1",
+  "status": "STUDY_COMPLETE_T10_LANGUAGE_REGRESSION",
+  "scientific_question": "Does extending T9 fact-clause late-base pointer from 500 to 1000 updates replicate representation (>=2/3 seeds) without DEV CE > 1.30?",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "scope": {"freeze": "base_model.blocks.0-3 and all 984321 binding params", "train": "late base only", "trainable": 40849664, "frozen": 20670721},
+  "pointer_keys": {"definition": "for each mention_span_bos, indices from mention start through next token id 18 (period), exclusive of decision_position_bos", "period_token_id": 18},
+  "objective": {"lambda_ptr": 1.0, "margin_M": 1.0, "layout": "none", "language": "9 qa : 1 language CE"},
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded; independent-item QA batches",
+  "seeds": [690001, 690002, 690003],
+  "schedule": {"total_updates": 1000, "qa_updates": 900, "language_updates": 100, "qa_batch": 32, "eval_points": [0, 100, 300, 500, 750, 1000], "lr": 5e-5, "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T10_FULL_SUCCESS", "T10_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T10_FAIL_NO_REPRESENTATION", "T10_LANGUAGE_REGRESSION", "T10_SHORTCUT_FAILURE", "T10_HARD_STOP"],
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; >=2 LANGUAGE_REGRESSION; >=2 SHORTCUT; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

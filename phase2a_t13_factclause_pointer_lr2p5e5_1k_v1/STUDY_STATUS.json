@@ -1,0 +1,70 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T13_FACTCLAUSE_POINTER_LR2P5E5_1K_V1",
+  "study_classification": "T13_FAIL_NO_REPRESENTATION",
+  "runs": {
+    "720001": {
+      "seed": 720001,
+      "update": 1000,
+      "classification": "T13_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 100,
+      "dev_native": 76,
+      "dev_exact": 0,
+      "dev_ce": 1.2665503308176995,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "720002": {
+      "seed": 720002,
+      "update": 1000,
+      "classification": "T13_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 102,
+      "dev_native": 84,
+      "dev_exact": 0,
+      "dev_ce": 1.262551875412464,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "720003": {
+      "seed": 720003,
+      "update": 1000,
+      "classification": "T13_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 105,
+      "dev_native": 77,
+      "dev_exact": 0,
+      "dev_ce": 1.264697551727295,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false
+}

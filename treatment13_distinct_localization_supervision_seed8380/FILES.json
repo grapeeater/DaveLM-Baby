@@ -1,0 +1,16 @@
+{
+  "experiment": "treatment13_distinct_localization_supervision_seed8380",
+  "classification": "CLEAR_SUCCESS",
+  "seed": 8380,
+  "updates": 1000,
+  "hashes": {
+    "starting_t13_checkpoint": "cf53eef03adf874255cd54508fc7948dfd1e4926a57537f7e2f828f5f582adab",
+    "final_checkpoint": "0d5bf015a303ada49e6f3ab0ff3d574ea57ddcc18505cab29c2715267841e4b4",
+    "train_pool": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+    "retention_pool": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+    "schedule": "6157dce61d990b2d96ef91470a80a973bd5e96339d406bceb9fdc75e020cea42",
+    "authoritative_t13_audit": "ad9e14e8687b1139150f5de9762dc6accc8d2c9ab412ea1d1a387e2f5731c91f"
+  },
+  "retention": {"model_eval": true, "no_grad": true, "optimizer_steps": 0},
+  "follow_up_started": false
+}

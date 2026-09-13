@@ -1,0 +1,194 @@
+{
+  "graduate": {
+    "near_distribution": {
+      "n": 96,
+      "correct": 48,
+      "ties": 0,
+      "mean_margin": 4.536950706438928e-05
+    },
+    "counterfactual": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -0.0007633757784329583
+    },
+    "surface_form": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -9.696369413347838e-05
+    },
+    "distractor": {
+      "n": 64,
+      "correct": 32,
+      "ties": 0,
+      "mean_margin": 2.651070022169355e-05
+    },
+    "query_only_prior": {
+      "n": 16,
+      "correct": 0,
+      "ties": 0,
+      "mean_margin": 0.0
+    }
+  },
+  "pilot0": {
+    "near_distribution": {
+      "n": 96,
+      "correct": 47,
+      "ties": 0,
+      "mean_margin": -0.0008242730117774544
+    },
+    "counterfactual": {
+      "n": 48,
+      "correct": 23,
+      "ties": 0,
+      "mean_margin": -0.005004074656755841
+    },
+    "surface_form": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -0.0019503692281461389
+    },
+    "distractor": {
+      "n": 64,
+      "correct": 33,
+      "ties": 0,
+      "mean_margin": 0.0016073268350240144
+    },
+    "query_only_prior": {
+      "n": 16,
+      "correct": 0,
+      "ties": 0,
+      "mean_margin": 0.0
+    }
+  },
+  "pilot1": {
+    "near_distribution": {
+      "n": 96,
+      "correct": 48,
+      "ties": 0,
+      "mean_margin": 0.004756504771716834
+    },
+    "counterfactual": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": 0.0009305495196199609
+    },
+    "surface_form": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -0.005532795045094056
+    },
+    "distractor": {
+      "n": 64,
+      "correct": 32,
+      "ties": 0,
+      "mean_margin": -0.003730979474320245
+    },
+    "query_only_prior": {
+      "n": 16,
+      "correct": 0,
+      "ties": 0,
+      "mean_margin": 0.0
+    }
+  },
+  "p5": {
+    "near_distribution": {
+      "n": 96,
+      "correct": 49,
+      "ties": 0,
+      "mean_margin": -0.000309812755982658
+    },
+    "counterfactual": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -0.00045123400502633526
+    },
+    "surface_form": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -0.002892362285635608
+    },
+    "distractor": {
+      "n": 64,
+      "correct": 33,
+      "ties": 0,
+      "mean_margin": -0.005382213628344776
+    },
+    "query_only_prior": {
+      "n": 16,
+      "correct": 0,
+      "ties": 0,
+      "mean_margin": 0.0
+    }
+  },
+  "p6": {
+    "near_distribution": {
+      "n": 96,
+      "correct": 49,
+      "ties": 0,
+      "mean_margin": -0.006807651642370127
+    },
+    "counterfactual": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": 0.0021305974425046927
+    },
+    "surface_form": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": -0.0002726503024792863
+    },
+    "distractor": {
+      "n": 64,
+      "correct": 31,
+      "ties": 0,
+      "mean_margin": -0.0017263045853823378
+    },
+    "query_only_prior": {
+      "n": 16,
+      "correct": 0,
+      "ties": 0,
+      "mean_margin": 0.0
+    }
+  },
+  "p7": {
+    "near_distribution": {
+      "n": 96,
+      "correct": 48,
+      "ties": 0,
+      "mean_margin": -0.004887646372401698
+    },
+    "counterfactual": {
+      "n": 48,
+      "correct": 23,
+      "ties": 0,
+      "mean_margin": 0.002993000338659161
+    },
+    "surface_form": {
+      "n": 48,
+      "correct": 24,
+      "ties": 0,
+      "mean_margin": 0.006926019613229251
+    },
+    "distractor": {
+      "n": 64,
+      "correct": 31,
+      "ties": 0,
+      "mean_margin": 0.0017998756969211938
+    },
+    "query_only_prior": {
+      "n": 16,
+      "correct": 0,
+      "ties": 0,
+      "mean_margin": 0.0
+    }
+  }
+}

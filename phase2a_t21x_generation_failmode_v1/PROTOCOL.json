@@ -1,0 +1,8 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T21X_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "T21 exact rose to 27/29/26 vs T20 9/10/13 but not T18 36/36/40. Did first-token BOS recover toward T18X 76-84, and is leftover other_then_eos or T18X first_token_correct_then_diverge?",
+  "earned_by": "T21_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Representation 3/3. Exact 27/29/26.",
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T21 checkpoints", "unseal TEST", "retokenize", "copy Qwen or Smol", "relaunch T4-T21"]
+}

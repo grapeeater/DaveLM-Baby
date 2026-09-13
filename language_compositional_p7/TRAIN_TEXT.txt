@@ -1,0 +1,1640 @@
+Lily found a blue ball. Lily picked up the blue ball.
+Lily saw a blue ball. Lily smiled at the blue ball.
+Lily picked up the blue ball. Lily carried the blue ball.
+Lily carried the blue ball. Lily put down the blue ball.
+Lily liked the blue ball. Lily played with the blue ball.
+Lily put the blue ball on the table. Lily looked at the blue ball.
+Lily looked for the blue ball. Lily searched for the blue ball.
+Lily played with the blue ball. Lily had fun with the blue ball.
+Lily found a green ball. Lily picked up the green ball.
+Lily saw a green ball. Lily smiled at the green ball.
+Lily picked up the green ball. Lily carried the green ball.
+Lily carried the green ball. Lily put down the green ball.
+Lily liked the green ball. Lily played with the green ball.
+Lily put the green ball on the table. Lily looked at the green ball.
+Lily looked for the green ball. Lily searched for the green ball.
+Lily played with the green ball. Lily had fun with the green ball.
+Lily found a yellow ball. Lily picked up the yellow ball.
+Lily saw a yellow ball. Lily smiled at the yellow ball.
+Lily picked up the yellow ball. Lily carried the yellow ball.
+Lily carried the yellow ball. Lily put down the yellow ball.
+Lily liked the yellow ball. Lily played with the yellow ball.
+Lily put the yellow ball on the table. Lily looked at the yellow ball.
+Lily looked for the yellow ball. Lily searched for the yellow ball.
+Lily played with the yellow ball. Lily had fun with the yellow ball.
+Lily found a red book. Lily picked up the red book.
+Lily saw a red book. Lily smiled at the red book.
+Lily picked up the red book. Lily carried the red book.
+Lily carried the red book. Lily put down the red book.
+Lily liked the red book. Lily played with the red book.
+Lily put the red book on the table. Lily looked at the red book.
+Lily looked for the red book. Lily searched for the red book.
+Lily played with the red book. Lily had fun with the red book.
+Lily found a blue book. Lily picked up the blue book.
+Lily saw a blue book. Lily smiled at the blue book.
+Lily picked up the blue book. Lily carried the blue book.
+Lily carried the blue book. Lily put down the blue book.
+Lily liked the blue book. Lily played with the blue book.
+Lily put the blue book on the table. Lily looked at the blue book.
+Lily looked for the blue book. Lily searched for the blue book.
+Lily played with the blue book. Lily had fun with the blue book.
+Lily found a green book. Lily picked up the green book.
+Lily saw a green book. Lily smiled at the green book.
+Lily picked up the green book. Lily carried the green book.
+Lily carried the green book. Lily put down the green book.
+Lily liked the green book. Lily played with the green book.
+Lily put the green book on the table. Lily looked at the green book.
+Lily looked for the green book. Lily searched for the green book.
+Lily played with the green book. Lily had fun with the green book.
+Lily found a yellow book. Lily picked up the yellow book.
+Lily saw a yellow book. Lily smiled at the yellow book.
+Lily picked up the yellow book. Lily carried the yellow book.
+Lily carried the yellow book. Lily put down the yellow book.
+Lily liked the yellow book. Lily played with the yellow book.
+Lily put the yellow book on the table. Lily looked at the yellow book.
+Lily looked for the yellow book. Lily searched for the yellow book.
+Lily played with the yellow book. Lily had fun with the yellow book.
+Lily found a red toy. Lily picked up the red toy.
+Lily saw a red toy. Lily smiled at the red toy.
+Lily picked up the red toy. Lily carried the red toy.
+Lily carried the red toy. Lily put down the red toy.
+Lily liked the red toy. Lily played with the red toy.
+Lily put the red toy on the table. Lily looked at the red toy.
+Lily looked for the red toy. Lily searched for the red toy.
+Lily played with the red toy. Lily had fun with the red toy.
+Lily found a blue toy. Lily picked up the blue toy.
+Lily saw a blue toy. Lily smiled at the blue toy.
+Lily picked up the blue toy. Lily carried the blue toy.
+Lily carried the blue toy. Lily put down the blue toy.
+Lily liked the blue toy. Lily played with the blue toy.
+Lily put the blue toy on the table. Lily looked at the blue toy.
+Lily looked for the blue toy. Lily searched for the blue toy.
+Lily played with the blue toy. Lily had fun with the blue toy.
+Lily found a green toy. Lily picked up the green toy.
+Lily saw a green toy. Lily smiled at the green toy.
+Lily picked up the green toy. Lily carried the green toy.
+Lily carried the green toy. Lily put down the green toy.
+Lily liked the green toy. Lily played with the green toy.
+Lily put the green toy on the table. Lily looked at the green toy.
+Lily looked for the green toy. Lily searched for the green toy.
+Lily played with the green toy. Lily had fun with the green toy.
+Lily found a red hat. Lily picked up the red hat.
+Lily saw a red hat. Lily smiled at the red hat.
+Lily picked up the red hat. Lily carried the red hat.
+Lily carried the red hat. Lily put down the red hat.
+Lily liked the red hat. Lily played with the red hat.
+Lily put the red hat on the table. Lily looked at the red hat.
+Lily looked for the red hat. Lily searched for the red hat.
+Lily played with the red hat. Lily had fun with the red hat.
+Lily found a blue hat. Lily picked up the blue hat.
+Lily saw a blue hat. Lily smiled at the blue hat.
+Lily picked up the blue hat. Lily carried the blue hat.
+Lily carried the blue hat. Lily put down the blue hat.
+Lily liked the blue hat. Lily played with the blue hat.
+Lily put the blue hat on the table. Lily looked at the blue hat.
+Lily looked for the blue hat. Lily searched for the blue hat.
+Lily played with the blue hat. Lily had fun with the blue hat.
+Lily found a yellow hat. Lily picked up the yellow hat.
+Lily saw a yellow hat. Lily smiled at the yellow hat.
+Lily picked up the yellow hat. Lily carried the yellow hat.
+Lily carried the yellow hat. Lily put down the yellow hat.
+Lily liked the yellow hat. Lily played with the yellow hat.
+Lily put the yellow hat on the table. Lily looked at the yellow hat.
+Lily looked for the yellow hat. Lily searched for the yellow hat.
+Lily played with the yellow hat. Lily had fun with the yellow hat.
+Lily found a red kite. Lily picked up the red kite.
+Lily saw a red kite. Lily smiled at the red kite.
+Lily picked up the red kite. Lily carried the red kite.
+Lily carried the red kite. Lily put down the red kite.
+Lily liked the red kite. Lily played with the red kite.
+Lily put the red kite on the table. Lily looked at the red kite.
+Lily looked for the red kite. Lily searched for the red kite.
+Lily played with the red kite. Lily had fun with the red kite.
+Lily found a green kite. Lily picked up the green kite.
+Lily saw a green kite. Lily smiled at the green kite.
+Lily picked up the green kite. Lily carried the green kite.
+Lily carried the green kite. Lily put down the green kite.
+Lily liked the green kite. Lily played with the green kite.
+Lily put the green kite on the table. Lily looked at the green kite.
+Lily looked for the green kite. Lily searched for the green kite.
+Lily played with the green kite. Lily had fun with the green kite.
+Lily found a yellow kite. Lily picked up the yellow kite.
+Lily saw a yellow kite. Lily smiled at the yellow kite.
+Lily picked up the yellow kite. Lily carried the yellow kite.
+Lily carried the yellow kite. Lily put down the yellow kite.
+Lily liked the yellow kite. Lily played with the yellow kite.
+Lily put the yellow kite on the table. Lily looked at the yellow kite.
+Lily looked for the yellow kite. Lily searched for the yellow kite.
+Lily played with the yellow kite. Lily had fun with the yellow kite.
+Lily found a blue car. Lily picked up the blue car.
+Lily saw a blue car. Lily smiled at the blue car.
+Lily picked up the blue car. Lily carried the blue car.
+Lily carried the blue car. Lily put down the blue car.
+Lily liked the blue car. Lily played with the blue car.
+Lily put the blue car on the table. Lily looked at the blue car.
+Lily looked for the blue car. Lily searched for the blue car.
+Lily played with the blue car. Lily had fun with the blue car.
+Lily found a green car. Lily picked up the green car.
+Lily saw a green car. Lily smiled at the green car.
+Lily picked up the green car. Lily carried the green car.
+Lily carried the green car. Lily put down the green car.
+Lily liked the green car. Lily played with the green car.
+Lily put the green car on the table. Lily looked at the green car.
+Lily looked for the green car. Lily searched for the green car.
+Lily played with the green car. Lily had fun with the green car.
+Lily found a yellow car. Lily picked up the yellow car.
+Lily saw a yellow car. Lily smiled at the yellow car.
+Lily picked up the yellow car. Lily carried the yellow car.
+Lily carried the yellow car. Lily put down the yellow car.
+Lily liked the yellow car. Lily played with the yellow car.
+Lily put the yellow car on the table. Lily looked at the yellow car.
+Lily looked for the yellow car. Lily searched for the yellow car.
+Lily played with the yellow car. Lily had fun with the yellow car.
+Lily found a red box. Lily picked up the red box.
+Lily saw a red box. Lily smiled at the red box.
+Lily picked up the red box. Lily carried the red box.
+Lily carried the red box. Lily put down the red box.
+Lily liked the red box. Lily played with the red box.
+Lily put the red box on the table. Lily looked at the red box.
+Lily looked for the red box. Lily searched for the red box.
+Lily played with the red box. Lily had fun with the red box.
+Lily found a blue box. Lily picked up the blue box.
+Lily saw a blue box. Lily smiled at the blue box.
+Lily picked up the blue box. Lily carried the blue box.
+Lily carried the blue box. Lily put down the blue box.
+Lily liked the blue box. Lily played with the blue box.
+Lily put the blue box on the table. Lily looked at the blue box.
+Lily looked for the blue box. Lily searched for the blue box.
+Lily played with the blue box. Lily had fun with the blue box.
+Lily found a green box. Lily picked up the green box.
+Lily saw a green box. Lily smiled at the green box.
+Lily picked up the green box. Lily carried the green box.
+Lily carried the green box. Lily put down the green box.
+Lily liked the green box. Lily played with the green box.
+Lily put the green box on the table. Lily looked at the green box.
+Lily looked for the green box. Lily searched for the green box.
+Lily played with the green box. Lily had fun with the green box.
+Lily found a yellow box. Lily picked up the yellow box.
+Lily saw a yellow box. Lily smiled at the yellow box.
+Lily picked up the yellow box. Lily carried the yellow box.
+Lily carried the yellow box. Lily put down the yellow box.
+Lily liked the yellow box. Lily played with the yellow box.
+Lily put the yellow box on the table. Lily looked at the yellow box.
+Lily looked for the yellow box. Lily searched for the yellow box.
+Lily played with the yellow box. Lily had fun with the yellow box.
+Lily found a red fish. Lily picked up the red fish.
+Lily saw a red fish. Lily smiled at the red fish.
+Lily picked up the red fish. Lily carried the red fish.
+Lily carried the red fish. Lily put down the red fish.
+Lily liked the red fish. Lily played with the red fish.
+Lily put the red fish on the table. Lily looked at the red fish.
+Lily looked for the red fish. Lily searched for the red fish.
+Lily played with the red fish. Lily had fun with the red fish.
+Lily found a blue fish. Lily picked up the blue fish.
+Lily saw a blue fish. Lily smiled at the blue fish.
+Lily picked up the blue fish. Lily carried the blue fish.
+Lily carried the blue fish. Lily put down the blue fish.
+Lily liked the blue fish. Lily played with the blue fish.
+Lily put the blue fish on the table. Lily looked at the blue fish.
+Lily looked for the blue fish. Lily searched for the blue fish.
+Lily played with the blue fish. Lily had fun with the blue fish.
+Lily found a green fish. Lily picked up the green fish.
+Lily saw a green fish. Lily smiled at the green fish.
+Lily picked up the green fish. Lily carried the green fish.
+Lily carried the green fish. Lily put down the green fish.
+Lily liked the green fish. Lily played with the green fish.
+Lily put the green fish on the table. Lily looked at the green fish.
+Lily looked for the green fish. Lily searched for the green fish.
+Lily played with the green fish. Lily had fun with the green fish.
+Mia found a red ball. Mia picked up the red ball.
+Mia saw a red ball. Mia smiled at the red ball.
+Mia picked up the red ball. Mia carried the red ball.
+Mia carried the red ball. Mia put down the red ball.
+Mia liked the red ball. Mia played with the red ball.
+Mia put the red ball on the table. Mia looked at the red ball.
+Mia looked for the red ball. Mia searched for the red ball.
+Mia played with the red ball. Mia had fun with the red ball.
+Mia found a blue ball. Mia picked up the blue ball.
+Mia saw a blue ball. Mia smiled at the blue ball.
+Mia picked up the blue ball. Mia carried the blue ball.
+Mia carried the blue ball. Mia put down the blue ball.
+Mia liked the blue ball. Mia played with the blue ball.
+Mia put the blue ball on the table. Mia looked at the blue ball.
+Mia looked for the blue ball. Mia searched for the blue ball.
+Mia played with the blue ball. Mia had fun with the blue ball.
+Mia found a green ball. Mia picked up the green ball.
+Mia saw a green ball. Mia smiled at the green ball.
+Mia picked up the green ball. Mia carried the green ball.
+Mia carried the green ball. Mia put down the green ball.
+Mia liked the green ball. Mia played with the green ball.
+Mia put the green ball on the table. Mia looked at the green ball.
+Mia looked for the green ball. Mia searched for the green ball.
+Mia played with the green ball. Mia had fun with the green ball.
+Mia found a yellow ball. Mia picked up the yellow ball.
+Mia saw a yellow ball. Mia smiled at the yellow ball.
+Mia picked up the yellow ball. Mia carried the yellow ball.
+Mia carried the yellow ball. Mia put down the yellow ball.
+Mia liked the yellow ball. Mia played with the yellow ball.
+Mia put the yellow ball on the table. Mia looked at the yellow ball.
+Mia looked for the yellow ball. Mia searched for the yellow ball.
+Mia played with the yellow ball. Mia had fun with the yellow ball.
+Mia found a red book. Mia picked up the red book.
+Mia saw a red book. Mia smiled at the red book.
+Mia picked up the red book. Mia carried the red book.
+Mia carried the red book. Mia put down the red book.
+Mia liked the red book. Mia played with the red book.
+Mia put the red book on the table. Mia looked at the red book.
+Mia looked for the red book. Mia searched for the red book.
+Mia played with the red book. Mia had fun with the red book.
+Mia found a blue book. Mia picked up the blue book.
+Mia saw a blue book. Mia smiled at the blue book.
+Mia picked up the blue book. Mia carried the blue book.
+Mia carried the blue book. Mia put down the blue book.
+Mia liked the blue book. Mia played with the blue book.
+Mia put the blue book on the table. Mia looked at the blue book.
+Mia looked for the blue book. Mia searched for the blue book.
+Mia played with the blue book. Mia had fun with the blue book.
+Mia found a green book. Mia picked up the green book.
+Mia saw a green book. Mia smiled at the green book.
+Mia picked up the green book. Mia carried the green book.
+Mia carried the green book. Mia put down the green book.
+Mia liked the green book. Mia played with the green book.
+Mia put the green book on the table. Mia looked at the green book.
+Mia looked for the green book. Mia searched for the green book.
+Mia played with the green book. Mia had fun with the green book.
+Mia found a red toy. Mia picked up the red toy.
+Mia saw a red toy. Mia smiled at the red toy.
+Mia picked up the red toy. Mia carried the red toy.
+Mia carried the red toy. Mia put down the red toy.
+Mia liked the red toy. Mia played with the red toy.
+Mia put the red toy on the table. Mia looked at the red toy.
+Mia looked for the red toy. Mia searched for the red toy.
+Mia played with the red toy. Mia had fun with the red toy.
+Mia found a blue toy. Mia picked up the blue toy.
+Mia saw a blue toy. Mia smiled at the blue toy.
+Mia picked up the blue toy. Mia carried the blue toy.
+Mia carried the blue toy. Mia put down the blue toy.
+Mia liked the blue toy. Mia played with the blue toy.
+Mia put the blue toy on the table. Mia looked at the blue toy.
+Mia looked for the blue toy. Mia searched for the blue toy.
+Mia played with the blue toy. Mia had fun with the blue toy.
+Mia found a yellow toy. Mia picked up the yellow toy.
+Mia saw a yellow toy. Mia smiled at the yellow toy.
+Mia picked up the yellow toy. Mia carried the yellow toy.
+Mia carried the yellow toy. Mia put down the yellow toy.
+Mia liked the yellow toy. Mia played with the yellow toy.
+Mia put the yellow toy on the table. Mia looked at the yellow toy.
+Mia looked for the yellow toy. Mia searched for the yellow toy.
+Mia played with the yellow toy. Mia had fun with the yellow toy.
+Mia found a red hat. Mia picked up the red hat.
+Mia saw a red hat. Mia smiled at the red hat.
+Mia picked up the red hat. Mia carried the red hat.
+Mia carried the red hat. Mia put down the red hat.
+Mia liked the red hat. Mia played with the red hat.
+Mia put the red hat on the table. Mia looked at the red hat.
+Mia looked for the red hat. Mia searched for the red hat.
+Mia played with the red hat. Mia had fun with the red hat.
+Mia found a green hat. Mia picked up the green hat.
+Mia saw a green hat. Mia smiled at the green hat.
+Mia picked up the green hat. Mia carried the green hat.
+Mia carried the green hat. Mia put down the green hat.
+Mia liked the green hat. Mia played with the green hat.
+Mia put the green hat on the table. Mia looked at the green hat.
+Mia looked for the green hat. Mia searched for the green hat.
+Mia played with the green hat. Mia had fun with the green hat.
+Mia found a yellow hat. Mia picked up the yellow hat.
+Mia saw a yellow hat. Mia smiled at the yellow hat.
+Mia picked up the yellow hat. Mia carried the yellow hat.
+Mia carried the yellow hat. Mia put down the yellow hat.
+Mia liked the yellow hat. Mia played with the yellow hat.
+Mia put the yellow hat on the table. Mia looked at the yellow hat.
+Mia looked for the yellow hat. Mia searched for the yellow hat.
+Mia played with the yellow hat. Mia had fun with the yellow hat.
+Mia found a blue kite. Mia picked up the blue kite.
+Mia saw a blue kite. Mia smiled at the blue kite.
+Mia picked up the blue kite. Mia carried the blue kite.
+Mia carried the blue kite. Mia put down the blue kite.
+Mia liked the blue kite. Mia played with the blue kite.
+Mia put the blue kite on the table. Mia looked at the blue kite.
+Mia looked for the blue kite. Mia searched for the blue kite.
+Mia played with the blue kite. Mia had fun with the blue kite.
+Mia found a green kite. Mia picked up the green kite.
+Mia saw a green kite. Mia smiled at the green kite.
+Mia picked up the green kite. Mia carried the green kite.
+Mia carried the green kite. Mia put down the green kite.
+Mia liked the green kite. Mia played with the green kite.
+Mia put the green kite on the table. Mia looked at the green kite.
+Mia looked for the green kite. Mia searched for the green kite.
+Mia played with the green kite. Mia had fun with the green kite.
+Mia found a yellow kite. Mia picked up the yellow kite.
+Mia saw a yellow kite. Mia smiled at the yellow kite.
+Mia picked up the yellow kite. Mia carried the yellow kite.
+Mia carried the yellow kite. Mia put down the yellow kite.
+Mia liked the yellow kite. Mia played with the yellow kite.
+Mia put the yellow kite on the table. Mia looked at the yellow kite.
+Mia looked for the yellow kite. Mia searched for the yellow kite.
+Mia played with the yellow kite. Mia had fun with the yellow kite.
+Mia found a red car. Mia picked up the red car.
+Mia saw a red car. Mia smiled at the red car.
+Mia picked up the red car. Mia carried the red car.
+Mia carried the red car. Mia put down the red car.
+Mia liked the red car. Mia played with the red car.
+Mia put the red car on the table. Mia looked at the red car.
+Mia looked for the red car. Mia searched for the red car.
+Mia played with the red car. Mia had fun with the red car.
+Mia found a blue car. Mia picked up the blue car.
+Mia saw a blue car. Mia smiled at the blue car.
+Mia picked up the blue car. Mia carried the blue car.
+Mia carried the blue car. Mia put down the blue car.
+Mia liked the blue car. Mia played with the blue car.
+Mia put the blue car on the table. Mia looked at the blue car.
+Mia looked for the blue car. Mia searched for the blue car.
+Mia played with the blue car. Mia had fun with the blue car.
+Mia found a green car. Mia picked up the green car.
+Mia saw a green car. Mia smiled at the green car.
+Mia picked up the green car. Mia carried the green car.
+Mia carried the green car. Mia put down the green car.
+Mia liked the green car. Mia played with the green car.
+Mia put the green car on the table. Mia looked at the green car.
+Mia looked for the green car. Mia searched for the green car.
+Mia played with the green car. Mia had fun with the green car.
+Mia found a yellow car. Mia picked up the yellow car.
+Mia saw a yellow car. Mia smiled at the yellow car.
+Mia picked up the yellow car. Mia carried the yellow car.
+Mia carried the yellow car. Mia put down the yellow car.
+Mia liked the yellow car. Mia played with the yellow car.
+Mia put the yellow car on the table. Mia looked at the yellow car.
+Mia looked for the yellow car. Mia searched for the yellow car.
+Mia played with the yellow car. Mia had fun with the yellow car.
+Mia found a red box. Mia picked up the red box.
+Mia saw a red box. Mia smiled at the red box.
+Mia picked up the red box. Mia carried the red box.
+Mia carried the red box. Mia put down the red box.
+Mia liked the red box. Mia played with the red box.
+Mia put the red box on the table. Mia looked at the red box.
+Mia looked for the red box. Mia searched for the red box.
+Mia played with the red box. Mia had fun with the red box.
+Mia found a blue box. Mia picked up the blue box.
+Mia saw a blue box. Mia smiled at the blue box.
+Mia picked up the blue box. Mia carried the blue box.
+Mia carried the blue box. Mia put down the blue box.
+Mia liked the blue box. Mia played with the blue box.
+Mia put the blue box on the table. Mia looked at the blue box.
+Mia looked for the blue box. Mia searched for the blue box.
+Mia played with the blue box. Mia had fun with the blue box.
+Mia found a green box. Mia picked up the green box.
+Mia saw a green box. Mia smiled at the green box.
+Mia picked up the green box. Mia carried the green box.
+Mia carried the green box. Mia put down the green box.
+Mia liked the green box. Mia played with the green box.
+Mia put the green box on the table. Mia looked at the green box.
+Mia looked for the green box. Mia searched for the green box.
+Mia played with the green box. Mia had fun with the green box.
+Mia found a red fish. Mia picked up the red fish.
+Mia saw a red fish. Mia smiled at the red fish.
+Mia picked up the red fish. Mia carried the red fish.
+Mia carried the red fish. Mia put down the red fish.
+Mia liked the red fish. Mia played with the red fish.
+Mia put the red fish on the table. Mia looked at the red fish.
+Mia looked for the red fish. Mia searched for the red fish.
+Mia played with the red fish. Mia had fun with the red fish.
+Mia found a blue fish. Mia picked up the blue fish.
+Mia saw a blue fish. Mia smiled at the blue fish.
+Mia picked up the blue fish. Mia carried the blue fish.
+Mia carried the blue fish. Mia put down the blue fish.
+Mia liked the blue fish. Mia played with the blue fish.
+Mia put the blue fish on the table. Mia looked at the blue fish.
+Mia looked for the blue fish. Mia searched for the blue fish.
+Mia played with the blue fish. Mia had fun with the blue fish.
+Mia found a yellow fish. Mia picked up the yellow fish.
+Mia saw a yellow fish. Mia smiled at the yellow fish.
+Mia picked up the yellow fish. Mia carried the yellow fish.
+Mia carried the yellow fish. Mia put down the yellow fish.
+Mia liked the yellow fish. Mia played with the yellow fish.
+Mia put the yellow fish on the table. Mia looked at the yellow fish.
+Mia looked for the yellow fish. Mia searched for the yellow fish.
+Mia played with the yellow fish. Mia had fun with the yellow fish.
+Sam found a red ball. Sam picked up the red ball.
+Sam saw a red ball. Sam smiled at the red ball.
+Sam picked up the red ball. Sam carried the red ball.
+Sam carried the red ball. Sam put down the red ball.
+Sam liked the red ball. Sam played with the red ball.
+Sam put the red ball on the table. Sam looked at the red ball.
+Sam looked for the red ball. Sam searched for the red ball.
+Sam played with the red ball. Sam had fun with the red ball.
+Sam found a blue ball. Sam picked up the blue ball.
+Sam saw a blue ball. Sam smiled at the blue ball.
+Sam picked up the blue ball. Sam carried the blue ball.
+Sam carried the blue ball. Sam put down the blue ball.
+Sam liked the blue ball. Sam played with the blue ball.
+Sam put the blue ball on the table. Sam looked at the blue ball.
+Sam looked for the blue ball. Sam searched for the blue ball.
+Sam played with the blue ball. Sam had fun with the blue ball.
+Sam found a green ball. Sam picked up the green ball.
+Sam saw a green ball. Sam smiled at the green ball.
+Sam picked up the green ball. Sam carried the green ball.
+Sam carried the green ball. Sam put down the green ball.
+Sam liked the green ball. Sam played with the green ball.
+Sam put the green ball on the table. Sam looked at the green ball.
+Sam looked for the green ball. Sam searched for the green ball.
+Sam played with the green ball. Sam had fun with the green ball.
+Sam found a red book. Sam picked up the red book.
+Sam saw a red book. Sam smiled at the red book.
+Sam picked up the red book. Sam carried the red book.
+Sam carried the red book. Sam put down the red book.
+Sam liked the red book. Sam played with the red book.
+Sam put the red book on the table. Sam looked at the red book.
+Sam looked for the red book. Sam searched for the red book.
+Sam played with the red book. Sam had fun with the red book.
+Sam found a blue book. Sam picked up the blue book.
+Sam saw a blue book. Sam smiled at the blue book.
+Sam picked up the blue book. Sam carried the blue book.
+Sam carried the blue book. Sam put down the blue book.
+Sam liked the blue book. Sam played with the blue book.
+Sam put the blue book on the table. Sam looked at the blue book.
+Sam looked for the blue book. Sam searched for the blue book.
+Sam played with the blue book. Sam had fun with the blue book.
+Sam found a yellow book. Sam picked up the yellow book.
+Sam saw a yellow book. Sam smiled at the yellow book.
+Sam picked up the yellow book. Sam carried the yellow book.
+Sam carried the yellow book. Sam put down the yellow book.
+Sam liked the yellow book. Sam played with the yellow book.
+Sam put the yellow book on the table. Sam looked at the yellow book.
+Sam looked for the yellow book. Sam searched for the yellow book.
+Sam played with the yellow book. Sam had fun with the yellow book.
+Sam found a red toy. Sam picked up the red toy.
+Sam saw a red toy. Sam smiled at the red toy.
+Sam picked up the red toy. Sam carried the red toy.
+Sam carried the red toy. Sam put down the red toy.
+Sam liked the red toy. Sam played with the red toy.
+Sam put the red toy on the table. Sam looked at the red toy.
+Sam looked for the red toy. Sam searched for the red toy.
+Sam played with the red toy. Sam had fun with the red toy.
+Sam found a green toy. Sam picked up the green toy.
+Sam saw a green toy. Sam smiled at the green toy.
+Sam picked up the green toy. Sam carried the green toy.
+Sam carried the green toy. Sam put down the green toy.
+Sam liked the green toy. Sam played with the green toy.
+Sam put the green toy on the table. Sam looked at the green toy.
+Sam looked for the green toy. Sam searched for the green toy.
+Sam played with the green toy. Sam had fun with the green toy.
+Sam found a yellow toy. Sam picked up the yellow toy.
+Sam saw a yellow toy. Sam smiled at the yellow toy.
+Sam picked up the yellow toy. Sam carried the yellow toy.
+Sam carried the yellow toy. Sam put down the yellow toy.
+Sam liked the yellow toy. Sam played with the yellow toy.
+Sam put the yellow toy on the table. Sam looked at the yellow toy.
+Sam looked for the yellow toy. Sam searched for the yellow toy.
+Sam played with the yellow toy. Sam had fun with the yellow toy.
+Sam found a blue hat. Sam picked up the blue hat.
+Sam saw a blue hat. Sam smiled at the blue hat.
+Sam picked up the blue hat. Sam carried the blue hat.
+Sam carried the blue hat. Sam put down the blue hat.
+Sam liked the blue hat. Sam played with the blue hat.
+Sam put the blue hat on the table. Sam looked at the blue hat.
+Sam looked for the blue hat. Sam searched for the blue hat.
+Sam played with the blue hat. Sam had fun with the blue hat.
+Sam found a green hat. Sam picked up the green hat.
+Sam saw a green hat. Sam smiled at the green hat.
+Sam picked up the green hat. Sam carried the green hat.
+Sam carried the green hat. Sam put down the green hat.
+Sam liked the green hat. Sam played with the green hat.
+Sam put the green hat on the table. Sam looked at the green hat.
+Sam looked for the green hat. Sam searched for the green hat.
+Sam played with the green hat. Sam had fun with the green hat.
+Sam found a yellow hat. Sam picked up the yellow hat.
+Sam saw a yellow hat. Sam smiled at the yellow hat.
+Sam picked up the yellow hat. Sam carried the yellow hat.
+Sam carried the yellow hat. Sam put down the yellow hat.
+Sam liked the yellow hat. Sam played with the yellow hat.
+Sam put the yellow hat on the table. Sam looked at the yellow hat.
+Sam looked for the yellow hat. Sam searched for the yellow hat.
+Sam played with the yellow hat. Sam had fun with the yellow hat.
+Sam found a red kite. Sam picked up the red kite.
+Sam saw a red kite. Sam smiled at the red kite.
+Sam picked up the red kite. Sam carried the red kite.
+Sam carried the red kite. Sam put down the red kite.
+Sam liked the red kite. Sam played with the red kite.
+Sam put the red kite on the table. Sam looked at the red kite.
+Sam looked for the red kite. Sam searched for the red kite.
+Sam played with the red kite. Sam had fun with the red kite.
+Sam found a blue kite. Sam picked up the blue kite.
+Sam saw a blue kite. Sam smiled at the blue kite.
+Sam picked up the blue kite. Sam carried the blue kite.
+Sam carried the blue kite. Sam put down the blue kite.
+Sam liked the blue kite. Sam played with the blue kite.
+Sam put the blue kite on the table. Sam looked at the blue kite.
+Sam looked for the blue kite. Sam searched for the blue kite.
+Sam played with the blue kite. Sam had fun with the blue kite.
+Sam found a green kite. Sam picked up the green kite.
+Sam saw a green kite. Sam smiled at the green kite.
+Sam picked up the green kite. Sam carried the green kite.
+Sam carried the green kite. Sam put down the green kite.
+Sam liked the green kite. Sam played with the green kite.
+Sam put the green kite on the table. Sam looked at the green kite.
+Sam looked for the green kite. Sam searched for the green kite.
+Sam played with the green kite. Sam had fun with the green kite.
+Sam found a yellow kite. Sam picked up the yellow kite.
+Sam saw a yellow kite. Sam smiled at the yellow kite.
+Sam picked up the yellow kite. Sam carried the yellow kite.
+Sam carried the yellow kite. Sam put down the yellow kite.
+Sam liked the yellow kite. Sam played with the yellow kite.
+Sam put the yellow kite on the table. Sam looked at the yellow kite.
+Sam looked for the yellow kite. Sam searched for the yellow kite.
+Sam played with the yellow kite. Sam had fun with the yellow kite.
+Sam found a red car. Sam picked up the red car.
+Sam saw a red car. Sam smiled at the red car.
+Sam picked up the red car. Sam carried the red car.
+Sam carried the red car. Sam put down the red car.
+Sam liked the red car. Sam played with the red car.
+Sam put the red car on the table. Sam looked at the red car.
+Sam looked for the red car. Sam searched for the red car.
+Sam played with the red car. Sam had fun with the red car.
+Sam found a blue car. Sam picked up the blue car.
+Sam saw a blue car. Sam smiled at the blue car.
+Sam picked up the blue car. Sam carried the blue car.
+Sam carried the blue car. Sam put down the blue car.
+Sam liked the blue car. Sam played with the blue car.
+Sam put the blue car on the table. Sam looked at the blue car.
+Sam looked for the blue car. Sam searched for the blue car.
+Sam played with the blue car. Sam had fun with the blue car.
+Sam found a green car. Sam picked up the green car.
+Sam saw a green car. Sam smiled at the green car.
+Sam picked up the green car. Sam carried the green car.
+Sam carried the green car. Sam put down the green car.
+Sam liked the green car. Sam played with the green car.
+Sam put the green car on the table. Sam looked at the green car.
+Sam looked for the green car. Sam searched for the green car.
+Sam played with the green car. Sam had fun with the green car.
+Sam found a red box. Sam picked up the red box.
+Sam saw a red box. Sam smiled at the red box.
+Sam picked up the red box. Sam carried the red box.
+Sam carried the red box. Sam put down the red box.
+Sam liked the red box. Sam played with the red box.
+Sam put the red box on the table. Sam looked at the red box.
+Sam looked for the red box. Sam searched for the red box.
+Sam played with the red box. Sam had fun with the red box.
+Sam found a blue box. Sam picked up the blue box.
+Sam saw a blue box. Sam smiled at the blue box.
+Sam picked up the blue box. Sam carried the blue box.
+Sam carried the blue box. Sam put down the blue box.
+Sam liked the blue box. Sam played with the blue box.
+Sam put the blue box on the table. Sam looked at the blue box.
+Sam looked for the blue box. Sam searched for the blue box.
+Sam played with the blue box. Sam had fun with the blue box.
+Sam found a yellow box. Sam picked up the yellow box.
+Sam saw a yellow box. Sam smiled at the yellow box.
+Sam picked up the yellow box. Sam carried the yellow box.
+Sam carried the yellow box. Sam put down the yellow box.
+Sam liked the yellow box. Sam played with the yellow box.
+Sam put the yellow box on the table. Sam looked at the yellow box.
+Sam looked for the yellow box. Sam searched for the yellow box.
+Sam played with the yellow box. Sam had fun with the yellow box.
+Sam found a red fish. Sam picked up the red fish.
+Sam saw a red fish. Sam smiled at the red fish.
+Sam picked up the red fish. Sam carried the red fish.
+Sam carried the red fish. Sam put down the red fish.
+Sam liked the red fish. Sam played with the red fish.
+Sam put the red fish on the table. Sam looked at the red fish.
+Sam looked for the red fish. Sam searched for the red fish.
+Sam played with the red fish. Sam had fun with the red fish.
+Sam found a green fish. Sam picked up the green fish.
+Sam saw a green fish. Sam smiled at the green fish.
+Sam picked up the green fish. Sam carried the green fish.
+Sam carried the green fish. Sam put down the green fish.
+Sam liked the green fish. Sam played with the green fish.
+Sam put the green fish on the table. Sam looked at the green fish.
+Sam looked for the green fish. Sam searched for the green fish.
+Sam played with the green fish. Sam had fun with the green fish.
+Sam found a yellow fish. Sam picked up the yellow fish.
+Sam saw a yellow fish. Sam smiled at the yellow fish.
+Sam picked up the yellow fish. Sam carried the yellow fish.
+Sam carried the yellow fish. Sam put down the yellow fish.
+Sam liked the yellow fish. Sam played with the yellow fish.
+Sam put the yellow fish on the table. Sam looked at the yellow fish.
+Sam looked for the yellow fish. Sam searched for the yellow fish.
+Sam played with the yellow fish. Sam had fun with the yellow fish.
+Tom found a red ball. Tom picked up the red ball.
+Tom saw a red ball. Tom smiled at the red ball.
+Tom picked up the red ball. Tom carried the red ball.
+Tom carried the red ball. Tom put down the red ball.
+Tom liked the red ball. Tom played with the red ball.
+Tom put the red ball on the table. Tom looked at the red ball.
+Tom looked for the red ball. Tom searched for the red ball.
+Tom played with the red ball. Tom had fun with the red ball.
+Tom found a blue ball. Tom picked up the blue ball.
+Tom saw a blue ball. Tom smiled at the blue ball.
+Tom picked up the blue ball. Tom carried the blue ball.
+Tom carried the blue ball. Tom put down the blue ball.
+Tom liked the blue ball. Tom played with the blue ball.
+Tom put the blue ball on the table. Tom looked at the blue ball.
+Tom looked for the blue ball. Tom searched for the blue ball.
+Tom played with the blue ball. Tom had fun with the blue ball.
+Tom found a yellow ball. Tom picked up the yellow ball.
+Tom saw a yellow ball. Tom smiled at the yellow ball.
+Tom picked up the yellow ball. Tom carried the yellow ball.
+Tom carried the yellow ball. Tom put down the yellow ball.
+Tom liked the yellow ball. Tom played with the yellow ball.
+Tom put the yellow ball on the table. Tom looked at the yellow ball.
+Tom looked for the yellow ball. Tom searched for the yellow ball.
+Tom played with the yellow ball. Tom had fun with the yellow ball.
+Tom found a red book. Tom picked up the red book.
+Tom saw a red book. Tom smiled at the red book.
+Tom picked up the red book. Tom carried the red book.
+Tom carried the red book. Tom put down the red book.
+Tom liked the red book. Tom played with the red book.
+Tom put the red book on the table. Tom looked at the red book.
+Tom looked for the red book. Tom searched for the red book.
+Tom played with the red book. Tom had fun with the red book.
+Tom found a green book. Tom picked up the green book.
+Tom saw a green book. Tom smiled at the green book.
+Tom picked up the green book. Tom carried the green book.
+Tom carried the green book. Tom put down the green book.
+Tom liked the green book. Tom played with the green book.
+Tom put the green book on the table. Tom looked at the green book.
+Tom looked for the green book. Tom searched for the green book.
+Tom played with the green book. Tom had fun with the green book.
+Tom found a yellow book. Tom picked up the yellow book.
+Tom saw a yellow book. Tom smiled at the yellow book.
+Tom picked up the yellow book. Tom carried the yellow book.
+Tom carried the yellow book. Tom put down the yellow book.
+Tom liked the yellow book. Tom played with the yellow book.
+Tom put the yellow book on the table. Tom looked at the yellow book.
+Tom looked for the yellow book. Tom searched for the yellow book.
+Tom played with the yellow book. Tom had fun with the yellow book.
+Tom found a blue toy. Tom picked up the blue toy.
+Tom saw a blue toy. Tom smiled at the blue toy.
+Tom picked up the blue toy. Tom carried the blue toy.
+Tom carried the blue toy. Tom put down the blue toy.
+Tom liked the blue toy. Tom played with the blue toy.
+Tom put the blue toy on the table. Tom looked at the blue toy.
+Tom looked for the blue toy. Tom searched for the blue toy.
+Tom played with the blue toy. Tom had fun with the blue toy.
+Tom found a green toy. Tom picked up the green toy.
+Tom saw a green toy. Tom smiled at the green toy.
+Tom picked up the green toy. Tom carried the green toy.
+Tom carried the green toy. Tom put down the green toy.
+Tom liked the green toy. Tom played with the green toy.
+Tom put the green toy on the table. Tom looked at the green toy.
+Tom looked for the green toy. Tom searched for the green toy.
+Tom played with the green toy. Tom had fun with the green toy.
+Tom found a yellow toy. Tom picked up the yellow toy.
+Tom saw a yellow toy. Tom smiled at the yellow toy.
+Tom picked up the yellow toy. Tom carried the yellow toy.
+Tom carried the yellow toy. Tom put down the yellow toy.
+Tom liked the yellow toy. Tom played with the yellow toy.
+Tom put the yellow toy on the table. Tom looked at the yellow toy.
+Tom looked for the yellow toy. Tom searched for the yellow toy.
+Tom played with the yellow toy. Tom had fun with the yellow toy.
+Tom found a red hat. Tom picked up the red hat.
+Tom saw a red hat. Tom smiled at the red hat.
+Tom picked up the red hat. Tom carried the red hat.
+Tom carried the red hat. Tom put down the red hat.
+Tom liked the red hat. Tom played with the red hat.
+Tom put the red hat on the table. Tom looked at the red hat.
+Tom looked for the red hat. Tom searched for the red hat.
+Tom played with the red hat. Tom had fun with the red hat.
+Tom found a blue hat. Tom picked up the blue hat.
+Tom saw a blue hat. Tom smiled at the blue hat.
+Tom picked up the blue hat. Tom carried the blue hat.
+Tom carried the blue hat. Tom put down the blue hat.
+Tom liked the blue hat. Tom played with the blue hat.
+Tom put the blue hat on the table. Tom looked at the blue hat.
+Tom looked for the blue hat. Tom searched for the blue hat.
+Tom played with the blue hat. Tom had fun with the blue hat.
+Tom found a green hat. Tom picked up the green hat.
+Tom saw a green hat. Tom smiled at the green hat.
+Tom picked up the green hat. Tom carried the green hat.
+Tom carried the green hat. Tom put down the green hat.
+Tom liked the green hat. Tom played with the green hat.
+Tom put the green hat on the table. Tom looked at the green hat.
+Tom looked for the green hat. Tom searched for the green hat.
+Tom played with the green hat. Tom had fun with the green hat.
+Tom found a yellow hat. Tom picked up the yellow hat.
+Tom saw a yellow hat. Tom smiled at the yellow hat.
+Tom picked up the yellow hat. Tom carried the yellow hat.
+Tom carried the yellow hat. Tom put down the yellow hat.
+Tom liked the yellow hat. Tom played with the yellow hat.
+Tom put the yellow hat on the table. Tom looked at the yellow hat.
+Tom looked for the yellow hat. Tom searched for the yellow hat.
+Tom played with the yellow hat. Tom had fun with the yellow hat.
+Tom found a red kite. Tom picked up the red kite.
+Tom saw a red kite. Tom smiled at the red kite.
+Tom picked up the red kite. Tom carried the red kite.
+Tom carried the red kite. Tom put down the red kite.
+Tom liked the red kite. Tom played with the red kite.
+Tom put the red kite on the table. Tom looked at the red kite.
+Tom looked for the red kite. Tom searched for the red kite.
+Tom played with the red kite. Tom had fun with the red kite.
+Tom found a blue kite. Tom picked up the blue kite.
+Tom saw a blue kite. Tom smiled at the blue kite.
+Tom picked up the blue kite. Tom carried the blue kite.
+Tom carried the blue kite. Tom put down the blue kite.
+Tom liked the blue kite. Tom played with the blue kite.
+Tom put the blue kite on the table. Tom looked at the blue kite.
+Tom looked for the blue kite. Tom searched for the blue kite.
+Tom played with the blue kite. Tom had fun with the blue kite.
+Tom found a green kite. Tom picked up the green kite.
+Tom saw a green kite. Tom smiled at the green kite.
+Tom picked up the green kite. Tom carried the green kite.
+Tom carried the green kite. Tom put down the green kite.
+Tom liked the green kite. Tom played with the green kite.
+Tom put the green kite on the table. Tom looked at the green kite.
+Tom looked for the green kite. Tom searched for the green kite.
+Tom played with the green kite. Tom had fun with the green kite.
+Tom found a red car. Tom picked up the red car.
+Tom saw a red car. Tom smiled at the red car.
+Tom picked up the red car. Tom carried the red car.
+Tom carried the red car. Tom put down the red car.
+Tom liked the red car. Tom played with the red car.
+Tom put the red car on the table. Tom looked at the red car.
+Tom looked for the red car. Tom searched for the red car.
+Tom played with the red car. Tom had fun with the red car.
+Tom found a blue car. Tom picked up the blue car.
+Tom saw a blue car. Tom smiled at the blue car.
+Tom picked up the blue car. Tom carried the blue car.
+Tom carried the blue car. Tom put down the blue car.
+Tom liked the blue car. Tom played with the blue car.
+Tom put the blue car on the table. Tom looked at the blue car.
+Tom looked for the blue car. Tom searched for the blue car.
+Tom played with the blue car. Tom had fun with the blue car.
+Tom found a yellow car. Tom picked up the yellow car.
+Tom saw a yellow car. Tom smiled at the yellow car.
+Tom picked up the yellow car. Tom carried the yellow car.
+Tom carried the yellow car. Tom put down the yellow car.
+Tom liked the yellow car. Tom played with the yellow car.
+Tom put the yellow car on the table. Tom looked at the yellow car.
+Tom looked for the yellow car. Tom searched for the yellow car.
+Tom played with the yellow car. Tom had fun with the yellow car.
+Tom found a red box. Tom picked up the red box.
+Tom saw a red box. Tom smiled at the red box.
+Tom picked up the red box. Tom carried the red box.
+Tom carried the red box. Tom put down the red box.
+Tom liked the red box. Tom played with the red box.
+Tom put the red box on the table. Tom looked at the red box.
+Tom looked for the red box. Tom searched for the red box.
+Tom played with the red box. Tom had fun with the red box.
+Tom found a green box. Tom picked up the green box.
+Tom saw a green box. Tom smiled at the green box.
+Tom picked up the green box. Tom carried the green box.
+Tom carried the green box. Tom put down the green box.
+Tom liked the green box. Tom played with the green box.
+Tom put the green box on the table. Tom looked at the green box.
+Tom looked for the green box. Tom searched for the green box.
+Tom played with the green box. Tom had fun with the green box.
+Tom found a yellow box. Tom picked up the yellow box.
+Tom saw a yellow box. Tom smiled at the yellow box.
+Tom picked up the yellow box. Tom carried the yellow box.
+Tom carried the yellow box. Tom put down the yellow box.
+Tom liked the yellow box. Tom played with the yellow box.
+Tom put the yellow box on the table. Tom looked at the yellow box.
+Tom looked for the yellow box. Tom searched for the yellow box.
+Tom played with the yellow box. Tom had fun with the yellow box.
+Tom found a blue fish. Tom picked up the blue fish.
+Tom saw a blue fish. Tom smiled at the blue fish.
+Tom picked up the blue fish. Tom carried the blue fish.
+Tom carried the blue fish. Tom put down the blue fish.
+Tom liked the blue fish. Tom played with the blue fish.
+Tom put the blue fish on the table. Tom looked at the blue fish.
+Tom looked for the blue fish. Tom searched for the blue fish.
+Tom played with the blue fish. Tom had fun with the blue fish.
+Tom found a green fish. Tom picked up the green fish.
+Tom saw a green fish. Tom smiled at the green fish.
+Tom picked up the green fish. Tom carried the green fish.
+Tom carried the green fish. Tom put down the green fish.
+Tom liked the green fish. Tom played with the green fish.
+Tom put the green fish on the table. Tom looked at the green fish.
+Tom looked for the green fish. Tom searched for the green fish.
+Tom played with the green fish. Tom had fun with the green fish.
+Tom found a yellow fish. Tom picked up the yellow fish.
+Tom saw a yellow fish. Tom smiled at the yellow fish.
+Tom picked up the yellow fish. Tom carried the yellow fish.
+Tom carried the yellow fish. Tom put down the yellow fish.
+Tom liked the yellow fish. Tom played with the yellow fish.
+Tom put the yellow fish on the table. Tom looked at the yellow fish.
+Tom looked for the yellow fish. Tom searched for the yellow fish.
+Tom played with the yellow fish. Tom had fun with the yellow fish.
+Nora found a red ball. Nora picked up the red ball.
+Nora saw a red ball. Nora smiled at the red ball.
+Nora picked up the red ball. Nora carried the red ball.
+Nora carried the red ball. Nora put down the red ball.
+Nora liked the red ball. Nora played with the red ball.
+Nora put the red ball on the table. Nora looked at the red ball.
+Nora looked for the red ball. Nora searched for the red ball.
+Nora played with the red ball. Nora had fun with the red ball.
+Nora found a green ball. Nora picked up the green ball.
+Nora saw a green ball. Nora smiled at the green ball.
+Nora picked up the green ball. Nora carried the green ball.
+Nora carried the green ball. Nora put down the green ball.
+Nora liked the green ball. Nora played with the green ball.
+Nora put the green ball on the table. Nora looked at the green ball.
+Nora looked for the green ball. Nora searched for the green ball.
+Nora played with the green ball. Nora had fun with the green ball.
+Nora found a yellow ball. Nora picked up the yellow ball.
+Nora saw a yellow ball. Nora smiled at the yellow ball.
+Nora picked up the yellow ball. Nora carried the yellow ball.
+Nora carried the yellow ball. Nora put down the yellow ball.
+Nora liked the yellow ball. Nora played with the yellow ball.
+Nora put the yellow ball on the table. Nora looked at the yellow ball.
+Nora looked for the yellow ball. Nora searched for the yellow ball.
+Nora played with the yellow ball. Nora had fun with the yellow ball.
+Nora found a blue book. Nora picked up the blue book.
+Nora saw a blue book. Nora smiled at the blue book.
+Nora picked up the blue book. Nora carried the blue book.
+Nora carried the blue book. Nora put down the blue book.
+Nora liked the blue book. Nora played with the blue book.
+Nora put the blue book on the table. Nora looked at the blue book.
+Nora looked for the blue book. Nora searched for the blue book.
+Nora played with the blue book. Nora had fun with the blue book.
+Nora found a green book. Nora picked up the green book.
+Nora saw a green book. Nora smiled at the green book.
+Nora picked up the green book. Nora carried the green book.
+Nora carried the green book. Nora put down the green book.
+Nora liked the green book. Nora played with the green book.
+Nora put the green book on the table. Nora looked at the green book.
+Nora looked for the green book. Nora searched for the green book.
+Nora played with the green book. Nora had fun with the green book.
+Nora found a yellow book. Nora picked up the yellow book.
+Nora saw a yellow book. Nora smiled at the yellow book.
+Nora picked up the yellow book. Nora carried the yellow book.
+Nora carried the yellow book. Nora put down the yellow book.
+Nora liked the yellow book. Nora played with the yellow book.
+Nora put the yellow book on the table. Nora looked at the yellow book.
+Nora looked for the yellow book. Nora searched for the yellow book.
+Nora played with the yellow book. Nora had fun with the yellow book.
+Nora found a red toy. Nora picked up the red toy.
+Nora saw a red toy. Nora smiled at the red toy.
+Nora picked up the red toy. Nora carried the red toy.
+Nora carried the red toy. Nora put down the red toy.
+Nora liked the red toy. Nora played with the red toy.
+Nora put the red toy on the table. Nora looked at the red toy.
+Nora looked for the red toy. Nora searched for the red toy.
+Nora played with the red toy. Nora had fun with the red toy.
+Nora found a blue toy. Nora picked up the blue toy.
+Nora saw a blue toy. Nora smiled at the blue toy.
+Nora picked up the blue toy. Nora carried the blue toy.
+Nora carried the blue toy. Nora put down the blue toy.
+Nora liked the blue toy. Nora played with the blue toy.
+Nora put the blue toy on the table. Nora looked at the blue toy.
+Nora looked for the blue toy. Nora searched for the blue toy.
+Nora played with the blue toy. Nora had fun with the blue toy.
+Nora found a green toy. Nora picked up the green toy.
+Nora saw a green toy. Nora smiled at the green toy.
+Nora picked up the green toy. Nora carried the green toy.
+Nora carried the green toy. Nora put down the green toy.
+Nora liked the green toy. Nora played with the green toy.
+Nora put the green toy on the table. Nora looked at the green toy.
+Nora looked for the green toy. Nora searched for the green toy.
+Nora played with the green toy. Nora had fun with the green toy.
+Nora found a yellow toy. Nora picked up the yellow toy.
+Nora saw a yellow toy. Nora smiled at the yellow toy.
+Nora picked up the yellow toy. Nora carried the yellow toy.
+Nora carried the yellow toy. Nora put down the yellow toy.
+Nora liked the yellow toy. Nora played with the yellow toy.
+Nora put the yellow toy on the table. Nora looked at the yellow toy.
+Nora looked for the yellow toy. Nora searched for the yellow toy.
+Nora played with the yellow toy. Nora had fun with the yellow toy.
+Nora found a red hat. Nora picked up the red hat.
+Nora saw a red hat. Nora smiled at the red hat.
+Nora picked up the red hat. Nora carried the red hat.
+Nora carried the red hat. Nora put down the red hat.
+Nora liked the red hat. Nora played with the red hat.
+Nora put the red hat on the table. Nora looked at the red hat.
+Nora looked for the red hat. Nora searched for the red hat.
+Nora played with the red hat. Nora had fun with the red hat.
+Nora found a blue hat. Nora picked up the blue hat.
+Nora saw a blue hat. Nora smiled at the blue hat.
+Nora picked up the blue hat. Nora carried the blue hat.
+Nora carried the blue hat. Nora put down the blue hat.
+Nora liked the blue hat. Nora played with the blue hat.
+Nora put the blue hat on the table. Nora looked at the blue hat.
+Nora looked for the blue hat. Nora searched for the blue hat.
+Nora played with the blue hat. Nora had fun with the blue hat.
+Nora found a green hat. Nora picked up the green hat.
+Nora saw a green hat. Nora smiled at the green hat.
+Nora picked up the green hat. Nora carried the green hat.
+Nora carried the green hat. Nora put down the green hat.
+Nora liked the green hat. Nora played with the green hat.
+Nora put the green hat on the table. Nora looked at the green hat.
+Nora looked for the green hat. Nora searched for the green hat.
+Nora played with the green hat. Nora had fun with the green hat.
+Nora found a red kite. Nora picked up the red kite.
+Nora saw a red kite. Nora smiled at the red kite.
+Nora picked up the red kite. Nora carried the red kite.
+Nora carried the red kite. Nora put down the red kite.
+Nora liked the red kite. Nora played with the red kite.
+Nora put the red kite on the table. Nora looked at the red kite.
+Nora looked for the red kite. Nora searched for the red kite.
+Nora played with the red kite. Nora had fun with the red kite.
+Nora found a blue kite. Nora picked up the blue kite.
+Nora saw a blue kite. Nora smiled at the blue kite.
+Nora picked up the blue kite. Nora carried the blue kite.
+Nora carried the blue kite. Nora put down the blue kite.
+Nora liked the blue kite. Nora played with the blue kite.
+Nora put the blue kite on the table. Nora looked at the blue kite.
+Nora looked for the blue kite. Nora searched for the blue kite.
+Nora played with the blue kite. Nora had fun with the blue kite.
+Nora found a yellow kite. Nora picked up the yellow kite.
+Nora saw a yellow kite. Nora smiled at the yellow kite.
+Nora picked up the yellow kite. Nora carried the yellow kite.
+Nora carried the yellow kite. Nora put down the yellow kite.
+Nora liked the yellow kite. Nora played with the yellow kite.
+Nora put the yellow kite on the table. Nora looked at the yellow kite.
+Nora looked for the yellow kite. Nora searched for the yellow kite.
+Nora played with the yellow kite. Nora had fun with the yellow kite.
+Nora found a red car. Nora picked up the red car.
+Nora saw a red car. Nora smiled at the red car.
+Nora picked up the red car. Nora carried the red car.
+Nora carried the red car. Nora put down the red car.
+Nora liked the red car. Nora played with the red car.
+Nora put the red car on the table. Nora looked at the red car.
+Nora looked for the red car. Nora searched for the red car.
+Nora played with the red car. Nora had fun with the red car.
+Nora found a green car. Nora picked up the green car.
+Nora saw a green car. Nora smiled at the green car.
+Nora picked up the green car. Nora carried the green car.
+Nora carried the green car. Nora put down the green car.
+Nora liked the green car. Nora played with the green car.
+Nora put the green car on the table. Nora looked at the green car.
+Nora looked for the green car. Nora searched for the green car.
+Nora played with the green car. Nora had fun with the green car.
+Nora found a yellow car. Nora picked up the yellow car.
+Nora saw a yellow car. Nora smiled at the yellow car.
+Nora picked up the yellow car. Nora carried the yellow car.
+Nora carried the yellow car. Nora put down the yellow car.
+Nora liked the yellow car. Nora played with the yellow car.
+Nora put the yellow car on the table. Nora looked at the yellow car.
+Nora looked for the yellow car. Nora searched for the yellow car.
+Nora played with the yellow car. Nora had fun with the yellow car.
+Nora found a blue box. Nora picked up the blue box.
+Nora saw a blue box. Nora smiled at the blue box.
+Nora picked up the blue box. Nora carried the blue box.
+Nora carried the blue box. Nora put down the blue box.
+Nora liked the blue box. Nora played with the blue box.
+Nora put the blue box on the table. Nora looked at the blue box.
+Nora looked for the blue box. Nora searched for the blue box.
+Nora played with the blue box. Nora had fun with the blue box.
+Nora found a green box. Nora picked up the green box.
+Nora saw a green box. Nora smiled at the green box.
+Nora picked up the green box. Nora carried the green box.
+Nora carried the green box. Nora put down the green box.
+Nora liked the green box. Nora played with the green box.
+Nora put the green box on the table. Nora looked at the green box.
+Nora looked for the green box. Nora searched for the green box.
+Nora played with the green box. Nora had fun with the green box.
+Nora found a yellow box. Nora picked up the yellow box.
+Nora saw a yellow box. Nora smiled at the yellow box.
+Nora picked up the yellow box. Nora carried the yellow box.
+Nora carried the yellow box. Nora put down the yellow box.
+Nora liked the yellow box. Nora played with the yellow box.
+Nora put the yellow box on the table. Nora looked at the yellow box.
+Nora looked for the yellow box. Nora searched for the yellow box.
+Nora played with the yellow box. Nora had fun with the yellow box.
+Nora found a red fish. Nora picked up the red fish.
+Nora saw a red fish. Nora smiled at the red fish.
+Nora picked up the red fish. Nora carried the red fish.
+Nora carried the red fish. Nora put down the red fish.
+Nora liked the red fish. Nora played with the red fish.
+Nora put the red fish on the table. Nora looked at the red fish.
+Nora looked for the red fish. Nora searched for the red fish.
+Nora played with the red fish. Nora had fun with the red fish.
+Nora found a blue fish. Nora picked up the blue fish.
+Nora saw a blue fish. Nora smiled at the blue fish.
+Nora picked up the blue fish. Nora carried the blue fish.
+Nora carried the blue fish. Nora put down the blue fish.
+Nora liked the blue fish. Nora played with the blue fish.
+Nora put the blue fish on the table. Nora looked at the blue fish.
+Nora looked for the blue fish. Nora searched for the blue fish.
+Nora played with the blue fish. Nora had fun with the blue fish.
+Nora found a green fish. Nora picked up the green fish.
+Nora saw a green fish. Nora smiled at the green fish.
+Nora picked up the green fish. Nora carried the green fish.
+Nora carried the green fish. Nora put down the green fish.
+Nora liked the green fish. Nora played with the green fish.
+Nora put the green fish on the table. Nora looked at the green fish.
+Nora looked for the green fish. Nora searched for the green fish.
+Nora played with the green fish. Nora had fun with the green fish.
+Nora found a yellow fish. Nora picked up the yellow fish.
+Nora saw a yellow fish. Nora smiled at the yellow fish.
+Nora picked up the yellow fish. Nora carried the yellow fish.
+Nora carried the yellow fish. Nora put down the yellow fish.
+Nora liked the yellow fish. Nora played with the yellow fish.
+Nora put the yellow fish on the table. Nora looked at the yellow fish.
+Nora looked for the yellow fish. Nora searched for the yellow fish.
+Nora played with the yellow fish. Nora had fun with the yellow fish.
+Owen found a blue ball. Owen picked up the blue ball.
+Owen saw a blue ball. Owen smiled at the blue ball.
+Owen picked up the blue ball. Owen carried the blue ball.
+Owen carried the blue ball. Owen put down the blue ball.
+Owen liked the blue ball. Owen played with the blue ball.
+Owen put the blue ball on the table. Owen looked at the blue ball.
+Owen looked for the blue ball. Owen searched for the blue ball.
+Owen played with the blue ball. Owen had fun with the blue ball.
+Owen found a green ball. Owen picked up the green ball.
+Owen saw a green ball. Owen smiled at the green ball.
+Owen picked up the green ball. Owen carried the green ball.
+Owen carried the green ball. Owen put down the green ball.
+Owen liked the green ball. Owen played with the green ball.
+Owen put the green ball on the table. Owen looked at the green ball.
+Owen looked for the green ball. Owen searched for the green ball.
+Owen played with the green ball. Owen had fun with the green ball.
+Owen found a yellow ball. Owen picked up the yellow ball.
+Owen saw a yellow ball. Owen smiled at the yellow ball.
+Owen picked up the yellow ball. Owen carried the yellow ball.
+Owen carried the yellow ball. Owen put down the yellow ball.
+Owen liked the yellow ball. Owen played with the yellow ball.
+Owen put the yellow ball on the table. Owen looked at the yellow ball.
+Owen looked for the yellow ball. Owen searched for the yellow ball.
+Owen played with the yellow ball. Owen had fun with the yellow ball.
+Owen found a red book. Owen picked up the red book.
+Owen saw a red book. Owen smiled at the red book.
+Owen picked up the red book. Owen carried the red book.
+Owen carried the red book. Owen put down the red book.
+Owen liked the red book. Owen played with the red book.
+Owen put the red book on the table. Owen looked at the red book.
+Owen looked for the red book. Owen searched for the red book.
+Owen played with the red book. Owen had fun with the red book.
+Owen found a blue book. Owen picked up the blue book.
+Owen saw a blue book. Owen smiled at the blue book.
+Owen picked up the blue book. Owen carried the blue book.
+Owen carried the blue book. Owen put down the blue book.
+Owen liked the blue book. Owen played with the blue book.
+Owen put the blue book on the table. Owen looked at the blue book.
+Owen looked for the blue book. Owen searched for the blue book.
+Owen played with the blue book. Owen had fun with the blue book.
+Owen found a green book. Owen picked up the green book.
+Owen saw a green book. Owen smiled at the green book.
+Owen picked up the green book. Owen carried the green book.
+Owen carried the green book. Owen put down the green book.
+Owen liked the green book. Owen played with the green book.
+Owen put the green book on the table. Owen looked at the green book.
+Owen looked for the green book. Owen searched for the green book.
+Owen played with the green book. Owen had fun with the green book.
+Owen found a yellow book. Owen picked up the yellow book.
+Owen saw a yellow book. Owen smiled at the yellow book.
+Owen picked up the yellow book. Owen carried the yellow book.
+Owen carried the yellow book. Owen put down the yellow book.
+Owen liked the yellow book. Owen played with the yellow book.
+Owen put the yellow book on the table. Owen looked at the yellow book.
+Owen looked for the yellow book. Owen searched for the yellow book.
+Owen played with the yellow book. Owen had fun with the yellow book.
+Owen found a red toy. Owen picked up the red toy.
+Owen saw a red toy. Owen smiled at the red toy.
+Owen picked up the red toy. Owen carried the red toy.
+Owen carried the red toy. Owen put down the red toy.
+Owen liked the red toy. Owen played with the red toy.
+Owen put the red toy on the table. Owen looked at the red toy.
+Owen looked for the red toy. Owen searched for the red toy.
+Owen played with the red toy. Owen had fun with the red toy.
+Owen found a blue toy. Owen picked up the blue toy.
+Owen saw a blue toy. Owen smiled at the blue toy.
+Owen picked up the blue toy. Owen carried the blue toy.
+Owen carried the blue toy. Owen put down the blue toy.
+Owen liked the blue toy. Owen played with the blue toy.
+Owen put the blue toy on the table. Owen looked at the blue toy.
+Owen looked for the blue toy. Owen searched for the blue toy.
+Owen played with the blue toy. Owen had fun with the blue toy.
+Owen found a green toy. Owen picked up the green toy.
+Owen saw a green toy. Owen smiled at the green toy.
+Owen picked up the green toy. Owen carried the green toy.
+Owen carried the green toy. Owen put down the green toy.
+Owen liked the green toy. Owen played with the green toy.
+Owen put the green toy on the table. Owen looked at the green toy.
+Owen looked for the green toy. Owen searched for the green toy.
+Owen played with the green toy. Owen had fun with the green toy.
+Owen found a red hat. Owen picked up the red hat.
+Owen saw a red hat. Owen smiled at the red hat.
+Owen picked up the red hat. Owen carried the red hat.
+Owen carried the red hat. Owen put down the red hat.
+Owen liked the red hat. Owen played with the red hat.
+Owen put the red hat on the table. Owen looked at the red hat.
+Owen looked for the red hat. Owen searched for the red hat.
+Owen played with the red hat. Owen had fun with the red hat.
+Owen found a blue hat. Owen picked up the blue hat.
+Owen saw a blue hat. Owen smiled at the blue hat.
+Owen picked up the blue hat. Owen carried the blue hat.
+Owen carried the blue hat. Owen put down the blue hat.
+Owen liked the blue hat. Owen played with the blue hat.
+Owen put the blue hat on the table. Owen looked at the blue hat.
+Owen looked for the blue hat. Owen searched for the blue hat.
+Owen played with the blue hat. Owen had fun with the blue hat.
+Owen found a yellow hat. Owen picked up the yellow hat.
+Owen saw a yellow hat. Owen smiled at the yellow hat.
+Owen picked up the yellow hat. Owen carried the yellow hat.
+Owen carried the yellow hat. Owen put down the yellow hat.
+Owen liked the yellow hat. Owen played with the yellow hat.
+Owen put the yellow hat on the table. Owen looked at the yellow hat.
+Owen looked for the yellow hat. Owen searched for the yellow hat.
+Owen played with the yellow hat. Owen had fun with the yellow hat.
+Owen found a red kite. Owen picked up the red kite.
+Owen saw a red kite. Owen smiled at the red kite.
+Owen picked up the red kite. Owen carried the red kite.
+Owen carried the red kite. Owen put down the red kite.
+Owen liked the red kite. Owen played with the red kite.
+Owen put the red kite on the table. Owen looked at the red kite.
+Owen looked for the red kite. Owen searched for the red kite.
+Owen played with the red kite. Owen had fun with the red kite.
+Owen found a green kite. Owen picked up the green kite.
+Owen saw a green kite. Owen smiled at the green kite.
+Owen picked up the green kite. Owen carried the green kite.
+Owen carried the green kite. Owen put down the green kite.
+Owen liked the green kite. Owen played with the green kite.
+Owen put the green kite on the table. Owen looked at the green kite.
+Owen looked for the green kite. Owen searched for the green kite.
+Owen played with the green kite. Owen had fun with the green kite.
+Owen found a yellow kite. Owen picked up the yellow kite.
+Owen saw a yellow kite. Owen smiled at the yellow kite.
+Owen picked up the yellow kite. Owen carried the yellow kite.
+Owen carried the yellow kite. Owen put down the yellow kite.
+Owen liked the yellow kite. Owen played with the yellow kite.
+Owen put the yellow kite on the table. Owen looked at the yellow kite.
+Owen looked for the yellow kite. Owen searched for the yellow kite.
+Owen played with the yellow kite. Owen had fun with the yellow kite.
+Owen found a blue car. Owen picked up the blue car.
+Owen saw a blue car. Owen smiled at the blue car.
+Owen picked up the blue car. Owen carried the blue car.
+Owen carried the blue car. Owen put down the blue car.
+Owen liked the blue car. Owen played with the blue car.
+Owen put the blue car on the table. Owen looked at the blue car.
+Owen looked for the blue car. Owen searched for the blue car.
+Owen played with the blue car. Owen had fun with the blue car.
+Owen found a green car. Owen picked up the green car.
+Owen saw a green car. Owen smiled at the green car.
+Owen picked up the green car. Owen carried the green car.
+Owen carried the green car. Owen put down the green car.
+Owen liked the green car. Owen played with the green car.
+Owen put the green car on the table. Owen looked at the green car.
+Owen looked for the green car. Owen searched for the green car.
+Owen played with the green car. Owen had fun with the green car.
+Owen found a yellow car. Owen picked up the yellow car.
+Owen saw a yellow car. Owen smiled at the yellow car.
+Owen picked up the yellow car. Owen carried the yellow car.
+Owen carried the yellow car. Owen put down the yellow car.
+Owen liked the yellow car. Owen played with the yellow car.
+Owen put the yellow car on the table. Owen looked at the yellow car.
+Owen looked for the yellow car. Owen searched for the yellow car.
+Owen played with the yellow car. Owen had fun with the yellow car.
+Owen found a red box. Owen picked up the red box.
+Owen saw a red box. Owen smiled at the red box.
+Owen picked up the red box. Owen carried the red box.
+Owen carried the red box. Owen put down the red box.
+Owen liked the red box. Owen played with the red box.
+Owen put the red box on the table. Owen looked at the red box.
+Owen looked for the red box. Owen searched for the red box.
+Owen played with the red box. Owen had fun with the red box.
+Owen found a blue box. Owen picked up the blue box.
+Owen saw a blue box. Owen smiled at the blue box.
+Owen picked up the blue box. Owen carried the blue box.
+Owen carried the blue box. Owen put down the blue box.
+Owen liked the blue box. Owen played with the blue box.
+Owen put the blue box on the table. Owen looked at the blue box.
+Owen looked for the blue box. Owen searched for the blue box.
+Owen played with the blue box. Owen had fun with the blue box.
+Owen found a green box. Owen picked up the green box.
+Owen saw a green box. Owen smiled at the green box.
+Owen picked up the green box. Owen carried the green box.
+Owen carried the green box. Owen put down the green box.
+Owen liked the green box. Owen played with the green box.
+Owen put the green box on the table. Owen looked at the green box.
+Owen looked for the green box. Owen searched for the green box.
+Owen played with the green box. Owen had fun with the green box.
+Owen found a yellow box. Owen picked up the yellow box.
+Owen saw a yellow box. Owen smiled at the yellow box.
+Owen picked up the yellow box. Owen carried the yellow box.
+Owen carried the yellow box. Owen put down the yellow box.
+Owen liked the yellow box. Owen played with the yellow box.
+Owen put the yellow box on the table. Owen looked at the yellow box.
+Owen looked for the yellow box. Owen searched for the yellow box.
+Owen played with the yellow box. Owen had fun with the yellow box.
+Owen found a red fish. Owen picked up the red fish.
+Owen saw a red fish. Owen smiled at the red fish.
+Owen picked up the red fish. Owen carried the red fish.
+Owen carried the red fish. Owen put down the red fish.
+Owen liked the red fish. Owen played with the red fish.
+Owen put the red fish on the table. Owen looked at the red fish.
+Owen looked for the red fish. Owen searched for the red fish.
+Owen played with the red fish. Owen had fun with the red fish.
+Owen found a blue fish. Owen picked up the blue fish.
+Owen saw a blue fish. Owen smiled at the blue fish.
+Owen picked up the blue fish. Owen carried the blue fish.
+Owen carried the blue fish. Owen put down the blue fish.
+Owen liked the blue fish. Owen played with the blue fish.
+Owen put the blue fish on the table. Owen looked at the blue fish.
+Owen looked for the blue fish. Owen searched for the blue fish.
+Owen played with the blue fish. Owen had fun with the blue fish.
+Owen found a green fish. Owen picked up the green fish.
+Owen saw a green fish. Owen smiled at the green fish.
+Owen picked up the green fish. Owen carried the green fish.
+Owen carried the green fish. Owen put down the green fish.
+Owen liked the green fish. Owen played with the green fish.
+Owen put the green fish on the table. Owen looked at the green fish.
+Owen looked for the green fish. Owen searched for the green fish.
+Owen played with the green fish. Owen had fun with the green fish.
+Zoe found a red ball. Zoe picked up the red ball.
+Zoe saw a red ball. Zoe smiled at the red ball.
+Zoe picked up the red ball. Zoe carried the red ball.
+Zoe carried the red ball. Zoe put down the red ball.
+Zoe liked the red ball. Zoe played with the red ball.
+Zoe put the red ball on the table. Zoe looked at the red ball.
+Zoe looked for the red ball. Zoe searched for the red ball.
+Zoe played with the red ball. Zoe had fun with the red ball.
+Zoe found a blue ball. Zoe picked up the blue ball.
+Zoe saw a blue ball. Zoe smiled at the blue ball.
+Zoe picked up the blue ball. Zoe carried the blue ball.
+Zoe carried the blue ball. Zoe put down the blue ball.
+Zoe liked the blue ball. Zoe played with the blue ball.
+Zoe put the blue ball on the table. Zoe looked at the blue ball.
+Zoe looked for the blue ball. Zoe searched for the blue ball.
+Zoe played with the blue ball. Zoe had fun with the blue ball.
+Zoe found a green ball. Zoe picked up the green ball.
+Zoe saw a green ball. Zoe smiled at the green ball.
+Zoe picked up the green ball. Zoe carried the green ball.
+Zoe carried the green ball. Zoe put down the green ball.
+Zoe liked the green ball. Zoe played with the green ball.
+Zoe put the green ball on the table. Zoe looked at the green ball.
+Zoe looked for the green ball. Zoe searched for the green ball.
+Zoe played with the green ball. Zoe had fun with the green ball.
+Zoe found a yellow ball. Zoe picked up the yellow ball.
+Zoe saw a yellow ball. Zoe smiled at the yellow ball.
+Zoe picked up the yellow ball. Zoe carried the yellow ball.
+Zoe carried the yellow ball. Zoe put down the yellow ball.
+Zoe liked the yellow ball. Zoe played with the yellow ball.
+Zoe put the yellow ball on the table. Zoe looked at the yellow ball.
+Zoe looked for the yellow ball. Zoe searched for the yellow ball.
+Zoe played with the yellow ball. Zoe had fun with the yellow ball.
+Zoe found a red book. Zoe picked up the red book.
+Zoe saw a red book. Zoe smiled at the red book.
+Zoe picked up the red book. Zoe carried the red book.
+Zoe carried the red book. Zoe put down the red book.
+Zoe liked the red book. Zoe played with the red book.
+Zoe put the red book on the table. Zoe looked at the red book.
+Zoe looked for the red book. Zoe searched for the red book.
+Zoe played with the red book. Zoe had fun with the red book.
+Zoe found a blue book. Zoe picked up the blue book.
+Zoe saw a blue book. Zoe smiled at the blue book.
+Zoe picked up the blue book. Zoe carried the blue book.
+Zoe carried the blue book. Zoe put down the blue book.
+Zoe liked the blue book. Zoe played with the blue book.
+Zoe put the blue book on the table. Zoe looked at the blue book.
+Zoe looked for the blue book. Zoe searched for the blue book.
+Zoe played with the blue book. Zoe had fun with the blue book.
+Zoe found a green book. Zoe picked up the green book.
+Zoe saw a green book. Zoe smiled at the green book.
+Zoe picked up the green book. Zoe carried the green book.
+Zoe carried the green book. Zoe put down the green book.
+Zoe liked the green book. Zoe played with the green book.
+Zoe put the green book on the table. Zoe looked at the green book.
+Zoe looked for the green book. Zoe searched for the green book.
+Zoe played with the green book. Zoe had fun with the green book.
+Zoe found a red toy. Zoe picked up the red toy.
+Zoe saw a red toy. Zoe smiled at the red toy.
+Zoe picked up the red toy. Zoe carried the red toy.
+Zoe carried the red toy. Zoe put down the red toy.
+Zoe liked the red toy. Zoe played with the red toy.
+Zoe put the red toy on the table. Zoe looked at the red toy.
+Zoe looked for the red toy. Zoe searched for the red toy.
+Zoe played with the red toy. Zoe had fun with the red toy.
+Zoe found a blue toy. Zoe picked up the blue toy.
+Zoe saw a blue toy. Zoe smiled at the blue toy.
+Zoe picked up the blue toy. Zoe carried the blue toy.
+Zoe carried the blue toy. Zoe put down the blue toy.
+Zoe liked the blue toy. Zoe played with the blue toy.
+Zoe put the blue toy on the table. Zoe looked at the blue toy.
+Zoe looked for the blue toy. Zoe searched for the blue toy.
+Zoe played with the blue toy. Zoe had fun with the blue toy.
+Zoe found a yellow toy. Zoe picked up the yellow toy.
+Zoe saw a yellow toy. Zoe smiled at the yellow toy.
+Zoe picked up the yellow toy. Zoe carried the yellow toy.
+Zoe carried the yellow toy. Zoe put down the yellow toy.
+Zoe liked the yellow toy. Zoe played with the yellow toy.
+Zoe put the yellow toy on the table. Zoe looked at the yellow toy.
+Zoe looked for the yellow toy. Zoe searched for the yellow toy.
+Zoe played with the yellow toy. Zoe had fun with the yellow toy.
+Zoe found a red hat. Zoe picked up the red hat.
+Zoe saw a red hat. Zoe smiled at the red hat.
+Zoe picked up the red hat. Zoe carried the red hat.
+Zoe carried the red hat. Zoe put down the red hat.
+Zoe liked the red hat. Zoe played with the red hat.
+Zoe put the red hat on the table. Zoe looked at the red hat.
+Zoe looked for the red hat. Zoe searched for the red hat.
+Zoe played with the red hat. Zoe had fun with the red hat.
+Zoe found a green hat. Zoe picked up the green hat.
+Zoe saw a green hat. Zoe smiled at the green hat.
+Zoe picked up the green hat. Zoe carried the green hat.
+Zoe carried the green hat. Zoe put down the green hat.
+Zoe liked the green hat. Zoe played with the green hat.
+Zoe put the green hat on the table. Zoe looked at the green hat.
+Zoe looked for the green hat. Zoe searched for the green hat.
+Zoe played with the green hat. Zoe had fun with the green hat.
+Zoe found a yellow hat. Zoe picked up the yellow hat.
+Zoe saw a yellow hat. Zoe smiled at the yellow hat.
+Zoe picked up the yellow hat. Zoe carried the yellow hat.
+Zoe carried the yellow hat. Zoe put down the yellow hat.
+Zoe liked the yellow hat. Zoe played with the yellow hat.
+Zoe put the yellow hat on the table. Zoe looked at the yellow hat.
+Zoe looked for the yellow hat. Zoe searched for the yellow hat.
+Zoe played with the yellow hat. Zoe had fun with the yellow hat.
+Zoe found a blue kite. Zoe picked up the blue kite.
+Zoe saw a blue kite. Zoe smiled at the blue kite.
+Zoe picked up the blue kite. Zoe carried the blue kite.
+Zoe carried the blue kite. Zoe put down the blue kite.
+Zoe liked the blue kite. Zoe played with the blue kite.
+Zoe put the blue kite on the table. Zoe looked at the blue kite.
+Zoe looked for the blue kite. Zoe searched for the blue kite.
+Zoe played with the blue kite. Zoe had fun with the blue kite.
+Zoe found a green kite. Zoe picked up the green kite.
+Zoe saw a green kite. Zoe smiled at the green kite.
+Zoe picked up the green kite. Zoe carried the green kite.
+Zoe carried the green kite. Zoe put down the green kite.
+Zoe liked the green kite. Zoe played with the green kite.
+Zoe put the green kite on the table. Zoe looked at the green kite.
+Zoe looked for the green kite. Zoe searched for the green kite.
+Zoe played with the green kite. Zoe had fun with the green kite.
+Zoe found a yellow kite. Zoe picked up the yellow kite.
+Zoe saw a yellow kite. Zoe smiled at the yellow kite.
+Zoe picked up the yellow kite. Zoe carried the yellow kite.
+Zoe carried the yellow kite. Zoe put down the yellow kite.
+Zoe liked the yellow kite. Zoe played with the yellow kite.
+Zoe put the yellow kite on the table. Zoe looked at the yellow kite.
+Zoe looked for the yellow kite. Zoe searched for the yellow kite.
+Zoe played with the yellow kite. Zoe had fun with the yellow kite.
+Zoe found a red car. Zoe picked up the red car.
+Zoe saw a red car. Zoe smiled at the red car.
+Zoe picked up the red car. Zoe carried the red car.
+Zoe carried the red car. Zoe put down the red car.
+Zoe liked the red car. Zoe played with the red car.
+Zoe put the red car on the table. Zoe looked at the red car.
+Zoe looked for the red car. Zoe searched for the red car.
+Zoe played with the red car. Zoe had fun with the red car.
+Zoe found a blue car. Zoe picked up the blue car.
+Zoe saw a blue car. Zoe smiled at the blue car.
+Zoe picked up the blue car. Zoe carried the blue car.
+Zoe carried the blue car. Zoe put down the blue car.
+Zoe liked the blue car. Zoe played with the blue car.
+Zoe put the blue car on the table. Zoe looked at the blue car.
+Zoe looked for the blue car. Zoe searched for the blue car.
+Zoe played with the blue car. Zoe had fun with the blue car.
+Zoe found a green car. Zoe picked up the green car.
+Zoe saw a green car. Zoe smiled at the green car.
+Zoe picked up the green car. Zoe carried the green car.
+Zoe carried the green car. Zoe put down the green car.
+Zoe liked the green car. Zoe played with the green car.
+Zoe put the green car on the table. Zoe looked at the green car.
+Zoe looked for the green car. Zoe searched for the green car.
+Zoe played with the green car. Zoe had fun with the green car.
+Zoe found a yellow car. Zoe picked up the yellow car.
+Zoe saw a yellow car. Zoe smiled at the yellow car.
+Zoe picked up the yellow car. Zoe carried the yellow car.
+Zoe carried the yellow car. Zoe put down the yellow car.
+Zoe liked the yellow car. Zoe played with the yellow car.
+Zoe put the yellow car on the table. Zoe looked at the yellow car.
+Zoe looked for the yellow car. Zoe searched for the yellow car.
+Zoe played with the yellow car. Zoe had fun with the yellow car.
+Zoe found a red box. Zoe picked up the red box.
+Zoe saw a red box. Zoe smiled at the red box.
+Zoe picked up the red box. Zoe carried the red box.
+Zoe carried the red box. Zoe put down the red box.
+Zoe liked the red box. Zoe played with the red box.
+Zoe put the red box on the table. Zoe looked at the red box.
+Zoe looked for the red box. Zoe searched for the red box.
+Zoe played with the red box. Zoe had fun with the red box.
+Zoe found a blue box. Zoe picked up the blue box.
+Zoe saw a blue box. Zoe smiled at the blue box.
+Zoe picked up the blue box. Zoe carried the blue box.
+Zoe carried the blue box. Zoe put down the blue box.
+Zoe liked the blue box. Zoe played with the blue box.
+Zoe put the blue box on the table. Zoe looked at the blue box.
+Zoe looked for the blue box. Zoe searched for the blue box.
+Zoe played with the blue box. Zoe had fun with the blue box.
+Zoe found a green box. Zoe picked up the green box.
+Zoe saw a green box. Zoe smiled at the green box.
+Zoe picked up the green box. Zoe carried the green box.
+Zoe carried the green box. Zoe put down the green box.
+Zoe liked the green box. Zoe played with the green box.
+Zoe put the green box on the table. Zoe looked at the green box.
+Zoe looked for the green box. Zoe searched for the green box.
+Zoe played with the green box. Zoe had fun with the green box.
+Zoe found a red fish. Zoe picked up the red fish.
+Zoe saw a red fish. Zoe smiled at the red fish.
+Zoe picked up the red fish. Zoe carried the red fish.
+Zoe carried the red fish. Zoe put down the red fish.
+Zoe liked the red fish. Zoe played with the red fish.
+Zoe put the red fish on the table. Zoe looked at the red fish.
+Zoe looked for the red fish. Zoe searched for the red fish.
+Zoe played with the red fish. Zoe had fun with the red fish.
+Zoe found a blue fish. Zoe picked up the blue fish.
+Zoe saw a blue fish. Zoe smiled at the blue fish.
+Zoe picked up the blue fish. Zoe carried the blue fish.
+Zoe carried the blue fish. Zoe put down the blue fish.
+Zoe liked the blue fish. Zoe played with the blue fish.
+Zoe put the blue fish on the table. Zoe looked at the blue fish.
+Zoe looked for the blue fish. Zoe searched for the blue fish.
+Zoe played with the blue fish. Zoe had fun with the blue fish.
+Zoe found a yellow fish. Zoe picked up the yellow fish.
+Zoe saw a yellow fish. Zoe smiled at the yellow fish.
+Zoe picked up the yellow fish. Zoe carried the yellow fish.
+Zoe carried the yellow fish. Zoe put down the yellow fish.
+Zoe liked the yellow fish. Zoe played with the yellow fish.
+Zoe put the yellow fish on the table. Zoe looked at the yellow fish.
+Zoe looked for the yellow fish. Zoe searched for the yellow fish.
+Zoe played with the yellow fish. Zoe had fun with the yellow fish.
+Alex found a red ball. Alex picked up the red ball.
+Alex saw a red ball. Alex smiled at the red ball.
+Alex picked up the red ball. Alex carried the red ball.
+Alex carried the red ball. Alex put down the red ball.
+Alex liked the red ball. Alex played with the red ball.
+Alex put the red ball on the table. Alex looked at the red ball.
+Alex looked for the red ball. Alex searched for the red ball.
+Alex played with the red ball. Alex had fun with the red ball.
+Alex found a blue ball. Alex picked up the blue ball.
+Alex saw a blue ball. Alex smiled at the blue ball.
+Alex picked up the blue ball. Alex carried the blue ball.
+Alex carried the blue ball. Alex put down the blue ball.
+Alex liked the blue ball. Alex played with the blue ball.
+Alex put the blue ball on the table. Alex looked at the blue ball.
+Alex looked for the blue ball. Alex searched for the blue ball.
+Alex played with the blue ball. Alex had fun with the blue ball.
+Alex found a green ball. Alex picked up the green ball.
+Alex saw a green ball. Alex smiled at the green ball.
+Alex picked up the green ball. Alex carried the green ball.
+Alex carried the green ball. Alex put down the green ball.
+Alex liked the green ball. Alex played with the green ball.
+Alex put the green ball on the table. Alex looked at the green ball.
+Alex looked for the green ball. Alex searched for the green ball.
+Alex played with the green ball. Alex had fun with the green ball.
+Alex found a red book. Alex picked up the red book.
+Alex saw a red book. Alex smiled at the red book.
+Alex picked up the red book. Alex carried the red book.
+Alex carried the red book. Alex put down the red book.
+Alex liked the red book. Alex played with the red book.
+Alex put the red book on the table. Alex looked at the red book.
+Alex looked for the red book. Alex searched for the red book.
+Alex played with the red book. Alex had fun with the red book.
+Alex found a blue book. Alex picked up the blue book.
+Alex saw a blue book. Alex smiled at the blue book.
+Alex picked up the blue book. Alex carried the blue book.
+Alex carried the blue book. Alex put down the blue book.
+Alex liked the blue book. Alex played with the blue book.
+Alex put the blue book on the table. Alex looked at the blue book.
+Alex looked for the blue book. Alex searched for the blue book.
+Alex played with the blue book. Alex had fun with the blue book.
+Alex found a yellow book. Alex picked up the yellow book.
+Alex saw a yellow book. Alex smiled at the yellow book.
+Alex picked up the yellow book. Alex carried the yellow book.
+Alex carried the yellow book. Alex put down the yellow book.
+Alex liked the yellow book. Alex played with the yellow book.
+Alex put the yellow book on the table. Alex looked at the yellow book.
+Alex looked for the yellow book. Alex searched for the yellow book.
+Alex played with the yellow book. Alex had fun with the yellow book.
+Alex found a red toy. Alex picked up the red toy.
+Alex saw a red toy. Alex smiled at the red toy.
+Alex picked up the red toy. Alex carried the red toy.
+Alex carried the red toy. Alex put down the red toy.
+Alex liked the red toy. Alex played with the red toy.
+Alex put the red toy on the table. Alex looked at the red toy.
+Alex looked for the red toy. Alex searched for the red toy.
+Alex played with the red toy. Alex had fun with the red toy.
+Alex found a green toy. Alex picked up the green toy.
+Alex saw a green toy. Alex smiled at the green toy.
+Alex picked up the green toy. Alex carried the green toy.
+Alex carried the green toy. Alex put down the green toy.
+Alex liked the green toy. Alex played with the green toy.
+Alex put the green toy on the table. Alex looked at the green toy.
+Alex looked for the green toy. Alex searched for the green toy.
+Alex played with the green toy. Alex had fun with the green toy.
+Alex found a yellow toy. Alex picked up the yellow toy.
+Alex saw a yellow toy. Alex smiled at the yellow toy.
+Alex picked up the yellow toy. Alex carried the yellow toy.
+Alex carried the yellow toy. Alex put down the yellow toy.
+Alex liked the yellow toy. Alex played with the yellow toy.
+Alex put the yellow toy on the table. Alex looked at the yellow toy.
+Alex looked for the yellow toy. Alex searched for the yellow toy.
+Alex played with the yellow toy. Alex had fun with the yellow toy.
+Alex found a blue hat. Alex picked up the blue hat.
+Alex saw a blue hat. Alex smiled at the blue hat.
+Alex picked up the blue hat. Alex carried the blue hat.
+Alex carried the blue hat. Alex put down the blue hat.
+Alex liked the blue hat. Alex played with the blue hat.
+Alex put the blue hat on the table. Alex looked at the blue hat.
+Alex looked for the blue hat. Alex searched for the blue hat.
+Alex played with the blue hat. Alex had fun with the blue hat.
+Alex found a green hat. Alex picked up the green hat.
+Alex saw a green hat. Alex smiled at the green hat.
+Alex picked up the green hat. Alex carried the green hat.
+Alex carried the green hat. Alex put down the green hat.
+Alex liked the green hat. Alex played with the green hat.
+Alex put the green hat on the table. Alex looked at the green hat.
+Alex looked for the green hat. Alex searched for the green hat.
+Alex played with the green hat. Alex had fun with the green hat.
+Alex found a yellow hat. Alex picked up the yellow hat.
+Alex saw a yellow hat. Alex smiled at the yellow hat.
+Alex picked up the yellow hat. Alex carried the yellow hat.
+Alex carried the yellow hat. Alex put down the yellow hat.
+Alex liked the yellow hat. Alex played with the yellow hat.
+Alex put the yellow hat on the table. Alex looked at the yellow hat.
+Alex looked for the yellow hat. Alex searched for the yellow hat.
+Alex played with the yellow hat. Alex had fun with the yellow hat.
+Alex found a red kite. Alex picked up the red kite.
+Alex saw a red kite. Alex smiled at the red kite.
+Alex picked up the red kite. Alex carried the red kite.
+Alex carried the red kite. Alex put down the red kite.
+Alex liked the red kite. Alex played with the red kite.
+Alex put the red kite on the table. Alex looked at the red kite.
+Alex looked for the red kite. Alex searched for the red kite.
+Alex played with the red kite. Alex had fun with the red kite.
+Alex found a blue kite. Alex picked up the blue kite.
+Alex saw a blue kite. Alex smiled at the blue kite.
+Alex picked up the blue kite. Alex carried the blue kite.
+Alex carried the blue kite. Alex put down the blue kite.
+Alex liked the blue kite. Alex played with the blue kite.
+Alex put the blue kite on the table. Alex looked at the blue kite.
+Alex looked for the blue kite. Alex searched for the blue kite.
+Alex played with the blue kite. Alex had fun with the blue kite.
+Alex found a green kite. Alex picked up the green kite.
+Alex saw a green kite. Alex smiled at the green kite.
+Alex picked up the green kite. Alex carried the green kite.
+Alex carried the green kite. Alex put down the green kite.
+Alex liked the green kite. Alex played with the green kite.
+Alex put the green kite on the table. Alex looked at the green kite.
+Alex looked for the green kite. Alex searched for the green kite.
+Alex played with the green kite. Alex had fun with the green kite.
+Alex found a yellow kite. Alex picked up the yellow kite.
+Alex saw a yellow kite. Alex smiled at the yellow kite.
+Alex picked up the yellow kite. Alex carried the yellow kite.
+Alex carried the yellow kite. Alex put down the yellow kite.
+Alex liked the yellow kite. Alex played with the yellow kite.
+Alex put the yellow kite on the table. Alex looked at the yellow kite.
+Alex looked for the yellow kite. Alex searched for the yellow kite.
+Alex played with the yellow kite. Alex had fun with the yellow kite.
+Alex found a red car. Alex picked up the red car.
+Alex saw a red car. Alex smiled at the red car.
+Alex picked up the red car. Alex carried the red car.
+Alex carried the red car. Alex put down the red car.
+Alex liked the red car. Alex played with the red car.
+Alex put the red car on the table. Alex looked at the red car.
+Alex looked for the red car. Alex searched for the red car.
+Alex played with the red car. Alex had fun with the red car.
+Alex found a blue car. Alex picked up the blue car.
+Alex saw a blue car. Alex smiled at the blue car.
+Alex picked up the blue car. Alex carried the blue car.
+Alex carried the blue car. Alex put down the blue car.
+Alex liked the blue car. Alex played with the blue car.
+Alex put the blue car on the table. Alex looked at the blue car.
+Alex looked for the blue car. Alex searched for the blue car.
+Alex played with the blue car. Alex had fun with the blue car.
+Alex found a green car. Alex picked up the green car.
+Alex saw a green car. Alex smiled at the green car.
+Alex picked up the green car. Alex carried the green car.
+Alex carried the green car. Alex put down the green car.
+Alex liked the green car. Alex played with the green car.
+Alex put the green car on the table. Alex looked at the green car.
+Alex looked for the green car. Alex searched for the green car.
+Alex played with the green car. Alex had fun with the green car.
+Alex found a red box. Alex picked up the red box.
+Alex saw a red box. Alex smiled at the red box.
+Alex picked up the red box. Alex carried the red box.
+Alex carried the red box. Alex put down the red box.
+Alex liked the red box. Alex played with the red box.
+Alex put the red box on the table. Alex looked at the red box.
+Alex looked for the red box. Alex searched for the red box.
+Alex played with the red box. Alex had fun with the red box.
+Alex found a blue box. Alex picked up the blue box.
+Alex saw a blue box. Alex smiled at the blue box.
+Alex picked up the blue box. Alex carried the blue box.
+Alex carried the blue box. Alex put down the blue box.
+Alex liked the blue box. Alex played with the blue box.
+Alex put the blue box on the table. Alex looked at the blue box.
+Alex looked for the blue box. Alex searched for the blue box.
+Alex played with the blue box. Alex had fun with the blue box.
+Alex found a yellow box. Alex picked up the yellow box.
+Alex saw a yellow box. Alex smiled at the yellow box.
+Alex picked up the yellow box. Alex carried the yellow box.
+Alex carried the yellow box. Alex put down the yellow box.
+Alex liked the yellow box. Alex played with the yellow box.
+Alex put the yellow box on the table. Alex looked at the yellow box.
+Alex looked for the yellow box. Alex searched for the yellow box.
+Alex played with the yellow box. Alex had fun with the yellow box.
+Alex found a red fish. Alex picked up the red fish.
+Alex saw a red fish. Alex smiled at the red fish.
+Alex picked up the red fish. Alex carried the red fish.
+Alex carried the red fish. Alex put down the red fish.
+Alex liked the red fish. Alex played with the red fish.
+Alex put the red fish on the table. Alex looked at the red fish.
+Alex looked for the red fish. Alex searched for the red fish.
+Alex played with the red fish. Alex had fun with the red fish.
+Alex found a green fish. Alex picked up the green fish.
+Alex saw a green fish. Alex smiled at the green fish.
+Alex picked up the green fish. Alex carried the green fish.
+Alex carried the green fish. Alex put down the green fish.
+Alex liked the green fish. Alex played with the green fish.
+Alex put the green fish on the table. Alex looked at the green fish.
+Alex looked for the green fish. Alex searched for the green fish.
+Alex played with the green fish. Alex had fun with the green fish.
+Alex found a yellow fish. Alex picked up the yellow fish.
+Alex saw a yellow fish. Alex smiled at the yellow fish.
+Alex picked up the yellow fish. Alex carried the yellow fish.
+Alex carried the yellow fish. Alex put down the yellow fish.
+Alex liked the yellow fish. Alex played with the yellow fish.
+Alex put the yellow fish on the table. Alex looked at the yellow fish.
+Alex looked for the yellow fish. Alex searched for the yellow fish.
+Alex played with the yellow fish. Alex had fun with the yellow fish.

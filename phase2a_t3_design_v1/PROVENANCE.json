@@ -1,0 +1,24 @@
+{
+  "authoritative_inputs": {
+    "T2_config": "9a9bbda29bcde50601e99fc7def98216779083b5932d828724fc0b746df320f0",
+    "T2_qa_lib": "7b41a4b119b57565714d642ccea3c0db14ee4058c383864a79b3f29892430ab4",
+    "T2_runner": "31709769c14bd2d040465e9d60d981976611252d6d04b71e0aff66047e63fc54",
+    "architecture_config": "3078bbc7cca4d0d74b2c2befdeb1bdcd068f948c134497c603a09e03b7415480",
+    "validated_pipeline_protocol": "6d0f2a781dc66d2a03a9569a7e64047585d7d4d8eb21f4b3ce0fbdec88adac69"
+  },
+  "checkpoint_loaded": false,
+  "checkpoint_parent": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "created_utc": "2026-09-10T06:51:23Z",
+  "locked_material_access": false,
+  "optimizer_created": false,
+  "source_hashes": {
+    "C:\\DaveLM-CADAVER\\baby_vnext_60m_design_v1\\BABY_VNEXT_CONFIG.json": "3078bbc7cca4d0d74b2c2befdeb1bdcd068f948c134497c603a09e03b7415480",
+    "C:\\DaveLM-CADAVER\\baby_vnext_phase2a_t2_ctxbind_v1\\PHASE2A_T2_CONFIG.json": "9a9bbda29bcde50601e99fc7def98216779083b5932d828724fc0b746df320f0",
+    "C:\\DaveLM-CADAVER\\baby_vnext_phase2a_t2_ctxbind_v1\\PHASE2A_T2_RUNNER.py": "31709769c14bd2d040465e9d60d981976611252d6d04b71e0aff66047e63fc54",
+    "C:\\DaveLM-CADAVER\\baby_vnext_phase2a_t2_ctxbind_v1\\qa_lib.py": "7b41a4b119b57565714d642ccea3c0db14ee4058c383864a79b3f29892430ab4",
+    "C:\\DaveLM-CADAVER\\phase2a_final_pretreatment_diagnostic_v1\\PIPELINE_VALIDATION.json": "b6e1904f4ee08e43aba8c52374a02861a87b91b9ef083b96ad0d4168f1aa0dd0",
+    "C:\\DaveLM-CADAVER\\phase2a_final_pretreatment_diagnostic_v1\\PROTOCOL.json": "6d0f2a781dc66d2a03a9569a7e64047585d7d4d8eb21f4b3ce0fbdec88adac69"
+  },
+  "tokenizer": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "training_performed": false
+}

@@ -1,0 +1,19 @@
+{
+  "trained_parameters": 61520385,
+  "weights_fp32_bytes": 246081540,
+  "gradients_fp32_bytes": 246081540,
+  "adam_moments_fp32_bytes": 492163080,
+  "persistent_training_state_bytes": 984326160,
+  "persistent_training_state_mib": 938.7265777587891,
+  "additional_no_grad_teacher_weights_mib": 234.68164443969727,
+  "persistent_with_teacher_mib": 1173.4082221984863,
+  "activation_note": "Input dependent; validate microbatch 8 first, then 16. SDPA avoids materializing the Python per-head mask path.",
+  "checkpoint_model_only_mib": 234.74090099334717,
+  "precision_policy": "float32 baseline; mixed precision deferred to a separately validated training preflight",
+  "accounting": {
+    "weights_fp32": 4,
+    "gradients_fp32": 4,
+    "adam_first_moment_fp32": 4,
+    "adam_second_moment_fp32": 4
+  }
+}

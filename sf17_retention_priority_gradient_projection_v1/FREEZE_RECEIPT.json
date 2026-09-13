@@ -1,0 +1,12 @@
+{
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "d60fb34ed3aa4e384f299ae3df2a76455699731eeaa0749fbea63784980f3617",
+  "optimizer_created": false,
+  "sacred_accessed": false,
+  "sealed_utc": "2026-09-09T02:16:04.424856+00:00",
+  "sole_scientific_change": "retention-priority global conflict projection on English gradients",
+  "status": "SF17_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF17_RETENTION_PRIORITY_GRADIENT_PROJECTION_V1",
+  "updates": 0
+}

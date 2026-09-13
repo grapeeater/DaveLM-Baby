@@ -1,0 +1,40 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T4_BINDING_SIDECAR_V1",
+  "status": "STUDY_COMPLETE_T4_FAIL_NO_ROUTING",
+  "scientific_question": "Can the dormant 984321-param OrthoLocalizer+retrieval sidecar, trained with BindingLayout on the T3 disjoint corpus while the Phase1G base is frozen, produce held-out native forced-choice and assignment reversals without language regression?",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "lineage": "Phase1G U6000; not a T3 descendant"
+  },
+  "scope": {
+    "trainable": "all 984321 binding/localizer parameters",
+    "frozen": "all 60536064 base_model parameters"
+  },
+  "objective": {
+    "native": "T2 length-normalized hardest-distractor margin M=1.0 on logits from model.forward(layout=BindingLayout)",
+    "localization": "CE on mean localizer logits over the two slots vs correct candidate index, lambda_loc=1.0",
+    "no_prompt_ce": true,
+    "no_t3_pointer_on_base": "base pointer term is not trained; base frozen"
+  },
+  "layout": {
+    "query_positions": "decision_position_bos",
+    "answer_positions": "decision_position_bos",
+    "key_positions": "first token of each candidate mention_span_bos",
+    "value_positions": "last token of each candidate mention_span_bos",
+    "valid_candidates": "both true"
+  },
+  "corpus": "T3 rebuilt train/DEV/ACQ16 only; T3 TEST never loaded",
+  "optimizer": {"type": "AdamW", "lr": 5e-05, "betas": [0.9, 0.999], "eps": 1e-08, "weight_decay": 0.05, "clip_norm": 2.0},
+  "schedule": {"total_updates": 500, "qa_updates": 500, "language_updates": 0, "qa_batch": 32, "eval_points": [0, 100, 300, 500], "language_sgd": "none; base frozen so CE is a preservation probe only"},
+  "seeds": [630001, 630002, 630003],
+  "gates": {
+    "language": "DEV CE within 1e-3 of U0 (1.204); hard stop if > 1.30",
+    "native_dev": {"forced_choice_min": "96/128", "reversal_min": "48/64"},
+    "localization_dev": {"retrieval_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16"},
+    "exact_recorded": true
+  },
+  "status_classes": ["T4_BINDING_SUCCESS", "T4_ROUTING_SUCCESS_OUTPUT_FAIL", "T4_FAIL_NO_ROUTING", "T4_LANGUAGE_REGRESSION", "T4_HARD_STOP"],
+  "test_policy": "T3 TEST remains SEALED_UNOPENED. T4 has no separate TEST panel in this freeze.",
+  "locks": {"T2_EVAL_TEST": "LOCKED_UNOPENED", "T3_TEST": "SEALED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

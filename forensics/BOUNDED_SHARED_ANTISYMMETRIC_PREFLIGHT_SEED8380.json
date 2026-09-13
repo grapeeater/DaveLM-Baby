@@ -1,0 +1,433 @@
+{
+  "status": "BOUNDED_SHARED_ANTISYMMETRIC_PREFLIGHT_PASS_AWAITING_AUTHORIZATION",
+  "provenance_hashes": {
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\checkpoints\\learned_mapping_row_localization\\seed_8380\\latest.pt": "cf53eef03adf874255cd54508fc7948dfd1e4926a57537f7e2f828f5f582adab",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_training_quartet_pool.json": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_retention_quartet_pool.json": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+    "C:\\DaveLM-CADAVER\\treatment13_learned_mapping_row_localization_seed8380\\treatment13_frozen_schedule.json": "6157dce61d990b2d96ef91470a80a973bd5e96339d406bceb9fdc75e020cea42"
+  },
+  "starting_checkpoint_step": 1000,
+  "seed": 8380,
+  "schedule_steps": 1000,
+  "batch_size": 32,
+  "old_scorer_parameters": 642,
+  "new_scorer_parameters": 642,
+  "rho_definition": "RMS of baseline linear antisymmetric score a_j=(v^T h_j+b_r) over the exact deterministic first training batch, with no retention access",
+  "rho": 1.5919504165649414,
+  "initialization_mapping": {
+    "u": "(W0+W1)/2",
+    "v": "(W0-W1)/2",
+    "b_s": "(b0+b1)/2",
+    "b_r": "(b0-b1)/2"
+  },
+  "functional_audit": {
+    "logit_rmse": 0.7750031352043152,
+    "max_abs_logit_difference": 3.5379605293273926,
+    "mean_old_to_new_position_KL": 0.005263166967779398,
+    "slot0_top1_preserved": 0.75,
+    "slot1_top1_preserved": 0.75,
+    "unordered_top1_set_preserved": 0.625,
+    "old_top1_collisions": 0,
+    "new_top1_collisions": 4,
+    "new_identical_slot_distributions": 0
+  },
+  "mathematical_properties": {
+    "shared_average_exact": true,
+    "antisymmetric_half_difference_exact": true,
+    "residual_bound_abs_le_rho": true,
+    "not_invertible_due_tanh_bound": true,
+    "slot_swap_v_to_minus_v_br_to_minus_br": true
+  },
+  "objective": "answer CE + champion permutation-invariant hard-min localization only",
+  "forward_inputs": "input_ids,qpos,anspos only",
+  "source_labels_outside_forward": true,
+  "optimizer_created": false,
+  "optimizer_steps_so_far": 0,
+  "retention_evaluated": false,
+  "per_document": [
+    {
+      "doc_id": "t13_train:qt_000114:o1_k0",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000114:o1_k1",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000114:o2_k0",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000114:o2_k1",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000033:o1_k0",
+      "old_top_positions": [
+        19,
+        48
+      ],
+      "new_top_positions": [
+        31,
+        48
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000033:o1_k1",
+      "old_top_positions": [
+        19,
+        48
+      ],
+      "new_top_positions": [
+        31,
+        48
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000033:o2_k0",
+      "old_top_positions": [
+        19,
+        48
+      ],
+      "new_top_positions": [
+        31,
+        48
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000033:o2_k1",
+      "old_top_positions": [
+        19,
+        48
+      ],
+      "new_top_positions": [
+        31,
+        48
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000111:o1_k0",
+      "old_top_positions": [
+        7,
+        33
+      ],
+      "new_top_positions": [
+        7,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000111:o1_k1",
+      "old_top_positions": [
+        7,
+        33
+      ],
+      "new_top_positions": [
+        7,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000111:o2_k0",
+      "old_top_positions": [
+        7,
+        33
+      ],
+      "new_top_positions": [
+        7,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000111:o2_k1",
+      "old_top_positions": [
+        7,
+        33
+      ],
+      "new_top_positions": [
+        7,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000097:o1_k0",
+      "old_top_positions": [
+        33,
+        48
+      ],
+      "new_top_positions": [
+        21,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000097:o1_k1",
+      "old_top_positions": [
+        33,
+        48
+      ],
+      "new_top_positions": [
+        21,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000097:o2_k0",
+      "old_top_positions": [
+        33,
+        32
+      ],
+      "new_top_positions": [
+        21,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000097:o2_k1",
+      "old_top_positions": [
+        33,
+        32
+      ],
+      "new_top_positions": [
+        21,
+        21
+      ],
+      "old_new_set_preserved": false
+    },
+    {
+      "doc_id": "t13_train:qt_000185:o1_k0",
+      "old_top_positions": [
+        23,
+        35
+      ],
+      "new_top_positions": [
+        23,
+        35
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000185:o1_k1",
+      "old_top_positions": [
+        23,
+        35
+      ],
+      "new_top_positions": [
+        23,
+        35
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000185:o2_k0",
+      "old_top_positions": [
+        23,
+        35
+      ],
+      "new_top_positions": [
+        23,
+        35
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000185:o2_k1",
+      "old_top_positions": [
+        23,
+        35
+      ],
+      "new_top_positions": [
+        23,
+        35
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000119:o1_k0",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000119:o1_k1",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000119:o2_k0",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000119:o2_k1",
+      "old_top_positions": [
+        33,
+        21
+      ],
+      "new_top_positions": [
+        33,
+        21
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000059:o1_k0",
+      "old_top_positions": [
+        20,
+        32
+      ],
+      "new_top_positions": [
+        20,
+        32
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000059:o1_k1",
+      "old_top_positions": [
+        20,
+        32
+      ],
+      "new_top_positions": [
+        20,
+        32
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000059:o2_k0",
+      "old_top_positions": [
+        20,
+        32
+      ],
+      "new_top_positions": [
+        20,
+        32
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000059:o2_k1",
+      "old_top_positions": [
+        20,
+        32
+      ],
+      "new_top_positions": [
+        20,
+        32
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000038:o1_k0",
+      "old_top_positions": [
+        6,
+        31
+      ],
+      "new_top_positions": [
+        6,
+        31
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000038:o1_k1",
+      "old_top_positions": [
+        6,
+        31
+      ],
+      "new_top_positions": [
+        6,
+        31
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000038:o2_k0",
+      "old_top_positions": [
+        6,
+        31
+      ],
+      "new_top_positions": [
+        6,
+        31
+      ],
+      "old_new_set_preserved": true
+    },
+    {
+      "doc_id": "t13_train:qt_000038:o2_k1",
+      "old_top_positions": [
+        6,
+        31
+      ],
+      "new_top_positions": [
+        6,
+        31
+      ],
+      "old_new_set_preserved": true
+    }
+  ]
+}

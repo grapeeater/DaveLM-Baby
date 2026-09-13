@@ -1,0 +1,9 @@
+{
+  "checkpoint_loaded": false,
+  "model_behavior_accessed": false,
+  "protocol_sha256": "e9bffb53616776cc2e9ad2695d893dee90152929ba55fd0ea6ff064a25805795",
+  "record_count": 16,
+  "token_index_map_sha256": "7a530e2582692f1f7a7cdfd2f3ddacbaa265215a8d31ad11cec2ce8d14400730",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "train_sha256": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd"
+}

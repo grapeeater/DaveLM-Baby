@@ -1,0 +1,30 @@
+{
+  "correct": 5,
+  "exact": 0,
+  "families": 0,
+  "family_count": 2,
+  "immediate_eos": 0,
+  "mean_margin": 0.36955015125568025,
+  "mean_mass": 0.014956728920096925,
+  "min_margin": -1.2019705967977643,
+  "n": 8,
+  "pairs": 4,
+  "reversals": 1,
+  "subgroups": {
+    "isolated_card_copy": {
+      "correct": 5,
+      "exact": 0,
+      "families": 0,
+      "family_count": 2,
+      "immediate_eos": 0,
+      "mean_margin": 0.36955015125568025,
+      "mean_mass": 0.014956728920096925,
+      "min_margin": -1.2019705967977643,
+      "n": 8,
+      "pairs": 4,
+      "reversals": 1,
+      "ties": 0
+    }
+  },
+  "ties": 0
+}

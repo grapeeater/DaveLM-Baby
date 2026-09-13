@@ -1,0 +1,23 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T6_LATEBASE_POINTER_V1",
+  "status": "STUDY_COMPLETE_T6_FAIL_NO_REPRESENTATION",
+  "scientific_question": "With blocks 0-3 frozen and binding frozen, can T3 pointer+margin still raise held-out retrieval above 96/128 without DEV CE > 1.30?",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "scope": {
+    "freeze": "base_model.blocks.0-3 and all 984321 binding params",
+    "train": "late base only (embeddings, blocks 4-11, ln, lm_head)",
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "objective": {"lambda_ptr": 1.0, "margin_M": 1.0, "layout": "none", "lambda_loc": 0.0, "language": "9 qa : 1 language CE"},
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded",
+  "seeds": [650001, 650002, 650003],
+  "schedule": {"total_updates": 500, "qa_updates": 450, "language_updates": 50, "qa_batch": 32, "language_batch": 64, "eval_points": [0, 100, 300, 500], "lr": 5e-5},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "status_classes": ["T6_FULL_SUCCESS", "T6_REPRESENTATION_SUCCESS_OUTPUT_FAIL", "T6_FAIL_NO_REPRESENTATION", "T6_LANGUAGE_REGRESSION", "T6_SHORTCUT_FAILURE", "T6_HARD_STOP"],
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

@@ -1,0 +1,37 @@
+{
+  "component_findings": {
+    "factual_training_behavior": {
+      "classification": "UPSTREAM_DOMINANT",
+      "evidence": "All four P-upstream conditions remained at 9/16 sequence correctness, 0/16 full-vocabulary top-1, and 0/16 exact answer+EOS. All four S-upstream conditions reached 12/16 on all three measures, independent of final-norm or head source. SPP recovered 97.36% of the PPP-to-SSS mean sequence-margin shift."
+    },
+    "final_normalization": {
+      "classification": "FINAL_NORM_NOT_MATERIAL_ON_TESTED_ENDPOINTS",
+      "evidence": "Norm-only substitutions changed factual mean sequence margin by about 0.00025, D3 four-name mass by about 0.000006, and aligned CE by about 0.00059 on P upstream; corresponding factorial norm effects remained very small."
+    },
+    "language_regression": {
+      "classification": "UPSTREAM_DOMINANT_WITH_MATERIAL_HEAD_INTERACTION",
+      "evidence": "SPP aligned CE was 4.2769 versus PPP 3.3907 and SSS 4.6529, recovering 70.21% of the regression. The S head alone on P upstream slightly improved CE to 3.3887, but with S upstream it increased CE from 4.2769 to 4.6416."
+    },
+    "owen_stage_b": {
+      "classification": "MIXED_OR_AMBIGUOUS",
+      "evidence": "Changing only upstream PPP-to-SPP improved the mean Owen-correct sequence margin from -1.0477 to -0.3448. Adding the S head with S upstream improved it further to -0.2768, but all S-upstream hybrids remained 0/4 Owen-correct. The S output path is therefore not required for the increased Owen signal and is not established as its suppressor; the residual Alex preference was not localized by this intervention."
+    },
+    "unrelated_context_name_prior": {
+      "classification": "DISTRIBUTED_INTERACTION",
+      "evidence": "S upstream with the P norm/head raised four-name mass from 0.000907 to 0.036394 (53.02% of the PPP-to-SSS shift). The S head alone on P upstream raised it only to 0.001786 (1.31%), while the S head paired with S upstream raised it further to 0.067286/0.067833. The factorial upstream main effect was 0.050702, head main effect 0.015947, and upstream-by-head interaction 0.015062."
+    }
+  },
+  "limitations": "The overall label remains MIXED_OR_AMBIGUOUS because component attribution differs by endpoint. These functional endpoint interventions do not establish a unique training-time mechanism or held-out relational generalization.",
+  "overall_classification": "MIXED_OR_AMBIGUOUS",
+  "recovery_diagnostics": {
+    "d3_head_only_recovery_PPS": 0.013129795717612469,
+    "d3_norm_only_recovery_PSP": 9.637565708534447e-05,
+    "d3_upstream_only_recovery_SPP": 0.5302444278670144,
+    "factual_head_only_recovery_PPS": 0.1059009341847836,
+    "factual_norm_only_recovery_PSP": 0.0007625030057559842,
+    "factual_upstream_only_recovery_SPP": 0.9736145251920953,
+    "language_head_only_recovery_PPS": -0.0015869935284020748,
+    "language_norm_only_recovery_PSP": 0.00047121543739360585,
+    "language_upstream_only_recovery_SPP": 0.7020765306001988
+  }
+}

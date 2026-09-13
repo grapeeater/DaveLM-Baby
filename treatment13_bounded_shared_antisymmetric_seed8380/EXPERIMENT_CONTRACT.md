@@ -1,0 +1,3 @@
+# Bounded shared-plus-antisymmetric scorer — seed 8380
+
+This isolated treatment changes only the T13 localizer scorer parameterization. The baseline checkpoint, train/retention pools, schedule, optimizer, seed, and champion answer CE plus permutation-invariant hard-min localization objective remain fixed. For hidden state h, S=u·h+b_s and R=rho*tanh(v·h+b_r), with slot logits S+R and S-R. rho=1.5919504165649414 is the RMS baseline antisymmetric score on the deterministic first training batch. Parameters are initialized from the baseline linear scorer by u=(W0+W1)/2, v=(W0-W1)/2, bs=(b0+b1)/2, br=(b0-b1)/2. Exactly 1000 updates are authorized; retention is evaluated once after step 1000 under eval/no_grad.

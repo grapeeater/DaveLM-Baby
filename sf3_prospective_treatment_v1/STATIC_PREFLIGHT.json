@@ -1,0 +1,73 @@
+{
+  "status": "STATIC_PREFLIGHT_PASS",
+  "checks": {
+    "copied_sf1_manifest_files": 20,
+    "external_identities": "PASS",
+    "runtime": {
+      "python": "3.12.14",
+      "torch": "2.12.0+rocm7.14.0",
+      "tokenizers": "0.23.1",
+      "device": "AMD Radeon RX 9060 XT"
+    },
+    "schedule": {
+      "updates": 200,
+      "english": 180,
+      "binding": 20,
+      "english_rows_per_update": 32,
+      "binding_docs_per_update": 32
+    },
+    "masking": {
+      "supervised_tokens_per_row": 5,
+      "max_model_input_length": 39,
+      "padding_ignored": true,
+      "next_token_aligned": true
+    },
+    "lr": {
+      "post100_english_count": 90,
+      "first": 5e-05,
+      "last": 0.0,
+      "sum": 0.0022500000000000003,
+      "binding": 5e-05
+    },
+    "pinned_sources": [
+      {
+        "name": "hr3_block3_runtime.py",
+        "sha256": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3",
+        "matches_sf2": true
+      },
+      {
+        "name": "PINNED_MASKING.py",
+        "sha256": "89a951d7c2058c2e67ce0f02bfc8039920c7a96bcd4053135b636304aefe6c10",
+        "matches_sf2": true
+      },
+      {
+        "name": "PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+        "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+        "matches_sf2": true
+      },
+      {
+        "name": "treatment13_config.py",
+        "sha256": "eb3a87f99ff23011a381dcffc52a530a7a654e7d130fe6d4a6e3c76067949e2e",
+        "matches_sf2": true
+      },
+      {
+        "name": "treatment13_model.py",
+        "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+        "matches_sf2": true
+      }
+    ],
+    "controller_static": {
+      "syntax": "PASS",
+      "placeholders": 0,
+      "update100_replay_gate": "PRESENT",
+      "transfer_gate_order": "PASS",
+      "final_or_sacred_path_refs": 0
+    },
+    "scope": "PASS on uninitialized architecture; no checkpoint loaded"
+  },
+  "checkpoint_loaded": false,
+  "optimizer_created": false,
+  "training": false,
+  "locked_panels_scored": false,
+  "final_or_sacred_access": false
+}

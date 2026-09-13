@@ -1,0 +1,50 @@
+{
+  "BINDING_SCHEDULE.json": {
+    "sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+    "bytes": 82183
+  },
+  "ENGLISH_DEV.jsonl": {
+    "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "bytes": 3310121
+  },
+  "ENGLISH_SCHEDULE.json": {
+    "sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+    "bytes": 1118634
+  },
+  "ENGLISH_TRAIN.jsonl": {
+    "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+    "bytes": 30855743
+  },
+  "HR1_BUILD_SOURCE.py": {
+    "sha256": "446c1b28c458af9671f42eb102e88fdbe198f26f0221dde5f45b1f9458f1e27d",
+    "bytes": 4926
+  },
+  "HR1_PROTOCOL.json": {
+    "sha256": "4b0491f6bf53943604dd8dbe7be2fafa882fb5d46482b52770fb0b578be94ed7",
+    "bytes": 1985
+  },
+  "HR1_PROTOCOL.md": {
+    "sha256": "017889a5bed9251ec259c461dc1d2caaf20d5cbf6144753cfce85ac5d4727500",
+    "bytes": 2156
+  },
+  "HR1_TRAIN.py": {
+    "sha256": "cc9529e7a6e53a7372153d54f6ac3a37acde3213b4805f7a36df367f68d9f233",
+    "bytes": 3909
+  },
+  "HR1_TRAIN_REAL.py": {
+    "sha256": "3c319f896e6d925d118aefdc2cd42b302e787b9fcb4c55b4e7694b60c22763b7",
+    "bytes": 5324
+  },
+  "HR1_VALIDATOR_SOURCE.py": {
+    "sha256": "f81b010cadf808440d36ebebd45611cb906b36659c1e6530b3d725d9917bbdf6",
+    "bytes": 1729
+  },
+  "INDEPENDENT_VALIDATION.json": {
+    "sha256": "5d852c16d8878a52f9b20654632e41dbadb78e35e9b02f4c132745cae2eaf223",
+    "bytes": 480
+  },
+  "MOCK_ORCHESTRATION.json": {
+    "sha256": "1f7abfa6d8f5089d816fdc322cceee8788024a9156cff9aab792ac8fe92f042b",
+    "bytes": 233
+  }
+}

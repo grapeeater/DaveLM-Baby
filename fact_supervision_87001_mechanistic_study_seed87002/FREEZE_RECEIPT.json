@@ -1,0 +1,13 @@
+{
+ "status": "MECHANISTIC_STUDY_FREEZE_COMPLETE_PREEXECUTION_ONLY",
+ "bundle": "fact_supervision_87001_mechanistic_study_seed87002",
+ "protocol_sha256": "06455e7878ef3a7b7bdf62378c35ae5dc22ae77ed72895fb7e3b9793ed89430b",
+ "manifest_sha256": "eefefd78bad72587936a72c9fa394cdf43cc04ea0bbef4296cb1ce200b07f775",
+ "validation_sha256": "4b84fe74af239252b4dcf979840707e013286236513bff74717d2999ea6a93ae",
+ "preexecution_sha256": "dd32ae96676e1a331621b19888e7a84044efed0c08265a023e93c2aca600550b",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false
+}

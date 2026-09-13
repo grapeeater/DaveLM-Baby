@@ -1,0 +1,15 @@
+{
+  "status": "TRAINED",
+  "steps": 1000,
+  "checkpoint_sha256": "8f7fa0cc3f509eeb600def2f233f38022afbfe9ccb27e0a0ccdf813f25e8a7a0",
+  "runtime_seconds": 209.61199736595154,
+  "final_step": {
+    "step": 1000,
+    "L_total": 0.00017207262862939388,
+    "L_answer": 1.873049041023478e-05,
+    "L_existing": 0.00014066937728784978,
+    "L_src_rec": 2.4420098270638846e-05,
+    "answer_accuracy": 1.0,
+    "grad_norm": 0.0020404874812811613
+  }
+}

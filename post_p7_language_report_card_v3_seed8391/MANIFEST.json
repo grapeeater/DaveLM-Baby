@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "controlled": 256,
+    "counterfactual": 48,
+    "distractor": 64,
+    "naturalistic": 16,
+    "near_distribution": 96,
+    "surface_form": 48,
+    "total": 272
+  },
+  "parent_checkpoints_behavior_accessed": false,
+  "seed": 8391,
+  "tokenizer": {
+    "byte_fallback": false,
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "version": 3
+}

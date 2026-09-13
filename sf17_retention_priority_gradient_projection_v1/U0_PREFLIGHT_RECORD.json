@@ -1,0 +1,72 @@
+{
+  "basis": "Identical parents/data/evaluator; sealed controller reruns U0 and asserts it before optimizer construction.",
+  "branches": {
+    "87044": {
+      "binding": {
+        "pilot0": true,
+        "pilot1": true
+      },
+      "d3_diff": 0.0,
+      "d3_measured": 0.007036717671962123,
+      "d3_reference": 0.007036717671962123,
+      "language_ce": 3.5873013138771057,
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "reproduces_parent": true,
+      "sf17_seed": 87044,
+      "sf8_parent": "87017",
+      "source_sf13_seed": 87032,
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    },
+    "87045": {
+      "binding": {
+        "pilot0": true,
+        "pilot1": true
+      },
+      "d3_diff": 0.0,
+      "d3_measured": 0.006672408242356376,
+      "d3_reference": 0.006672408242356376,
+      "language_ce": 3.574604868888855,
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "reproduces_parent": true,
+      "sf17_seed": 87045,
+      "sf8_parent": "87018",
+      "source_sf13_seed": 87033,
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    },
+    "87046": {
+      "binding": {
+        "pilot0": true,
+        "pilot1": true
+      },
+      "d3_diff": 0.0,
+      "d3_measured": 0.007839491795780695,
+      "d3_reference": 0.007839491795780695,
+      "language_ce": 3.5949734449386597,
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "reproduces_parent": true,
+      "sf17_seed": 87046,
+      "sf8_parent": "87019",
+      "source_sf13_seed": 87034,
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    }
+  },
+  "record_type": "INHERITED_ACTUAL_U0_PARENT_REPRODUCTION",
+  "source_path": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\U0_PREFLIGHT_RECORD.json",
+  "source_sha256": "ccbe36d22a79d85370bc972565256cb2d2427db886de2a8fc0d36bf67ccfbfc4",
+  "study": "SF17_RETENTION_PRIORITY_GRADIENT_PROJECTION_V1"
+}

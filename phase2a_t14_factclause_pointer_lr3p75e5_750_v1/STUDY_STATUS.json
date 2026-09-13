@@ -1,0 +1,6 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T14_FACTCLAUSE_POINTER_LR3P75E5_750_V1",
+  "study_classification": "T14_FAIL_NO_REPRESENTATION",
+  "note": "Classified from three FINAL_STATUS.json files after watchdog 14592 hung post-730003 without STUDY_COMPLETE. Study rule: 1x REPRESENTATION_SUCCESS_OUTPUT_FAIL, 1x FAIL_NO_REPRESENTATION, 1x LANGUAGE_REGRESSION => FAIL_NO_REPRESENTATION.",
+  "test_opened": false
+}

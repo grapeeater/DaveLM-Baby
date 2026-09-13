@@ -1,0 +1,43 @@
+{
+  "study": "SF13_BROAD_COVERAGE_KL_RETENTION_V1",
+  "record_type": "ACTUALLY_EXECUTED_U0_PREFLIGHT",
+  "method": "Loaded each SF8 low parent checkpoint with rt.load_model under the SF2 venv runtime and ran the SF13 evaluation machinery (panel/checks/measure_d3). Zero training updates.",
+  "runtime": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe (torch 2.12.0+rocm7.14.0, cuda)",
+  "executed_utc": "2026-09-08T00:00:00.000000+00:00",
+  "branches": {
+    "87032": {
+      "sf8_parent": "87017",
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "train16": {"correct": 16, "exact": 16, "reversals": 8, "families": 4},
+      "language_ce": 3.5873013138771057,
+      "binding": {"pilot0": true, "pilot1": true},
+      "d3_measured": 0.007036717671962123,
+      "d3_reference": 0.007036717671962123,
+      "d3_diff": 0.0,
+      "reproduces_parent": true
+    },
+    "87033": {
+      "sf8_parent": "87018",
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "train16": {"correct": 16, "exact": 16, "reversals": 8, "families": 4},
+      "language_ce": 3.574604868888855,
+      "binding": {"pilot0": true, "pilot1": true},
+      "d3_measured": 0.006672408242356376,
+      "d3_reference": 0.006672408242356376,
+      "d3_diff": 0.0,
+      "reproduces_parent": true
+    },
+    "87034": {
+      "sf8_parent": "87019",
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "train16": {"correct": 16, "exact": 16, "reversals": 8, "families": 4},
+      "language_ce": 3.5949734449386597,
+      "binding": {"pilot0": true, "pilot1": true},
+      "d3_measured": 0.007839491795780695,
+      "d3_reference": 0.007839491795780695,
+      "d3_diff": 0.0,
+      "reproduces_parent": true
+    }
+  },
+  "summary": "3/3 SF13 branches reproduce their own SF8 parent U0 state: TRAIN16 perfect, language CE recorded, both binding pools pass, D3 equals the parent reference (diff < 1e-4)."
+}

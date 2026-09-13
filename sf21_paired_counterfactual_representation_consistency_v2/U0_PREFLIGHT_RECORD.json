@@ -1,0 +1,96 @@
+{
+  "branches": {
+    "87056": {
+      "binding": {
+        "pilot0": true,
+        "pilot1": true
+      },
+      "d3_diff": 0.0,
+      "d3_measured": 0.007036717671962123,
+      "d3_reference": 0.007036717671962123,
+      "dev_order": {
+        "correct": 9,
+        "exact": 3
+      },
+      "dev_surface": {
+        "correct": 12,
+        "exact": 5
+      },
+      "language_ce": 3.5873013138771057,
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "reproduces_parent": true,
+      "sf8_parent": "87017",
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    },
+    "87057": {
+      "binding": {
+        "pilot0": true,
+        "pilot1": true
+      },
+      "d3_diff": 0.0,
+      "d3_measured": 0.006672408242356376,
+      "d3_reference": 0.006672408242356376,
+      "dev_order": {
+        "correct": 9,
+        "exact": 3
+      },
+      "dev_surface": {
+        "correct": 13,
+        "exact": 4
+      },
+      "language_ce": 3.574604868888855,
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "reproduces_parent": true,
+      "sf8_parent": "87018",
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    },
+    "87058": {
+      "binding": {
+        "pilot0": true,
+        "pilot1": true
+      },
+      "d3_diff": 0.0,
+      "d3_measured": 0.007839491795780695,
+      "d3_reference": 0.007839491795780695,
+      "dev_order": {
+        "correct": 8,
+        "exact": 3
+      },
+      "dev_surface": {
+        "correct": 13,
+        "exact": 5
+      },
+      "language_ce": 3.5949734449386597,
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "reproduces_parent": true,
+      "sf8_parent": "87019",
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    }
+  },
+  "checkpoint_loaded": true,
+  "executed_utc": "2026-09-09T08:09:06.495711+00:00",
+  "final_accessed": false,
+  "method": "Loaded each SF8-low parent under the frozen SF2 runtime and ran the inherited SF13 evaluation path. No optimizer was created and no update was performed.",
+  "optimizer_created": false,
+  "record_type": "ACTUALLY_EXECUTED_U0_PREFLIGHT",
+  "sacred_accessed": false,
+  "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V2",
+  "summary": "3/3 branches exactly reproduce their SF8-low parent U0 language and D3 references, preserve perfect TRAIN16, and pass both binding pools.",
+  "treatment_outcomes_scored": false,
+  "updates": 0
+}

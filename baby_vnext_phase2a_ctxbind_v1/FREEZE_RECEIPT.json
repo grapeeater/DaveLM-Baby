@@ -1,0 +1,13 @@
+{
+  "status": "BABY_VNEXT_PHASE2A_CTXBIND_FROZEN",
+  "study": "BABY_VNEXT_PHASE2A_CTXBIND_V1",
+  "manifest_sha256": "04c3db3d7abb9897b9e9deea085a28814da0ab553f27ea4cfb9d62f97b6363c1",
+  "payload_files": 19,
+  "config_sha256": "72d645bf5323448302365f68f382e2c9cb216c45d94cf254d0104c433fbefd32",
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "primary_seed": 610002,
+  "optimizer_created_during_preflight": false,
+  "optimizer_steps": 0,
+  "training_performed": false,
+  "integrity_design": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> SHA256SUMS.txt -> immutable payload"
+}

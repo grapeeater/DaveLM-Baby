@@ -1,0 +1,50 @@
+{
+  "architecture_chain": {
+    "receipt_sha256": "776859cb1bf671634ae2d7e8dfab7f7cb8e517ce802d30d3cb3733b6b734b368",
+    "manifest_sha256": "a4a9fb219f082e1936bf7341f42d82354fc2c7cf8d6f9b0d03c84e815117cad4"
+  },
+  "architecture_config_sha256": "8d7e1cbc604c9bf9f1942d4afc01817b20af17d8805a984f7ae57b1254f957b4",
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "source": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\TinyStories-valid.txt",
+    "sha256": "94e431816c4cce81ff71e4408ff8d3bda9a42e8d2663986697c3954288cb38b4"
+  },
+  "phase1_reference": {
+    "bundle": "C:\\DaveLM-CADAVER\\baby_vnext_phase1_language_v1",
+    "train_stream_sha256": "c88b4d0857eed7146125698f735da1fcbaaa4977b6ba4e213b837b29824d9804",
+    "dev_stream_sha256": "4e9834d43ec80a0eea5e1a5a59c284f8f76f5f84bffcf979e4686661d71b6017",
+    "eval_selection_sha256": "744904653ed11605025318cd4e5579ef6a33bd516575834086daa24b61a76681",
+    "initialized_checkpoint_sha256": "039e8efe7353d5065c06c2519053695e5944d58eeee2765594a8dfadb80d821c",
+    "train_stream_tokens": 3576861,
+    "dev_stream_tokens": 390340,
+    "best_dev_ce": 1.3750959888100625,
+    "best_update": 3000,
+    "final_dev_ce": 1.4820435523986817,
+    "final_train_ce": 0.5667358934879303,
+    "final_train_dev_gap": 0.9153076589107514
+  },
+  "diet_selection": {
+    "selection": "normalize line endings; sha256 each complete story; sort hashes",
+    "unique_stories": 21990,
+    "head_stories": 9000,
+    "dev_reserve_stories": 1000,
+    "added_tail_stories": 11990,
+    "train_stories_phase1g": 20990,
+    "head_is_exact_prefix": true,
+    "dev_reserve_excluded_from_training": true,
+    "train_schedule_seed": 61000111
+  },
+  "initialized_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\initialization\\seed_610001_initialized.pt",
+    "sha256": "039e8efe7353d5065c06c2519053695e5944d58eeee2765594a8dfadb80d821c",
+    "model_state_sha256": "eecaf2135edf18c423c8cf8df0102028399a776024e5a77b94651258f91e97d4"
+  },
+  "prior_pool_overlaps_tail": {},
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "training_performed": false,
+  "forbidden_material_accessed": false
+}

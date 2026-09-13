@@ -1,0 +1,1820 @@
+[
+  {
+    "id": "TR00:a0:q0:o0",
+    "family_id": "TR00",
+    "split": "train",
+    "template": "active",
+    "assignment": 0,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Bea",
+      "York"
+    ],
+    "objects": [
+      "red book",
+      "green hat"
+    ],
+    "owned": [
+      "red book",
+      "green hat"
+    ],
+    "query_object": "red book",
+    "candidates": [
+      "Bea",
+      "York"
+    ],
+    "correct_name": "Bea",
+    "correct_index": 0,
+    "prompt": "Bea has the red book. York has the green hat. Who has the red book? Answer:",
+    "prompt_token_ids": [
+      38,
+      73,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      225,
+      61,
+      573,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 38,
+    "candidate_token_ids": [
+      [
+        532,
+        73,
+        69,
+        18
+      ],
+      [
+        225,
+        61,
+        573,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "decision_position_bos": 38,
+    "first_mentioned": "Bea",
+    "last_mentioned": "York",
+    "twin_id": "TR00:q0:o0"
+  },
+  {
+    "id": "TR00:a0:q1:o0",
+    "family_id": "TR00",
+    "split": "train",
+    "template": "active",
+    "assignment": 0,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Bea",
+      "York"
+    ],
+    "objects": [
+      "red book",
+      "green hat"
+    ],
+    "owned": [
+      "red book",
+      "green hat"
+    ],
+    "query_object": "green hat",
+    "candidates": [
+      "Bea",
+      "York"
+    ],
+    "correct_name": "York",
+    "correct_index": 1,
+    "prompt": "Bea has the red book. York has the green hat. Who has the green hat? Answer:",
+    "prompt_token_ids": [
+      38,
+      73,
+      69,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      225,
+      61,
+      573,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      356,
+      265,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 39,
+    "candidate_token_ids": [
+      [
+        532,
+        73,
+        69,
+        18
+      ],
+      [
+        225,
+        61,
+        573,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "decision_position_bos": 39,
+    "first_mentioned": "Bea",
+    "last_mentioned": "York",
+    "twin_id": "TR00:q1:o0"
+  },
+  {
+    "id": "TR00:a1:q0:o0",
+    "family_id": "TR00",
+    "split": "train",
+    "template": "active",
+    "assignment": 1,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Bea",
+      "York"
+    ],
+    "objects": [
+      "red book",
+      "green hat"
+    ],
+    "owned": [
+      "green hat",
+      "red book"
+    ],
+    "query_object": "red book",
+    "candidates": [
+      "Bea",
+      "York"
+    ],
+    "correct_name": "York",
+    "correct_index": 1,
+    "prompt": "Bea has the green hat. York has the red book. Who has the red book? Answer:",
+    "prompt_token_ids": [
+      38,
+      73,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      356,
+      265,
+      18,
+      225,
+      61,
+      573,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 38,
+    "candidate_token_ids": [
+      [
+        532,
+        73,
+        69,
+        18
+      ],
+      [
+        225,
+        61,
+        573,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "decision_position_bos": 38,
+    "first_mentioned": "Bea",
+    "last_mentioned": "York",
+    "twin_id": "TR00:q0:o0"
+  },
+  {
+    "id": "TR00:a1:q1:o0",
+    "family_id": "TR00",
+    "split": "train",
+    "template": "active",
+    "assignment": 1,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Bea",
+      "York"
+    ],
+    "objects": [
+      "red book",
+      "green hat"
+    ],
+    "owned": [
+      "green hat",
+      "red book"
+    ],
+    "query_object": "green hat",
+    "candidates": [
+      "Bea",
+      "York"
+    ],
+    "correct_name": "Bea",
+    "correct_index": 0,
+    "prompt": "Bea has the green hat. York has the red book. Who has the green hat? Answer:",
+    "prompt_token_ids": [
+      38,
+      73,
+      69,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      356,
+      265,
+      18,
+      225,
+      61,
+      573,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      356,
+      265,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 39,
+    "candidate_token_ids": [
+      [
+        532,
+        73,
+        69,
+        18
+      ],
+      [
+        225,
+        61,
+        573,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "decision_position_bos": 39,
+    "first_mentioned": "Bea",
+    "last_mentioned": "York",
+    "twin_id": "TR00:q1:o0"
+  },
+  {
+    "id": "TR01:a0:q0:o0",
+    "family_id": "TR01",
+    "split": "train",
+    "template": "passive",
+    "assignment": 0,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Gia",
+      "Walt"
+    ],
+    "objects": [
+      "red ball",
+      "green ball"
+    ],
+    "owned": [
+      "red ball",
+      "green ball"
+    ],
+    "query_object": "red ball",
+    "candidates": [
+      "Gia",
+      "Walt"
+    ],
+    "correct_name": "Gia",
+    "correct_index": 0,
+    "prompt": "The red ball is with Gia. The green ball is with Walt. Who has the red ball? Answer:",
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      225,
+      43,
+      77,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      452,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 39,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        77,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        20,
+        21,
+        22
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        21,
+        22,
+        23
+      ]
+    ],
+    "decision_position_bos": 39,
+    "first_mentioned": "Gia",
+    "last_mentioned": "Walt",
+    "twin_id": "TR01:q0:o0"
+  },
+  {
+    "id": "TR01:a0:q1:o0",
+    "family_id": "TR01",
+    "split": "train",
+    "template": "passive",
+    "assignment": 0,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Gia",
+      "Walt"
+    ],
+    "objects": [
+      "red ball",
+      "green ball"
+    ],
+    "owned": [
+      "red ball",
+      "green ball"
+    ],
+    "query_object": "green ball",
+    "candidates": [
+      "Gia",
+      "Walt"
+    ],
+    "correct_name": "Walt",
+    "correct_index": 1,
+    "prompt": "The red ball is with Gia. The green ball is with Walt. Who has the green ball? Answer:",
+    "prompt_token_ids": [
+      305,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      225,
+      43,
+      77,
+      69,
+      18,
+      312,
+      347,
+      264,
+      274,
+      281,
+      452,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 40,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        77,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        8,
+        9,
+        10
+      ],
+      [
+        20,
+        21,
+        22
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        21,
+        22,
+        23
+      ]
+    ],
+    "decision_position_bos": 40,
+    "first_mentioned": "Gia",
+    "last_mentioned": "Walt",
+    "twin_id": "TR01:q1:o0"
+  },
+  {
+    "id": "TR01:a1:q0:o0",
+    "family_id": "TR01",
+    "split": "train",
+    "template": "passive",
+    "assignment": 1,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Gia",
+      "Walt"
+    ],
+    "objects": [
+      "red ball",
+      "green ball"
+    ],
+    "owned": [
+      "green ball",
+      "red ball"
+    ],
+    "query_object": "red ball",
+    "candidates": [
+      "Gia",
+      "Walt"
+    ],
+    "correct_name": "Walt",
+    "correct_index": 1,
+    "prompt": "The green ball is with Gia. The red ball is with Walt. Who has the red ball? Answer:",
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      452,
+      336,
+      322,
+      225,
+      43,
+      77,
+      69,
+      18,
+      312,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      279,
+      72,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 39,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        77,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        20,
+        21,
+        22
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        10,
+        11,
+        12
+      ],
+      [
+        21,
+        22,
+        23
+      ]
+    ],
+    "decision_position_bos": 39,
+    "first_mentioned": "Gia",
+    "last_mentioned": "Walt",
+    "twin_id": "TR01:q0:o0"
+  },
+  {
+    "id": "TR01:a1:q1:o0",
+    "family_id": "TR01",
+    "split": "train",
+    "template": "passive",
+    "assignment": 1,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Gia",
+      "Walt"
+    ],
+    "objects": [
+      "red ball",
+      "green ball"
+    ],
+    "owned": [
+      "green ball",
+      "red ball"
+    ],
+    "query_object": "green ball",
+    "candidates": [
+      "Gia",
+      "Walt"
+    ],
+    "correct_name": "Gia",
+    "correct_index": 0,
+    "prompt": "The green ball is with Gia. The red ball is with Walt. Who has the green ball? Answer:",
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      281,
+      452,
+      336,
+      322,
+      225,
+      43,
+      77,
+      69,
+      18,
+      312,
+      279,
+      72,
+      281,
+      452,
+      336,
+      322,
+      679,
+      293,
+      88,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      452,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 40,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        77,
+        69,
+        18
+      ],
+      [
+        679,
+        293,
+        88,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        9,
+        10,
+        11
+      ],
+      [
+        20,
+        21,
+        22
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        10,
+        11,
+        12
+      ],
+      [
+        21,
+        22,
+        23
+      ]
+    ],
+    "decision_position_bos": 40,
+    "first_mentioned": "Gia",
+    "last_mentioned": "Walt",
+    "twin_id": "TR01:q1:o0"
+  },
+  {
+    "id": "TR02:a0:q0:o0",
+    "family_id": "TR02",
+    "split": "train",
+    "template": "active",
+    "assignment": 0,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Gus",
+      "Vic"
+    ],
+    "objects": [
+      "green book",
+      "green box"
+    ],
+    "owned": [
+      "green book",
+      "green box"
+    ],
+    "query_object": "green book",
+    "candidates": [
+      "Gus",
+      "Vic"
+    ],
+    "correct_name": "Gus",
+    "correct_index": 0,
+    "prompt": "Gus has the green book. Vic has the green box. Who has the green book? Answer:",
+    "prompt_token_ids": [
+      43,
+      297,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      225,
+      58,
+      321,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 40,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        297,
+        18
+      ],
+      [
+        225,
+        58,
+        321,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "decision_position_bos": 40,
+    "first_mentioned": "Gus",
+    "last_mentioned": "Vic",
+    "twin_id": "TR02:q0:o0"
+  },
+  {
+    "id": "TR02:a0:q1:o0",
+    "family_id": "TR02",
+    "split": "train",
+    "template": "active",
+    "assignment": 0,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Gus",
+      "Vic"
+    ],
+    "objects": [
+      "green book",
+      "green box"
+    ],
+    "owned": [
+      "green book",
+      "green box"
+    ],
+    "query_object": "green box",
+    "candidates": [
+      "Gus",
+      "Vic"
+    ],
+    "correct_name": "Vic",
+    "correct_index": 1,
+    "prompt": "Gus has the green book. Vic has the green box. Who has the green box? Answer:",
+    "prompt_token_ids": [
+      43,
+      297,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      225,
+      58,
+      321,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 41,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        297,
+        18
+      ],
+      [
+        225,
+        58,
+        321,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "decision_position_bos": 41,
+    "first_mentioned": "Gus",
+    "last_mentioned": "Vic",
+    "twin_id": "TR02:q1:o0"
+  },
+  {
+    "id": "TR02:a1:q0:o0",
+    "family_id": "TR02",
+    "split": "train",
+    "template": "active",
+    "assignment": 1,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Gus",
+      "Vic"
+    ],
+    "objects": [
+      "green book",
+      "green box"
+    ],
+    "owned": [
+      "green box",
+      "green book"
+    ],
+    "query_object": "green book",
+    "candidates": [
+      "Gus",
+      "Vic"
+    ],
+    "correct_name": "Vic",
+    "correct_index": 1,
+    "prompt": "Gus has the green box. Vic has the green book. Who has the green book? Answer:",
+    "prompt_token_ids": [
+      43,
+      297,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      225,
+      58,
+      321,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 40,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        297,
+        18
+      ],
+      [
+        225,
+        58,
+        321,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "decision_position_bos": 40,
+    "first_mentioned": "Gus",
+    "last_mentioned": "Vic",
+    "twin_id": "TR02:q0:o0"
+  },
+  {
+    "id": "TR02:a1:q1:o0",
+    "family_id": "TR02",
+    "split": "train",
+    "template": "active",
+    "assignment": 1,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Gus",
+      "Vic"
+    ],
+    "objects": [
+      "green book",
+      "green box"
+    ],
+    "owned": [
+      "green box",
+      "green book"
+    ],
+    "query_object": "green box",
+    "candidates": [
+      "Gus",
+      "Vic"
+    ],
+    "correct_name": "Gus",
+    "correct_index": 0,
+    "prompt": "Gus has the green box. Vic has the green book. Who has the green box? Answer:",
+    "prompt_token_ids": [
+      43,
+      297,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      18,
+      225,
+      58,
+      321,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      485,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      281,
+      83,
+      92,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 41,
+    "candidate_token_ids": [
+      [
+        225,
+        43,
+        297,
+        18
+      ],
+      [
+        225,
+        58,
+        321,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        0,
+        1
+      ],
+      [
+        13,
+        14
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        1,
+        2
+      ],
+      [
+        14,
+        15
+      ]
+    ],
+    "decision_position_bos": 41,
+    "first_mentioned": "Gus",
+    "last_mentioned": "Vic",
+    "twin_id": "TR02:q1:o0"
+  },
+  {
+    "id": "TR03:a0:q0:o0",
+    "family_id": "TR03",
+    "split": "train",
+    "template": "passive",
+    "assignment": 0,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Helen",
+      "Seth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow kite"
+    ],
+    "owned": [
+      "green kite",
+      "yellow kite"
+    ],
+    "query_object": "green kite",
+    "candidates": [
+      "Helen",
+      "Seth"
+    ],
+    "correct_name": "Helen",
+    "correct_index": 0,
+    "prompt": "The green kite is with Helen. The yellow kite is with Seth. Who has the green kite? Answer:",
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      225,
+      44,
+      462,
+      274,
+      18,
+      312,
+      715,
+      462,
+      479,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      310,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 44,
+    "candidate_token_ids": [
+      [
+        225,
+        44,
+        462,
+        274,
+        18
+      ],
+      [
+        527,
+        310,
+        76,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        10,
+        11,
+        12
+      ],
+      [
+        23,
+        24,
+        25
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        11,
+        12,
+        13
+      ],
+      [
+        24,
+        25,
+        26
+      ]
+    ],
+    "decision_position_bos": 44,
+    "first_mentioned": "Helen",
+    "last_mentioned": "Seth",
+    "twin_id": "TR03:q0:o0"
+  },
+  {
+    "id": "TR03:a0:q1:o0",
+    "family_id": "TR03",
+    "split": "train",
+    "template": "passive",
+    "assignment": 0,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Helen",
+      "Seth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow kite"
+    ],
+    "owned": [
+      "green kite",
+      "yellow kite"
+    ],
+    "query_object": "yellow kite",
+    "candidates": [
+      "Helen",
+      "Seth"
+    ],
+    "correct_name": "Seth",
+    "correct_index": 1,
+    "prompt": "The green kite is with Helen. The yellow kite is with Seth. Who has the yellow kite? Answer:",
+    "prompt_token_ids": [
+      305,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      225,
+      44,
+      462,
+      274,
+      18,
+      312,
+      715,
+      462,
+      479,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      310,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 44,
+    "candidate_token_ids": [
+      [
+        225,
+        44,
+        462,
+        274,
+        18
+      ],
+      [
+        527,
+        310,
+        76,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        10,
+        11,
+        12
+      ],
+      [
+        23,
+        24,
+        25
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        11,
+        12,
+        13
+      ],
+      [
+        24,
+        25,
+        26
+      ]
+    ],
+    "decision_position_bos": 44,
+    "first_mentioned": "Helen",
+    "last_mentioned": "Seth",
+    "twin_id": "TR03:q1:o0"
+  },
+  {
+    "id": "TR03:a1:q0:o0",
+    "family_id": "TR03",
+    "split": "train",
+    "template": "passive",
+    "assignment": 1,
+    "query_index": 0,
+    "fact_order": 0,
+    "names": [
+      "Helen",
+      "Seth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow kite"
+    ],
+    "owned": [
+      "yellow kite",
+      "green kite"
+    ],
+    "query_object": "green kite",
+    "candidates": [
+      "Helen",
+      "Seth"
+    ],
+    "correct_name": "Seth",
+    "correct_index": 1,
+    "prompt": "The yellow kite is with Helen. The green kite is with Seth. Who has the green kite? Answer:",
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      917,
+      284,
+      73,
+      336,
+      322,
+      225,
+      44,
+      462,
+      274,
+      18,
+      312,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      310,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 44,
+    "candidate_token_ids": [
+      [
+        225,
+        44,
+        462,
+        274,
+        18
+      ],
+      [
+        527,
+        310,
+        76,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        10,
+        11,
+        12
+      ],
+      [
+        23,
+        24,
+        25
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        11,
+        12,
+        13
+      ],
+      [
+        24,
+        25,
+        26
+      ]
+    ],
+    "decision_position_bos": 44,
+    "first_mentioned": "Helen",
+    "last_mentioned": "Seth",
+    "twin_id": "TR03:q0:o0"
+  },
+  {
+    "id": "TR03:a1:q1:o0",
+    "family_id": "TR03",
+    "split": "train",
+    "template": "passive",
+    "assignment": 1,
+    "query_index": 1,
+    "fact_order": 0,
+    "names": [
+      "Helen",
+      "Seth"
+    ],
+    "objects": [
+      "green kite",
+      "yellow kite"
+    ],
+    "owned": [
+      "yellow kite",
+      "green kite"
+    ],
+    "query_object": "yellow kite",
+    "candidates": [
+      "Helen",
+      "Seth"
+    ],
+    "correct_name": "Helen",
+    "correct_index": 0,
+    "prompt": "The yellow kite is with Helen. The green kite is with Seth. Who has the yellow kite? Answer:",
+    "prompt_token_ids": [
+      305,
+      715,
+      462,
+      479,
+      917,
+      284,
+      73,
+      336,
+      322,
+      225,
+      44,
+      462,
+      274,
+      18,
+      312,
+      347,
+      264,
+      274,
+      917,
+      284,
+      73,
+      336,
+      322,
+      527,
+      310,
+      76,
+      18,
+      679,
+      76,
+      83,
+      356,
+      309,
+      271,
+      715,
+      462,
+      479,
+      917,
+      284,
+      73,
+      35,
+      724,
+      426,
+      270,
+      30
+    ],
+    "prompt_len": 44,
+    "candidate_token_ids": [
+      [
+        225,
+        44,
+        462,
+        274,
+        18
+      ],
+      [
+        527,
+        310,
+        76,
+        18
+      ]
+    ],
+    "mention_span_prompt": [
+      [
+        10,
+        11,
+        12
+      ],
+      [
+        23,
+        24,
+        25
+      ]
+    ],
+    "mention_span_bos": [
+      [
+        11,
+        12,
+        13
+      ],
+      [
+        24,
+        25,
+        26
+      ]
+    ],
+    "decision_position_bos": 44,
+    "first_mentioned": "Helen",
+    "last_mentioned": "Seth",
+    "twin_id": "TR03:q1:o0"
+  }
+]

@@ -1,0 +1,726 @@
+{
+  "balance": {
+    "candidate_appearances": {
+      "Billy": 4,
+      "Bob": 4,
+      "Carl": 4,
+      "Cathy": 4,
+      "Colin": 4,
+      "Faye": 4,
+      "Fred": 4,
+      "Ralph": 4,
+      "Remy": 4,
+      "Sara": 4,
+      "Steve": 4,
+      "Susan": 4,
+      "Tara": 4,
+      "Tina": 4,
+      "Tony": 4,
+      "Wendy": 4
+    },
+    "correct": {
+      "Billy": 2,
+      "Bob": 2,
+      "Carl": 2,
+      "Cathy": 2,
+      "Colin": 2,
+      "Faye": 2,
+      "Fred": 2,
+      "Ralph": 2,
+      "Remy": 2,
+      "Sara": 2,
+      "Steve": 2,
+      "Susan": 2,
+      "Tara": 2,
+      "Tina": 2,
+      "Tony": 2,
+      "Wendy": 2
+    },
+    "distractor": {
+      "Billy": 2,
+      "Bob": 2,
+      "Carl": 2,
+      "Cathy": 2,
+      "Colin": 2,
+      "Faye": 2,
+      "Fred": 2,
+      "Ralph": 2,
+      "Remy": 2,
+      "Sara": 2,
+      "Steve": 2,
+      "Susan": 2,
+      "Tara": 2,
+      "Tina": 2,
+      "Tony": 2,
+      "Wendy": 2
+    },
+    "per_stratum": {
+      "Order": {
+        "candidate": {
+          "Billy": 2,
+          "Bob": 2,
+          "Carl": 2,
+          "Cathy": 2,
+          "Colin": 2,
+          "Faye": 2,
+          "Fred": 2,
+          "Ralph": 2,
+          "Remy": 2,
+          "Sara": 2,
+          "Steve": 2,
+          "Susan": 2,
+          "Tara": 2,
+          "Tina": 2,
+          "Tony": 2,
+          "Wendy": 2
+        },
+        "correct": {
+          "Billy": 1,
+          "Bob": 1,
+          "Carl": 1,
+          "Cathy": 1,
+          "Colin": 1,
+          "Faye": 1,
+          "Fred": 1,
+          "Ralph": 1,
+          "Remy": 1,
+          "Sara": 1,
+          "Steve": 1,
+          "Susan": 1,
+          "Tara": 1,
+          "Tina": 1,
+          "Tony": 1,
+          "Wendy": 1
+        },
+        "distractor": {
+          "Billy": 1,
+          "Bob": 1,
+          "Carl": 1,
+          "Cathy": 1,
+          "Colin": 1,
+          "Faye": 1,
+          "Fred": 1,
+          "Ralph": 1,
+          "Remy": 1,
+          "Sara": 1,
+          "Steve": 1,
+          "Susan": 1,
+          "Tara": 1,
+          "Tina": 1,
+          "Tony": 1,
+          "Wendy": 1
+        }
+      },
+      "Surface": {
+        "candidate": {
+          "Billy": 2,
+          "Bob": 2,
+          "Carl": 2,
+          "Cathy": 2,
+          "Colin": 2,
+          "Faye": 2,
+          "Fred": 2,
+          "Ralph": 2,
+          "Remy": 2,
+          "Sara": 2,
+          "Steve": 2,
+          "Susan": 2,
+          "Tara": 2,
+          "Tina": 2,
+          "Tony": 2,
+          "Wendy": 2
+        },
+        "correct": {
+          "Billy": 1,
+          "Bob": 1,
+          "Carl": 1,
+          "Cathy": 1,
+          "Colin": 1,
+          "Faye": 1,
+          "Fred": 1,
+          "Ralph": 1,
+          "Remy": 1,
+          "Sara": 1,
+          "Steve": 1,
+          "Susan": 1,
+          "Tara": 1,
+          "Tina": 1,
+          "Tony": 1,
+          "Wendy": 1
+        },
+        "distractor": {
+          "Billy": 1,
+          "Bob": 1,
+          "Carl": 1,
+          "Cathy": 1,
+          "Colin": 1,
+          "Faye": 1,
+          "Fred": 1,
+          "Ralph": 1,
+          "Remy": 1,
+          "Sara": 1,
+          "Steve": 1,
+          "Susan": 1,
+          "Tara": 1,
+          "Tina": 1,
+          "Tony": 1,
+          "Wendy": 1
+        }
+      }
+    }
+  },
+  "first_answer_token_ids": {
+    "Billy": 532,
+    "Bob": 532,
+    "Carl": 651,
+    "Cathy": 651,
+    "Colin": 651,
+    "Faye": 508,
+    "Fred": 508,
+    "Ralph": 1019,
+    "Remy": 1019,
+    "Sara": 527,
+    "Steve": 527,
+    "Susan": 527,
+    "Tara": 525,
+    "Tina": 525,
+    "Tony": 525,
+    "Wendy": 679
+  },
+  "order_pair_keys": {
+    "SF9:competing:A:painted:tin_cup:order0:copy": [
+      "Bob",
+      "Fred"
+    ],
+    "SF9:competing:A:painted:tin_cup:order0:fact": [
+      "Sara",
+      "Tony"
+    ],
+    "SF9:competing:A:painted:tin_cup:order1:copy": [
+      "Tina",
+      "Remy"
+    ],
+    "SF9:competing:A:painted:tin_cup:order1:fact": [
+      "Billy",
+      "Steve"
+    ],
+    "SF9:competing:B:bought:green_ball:order0:copy": [
+      "Ralph",
+      "Wendy"
+    ],
+    "SF9:competing:B:bought:green_ball:order0:fact": [
+      "Susan",
+      "Colin"
+    ],
+    "SF9:competing:B:bought:green_ball:order1:copy": [
+      "Carl",
+      "Tara"
+    ],
+    "SF9:competing:B:bought:green_ball:order1:fact": [
+      "Faye",
+      "Cathy"
+    ]
+  },
+  "records": [
+    {
+      "candidate_names": [
+        "Sara",
+        "Bob"
+      ],
+      "correct": "Sara",
+      "correct_index": 0,
+      "distractor": "Bob",
+      "item_id": "SF20:surface:A:painted:tin_cup:cloze:Sara",
+      "pair_key": "SF9:surface:A:painted:tin_cup:cloze",
+      "source_id": "SF9:surface:A:painted:tin_cup:cloze:Alex",
+      "stratum": "Surface",
+      "subgroup": "cloze"
+    },
+    {
+      "candidate_names": [
+        "Billy",
+        "Tony"
+      ],
+      "correct": "Billy",
+      "correct_index": 0,
+      "distractor": "Tony",
+      "item_id": "SF20:surface:A:painted:tin_cup:active_qa:Billy",
+      "pair_key": "SF9:surface:A:painted:tin_cup:active_qa",
+      "source_id": "SF9:surface:A:painted:tin_cup:active_qa:Alex",
+      "stratum": "Surface",
+      "subgroup": "active_qa"
+    },
+    {
+      "candidate_names": [
+        "Fred",
+        "Tina"
+      ],
+      "correct": "Fred",
+      "correct_index": 0,
+      "distractor": "Tina",
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_cloze:Fred",
+      "pair_key": "SF9:surface:A:painted:tin_cup:passive_cloze",
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_cloze:Alex",
+      "stratum": "Surface",
+      "subgroup": "passive_cloze"
+    },
+    {
+      "candidate_names": [
+        "Steve",
+        "Remy"
+      ],
+      "correct": "Steve",
+      "correct_index": 0,
+      "distractor": "Remy",
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_qa:Steve",
+      "pair_key": "SF9:surface:A:painted:tin_cup:passive_qa",
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_qa:Alex",
+      "stratum": "Surface",
+      "subgroup": "passive_qa"
+    },
+    {
+      "candidate_names": [
+        "Sara",
+        "Bob"
+      ],
+      "correct": "Bob",
+      "correct_index": 1,
+      "distractor": "Sara",
+      "item_id": "SF20:surface:A:painted:tin_cup:cloze:Bob",
+      "pair_key": "SF9:surface:A:painted:tin_cup:cloze",
+      "source_id": "SF9:surface:A:painted:tin_cup:cloze:Owen",
+      "stratum": "Surface",
+      "subgroup": "cloze"
+    },
+    {
+      "candidate_names": [
+        "Billy",
+        "Tony"
+      ],
+      "correct": "Tony",
+      "correct_index": 1,
+      "distractor": "Billy",
+      "item_id": "SF20:surface:A:painted:tin_cup:active_qa:Tony",
+      "pair_key": "SF9:surface:A:painted:tin_cup:active_qa",
+      "source_id": "SF9:surface:A:painted:tin_cup:active_qa:Owen",
+      "stratum": "Surface",
+      "subgroup": "active_qa"
+    },
+    {
+      "candidate_names": [
+        "Fred",
+        "Tina"
+      ],
+      "correct": "Tina",
+      "correct_index": 1,
+      "distractor": "Fred",
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_cloze:Tina",
+      "pair_key": "SF9:surface:A:painted:tin_cup:passive_cloze",
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_cloze:Owen",
+      "stratum": "Surface",
+      "subgroup": "passive_cloze"
+    },
+    {
+      "candidate_names": [
+        "Steve",
+        "Remy"
+      ],
+      "correct": "Remy",
+      "correct_index": 1,
+      "distractor": "Steve",
+      "item_id": "SF20:surface:A:painted:tin_cup:passive_qa:Remy",
+      "pair_key": "SF9:surface:A:painted:tin_cup:passive_qa",
+      "source_id": "SF9:surface:A:painted:tin_cup:passive_qa:Owen",
+      "stratum": "Surface",
+      "subgroup": "passive_qa"
+    },
+    {
+      "candidate_names": [
+        "Susan",
+        "Ralph"
+      ],
+      "correct": "Susan",
+      "correct_index": 0,
+      "distractor": "Ralph",
+      "item_id": "SF20:surface:B:bought:green_ball:cloze:Susan",
+      "pair_key": "SF9:surface:B:bought:green_ball:cloze",
+      "source_id": "SF9:surface:B:bought:green_ball:cloze:Mia",
+      "stratum": "Surface",
+      "subgroup": "cloze"
+    },
+    {
+      "candidate_names": [
+        "Colin",
+        "Faye"
+      ],
+      "correct": "Colin",
+      "correct_index": 0,
+      "distractor": "Faye",
+      "item_id": "SF20:surface:B:bought:green_ball:active_qa:Colin",
+      "pair_key": "SF9:surface:B:bought:green_ball:active_qa",
+      "source_id": "SF9:surface:B:bought:green_ball:active_qa:Mia",
+      "stratum": "Surface",
+      "subgroup": "active_qa"
+    },
+    {
+      "candidate_names": [
+        "Carl",
+        "Wendy"
+      ],
+      "correct": "Carl",
+      "correct_index": 0,
+      "distractor": "Wendy",
+      "item_id": "SF20:surface:B:bought:green_ball:passive_cloze:Carl",
+      "pair_key": "SF9:surface:B:bought:green_ball:passive_cloze",
+      "source_id": "SF9:surface:B:bought:green_ball:passive_cloze:Mia",
+      "stratum": "Surface",
+      "subgroup": "passive_cloze"
+    },
+    {
+      "candidate_names": [
+        "Cathy",
+        "Tara"
+      ],
+      "correct": "Cathy",
+      "correct_index": 0,
+      "distractor": "Tara",
+      "item_id": "SF20:surface:B:bought:green_ball:passive_qa:Cathy",
+      "pair_key": "SF9:surface:B:bought:green_ball:passive_qa",
+      "source_id": "SF9:surface:B:bought:green_ball:passive_qa:Mia",
+      "stratum": "Surface",
+      "subgroup": "passive_qa"
+    },
+    {
+      "candidate_names": [
+        "Susan",
+        "Ralph"
+      ],
+      "correct": "Ralph",
+      "correct_index": 1,
+      "distractor": "Susan",
+      "item_id": "SF20:surface:B:bought:green_ball:cloze:Ralph",
+      "pair_key": "SF9:surface:B:bought:green_ball:cloze",
+      "source_id": "SF9:surface:B:bought:green_ball:cloze:Nora",
+      "stratum": "Surface",
+      "subgroup": "cloze"
+    },
+    {
+      "candidate_names": [
+        "Colin",
+        "Faye"
+      ],
+      "correct": "Faye",
+      "correct_index": 1,
+      "distractor": "Colin",
+      "item_id": "SF20:surface:B:bought:green_ball:active_qa:Faye",
+      "pair_key": "SF9:surface:B:bought:green_ball:active_qa",
+      "source_id": "SF9:surface:B:bought:green_ball:active_qa:Nora",
+      "stratum": "Surface",
+      "subgroup": "active_qa"
+    },
+    {
+      "candidate_names": [
+        "Carl",
+        "Wendy"
+      ],
+      "correct": "Wendy",
+      "correct_index": 1,
+      "distractor": "Carl",
+      "item_id": "SF20:surface:B:bought:green_ball:passive_cloze:Wendy",
+      "pair_key": "SF9:surface:B:bought:green_ball:passive_cloze",
+      "source_id": "SF9:surface:B:bought:green_ball:passive_cloze:Nora",
+      "stratum": "Surface",
+      "subgroup": "passive_cloze"
+    },
+    {
+      "candidate_names": [
+        "Cathy",
+        "Tara"
+      ],
+      "correct": "Tara",
+      "correct_index": 1,
+      "distractor": "Cathy",
+      "item_id": "SF20:surface:B:bought:green_ball:passive_qa:Tara",
+      "pair_key": "SF9:surface:B:bought:green_ball:passive_qa",
+      "source_id": "SF9:surface:B:bought:green_ball:passive_qa:Nora",
+      "stratum": "Surface",
+      "subgroup": "passive_qa"
+    },
+    {
+      "candidate_names": [
+        "Sara",
+        "Tony"
+      ],
+      "correct": "Sara",
+      "correct_index": 0,
+      "distractor": "Tony",
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:fact:Sara",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order0:fact",
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:fact:Alex",
+      "stratum": "Order",
+      "subgroup": "order0:fact"
+    },
+    {
+      "candidate_names": [
+        "Bob",
+        "Fred"
+      ],
+      "correct": "Fred",
+      "correct_index": 1,
+      "distractor": "Bob",
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:copy:Bob",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order0:copy",
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:copy:Alex",
+      "stratum": "Order",
+      "subgroup": "order0:copy"
+    },
+    {
+      "candidate_names": [
+        "Billy",
+        "Steve"
+      ],
+      "correct": "Billy",
+      "correct_index": 0,
+      "distractor": "Steve",
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:fact:Billy",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order1:fact",
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:fact:Alex",
+      "stratum": "Order",
+      "subgroup": "order1:fact"
+    },
+    {
+      "candidate_names": [
+        "Tina",
+        "Remy"
+      ],
+      "correct": "Remy",
+      "correct_index": 1,
+      "distractor": "Tina",
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:copy:Tina",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order1:copy",
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:copy:Alex",
+      "stratum": "Order",
+      "subgroup": "order1:copy"
+    },
+    {
+      "candidate_names": [
+        "Sara",
+        "Tony"
+      ],
+      "correct": "Tony",
+      "correct_index": 1,
+      "distractor": "Sara",
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:fact:Tony",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order0:fact",
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:fact:Owen",
+      "stratum": "Order",
+      "subgroup": "order0:fact"
+    },
+    {
+      "candidate_names": [
+        "Bob",
+        "Fred"
+      ],
+      "correct": "Bob",
+      "correct_index": 0,
+      "distractor": "Fred",
+      "item_id": "SF20:competing:A:painted:tin_cup:order0:copy:Fred",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order0:copy",
+      "source_id": "SF9:competing:A:painted:tin_cup:order0:copy:Owen",
+      "stratum": "Order",
+      "subgroup": "order0:copy"
+    },
+    {
+      "candidate_names": [
+        "Billy",
+        "Steve"
+      ],
+      "correct": "Steve",
+      "correct_index": 1,
+      "distractor": "Billy",
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:fact:Steve",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order1:fact",
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:fact:Owen",
+      "stratum": "Order",
+      "subgroup": "order1:fact"
+    },
+    {
+      "candidate_names": [
+        "Tina",
+        "Remy"
+      ],
+      "correct": "Tina",
+      "correct_index": 0,
+      "distractor": "Remy",
+      "item_id": "SF20:competing:A:painted:tin_cup:order1:copy:Remy",
+      "pair_key": "SF9:competing:A:painted:tin_cup:order1:copy",
+      "source_id": "SF9:competing:A:painted:tin_cup:order1:copy:Owen",
+      "stratum": "Order",
+      "subgroup": "order1:copy"
+    },
+    {
+      "candidate_names": [
+        "Susan",
+        "Colin"
+      ],
+      "correct": "Susan",
+      "correct_index": 0,
+      "distractor": "Colin",
+      "item_id": "SF20:competing:B:bought:green_ball:order0:fact:Susan",
+      "pair_key": "SF9:competing:B:bought:green_ball:order0:fact",
+      "source_id": "SF9:competing:B:bought:green_ball:order0:fact:Mia",
+      "stratum": "Order",
+      "subgroup": "order0:fact"
+    },
+    {
+      "candidate_names": [
+        "Ralph",
+        "Wendy"
+      ],
+      "correct": "Wendy",
+      "correct_index": 1,
+      "distractor": "Ralph",
+      "item_id": "SF20:competing:B:bought:green_ball:order0:copy:Ralph",
+      "pair_key": "SF9:competing:B:bought:green_ball:order0:copy",
+      "source_id": "SF9:competing:B:bought:green_ball:order0:copy:Mia",
+      "stratum": "Order",
+      "subgroup": "order0:copy"
+    },
+    {
+      "candidate_names": [
+        "Faye",
+        "Cathy"
+      ],
+      "correct": "Faye",
+      "correct_index": 0,
+      "distractor": "Cathy",
+      "item_id": "SF20:competing:B:bought:green_ball:order1:fact:Faye",
+      "pair_key": "SF9:competing:B:bought:green_ball:order1:fact",
+      "source_id": "SF9:competing:B:bought:green_ball:order1:fact:Mia",
+      "stratum": "Order",
+      "subgroup": "order1:fact"
+    },
+    {
+      "candidate_names": [
+        "Carl",
+        "Tara"
+      ],
+      "correct": "Tara",
+      "correct_index": 1,
+      "distractor": "Carl",
+      "item_id": "SF20:competing:B:bought:green_ball:order1:copy:Carl",
+      "pair_key": "SF9:competing:B:bought:green_ball:order1:copy",
+      "source_id": "SF9:competing:B:bought:green_ball:order1:copy:Mia",
+      "stratum": "Order",
+      "subgroup": "order1:copy"
+    },
+    {
+      "candidate_names": [
+        "Susan",
+        "Colin"
+      ],
+      "correct": "Colin",
+      "correct_index": 1,
+      "distractor": "Susan",
+      "item_id": "SF20:competing:B:bought:green_ball:order0:fact:Colin",
+      "pair_key": "SF9:competing:B:bought:green_ball:order0:fact",
+      "source_id": "SF9:competing:B:bought:green_ball:order0:fact:Nora",
+      "stratum": "Order",
+      "subgroup": "order0:fact"
+    },
+    {
+      "candidate_names": [
+        "Ralph",
+        "Wendy"
+      ],
+      "correct": "Ralph",
+      "correct_index": 0,
+      "distractor": "Wendy",
+      "item_id": "SF20:competing:B:bought:green_ball:order0:copy:Wendy",
+      "pair_key": "SF9:competing:B:bought:green_ball:order0:copy",
+      "source_id": "SF9:competing:B:bought:green_ball:order0:copy:Nora",
+      "stratum": "Order",
+      "subgroup": "order0:copy"
+    },
+    {
+      "candidate_names": [
+        "Faye",
+        "Cathy"
+      ],
+      "correct": "Cathy",
+      "correct_index": 1,
+      "distractor": "Faye",
+      "item_id": "SF20:competing:B:bought:green_ball:order1:fact:Cathy",
+      "pair_key": "SF9:competing:B:bought:green_ball:order1:fact",
+      "source_id": "SF9:competing:B:bought:green_ball:order1:fact:Nora",
+      "stratum": "Order",
+      "subgroup": "order1:fact"
+    },
+    {
+      "candidate_names": [
+        "Carl",
+        "Tara"
+      ],
+      "correct": "Carl",
+      "correct_index": 0,
+      "distractor": "Tara",
+      "item_id": "SF20:competing:B:bought:green_ball:order1:copy:Tara",
+      "pair_key": "SF9:competing:B:bought:green_ball:order1:copy",
+      "source_id": "SF9:competing:B:bought:green_ball:order1:copy:Nora",
+      "stratum": "Order",
+      "subgroup": "order1:copy"
+    }
+  ],
+  "selected_names": [
+    "Sara",
+    "Bob",
+    "Billy",
+    "Tony",
+    "Fred",
+    "Tina",
+    "Steve",
+    "Susan",
+    "Remy",
+    "Ralph",
+    "Colin",
+    "Faye",
+    "Carl",
+    "Wendy",
+    "Cathy",
+    "Tara"
+  ],
+  "surface_pair_keys": {
+    "SF9:surface:A:painted:tin_cup:active_qa": [
+      "Billy",
+      "Tony"
+    ],
+    "SF9:surface:A:painted:tin_cup:cloze": [
+      "Sara",
+      "Bob"
+    ],
+    "SF9:surface:A:painted:tin_cup:passive_cloze": [
+      "Fred",
+      "Tina"
+    ],
+    "SF9:surface:A:painted:tin_cup:passive_qa": [
+      "Steve",
+      "Remy"
+    ],
+    "SF9:surface:B:bought:green_ball:active_qa": [
+      "Colin",
+      "Faye"
+    ],
+    "SF9:surface:B:bought:green_ball:cloze": [
+      "Susan",
+      "Ralph"
+    ],
+    "SF9:surface:B:bought:green_ball:passive_cloze": [
+      "Carl",
+      "Wendy"
+    ],
+    "SF9:surface:B:bought:green_ball:passive_qa": [
+      "Cathy",
+      "Tara"
+    ]
+  }
+}

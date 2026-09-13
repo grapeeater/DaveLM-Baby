@@ -1,0 +1,14 @@
+{
+  "checkpoint_loaded_for_u0_only": true,
+  "final_accessed": false,
+  "locked_transfer": "LOCKED_UNSCORED",
+  "manifest_sha256": "c8ec8255e3143dacbe1a89987b97d6516ae5c52e0db253d89be3c646f7bc2081",
+  "optimizer_created": false,
+  "predecessor_failed_attempt": "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v1",
+  "sacred_accessed": false,
+  "sealed_utc": "2026-09-09T08:12:19.785067+00:00",
+  "sole_scientific_change": "lambda=0.1 paired cosine consistency at final-normalized pre-answer query state",
+  "status": "SF21_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V2",
+  "updates": 0
+}

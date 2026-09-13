@@ -1,0 +1,6 @@
+{
+  "status": "SF1_FROZEN_PREFLIGHT_PASS",
+  "manifest_sha256": "0c06c30dee015a4f55f5b672c80dc7715ea541bd2dc096ddf64f758c81afa4f9",
+  "protocol_sha256": "5c236478bb7370f514745bcc32463f4e0c860e25f65bbfffa2ceed1d6ccd785f",
+  "preflight_sha256": "e5f2606d08b6eaf498a9059971c1acf6833200653948644d290608be74e4609e"
+}

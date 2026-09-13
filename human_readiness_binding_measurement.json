@@ -1,0 +1,56 @@
+{
+  "P5": {
+    "pilot0_dev": {
+      "n": 80,
+      "answer_exact": 50,
+      "answer_accuracy": 0.625,
+      "BD": 60,
+      "EO": 18,
+      "collapse": 2
+    },
+    "pilot1_dev": {
+      "n": 80,
+      "answer_exact": 47,
+      "answer_accuracy": 0.5875,
+      "BD": 60,
+      "EO": 18,
+      "collapse": 2
+    }
+  },
+  "P7": {
+    "pilot0_dev": {
+      "n": 80,
+      "answer_exact": 48,
+      "answer_accuracy": 0.6,
+      "BD": 70,
+      "EO": 8,
+      "collapse": 2
+    },
+    "pilot1_dev": {
+      "n": 80,
+      "answer_exact": 46,
+      "answer_accuracy": 0.575,
+      "BD": 68,
+      "EO": 12,
+      "collapse": 0
+    }
+  },
+  "Pilot1": {
+    "pilot0_dev": {
+      "n": 80,
+      "answer_exact": 80,
+      "answer_accuracy": 1.0,
+      "BD": 80,
+      "EO": 0,
+      "collapse": 0
+    },
+    "pilot1_dev": {
+      "n": 80,
+      "answer_exact": 80,
+      "answer_accuracy": 1.0,
+      "BD": 80,
+      "EO": 0,
+      "collapse": 0
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "byte_identical_sf13_payload": [
+      "D3_SELECTION.json",
+      "DEV_ORDER.json",
+      "DEV_SURFACE.json",
+      "EXTERNAL_INPUTS.json",
+      "KL_POOL_MANIFEST.json",
+      "KL_POOL.json",
+      "SCHEDULE.json",
+      "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py",
+      "SF2_PROTOCOL.json",
+      "TRAIN.json",
+      "TRAIN16_RETENTION.json"
+    ],
+    "checkpoint_loaded": false,
+    "final_accessed": false,
+    "isolated_variable": {
+      "D3_training_calls": 0,
+      "binding_unchanged": true,
+      "broad_KL_positions": 160,
+      "forward_KL_lambda": 1.0,
+      "full_first_answer_ce": true,
+      "head_frozen_english_only": true,
+      "margin_M": 1.0,
+      "margin_lambda": 0.25
+    },
+    "optimizer_created": false,
+    "parents": {
+      "87047": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "87048": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "87049": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+    },
+    "reporter_smoke": "PASS",
+    "runtime": {
+      "gpu": "AMD Radeon RX 9060 XT",
+      "python": "3.12.14",
+      "tokenizers": "0.23.1",
+      "torch": "2.12.0+rocm7.14.0"
+    },
+    "sacred_accessed": false,
+    "scope_isolation": {
+      "binding_full_scope_restored": true,
+      "english_head_frozen": true,
+      "grad_none_at_transitions": true,
+      "only_english_scope_changes": [
+        "base_model.language_head.weight",
+        "base_model.language_head.bias"
+      ],
+      "untied_embedding_and_head": true
+    },
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "updates": 0
+  },
+  "status": "SF18_PROSPECTIVE_PREFLIGHT_PASS",
+  "warnings": [
+    "The head is frozen only on English updates; unchanged binding updates restore full T13 scope and may update it. This is the prospectively frozen treatment.",
+    "U0 evidence is inherited from actual identical-parent evaluation and rerun by each branch."
+  ]
+}

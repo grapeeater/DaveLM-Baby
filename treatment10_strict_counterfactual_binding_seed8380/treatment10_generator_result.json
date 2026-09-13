@@ -1,0 +1,58 @@
+{
+ "experiment": "treatment10_strict_counterfactual_binding",
+ "status": "GENERATOR_PASS",
+ "train_pool_path": "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_training_quartet_pool.json",
+ "retention_pool_path": "C:\\DaveLM-CADAVER\\treatment10_strict_counterfactual_binding_seed8380\\treatment10_retention_quartet_pool.json",
+ "train_pool_sha256": "03ed49abcf6458362fe4f29b44ec2a5e2bfa9e05ad6788b9d2e6ff37c7bcfc17",
+ "retention_pool_sha256": "48731fbc1a37b5902f4827069e51a7dff1bd1d19c3ff1ed2d29b8e0d0a996de6",
+ "train_quartets": 200,
+ "train_documents": 800,
+ "retention_quartets": 40,
+ "retention_documents": 160,
+ "retention_training_overlap": 0,
+ "keys": [
+  {
+   "word": "num",
+   "token_id": 974
+  },
+  {
+   "word": "several",
+   "token_id": 1004
+  },
+  {
+   "word": "background",
+   "token_id": 779
+  },
+  {
+   "word": "groups",
+   "token_id": 900
+  },
+  {
+   "word": "event",
+   "token_id": 428
+  }
+ ],
+ "values": [
+  {
+   "word": "light",
+   "token_id": 1002
+  },
+  {
+   "word": "under",
+   "token_id": 788
+  },
+  {
+   "word": "than",
+   "token_id": 583
+  },
+  {
+   "word": "reliable",
+   "token_id": 778
+  },
+  {
+   "word": "guess",
+   "token_id": 959
+  }
+ ],
+ "note": "Structural generation only. No model, checkpoint, or behavioral outcome used."
+}

@@ -1,0 +1,48 @@
+{
+  "u100": [
+    {
+      "label": "M1(hist) vs M2(replayA) u100",
+      "max_abs_item_margin_diff": 0.0020464961417019367,
+      "mean_abs_item_margin_diff": 0.0009980404283851385,
+      "item_count_differing_in_correct_sign": 0
+    },
+    {
+      "label": "M1(hist) vs M2(common_a) u100",
+      "max_abs_item_margin_diff": 0.0020464961417019367,
+      "mean_abs_item_margin_diff": 0.0009980404283851385,
+      "item_count_differing_in_correct_sign": 0
+    },
+    {
+      "label": "common_a vs common_b u100 (both fresh; mixed modes)",
+      "max_abs_item_margin_diff": 0.0011619096621870995,
+      "mean_abs_item_margin_diff": 0.0004501820367295295,
+      "item_count_differing_in_correct_sign": 0
+    },
+    {
+      "label": "M2 vs M2 u100 (control: same mode)",
+      "max_abs_item_margin_diff": 0.0,
+      "mean_abs_item_margin_diff": 0.0,
+      "item_count_differing_in_correct_sign": 0
+    }
+  ],
+  "u200": [
+    {
+      "label": "M1(hist) vs M2(replayA) u200",
+      "max_abs_item_margin_diff": 0.006971244001761079,
+      "mean_abs_item_margin_diff": 0.001223431871039793,
+      "item_count_differing_in_correct_sign": 0
+    },
+    {
+      "label": "M1(hist) vs M2(replayB) u200",
+      "max_abs_item_margin_diff": 0.006971244001761079,
+      "mean_abs_item_margin_diff": 0.001223431871039793,
+      "item_count_differing_in_correct_sign": 0
+    },
+    {
+      "label": "M2 vs M2 u200 (control: same mode)",
+      "max_abs_item_margin_diff": 0.0,
+      "mean_abs_item_margin_diff": 0.0,
+      "item_count_differing_in_correct_sign": 0
+    }
+  ]
+}

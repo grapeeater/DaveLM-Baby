@@ -1,0 +1,24 @@
+{
+  "analytical": {
+    "token_embedding": 655360,
+    "position_embedding": 163840,
+    "attention_per_block": 1639040,
+    "mlp_per_block": 3280000,
+    "norms_per_block": 2560,
+    "block_total": 4921600,
+    "all_blocks": 59059200,
+    "final_norm": 1280,
+    "lm_head": 656384,
+    "base_total": 60536064,
+    "binding_localizer": 1281,
+    "binding_retrieval": 983040,
+    "binding_total": 984321,
+    "trained_total": 61520385
+  },
+  "physical": {
+    "base_total": 60536064,
+    "binding_total": 984321,
+    "trained_total": 61520385,
+    "trainable_total": 61520385
+  }
+}

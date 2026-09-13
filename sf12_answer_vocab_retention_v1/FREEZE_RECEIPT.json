@@ -1,0 +1,12 @@
+{
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "140847565ebb512d42cd3a9aeb8e555e2e4600232349362fb36c343952d41123",
+  "optimizer_created": false,
+  "sacred_accessed": false,
+  "scientific_change": "R_name only",
+  "sealed_utc": "2026-09-08T17:02:13.753538+00:00",
+  "status": "SF12_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF12_ANSWER_VOCAB_RETENTION_V1",
+  "updates": 0
+}

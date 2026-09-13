@@ -1,0 +1,54 @@
+{
+  "checkpoint_sha256": "pending",
+  "prompts": [
+    {
+      "prompt": "The dog ran to the park because",
+      "decoded": "The dog ran to the park because made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made made",
+      "immediate_eos": false,
+      "length": 32
+    },
+    {
+      "prompt": "Mia found a red ball and",
+      "decoded": "Mia found a red ball and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+      "immediate_eos": false,
+      "length": 32
+    },
+    {
+      "prompt": "The small cat sat on the mat. It",
+      "decoded": "The small cat sat on the mat. It to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to to",
+      "immediate_eos": false,
+      "length": 32
+    },
+    {
+      "prompt": "A boy opened the box and",
+      "decoded": "A boy opened the box and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and and",
+      "immediate_eos": false,
+      "length": 32
+    },
+    {
+      "prompt": "Tell me one thing about a sunny day.",
+      "decoded": "Tell me one thing about a sunny day.................................",
+      "immediate_eos": false,
+      "length": 32
+    }
+  ],
+  "binding": {
+    "pilot0_dev": {
+      "n": 80,
+      "answer_exact": 80,
+      "answer_accuracy": 1.0,
+      "BD": 80,
+      "EO": 0,
+      "collapse": 0
+    },
+    "pilot1_dev": {
+      "n": 80,
+      "answer_exact": 80,
+      "answer_accuracy": 1.0,
+      "BD": 80,
+      "EO": 0,
+      "collapse": 0
+    }
+  },
+  "sealed_final_accessed": false
+}

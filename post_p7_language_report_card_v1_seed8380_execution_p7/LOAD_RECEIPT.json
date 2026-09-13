@@ -1,0 +1,11 @@
+{
+  "autocast": false,
+  "base_model_parameters": 10594944,
+  "checkpoint_sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "device": "cuda:0",
+  "english_path": "model.base_model(input_ids)",
+  "model_dtype": "float32",
+  "specialized_path_used": false,
+  "strict_state_load": true,
+  "tf32": false
+}

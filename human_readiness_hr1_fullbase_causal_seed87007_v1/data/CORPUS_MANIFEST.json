@@ -1,0 +1,102 @@
+{
+  "source": {
+    "url": "https://huggingface.co/datasets/roneneldan/TinyStories",
+    "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+    "file": "TinyStories-valid.txt",
+    "source_sha256": "94e431816c4cce81ff71e4408ff8d3bda9a42e8d2663986697c3954288cb38b4"
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "vocab_size": 1024
+  },
+  "selection": "normalize line endings; sha256 each complete story; sort hashes; first 10000 unique; first 9000 train and remaining 1000 dev",
+  "language_train": {
+    "stories": 9000,
+    "words": 1536105,
+    "characters": 7805368,
+    "tokens": 3549862,
+    "tokens_per_word": 2.310950097812324,
+    "characters_per_token": 2.198780684995642,
+    "token_length_quantiles": {
+      "p10": 262,
+      "p25": 300,
+      "p50": 350,
+      "p75": 420,
+      "p90": 578,
+      "p99": 1126
+    }
+  },
+  "language_dev": {
+    "stories": 1000,
+    "words": 167362,
+    "characters": 852267,
+    "tokens": 387341,
+    "tokens_per_word": 2.314390363403879,
+    "characters_per_token": 2.2003015430847754,
+    "token_length_quantiles": {
+      "p10": 260,
+      "p25": 301,
+      "p50": 351,
+      "p75": 414,
+      "p90": 536,
+      "p99": 1059
+    }
+  },
+  "binding_rehearsal": {
+    "quartets": 80,
+    "documents": 320,
+    "sha256": "07b2b1c0605d36ffffc6de582b8e1e752d3b55101e71d4c7ed0d477ea304e7ad",
+    "layout_combos": [
+      [
+        40,
+        4
+      ],
+      [
+        42,
+        5
+      ],
+      [
+        44,
+        6
+      ],
+      [
+        46,
+        7
+      ],
+      [
+        48,
+        8
+      ],
+      [
+        50,
+        9
+      ],
+      [
+        52,
+        10
+      ],
+      [
+        54,
+        11
+      ]
+    ]
+  },
+  "binding_dev": {
+    "quartets": 20,
+    "documents": 80,
+    "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+    "layout_combos": [
+      [
+        56,
+        12
+      ],
+      [
+        58,
+        13
+      ]
+    ]
+  },
+  "prior_t13_training_pool_sha256": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+  "sacred_retention_opened": false
+}

@@ -1,0 +1,59 @@
+{
+  "checkpoint_loaded": false,
+  "checks": {
+    "Pilot1_identity": "PASS",
+    "SF2_source_identity": "PASS",
+    "competing_candidate_tokens_all_16": "PASS",
+    "constant_LR_both_arms_no_anneal": "PASS",
+    "control_objective_unchanged": "PASS",
+    "external_source_identity": "PASS",
+    "first_answer_token_position": "PASS",
+    "frozen_gate_negative_tests": "PASS",
+    "literal_schedule_and_balancing": "PASS",
+    "locked_panels_not_referenced": "PASS",
+    "margin_hinge_formula": "PASS",
+    "margin_not_a_gate": "PASS",
+    "margin_only_in_treatment": "PASS",
+    "masking_alignment": "PASS",
+    "no_replay_or_fork_gate": "PASS",
+    "pinned_scope_and_objectives": "PASS",
+    "runtime": "PASS",
+    "six_runs_frozen": "PASS",
+    "tokenizer_identity_and_boundaries": "PASS"
+  },
+  "counts": {
+    "batch": 32,
+    "binding": 20,
+    "english": 180,
+    "families": 4,
+    "kl_pool": 165363,
+    "kl_positions_per_update": 160,
+    "pairs": 8,
+    "training_records": 16,
+    "updates": 200
+  },
+  "hinge_static_check": {
+    "M": 1.0,
+    "correct": -0.5,
+    "gap": 0.5,
+    "hinge": 0.5,
+    "lambda_margin": 1.0,
+    "wrong": -1.0
+  },
+  "optimizer_created": false,
+  "runtime": {
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "gpu": "AMD Radeon RX 9060 XT",
+    "python": "3.12.14",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "scope_function_sha256": "89a951d7c2058c2e67ce0f02bfc8039920c7a96bcd4053135b636304aefe6c10",
+  "source_hashes": {
+    "C:\\DaveLM-CADAVER\\sf7_pairwise_margin_hinge_v1\\CONTROLLER.py": "addedb4476f9104b7a37377e9f5e27d070e744dcf2780cb7fe75bd48f84467fd",
+    "C:\\DaveLM-CADAVER\\sf7_pairwise_margin_hinge_v1\\SF2_ENGINE.py": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7",
+    "C:\\DaveLM-CADAVER\\sf7_pairwise_margin_hinge_v1\\sources\\hr3_block3_runtime.py": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3"
+  },
+  "status": "PASS",
+  "updates": 0
+}

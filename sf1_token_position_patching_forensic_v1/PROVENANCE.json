@@ -1,0 +1,46 @@
+{
+  "all_parameters_requires_grad_false": true,
+  "authoritative_and_created_source_hashes": {
+    "C:\\DaveLM-CADAVER\\sf1_token_position_patching_forensic_v1\\build_protocol.py": "1ce5f5fe166a838830c7e1913b0732c105254b92190ea980a41c7ee9bd0821ef",
+    "C:\\DaveLM-CADAVER\\sf1_token_position_patching_forensic_v1\\finalize_report.py": "27704956ea1738c78fa3fd498ff35088e2216da0ea72a013fe3a63e3b4945c69",
+    "C:\\DaveLM-CADAVER\\sf1_token_position_patching_forensic_v1\\run_token_position_patching.py": "50011a116037f534ba48702263787dd1ac4751296b8a7b627f081ffeafa743f8",
+    "C:\\DaveLM-CADAVER\\sf1_upstream_localization_forensic_v1\\LOCALIZATION_RESULTS.jsonl": "e49199dbafe3f1267206a3450541a3d8d521457f143f93352f01832f5c33971d",
+    "C:\\DaveLM-CADAVER\\sf1_upstream_localization_forensic_v1\\SUMMARY.json": "69780e6ae8e2cd898d61cb886dd998dfbc77f0ef9a89b8314788f8c26901841c",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\sources\\hr3_block3_runtime.py": "03b36cd42eaa7067f9e437dcbecf5d853d02d228c395e0acaafd8dd13ac20bf3",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\sources\\treatment13_model.py": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+    "C:\\DaveLM-v0.9\\v0_8_2\\model.py": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d"
+  },
+  "autograd_used": false,
+  "condition_counts": {
+    "factual_hybrids": 240,
+    "general_hybrids": 72,
+    "native": 2
+  },
+  "final_classification": "ANSWER_GENERATION_STATE_DOMINANT_WITH_OUTPUT_PATH_INTERACTION; LANGUAGE_DAMAGE_DISTRIBUTED_ACROSS_PREDICTIVE_POSITIONS",
+  "finalization_loaded_checkpoint": false,
+  "identities_after": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "inputs_before": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "C:\\DaveLM-CADAVER\\sf1_token_position_patching_forensic_v1\\PROTOCOL.json": "e9bffb53616776cc2e9ad2695d893dee90152929ba55fd0ea6ff064a25805795",
+    "C:\\DaveLM-CADAVER\\sf1_token_position_patching_forensic_v1\\TOKEN_INDEX_MAP.json": "7a530e2582692f1f7a7cdfd2f3ddacbaa265215a8d31ad11cec2ce8d14400730",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\TRAIN.json": "08318d68e0d1b005ae340448af9dabb933013af08046a9cf8fd3ab64153ed9dd",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011\\data\\ENGLISH_DEV.jsonl": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "locked_final_sacred_access": false,
+  "optimizer_created": false,
+  "runtime": {
+    "device": "cuda",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "weight_or_dataset_mutation": false
+}

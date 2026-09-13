@@ -1,0 +1,114 @@
+{
+  "backward_passes": 0,
+  "checkpoint_model_state_loaded": false,
+  "classification": "PASS \u2014 PREFLIGHT ONLY; TRAINING NOT YET AUTHORIZED",
+  "expected_counts": {
+    "answer_substitutions": 32000,
+    "nonanswer_supervised_tokens": 6144000,
+    "sampled_events": 32000,
+    "supervised_tokens": 6176000,
+    "training_records": 1536
+  },
+  "experiment": "DaveLM v0.9 Treatment #4 preflight",
+  "frozen_objective": {
+    "answer_group_reweighting": false,
+    "answer_loss": "membership_loss + selector_loss",
+    "answer_position_action": "replace_original_ce",
+    "margin": 0.5,
+    "membership_coefficient": 1.0,
+    "membership_loss": "logsumexp(full_vocab_logits) - logsumexp([correct_logit,distractor_logit])",
+    "nonanswer_loss": "ordinary_full_vocabulary_ce",
+    "original_answer_ce_retained": false,
+    "reduction": "exact_historical_supervised_token_reduction",
+    "selector_coefficient": 1.0,
+    "selector_loss": "relu(0.5 - (correct_logit - distractor_logit))",
+    "separate_answer_mean": false,
+    "separate_auxiliary_addition": false
+  },
+  "gradients_calculated": false,
+  "historical_schedule": {
+    "expected_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+    "observed_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff"
+  },
+  "model_built": false,
+  "optimizer_built": false,
+  "optimizer_steps": 0,
+  "output_root": "C:\\DaveLM-CADAVER\\two_mapping_membership_margin_manual_seed8380",
+  "positive_control_evaluation": false,
+  "protected_source": "C:\\DaveLM-v0.9",
+  "read_only": true,
+  "record_audit": {
+    "prefix_lengths": {
+      "101": 122,
+      "105": 108,
+      "109": 117,
+      "113": 109,
+      "117": 86,
+      "121": 88,
+      "125": 93,
+      "129": 93,
+      "133": 106,
+      "137": 100,
+      "141": 103,
+      "145": 97,
+      "149": 115,
+      "153": 96,
+      "97": 103
+    },
+    "queried_relations": 1536,
+    "slot_counts": {
+      "0": 768,
+      "1": 768
+    },
+    "vocab_size": 1024
+  },
+  "schedule_and_substitution_audit": {
+    "all_pass": true,
+    "answer_substitutions": 32000,
+    "answer_supervised_tokens": 32000,
+    "answer_target_matches": 32000,
+    "answer_target_mismatches": 0,
+    "causal_position_max": 152,
+    "causal_position_min": 96,
+    "checks": {
+      "all_relations_sampled": true,
+      "answer_substitution_count_exact": true,
+      "answer_targets_exact": true,
+      "duplicate_substitutions_zero": true,
+      "event_count_exact": true,
+      "missing_substitutions_zero": true,
+      "native_prefix_identity_exact": true,
+      "nonanswer_token_count_exact": true,
+      "schedule_sha_exact": true,
+      "supervised_token_count_preserved": true
+    },
+    "duplicate_substitutions": 0,
+    "mismatch_examples": [],
+    "missing_substitutions": 0,
+    "native_prefix_matches": 32000,
+    "native_prefix_mismatches": 0,
+    "nonanswer_supervised_tokens": 6144000,
+    "observed_schedule_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+    "query_slot_counts": {
+      "0": 16014,
+      "1": 15986
+    },
+    "relation_event_count_max": 38,
+    "relation_event_count_mean": 20.833333333333332,
+    "relation_event_count_min": 7,
+    "sampled_events": 32000,
+    "total_supervised_tokens": 6176000,
+    "unique_sampled_relations": 1536,
+    "within_document_start_counts": {
+      "0": 32000
+    }
+  },
+  "sealed_axes_loaded": false,
+  "sealed_evaluation": false,
+  "starting_checkpoint": {
+    "expected_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+    "observed_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+    "pass": true,
+    "path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt"
+  }
+}

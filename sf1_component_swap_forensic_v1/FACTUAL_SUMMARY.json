@@ -1,0 +1,498 @@
+{
+  "PPP": {
+    "Alex-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 4.921583422401454e-05,
+      "mean_eos_probability": 4.506424886585592e-06,
+      "mean_first_margin": 0.8424511551856995,
+      "mean_four_name_mass": 0.00034314276490476914,
+      "mean_sequence_margin": 1.1952004730701447,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 4.685685144067975e-05,
+      "mean_eos_probability": 4.33852312653471e-06,
+      "mean_first_margin": 0.015035063028335571,
+      "mean_four_name_mass": 0.0003245602401875658,
+      "mean_sequence_margin": 0.07374916225671768,
+      "n": 8,
+      "sequence_correct": 5
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.00033780987359932624,
+      "mean_eos_probability": 3.765924759591144e-06,
+      "mean_first_margin": -0.03708113543689251,
+      "mean_four_name_mass": 0.000392805777664762,
+      "mean_sequence_margin": 0.03684134781360626,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 4.449786865734495e-05,
+      "mean_eos_probability": 4.170621366483829e-06,
+      "mean_first_margin": -0.8123810291290283,
+      "mean_four_name_mass": 0.00030597771547036245,
+      "mean_sequence_margin": -1.0477021485567093,
+      "n": 4,
+      "sequence_correct": 1
+    },
+    "overall": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.000192333362520003,
+      "mean_eos_probability": 4.052223943062927e-06,
+      "mean_first_margin": -0.011023036204278469,
+      "mean_four_name_mass": 0.0003586830089261639,
+      "mean_sequence_margin": 0.05529525503516197,
+      "n": 16,
+      "sequence_correct": 9
+    }
+  },
+  "PPS": {
+    "Alex-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.00012102794244128745,
+      "mean_eos_probability": 5.455819064081879e-06,
+      "mean_first_margin": 0.7966178059577942,
+      "mean_four_name_mass": 0.000929873036511708,
+      "mean_sequence_margin": 1.429635964334011,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.00011465174293334712,
+      "mean_eos_probability": 5.240373241122143e-06,
+      "mean_first_margin": 0.017588689923286438,
+      "mean_four_name_mass": 0.0008756287170399446,
+      "mean_sequence_margin": 0.09798841923475266,
+      "n": 8,
+      "sequence_correct": 5
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0009384786899317987,
+      "mean_eos_probability": 4.5412537588163104e-06,
+      "mean_first_margin": -0.030046015977859497,
+      "mean_four_name_mass": 0.0010705095919547603,
+      "mean_sequence_margin": 0.08309239149093628,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0001082755434254068,
+      "mean_eos_probability": 5.024927418162406e-06,
+      "mean_first_margin": -0.7614404261112213,
+      "mean_four_name_mass": 0.0008213843975681812,
+      "mean_sequence_margin": -1.2336591258645058,
+      "n": 4,
+      "sequence_correct": 1
+    },
+    "overall": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0005265652164325729,
+      "mean_eos_probability": 4.8908134999692265e-06,
+      "mean_first_margin": -0.0062286630272865295,
+      "mean_four_name_mass": 0.0009730691544973524,
+      "mean_sequence_margin": 0.09054040536284447,
+      "n": 16,
+      "sequence_correct": 9
+    }
+  },
+  "PSP": {
+    "Alex-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 4.965969719705754e-05,
+      "mean_eos_probability": 4.539380711321428e-06,
+      "mean_first_margin": 0.8383926153182983,
+      "mean_four_name_mass": 0.00034610893271747045,
+      "mean_sequence_margin": 1.2001999616622925,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 4.727812370219908e-05,
+      "mean_eos_probability": 4.370127442143712e-06,
+      "mean_first_margin": 0.01509210467338562,
+      "mean_four_name_mass": 0.00032735354943724815,
+      "mean_sequence_margin": 0.07351131737232208,
+      "n": 8,
+      "sequence_correct": 5
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0003407277290534694,
+      "mean_eos_probability": 3.791496936855765e-06,
+      "mean_first_margin": -0.03709752485156059,
+      "mean_four_name_mass": 0.00039621836367587093,
+      "mean_sequence_margin": 0.03758673369884491,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 4.4896550207340624e-05,
+      "mean_eos_probability": 4.200874172965996e-06,
+      "mean_first_margin": -0.8082084059715271,
+      "mean_four_name_mass": 0.00030859816615702584,
+      "mean_sequence_margin": -1.0531773269176483,
+      "n": 4,
+      "sequence_correct": 1
+    },
+    "overall": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.00019400292637783423,
+      "mean_eos_probability": 4.0808121894997385e-06,
+      "mean_first_margin": -0.011002710089087486,
+      "mean_four_name_mass": 0.00036178595655655954,
+      "mean_sequence_margin": 0.055549025535583496,
+      "n": 16,
+      "sequence_correct": 9
+    }
+  },
+  "PSS": {
+    "Alex-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0001225631422130391,
+      "mean_eos_probability": 5.50462675619201e-06,
+      "mean_first_margin": 0.7922773659229279,
+      "mean_four_name_mass": 0.0009413267907802947,
+      "mean_sequence_margin": 1.43338643014431,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.00011610162118813605,
+      "mean_eos_probability": 5.287059508418679e-06,
+      "mean_first_margin": 0.017648518085479736,
+      "mean_four_name_mass": 0.0008863688926794566,
+      "mean_sequence_margin": 0.0977691225707531,
+      "n": 8,
+      "sequence_correct": 5
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0009500226915406529,
+      "mean_eos_probability": 4.57927907859812e-06,
+      "mean_first_margin": -0.03005172684788704,
+      "mean_four_name_mass": 0.0010837163717951626,
+      "mean_sequence_margin": 0.08432039618492126,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.000109640100163233,
+      "mean_eos_probability": 5.069492260645347e-06,
+      "mean_first_margin": -0.7569803297519684,
+      "mean_four_name_mass": 0.0008314109945786186,
+      "mean_sequence_margin": -1.2378481850028038,
+      "n": 4,
+      "sequence_correct": 1
+    },
+    "overall": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.0005330621563643945,
+      "mean_eos_probability": 4.933169293508399e-06,
+      "mean_first_margin": -0.006201604381203651,
+      "mean_four_name_mass": 0.0009850426322373096,
+      "mean_sequence_margin": 0.09104475937783718,
+      "n": 16,
+      "sequence_correct": 9
+    }
+  },
+  "SPP": {
+    "Alex-correct": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.4069959446787834,
+      "mean_eos_probability": 0.009868858149275184,
+      "mean_first_margin": 0.6138391494750977,
+      "mean_four_name_mass": 0.628166064620018,
+      "mean_sequence_margin": 0.570886269735638,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.4149538651108742,
+      "mean_eos_probability": 0.009940156014636159,
+      "mean_first_margin": 0.111808180809021,
+      "mean_four_name_mass": 0.6337933167815208,
+      "mean_sequence_margin": 0.11303516011685133,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 8,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 8,
+      "mean_candidate_pair_mass": 0.41619332134723663,
+      "mean_eos_probability": 0.0017364936138619669,
+      "mean_first_margin": 0.6370101571083069,
+      "mean_four_name_mass": 0.6451754197478294,
+      "mean_sequence_margin": 0.645617438654881,
+      "n": 8,
+      "sequence_correct": 8
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.42291178554296494,
+      "mean_eos_probability": 0.010011453879997134,
+      "mean_first_margin": -0.39022278785705566,
+      "mean_four_name_mass": 0.6394205689430237,
+      "mean_sequence_margin": -0.3448159495019354,
+      "n": 4,
+      "sequence_correct": 0
+    },
+    "overall": {
+      "exact_answer_eos": 12,
+      "first_margin_correct": 12,
+      "full_vocab_top1_correct": 12,
+      "mean_candidate_pair_mass": 0.4155735932290554,
+      "mean_eos_probability": 0.005838324814249063,
+      "mean_first_margin": 0.37440916895866394,
+      "mean_four_name_mass": 0.6394843682646751,
+      "mean_sequence_margin": 0.37932629938586615,
+      "n": 16,
+      "sequence_correct": 12
+    }
+  },
+  "SPS": {
+    "Alex-correct": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.605064183473587,
+      "mean_eos_probability": 0.007084981305524707,
+      "mean_first_margin": 0.5196225643157959,
+      "mean_four_name_mass": 0.9021387249231339,
+      "mean_sequence_margin": 0.5078729464730714,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.6125185936689377,
+      "mean_eos_probability": 0.0070607144152745605,
+      "mean_first_margin": 0.1150519847869873,
+      "mean_four_name_mass": 0.9039386287331581,
+      "mean_sequence_margin": 0.1155223194800783,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 8,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 8,
+      "mean_candidate_pair_mass": 0.5878185927867889,
+      "mean_eos_probability": 0.0011355989481671713,
+      "mean_first_margin": 0.6553881168365479,
+      "mean_four_name_mass": 0.9140962734818459,
+      "mean_sequence_margin": 0.6594824669882655,
+      "n": 8,
+      "sequence_correct": 8
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.6199730038642883,
+      "mean_eos_probability": 0.007036447525024414,
+      "mean_first_margin": -0.2895185947418213,
+      "mean_four_name_mass": 0.9057385325431824,
+      "mean_sequence_margin": -0.27682830751291476,
+      "n": 4,
+      "sequence_correct": 0
+    },
+    "overall": {
+      "exact_answer_eos": 12,
+      "first_margin_correct": 12,
+      "full_vocab_top1_correct": 12,
+      "mean_candidate_pair_mass": 0.6001685932278633,
+      "mean_eos_probability": 0.004098156681720866,
+      "mean_first_margin": 0.3852200508117676,
+      "mean_four_name_mass": 0.909017451107502,
+      "mean_sequence_margin": 0.3875023932341719,
+      "n": 16,
+      "sequence_correct": 12
+    }
+  },
+  "SSP": {
+    "Alex-correct": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.40982112288475037,
+      "mean_eos_probability": 0.009928721701726317,
+      "mean_first_margin": 0.6104941368103027,
+      "mean_four_name_mass": 0.6317613422870636,
+      "mean_sequence_margin": 0.5686163741047494,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.4178462028503418,
+      "mean_eos_probability": 0.009999198489822447,
+      "mean_first_margin": 0.11201608180999756,
+      "mean_four_name_mass": 0.6374359652400017,
+      "mean_sequence_margin": 0.11321184705593623,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 8,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 8,
+      "mean_candidate_pair_mass": 0.4184302128851414,
+      "mean_eos_probability": 0.0017416524206055328,
+      "mean_first_margin": 0.6380504965782166,
+      "mean_four_name_mass": 0.6488458588719368,
+      "mean_sequence_margin": 0.6465264798025601,
+      "n": 8,
+      "sequence_correct": 8
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.4258712828159332,
+      "mean_eos_probability": 0.010069675277918577,
+      "mean_first_margin": -0.3864619731903076,
+      "mean_four_name_mass": 0.6431105881929398,
+      "mean_sequence_margin": -0.34219267999287695,
+      "n": 4,
+      "sequence_correct": 0
+    },
+    "overall": {
+      "exact_answer_eos": 12,
+      "first_margin_correct": 12,
+      "full_vocab_top1_correct": 12,
+      "mean_candidate_pair_mass": 0.4181382078677416,
+      "mean_eos_probability": 0.00587042545521399,
+      "mean_first_margin": 0.37503328919410706,
+      "mean_four_name_mass": 0.6431409120559692,
+      "mean_sequence_margin": 0.37986916342924815,
+      "n": 16,
+      "sequence_correct": 12
+    }
+  },
+  "SSS": {
+    "Alex-correct": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.6071324795484543,
+      "mean_eos_probability": 0.00708345347084105,
+      "mean_first_margin": 0.515876293182373,
+      "mean_four_name_mass": 0.9040515273809433,
+      "mean_sequence_margin": 0.5044768971856683,
+      "n": 4,
+      "sequence_correct": 4
+    },
+    "Alex/Owen": {
+      "exact_answer_eos": 4,
+      "first_margin_correct": 4,
+      "full_vocab_top1_correct": 4,
+      "mean_candidate_pair_mass": 0.614610567688942,
+      "mean_eos_probability": 0.007057901355437934,
+      "mean_first_margin": 0.11527013778686523,
+      "mean_four_name_mass": 0.9058464616537094,
+      "mean_sequence_margin": 0.11572801080183126,
+      "n": 8,
+      "sequence_correct": 4
+    },
+    "Mia/Nora": {
+      "exact_answer_eos": 8,
+      "first_margin_correct": 8,
+      "full_vocab_top1_correct": 8,
+      "mean_candidate_pair_mass": 0.588715735822916,
+      "mean_eos_probability": 0.001131835968408268,
+      "mean_first_margin": 0.656456470489502,
+      "mean_four_name_mass": 0.9159244075417519,
+      "mean_sequence_margin": 0.6604874174809083,
+      "n": 8,
+      "sequence_correct": 8
+    },
+    "Owen-correct": {
+      "exact_answer_eos": 0,
+      "first_margin_correct": 0,
+      "full_vocab_top1_correct": 0,
+      "mean_candidate_pair_mass": 0.6220886558294296,
+      "mean_eos_probability": 0.007032349240034819,
+      "mean_first_margin": -0.2853360176086426,
+      "mean_four_name_mass": 0.9076413959264755,
+      "mean_sequence_margin": -0.27302087558200583,
+      "n": 4,
+      "sequence_correct": 0
+    },
+    "overall": {
+      "exact_answer_eos": 12,
+      "first_margin_correct": 12,
+      "full_vocab_top1_correct": 12,
+      "mean_candidate_pair_mass": 0.601663151755929,
+      "mean_eos_probability": 0.004094868661923101,
+      "mean_first_margin": 0.3858633041381836,
+      "mean_four_name_mass": 0.9108854345977306,
+      "mean_sequence_margin": 0.3881077141413698,
+      "n": 16,
+      "sequence_correct": 12
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "ADDITIVE_REPORTING_ONLY",
+  "source_bundle": "C:\\DaveLM-CADAVER\\sf16_first_answer_token_ce_weight_v1",
+  "source_receipt_sha256": "1f24996fc8d093dc9cb627b1053cb58c76bb9dc9b90e8d5e97d9109147f4faee",
+  "source_manifest_sha256": "9e0b3e670c957a5fc601631188eead701e2ba7f97e7bc0ac07bd8eb6376f5147",
+  "source_output_receipt_sha256": "01d2791351ede1215eab291e6f847aaf12943bdf6062781725969f14b3f28f6d",
+  "scientific_changes": 0,
+  "training_updates": 0,
+  "inference_runs": 0
+}

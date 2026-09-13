@@ -1,0 +1,9 @@
+{
+  "status": "PASS_MECHANICAL_REPORTING_HOTFIX",
+  "source_integrity_verified": true,
+  "runs": 3,
+  "classification": "ANSWER_VOCAB_RETENTION_WEAKENED",
+  "model_loaded": false,
+  "inference_run": false,
+  "training_replayed": false
+}

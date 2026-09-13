@@ -1,0 +1,47 @@
+{
+  "architecture_chain": {
+    "receipt_sha256": "776859cb1bf671634ae2d7e8dfab7f7cb8e517ce802d30d3cb3733b6b734b368",
+    "manifest_sha256": "a4a9fb219f082e1936bf7341f42d82354fc2c7cf8d6f9b0d03c84e815117cad4"
+  },
+  "architecture_config_sha256": "8d7e1cbc604c9bf9f1942d4afc01817b20af17d8805a984f7ae57b1254f957b4",
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "pilot1_train": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+    "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+  },
+  "pilot1_dev": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl",
+    "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+  },
+  "pilot1_training_spec": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\TRAINING_SPEC.json",
+    "sha256": "0f731ffde8dcd924e174a3b0b910d125311651b682bef5c6e80107606a18c680"
+  },
+  "pilot1_runner": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\run.py",
+    "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5"
+  },
+  "pilot1_material_builder": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\prepare.py",
+    "sha256": "b4e77c2d169d6bb7d37ad342ab12d820d9d1c21c16dbee0d8d2187627c276021"
+  },
+  "warmup_cosine_reference": {
+    "path": "C:\\DaveLM-v0.8\\v0_8\\token_schedule.py",
+    "sha256": "0cb0083016a8f57966190f95170b415ca683f07983801a05e23dfaf95b525745"
+  },
+  "warmup_budget_reference": {
+    "path": "C:\\DaveLM-v0.8\\v0_7_1\\config.py",
+    "sha256": "0ff9dc509b02c2065d12d5b8fb0f742bcd4ff5ab4271fa321121032449de99bd"
+  },
+  "initialized_checkpoint": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1_language_v1\\initialization\\seed_610001_initialized.pt",
+    "sha256": "039e8efe7353d5065c06c2519053695e5944d58eeee2765594a8dfadb80d821c"
+  },
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "training_performed": false,
+  "forbidden_material_accessed": false
+}

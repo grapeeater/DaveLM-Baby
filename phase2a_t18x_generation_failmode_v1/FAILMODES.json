@@ -1,0 +1,982 @@
+{
+  "test_loaded": false,
+  "test_seal": "SEALED_UNOPENED",
+  "seeds": {
+    "770001": {
+      "confusion_u1000": {
+        "cells": {
+          "PNe": 48,
+          "Pne": 33,
+          "PNE": 35,
+          "pne": 9,
+          "pNE": 1,
+          "pNe": 2
+        },
+        "n": 128,
+        "exact_ok": 36,
+        "pointer_and_native_not_exact": 48,
+        "pn_not_exact_templates": {
+          "active": 16,
+          "passive": 14,
+          "owns": 13,
+          "locative": 5
+        }
+      },
+      "generation_modes": {
+        "other_then_eos": 30,
+        "first_token_correct_then_diverge": 40,
+        "exact": 36,
+        "wrong_candidate_first_token": 13,
+        "wrong_candidate": 8,
+        "unterminated_other": 1
+      },
+      "first_token": {
+        "target_bos": 76,
+        "wrong_candidate_bos": 21,
+        "other": 31
+      },
+      "exact_hit_samples": [
+        {
+          "id": "DI00:a1:q1:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI01:a0:q0:o0",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a0:q0:o1",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a1:q1:o0",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a1:q1:o1",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI02:a1:q0:o0",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Sal."
+        },
+        {
+          "id": "DI03:a0:q1:o0",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a0:q1:o1",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a1:q0:o0",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": false,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a1:q0:o1",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI04:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI04:a1:q0:o0",
+          "template": "active",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Skye."
+        }
+      ],
+      "pne_miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " Lois."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " He was a very happy."
+        },
+        {
+          "id": "DI01:a0:q1:o1",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        },
+        {
+          "id": "DI01:a1:q0:o1",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI02:a0:q0:o0",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI02:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "wrong_candidate_first_token",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI02:a0:q1:o0",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a0:q1:o1",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a1:q0:o1",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a1:q1:o0",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI02:a1:q1:o1",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "wrong_candidate_first_token",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " Salt."
+        }
+      ]
+    },
+    "770002": {
+      "confusion_u1000": {
+        "cells": {
+          "PNe": 42,
+          "PNE": 33,
+          "Pne": 33,
+          "pne": 14,
+          "pNE": 3,
+          "pNe": 3
+        },
+        "n": 128,
+        "exact_ok": 36,
+        "pointer_and_native_not_exact": 42,
+        "pn_not_exact_templates": {
+          "active": 13,
+          "passive": 11,
+          "locative": 6,
+          "owns": 12
+        }
+      },
+      "generation_modes": {
+        "other_then_eos": 29,
+        "exact": 36,
+        "first_token_correct_then_diverge": 41,
+        "wrong_candidate": 14,
+        "wrong_candidate_first_token": 8
+      },
+      "first_token": {
+        "target_bos": 77,
+        "wrong_candidate_bos": 22,
+        "other": 29
+      },
+      "exact_hit_samples": [
+        {
+          "id": "DI00:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI01:a0:q0:o0",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a0:q0:o1",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a1:q1:o0",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a1:q1:o1",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI02:a1:q0:o0",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Sal."
+        },
+        {
+          "id": "DI03:a0:q1:o0",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a0:q1:o1",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a1:q0:o0",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": false,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a1:q0:o1",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": false,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI04:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        }
+      ],
+      "pne_miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " Vic."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " Vic."
+        },
+        {
+          "id": "DI01:a0:q1:o0",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        },
+        {
+          "id": "DI01:a0:q1:o1",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        },
+        {
+          "id": "DI01:a1:q0:o0",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI01:a1:q0:o1",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI02:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Omar.",
+          "gen_txt": " Ominder."
+        },
+        {
+          "id": "DI02:a0:q1:o0",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a0:q1:o1",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a1:q0:o1",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a1:q1:o0",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI02:a1:q1:o1",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " Mom."
+        }
+      ]
+    },
+    "770003": {
+      "confusion_u1000": {
+        "cells": {
+          "PNe": 43,
+          "PNE": 36,
+          "Pne": 35,
+          "pne": 7,
+          "pNE": 4,
+          "pNe": 3
+        },
+        "n": 128,
+        "exact_ok": 40,
+        "pointer_and_native_not_exact": 43,
+        "pn_not_exact_templates": {
+          "active": 14,
+          "passive": 15,
+          "owns": 12,
+          "locative": 2
+        }
+      },
+      "generation_modes": {
+        "other_then_eos": 24,
+        "exact": 40,
+        "first_token_correct_then_diverge": 44,
+        "wrong_candidate": 11,
+        "wrong_candidate_first_token": 9
+      },
+      "first_token": {
+        "target_bos": 84,
+        "wrong_candidate_bos": 20,
+        "other": 24
+      },
+      "exact_hit_samples": [
+        {
+          "id": "DI00:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI01:a0:q0:o0",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a0:q0:o1",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a1:q1:o0",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI01:a1:q1:o1",
+          "template": "passive",
+          "correct_name": "Mel",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Mel.",
+          "gen_txt": " Mel."
+        },
+        {
+          "id": "DI02:a1:q0:o0",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Sal."
+        },
+        {
+          "id": "DI03:a0:q1:o0",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a1:q0:o0",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": false,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI03:a1:q0:o1",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": false,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Ross."
+        },
+        {
+          "id": "DI04:a0:q0:o1",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Ava.",
+          "gen_txt": " Ava."
+        },
+        {
+          "id": "DI04:a0:q1:o0",
+          "template": "active",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": true,
+          "mode": "exact",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Skye."
+        }
+      ],
+      "pne_miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI01:a1:q0:o0",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI01:a1:q0:o1",
+          "template": "passive",
+          "correct_name": "Skye",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Skye.",
+          "gen_txt": " Seth."
+        },
+        {
+          "id": "DI02:a0:q0:o0",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI02:a0:q1:o0",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a0:q1:o1",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a1:q0:o1",
+          "template": "active",
+          "correct_name": "Sal",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Sal.",
+          "gen_txt": " Salt."
+        },
+        {
+          "id": "DI02:a1:q1:o0",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI02:a1:q1:o1",
+          "template": "active",
+          "correct_name": "Omar",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Omar.",
+          "gen_txt": " Mom."
+        },
+        {
+          "id": "DI03:a0:q1:o1",
+          "template": "passive",
+          "correct_name": "Ross",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "first_token_correct_then_diverge",
+          "first_is_target_bos": true,
+          "target_txt": " Ross.",
+          "gen_txt": " Rosa."
+        },
+        {
+          "id": "DI04:a0:q0:o0",
+          "template": "active",
+          "correct_name": "Ava",
+          "pointer_ok": true,
+          "native_ok": true,
+          "exact_ok": false,
+          "mode": "other_then_eos",
+          "first_is_target_bos": false,
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "completed_update": 500,
+  "arm": "factual",
+  "scope": "binding",
+  "protocol_hash": "a056ad00e3350b4316473236d1f2d0614d310f4c6349f0c31b5784ce3e0b35c4",
+  "schedule_hash": "7855f07c245596a937fe758b0cca923b7ce5bb0c5bc5dc2405aaedea142521b0",
+  "parent_hash": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "rolling_matches_endpoint_weights": true,
+  "optimizer_state_existing_step_counts": [
+    50,
+    500
+  ],
+  "rolling_sha256": "00b9312c49f04901923a526730aa8db4efda9170138b56165ec82d8954f5b1bc"
+}

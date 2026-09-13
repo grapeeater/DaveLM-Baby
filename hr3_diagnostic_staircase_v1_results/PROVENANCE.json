@@ -1,0 +1,26 @@
+{
+  "bundle_receipt": "3586b986c4f08a887da641bfab6dad3cbd673cfb5fea57b618a6ffd4c25208e7",
+  "checkpoints": {
+    "Factual87002": {
+      "path": "C:\\DaveLM-CADAVER\\fact_supervision_87001_corrected_v8\\run_factual\\checkpoint_500.pt",
+      "sha256": "3ae30ae847d3129d7715173ddbfbbaf6b7490772dc850e361a5a2d785b991123"
+    },
+    "HR1_aligned": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_execution\\run_factual\\checkpoint_500.pt",
+      "sha256": "eec87f940822938911e34126ba855630473c94867f3e2d267a97e3d288b5652d"
+    },
+    "HR3": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr3_causal_seed87006_execution_v7\\checkpoint_500.pt",
+      "sha256": "23726ce76ff789bbe05d44340952a1763b7231584b0c91ff8e15f5c64e6ef93d"
+    },
+    "Pilot1": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+    }
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "source": "8b270c49a4b6ca4450e35323c8c01bba5c63ee2a7890b443da31e44f93566e9a"
+}

@@ -1,0 +1,12 @@
+{
+  "checkpoint_mutations": 0,
+  "created_utc": "2026-09-08T22:17:24.308833+00:00",
+  "inference_runs": 0,
+  "scientific_changes": 0,
+  "source_bundle": "C:\\DaveLM-CADAVER\\sf15_partial_first_token_ce_v1",
+  "source_final_report_sha256": "42f08523a8abdcb67cea70c0c0ed0805aa1b8cbb0605ebeb269905ea8e4b0b5d",
+  "source_receipt_sha256": "9fa6c2f591c970cc6837daefe403e78c9f5dfbdc61f5bbcd4672cd3639c6c424",
+  "source_results_sha256": "64d2c37b9f219d447479a4e7bda16e2b2b78a01a5fab453a06e123be7bbb49f0",
+  "training_updates": 0,
+  "type": "ADDITIVE_REPORTING_ONLY_CORRECTION"
+}

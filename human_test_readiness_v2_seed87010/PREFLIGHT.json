@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "continuity": 12,
+    "fact": 24,
+    "fact_families": 6,
+    "fact_reversal_pairs": 12,
+    "generation": 20,
+    "instruction": 12,
+    "total": 68
+  },
+  "final_accessed": false,
+  "negative_validator_tests": [
+    "wrong factual answer",
+    "wrong factual predicate",
+    "missing query object",
+    "broken reversal pair",
+    "unequal candidate token length"
+  ],
+  "pilot1_parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "sacred_accessed": false,
+  "status": "PASS_PROSPECTIVE_READINESS_DEV_FREEZE",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "unique_prompts": 68
+}

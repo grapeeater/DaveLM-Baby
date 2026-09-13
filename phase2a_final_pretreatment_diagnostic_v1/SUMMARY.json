@@ -1,0 +1,405 @@
+{
+  "adjudication": "D1_LINEAR_RELATIONAL_SIGNAL_ABSENT",
+  "baseline": {
+    "device": "cuda",
+    "max_abs_hidden_reextract": 0.0,
+    "max_abs_logit_reextract": 0.0,
+    "passed": true,
+    "pilot_hash": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "positions": "last token of unpadded prompt; model logits at that causal position predict first answer token",
+    "t2_hash": "83428b4e60a97385359be19d4d8312998bfd27d668480d6c4e3790d2489fdd42"
+  },
+  "corpus_rows": 128,
+  "families": 16,
+  "geometry": [
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_0",
+      "mean_twin_difference_norm": 0.3367312606424093,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_1",
+      "mean_twin_difference_norm": 0.6511514610610902,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_2",
+      "mean_twin_difference_norm": 0.9616490490734577,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_3",
+      "mean_twin_difference_norm": 1.1431613946333528,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_4",
+      "mean_twin_difference_norm": 1.400861262343824,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_5",
+      "mean_twin_difference_norm": 1.679231682792306,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_6",
+      "mean_twin_difference_norm": 2.00854329764843,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_7",
+      "mean_twin_difference_norm": 2.459138071164489,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_8",
+      "mean_twin_difference_norm": 3.2644022442400455,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_9",
+      "mean_twin_difference_norm": 3.968903198838234,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_10",
+      "mean_twin_difference_norm": 5.249742340296507,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "block_11",
+      "mean_twin_difference_norm": 6.5050729885697365,
+      "n": 64
+    },
+    {
+      "checkpoint": "Pilot1",
+      "layer": "final_norm",
+      "mean_twin_difference_norm": 4.001692656427622,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_0",
+      "mean_twin_difference_norm": 0.31456649024039507,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_1",
+      "mean_twin_difference_norm": 0.6992456833831966,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_2",
+      "mean_twin_difference_norm": 1.056575438939035,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_3",
+      "mean_twin_difference_norm": 1.2450557295233011,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_4",
+      "mean_twin_difference_norm": 1.41964359767735,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_5",
+      "mean_twin_difference_norm": 1.8921996131539345,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_6",
+      "mean_twin_difference_norm": 2.2892221603542566,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_7",
+      "mean_twin_difference_norm": 2.736989989876747,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_8",
+      "mean_twin_difference_norm": 3.3289390467107296,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_9",
+      "mean_twin_difference_norm": 3.6136131044477224,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_10",
+      "mean_twin_difference_norm": 4.42306138202548,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "block_11",
+      "mean_twin_difference_norm": 5.046039950102568,
+      "n": 64
+    },
+    {
+      "checkpoint": "T2_U100",
+      "layer": "final_norm",
+      "mean_twin_difference_norm": 2.0857850965112448,
+      "n": 64
+    }
+  ],
+  "input_hashes": {
+    "pilot": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "t2": "83428b4e60a97385359be19d4d8312998bfd27d668480d6c4e3790d2489fdd42",
+    "tokenizer": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "interpretation": "Family/twin-disjoint linear decoding is the primary test; no causal claim about training location is made.",
+  "language": {
+    "Pilot1_CE": 1.172293643001467,
+    "T2_U100_CE": 1.1975870970636606,
+    "source": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_DEV_STREAM.u16",
+    "source_sha256": "4e9834d43ec80a0eea5e1a5a59c284f8f76f5f84bffcf979e4686661d71b6017",
+    "windows": 128
+  },
+  "next_training_treatment_direction": "explicit representation-forming contextual supervision with true assignment/query counterfactual pairs; retain language and binding protections",
+  "nonlinear_probe": {
+    "passed": true,
+    "protocol": "one hidden-layer tanh MLP, 8 units, family-disjoint 12/4 split, twins together; probe only, no Baby mutation",
+    "results": [
+      {
+        "checkpoint": "Pilot1",
+        "family_grouped_nonlinear_accuracy": 0.5,
+        "feature_map": "fixed quadratic on 8 standardized axes",
+        "layer": "final_norm",
+        "ridge_lambda": 5.0,
+        "seed": 610321,
+        "shuffled_label_accuracy": 0.5
+      },
+      {
+        "checkpoint": "T2_U100",
+        "family_grouped_nonlinear_accuracy": 0.5625,
+        "feature_map": "fixed quadratic on 8 standardized axes",
+        "layer": "final_norm",
+        "ridge_lambda": 5.0,
+        "seed": 610321,
+        "shuffled_label_accuracy": 0.5
+      }
+    ],
+    "trigger": "linear/geometric family-disjoint result was null"
+  },
+  "pipeline_controls": {
+    "family_grouped_split_accuracy": 0.5,
+    "leakage_injected_accuracy": 1.0,
+    "leakage_removed_accuracy": 0.5625,
+    "negative_shuffled_accuracy": 0.46875,
+    "pass": true,
+    "positive_separable_accuracy": 1.0,
+    "random_row_split_accuracy": 0.46875
+  },
+  "probe_highlights": [
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.5,
+      "layer": "block_0",
+      "name_disjoint_accuracy": 0.4791666666666667,
+      "shuffled_label_accuracy": 0.59375
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.46875,
+      "layer": "block_1",
+      "name_disjoint_accuracy": 0.5416666666666666,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.5,
+      "layer": "block_2",
+      "name_disjoint_accuracy": 0.5,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.46875,
+      "layer": "block_3",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.46875,
+      "layer": "block_4",
+      "name_disjoint_accuracy": 0.5,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "block_5",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.46875
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "block_6",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "block_7",
+      "name_disjoint_accuracy": 0.4791666666666667,
+      "shuffled_label_accuracy": 0.4375
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "block_8",
+      "name_disjoint_accuracy": 0.4583333333333333,
+      "shuffled_label_accuracy": 0.53125
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.4375,
+      "layer": "block_9",
+      "name_disjoint_accuracy": 0.5,
+      "shuffled_label_accuracy": 0.4375
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "block_10",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.40625
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.5625,
+      "layer": "block_11",
+      "name_disjoint_accuracy": 0.4583333333333333,
+      "shuffled_label_accuracy": 0.46875
+    },
+    {
+      "checkpoint": "Pilot1",
+      "family_grouped_accuracy": 0.5625,
+      "layer": "final_norm",
+      "name_disjoint_accuracy": 0.5,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5,
+      "layer": "block_0",
+      "name_disjoint_accuracy": 0.4791666666666667,
+      "shuffled_label_accuracy": 0.5625
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.46875,
+      "layer": "block_1",
+      "name_disjoint_accuracy": 0.5416666666666666,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5,
+      "layer": "block_2",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.5
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.46875,
+      "layer": "block_3",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.53125
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.4375,
+      "layer": "block_4",
+      "name_disjoint_accuracy": 0.5416666666666666,
+      "shuffled_label_accuracy": 0.4375
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5625,
+      "layer": "block_5",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.5625
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5,
+      "layer": "block_6",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.46875
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5625,
+      "layer": "block_7",
+      "name_disjoint_accuracy": 0.4583333333333333,
+      "shuffled_label_accuracy": 0.4375
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5,
+      "layer": "block_8",
+      "name_disjoint_accuracy": 0.5416666666666666,
+      "shuffled_label_accuracy": 0.53125
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.46875,
+      "layer": "block_9",
+      "name_disjoint_accuracy": 0.5208333333333334,
+      "shuffled_label_accuracy": 0.5625
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "block_10",
+      "name_disjoint_accuracy": 0.5416666666666666,
+      "shuffled_label_accuracy": 0.46875
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.5625,
+      "layer": "block_11",
+      "name_disjoint_accuracy": 0.4791666666666667,
+      "shuffled_label_accuracy": 0.5625
+    },
+    {
+      "checkpoint": "T2_U100",
+      "family_grouped_accuracy": 0.53125,
+      "layer": "final_norm",
+      "name_disjoint_accuracy": 0.4791666666666667,
+      "shuffled_label_accuracy": 0.5625
+    }
+  ],
+  "status": "VALID"
+}

@@ -1,0 +1,19 @@
+{
+ "status": "TREATMENT13_DISTINCT_LOCALIZATION_TRAINED",
+ "steps": 1000,
+ "lambda": 1.0536573711078283,
+ "final_checkpoint_sha256": "0d5bf015a303ada49e6f3ab0ff3d574ea57ddcc18505cab29c2715267841e4b4",
+ "final_step": {
+  "step": 1000,
+  "L_total": 0.0031182703096419573,
+  "L_answer": 0.00020338851027190685,
+  "L_localization": 0.002766441786661744,
+  "answer_accuracy": 1.0,
+  "both_distinct_rate": 1.0,
+  "exactly_one_rate": 0.0,
+  "slot_collapse_rate": 0.0,
+  "neither_rate": 0.0,
+  "grad_norm": 0.03182951733469963
+ },
+ "runtime_seconds": 239.04169917106628
+}

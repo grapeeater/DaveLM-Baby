@@ -1,0 +1,137 @@
+{
+  "status": "CAUSAL_ALIGNMENT_PREFLIGHT_PASS_NO_TRAINING",
+  "bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "role": "explicit Pilot 1 parent"
+  },
+  "parent_lineage": {
+    "material_manifest": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PILOT1_MATERIAL_MANIFEST.json",
+      "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2",
+      "role": "Pilot 1 material provenance"
+    },
+    "completion_record": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\RESULTS.json",
+      "sha256": "726142fd3847a4f546082bbae2c12d7f560232ba8182c9da1739705408002220",
+      "role": "Pilot 1 completion and final hash"
+    },
+    "training_spec": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\TRAINING_SPEC.json",
+      "sha256": "0f731ffde8dcd924e174a3b0b910d125311651b682bef5c6e80107606a18c680",
+      "role": "Pilot 1 training specification"
+    },
+    "starting_checkpoint_sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+    "final_checkpoint_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "root_cause": {
+    "hr1_trainer": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\HR1_TRAIN_REAL.py",
+      "sha256": "ef42d9e600e714eb3e1dfbe1e5f08285fd8465a7d51839f0d03e87d51e417e17",
+      "role": "shifted target source"
+    },
+    "hr2_trainer": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr2_seed87005_v7\\HR2_TRAIN.py",
+      "sha256": "41560c549b56cd9695ca3c997da240c12b93f05ce08b112e3ee7dc1e22eed809",
+      "role": "shifted target and unlikelihood source"
+    },
+    "shifted_expression": "y[i,1:len(z)] = z[1:]",
+    "effect": "current-token copying at positions 1..n and EOS paired with padding"
+  },
+  "correct_reference": {
+    "source": {
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p7.py",
+      "sha256": "bab7f60082bd38201454f256d5eaeaf79afc22fae187b1a2d85ce0da83a46f21",
+      "role": "independently validated causal alignment reference"
+    },
+    "also_validated": {
+      "path": "C:\\DaveLM-CADAVER\\language_sentencebound_p5.py",
+      "sha256": "851bf4a26bb9f81ede0f224e1aecbc9e651d0d79a7b31d669e1aa8c95e10f2db",
+      "role": "independent causal alignment reference"
+    },
+    "correct_expression": "y[i,:len(z)-1] = z[1:]",
+    "new_source": {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1\\sources\\CAUSAL_ALIGNED_TRAIN_REAL.py",
+      "sha256": "cae950446c1fa0aae0a57982149b7127d3225f2916494d51903672b2bf8e0acd",
+      "role": "corrected successor trainer"
+    }
+  },
+  "reused_material": [
+    {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\ENGLISH_TRAIN.jsonl",
+      "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+      "role": "source of copied materialized English training records"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\ENGLISH_DEV.jsonl",
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+      "role": "source of copied materialized English DEV records"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\ENGLISH_SCHEDULE.json",
+      "sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+      "role": "source of literal English schedule"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8\\BINDING_SCHEDULE.json",
+      "sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+      "role": "source of literal binding schedule"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+      "role": "established binding rehearsal pool"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+      "role": "nonsacred Pilot 0 binding DEV"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json",
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+      "role": "nonsacred Pilot 1 binding DEV"
+    }
+  ],
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "cuda_available": true,
+    "tokenizer": {
+      "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+      "role": "approved tokenizer"
+    },
+    "base_model_source": {
+      "path": "C:\\DaveLM-CADAVER\\treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+      "role": "T13 wrapper"
+    },
+    "base_builder_source": {
+      "path": "C:\\DaveLM-CADAVER\\DaveLM-v0.9\\v0_8_2\\model.py",
+      "sha256": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d",
+      "role": "authoritative base model builder"
+    },
+    "binding_objective_source": {
+      "path": "C:\\DaveLM-CADAVER\\fact_supervision_87001_eval_v1\\PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "role": "pinned binding objective and scope"
+    }
+  },
+  "new_files": {
+    "protocol": "55bcd999987613df835754bd5865c2676fe13fbd1d7d482f7afe5866775d34f5",
+    "alignment_reference": "619ba8c6ba1de080539bfd30afaf92ceffb49650ead9da9eedc1d074d11ac46d",
+    "corrected_trainer": "cae950446c1fa0aae0a57982149b7127d3225f2916494d51903672b2bf8e0acd",
+    "preflight_validator": "778958b710355d6ab0f4d64cbd4494436fc7014077d3bae1a93c2191e9794345"
+  },
+  "access_constraints": {
+    "checkpoint_loaded": false,
+    "optimizer_created": false,
+    "optimizer_updates": 0,
+    "behavioral_inference": false,
+    "sealed_final_battery_accessed": false,
+    "sacred_material_accessed": false
+  }
+}

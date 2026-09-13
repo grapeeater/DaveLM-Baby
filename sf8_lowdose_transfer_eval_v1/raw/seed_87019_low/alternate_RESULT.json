@@ -1,0 +1,58 @@
+{
+  "correct": 36,
+  "exact": 0,
+  "families": 4,
+  "family_count": 12,
+  "immediate_eos": 0,
+  "mean_margin": 1.233795494682757,
+  "mean_mass": 0.07187496635420891,
+  "min_margin": -2.266375109553337,
+  "n": 48,
+  "pairs": 24,
+  "reversals": 12,
+  "subgroups": {
+    "active:qa": {
+      "correct": 15,
+      "exact": 0,
+      "families": 3,
+      "family_count": 4,
+      "immediate_eos": 0,
+      "mean_margin": 2.49630618536321,
+      "mean_mass": 0.05165415761764982,
+      "min_margin": -0.1195979886688292,
+      "n": 16,
+      "pairs": 8,
+      "reversals": 7,
+      "ties": 0
+    },
+    "passive:cloze": {
+      "correct": 9,
+      "exact": 0,
+      "families": 0,
+      "family_count": 4,
+      "immediate_eos": 0,
+      "mean_margin": 0.6472843436422409,
+      "mean_mass": 0.13803104233430807,
+      "min_margin": -2.266375109553337,
+      "n": 16,
+      "pairs": 8,
+      "reversals": 1,
+      "ties": 0
+    },
+    "passive:qa": {
+      "correct": 12,
+      "exact": 0,
+      "families": 1,
+      "family_count": 4,
+      "immediate_eos": 0,
+      "mean_margin": 0.5577959550428204,
+      "mean_mass": 0.025939699110668863,
+      "min_margin": -1.0363346254453063,
+      "n": 16,
+      "pairs": 8,
+      "reversals": 4,
+      "ties": 0
+    }
+  },
+  "ties": 0
+}

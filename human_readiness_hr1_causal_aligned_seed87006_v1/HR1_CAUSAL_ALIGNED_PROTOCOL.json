@@ -1,0 +1,119 @@
+{
+  "status": "CAUSAL_ALIGNMENT_PREFLIGHT_PASS_NO_TRAINING",
+  "version": "HR-1-causal-aligned-v1",
+  "training_seed": 87006,
+  "parent_path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "parent_provenance": {
+    "material_manifest": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PILOT1_MATERIAL_MANIFEST.json",
+    "completion_record": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\RESULTS.json",
+    "starting_checkpoint_sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+    "final_checkpoint_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "training_seed": 8380,
+    "updates": 1000,
+    "sacred_retention_evaluations": 0
+  },
+  "tokenizer_path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "data": {
+    "english_train": "data/ENGLISH_TRAIN.jsonl",
+    "english_train_sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+    "english_dev": "data/ENGLISH_DEV.jsonl",
+    "english_dev_sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+    "english_schedule": "data/ENGLISH_SCHEDULE.json",
+    "english_schedule_sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+    "binding_rehearsal": "data/binding_rehearsal.json",
+    "binding_pool_path": "data/binding_rehearsal.json",
+    "binding_rehearsal_sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+    "binding_schedule": "data/BINDING_SCHEDULE.json",
+    "binding_schedule_sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+    "binding_dev_pilot0": "data/binding_dev_pilot0.json",
+    "binding_dev_pilot0_sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+    "binding_dev_pilot1": "data/binding_dev_pilot1.json",
+    "binding_dev_pilot1_sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+  },
+  "data_policy": {
+    "source": "byte-for-byte copies of validated HR-1 v8 materialized data and schedules",
+    "source_bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr1_seed87004_v8",
+    "new_sampling": false,
+    "train_dev_split_changed": false
+  },
+  "training": {
+    "updates": 500,
+    "english_updates": 450,
+    "binding_updates": 50,
+    "cadence": "9 English updates then 1 binding update, repeated for 50 cycles",
+    "english_batch_size": 64,
+    "binding_batch_size": 32,
+    "english_schedule_reuse": "literal inherited schedule; no regeneration or reshuffle",
+    "binding_schedule_reuse": "literal inherited schedule; no regeneration or reshuffle",
+    "english_objective": {
+      "sequence": "z = [BOS=2] + content_token_ids + [EOS=3]",
+      "input": "x = z[:-1]",
+      "target": "y = z[1:] at the same tensor positions",
+      "ignored": "padding input is 0; padding labels, BOS, and no other positions are -100",
+      "supervised": "all content-token targets plus the single final EOS",
+      "intermediate_eos": false,
+      "length_normalization": false,
+      "loss": "mean full-vocabulary cross-entropy over non-ignored labels"
+    },
+    "dev_objective": "identical x/y construction and cross-entropy expression as English training",
+    "binding_objective": "pinned Pilot-1 answer causal CE plus hard-min permutation-invariant localization objective; LAM=1.0536573711078283",
+    "binding_objective_source": "sources/PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+    "english_scope": "train token/position embeddings, blocks 4-7, final normalization, language head; freeze blocks 0-3 and localizer/retrieval",
+    "binding_scope": "full established T13 trainable scope",
+    "optimizer": {
+      "type": "torch.optim.AdamW",
+      "lr": 5e-05,
+      "betas": [0.9, 0.999],
+      "eps": 1e-08,
+      "weight_decay": 0.05,
+      "amsgrad": false,
+      "foreach": false,
+      "fused": false,
+      "scheduler": null,
+      "persistence": "one fresh optimizer per run, continuous across all update types"
+    },
+    "gradient_clip_norm": 2.0,
+    "runtime_policy": {
+      "python": "3.12.14",
+      "torch": "2.12.0+rocm7.14.0",
+      "tokenizers": "0.23.1",
+      "device": "cuda",
+      "float32": true,
+      "autocast": false,
+      "tf32": false,
+      "deterministic_algorithms": true,
+      "num_workers": 0,
+      "data_loader_shuffle": false,
+      "rng": "random, torch CPU and CUDA seeded with 87006"
+    }
+  },
+  "evaluation": {
+    "dev_points": [0, 100, 500],
+    "dev_battery": "nonsacred HUMAN-TEST-READY development diagnostics only",
+    "binding_pools": "evaluate Pilot-0 and Pilot-1 nonsacred pools separately; never average",
+    "binding_gate_each_pool": "answer >= 76/80, BOTH_DISTINCT >= 76/80, collapse = 0",
+    "language_development_criteria": {
+      "non_eos": ">= 80% of 20 short prompts",
+      "human_readable_complete_sentences": ">= 70%",
+      "prompt_relevant": ">= 60%",
+      "controlled_fact_selection": ">= 70% with >= 8/10 reversals",
+      "elementary_instruction": ">= 70%",
+      "two_turn_continuity": ">= 60%"
+    },
+    "final_readiness_battery": "sealed and inaccessible; no construction, derivation, or evaluation here"
+  },
+  "stopping": {
+    "stop_before_final_battery": true,
+    "stop_on_binding_gate_failure": true,
+    "stop_on_provenance_or_integrity_failure": true,
+    "checkpoint_selection": "only among update 100/500 checkpoints using frozen nonsacred DEV criteria; no retrospective gate changes",
+    "no_optimizer_update_in_preflight": true
+  },
+  "scientific_delta": {
+    "only_intended_correction": "correct BOS/next-token/EOS tensor alignment in English training and DEV loss",
+    "parent": "Pilot 1 is used explicitly per approved forensic correction",
+    "unchanged": "data, schedule, batch sizes, optimizer, scope, cadence, binding rehearsal/objective, metrics, gates, and sealed-material restrictions"
+  }
+}

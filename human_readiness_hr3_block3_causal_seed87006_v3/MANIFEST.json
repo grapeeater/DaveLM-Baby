@@ -1,0 +1,150 @@
+{
+  "bundle": "human_readiness_hr3_block3_causal_seed87006_v3",
+  "payload": [
+    {
+      "bytes": 12891,
+      "path": "BUILD_HR3_BLOCK3.py",
+      "sha256": "ef022cf2a35dcd2bd663bde679bebe9e12fe7901a99974220e498baa0cd39620"
+    },
+    {
+      "bytes": 7118,
+      "path": "BUILD_HR3_V2.py",
+      "sha256": "2550c21688997bc07199c7057b18d2b2bacb19e8d03102ff796210998f30c8ee"
+    },
+    {
+      "bytes": 6591,
+      "path": "BUILD_HR3_V3.py",
+      "sha256": "5703944b289de15bb77996ac3f7b7db72219982014e6362d9f88bb044854b7df"
+    },
+    {
+      "bytes": 252683,
+      "path": "data/binding_dev_pilot0.json",
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e"
+    },
+    {
+      "bytes": 252824,
+      "path": "data/binding_dev_pilot1.json",
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+    },
+    {
+      "bytes": 1017158,
+      "path": "data/binding_rehearsal.json",
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+    },
+    {
+      "bytes": 82183,
+      "path": "data/BINDING_SCHEDULE.json",
+      "sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d"
+    },
+    {
+      "bytes": 2314,
+      "path": "data/CORPUS_MANIFEST.json",
+      "sha256": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708"
+    },
+    {
+      "bytes": 3310121,
+      "path": "data/ENGLISH_DEV.jsonl",
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e"
+    },
+    {
+      "bytes": 1118634,
+      "path": "data/ENGLISH_SCHEDULE.json",
+      "sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0"
+    },
+    {
+      "bytes": 30855743,
+      "path": "data/ENGLISH_TRAIN.jsonl",
+      "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43"
+    },
+    {
+      "bytes": 2530,
+      "path": "data/PILOT1_MATERIAL_MANIFEST.json",
+      "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2"
+    },
+    {
+      "bytes": 1460,
+      "path": "data/PILOT1_TRAINING_SPEC.json",
+      "sha256": "0f731ffde8dcd924e174a3b0b910d125311651b682bef5c6e80107606a18c680"
+    },
+    {
+      "bytes": 8526,
+      "path": "HR3_PROTOCOL.json",
+      "sha256": "ca0cbca59b97350adb9166f57aa424e513493935734f86c03ce919118aece333"
+    },
+    {
+      "bytes": 4508,
+      "path": "MANIFEST.json",
+      "sha256": "68bd9764593395808ec2f98bc51aa270a1c285adf3c7b82e8011b10ce4a258ed"
+    },
+    {
+      "bytes": 431,
+      "path": "MECHANICAL_COMPLETION.json",
+      "sha256": "7ab385eb196682cfdf2c470d38ddec76f23be1cb95ba75043a4e8c5a50d62a10"
+    },
+    {
+      "bytes": 431,
+      "path": "MECHANICAL_COMPLETION.md",
+      "sha256": "9c383188d1dd37b00690640be1f8495680ed73581f614d5f58b883c2984a9482"
+    },
+    {
+      "bytes": 1093,
+      "path": "PREFLIGHT.json",
+      "sha256": "d3d80aa43cb38cf35ae5d2496d585b4d8418fa565bba8195cc9072d4e4c1239c"
+    },
+    {
+      "bytes": 1091,
+      "path": "PREFLIGHT_REPORT.md",
+      "sha256": "2b9998f30ff97bf73a86adc5ecd8562a951099308ac585b33a9e7b1717e473ba"
+    },
+    {
+      "bytes": 20773,
+      "path": "sources/__pycache__/hr3_block3_runtime.cpython-312.pyc",
+      "sha256": "9539465f7bb1a359ecd3828b03672b3e7343bfe54356794e761707ce3d8de1b3"
+    },
+    {
+      "bytes": 9500,
+      "path": "sources/__pycache__/treatment13_model.cpython-312.pyc",
+      "sha256": "6093fd9b74dde1d4ebe467f0be7f22b0c8ad2c4131d3ec68308df95813dcfdd6"
+    },
+    {
+      "bytes": 6886,
+      "path": "sources/CAUSAL_ALIGNED_TRAIN_REFERENCE.py",
+      "sha256": "cae950446c1fa0aae0a57982149b7127d3225f2916494d51903672b2bf8e0acd"
+    },
+    {
+      "bytes": 12544,
+      "path": "sources/EVALUATE_HR3.py",
+      "sha256": "3b55e0aebaea9cc9d65f45c7d549f80ed07277612e968639df595bd1109a5762"
+    },
+    {
+      "bytes": 11303,
+      "path": "sources/hr3_block3_runtime.py",
+      "sha256": "d89ab7b6b0b0a635944a753c67ec70516ad066ec75f2658efbbdf09607c47da0"
+    },
+    {
+      "bytes": 17005,
+      "path": "sources/PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5"
+    },
+    {
+      "bytes": 6542,
+      "path": "sources/PREFLIGHT_VALIDATOR.py",
+      "sha256": "c5adcaf017233e9538b8ec1f7b8c594b71023af518cf54ea1101882e37977861"
+    },
+    {
+      "bytes": 9619,
+      "path": "sources/TRAIN_HR3.py",
+      "sha256": "c982ecad581622fa122d9803810515eb7f01bb4d021df7f9d41f90ad313a5810"
+    },
+    {
+      "bytes": 1599,
+      "path": "sources/treatment13_config.py",
+      "sha256": "eb3a87f99ff23011a381dcffc52a530a7a654e7d130fe6d4a6e3c76067949e2e"
+    },
+    {
+      "bytes": 5995,
+      "path": "sources/treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70"
+    }
+  ]
+}

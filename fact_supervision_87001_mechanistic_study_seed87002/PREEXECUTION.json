@@ -1,0 +1,13 @@
+{
+ "status": "PREEXECUTION_ONLY",
+ "checkpoint_loaded": false,
+ "inference_run": false,
+ "optimizer_created": false,
+ "sacred_access": false,
+ "confirmation_access": false,
+ "seed_87003_access": false,
+ "gate": {
+  "two_correct_side_rate_min": 0.9,
+  "two_behavioral_accuracy_max": 0.6
+ }
+}

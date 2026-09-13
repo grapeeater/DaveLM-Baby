@@ -1,0 +1,27 @@
+{
+  "scope": "earliest reproducible divergence between historical SF2 and current-environment replays",
+  "update0_artifacts": {
+    "acquisition_result_sha256": "1dceb4ecf67919b5ebed7e0108b56dcc2373904b397d6b319e4f961ff468247e (identical across historical, SF3, Replay-A, Replay-B)",
+    "d3_update0_summary_sha256": "96678084ef2617d772717cc02e532c62cc01eb7504ce0a08b92088c0ae28e48b (identical across all four runs)",
+    "update0_checks_sha256": "76dacfe7e48db760d29ac3b7ddc00ce81701e5a76e82ffad3ce9007181676c67 (identical across all four runs)",
+    "meaning": "pre-training forwards and baselines are bitwise reproducible; divergence enters during training steps."
+  },
+  "metric_level_earliest_divergence": {
+    "historical_vs_replayA": {
+      "first_divergence": {"update": 2, "kind": "english", "field": "kl", "historical": 0.002166416496038437, "replay": 0.002166415099054575, "delta": 1.3969838619232178e-09},
+      "update1_fields": "byte-identical including loss, ce, kl, grad_norm",
+      "differing_record_count_over_200": 747,
+      "max_abs_delta_per_field": {"kl": 0.00018873810768127441, "grad_norm": 0.012416839599609375, "loss": 0.00022605061531066895, "ce": 9.752810001373291e-05}
+    },
+    "historical_vs_sf3replay": {
+      "first_divergence": {"update": 2, "kind": "english", "field": "kl", "delta": 1.3969838619232178e-09},
+      "max_abs_delta_per_field": {"kl": 0.0001434236764907837, "grad_norm": 0.012416839599609375, "loss": 0.00015813112258911133, "ce": 6.41942024230957e-05}
+    },
+    "replayA_vs_replayB": {
+      "first_divergence": null,
+      "differing_record_count": 0
+    }
+  },
+  "interpretation": "Update 1 (the first forward+backward+step on parent weights) produces byte-identical losses and gradients; the first divergence appears in the update-2 forward, i.e. the effect of the first optimizer step differs between the historical environment and the current one. This locates the divergence in per-step training numerics (backward reductions / optimizer arithmetic / kernel behavior) rather than in initialization, RNG/mask draws, data order, or code.",
+  "unresolved_low_level": "Which specific op/kernel/state changed is not identified by surviving evidence (see RUNTIME_PROVENANCE_COMPARISON.json)."
+}

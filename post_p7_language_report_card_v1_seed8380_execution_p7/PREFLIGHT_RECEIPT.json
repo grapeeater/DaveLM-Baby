@@ -1,0 +1,39 @@
+{
+  "candidate_lengths": [
+    3,
+    3
+  ],
+  "checkpoint_sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "controlled_items": 288,
+  "families": 36,
+  "frozen_battery_modified": false,
+  "frozen_checksum_records": {
+    "FAMILIES.json": "df6d75aa71380fb1a61a1f4c4ea4a97468a123ac9873246baa281668a87c80a5",
+    "INDEPENDENT_VALIDATION.json": "9eb5439cd9834b7718b9fb8d0ad0f1fde8db6ac7f4bca785aaae73c1bf908d3c",
+    "ITEMS.jsonl": "ed51478b0e8a2407b3660d03ee3b56a63ba246c9ad47d154bde4c52a3d627387",
+    "LEXICON.json": "44c860dd913dbf58057059f7ab0aec145454688ce38326cb4bdfd0e2f7861a8d",
+    "MANIFEST.json": "4cbd4477c4163a6ec2ee167e310f1d4435169069e9b60088a4d389884c55ac02",
+    "PREFLIGHT.json": "6f2b2b34235ff5f2c31b5802f096d72451521ff413ff886634fef9cdd0935bb7",
+    "PROTOCOL.md": "719954e26c199813f89b42a3d7b238e9b975466aefe433c937d59af13297843b",
+    "RECEIPT.json": "5f906302ad801e924c69ad43d7c57f6b7a3c931e621dd3ed4f1b8a841d6a2b64",
+    "SOURCE_HASH_RECEIPT.json": "164275e3b46dcccd8d430e92977bb45268c19f07fb421285463c7f416b469c68"
+  },
+  "frozen_files_read_only": true,
+  "inference_started": false,
+  "items": 312,
+  "model_loaded": false,
+  "naturalistic_items": 24,
+  "sacred_exam_accessed": false,
+  "sample_ids": {
+    "counterfactual": "counterfactual:f000:a0q0o0",
+    "distractor": "distractor:f000:a0q0o0",
+    "near_distribution": "near_distribution:f000:a0q0o0",
+    "surface_form": "surface_form:f000:a0q0o0"
+  },
+  "sample_rule": "lexicographically first item_id within each controlled section",
+  "scoring_definition_sha256": "719954e26c199813f89b42a3d7b238e9b975466aefe433c937d59af13297843b",
+  "serialization_balancing_checks": true,
+  "status": "PASS_BEFORE_INFERENCE",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "unique_prompts": 312
+}

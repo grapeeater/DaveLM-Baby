@@ -1,0 +1,18 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T20_READOUT_ANSWERCE_LR3P75E5_1K_V1",
+  "status": "STUDY_COMPLETE_T20_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+  "scientific_question": "T19 suffix-weighting failed exact and dropped representation to 1/3. Answer CE grads rewrite late-base. If CE stop-grads through the untied language_head only, does representation recover T17/T18's 2/3 while suffix completion is tested as a readout-only problem?",
+  "earned_by": "T19_FAIL_NO_REPRESENTATION. Exact 39/35/34. T19X leftover still Sky/Walt/York. language_head is untied.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14", "T15", "T16", "T17", "T18", "T19", "730002", "760001-760003", "770001-770003", "780001-780003"],
+  "objective": {"lambda_ptr": 1.0, "lambda_ans": 1.0, "answer_ce": "teacher-forced on correct candidate+EOS; stop-grad hidden before language_head", "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "seeds": [790001, 790002, 790003],
+  "schedule": {"total_updates": 1000, "eval_points": [0, 100, 300, 500, 750, 1000], "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

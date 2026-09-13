@@ -1,0 +1,686 @@
+{
+  "classification": "ANSWER_VOCAB_RETENTION_WEAKENED",
+  "controller_sha256": "2b6bd08380cfae015756d9c35d94c298bf6857a93894ceddf363ca843e5b3cad",
+  "cross_seed": {
+    "complete": 0,
+    "d3_fail": 3,
+    "partial": 0,
+    "retention_regression": 0
+  },
+  "dave_coded": "The dedicated name-retention term did not stop the replicated D3 breach in at least two Babies.",
+  "final_accessed": false,
+  "locked_transfer": "LOCKED_UNSCORED",
+  "manifest_sha256": "140847565ebb512d42cd3a9aeb8e555e2e4600232349362fb36c343952d41123",
+  "next_action": "Prospectively review broader retention-position coverage as the next bounded hypothesis without changing this result.",
+  "receipt_sha256": "a1d1423a2997c6f830f2d49661a0bd700fab64ca4c56a073293bcfd9db45e7cc",
+  "runs": [
+    {
+      "R_name_endpoint_probe": {
+        "R_name": 0.002195165026932955,
+        "R_name_loss_contribution": 0.002195165026932955,
+        "active_fraction": 0.1125,
+        "gate": "DESCRIPTIVE_ONLY",
+        "mean_S_student": 0.0038660324303893823,
+        "mean_S_teacher": 0.0016554892335454222,
+        "mean_active_excess": 0.019512578510494268,
+        "mean_excess_before_relu": 0.0012105431968439597,
+        "positions": 160,
+        "probe_kl": 0.12983542680740356,
+        "selection": "frozen KL English-index 1 (160 positions)",
+        "update": 100
+      },
+      "R_name_training_mean": {
+        "R_name": 0.003204409297743243,
+        "R_name_loss_contribution": 0.003204409297743243,
+        "active_fraction": 0.19756944444444444,
+        "mean_S_student": 0.005072677234954941,
+        "mean_S_teacher": 0.0016631736554466505,
+        "mean_active_excess": 0.014608900093003677,
+        "mean_excess_before_relu": 0.0024095035795082907
+      },
+      "binding": {
+        "pilot0": {
+          "answer_exact": 80,
+          "both_distinct": 80,
+          "complete_quartets": 20,
+          "downstream_answer_correct_conditional_on_bd": 1.0,
+          "queried_row_selection_conditional_on_bd": 1.0,
+          "slot_collapse": 0,
+          "strict_reversal_both_correct": 40,
+          "strict_reversal_pairs": 40
+        },
+        "pilot1": {
+          "answer_exact": 80,
+          "both_distinct": 80,
+          "complete_quartets": 20,
+          "downstream_answer_correct_conditional_on_bd": 1.0,
+          "queried_row_selection_conditional_on_bd": 1.0,
+          "slot_collapse": 0,
+          "strict_reversal_both_correct": 40,
+          "strict_reversal_pairs": 40
+        }
+      },
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1\\runs\\seed_87029_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "4ff0b2c23c6d8089978617fae330bd318660d1126139791d1cacb41c698d9ea9",
+      "completed": 100,
+      "d3": {
+        "mean_combined_name_probability": 0.01322241150512804,
+        "mean_entropy": 2.7394504944240907,
+        "mean_eos_probability": 0.001541157790928796,
+        "mean_true_next_probability": 0.12982662635294107,
+        "n": 256,
+        "per_name_mean_probability": {
+          "Alex": 0.0034432764357786305,
+          "Mia": 0.005765608483882995,
+          "Nora": 0.0019779989926781427,
+          "Owen": 0.002035527690161798
+        }
+      },
+      "dev_order": {
+        "copy_exact": 3,
+        "correct": 10,
+        "exact": 8,
+        "fact_exact": 5,
+        "subgroups": {
+          "order0:copy": {
+            "correct": 1,
+            "exact": 1,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": -0.6777725119027309,
+            "mean_mass": 0.5553455652369064,
+            "min_margin": -2.608463775133714,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          },
+          "order0:fact": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.082594848354347,
+            "mean_mass": 0.4618383038701141,
+            "min_margin": 1.216863319510594,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "order1:copy": {
+            "correct": 2,
+            "exact": 2,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.20883766040788032,
+            "mean_mass": 0.49185256136809585,
+            "min_margin": -0.5958114471286535,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          },
+          "order1:fact": {
+            "correct": 3,
+            "exact": 2,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.06425448216032237,
+            "mean_mass": 0.23934063941125722,
+            "min_margin": -1.002738210838288,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          }
+        }
+      },
+      "dev_surface": {
+        "correct": 14,
+        "exact": 11,
+        "subgroups": {
+          "active_qa": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.7815178722376004,
+            "mean_mass": 0.48763006631077116,
+            "min_margin": 1.8392073642462492,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "cloze": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.4658344508497976,
+            "mean_mass": 0.4764520369342017,
+            "min_margin": 1.9104072217596695,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "passive_cloze": {
+            "correct": 3,
+            "exact": 2,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 1.007898935698904,
+            "mean_mass": 0.3172449396018143,
+            "min_margin": -1.2627746853977442,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          },
+          "passive_qa": {
+            "correct": 3,
+            "exact": 3,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 1.0631211583968252,
+            "mean_mass": 0.45760049137918946,
+            "min_margin": -1.4295182595960796,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          }
+        }
+      },
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": true,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "language": {
+        "batch_losses": [
+          3.8306822776794434,
+          3.4532370567321777,
+          3.6231231689453125,
+          3.70104718208313
+        ],
+        "loss": 3.652022421360016,
+        "perplexity": 38.55255677285199,
+        "records": 128
+      },
+      "seed": 87029,
+      "status": "STOP_REGRESSION",
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    },
+    {
+      "R_name_endpoint_probe": {
+        "R_name": 0.0020904624834656715,
+        "R_name_loss_contribution": 0.0020904624834656715,
+        "active_fraction": 0.11875000000000001,
+        "gate": "DESCRIPTIVE_ONLY",
+        "mean_S_student": 0.0037634840721000986,
+        "mean_S_teacher": 0.0016554892335454222,
+        "mean_active_excess": 0.01760389398794354,
+        "mean_excess_before_relu": 0.0011079948385546762,
+        "positions": 160,
+        "probe_kl": 0.12956491112709045,
+        "selection": "frozen KL English-index 1 (160 positions)",
+        "update": 100
+      },
+      "R_name_training_mean": {
+        "R_name": 0.003236002520295895,
+        "R_name_loss_contribution": 0.003236002520295895,
+        "active_fraction": 0.20500000000000004,
+        "mean_S_student": 0.005117001477945118,
+        "mean_S_teacher": 0.0016631736719366127,
+        "mean_active_excess": 0.014368655304396068,
+        "mean_excess_before_relu": 0.0024538278060085043
+      },
+      "binding": {
+        "pilot0": {
+          "answer_exact": 80,
+          "both_distinct": 80,
+          "complete_quartets": 20,
+          "downstream_answer_correct_conditional_on_bd": 1.0,
+          "queried_row_selection_conditional_on_bd": 1.0,
+          "slot_collapse": 0,
+          "strict_reversal_both_correct": 40,
+          "strict_reversal_pairs": 40
+        },
+        "pilot1": {
+          "answer_exact": 80,
+          "both_distinct": 80,
+          "complete_quartets": 20,
+          "downstream_answer_correct_conditional_on_bd": 1.0,
+          "queried_row_selection_conditional_on_bd": 1.0,
+          "slot_collapse": 0,
+          "strict_reversal_both_correct": 40,
+          "strict_reversal_pairs": 40
+        }
+      },
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1\\runs\\seed_87030_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "727ec37737a189dce19c97278355bf944527a2e0e7b53b343dbbdd613087fa6e",
+      "completed": 100,
+      "d3": {
+        "mean_combined_name_probability": 0.015705186601986054,
+        "mean_entropy": 2.7851034651394,
+        "mean_eos_probability": 0.0018015218043661296,
+        "mean_true_next_probability": 0.13220309942843045,
+        "n": 256,
+        "per_name_mean_probability": {
+          "Alex": 0.004330135242663374,
+          "Mia": 0.006071667059593472,
+          "Nora": 0.0025683078098386047,
+          "Owen": 0.002735076595221625
+        }
+      },
+      "dev_order": {
+        "copy_exact": 1,
+        "correct": 9,
+        "exact": 5,
+        "fact_exact": 4,
+        "subgroups": {
+          "order0:copy": {
+            "correct": 1,
+            "exact": 0,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": -0.9035181022481993,
+            "mean_mass": 0.534458183784192,
+            "min_margin": -2.9743777816183865,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          },
+          "order0:fact": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 2.910963585920399,
+            "mean_mass": 0.45960881886476795,
+            "min_margin": 1.154222818557173,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "order1:copy": {
+            "correct": 2,
+            "exact": 1,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.15567503293277696,
+            "mean_mass": 0.4604126532295333,
+            "min_margin": -1.4071829193271697,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          },
+          "order1:fact": {
+            "correct": 2,
+            "exact": 1,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.05971874203532934,
+            "mean_mass": 0.17865709495052043,
+            "min_margin": -0.9339487445540726,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          }
+        }
+      },
+      "dev_surface": {
+        "correct": 14,
+        "exact": 12,
+        "subgroups": {
+          "active_qa": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.535213105235016,
+            "mean_mass": 0.4551209804848412,
+            "min_margin": 1.940124298329465,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "cloze": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.3655866413319018,
+            "mean_mass": 0.46907684759431006,
+            "min_margin": 2.0300204165978357,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "passive_cloze": {
+            "correct": 3,
+            "exact": 3,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.9381609127158299,
+            "mean_mass": 0.2753080163899566,
+            "min_margin": -1.1982149109244347,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          },
+          "passive_qa": {
+            "correct": 3,
+            "exact": 3,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 1.12520800033235,
+            "mean_mass": 0.4349973156021678,
+            "min_margin": -1.0169804180040956,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          }
+        }
+      },
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "language": {
+        "batch_losses": [
+          3.790367364883423,
+          3.4243814945220947,
+          3.5919716358184814,
+          3.662360668182373
+        ],
+        "loss": 3.617270290851593,
+        "perplexity": 37.23578610203727,
+        "records": 128
+      },
+      "seed": 87030,
+      "status": "STOP_REGRESSION",
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    },
+    {
+      "R_name_endpoint_probe": {
+        "R_name": 0.0023019618820399046,
+        "R_name_loss_contribution": 0.0023019618820399046,
+        "active_fraction": 0.11875000000000001,
+        "gate": "DESCRIPTIVE_ONLY",
+        "mean_S_student": 0.0040401355455976255,
+        "mean_S_teacher": 0.0016554892335454222,
+        "mean_active_excess": 0.019384941561991477,
+        "mean_excess_before_relu": 0.0013846463120522033,
+        "positions": 160,
+        "probe_kl": 0.12827017903327942,
+        "selection": "frozen KL English-index 1 (160 positions)",
+        "update": 100
+      },
+      "R_name_training_mean": {
+        "R_name": 0.003215085549001944,
+        "R_name_loss_contribution": 0.003215085549001944,
+        "active_fraction": 0.196875,
+        "mean_S_student": 0.00508642522583077,
+        "mean_S_teacher": 0.0016631736719366127,
+        "mean_active_excess": 0.014795372609922815,
+        "mean_excess_before_relu": 0.0024232515538941575
+      },
+      "binding": {
+        "pilot0": {
+          "answer_exact": 80,
+          "both_distinct": 80,
+          "complete_quartets": 20,
+          "downstream_answer_correct_conditional_on_bd": 1.0,
+          "queried_row_selection_conditional_on_bd": 1.0,
+          "slot_collapse": 0,
+          "strict_reversal_both_correct": 40,
+          "strict_reversal_pairs": 40
+        },
+        "pilot1": {
+          "answer_exact": 80,
+          "both_distinct": 80,
+          "complete_quartets": 20,
+          "downstream_answer_correct_conditional_on_bd": 1.0,
+          "queried_row_selection_conditional_on_bd": 1.0,
+          "slot_collapse": 0,
+          "strict_reversal_both_correct": 40,
+          "strict_reversal_pairs": 40
+        }
+      },
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1\\runs\\seed_87031_curriculum\\checkpoint_100.pt",
+      "checkpoint_sha256": "fe0bf2125a1aeb5b435c49cc0925f3bf015689a91ce267df1608259ebdb6d89b",
+      "completed": 100,
+      "d3": {
+        "mean_combined_name_probability": 0.0159990313645042,
+        "mean_entropy": 2.726750034969882,
+        "mean_eos_probability": 0.0017337932097988007,
+        "mean_true_next_probability": 0.12921217422581277,
+        "n": 256,
+        "per_name_mean_probability": {
+          "Alex": 0.004584031146683487,
+          "Mia": 0.006249885492864954,
+          "Nora": 0.002686816595805719,
+          "Owen": 0.002478298239348531
+        }
+      },
+      "dev_order": {
+        "copy_exact": 2,
+        "correct": 10,
+        "exact": 6,
+        "fact_exact": 4,
+        "subgroups": {
+          "order0:copy": {
+            "correct": 1,
+            "exact": 1,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": -0.754050032235682,
+            "mean_mass": 0.5578178031905201,
+            "min_margin": -2.073250113753602,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          },
+          "order0:fact": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 2.818407695100177,
+            "mean_mass": 0.4926953294633443,
+            "min_margin": 0.8217906409408897,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "order1:copy": {
+            "correct": 3,
+            "exact": 1,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.08580308605451137,
+            "mean_mass": 0.4987017580327473,
+            "min_margin": -0.301337398821488,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          },
+          "order1:fact": {
+            "correct": 2,
+            "exact": 1,
+            "families": 0,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.01072428555926308,
+            "mean_mass": 0.28571519465295975,
+            "min_margin": -0.3903588205575943,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 0,
+            "ties": 0
+          }
+        }
+      },
+      "dev_surface": {
+        "correct": 14,
+        "exact": 10,
+        "subgroups": {
+          "active_qa": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.5904986431414727,
+            "mean_mass": 0.48441558400565876,
+            "min_margin": 2.253649969701655,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "cloze": {
+            "correct": 4,
+            "exact": 3,
+            "families": 2,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 3.352870054397499,
+            "mean_mass": 0.504813006133981,
+            "min_margin": 2.2914751819334924,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 2,
+            "ties": 0
+          },
+          "passive_cloze": {
+            "correct": 3,
+            "exact": 2,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.9129086543689482,
+            "mean_mass": 0.33017164363443735,
+            "min_margin": -0.7538277776911855,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          },
+          "passive_qa": {
+            "correct": 3,
+            "exact": 2,
+            "families": 1,
+            "family_count": 2,
+            "immediate_eos": 0,
+            "mean_margin": 0.9524028963787714,
+            "mean_mass": 0.4870826790014439,
+            "min_margin": -0.9855616418644786,
+            "n": 4,
+            "pairs": 2,
+            "reversals": 1,
+            "ties": 0
+          }
+        }
+      },
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": false,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": true
+      },
+      "language": {
+        "batch_losses": [
+          3.851504325866699,
+          3.480074167251587,
+          3.635748863220215,
+          3.7213869094848633
+        ],
+        "loss": 3.672178566455841,
+        "perplexity": 39.33751196117118,
+        "records": 128
+      },
+      "seed": 87031,
+      "status": "STOP_REGRESSION",
+      "train16": {
+        "correct": 16,
+        "exact": 16,
+        "families": 4,
+        "reversals": 8
+      }
+    }
+  ],
+  "sacred_accessed": false,
+  "scientific_interpretation": "This weakens the proposition that answer-vocabulary under-attention on the existing KL positions is sufficient to explain or fix the D3 regression. Corpus coverage remains untested."
+}

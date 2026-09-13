@@ -1,0 +1,18 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T22_FIRSTTWO_ANSWERCE_LR3P75E5_1K_V1",
+  "status": "PAUSED_QUIESCENT_SEED810001_U550",
+  "scientific_question": "T21 first-token through-base recovered BOS toward T18 and exact to 27/29/26. T21X leftover is T18X diverge (Wes→Walt, Skye→Sky). If the first TWO answer tokens go through the base and the tail stop-grads, does exact rise toward T18 36-40 without T19 representation tax?",
+  "earned_by": "T21_REPRESENTATION_SUCCESS_OUTPUT_FAIL + T21X. Exact 27/29/26. BOS 79/59/72. Diverge 52/30/46.",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14", "T15", "T16", "T17", "T18", "T19", "T20", "T21", "730002", "760001-760003", "770001-770003", "780001-780003", "790001-790003", "800001-800003"],
+  "objective": {"lambda_ptr": 1.0, "lambda_ans": 1.0, "answer_ce": "mean over answer+EOS; first two tokens through base; tail stop-grad before language_head", "language": "9 qa : 1 language CE", "lr": 3.75e-5},
+  "seeds": [810001, 810002, 810003],
+  "schedule": {"total_updates": 1000, "eval_points": [0, 100, 300, 500, 750, 1000], "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

@@ -1,0 +1,1088 @@
+{
+  "balance": {
+    "counterfactual:f000:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f000:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f000:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f000:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f001:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f001:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f001:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f001:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f002:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f002:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f002:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f002:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f003:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f003:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f003:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f003:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f004:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f004:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f004:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f004:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f005:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f005:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f005:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f005:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f006:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f006:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f006:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f006:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f007:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f007:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f007:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "counterfactual:f007:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f000:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f000:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f000:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f000:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f001:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f001:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f001:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f001:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f002:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f002:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f002:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f002:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f003:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f003:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f003:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f003:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f004:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f004:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f004:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f004:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f005:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f005:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f005:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f005:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f006:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f006:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f006:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f006:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f007:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f007:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f007:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "distractor:f007:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f000:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f000:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f000:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f000:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f001:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f001:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f001:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f001:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f002:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f002:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f002:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f002:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f003:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f003:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f003:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f003:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f004:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f004:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f004:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f004:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f005:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f005:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f005:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f005:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f006:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f006:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f006:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f006:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f007:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f007:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f007:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f007:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f008:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f008:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f008:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f008:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f009:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f009:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f009:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f009:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f010:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f010:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f010:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f010:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f011:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f011:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f011:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "near_distribution:f011:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f000:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f000:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f000:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f000:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f001:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f001:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f001:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f001:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f002:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f002:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f002:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f002:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f003:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f003:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f003:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f003:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f004:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f004:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f004:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f004:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f005:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f005:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f005:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f005:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f006:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f006:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f006:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f006:query_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f007:assignment": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f007:correct_index": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f007:fact_order": {
+      "0": 4,
+      "1": 4
+    },
+    "surface_form:f007:query_index": {
+      "0": 4,
+      "1": 4
+    }
+  },
+  "families": [
+    {
+      "color": "blue",
+      "construction": "near",
+      "family_id": "near_distribution:f000",
+      "object_pair": [
+        "ball",
+        "book"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Ben",
+        "Sam"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "near",
+      "family_id": "near_distribution:f001",
+      "object_pair": [
+        "box",
+        "car"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Ben",
+        "Sam"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "near",
+      "family_id": "near_distribution:f002",
+      "object_pair": [
+        "car",
+        "hat"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "color": "yellow",
+      "construction": "near",
+      "family_id": "near_distribution:f003",
+      "object_pair": [
+        "fish",
+        "kite"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "color": "red",
+      "construction": "near",
+      "family_id": "near_distribution:f004",
+      "object_pair": [
+        "ball",
+        "toy"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "near",
+      "family_id": "near_distribution:f005",
+      "object_pair": [
+        "fish",
+        "hat"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "near",
+      "family_id": "near_distribution:f006",
+      "object_pair": [
+        "ball",
+        "car"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "near",
+      "family_id": "near_distribution:f007",
+      "object_pair": [
+        "book",
+        "hat"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "yellow",
+      "construction": "near",
+      "family_id": "near_distribution:f008",
+      "object_pair": [
+        "box",
+        "kite"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "yellow",
+      "construction": "near",
+      "family_id": "near_distribution:f009",
+      "object_pair": [
+        "fish",
+        "toy"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "yellow",
+      "construction": "near",
+      "family_id": "near_distribution:f010",
+      "object_pair": [
+        "ball",
+        "hat"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Tim",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "near",
+      "family_id": "near_distribution:f011",
+      "object_pair": [
+        "kite",
+        "toy"
+      ],
+      "section": "near_distribution",
+      "subject_pair": [
+        "Tim",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f000",
+      "object_pair": [
+        "hat",
+        "toy"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Ben",
+        "Sam"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f001",
+      "object_pair": [
+        "ball",
+        "hat"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "red",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f002",
+      "object_pair": [
+        "fish",
+        "hat"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f003",
+      "object_pair": [
+        "fish",
+        "kite"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f004",
+      "object_pair": [
+        "ball",
+        "box"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "yellow",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f005",
+      "object_pair": [
+        "car",
+        "kite"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f006",
+      "object_pair": [
+        "book",
+        "fish"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Tim",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "counterfactual",
+      "family_id": "counterfactual:f007",
+      "object_pair": [
+        "kite",
+        "toy"
+      ],
+      "section": "counterfactual",
+      "subject_pair": [
+        "Tim",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "surface",
+      "family_id": "surface_form:f000",
+      "object_pair": [
+        "ball",
+        "fish"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "surface",
+      "family_id": "surface_form:f001",
+      "object_pair": [
+        "fish",
+        "hat"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "color": "yellow",
+      "construction": "surface",
+      "family_id": "surface_form:f002",
+      "object_pair": [
+        "ball",
+        "car"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "surface",
+      "family_id": "surface_form:f003",
+      "object_pair": [
+        "box",
+        "kite"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "surface",
+      "family_id": "surface_form:f004",
+      "object_pair": [
+        "kite",
+        "toy"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "surface",
+      "family_id": "surface_form:f005",
+      "object_pair": [
+        "car",
+        "fish"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "color": "red",
+      "construction": "surface",
+      "family_id": "surface_form:f006",
+      "object_pair": [
+        "car",
+        "hat"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "surface",
+      "family_id": "surface_form:f007",
+      "object_pair": [
+        "hat",
+        "kite"
+      ],
+      "section": "surface_form",
+      "subject_pair": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "distractor",
+      "family_id": "distractor:f000",
+      "object_pair": [
+        "hat",
+        "kite"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Ben",
+        "Sam"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "distractor",
+      "family_id": "distractor:f001",
+      "object_pair": [
+        "box",
+        "car"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "distractor",
+      "family_id": "distractor:f002",
+      "object_pair": [
+        "box",
+        "toy"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Ben",
+        "Tim"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "distractor",
+      "family_id": "distractor:f003",
+      "object_pair": [
+        "box",
+        "hat"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "red",
+      "construction": "distractor",
+      "family_id": "distractor:f004",
+      "object_pair": [
+        "fish",
+        "kite"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Ben",
+        "Tom"
+      ]
+    },
+    {
+      "color": "green",
+      "construction": "distractor",
+      "family_id": "distractor:f005",
+      "object_pair": [
+        "ball",
+        "hat"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Sam",
+        "Tim"
+      ]
+    },
+    {
+      "color": "red",
+      "construction": "distractor",
+      "family_id": "distractor:f006",
+      "object_pair": [
+        "box",
+        "hat"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    },
+    {
+      "color": "blue",
+      "construction": "distractor",
+      "family_id": "distractor:f007",
+      "object_pair": [
+        "car",
+        "kite"
+      ],
+      "section": "distractor",
+      "subject_pair": [
+        "Sam",
+        "Tom"
+      ]
+    }
+  ],
+  "seed": 8380,
+  "selection": "lexicographically sorted Cartesian tuples, Python Random(8380), sample without replacement per section"
+}

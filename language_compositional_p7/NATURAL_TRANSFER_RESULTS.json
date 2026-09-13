@@ -1,0 +1,54 @@
+{
+  "prompts_frozen_before_scoring": [
+    "Zoe discovered a purple umbrella.",
+    "Alex noticed a small bird.",
+    "Nora carried a heavy basket.",
+    "Owen placed the orange cup on the shelf.",
+    "Mia searched for her missing key.",
+    "Sam enjoyed the quiet garden.",
+    "Lily opened the old door.",
+    "Tom shared a sweet apple."
+  ],
+  "rows": [
+    {
+      "prompt": "Zoe discovered a purple umbrella.",
+      "output": "Zoe discovered a purple umbrella.",
+      "response": ""
+    },
+    {
+      "prompt": "Alex noticed a small bird.",
+      "output": "Alex noticed a small bird. Alex picked up the blue ball.",
+      "response": "Alex picked up the blue ball."
+    },
+    {
+      "prompt": "Nora carried a heavy basket.",
+      "output": "Nora carried a heavy basket. Nora put down the yellow ball.",
+      "response": "Nora put down the yellow ball."
+    },
+    {
+      "prompt": "Owen placed the orange cup on the shelf.",
+      "output": "Owen placed the orange cup on the shelf. Owen had fun with the yellow car.",
+      "response": "Owen had fun with the yellow car."
+    },
+    {
+      "prompt": "Mia searched for her missing key.",
+      "output": "Mia searched for her missing key. Mia put down the yellow fish.",
+      "response": "Mia put down the yellow fish."
+    },
+    {
+      "prompt": "Sam enjoyed the quiet garden.",
+      "output": "Sam enjoyed the quiet garden. Sam put down the green ball.",
+      "response": "Sam put down the green ball."
+    },
+    {
+      "prompt": "Lily opened the old door.",
+      "output": "Lily opened the old door. Lily put down the red fish.",
+      "response": "Lily put down the red fish."
+    },
+    {
+      "prompt": "Tom shared a sweet apple.",
+      "output": "Tom shared a sweet apple. Tom picked up the green box.",
+      "response": "Tom picked up the green box."
+    }
+  ]
+}

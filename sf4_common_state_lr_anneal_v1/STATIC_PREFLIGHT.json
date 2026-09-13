@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "input_files": 65,
+  "schedule_resolved": 200,
+  "english": 180,
+  "binding": 20,
+  "masking": "PASS",
+  "scope_and_objective": "byte-identical pinned SF2 sources; controller checks inactive state each step",
+  "KL_full_token_array_disjoint": true,
+  "overlap_limit": "Exact-array/previous decoded-prompt audit; not semantic disjointness or new held-out data.",
+  "locked_panels": "UNPARSED/UNSCORED",
+  "restart_mock": "PASS with negative changed-state test",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "GPU": "AMD Radeon RX 9060 XT"
+  },
+  "checkpoint_loaded": false,
+  "optimizer_created": false
+}

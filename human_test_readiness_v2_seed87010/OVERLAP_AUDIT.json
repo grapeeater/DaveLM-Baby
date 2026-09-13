@@ -1,0 +1,69 @@
+{
+  "final_accessed": false,
+  "hits": [],
+  "limitation": "Exact decoded-text non-overlap does not rule out semantic or near-duplicate exposure. FINAL_ITEMS and sacred material were not opened or scanned.",
+  "normalization": "Unicode casefolding plus whitespace collapse; contiguous decoded-text prompt match",
+  "sacred_accessed": false,
+  "sources": [
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_train.jsonl",
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "string_count": 9000
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_dev.jsonl",
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "string_count": 1000
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1\\data\\ENGLISH_TRAIN.jsonl",
+      "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+      "string_count": 298028
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1\\data\\ENGLISH_DEV.jsonl",
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+      "string_count": 31732
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\human_test_readiness_v1\\DEV_ITEMS.jsonl",
+      "sha256": "f42780d57f2f16d8a08086d76ea513cebc41c977ef0623667260f95cfaaec3ee",
+      "string_count": 98
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\ITEMS.jsonl",
+      "sha256": "f8d3e14cd645b6ebb8cc5142fc05f420be37f1a3f09cddeebb2ede443d266452",
+      "string_count": 2184
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3d_seed8391\\ITEMS.jsonl",
+      "sha256": "4c260b5eed7ebe9b61a29524bd79b771e6d74f9d22c931815696d845feea162c",
+      "string_count": 1920
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\ITEMS.jsonl",
+      "sha256": "5e6669275562044012113a353996e627a1b9faad28b6b4664328d27e268a509a",
+      "string_count": 18304
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PRIORS.jsonl",
+      "sha256": "da476f147a40d7bc3e37187e0d98811a526af0ce59b28a395bc70826828e7902",
+      "string_count": 2912
+    },
+    {
+      "exact_contiguous_prompt_hits": [],
+      "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\TRAIN_TEXT.txt",
+      "sha256": "337a24425fb8bd5e8b2c6b31518c23e99be3a22d0499ca9aea3d226c10af2489",
+      "string_count": 1
+    }
+  ]
+}

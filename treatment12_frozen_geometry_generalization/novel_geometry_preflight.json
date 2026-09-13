@@ -1,0 +1,22 @@
+{
+ "status": "NOVEL_GEOMETRY_PREFLIGHT_PASS",
+ "train_pool_sha256": "8f5d60de10fe2fdc8e772a9c1fc3e9f07861edd1583d7c413a095c2f55c6903c",
+ "train_layout_signature_count": 20,
+ "novel_layout_signature_count": 8,
+ "proposed_combo_count": 8,
+ "novel_signatures_total_realized": 8,
+ "novel_signatures_unseen_vs_train": 8,
+ "novel_signatures_overlap_with_train": 0,
+ "quartets": 16,
+ "documents": 64,
+ "orientation_counts": {
+  "1": 32,
+  "2": 32
+ },
+ "query_slot_counts": {
+  "0": 32,
+  "1": 32
+ },
+ "token_array_overlap_with_train": 0,
+ "determinism_note": "Each novel quartet contains both reversal orientations and both query slots under the same layout, so layout cannot deterministically predict orientation, query slot, or target row; mapping rows and values are assigned independently of layout."
+}

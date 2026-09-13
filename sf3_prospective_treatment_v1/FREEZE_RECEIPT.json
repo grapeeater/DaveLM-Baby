@@ -1,0 +1,8 @@
+{
+  "status": "SF3_FROZEN_PRETRAIN_PASS",
+  "run_id": "sf3_prospective_treatment_v1",
+  "manifest_sha256": "d257582b042b6a452cfe39c1fd975c4488515aaf04edef9fbf2df6e4ff01b835",
+  "payload_file_count": 45,
+  "integrity_chain": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> PRETRAIN_SHA256SUMS.txt -> payload",
+  "scientific_change_from_sf2": "post-update-100 English learning-rate sequence only"
+}

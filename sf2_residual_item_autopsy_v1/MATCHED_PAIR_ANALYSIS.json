@@ -1,0 +1,174 @@
+{
+  "all_owen_correct_items": [
+    "TRAIN:g0:found:small drum:a1",
+    "TRAIN:g0:found:wooden boat:a1",
+    "TRAIN:g0:carried:small drum:a1",
+    "TRAIN:g0:carried:wooden boat:a1"
+  ],
+  "failed_item": "TRAIN:g0:carried:wooden boat:a0",
+  "matched_owen_item": "TRAIN:g0:carried:wooden boat:a1",
+  "other_alex_correct_items": [
+    "TRAIN:g0:found:small drum:a0",
+    "TRAIN:g0:found:wooden boat:a0",
+    "TRAIN:g0:carried:small drum:a0"
+  ],
+  "per_checkpoint": {
+    "Pilot1_parent": {
+      "alex_vs_owen_evidence": {
+        "failed_alex_owen_prob_ratio": 0.4819036838622405,
+        "matched_owen_owen_prob": 1.4435299817705527e-05
+      },
+      "cell_subject_conditioning_owen_minus_alex_ll4": -0.34817445278167725,
+      "failed_alex_item": {
+        "alex_prob": 3.0484025046462193e-05,
+        "exact": false,
+        "first_margin_alex_owen": 0.730010986328125,
+        "ll4_alex": -21.474594116210938,
+        "ll4_margin_alex_owen": 0.6174213886260986,
+        "ll4_owen": -22.092015504837036,
+        "owen_prob": 1.4690363968838938e-05
+      },
+      "matched_owen_item": {
+        "alex_prob": 2.9090473617543466e-05,
+        "exact": false,
+        "first_margin_alex_owen": 0.7007343769073486,
+        "ll4_alex": -21.512041330337524,
+        "ll4_margin_alex_owen": 0.2692469358444214,
+        "ll4_owen": -21.781288266181946,
+        "owen_prob": 1.4435299817705527e-05
+      },
+      "mean_other_alex_items_ll4_margin": 1.38779350121816,
+      "mean_other_owen_items_ll4_margin": 1.3071872194608052,
+      "min_other_alex_ll4_margin": 0.05203986167907715,
+      "other_alex_margins": [
+        2.2302361726760864,
+        1.8811044692993164,
+        0.05203986167907715
+      ],
+      "other_owen_margins": [
+        2.02428138256073,
+        2.1063020825386047,
+        -0.20902180671691895
+      ]
+    },
+    "SF1_u100": {
+      "alex_vs_owen_evidence": {
+        "failed_alex_owen_prob_ratio": 0.6435393894927257,
+        "matched_owen_owen_prob": 0.25882798433303833
+      },
+      "cell_subject_conditioning_owen_minus_alex_ll4": -0.25116670795250684,
+      "failed_alex_item": {
+        "alex_prob": 0.34380096197128296,
+        "exact": true,
+        "first_margin_alex_owen": 0.44077205657958984,
+        "ll4_alex": -1.0898141763173044,
+        "ll4_margin_alex_owen": 0.43107556784525514,
+        "ll4_owen": -1.5208897441625595,
+        "owen_prob": 0.22124946117401123
+      },
+      "matched_owen_item": {
+        "alex_prob": 0.3131352961063385,
+        "exact": false,
+        "first_margin_alex_owen": 0.19047164916992188,
+        "ll4_alex": -1.1843616222031415,
+        "ll4_margin_alex_owen": 0.1799088598927483,
+        "ll4_owen": -1.3642704820958897,
+        "owen_prob": 0.25882798433303833
+      },
+      "mean_other_alex_items_ll4_margin": 0.5289440069658061,
+      "mean_other_owen_items_ll4_margin": 0.30405821414509165,
+      "min_other_alex_ll4_margin": 0.4883332041790709,
+      "other_alex_margins": [
+        0.5989289672579616,
+        0.49956984946038574,
+        0.4883332041790709
+      ],
+      "other_owen_margins": [
+        0.368218480842188,
+        0.26797329273540527,
+        0.27598286885768175
+      ]
+    },
+    "SF2_u100": {
+      "alex_vs_owen_evidence": {
+        "failed_alex_owen_prob_ratio": 0.7628922369440756,
+        "matched_owen_owen_prob": 0.22438538074493408
+      },
+      "cell_subject_conditioning_owen_minus_alex_ll4": -0.1994023732841015,
+      "failed_alex_item": {
+        "alex_prob": 0.2595386207103729,
+        "exact": true,
+        "first_margin_alex_owen": 0.27063846588134766,
+        "ll4_alex": -1.4486508704721928,
+        "ll4_margin_alex_owen": 0.22840507701039314,
+        "ll4_owen": -1.677055947482586,
+        "owen_prob": 0.1979999989271164
+      },
+      "matched_owen_item": {
+        "alex_prob": 0.24271634221076965,
+        "exact": false,
+        "first_margin_alex_owen": 0.07852840423583984,
+        "ll4_alex": -1.5124346921220422,
+        "ll4_margin_alex_owen": 0.029002703726291656,
+        "ll4_owen": -1.5414373958483338,
+        "owen_prob": 0.22438538074493408
+      },
+      "mean_other_alex_items_ll4_margin": 0.4612335377993683,
+      "mean_other_owen_items_ll4_margin": 0.28949965971211594,
+      "min_other_alex_ll4_margin": 0.40814212104305625,
+      "other_alex_margins": [
+        0.5135886752977967,
+        0.46196981705725193,
+        0.40814212104305625
+      ],
+      "other_owen_margins": [
+        0.33239416498690844,
+        0.28732028789818287,
+        0.24878452625125647
+      ]
+    },
+    "SF2_u200": {
+      "alex_vs_owen_evidence": {
+        "failed_alex_owen_prob_ratio": 1.0464809137034332,
+        "matched_owen_owen_prob": 0.5614901781082153
+      },
+      "cell_subject_conditioning_owen_minus_alex_ll4": -0.5825187477748841,
+      "failed_alex_item": {
+        "alex_prob": 0.4206635653972626,
+        "exact": false,
+        "first_margin_alex_owen": -0.04543304443359375,
+        "ll4_alex": -0.8865751463454217,
+        "ll4_margin_alex_owen": -0.030072169145569205,
+        "ll4_owen": -0.8565029771998525,
+        "owen_prob": 0.44021639227867126
+      },
+      "matched_owen_item": {
+        "alex_prob": 0.30334556102752686,
+        "exact": true,
+        "first_margin_alex_owen": -0.6157217025756836,
+        "ll4_alex": -1.2107599016744643,
+        "ll4_margin_alex_owen": -0.6125909169204533,
+        "ll4_owen": -0.598168984754011,
+        "owen_prob": 0.5614901781082153
+      },
+      "mean_other_alex_items_ll4_margin": 0.13696560154979429,
+      "mean_other_owen_items_ll4_margin": -0.4843007141025737,
+      "min_other_alex_ll4_margin": 0.04860193468630314,
+      "other_alex_margins": [
+        0.04860193468630314,
+        0.18419318308588117,
+        0.17810168687719852
+      ],
+      "other_owen_margins": [
+        -0.6232568735722452,
+        -0.40212554298341274,
+        -0.4275197257520631
+      ]
+    }
+  },
+  "structure": {
+    "failed_cell_unique_features": "predicate=carried, object=wooden boat (also the matched Owen item cell); NOT a unique object/cue combination within g0",
+    "shared_g0_pair_structure": "all 8 Alex/Owen items share pair g0; objects {small drum, wooden boat} x predicates {found, carried}; a0=Alex subject, a1=Owen subject; correct answer copies the prompt subject",
+    "token_geometry": "object 'wooden boat' and predicate 'carried' also appear in the passing cell TRAIN:g0:carried:wooden boat is the only cell where BOTH the Owen item margin is among the largest and the Alex item crossed zero"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "status": "SEALED_UNOPENED",
+  "rows": 128,
+  "sha256": "6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb",
+  "rule": "Do not load qa_test.jsonl until terminal DEV representation AND native gates pass."
+}

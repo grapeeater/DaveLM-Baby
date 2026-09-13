@@ -1,0 +1,165 @@
+{
+  "checkpoint_loaded_for_u0_only": true,
+  "final_accessed": false,
+  "hashes": {
+    "CONTROLLER.py": "ba6053e0f69d6de59ad50d64a2a005efbe0d8689cf212774f48d9fd22bcec52d",
+    "LAUNCH.py": "f9b322d236521b604f78566b5f008f0430094217f454c2c1fd38f9bc707c06a3",
+    "PAIR_MANIFEST.json": "e39e12f8a000e6f5d1c4fa525e0b556349933b4ee730a42c8e59f062e4a9caf5",
+    "PROTOCOL.json": "ca715c4873c5cef960507de85c337343a1d2530932626fc023410142e25238de",
+    "REPORTER.py": "9339ebd00d0e24f3898da3e57aafa1294bc080e88f66a48d4bbfc3c7f2f234a8",
+    "SCHEDULE.json": "0f71073fdafbe8733dbae97d27b92490b2e4725650737fb0f1b4d99ab5396688",
+    "TRAIN.json": "7a5c69498b7b2fb813bd1465ef50d2e3f8e599993f90875009573f84c498aa9d",
+    "U0_PREFLIGHT_RECORD.json": "f8060ecfa4d3004c7e26fbd96292d754ba24f84df8034bea3837dbbbc608c89b",
+    "VALIDATE.py": "10b9b07f53bc42f936b1984b4872c2a2f1b0bdabe38b497002f8a1380171a3f3"
+  },
+  "locked_transfer": "LOCKED_UNSCORED",
+  "optimizer_created": false,
+  "reporter_smoke": {
+    "cases": 4,
+    "outcomes_used": false,
+    "series_stop_logic_frozen": true,
+    "status": "PASS"
+  },
+  "sacred_accessed": false,
+  "scientific_difference": "0.1 paired counterfactual representation consistency only",
+  "scientific_difference_count": 1,
+  "static": {
+    "both_sides_gradient": true,
+    "checkpoint_loaded": false,
+    "final_accessed": false,
+    "lambda_consistency": 0.1,
+    "locked_transfer": "LOCKED_UNSCORED",
+    "optimizer_created": false,
+    "paired_records": 32,
+    "pairs": 16,
+    "parents_verified": 3,
+    "representation": "final_norm output at final prompt/query token",
+    "sacred_accessed": false,
+    "schedule": {
+      "binding": 20,
+      "english": 180
+    },
+    "seeds": [
+      87056,
+      87057,
+      87058
+    ],
+    "sf20_payloads_byte_identical": [
+      "TRAIN.json",
+      "SCHEDULE.json",
+      "D3_SELECTION.json",
+      "DEV_ORDER.json",
+      "DEV_SURFACE.json",
+      "KL_POOL.json",
+      "KL_POOL_MANIFEST.json",
+      "SF13_KL_SCHEDULE.json",
+      "SF2_ENGINE.py",
+      "SF2_PROTOCOL.json",
+      "TRAIN16_RETENTION.json",
+      "IDENTITY_ASSIGNMENT.json",
+      "TOKENIZATION_MATCH.json"
+    ],
+    "status": "SF21_STATIC_PREFLIGHT_PASS",
+    "synthetic_identical_loss": 0.0,
+    "updates": 0
+  },
+  "status": "SF21_PROSPECTIVE_PREFLIGHT_PASS",
+  "treatment_outcomes_scored": false,
+  "u0_reproduction": {
+    "branches": {
+      "87056": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "d3_diff": 0.0,
+        "d3_measured": 0.007036717671962123,
+        "d3_reference": 0.007036717671962123,
+        "dev_order": {
+          "correct": 9,
+          "exact": 3
+        },
+        "dev_surface": {
+          "correct": 12,
+          "exact": 5
+        },
+        "language_ce": 3.5873013138771057,
+        "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+        "reproduces_parent": true,
+        "sf8_parent": "87017",
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        }
+      },
+      "87057": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "d3_diff": 0.0,
+        "d3_measured": 0.006672408242356376,
+        "d3_reference": 0.006672408242356376,
+        "dev_order": {
+          "correct": 9,
+          "exact": 3
+        },
+        "dev_surface": {
+          "correct": 13,
+          "exact": 4
+        },
+        "language_ce": 3.574604868888855,
+        "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+        "reproduces_parent": true,
+        "sf8_parent": "87018",
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        }
+      },
+      "87058": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "d3_diff": 0.0,
+        "d3_measured": 0.007839491795780695,
+        "d3_reference": 0.007839491795780695,
+        "dev_order": {
+          "correct": 8,
+          "exact": 3
+        },
+        "dev_surface": {
+          "correct": 13,
+          "exact": 5
+        },
+        "language_ce": 3.5949734449386597,
+        "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+        "reproduces_parent": true,
+        "sf8_parent": "87019",
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        }
+      }
+    },
+    "checkpoint_loaded": true,
+    "executed_utc": "2026-09-09T08:09:06.495711+00:00",
+    "final_accessed": false,
+    "method": "Loaded each SF8-low parent under the frozen SF2 runtime and ran the inherited SF13 evaluation path. No optimizer was created and no update was performed.",
+    "optimizer_created": false,
+    "record_type": "ACTUALLY_EXECUTED_U0_PREFLIGHT",
+    "sacred_accessed": false,
+    "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V2",
+    "summary": "3/3 branches exactly reproduce their SF8-low parent U0 language and D3 references, preserve perfect TRAIN16, and pass both binding pools.",
+    "treatment_outcomes_scored": false,
+    "updates": 0
+  },
+  "updates": 0
+}

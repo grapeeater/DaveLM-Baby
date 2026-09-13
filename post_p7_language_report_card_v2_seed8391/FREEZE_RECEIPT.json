@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "FAMILIES.json": {
+      "bytes": 7341,
+      "sha256": "a6b2a6a4ba1218be18c0635e1c2b6690bfbaef8759603059383bf67b7d85814e"
+    },
+    "ITEMS.jsonl": {
+      "bytes": 206593,
+      "sha256": "f8d3e14cd645b6ebb8cc5142fc05f420be37f1a3f09cddeebb2ede443d266452"
+    },
+    "LEXICON.json": {
+      "bytes": 3342,
+      "sha256": "64ac5e03d7e92239244c2f973bd8c3b04b1d5834f654867b693ef8595cc6059c"
+    },
+    "MANIFEST.json": {
+      "bytes": 682,
+      "sha256": "96c6acecd7f9d77917fb0c6692eccd68bc133f6e7665b93359703680665e8187"
+    },
+    "OVERLAP_AUDIT.json": {
+      "bytes": 7024,
+      "sha256": "0cc75e2f538ca43148908a98b2533ad1c24499b456a553b6d56fe80266acc083"
+    },
+    "PREFLIGHT.json": {
+      "bytes": 810,
+      "sha256": "b276a6490a304f4d3e40b432f6acacad018f5c61d897ffc9e3c61b0e17db5d68"
+    },
+    "PROTOCOL.md": {
+      "bytes": 6323,
+      "sha256": "30f0351a950ce039db09686d4ac1c39ac7ca7378c1bca6e2193d09908a6ba7e4"
+    },
+    "build_post_p7_v2.py": {
+      "bytes": 17102,
+      "sha256": "5a7673afcdac05f04e8d4a8015c661cbf0ed34fed6bbef60cc8b78cfcbd20c7c"
+    },
+    "post_p7_v2_independent_validator.py": {
+      "bytes": 3397,
+      "sha256": "8c84361f94cf36308e56838f54988c359d91d48d242d7521dd33a7102e2167ab"
+    }
+  },
+  "status": "FROZEN_PRE_INFERENCE"
+}

@@ -1,0 +1,8 @@
+{
+  "bundle_receipt_sha256": "7d147dd92af73d3d1979c5b012b2fbd8e258efad8ff9650f8c3de244be862df9",
+  "checkpoint_500": "C:\\DaveLM-CADAVER\\human_readiness_hr3_causal_seed87006_execution_v7\\checkpoint_500.pt",
+  "checkpoint_500_sha256": "23726ce76ff789bbe05d44340952a1763b7231584b0c91ff8e15f5c64e6ef93d",
+  "completed_updates": 500,
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "status": "HR3_TRAINING_COMPLETE_PENDING_FROZEN_DEV_EVALUATION"
+}

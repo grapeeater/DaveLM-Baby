@@ -1,0 +1,19 @@
+{
+  "C:\\DaveLM-v0.9\\v0_8_2\\__init__.py": "7c47dc732ea59f3d46769a53c5077cb886151f235e75b222270cc8aaf7cef87b",
+  "C:\\DaveLM-v0.9\\v0_7\\__init__.py": "e859a14f534dd8e04db5c8abe62019815cfb0b71dbb6ac0c48b46fd8a6edcf8d",
+  "C:\\DaveLM-v0.9\\v0_2_1\\__init__.py": "2ba1884227fa40b0b1b59b9343bccb2076369e336f20fe17db9ad6fde940eb90",
+  "C:\\DaveLM-v0.9\\v0_2\\__init__.py": "e950992c38ab51fb241a30b87e8bb9415388dfa5d6e20a01d7e082ad1a46eeff",
+  "C:\\DaveLM-v0.9\\v0_2\\model.py": "28ee99e6e73c4e8e4955a4bda66a787afde2d7edef23049ac9b2ed2a2c3d3146",
+  "C:\\DaveLM-v0.9\\v0_2_1\\model.py": "29369e640298cb22cbdacbb826f908451ff58a5724544ed823d6e0938b51491e",
+  "C:\\DaveLM-v0.9\\v0_7\\model.py": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+  "C:\\DaveLM-v0.9\\v0_8\\__init__.py": "0f633cca96d11ce146b0e0b38b0c6de7cf80e9add09dece764899c9217f32acf",
+  "C:\\DaveLM-v0.9\\v0_8\\config.py": "7ca019f4cb800f0f30eefb5cbf9abaf9c296cd7aba5a3bf37c7d5cb31e997ddc",
+  "C:\\DaveLM-v0.9\\v0_8_2\\config.py": "da9c48edd107c7e9d638ad345802a04e23cb19044b9c83a69789e83b2f313798",
+  "C:\\DaveLM-v0.9\\v0_8_2\\model.py": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d",
+  "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+  "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+  "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+  "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+}

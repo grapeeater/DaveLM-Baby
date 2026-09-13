@@ -1,0 +1,70 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T19_SUFFIX_ANSWERCE_LR3P75E5_1K_V1",
+  "study_classification": "T19_FAIL_NO_REPRESENTATION",
+  "runs": {
+    "780001": {
+      "seed": 780001,
+      "update": 1000,
+      "classification": "T19_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 112,
+      "dev_native": 87,
+      "dev_exact": 39,
+      "dev_ce": 1.2555718392133712,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "780002": {
+      "seed": 780002,
+      "update": 1000,
+      "classification": "T19_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 109,
+      "dev_native": 86,
+      "dev_exact": 35,
+      "dev_ce": 1.2563124522566795,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "780003": {
+      "seed": 780003,
+      "update": 1000,
+      "classification": "T19_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 108,
+      "dev_native": 83,
+      "dev_exact": 34,
+      "dev_ce": 1.2567393451929092,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false
+}

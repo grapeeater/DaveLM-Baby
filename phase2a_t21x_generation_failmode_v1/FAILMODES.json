@@ -1,0 +1,221 @@
+{
+  "test_loaded": false,
+  "seeds": {
+    "800001": {
+      "exact_ok": 27,
+      "generation_modes": {
+        "other_then_eos": 32,
+        "first_token_correct_then_diverge": 52,
+        "exact": 27,
+        "wrong_candidate_first_token": 12,
+        "wrong_candidate": 5
+      },
+      "first_token": {
+        "not_target_bos": 49,
+        "target_bos": 79
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        }
+      ]
+    },
+    "800002": {
+      "exact_ok": 29,
+      "generation_modes": {
+        "other_then_eos": 41,
+        "first_token_correct_then_diverge": 30,
+        "exact": 29,
+        "wrong_candidate": 11,
+        "wrong_candidate_first_token": 17
+      },
+      "first_token": {
+        "not_target_bos": 69,
+        "target_bos": 59
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Yorka."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walk."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Wal."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Work."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walk."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Lisa."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " He found a bigger."
+        }
+      ]
+    },
+    "800003": {
+      "exact_ok": 26,
+      "generation_modes": {
+        "other_then_eos": 37,
+        "first_token_correct_then_diverge": 46,
+        "exact": 26,
+        "wrong_candidate_first_token": 13,
+        "wrong_candidate": 6
+      },
+      "first_token": {
+        "not_target_bos": 56,
+        "target_bos": 72
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Va."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Whoe."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " enches."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "base_class": "DaveLMV082",
+  "base_model_parameter_count": 10594944,
+  "block_count": 8,
+  "embedding_parameter_count": 327680,
+  "embedding_shape": [
+    1024,
+    320
+  ],
+  "language_head_shape": [
+    1024,
+    320
+  ],
+  "model_class": "Treatment13Model",
+  "model_parameter_count": 10841346,
+  "output_head_parameter_count": 328704,
+  "position_shape": [
+    256,
+    320
+  ],
+  "positional_parameter_count": 81920,
+  "retrieval_dim": 64,
+  "tied_embedding_output": false,
+  "vocab_size": 1024
+}

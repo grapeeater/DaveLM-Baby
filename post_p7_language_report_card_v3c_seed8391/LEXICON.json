@@ -1,0 +1,38 @@
+{
+  "candidate_token_ids": {
+    " Sam.": [
+      527,
+      339,
+      18
+    ],
+    " Tom.": [
+      525,
+      295,
+      18
+    ]
+  },
+  "colors": [
+    "blue",
+    "green",
+    "red",
+    "yellow"
+  ],
+  "objects": [
+    "ball",
+    "book",
+    "box",
+    "car",
+    "fish",
+    "hat",
+    "kite",
+    "toy"
+  ],
+  "relations": [
+    "found",
+    "carried"
+  ],
+  "subjects": [
+    "Sam",
+    "Tom"
+  ]
+}

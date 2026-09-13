@@ -1,0 +1,60 @@
+{
+  "backward_passes": 0,
+  "expected_schedule_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+  "experiment": "DaveLM v0.9 Treatment #3 causal prefix identity audit",
+  "gradients_calculated": false,
+  "model_built": false,
+  "optimizer_built": false,
+  "optimizer_steps": 0,
+  "positive_control_evaluation": false,
+  "read_only": true,
+  "result": {
+    "causal_position_counts": {
+      "100": 2472,
+      "104": 2274,
+      "108": 2467,
+      "112": 2186,
+      "116": 1770,
+      "120": 1827,
+      "124": 1951,
+      "128": 2013,
+      "132": 2157,
+      "136": 2081,
+      "140": 2182,
+      "144": 2099,
+      "148": 2385,
+      "152": 1951,
+      "96": 2185
+    },
+    "classification": "PASS \u2014 ALL 32,000 MARGIN EVENTS USED TOKEN-IDENTICAL NATIVE EVALUATOR PREFIXES",
+    "full_native_prefix_identity": {
+      "matches": 32000,
+      "matches_by_query_slot": {
+        "0": 16014,
+        "1": 15986
+      },
+      "mismatches": 0,
+      "mismatches_by_query_slot": {
+        "0": 0,
+        "1": 0
+      },
+      "pass": true
+    },
+    "mismatch_examples": [],
+    "sampled_window_prefix": {
+      "matches": 32000,
+      "mismatches": 0
+    },
+    "schedule_sha256": "a34bb91d258f11c6f7cb6b6cd89c79d8e6fa12d64af15dd14b028fb7ff675cff",
+    "target_position": {
+      "matches": 32000,
+      "mismatches": 0
+    },
+    "total_events": 32000,
+    "within_document_start_counts": {
+      "0": 32000
+    }
+  },
+  "sealed_axes_loaded": false,
+  "sealed_evaluation": false
+}

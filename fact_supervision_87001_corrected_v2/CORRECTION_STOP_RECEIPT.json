@@ -1,0 +1,18 @@
+{
+  "status": "STOP_NOT_READY",
+  "reason": "Frozen semantic pools admit no pair of valid eight-family naturalistic holdouts with zero prompt intersection.",
+  "primary_pool_families": 12,
+  "confirmation_pool_families": 12,
+  "valid_primary_eight_family_subsets": 47,
+  "valid_confirmation_eight_family_subsets": 285,
+  "joint_valid_disjoint_pairs": 0,
+  "construction_seed": 87001,
+  "original_failed_attempt_preserved": true,
+  "checkpoint_loaded": false,
+  "inference": false,
+  "training": false,
+  "optimizer_update": false,
+  "sacred_access": false,
+  "scientific_choice_made": false,
+  "required_human_decision": "Revise naturalistic selection/rendering or relax cross-holdout zero-intersection; do not choose autonomously."
+}

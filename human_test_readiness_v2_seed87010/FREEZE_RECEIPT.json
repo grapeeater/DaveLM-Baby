@@ -1,0 +1,12 @@
+{
+  "bundle": "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010",
+  "construction_seed": 87010,
+  "final_accessed": false,
+  "historical_erratum": "ERRATUM.md",
+  "manifest_sha256": "ce2e501e22889df5a675264b57955778cc7abe14cf419bf64295844f0ebfaa8c",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "sacred_accessed": false,
+  "sha256sums_sha256": "95c54d84a6065f9eecfb19cd9ecbafc60a9ac91e76f9c3e93d68b53fe1e59a53",
+  "status": "FROZEN_PROSPECTIVE_READINESS_DEV_V2",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+}

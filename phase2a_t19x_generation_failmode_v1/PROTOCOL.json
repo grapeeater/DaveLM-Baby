@@ -1,0 +1,7 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T19X_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "Did T19 suffix-weighting change T18X leftover modes (first_token_correct_then_diverge / Sky-Salt), or only fail to move exact counts?",
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T19 checkpoints", "unseal TEST", "retokenize", "copy Qwen or Smol"]
+}

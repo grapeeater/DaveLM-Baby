@@ -1,0 +1,100 @@
+{
+  "run_id": "sf21_paired_counterfactual_representation_consistency_v1",
+  "frozen_protocol_source": "SF21 PROTOCOL.json (this file)",
+  "authority": "SF21: ONE scientific variable vs SF20: add paired counterfactual representation consistency term",
+  "parent": {
+    "description": "SF8 lambda_margin=0.25 acquisition-success checkpoints (three seeds)",
+    "87017": {
+      "path": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "d3_reference": 0.007036717671962123
+    },
+    "87018": {
+      "path": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "d3_reference": 0.006672408242356376
+    },
+    "87019": {
+      "path": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt",
+      "sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "d3_reference": 0.007839491795780695
+    }
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "seed": "per branch (87053, 87054, 87055)",
+    "pythonhashseed": "matches seed"
+  },
+  "kl": {
+    "direction": "D_KL(P_student || P_teacher), forward KL",
+    "temperature": 1.0,
+    "support": "full 1024-class softmax/log-softmax of untied language head logits",
+    "lambda_kl": 1.0,
+    "lambda_fixed": true,
+    "positions_per_english_update": 160,
+    "student_mode": "eval (dropout off) with grad enabled; teacher eval + torch.no_grad; then m.train() for factual CE",
+    "precision": "float64 accumulation over the 160 selected positions; mean; cast scalar to float32",
+    "pool_path": "KL_POOL.json",
+    "pool_sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "pool_manifest_sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+    "schedule_path": "SF13_KL_SCHEDULE.json",
+    "schedule_sha256": "aaeb59b44c8683c0564fe487f631158360169a522b9bcd98e98d9cdb342018eb",
+    "applied_on": "English factual updates only (updates of kind 'english', sequential index 1..180)",
+    "teacher": "separate DaveLMV082 build_model('untied') loaded from parent base_model.* keys; eval; requires_grad_(False); never in optimizer; no shared Parameter/storage with student"
+  },
+  "consistency_term": {
+    "description": "Paired counterfactual representation consistency - ONE scientific variable vs SF20",
+    "pair_manifest": "PAIR_MANIFEST.json",
+    "pair_manifest_sha256": "1da1d2925cedcde4d8214e1ccae05851992b5cf986e6c344c579ae22ae141589",
+    "representation_target": "logits at position = prefix_length - 1 (last context token before answer generation)",
+    "normalization": "L2 normalization of representation vectors before cosine similarity",
+    "loss_form": "mean(1 - cos_sim(v_i, v_j)) over all positive pairs in the English batch",
+    "lambda_consistency": 0.1,
+    "applies_to": "English updates only",
+    "both_sides_receive_grad": true,
+    "pairing_rule": "Records grouped by pair_id from TRAIN.json; each pair_id has exactly 2 records with same template, different identities"
+  },
+  "d3": {
+    "selection_manifest": "D3_SELECTION.json",
+    "measured_at_updates": [0, 100, 200],
+    "parent_specific_reference": "U0 D3 reproduction is per SF20 branch, keyed by parent checkpoint sha256. No averaged baseline.",
+    "d3_references_by_parent_sha256": {
+      "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d": 0.007036717671962123,
+      "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102": 0.006672408242356376,
+      "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517": 0.007839491795780695
+    },
+    "u0_tolerance_abs": 0.0001
+  },
+  "gates": {
+    "endpoint_update": 200,
+    "endpoint": "correct==16 AND exact==16 AND reversals==8 AND families==4",
+    "language_stop": "aligned_CE > update0_aligned_CE + 0.25 at update 100 or 200",
+    "binding_stop": "any pool answer<76 OR BD<76 OR collapse>0 at update 100 or 200",
+    "acquisition_guard_update100": "if (correct < 10) AND (exact < 10): STOP (additive; does not weaken any gate)"
+  },
+  "schedule": "200 updates = 20 x (9 English + 1 binding); SF13 SCHEDULE.json (read-only); English batch = 36 records; 180 English + 20 binding.",
+  "optimizer": "fresh AdamW lr 5e-5 betas(0.9,0.999) eps1e-8 wd0.05 amsgrad=False foreach=False fused=False; clip 2.0; one step/update",
+  "scope": "English: every base_model param except base_model.blocks.{0..3}; binding: full. (PINNED_MASKING.set_scope)",
+  "transfer_panels": "HELDOUT16/ALTERNATE48/COPY8/COMPETING64 remain LOCKED/UNSCORED; opened only if endpoint + language + binding pass at 200; FINAL/sacred never accessed",
+  "evals": "rolling restart every update; permanent checkpoints + full evaluation at updates 0/100/200; D3 diagnostic at 0/100/200",
+  "notes": [
+    "SF21: ONE scientific variable vs SF20: add paired counterfactual representation consistency term (lambda=0.1).",
+    "All other parameters frozen: SF20 curriculum (48 records: 16 TRAIN16 + 32 widening with 16-name set), identities, schedule (200 updates), factual CE, lambda_margin=0.25, M=1.0, lambda_KL=1.0, LR=5e-5, optimizer, binding rehearsal, frozen gates.",
+    "No SF12 R_name, SF17 projection, SF18 head freeze, or SF19 membership hinge.",
+    "No semantic categories, classifiers, or linguistic labels introduced.",
+    "KL pool identical to SF13 (165363 entries, 741 rows).",
+    "SF8 low-dose checkpoints used as parents (seeds 87017->87053, 87018->87054, 87019->87055).",
+    "No locked panel, FINAL, or sacred material is opened.",
+    "No head-freeze fallback exists in this harness.",
+    "No lambda sweep or post-hoc adjustment is permitted.",
+    "Consistency term uses logits at position prefix_len-1 (same as margin hinge) as representation proxy.",
+    "Representation vectors are L2-normalized before cosine similarity."
+  ]
+}

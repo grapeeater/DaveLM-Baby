@@ -1,0 +1,79 @@
+{
+  "acquisition": {
+    "correct": 9,
+    "exact": 0,
+    "families": 0,
+    "family_count": 4,
+    "immediate_eos": 0,
+    "mean_margin": 0.05529525503516197,
+    "mean_mass": 3.7004602353105416e-08,
+    "min_margin": -11.003109693527222,
+    "n": 16,
+    "pairs": 8,
+    "reversals": 1,
+    "subgroups": {
+      "familiar_cloze": {
+        "correct": 9,
+        "exact": 0,
+        "families": 0,
+        "family_count": 4,
+        "immediate_eos": 0,
+        "mean_margin": 0.05529525503516197,
+        "mean_mass": 3.7004602353105416e-08,
+        "min_margin": -11.003109693527222,
+        "n": 16,
+        "pairs": 8,
+        "reversals": 1,
+        "ties": 0
+      }
+    },
+    "ties": 0
+  },
+  "binding": {
+    "pilot0": {
+      "answer_exact": 80,
+      "both_distinct": 80,
+      "complete_quartets": 20,
+      "downstream_answer_correct_conditional_on_bd": 1.0,
+      "queried_row_selection_conditional_on_bd": 1.0,
+      "slot_collapse": 0,
+      "strict_reversal_both_correct": 40,
+      "strict_reversal_pairs": 40
+    },
+    "pilot1": {
+      "answer_exact": 80,
+      "both_distinct": 80,
+      "complete_quartets": 20,
+      "downstream_answer_correct_conditional_on_bd": 1.0,
+      "queried_row_selection_conditional_on_bd": 1.0,
+      "slot_collapse": 0,
+      "strict_reversal_both_correct": 40,
+      "strict_reversal_pairs": 40
+    }
+  },
+  "d3": {
+    "mean_combined_name_probability": 0.0009072396332621135,
+    "mean_entropy": 3.0031634081387892,
+    "mean_eos_probability": 0.00021999144354202527,
+    "mean_true_next_probability": 0.14008497568366618,
+    "n": 256,
+    "per_name_mean_probability": {
+      "Alex": 8.197742296583987e-05,
+      "Mia": 0.0007759885133244993,
+      "Nora": 3.153965035201933e-05,
+      "Owen": 1.7734034872096682e-05
+    }
+  },
+  "language": {
+    "batch_losses": [
+      3.5113742351531982,
+      3.181760787963867,
+      3.422119617462158,
+      3.4473869800567627
+    ],
+    "loss": 3.3906604051589966,
+    "perplexity": 29.68555028889874,
+    "records": 128
+  },
+  "status": "SF3_PREFLIGHT_BASELINE_PASS"
+}

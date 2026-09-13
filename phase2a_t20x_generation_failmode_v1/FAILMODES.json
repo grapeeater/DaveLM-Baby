@@ -1,0 +1,225 @@
+{
+  "test_loaded": false,
+  "seeds": {
+    "790001": {
+      "exact_ok": 9,
+      "generation_modes": {
+        "other_then_eos": 81,
+        "first_token_correct_then_diverge": 33,
+        "exact": 9,
+        "wrong_candidate": 1,
+        "wrong_candidate_first_token": 2,
+        "unterminated_other": 2
+      },
+      "first_token": {
+        "not_target_bos": 86,
+        "target_bos": 42
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Lema."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Butter."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": "e."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walk."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": " Butter."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Happa."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " enjoy."
+        }
+      ]
+    },
+    "790002": {
+      "exact_ok": 10,
+      "generation_modes": {
+        "exact": 10,
+        "other_then_eos": 76,
+        "first_token_correct_then_diverge": 24,
+        "wrong_candidate": 6,
+        "wrong_candidate_first_token": 9,
+        "unterminated_other": 3
+      },
+      "first_token": {
+        "target_bos": 34,
+        "not_target_bos": 94
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": "  pee."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": " escape."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": " Yais."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": "  pee."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " What is that, What is that?\"\nThe blueber"
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Ya."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " esca."
+        },
+        {
+          "id": "DI01:a1:q0:o0",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        }
+      ]
+    },
+    "790003": {
+      "exact_ok": 13,
+      "generation_modes": {
+        "exact": 13,
+        "other_then_eos": 79,
+        "first_token_correct_then_diverge": 24,
+        "wrong_candidate_first_token": 5,
+        "immediate_eos": 2,
+        "unterminated_other": 4,
+        "wrong_candidate": 1
+      },
+      "first_token": {
+        "target_bos": 37,
+        "not_target_bos": 91
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Vork."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": "."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Whis."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "other_then_eos",
+          "target_txt": " Wes.",
+          "gen_txt": " Vork."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Whiska."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Val."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": "."
+        },
+        {
+          "id": "DI01:a0:q1:o0",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " She."
+        }
+      ]
+    }
+  }
+}

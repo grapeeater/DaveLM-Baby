@@ -1,0 +1,646 @@
+{
+  "audit_metadata": {
+    "status": "PASS_WITH_UNCERTAINTIES",
+    "completed_utc": "2026-09-09T06:30:00.000000+00:00",
+    "auditor": "opencode (read-only audit worker)",
+    "scope": "DaveLM/Baby pre-vNext architecture & lineage audit",
+    "physical_root": "C:\\DaveLM-CADAVER",
+    "external_root": "C:\\DaveLM-v0.9",
+    "read_only": true,
+    "files_modified": 0,
+    "output_directory": "C:\\DaveLM-CADAVER\\vnext_60m_audit"
+  },
+
+  "current_model": {
+    "name": "Baby (Research Baby)",
+    "architecture": "decoder-only transformer",
+    "implementation": "C:\\DaveLM-v0.9\\v0_8\\model.py",
+    "config": "C:\\DaveLM-v0.9\\v0_8\\config.py",
+    "base_parameters": 10594944,
+    "binding_parameters": 246401,
+    "total_trained_parameters": 10841345,
+    "layers": 8,
+    "d_model": 320,
+    "n_heads": 10,
+    "head_dim": 32,
+    "mlp_hidden": 1280,
+    "mlp_activation": "ReLU",
+    "vocab_size": 1024,
+    "context_length": 256,
+    "positional_encoding": "learned absolute",
+    "embedding_tie": "untied",
+    "norm_type": "LayerNorm (ExplicitLayerNorm wrapper)",
+    "norm_placement": "pre-norm",
+    "attention_impl": "manual per-head loop (no SDPA/flash)",
+    "dropout": {
+      "embedding": 0.05,
+      "attention": 0.05,
+      "residual": 0.05
+    },
+    "biases": {
+      "attention_qkv": false,
+      "attention_projection": true,
+      "mlp": true,
+      "embedding": null,
+      "language_head": true
+    },
+    "parameter_accounting": {
+      "token_embedding": {"shape": [1024, 320], "params": 327680, "pct": 3.1},
+      "position_embedding": {"shape": [256, 320], "params": 81920, "pct": 0.8},
+      "attention_per_block": {"params": 409920, "pct_per_block": 3.9},
+      "mlp_per_block": {"params": 820800, "pct_per_block": 7.8},
+      "norm_per_block": {"params": 1280, "pct_per_block": 0.0},
+      "block_total": {"params": 1232000, "pct_per_block": 11.6},
+      "all_blocks": {"params": 9856000, "pct": 93.0},
+      "final_norm": {"params": 640, "pct": 0.0},
+      "lm_head": {"params": 328704, "pct": 3.1},
+      "base_total": {"params": 10594944, "pct": 100.0},
+      "binding_ortholocalizer": {"params": 641, "components": ["u[320]", "q[319]", "bs[1]", "ba[1]"]},
+      "binding_retrieval": {"params": 245760, "components": ["wq[64,320]", "wk[64,320]", "wv[320,320]", "wo[320,320]"]},
+      "binding_total": {"params": 246401, "pct_of_total": 2.3}
+    },
+    "scaling_formulas": {
+      "attention_per_block": "4*d^2 + 2*d",
+      "mlp_per_block": "2*d*h + h + d",
+      "block_total": "4*d^2 + 2*d*h + h + 5*d",
+      "base_total": "V*d + C*d + L*(4*d^2 + 2*d*h + h + 5*d) + 2*d + d*V + V",
+      "binding": "~2*d^2 + 2*d"
+    },
+    "dominant_components": ["attention (81.7%)", "MLP", "embeddings (3.9%)", "LM head (3.1%)", "binding (2.3%)"]
+  },
+
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "verified": true,
+    "family": "HuggingFace tokenizers v1.0",
+    "type": "BPE",
+    "byte_level": true,
+    "vocab_size": 1024,
+    "merges": 763,
+    "special_tokens": {
+      "<pad>": 0,
+      "<unk>": 1,
+      "<bos>": 2,
+      "<eos>": 3,
+      "<doc>": 4,
+      "<mask>": null
+    },
+    "name_tokenization": {
+      "description": "All names are multi-token (3 bare, 4 as candidate with period)",
+      "first_token_collision": "7 distinct first-token IDs for 20 names",
+      "period_token_id": 18,
+      "example_geometry": {
+        "Alex": {"bare": [37, 290, 92], "space_prefixed": [314, 290, 92], "candidate": [314, 290, 92, 18]},
+        "Owen": {"bare": [51, 91, 274], "space_prefixed": [536, 91, 274], "candidate": [536, 91, 274, 18]},
+        "Mia": {"bare": [49, 77, 69], "space_prefixed": [925, 77, 69], "candidate": [925, 77, 69, 18]},
+        "Nora": {"bare": [50, 276, 69], "space_prefixed": [512, 276, 69], "candidate": [512, 276, 69, 18]}
+      }
+    },
+    "bos_eos_behavior": {
+      "prefix": "[2] + prompt_token_ids",
+      "suffix": "candidate_ids + [3]",
+      "labels": "[-100]*(len(prefix)-1) + candidate + [3]"
+    },
+    "blast_radius_if_changed": [
+      "All SHA256 asserts fail (200+ files)",
+      "Checkpoint embedding shape mismatch",
+      "All frozen datasets with precomputed token IDs become stale",
+      "SF20 first-token distinctness guarantees must be re-verified"
+    ],
+    "tradeoff": {
+      "keep": "Isolates architecture/capacity, preserves evaluator compatibility",
+      "change": "Better language model, but makes vNext a broader generational redesign"
+    }
+  },
+
+  "binding": {
+    "lineage": {
+      "T8": {"mechanism": "Contextualized query->logit pathway (query bias)", "source": "treatment8_train.py"},
+      "T9": {"mechanism": "Answer-position retrieval via learned attention head", "source": "treatment9_train.py"},
+      "T10": {"mechanism": "Strict counterfactual curriculum + answer-CE + membership", "outcome": "50% answer acc, 0/40 quartets", "source": "treatment10_final_retention_audit.json"},
+      "T11": {"mechanism": "Answer-only strict counterfactual (CE on answer token only)", "outcome": "45% answer acc, 0 complete quartets", "source": "treatment11_final_retention_audit.json"},
+      "T12": {"mechanism": "Query-conditioned mapping retrieval: query->match source->retrieve source value->answer", "outcome": "160/160 retention, 40/40 quartets, retrieval row acc 1.0", "source": "treatment12_model.py, treatment12_final_retention_audit.json"},
+      "T13": {"mechanism": "Learned mapping-row localization: removes explicit row positions, learned localizer + query-conditioned retrieval", "outcome": "317/320 ans, 312/320 BD, 0 collapse, 78/80 quartets, 158/160 reversals", "source": "treatment13_orthogonal_shared_unbounded_seed8380"}
+    },
+    "canonical_graduate": {
+      "path": "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt",
+      "sha256": "fed298748e62def6f1751ef1bb7df0cdec51d53fac6e4c86e8c00a95dccdd430",
+      "size_bytes": 64504479,
+      "classification": "GRADUATION_LEVEL_SUCCESS",
+      "metrics": {
+        "answer_exact": {"score": "317/320", "rate": 0.990625},
+        "both_distinct": {"score": "312/320", "rate": 0.975},
+        "collapse": {"score": "0/320", "rate": 0.0},
+        "complete_quartets": {"score": "78/80", "rate": 0.975},
+        "reversal_both_correct": {"score": "158/160", "rate": 0.9875}
+      }
+    },
+    "surviving_mechanism": {
+      "description": "OrthoLocalizer + retrieval head + answer modulation via residual injection",
+      "components": {
+        "ortholocalizer": {
+          "params": 641,
+          "tensors": ["u[320]", "q[319]", "bs[1]", "ba[1]"],
+          "math": "Householder reflection: S = h@u + bs, R = h@basis(u)@q + ba, output = stack((S+R, S-R), -1)",
+          "source": "PINNED_PILOT1_BINDING_IMPLEMENTATION.py:18-23"
+        },
+        "retrieval_head": {
+          "params": 245760,
+          "tensors": ["wq[64,320]", "wk[64,320]", "wv[320,320]", "wo[320,320]"],
+          "math": "Query-conditioned: scores = wq(query) @ wk(source_slots) * scale, softmax -> row_weights, retrieved = row_weights @ value_slots",
+          "source": "treatment13_model.py:62-66"
+        },
+        "source_localization": {
+          "geometry": "ROW_VALUE_OFFSET=4, 2-row slots",
+          "candidate_positions": "n_cand = T-1-ROW_VALUE_OFFSET (188 for T=193)",
+          "validity_mask": "pos < qpos AND pos+ROW_VALUE_OFFSET < T",
+          "source_slots": "slot-weighted mean of hidden at candidate positions",
+          "value_slots": "slot-weighted mean of hidden at pos+ROW_VALUE_OFFSET",
+          "source": "treatment13_model.py:90-106"
+        },
+        "answer_modulation": {
+          "math": "answer_hidden[anspos] + wo(retrieved) -> language_head -> splice at anspos",
+          "source": "treatment13_model.py:108-121"
+        }
+      },
+      "generic_vs_specific": {
+        "generic": ["OrthoLocalizer math", "retrieval head architecture", "residual injection"],
+        "synthetic_specific": ["2-row geometry", "ROW_VALUE_OFFSET=4 pairing", "position masks", "qpos/anspos handoff"]
+      }
+    },
+    "checkpoint_tensors": [
+      "localizer.u", "localizer.q", "localizer.bs", "localizer.ba",
+      "wq.weight", "wk.weight", "wv.weight", "wo.weight",
+      "base_model.token_embedding.weight", "base_model.position_embedding.weight",
+      "base_model.blocks.{0-7}.attention.heads.{0-9}.{key,query,value,projection}.{weight,bias}",
+      "base_model.blocks.{0-7}.feed_forward.network.{0,2}.{weight,bias}",
+      "base_model.blocks.{0-7}.norm{1,2}.{weight,bias}",
+      "base_model.final_norm.{weight,bias}",
+      "base_model.language_head.{weight,bias}"
+    ],
+    "non_trainable_buffers": [
+      "base_model.blocks.{0-7}.attention.heads.{0-9}.mask (256,256) x 80"
+    ],
+    "protected_pools": {
+      "pilot0_dev": {
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+        "sha256": "30bfbcbe...",
+        "size": 80,
+        "gate": "answer>=76, BD>=76, collapse==0"
+      },
+      "pilot1_dev": {
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json",
+        "sha256": "3b6774b2...",
+        "size": 80,
+        "gate": "answer>=76, BD>=76, collapse==0"
+      },
+      "rehearsal": {
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+        "sha256": "a47be700...",
+        "size": 80
+      }
+    }
+  },
+
+  "language_parent": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "verified": true,
+    "size_bytes": 64504479,
+    "parent_of": ["SF1", "SF2", "SF3", "SF4", "SF5", "SF6", "SF7", "SF8", "SF9", "SF10", "SF11", "SF12", "SF13", "SF14", "SF15", "SF16", "SF17", "SF18", "SF19", "SF20", "SF21"],
+    "training": {
+      "schedule": "900 TinyStories language updates + 100 binding updates",
+      "early_block_protection": "blocks 0-3 frozen during language steps",
+      "binding_steps": "full scope (all params)",
+      "source": "language_pilot_1...\\run.py"
+    },
+    "results_vs_graduate": {
+      "dev_language_CE": {"baseline": 7.1532, "post": 2.9039, "delta": -4.2493},
+      "dev_perplexity": {"baseline": 1278.2, "post": 18.25, "delta": -1259.95},
+      "binding_pilot0_dev": {"baseline": "79/80 ans, BD 76, collapse 0", "post": "80/80 ans, BD 80, collapse 0"},
+      "binding_pilot1_dev": {"baseline": null, "post": "80/80 ans, BD 80, collapse 0"}
+    },
+    "classification": "Major language improvement while preserving binding at ceiling"
+  },
+
+  "factual_frontier": {
+    "sf8": {
+      "status": "STANDING_NARROW_RECIPE",
+      "intervention": "lambda_margin=0.25, M=1.0",
+      "seeds": [87017, 87018, 87019],
+      "arm": "low",
+      "results": {
+        "87017": {"status": "ACQUISITION_SUCCESS", "completed": 200, "all_gates": true},
+        "87018": {"status": "ACQUISITION_SUCCESS", "completed": 200, "all_gates": true},
+        "87019": {"status": "ACQUISITION_SUCCESS", "completed": 200, "all_gates": true}
+      },
+      "recipe": {
+        "lambda_margin": 0.25,
+        "margin_M": 1.0,
+        "lambda_KL": 1.0,
+        "positions_per_update": 160,
+        "updates": {"english": 180, "binding": 20},
+        "optimizer": {"type": "AdamW", "lr": 5e-05, "weight_decay": 0.05, "clip": 2.0},
+        "scope": {"english": "all except blocks 0-3", "binding": "all"}
+      },
+      "post_sf8_transfer_phenotype": {
+        "forced_choice": "strong held-out recombination",
+        "exact_generation": "weaker",
+        "surface_transfer": "limited",
+        "copy_transfer": "limited",
+        "competing_fact_order": "strong dependence on order",
+        "canonical_order": "strong contradictory distractor resistance",
+        "reversed_order": "exposed recency/order sensitivity"
+      }
+    },
+    "sf13": {
+      "status": "BROAD_RETENTION_RESTORED",
+      "intervention": "Broad retention/KL coverage",
+      "lesson": "Could restore retention while preserving widening pressure, but did not end the core coexistence problem"
+    },
+    "sf14": {
+      "status": "D3_CONTAINED_GENERATION_DAMAGED",
+      "intervention": "Remove first-answer-token CE",
+      "lesson": "Strongly contained D3 but damaged exact name generation"
+    },
+    "sf15_sf16": {
+      "status": "CE_MICRODOSE_EXHAUSTED",
+      "intervention": "Partial first-token CE / CE weight",
+      "lesson": "Partial CE restored some generation pressure but brought D3 leakage back or remained inconsistent"
+    },
+    "sf17": {
+      "status": "INSUFFICIENT",
+      "intervention": "Global retention-priority gradient projection",
+      "lesson": "Active but insufficient"
+    },
+    "sf18": {
+      "status": "INSUFFICIENT",
+      "intervention": "Freeze English LM output head",
+      "lesson": "Upstream changes could still drive name mass through the unchanged head"
+    },
+    "sf19": {
+      "status": "NEAR_HIT",
+      "intervention": "Candidate-membership ranking",
+      "lesson": "Could preserve generation better than zero first-token CE while keeping D3 cleaner early, but containment was not durable and widening remained below endpoint gates"
+    },
+    "sf20": {
+      "status": "D3_SUPPRESSED_NO_WIDENING",
+      "intervention": "Identity-heldout balanced entity rotation",
+      "lesson": "Strongly suppressed D3 but did not create identity-independent widening/generalization",
+      "phenotype": {
+        "mean_D3": "~0.00718 -> ~0.00212",
+        "forced_factual": "strong",
+        "language": "green",
+        "binding": "green",
+        "TRAIN16_exact": "regressed",
+        "surface_exact": "~2/16",
+        "order_exact": "~2/16",
+        "stop": "U100 (all branches)"
+      }
+    }
+  },
+
+  "sf21_closure": {
+    "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V2",
+    "sole_scientific_variable": "Add 0.1 * mean(1 - cos_sim) across 16 frozen widening reversal pairs at the final-normalized pre-answer query state on English updates",
+    "seeds": [87056, 87057, 87058],
+    "parent_seeds": [87017, 87018, 87019],
+    "parent_study": "SF8",
+    "results": {
+      "87056": {
+        "stop": "U100",
+        "TRAIN16": {"correct": 16, "exact": 13},
+        "DEV_SURFACE": {"correct": 11, "exact": 2},
+        "DEV_ORDER": {"correct": 8, "exact": 2},
+        "language_delta": "+0.0912",
+        "D3": {"start": 0.00704, "end": 0.00219},
+        "binding": "pass (both pools)",
+        "status": "STOP_REGRESSION",
+        "endpoint_pass": false,
+        "retention_acquisition": false
+      },
+      "87057": {
+        "stop": "U100",
+        "TRAIN16": {"correct": 16, "exact": 13},
+        "DEV_SURFACE": {"correct": 10, "exact": 2},
+        "DEV_ORDER": {"correct": 8, "exact": 2},
+        "language_delta": "+0.1530",
+        "D3": {"start": 0.00667, "end": 0.00238},
+        "binding": "pass (both pools)",
+        "status": "STOP_REGRESSION",
+        "endpoint_pass": false,
+        "retention_acquisition": false
+      },
+      "87058": {
+        "stop": "U200",
+        "TRAIN16": {"correct": 16, "exact": 8},
+        "DEV_SURFACE": {"correct": 13, "exact": 1},
+        "DEV_ORDER": {"correct": 8, "exact": 2},
+        "language_delta": "+0.2256",
+        "D3": {"start": 0.00784, "end": 0.00243},
+        "binding": "pass (both pools)",
+        "status": "STOP_REGRESSION",
+        "endpoint_pass": false,
+        "retention_acquisition": false
+      }
+    },
+    "classification": {
+      "rule_success": "SF21_COEXISTENCE_FRONTIER_SUCCESS if >=2/3 endpoint_pass",
+      "rule_failure": "SF21_COEXISTENCE_FRONTIER_FAIL_10M_SERIES_CLOSED for any other scientifically valid cross-seed result",
+      "actual": "SF21_COEXISTENCE_FRONTIER_FAIL_10M_SERIES_CLOSED",
+      "endpoint_pass_count": 0,
+      "total_seeds": 3
+    },
+    "prospective_stop_rule": "If SF21 does not achieve coexistence in >=2/3 branches, close the 10.6M factual-supervision series without SF22 or coefficient rescue.",
+    "stop_rule_fulfilled": true,
+    "series_status": "CLOSED",
+    "interpretation": {
+      "not_proven": "10.6M parameters are mathematically incapable of solving the task",
+      "is_established": "Continued micro-tuning of the current 10.6M factual-supervision regime has poor expected value after SF21"
+    }
+  },
+
+  "evaluators": {
+    "synthetic_binding": {
+      "answer_exact": {"definition": "Greedy generation == target + EOS", "gate": null, "source": "sf1_engine.py:77"},
+      "both_distinct": {"definition": "Both source rows correctly localized", "gate": ">=76/80 per pool", "source": "PINNED_PILOT1...:27-31"},
+      "collapse": {"definition": "SLOT_COLLAPSE (both slots map to same row)", "gate": "==0", "source": "PINNED_PILOT1...:31"},
+      "complete_quartets": {"definition": "All 4 docs in quartet correct", "gate": null, "source": "treatment13...REPORT.md"},
+      "reversal_both_correct": {"definition": "Both reversal pairs correct", "gate": null, "source": "treatment13...REPORT.md"}
+    },
+    "language": {
+      "aligned_CE": {"definition": "Cross-entropy on 128 TinyStoriesDEV aligned windows", "gate": "<= own update0 CE + 0.25", "source": "sf20...\\data\\ENGLISH_DEV.jsonl"},
+      "perplexity": {"definition": "exp(CE)", "gate": null},
+      "greedy_generation": {"definition": "Rollout to EOS, max 32 tokens", "gate": null, "source": "hr3_block3_runtime.py:252-261"}
+    },
+    "factual": {
+      "TRAIN16_correct": {"definition": "Forced-choice: margin > 0", "gate": "==16", "source": "SF2_ENGINE.py:197-204"},
+      "TRAIN16_exact": {"definition": "Greedy == target + EOS", "gate": "==16", "source": "SF2_ENGINE.py:211"},
+      "TRAIN16_reversals": {"definition": "Reversal pairs correct", "gate": "==8", "source": "TRAIN16 panel"},
+      "TRAIN16_families": {"definition": "Complete families", "gate": "==4", "source": "TRAIN16 panel"}
+    },
+    "widening": {
+      "DEV_SURFACE_correct": {"definition": "Forced-choice correct", "gate": ">=15/16", "source": "SF2_ENGINE.py"},
+      "DEV_SURFACE_exact": {"definition": "Greedy exact", "gate": ">=13/16", "source": "SF2_ENGINE.py"},
+      "DEV_ORDER_correct": {"definition": "Forced-choice correct", "gate": ">=13/16", "source": "SF2_ENGINE.py"},
+      "DEV_ORDER_exact": {"definition": "Greedy exact", "gate": ">=13/16", "source": "SF2_ENGINE.py"},
+      "development_gain": {"definition": "At200 exact surface>=ownu0+4 AND exact order>=ownu0+4", "gate": true, "source": "SF21 PROTOCOL.json"}
+    },
+    "d3": {
+      "definition": "Four-name mass (Alex, Owen, Mia, Nora) in ordinary-English contexts",
+      "gate": "<= 0.01",
+      "selection_material": "D3_SELECTION.json (256 contexts from ENGLISH_DEV.jsonl)",
+      "source": "sf21...\\runs\\*\\d3_*_summary.json"
+    }
+  },
+
+  "locked_material": {
+    "status": "NOT_OPENED",
+    "access_rule": "Do not open, score, or evaluate locked/sacred/FINAL outcomes. Metadata (paths, hashes) may be referenced.",
+    "categories": {
+      "historical_transfer_panels": {
+        "paths": [
+          "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380",
+          "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380",
+          "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391",
+          "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3_seed8391",
+          "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010"
+        ],
+        "status": "LOCKED_UNSCORED"
+      },
+      "forbidden_lexicons": {
+        "paths": [
+          "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json",
+          "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\LEXICON.json",
+          "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\LEXICON.json"
+        ],
+        "status": "FROZEN_NONSACRED"
+      },
+      "forbidden_identities": {
+        "path": "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\FORBIDDEN_IDENTITIES.json",
+        "sha256": "a31e9496a54c6bdcc47ec27a08b064c75285fde8baf8cef76107bc21b4f0e4eb",
+        "status": "ANTI_CONTAMINATION"
+      },
+      "external_inputs": {
+        "path": "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\EXTERNAL_INPUTS.json",
+        "sha256": "d426439aa823fdd259027d5dc4055afac5c049ae7463bdb393f11917ce02459b",
+        "status": "ANTI_CONTAMINATION"
+      }
+    }
+  },
+
+  "training_runtime": {
+    "optimizer": {
+      "type": "AdamW",
+      "lr": 5e-05,
+      "betas": [0.9, 0.999],
+      "eps": 1e-08,
+      "weight_decay": 0.05,
+      "amsgrad": false,
+      "foreach": false,
+      "fused": false,
+      "gradient_clip": 2.0
+    },
+    "precision": {
+      "float32": true,
+      "autocast": false,
+      "tf32": false
+    },
+    "scheduler": null,
+    "deterministic": true,
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "device": "CUDA (default) / ROCm (available)",
+    "hardware": {
+      "os": "Windows 11",
+      "gpu": "AMD Radeon RX 9060 XT 16GB",
+      "cpu": "Ryzen 7 7700X",
+      "ram": "32GB DDR5"
+    },
+    "batch_structure": {
+      "total_updates": 200,
+      "english_updates": 180,
+      "binding_updates": 20,
+      "english_batch_size": 36,
+      "binding_batch_size": 80,
+      "english_composition": "32 new + 4 TRAIN16 preservation",
+      "kl_positions_per_update": 160
+    },
+    "objectives": {
+      "english": ["CE", "KL (lambda=1.0)", "margin_hinge (lambda=0.25, M=1.0)", "consistency (SF21: lambda=0.1)"],
+      "binding": ["answer_CE", "localization (lambda=1.053657...)"]
+    },
+    "scope": {
+      "english": "all base_model params except blocks 0-3",
+      "binding": "all params"
+    },
+    "checkpointing": {
+      "rolling": "restart.pt after every update",
+      "permanent": ["checkpoint_100.pt", "checkpoint_200.pt"],
+      "evaluation": [0, 100, 200]
+    }
+  },
+
+  "migration_constraints": {
+    "checkpoint_incompatibility": {
+      "cannot_transplant": true,
+      "reasons": [
+        "Different d_model",
+        "Different n_heads", 
+        "Different d_mlp",
+        "Different depth",
+        "Different vocab size",
+        "Different context size"
+      ],
+      "recommendation": "From-scratch training for vNext"
+    },
+    "hardcoded_literals": {
+      "files_with_shape_coupling": [
+        "hr3_block3_runtime.py",
+        "sf1_engine.py",
+        "SF2_ENGINE.py",
+        "CONTROLLER.py",
+        "PINNED_MASKING.py",
+        "PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+        "treatment13_preflight.py",
+        "treatment13_config.py"
+      ],
+      "literals_to_generalize": [
+        "1024 (vocab)",
+        "256 (context)",
+        "320 (d_model)",
+        "8 (layers)",
+        "10 (heads)",
+        "32 (head_dim)",
+        "1280 (mlp_hidden)",
+        "4 (ROW_VALUE_OFFSET)",
+        "2 (row count)"
+      ],
+      "recommendation": "All shape-related literals must be derived from config, not hardcoded"
+    },
+    "tokenizer_blast_radius": {
+      "files_with_hash_pins": "200+ files",
+      "frozen_datasets_affected": ["DEV_SURFACE.json", "TRAIN.json", "TOKENIZATION_MATCH.json", "IDENTITY_ASSIGNMENT.json"],
+      "checkpoint_affected": true,
+      "recommendation": "Keep vocab=1024 to isolate capacity test; expand only if willing to re-tokenize all datasets"
+    },
+    "binding_geometry": {
+      "current": "2-row, ROW_VALUE_OFFSET=4, position masks",
+      "problem": "Synthetic-task-specific; not suitable for natural language",
+      "recommendation": "Design new binding mechanism for vNext or generalize current geometry"
+    },
+    "multi_token_names": {
+      "current": "All names = 3-4 tokens, 7 distinct first-token IDs for 20 names",
+      "problem": "First-token collisions inevitable with vocab=1024",
+      "recommendation": "Architectural solution needed for exact multi-token generation"
+    }
+  },
+
+  "high_value_paths": {
+    "model_architecture": [
+      "C:\\DaveLM-v0.9\\v0_8\\model.py",
+      "C:\\DaveLM-v0.9\\v0_8\\config.py",
+      "C:\\DaveLM-CADAVER\\treatment13_model.py",
+      "C:\\DaveLM-CADAVER\\PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "C:\\DaveLM-CADAVER\\PINNED_MASKING.py"
+    ],
+    "tokenizer": [
+      "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+      "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\stats.json"
+    ],
+    "checkpoints": [
+      "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+      "C:\\DaveLM-CADAVER\\treatment13_orthogonal_shared_unbounded_seed8380\\checkpoints\\orthogonal_shared_unbounded\\seed_8380\\latest.pt",
+      "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt"
+    ],
+    "protocols": [
+      "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\PROTOCOL.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\PROTOCOL.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\SF2_PROTOCOL.json"
+    ],
+    "datasets": [
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\TRAIN.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\TRAIN16_RETENTION.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\DEV_SURFACE.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\DEV_ORDER.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\D3_SELECTION.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\KL_POOL.json",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\SCHEDULE.json"
+    ],
+    "engines": [
+      "C:\\DaveLM-CADAVER\\hr3_block3_runtime.py",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\SF2_ENGINE.py",
+      "C:\\DaveLM-CADAVER\\sf21_paired_counterfactual_representation_consistency_v2\\CONTROLLER.py"
+    ],
+    "runtime": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe"
+    ]
+  },
+
+  "uncertainties": {
+    "minor_discrepancies": [
+      {
+        "issue": "T13 directory count",
+        "expected": "7 treatment13_* dirs",
+        "actual": "6 treatment13_* dirs exist",
+        "resolution": "Canonical graduate is in treatment13_orthogonal_shared_unbounded_seed8380; numbers verified"
+      },
+      {
+        "issue": "SF1 mapping",
+        "expected": "SF1 = initial factual acquisition",
+        "actual": "Physical dirs: single_fact_acquisition_sf1_seed87011 and fact_supervision_87001* series",
+        "resolution": "single_fact_acquisition_sf1_seed87011 is the authoritative SF1 result holder"
+      }
+    ],
+    "material_uncertainties": [
+      {
+        "issue": "Binding mechanism generalization to natural language",
+        "description": "Current T13 binding is synthetic-task-specific (2-row, offset=4). Unclear how to port to natural language factual tasks.",
+        "impact": "High — affects vNext architecture design"
+      },
+      {
+        "issue": "Tokenization impact on exact generation",
+        "description": "All names are multi-token with heavy first-token collisions. Unclear if larger vocab would solve this or if architectural changes are needed.",
+        "impact": "High — affects vNext tokenizer decision"
+      },
+      {
+        "issue": "Exact generation vs forced-choice gap",
+        "description": "Forced-choice (margin) works reliably; greedy exact generation consistently fails. Unclear if this is a decoding, routing, or representation problem.",
+        "impact": "High — affects vNext output head/decoding design"
+      },
+      {
+        "issue": "D3 definition sufficiency",
+        "description": "D3 measures four-name mass. Possible that other name leakage patterns exist not captured by this metric.",
+        "impact": "Medium — could affect vNext evaluation"
+      },
+      {
+        "issue": "SF9-SF16 detailed numerical results",
+        "description": "Full per-study results not extracted due to scope. High-level lessons inferred from protocol files.",
+        "impact": "Low — SF20/SF21 are the critical studies for vNext"
+      }
+    ],
+    "no_blocking_uncertainties": true
+  },
+
+  "codex_handoff": {
+    "verified_current_architecture": true,
+    "verified_parameter_count": 10841345,
+    "verified_tokenizer": true,
+    "verified_checkpoint_lineage": true,
+    "verified_binding_mechanism": true,
+    "verified_strongest_positive_results": true,
+    "verified_sf21_closure": true,
+    "verified_coexistence_phenotype": true,
+    "verified_preservation_requirements": true,
+    "verified_migration_hazards": true,
+    "verified_runtime_constraints": true,
+    "high_value_file_paths_provided": true,
+    "unresolved_decisions_identified": true,
+    "status": "CODEX_IS_READY"
+  }
+}

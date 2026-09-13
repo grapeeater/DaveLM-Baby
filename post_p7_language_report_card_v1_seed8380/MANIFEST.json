@@ -1,0 +1,47 @@
+{
+  "construction": {
+    "checkpoint_behavior_accessed": false,
+    "model_evaluation_performed": false,
+    "python": "3.12",
+    "sacred_exam_accessed": false,
+    "seed": 8380
+  },
+  "parent_milestone": {
+    "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\latest.pt",
+    "sha256": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e"
+  },
+  "protocol_id": "post_p7_language_report_card_v1_seed8380",
+  "scoring": {
+    "controlled": "full candidate sequence LL; margin>0; ties incorrect; family/reversal endpoints",
+    "naturalistic": "greedy max32; rubric review"
+  },
+  "sections": {
+    "counterfactual": {
+      "families": 8,
+      "items": 64
+    },
+    "distractor": {
+      "families": 8,
+      "items": 64
+    },
+    "naturalistic": {
+      "items": 24
+    },
+    "near_distribution": {
+      "families": 12,
+      "items": 96
+    },
+    "surface_form": {
+      "families": 8,
+      "items": 64
+    }
+  },
+  "seed": 8380,
+  "tokenizer": {
+    "byte_fallback": false,
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "total_controlled_items": 288,
+  "total_items": 312
+}

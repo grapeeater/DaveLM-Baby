@@ -1,0 +1,29 @@
+{
+  "currently_available_runner_sha256": "35b709da33a51b37607af00fe23e47bf9d1ad71939ecd157f3c7c816b7a010a2",
+  "exact_prompt_overlap_by_section": {
+    "counterfactual": 16,
+    "naturalistic": 16,
+    "near_distribution": 32,
+    "surface_form": 16
+  },
+  "first_attempt_files": [
+    "PRECHECK.json"
+  ],
+  "integrity": [
+    {
+      "detached_sha256": "9893514299870cd27377a0f64de6e44cc230d13c69ff6869f18a04a4079483b6",
+      "files_verified": 10,
+      "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3d_seed8391"
+    },
+    {
+      "detached_sha256": "408083cafd04cbdd9f0fa5a680def347c36ab4354536ffcf737c3da811d78b5d",
+      "files_verified": 8,
+      "path": "C:\\DaveLM-CADAVER\\post_p7_v3d_stage1_execution_retry"
+    }
+  ],
+  "primary_context_overlap": 192,
+  "query_only_substring_overlap": 8,
+  "raw_prior_records_without_answer_key": 96,
+  "runner_historical_identity": "Current source is explanatory evidence; executed source hash was not saved in the historical output manifest.",
+  "v2_items_sha256": "f8d3e14cd645b6ebb8cc5142fc05f420be37f1a3f09cddeebb2ede443d266452"
+}

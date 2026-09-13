@@ -1,0 +1,93 @@
+--- SF14/CONTROLLER.py
++++ SF19/CONTROLLER.py
+@@ -1,8 +1,6 @@
+-"""SF13: broad-coverage KL retention at fixed retention compute (sampling geometry change).
+-
+-ONE scientific variable vs SF11/SF12: retention position coverage / sampling geometry
+-(contiguous sequential 160-entry slice -> frozen row-distributed 160-entry schedule).
+-All loss terms, curriculum, optimizer, scope, gates and persistence are unchanged from SF11."""
++"""SF19: sealed SF14 zero-first-token-CE recipe plus a bounded candidate-membership hinge.
++
++The sole scientific package adds a relative first-position objective requiring one valid candidate to outrank all noncandidate vocabulary tokens. Later CE, pairwise margin, broad KL, data, optimizer, scope, schedule and gates remain SF14."""
+ import argparse, hashlib, json, math, os, platform, sys
+ from collections import Counter
+ from pathlib import Path
+@@ -54,11 +52,29 @@
+         masked[k, pos] = -100
+     return masked
+ 
++
++MEMBERSHIP_M = 1.0
++LAMBDA_MEMBERSHIP = 0.25
++
++def candidate_membership_hinge(logits, ids_in_batch, idx):
++    """Require the best valid candidate to outrank every noncandidate token by M."""
++    losses=[]; gaps=[]
++    for k,rid in enumerate(ids_in_batch):
++        r=idx[rid]; pos=len(r['prompt_token_ids']); row=logits[k,pos]
++        ci=r['correct_index']; correct=r['candidate_token_ids'][ci][0]; wrong=r['candidate_token_ids'][1-ci][0]
++        assert correct in NAME_TOKEN_IDS and wrong in NAME_TOKEN_IDS and correct!=wrong
++        best_candidate=torch.maximum(row[correct],row[wrong])
++        allowed=torch.ones(row.shape[0],dtype=torch.bool,device=row.device);allowed[correct]=False;allowed[wrong]=False
++        best_noncandidate=row.masked_fill(~allowed,float('-inf')).max()
++        gap=best_candidate-best_noncandidate;gaps.append(gap);losses.append(torch.clamp(MEMBERSHIP_M-gap,min=0.0))
++    stacked=torch.stack(losses); gapstack=torch.stack(gaps)
++    return stacked.mean(),{'membership_active_fraction':float((stacked.detach()>0).float().mean()),'membership_mean_gap':float(gapstack.detach().mean()),'membership_min_gap':float(gapstack.detach().min())}
++
+ def verify(sealed=True):
+     if sealed:
+         assert sha(H / 'FREEZE_RECEIPT.json') == (H / 'FREEZE_RECEIPT.sha256').read_text().split()[0]
+         receipt = read(H / 'FREEZE_RECEIPT.json')
+-        assert receipt['status'] == 'SF14_PROSPECTIVE_PREFLIGHT_PASS'
++        assert receipt['status'] == 'SF19_PROSPECTIVE_PREFLIGHT_PASS'
+         assert sha(H / 'SHA256SUMS.txt') == receipt['manifest_sha256']
+         for line in (H / 'SHA256SUMS.txt').read_text().splitlines():
+             h, n = line.split('  ', 1)
+@@ -177,7 +193,7 @@
+     schedule, items, idx, train16, dev_surface, dev_order, pool, kl, oldproto = load_inputs()
+     rt.configure_runtime(a.seed)
+     if a.mode == 'preload':
+-        print('SF14_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
++        print('SF19_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
+     out = H / 'runs' / f'seed_{a.seed}_curriculum'
+     out.mkdir(parents=True, exist_ok=True)
+     provenance = {'parent_checkpoint': run['parent_checkpoint'], 'parent_checkpoint_sha256': run['parent_checkpoint_sha256'],
+@@ -185,7 +201,8 @@
+                   'schedule': sha(H / 'SCHEDULE.json'), 'curriculum': sha(H / 'TRAIN.json'),
+                   'controller': sha(Path(__file__)), 'seed': a.seed, 'arm': a.arm,
+                   'kl_pool': sha(H / 'KL_POOL.json'), 'margin_M': MARGIN_M, 'lambda_margin': LAMBDA_MARGIN,
+-                  'first_answer_token_ce_weight': 0.0, 'later_response_ce_weight': 1.0}
++                  'first_answer_token_ce_weight': 0.0, 'later_response_ce_weight': 1.0,
++                  'membership_lambda': LAMBDA_MEMBERSHIP, 'membership_M': MEMBERSHIP_M}
+     pp = out / 'PROVENANCE.json'
+     if pp.exists(): assert read(pp) == provenance
+     else: rt.atomic_json(provenance, pp)
+@@ -264,7 +281,8 @@
+         E.set_scope(m, u['kind'] == 'binding')
+         inactive = {n: (x.detach().clone(), {k: v.clone() if torch.is_tensor(v) else v for k, v in opt.state.get(x, {}).items()}) for n, x in m.named_parameters() if not x.requires_grad}
+         for group in opt.param_groups: group['lr'] = 5e-5
+-        ce = kl_val = margin_loss = None
++        ce = kl_val = margin_loss = membership_loss = None
++        membership_meta = None
+         if u['kind'] == 'english':
+             english_index += 1
+             m.eval()
+@@ -279,7 +297,8 @@
+             ce = F.cross_entropy(logits.reshape(-1, 1024), y.reshape(-1), ignore_index=-100)
+             loss = ce + E.LAMBDA_KL * kl_val
+             margin_loss = margin_hinge_term(logits, u['ids'], idx)
+-            loss = loss + LAMBDA_MARGIN * margin_loss
++            membership_loss, membership_meta = candidate_membership_hinge(logits, u['ids'], idx)
++            loss = loss + LAMBDA_MARGIN * margin_loss + LAMBDA_MEMBERSHIP * membership_loss
+         else:
+             m.train()
+             loss, _ = rt.binding_loss(m, rt.binding_docs_for_batch(pool, u['quartets'], u['documents']), device, pin)
+@@ -298,7 +317,7 @@
+         number = u['update']
+         rec = {'update': number, 'kind': u['kind'], 'lr': 5e-5, 'loss': float(loss.detach()), 'grad_norm': float(norm)}
+         if ce is not None: rec.update(ce=float(ce.detach()), kl=float(kl_val.detach()), shard=u.get('shard'), first_answer_ce_masked=len(u['ids']), ce_supervised_tokens=len(u['ids'])*4)
+-        if margin_loss is not None: rec.update(margin_loss=float(margin_loss.detach()))
++        if margin_loss is not None: rec.update(margin_loss=float(margin_loss.detach()), membership_loss=float(membership_loss.detach()), **membership_meta)
+         commit(number, rec); append_metric(out, rec)
+         if number % 25 == 0: print('COMMITTED', a.seed, number, flush=True)
+         if number in [100, 200] and not endpoint(number): return

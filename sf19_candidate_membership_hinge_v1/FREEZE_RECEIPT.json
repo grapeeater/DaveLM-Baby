@@ -1,0 +1,12 @@
+{
+  "checkpoint_loaded": false,
+  "final_accessed": false,
+  "manifest_sha256": "2603a6b766942be6eafa3bdfcd3fbbd79ca8888a2f302df91dff4c5b594de71a",
+  "optimizer_created": false,
+  "sacred_accessed": false,
+  "sealed_utc": "2026-09-09T03:14:17.764647+00:00",
+  "sole_scientific_change": "bounded candidate-membership hinge at first answer position",
+  "status": "SF19_PROSPECTIVE_PREFLIGHT_PASS",
+  "study": "SF19_CANDIDATE_MEMBERSHIP_HINGE_V1",
+  "updates": 0
+}

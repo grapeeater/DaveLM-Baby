@@ -1,0 +1,91 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T8_LATEBASE_LOC_LAYOUT_V1",
+  "seeds": [
+    670001,
+    670002,
+    670003
+  ],
+  "runs": {
+    "670001": {
+      "seed": 670001,
+      "update": 500,
+      "classification": "T8_FAIL_NO_ROUTING",
+      "stop_code": null,
+      "test_opened": false,
+      "t3_test_loaded": false,
+      "dev_pointer": 65,
+      "dev_loc": 64,
+      "dev_native": 64,
+      "dev_exact": 0,
+      "dev_ce": 1.2414875403046608,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    },
+    "670002": {
+      "seed": 670002,
+      "update": 500,
+      "classification": "T8_FAIL_NO_ROUTING",
+      "stop_code": null,
+      "test_opened": false,
+      "t3_test_loaded": false,
+      "dev_pointer": 75,
+      "dev_loc": 64,
+      "dev_native": 71,
+      "dev_exact": 0,
+      "dev_ce": 1.249740406870842,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    },
+    "670003": {
+      "seed": 670003,
+      "update": 500,
+      "classification": "T8_FAIL_NO_ROUTING",
+      "stop_code": null,
+      "test_opened": false,
+      "t3_test_loaded": false,
+      "dev_pointer": 62,
+      "dev_loc": 64,
+      "dev_native": 64,
+      "dev_exact": 0,
+      "dev_ce": 1.245846650004387,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 41833985,
+    "frozen": 19686400
+  },
+  "objective": "loc CE + layout native margin; no T3 pointer",
+  "failed_returncode": null,
+  "study_classification": "T8_FAIL_NO_ROUTING",
+  "u500_checkpoint_sha256": {
+    "670001": "ccea4b31bd4e98a2014d6c0b9b7f3a95f751c40577703609fffd9285cebfb456",
+    "670002": "246ff64b1c3b8d890713099ebff0cae16ee2e591b78210916d989382d287f276",
+    "670003": "5f4dd814992edbc1e542ceda3609a0b7c4020a9aa99aea4907cbb3b11cbf6706"
+  },
+  "weight_check": "early_same true; bind_same false; late_same false; bind max ~0.009; late max ~0.011",
+  "next_treatment": "phase2a_t9_factclause_pointer_v1"
+}

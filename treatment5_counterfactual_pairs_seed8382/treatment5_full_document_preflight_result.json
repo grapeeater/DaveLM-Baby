@@ -1,0 +1,79 @@
+{
+  "experiment": "DaveLM v0.9 Treatment #5",
+  "classification": "FINAL_FULL_DOCUMENT_PREFLIGHT_PASS",
+  "hypothesis": "paired counterfactual query binding forces the model to condition answer selection on the query because matched twins share context and candidate pair while reciprocal query/answer identity changes.",
+  "construction": "same_native_record_to_complete_slot0_and_slot1_counterfactual_twins",
+  "bos_token_id": 2,
+  "native_training_records": 1536,
+  "unique_counterfactual_pairs": 1536,
+  "unique_complete_synthetic_documents": 3072,
+  "train_seed": 8380,
+  "schedule_seed": 8382,
+  "steps": 1000,
+  "batch_size": 32,
+  "pairs_per_batch": 16,
+  "pair_presentations": 16000,
+  "scheduled_examples": 32000,
+  "slot_0_presentations": 16000,
+  "slot_1_presentations": 16000,
+  "pair_exposure_min": 10,
+  "pair_exposure_max": 11,
+  "answer_substitutions": 32000,
+  "total_supervised_tokens": 6144000,
+  "nonanswer_supervised_tokens": 6112000,
+  "t4_reference": {
+    "supervised_tokens": 6176000,
+    "answer_substitutions": 32000,
+    "nonanswer_tokens": 6144000,
+    "t5_supervised_token_delta": -32000,
+    "t5_nonanswer_token_delta": -32000,
+    "reference_only": true
+  },
+  "native_audit": {
+    "slot_0_records": 768,
+    "slot_1_records": 768,
+    "native_prefix_matches": 1536,
+    "native_document_count_matches": 1536,
+    "native_answer_metadata_matches": 1536,
+    "distinct_prefix_lengths": 15,
+    "raw_document_length_distribution": {
+      "192": 1536
+    },
+    "model_visible_length_distribution": {
+      "193": 1536
+    }
+  },
+  "starting_checkpoint": {
+    "path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+    "expected_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+    "observed_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+    "pass": true
+  },
+  "pair_pool": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_pair_pool.json",
+    "sha256": "0b31e39361f7a45dc4182c49ab4b4967bffe539cd2ff12e7b196eabfb3dac307"
+  },
+  "frozen_schedule": {
+    "path": "C:\\DaveLM-CADAVER\\treatment5_counterfactual_pairs_seed8382\\treatment5_full_document_frozen_schedule.json",
+    "sha256": "a4e64fd9d1b934aa440a5d036a3bec0ac7c9ac97d58c72fb45df6d8576bb7c12"
+  },
+  "frozen_objective": {
+    "margin": 0.5,
+    "membership_loss": "logsumexp(full_vocab_logits) - logsumexp([correct_logit, distractor_logit])",
+    "selector_loss": "relu(0.5 - (correct_logit - distractor_logit))",
+    "answer_replacement_loss": "membership_loss + selector_loss",
+    "original_answer_ce_retained": false,
+    "nonanswer_supervision": "ordinary full-vocabulary causal cross entropy"
+  },
+  "safety": {
+    "model_constructed": false,
+    "checkpoint_loaded_into_model": false,
+    "optimizer_created": false,
+    "backward_calls": 0,
+    "training_performed": false,
+    "positive_controls_evaluated": false,
+    "sealed_evaluation_opened": false,
+    "protected_source_modified": false
+  },
+  "what_pass_means": "The complete same-record counterfactual Treatment #5 training data and exact 1000-step schedule were constructed, audited, hashed, and frozen before training. A PASS establishes the training artifact contract only; it does not establish that Baby will learn or generalize query binding."
+}

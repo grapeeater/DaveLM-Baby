@@ -1,0 +1,66 @@
+{
+  "prompts_frozen_before_scoring": [
+    "Once upon a time, there was a little girl named Zoe.",
+    "Once upon a time, there was a little boy named Alex.",
+    "Once upon a time, there was a little girl named Nora.",
+    "Once upon a time, there was a little boy named Owen.",
+    "A cat found a blue ball.",
+    "A dog found a red hat.",
+    "Mia went to the park with her mother.",
+    "Leo saw a bird in the yard.",
+    "The little girl dropped her book.",
+    "The little boy wanted to play outside.",
+    "Sam was sad because his toy broke.",
+    "Lily gave the ball to Tom."
+  ],
+  "rows": [
+    {
+      "prompt": "Once upon a time, there was a little girl named Zoe.",
+      "greedy_48": "Once upon a time, there was a little girl named Zoe. She loved to play with her toys and play with her toys. One day, she saw a big big big box. It was a"
+    },
+    {
+      "prompt": "Once upon a time, there was a little boy named Alex.",
+      "greedy_48": "Once upon a time, there was a little boy named Alex. He was very excited to go to the park. He was very happy and he couldn't wait to go to the park. He"
+    },
+    {
+      "prompt": "Once upon a time, there was a little girl named Nora.",
+      "greedy_48": "Once upon a time, there was a little girl named Nora. She was very excited. She loved to play with her toys and daddys. One day, she saw a big big bir"
+    },
+    {
+      "prompt": "Once upon a time, there was a little boy named Owen.",
+      "greedy_48": "Once upon a time, there was a little boy named Owen. He was very excited and he wanted to go to the box. He was so excited to go to the box. He was so"
+    },
+    {
+      "prompt": "A cat found a blue ball.",
+      "greedy_48": "A cat found a blue ball. It was a big, but it was a little boy named Timmy. Timmy was very excited. He was so excited"
+    },
+    {
+      "prompt": "A dog found a red hat.",
+      "greedy_48": "A dog found a red hat. It was a big big, but it was very big. He was very happy.\nThe little boy was very excited."
+    },
+    {
+      "prompt": "Mia went to the park with her mother.",
+      "greedy_48": "Mia went to the park with her mother. She was very excited. She wanted to go to the park. She saw a big big big box. He was so ex"
+    },
+    {
+      "prompt": "Leo saw a bird in the yard.",
+      "greedy_48": "Leo saw a bird in the yard. She was so excited to go to the bird. She wanted to go to the bird. She wanted to go to the bird. She said"
+    },
+    {
+      "prompt": "The little girl dropped her book.",
+      "greedy_48": "The little girl dropped her book. She was so excited to go to the bird. She wanted to go to the bird.\nShe went to the bird. She saw a b"
+    },
+    {
+      "prompt": "The little boy wanted to play outside.",
+      "greedy_48": "The little boy wanted to play outside. He wanted to go to the park. He wanted to go to the box. He was so excited to go to the boat.\n"
+    },
+    {
+      "prompt": "Sam was sad because his toy broke.",
+      "greedy_48": "Sam was sad because his toy broke. He was very excited. He wanted to go to the box. He wanted to go to the boat. He wanted"
+    },
+    {
+      "prompt": "Lily gave the ball to Tom.",
+      "greedy_48": "Lily gave the ball to Tom. She wanted to play with her toys. She said, \"It's too, Tom. I want to play with you.\"\nShe said, \"I"
+    }
+  ]
+}

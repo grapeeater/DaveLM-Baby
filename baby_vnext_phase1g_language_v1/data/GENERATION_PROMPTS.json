@@ -1,0 +1,22 @@
+{
+  "status": "FROZEN_DESCRIPTIVE_ONLY",
+  "source": "exact nonsacred Pilot1 diagnostic prompt list",
+  "prompts": [
+    "Hello",
+    "Hello, my name is",
+    "What is your name?",
+    "The dog is",
+    "The girl went to",
+    "Yesterday I",
+    "I am happy because",
+    "Why did the dog run?",
+    "Tell me a short story about a dog.",
+    "he womputeld"
+  ],
+  "generation": {
+    "strategy": "greedy",
+    "max_new_tokens": 32,
+    "stop": "normal EOS"
+  },
+  "gate": null
+}

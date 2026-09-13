@@ -1,0 +1,49 @@
+{
+  "historical_sf2": {
+    "checkpoint_100": {
+      "path": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+      "sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+      "top_keys": ["model_state_dict", "provenance", "update"],
+      "has_model_state": true,
+      "has_optimizer_state": false,
+      "has_rng_state": false,
+      "has_scheduler_state": false,
+      "scheduler_exists_in_design": false,
+      "update_field": 100
+    },
+    "rolling_restart": {
+      "path": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\restart.pt",
+      "top_keys": ["completed", "model", "optimizer", "provenance", "rng", "scope"],
+      "completed_update": 200,
+      "has_model": true,
+      "has_optimizer_state": true,
+      "has_rng_state": true,
+      "note": "Rolling restart is overwritten every committed update; only the LATEST state survives. Historical optimizer/RNG for update 100 were never preserved."
+    },
+    "missing_for_exact_continuation_from_u100": [
+      "AdamW optimizer state (moments m/v) at update 100",
+      "Python/torch/CPU/GPU RNG states at update 100",
+      "any scheduler state (none exists in the design)"
+    ],
+    "continuation_possible_from_surviving_state": false,
+    "continuation_reason": "checkpoint_100.pt carries model tensors only; optimizer/RNG for u100 were overwritten by later rolling commits (last = update 200)."
+  },
+  "sf3_replay": {
+    "checkpoint_100": {
+      "path": "C:\\DaveLM-CADAVER\\sf3_prospective_treatment_v1\\run\\checkpoint_100.pt",
+      "sha256": "a5f83a666dd947b9b86159d94516c3cc650a79582034f0653f264e24377a3e0a",
+      "top_keys": ["model_state_dict", "provenance", "update"],
+      "update_field": 100
+    },
+    "rolling_restart": {
+      "completed_update": 100,
+      "has_model": true,
+      "has_optimizer_state": true,
+      "has_rng_state": true
+    }
+  },
+  "replays": {
+    "replay_A_checkpoint_100_sha256": "df976729a17a9a21e02ab02039d90ec850c081fcfead9a4b4311c2790efa28bd",
+    "replay_B_checkpoint_100_sha256": "62c1d5b0a17c418a4bb5df449622aa0bae976e08d887fbbf940458118283c704"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "study": "SF7_PAIRWISE_FIRST_ANSWER_TOKEN_MARGIN_HINGE_V1",
+  "created_utc": "2026-09-08T05:30:00.000000+00:00",
+  "hypothesis": "Insufficient pairwise separation at the first answer-token name decision (not the LR schedule) is the strongest surviving explanation for SF6's knife-edge acquisition failures. Adding a bounded margin hinge on that decision, on top of the unchanged SF6 constant-LR control recipe, may raise the fragile g0:a0 (Alex-direction) item margins above the failure boundary while leaving everything else unchanged. This is a hypothesis, not an established mechanism.",
+  "manipulated_variable": "Addition of ONE new loss term (pairwise first-answer-token margin hinge) during English factual updates in the treatment arm only. No LR schedule change. No data change. No scope change.",
+  "parent": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runtime": {
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "float32": true,
+    "autocast": false,
+    "tf32": false,
+    "deterministic_algorithms": true
+  },
+  "runs": [
+    {"seed": 87014, "arm": "control"},
+    {"seed": 87014, "arm": "treatment"},
+    {"seed": 87015, "arm": "control"},
+    {"seed": 87015, "arm": "treatment"},
+    {"seed": 87016, "arm": "control"},
+    {"seed": 87016, "arm": "treatment"}
+  ],
+  "seeds": [87014, 87015, 87016],
+  "pairing": "Same stochastic seed within pair; independent fresh processes/parent/optimizer from untouched Pilot1. No branch, shared mutable state, historical replay, or cross-run tensor-equality prerequisite. Bitwise trajectory identity is NOT required; numerical differences before treatment divergence do not invalidate a run unless a frozen integrity rule is violated. Materialized data order is identical across all runs. All six runs declared before any endpoint result is seen; no seed replacement for unfavorable outcome; no rescue changes; no hyperparameter tuning after seeing results.",
+  "schedule": "Consume unchanged SCHEDULE.json (copied byte-identical from sealed SF6/SF1): 200 updates=180 English+20 binding; bindings at 10,20,...,200. Every English batch is all 16 TRAIN records twice, in literal ordering. No LR_SCHEDULE.json is used: English LR is the single constant 5e-5 in BOTH arms for every update; this is the unchanged SF6 control recipe. NO LATE LR ANNEALING IN SF7.",
+  "lr": "Constant 5e-5 for every update (English and binding), both control and treatment arms. No schedule branching by arm.",
+  "optimizer": {
+    "type": "AdamW", "lr": 5e-05, "betas": [0.9, 0.999], "eps": 1e-08, "weight_decay": 0.05,
+    "amsgrad": false, "foreach": false, "fused": false, "gradient_clip": 2.0,
+    "state": "one fresh optimizer per run; continuous state; inactive grad=None and unchanged parameters/moments/step"
+  },
+  "english_objective_control": "Unchanged SF2/SF6 objective: pinned prepare_example/pad_batch full-vocabulary causal CE over four response tokens+EOS only, mean supervised tokens; plus lambda=1.0 D_KL(student||Pilot1), full 1024 support, T=1, mean over 160 positions, float64 accumulation->float32 scalar. Student KL eval with gradients; teacher separate/frozen/eval/no_grad; factual CE train mode. No new objective in the control arm.",
+  "english_objective_treatment": "Control-arm objective PLUS one additional term computed on the SAME forward pass already used for CE: for each of the 32 factual sequences in the English batch (TRAIN16 x2), let logp_correct = log-softmax(logits at the first answer-token position)[correct candidate name token]; logp_wrong = the same quantity for the competing candidate name token (same position, i.e. the position that predicts the first response token). gap = logp_correct - logp_wrong. margin_loss_i = max(0, M - gap_i). margin_loss = mean over the 32 sequences. Total treatment English loss = existing_factual_CE + existing_parent_KL + lambda_margin * margin_loss, with M=1.0 nat and lambda_margin=1.0, both fixed in advance, no tuning. The hinge acts ONLY on the first answer-token position (never full-string score, never EOS token, never any other position). No candidate strings changed. No a0/a1 reweighting. No data-balance change. No other auxiliary loss.",
+  "kl_data": "Unchanged KL_POOL.json 165363 positions/741 rows (byte-identical copy verified against sealed SF6); select 160 in frozen rotation per English index 1..180. No resampling. Identical in both arms.",
+  "binding": "Unchanged pinned answer causal CE + 1.0536573711078283 hard-min permutation-invariant localization. Same frozen rehearsal identities/order. Both nonsacred DEV pools scored separately. Identical in both arms; binding LR is the same constant 5e-5.",
+  "scope": "PINNED_MASKING.set_scope only: English every base_model parameter except blocks0..3; all specialized localizer/wq/wk/wv/wo frozen. Binding all parameters active. Identical in both arms. Do not call HR3 block3 scope.",
+  "evaluation_updates": [0, 100, 200],
+  "evaluation": "Pinned SF2 panel/score/checks/measure_d3, unchanged. TRAIN16 only, aligned first 128 TinyStories DEV with mean 4 batch losses, frozen D3 positions 256, both 80-document binding pools. No intermediate acquisition probes. No new evaluation code; the margin hinge is a training-loss addition only and is never used as a scoring/gating criterion.",
+  "baseline": "Native parent per-run 9 correct/0 exact; aligned CE 3.3907 relative tolerance 1e-4; binding pass; D3 .000907 absolute tolerance 1e-4; teacher KL abs<1e-9. Identical to SF2/SF6. Intact parent/output controls, not trajectory comparisons.",
+  "gates": {
+    "acquisition200": {"correct": 16, "exact": 16, "reversals": 8, "families": 4},
+    "language100_200": "CE<=own update0 CE+.25",
+    "binding_each_pool100_200": "answer>=76, BD>=76, collapse==0",
+    "d3_100_200": "four-name mass<=.01",
+    "acquisition_guard100": "STOP arm if correct<10 AND exact<10"
+  },
+  "gates_unchanged_from_sf6": true,
+  "margin_is_not_a_gate": "The first-answer-token margin/gap is recorded and reported ONLY as descriptive mechanism evidence. It is never used as a pass/fail criterion and never substitutes for or weakens the frozen acquisition gate above.",
+  "stopping": "No endpoint selection. Each run stops at 200 or its frozen 100/200 guard. Other preregistered independent runs continue after a scientific arm failure. Integrity/provenance/nonfinite/runtime failure halts study for mechanical resolution or report. No extra seeds/retries chosen by outcome/no rescue. No hyperparameter (M, lambda_margin) tuning after launch.",
+  "transfer": "All HELDOUT/ALTERNATE/COPY/COMPETING remain LOCKED_UNSCORED throughout this study, including on acquisition success; report acquisition to user first. FINAL/sacred never accessed.",
+  "persistence": "Atomic fsync rolling full model/optimizer/Python+CPU+GPU RNG,completed,scope,provenance after every update; permanent 100/200 model+hash. Resume only latest valid committed state, next completed+1. Diagnostics persisted independently; completed raw item results reused. No state forks. Corrupt restart stops.",
+  "primary_comparison": "Raw paired all-gate endpoint success for each seed; treatment-only/control-only/both/neither counts. All six fixed before outcomes. Acquisition success is an individual endpoint classification, not proof that the margin hinge caused success.",
+  "secondary_comparison": "Per-item first-answer-token log-prob gap (correct minus wrong) at 100/200 for all 16 items, derived descriptively from the already-frozen per-item token_scores_including_eos in the acquisition RAW files (position 0 of each candidate's token score list = first-answer-token log-probability). Report: the four g0:a0 gaps (especially TRAIN:g0:carried:wooden boat:a0), mean/min g0:a0 gap, mean g0:a1 gap, mean g1 gap, at update 100 and 200, per run. Descriptive only; never a gate.",
+  "numerical_uncertainty": "N=3 same-seed pairs cannot establish statistical certainty or generalization. One treatment full-gate success is not proof of reliability. Report raw paired outcomes only.",
+  "study_interpretation": {
+    "INCONCLUSIVE_EARLY_STOP": "Takes priority if any arm stops before 200: report all runs and gates, but the planned 3 complete endpoint pairs were not obtained; no seed replacement or causal claim.",
+    "TREATMENT_FAVORED": "at least 2 treatment-only full-gate successes and 0 control-only successes",
+    "CONTROL_FAVORED": "any control-only full-gate success and 0 treatment-only successes",
+    "MIXED": "both treatment-only and control-only successes occur across the three pairs",
+    "NO_CLEAR_DIFFERENCE": "all pairs both-pass or both-fail (no treatment-only, no control-only)",
+    "TREATMENT_FAILED_RETENTION": "takes priority if any treatment arm fails a retention gate (language/D3/binding) while its paired control does not",
+    "statistical_limit": "No population p-value/CI; raw N=3 pairs and margins only. No claim of a proven optimization mechanism from this study alone."
+  },
+  "history": "SF1 STOP_REGRESSION, SF2 ACQUISITION_FAIL, SF3/SF4 hard stops, SF5 failed prefork, SF6 CONTROL_FAVORED_OR_MIXED (LR annealing not supported) remain unchanged; no exact root cause inferred. SF7 tests the pairwise-margin hypothesis identified from SF6's read-only failure analysis."
+}

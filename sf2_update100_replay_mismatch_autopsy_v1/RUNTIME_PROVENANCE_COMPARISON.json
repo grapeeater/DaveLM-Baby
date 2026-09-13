@@ -1,0 +1,42 @@
+{
+  "purpose": "Enumerate every recorded runtime/provenance field for the historical SF2 run vs the current replays and the SF3 replay, to locate concrete environment differences.",
+  "historical_sf2_run_recorded_runtime": {
+    "interpreter": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe (per SF2 PROVENANCE.json + launch record)",
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "device": "AMD Radeon RX 9060 XT",
+    "pythonhashseed": "87011",
+    "seed": 87011,
+    "deterministic_algorithms": true,
+    "tf32": false,
+    "autocast": false
+  },
+  "sf3_replay_recorded_runtime": {
+    "interpreter": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "device": "AMD Radeon RX 9060 XT",
+    "pythonhashseed": "87011",
+    "deterministic_algorithms": true,
+    "tf32": false,
+    "autocast": false
+  },
+  "current_replays_recorded_runtime": "identical to the above (same venv, same flags, same seeds); verified by pre-run probes: python 3.12.14, torch 2.12.0+rocm7.14.0, tokenizers 0.23.1, cuda True.",
+  "code_and_data_identity": {
+    "frozen_sf2_engine_sha256": "150d1f33fab0cfe7027159badec2973f4995b2c76cad2165e5726b43297a8ab7 (verified unchanged at audit time)",
+    "sf2_package_manifest": "all listed file hashes verified at audit time",
+    "sf3_frozen_base_TRAIN_SCHEDULE_data_sources_hashes": "identical to SF1 bundle originals (08318d68..., 91dad351..., 2053a803..., binding files, sources)",
+    "sf3_kl_pool_sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06 (identical to SF2)",
+    "sf3_kl_pool_manifest_sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012 (identical to SF2)"
+  },
+  "concrete_differences_found": "NONE among all recorded fields (interpreter, versions, flags, seeds, data, code, schedule, KL pool, device).",
+  "environmental_state_search": {
+    "window": "2026-09-07 00:50 .. 02:40 local (historical SF2 run began ~01:07; first replay ~02:24)",
+    "searched": "C:\\Users\\jdman\\AppData\\Local\\AMD, AppData\\Local\\rocm, AppData\\Roaming\\AMD, user-profile dirs matching miopen|hipblas|tunedb|rocm|amd, C:\\Program Files\\AMD",
+    "found_modified_cache_or_driver_artifacts": "none",
+    "note": "Absence of a located artifact does not exclude an unrecorded kernel-selection/autotuning/driver state change; it only means the specific low-level cause was not identified by filesystem evidence."
+  },
+  "conclusion": "By elimination: identical recorded inputs, identical recorded runtime, identical code, mutually bitwise-identical current replays, one unique historical sample => the historical run executed under a different (unrecorded) environment numeric state. The specific changed component is unidentified."
+}

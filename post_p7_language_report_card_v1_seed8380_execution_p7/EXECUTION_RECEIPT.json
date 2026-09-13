@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256_after": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "checkpoint_sha256_before": "d41ed1186cc945aa05dbd2ba3086fac08ff3b97035c9532e4fa70e78b149a20e",
+  "checkpoint_unchanged": true,
+  "elapsed_seconds": 44.04291605949402,
+  "frozen_battery_modified": false,
+  "mechanical_receipt_correction": "Removed self-referential detached checksum field from OUTPUT_MANIFEST.json and regenerated OUTPUT_SHA256SUMS.txt; no scientific artifacts or scores changed.",
+  "raw_rows": 312,
+  "runner_sha256": "30330c7e649a6a94c307ba8fc1af17d95ca60ced5457a08b3caa87222c8c979f",
+  "sacred_exam_accessed": false,
+  "status": "COMPLETE",
+  "training": false
+}

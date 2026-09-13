@@ -1,0 +1,28 @@
+{
+ "status": "TREATMENT12_TRAINED",
+ "steps": 1000,
+ "batch_size": 32,
+ "objective": "answer_only_causal_cross_entropy_with_query_conditioned_mapping_retrieval",
+ "supervised_answer_decisions": 32000,
+ "final_checkpoint_sha256": "e378d3d85f3a53add4046aefc7cc42d643f59d12525859af6ea79dbfca266cd5",
+ "final_step": {
+  "retrieval_argmax_matches_correct_row_rate": 1.0,
+  "mean_correct_row_attention_weight": 0.9999327659606934,
+  "mean_incorrect_row_attention_weight": 6.726101855747402e-05,
+  "mean_retrieval_score_margin": 12.747913360595703,
+  "answer_ce_loss": 8.195598638849333e-06,
+  "answer_accuracy": 1.0,
+  "target_gt_distractor_rate": 1.0,
+  "mean_target_distractor_margin": 13.140789031982422,
+  "supervised_answer_decisions": 32,
+  "selected_logits_shape": [
+   32,
+   1024
+  ],
+  "target_shape": [
+   32
+  ],
+  "step": 1000,
+  "elapsed_seconds": 468.97782278060913
+ }
+}

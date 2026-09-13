@@ -1,0 +1,105 @@
+{
+  "run_id": "sf3_prospective_treatment_v1",
+  "classification_policy": "SF2 remains SF2_ACQUISITION_FAIL. SF3 is classified only by the frozen gates below.",
+  "hypothesis": "SF2 acquired nearly all training-family factual selections while retaining language and binding, but its Alex/Owen decision boundary continued sweeping toward Owen under a constant late English learning rate. Linearly annealing only the late English-update learning rate may let the conditional boundary settle without the one-item overshoot.",
+  "manipulated_variable": "English-update learning rate after global update 100 only",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+    "sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb"
+  },
+  "sf2_update100": {
+    "path": "C:\\DaveLM-CADAVER\\sf2_kl_parent_retention_run_v2\\run\\checkpoint_100.pt",
+    "sha256": "ec5ce8964855d2e735439291fbabcbb4d2caf4bc4ace84ae8f2d49363ae74ab4",
+    "role": "hard deterministic replay control; all model tensors must match exactly at update 100 before the SF3 schedule diverges"
+  },
+  "tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "frozen_base_bundle": "frozen_base",
+  "seed": 87011,
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "device": "AMD Radeon RX 9060 XT",
+    "python_executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "pythonhashseed": "87011",
+    "deterministic_algorithms": true,
+    "autocast": false,
+    "tf32": false
+  },
+  "schedule": {
+    "source": "frozen_base/SCHEDULE.json",
+    "sha256": "91dad3510e7997b0d55ab53e6189db9337857d582c9399a720723412f70a7ab6",
+    "updates": 200,
+    "cadence": "20 cycles of 9 English updates followed by 1 binding update",
+    "english_updates": 180,
+    "binding_updates": 20,
+    "english_batch": "all 16 TRAIN records twice, exactly as materialized",
+    "sampling": "none during execution"
+  },
+  "learning_rate": {
+    "updates_1_through_100": "5e-5 for English and binding, identical to SF2",
+    "updates_101_through_200_binding": "5e-5 constant",
+    "updates_101_through_200_english": "For the post-100 English ordinal j=1..90, lr(j)=5e-5*(90-j)/89; first is 5e-5 and last is 0.",
+    "justification": "Linear-to-zero introduces no arbitrary floor or curve parameter, halves late cumulative English step size, and directly tests the constant-rate boundary-overshoot hypothesis. Binding pressure is held fixed."
+  },
+  "optimizer": "One fresh AdamW from Pilot1: betas=(0.9,0.999), eps=1e-8, weight_decay=0.05, amsgrad=False, foreach=False, fused=False; continuous state for 200 updates; no scheduler object; global gradient clip 2.0 over gradient-bearing parameters.",
+  "optimizer_state_policy": "Updates 1-100 are deterministically replayed from the untouched parent. Update-100 model tensors must exactly equal preserved SF2 update100; optimizer state is the deterministic state produced by that replay. No model-only checkpoint branching or optimizer reset is permitted.",
+  "scope": "Identical to SF2/SF1: English trains token and position embeddings, blocks 4-7, final norm, and untied language head; blocks 0-3 and all T13 localizer/retrieval parameters frozen. Binding updates restore the established full T13 trainable scope.",
+  "objectives": {
+    "english": "Identical to SF2: correctly aligned mean full-vocabulary causal CE on four answer tokens plus final EOS, plus lambda=1.0 forward KL D_KL(P_student||P_Pilot1) over 160 frozen ordinary-language positions per English update.",
+    "binding": "Identical pinned T13 answer causal CE plus hard-min permutation-invariant localization objective with authoritative weight/reduction.",
+    "unchanged": true
+  },
+  "kl": {
+    "pool_sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "pool_manifest_sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012",
+    "lambda_kl": 1.0,
+    "positions_per_english_update": 160,
+    "direction": "D_KL(P_student || P_teacher)",
+    "teacher": "separate frozen Pilot1 ordinary base model, no shared storage, no optimizer membership"
+  },
+  "d3": {
+    "selection_manifest": "C:\\DaveLM-CADAVER\\sf1_readout_selection_forensic_v1\\D3_SELECTION.json",
+    "selection_sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+    "baseline_mean_four_name_mass": 0.000907,
+    "tolerance_abs": 0.0001
+  },
+  "baseline_reproduction_M9": {
+    "acquisition_correct": 9,
+    "acquisition_exact": 0,
+    "aligned_ce": 3.3907,
+    "aligned_ce_tolerance_rel": 0.0001,
+    "binding_gate": "both pools PASS",
+    "kl_zero_tolerance": 1e-9
+  },
+  "evaluation": {
+    "update_0": "acquisition, aligned TinyStories DEV, both nonsacred binding pools separately, D3",
+    "update_100": "full frozen checks plus exact SF2 update100 tensor-reproduction gate",
+    "updates_125_150_175": "TRAIN acquisition panel only; descriptive boundary trajectory; never used to tune or stop",
+    "update_200": "full frozen checks and fixed endpoint classification",
+    "checkpoint_selection": "fixed update 200 only; no best checkpoint selection"
+  },
+  "gates": {
+    "endpoint_update": 200,
+    "acquisition": "correct==16 AND exact==16 AND reversals==8 AND complete_families==4",
+    "language": "aligned TinyStories DEV CE <= update0 CE + 0.25 at updates 100 and 200",
+    "binding": "on each nonsacred 80-item pool independently: answer>=76, BOTH_DISTINCT>=76, collapse==0 at updates 100 and 200",
+    "d3_max_mean_name_mass": 0.01,
+    "d3": "mean combined Alex/Owen/Mia/Nora probability mass <=0.01 at updates 100 and 200",
+    "update100_acquisition_guard": "if correct<10 AND exact<10, stop",
+    "update100_replay": "all update100 model tensors exactly equal the preserved SF2 update100 tensors; any mismatch is a hard stop before annealing"
+  },
+  "transfer_lock": "HELDOUT16, ALTERNATE48, COPY8, and COMPETING64 remain unopened unless and until update200 acquisition, language, binding, and D3 gates all pass. If opened, they are descriptive diagnostics only. FINAL and sacred material are never accessed.",
+  "stopping": "Stop on any baseline/hash/provenance/determinism failure; update100 replay mismatch; language, binding, or D3 safety failure; update100 acquisition guard; or fixed endpoint completion. Do not adapt treatment after observations.",
+  "persistence": "Atomic rolling restart after every committed update with model, optimizer, RNG, scope, and provenance; permanent checkpoints/evaluation artifacts at all preregistered evaluation points; resume only the latest valid committed state and never replay a committed update.",
+  "historical_evidence": {
+    "sf2_summary_sha256": "23509a48aa103f11b342af339bb0c6febcc8dcc03acb99c4f2b9321434787052",
+    "residual_autopsy_report_sha256": "5bc6e4c84faf913c1826d08ee691fa64206344f8443d872f7982bdcbc5e5007e",
+    "comparative_background_report_sha256": "970ba3fbaeb0214b062d0b56bbdd083311cd14940fb501cc8a48ebed300a5484"
+  },
+  "final_access": false,
+  "sacred_access": false
+}

@@ -1,0 +1,38 @@
+{
+  "temperature": 0.8,
+  "seed": 8380,
+  "rows": [
+    {
+      "prompt": "Once upon a time, there was a little girl named Zoe.",
+      "sampled": "Once upon a time, there was a little girl named Zoe. She went to the park to kick with her mommy. Her mommy worked to see what was happening. She"
+    },
+    {
+      "prompt": "Once upon a time, there was a little boy named Alex.",
+      "sampled": "Once upon a time, there was a little boy named Alex. He loved to play in the garden. One day, he decided to go for a warm sunshine. But when"
+    },
+    {
+      "prompt": "A cat found a blue ball.",
+      "sampled": "A cat found a blue ball. It was long, on journey, and the sky, it closed. The ball was very cative. He smiled"
+    },
+    {
+      "prompt": "A dog found a red hat.",
+      "sampled": "A dog found a red hat. The hat was very sleepy. She wanted to jump, but she couldn't like it. So, she re"
+    },
+    {
+      "prompt": "Mia went to the park with her mother.",
+      "sampled": "Mia went to the park with her mother. Mia was worried, but Mia said she was worried. Mia wore her mother and said, \"Once up"
+    },
+    {
+      "prompt": "Leo saw a bird in the yard.",
+      "sampled": "Leo saw a bird in the yard. The bird had a big cardboard that he loved to explore. He wore Lily and Ben wanted to ha"
+    },
+    {
+      "prompt": "The little girl dropped her book.",
+      "sampled": "The little girl dropped her book. She found a humble tiny brother, proud of her. She put a book, it on her house and"
+    },
+    {
+      "prompt": "Sam was sad because his toy broke.",
+      "sampled": "Sam was sad because his toy broke. He showed his teddy bear, all around his grass. His mom helped him get dirt and"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T5_LATEBASE_BINDING_V1",
+  "status": "STUDY_COMPLETE_T5_FAIL_NO_ROUTING",
+  "scientific_question": "With blocks 0-3 frozen, can late base + binding jointly produce held-out localization/native reversals without crossing DEV CE 1.30?",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+  },
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "scope": {
+    "freeze": "base_model.blocks.0 through base_model.blocks.3 inclusive",
+    "train": "remaining base (embeddings, blocks 4-11, ln, lm_head) + all 984321 binding params",
+    "trainable": 41833985,
+    "frozen": 19686400
+  },
+  "objective": {
+    "lambda_ptr": 1.0,
+    "lambda_loc": 1.0,
+    "margin_M": 1.0,
+    "language": "9 qa : 1 language CE (T3 update_kinds)"
+  },
+  "layout": "T4: keys=mention_span first token, values=mention_span last token, query=answer=decision_position_bos",
+  "corpus": "T3 rebuilt train/DEV/ACQ16; T3 TEST never loaded",
+  "t3_test_seal_sha256": "6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb",
+  "seeds": [640001, 640002, 640003],
+  "schedule": {
+    "total_updates": 500,
+    "qa_updates": 450,
+    "language_updates": 50,
+    "qa_batch": 32,
+    "language_batch": 64,
+    "eval_points": [0, 100, 300, 500],
+    "lr": 5e-5
+  },
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "localization": {"retrieval_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64"}
+  },
+  "early_stop": "stop seed if DEV CE > 1.30 at an eval point (T5_LANGUAGE_REGRESSION); HARD_STOP if CE>1.50, nonfinite, or frozen early blocks change",
+  "status_classes": ["T5_JOINT_SUCCESS", "T5_ROUTING_SUCCESS_OUTPUT_FAIL", "T5_FAIL_NO_ROUTING", "T5_LANGUAGE_REGRESSION", "T5_HARD_STOP"],
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

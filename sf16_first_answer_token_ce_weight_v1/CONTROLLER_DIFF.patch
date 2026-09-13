@@ -1,0 +1,48 @@
+--- SF15/CONTROLLER.py
++++ SF16/CONTROLLER.py
+@@ -1,6 +1,6 @@
+-"""SF15: sealed SF14 machinery with first-answer-token causal CE weight restored to 0.25.
+-
+-The sole scientific change from SF14 is the first answer-name CE weight. All later CE,
++"""SF16: sealed SF15 machinery with first-answer-token causal CE weight interpolated to 0.125.
++
++The sole scientific change from SF15 is the first answer-name CE weight (0.25 -> 0.125). All later CE,
+ margin, broad KL, curriculum, optimizer, scope, gates and persistence remain unchanged."""
+ import argparse, hashlib, json, math, os, platform, sys
+ from collections import Counter
+@@ -39,7 +39,7 @@
+ 
+ 
+ NAME_TOKEN_IDS = (314, 536, 925, 512)
+-FIRST_ANSWER_CE_WEIGHT = 0.25
++FIRST_ANSWER_CE_WEIGHT = 0.125
+ 
+ 
+ def english_ce_weights(labels, ids_in_batch, idx, first_weight=FIRST_ANSWER_CE_WEIGHT):
+@@ -76,7 +76,7 @@
+     if sealed:
+         assert sha(H / 'FREEZE_RECEIPT.json') == (H / 'FREEZE_RECEIPT.sha256').read_text().split()[0]
+         receipt = read(H / 'FREEZE_RECEIPT.json')
+-        assert receipt['status'] == 'SF15_PROSPECTIVE_PREFLIGHT_PASS'
++        assert receipt['status'] == 'SF16_PROSPECTIVE_PREFLIGHT_PASS'
+         assert sha(H / 'SHA256SUMS.txt') == receipt['manifest_sha256']
+         for line in (H / 'SHA256SUMS.txt').read_text().splitlines():
+             h, n = line.split('  ', 1)
+@@ -195,7 +195,7 @@
+     schedule, items, idx, train16, dev_surface, dev_order, pool, kl, oldproto = load_inputs()
+     rt.configure_runtime(a.seed)
+     if a.mode == 'preload':
+-        print('SF15_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
++        print('SF16_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
+     out = H / 'runs' / f'seed_{a.seed}_curriculum'
+     out.mkdir(parents=True, exist_ok=True)
+     provenance = {'parent_checkpoint': run['parent_checkpoint'], 'parent_checkpoint_sha256': run['parent_checkpoint_sha256'],
+@@ -296,7 +296,7 @@
+             ce, ce_meta = weighted_english_ce(logits, y, u['ids'], idx)
+             assert ce_meta['first_answer_positions'] == len(u['ids'])
+             assert ce_meta['later_response_eos_positions'] == len(u['ids']) * 4
+-            assert abs(ce_meta['ce_weight_sum'] - len(u['ids']) * 4.25) < 1e-5
++            assert abs(ce_meta['ce_weight_sum'] - len(u['ids']) * 4.125) < 1e-5
+             loss = ce + E.LAMBDA_KL * kl_val
+             margin_loss = margin_hinge_term(logits, u['ids'], idx)
+             loss = loss + LAMBDA_MARGIN * margin_loss

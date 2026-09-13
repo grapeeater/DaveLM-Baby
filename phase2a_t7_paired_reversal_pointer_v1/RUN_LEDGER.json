@@ -1,0 +1,91 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T7_PAIRED_REVERSAL_POINTER_V1",
+  "seeds": [
+    660001,
+    660002,
+    660003
+  ],
+  "runs": {
+    "660001": {
+      "seed": 660001,
+      "update": 500,
+      "classification": "T7_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 63,
+      "dev_native": 65,
+      "dev_exact": 0,
+      "dev_ce": 1.2435010626912117,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "660002": {
+      "seed": 660002,
+      "update": 500,
+      "classification": "T7_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 87,
+      "dev_native": 75,
+      "dev_exact": 0,
+      "dev_ce": 1.262509186565876,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "660003": {
+      "seed": 660003,
+      "update": 500,
+      "classification": "T7_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 84,
+      "dev_native": 75,
+      "dev_exact": 0,
+      "dev_ce": 1.2607614800333977,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "qa_batch_structure": "16 assignment pairs (32 items); pair members adjacent",
+  "failed_returncode": null,
+  "study_classification": "T7_FAIL_NO_REPRESENTATION",
+  "u500_checkpoint_sha256": {
+    "660001": "cdc17d2413aa872fe110e2c1b20dc58aae796368df1422021b2587c4c7f33fe2",
+    "660002": "6c38fbda22772415e57f17ab48b5d3150d337d94f40722203797879e73fbca0d",
+    "660003": "26d9338ba213f1f02c75880e967a69e1dcec200de2059c9b4f33f21932a0b7f1"
+  },
+  "weight_check": "early_same true; bind_same true; late_same false; late max ~0.011",
+  "next_treatment": "phase2a_t8_latebase_loc_layout_v1"
+}

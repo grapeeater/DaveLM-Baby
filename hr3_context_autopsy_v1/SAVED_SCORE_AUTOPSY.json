@@ -1,0 +1,642 @@
+{
+  "Pilot1_parent": {
+    "pairs": [
+      {
+        "pair": "fact:F01:q0",
+        "canonical_candidates": [
+          " Ash.",
+          " Cal."
+        ],
+        "d_assignment0": -1.6919299364089966,
+        "d_assignment1": -1.6413966417312622,
+        "context_odd_component_correct_direction": -0.025266647338867188,
+        "assignment_even_bias": -1.6666632890701294,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F01:q1",
+        "canonical_candidates": [
+          " Ash.",
+          " Cal."
+        ],
+        "d_assignment0": -1.6106376647949219,
+        "d_assignment1": -1.2697968482971191,
+        "context_odd_component_correct_direction": 0.17042040824890137,
+        "assignment_even_bias": -1.4402172565460205,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F02:q0",
+        "canonical_candidates": [
+          " Cam.",
+          " Chip."
+        ],
+        "d_assignment0": 3.0212291479110718,
+        "d_assignment1": 2.893855571746826,
+        "context_odd_component_correct_direction": 0.0636867880821228,
+        "assignment_even_bias": 2.957542359828949,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F02:q1",
+        "canonical_candidates": [
+          " Cam.",
+          " Chip."
+        ],
+        "d_assignment0": 3.3502546548843384,
+        "d_assignment1": 3.102693200111389,
+        "context_odd_component_correct_direction": -0.12378072738647461,
+        "assignment_even_bias": 3.2264739274978638,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F03:q0",
+        "canonical_candidates": [
+          " Cory.",
+          " Ike."
+        ],
+        "d_assignment0": 0.3502439260482788,
+        "d_assignment1": -0.08914732933044434,
+        "context_odd_component_correct_direction": 0.21969562768936157,
+        "assignment_even_bias": 0.13054829835891724,
+        "unchanged_chosen_candidate": false,
+        "both_correct": true,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F03:q1",
+        "canonical_candidates": [
+          " Cory.",
+          " Ike."
+        ],
+        "d_assignment0": 0.36137378215789795,
+        "d_assignment1": 0.17097532749176025,
+        "context_odd_component_correct_direction": -0.09519922733306885,
+        "assignment_even_bias": 0.2661745548248291,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F04:q0",
+        "canonical_candidates": [
+          " Ira.",
+          " Neil."
+        ],
+        "d_assignment0": -0.7347688674926758,
+        "d_assignment1": -1.2460107803344727,
+        "context_odd_component_correct_direction": 0.25562095642089844,
+        "assignment_even_bias": -0.9903898239135742,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F04:q1",
+        "canonical_candidates": [
+          " Ira.",
+          " Neil."
+        ],
+        "d_assignment0": -0.1831674575805664,
+        "d_assignment1": -1.0872220993041992,
+        "context_odd_component_correct_direction": -0.4520273208618164,
+        "assignment_even_bias": -0.6351947784423828,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F05:q0",
+        "canonical_candidates": [
+          " Ned.",
+          " Ron."
+        ],
+        "d_assignment0": -6.387751638889313,
+        "d_assignment1": -6.522533893585205,
+        "context_odd_component_correct_direction": 0.06739112734794617,
+        "assignment_even_bias": -6.455142766237259,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F05:q1",
+        "canonical_candidates": [
+          " Ned.",
+          " Ron."
+        ],
+        "d_assignment0": -6.79225218296051,
+        "d_assignment1": -6.833124995231628,
+        "context_odd_component_correct_direction": -0.020436406135559082,
+        "assignment_even_bias": -6.812688589096069,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F06:q0",
+        "canonical_candidates": [
+          " Sid.",
+          " Will."
+        ],
+        "d_assignment0": 3.0795284509658813,
+        "d_assignment1": 3.4463376998901367,
+        "context_odd_component_correct_direction": -0.18340462446212769,
+        "assignment_even_bias": 3.262933075428009,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F06:q1",
+        "canonical_candidates": [
+          " Sid.",
+          " Will."
+        ],
+        "d_assignment0": 3.2349419593811035,
+        "d_assignment1": 3.60186505317688,
+        "context_odd_component_correct_direction": 0.18346154689788818,
+        "assignment_even_bias": 3.4184035062789917,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      }
+    ],
+    "unchanged_choice_pairs": 11,
+    "positive_context_direction_pairs": 6,
+    "both_correct_pairs": 1,
+    "word_only_both_correct_pairs": 0,
+    "bias_absolute": {
+      "n": 12,
+      "mean": 2.6051976854602494,
+      "min": 0.13054829835891724,
+      "median": 2.312102824449539,
+      "max": 6.812688589096069
+    },
+    "context_signed": {
+      "n": 12,
+      "mean": 0.005013458430767059,
+      "min": -0.4520273208618164,
+      "median": 0.02162519097328186,
+      "max": 0.25562095642089844
+    },
+    "chosen_names": {
+      "Cal": 4,
+      "Cam": 4,
+      "Cory": 3,
+      "Ike": 1,
+      "Neil": 4,
+      "Ron": 4,
+      "Sid": 4
+    },
+    "first_mentioned_choice_items": 15,
+    "absolute_candidate_pair_mass": {
+      "n": 24,
+      "mean": 2.0782154446124613e-07,
+      "min": 6.941724276956627e-12,
+      "median": 5.896746055574858e-09,
+      "max": 1.6319660325232546e-06
+    },
+    "correct_answer_nll_per_token": {
+      "n": 24,
+      "mean": 6.913084564937486,
+      "min": 4.442397991816203,
+      "median": 6.90864117940267,
+      "max": 8.940007527669271
+    }
+  },
+  "HR1_causal_aligned_500": {
+    "pairs": [
+      {
+        "pair": "fact:F01:q0",
+        "canonical_candidates": [
+          " Ash.",
+          " Cal."
+        ],
+        "d_assignment0": -4.737621307373047,
+        "d_assignment1": -4.640230774879456,
+        "context_odd_component_correct_direction": -0.048695266246795654,
+        "assignment_even_bias": -4.688926041126251,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F01:q1",
+        "canonical_candidates": [
+          " Ash.",
+          " Cal."
+        ],
+        "d_assignment0": -4.658944129943848,
+        "d_assignment1": -4.534791946411133,
+        "context_odd_component_correct_direction": 0.06207609176635742,
+        "assignment_even_bias": -4.59686803817749,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F02:q0",
+        "canonical_candidates": [
+          " Cam.",
+          " Chip."
+        ],
+        "d_assignment0": 4.985332608222961,
+        "d_assignment1": 4.918455600738525,
+        "context_odd_component_correct_direction": 0.03343850374221802,
+        "assignment_even_bias": 4.951894104480743,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F02:q1",
+        "canonical_candidates": [
+          " Cam.",
+          " Chip."
+        ],
+        "d_assignment0": 5.949358582496643,
+        "d_assignment1": 6.133244872093201,
+        "context_odd_component_correct_direction": 0.09194314479827881,
+        "assignment_even_bias": 6.041301727294922,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F03:q0",
+        "canonical_candidates": [
+          " Cory.",
+          " Ike."
+        ],
+        "d_assignment0": 2.7950122356414795,
+        "d_assignment1": 3.044650077819824,
+        "context_odd_component_correct_direction": -0.12481892108917236,
+        "assignment_even_bias": 2.919831156730652,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F03:q1",
+        "canonical_candidates": [
+          " Cory.",
+          " Ike."
+        ],
+        "d_assignment0": 2.4639735221862793,
+        "d_assignment1": 2.761550784111023,
+        "context_odd_component_correct_direction": 0.14878863096237183,
+        "assignment_even_bias": 2.612762153148651,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F04:q0",
+        "canonical_candidates": [
+          " Ira.",
+          " Neil."
+        ],
+        "d_assignment0": 2.4795775413513184,
+        "d_assignment1": 2.6954345703125,
+        "context_odd_component_correct_direction": -0.10792851448059082,
+        "assignment_even_bias": 2.587506055831909,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F04:q1",
+        "canonical_candidates": [
+          " Ira.",
+          " Neil."
+        ],
+        "d_assignment0": 1.1402091979980469,
+        "d_assignment1": 0.762730598449707,
+        "context_odd_component_correct_direction": -0.18873929977416992,
+        "assignment_even_bias": 0.951469898223877,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F05:q0",
+        "canonical_candidates": [
+          " Ned.",
+          " Ron."
+        ],
+        "d_assignment0": -4.258735239505768,
+        "d_assignment1": -4.2006155252456665,
+        "context_odd_component_correct_direction": -0.02905985713005066,
+        "assignment_even_bias": -4.229675382375717,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F05:q1",
+        "canonical_candidates": [
+          " Ned.",
+          " Ron."
+        ],
+        "d_assignment0": -5.5251070857048035,
+        "d_assignment1": -5.320780992507935,
+        "context_odd_component_correct_direction": 0.10216304659843445,
+        "assignment_even_bias": -5.422944039106369,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F06:q0",
+        "canonical_candidates": [
+          " Sid.",
+          " Will."
+        ],
+        "d_assignment0": 2.491916298866272,
+        "d_assignment1": 2.234966278076172,
+        "context_odd_component_correct_direction": 0.12847501039505005,
+        "assignment_even_bias": 2.363441288471222,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F06:q1",
+        "canonical_candidates": [
+          " Sid.",
+          " Will."
+        ],
+        "d_assignment0": 2.1985087394714355,
+        "d_assignment1": 2.1229355335235596,
+        "context_odd_component_correct_direction": -0.03778660297393799,
+        "assignment_even_bias": 2.1607221364974976,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      }
+    ],
+    "unchanged_choice_pairs": 12,
+    "positive_context_direction_pairs": 6,
+    "both_correct_pairs": 0,
+    "word_only_both_correct_pairs": 0,
+    "bias_absolute": {
+      "n": 12,
+      "mean": 3.627278501788775,
+      "min": 0.951469898223877,
+      "median": 3.5747532695531845,
+      "max": 6.041301727294922
+    },
+    "context_signed": {
+      "n": 12,
+      "mean": 0.00248799721399943,
+      "min": -0.18873929977416992,
+      "median": 0.002189323306083679,
+      "max": 0.14878863096237183
+    },
+    "chosen_names": {
+      "Cal": 4,
+      "Cam": 4,
+      "Cory": 4,
+      "Ira": 4,
+      "Ron": 4,
+      "Sid": 4
+    },
+    "first_mentioned_choice_items": 12,
+    "absolute_candidate_pair_mass": {
+      "n": 24,
+      "mean": 3.654132675414647e-07,
+      "min": 1.2706018450192523e-11,
+      "median": 2.741727379220257e-08,
+      "max": 2.413791386436239e-06
+    },
+    "correct_answer_nll_per_token": {
+      "n": 24,
+      "mean": 6.5573458795746165,
+      "min": 4.358076373736064,
+      "median": 6.3493588368097935,
+      "max": 8.925245602925619
+    }
+  },
+  "HR3_block3_update_500": {
+    "pairs": [
+      {
+        "pair": "fact:F01:q0",
+        "canonical_candidates": [
+          " Ash.",
+          " Cal."
+        ],
+        "d_assignment0": -3.326890707015991,
+        "d_assignment1": -3.2881813049316406,
+        "context_odd_component_correct_direction": -0.019354701042175293,
+        "assignment_even_bias": -3.307536005973816,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F01:q1",
+        "canonical_candidates": [
+          " Ash.",
+          " Cal."
+        ],
+        "d_assignment0": -2.9185867309570312,
+        "d_assignment1": -2.9601943492889404,
+        "context_odd_component_correct_direction": -0.02080380916595459,
+        "assignment_even_bias": -2.939390540122986,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F02:q0",
+        "canonical_candidates": [
+          " Cam.",
+          " Chip."
+        ],
+        "d_assignment0": 5.454689383506775,
+        "d_assignment1": 5.125395894050598,
+        "context_odd_component_correct_direction": 0.16464674472808838,
+        "assignment_even_bias": 5.2900426387786865,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F02:q1",
+        "canonical_candidates": [
+          " Cam.",
+          " Chip."
+        ],
+        "d_assignment0": 5.8270262479782104,
+        "d_assignment1": 6.017086744308472,
+        "context_odd_component_correct_direction": 0.09503024816513062,
+        "assignment_even_bias": 5.922056496143341,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F03:q0",
+        "canonical_candidates": [
+          " Cory.",
+          " Ike."
+        ],
+        "d_assignment0": 3.1155309677124023,
+        "d_assignment1": 3.3605048656463623,
+        "context_odd_component_correct_direction": -0.12248694896697998,
+        "assignment_even_bias": 3.2380179166793823,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F03:q1",
+        "canonical_candidates": [
+          " Cory.",
+          " Ike."
+        ],
+        "d_assignment0": 2.8463187217712402,
+        "d_assignment1": 3.1440261602401733,
+        "context_odd_component_correct_direction": 0.14885371923446655,
+        "assignment_even_bias": 2.995172441005707,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F04:q0",
+        "canonical_candidates": [
+          " Ira.",
+          " Neil."
+        ],
+        "d_assignment0": 1.9296135902404785,
+        "d_assignment1": 2.275082588195801,
+        "context_odd_component_correct_direction": -0.17273449897766113,
+        "assignment_even_bias": 2.1023480892181396,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F04:q1",
+        "canonical_candidates": [
+          " Ira.",
+          " Neil."
+        ],
+        "d_assignment0": 2.386725902557373,
+        "d_assignment1": 1.9749817848205566,
+        "context_odd_component_correct_direction": -0.2058720588684082,
+        "assignment_even_bias": 2.180853843688965,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F05:q0",
+        "canonical_candidates": [
+          " Ned.",
+          " Ron."
+        ],
+        "d_assignment0": -5.610879063606262,
+        "d_assignment1": -5.559316992759705,
+        "context_odd_component_correct_direction": -0.02578103542327881,
+        "assignment_even_bias": -5.585098028182983,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F05:q1",
+        "canonical_candidates": [
+          " Ned.",
+          " Ron."
+        ],
+        "d_assignment0": -6.180446207523346,
+        "d_assignment1": -6.114845275878906,
+        "context_odd_component_correct_direction": 0.03280046582221985,
+        "assignment_even_bias": -6.147645741701126,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F06:q0",
+        "canonical_candidates": [
+          " Sid.",
+          " Will."
+        ],
+        "d_assignment0": 2.133633255958557,
+        "d_assignment1": 2.048668384552002,
+        "context_odd_component_correct_direction": 0.04248243570327759,
+        "assignment_even_bias": 2.0911508202552795,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      },
+      {
+        "pair": "fact:F06:q1",
+        "canonical_candidates": [
+          " Sid.",
+          " Will."
+        ],
+        "d_assignment0": 2.1542279720306396,
+        "d_assignment1": 2.2168811559677124,
+        "context_odd_component_correct_direction": 0.03132659196853638,
+        "assignment_even_bias": 2.185554563999176,
+        "unchanged_chosen_candidate": true,
+        "both_correct": false,
+        "word_only_both_correct": false
+      }
+    ],
+    "unchanged_choice_pairs": 12,
+    "positive_context_direction_pairs": 6,
+    "both_correct_pairs": 0,
+    "word_only_both_correct_pairs": 0,
+    "bias_absolute": {
+      "n": 12,
+      "mean": 3.6654055938124657,
+      "min": 2.0911508202552795,
+      "median": 3.1165951788425446,
+      "max": 6.147645741701126
+    },
+    "context_signed": {
+      "n": 12,
+      "mean": -0.004324403901894887,
+      "min": -0.2058720588684082,
+      "median": 0.005985945463180542,
+      "max": 0.16464674472808838
+    },
+    "chosen_names": {
+      "Cal": 4,
+      "Cam": 4,
+      "Cory": 4,
+      "Ira": 4,
+      "Ron": 4,
+      "Sid": 4
+    },
+    "first_mentioned_choice_items": 12,
+    "absolute_candidate_pair_mass": {
+      "n": 24,
+      "mean": 2.7540450650734455e-07,
+      "min": 9.96947835250808e-12,
+      "median": 1.8762264998590955e-08,
+      "max": 2.0119262381253133e-06
+    },
+    "correct_answer_nll_per_token": {
+      "n": 24,
+      "mean": 6.721355912586053,
+      "min": 4.47959582010905,
+      "median": 6.574990530808767,
+      "max": 9.26872189839681
+    }
+  }
+}

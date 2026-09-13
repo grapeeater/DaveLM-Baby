@@ -1,0 +1,164 @@
+{
+  "study": "SF21_PAIRED_COUNTERFACTUAL_REPRESENTATION_CONSISTENCY_V1",
+  "created_utc": "2026-09-09T06:30:00.000000+00:00",
+  "scientific_hypothesis": "Adding a paired counterfactual representation consistency term to SF20 will encourage Baby to learn identity-independent relational representations. SF20 successfully reduced D3 leakage by diversifying identities, but widening did not emerge because the model did not automatically infer that different identity fillers can express the same relation. The consistency term explicitly teaches this abstraction while preserving identity-specific information for exact answer generation.",
+  "sole_scientific_variable": "Add ONE paired counterfactual representation consistency term to the SF20 objective. All other SF20 parameters, curriculum, identities, schedule, gates, evaluators, and seeds remain unchanged.",
+  "predecessor": "C:\\DaveLM-CADAVER\\sf20_identity_heldout_balanced_entity_rotation_v2",
+  "predecessor_stop_manifest_sha256": "a97cbc26f56f944a1283ab93d5c9f040f8b5ac59d8fe00d166adde1ad539fa79",
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runs": [
+    {
+      "arm": "curriculum",
+      "d3_reference": 0.007036717671962123,
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+      "seed": 87053
+    },
+    {
+      "arm": "curriculum",
+      "d3_reference": 0.006672408242356376,
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+      "seed": 87054
+    },
+    {
+      "arm": "curriculum",
+      "d3_reference": 0.007839491795780695,
+      "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt",
+      "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+      "seed": 87055
+    }
+  ],
+  "seeds": [87053, 87054, 87055],
+  "curriculum": "Same 48 records as SF20: 16 TRAIN16 preservation (Alex/Owen/Mia/Nora) + 32 widening (16-name balanced set). No curriculum changes.",
+  "identity_set": [
+    "Sara", "Bob", "Billy", "Tony", "Fred", "Tina", "Steve", "Susan",
+    "Remy", "Ralph", "Colin", "Faye", "Carl", "Wendy", "Cathy", "Tara"
+  ],
+  "pair_manifest": "PAIR_MANIFEST.json",
+  "consistency_term": {
+    "description": "Paired counterfactual representation consistency. Encourages structurally equivalent examples with different identity fillers to share relational/contextual solution geometry.",
+    "representation_target": "Logits at position = prefix_length - 1 (last context token before answer generation, same as SF20 margin hinge position).",
+    "normalization": "L2 normalization of representation vectors before cosine similarity.",
+    "loss_form": "L_consistency = mean(1 - cos_sim(v_i, v_j)) over all positive pairs in the English batch.",
+    "pairing_rule": "Records grouped by pair_id from TRAIN.json. Each pair_id group contains exactly 2 records with the same structural template but different identity assignments.",
+    "lambda_consistency": 0.1,
+    "applies_to": "English updates only (same 180 English updates as SF20).",
+    "both_sides_receive_grad": true
+  },
+  "english_objective": "SF20 objective unchanged + 0.1 * consistency_term: full answer+EOS causal CE + 1.0 full forward parent KL on frozen broad KL160 + 0.25 first-answer-token pairwise hinge at M=1.0 + 0.1 paired counterfactual representation consistency.",
+  "margin": {
+    "M": 1.0,
+    "lambda_margin": 0.25,
+    "mechanics": "Pinned SF10 first-answer full-vocabulary logsoftmax hinge mean over 36; unchanged from SF20."
+  },
+  "kl_data": {
+    "pool": "Unchanged KL_POOL.json 165363 positions/741 rows.",
+    "sampling": "SF13 sampling geometry: frozen SF13_KL_SCHEDULE.json (180 updates x 160 existing entries, 160 distinct source rows/update, deterministic, row+column provenance only).",
+    "lambda_KL": 1.0
+  },
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 5e-05,
+    "betas": [0.9, 0.999],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "amsgrad": false,
+    "foreach": false,
+    "fused": false,
+    "gradient_clip": 2.0,
+    "state": "fresh optimizer per run"
+  },
+  "schedule": {
+    "total_updates": 200,
+    "english": 180,
+    "binding": 20,
+    "cycles": "20 cycles of 9 English + 1 binding.",
+    "batch": {
+      "english": 36,
+      "binding": 32
+    }
+  },
+  "scope": "unchanged PINNED_MASKING.set_scope (English = all base_model params except blocks0-3; binding = all).",
+  "evaluation": {
+    "updates": [0, 100, 200],
+    "panels": ["TRAIN16", "DEV_SURFACE", "DEV_ORDER"],
+    "D3": {
+      "positions": 256,
+      "gate": "mean four-name mass <= 0.01"
+    },
+    "binding": "both 80-doc pools",
+    "language": "CE <= own U0 + 0.25"
+  },
+  "gates": {
+    "retention_acquisition": "TRAIN16: correct==16 AND exact==16 AND reversals==8 AND families==4",
+    "dev_surface": "correct>=15 AND exact>=13 AND each surface subgroup exact>=3",
+    "dev_order": "exact>=13 AND fact>=7 AND copy>=7 AND each order>=7 AND each order:query cell>=3",
+    "language": "CE <= own update0 CE + 0.25",
+    "d3": "four-name mass <= 0.01",
+    "binding_each_pool": "answer>=76 AND BD>=76 AND collapse==0",
+    "development_gain": "At U200: exact surface>=own U0+4 AND exact order>=own U0+4",
+    "endpoint_pass": "U200 AND all retention AND dev_surface AND dev_order AND development_gain",
+    "continue": "retention_acquisition AND language AND d3 AND binding pass at 100/200; regression stop otherwise"
+  },
+  "classification": {
+    "priority1": "MECHANICAL_INCOMPLETE if execution/integrity prevents valid classification",
+    "priority2": "RETENTION_REGRESSION if any TRAIN16/language/binding retention gate fails",
+    "priority3": "REPRESENTATION_CONSISTENCY_SUPPORTED if >=2/3 branches reach U200 and pass every frozen endpoint gate including D3",
+    "priority4": "REPRESENTATION_CONSISTENCY_INSUFFICIENT if >=2/3 branches fail D3 while retention and widening survive",
+    "otherwise": "MIXED_OR_UNRESOLVED"
+  },
+  "persistence": "Inherited SF11 full atomic rolling restart each update plus permanent 100/200. Sequential blocking child execution; explicit durable ledger before launch/PID/end/status. Exactly one launch per seed; no auto-restart/replay of valid failures. Mechanical interruption reported with committed state preserved.",
+  "stopping": "Stop each run at 100/200 on any retention failure; no widening early stop. Full endpoint 200 only. Other independent runs continue after valid scientific failure. No rescue, no replacement seed, no post-result curriculum change.",
+  "transfer": "Historical transfer panels remain LOCKED/UNSCORED. FINAL and sacred material are prohibited.",
+  "runtime": {
+    "autocast": false,
+    "deterministic_algorithms": true,
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "float32": true,
+    "python": "3.12.14",
+    "tf32": false,
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "external_hashes": {
+    "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\LEXICON.json": "6376b5a8612682c17f06a5af80419dc20e1dd02fe539940903c957bb6458cbdd",
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\LEXICON.json": "21db8a226e5ee4d66ff6852437e9d95f32d181f505e20ea30845be345a027432",
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\LEXICON.json": "44c860dd913dbf58057059f7ab0aec145454688ce38326cb4bdfd0e2f7861a8d",
+    "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+    "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+    "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "C:\\DaveLM-v0.9\\v0_2\\__init__.py": "e950992c38ab51fb241a30b87e8bb9415388dfa5d6e20a01d7e082ad1a46eeff",
+    "C:\\DaveLM-v0.9\\v0_2\\model.py": "28ee99e6e73c4e8e4955a4bda66a787afde2d7edef23049ac9b2ed2a2c3d3146",
+    "C:\\DaveLM-v0.9\\v0_2_1\\__init__.py": "2ba1884227fa40b0b1b59b9343bccb2076369e336f20fe17db9ad6fde940eb90",
+    "C:\\DaveLM-v0.9\\v0_2_1\\model.py": "29369e640298cb22cbdacbb826f908451ff58a5724544ed823d6e0938b51491e",
+    "C:\\DaveLM-v0.9\\v0_7\\__init__.py": "e859a14f534dd8e04db5c8abe62019815cfb0b71dbb6ac0c48b46fd8a6edcf8d",
+    "C:\\DaveLM-v0.9\\v0_7\\model.py": "593aecdb3baf735372ab24ab24daf5f521c151d14e84b3a0f3ffd3a51c51c283",
+    "C:\\DaveLM-v0.9\\v0_8\\__init__.py": "0f633cca96d11ce146b0e0b38b0c6de7cf80e9add09dece764899c9217f32acf",
+    "C:\\DaveLM-v0.9\\v0_8\\config.py": "7ca019f4cb800f0f30eefb5cbf9abaf9c296cd7aba5a3bf37c7d5cb31e997ddc",
+    "C:\\DaveLM-v0.9\\v0_8_2\\__init__.py": "7c47dc732ea59f3d46769a53c5077cb886151f235e75b222270cc8aaf7cef87b",
+    "C:\\DaveLM-v0.9\\v0_8_2\\config.py": "da9c48edd107c7e9d638ad345802a04e23cb19044b9c83a69789e83b2f313798",
+    "C:\\DaveLM-v0.9\\v0_8_2\\model.py": "b122e0f3edeedf146305dff4c3fd6a17bf962c8f4a7b991f360a9c7fbcb2c72d"
+  },
+  "kl": {
+    "pool_sha256": "aa8f6810f80c62018d026bbbb36e9b5fb85785be694044a1fe9646a8823c5a06",
+    "pool_manifest_sha256": "cc4aaa454cfe1532590752d44a2a31c4e78e6ab005add31afa07c6566906a012"
+  },
+  "d3": {
+    "selection_manifest": "D3_SELECTION.json",
+    "baseline_mean_four_name_mass": 0.0071829,
+    "tolerance_abs": 1e-4
+  },
+  "baseline_reproduction_M9": {
+    "kl_zero_tolerance": 1e-6
+  },
+  "telemetry": {
+    "consistency": "raw consistency loss, weighted contribution, mean positive-pair cosine similarity recorded at each update for descriptive/mechanistic verification only."
+  }
+}

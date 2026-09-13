@@ -1,0 +1,8 @@
+{
+    "date_frozen":  "2026-09-07",
+    "manifest_sha256":  "3f43027de5504d56ad20ee6782d28765ebb4b713dfd0b6e7d8a63672132e9444",
+    "note":  "No file listed in SHA256SUMS.txt may be modified after this receipt.",
+    "study":  "SF5_MATCHED_PREFIX_ANNEAL_V1",
+    "file_count":  12,
+    "status":  "SF5_FROZEN_PRETRAIN_PASS"
+}

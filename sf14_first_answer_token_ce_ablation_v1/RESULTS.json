@@ -1,0 +1,776 @@
+{
+  "classification": "RETENTION_REGRESSION",
+  "controller_sha256": "dde31e0d8c3829ce95949678618fcad8fb77179e6ed5cff3fd4b5d7fc050a93c",
+  "cross_seed": {
+    "d3_failures": 0,
+    "endpoint_passes": 0,
+    "retention_failures": 3,
+    "widening_movement": 0
+  },
+  "final_accessed": false,
+  "locked_transfer": "LOCKED_UNSCORED",
+  "manifest_sha256": "d1ff4932e38d366296046170a3dfda6f990d371baa5b6c8ed29db436a1f09323",
+  "receipt_sha256": "bfd2c8db4e2c6c6628737d657c918135815c7a089cb24502577f838cb627728e",
+  "runs": [
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf14_first_answer_token_ce_ablation_v1\\runs\\seed_87035_curriculum\\checkpoint_200.pt",
+      "checkpoint_sha256": "485358a5a84ea200fd591709f14ac066a922de30ff31c1028b7d928be6d5812c",
+      "completed": 200,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": true,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": false
+      },
+      "seed": 87035,
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.003118530575466183,
+          "mean_entropy": 2.5005307148385327,
+          "mean_eos_probability": 0.0034819886962866725,
+          "mean_true_next_probability": 0.1385053905208924,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0011454185542177642,
+            "Mia": 0.0015254865922248936,
+            "Nora": 0.00029371540068542923,
+            "Owen": 0.00015390999696140995
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.8421077728271484,
+            3.468729257583618,
+            3.6630380153656006,
+            3.728806972503662
+          ],
+          "loss": 3.6756705045700073,
+          "perplexity": 39.47511623147832,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 9,
+          "exact": 1,
+          "fact_exact": 1,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 1,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 1,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 1,
+            "passive_cloze": 0,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 14,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      },
+      "u0": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.007036717671962123,
+          "mean_entropy": 2.8127532401122153,
+          "mean_eos_probability": 0.001767161737854489,
+          "mean_true_next_probability": 0.1334390382900441,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.001807325439137475,
+            "Mia": 0.0028332657115400783,
+            "Nora": 0.0017122710340558012,
+            "Owen": 0.0006838553986634466
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.748203992843628,
+            3.3880622386932373,
+            3.586591958999634,
+            3.626347064971924
+          ],
+          "loss": 3.5873013138771057,
+          "perplexity": 36.136423354684176,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 9,
+          "exact": 3,
+          "fact_exact": 3,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 3,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 12,
+          "exact": 5,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 3,
+            "passive_cloze": 2,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 0
+      },
+      "u200": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.003118530575466183,
+          "mean_entropy": 2.5005307148385327,
+          "mean_eos_probability": 0.0034819886962866725,
+          "mean_true_next_probability": 0.1385053905208924,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0011454185542177642,
+            "Mia": 0.0015254865922248936,
+            "Nora": 0.00029371540068542923,
+            "Owen": 0.00015390999696140995
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.8421077728271484,
+            3.468729257583618,
+            3.6630380153656006,
+            3.728806972503662
+          ],
+          "loss": 3.6756705045700073,
+          "perplexity": 39.47511623147832,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 9,
+          "exact": 1,
+          "fact_exact": 1,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 1,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 1,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 1,
+            "passive_cloze": 0,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 14,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      },
+      "widening_movement": false
+    },
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf14_first_answer_token_ce_ablation_v1\\runs\\seed_87036_curriculum\\checkpoint_200.pt",
+      "checkpoint_sha256": "c20b06ae9cbffc1ea053a22563c397792302a14c670c2b5c26a07ecb0bfac8d1",
+      "completed": 200,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": true,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": false
+      },
+      "seed": 87036,
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.0031409628465418893,
+          "mean_entropy": 2.496366251449217,
+          "mean_eos_probability": 0.0037297728882073264,
+          "mean_true_next_probability": 0.13657953265109057,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0011442265145828537,
+            "Mia": 0.0016470498410289872,
+            "Nora": 0.00022705722421446917,
+            "Owen": 0.00012262923979667467
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.8577632904052734,
+            3.481153726577759,
+            3.666935443878174,
+            3.7359044551849365
+          ],
+          "loss": 3.6854392290115356,
+          "perplexity": 39.86262742767519,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 9,
+          "exact": 1,
+          "fact_exact": 1,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 1,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 2,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 2,
+            "passive_cloze": 0,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 14,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      },
+      "u0": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.006672408242356376,
+          "mean_entropy": 2.796943365887273,
+          "mean_eos_probability": 0.0016619437573144602,
+          "mean_true_next_probability": 0.13545253721068828,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0016973070395719936,
+            "Mia": 0.002682281030823741,
+            "Nora": 0.0017170548236129513,
+            "Owen": 0.0005757652613638253
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.736370801925659,
+            3.376737594604492,
+            3.5661802291870117,
+            3.619130849838257
+          ],
+          "loss": 3.574604868888855,
+          "perplexity": 35.68051954657961,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 9,
+          "exact": 3,
+          "fact_exact": 3,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 3,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 13,
+          "exact": 4,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 3,
+            "passive_cloze": 1,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 0
+      },
+      "u200": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.0031409628465418893,
+          "mean_entropy": 2.496366251449217,
+          "mean_eos_probability": 0.0037297728882073264,
+          "mean_true_next_probability": 0.13657953265109057,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0011442265145828537,
+            "Mia": 0.0016470498410289872,
+            "Nora": 0.00022705722421446917,
+            "Owen": 0.00012262923979667467
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.8577632904052734,
+            3.481153726577759,
+            3.666935443878174,
+            3.7359044551849365
+          ],
+          "loss": 3.6854392290115356,
+          "perplexity": 39.86262742767519,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 9,
+          "exact": 1,
+          "fact_exact": 1,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 1,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 2,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 2,
+            "passive_cloze": 0,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 14,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      },
+      "widening_movement": false
+    },
+    {
+      "checkpoint": "C:\\DaveLM-CADAVER\\sf14_first_answer_token_ce_ablation_v1\\runs\\seed_87037_curriculum\\checkpoint_200.pt",
+      "checkpoint_sha256": "cfa3c313dc6b77caf9c34e6893d5836b3c0defa0a81fdf5772457d6507966328",
+      "completed": 200,
+      "gates": {
+        "binding": {
+          "pilot0": true,
+          "pilot1": true
+        },
+        "continue": false,
+        "d3": true,
+        "dev_order": false,
+        "dev_surface": false,
+        "development_gain": false,
+        "endpoint_pass": false,
+        "language": true,
+        "retention_acquisition": false
+      },
+      "seed": 87037,
+      "status": "STOP_REGRESSION",
+      "terminal": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.002755504918987628,
+          "mean_entropy": 2.5581035757059,
+          "mean_eos_probability": 0.0039129206900936075,
+          "mean_true_next_probability": 0.1376050411022649,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.000893341785893377,
+            "Mia": 0.001417232678794858,
+            "Nora": 0.0002871558549608355,
+            "Owen": 0.0001577745749655607
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.8373048305511475,
+            3.4726157188415527,
+            3.655104875564575,
+            3.7108240127563477
+          ],
+          "loss": 3.6689623594284058,
+          "perplexity": 39.211197614187874,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 10,
+          "exact": 2,
+          "fact_exact": 2,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 2,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 2,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 2,
+            "passive_cloze": 0,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 14,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      },
+      "u0": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.007839491795780695,
+          "mean_entropy": 2.807910793228075,
+          "mean_eos_probability": 0.002095643633439892,
+          "mean_true_next_probability": 0.13269910424624154,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.0018889631974815524,
+            "Mia": 0.0029714606508496333,
+            "Nora": 0.0022813516559289093,
+            "Owen": 0.0006977163453769641
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.7511818408966064,
+            3.4004034996032715,
+            3.5899367332458496,
+            3.638371706008911
+          ],
+          "loss": 3.5949734449386597,
+          "perplexity": 36.41473297957166,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 8,
+          "exact": 3,
+          "fact_exact": 3,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 3,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 13,
+          "exact": 5,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 3,
+            "passive_cloze": 2,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 16,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 0
+      },
+      "u200": {
+        "binding": {
+          "pilot0": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          },
+          "pilot1": {
+            "answer_exact": 80,
+            "both_distinct": 80,
+            "complete_quartets": 20,
+            "downstream_answer_correct_conditional_on_bd": 1.0,
+            "queried_row_selection_conditional_on_bd": 1.0,
+            "slot_collapse": 0,
+            "strict_reversal_both_correct": 40,
+            "strict_reversal_pairs": 40
+          }
+        },
+        "d3": {
+          "mean_combined_name_probability": 0.002755504918987628,
+          "mean_entropy": 2.5581035757059,
+          "mean_eos_probability": 0.0039129206900936075,
+          "mean_true_next_probability": 0.1376050411022649,
+          "n": 256,
+          "per_name_mean_probability": {
+            "Alex": 0.000893341785893377,
+            "Mia": 0.001417232678794858,
+            "Nora": 0.0002871558549608355,
+            "Owen": 0.0001577745749655607
+          }
+        },
+        "language": {
+          "batch_losses": [
+            3.8373048305511475,
+            3.4726157188415527,
+            3.655104875564575,
+            3.7108240127563477
+          ],
+          "loss": 3.6689623594284058,
+          "perplexity": 39.211197614187874,
+          "records": 128
+        },
+        "order": {
+          "copy_exact": 0,
+          "correct": 10,
+          "exact": 2,
+          "fact_exact": 2,
+          "subgroups": {
+            "order0:copy": 0,
+            "order0:fact": 2,
+            "order1:copy": 0,
+            "order1:fact": 0
+          }
+        },
+        "surface": {
+          "correct": 14,
+          "exact": 2,
+          "subgroups": {
+            "active_qa": 0,
+            "cloze": 2,
+            "passive_cloze": 0,
+            "passive_qa": 0
+          }
+        },
+        "train16": {
+          "correct": 16,
+          "exact": 14,
+          "families": 4,
+          "reversals": 8
+        },
+        "update": 200
+      },
+      "widening_movement": false
+    }
+  ],
+  "sacred_accessed": false
+}

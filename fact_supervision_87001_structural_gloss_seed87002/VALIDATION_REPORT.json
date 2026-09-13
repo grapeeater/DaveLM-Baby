@@ -1,0 +1,30 @@
+{
+ "status": "VALIDATION_PASS",
+ "items": 96,
+ "entailment": "correct answer equals the unique row matching the queried predicate/description",
+ "both_names_present": true,
+ "order_invariance": "row order does not change the answer key",
+ "candidate_roundtrip": true,
+ "context_within_256": true,
+ "balance": {
+  "correct_index": {
+   "0": 48,
+   "1": 48
+  },
+  "correct_name": {
+   "Alex": 24,
+   "Nora": 24,
+   "Owen": 24,
+   "Mia": 24
+  },
+  "row_order": {
+   "0": 48,
+   "1": 48
+  },
+  "stratum": {
+   "object": 48,
+   "predicate": 48
+  }
+ },
+ "original_relational_reversal_does_not_transfer": "the original two-fact relational reversal/query dimensions do not transfer unchanged; row order and query are reported as balanced descriptive factors"
+}

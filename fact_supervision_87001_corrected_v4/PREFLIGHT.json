@@ -1,0 +1,415 @@
+{
+  "binding_references": {
+    "pilot0_dev": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e"
+    },
+    "pilot1_dev": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json",
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+    },
+    "pilot1_rehearsal": {
+      "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+    }
+  },
+  "checkpoint_hash_verified": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "construction_seed": 87001,
+  "corpus_overlap": {
+    "hits": [],
+    "limitation": "Exact non-overlap does not exclude semantic, template, or near-duplicate exposure; sacred material intentionally not read.",
+    "normalization": "Decode JSON/JSONL string values, reconstruct recognized prompt+response/candidate pairs; casefold and collapse Unicode whitespace; NUL between records",
+    "sources": [
+      {
+        "decoded_strings": 20800,
+        "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\ITEMS.jsonl",
+        "sha256": "5e6669275562044012113a353996e627a1b9faad28b6b4664328d27e268a509a"
+      },
+      {
+        "decoded_strings": 3328,
+        "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380\\PRIORS.jsonl",
+        "sha256": "da476f147a40d7bc3e37187e0d98811a526af0ce59b28a395bc70826828e7902"
+      },
+      {
+        "decoded_strings": 100464,
+        "path": "C:\\DaveLM-CADAVER\\english_context_characterization_v1_seed8380_execution\\RAW_SCORES.jsonl",
+        "sha256": "ee2e8fa339b8c28963d7bf3b1be36eae7999f81cb4147875a58fbedef85f227c"
+      },
+      {
+        "decoded_strings": 39,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p6\\RESULTS.json",
+        "sha256": "b7f24295fcff6b479d887a56e766222566d2a27f582f1e5e6828bc8ea1dd6dd3"
+      },
+      {
+        "decoded_strings": 1,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p6\\TRAIN_TEXT.txt",
+        "sha256": "f849540384fe0b247387eba583c2e053313650db4cbdcbf0cc42a3041122523e"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p6\\metrics.jsonl",
+        "sha256": "c3628252fba6f431f97b55061ab99a61be11abed4e4973cc25082cc0c6ed8974"
+      },
+      {
+        "decoded_strings": 49,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\FIXED_PANEL_RESULTS.json",
+        "sha256": "25df0ce359aa3ff719e8d2e500a510f58c63ea4530b66036077a4b1186e50a0f"
+      },
+      {
+        "decoded_strings": 40,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\NATURAL_TRANSFER_RESULTS.json",
+        "sha256": "8b051491a88d0bafa676a76ec4c5a61fc57d0fc802e4212f1f1366c5da436031"
+      },
+      {
+        "decoded_strings": 36,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\OVERLAP_AUDIT.json",
+        "sha256": "86d82db4c60df7f7a35d173c8a55aa8b5aacd5c42dc11727a0ad6069b53b32eb"
+      },
+      {
+        "decoded_strings": 39,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\RESULTS.json",
+        "sha256": "8379fb6b7e742e5b1320d675a392a8f22f911164362616e9a3f512bcda331901"
+      },
+      {
+        "decoded_strings": 1,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\TRAIN_TEXT.txt",
+        "sha256": "337a24425fb8bd5e8b2c6b31518c23e99be3a22d0499ca9aea3d226c10af2489"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_compositional_p7\\metrics.jsonl",
+        "sha256": "6db6b7cac64c88e8d1a72b6b67ec03dae44b2c77df660ef55d05ee71c08eda4f"
+      },
+      {
+        "decoded_strings": 39,
+        "path": "C:\\DaveLM-CADAVER\\language_consistency_p1\\RESULTS.json",
+        "sha256": "79a530d01eef61ab603a7b3a4d90725750ad0cce938ebf9f3bf64cf790c9aa8f"
+      },
+      {
+        "decoded_strings": 1,
+        "path": "C:\\DaveLM-CADAVER\\language_consistency_p1\\TRAIN_TEXT.txt",
+        "sha256": "8945658582acc8436bf09cbec37858f499a2ebe6742797daf249ea347038c552"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_consistency_p1\\metrics.jsonl",
+        "sha256": "2c29394e84efe7b837ec6fec3e2a59039606c4fcc13278549e903cc194d25c23"
+      },
+      {
+        "decoded_strings": 36,
+        "path": "C:\\DaveLM-CADAVER\\language_continuation_p0_v1\\HELDOUT_PANEL.json",
+        "sha256": "41ca1445e4251a705b21d071bd681546c9e302a65fea71ce5af6ba9b6ed7d242"
+      },
+      {
+        "decoded_strings": 18,
+        "path": "C:\\DaveLM-CADAVER\\language_continuation_p0_v1\\RESULTS.json",
+        "sha256": "71afdf52fea9caa8acb64d56003ebd6f7b31f418f8a55b5a91b8456c5d81df57"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_continuation_p0_v1\\metrics.jsonl",
+        "sha256": "9414c507d778da260287787b1b9073d44b2c60498138230463ac0139e56acda2"
+      },
+      {
+        "decoded_strings": 29,
+        "path": "C:\\DaveLM-CADAVER\\language_mixed_p2\\RESULTS.json",
+        "sha256": "939a216725ac2aa5a8a7fc1cfaa9ec5d5101a7ea03ee1c4271694638ab05fd9a"
+      },
+      {
+        "decoded_strings": 500,
+        "path": "C:\\DaveLM-CADAVER\\language_mixed_p2\\metrics.jsonl",
+        "sha256": "479eb15f413e99e5332735a8549e0b2233f56d0d689e58736d84d39e6ad7f114"
+      },
+      {
+        "decoded_strings": 10,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\CORPUS_MANIFEST.json",
+        "sha256": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708"
+      },
+      {
+        "decoded_strings": 1,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\TinyStories-valid.txt",
+        "sha256": "94e431816c4cce81ff71e4408ff8d3bda9a42e8d2663986697c3954288cb38b4"
+      },
+      {
+        "decoded_strings": 781,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_dev.json",
+        "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e"
+      },
+      {
+        "decoded_strings": 3121,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\binding_rehearsal.json",
+        "sha256": "07b2b1c0605d36ffffc6de582b8e1e752d3b55101e71d4c7ed0d477ea304e7ad"
+      },
+      {
+        "decoded_strings": 1000,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_dev.jsonl",
+        "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+      },
+      {
+        "decoded_strings": 9000,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_0_tinystories_seed8380\\language_train.jsonl",
+        "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+      },
+      {
+        "decoded_strings": 30,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PILOT1_MATERIAL_MANIFEST.json",
+        "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2"
+      },
+      {
+        "decoded_strings": 8,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PREFLIGHT.json",
+        "sha256": "08b813e12b6d2e5f3f3ed8ce215a951a906a98ea4aeedd6651d28801f87728f6"
+      },
+      {
+        "decoded_strings": 31,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\PREPARATION_RESULT.json",
+        "sha256": "fc813808dccaf5bd6776ea2d7bb936f2abd8c0dfd537f500ea81fcaaf1ca898b"
+      },
+      {
+        "decoded_strings": 781,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_dev.json",
+        "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1"
+      },
+      {
+        "decoded_strings": 3121,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\binding_rehearsal.json",
+        "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558"
+      },
+      {
+        "decoded_strings": 1000,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl",
+        "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4"
+      },
+      {
+        "decoded_strings": 9000,
+        "path": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl",
+        "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c"
+      },
+      {
+        "decoded_strings": 19,
+        "path": "C:\\DaveLM-CADAVER\\language_sentencebound_p5\\RESULTS.json",
+        "sha256": "4195cdf0b74b4c0b34e86b3fbce6ebbf4c828b467be4911c1052eba2da7b1989"
+      },
+      {
+        "decoded_strings": 16,
+        "path": "C:\\DaveLM-CADAVER\\language_sentencebound_p5\\SENTENCE_AUDIT.json",
+        "sha256": "87486c845a2b63abded557bcd006eb0956fea32ec6994d383e4c4ee692eef14f"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_sentencebound_p5\\metrics.jsonl",
+        "sha256": "3861818b634511897e7d69b44f72afe1d28a385f8eac4d1afd3646bd14d6ce7a"
+      },
+      {
+        "decoded_strings": 28,
+        "path": "C:\\DaveLM-CADAVER\\language_storybound_p3\\RESULTS.json",
+        "sha256": "6916c1168684a030ad9e9f2c9a0b41451089e72eacf5cd7f7803af7694a722d0"
+      },
+      {
+        "decoded_strings": 16,
+        "path": "C:\\DaveLM-CADAVER\\language_storybound_p3\\SAMPLED_PANEL.json",
+        "sha256": "9cace6ee531ccb3f698d13716bc02991acec2033b82d9a89c6cac3344481adbf"
+      },
+      {
+        "decoded_strings": 17,
+        "path": "C:\\DaveLM-CADAVER\\language_storybound_p3\\SENTENCE_AUDIT.json",
+        "sha256": "2840ea48b181e8ce40da96cefe302d138d2aff9e3c30fdf0d3f4f472af3d7574"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_storybound_p3\\metrics.jsonl",
+        "sha256": "68ede569f10803209d8a227ef8082ed3ba4097f576adfdb5ae3cbefa29bf2a71"
+      },
+      {
+        "decoded_strings": 28,
+        "path": "C:\\DaveLM-CADAVER\\language_unlikelihood_p4\\RESULTS.json",
+        "sha256": "9db4f4d4d7a21ffb17efe7166c95f3f05a83e0034b85c83b7afaed84c348ad12"
+      },
+      {
+        "decoded_strings": 16,
+        "path": "C:\\DaveLM-CADAVER\\language_unlikelihood_p4\\SENTENCE_AUDIT.json",
+        "sha256": "474542c7694ec6cba84e6863e667acb9031c2a2ea07a28be047a927aced41289"
+      },
+      {
+        "decoded_strings": 0,
+        "path": "C:\\DaveLM-CADAVER\\language_unlikelihood_p4\\metrics.jsonl",
+        "sha256": "22edd334ac8bdef36e0d4c965b99a2498595d22f26cb1be0330ef5bb31ebe397"
+      },
+      {
+        "decoded_strings": 289,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\FAMILIES.json",
+        "sha256": "df6d75aa71380fb1a61a1f4c4ea4a97468a123ac9873246baa281668a87c80a5"
+      },
+      {
+        "decoded_strings": 3,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\INDEPENDENT_VALIDATION.json",
+        "sha256": "9eb5439cd9834b7718b9fb8d0ad0f1fde8db6ac7f4bca785aaae73c1bf908d3c"
+      },
+      {
+        "decoded_strings": 3840,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\ITEMS.jsonl",
+        "sha256": "ed51478b0e8a2407b3660d03ee3b56a63ba246c9ad47d154bde4c52a3d627387"
+      },
+      {
+        "decoded_strings": 24,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\LEXICON.json",
+        "sha256": "44c860dd913dbf58057059f7ab0aec145454688ce38326cb4bdfd0e2f7861a8d"
+      },
+      {
+        "decoded_strings": 8,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\MANIFEST.json",
+        "sha256": "4cbd4477c4163a6ec2ee167e310f1d4435169069e9b60088a4d389884c55ac02"
+      },
+      {
+        "decoded_strings": 6,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\PREFLIGHT.json",
+        "sha256": "6f2b2b34235ff5f2c31b5802f096d72451521ff413ff886634fef9cdd0935bb7"
+      },
+      {
+        "decoded_strings": 9,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\RECEIPT.json",
+        "sha256": "5f906302ad801e924c69ad43d7c57f6b7a3c931e621dd3ed4f1b8a841d6a2b64"
+      },
+      {
+        "decoded_strings": 12,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380\\SOURCE_HASH_RECEIPT.json",
+        "sha256": "164275e3b46dcccd8d430e92977bb45268c19f07fb421285463c7f416b469c68"
+      },
+      {
+        "decoded_strings": 5976,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v1_seed8380_execution_p7\\RAW_SCORES.jsonl",
+        "sha256": "fb33cb23853cbab7c301c680d8c37101d62d2673bf23bd988029030f811e3a4d"
+      },
+      {
+        "decoded_strings": 216,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\FAMILIES.json",
+        "sha256": "a6b2a6a4ba1218be18c0635e1c2b6690bfbaef8759603059383bf67b7d85814e"
+      },
+      {
+        "decoded_strings": 10,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\FREEZE_RECEIPT.json",
+        "sha256": "5cfe722e62dd9a232e0961c2625d98484a091329ac9e8a31e7ecae8d12588f82"
+      },
+      {
+        "decoded_strings": 2888,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\ITEMS.jsonl",
+        "sha256": "f8d3e14cd645b6ebb8cc5142fc05f420be37f1a3f09cddeebb2ede443d266452"
+      },
+      {
+        "decoded_strings": 17,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\LEXICON.json",
+        "sha256": "64ac5e03d7e92239244c2f973bd8c3b04b1d5834f654867b693ef8595cc6059c"
+      },
+      {
+        "decoded_strings": 4,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\MANIFEST.json",
+        "sha256": "96c6acecd7f9d77917fb0c6692eccd68bc133f6e7665b93359703680665e8187"
+      },
+      {
+        "decoded_strings": 46,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\OVERLAP_AUDIT.json",
+        "sha256": "0cc75e2f538ca43148908a98b2533ad1c24499b456a553b6d56fe80266acc083"
+      },
+      {
+        "decoded_strings": 5,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391\\PREFLIGHT.json",
+        "sha256": "b276a6490a304f4d3e40b432f6acacad018f5c61d897ffc9e3c61b0e17db5d68"
+      },
+      {
+        "decoded_strings": 264,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v2_seed8391_execution_p7\\RAW_GENERATIONS.jsonl",
+        "sha256": "4b6939cf73e3a20cb11fbf68cede3a39b358ad422baa9110dfddb39356f28847"
+      },
+      {
+        "decoded_strings": 2352,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3_seed8391\\ITEMS.jsonl",
+        "sha256": "a667a372a8cc009c4e6cb04e09e6c005b8383c7cb2fce6d6edd3819163f4dc42"
+      },
+      {
+        "decoded_strings": 2352,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3b_seed8391\\ITEMS.jsonl",
+        "sha256": "0480707cb879175af4939ef361347dba4e904f7c418eda780ded8eb969a893a6"
+      },
+      {
+        "decoded_strings": 2464,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3c_seed8391\\ITEMS.jsonl",
+        "sha256": "4c260b5eed7ebe9b61a29524bd79b771e6d74f9d22c931815696d845feea162c"
+      },
+      {
+        "decoded_strings": 2464,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_language_report_card_v3d_seed8391\\ITEMS.jsonl",
+        "sha256": "4c260b5eed7ebe9b61a29524bd79b771e6d74f9d22c931815696d845feea162c"
+      },
+      {
+        "decoded_strings": 480,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_v3d_stage1_execution_retry\\RAW_GENERATIONS.json",
+        "sha256": "e958fef2c4e60f00fac1fff758bc3a59823a11cb5d8094b3ae5563132e64d425"
+      },
+      {
+        "decoded_strings": 19392,
+        "path": "C:\\DaveLM-CADAVER\\post_p7_v3d_stage1_execution_retry\\RAW_SCORES.json",
+        "sha256": "3952b83a56d9600cf64098a41691a7fcecbd973bcec15744c8e799a80b8aea6e"
+      }
+    ]
+  },
+  "independent_validation": {
+    "answer_key_disagreements": 0,
+    "control_independence": "exact target twins for each input and candidate pair",
+    "cross_arm_cues_targets_candidates": "PASS",
+    "family_arm_groups": 216,
+    "rows_checked": 1728,
+    "transformations": "PASS"
+  },
+  "model_accessed": false,
+  "naturalistic_uniqueness": {
+    "duplicate_factual_prompts": {},
+    "duplicate_naturalistic_prompts": {},
+    "factual_controlled_count": 1824,
+    "naturalistic_by_partition": {
+      "confirmation": 16,
+      "primary": 16
+    },
+    "naturalistic_count": 32,
+    "naturalistic_cross_holdout_intersection": [],
+    "unique_factual_prompts": 1824,
+    "unique_naturalistic_prompts": 32
+  },
+  "negative_tests": {
+    "baby_imported": false,
+    "backward_called": false,
+    "checkpoint_loaded": false,
+    "mock_tensor_checks": [
+      "five response/EOS targets only",
+      "right padding ignored",
+      "candidate likelihood positions and full-vocabulary denominator",
+      "EOS probability/rank/tie",
+      "scope and gradient clearing",
+      "durable no-replay journal"
+    ],
+    "negative_tests": [
+      "wrong_final_answer",
+      "query_predicate_not_asserted",
+      "malformed_fact",
+      "informative_control",
+      "broken_assignment_reversal",
+      "unbalanced_control_target_twins"
+    ],
+    "optimizer_created": false,
+    "status": "PASS",
+    "torch_version": "2.12.0+rocm7.14.0"
+  },
+  "optimizer_update": false,
+  "runtime": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "tokenizers": "0.23.1",
+    "torch": "2.12.0+rocm7.14.0"
+  },
+  "sacred_accessed": false,
+  "status": "PASS_PRE_TRAINING_FREEZE",
+  "tokenizer_hash": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "warnings": [
+    "naturalistic renderer differs by holdout and is descriptive only",
+    "exact overlap audit does not exclude semantic near-duplicates"
+  ]
+}

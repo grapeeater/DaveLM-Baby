@@ -1,0 +1,12 @@
+{
+  "artifact_count": 20,
+  "checkpoint_loaded": false,
+  "detached_sha256": "93112b625c8a4812aff719422c46859f0bc20047c3a65a9636e39bd8fe4f8e2f",
+  "freeze_version": "corrected_v3",
+  "historical_failed_attempts_preserved": true,
+  "inference": false,
+  "optimizer_update": false,
+  "sacred_access": false,
+  "status": "PASS_PRE_TRAINING_FREEZE",
+  "training": false
+}

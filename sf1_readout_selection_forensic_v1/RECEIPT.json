@@ -1,0 +1,18 @@
+{
+  "checkpoint_hashes": {
+    "parent": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+    "sf1_update100": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e"
+  },
+  "excluded_from_manifest": [
+    "OUTPUT_SHA256SUMS.txt",
+    "RECEIPT.json",
+    "RECEIPT.sha256",
+    "FINAL_HASHES.txt"
+  ],
+  "no_locked_panel": true,
+  "no_optimizer": true,
+  "no_weight_mutation": true,
+  "payload_manifest_sha256": "48662539ecd5cbd2a1fcbaec28cd33cc59c0854a0c3f980ae8226c4b26bfcc23",
+  "selection_sha256": "3ae0f6a748f5545b5d0af2fd89e5beb5482e9e42713ba61567d1fea353db2226",
+  "status": "SF1_READOUT_SELECTION_FORENSIC_COMPLETE"
+}

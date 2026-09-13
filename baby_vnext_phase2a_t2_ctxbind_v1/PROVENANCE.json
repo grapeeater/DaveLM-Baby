@@ -1,0 +1,46 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T2_CTXBIND_V1",
+  "parent": {
+    "checkpoint": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "model_state_digest": "0101cec9e3220c1de1a0d8abc4e241e2fad32127b7358bc5a2944a34c5a5b953",
+    "completed_update": 6000,
+    "eval_dev_ce": 1.2040123894810677
+  },
+  "architecture_config_sha256": "8d7e1cbc604c9bf9f1942d4afc01817b20af17d8805a984f7ae57b1254f957b4",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "phase1g_reference": {
+    "bundle": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1",
+    "config_sha256": "5b338905ed08c1b803233381c6494ec28fdb50ccb758215d01e9694c062e054d",
+    "final_status_sha256": "81c3fb4bc55760de63abe348b04bef5891ed51e7c5a22207c3577e7daabaf0c1"
+  },
+  "v1_reference": {
+    "bundle": "C:\\DaveLM-CADAVER\\baby_vnext_phase2a_ctxbind_v1",
+    "note": "v1 DEV observed; v1 TEST remains locked/unopened"
+  },
+  "data_files": {
+    "qa_train": "c323ce7531cfd936f12b5995b6ab8e4a9c6093d27f2d64eabefc54b2bd6d1333",
+    "qa_dev": "af9c7fd1b48d8b49d0c6f49e9c281e15dcb7eeb110b1dd6ccde43e6c1d57de12",
+    "qa_test": "44106b0f623a4405791f65a49ed4e98f5da34d79bb6f15b832043b9f989bb5ce",
+    "qa_audit_dev": "ede7d51f91710c97125242f8470ea05052674a66b96f28a0b78327d6d1486740",
+    "qa_audit_test": "765ea0005719a2a6e78021a7f103c133b3dbb43d481ddc7302d67dfa18c11cb2",
+    "qa_novel_dev": "216496027617cb57a53137bdea62a5352ac48aa7ae0767a0a26c9d03d37b8d15",
+    "qa_novel_test": "d23746112ffbd0a6a25cf87213a71e446e0cb935124926872e3d20e492490e63",
+    "qa_schedule": "aa2d5a78094d61ed265b020cfda816a5c13ec921ddc28748edb0415ed7cba37b",
+    "update_kinds": "e6dec2dfd2a6fa8294b510e0797d3267d5b09ffca0508d2fcb50b0093a70bd0e",
+    "rehearsal_windows": "439ebb92bde0586a2cdc51b4c25ddd1a1e9b61d708209a2b579a93fe4b31d342",
+    "panel_stats": "674ba9f0d9ba4047aae84107ff357ebee8eceb8818d4b7b679f02353bb61cf5b"
+  },
+  "novel_names_holdout": [
+    "Kai",
+    "Pia",
+    "Ned",
+    "Rex",
+    "Ted",
+    "Ella"
+  ],
+  "optimizer_created": false,
+  "optimizer_updates": 0,
+  "training_performed": false,
+  "forbidden_material_accessed": false
+}

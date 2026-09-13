@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "single_items": 64,
+  "families": 4,
+  "items_per_family": 16,
+  "reversal_pairs": 32,
+  "items_per_voice_cue": 16,
+  "candidate_lengths": [
+    4
+  ],
+  "correct_names": {
+    " Alex.": 16,
+    " Owen.": 16,
+    " Mia.": 16,
+    " Nora.": 16
+  },
+  "correct_index": {
+    "0": 32,
+    "1": 32
+  },
+  "position_control": "active actor first, passive actor after object; equal counts. One fact intentionally contains only the correct candidate. Absent alternative and identity copying are limitations, not two-fact binding evidence.",
+  "query_leakage": false,
+  "independent_final_text_parse": "PASS",
+  "negative_tests": {
+    "wrong_key": "rejected",
+    "wrong_predicate": "rejected",
+    "missing_object": "rejected",
+    "extra_fact": "rejected"
+  },
+  "training_alignment_checks": 480,
+  "overlap_audit": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl": {
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "complete_prompt_substring_hits": [],
+      "whole_record_exact_hits": []
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl": {
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "complete_prompt_substring_hits": [],
+      "whole_record_exact_hits": []
+    },
+    "C:\\DaveLM-CADAVER\\fact_supervision_87001_corrected_v8\\ITEMS.jsonl": {
+      "sha256": "2dab70739e9c0ffe1ad3154076ec613a10a4964fa1138e9c7b40d8a5e55f518d",
+      "complete_prompt_substring_hits": [
+        "SF:0:found:blue book:active:cloze:a0",
+        "SF:0:found:blue book:active:cloze:a1",
+        "SF:0:carried:blue book:active:cloze:a0",
+        "SF:0:carried:blue book:active:cloze:a1",
+        "SF:1:found:blue book:active:cloze:a0",
+        "SF:1:found:blue book:active:cloze:a1",
+        "SF:1:carried:red ball:active:cloze:a0",
+        "SF:1:carried:red ball:active:cloze:a1",
+        "SF:1:carried:blue book:active:cloze:a0",
+        "SF:1:carried:blue book:active:cloze:a1"
+      ],
+      "whole_record_exact_hits": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_FACTS.jsonl": {
+      "sha256": "4d074feb74e70e99ce4b98ec35f90448eb3ea73021cb4e0d6c10c59be48574cc",
+      "complete_prompt_substring_hits": [],
+      "whole_record_exact_hits": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_GENERATION.jsonl": {
+      "sha256": "0fe8e604b04ce0275549d25578ce6acf47e48966ec00187a2b649b478633218a",
+      "complete_prompt_substring_hits": [],
+      "whole_record_exact_hits": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_INSTRUCTIONS.jsonl": {
+      "sha256": "06760c86216738a6da09090d8a65c10692f35ebc32682d5b037891977fde6127",
+      "complete_prompt_substring_hits": [],
+      "whole_record_exact_hits": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_CONTINUITY.jsonl": {
+      "sha256": "f7eafe912eaa7dc4a1f2b1a469dda53b8d12a2dad85183dac8f374fa6829eddd",
+      "complete_prompt_substring_hits": [],
+      "whole_record_exact_hits": []
+    }
+  },
+  "limits": "Known familiar vocabulary; full prompts distinct from allowlisted sources. Constituent facts, semantics, and templates can overlap; no unseen-vocabulary/general-transfer claim. FINAL excluded."
+}

@@ -1,0 +1,10 @@
+{
+  "otherwise": "MIXED_OR_UNRESOLVED",
+  "partial_widening_rationale": "12 surface exact and 8 order exact each strictly exceed the best frozen SF11 u100 values (11 and7), while the inherited +4/+4 own-baseline development-gain requirement prevents a favorable starting point from qualifying alone.",
+  "priority1": "INCONCLUSIVE_EARLY_STOP if any run lacks a scientific classification due to mechanical/integrity failure",
+  "priority2": "RETENTION_REGRESSION if any run fails TRAIN16, language, or either binding pool at a required checkpoint",
+  "priority3": "ANSWER_VOCAB_RETENTION_SUPPORTED_FULL_ENDPOINT if >=2/3 runs reach u200 and pass every frozen endpoint gate",
+  "priority4": "ANSWER_VOCAB_RETENTION_WEAKENED if D3 exceeds .01 in >=2/3 runs",
+  "priority5": "ANSWER_VOCAB_RETENTION_SUPPORTED_PARTIAL_WIDENING if >=2/3 runs reach u200 with D3/TRAIN16/language/binding green, SF11 development gain, DEV_SURFACE exact>=12 and DEV_ORDER exact>=8",
+  "priority6": "WIDENING_STALLED_UNDER_RETENTION if >=2/3 runs reach u200 with D3/TRAIN16/language/binding green but fewer than2 meet partial-widening criteria"
+}

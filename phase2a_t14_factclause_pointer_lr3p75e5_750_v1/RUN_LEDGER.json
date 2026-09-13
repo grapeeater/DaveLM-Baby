@@ -1,0 +1,95 @@
+{
+  "status": "STUDY_COMPLETE",
+  "study": "BABY_VNEXT_PHASE2A_T14_FACTCLAUSE_POINTER_LR3P75E5_750_V1",
+  "seeds": [
+    730001,
+    730002,
+    730003
+  ],
+  "runs": {
+    "730001": {
+      "seed": 730001,
+      "update": 750,
+      "classification": "T14_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 110,
+      "dev_native": 87,
+      "dev_exact": 0,
+      "dev_ce": 1.2756845101714134,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "3fa689ebb1297906090d297a7cb9eacd4a7dd66ae90fd04fd756e79d62175429",
+      "u750_checkpoint_sha256": "08c88bed576b5055c2baa21d7072a6d4fe075136bdcbcd3cf6131e2463969368"
+    },
+    "730002": {
+      "seed": 730002,
+      "update": 750,
+      "classification": "T14_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 112,
+      "dev_native": 93,
+      "dev_exact": 0,
+      "dev_ce": 1.275934948027134,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "9ad4935d30c8062c171aa4ed17a92c3fcd5b9cbf068696595a22f4063641475c",
+      "u750_checkpoint_sha256": "f1c81818cd9c5a2de40f8303c1826022e7e4cf1f102a8a31a89c70b94ead246b"
+    },
+    "730003": {
+      "seed": 730003,
+      "update": 750,
+      "classification": "T14_LANGUAGE_REGRESSION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 107,
+      "dev_native": 73,
+      "dev_exact": 0,
+      "dev_ce": 1.275593389570713,
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "u500_checkpoint_sha256": "72d1df4b623f8b6fd1f916567161bb28bd19f4a212c33dc23bc1fa283895c89f",
+      "u750_checkpoint_sha256": "f8312207ef18bb4aac6c9ef3d7ca66a87396a57c893f2aa149d23e31506190a7"
+    }
+  },
+  "test_opened": false,
+  "t3_test_loaded": false,
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "scope": {
+    "trainable": 40849664,
+    "frozen": 20670721
+  },
+  "pointer_keys": "fact_clause_name_through_period_token_18",
+  "language_mix": "9_qa_1_lang",
+  "lr": 3.75e-05,
+  "total_updates": 750,
+  "failed_returncode": null,
+  "study_classification": "T14_FAIL_NO_REPRESENTATION",
+  "next_treatment": "phase2a_t14x_latebase_decomp_v1",
+  "watchdog_note": "14592 hung after 730003 FINAL; classification from FINALs + study rule"
+}

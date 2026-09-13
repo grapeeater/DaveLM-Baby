@@ -1,0 +1,68 @@
+[
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1\\CONTROLLER.py",
+      "--seed",
+      "87029",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T17:05:35.136904+00:00",
+    "parent_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d",
+    "pid": 30604,
+    "returncode": 0,
+    "seed": 87029,
+    "start": "2026-09-08T17:02:54.187812+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1\\CONTROLLER.py",
+      "--seed",
+      "87030",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T17:08:12.128387+00:00",
+    "parent_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102",
+    "pid": 17256,
+    "returncode": 0,
+    "seed": 87030,
+    "start": "2026-09-08T17:05:35.219824+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  },
+  {
+    "command": [
+      "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+      "-B",
+      "C:\\DaveLM-CADAVER\\sf12_answer_vocab_retention_v1\\CONTROLLER.py",
+      "--seed",
+      "87031",
+      "--arm",
+      "curriculum",
+      "--mode",
+      "train"
+    ],
+    "completed": 100,
+    "end": "2026-09-08T17:10:51.293586+00:00",
+    "parent_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517",
+    "pid": 30184,
+    "returncode": 0,
+    "seed": 87031,
+    "start": "2026-09-08T17:08:12.207955+00:00",
+    "state": "CLASSIFIED",
+    "status": "STOP_REGRESSION"
+  }
+]

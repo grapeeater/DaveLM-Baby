@@ -1,0 +1,15 @@
+{
+  "status": "STOP_REGRESSION",
+  "bundle_receipt": "45d6a1ae10dc37f6fe3dad8d48dbdc71fe9bd48b763f02d77687918cf6c4b5d1",
+  "manifest": "1d4730548d06319c0b9d09ac95e9fb8729aca5786d7377005187deae21729a7f",
+  "report": "098f0fadc9bccec62d8e2e1dad9ebeb1719029afc60301bfa3e08a3f2c9b7e32",
+  "checkpoints": {
+    "100": {
+      "path": "C:\\DaveLM-CADAVER\\single_fact_acquisition_sf1_seed87011_run\\checkpoint_100.pt",
+      "sha256": "550ce4306b450c2bdb64e57314e45ec7db5bb2ee68fc0978ed9d3617f4fc1e7e"
+    }
+  },
+  "parent_unchanged": true,
+  "final_access": false,
+  "sacred_access": false
+}

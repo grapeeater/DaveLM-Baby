@@ -1,0 +1,138 @@
+{
+  "format": "preflight-payload-manifest-v1",
+  "status": "CAUSAL_ALIGNMENT_PREFLIGHT_PASS_NO_TRAINING",
+  "bundle": "C:\\DaveLM-CADAVER\\human_readiness_hr1_causal_aligned_seed87006_v1",
+  "file_count": 26,
+  "files": [
+    {
+      "path": "checks/ALIGNMENT_SANITY.json",
+      "sha256": "a036b378bfa20758f53cfd3cbdd126c1da35b27453dcfd3b421bea11ede6946b",
+      "bytes": 659
+    },
+    {
+      "path": "checks/OBJECTIVE_EQUIVALENCE.json",
+      "sha256": "e13caf34ebd37cbb841ce934c4d4bd94a1d14a0601a895313f1b2aac7154c73f",
+      "bytes": 361
+    },
+    {
+      "path": "checks/PREFLIGHT_VALIDATE_OUTPUT.json",
+      "sha256": "4e48650d4d62098bfa583c6bfff12b470c2d25a4c7fe4f510051b9b7f443b909",
+      "bytes": 4042
+    },
+    {
+      "path": "checks/PROVENANCE_WRITE_OUTPUT.json",
+      "sha256": "9029664dfa5e22d30c5051f60766272f8f99f77b4def0d03a76da01ad0bfcc1b",
+      "bytes": 6564
+    },
+    {
+      "path": "CORRECTION_DIFF.md",
+      "sha256": "cbaefcc880037c1191532ae3948a026bf32f5a4f4387010851c7a51addf5ab97",
+      "bytes": 3197
+    },
+    {
+      "path": "data/binding_dev_pilot0.json",
+      "sha256": "30bfbcbe1b11d3d2d427a631562f43b24dbb97f6e595164516d40553792edc4e",
+      "bytes": 252683
+    },
+    {
+      "path": "data/binding_dev_pilot1.json",
+      "sha256": "3b6774b2cadeb7818d59c8a4f4f0b69b2cd85744efce91af562d9bd6f2a54ea1",
+      "bytes": 252824
+    },
+    {
+      "path": "data/binding_rehearsal.json",
+      "sha256": "a47be70021468f6dc3d6bccc2646c993be96a0cd8ea8d0703972440bd9dc3558",
+      "bytes": 1017158
+    },
+    {
+      "path": "data/BINDING_SCHEDULE.json",
+      "sha256": "9f582ec2e5a7d7e7b2de9bebf28d36e46b5f2cf67aa95356755eafb24647797d",
+      "bytes": 82183
+    },
+    {
+      "path": "data/CORPUS_MANIFEST.json",
+      "sha256": "03b251542818cb436290d7de7690f25978d4f518350d8f6736c1b8ccd64c0708",
+      "bytes": 2314
+    },
+    {
+      "path": "data/ENGLISH_DEV.jsonl",
+      "sha256": "2053a8036d7d0f02ba56ab28f739df95a1743760d0f8c980e112d6667b38104e",
+      "bytes": 3310121
+    },
+    {
+      "path": "data/ENGLISH_SCHEDULE.json",
+      "sha256": "3651905febb0ea46409bbfdc6709476ae068badc0773e2f5c7d962950a6864c0",
+      "bytes": 1118634
+    },
+    {
+      "path": "data/ENGLISH_TRAIN.jsonl",
+      "sha256": "31617e7062ee0246b0a2e8a05d74bb568ee15ecdad43c92b18d0bc6f2a982f43",
+      "bytes": 30855743
+    },
+    {
+      "path": "data/PILOT1_MATERIAL_MANIFEST.json",
+      "sha256": "83c2eef6260bf616be61d88f144eb2e823bba11353a69fba663d8e288361f5e2",
+      "bytes": 2530
+    },
+    {
+      "path": "data/PILOT1_TRAINING_SPEC.json",
+      "sha256": "0f731ffde8dcd924e174a3b0b910d125311651b682bef5c6e80107606a18c680",
+      "bytes": 1460
+    },
+    {
+      "path": "HR1_CAUSAL_ALIGNED_PROTOCOL.json",
+      "sha256": "55bcd999987613df835754bd5865c2676fe13fbd1d7d482f7afe5866775d34f5",
+      "bytes": 6130
+    },
+    {
+      "path": "PREFLIGHT.json",
+      "sha256": "174305685e4c6c607976a9477ed316774fd3cc5be897cdf37b04c26703513db7",
+      "bytes": 4040
+    },
+    {
+      "path": "PREFLIGHT_REPORT.md",
+      "sha256": "b22c1030dfd78760877a6f612f36d4f94ac54711ea84d411abdcbf8ad7ac41f2",
+      "bytes": 6313
+    },
+    {
+      "path": "PREFLIGHT_VALIDATE.py",
+      "sha256": "778958b710355d6ab0f4d64cbd4494436fc7014077d3bae1a93c2191e9794345",
+      "bytes": 9458
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "3991f06ceb0280132ec732ae957089c4465f9812de0571cefb1c20e83175a2b8",
+      "bytes": 4128
+    },
+    {
+      "path": "PROVENANCE.json",
+      "sha256": "600375a6b7a7ac239e56e505cf59ab2501724de482940bc0fac22a3f9936b4b4",
+      "bytes": 6562
+    },
+    {
+      "path": "sources/CAUSAL_ALIGNED_TRAIN_REAL.py",
+      "sha256": "cae950446c1fa0aae0a57982149b7127d3225f2916494d51903672b2bf8e0acd",
+      "bytes": 6886
+    },
+    {
+      "path": "sources/CAUSAL_ALIGNMENT.py",
+      "sha256": "619ba8c6ba1de080539bfd30afaf92ceffb49650ead9da9eedc1d074d11ac46d",
+      "bytes": 1588
+    },
+    {
+      "path": "sources/PINNED_PILOT1_BINDING_IMPLEMENTATION.py",
+      "sha256": "5a29ef7f4e96dde93e2feb8199669cb4f69d86609081334ad40a99159e7feda5",
+      "bytes": 17005
+    },
+    {
+      "path": "sources/treatment13_model.py",
+      "sha256": "b7eea7b14c0193ce701e0be1d4f52a58ec48c99557e163e4d48068db1d12fc70",
+      "bytes": 5995
+    },
+    {
+      "path": "WRITE_PROVENANCE.py",
+      "sha256": "548482d1c01a7216d8f6b1f4550de8e9b9f712c067f7a7c0a932d6f31bc1b967",
+      "bytes": 4522
+    }
+  ]
+}

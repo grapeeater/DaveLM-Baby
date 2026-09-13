@@ -1,0 +1,16 @@
+{
+  "status": "BABY_VNEXT_PHASE1_LANGUAGE_READY_TO_TRAIN",
+  "study": "BABY_VNEXT_PHASE1_LANGUAGE_V1",
+  "manifest_sha256": "2f61f4449f42adbee6b7380800d55204a8237032f21354d8b35c25ba3c02edc6",
+  "payload_files": 25,
+  "phase1_config_sha256": "2ab6362a7df137102a20e21d8d18186f88218230a1eeb8f3b832eea3e8a0645b",
+  "initialized_checkpoint_sha256": "039e8efe7353d5065c06c2519053695e5944d58eeee2765594a8dfadb80d821c",
+  "training_schedule_sha256": "26312bc306b6b79f6181693deb9f9d13085c956ae596f135ef5676f637a2c301",
+  "architecture_receipt_sha256": "776859cb1bf671634ae2d7e8dfab7f7cb8e517ce802d30d3cb3733b6b734b368",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "primary_seed": 610001,
+  "optimizer_created_during_preflight": false,
+  "optimizer_steps": 0,
+  "training_performed": false,
+  "integrity_design": "FREEZE_RECEIPT.sha256 -> FREEZE_RECEIPT.json -> SHA256SUMS.txt -> immutable payload"
+}

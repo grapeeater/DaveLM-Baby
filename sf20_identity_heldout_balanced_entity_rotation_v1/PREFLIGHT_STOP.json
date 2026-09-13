@@ -1,0 +1,64 @@
+{
+  "study": "SF20_IDENTITY_HELDOUT_BALANCED_ENTITY_ROTATION_V1",
+  "created_utc": "2026-09-09T04:24:14.1443834Z",
+  "status": "SF20_PRESEAL_HARD_STOP_TOKENIZER_ELIGIBILITY",
+  "failed_requirement": "The widening curriculum requires 16 new defensible person names that are each one tokenizer token at sentence-start and answer boundaries.",
+  "observed": {
+    "required_names": 16,
+    "eligible_common_person_names": 0,
+    "capitalized_alphabetic_single_vocab_tokens": 17,
+    "defensible_person_names_among_those_tokens": 0,
+    "original_four_are_single_tokens": false
+  },
+  "authoritative_inputs": {
+    "tokenizer": {
+      "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+    },
+    "sf13_controller": {
+      "path": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\CONTROLLER.py",
+      "sha256": "e360848014f7cd05a8900f3fcf42f469acbf4928ba44ef7c2cb0d500863dfa05"
+    },
+    "sf11_curriculum_via_sf13": {
+      "path": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\TRAIN.json",
+      "sha256": "523dbf5e325c55e6208559a2125919902572523f050d5c4da2cf14bf8898fc82"
+    },
+    "sf13_schedule": {
+      "path": "C:\\DaveLM-CADAVER\\sf13_broad_coverage_kl_retention_v1\\SCHEDULE.json",
+      "sha256": "19041e6e8563b13aede5ce007bb6dda190f5bd8e21b12dc77759d98a6e81aa7d"
+    },
+    "parents": [
+      {
+        "sf8_seed": 87017,
+        "sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d"
+      },
+      {
+        "sf8_seed": 87018,
+        "sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102"
+      },
+      {
+        "sf8_seed": 87019,
+        "sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"
+      }
+    ]
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1"
+  },
+  "actions_not_performed": {
+    "checkpoint_loaded": true,
+    "optimizer_created": true,
+    "training_updates": true,
+    "model_inference": true,
+    "evaluation_panel_scoring": true,
+    "locked_transfer_scoring": true,
+    "final_or_sacred_access": true,
+    "treatment_dataset_materialized": true,
+    "treatment_sealed": true
+  },
+  "required_resolution": "A new scientific decision is required: authorize deterministic multi-token names and their boundary/length rules, or change the tokenizer/identity definition. The current SF20 specification cannot be implemented literally.",
+  "seed_mapping": "NOT_ASSIGNED_BECAUSE_PREFLIGHT_FAILED",
+  "training_launch": "NOT_AUTHORIZED_AND_NOT_AVAILABLE"
+}

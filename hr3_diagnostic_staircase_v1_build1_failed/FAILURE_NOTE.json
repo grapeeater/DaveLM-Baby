@@ -1,0 +1,8 @@
+{
+  "status": "PRESERVED_PREINFERENCE_BUILD_STOP",
+  "cause": "An overstrict substring nonoverlap assertion rejected 12 single-fact prompts appearing as suffixes of existing two-fact items. No complete-record equality was found.",
+  "resolution": "Before inference, distinguish and report substring overlap versus whole-record equality. Retain every item unchanged, and make no fresh-transfer claim.",
+  "checkpoint_loaded": false,
+  "optimizer_created": false,
+  "behavioral_inference": false
+}

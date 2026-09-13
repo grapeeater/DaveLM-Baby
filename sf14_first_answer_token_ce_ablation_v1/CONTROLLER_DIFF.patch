@@ -1,0 +1,67 @@
+--- SF13/CONTROLLER.py
++++ SF14/CONTROLLER.py
+@@ -38,11 +38,27 @@
+     return torch.stack(gaps).mean()
+ 
+ 
++
++NAME_TOKEN_IDS = (314, 536, 925, 512)
++
++
++def mask_first_answer_ce_labels(labels, ids_in_batch, idx):
++    """Mask only the first response/name target; preserve later response and EOS CE."""
++    masked = labels.clone()
++    for k, rid in enumerate(ids_in_batch):
++        r = idx[rid]
++        pos = len(r['prompt_token_ids'])  # label aligned to final prompt-token logit
++        expected = r['candidate_token_ids'][r['correct_index']][0]
++        assert expected in NAME_TOKEN_IDS
++        assert int(masked[k, pos]) == expected
++        masked[k, pos] = -100
++    return masked
++
+ def verify(sealed=True):
+     if sealed:
+         assert sha(H / 'FREEZE_RECEIPT.json') == (H / 'FREEZE_RECEIPT.sha256').read_text().split()[0]
+         receipt = read(H / 'FREEZE_RECEIPT.json')
+-        assert receipt['status'] == 'SF13_PROSPECTIVE_PREFLIGHT_PASS'
++        assert receipt['status'] == 'SF14_PROSPECTIVE_PREFLIGHT_PASS'
+         assert sha(H / 'SHA256SUMS.txt') == receipt['manifest_sha256']
+         for line in (H / 'SHA256SUMS.txt').read_text().splitlines():
+             h, n = line.split('  ', 1)
+@@ -161,14 +177,15 @@
+     schedule, items, idx, train16, dev_surface, dev_order, pool, kl, oldproto = load_inputs()
+     rt.configure_runtime(a.seed)
+     if a.mode == 'preload':
+-        print('SF13_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
++        print('SF14_PRE_PARENT_LOAD_PASS', a.seed, flush=True); return
+     out = H / 'runs' / f'seed_{a.seed}_curriculum'
+     out.mkdir(parents=True, exist_ok=True)
+     provenance = {'parent_checkpoint': run['parent_checkpoint'], 'parent_checkpoint_sha256': run['parent_checkpoint_sha256'],
+                   'protocol': sha(H / 'PROTOCOL.json'), 'receipt': sha(H / 'FREEZE_RECEIPT.json'),
+                   'schedule': sha(H / 'SCHEDULE.json'), 'curriculum': sha(H / 'TRAIN.json'),
+                   'controller': sha(Path(__file__)), 'seed': a.seed, 'arm': a.arm,
+-                  'kl_pool': sha(H / 'KL_POOL.json'), 'margin_M': MARGIN_M, 'lambda_margin': LAMBDA_MARGIN}
++                  'kl_pool': sha(H / 'KL_POOL.json'), 'margin_M': MARGIN_M, 'lambda_margin': LAMBDA_MARGIN,
++                  'first_answer_token_ce_weight': 0.0, 'later_response_ce_weight': 1.0}
+     pp = out / 'PROVENANCE.json'
+     if pp.exists(): assert read(pp) == provenance
+     else: rt.atomic_json(provenance, pp)
+@@ -255,6 +272,8 @@
+             m.train()
+             batch = [idx[i] for i in u['ids']]
+             x, y = E.pad_batch(batch, u['pad'])
++            y = mask_first_answer_ce_labels(y, u['ids'], idx)
++            assert int((y != -100).sum()) == len(u['ids']) * 4
+             x = x.to(device); y = y.to(device)
+             logits = m.base_model(x)
+             ce = F.cross_entropy(logits.reshape(-1, 1024), y.reshape(-1), ignore_index=-100)
+@@ -278,7 +297,7 @@
+             for k, v in st.items(): assert torch.equal(now[k], v) if torch.is_tensor(v) else now[k] == v
+         number = u['update']
+         rec = {'update': number, 'kind': u['kind'], 'lr': 5e-5, 'loss': float(loss.detach()), 'grad_norm': float(norm)}
+-        if ce is not None: rec.update(ce=float(ce.detach()), kl=float(kl_val.detach()), shard=u.get('shard'))
++        if ce is not None: rec.update(ce=float(ce.detach()), kl=float(kl_val.detach()), shard=u.get('shard'), first_answer_ce_masked=len(u['ids']), ce_supervised_tokens=len(u['ids'])*4)
+         if margin_loss is not None: rec.update(margin_loss=float(margin_loss.detach()))
+         commit(number, rec); append_metric(out, rec)
+         if number % 25 == 0: print('COMMITTED', a.seed, number, flush=True)

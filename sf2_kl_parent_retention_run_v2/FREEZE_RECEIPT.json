@@ -1,0 +1,8 @@
+﻿{
+    "manifest_sha256":  "68530f5cff861b5aa0ab25a556d5bc0241e32aa6a8384a3174a67b8c12852557",
+    "note":  "Do not modify any listed file after this receipt. Changes require a new freeze.",
+    "frozen_at":  "2026-09-07T01:07:30.1366522-04:00",
+    "file_count":  11,
+    "status":  "SF2_FROZEN_PRE_RUN",
+    "run_id":  "sf2_kl_parent_retention_run_v2"
+}

@@ -1,0 +1,53 @@
+{
+  "criterion": "first post-prompt sentence complete and absent as exact corpus substring",
+  "rows": [
+    {
+      "prompt": "Once upon a time, there was a little girl named Zoe.",
+      "first_sentence": "She loved to play outside in the sunshine.",
+      "exact_corpus_substring": true,
+      "complete": true
+    },
+    {
+      "prompt": "Once upon a time, there was a little boy named Alex.",
+      "first_sentence": "He loved to play outside in the sun.",
+      "exact_corpus_substring": true,
+      "complete": true
+    },
+    {
+      "prompt": "A cat found a blue ball.",
+      "first_sentence": "It was a big, blue ball.",
+      "exact_corpus_substring": false,
+      "complete": true
+    },
+    {
+      "prompt": "A dog found a red hat.",
+      "first_sentence": "He was very excited.",
+      "exact_corpus_substring": true,
+      "complete": true
+    },
+    {
+      "prompt": "Mia went to the park with her mother.",
+      "first_sentence": "She saw a big box with a big box.",
+      "exact_corpus_substring": false,
+      "complete": true
+    },
+    {
+      "prompt": "Leo saw a bird in the yard.",
+      "first_sentence": "He was very excited.",
+      "exact_corpus_substring": true,
+      "complete": true
+    },
+    {
+      "prompt": "The little girl dropped her book.",
+      "first_sentence": "She was so excited to go to the park.",
+      "exact_corpus_substring": false,
+      "complete": true
+    },
+    {
+      "prompt": "Sam was sad because his toy broke.",
+      "first_sentence": "He had a big box of toys.",
+      "exact_corpus_substring": false,
+      "complete": true
+    }
+  ]
+}

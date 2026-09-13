@@ -1,0 +1,24 @@
+{
+  "experiment": "treatment13_learned_mapping_row_localization_seed8380",
+  "status": "complete",
+  "seed": 8380,
+  "steps": 1000,
+  "files": {
+    "treatment13_preflight_result.json": "fc04b9c375a649c59be45dd7499fd3608e21a0a6867de50e2fa0d2f4c2928a8c",
+    "treatment13_training_quartet_pool.json": "40d78c450f2335aa155031a612d5b8e3311de2071cc5feb97fb430bc67f84df3",
+    "treatment13_retention_quartet_pool.json": "29dc566e90df7c9a592014d1d0cf60dd5da654d570096c96d0c7287bcd5f9072",
+    "treatment13_frozen_schedule.json": "6157dce61d990b2d96ef91470a80a973bd5e96339d406bceb9fdc75e020cea42",
+    "treatment13_final_retention_audit.json": "ad9e14e8687b1139150f5de9762dc6accc8d2c9ab412ea1d1a387e2f5731c91f",
+    "treatment13_training_metrics.jsonl": "5fbc9856de4f4e2708eb067a42e2ba0b244cfbdbe84d912998f973553e31c9e8",
+    "treatment13_training_result.json": "5e2f515bdc08d00080d626f54c2054353f25d1789d57a41666f6d8cc9feb5af7",
+    "checkpoints/learned_mapping_row_localization/seed_8380/latest.pt": "cf53eef03adf874255cd54508fc7948dfd1e4926a57537f7e2f828f5f582adab"
+  },
+  "protected_t12_files_verified_unchanged": [
+    "treatment12_model.py",
+    "treatment12_train.py",
+    "treatment12_final_retention_audit.py"
+  ],
+  "gpu": "AMD Radeon RX 9060 XT",
+  "optimizer_steps": 1000,
+  "t14_started": false
+}

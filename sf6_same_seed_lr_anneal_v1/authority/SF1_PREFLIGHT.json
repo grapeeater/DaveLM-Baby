@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "counts": {
+    "TRAIN": 16,
+    "HELDOUT": 16,
+    "ALTERNATE": 48,
+    "COPY": 8,
+    "COMPETING": 64
+  },
+  "max_completed_tokens": 50,
+  "all_prompt_unique": 152,
+  "independent_semantics": "PASS",
+  "negative": {
+    "wrong_key": "REJECTED",
+    "wrong_predicate": "REJECTED",
+    "wrong_object": "REJECTED",
+    "extra_claim": "REJECTED"
+  },
+  "actor_correct_counts": {
+    "TRAIN": {
+      " Alex.": 4,
+      " Owen.": 4,
+      " Mia.": 4,
+      " Nora.": 4
+    },
+    "HELDOUT": {
+      " Alex.": 4,
+      " Owen.": 4,
+      " Mia.": 4,
+      " Nora.": 4
+    },
+    "ALTERNATE": {
+      " Alex.": 12,
+      " Owen.": 12,
+      " Mia.": 12,
+      " Nora.": 12
+    },
+    "COPY": {
+      " Alex.": 2,
+      " Owen.": 2,
+      " Mia.": 2,
+      " Nora.": 2
+    },
+    "COMPETING": {
+      " Alex.": 16,
+      " Owen.": 16,
+      " Mia.": 16,
+      " Nora.": 16
+    }
+  },
+  "actor_object_disjoint": true,
+  "overlap": {
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_train.jsonl": {
+      "sha256": "450f78bdb437bde98f9a1ff48364b835df517b7d8e24a4f52256c114fa34c41c",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\language_dev.jsonl": {
+      "sha256": "deff4fc7ed18e6e1f0b6f32faccc80f1eb44d0e58f3f38d512ffdfab798d6ac4",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\fact_supervision_87001_corrected_v8\\ITEMS.jsonl": {
+      "sha256": "2dab70739e9c0ffe1ad3154076ec613a10a4964fa1138e9c7b40d8a5e55f518d",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\hr3_diagnostic_staircase_v1\\SINGLE_FACT_ITEMS.json": {
+      "sha256": "01147a60b333693c745fdeb9f4d2aff5ce05530bc385f7cf28f67444a9a239a0",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_FACTS.jsonl": {
+      "sha256": "4d074feb74e70e99ce4b98ec35f90448eb3ea73021cb4e0d6c10c59be48574cc",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_GENERATION.jsonl": {
+      "sha256": "0fe8e604b04ce0275549d25578ce6acf47e48966ec00187a2b649b478633218a",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_INSTRUCTIONS.jsonl": {
+      "sha256": "06760c86216738a6da09090d8a65c10692f35ebc32682d5b037891977fde6127",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    },
+    "C:\\DaveLM-CADAVER\\human_test_readiness_v2_seed87010\\DEV_CONTINUITY.jsonl": {
+      "sha256": "f7eafe912eaa7dc4a1f2b1a469dda53b8d12a2dad85183dac8f374fa6829eddd",
+      "whole_prompt_exact": [],
+      "whole_prompt_substring": []
+    }
+  },
+  "mechanical": {
+    "schedule": 200,
+    "english_batches": 180,
+    "binding_batches": 20,
+    "masking": "PASS",
+    "alignment": "PASS",
+    "scope_mock": "PASS",
+    "atomic_restart": "PASS",
+    "optimizer_created": false,
+    "model_loaded": false
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.12.0+rocm7.14.0",
+    "tokenizers": "0.23.1",
+    "gpu": "AMD Radeon RX 9060 XT"
+  },
+  "parent_loaded": false,
+  "optimizer_created": false
+}

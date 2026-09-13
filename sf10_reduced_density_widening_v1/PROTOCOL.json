@@ -1,0 +1,71 @@
+{
+  "study": "SF10_REDUCED_DENSITY_WIDENING_V1",
+  "created_utc": "2026-09-08T08:00:00.000000+00:00",
+  "hypothesis": "SF9 combined curriculum widening with much greater name-bearing exposure (144 items/English update, ~4.5x SF8's 32/update); behavioral widening occurred (DEV_SURFACE exact 3->8-9/16, DEV_ORDER exact 2->7-10/16) and D3 rose above the frozen 0.01 ceiling in all three runs by update 100. This study does NOT claim density caused the pollution; it tests the narrower, direct hypothesis that reducing name-bearing exposure toward the historically-tolerated SF8 magnitude allows the SAME widening lesson to continue while D3 stays inside the frozen gate.",
+  "manipulated_variable": "REDUCED NAME-BEARING CURRICULUM EXPOSURE ONLY. Same SF9 curriculum content (144 items, verbatim, same ids/prompts/tokenizations), same lambda_margin=0.25/M=1.0, same KL/binding/scope/optimizer/LR. The only change: each English update now trains a deterministic 36-item balanced shard (1 of 4) instead of all 144 items, cycled shard 0,1,2,3,... across the 180 English updates so the full curriculum is covered every 4 updates (45 full rotations total).",
+  "exposure_comparison": {
+    "SF8": {"per_update_batch": 32, "unique_items": 16, "english_updates": 180, "total_presentations": 5760, "per_item_exposure": 360},
+    "SF9": {"per_update_batch": 144, "unique_items": 144, "english_updates": 180, "total_presentations": 25920, "per_item_exposure": 180},
+    "SF10": {"per_update_batch": 36, "unique_items": 144, "english_updates": 180, "total_presentations": 6480, "per_item_exposure": 45},
+    "rationale": "SF10's per-update batch (36) is chosen to sit close to SF8's known-safe per-update batch (32, ~1.125x), the single most directly comparable exposure metric, while preserving full SF9 curriculum breadth via a fixed balanced rotation. This is a ~4x reduction from SF9 in both per-update density and cumulative per-item exposure. The value was fixed by the curriculum's own structure (144/4=36 exact balanced shards) before any run, not tuned to a target."
+  },
+  "parent_rule": "Three fresh independent continuations, one per SF8 lambda=0.25 u200 checkpoint, by fixed preregistered seed mapping. NOT continued from the D3-polluted SF9 checkpoints. Fresh optimizer per run (no SF8 or SF9 optimizer state carried).",
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runs": [
+    {"seed": 87023, "arm": "curriculum", "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt", "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d"},
+    {"seed": 87024, "arm": "curriculum", "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt", "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102"},
+    {"seed": 87025, "arm": "curriculum", "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt", "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"}
+  ],
+  "seeds": [87023, 87024, 87025],
+  "seed_note": "Fresh seeds (not SF9's 87020-87022) to avoid any ambiguity with the D3-polluted SF9 continuations; same SF8 parent checkpoints as SF9 used, mapped in the same order.",
+  "runtime": {
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "python": "3.12.14", "torch": "2.12.0+rocm7.14.0", "tokenizers": "0.23.1",
+    "float32": true, "autocast": false, "tf32": false, "deterministic_algorithms": true
+  },
+  "margin": {"lambda_margin": 0.25, "M": 1.0, "note": "unchanged from SF8/SF9; hinge on first-answer name token only, full-vocab log-softmax, mean over the 36 sequences in the update's shard"},
+  "curriculum": {
+    "source": "SF9 TRAIN.json content reused VERBATIM (same 144 items; CURRICULUM.py asserts byte-identical fields except the added 'shard' tag). No redesign of what Baby is taught.",
+    "shard_assignment": "Deterministic, derived only from existing structural identifiers (TRAIN16 pair_id; new-item group+verb+objectkey). Never derived from any observed outcome. 4 shards x 36 items, each shard balanced: name-answer frequency 9/9/9/9, each surface form 4 items, each order:query subgroup 4 items.",
+    "schedule": "English updates cycle shard 0,1,2,3,0,1,... (180 updates = 45 full rotations); binding entries (10,20,...,200) reused verbatim from SF9/SF8/SF1."
+  },
+  "optimizer": {"type": "AdamW", "lr": 5e-05, "betas": [0.9, 0.999], "eps": 1e-08, "weight_decay": 0.05, "amsgrad": false, "foreach": false, "fused": false, "gradient_clip": 2.0, "state": "fresh optimizer per run"},
+  "english_objective": "factual full-vocab CE over answer+EOS (mean supervised tokens, 36-item shard) + lambda=1.0 D_KL(student||Pilot1) over 160 frozen positions + lambda_margin=0.25 * mean(max(0, M - gap)) on first-answer name token. Identical formula to SF8/SF9.",
+  "kl_data": "unchanged KL_POOL.json 165363 positions/741 rows, 160 per English index 1..180",
+  "binding": "unchanged pinned answer CE + 1.0536573711078283 hard-min localization; both nonsacred DEV pools",
+  "scope": "unchanged PINNED_MASKING.set_scope (English = all base_model params except blocks0-3; binding = all)",
+  "evaluation_updates": [0, 100, 200],
+  "evaluation": "at each update: TRAIN16_RETENTION.json (original 16-item acquisition panel, reused verbatim), DEV_SURFACE.json and DEV_ORDER.json (SF9's NEW development panels, reused verbatim and explicitly treated as HISTORICAL DEVELOPMENT RULERS whose results were already observed once in SF9 - not pristine unseen holdouts), language, D3, both binding pools. Frozen SF1 transfer panels (HELDOUT/ALTERNATE/COPY/COMPETING) are NOT evaluated during training; a single preregistered post-treatment re-evaluation MAY be performed after SF10's classification is frozen, and its result will never be used to adapt SF10.",
+  "gates": {
+    "retention_acquisition": "TRAIN16 panel: correct==16 AND exact==16 AND reversals==8 AND families==4 (unchanged acquisition gate; must be preserved)",
+    "dev_surface": "DEV_SURFACE: forced-choice correct>=15/16 AND greedy exact>=13/16",
+    "dev_order": "DEV_ORDER: greedy exact>=13/16 AND fact-query exact>=7/8 AND copy-query exact>=7/8",
+    "language": "CE <= own update0 CE + .25",
+    "d3": "four-name mass <= .01",
+    "binding_each_pool": "answer>=76, BD>=76, collapse==0",
+    "continue": "retention_acquisition AND language AND d3 AND binding pass at 100/200; regression stop otherwise",
+    "endpoint_pass": "update 200 AND continue AND dev_surface AND dev_order"
+  },
+  "gates_unchanged_confirmation": "Verified byte-for-byte against sf9_surface_order_curriculum_v1/PROTOCOL.json gates block before writing this file. No threshold moved.",
+  "stopping": "No rescue. No density change mid-run. No example addition. Each run stops at 200 or on a frozen 100/200 regression. Other independent runs continue after any one run's stop.",
+  "mechanical_hygiene": [
+    "Runs are launched exactly once each, sequentially, in the foreground (no detached/background process ambiguity as occurred in SF9).",
+    "An explicit run ledger (seed, PID/tool-call, start/end, outcome) is kept in the final report.",
+    "REPORTER.py is written and smoke-tested against a synthetic no-training fixture BEFORE sealing, and is verified compatible with the actual update0-only baseline artifacts (no update0_GATES.json is produced by the controller; REPORTER does not require it).",
+    "REPORTER.py is never modified after SEAL."
+  ],
+  "transfer": "HELDOUT/ALTERNATE/COPY/COMPETING remain LOCKED during training. FINAL/sacred never accessed.",
+  "numerical_uncertainty": "N=3 independent parent replications; no population claim.",
+  "study_interpretation": {
+    "DENSITY_HYPOTHESIS_SUPPORTED": ">=2 of 3 runs reach u200 with D3<=.01 throughout AND make further widening progress versus SF9 (dev_surface/dev_order exact strictly greater than SF9's observed 8-9/16 and 7-10/16 respectively at the same update), regardless of whether the full endpoint_pass gate is met",
+    "DENSITY_HYPOTHESIS_SUPPORTED_FULL_ENDPOINT": ">=2 of 3 runs reach u200 and satisfy the complete endpoint_pass gate",
+    "DENSITY_HYPOTHESIS_WEAKENED": "D3 again exceeds .01 in >=2 of 3 runs despite reduced exposure",
+    "DENSITY_HYPOTHESIS_UNRESOLVED_WIDENING_STALLED": "D3 stays <=.01 but dev_surface/dev_order show no material improvement over parent baseline",
+    "RETENTION_REGRESSION": "priority if TRAIN16/language/binding regress in >=1 run",
+    "INCONCLUSIVE_EARLY_STOP": "priority if a mechanical failure (not a scientific gate) halts a run"
+  },
+  "history": "SF1-SF9 classifications unchanged and unmodified. SF9 remains sealed; its D3-polluted checkpoints are not reused as parents here."
+}

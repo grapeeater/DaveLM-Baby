@@ -1,0 +1,722 @@
+{
+  "PPP": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 3.4495489121945866,
+        "mean_probability": 0.05809028360514157,
+        "mean_rank": 55.52734375,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 3.22891596298723,
+        "mean_probability": 0.027744616939235023,
+        "mean_rank": 56.796875,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 1.8596740993816638,
+        "mean_probability": 0.017768624124339993,
+        "mean_rank": 100.83984375,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -3.0239358373291907,
+        "mean_probability": 3.89882810044595e-05,
+        "mean_rank": 540.60546875,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -4.129042186948936,
+        "mean_probability": 5.001852444314059e-06,
+        "mean_rank": 754.578125,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -3.631730289402185,
+        "mean_probability": 0.00010736047348969269,
+        "mean_rank": 674.046875,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -4.11874737861217,
+        "mean_probability": 0.00010572642040886787,
+        "mean_rank": 756.3046875,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 2.659860989340814,
+        "mean_probability": 0.024510392270556736,
+        "mean_rank": 64.671875,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 9.971145752118993e-05,
+    "mean_entropy": 3.0031634081387892,
+    "mean_eos_probability": 0.00021999144354202527,
+    "mean_four_name_probability": 0.0009072396332621135,
+    "mean_mia_nora_probability": 0.0008075281649082555,
+    "mean_true_next_probability": 0.14008497568366618,
+    "mean_true_next_rank": 20.61328125,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": -2.0188092093158048,
+        "mean_probability": 8.197742296583987e-05,
+        "mean_rank": 438.03125
+      },
+      "Mia": {
+        "mean_logit": -0.4245219900549273,
+        "mean_probability": 0.0007759885133244993,
+        "mean_rank": 269.07421875
+      },
+      "Nora": {
+        "mean_logit": -2.486526052802219,
+        "mean_probability": 3.153965035201933e-05,
+        "mean_rank": 487.3359375
+      },
+      "Owen": {
+        "mean_logit": -2.7484041502757464,
+        "mean_probability": 1.7734034872096682e-05,
+        "mean_rank": 518.5546875
+      }
+    }
+  },
+  "PPS": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 3.6191028270986862,
+        "mean_probability": 0.08569718523942504,
+        "mean_rank": 49.15625,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 3.1477600003636326,
+        "mean_probability": 0.02789918274394232,
+        "mean_rank": 52.15234375,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 1.689521443004196,
+        "mean_probability": 0.017027761712604672,
+        "mean_rank": 98.328125,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -3.1551468356046826,
+        "mean_probability": 4.054541477660489e-05,
+        "mean_rank": 539.11328125,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -4.250566104310565,
+        "mean_probability": 5.402927177128314e-06,
+        "mean_rank": 751.35546875,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -3.753786634741118,
+        "mean_probability": 0.00011255789376379832,
+        "mean_rank": 670.703125,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -4.224283930670936,
+        "mean_probability": 0.00011006342204251951,
+        "mean_rank": 754.125,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 2.464677588795894,
+        "mean_probability": 0.02311179241589656,
+        "mean_rank": 63.26953125,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.0001824026244348076,
+    "mean_entropy": 2.9343328970717266,
+    "mean_eos_probability": 0.00042378028720577166,
+    "mean_four_name_probability": 0.0017859636500272558,
+    "mean_mia_nora_probability": 0.0016035610091322816,
+    "mean_true_next_probability": 0.14252567016168793,
+    "mean_true_next_rank": 20.78125,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": -1.9226894211606123,
+        "mean_probability": 0.0001530575988958338,
+        "mean_rank": 417.60546875
+      },
+      "Mia": {
+        "mean_logit": -0.30707565079501364,
+        "mean_probability": 0.0015473993507035266,
+        "mean_rank": 257.19140625
+      },
+      "Nora": {
+        "mean_logit": -2.3635415372846182,
+        "mean_probability": 5.616165576138865e-05,
+        "mean_rank": 460.0078125
+      },
+      "Owen": {
+        "mean_logit": -2.6380463286768645,
+        "mean_probability": 2.9345024693427924e-05,
+        "mean_rank": 490.984375
+      }
+    }
+  },
+  "PSP": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 3.465535575436661,
+        "mean_probability": 0.05873426447927521,
+        "mean_rank": 55.30078125,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 3.2362139890319668,
+        "mean_probability": 0.027785087634701888,
+        "mean_rank": 56.765625,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 1.857346821896499,
+        "mean_probability": 0.01773391557509285,
+        "mean_rank": 101.19921875,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -3.0289806296277675,
+        "mean_probability": 3.8580242210151106e-05,
+        "mean_rank": 541.30078125,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -4.131514596825582,
+        "mean_probability": 4.9474619139566745e-06,
+        "mean_rank": 754.5234375,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -3.6356768289697357,
+        "mean_probability": 0.00010671315739738119,
+        "mean_rank": 674.23046875,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -4.1248981947719585,
+        "mean_probability": 0.00010501511208799164,
+        "mean_rank": 756.703125,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 2.659370344495983,
+        "mean_probability": 0.02447541569831202,
+        "mean_rank": 64.8671875,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.00010031877795313449,
+    "mean_entropy": 2.997003334807232,
+    "mean_eos_probability": 0.00022369629238518096,
+    "mean_four_name_probability": 0.0009136896654129423,
+    "mean_mia_nora_probability": 0.0008133708792934513,
+    "mean_true_next_probability": 0.1403799949619131,
+    "mean_true_next_rank": 20.625,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": -2.0084929672884755,
+        "mean_probability": 8.245022402325608e-05,
+        "mean_rank": 436.47265625
+      },
+      "Mia": {
+        "mean_logit": -0.41430623788619414,
+        "mean_probability": 0.0007816318298302094,
+        "mean_rank": 268.0625
+      },
+      "Nora": {
+        "mean_logit": -2.4755667336139595,
+        "mean_probability": 3.17390551595742e-05,
+        "mean_rank": 485.43359375
+      },
+      "Owen": {
+        "mean_logit": -2.7351264491153415,
+        "mean_probability": 1.7868553953859223e-05,
+        "mean_rank": 516.0546875
+      }
+    }
+  },
+  "PSS": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 3.636089432358858,
+        "mean_probability": 0.08662751390106749,
+        "mean_rank": 48.97265625,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 3.153774463447917,
+        "mean_probability": 0.027923342528698214,
+        "mean_rank": 52.12890625,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 1.6862175533897243,
+        "mean_probability": 0.01698988342369745,
+        "mean_rank": 98.58984375,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -3.1617865459411405,
+        "mean_probability": 4.010375994489834e-05,
+        "mean_rank": 539.5703125,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -4.254647843292332,
+        "mean_probability": 5.340262082986769e-06,
+        "mean_rank": 751.2109375,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -3.759456692758249,
+        "mean_probability": 0.00011184265235530955,
+        "mean_rank": 670.9765625,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -4.232214365416439,
+        "mean_probability": 0.00010927916401170384,
+        "mean_rank": 754.50390625,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 2.4629888450726867,
+        "mean_probability": 0.02307077222449294,
+        "mean_rank": 63.484375,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.00018414096393870594,
+    "mean_entropy": 2.9268240452511236,
+    "mean_eos_probability": 0.0004319278968577256,
+    "mean_four_name_probability": 0.0018049946814744366,
+    "mean_mia_nora_probability": 0.0016208536969515297,
+    "mean_true_next_probability": 0.14283514573841138,
+    "mean_true_next_rank": 20.78125,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": -1.910941174312029,
+        "mean_probability": 0.00015446947259034616,
+        "mean_rank": 415.65625
+      },
+      "Mia": {
+        "mean_logit": -0.29546798863157164,
+        "mean_probability": 0.0015641343429328436,
+        "mean_rank": 255.93359375
+      },
+      "Nora": {
+        "mean_logit": -2.351201427401975,
+        "mean_probability": 5.6719351434031395e-05,
+        "mean_rank": 457.95703125
+      },
+      "Owen": {
+        "mean_logit": -2.6230945885472465,
+        "mean_probability": 2.9671491651950266e-05,
+        "mean_rank": 488.03125
+      }
+    }
+  },
+  "SPP": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 5.075057184556499,
+        "mean_probability": 0.19024675516749667,
+        "mean_rank": 32.03515625,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 3.1688876146363327,
+        "mean_probability": 0.014497769847854336,
+        "mean_rank": 58.4609375,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 0.9779219333868241,
+        "mean_probability": 0.003051092190825777,
+        "mean_rank": 222.76953125,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -1.6025446301791817,
+        "mean_probability": 0.0001629963757788233,
+        "mean_rank": 525.77734375,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -1.908745349617675,
+        "mean_probability": 9.811940860926516e-05,
+        "mean_rank": 585.0,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -1.1949913555872627,
+        "mean_probability": 0.00036711553555340837,
+        "mean_rank": 463.46484375,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -1.2964712661778321,
+        "mean_probability": 0.0004109234130172945,
+        "mean_rank": 504.125,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 2.3246621041325852,
+        "mean_probability": 0.016685522913549633,
+        "mean_rank": 117.68359375,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.011967436120627895,
+    "mean_entropy": 2.9685409511148464,
+    "mean_eos_probability": 0.0028144886362960753,
+    "mean_four_name_probability": 0.036394350289342015,
+    "mean_mia_nora_probability": 0.024426913851877785,
+    "mean_true_next_probability": 0.08011895040516492,
+    "mean_true_next_rank": 29.87890625,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": 1.8463202150014695,
+        "mean_probability": 0.00792343738086343,
+        "mean_rank": 122.31640625
+      },
+      "Mia": {
+        "mean_logit": 2.7900269135425333,
+        "mean_probability": 0.017927817693157877,
+        "mean_rank": 72.27734375
+      },
+      "Nora": {
+        "mean_logit": 1.6410147195419995,
+        "mean_probability": 0.006499096372929003,
+        "mean_rank": 141.86328125
+      },
+      "Owen": {
+        "mean_logit": 1.6781097779239644,
+        "mean_probability": 0.00404399875197603,
+        "mean_rank": 123.29296875
+      }
+    }
+  },
+  "SPS": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 5.365577490410942,
+        "mean_probability": 0.2333190101565954,
+        "mean_rank": 23.9296875,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 2.8741209793661255,
+        "mean_probability": 0.010434348164984897,
+        "mean_rank": 53.19921875,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 0.6779617494612467,
+        "mean_probability": 0.001941937883487732,
+        "mean_rank": 198.58203125,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -1.9905596354801673,
+        "mean_probability": 0.00012657243910860205,
+        "mean_rank": 510.40625,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -2.288380268466426,
+        "mean_probability": 7.353138485913235e-05,
+        "mean_rank": 566.6875,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -1.608895953715546,
+        "mean_probability": 0.00029557391987679316,
+        "mean_rank": 454.765625,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -1.7222906613897067,
+        "mean_probability": 0.00031953530722436674,
+        "mean_rank": 497.20703125,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 1.9695726275385823,
+        "mean_probability": 0.011854940481882181,
+        "mean_rank": 105.2734375,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.022127483340407927,
+    "mean_entropy": 2.5038418402400566,
+    "mean_eos_probability": 0.004545865442829089,
+    "mean_four_name_probability": 0.0672855288456411,
+    "mean_mia_nora_probability": 0.04515804583935612,
+    "mean_true_next_probability": 0.07930651925651588,
+    "mean_true_next_rank": 29.5546875,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": 2.1581695947243134,
+        "mean_probability": 0.014281267165392686,
+        "mean_rank": 91.69921875
+      },
+      "Mia": {
+        "mean_logit": 3.118092187709408,
+        "mean_probability": 0.03365043449633198,
+        "mean_rank": 52.9609375
+      },
+      "Nora": {
+        "mean_logit": 1.9675267175480258,
+        "mean_probability": 0.011507611390374706,
+        "mean_rank": 106.38671875
+      },
+      "Owen": {
+        "mean_logit": 2.0462246839815634,
+        "mean_probability": 0.007846216195252831,
+        "mean_rank": 89.84375
+      }
+    }
+  },
+  "SSP": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 5.095197636343073,
+        "mean_probability": 0.19136737778745783,
+        "mean_rank": 31.88671875,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 3.177951356585254,
+        "mean_probability": 0.014461263313223505,
+        "mean_rank": 58.3515625,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 0.9723294708528556,
+        "mean_probability": 0.0030074203688066348,
+        "mean_rank": 223.83984375,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -1.6064191237237537,
+        "mean_probability": 0.0001614119719084428,
+        "mean_rank": 526.30859375,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -1.9089341594808502,
+        "mean_probability": 9.739784998252787e-05,
+        "mean_rank": 584.76171875,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -1.1955293278879253,
+        "mean_probability": 0.00036479592957452955,
+        "mean_rank": 463.46484375,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -1.2982227301690727,
+        "mean_probability": 0.0004081590508056565,
+        "mean_rank": 504.40234375,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 2.3220142493664753,
+        "mean_probability": 0.016585770698370084,
+        "mean_rank": 118.37109375,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.012080212824296055,
+    "mean_entropy": 2.956157938519027,
+    "mean_eos_probability": 0.002855395921445958,
+    "mean_four_name_probability": 0.03670657907445474,
+    "mean_mia_nora_probability": 0.024626366420100965,
+    "mean_true_next_probability": 0.08025291577428106,
+    "mean_true_next_rank": 29.9375,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": 1.8638330411486095,
+        "mean_probability": 0.007989173044747666,
+        "mean_rank": 121.4609375
+      },
+      "Mia": {
+        "mean_logit": 2.8066614307754207,
+        "mean_probability": 0.018061797891260056,
+        "mean_rank": 71.8359375
+      },
+      "Nora": {
+        "mean_logit": 1.659515252460551,
+        "mean_probability": 0.006564568579768615,
+        "mean_rank": 140.80078125
+      },
+      "Owen": {
+        "mean_logit": 1.6987375230091857,
+        "mean_probability": 0.004091039717379008,
+        "mean_rank": 122.26171875
+      }
+    }
+  },
+  "SSS": {
+    "controls": {
+      "18": {
+        "group": "common",
+        "mean_logit": 5.38706175313564,
+        "mean_probability": 0.23433622097149964,
+        "mean_rank": 23.76171875,
+        "text": "."
+      },
+      "225": {
+        "group": "common",
+        "mean_logit": 2.8812892712739995,
+        "mean_probability": 0.01037353442369593,
+        "mean_rank": 53.1484375,
+        "text": " "
+      },
+      "278": {
+        "group": "common",
+        "mean_logit": 0.671059982443694,
+        "mean_probability": 0.001906172299773523,
+        "mean_rank": 199.5234375,
+        "text": "ed"
+      },
+      "39": {
+        "group": "rare",
+        "mean_logit": -1.9967174109478947,
+        "mean_probability": 0.00012500521642602735,
+        "mean_rank": 510.84765625,
+        "text": "C"
+      },
+      "42": {
+        "group": "rare",
+        "mean_logit": -2.2908874539571116,
+        "mean_probability": 7.276053490692935e-05,
+        "mean_rank": 566.2109375,
+        "text": "F"
+      },
+      "43": {
+        "group": "rare",
+        "mean_logit": -1.6119087053230032,
+        "mean_probability": 0.00029307944260624497,
+        "mean_rank": 454.7421875,
+        "text": "G"
+      },
+      "61": {
+        "group": "rare",
+        "mean_logit": -1.7266236167342868,
+        "mean_probability": 0.0003166513655149805,
+        "mean_rank": 497.42578125,
+        "text": "Y"
+      },
+      "93": {
+        "group": "common",
+        "mean_logit": 1.9653526171459816,
+        "mean_probability": 0.011749953096373389,
+        "mean_rank": 105.8359375,
+        "text": "y"
+      }
+    },
+    "mean_alex_owen_probability": 0.022329528006246768,
+    "mean_entropy": 2.4907115147216246,
+    "mean_eos_probability": 0.004604457070790546,
+    "mean_four_name_probability": 0.06783318697198659,
+    "mean_mia_nora_probability": 0.045503658706845584,
+    "mean_true_next_probability": 0.07938238554854493,
+    "mean_true_next_rank": 29.578125,
+    "n": 256,
+    "names": {
+      "Alex": {
+        "mean_logit": 2.1778061658114893,
+        "mean_probability": 0.014389962530898526,
+        "mean_rank": 90.88671875
+      },
+      "Mia": {
+        "mean_logit": 3.1368318331078626,
+        "mean_probability": 0.033888738761236326,
+        "mean_rank": 52.54296875
+      },
+      "Nora": {
+        "mean_logit": 1.9880830119363964,
+        "mean_probability": 0.01161492009994669,
+        "mean_rank": 105.5
+      },
+      "Owen": {
+        "mean_logit": 2.0693097290568403,
+        "mean_probability": 0.007939565539010651,
+        "mean_rank": 88.96484375
+      }
+    }
+  }
+}

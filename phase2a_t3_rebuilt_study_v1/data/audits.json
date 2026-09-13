@@ -1,0 +1,189 @@
+{
+  "train": {
+    "n_rows": 384,
+    "n_families": 48,
+    "expected_families": 48,
+    "assign_flip_pairs": 192,
+    "ci_balance": {
+      "0": 192,
+      "1": 192
+    },
+    "order_balance": {
+      "0": 192,
+      "1": 192
+    },
+    "query_balance": {
+      "0": 192,
+      "1": 192
+    },
+    "name_balance": {
+      "Bea": 24,
+      "Gia": 24,
+      "Gus": 24,
+      "Helen": 24,
+      "Hope": 24,
+      "Ida": 24,
+      "Jan": 24,
+      "Lois": 24,
+      "Marie": 24,
+      "Mark": 24,
+      "Roy": 24,
+      "Ruth": 24,
+      "Seth": 24,
+      "Vic": 24,
+      "Walt": 24,
+      "York": 24
+    },
+    "templates": [
+      "active",
+      "passive"
+    ],
+    "names": [
+      "Bea",
+      "Gia",
+      "Gus",
+      "Helen",
+      "Hope",
+      "Ida",
+      "Jan",
+      "Lois",
+      "Marie",
+      "Mark",
+      "Roy",
+      "Ruth",
+      "Seth",
+      "Vic",
+      "Walt",
+      "York"
+    ]
+  },
+  "dev": {
+    "n_rows": 128,
+    "n_families": 16,
+    "expected_families": 16,
+    "assign_flip_pairs": 64,
+    "ci_balance": {
+      "0": 64,
+      "1": 64
+    },
+    "order_balance": {
+      "0": 64,
+      "1": 64
+    },
+    "query_balance": {
+      "0": 64,
+      "1": 64
+    },
+    "name_balance": {
+      "Ava": 16,
+      "Mel": 16,
+      "Omar": 16,
+      "Opal": 16,
+      "Ross": 16,
+      "Sal": 16,
+      "Skye": 16,
+      "Wes": 16
+    },
+    "templates": [
+      "active",
+      "locative",
+      "owns",
+      "passive"
+    ],
+    "names": [
+      "Ava",
+      "Mel",
+      "Omar",
+      "Opal",
+      "Ross",
+      "Sal",
+      "Skye",
+      "Wes"
+    ]
+  },
+  "test": {
+    "n_rows": 128,
+    "n_families": 16,
+    "expected_families": 16,
+    "assign_flip_pairs": 64,
+    "ci_balance": {
+      "0": 64,
+      "1": 64
+    },
+    "order_balance": {
+      "0": 64,
+      "1": 64
+    },
+    "query_balance": {
+      "0": 64,
+      "1": 64
+    },
+    "name_balance": {
+      "Dan": 16,
+      "Deb": 16,
+      "Earl": 16,
+      "Eli": 16,
+      "Jen": 16,
+      "Olive": 16,
+      "Vince": 16,
+      "Will": 16
+    },
+    "templates": [
+      "active",
+      "locative",
+      "owns",
+      "passive"
+    ],
+    "names": [
+      "Dan",
+      "Deb",
+      "Earl",
+      "Eli",
+      "Jen",
+      "Olive",
+      "Vince",
+      "Will"
+    ]
+  },
+  "name_disjoint": true,
+  "train_names": [
+    "Bea",
+    "Gia",
+    "Gus",
+    "Helen",
+    "Hope",
+    "Ida",
+    "Jan",
+    "Lois",
+    "Marie",
+    "Mark",
+    "Roy",
+    "Ruth",
+    "Seth",
+    "Vic",
+    "Walt",
+    "York"
+  ],
+  "dev_names": [
+    "Ava",
+    "Mel",
+    "Omar",
+    "Opal",
+    "Ross",
+    "Sal",
+    "Skye",
+    "Wes"
+  ],
+  "test_names": [
+    "Dan",
+    "Deb",
+    "Earl",
+    "Eli",
+    "Jen",
+    "Olive",
+    "Vince",
+    "Will"
+  ],
+  "eligible_count": 97,
+  "prompt_overlap": false
+}

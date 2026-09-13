@@ -1,0 +1,1501 @@
+{
+  "all_positions_upstream_forensic": {
+    "checks": [
+      {
+        "condition": "after_block_4_attention_residual__S_into_P__all_positions__P_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_4_attention_residual__S_to_P__P_output"
+      },
+      {
+        "condition": "after_block_4_attention_residual__S_into_P__all_positions__S_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_4_attention_residual__S_to_P__S_output"
+      },
+      {
+        "condition": "after_block_4_attention_residual__P_into_S__all_positions__S_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_4_attention_residual__P_to_S__S_output"
+      },
+      {
+        "condition": "after_block_4_attention_residual__P_into_S__all_positions__P_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_4_attention_residual__P_to_S__P_output"
+      },
+      {
+        "condition": "after_block_4_mlp_residual__S_into_P__all_positions__P_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_4_mlp_residual__S_to_P__P_output"
+      },
+      {
+        "condition": "after_block_4_mlp_residual__S_into_P__all_positions__S_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_4_mlp_residual__S_to_P__S_output"
+      },
+      {
+        "condition": "after_block_4_mlp_residual__P_into_S__all_positions__S_output",
+        "max_aggregate_error": 2.384185791015625e-07,
+        "upstream_condition": "after_block_4_mlp_residual__P_to_S__S_output"
+      },
+      {
+        "condition": "after_block_4_mlp_residual__P_into_S__all_positions__P_output",
+        "max_aggregate_error": 1.7881393432617188e-07,
+        "upstream_condition": "after_block_4_mlp_residual__P_to_S__P_output"
+      },
+      {
+        "condition": "after_block_5_attention_residual__S_into_P__all_positions__P_output",
+        "max_aggregate_error": 5.960464477539063e-08,
+        "upstream_condition": "after_block_5_attention_residual__S_to_P__P_output"
+      },
+      {
+        "condition": "after_block_5_attention_residual__S_into_P__all_positions__S_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_5_attention_residual__S_to_P__S_output"
+      },
+      {
+        "condition": "after_block_5_attention_residual__P_into_S__all_positions__S_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_5_attention_residual__P_to_S__S_output"
+      },
+      {
+        "condition": "after_block_5_attention_residual__P_into_S__all_positions__P_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_5_attention_residual__P_to_S__P_output"
+      },
+      {
+        "condition": "after_block_5_mlp_residual__S_into_P__all_positions__P_output",
+        "max_aggregate_error": 5.960464477539063e-08,
+        "upstream_condition": "after_block_5_mlp_residual__S_to_P__P_output"
+      },
+      {
+        "condition": "after_block_5_mlp_residual__S_into_P__all_positions__S_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_5_mlp_residual__S_to_P__S_output"
+      },
+      {
+        "condition": "after_block_5_mlp_residual__P_into_S__all_positions__S_output",
+        "max_aggregate_error": 5.960464477539063e-08,
+        "upstream_condition": "after_block_5_mlp_residual__P_to_S__S_output"
+      },
+      {
+        "condition": "after_block_5_mlp_residual__P_into_S__all_positions__P_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_5_mlp_residual__P_to_S__P_output"
+      },
+      {
+        "condition": "after_block_7_attention_residual__S_into_P__all_positions__P_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_7_attention_residual__S_to_P__P_output"
+      },
+      {
+        "condition": "after_block_7_attention_residual__S_into_P__all_positions__S_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_7_attention_residual__S_to_P__S_output"
+      },
+      {
+        "condition": "after_block_7_attention_residual__P_into_S__all_positions__S_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_7_attention_residual__P_to_S__S_output"
+      },
+      {
+        "condition": "after_block_7_attention_residual__P_into_S__all_positions__P_output",
+        "max_aggregate_error": 5.960464477539063e-08,
+        "upstream_condition": "after_block_7_attention_residual__P_to_S__P_output"
+      },
+      {
+        "condition": "after_block_7_mlp_residual__S_into_P__all_positions__P_output",
+        "max_aggregate_error": 0.0,
+        "upstream_condition": "after_block_7_mlp_residual__S_to_P__P_output"
+      },
+      {
+        "condition": "after_block_7_mlp_residual__S_into_P__all_positions__S_output",
+        "max_aggregate_error": 1.1920928955078125e-07,
+        "upstream_condition": "after_block_7_mlp_residual__S_to_P__S_output"
+      },
+      {
+        "condition": "after_block_7_mlp_residual__P_into_S__all_positions__S_output",
+        "max_aggregate_error": 5.960464477539063e-08,
+        "upstream_condition": "after_block_7_mlp_residual__P_to_S__S_output"
+      },
+      {
+        "condition": "after_block_7_mlp_residual__P_into_S__all_positions__P_output",
+        "max_aggregate_error": 5.960464477539063e-08,
+        "upstream_condition": "after_block_7_mlp_residual__P_to_S__P_output"
+      }
+    ],
+    "max_aggregate_error": 2.384185791015625e-07,
+    "pass": true,
+    "tolerance": 1e-05
+  },
+  "native_prior": {
+    "errors": {
+      "native_P": {
+        "d3_mass": 0.0,
+        "factual_margin": 0.0,
+        "factual_owen": 0.0,
+        "language_ce": 5.960464477539063e-08,
+        "max_abs_error": 5.960464477539063e-08
+      },
+      "native_S": {
+        "d3_mass": 0.0,
+        "factual_margin": 0.0,
+        "factual_owen": 0.0,
+        "language_ce": 1.1920928955078125e-07,
+        "max_abs_error": 1.1920928955078125e-07
+      }
+    },
+    "pass": true,
+    "tolerance": 1e-05
+  },
+  "pass": true,
+  "same_source": {
+    "checks": [
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_4_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_5_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_attention_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_attention_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_mlp_residual",
+        "source": "P"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_subject",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "factual_object_first",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "queried_object_repeat",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "object_all_mentions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "predicate_relation",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "remaining_prompt_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_nonfinal_context",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "answer_generation_path",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "factual",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "final_predictive",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_prior_context",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "D3",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      },
+      {
+        "group": "all_positions",
+        "max_abs_error": 0.0,
+        "panel": "language",
+        "site": "after_block_7_mlp_residual",
+        "source": "S"
+      }
+    ],
+    "max_abs_logit_error": 0.0,
+    "pass": true,
+    "tolerance": 1e-06
+  }
+}

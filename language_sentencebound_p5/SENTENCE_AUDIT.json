@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "prompt": "The little girl was happy because",
+      "response": "she had a great time.",
+      "exact_response_in_corpus": true,
+      "response_len_words": 5
+    },
+    {
+      "prompt": "The dog found a red ball and",
+      "response": "a ball.",
+      "exact_response_in_corpus": true,
+      "response_len_words": 2
+    },
+    {
+      "prompt": "One day, the boy went to the park and",
+      "response": "saw a big dog.",
+      "exact_response_in_corpus": true,
+      "response_len_words": 4
+    },
+    {
+      "prompt": "Mia was sad, but",
+      "response": "she didn't know what to do.",
+      "exact_response_in_corpus": true,
+      "response_len_words": 6
+    },
+    {
+      "prompt": "The cat saw a bird and",
+      "response": "wanted to help the bird.",
+      "exact_response_in_corpus": true,
+      "response_len_words": 5
+    }
+  ],
+  "criterion": "complete post-prompt response, exact-corpus overlap checked"
+}

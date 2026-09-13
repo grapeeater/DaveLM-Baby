@@ -1,0 +1,154 @@
+{
+ "status": "TREATMENT11_PREFLIGHT_PASS",
+ "experiment": "treatment11_answer_only_strict_counterfactual_binding",
+ "train_pool_sha256": "8f5d60de10fe2fdc8e772a9c1fc3e9f07861edd1583d7c413a095c2f55c6903c",
+ "retention_pool_sha256": "c341d7308b145bd3c633b62d56e01391f4b05635bfcf2edfb146bcd9f2de4e69",
+ "schedule_sha256": "f784cce5ddc6da9cc2b0a8e3a05194b55ae657ba95879ee15015e7320af6092b",
+ "start_checkpoint": {
+  "path": "C:\\DaveLM-v0.9\\experiments\\minimal_contextual_binding\\checkpoints\\treatment_one_mapping\\seed_8380\\latest.pt",
+  "expected_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e",
+  "observed_sha256": "345984c52a06db5f988aaf4cd47963eea0e9d77489cee94dbb10816af2f5443e"
+ },
+ "objective": {
+  "type": "answer_only_causal_cross_entropy",
+  "supervised_answer_decisions_per_document": 1,
+  "supervised_answer_decisions_per_step": 32,
+  "other_supervised_positions_per_step": 0
+ },
+ "train": {
+  "quartets": 200,
+  "documents": 800,
+  "orientation_counts": {
+   "1": 400,
+   "2": 400
+  },
+  "query_slot_counts": {
+   "0": 400,
+   "1": 400
+  },
+  "per_query_identity": [
+   {
+    "query_key_token": 428,
+    "query_word": "event",
+    "documents": 160,
+    "target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    }
+   },
+   {
+    "query_key_token": 779,
+    "query_word": "background",
+    "documents": 160,
+    "target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    }
+   },
+   {
+    "query_key_token": 900,
+    "query_word": "groups",
+    "documents": 160,
+    "target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    }
+   },
+   {
+    "query_key_token": 974,
+    "query_word": "num",
+    "documents": 160,
+    "target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    }
+   },
+   {
+    "query_key_token": 1004,
+    "query_word": "several",
+    "documents": 160,
+    "target_values": [
+     583,
+     778,
+     788,
+     959,
+     1002
+    ],
+    "query_slots": [
+     0,
+     1
+    ],
+    "orientation_counts": {
+     "1": 80,
+     "2": 80
+    }
+   }
+  ]
+ },
+ "retention": {
+  "quartets": 40,
+  "documents": 160,
+  "orientation_counts": {
+   "1": 80,
+   "2": 80
+  },
+  "query_slot_counts": {
+   "0": 80,
+   "1": 80
+  },
+  "training_overlap": 0
+ },
+ "schedule": {
+  "steps": 1000,
+  "batch_size": 32,
+  "quartets_per_step": 8,
+  "presentations_per_quartet": 40,
+  "answer_decisions": 32000
+ },
+ "anti_shortcut_contract_passed": true,
+ "behavioral_inputs_used": false
+}

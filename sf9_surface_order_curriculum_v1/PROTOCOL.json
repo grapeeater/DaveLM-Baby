@@ -1,0 +1,63 @@
+{
+  "study": "SF9_SURFACE_ORDER_CURRICULUM_V1",
+  "created_utc": "2026-09-08T07:10:00.000000+00:00",
+  "hypothesis": "Baby's acquired factual-selection rule is template-scoped (SF8 transfer: replicated HELDOUT recombination but surface/order/interface-limited). Widening the curriculum to present the SAME underlying selection rule across alternate surface forms and competing-information orders, while preserving the lambda=0.25 margin recipe, should make the capability robust to wording and order without sacrificing the earned acquisition or retention.",
+  "manipulated_variable": "CURRICULUM BREADTH ONLY. Same underlying factual-selection rule is now supervised across new clean examples in 4 surface forms (cloze, active_qa, passive_cloze, passive_qa) and 2 competing-information orders x 2 query types (fact/copy). Architecture, margin dose (lambda=0.25, M=1.0), KL dose, optimizer, scope, tokenizer, and binding are UNCHANGED from SF8. No other variable changes.",
+  "parent_rule": "Each SF9 run branches from a distinct SF8 lambda=0.25 acquisition checkpoint by fixed, preregistered seed mapping (87020<-87017_low, 87021<-87018_low, 87022<-87019_low). This is a deterministic, non-transfer-based replication rule; no transfer score was used to choose a parent. All three parents are used.",
+  "parent_anchor": "C:\\DaveLM-CADAVER\\language_pilot_1_early_block_protection_seed8380\\pilot_run\\checkpoints\\seed_8380\\latest.pt",
+  "parent_sha256": "2281d20ebd3ae9c5c7bdf8af92518e6ca50a9d777f6b336fb89891932a2a12cb",
+  "tokenizer": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "runs": [
+    {"seed": 87020, "arm": "curriculum", "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87017_low\\checkpoint_200.pt", "parent_checkpoint_sha256": "9e293af6d16cb642ba8e2bf1aeb5ad392ff4b27399ebbf0b7b8fd2ef7339b81d"},
+    {"seed": 87021, "arm": "curriculum", "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87018_low\\checkpoint_200.pt", "parent_checkpoint_sha256": "839f7f5a60b33a1736376c8a68a02985fb05ba3230e56b7aaf20d1eba5b35102"},
+    {"seed": 87022, "arm": "curriculum", "parent_checkpoint": "C:\\DaveLM-CADAVER\\sf8_margin_dose_comparison_v1\\runs\\seed_87019_low\\checkpoint_200.pt", "parent_checkpoint_sha256": "eb6a725173ff26516d876914ea4357cce7e3758616c3d659ff059d2354404517"}
+  ],
+  "seeds": [87020, 87021, 87022],
+  "runtime": {
+    "executable": "C:\\DaveLM-CADAVER\\sf2_runtime\\sf2venv\\Scripts\\python.exe",
+    "python": "3.12.14", "torch": "2.12.0+rocm7.14.0", "tokenizers": "0.23.1",
+    "float32": true, "autocast": false, "tf32": false, "deterministic_algorithms": true
+  },
+  "margin": {"lambda_margin": 0.25, "M": 1.0, "note": "unchanged SF8 winning recipe; hinge on first-answer name token only, full-vocab log-softmax, mean over the 144 curriculum sequences per English update"},
+  "curriculum": {
+    "source": "CURRICULUM.py (deterministic generator; manifest in CURRICULUM_MANIFEST.json)",
+    "total_items": 144,
+    "train16_preserved": 16,
+    "new_surface_items": 64,
+    "new_competing_items": 64,
+    "vocabulary": "NEW objects/verbs disjoint from frozen panels (tin cup/wool hat/green ball/silver bell x painted/dropped/bought/held); same four single-token names preserved for margin/D3/binding validity",
+    "balance": "correct-answer name frequency equal (32 each of Alex/Owen/Mia/Nora across new items); both directions (a0/a1), both orders, both query types balanced",
+    "disjointness": "verified in CURRICULUM.py: no new vocabulary appears in frozen HELDOUT/ALTERNATE/COPY/COMPETING prompts; no frozen object appears in new curriculum"
+  },
+  "schedule": "200 updates = 180 English + 20 binding (binding at 10,20,...,200). Each English update = all 144 curriculum items once in fixed literal order. Constant English LR 5e-5. No annealing.",
+  "optimizer": {"type": "AdamW", "lr": 5e-05, "betas": [0.9, 0.999], "eps": 1e-08, "weight_decay": 0.05, "amsgrad": false, "foreach": false, "fused": false, "gradient_clip": 2.0, "state": "one FRESH optimizer per run (parent checkpoint weights loaded; no optimizer state carried from SF8)"},
+  "english_objective": "factual full-vocab CE over answer+EOS (mean supervised tokens) + lambda=1.0 D_KL(student||Pilot1) over 160 frozen positions + lambda_margin=0.25 * mean(max(0, M - gap)) on first-answer name token. Identical to SF8 low arm. Student KL eval with gradients; teacher frozen.",
+  "kl_data": "unchanged KL_POOL.json 165363 positions/741 rows, 160 per English index 1..180",
+  "binding": "unchanged pinned answer CE + 1.0536573711078283 hard-min localization; both nonsacred DEV pools",
+  "scope": "unchanged PINNED_MASKING.set_scope (English = all base_model params except blocks0-3; binding = all)",
+  "evaluation_updates": [0, 100, 200],
+  "evaluation": "at each update: TRAIN16_RETENTION.json (original 16-item acquisition panel), DEV_SURFACE.json (16 new held-out surface facts), DEV_ORDER.json (16 new held-out competing facts), language (aligned DEV), D3 (256 positions), both binding pools. Frozen transfer panels (HELDOUT/ALTERNATE/COPY/COMPETING) are NOT evaluated during training.",
+  "gates": {
+    "retention_acquisition": "TRAIN16 panel: correct==16 AND exact==16 AND reversals==8 AND families==4 (unchanged acquisition gate; must be preserved)",
+    "dev_surface": "DEV_SURFACE: forced-choice correct>=15/16 AND greedy exact>=13/16",
+    "dev_order": "DEV_ORDER: greedy exact>=13/16 AND fact-query exact>=7/8 AND copy-query exact>=7/8",
+    "language": "CE <= own update0 CE + .25",
+    "d3": "four-name mass <= .01",
+    "binding_each_pool": "answer>=76, BD>=76, collapse==0",
+    "continue": "retention_acquisition AND language AND d3 AND binding pass at 100/200; regression stop otherwise",
+    "endpoint_pass": "update 200 AND continue AND dev_surface AND dev_order"
+  },
+  "stopping": "Each run stops at 200 or on a frozen 100/200 retention regression. No rescue, no threshold change, no example addition mid-run, no adaptive curriculum.",
+  "transfer": "HELDOUT/ALTERNATE/COPY/COMPETING remain LOCKED during training. A SINGLE sealed post-treatment read-only re-evaluation of these four frozen panels is preregistered here and will run only after all three training runs are frozen and classified; its result is not used to adapt any run.",
+  "final_sacred": "FINAL and sacred material never accessed.",
+  "numerical_uncertainty": "N=3 independent parent replications; no population claim.",
+  "study_interpretation": {
+    "CURRICULUM_WIDENING_SUCCESS": ">=2 of 3 runs reach endpoint_pass at 200 (retention + dev gates green)",
+    "PARTIAL_WIDENING": "1 of 3 runs endpoint_pass; report per-run detail",
+    "NO_WIDENING": "0 of 3 endpoint_pass; report which dev/retention gate failed",
+    "RETENTION_REGRESSION": "takes priority if any run stops on a retention gate before 200",
+    "INCONCLUSIVE_EARLY_STOP": "priority if any run halts mechanically before 200"
+  },
+  "history": "SF1-SF8 classifications unchanged and unmodified."
+}

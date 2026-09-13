@@ -1,0 +1,10 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T15X_T14_T15_LATEBASE_DRIFT_V1",
+  "status": "COMPLETE",
+  "kind": "read_only_diagnostic",
+  "scientific_question": "After T15 failed representation while holding language, do blocks 4-7 under-move vs T14, move similarly, or move in a different direction when 8-11 are frozen at Phase1G?",
+  "earned_by": "T15_FAIL_NO_REPRESENTATION 3/3 plus T14X showing 8-11 are optional at T14 inference. Qwen study D1: training scaffold vs inference circuit. Baby evidence outranks Qwen.",
+  "does_not": ["train", "load T3 TEST", "parent T14/T15", "launch T16", "modify Qwen"],
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

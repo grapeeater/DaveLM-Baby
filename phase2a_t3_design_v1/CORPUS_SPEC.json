@@ -1,0 +1,28 @@
+{
+  "audits": [
+    "balanced names",
+    "candidate positions",
+    "fact order",
+    "query source",
+    "token lengths",
+    "no slot-to-answer mapping",
+    "no obj-position shortcut"
+  ],
+  "dev": "16 family/name-disjoint families x 8 = 128 rows",
+  "forbidden": [
+    "T2-EVAL-TEST",
+    "FINAL",
+    "sacred",
+    "historical locked panels"
+  ],
+  "pairing": "name-swapped structural families; fixed candidate order; no outcome-based selection",
+  "status": "PROSPECTIVE_SPEC_NOT_MATERIALIZED",
+  "test": "16 family/name/template-disjoint families x 8 = 128 rows; score once after valid DEV terminal commit",
+  "train": "48 families x 8 variants = 384 rows; names drawn from deterministic authorized lexical allowlist after exclusion of frozen identities/panels",
+  "variants": [
+    "assignment flip",
+    "query flip",
+    "fact-order flip",
+    "four template forms"
+  ]
+}

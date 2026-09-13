@@ -1,0 +1,99 @@
+{
+  "status": "PHASE2A_U0_BASELINE_FROZEN",
+  "primary_u0": {
+    "update": 0,
+    "dev_ce": 1.2040123894810677,
+    "train_ce": 0.9477690190076828,
+    "train_dev_gap": 0.25624337047338486,
+    "dev_perplexity": 3.3334652864621144,
+    "qa_dev": {
+      "accuracy": 0.4265625,
+      "n": 640,
+      "mean_margin": -0.5128862027078867,
+      "per_level": {
+        "A": {
+          "correct": 40,
+          "n": 80,
+          "accuracy": 0.5
+        },
+        "B": {
+          "correct": 43,
+          "n": 80,
+          "accuracy": 0.5375
+        },
+        "C": {
+          "correct": 18,
+          "n": 80,
+          "accuracy": 0.225
+        },
+        "D": {
+          "correct": 59,
+          "n": 80,
+          "accuracy": 0.7375
+        },
+        "E": {
+          "correct": 23,
+          "n": 80,
+          "accuracy": 0.2875
+        },
+        "F": {
+          "correct": 46,
+          "n": 80,
+          "accuracy": 0.575
+        },
+        "G": {
+          "correct": 20,
+          "n": 80,
+          "accuracy": 0.25
+        },
+        "H": {
+          "correct": 24,
+          "n": 80,
+          "accuracy": 0.3
+        }
+      }
+    },
+    "qa_aud": {
+      "accuracy": 0.2,
+      "n": 120,
+      "mean_margin": -3.7886612017949424,
+      "per_level": {
+        "AUD": {
+          "correct": 24,
+          "n": 120,
+          "accuracy": 0.2
+        }
+      }
+    },
+    "generation": {
+      "prompts": 10,
+      "non_immediate_eos": 10,
+      "no_three_identical": 10,
+      "no_repeat_trigram": 6
+    },
+    "aggregate": {
+      "ab": 0.51875,
+      "abcde": 0.4575,
+      "overall": 0.4265625,
+      "audit": 0.2,
+      "per_level": {
+        "A": 0.5,
+        "B": 0.5375,
+        "C": 0.225,
+        "D": 0.7375,
+        "E": 0.2875,
+        "F": 0.575,
+        "G": 0.25,
+        "H": 0.3
+      }
+    },
+    "binding_intact": true
+  },
+  "scope": {
+    "trainable": 60536064,
+    "frozen": 984321
+  },
+  "optimizer_created": false,
+  "optimizer_steps": 0,
+  "training_performed": false
+}
