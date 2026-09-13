@@ -1,0 +1,9 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T25_CONTINUATION_MECHANISM_FORENSIC_V1",
+  "status": "FROZEN_READ_ONLY",
+  "question": "teacher-forced continuation vs free-running readout/EOS failure",
+  "panel": "qa_dev only",
+  "seeds": [830001, 830002, 830003],
+  "training": false,
+  "test_loaded": false
+}
