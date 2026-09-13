@@ -50,13 +50,15 @@ Scientific directory names are frozen. This is an index, not a rename map. Check
 
 Do **not** parent T14–T23 OUTPUT_FAIL checkpoints (including 820001–820003).
 
-## Phase 2A — live
+## Phase 2A — live (paused)
 
 | ID | Directory | State |
 |---|---|---|
-| T24 | `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` | **LIVE.** T18 full-span CE + train/dev name-inventory unlikelihood. Seeds 830001–830003. |
+| T24 | `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` | **PAUSED / WAIT.** All three seeds physically finished U1000 (`FINAL_STATUS` present). Watchdog 34608 already exited `STUDY_COMPLETE` 2026-09-13T12:52:23Z. Not scientifically closed. Do not resume. Do not launch T24X / T25. See `T24_PAUSE.md`. |
+| T24X | — | **Not launched.** |
+| T25 | — | **Not launched.** |
 
-Question: does inventory unlikelihood (not in-row pair) lift exact above T18 36–40 while holding language + representation ≥2/3?
+Question (do not run): does inventory unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
 
 ## Closed historical lineages (Category B/C)
 
