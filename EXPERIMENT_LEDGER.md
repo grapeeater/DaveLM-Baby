@@ -54,8 +54,8 @@ Do **not** parent T14–T23 OUTPUT_FAIL checkpoints (including 820001–820003).
 
 | ID | Directory | State |
 |---|---|---|
-| T24 | `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` | **PAUSED / WAIT.** All three seeds physically finished U1000 (`FINAL_STATUS` present). Watchdog 34608 already exited `STUDY_COMPLETE` 2026-09-13T12:52:23Z. Not scientifically closed. Do not resume. Do not launch T24X / T25. See `T24_PAUSE.md`. |
-| T24X | — | **Not launched.** |
+| T24 | `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` | **TERMINAL: `T24_REPRESENTATION_SUCCESS_OUTPUT_FAIL`.** All three seeds finished U1000. Owner released the temporary pause restriction on 2026-09-13 and authorized autonomous successor selection. Historical pause record: `T24_PAUSE.md`. |
+| T24X | `phase2a_t24x_generation_failmode_v1` | **`T24X_GENERATION_FAILMODE_COMPLETE`.** Read-only U1000 generation audit; dominant residual is first-token-correct-then-diverge (45–47/128) plus other-then-EOS (25–31/128). |
 | T25 | — | **Not launched.** |
 
 Question (do not run): does inventory unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?

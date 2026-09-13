@@ -1,0 +1,10 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T24X_GENERATION_FAILMODE_V1",
+  "status": "FROZEN_READ_ONLY",
+  "test_loaded": false,
+  "training": false,
+  "panel": "qa_dev only",
+  "source": "T24 U1000 checkpoints"
+}
+
+

@@ -1,6 +1,6 @@
 # Current state (physical)
 
-**As of 2026-09-13.** Stay in `C:\DaveLM-CADAVER`. Do not open T3 TEST. Do not lower the v1.0 bar. **T24 is PAUSED / physically quiescent. Do not resume. Do not launch T24X / T25.**
+**As of 2026-09-13.** Stay in `C:\DaveLM-CADAVER`. Do not open T3 TEST. Do not lower the v1.0 bar. T24 is terminal and adjudicated. The owner explicitly released the temporary pause restriction on 2026-09-13 and authorized autonomous successor studies. Historical pause wording is preserved in `T24_PAUSE.md`; it no longer blocks successor selection.
 
 This file matches [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOFF.md). Pause record: [`phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1/T24_PAUSE.md`](phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1/T24_PAUSE.md).
 

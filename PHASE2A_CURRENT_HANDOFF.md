@@ -27,10 +27,12 @@ TEST `SEALED_UNOPENED` (`qa_test.jsonl` SHA256 `6a36a8a482a6812e36ff24f5ce2991c1
 
 Do not parent T14–T23 OUTPUT_FAIL checkpoints (760001–820003). Do not relaunch T4–T23. Do not copy Qwen or Smol. Do not retokenize. Do not raise suffix weight or `λ_unl`. Do not reopen CE-span-count.
 
-## Live — T24 PAUSED (do not resume)
-T24 `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` is **physically quiescent**. Seeds 830001–830003 all have `FINAL_STATUS.json` at U1000 Phase B. Watchdog 34608 had already exited after `STUDY_COMPLETE` 2026-09-13T12:52:23Z. Leftover T24 cmd 1760 stopped. No T24 processes remain.
+## T24 terminal / successor authorization
+T24 `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` is **physically complete and adjudicated**. Seeds 830001–830003 all have `FINAL_STATUS.json` at U1000 Phase B. Watchdog 34608 exited after `STUDY_COMPLETE` 2026-09-13T12:52:23Z. The owner explicitly released the temporary pause restriction on 2026-09-13 and authorized autonomous successor studies. The historical pause record remains unchanged for provenance.
 
-This is **not** a scientific close-out. Do **not** adjudicate. Do **not** launch T24X / T25. Do **not** parent 830001–830003. TEST sealed.
+T24 is now scientifically classified `T24_REPRESENTATION_SUCCESS_OUTPUT_FAIL` from the three frozen final statuses. Do **not** parent 830001–830003. TEST sealed.
+
+T24X read-only generation fail-mode audit is complete at `phase2a_t24x_generation_failmode_v1`. It used only the authorized DEV panel and preserved all locks. The dominant residual is first-token-correct-then-diverge; no treatment was run.
 
 Resume artifact (last seed): `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1_run_seed830003\rolling_restart.pt` SHA256 `e00f9b625d31c9c5615d3c639422362b585c92427828c254dc639704b9a186c9` (415,491,817 bytes, `completed=1000` phase B). Pause record: `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1\T24_PAUSE.md`.
 
