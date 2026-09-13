@@ -1,6 +1,6 @@
 # Current state (physical)
 
-**As of 2026-09-13.** Stay in `C:\DaveLM-CADAVER`. Do not open T3 TEST. Do not lower the v1.0 bar. **T22 and T22X are terminal. T23 is the live train.**
+**As of 2026-09-13.** Stay in `C:\DaveLM-CADAVER`. Do not open T3 TEST. Do not lower the v1.0 bar. **T23 and T23X are terminal. T24 is the live train.**
 
 This file matches [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOFF.md).
 
@@ -14,22 +14,16 @@ This file matches [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOFF.md).
 
 ## TEST
 
-Status **`SEALED_UNOPENED`**. Seal file: `phase2a_t3_rebuilt_study_v1/data/TEST_SEAL.json`. Bytes are **not** in git.
+Status **`SEALED_UNOPENED`**. `qa_test.jsonl` SHA-256 `6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb`.
 
-`qa_test.jsonl` SHA-256 `6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb`.
+## Live — T24
 
-## Live — T23
-
-Bundle: `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1`  
-Seeds 820001–820003. T18 full-span answer CE + in-row rival unlikelihood. Detached `LAUNCH_WATCHDOG.cmd`. Do not parent T22 / 810001–810003.
-
-GitHub: https://github.com/grapeeater/DaveLM-Baby.git
+Bundle: `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1`  
+Seeds 830001–830003. T18 full-span CE + train/dev name-inventory unlikelihood (24 names; TEST never loaded). Do not parent T23 / 820001–820003.
 
 ## Closed this session
 
-- T22 `T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL` — language 3/3, representation **2/3**, exact **21/31/26**. U1000 SHA256: 810001 `22143cbf…d3d11b83`; 810002 `0115962e…b38ecf`; 810003 `ed1e6a8e…42a42aff`.
-- T22X COMPLETE. BOS 66/65/73. Leftover still T18X diverge. CE-span-count family closed.
+- T23 `T23_REPRESENTATION_SUCCESS_OUTPUT_FAIL` — language 3/3, representation **3/3**, exact **34/34/38**. U1000 SHA256: 820001 `a68ffecf…f4cb0298`; 820002 `e77468e7…4728bcf5`; 820003 `f3644a71…7be0a888`.
+- T23X COMPLETE. BOS 79/75/79. Leftover still diverge; off-row Walt/York/Sky.
 
-## Closed lines (do not relaunch / do not parent OUTPUT_FAIL)
-
-See [`EXPERIMENT_LEDGER.md`](EXPERIMENT_LEDGER.md). Headline T17–T22 as in the handoff. Do not parent T14–T22 OUTPUT_FAIL checkpoints.
+GitHub: https://github.com/grapeeater/DaveLM-Baby.git

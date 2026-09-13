@@ -9,10 +9,10 @@ Workspace root: `C:\DaveLM-CADAVER`. Do not open a different tree as the Baby wo
    - SHA-256: `6a36a8a482a6812e36ff24f5ce2991c1d3ffeb78c0a7e5a5ddefaf1f5da773cb`
    - Status: `SEALED_UNOPENED` until terminal DEV representation **and** native gates pass.
 2. **Do not lower the v1.0 / 2/3 representation bar.**
-3. **Do not parent** T14–T22 OUTPUT_FAIL checkpoints, or 730002 / 760001–810003.
+3. **Do not parent** T14–T23 OUTPUT_FAIL checkpoints, or 730002 / 760001–820003.
 4. **Do not retokenize.** Do not copy Qwen or Smol weights into this tree.
 5. **Do not reorganize** frozen experiment directory names. Preserve scientific paths.
-6. **Do not relaunch T4–T22.** CE-span-count and suffix-weight 3.0 are closed.
+6. **Do not relaunch T4–T23.** CE-span-count, suffix-weight 3.0, and in-row unlikelihood are closed.
 7. **GitHub:** may commit/push **doc-only** updates when a study is terminal. Never commit `.pt`, `*_run_seed*`, or `qa_test.jsonl`. Never force-push or skip hooks.
 
 ## Read first
@@ -29,7 +29,7 @@ SHA-256 `c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1`
 
 ## Live
 
-T23 `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1`, seeds 820001–820003. Stay until terminal, then T23X if leftover earns it.
+T24 `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1`, seeds 830001–830003. Stay until terminal, then T24X if leftover earns it.
 
 ## What belongs in git vs disk
 

@@ -1,0 +1,8 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T23X_GENERATION_FAILMODE_V1",
+  "status": "COMPLETE",
+  "scientific_question": "T23 exact 34/34/38 did not beat T18. Did in-row unlikelihood change leftover vs T18X/T22X (Walt/Seth/York diverge), or is residual the same family?",
+  "earned_by": "T23_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Exact 34/34/38. Representation 3/3.",
+  "never_load": ["qa_test.jsonl"],
+  "do_not": ["train", "parent T23 checkpoints", "unseal TEST", "retokenize", "copy Qwen or Smol", "relaunch T4-T23"]
+}

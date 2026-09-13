@@ -6,7 +6,7 @@ Authoritative live status: [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOF
 
 ## What this is
 
-Baby’s current architecture is the frozen bundle `baby_vnext_60m_design_v1` (61,520,385 params). The language parent is Phase1G U6000 `best.pt` (local-only; SHA-256 in `artifacts/LOCAL_ONLY.md`). Phase 2A treatments T3–T22 are **closed**. **T23 is live** (`phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1`, seeds 820001–820003).
+Baby’s current architecture is the frozen bundle `baby_vnext_60m_design_v1` (61,520,385 params). The language parent is Phase1G U6000 `best.pt` (local-only; SHA-256 in `artifacts/LOCAL_ONLY.md`). Phase 2A treatments T3–T23 are **closed**. **T24 is live** (`phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1`, seeds 830001–830003).
 
 The 10.6M SF1–SF21 series is closed history. Nested `DaveLM-v0.9/` is a stale snapshot; Git tracks **only** `DaveLM-v0.9/tokenizer/`.
 
@@ -30,7 +30,7 @@ Checkpoints (`*.pt` and friends), all `*_run_seed*` trees, `sf2_runtime/`, `arch
 - Architecture: `baby_vnext_60m_design_v1/`
 - Language streams / Phase1G protocol: `baby_vnext_phase1g_language_v1/`
 - Authoritative T3 corpus (train/dev/panels; TEST sealed): `phase2a_t3_rebuilt_study_v1/`
-- Live treatment: `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1/`
+- Live treatment: `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1/`
 - Tokenizer (vendored copy): `DaveLM-v0.9/tokenizer/v0_7/davelm_tokenizer.json`
 - Optional advisory (markdown only, no weights): `docs/reference/QWEN3_1P7B_BASE_REFERENCE_STUDY_V1.md`
 
@@ -38,6 +38,6 @@ Runners still hard-code `C:\DaveLM-CADAVER\...` and often `C:\DaveLM-v0.9\tokeni
 
 ## Standing prohibitions
 
-- Do not relaunch T4–T22. Do not parent T14–T22 OUTPUT_FAIL checkpoints (or 730002 / 810001–810003).
+- Do not relaunch T4–T23. Do not parent T14–T23 OUTPUT_FAIL checkpoints (or 730002 / 820001–820003).
 - Do not lower the v1.0 / 2/3 representation bar.
 - Do not retokenize. Do not copy Qwen or Smol weights into this tree.

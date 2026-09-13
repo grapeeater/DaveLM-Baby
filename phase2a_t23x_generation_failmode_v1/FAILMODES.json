@@ -1,0 +1,221 @@
+{
+  "test_loaded": false,
+  "seeds": {
+    "820001": {
+      "exact_ok": 34,
+      "generation_modes": {
+        "other_then_eos": 26,
+        "exact": 34,
+        "first_token_correct_then_diverge": 45,
+        "wrong_candidate_first_token": 11,
+        "wrong_candidate": 12
+      },
+      "first_token": {
+        "not_target_bos": 49,
+        "target_bos": 79
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI01:a0:q1:o0",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        },
+        {
+          "id": "DI01:a0:q1:o1",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        }
+      ]
+    },
+    "820002": {
+      "exact_ok": 34,
+      "generation_modes": {
+        "other_then_eos": 34,
+        "first_token_correct_then_diverge": 41,
+        "exact": 34,
+        "wrong_candidate_first_token": 11,
+        "wrong_candidate": 8
+      },
+      "first_token": {
+        "not_target_bos": 53,
+        "target_bos": 75
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q0:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " Vic."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " enjoyed enjoyed it."
+        }
+      ]
+    },
+    "820003": {
+      "exact_ok": 38,
+      "generation_modes": {
+        "other_then_eos": 28,
+        "exact": 38,
+        "first_token_correct_then_diverge": 41,
+        "wrong_candidate": 11,
+        "wrong_candidate_first_token": 10
+      },
+      "first_token": {
+        "not_target_bos": 49,
+        "target_bos": 79
+      },
+      "miss_samples": [
+        {
+          "id": "DI00:a0:q0:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a0:q1:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a0:q1:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o0",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q0:o1",
+          "correct_name": "Wes",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Wes.",
+          "gen_txt": " Walt."
+        },
+        {
+          "id": "DI00:a1:q1:o0",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI00:a1:q1:o1",
+          "correct_name": "Ava",
+          "mode": "other_then_eos",
+          "target_txt": " Ava.",
+          "gen_txt": " York."
+        },
+        {
+          "id": "DI01:a0:q1:o0",
+          "correct_name": "Skye",
+          "mode": "first_token_correct_then_diverge",
+          "target_txt": " Skye.",
+          "gen_txt": " Sky."
+        }
+      ]
+    }
+  }
+}

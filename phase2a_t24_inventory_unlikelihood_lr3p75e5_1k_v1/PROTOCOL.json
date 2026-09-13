@@ -1,0 +1,26 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T24_INVENTORY_UNLIKELIHOOD_LR3P75E5_1K_V1",
+  "status": "WATCHDOG_LAUNCHED_SEED830001",
+  "scientific_question": "T23 in-row unlikelihood left Wes→Walt, Ava→York, Skye→Sky. Walt and York are train/dev names but not in-row on those items. Does T18 full-span CE plus unlikelihood over the frozen T3 train+dev name inventory (24 names, no TEST) lift exact above T18 36-40 while holding language and representation ≥2/3?",
+  "earned_by": "T23_REPRESENTATION_SUCCESS_OUTPUT_FAIL + T23X. Exact 34/34/38. Leftover off-row (Walt/York in inventory; Sky is tokenizer collision, not a name).",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},
+  "do_not_parent": ["T14-T23 OUTPUT_FAIL", "730002", "760001-820003"],
+  "objective": {
+    "lambda_ptr": 1.0,
+    "lambda_ans": 1.0,
+    "lambda_unl": 1.0,
+    "answer_ce": "teacher-forced CE on correct candidate_token_ids + EOS; full span through the base (T18)",
+    "unlikelihood": "mean -log(1-p) over frozen train+dev name inventory tokens at the same answer offset; gold name excluded; TEST names never loaded",
+    "language": "9 qa : 1 language CE",
+    "lr": 3.75e-5
+  },
+  "seeds": [830001, 830002, 830003],
+  "schedule": {"total_updates": 1000, "eval_points": [0, 100, 300, 500, 750, 1000], "stop_seed_if_dev_ce_gt": 1.30},
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {"pointer_min": "96/128", "reversal_min": "48/64", "complete_families_min": "8/16", "name_disjoint_min": "48/64", "template_disjoint_min": "48/64"},
+    "native": {"forced_choice_min": "96/128", "reversal_min": "48/64", "exact_min": "80/128"}
+  },
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar.",
+  "locks": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

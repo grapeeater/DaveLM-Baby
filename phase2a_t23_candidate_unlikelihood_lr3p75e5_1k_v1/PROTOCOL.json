@@ -1,6 +1,6 @@
 {
   "study": "BABY_VNEXT_PHASE2A_T23_CANDIDATE_UNLIKELIHOOD_LR3P75E5_1K_V1",
-  "status": "WATCHDOG_LAUNCHED_SEED820001",
+  "status": "STUDY_COMPLETE_T23_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
   "scientific_question": "CE-span isolations are closed (T20/T21/T22/T18/T19). T22X leftover is still T18X diverge plus other_then_eos (Wes→Walt, Skye→Seth, Ava→York). Does T18 full-span through-base CE plus in-row wrong-candidate unlikelihood at aligned answer positions lift exact above T18 36-40 while holding language and representation ≥2/3?",
   "earned_by": "T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL + T22X. Exact 21/31/26. BOS 66/65/73. Leftover diverge 45/34/47 + other_then_eos. CE-span-count family closed.",
   "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"},

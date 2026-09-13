@@ -45,16 +45,18 @@ Scientific directory names are frozen. This is an index, not a rename map. Check
 | T21X | `phase2a_t21x_generation_failmode_v1` | COMPLETE | First-token BOS **79/59/72**; leftover diverge 52/30/46 + other_then_eos |
 | T22 | `phase2a_t22_firsttwo_answerce_lr3p75e5_1k_v1` | `T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL` | language 3/3, representation **2/3**, exact **21/31/26**; first-two through-base closed |
 | T22X | `phase2a_t22x_generation_failmode_v1` | COMPLETE | BOS **66/65/73**; leftover still diverge 45/34/47 + other_then_eos; CE-span family closed |
+| T23 | `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1` | `T23_REPRESENTATION_SUCCESS_OUTPUT_FAIL` | language 3/3, representation **3/3**, exact **34/34/38**; in-row unlikelihood closed |
+| T23X | `phase2a_t23x_generation_failmode_v1` | COMPLETE | BOS **79/75/79**; leftover still diverge; off-row Walt/York/Sky |
 
-Do **not** parent T14–T22 OUTPUT_FAIL checkpoints (including 810001–810003).
+Do **not** parent T14–T23 OUTPUT_FAIL checkpoints (including 820001–820003).
 
 ## Phase 2A — live
 
 | ID | Directory | State |
 |---|---|---|
-| T23 | `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1` | **LIVE.** T18 full-span CE + in-row rival unlikelihood. Seeds 820001–820003. |
+| T24 | `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` | **LIVE.** T18 full-span CE + train/dev name-inventory unlikelihood. Seeds 830001–830003. |
 
-Question: does rival-token unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
+Question: does inventory unlikelihood (not in-row pair) lift exact above T18 36–40 while holding language + representation ≥2/3?
 
 ## Closed historical lineages (Category B/C)
 

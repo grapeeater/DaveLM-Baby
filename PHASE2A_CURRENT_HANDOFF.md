@@ -19,11 +19,13 @@ TEST `SEALED_UNOPENED` (`qa_test.jsonl` SHA256 `6a36a8a482a6812e36ff24f5ce2991c1
 - T20X COMPLETE. First-token BOS **42/34/37**. Dominant `other_then_eos`.
 - T21 `T21_REPRESENTATION_SUCCESS_OUTPUT_FAIL` — language 3/3, representation **3/3**, exact **27/29/26**.
 - T21X COMPLETE. First-token BOS **79/59/72**. Dominant leftover diverge 52/30/46 plus other_then_eos.
-- T22 `T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL` — language 3/3, representation **2/3**, exact **21/31/26**. First-two through-base did not recover T18 exact. Report: `phase2a_t22_firsttwo_answerce_lr3p75e5_1k_v1\T22_FINAL_REPORT.md`.
-- T22X COMPLETE. First-token BOS **66/65/73**. Leftover still diverge 45/34/47 plus other_then_eos. CE-span-count family closed. Report: `phase2a_t22x_generation_failmode_v1\T22X_FINAL_REPORT.md`.
+- T22 `T22_REPRESENTATION_SUCCESS_OUTPUT_FAIL` — language 3/3, representation **2/3**, exact **21/31/26**. First-two through-base closed.
+- T22X COMPLETE. First-token BOS **66/65/73**. Leftover still diverge. CE-span-count family closed.
+- T23 `T23_REPRESENTATION_SUCCESS_OUTPUT_FAIL` — language 3/3, representation **3/3**, exact **34/34/38**. In-row rival unlikelihood did not beat T18 exact. Report: `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1\T23_FINAL_REPORT.md`.
+- T23X COMPLETE. First-token BOS **79/75/79**. Leftover still diverge; Walt/York are off-row inventory names. Report: `phase2a_t23x_generation_failmode_v1\T23X_FINAL_REPORT.md`.
 - SmolLM2-1.7B forensic is advisory only. Baby evidence outranks Smol.
 
-Do not parent T14–T22 OUTPUT_FAIL checkpoints (760001–810003). Do not relaunch T4–T22. Do not copy Qwen or Smol. Do not retokenize. Do not raise suffix weight.
+Do not parent T14–T23 OUTPUT_FAIL checkpoints (760001–820003). Do not relaunch T4–T23. Do not copy Qwen or Smol. Do not retokenize. Do not raise suffix weight or `λ_unl`. Do not reopen CE-span-count.
 
-## Live — T23 LAUNCHED
-T23 `phase2a_t23_candidate_unlikelihood_lr3p75e5_1k_v1`: T18 full-span through-base `λ_ans=1.0` **plus** in-row wrong-candidate unlikelihood `λ_unl=1.0`. Phase1G parent. Seeds **820001–820003**. Same two-phase and gates. Watchdog PID **36984** launched 820001 at 2026-09-13T06:20:03Z. `RUN_LEDGER.json` has `"runs": {}`. Question: does rival-token unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
+## Live — T24 LAUNCHED
+T24 `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1`: T18 full-span CE plus unlikelihood over the frozen 24-name T3 train+dev inventory (no TEST). Seeds **830001–830003**. Watchdog PID **34608** launched 830001 at 2026-09-13T09:36:39Z. `RUN_LEDGER.json` has `"runs": {}`. Question: does expanding the rival set from in-row pair to inventory lift exact above T18 36–40?
