@@ -17,4 +17,5 @@ paused. Activation patching was not run.
 T3 TEST remains `SEALED_UNOPENED`. T29 is terminal:
 `T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (exact 35/35/35). The fork-objective
 hypothesis is closed. Do not overwrite v0_7. Do not resume T24. Do not retune
-T29 lambda/margin. Do not launch T30 unless a new owner treatment authorizes it.
+T29 lambda/margin. T30 is terminal under the owner-authorized study: T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Do not launch T31.
+

@@ -142,3 +142,9 @@ did not beat T28 4.7%. Overall exact 35/35/35 did not beat T18/T24/T28. Classifi
 `T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL`. The TRAIN disambiguation-fork objective is
 closed. Tokenizer lineage remains paused. TEST remains `SEALED_UNOPENED`. T30 is not
 authorized. Full tokenizer replacement or from-scratch retrain requires owner review.
+
+## T30 persistent pointer route (2026-09-14)
+
+T30 was the single owner-authorized architectural successor after T29. It added a zero-initialized 640-parameter per-channel gate that makes the existing query-weighted fact-clause pointer available at every answer prediction position. All three Phase1G-parent branches completed U1000 with binding/localizer locks and protected data intact. The route gate activated in every branch, but native exact generation did not improve beyond the established ceiling.
+
+Terminal classification: `T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (2/3 branches representation-positive; 0/3 native full-success). Final DEV exact+EOS was 31/36/38 of 128; shared-prefix exact 2/3/3 of 64; first-token-correct-then-diverge 45/42/41. Parent SHA `c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1`. T3 TEST, T2-EVAL-TEST, FINAL, and sacred remain sealed/locked. T30 artifacts are in `phase2a_t30_persistent_pointer_route_v1`; do not launch T31 under this authorization.

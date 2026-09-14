@@ -1,0 +1,13 @@
+{
+  "status":"SEAL_VERIFIED",
+  "neutral_parent_equivalence":"bitwise_exact",
+  "neutral_max_abs":0.0,
+  "route_gate_zero":true,
+  "preflight_all_seeds":[870001,870002,870003],
+  "preflight_dev_ce_all":1.2040123894810677,
+  "throughput_smoke_seconds_per_qa_update":9.259924649988534,
+  "cuda":true,
+  "optimizer_training_updates_in_committed_runs_before_launch":0,
+  "protected_data":"SEALED_UNOPENED",
+  "verification_note":"The disposable smoke used two optimizer steps in an isolated smoke directory only; no parent or treatment run was mutated."
+}

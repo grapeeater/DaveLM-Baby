@@ -1,0 +1,12 @@
+{
+  "old_runner_sha256": "88688b0994abb933ecc86cb9993bab3ae6fea5364322b7e7d131e36e7567dae9",
+  "scientific_semantics_unchanged": true,
+  "issue": "Integrity check incorrectly treated the new trainable route_gate as binding gradient",
+  "type": "MECHANICAL_REPAIR_ONLY",
+  "fix": "Exclude route_gate from frozen-binding gradient assertion",
+  "optimizer_steps_completed_before_stop": 0,
+  "preserved_attempt": "run_seed870001_prelaunch_scope_assertion",
+  "relaunch_authorized_same_seed": true,
+  "seed": 870001,
+  "new_runner_sha256": "e55d03910b2d347e39170790cb488a883e8ca3bcb5ddf498f0219e9c6e591259"
+}

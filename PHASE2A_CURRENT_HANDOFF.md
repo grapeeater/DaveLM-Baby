@@ -59,3 +59,9 @@ Prefix-rescue `phase2a_post_t28_prefix_rescue_v1`: `EARLY_TOKEN_ERROR_CAUSALLY_D
 ## T29 (2026-09-14)
 
 `phase2a_t29_disambiguation_fork_v1`: `L_fork` on the T24 recipe; T28 suffix margin off; tokenizer paused. Seeds 860001-860003 completed U1000. Pointer 110/111/114, native FC 88/87/88, exact **35/35/35**. Shared-prefix exact 2/2/0 of 64. Language held. Classification: `T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL`. Fork-objective hypothesis **closed**. Do not retune lambda/margin. Do not parent 860001-860003. TEST sealed. T30 not authorized.
+
+## T30 persistent pointer route (2026-09-14)
+
+T30 was the single owner-authorized architectural successor after T29. It added a zero-initialized 640-parameter per-channel gate that makes the existing query-weighted fact-clause pointer available at every answer prediction position. All three Phase1G-parent branches completed U1000 with binding/localizer locks and protected data intact. The route gate activated in every branch, but native exact generation did not improve beyond the established ceiling.
+
+Terminal classification: `T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (2/3 branches representation-positive; 0/3 native full-success). Final DEV exact+EOS was 31/36/38 of 128; shared-prefix exact 2/3/3 of 64; first-token-correct-then-diverge 45/42/41. Parent SHA `c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1`. T3 TEST, T2-EVAL-TEST, FINAL, and sacred remain sealed/locked. T30 artifacts are in `phase2a_t30_persistent_pointer_route_v1`; do not launch T31 under this authorization.

@@ -65,6 +65,7 @@ Do **not** parent T14–T23 OUTPUT_FAIL checkpoints (including 820001–820003).
 | Option B | `tokenizer_replacement_study_v1` | **`TOKENIZER_REPLACEMENT_NOT_JUSTIFIED`.** No candidate beat v0_7 DEV collision geometry. |
 | post-T28 prefix rescue | `phase2a_post_t28_prefix_rescue_v1` | **`EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES`.** Single-token gold oracle rescue then free greedy; DEV diverge population 39/40/45. Activation patching not run. |
 | T29 | `phase2a_t29_disambiguation_fork_v1` | **`T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL`.** Exact 35/35/35. Shared-prefix exact 2/2/0 of 64. Fork-objective hypothesis closed. TEST sealed. |
+| T30 | phase2a_t30_persistent_pointer_route_v1 | **T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL.** Persistent 640-parameter pointer route; exact 31/36/38 of 128; route active; native output gate missed. T3 TEST sealed. Do not launch T31. |
 
 Question (historical; T24 already answered no): does inventory unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
 
@@ -77,3 +78,4 @@ Question (historical; T24 already answered no): does inventory unlikelihood lift
 - Audits: `vnext_60m_audit/`, `BABY_REPO_MIGRATION_AUDIT.md`, `forensics/`, `mistral_treatment_design_audit_v1/`, `comparative_model_anatomy_post_sf2_v1/`, `overnight_reproducibility_resolution_v1/`.
 
 Qwen/Smol notes are advisory. Baby evidence outranks them. Do not copy foreign weights.
+

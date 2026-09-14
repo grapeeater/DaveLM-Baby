@@ -1,0 +1,12 @@
+{
+  "receipt":"T30_SEALED_RECEIPT_V1",
+  "protocol":"PROTOCOL.json",
+  "controller":"T30_RUNNER.py",
+  "route_module":"T30_ROUTE.py",
+  "state":"SEALED_BEFORE_TRAINING",
+  "scientific_change":"zero-initialized 640-parameter persistent pointer-source route",
+  "training_started":false,
+  "seeds":[870001,870002,870003],
+  "test_final_sacred":"SEALED_UNOPENED",
+  "manifest_note":"Payload hashes are listed in SHA256SUMS.txt; historical studies remain untouched."
+}

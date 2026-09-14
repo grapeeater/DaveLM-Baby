@@ -1,0 +1,36 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T30_PERSISTENT_POINTER_ROUTE_V1",
+  "status": "STUDY_COMPLETE",
+  "seeds": [
+    870001,
+    870002,
+    870003
+  ],
+  "runs": {
+    "870001": {
+      "status": "COMPLETE",
+      "update": 1000,
+      "classification": "T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "checkpoint_sha256": "abc582433164158e354221c9b5900d977a4b789dc3b2b20f841de1d420392ebe",
+      "test_opened": false
+    },
+    "870002": {
+      "status": "COMPLETE",
+      "update": 1000,
+      "classification": "T30_FAIL_NO_REPRESENTATION",
+      "checkpoint_sha256": "8549363038275da9ef8e46a6a8caacceb72530010fff19a394759f9fb55612ba",
+      "test_opened": false
+    },
+    "870003": {
+      "status": "COMPLETE",
+      "update": 1000,
+      "classification": "T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "checkpoint_sha256": "d1dcc42ed43a911a0b3cdc4a6265de27e3a1a5d8461d461beee03152ff790d07",
+      "test_opened": false
+    }
+  },
+  "launch_policy": "sequential foreground, exactly one launch per seed, no replacement seeds",
+  "protected_data": "SEALED_UNOPENED",
+  "test_opened": false,
+  "failed_returncode": null
+}
