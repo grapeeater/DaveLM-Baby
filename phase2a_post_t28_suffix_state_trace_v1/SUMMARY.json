@@ -1,0 +1,132 @@
+{
+  "teacher:layer0": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 356.25059665871123
+  },
+  "teacher:layer1": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 359.41527446300717
+  },
+  "teacher:layer2": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 220.01193317422434
+  },
+  "teacher:layer3": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 169.47016706443915
+  },
+  "teacher:layer4": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 151.02386634844868
+  },
+  "teacher:layer5": {
+    "n": 419,
+    "top1_rate": 0.02386634844868735,
+    "mean_rank": 163.06682577565633
+  },
+  "teacher:layer6": {
+    "n": 419,
+    "top1_rate": 0.18854415274463007,
+    "mean_rank": 125.56801909307876
+  },
+  "teacher:layer7": {
+    "n": 419,
+    "top1_rate": 0.29832935560859186,
+    "mean_rank": 86.60620525059666
+  },
+  "teacher:layer8": {
+    "n": 419,
+    "top1_rate": 0.60381861575179,
+    "mean_rank": 47.81145584725537
+  },
+  "teacher:layer9": {
+    "n": 419,
+    "top1_rate": 0.6539379474940334,
+    "mean_rank": 50.463007159904535
+  },
+  "teacher:layer10": {
+    "n": 419,
+    "top1_rate": 0.6634844868735084,
+    "mean_rank": 66.44152744630071
+  },
+  "teacher:layer11": {
+    "n": 419,
+    "top1_rate": 0.7016706443914081,
+    "mean_rank": 35.78042959427208
+  },
+  "teacher:layer12": {
+    "n": 419,
+    "top1_rate": 0.665871121718377,
+    "mean_rank": 27.13842482100239
+  },
+  "free:layer0": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 395.4415274463007
+  },
+  "free:layer1": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 333.3961813842482
+  },
+  "free:layer2": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 226.85918854415274
+  },
+  "free:layer3": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 219.37231503579952
+  },
+  "free:layer4": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 214.76610978520287
+  },
+  "free:layer5": {
+    "n": 419,
+    "top1_rate": 0.0,
+    "mean_rank": 246.5799522673031
+  },
+  "free:layer6": {
+    "n": 419,
+    "top1_rate": 0.00477326968973747,
+    "mean_rank": 231.054892601432
+  },
+  "free:layer7": {
+    "n": 419,
+    "top1_rate": 0.016706443914081145,
+    "mean_rank": 187.30787589498806
+  },
+  "free:layer8": {
+    "n": 419,
+    "top1_rate": 0.20286396181384247,
+    "mean_rank": 148.16467780429593
+  },
+  "free:layer9": {
+    "n": 419,
+    "top1_rate": 0.24105011933174225,
+    "mean_rank": 83.55131264916467
+  },
+  "free:layer10": {
+    "n": 419,
+    "top1_rate": 0.26252983293556087,
+    "mean_rank": 85.89498806682577
+  },
+  "free:layer11": {
+    "n": 419,
+    "top1_rate": 0.2911694510739857,
+    "mean_rank": 52.66109785202864
+  },
+  "free:layer12": {
+    "n": 419,
+    "top1_rate": 0.2649164677804296,
+    "mean_rank": 41.821002386634845
+  }
+}

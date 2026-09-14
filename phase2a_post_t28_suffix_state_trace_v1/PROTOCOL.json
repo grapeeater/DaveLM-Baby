@@ -1,0 +1,10 @@
+{
+  "study": "POST_T28_SUFFIX_HIDDEN_STATE_TRACE_V1",
+  "read_only": true,
+  "allowed_inputs": ["qa_dev.jsonl", "T28 terminal checkpoints", "tokenizer"],
+  "forbidden_inputs": ["qa_test.jsonl", "T3 TEST", "FINAL", "sacred"],
+  "seeds": [850001,850002,850003],
+  "population": "DEV rows with first target token correct and later greedy divergence",
+  "analysis": ["teacher-forced direct logits", "free-running direct logits", "per-layer frozen-LM-head ranks and margins at suffix decision states"],
+  "no_trainable_probe": true
+}

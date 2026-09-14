@@ -1,0 +1,9 @@
+{
+  "study": "POST_T28_TOKENIZER_FAILURE_CORRELATION_V1",
+  "read_only": true,
+  "allowed_inputs": ["qa_dev.jsonl", "T28 terminal checkpoints", "T28 terminal DEV item outputs", "tokenizer", "Phase1G language train stream"],
+  "forbidden_inputs": ["qa_test.jsonl", "T3 TEST", "FINAL", "sacred"],
+  "seeds": [850001,850002,850003],
+  "metrics": ["answer token geometry", "prefix collisions", "language-token frequency", "exact success", "first-token-correct-then-diverge", "other_then_eos"],
+  "terminal_labels": ["TOKENIZER_ASSOCIATION_SUPPORTED", "TOKENIZER_ASSOCIATION_WEAK_OR_MIXED", "TOKENIZER_ASSOCIATION_NOT_SUPPORTED"]
+}

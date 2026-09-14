@@ -1,0 +1,79 @@
+{
+  "n": 384,
+  "by_seed": {
+    "850001": {
+      "n": 128,
+      "exact_rate": 0.28125,
+      "first_correct_rate": 0.5859375,
+      "modes": {
+        "other_then_eos": 39,
+        "first_token_correct_then_diverge": 39,
+        "exact": 36,
+        "wrong_candidate": 13,
+        "unterminated_other": 1
+      }
+    },
+    "850002": {
+      "n": 128,
+      "exact_rate": 0.2734375,
+      "first_correct_rate": 0.5859375,
+      "modes": {
+        "other_then_eos": 41,
+        "first_token_correct_then_diverge": 40,
+        "exact": 35,
+        "wrong_candidate": 12
+      }
+    },
+    "850003": {
+      "n": 128,
+      "exact_rate": 0.3125,
+      "first_correct_rate": 0.6640625,
+      "modes": {
+        "other_then_eos": 29,
+        "exact": 40,
+        "first_token_correct_then_diverge": 45,
+        "wrong_candidate": 14
+      }
+    }
+  },
+  "by_name_token_count": {
+    "2": {
+      "n": 144,
+      "exact_rate": 0.3472222222222222,
+      "diverge_rate": 0.5277777777777778
+    },
+    "3": {
+      "n": 192,
+      "exact_rate": 0.3072916666666667,
+      "diverge_rate": 0.046875
+    },
+    "4": {
+      "n": 48,
+      "exact_rate": 0.041666666666666664,
+      "diverge_rate": 0.8125
+    }
+  },
+  "by_shared_prefix": {
+    "False": {
+      "n": 192,
+      "exact_rate": 0.53125,
+      "diverge_rate": 0.21354166666666666
+    },
+    "True": {
+      "n": 192,
+      "exact_rate": 0.046875,
+      "diverge_rate": 0.4322916666666667
+    }
+  },
+  "modes": {
+    "other_then_eos": 109,
+    "first_token_correct_then_diverge": 124,
+    "exact": 111,
+    "wrong_candidate": 39,
+    "unterminated_other": 1
+  },
+  "effect_sizes": {
+    "shared_prefix_exact_odds_ratio": 0.04339440694310511
+  },
+  "classification": "TOKENIZER_ASSOCIATION_SUPPORTED"
+}
