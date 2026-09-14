@@ -1,0 +1,84 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T29_DISAMBIGUATION_FORK_LR3P75E5_1K_V1",
+  "status": "STUDY_COMPLETE",
+  "study_classification": "T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+  "scientific_question": "Does an explicit teacher-forced hinge at the first TRAIN-identity unique-commit token raise native greedy exact+EOS, especially on shared-prefix DEV names, without lowering inherited T24 gates?",
+  "earned_by": "T28_SUFFIX_MARGIN_VALID_COMPLETION/OUTPUT_FAIL + TOKENIZER_ASSOCIATION_SUPPORTED + EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES (prefix-rescue 108/124). Tokenizer lineage remains paused. T29 is authorized by TREATMENT No29.",
+  "hypothesis": "Baby often has enough downstream capacity to finish if she enters the correct token path at the first identity-disambiguating fork. Train that fork natively; do not retokenize, constrain decoding, or open TEST.",
+  "parent": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+    "tokenizer": "v0_7",
+    "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
+  },
+  "do_not_parent": ["T14-T28 OUTPUT_FAIL checkpoints", "850001-850003", "830001-830003"],
+  "inherited_recipe": {
+    "source": "T24/T28-fast teacher-forced runner",
+    "lambda_ptr": 1.0,
+    "lambda_ans": 1.0,
+    "lambda_unl": 1.0,
+    "answer_ce": "teacher-forced CE on correct candidate_token_ids + EOS; full span through the base (T18)",
+    "unlikelihood": "inherited T24 inventory-wide unlikelihood over frozen 24 train+dev names; not the T29 hypothesis",
+    "t28_suffix_vocab_margin": "OFF",
+    "language": "9 qa : 1 language CE",
+    "lr": 3.75e-5,
+    "total_updates": 1000,
+    "phase_a": "updates 1-750, trainable 40849664",
+    "phase_b": "after U750 revert blocks 8-11, trainable 21163264",
+    "batch": "32 QA / update, micro 8; schedules remapped from T28 85000x onto 86000x without reshuffling"
+  },
+  "t29_objective": {
+    "name": "L_fork",
+    "lambda_fork": 0.5,
+    "fork_margin": 1.0,
+    "formula": "relu(M - logit(gold_fork_token) + max logit(prefix-compatible competitor tokens)) at the single unique-commit index",
+    "implementation": "same teacher-forced answer forward as CE; no generated-prefix rollout; no extra model forward",
+    "fork_detection_rule": "TRAIN identities only (T3 audits.train_names, 16 names). Fire only if another TRAIN identity shares a nonempty token prefix under frozen v0_7 inventory sequences. fork_index is the first k where |share gold[:k]|>=2 and |share gold[:k+1]|==1. Unique-first-token names have no fork; do not invent one. DEV names and DEV fail-modes are not used to build the rule.",
+    "competitor_token_rule": "At fork_index, the distinct next tokens of TRAIN identities that share gold[:k] but differ at k. Not full-vocab hard negatives.",
+    "no_special_case_names": true
+  },
+  "seeds": [860001, 860002, 860003],
+  "schedule": {
+    "total_updates": 1000,
+    "eval_points": [0, 100, 300, 500, 750, 1000],
+    "stop_seed_if_dev_ce_gt": 1.30
+  },
+  "gates": {
+    "language": "DEV CE <= 1.30 and <= U0+0.25; gap <= 0.5",
+    "representation": {
+      "pointer_min": "96/128",
+      "reversal_min": "48/64",
+      "complete_families_min": "8/16",
+      "name_disjoint_min": "48/64",
+      "template_disjoint_min": "48/64"
+    },
+    "native": {
+      "forced_choice_min": "96/128",
+      "reversal_min": "48/64",
+      "exact_min": "80/128"
+    }
+  },
+  "study_rule": "HARD_STOP if any; >=2 FULL_SUCCESS => FULL_SUCCESS; >=2 of FULL or REPRESENTATION_SUCCESS_OUTPUT_FAIL => REPRESENTATION_SUCCESS_OUTPUT_FAIL; else FAIL_NO_REPRESENTATION. Do not lower the 2/3 bar. Do not cherry-pick one seed. Do not retune lambda/margin after seeing seeds.",
+  "success_logic_descriptive": "Interesting only if first-disambiguating-token accuracy rises, shared-prefix exact rises above T28 4.7%, first-token-correct-then-diverge falls, overall exact beats T18/T24/T28 ceiling, unique-prefix does not regress materially, language and representation hold, and the pattern replicates. Native greedy only. Forced-choice or single-family improvement is not success.",
+  "eval_metrics_added": [
+    "first_disambiguating_token_accuracy on DEV identity forks (same rule, DEV inventory, evaluation only)",
+    "shared_prefix_exact_rate",
+    "unique_prefix_exact_rate",
+    "first_token_correct_then_diverge",
+    "post_fork_free_completion_rate"
+  ],
+  "t28_baselines": {
+    "shared_prefix_exact": 0.047,
+    "unique_prefix_exact": 0.531,
+    "overall_exact": [36, 35, 40]
+  },
+  "locks": {
+    "T3_TEST": "SEALED_UNOPENED",
+    "T2_EVAL_TEST": "LOCKED_UNOPENED",
+    "FINAL": "LOCKED",
+    "sacred": "LOCKED"
+  },
+  "tokenizer_lineage": "PAUSED",
+  "test_opened": false,
+  "next_treatment": "NOT_AUTHORIZED"
+}

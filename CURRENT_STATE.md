@@ -1,7 +1,7 @@
 # Current state
 
 This file is a short pointer. The authoritative current state is
-[`CANONICAL_STATE.md`](CANONICAL_STATE.md), updated 2026-09-13.
+[`CANONICAL_STATE.md`](CANONICAL_STATE.md), updated 2026-09-14.
 
 Phase1G U6000 is the preserved Phase 2A parent. T28 FAST V2 is terminal:
 `T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL`. Post-T28 tokenizer and
@@ -14,6 +14,7 @@ Post-T28 prefix rescue is complete:
 recovered 108/124 exact+EOS on the diverge population). Tokenizer lineage remains
 paused. Activation patching was not run.
 
-T3 TEST remains `SEALED_UNOPENED`. T29 is not authorized. Do not overwrite v0_7.
-Do not resume T24. Do not launch a from-scratch tokenizer-replacement retrain
-without owner review. Do not design the next treatment from this study.
+T3 TEST remains `SEALED_UNOPENED`. T29 is terminal:
+`T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (exact 35/35/35). The fork-objective
+hypothesis is closed. Do not overwrite v0_7. Do not resume T24. Do not retune
+T29 lambda/margin. Do not launch T30 unless a new owner treatment authorizes it.

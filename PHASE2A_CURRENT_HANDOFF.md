@@ -54,4 +54,8 @@ Rebuilt from untouched T24 runner; vectorized suffix hard-negative margin (M=1.0
 
 Tokenizer diagnostic: `TOKENIZER_ASSOCIATION_SUPPORTED` (4.7% vs 53.1% exact). Suffix-state: `GOLD_PREFIX_DIRECT_DECODABILITY_WITH_FREE_PREFIX_COLLAPSE` (66.6% vs 26.5% final top-1). Decode-only `tokenizer_repair_v1`: free beam does not close shared-prefix exact (4.7% → 4.2%); 8-name inventory rerank is non-native. Option C append-only: no effect. Option B replacement candidates: `TOKENIZER_REPLACEMENT_NOT_JUSTIFIED`. Tokenizer lineage is **paused**. Do not build another tokenizer, retokenize, or retrain.
 
-Prefix-rescue `phase2a_post_t28_prefix_rescue_v1`: `EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES`. On the frozen DEV first-token-correct-then-diverge population (39/40/45; 124 pooled), replacing only the first wrong token with gold and returning to free greedy recovered exact+EOS **108/124 (87.1%)** replicated 32/37/39. Matched-wrong and prefix-compatible-wrong controls were 0% exact. Activation patching was not run. T29 is not authorized. v0_7 must stay byte-identical.
+Prefix-rescue `phase2a_post_t28_prefix_rescue_v1`: `EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES`. On the frozen DEV first-token-correct-then-diverge population (39/40/45; 124 pooled), replacing only the first wrong token with gold and returning to free greedy recovered exact+EOS **108/124 (87.1%)** replicated 32/37/39. Matched-wrong and prefix-compatible-wrong controls were 0% exact. Activation patching was not run. v0_7 must stay byte-identical.
+
+## T29 (2026-09-14)
+
+`phase2a_t29_disambiguation_fork_v1`: `L_fork` on the T24 recipe; T28 suffix margin off; tokenizer paused. Seeds 860001-860003 completed U1000. Pointer 110/111/114, native FC 88/87/88, exact **35/35/35**. Shared-prefix exact 2/2/0 of 64. Language held. Classification: `T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL`. Fork-objective hypothesis **closed**. Do not retune lambda/margin. Do not parent 860001-860003. TEST sealed. T30 not authorized.

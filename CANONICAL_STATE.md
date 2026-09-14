@@ -1,6 +1,6 @@
 # DaveLM/Baby canonical state
 
-**Authoritative current-state record — 2026-09-13.** If an older report, protocol,
+**Authoritative current-state record — 2026-09-14.** If an older report, protocol,
 or handoff conflicts with this document on current state or an already-adjudicated
 historical correction, this document wins unless a newer explicitly authoritative
 document supersedes it. Historical artifacts remain preserved as evidence; this is
@@ -50,7 +50,8 @@ outside normal development work.
   can greatly exceed complete answer-plus-EOS generation.
 - Exact native generation remains far below the frozen success bar.
 - The CE-span-count family, increased suffix weighting, T23 in-row unlikelihood,
-  T24 inventory-wide unlikelihood, and T28 suffix hard-negative margin are closed.
+  T24 inventory-wide unlikelihood, T28 suffix hard-negative margin, and T29
+  TRAIN-identity disambiguation-fork hinge are closed.
 - T25 supported a teacher-forced versus free-running continuation/exposure gap.
   T26, T26B, and T27 were resource/engineering stops, not scientific disproofs.
 - T28 FAST V2 was a valid completed experiment and is terminally
@@ -83,6 +84,7 @@ tested. Do not call representation "solved."
 - CE-span-count variants and higher suffix weighting
 - T23 in-row and T24 inventory-wide unlikelihood
 - T28 suffix hard-negative margin
+- T29 TRAIN-identity disambiguation-fork hinge
 - Retokenization to conceal generation failures
 - Parenting known OUTPUT_FAIL descendants without a new, explicit lineage question
 - Lowering the 2/3 replication bar
@@ -123,5 +125,20 @@ prefix-compatible-wrong controls recovered 0% exact. Classification:
 `EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES`. This is an oracle intervention, not native
 generation. Activation patching was not run. No next treatment was designed.
 
-T29 remains unplanned and unauthorized. Full tokenizer replacement or from-scratch
-retrain requires owner review.
+## T29 terminal results (2026-09-14)
+
+`phase2a_t29_disambiguation_fork_v1`: teacher-forced `L_fork` at the first TRAIN-identity
+unique-commit token (`lambda_fork=0.5`, margin 1.0) on the T24 recipe. Seeds
+860001–860003 all completed U1000.
+
+| Seed | DEV CE | Pointer | Native forced-choice | Exact + EOS |
+|---:|---:|---:|---:|---:|
+| 860001 | 1.254286 | 110/128 | 88/128 | 35/128 |
+| 860002 | 1.254771 | 111/128 | 87/128 | 35/128 |
+| 860003 | 1.255805 | 114/128 | 88/128 | 35/128 |
+
+Language and pointer/family representation held (3/3). Shared-prefix exact 2/2/0 of 64
+did not beat T28 4.7%. Overall exact 35/35/35 did not beat T18/T24/T28. Classification:
+`T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL`. The TRAIN disambiguation-fork objective is
+closed. Tokenizer lineage remains paused. TEST remains `SEALED_UNOPENED`. T30 is not
+authorized. Full tokenizer replacement or from-scratch retrain requires owner review.

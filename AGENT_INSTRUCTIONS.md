@@ -30,7 +30,7 @@ SHA-256 `c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1`
 
 ## Live
 
-T22/T24 are terminal history (`REPRESENTATION_SUCCESS_OUTPUT_FAIL`). Do not resume T24. T28 FAST V2 is terminal `OUTPUT_FAIL`. Post-T28 diagnostics are complete. `tokenizer_repair_v1` closed free-beam as a shared-prefix mouth repair. T29 is not authorized. Do not overwrite v0_7 or open TEST.
+T22/T24 are terminal history (`REPRESENTATION_SUCCESS_OUTPUT_FAIL`). Do not resume T24. T28 FAST V2 is terminal `OUTPUT_FAIL`. Post-T28 diagnostics are complete. T29 is terminal `T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (exact 35/35/35); the fork-objective hypothesis is closed. Do not overwrite v0_7, retune T29, or open TEST. T30 is not authorized by TREATMENT No29.
 
 When a terminal study earns a successor but no successor protocol exists, the autonomous agent is authorized and expected to design, prospectively freeze, implement, and execute the highest-information Baby-native successor. This authority was explicitly granted by the owner on 2026-09-13; all gates and protected-material locks still apply. Owner review is required before a full tokenizer-replacement retrain.
 

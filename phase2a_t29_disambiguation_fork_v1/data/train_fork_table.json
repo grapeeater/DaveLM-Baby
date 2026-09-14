@@ -1,0 +1,349 @@
+{
+  "rule": "TRAIN identities only; fire only if another TRAIN identity shares a nonempty token prefix; fork_index is the first token that uniquely commits gold among TRAIN identities (remaining sharing gold[:k] >= 2 and remaining sharing gold[:k+1] == 1)",
+  "tokenizer": "v0_7",
+  "identity_source": "T3 audits.train_names tokenized as frozen name_inventory.json sequences",
+  "n_train_names": 16,
+  "train_names": [
+    "Bea",
+    "Gia",
+    "Gus",
+    "Helen",
+    "Hope",
+    "Ida",
+    "Jan",
+    "Lois",
+    "Marie",
+    "Mark",
+    "Roy",
+    "Ruth",
+    "Seth",
+    "Vic",
+    "Walt",
+    "York"
+  ],
+  "never_used_for_fork_construction": [
+    "qa_dev.jsonl",
+    "qa_test.jsonl",
+    "DEV fail-modes"
+  ],
+  "n_with_fork": 12,
+  "forks": {
+    "Bea": {
+      "has_fork": false,
+      "fork_index": null,
+      "gold_token": null,
+      "competitor_tokens": [],
+      "competitor_names": [],
+      "gold_ids": [
+        532,
+        73,
+        69,
+        18,
+        3
+      ]
+    },
+    "Gia": {
+      "has_fork": true,
+      "fork_index": 2,
+      "gold_token": 77,
+      "competitor_tokens": [
+        297
+      ],
+      "competitor_names": [
+        "Gus"
+      ],
+      "gold_ids": [
+        225,
+        43,
+        77,
+        69,
+        18,
+        3
+      ]
+    },
+    "Gus": {
+      "has_fork": true,
+      "fork_index": 2,
+      "gold_token": 297,
+      "competitor_tokens": [
+        77
+      ],
+      "competitor_names": [
+        "Gia"
+      ],
+      "gold_ids": [
+        225,
+        43,
+        297,
+        18,
+        3
+      ]
+    },
+    "Helen": {
+      "has_fork": true,
+      "fork_index": 2,
+      "gold_token": 462,
+      "competitor_tokens": [
+        1001
+      ],
+      "competitor_names": [
+        "Hope"
+      ],
+      "gold_ids": [
+        225,
+        44,
+        462,
+        274,
+        18,
+        3
+      ]
+    },
+    "Hope": {
+      "has_fork": true,
+      "fork_index": 2,
+      "gold_token": 1001,
+      "competitor_tokens": [
+        462
+      ],
+      "competitor_names": [
+        "Helen"
+      ],
+      "gold_ids": [
+        225,
+        44,
+        1001,
+        73,
+        18,
+        3
+      ]
+    },
+    "Ida": {
+      "has_fork": false,
+      "fork_index": null,
+      "gold_token": null,
+      "competitor_tokens": [],
+      "competitor_names": [],
+      "gold_ids": [
+        459,
+        72,
+        69,
+        18,
+        3
+      ]
+    },
+    "Jan": {
+      "has_fork": true,
+      "fork_index": 1,
+      "gold_token": 46,
+      "competitor_tokens": [
+        43,
+        44,
+        48,
+        58,
+        61
+      ],
+      "competitor_names": [
+        "Gia",
+        "Gus",
+        "Helen",
+        "Hope",
+        "Lois",
+        "Vic",
+        "York"
+      ],
+      "gold_ids": [
+        225,
+        46,
+        275,
+        18,
+        3
+      ]
+    },
+    "Lois": {
+      "has_fork": true,
+      "fork_index": 1,
+      "gold_token": 48,
+      "competitor_tokens": [
+        43,
+        44,
+        46,
+        58,
+        61
+      ],
+      "competitor_names": [
+        "Gia",
+        "Gus",
+        "Helen",
+        "Hope",
+        "Jan",
+        "Vic",
+        "York"
+      ],
+      "gold_ids": [
+        225,
+        48,
+        83,
+        294,
+        18,
+        3
+      ]
+    },
+    "Marie": {
+      "has_fork": true,
+      "fork_index": 2,
+      "gold_token": 77,
+      "competitor_tokens": [
+        79
+      ],
+      "competitor_names": [
+        "Mark"
+      ],
+      "gold_ids": [
+        925,
+        285,
+        77,
+        73,
+        18,
+        3
+      ]
+    },
+    "Mark": {
+      "has_fork": true,
+      "fork_index": 2,
+      "gold_token": 79,
+      "competitor_tokens": [
+        77
+      ],
+      "competitor_names": [
+        "Marie"
+      ],
+      "gold_ids": [
+        925,
+        285,
+        79,
+        18,
+        3
+      ]
+    },
+    "Roy": {
+      "has_fork": true,
+      "fork_index": 1,
+      "gold_token": 83,
+      "competitor_tokens": [
+        324
+      ],
+      "competitor_names": [
+        "Ruth"
+      ],
+      "gold_ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    "Ruth": {
+      "has_fork": true,
+      "fork_index": 1,
+      "gold_token": 324,
+      "competitor_tokens": [
+        83
+      ],
+      "competitor_names": [
+        "Roy"
+      ],
+      "gold_ids": [
+        1019,
+        324,
+        76,
+        18,
+        3
+      ]
+    },
+    "Seth": {
+      "has_fork": false,
+      "fork_index": null,
+      "gold_token": null,
+      "competitor_tokens": [],
+      "competitor_names": [],
+      "gold_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ]
+    },
+    "Vic": {
+      "has_fork": true,
+      "fork_index": 1,
+      "gold_token": 58,
+      "competitor_tokens": [
+        43,
+        44,
+        46,
+        48,
+        61
+      ],
+      "competitor_names": [
+        "Gia",
+        "Gus",
+        "Helen",
+        "Hope",
+        "Jan",
+        "Lois",
+        "York"
+      ],
+      "gold_ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    "Walt": {
+      "has_fork": false,
+      "fork_index": null,
+      "gold_token": null,
+      "competitor_tokens": [],
+      "competitor_names": [],
+      "gold_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    "York": {
+      "has_fork": true,
+      "fork_index": 1,
+      "gold_token": 61,
+      "competitor_tokens": [
+        43,
+        44,
+        46,
+        48,
+        58
+      ],
+      "competitor_names": [
+        "Gia",
+        "Gus",
+        "Helen",
+        "Hope",
+        "Jan",
+        "Lois",
+        "Vic"
+      ],
+      "gold_ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    }
+  }
+}
