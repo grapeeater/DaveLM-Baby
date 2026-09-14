@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "classification": "TOKENIZER_REPLACEMENT_NOT_JUSTIFIED",
+  "option_c_status": "APPEND_ONLY_EXTENSION_VALID_COMPLETION / NO_EFFECT",
+  "test_loaded": false,
+  "t29_launched": false,
+  "v0_7_preserved": true,
+  "full_retrain_recommended": false,
+  "full_retrain_authorized": false,
+  "owner_decision_required": true,
+  "best_candidate": "v0_7_baseline",
+  "best_new_candidate": "bpe_bl_1536"
+}

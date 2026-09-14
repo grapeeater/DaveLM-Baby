@@ -1,0 +1,88 @@
+{
+  "frozen_before_dev": true,
+  "v0_7_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "language_source_sha256": "807a89417924a9b1cfa1e0a2a952d97400684db32a138fe11943d93e130312c8",
+  "qa_train_sha256": "343d99f06374739e1c0ff420a431f6d50e9696c807ed38666d34bf363b84c7af",
+  "candidates": {
+    "v0_7_baseline": {
+      "id": "v0_7_baseline",
+      "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+      "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+      "vocab_size_target": 1024,
+      "rebuilt": false
+    },
+    "bpe_bl_1536": {
+      "id": "bpe_bl_1536",
+      "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_bl_1536.json",
+      "sha256": "9c56545889fdedb77897a77ccb9fb694a1fb0d5889e97ba0388b5e561e867504",
+      "vocab_size_target": 1536,
+      "vocab_size_actual": 1536,
+      "kind": "bl",
+      "add_prefix_space": false,
+      "titlecase_upsample_x4": false,
+      "rebuilt": true,
+      "n_train_documents": 21374
+    },
+    "bpe_bl_2048": {
+      "id": "bpe_bl_2048",
+      "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_bl_2048.json",
+      "sha256": "151a57b1b85ad99633ce1309edd2c9b5e9f28bf62649fcccc29961108909c2b1",
+      "vocab_size_target": 2048,
+      "vocab_size_actual": 2048,
+      "kind": "bl",
+      "add_prefix_space": false,
+      "titlecase_upsample_x4": false,
+      "rebuilt": true,
+      "n_train_documents": 21374
+    },
+    "bpe_bl_4096": {
+      "id": "bpe_bl_4096",
+      "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_bl_4096.json",
+      "sha256": "eba2b803914bb68f921abfe3ee5ff48af872ca312ab10ce52b2e3cddd1683cce",
+      "vocab_size_target": 4096,
+      "vocab_size_actual": 4096,
+      "kind": "bl",
+      "add_prefix_space": false,
+      "titlecase_upsample_x4": false,
+      "rebuilt": true,
+      "n_train_documents": 21374
+    },
+    "bpe_bl_2048_prefix_space": {
+      "id": "bpe_bl_2048_prefix_space",
+      "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_bl_2048_prefix_space.json",
+      "sha256": "77d048052a3b3f4c0ce4cdc1cfd9d9f1b92e8c867e39892dcff3212abe014a82",
+      "vocab_size_target": 2048,
+      "vocab_size_actual": 2048,
+      "kind": "bl",
+      "add_prefix_space": true,
+      "titlecase_upsample_x4": false,
+      "rebuilt": true,
+      "n_train_documents": 21374
+    },
+    "bpe_bl_2048_titlecase_x4": {
+      "id": "bpe_bl_2048_titlecase_x4",
+      "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_bl_2048_titlecase_x4.json",
+      "sha256": "28683e612e2f35d000ecf1a21f4033e8fcdeffdd0ea86d7fb6865a3f0b89cf82",
+      "vocab_size_target": 2048,
+      "vocab_size_actual": 2048,
+      "kind": "bl",
+      "add_prefix_space": false,
+      "titlecase_upsample_x4": true,
+      "rebuilt": true,
+      "n_train_documents": 1945078
+    },
+    "bpe_ws_2048": {
+      "id": "bpe_ws_2048",
+      "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_ws_2048.json",
+      "sha256": "3e5510778400bae4e22fa7faf133e75e3cde65520fcc2fa9c15a3618435f3c6a",
+      "vocab_size_target": 2048,
+      "vocab_size_actual": 2048,
+      "kind": "ws",
+      "add_prefix_space": false,
+      "titlecase_upsample_x4": false,
+      "rebuilt": true,
+      "n_train_documents": 21374
+    }
+  },
+  "dev_loaded": false
+}

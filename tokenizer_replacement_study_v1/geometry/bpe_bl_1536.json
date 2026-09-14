@@ -1,0 +1,904 @@
+{
+  "id": "bpe_bl_1536",
+  "path": "C:\\DaveLM-CADAVER\\tokenizer_replacement_study_v1\\candidates\\bpe_bl_1536.json",
+  "sha256": "9c56545889fdedb77897a77ccb9fb694a1fb0d5889e97ba0388b5e561e867504",
+  "vocab_size_target": 1536,
+  "vocab_size_actual": 1536,
+  "kind": "bl",
+  "add_prefix_space": false,
+  "titlecase_upsample_x4": false,
+  "rebuilt": true,
+  "n_train_documents": 21374,
+  "language": {
+    "documents": 20990,
+    "utf8_bytes": 18251157,
+    "tokens": 5296181,
+    "bytes_per_token": 3.4460976692450656,
+    "unk_tokens": 0
+  },
+  "train": {
+    "n_names": 16,
+    "mean_tokens_per_name": 2.75,
+    "median_tokens_per_name": 3.0,
+    "single_token_rate": 0.0,
+    "shared_first_token_rate": 0.5,
+    "unique_first_token_rate": 0.5,
+    "n_shared_first_token_names": 8,
+    "n_unique_first_token_names": 8,
+    "shared_first_token_groups": {
+      "1061": [
+        "Gia",
+        "Gus"
+      ],
+      "408": [
+        "Marie",
+        "Mark"
+      ],
+      "1097": [
+        "Roy",
+        "Ruth"
+      ],
+      "225": [
+        "Vic",
+        "York"
+      ]
+    },
+    "longest_shared_token_prefix_any_pair": 1,
+    "mean_first_disambiguating_position": 1.0,
+    "unk_total": 0,
+    "period_own_token_rate": 1.0
+  },
+  "dev": {
+    "n_names": 8,
+    "mean_tokens_per_name": 3.0,
+    "median_tokens_per_name": 3.0,
+    "single_token_rate": 0.0,
+    "shared_first_token_rate": 0.5,
+    "unique_first_token_rate": 0.5,
+    "n_shared_first_token_names": 4,
+    "n_unique_first_token_names": 4,
+    "shared_first_token_groups": {
+      "225": [
+        "Omar",
+        "Opal"
+      ],
+      "302": [
+        "Sal",
+        "Skye"
+      ]
+    },
+    "longest_shared_token_prefix_any_pair": 2,
+    "mean_first_disambiguating_position": 1.0,
+    "unk_total": 0,
+    "period_own_token_rate": 1.0
+  },
+  "train_by_name": {
+    "Bea": {
+      "name": "Bea",
+      "span": " Bea",
+      "span_ids": [
+        375,
+        73,
+        69
+      ],
+      "span_pieces": [
+        "\u0120B",
+        "e",
+        "a"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 375,
+      "answer_ids": [
+        375,
+        73,
+        69,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Gia": {
+      "name": "Gia",
+      "span": " Gia",
+      "span_ids": [
+        1061,
+        725
+      ],
+      "span_pieces": [
+        "\u0120G",
+        "ia"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 1061,
+      "answer_ids": [
+        1061,
+        725,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Gus": {
+      "name": "Gus",
+      "span": " Gus",
+      "span_ids": [
+        1061,
+        662
+      ],
+      "span_pieces": [
+        "\u0120G",
+        "us"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 1061,
+      "answer_ids": [
+        1061,
+        662,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Helen": {
+      "name": "Helen",
+      "span": " Helen",
+      "span_ids": [
+        318,
+        80,
+        298
+      ],
+      "span_pieces": [
+        "\u0120He",
+        "l",
+        "en"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 318,
+      "answer_ids": [
+        318,
+        80,
+        298,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Hope": {
+      "name": "Hope",
+      "span": " Hope",
+      "span_ids": [
+        312,
+        498,
+        73
+      ],
+      "span_pieces": [
+        "\u0120H",
+        "op",
+        "e"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 312,
+      "answer_ids": [
+        312,
+        498,
+        73,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Ida": {
+      "name": "Ida",
+      "span": " Ida",
+      "span_ids": [
+        346,
+        72,
+        69
+      ],
+      "span_pieces": [
+        "\u0120I",
+        "d",
+        "a"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 346,
+      "answer_ids": [
+        346,
+        72,
+        69,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Jan": {
+      "name": "Jan",
+      "span": " Jan",
+      "span_ids": [
+        476,
+        305
+      ],
+      "span_pieces": [
+        "\u0120J",
+        "an"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 476,
+      "answer_ids": [
+        476,
+        305,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Lois": {
+      "name": "Lois",
+      "span": " Lois",
+      "span_ids": [
+        594,
+        83,
+        292
+      ],
+      "span_pieces": [
+        "\u0120L",
+        "o",
+        "is"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 594,
+      "answer_ids": [
+        594,
+        83,
+        292,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Marie": {
+      "name": "Marie",
+      "span": " Marie",
+      "span_ids": [
+        408,
+        291,
+        540
+      ],
+      "span_pieces": [
+        "\u0120M",
+        "ar",
+        "ie"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 408,
+      "answer_ids": [
+        408,
+        291,
+        540,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Mark": {
+      "name": "Mark",
+      "span": " Mark",
+      "span_ids": [
+        408,
+        485
+      ],
+      "span_pieces": [
+        "\u0120M",
+        "ark"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 408,
+      "answer_ids": [
+        408,
+        485,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Roy": {
+      "name": "Roy",
+      "span": " Roy",
+      "span_ids": [
+        1097,
+        979
+      ],
+      "span_pieces": [
+        "\u0120R",
+        "oy"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 1097,
+      "answer_ids": [
+        1097,
+        979,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Ruth": {
+      "name": "Ruth",
+      "span": " Ruth",
+      "span_ids": [
+        1097,
+        322,
+        76
+      ],
+      "span_pieces": [
+        "\u0120R",
+        "ut",
+        "h"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 1097,
+      "answer_ids": [
+        1097,
+        322,
+        76,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Seth": {
+      "name": "Seth",
+      "span": " Seth",
+      "span_ids": [
+        302,
+        314,
+        76
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "et",
+        "h"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        314,
+        76,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Vic": {
+      "name": "Vic",
+      "span": " Vic",
+      "span_ids": [
+        225,
+        58,
+        469
+      ],
+      "span_pieces": [
+        "\u0120",
+        "V",
+        "ic"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 225,
+      "answer_ids": [
+        225,
+        58,
+        469,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Walt": {
+      "name": "Walt",
+      "span": " Walt",
+      "span_ids": [
+        519,
+        402,
+        88
+      ],
+      "span_pieces": [
+        "\u0120W",
+        "al",
+        "t"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 519,
+      "answer_ids": [
+        519,
+        402,
+        88,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "York": {
+      "name": "York",
+      "span": " York",
+      "span_ids": [
+        225,
+        61,
+        306,
+        79
+      ],
+      "span_pieces": [
+        "\u0120",
+        "Y",
+        "or",
+        "k"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 225,
+      "answer_ids": [
+        225,
+        61,
+        306,
+        79,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    }
+  },
+  "dev_by_name": {
+    "Ava": {
+      "name": "Ava",
+      "span": " Ava",
+      "span_ids": [
+        461,
+        90,
+        69
+      ],
+      "span_pieces": [
+        "\u0120A",
+        "v",
+        "a"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 461,
+      "answer_ids": [
+        461,
+        90,
+        69,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Mel": {
+      "name": "Mel",
+      "span": " Mel",
+      "span_ids": [
+        408,
+        372
+      ],
+      "span_pieces": [
+        "\u0120M",
+        "el"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 408,
+      "answer_ids": [
+        408,
+        372,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Omar": {
+      "name": "Omar",
+      "span": " Omar",
+      "span_ids": [
+        225,
+        51,
+        81,
+        291
+      ],
+      "span_pieces": [
+        "\u0120",
+        "O",
+        "m",
+        "ar"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 225,
+      "answer_ids": [
+        225,
+        51,
+        81,
+        291,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Opal": {
+      "name": "Opal",
+      "span": " Opal",
+      "span_ids": [
+        225,
+        51,
+        84,
+        402
+      ],
+      "span_pieces": [
+        "\u0120",
+        "O",
+        "p",
+        "al"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 225,
+      "answer_ids": [
+        225,
+        51,
+        84,
+        402,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Ross": {
+      "name": "Ross",
+      "span": " Ross",
+      "span_ids": [
+        1097,
+        83,
+        589
+      ],
+      "span_pieces": [
+        "\u0120R",
+        "o",
+        "ss"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 1097,
+      "answer_ids": [
+        1097,
+        83,
+        589,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Sal": {
+      "name": "Sal",
+      "span": " Sal",
+      "span_ids": [
+        302,
+        402
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "al"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        402,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Skye": {
+      "name": "Skye",
+      "span": " Skye",
+      "span_ids": [
+        302,
+        79,
+        93,
+        73
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "k",
+        "y",
+        "e"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        79,
+        93,
+        73,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Wes": {
+      "name": "Wes",
+      "span": " Wes",
+      "span_ids": [
+        519,
+        320
+      ],
+      "span_pieces": [
+        "\u0120W",
+        "es"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 519,
+      "answer_ids": [
+        519,
+        320,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    }
+  },
+  "descriptive": {
+    "Sal": {
+      "name": "Sal",
+      "span": " Sal",
+      "span_ids": [
+        302,
+        402
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "al"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        402,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Salt": {
+      "name": "Salt",
+      "span": " Salt",
+      "span_ids": [
+        302,
+        402,
+        88
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "al",
+        "t"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        402,
+        88,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Skye": {
+      "name": "Skye",
+      "span": " Skye",
+      "span_ids": [
+        302,
+        79,
+        93,
+        73
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "k",
+        "y",
+        "e"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        79,
+        93,
+        73,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Sky": {
+      "name": "Sky",
+      "span": " Sky",
+      "span_ids": [
+        302,
+        79,
+        93
+      ],
+      "span_pieces": [
+        "\u0120S",
+        "k",
+        "y"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 302,
+      "answer_ids": [
+        302,
+        79,
+        93,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Wes": {
+      "name": "Wes",
+      "span": " Wes",
+      "span_ids": [
+        519,
+        320
+      ],
+      "span_pieces": [
+        "\u0120W",
+        "es"
+      ],
+      "n_tokens": 2,
+      "single_token": false,
+      "first_token": 519,
+      "answer_ids": [
+        519,
+        320,
+        18
+      ],
+      "answer_n_tokens": 3,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Walt": {
+      "name": "Walt",
+      "span": " Walt",
+      "span_ids": [
+        519,
+        402,
+        88
+      ],
+      "span_pieces": [
+        "\u0120W",
+        "al",
+        "t"
+      ],
+      "n_tokens": 3,
+      "single_token": false,
+      "first_token": 519,
+      "answer_ids": [
+        519,
+        402,
+        88,
+        18
+      ],
+      "answer_n_tokens": 4,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Omar": {
+      "name": "Omar",
+      "span": " Omar",
+      "span_ids": [
+        225,
+        51,
+        81,
+        291
+      ],
+      "span_pieces": [
+        "\u0120",
+        "O",
+        "m",
+        "ar"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 225,
+      "answer_ids": [
+        225,
+        51,
+        81,
+        291,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    },
+    "Opal": {
+      "name": "Opal",
+      "span": " Opal",
+      "span_ids": [
+        225,
+        51,
+        84,
+        402
+      ],
+      "span_pieces": [
+        "\u0120",
+        "O",
+        "p",
+        "al"
+      ],
+      "n_tokens": 4,
+      "single_token": false,
+      "first_token": 225,
+      "answer_ids": [
+        225,
+        51,
+        84,
+        402,
+        18
+      ],
+      "answer_n_tokens": 5,
+      "period_is_own_final_token": true,
+      "unk_count": 0
+    }
+  }
+}

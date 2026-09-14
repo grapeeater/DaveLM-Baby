@@ -1,0 +1,24 @@
+{
+  "study": "TOKENIZER_REPLACEMENT_STUDY_V1",
+  "option": "B",
+  "date": "2026-09-14",
+  "t29_authorized": false,
+  "full_retrain_authorized": false,
+  "overwrite_v0_7": false,
+  "test_loaded": false,
+  "dev_used_for_tokenizer_training": false,
+  "option_c_status": "APPEND_ONLY_EXTENSION_VALID_COMPLETION / NO_EFFECT",
+  "v0_7_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "train_language_source_sha256": "807a89417924a9b1cfa1e0a2a952d97400684db32a138fe11943d93e130312c8",
+  "candidates": [
+    "v0_7_baseline",
+    "bpe_bl_1536",
+    "bpe_bl_2048",
+    "bpe_bl_4096",
+    "bpe_bl_2048_prefix_space",
+    "bpe_bl_2048_titlecase_x4",
+    "bpe_ws_2048"
+  ],
+  "material_rule": "DEV shared-first-token rate <= 50% of v0_7, disambiguation not worse, TRAIN shared rate also falls, language bytes/token within +25% of v0_7",
+  "ranking_score": "3*(1-shared_first)+1.5*single_token+1/mean_tokens+1/mean_disambig-0.5*max(0, bpt_ratio-1)"
+}
