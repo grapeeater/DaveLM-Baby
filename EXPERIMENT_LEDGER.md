@@ -50,15 +50,19 @@ Scientific directory names are frozen. This is an index, not a rename map. Check
 
 Do **not** parent T14–T23 OUTPUT_FAIL checkpoints (including 820001–820003).
 
-## Phase 2A — live (paused)
+## Phase 2A — terminal / current
 
 | ID | Directory | State |
 |---|---|---|
 | T24 | `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1` | **TERMINAL: `T24_REPRESENTATION_SUCCESS_OUTPUT_FAIL`.** All three seeds finished U1000. Owner released the temporary pause restriction on 2026-09-13 and authorized autonomous successor selection. Historical pause record: `T24_PAUSE.md`. |
 | T24X | `phase2a_t24x_generation_failmode_v1` | **`T24X_GENERATION_FAILMODE_COMPLETE`.** Read-only U1000 generation audit; dominant residual is first-token-correct-then-diverge (45–47/128) plus other-then-EOS (25–31/128). |
-| T25 | — | **Not launched.** |
+| T25 | `phase2a_t25_continuation_mechanism_forensic_v1` | Diagnostic/forensic; not a new training treatment. Do not relaunch as T29. |
+| T28 | `phase2a_t28_fast_v2` | **`T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL`.** Exact 36/35/40 of 128. |
+| post-T28 tok | `phase2a_post_t28_tokenizer_diagnostic_v1` | **`TOKENIZER_ASSOCIATION_SUPPORTED`.** Compact reports in git; `ITEMS.json` local-only. |
+| post-T28 suffix | `phase2a_post_t28_suffix_state_trace_v1` | **`GOLD_PREFIX_DIRECT_DECODABILITY_WITH_FREE_PREFIX_COLLAPSE`.** `TRACE.json` local-only. |
+| mouth repair | `tokenizer_repair_v1` | **`NATIVE_BEAM_DOES_NOT_CLOSE_SHARED_PREFIX`.** v0_7 preserved. |
 
-Question (do not run): does inventory unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
+Question (historical; T24 already answered no): does inventory unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
 
 ## Closed historical lineages (Category B/C)
 
@@ -69,4 +73,3 @@ Question (do not run): does inventory unlikelihood lift exact above T18 36–40 
 - Audits: `vnext_60m_audit/`, `BABY_REPO_MIGRATION_AUDIT.md`, `forensics/`, `mistral_treatment_design_audit_v1/`, `comparative_model_anatomy_post_sf2_v1/`, `overnight_reproducibility_resolution_v1/`.
 
 Qwen/Smol notes are advisory. Baby evidence outranks them. Do not copy foreign weights.
-`n## T28 FAST V2 (2026-09-13)`nRebuilt from untouched T24 runner; vectorized suffix hard-negative margin (M=1.0, lambda=0.5) only. Seeds 850001-850003 all completed update 1000. Pointer/forced-choice and TRAIN16/language/binding remained healthy; exact generation remained T24-like (36/35/40 of 128). Classification: T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL. Protected T3_TEST, T2_EVAL_TEST, FINAL, sacred remained locked. Bundle: C:\DaveLM-CADAVER\phase2a_t28_fast_v2.`n

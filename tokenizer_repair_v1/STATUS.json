@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE",
+  "classification": "NATIVE_BEAM_DOES_NOT_CLOSE_SHARED_PREFIX",
+  "test_loaded": false,
+  "tokenizer_changed": false,
+  "t29_launched": false,
+  "v0_7_preserved": true
+}

@@ -1,0 +1,424 @@
+{
+  "source": "C:\\DaveLM-CADAVER\\phase2a_post_t28_tokenizer_diagnostic_v1\\ITEMS.json",
+  "n_observations": 384,
+  "names": {
+    "Ava": {
+      "name": "Ava",
+      "v0_7_token_ids": [
+        314,
+        90,
+        69
+      ],
+      "token_pieces": [
+        " A",
+        "v",
+        "a",
+        "."
+      ],
+      "answer_text": " Ava.",
+      "first_token": 314,
+      "name_token_count": 3,
+      "longest_shared_prefix_among_dev_names": 0,
+      "n": 48,
+      "exact": 14,
+      "exact_rate": 0.2916666666666667,
+      "diverge": 0,
+      "diverge_rate": 0.0,
+      "first_token_correct": 14,
+      "modes": {
+        "other_then_eos": 34,
+        "exact": 14
+      },
+      "generated_text_counts": {
+        " York.": 20,
+        " Vic.": 7,
+        " Ava.": 14,
+        " Emma.": 1,
+        " Salt.": 5,
+        " Helen.": 1
+      },
+      "competing_dev_names_sharing_first_token": [],
+      "collision_family": [
+        "Ava"
+      ],
+      "dev_first_token_unique": true,
+      "first_identity_disambiguating_position_1based": 1,
+      "string_prefix_continuations": []
+    },
+    "Mel": {
+      "name": "Mel",
+      "v0_7_token_ids": [
+        925,
+        462
+      ],
+      "token_pieces": [
+        " M",
+        "el",
+        "."
+      ],
+      "answer_text": " Mel.",
+      "first_token": 925,
+      "name_token_count": 2,
+      "longest_shared_prefix_among_dev_names": 0,
+      "n": 48,
+      "exact": 44,
+      "exact_rate": 0.9166666666666666,
+      "diverge": 0,
+      "diverge_rate": 0.0,
+      "first_token_correct": 44,
+      "modes": {
+        "exact": 44,
+        "other_then_eos": 2,
+        "wrong_candidate": 2
+      },
+      "generated_text_counts": {
+        " Mel.": 44,
+        " York.": 1,
+        " Walt.": 1,
+        " Ross.": 2
+      },
+      "competing_dev_names_sharing_first_token": [],
+      "collision_family": [
+        "Mel"
+      ],
+      "dev_first_token_unique": true,
+      "first_identity_disambiguating_position_1based": 1,
+      "string_prefix_continuations": []
+    },
+    "Omar": {
+      "name": "Omar",
+      "v0_7_token_ids": [
+        536,
+        81,
+        285
+      ],
+      "token_pieces": [
+        " O",
+        "m",
+        "ar",
+        "."
+      ],
+      "answer_text": " Omar.",
+      "first_token": 536,
+      "name_token_count": 3,
+      "longest_shared_prefix_among_dev_names": 1,
+      "n": 48,
+      "exact": 1,
+      "exact_rate": 0.020833333333333332,
+      "diverge": 4,
+      "diverge_rate": 0.08333333333333333,
+      "first_token_correct": 5,
+      "modes": {
+        "other_then_eos": 34,
+        "wrong_candidate": 8,
+        "unterminated_other": 1,
+        "first_token_correct_then_diverge": 4,
+        "exact": 1
+      },
+      "generated_text_counts": {
+        " York.": 11,
+        " Seth.": 1,
+        " Salt.": 2,
+        " Bea.": 1,
+        " Marie.": 2,
+        " Mark.": 2,
+        " Mel.": 8,
+        " He was very sad.": 1,
+        " He was very proud of his creation": 1,
+        " Sky.": 2,
+        " Roy.": 4,
+        " Ruth.": 3,
+        " Open.": 2,
+        " Ida.": 2,
+        " Vic.": 2,
+        " Omois.": 1,
+        " Op.": 1,
+        " Hope.": 1,
+        " Omar.": 1
+      },
+      "competing_dev_names_sharing_first_token": [
+        "Opal"
+      ],
+      "collision_family": [
+        "Omar",
+        "Opal"
+      ],
+      "dev_first_token_unique": false,
+      "first_identity_disambiguating_position_1based": 2,
+      "string_prefix_continuations": []
+    },
+    "Opal": {
+      "name": "Opal",
+      "v0_7_token_ids": [
+        536,
+        84,
+        293
+      ],
+      "token_pieces": [
+        " O",
+        "p",
+        "al",
+        "."
+      ],
+      "answer_text": " Opal.",
+      "first_token": 536,
+      "name_token_count": 3,
+      "longest_shared_prefix_among_dev_names": 1,
+      "n": 48,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "diverge": 4,
+      "diverge_rate": 0.08333333333333333,
+      "first_token_correct": 4,
+      "modes": {
+        "other_then_eos": 31,
+        "wrong_candidate": 13,
+        "first_token_correct_then_diverge": 4
+      },
+      "generated_text_counts": {
+        " Rosa.": 2,
+        " Ross.": 10,
+        " Marie.": 3,
+        " Sam.": 1,
+        " Bea.": 1,
+        " York.": 6,
+        " Seth.": 2,
+        " Amy.": 1,
+        " Sal.": 3,
+        " Helen.": 1,
+        " Ida.": 3,
+        " Ruth.": 2,
+        " Roy.": 1,
+        " Salt.": 7,
+        " Mark.": 1,
+        " Open.": 3,
+        " Opin.": 1
+      },
+      "competing_dev_names_sharing_first_token": [
+        "Omar"
+      ],
+      "collision_family": [
+        "Omar",
+        "Opal"
+      ],
+      "dev_first_token_unique": false,
+      "first_identity_disambiguating_position_1based": 2,
+      "string_prefix_continuations": []
+    },
+    "Ross": {
+      "name": "Ross",
+      "v0_7_token_ids": [
+        1019,
+        389,
+        87
+      ],
+      "token_pieces": [
+        " R",
+        "os",
+        "s",
+        "."
+      ],
+      "answer_text": " Ross.",
+      "first_token": 1019,
+      "name_token_count": 3,
+      "longest_shared_prefix_among_dev_names": 0,
+      "n": 48,
+      "exact": 44,
+      "exact_rate": 0.9166666666666666,
+      "diverge": 1,
+      "diverge_rate": 0.020833333333333332,
+      "first_token_correct": 45,
+      "modes": {
+        "exact": 44,
+        "wrong_candidate": 2,
+        "first_token_correct_then_diverge": 1,
+        "other_then_eos": 1
+      },
+      "generated_text_counts": {
+        " Ross.": 44,
+        " Mel.": 2,
+        " Roy.": 1,
+        " Sky.": 1
+      },
+      "competing_dev_names_sharing_first_token": [],
+      "collision_family": [
+        "Ross"
+      ],
+      "dev_first_token_unique": true,
+      "first_identity_disambiguating_position_1based": 1,
+      "string_prefix_continuations": []
+    },
+    "Sal": {
+      "name": "Sal",
+      "v0_7_token_ids": [
+        527,
+        293
+      ],
+      "token_pieces": [
+        " S",
+        "al",
+        "."
+      ],
+      "answer_text": " Sal.",
+      "first_token": 527,
+      "name_token_count": 2,
+      "longest_shared_prefix_among_dev_names": 1,
+      "n": 48,
+      "exact": 6,
+      "exact_rate": 0.125,
+      "diverge": 36,
+      "diverge_rate": 0.75,
+      "first_token_correct": 42,
+      "modes": {
+        "first_token_correct_then_diverge": 36,
+        "exact": 6,
+        "wrong_candidate": 4,
+        "other_then_eos": 2
+      },
+      "generated_text_counts": {
+        " Salt.": 36,
+        " Sal.": 6,
+        " Ava.": 4,
+        " Amy.": 1,
+        " Walt.": 1
+      },
+      "competing_dev_names_sharing_first_token": [
+        "Skye"
+      ],
+      "collision_family": [
+        "Sal",
+        "Skye"
+      ],
+      "dev_first_token_unique": false,
+      "first_identity_disambiguating_position_1based": 2,
+      "string_prefix_continuations": [
+        {
+          "generated_text": " Salt.",
+          "n": 36,
+          "relation": "gold_string_is_prefix_of_generated"
+        }
+      ]
+    },
+    "Skye": {
+      "name": "Skye",
+      "v0_7_token_ids": [
+        527,
+        79,
+        93,
+        73
+      ],
+      "token_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        "."
+      ],
+      "answer_text": " Skye.",
+      "first_token": 527,
+      "name_token_count": 4,
+      "longest_shared_prefix_among_dev_names": 1,
+      "n": 48,
+      "exact": 2,
+      "exact_rate": 0.041666666666666664,
+      "diverge": 39,
+      "diverge_rate": 0.8125,
+      "first_token_correct": 41,
+      "modes": {
+        "first_token_correct_then_diverge": 39,
+        "wrong_candidate": 6,
+        "other_then_eos": 1,
+        "exact": 2
+      },
+      "generated_text_counts": {
+        " Sky.": 28,
+        " Seth.": 11,
+        " Ross.": 6,
+        " right.": 1,
+        " Skye.": 2
+      },
+      "competing_dev_names_sharing_first_token": [
+        "Sal"
+      ],
+      "collision_family": [
+        "Sal",
+        "Skye"
+      ],
+      "dev_first_token_unique": false,
+      "first_identity_disambiguating_position_1based": 2,
+      "string_prefix_continuations": [
+        {
+          "generated_text": " Sky.",
+          "n": 28,
+          "relation": "generated_is_prefix_of_gold_string"
+        }
+      ]
+    },
+    "Wes": {
+      "name": "Wes",
+      "v0_7_token_ids": [
+        679,
+        273
+      ],
+      "token_pieces": [
+        " W",
+        "es",
+        "."
+      ],
+      "answer_text": " Wes.",
+      "first_token": 679,
+      "name_token_count": 2,
+      "longest_shared_prefix_among_dev_names": 0,
+      "n": 48,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "diverge": 40,
+      "diverge_rate": 0.8333333333333334,
+      "first_token_correct": 40,
+      "modes": {
+        "first_token_correct_then_diverge": 40,
+        "other_then_eos": 4,
+        "wrong_candidate": 4
+      },
+      "generated_text_counts": {
+        " Walt.": 40,
+        " Hope.": 1,
+        " Mel.": 4,
+        " York.": 2,
+        "kes.": 1
+      },
+      "competing_dev_names_sharing_first_token": [],
+      "collision_family": [
+        "Wes"
+      ],
+      "dev_first_token_unique": true,
+      "first_identity_disambiguating_position_1based": 1,
+      "string_prefix_continuations": []
+    }
+  },
+  "first_token_collision_groups": {
+    "536": [
+      "Omar",
+      "Opal"
+    ],
+    "527": [
+      "Sal",
+      "Skye"
+    ]
+  },
+  "shared_first_token_names": [
+    "Omar",
+    "Opal",
+    "Sal",
+    "Skye"
+  ],
+  "unique_first_token_names": [
+    "Ava",
+    "Mel",
+    "Ross",
+    "Wes"
+  ],
+  "shared_exact_rate": 0.046875,
+  "unique_exact_rate": 0.53125,
+  "note": "dev_first_token_unique is uniqueness among the 8 DEV names only, not uniqueness in the 1024-piece vocab. Wes is unique in DEV but Walt shares the same first token."
+}

@@ -44,5 +44,12 @@ Resume command (documented, **not run**):
 cmd /c start "" /min C:\DaveLM-CADAVER\phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1\LAUNCH_WATCHDOG.cmd
 ```
 
-That command would see all three `FINAL_STATUS` files and would not train. Do not run it until CONTINUE.
-`n## T28 FAST V2 (2026-09-13)`nRebuilt from untouched T24 runner; vectorized suffix hard-negative margin (M=1.0, lambda=0.5) only. Seeds 850001-850003 all completed update 1000. Pointer/forced-choice and TRAIN16/language/binding remained healthy; exact generation remained T24-like (36/35/40 of 128). Classification: T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL. Protected T3_TEST, T2_EVAL_TEST, FINAL, sacred remained locked. Bundle: C:\DaveLM-CADAVER\phase2a_t28_fast_v2.`n
+That command would see all three `FINAL_STATUS` files and would not train. Do not run it.
+
+## T28 FAST V2 (2026-09-13)
+
+Rebuilt from untouched T24 runner; vectorized suffix hard-negative margin (M=1.0, lambda=0.5) only. Seeds 850001-850003 all completed update 1000. Pointer/forced-choice and TRAIN16/language/binding remained healthy; exact generation remained T24-like (36/35/40 of 128). Classification: `T28_SUFFIX_MARGIN_VALID_COMPLETION / OUTPUT_FAIL`. Protected T3_TEST, T2_EVAL_TEST, FINAL, sacred remained locked. Bundle: `phase2a_t28_fast_v2`.
+
+## Post-T28 diagnostics + mouth repair
+
+Tokenizer diagnostic: `TOKENIZER_ASSOCIATION_SUPPORTED`. Suffix-state: `GOLD_PREFIX_DIRECT_DECODABILITY_WITH_FREE_PREFIX_COLLAPSE`. Decode-only `tokenizer_repair_v1`: free beam does not close shared-prefix exact (4.7% → 4.2%); 8-name inventory rerank is non-native. T29 is not authorized. v0_7 must stay byte-identical.

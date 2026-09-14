@@ -17,7 +17,8 @@ Workspace root: `C:\DaveLM-CADAVER`. Do not open a different tree as the Baby wo
 
 ## Read first
 
-- [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOFF.md) — authoritative scientific handoff.
+- [`CANONICAL_STATE.md`](CANONICAL_STATE.md) — authoritative current state.
+- [`PHASE2A_CURRENT_HANDOFF.md`](PHASE2A_CURRENT_HANDOFF.md) — scientific handoff.
 - [`CURRENT_STATE.md`](CURRENT_STATE.md)
 - [`EXPERIMENT_LEDGER.md`](EXPERIMENT_LEDGER.md)
 - [`artifacts/LOCAL_ONLY.md`](artifacts/LOCAL_ONLY.md)
@@ -29,9 +30,9 @@ SHA-256 `c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1`
 
 ## Live
 
-T24 `phase2a_t24_inventory_unlikelihood_lr3p75e5_1k_v1`, seeds 830001–830003. Stay until terminal, then T24X if leftover earns it.
+T22/T24 are terminal history (`REPRESENTATION_SUCCESS_OUTPUT_FAIL`). Do not resume T24. T28 FAST V2 is terminal `OUTPUT_FAIL`. Post-T28 diagnostics are complete. `tokenizer_repair_v1` closed free-beam as a shared-prefix mouth repair. T29 is not authorized. Do not overwrite v0_7 or open TEST.
 
-When a terminal study earns a successor but no successor protocol exists, the autonomous agent is authorized and expected to design, prospectively freeze, implement, and execute the highest-information Baby-native successor. This authority was explicitly granted by the owner on 2026-09-13; all gates and protected-material locks still apply.
+When a terminal study earns a successor but no successor protocol exists, the autonomous agent is authorized and expected to design, prospectively freeze, implement, and execute the highest-information Baby-native successor. This authority was explicitly granted by the owner on 2026-09-13; all gates and protected-material locks still apply. Owner review is required before a full tokenizer-replacement retrain.
 
 ## What belongs in git vs disk
 

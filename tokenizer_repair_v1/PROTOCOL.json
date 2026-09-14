@@ -1,0 +1,49 @@
+{
+  "study": "TOKENIZER_OUTPUT_MOUTH_REPAIR_V1",
+  "frozen_before_scoring": true,
+  "date": "2026-09-13",
+  "read_only_weights": true,
+  "tokenizer_mutation": "forbidden",
+  "v0_7_path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "v0_7_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "allowed_inputs": [
+    "qa_dev.jsonl",
+    "T28 FAST V2 terminal checkpoints 850001-850003",
+    "post-T28 tokenizer ITEMS.json / DETAILED_SUMMARY.json",
+    "DaveLM tokenizer v0_7",
+    "Phase1G language-train token stream (frequency only; no vocab construction in this study)"
+  ],
+  "forbidden_inputs": [
+    "qa_test.jsonl",
+    "T3 TEST",
+    "T2_EVAL_TEST",
+    "FINAL",
+    "sacred"
+  ],
+  "forbidden_actions": [
+    "overwrite v0_7",
+    "overwrite historical checkpoints",
+    "retokenize historical corpora",
+    "launch T25/T29",
+    "resume T24",
+    "full from-scratch retrain",
+    "hand-add DEV names as special tokens"
+  ],
+  "selected_first_intervention": "A_NATIVE_FREE_BEAM",
+  "methods": {
+    "A_NATIVE_GREEDY": "reproduce T28 greedy exact+EOS on DEV (baseline)",
+    "A_NATIVE_FREE_BEAM": "inventory-free beam width 4, length-normalized sum logprob, stop at <eos>, max 12 new tokens, full 1024-way vocab",
+    "A_CONSTRAINED_DEV_NAME_RERANK": "teacher-forced mean logprob over the frozen 8 DEV answer names plus period; labeled NON-NATIVE / NOT the Phase 2A bar"
+  },
+  "metrics": [
+    "exact+EOS",
+    "shared-first-token exact",
+    "unique-first-token exact",
+    "first-token-correct-then-diverge",
+    "Sal/Skye/Omar/Opal exact",
+    "language not rescored in this decode-only study",
+    "pointer/forced-choice not mutated"
+  ],
+  "success_bar": "shared-prefix exact must rise substantially without unique-prefix collapse; constrained rerank cannot be used to declare Phase 2A solved",
+  "t29_authorized": false
+}

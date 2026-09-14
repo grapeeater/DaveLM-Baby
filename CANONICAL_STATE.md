@@ -102,4 +102,13 @@ normalized readout in blocks 7–11 under gold prefixes, but much less often aft
 wrong free-running token enters the prefix. See
 `PHASE2A_POST_T28_DIAGNOSTIC_SYNTHESIS.md`.
 
-T29 remains unplanned and unauthorized in the current diagnostic assignment.
+## Tokenizer / output mouth-repair (2026-09-13)
+
+Decode-only study `tokenizer_repair_v1` on the three T28 FAST V2 checkpoints.
+Inventory-free beam width 4 did not close the shared-prefix exact gap (4.7% greedy
+→ 4.2% beam). An 8-name DEV inventory rerank reached 52.6% shared-prefix exact but
+is not native generation and left Wes at 0/48. Tokenizer v0_7 was not changed.
+See `tokenizer_repair_v1/TOKENIZER_REPAIR_RESULTS.md`.
+
+T29 remains unplanned and unauthorized. Full tokenizer replacement or from-scratch
+retrain requires owner review.
