@@ -9,6 +9,11 @@ suffix-state diagnostics are complete. Decode-only mouth repair
 (`tokenizer_repair_v1`) found that free beam does not close the shared-prefix
 exact gap; constrained 8-name rerank is not native generation.
 
+Post-T28 prefix rescue is complete:
+`EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES` (gold single-token oracle then free greedy
+recovered 108/124 exact+EOS on the diverge population). Tokenizer lineage remains
+paused. Activation patching was not run.
+
 T3 TEST remains `SEALED_UNOPENED`. T29 is not authorized. Do not overwrite v0_7.
 Do not resume T24. Do not launch a from-scratch tokenizer-replacement retrain
-without owner review.
+without owner review. Do not design the next treatment from this study.

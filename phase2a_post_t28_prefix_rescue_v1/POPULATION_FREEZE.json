@@ -1,0 +1,7713 @@
+{
+  "frozen_before_rescue": true,
+  "n": 124,
+  "by_seed": {
+    "850001": 39,
+    "850002": 40,
+    "850003": 45
+  },
+  "controls_assigned_before_rescue": true,
+  "rows": [
+    {
+      "seed": 850001,
+      "id": "DI00:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI00:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI00:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI00:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI01:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI01:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI01:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI01:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI02:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI02:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI02:a1:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI04:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI04:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI04:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI04:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a0:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a0:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a1:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DI05:a1:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT00:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT00:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT00:a1:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT01:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT01:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT01:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT02:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT02:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT02:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT05:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT05:a1:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT06:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT06:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT06:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT07:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850001,
+      "id": "DT07:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI00:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI00:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI00:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI00:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI01:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI01:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI01:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI01:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI02:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI02:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI02:a1:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI04:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI04:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI04:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI05:a0:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI05:a0:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI05:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI05:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI05:a1:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI05:a1:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI06:a1:q0:o1",
+      "name": "Ross",
+      "family": "Other",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ],
+      "generated_ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Roy.",
+      "target_text": " Ross.",
+      "first_divergence_pos": 1,
+      "gold_token": 389,
+      "gold_piece": "os",
+      "wrong_token": 83,
+      "wrong_piece": "o",
+      "shared_prefix_ids": [
+        1019
+      ],
+      "remaining_suffix_ids": [
+        389,
+        87,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " R",
+        "os",
+        "s",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 654,
+        "piece": "ew",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 4475,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 4466,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 83,
+        "piece": "o",
+        "rival_name": "Roy",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DI07:a1:q1:o0",
+      "name": "Omar",
+      "family": "Omar",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        81,
+        285,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        274,
+        18,
+        3
+      ],
+      "generated_text": " Open.",
+      "target_text": " Omar.",
+      "first_divergence_pos": 1,
+      "gold_token": 81,
+      "gold_piece": "m",
+      "wrong_token": 84,
+      "wrong_piece": "p",
+      "shared_prefix_ids": [
+        536
+      ],
+      "remaining_suffix_ids": [
+        81,
+        285,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "m",
+        "ar",
+        ".",
+        ""
+      ],
+      "observed_surface": "Omar",
+      "control_B": {
+        "token": 44,
+        "piece": "H",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 53870,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 54088,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 84,
+        "piece": "p",
+        "rival_name": "Opal",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT00:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT00:a1:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT01:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT01:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT02:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT02:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT02:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT05:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT05:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT05:a1:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT05:a1:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT06:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT06:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT06:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT06:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT07:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT07:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850002,
+      "id": "DT07:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI00:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI00:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI00:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI00:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI01:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI01:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI01:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI01:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI02:a0:q0:o1",
+      "name": "Omar",
+      "family": "Omar",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        81,
+        285,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        81,
+        83,
+        294,
+        18,
+        3
+      ],
+      "generated_text": " Omois.",
+      "target_text": " Omar.",
+      "first_divergence_pos": 2,
+      "gold_token": 285,
+      "gold_piece": "ar",
+      "wrong_token": 83,
+      "wrong_piece": "o",
+      "shared_prefix_ids": [
+        536,
+        81
+      ],
+      "remaining_suffix_ids": [
+        285,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "m",
+        "ar",
+        ".",
+        ""
+      ],
+      "observed_surface": "Omar",
+      "control_B": {
+        "token": 294,
+        "piece": "is",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 48868,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 50110,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI02:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI02:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI02:a1:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI04:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI04:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI04:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ],
+      "generated_text": " Seth.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 1,
+      "gold_token": 79,
+      "gold_piece": "k",
+      "wrong_token": 310,
+      "wrong_piece": "et",
+      "shared_prefix_ids": [
+        527
+      ],
+      "remaining_suffix_ids": [
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "other_surface",
+      "control_B": {
+        "token": 77,
+        "piece": "i",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 69297,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 68086,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Sal",
+        "n_rivals": 2
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a0:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a0:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a1:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI05:a1:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI07:a0:q0:o0",
+      "name": "Omar",
+      "family": "Omar",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        81,
+        285,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        18,
+        3
+      ],
+      "generated_text": " Op.",
+      "target_text": " Omar.",
+      "first_divergence_pos": 1,
+      "gold_token": 81,
+      "gold_piece": "m",
+      "wrong_token": 84,
+      "wrong_piece": "p",
+      "shared_prefix_ids": [
+        536
+      ],
+      "remaining_suffix_ids": [
+        81,
+        285,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "m",
+        "ar",
+        ".",
+        ""
+      ],
+      "observed_surface": "Omar",
+      "control_B": {
+        "token": 44,
+        "piece": "H",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 53870,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 54088,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 84,
+        "piece": "p",
+        "rival_name": "Opal",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI07:a0:q0:o1",
+      "name": "Omar",
+      "family": "Omar",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        81,
+        285,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        274,
+        18,
+        3
+      ],
+      "generated_text": " Open.",
+      "target_text": " Omar.",
+      "first_divergence_pos": 1,
+      "gold_token": 81,
+      "gold_piece": "m",
+      "wrong_token": 84,
+      "wrong_piece": "p",
+      "shared_prefix_ids": [
+        536
+      ],
+      "remaining_suffix_ids": [
+        81,
+        285,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "m",
+        "ar",
+        ".",
+        ""
+      ],
+      "observed_surface": "Omar",
+      "control_B": {
+        "token": 44,
+        "piece": "H",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 53870,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 54088,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 84,
+        "piece": "p",
+        "rival_name": "Opal",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI07:a1:q0:o0",
+      "name": "Opal",
+      "family": "Opal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        84,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        274,
+        18,
+        3
+      ],
+      "generated_text": " Open.",
+      "target_text": " Opal.",
+      "first_divergence_pos": 2,
+      "gold_token": 293,
+      "gold_piece": "al",
+      "wrong_token": 274,
+      "wrong_piece": "en",
+      "shared_prefix_ids": [
+        536,
+        84
+      ],
+      "remaining_suffix_ids": [
+        293,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "p",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Opal",
+      "control_B": {
+        "token": 321,
+        "piece": "ic",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 15353,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 16303,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DI07:a1:q0:o1",
+      "name": "Opal",
+      "family": "Opal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        84,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        274,
+        18,
+        3
+      ],
+      "generated_text": " Open.",
+      "target_text": " Opal.",
+      "first_divergence_pos": 2,
+      "gold_token": 293,
+      "gold_piece": "al",
+      "wrong_token": 274,
+      "wrong_piece": "en",
+      "shared_prefix_ids": [
+        536,
+        84
+      ],
+      "remaining_suffix_ids": [
+        293,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "p",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Opal",
+      "control_B": {
+        "token": 321,
+        "piece": "ic",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 15353,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 16303,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT00:a0:q1:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT00:a1:q0:o0",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT01:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT02:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT02:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT02:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT02:a1:q0:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT02:a1:q1:o1",
+      "name": "Opal",
+      "family": "Opal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        84,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        267,
+        18,
+        3
+      ],
+      "generated_text": " Opin.",
+      "target_text": " Opal.",
+      "first_divergence_pos": 2,
+      "gold_token": 293,
+      "gold_piece": "al",
+      "wrong_token": 267,
+      "wrong_piece": "in",
+      "shared_prefix_ids": [
+        536,
+        84
+      ],
+      "remaining_suffix_ids": [
+        293,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "p",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Opal",
+      "control_B": {
+        "token": 321,
+        "piece": "ic",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 15353,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 16303,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT05:a0:q0:o1",
+      "name": "Opal",
+      "family": "Opal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        536,
+        84,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        536,
+        84,
+        274,
+        18,
+        3
+      ],
+      "generated_text": " Open.",
+      "target_text": " Opal.",
+      "first_divergence_pos": 2,
+      "gold_token": 293,
+      "gold_piece": "al",
+      "wrong_token": 274,
+      "wrong_piece": "en",
+      "shared_prefix_ids": [
+        536,
+        84
+      ],
+      "remaining_suffix_ids": [
+        293,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " O",
+        "p",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Opal",
+      "control_B": {
+        "token": 321,
+        "piece": "ic",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 15353,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 16303,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT05:a0:q1:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT05:a1:q0:o1",
+      "name": "Sal",
+      "family": "Sal",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        293,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Salt.",
+      "target_text": " Sal.",
+      "first_divergence_pos": 2,
+      "gold_token": 18,
+      "gold_piece": ".",
+      "wrong_token": 88,
+      "wrong_piece": "t",
+      "shared_prefix_ids": [
+        527,
+        293
+      ],
+      "remaining_suffix_ids": [
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "al",
+        ".",
+        ""
+      ],
+      "observed_surface": "Sal_to_Salt",
+      "control_B": {
+        "token": 225,
+        "piece": " ",
+        "class": "punct",
+        "utf8_len": 1,
+        "train_freq": 256928,
+        "gold_class": "punct",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 345082,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT06:a0:q1:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT06:a0:q1:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT06:a1:q0:o0",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT06:a1:q0:o1",
+      "name": "Skye",
+      "family": "Skye",
+      "shared_first_token_dev": true,
+      "target_ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ],
+      "generated_ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ],
+      "generated_text": " Sky.",
+      "target_text": " Skye.",
+      "first_divergence_pos": 3,
+      "gold_token": 73,
+      "gold_piece": "e",
+      "wrong_token": 18,
+      "wrong_piece": ".",
+      "shared_prefix_ids": [
+        527,
+        79,
+        93
+      ],
+      "remaining_suffix_ids": [
+        73,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " S",
+        "k",
+        "y",
+        "e",
+        ".",
+        ""
+      ],
+      "observed_surface": "Skye_to_Sky",
+      "control_B": {
+        "token": 87,
+        "piece": "s",
+        "class": "continuation",
+        "utf8_len": 1,
+        "train_freq": 132789,
+        "gold_class": "continuation",
+        "gold_utf8_len": 1,
+        "gold_train_freq": 154828,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": false,
+        "token": null,
+        "piece": null,
+        "rival_name": null,
+        "n_rivals": 0
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT07:a0:q1:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT07:a0:q1:o1",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    },
+    {
+      "seed": 850003,
+      "id": "DT07:a1:q0:o0",
+      "name": "Wes",
+      "family": "Wes",
+      "shared_first_token_dev": false,
+      "target_ids": [
+        679,
+        273,
+        18,
+        3
+      ],
+      "generated_ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ],
+      "generated_text": " Walt.",
+      "target_text": " Wes.",
+      "first_divergence_pos": 1,
+      "gold_token": 273,
+      "gold_piece": "es",
+      "wrong_token": 293,
+      "wrong_piece": "al",
+      "shared_prefix_ids": [
+        679
+      ],
+      "remaining_suffix_ids": [
+        273,
+        18,
+        3
+      ],
+      "tokenization_pieces": [
+        " W",
+        "es",
+        ".",
+        ""
+      ],
+      "observed_surface": "Wes_to_Walt",
+      "control_B": {
+        "token": 362,
+        "piece": "ly",
+        "class": "continuation",
+        "utf8_len": 2,
+        "train_freq": 22436,
+        "gold_class": "continuation",
+        "gold_utf8_len": 2,
+        "gold_train_freq": 22387,
+        "match_tier": "class_and_length_freq"
+      },
+      "control_D": {
+        "feasible": true,
+        "token": 293,
+        "piece": "al",
+        "rival_name": "Walt",
+        "n_rivals": 1
+      }
+    }
+  ]
+}

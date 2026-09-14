@@ -31,6 +31,7 @@ venv/
 
 # --- Large generated / census dumps ---
 t5_t8_structural_census.json
+phase2a_post_t28_prefix_rescue_v1/PREFIX_RESCUE_ROWS_FULL.json
 **/d3_update*_RAW.json
 # HR English train: 26 byte-identical copies (SHA-256 31617e70…); see artifacts/LOCAL_ONLY.md
 **/ENGLISH_TRAIN.jsonl

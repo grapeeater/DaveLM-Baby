@@ -61,6 +61,9 @@ Do **not** parent T14–T23 OUTPUT_FAIL checkpoints (including 820001–820003).
 | post-T28 tok | `phase2a_post_t28_tokenizer_diagnostic_v1` | **`TOKENIZER_ASSOCIATION_SUPPORTED`.** Compact reports in git; `ITEMS.json` local-only. |
 | post-T28 suffix | `phase2a_post_t28_suffix_state_trace_v1` | **`GOLD_PREFIX_DIRECT_DECODABILITY_WITH_FREE_PREFIX_COLLAPSE`.** `TRACE.json` local-only. |
 | mouth repair | `tokenizer_repair_v1` | **`NATIVE_BEAM_DOES_NOT_CLOSE_SHARED_PREFIX`.** v0_7 preserved. |
+| Option C | `tokenizer_append_extension_v1` | **`APPEND_ONLY_EXTENSION_VALID_COMPLETION / NO_EFFECT`.** Tokenizer lineage paused. |
+| Option B | `tokenizer_replacement_study_v1` | **`TOKENIZER_REPLACEMENT_NOT_JUSTIFIED`.** No candidate beat v0_7 DEV collision geometry. |
+| post-T28 prefix rescue | `phase2a_post_t28_prefix_rescue_v1` | **`EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES`.** Single-token gold oracle rescue then free greedy; DEV diverge population 39/40/45. Activation patching not run. T29 not authorized. |
 
 Question (historical; T24 already answered no): does inventory unlikelihood lift exact above T18 36–40 while holding language + representation ≥2/3?
 

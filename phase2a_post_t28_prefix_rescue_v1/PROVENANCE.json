@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "read_only": true,
+  "date": "2026-09-13",
+  "forward_pass_only": true,
+  "optimizer_created": false,
+  "training_updates": 0,
+  "activation_patching": "NOT_RUN",
+  "inputs": {
+    "qa_dev.jsonl": "309f55dec7057b39b2972034e1f62753fc4edae989679c5f0d4fed85d2a25f99",
+    "tokenizer": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "phase1g_language_train_stream": "5f36b283cebe00d88445383166257fbb9831b759657a28c745f3d888f9626a41",
+    "name_inventory": "8f206951d2a0582e7b63d1557857b8d195ba6dbb05f2c9689b7fd079756051b6",
+    "t28_seed850001": "d6f5be589c3905f76265431fa377c74245e972d9b28e8cee2c085d8f219e2684",
+    "t28_seed850002": "f01066dd90aa3ff65b6affc7caad942486d6bfcc740733b24a440615ecf4f172",
+    "t28_seed850003": "95e34fd52bc1b836a726816a2d8ae259e392620733146c2941aa53e00deaf597",
+    "phase1g_parent": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+  },
+  "protected_data": {
+    "T3_TEST": "SEALED_UNOPENED",
+    "T2_EVAL_TEST": "LOCKED_UNOPENED",
+    "FINAL": "LOCKED",
+    "sacred": "LOCKED",
+    "loaded": false
+  },
+  "classification": "EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES"
+}

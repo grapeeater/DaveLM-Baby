@@ -110,5 +110,18 @@ Inventory-free beam width 4 did not close the shared-prefix exact gap (4.7% gree
 is not native generation and left Wes at 0/48. Tokenizer v0_7 was not changed.
 See `tokenizer_repair_v1/TOKENIZER_REPAIR_RESULTS.md`.
 
+Option C (`tokenizer_append_extension_v1`) was a valid completion with no native-exact
+effect. Option B (`tokenizer_replacement_study_v1`) is
+`TOKENIZER_REPLACEMENT_NOT_JUSTIFIED`. Tokenizer engineering is paused.
+
+## Prefix rescue (2026-09-13)
+
+Forward-pass oracle study `phase2a_post_t28_prefix_rescue_v1` on the 124 DEV
+first-token-correct-then-diverge T28 cases. Single-token gold repair then free greedy
+recovered exact+EOS 108/124 (87.1%; seeds 32/39, 37/40, 39/45). Wrong-matched and
+prefix-compatible-wrong controls recovered 0% exact. Classification:
+`EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES`. This is an oracle intervention, not native
+generation. Activation patching was not run. No next treatment was designed.
+
 T29 remains unplanned and unauthorized. Full tokenizer replacement or from-scratch
 retrain requires owner review.

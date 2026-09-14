@@ -1,0 +1,149 @@
+{
+  "study": "POST_T28_CAUSAL_PREFIX_RESCUE_V1",
+  "date": "2026-09-13",
+  "frozen_before_scoring": true,
+  "read_only_weights": true,
+  "forward_pass_only": true,
+  "optimizer_created": false,
+  "training_updates": 0,
+  "tokenizer_mutation": "forbidden",
+  "tokenizer_lineage": "PAUSED",
+  "t29_authorized": false,
+  "activation_patching": "NOT_AUTHORIZED_THIS_STUDY",
+  "parent_git_sha_expected": "9c84296121f294e43b5002e685363818e03d66d6",
+  "v0_7_path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+  "v0_7_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "allowed_inputs": [
+    "qa_dev.jsonl",
+    "T28 FAST V2 terminal checkpoints 850001-850003",
+    "DaveLM tokenizer v0_7",
+    "Phase1G language-train token stream (frequency only)",
+    "T28 name_inventory.json (TRAIN+DEV names; never TEST)"
+  ],
+  "forbidden_inputs": [
+    "qa_test.jsonl",
+    "T3 TEST",
+    "T2_EVAL_TEST",
+    "FINAL",
+    "sacred"
+  ],
+  "forbidden_actions": [
+    "create optimizer",
+    "train Baby",
+    "modify tokenizer",
+    "modify checkpoint",
+    "retokenize or retrain",
+    "launch T29",
+    "build another tokenizer",
+    "auto-run activation patching",
+    "cherry-pick Sal/Skye"
+  ],
+  "split": "DEV only",
+  "seeds": [850001, 850002, 850003],
+  "replication": "per-seed and pooled; no single-seed conclusion",
+  "primary_question": "When Baby emits the first wrong answer token after an otherwise-correct answer prefix, if we repair ONLY that token and return to free greedy AR generation, does she recover the correct answer?",
+  "part1_population": {
+    "rule": "T28 greedy first-token-correct-then-diverge on DEV, all three terminal checkpoints",
+    "expected_counts_by_seed": {"850001": 39, "850002": 40, "850003": 45},
+    "expected_pooled": 124,
+    "preserve_all_rows": true,
+    "cherry_pick": false,
+    "identified_fields": [
+      "target_ids",
+      "generated_ids",
+      "first_divergence_pos",
+      "gold_token",
+      "wrong_token",
+      "shared_prefix_ids",
+      "collision_family",
+      "tokenization_pieces",
+      "remaining_suffix_ids"
+    ]
+  },
+  "part2_primary_intervention": {
+    "id": "A_GOLD_REPAIR",
+    "procedure": "Teacher-force the shared prefix through first_divergence_pos-1, replace ONLY the diverging token with gold, then free greedy with no further oracle until native EOS or max_new=16",
+    "metrics": [
+      "exact_plus_eos_recovery",
+      "next_token_recovery",
+      "remaining_suffix_exact",
+      "eos_format",
+      "second_divergence_pos",
+      "free_tokens_matched_after_repair"
+    ]
+  },
+  "part3_controls_frozen_before_rescue": {
+    "note": "Control tokens are assigned from frozen population fields, inventory geometry, token class/length/frequency. They are not chosen using rescue success.",
+    "A": "GOLD REPAIR (primary)",
+    "B": {
+      "name": "WRONG_MATCHED_CONTROL",
+      "rule": "Among vocab ids 0..1023 excluding gold_token and the naturally generated wrong_token, take same token_class and same utf8 piece length as gold, then closest Phase1G train frequency, then smallest |id-gold|, then smallest id. If empty, relax length (same class, closest length then frequency). If still empty, relax class (closest frequency). Record match_tier. Never gold."
+    },
+    "C": {
+      "name": "NO_INTERVENTION",
+      "rule": "Original free greedy sequence. Exact+EOS is 0 by population construction."
+    },
+    "D": {
+      "name": "PREFIX_COMPATIBLE_WRONG_TOKEN",
+      "rule": "Among the 24 authorized inventory names, take the lexicographically first name whose token ids share gold prefix target[:div_pos] and whose next token exists and differs from gold_token. That next token is D. If none, D is infeasible for that row and is not substituted.",
+      "feasible_only": true
+    }
+  },
+  "token_class_rule": {
+    "eos": "id==3",
+    "special": "id in {0,1,2}",
+    "punct": "decoded piece has no alphanumeric characters",
+    "leading_space": "decoded piece startswith space",
+    "continuation": "otherwise"
+  },
+  "part4": {
+    "shared_vs_unique": "DEV-name first-token collision as in the tokenizer diagnostic (Omar/Opal and Sal/Skye are the only DEV shared-first groups)",
+    "descriptive_families": ["Sal", "Skye", "Omar", "Opal", "Wes", "Other"],
+    "observed_surfaces_descriptive_only": ["Salt", "Sky", "Walt"]
+  },
+  "part5": {
+    "at_divergence": "final-layer softmax P/rank/margin for gold, natural wrong, B, D (if feasible), and top1, on prefix prompt+target[:div_pos]",
+    "after_gold_repair": "same stats for the next remaining gold token on prefix prompt+target[:div_pos]+[gold]",
+    "trajectory": "teacher-forced remaining gold suffix after the repaired token: P/rank/margin of each next gold token",
+    "language": "descriptive; not a causal claim about internal use"
+  },
+  "part6": {
+    "optional": true,
+    "run": true,
+    "sites": "after blocks 7-11 (layer index 8..12 in the embedding=0 / after-block-k = k+1 numbering), frozen LM head after Baby final_norm",
+    "contrast": "prefix after appending wrong_token vs gold_token; readout of the NEXT remaining gold token",
+    "no_trained_probe": true,
+    "negative_readout": "does not prove information absence",
+    "store": "compact ranks/margins only; no activation dumps"
+  },
+  "part7": {
+    "activation_patching": "DO_NOT_RUN",
+    "if_gold_rescue_large_and_replicated": "STOP; document earned hypothesis only; do not design the next treatment"
+  },
+  "classification_rule_frozen_before_rescue": {
+    "order": [
+      "INCONCLUSIVE",
+      "MIXED_BY_COLLISION_FAMILY",
+      "EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES",
+      "EARLY_TOKEN_ERROR_MAJOR_CONTRIBUTOR",
+      "EARLY_TOKEN_REPAIR_PARTIAL_RECOVERY",
+      "EARLY_TOKEN_REPAIR_NO_MEANINGFUL_EFFECT"
+    ],
+    "INCONCLUSIVE": "n per seed < 20 OR (max-min gold exact+EOS rate across seeds) >= 0.30",
+    "MIXED_BY_COLLISION_FAMILY": "both shared-first and unique-first DEV groups have n>=20 and their gold exact+EOS rates differ by >= 0.30",
+    "EARLY_TOKEN_ERROR_CAUSALLY_DOMINATES": "pooled gold exact+EOS >= 0.70 AND min seed >= 0.60 AND (gold - max(B pooled, D-feasible pooled)) >= 0.40",
+    "EARLY_TOKEN_ERROR_MAJOR_CONTRIBUTOR": "pooled gold exact+EOS >= 0.40 AND min seed >= 0.25 AND (gold - max(B, D-feasible)) >= 0.20",
+    "EARLY_TOKEN_REPAIR_PARTIAL_RECOVERY": "pooled gold exact+EOS < 0.40 AND (pooled next-token recovery >= 0.50 OR pooled remaining-suffix exact >= 0.30) AND at least 2/3 seeds show next-token recovery >= 0.40 or remaining-suffix exact >= 0.20",
+    "EARLY_TOKEN_REPAIR_NO_MEANINGFUL_EFFECT": "pooled gold exact+EOS < 0.15 AND pooled next-token recovery < 0.20",
+    "fallback": "INCONCLUSIVE if none of the above match"
+  },
+  "success_bar_note": "This study does not reopen Phase 2A success gates and does not authorize TEST or T29.",
+  "artifacts": [
+    "PROTOCOL.json",
+    "PREFIX_RESCUE_RESULTS.json",
+    "PREFIX_RESCUE_FINAL_REPORT.md",
+    "OPERATOR_SUMMARY.md",
+    "SHA256SUMS.txt",
+    "PROVENANCE.json"
+  ]
+}
