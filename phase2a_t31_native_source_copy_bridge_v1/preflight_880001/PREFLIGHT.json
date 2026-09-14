@@ -1,0 +1,132 @@
+{
+  "update": 0,
+  "dev_ce": 1.2040123894810677,
+  "train_ce": 0.9477690190076828,
+  "gap": 0.25624337047338486,
+  "binding_intact": true,
+  "early_intact": true,
+  "dev": {
+    "n": 128,
+    "pointer_retrieval": 67,
+    "native_forced_choice": 62,
+    "exact_answer_eos": 0,
+    "mean_margin": -7.686205208301544e-05,
+    "fork_metrics": {
+      "first_disambiguating_token_n": 64,
+      "first_disambiguating_token_correct": 17,
+      "first_disambiguating_token_accuracy": 0.265625,
+      "shared_prefix_n": 64,
+      "shared_prefix_exact": 0,
+      "shared_prefix_exact_rate": 0.0,
+      "unique_prefix_n": 64,
+      "unique_prefix_exact": 0,
+      "unique_prefix_exact_rate": 0.0,
+      "first_token_correct_then_diverge": 20,
+      "first_token_correct_then_diverge_shared": 19,
+      "first_token_correct_then_diverge_rate": 0.15625,
+      "post_fork_free_completion_n": 17,
+      "post_fork_free_completion": 0,
+      "post_fork_free_completion_rate": 0.0
+    },
+    "per_row_count": 128
+  },
+  "dev_reversals": {
+    "pairs": 64,
+    "pointer": 5,
+    "native": 0
+  },
+  "dev_complete_ptr": {
+    "families": 16,
+    "complete": 0
+  },
+  "dev_complete_nat": {
+    "families": 16,
+    "complete": 0
+  },
+  "name_disjoint": {
+    "n": 64,
+    "pointer_retrieval": 34,
+    "native_forced_choice": 30,
+    "exact_answer_eos": 0,
+    "reversals": {
+      "pairs": 32,
+      "pointer": 2,
+      "native": 0
+    },
+    "complete_families": {
+      "families": 8,
+      "complete": 0
+    }
+  },
+  "template_disjoint": {
+    "n": 64,
+    "pointer_retrieval": 33,
+    "native_forced_choice": 32,
+    "exact_answer_eos": 0,
+    "reversals": {
+      "pairs": 32,
+      "pointer": 3,
+      "native": 0
+    },
+    "complete_families": {
+      "families": 8,
+      "complete": 0
+    }
+  },
+  "acq16": {
+    "n": 16,
+    "pointer_retrieval": 9,
+    "native_forced_choice": 8,
+    "exact_answer_eos": 0,
+    "mean_margin": -0.0062761977314949036,
+    "fork_metrics": {
+      "first_disambiguating_token_n": 10,
+      "first_disambiguating_token_correct": 0,
+      "first_disambiguating_token_accuracy": 0.0,
+      "shared_prefix_n": 10,
+      "shared_prefix_exact": 0,
+      "shared_prefix_exact_rate": 0.0,
+      "unique_prefix_n": 6,
+      "unique_prefix_exact": 0,
+      "unique_prefix_exact_rate": 0.0,
+      "first_token_correct_then_diverge": 3,
+      "first_token_correct_then_diverge_shared": 0,
+      "first_token_correct_then_diverge_rate": 0.1875,
+      "post_fork_free_completion_n": 0,
+      "post_fork_free_completion": 0,
+      "post_fork_free_completion_rate": null
+    },
+    "reversals": {
+      "pairs": 8,
+      "pointer": 1,
+      "native": 0
+    }
+  },
+  "acq16_reversals": {
+    "pairs": 8,
+    "pointer": 1,
+    "native": 0
+  },
+  "acq16_pass": false,
+  "shortcuts": {
+    "always_index0": 0.6015625,
+    "last_mentioned": 0.6953125,
+    "first_mentioned": 0.3046875,
+    "longer_name": 0.5078125
+  },
+  "generation": {
+    "non_immediate_eos": 10,
+    "no_three_identical": 10,
+    "no_repeat_trigram": 6,
+    "n": 10
+  },
+  "scope": {
+    "trainable": 40849668,
+    "frozen": 20670721,
+    "phase": "A"
+  },
+  "copy_gate_l2": 0.0,
+  "copy_gate_mean_abs": 0.0,
+  "test_loaded": false,
+  "classification": "PREFLIGHT"
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PREFLIGHT_PASS_SEALED",
+  "protected_test": "SEALED_UNOPENED",
+  "updates_before_seal": 0,
+  "seeds": [
+    880001,
+    880002,
+    880003
+  ],
+  "u0_dev_ce": {
+    "880001": 1.2040123894810677,
+    "880002": 1.2040123894810677,
+    "880003": 1.2040123894810677
+  },
+  "copy_gate_zero": {
+    "880001": true,
+    "880002": true,
+    "880003": true
+  },
+  "copy_gradient_smoke": true,
+  "throughput_seconds_per_qa_update": 9.412773249991005,
+  "t3_test_loaded": false
+}

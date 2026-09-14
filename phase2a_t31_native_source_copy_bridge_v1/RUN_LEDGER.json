@@ -1,0 +1,88 @@
+{
+  "study": "T31",
+  "status": "TERMINAL",
+  "runs": {
+    "880001": {
+      "seed": 880001,
+      "update": 1000,
+      "classification": "T31_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 102,
+      "dev_native": 89,
+      "dev_exact": 35,
+      "dev_ce": 1.2559468567371368,
+      "dev_fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 30,
+        "first_disambiguating_token_accuracy": 0.46875,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 1,
+        "shared_prefix_exact_rate": 0.015625,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 34,
+        "unique_prefix_exact_rate": 0.53125,
+        "first_token_correct_then_diverge": 46,
+        "first_token_correct_then_diverge_shared": 32,
+        "first_token_correct_then_diverge_rate": 0.359375,
+        "post_fork_free_completion_n": 30,
+        "post_fork_free_completion": 1,
+        "post_fork_free_completion_rate": 0.03333333333333333
+      },
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    },
+    "880002": {
+      "seed": 880002,
+      "update": 1000,
+      "classification": "T31_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 111,
+      "dev_native": 90,
+      "dev_exact": 35,
+      "dev_ce": 1.2553415670990944,
+      "dev_fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 30,
+        "first_disambiguating_token_accuracy": 0.46875,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 2,
+        "shared_prefix_exact_rate": 0.03125,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 33,
+        "unique_prefix_exact_rate": 0.515625,
+        "first_token_correct_then_diverge": 45,
+        "first_token_correct_then_diverge_shared": 30,
+        "first_token_correct_then_diverge_rate": 0.3515625,
+        "post_fork_free_completion_n": 30,
+        "post_fork_free_completion": 2,
+        "post_fork_free_completion_rate": 0.06666666666666667
+      },
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false
+    }
+  },
+  "test_opened": false,
+  "futility_calibration": "U750 exact<=20 shared=0 diverge>=55 with gate L2>0.01",
+  "sequential_rule": "seed1+seed2 both terminal-fail => skip seed3; disagreement=>run seed3",
+  "failed_returncode": null,
+  "seed3": "NOT_REQUIRED",
+  "classification": "T31_EXPLICIT_SOURCE_TO_TOKEN_BRIDGE_INSUFFICIENT"
+}

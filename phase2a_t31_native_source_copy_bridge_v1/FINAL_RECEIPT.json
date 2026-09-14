@@ -1,0 +1,18 @@
+{
+  "study": "T31",
+  "classification": "T31_EXPLICIT_SOURCE_TO_TOKEN_BRIDGE_INSUFFICIENT",
+  "terminal_utc": "2026-09-14T22:10:47.6210283Z",
+  "seeds_run": [
+    880001,
+    880002
+  ],
+  "seed3": "NOT_REQUIRED",
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "test_opened": false,
+  "protected": "SEALED_UNOPENED",
+  "checkpoint_hashes": {
+    "880001": "9cde2b06a98aac724357c64ded857bd63f2ee73216bec8ddeb25e5d3c9dfec30",
+    "880002": "2f36edfb1368366212130625bc62d86017d66f3aa421c06924b13099073ad504"
+  }
+}
