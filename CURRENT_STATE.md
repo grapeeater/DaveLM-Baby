@@ -17,7 +17,7 @@ paused. Activation patching was not run.
 T3 TEST remains `SEALED_UNOPENED`. T29 is terminal:
 `T29_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (exact 35/35/35). The fork-objective
 hypothesis is closed. Do not overwrite v0_7. Do not resume T24. Do not retune
-T29 lambda/margin. T30 is terminal under the owner-authorized study: T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL. Do not launch T31.
+T29 lambda/margin. T30 and T31 are terminal. T31 is T31_EXPLICIT_SOURCE_TO_TOKEN_BRIDGE_INSUFFICIENT; do not launch T32.
 
 
 T31 terminal: explicit source-to-token copy bridge insufficient; exact 35/128 in both required seeds, seed 3 not required, T32 not authorized. TEST/FINAL/sacred locked.

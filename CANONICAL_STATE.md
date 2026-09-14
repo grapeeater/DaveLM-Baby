@@ -151,3 +151,6 @@ Terminal classification: `T30_REPRESENTATION_SUCCESS_OUTPUT_FAIL` (2/3 branches 
 
 ## T31 terminal (2026-09-14)
 T31 tested one explicit ordered native source-to-token copy-logit bridge from pointer-weighted source identity spans. The four zero-initialized copy gates activated, but native generation did not improve. Seed 880001 ended at exact 35/128 with pointer 102/128; seed 880002 at exact 35/128 with pointer 111/128. Both retained language/binding integrity and were terminal failures under the frozen sequential rule; seed 880003 was not required. Classification: T31_EXPLICIT_SOURCE_TO_TOKEN_BRIDGE_INSUFFICIENT. The current-architecture surgical treatment line is exhausted. T32 is not authorized. TEST/FINAL/sacred remain sealed.
+
+## T31 postmortem (2026-09-14)
+A DEV-only final logit audit found the correct pointer/copy token at the shared fork in 51/64 and 55/64 rows, but correct free emission in only 30/64 in both terminal seeds. In wrong-fork rows, the bridge raised the correct token by about 0.32–0.35 logits but left it about 9.94–10.09 logits below the ordinary-LM argmax. This closes T31's exact additive copy bridge; it does not prove a general tokenizer or capacity cause. See PHASE2A_POST_T31_MECHANISTIC_AUTOPSY.md. T32 remains unauthorized.
