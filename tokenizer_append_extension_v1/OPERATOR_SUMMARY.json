@@ -1,0 +1,85 @@
+{
+  "APPEND_ONLY_COMPATIBILITY": true,
+  "OLD_TOKEN_IDS_PRESERVED": true,
+  "OLD_WEIGHTS_BIT_IDENTICAL": true,
+  "NEW_TOKENIZER_VERSION": "v0_8_append64",
+  "TOKENS_ADDED": 64,
+  "SELECTION_RULE": "title-case word surface forms fragmented under v0_7 on Phase1G TRAIN; freq>=30; top 64; lex tie-break",
+  "DEV_USED_FOR_TOKEN_SELECTION": false,
+  "MINIMAL_ADAPTATION_REQUIRED": true,
+  "TRAINABLE_SCOPE": "new embedding/output rows only (old rows frozen; grads zeroed)",
+  "SHARED_PREFIX_EXACT_BEFORE": "9/192 (4.7%) greedy T28",
+  "SHARED_PREFIX_EXACT_AFTER_V08_GOLD": [
+    3,
+    2,
+    4
+  ],
+  "UNIQUE_PREFIX_EXACT_BEFORE": "102/192 (53.1%) greedy T28",
+  "UNIQUE_PREFIX_EXACT_AFTER_V08_GOLD": [
+    33,
+    33,
+    36
+  ],
+  "DIVERGENCE_BEFORE": "83/192 (43.2%) shared first-token-correct-then-diverge",
+  "DIVERGENCE_AFTER_V08_SHARED": [
+    26,
+    27,
+    30
+  ],
+  "OVERALL_EXACT_BEFORE": "111/384 (28.9%)",
+  "OVERALL_EXACT_AFTER_V08": [
+    36,
+    35,
+    40
+  ],
+  "SHARED_PREFIX_EXACT_AFTER_V07_GOLD": [
+    3,
+    2,
+    4
+  ],
+  "LANGUAGE_STATUS": {
+    "850001": {
+      "u0_sliced_ce": 1.029527757689357,
+      "after_sliced_ce": 1.029527757689357
+    },
+    "850002": {
+      "u0_sliced_ce": 1.0354913249611855,
+      "after_sliced_ce": 1.0354913249611855
+    },
+    "850003": {
+      "u0_sliced_ce": 1.032070153579116,
+      "after_sliced_ce": 1.032070153579116
+    }
+  },
+  "REPRESENTATION_STATUS": {
+    "850001": {
+      "pointer_u0": 112,
+      "pointer_after": 112
+    },
+    "850002": {
+      "pointer_u0": 108,
+      "pointer_after": 108
+    },
+    "850003": {
+      "pointer_u0": 116,
+      "pointer_after": 116
+    }
+  },
+  "WES_FAMILY_EXACT_V08": [
+    0,
+    0,
+    0
+  ],
+  "LANGUAGE_STATUS_NOTE": "RUN_RESULTS u0 sliced_ce used DEV starts on TRAIN stream; authoritative language numbers are LANGUAGE_DEV_CE.json",
+  "LANGUAGE_DEV_CE": {
+    "850001": {"t28": 1.2536188177764416, "expanded_sliced": 1.2536188177764416},
+    "850002": {"t28": 1.2593662537634374, "expanded_sliced": 1.2593662537634374},
+    "850003": {"t28": 1.2565930142998696, "expanded_sliced": 1.2565930142998696}
+  },
+  "CLASSIFICATION": "APPEND_ONLY_COMPATIBLE_SCIENTIFIC_EFFICACY_FAIL",
+  "NEW_TOKEN_GREEDY_EMISSIONS": 0,
+  "DEV_NAMES_IN_ADDED_64": [],
+  "T29_LAUNCHED": false,
+  "V0_7_SHA256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "NEW_TOKENIZER_SHA256": "2b6ff009a11f26cbd12041c19cab46fb86fdb1d362e3b107f2ce187b1b5107d9"
+}

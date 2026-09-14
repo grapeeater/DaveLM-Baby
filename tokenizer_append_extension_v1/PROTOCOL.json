@@ -1,0 +1,89 @@
+{
+  "study": "TOKENIZER_APPEND_ONLY_EXTENSION_V1",
+  "option": "C",
+  "date": "2026-09-14",
+  "t29_authorized": false,
+  "full_tokenizer_replacement": false,
+  "overwrite_v0_7": false,
+  "test_loaded": false,
+  "dev_used_for_token_selection": false,
+  "parent_tokenizer": {
+    "path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json",
+    "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+    "vocab_size": 1024
+  },
+  "new_tokenizer_version": "v0_8_append64",
+  "t28_checkpoints": {
+    "850001": "d6f5be589c3905f76265431fa377c74245e972d9b28e8cee2c085d8f219e2684",
+    "850002": "f01066dd90aa3ff65b6affc7caad942486d6bfcc740733b24a440615ecf4f172",
+    "850003": "95e34fd52bc1b836a726816a2d8ae259e392620733146c2941aa53e00deaf597"
+  },
+  "phase1g_parent": {
+    "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt",
+    "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1"
+  },
+  "selection": {
+    "corpus": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_TRAIN_SOURCE.jsonl",
+    "corpus_sha256": "807a89417924a9b1cfa1e0a2a952d97400684db32a138fe11943d93e130312c8",
+    "algorithm": "titlecase_word_surface_forms_currently_fragmented_under_v0_7",
+    "pattern": "[A-Z][a-z]{2,11}",
+    "surface_rule": "if match is preceded by a space, candidate is space+word; else the word; counted on Phase1G TRAIN text only",
+    "keep_if": "v0_7.encode(candidate) has length>=2 and candidate is not already a vocab string",
+    "score": "frequency",
+    "tie_break": "ascending lexicographic candidate string",
+    "min_frequency": 30,
+    "max_added_token_count": 64,
+    "vocabulary_increment_size": 64,
+    "random_seed": null,
+    "forbidden": ["qa_dev", "qa_test", "T3 TEST", "FINAL", "sacred", "hand-added DEV names"]
+  },
+  "initialization": {
+    "method": "constituent_mean_embedding_and_head_with_unused_output_bias",
+    "embedding": "mean of v0_7 piece embedding rows for tokenizer.encode(candidate)",
+    "lm_head_weight": "mean of v0_7 piece language_head.weight rows",
+    "lm_head_bias": "mean of v0_7 piece biases minus 8.0",
+    "bias_shift": 8.0,
+    "justification": "Mean piece embeddings/weights preserve decomposition. Bias shift -8 keeps new logits off the U0 argmax and limits softmax mass theft on the frozen 1024-way language stream until adaptation. Pure mean output would compete with first-piece logits at U0."
+  },
+  "adaptation": {
+    "required_if": "new rows exist",
+    "trainable_scope": "new embedding rows and new language_head rows/bias only; all original rows frozen",
+    "dataset": "new Phase1G TRAIN stream retokenized with v0_8_append64; historical u16 streams not overwritten",
+    "updates": 100,
+    "microbatch": 16,
+    "gradient_accumulation": 1,
+    "effective_batch": 16,
+    "learning_rate": 3.75e-5,
+    "optimizer": "AdamW betas=(0.9,0.999) eps=1e-8 weight_decay=0.05 foreach=false fused=false",
+    "loss": "mean causal CE over 256-token windows",
+    "clip": 2.0,
+    "seeds": [850001, 850002, 850003],
+    "scope_escalation": "forbidden unless this protocol is amended",
+    "pre_specified_failure": "if shared-prefix exact does not improve materially vs 4.7% after this budget, stop; do not train old rows"
+  },
+  "u0_hard_stop": {
+    "old_token_logits_atol": 1e-6,
+    "v0_7_pointer_must_match": true,
+    "sliced_1024_language_ce_atol": 1e-5,
+    "full_vocab_language_ce_may_shift": "explained if new logits are finite; sliced CE is the old-token baseline"
+  },
+  "eval": {
+    "dev": "phase2a_t3_rebuilt_study_v1/data/qa_dev.jsonl after tokenizer freeze",
+    "shared_prefix_names_descriptive": ["Omar", "Opal", "Sal", "Skye"],
+    "wes_family_descriptive": ["Wes"],
+    "native": "greedy exact+EOS vs gold re-encoded with frozen extended tokenizer, plus v0_7-prompt expanded-head greedy vs v0_7 gold",
+    "language_gates": "sliced 1024-way DEV CE must remain within T24/T28 retention (min(1.30, u0+0.25) and gap<=0.5) on the original Phase1G DEV stream",
+    "representation": "pointer on unmodified v0_7 DEV encodings must match T28 terminal counts within 0 (frozen hidden path)"
+  },
+  "forbidden_actions": [
+    "open TEST / FINAL / sacred",
+    "resume T24",
+    "launch T29",
+    "overwrite v0_7",
+    "overwrite Phase1G or T28 checkpoints",
+    "retokenize historical artifacts in place",
+    "lower gates",
+    "hand-add Sal/Skye/Wes/Omar/Opal",
+    "select tokens from DEV"
+  ]
+}

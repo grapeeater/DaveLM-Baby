@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "classification": "APPEND_ONLY_COMPATIBLE_SCIENTIFIC_EFFICACY_FAIL",
+  "test_loaded": false,
+  "t29_launched": false,
+  "v0_7_preserved": true,
+  "tokenizer_version": "v0_8_append64",
+  "owner_decision_required": true
+}

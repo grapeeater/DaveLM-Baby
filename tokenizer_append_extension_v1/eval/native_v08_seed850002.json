@@ -1,0 +1,1983 @@
+{
+  "all": {
+    "n": 128,
+    "exact": 35,
+    "exact_rate": 0.2734375,
+    "diverge": 40,
+    "diverge_rate": 0.3125
+  },
+  "shared": {
+    "n": 64,
+    "exact": 2,
+    "exact_rate": 0.03125,
+    "diverge": 27,
+    "diverge_rate": 0.421875
+  },
+  "unique": {
+    "n": 64,
+    "exact": 33,
+    "exact_rate": 0.515625,
+    "diverge": 13,
+    "diverge_rate": 0.203125
+  },
+  "by_name": {
+    "Ava": {
+      "n": 16,
+      "exact": 4,
+      "exact_rate": 0.25,
+      "diverge": 0,
+      "diverge_rate": 0.0
+    },
+    "Mel": {
+      "n": 16,
+      "exact": 15,
+      "exact_rate": 0.9375,
+      "diverge": 0,
+      "diverge_rate": 0.0
+    },
+    "Omar": {
+      "n": 16,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "diverge": 1,
+      "diverge_rate": 0.0625
+    },
+    "Opal": {
+      "n": 16,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "diverge": 0,
+      "diverge_rate": 0.0
+    },
+    "Ross": {
+      "n": 16,
+      "exact": 14,
+      "exact_rate": 0.875,
+      "diverge": 1,
+      "diverge_rate": 0.0625
+    },
+    "Sal": {
+      "n": 16,
+      "exact": 1,
+      "exact_rate": 0.0625,
+      "diverge": 13,
+      "diverge_rate": 0.8125
+    },
+    "Skye": {
+      "n": 16,
+      "exact": 1,
+      "exact_rate": 0.0625,
+      "diverge": 13,
+      "diverge_rate": 0.8125
+    },
+    "Wes": {
+      "n": 16,
+      "exact": 0,
+      "exact_rate": 0.0,
+      "diverge": 12,
+      "diverge_rate": 0.75
+    }
+  },
+  "items": [
+    {
+      "id": "DI00:a0:q0:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a0:q0:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a0:q1:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a0:q1:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a1:q0:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a1:q0:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a1:q1:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI00:a1:q1:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a0:q0:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a0:q0:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a0:q1:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a0:q1:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a1:q0:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a1:q0:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a1:q1:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI01:a1:q1:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a0:q0:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a0:q0:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a0:q1:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a0:q1:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a1:q0:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        527,
+        293,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a1:q0:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a1:q1:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI02:a1:q1:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a0:q0:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a0:q0:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a0:q1:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a0:q1:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a1:q0:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a1:q0:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a1:q1:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI03:a1:q1:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a0:q0:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a0:q0:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a0:q1:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        527,
+        79,
+        93,
+        73,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a0:q1:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a1:q0:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a1:q0:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        310,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a1:q1:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI04:a1:q1:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        314,
+        90,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a0:q0:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a0:q0:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a0:q1:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a0:q1:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a1:q0:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a1:q0:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a1:q1:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI05:a1:q1:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a0:q0:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a0:q0:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a0:q1:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a0:q1:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a1:q0:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a1:q0:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a1:q1:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI06:a1:q1:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a0:q0:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        324,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a0:q0:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        324,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a0:q1:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        459,
+        72,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a0:q1:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        459,
+        72,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a1:q0:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        324,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a1:q0:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        324,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a1:q1:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        536,
+        84,
+        274,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DI07:a1:q1:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        459,
+        72,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a0:q0:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a0:q0:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        314,
+        90,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a0:q1:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a0:q1:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        314,
+        90,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a1:q0:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a1:q0:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        314,
+        90,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a1:q1:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT00:a1:q1:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        314,
+        90,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a0:q0:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a0:q0:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a0:q1:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a0:q1:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a1:q0:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a1:q0:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a1:q1:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT01:a1:q1:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a0:q0:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a0:q0:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a0:q1:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        79,
+        273,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a0:q1:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a1:q0:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a1:q0:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a1:q1:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT02:a1:q1:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        459,
+        72,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a0:q0:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a0:q0:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a0:q1:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a0:q1:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        459,
+        72,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a1:q0:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        324,
+        76,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a1:q0:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a1:q1:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT03:a1:q1:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a0:q0:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a0:q0:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        314,
+        90,
+        69,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a0:q1:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a0:q1:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a1:q0:o0",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a1:q0:o1",
+      "name": "Ross",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        1019,
+        389,
+        87,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a1:q1:o0",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT04:a1:q1:o1",
+      "name": "Ava",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        61,
+        573,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a0:q0:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a0:q0:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a0:q1:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a0:q1:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a1:q0:o0",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a1:q0:o1",
+      "name": "Sal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a1:q1:o0",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT05:a1:q1:o1",
+      "name": "Opal",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        527,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a0:q0:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a0:q0:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a0:q1:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a0:q1:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a1:q0:o0",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a1:q0:o1",
+      "name": "Skye",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        527,
+        79,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a1:q1:o0",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        225,
+        58,
+        321,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT06:a1:q1:o1",
+      "name": "Omar",
+      "shared_prefix": true,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        1019,
+        83,
+        93,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a0:q0:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a0:q0:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a0:q1:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a0:q1:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a1:q0:o0",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": true,
+      "mode": "first_token_correct_then_diverge",
+      "ids": [
+        679,
+        293,
+        88,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a1:q0:o1",
+      "name": "Wes",
+      "shared_prefix": false,
+      "exact": false,
+      "first_token_correct": false,
+      "mode": "other_then_eos",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a1:q1:o0",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    },
+    {
+      "id": "DT07:a1:q1:o1",
+      "name": "Mel",
+      "shared_prefix": false,
+      "exact": true,
+      "first_token_correct": true,
+      "mode": "exact",
+      "ids": [
+        925,
+        462,
+        18,
+        3
+      ]
+    }
+  ]
+}

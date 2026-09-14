@@ -1,0 +1,1318 @@
+{
+  "seeds": {
+    "850001": {
+      "u0": {
+        "old_rows": {
+          "base_model.token_embedding.weight": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "base_model.language_head.weight": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "base_model.language_head.bias": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "other_mismatch_keys": []
+        },
+        "old_logits": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "allclose_1e-6": true
+        },
+        "sliced_ce_orig": 1.029527757689357,
+        "sliced_ce_expanded": 1.029527757689357,
+        "full_vocab_ce_on_v07_stream": 1.02952817119658,
+        "pointer_v07_orig": 112,
+        "pointer_v07_expanded": 112,
+        "hard_stop_pass": true,
+        "native_v07_gold": {
+          "all": {
+            "n": 128,
+            "exact": 36,
+            "exact_rate": 0.28125,
+            "diverge": 39,
+            "diverge_rate": 0.3046875
+          },
+          "shared": {
+            "n": 64,
+            "exact": 3,
+            "exact_rate": 0.046875,
+            "diverge": 26,
+            "diverge_rate": 0.40625
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 16,
+              "exact_rate": 1.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 14,
+              "diverge_rate": 0.875
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            }
+          }
+        },
+        "native_v08_gold": {
+          "all": {
+            "n": 128,
+            "exact": 36,
+            "exact_rate": 0.28125,
+            "diverge": 39,
+            "diverge_rate": 0.3046875
+          },
+          "shared": {
+            "n": 64,
+            "exact": 3,
+            "exact_rate": 0.046875,
+            "diverge": 26,
+            "diverge_rate": 0.40625
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 16,
+              "exact_rate": 1.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 14,
+              "diverge_rate": 0.875
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            }
+          }
+        }
+      },
+      "init_preview": [
+        {
+          "id": 1024,
+          "surface": " She",
+          "piece_ids": [
+            527,
+            263
+          ]
+        },
+        {
+          "id": 1025,
+          "surface": " Lily",
+          "piece_ids": [
+            225,
+            48,
+            316,
+            93
+          ]
+        },
+        {
+          "id": 1026,
+          "surface": "Once",
+          "piece_ids": [
+            51,
+            423
+          ]
+        },
+        {
+          "id": 1027,
+          "surface": " Timmy",
+          "piece_ids": [
+            525,
+            337,
+            81,
+            93
+          ]
+        },
+        {
+          "id": 1028,
+          "surface": " Ben",
+          "piece_ids": [
+            532,
+            274
+          ]
+        },
+        {
+          "id": 1029,
+          "surface": " Tom",
+          "piece_ids": [
+            525,
+            295
+          ]
+        },
+        {
+          "id": 1030,
+          "surface": " But",
+          "piece_ids": [
+            532,
+            324
+          ]
+        },
+        {
+          "id": 1031,
+          "surface": "One",
+          "piece_ids": [
+            51,
+            682
+          ]
+        }
+      ],
+      "adapt": {
+        "updates": 100,
+        "mean_loss": 1.9078317487239838,
+        "last_loss": 1.9591777324676514,
+        "sliced_ce_after": 1.029527757689357,
+        "pointer_v07_after": 112,
+        "old_rows_bit_identical_after": {
+          "emb": true,
+          "head_w": true,
+          "head_b": true
+        },
+        "native_v07_gold": {
+          "all": {
+            "n": 128,
+            "exact": 36,
+            "exact_rate": 0.28125,
+            "diverge": 39,
+            "diverge_rate": 0.3046875
+          },
+          "shared": {
+            "n": 64,
+            "exact": 3,
+            "exact_rate": 0.046875,
+            "diverge": 26,
+            "diverge_rate": 0.40625
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 16,
+              "exact_rate": 1.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 14,
+              "diverge_rate": 0.875
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            }
+          }
+        },
+        "native_v08_gold": {
+          "all": {
+            "n": 128,
+            "exact": 36,
+            "exact_rate": 0.28125,
+            "diverge": 39,
+            "diverge_rate": 0.3046875
+          },
+          "shared": {
+            "n": 64,
+            "exact": 3,
+            "exact_rate": 0.046875,
+            "diverge": 26,
+            "diverge_rate": 0.40625
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 16,
+              "exact_rate": 1.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 3,
+              "exact_rate": 0.1875,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 14,
+              "diverge_rate": 0.875
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            }
+          }
+        },
+        "checkpoint": "C:\\DaveLM-CADAVER\\tokenizer_append_extension_v1\\checkpoints\\expanded_adapt100_seed850001.pt"
+      }
+    },
+    "850002": {
+      "u0": {
+        "old_rows": {
+          "base_model.token_embedding.weight": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "base_model.language_head.weight": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "base_model.language_head.bias": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "other_mismatch_keys": []
+        },
+        "old_logits": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "allclose_1e-6": true
+        },
+        "sliced_ce_orig": 1.0354913249611855,
+        "sliced_ce_expanded": 1.0354913249611855,
+        "full_vocab_ce_on_v07_stream": 1.035491731390357,
+        "pointer_v07_orig": 108,
+        "pointer_v07_expanded": 108,
+        "hard_stop_pass": true,
+        "native_v07_gold": {
+          "all": {
+            "n": 128,
+            "exact": 35,
+            "exact_rate": 0.2734375,
+            "diverge": 40,
+            "diverge_rate": 0.3125
+          },
+          "shared": {
+            "n": 64,
+            "exact": 2,
+            "exact_rate": 0.03125,
+            "diverge": 27,
+            "diverge_rate": 0.421875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 4,
+              "exact_rate": 0.25,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            }
+          }
+        },
+        "native_v08_gold": {
+          "all": {
+            "n": 128,
+            "exact": 35,
+            "exact_rate": 0.2734375,
+            "diverge": 40,
+            "diverge_rate": 0.3125
+          },
+          "shared": {
+            "n": 64,
+            "exact": 2,
+            "exact_rate": 0.03125,
+            "diverge": 27,
+            "diverge_rate": 0.421875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 4,
+              "exact_rate": 0.25,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            }
+          }
+        }
+      },
+      "init_preview": [
+        {
+          "id": 1024,
+          "surface": " She",
+          "piece_ids": [
+            527,
+            263
+          ]
+        },
+        {
+          "id": 1025,
+          "surface": " Lily",
+          "piece_ids": [
+            225,
+            48,
+            316,
+            93
+          ]
+        },
+        {
+          "id": 1026,
+          "surface": "Once",
+          "piece_ids": [
+            51,
+            423
+          ]
+        },
+        {
+          "id": 1027,
+          "surface": " Timmy",
+          "piece_ids": [
+            525,
+            337,
+            81,
+            93
+          ]
+        },
+        {
+          "id": 1028,
+          "surface": " Ben",
+          "piece_ids": [
+            532,
+            274
+          ]
+        },
+        {
+          "id": 1029,
+          "surface": " Tom",
+          "piece_ids": [
+            525,
+            295
+          ]
+        },
+        {
+          "id": 1030,
+          "surface": " But",
+          "piece_ids": [
+            532,
+            324
+          ]
+        },
+        {
+          "id": 1031,
+          "surface": "One",
+          "piece_ids": [
+            51,
+            682
+          ]
+        }
+      ],
+      "adapt": {
+        "updates": 100,
+        "mean_loss": 1.9073625135421752,
+        "last_loss": 1.8393447399139404,
+        "sliced_ce_after": 1.0354913249611855,
+        "pointer_v07_after": 108,
+        "old_rows_bit_identical_after": {
+          "emb": true,
+          "head_w": true,
+          "head_b": true
+        },
+        "native_v07_gold": {
+          "all": {
+            "n": 128,
+            "exact": 35,
+            "exact_rate": 0.2734375,
+            "diverge": 40,
+            "diverge_rate": 0.3125
+          },
+          "shared": {
+            "n": 64,
+            "exact": 2,
+            "exact_rate": 0.03125,
+            "diverge": 27,
+            "diverge_rate": 0.421875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 4,
+              "exact_rate": 0.25,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            }
+          }
+        },
+        "native_v08_gold": {
+          "all": {
+            "n": 128,
+            "exact": 35,
+            "exact_rate": 0.2734375,
+            "diverge": 40,
+            "diverge_rate": 0.3125
+          },
+          "shared": {
+            "n": 64,
+            "exact": 2,
+            "exact_rate": 0.03125,
+            "diverge": 27,
+            "diverge_rate": 0.421875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 33,
+            "exact_rate": 0.515625,
+            "diverge": 13,
+            "diverge_rate": 0.203125
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 4,
+              "exact_rate": 0.25,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 1,
+              "diverge_rate": 0.0625
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 13,
+              "diverge_rate": 0.8125
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            }
+          }
+        },
+        "checkpoint": "C:\\DaveLM-CADAVER\\tokenizer_append_extension_v1\\checkpoints\\expanded_adapt100_seed850002.pt"
+      }
+    },
+    "850003": {
+      "u0": {
+        "old_rows": {
+          "base_model.token_embedding.weight": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "base_model.language_head.weight": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "base_model.language_head.bias": {
+            "torch_equal": true,
+            "max_abs": 0.0
+          },
+          "other_mismatch_keys": []
+        },
+        "old_logits": {
+          "max_abs": 0.0,
+          "mean_abs": 0.0,
+          "allclose_1e-6": true
+        },
+        "sliced_ce_orig": 1.032070153579116,
+        "sliced_ce_expanded": 1.032070153579116,
+        "full_vocab_ce_on_v07_stream": 1.0320705723017454,
+        "pointer_v07_orig": 116,
+        "pointer_v07_expanded": 116,
+        "hard_stop_pass": true,
+        "native_v07_gold": {
+          "all": {
+            "n": 128,
+            "exact": 40,
+            "exact_rate": 0.3125,
+            "diverge": 45,
+            "diverge_rate": 0.3515625
+          },
+          "shared": {
+            "n": 64,
+            "exact": 4,
+            "exact_rate": 0.0625,
+            "diverge": 30,
+            "diverge_rate": 0.46875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 36,
+            "exact_rate": 0.5625,
+            "diverge": 15,
+            "diverge_rate": 0.234375
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 7,
+              "exact_rate": 0.4375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 3,
+              "diverge_rate": 0.1875
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 4,
+              "diverge_rate": 0.25
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 2,
+              "exact_rate": 0.125,
+              "diverge": 11,
+              "diverge_rate": 0.6875
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 15,
+              "diverge_rate": 0.9375
+            }
+          }
+        },
+        "native_v08_gold": {
+          "all": {
+            "n": 128,
+            "exact": 40,
+            "exact_rate": 0.3125,
+            "diverge": 45,
+            "diverge_rate": 0.3515625
+          },
+          "shared": {
+            "n": 64,
+            "exact": 4,
+            "exact_rate": 0.0625,
+            "diverge": 30,
+            "diverge_rate": 0.46875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 36,
+            "exact_rate": 0.5625,
+            "diverge": 15,
+            "diverge_rate": 0.234375
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 7,
+              "exact_rate": 0.4375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 3,
+              "diverge_rate": 0.1875
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 4,
+              "diverge_rate": 0.25
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 2,
+              "exact_rate": 0.125,
+              "diverge": 11,
+              "diverge_rate": 0.6875
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 15,
+              "diverge_rate": 0.9375
+            }
+          }
+        }
+      },
+      "init_preview": [
+        {
+          "id": 1024,
+          "surface": " She",
+          "piece_ids": [
+            527,
+            263
+          ]
+        },
+        {
+          "id": 1025,
+          "surface": " Lily",
+          "piece_ids": [
+            225,
+            48,
+            316,
+            93
+          ]
+        },
+        {
+          "id": 1026,
+          "surface": "Once",
+          "piece_ids": [
+            51,
+            423
+          ]
+        },
+        {
+          "id": 1027,
+          "surface": " Timmy",
+          "piece_ids": [
+            525,
+            337,
+            81,
+            93
+          ]
+        },
+        {
+          "id": 1028,
+          "surface": " Ben",
+          "piece_ids": [
+            532,
+            274
+          ]
+        },
+        {
+          "id": 1029,
+          "surface": " Tom",
+          "piece_ids": [
+            525,
+            295
+          ]
+        },
+        {
+          "id": 1030,
+          "surface": " But",
+          "piece_ids": [
+            532,
+            324
+          ]
+        },
+        {
+          "id": 1031,
+          "surface": "One",
+          "piece_ids": [
+            51,
+            682
+          ]
+        }
+      ],
+      "adapt": {
+        "updates": 100,
+        "mean_loss": 1.9121005070209502,
+        "last_loss": 1.750577688217163,
+        "sliced_ce_after": 1.032070153579116,
+        "pointer_v07_after": 116,
+        "old_rows_bit_identical_after": {
+          "emb": true,
+          "head_w": true,
+          "head_b": true
+        },
+        "native_v07_gold": {
+          "all": {
+            "n": 128,
+            "exact": 40,
+            "exact_rate": 0.3125,
+            "diverge": 45,
+            "diverge_rate": 0.3515625
+          },
+          "shared": {
+            "n": 64,
+            "exact": 4,
+            "exact_rate": 0.0625,
+            "diverge": 30,
+            "diverge_rate": 0.46875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 36,
+            "exact_rate": 0.5625,
+            "diverge": 15,
+            "diverge_rate": 0.234375
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 7,
+              "exact_rate": 0.4375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 3,
+              "diverge_rate": 0.1875
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 4,
+              "diverge_rate": 0.25
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 2,
+              "exact_rate": 0.125,
+              "diverge": 11,
+              "diverge_rate": 0.6875
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 15,
+              "diverge_rate": 0.9375
+            }
+          }
+        },
+        "native_v08_gold": {
+          "all": {
+            "n": 128,
+            "exact": 40,
+            "exact_rate": 0.3125,
+            "diverge": 45,
+            "diverge_rate": 0.3515625
+          },
+          "shared": {
+            "n": 64,
+            "exact": 4,
+            "exact_rate": 0.0625,
+            "diverge": 30,
+            "diverge_rate": 0.46875
+          },
+          "unique": {
+            "n": 64,
+            "exact": 36,
+            "exact_rate": 0.5625,
+            "diverge": 15,
+            "diverge_rate": 0.234375
+          },
+          "by_name": {
+            "Ava": {
+              "n": 16,
+              "exact": 7,
+              "exact_rate": 0.4375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Mel": {
+              "n": 16,
+              "exact": 15,
+              "exact_rate": 0.9375,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Omar": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 3,
+              "diverge_rate": 0.1875
+            },
+            "Opal": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 4,
+              "diverge_rate": 0.25
+            },
+            "Ross": {
+              "n": 16,
+              "exact": 14,
+              "exact_rate": 0.875,
+              "diverge": 0,
+              "diverge_rate": 0.0
+            },
+            "Sal": {
+              "n": 16,
+              "exact": 2,
+              "exact_rate": 0.125,
+              "diverge": 11,
+              "diverge_rate": 0.6875
+            },
+            "Skye": {
+              "n": 16,
+              "exact": 1,
+              "exact_rate": 0.0625,
+              "diverge": 12,
+              "diverge_rate": 0.75
+            },
+            "Wes": {
+              "n": 16,
+              "exact": 0,
+              "exact_rate": 0.0,
+              "diverge": 15,
+              "diverge_rate": 0.9375
+            }
+          }
+        },
+        "checkpoint": "C:\\DaveLM-CADAVER\\tokenizer_append_extension_v1\\checkpoints\\expanded_adapt100_seed850003.pt"
+      }
+    }
+  },
+  "test_loaded": false,
+  "v0_7_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "hard_stop": false
+}

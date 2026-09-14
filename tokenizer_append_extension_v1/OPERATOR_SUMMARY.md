@@ -1,0 +1,31 @@
+APPEND-ONLY COMPATIBILITY: YES
+OLD TOKEN IDS PRESERVED: YES (0..1023 bit-identical strings and checkpoint rows)
+OLD WEIGHTS BIT-IDENTICAL: YES (U0 and after 100 new-row updates; max abs 0)
+NEW TOKENIZER VERSION: v0_8_append64
+TOKENS ADDED: 64
+SELECTION RULE: Phase1G TRAIN title-case word surfaces currently fragmented under v0_7; freq>=30; top 64; lexicographic tie-break; no random seed
+DEV USED FOR TOKEN SELECTION: NO
+MINIMAL ADAPTATION REQUIRED: YES
+TRAINABLE SCOPE: new embedding/output rows only (old rows restored after each AdamW step)
+SHARED-PREFIX EXACT BEFORE: 9/192 (4.7%)
+SHARED-PREFIX EXACT AFTER: 9/192 (4.7%) — 3+2+4 / 64+64+64
+UNIQUE-PREFIX EXACT BEFORE: 102/192 (53.1%)
+UNIQUE-PREFIX EXACT AFTER: 102/192 (53.1%) — 33+33+36
+DIVERGENCE BEFORE: 83/192 (43.2%) shared first-token-correct-then-diverge
+DIVERGENCE AFTER: 83/192 (43.2%) — 26+27+30
+OVERALL EXACT BEFORE: 111/384 (28.9%)
+OVERALL EXACT AFTER: 111/384 (28.9%) — 36/35/40
+LANGUAGE STATUS: RETAINED; Phase1G DEV CE sliced-1024 matches T28 exactly (1.253619 / 1.259366 / 1.256593)
+REPRESENTATION STATUS: INTACT; v0_7 pointer 112/108/116
+NATIVE FREE GENERATION STATUS: UNCHANGED; greedy never emitted IDs >=1024
+WES FAMILY RESULT: 0/48
+PROTECTED DATA: LOCKED; TEST not loaded
+FULL RETRAIN REQUIRED: NOT SHOWN NECESSARY YET
+OPTION B/D JUSTIFIED: B remains an owner decision; D not forced by this result
+OWNER DECISION REQUIRED: YES
+GIT COMMIT: pending
+PUSH STATUS: pending
+T29: not launched
+V0_7 SHA256: e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b
+V0_8_APPEND64 SHA256: 2b6ff009a11f26cbd12041c19cab46fb86fdb1d362e3b107f2ce187b1b5107d9
+FAILURE CLASS: scientific efficacy (TRAIN-frequency title-case append + new-row-only 100 updates)

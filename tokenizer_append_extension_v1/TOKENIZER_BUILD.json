@@ -1,0 +1,9 @@
+{
+  "path": "C:\\DaveLM-CADAVER\\tokenizer_append_extension_v1\\tokenizer\\davelm_tokenizer_v0_8_append64.json",
+  "sha256": "2b6ff009a11f26cbd12041c19cab46fb86fdb1d362e3b107f2ce187b1b5107d9",
+  "vocab_size": 1088,
+  "tokens_added": 64,
+  "v0_7_still": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "sample32_encode_unchanged": 0,
+  "sample32_encode_changed": 32
+}

@@ -1,0 +1,33 @@
+{
+  "v0_7_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "v0_7_vocab_size": 1024,
+  "v0_7_max_id": 1023,
+  "embedding_shape": [
+    1024,
+    640
+  ],
+  "language_head_weight_shape": [
+    1024,
+    640
+  ],
+  "language_head_bias_shape": [
+    1024
+  ],
+  "tied_embedding_output": false,
+  "config_vocab_size": 1024,
+  "checkpoint_strict_load_old_vocab": true,
+  "train_stream_token_max": 1023,
+  "train_stream_token_min": 2,
+  "parent_hash_ok": true,
+  "dummy_add_tokens_returned": 1,
+  "dummy_new_id": 1024,
+  "unrelated_encode_preserved": true,
+  "dummy_encodes_as_single_new_id": true,
+  "old_ids_start_at_zero": true,
+  "append_only_valid": true,
+  "notes": [
+    "Historical T28/Phase1G runners load BABY_VNEXT_CONFIG.json with vocab_size=1024; this study must clone config, not overwrite it.",
+    "strict=True cannot load expanded tensors; expansion must copy rows 0..1023 explicitly.",
+    "LANGUAGE_TRAIN_STREAM.u16 stays v0_7; a new stream is written under this study only."
+  ]
+}

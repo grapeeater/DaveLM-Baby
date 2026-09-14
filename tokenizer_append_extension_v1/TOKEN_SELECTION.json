@@ -1,0 +1,710 @@
+{
+  "corpus": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_TRAIN_SOURCE.jsonl",
+  "corpus_sha256": "807a89417924a9b1cfa1e0a2a952d97400684db32a138fe11943d93e130312c8",
+  "n_documents": 20990,
+  "min_frequency": 30,
+  "max_added_token_count": 64,
+  "n_qualifying": 470,
+  "n_selected": 64,
+  "dev_used_for_token_selection": false,
+  "selected": [
+    {
+      "surface": " She",
+      "frequency": 42359,
+      "v0_7_ids": [
+        527,
+        263
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 42359
+    },
+    {
+      "surface": " Lily",
+      "frequency": 22841,
+      "v0_7_ids": [
+        225,
+        48,
+        316,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 22841
+    },
+    {
+      "surface": "Once",
+      "frequency": 14729,
+      "v0_7_ids": [
+        51,
+        423
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 14729
+    },
+    {
+      "surface": " Timmy",
+      "frequency": 8754,
+      "v0_7_ids": [
+        525,
+        337,
+        81,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 8754
+    },
+    {
+      "surface": " Ben",
+      "frequency": 7892,
+      "v0_7_ids": [
+        532,
+        274
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 7892
+    },
+    {
+      "surface": " Tom",
+      "frequency": 7649,
+      "v0_7_ids": [
+        525,
+        295
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 7649
+    },
+    {
+      "surface": " But",
+      "frequency": 6692,
+      "v0_7_ids": [
+        532,
+        324
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 6692
+    },
+    {
+      "surface": "One",
+      "frequency": 6619,
+      "v0_7_ids": [
+        51,
+        682
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 6619
+    },
+    {
+      "surface": "Lily",
+      "frequency": 6490,
+      "v0_7_ids": [
+        48,
+        316,
+        93
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 6490
+    },
+    {
+      "surface": " You",
+      "frequency": 5895,
+      "v0_7_ids": [
+        225,
+        61,
+        277
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 5895
+    },
+    {
+      "surface": " Tim",
+      "frequency": 4792,
+      "v0_7_ids": [
+        525,
+        337
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 4792
+    },
+    {
+      "surface": " Max",
+      "frequency": 4113,
+      "v0_7_ids": [
+        925,
+        69,
+        92
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 4113
+    },
+    {
+      "surface": "They",
+      "frequency": 4107,
+      "v0_7_ids": [
+        305,
+        93
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 4107
+    },
+    {
+      "surface": " Sam",
+      "frequency": 3591,
+      "v0_7_ids": [
+        527,
+        339
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 3591
+    },
+    {
+      "surface": "But",
+      "frequency": 3564,
+      "v0_7_ids": [
+        38,
+        324
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 3564
+    },
+    {
+      "surface": " Mom",
+      "frequency": 3042,
+      "v0_7_ids": [
+        925,
+        295
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 3042
+    },
+    {
+      "surface": " Anna",
+      "frequency": 2824,
+      "v0_7_ids": [
+        724,
+        82,
+        69
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2824
+    },
+    {
+      "surface": " Jack",
+      "frequency": 2747,
+      "v0_7_ids": [
+        225,
+        46,
+        550
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2747
+    },
+    {
+      "surface": " Her",
+      "frequency": 2630,
+      "v0_7_ids": [
+        225,
+        44,
+        270
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2630
+    },
+    {
+      "surface": "Tom",
+      "frequency": 2630,
+      "v0_7_ids": [
+        56,
+        295
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 2630
+    },
+    {
+      "surface": " Mia",
+      "frequency": 2413,
+      "v0_7_ids": [
+        925,
+        77,
+        69
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2413
+    },
+    {
+      "surface": " From",
+      "frequency": 2403,
+      "v0_7_ids": [
+        508,
+        86,
+        295
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2403
+    },
+    {
+      "surface": "Yes",
+      "frequency": 2357,
+      "v0_7_ids": [
+        61,
+        273
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 2357
+    },
+    {
+      "surface": " His",
+      "frequency": 2301,
+      "v0_7_ids": [
+        225,
+        44,
+        294
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2301
+    },
+    {
+      "surface": " And",
+      "frequency": 2287,
+      "v0_7_ids": [
+        724,
+        72
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 2287
+    },
+    {
+      "surface": "When",
+      "frequency": 2243,
+      "v0_7_ids": [
+        59,
+        263,
+        82
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2243
+    },
+    {
+      "surface": "You",
+      "frequency": 2063,
+      "v0_7_ids": [
+        61,
+        277
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 2063
+    },
+    {
+      "surface": " When",
+      "frequency": 2038,
+      "v0_7_ids": [
+        679,
+        263,
+        82
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 2038
+    },
+    {
+      "surface": "Let",
+      "frequency": 1961,
+      "v0_7_ids": [
+        48,
+        310
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1961
+    },
+    {
+      "surface": "Mom",
+      "frequency": 1802,
+      "v0_7_ids": [
+        49,
+        295
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1802
+    },
+    {
+      "surface": " Sara",
+      "frequency": 1743,
+      "v0_7_ids": [
+        527,
+        285,
+        69
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 1743
+    },
+    {
+      "surface": " Lucy",
+      "frequency": 1734,
+      "v0_7_ids": [
+        225,
+        48,
+        89,
+        71,
+        93
+      ],
+      "v0_7_n_pieces": 5,
+      "score": 1734
+    },
+    {
+      "surface": " Suddenly",
+      "frequency": 1695,
+      "v0_7_ids": [
+        527,
+        558,
+        72,
+        274,
+        362
+      ],
+      "v0_7_n_pieces": 5,
+      "score": 1695
+    },
+    {
+      "surface": "That",
+      "frequency": 1684,
+      "v0_7_ids": [
+        56,
+        494
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1684
+    },
+    {
+      "surface": "Suddenly",
+      "frequency": 1670,
+      "v0_7_ids": [
+        55,
+        558,
+        72,
+        274,
+        362
+      ],
+      "v0_7_n_pieces": 5,
+      "score": 1670
+    },
+    {
+      "surface": " Every",
+      "frequency": 1641,
+      "v0_7_ids": [
+        225,
+        41,
+        430,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1641
+    },
+    {
+      "surface": "She",
+      "frequency": 1566,
+      "v0_7_ids": [
+        55,
+        263
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1566
+    },
+    {
+      "surface": "Thank",
+      "frequency": 1566,
+      "v0_7_ids": [
+        56,
+        76,
+        275,
+        79
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1566
+    },
+    {
+      "surface": "Ben",
+      "frequency": 1504,
+      "v0_7_ids": [
+        38,
+        274
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1504
+    },
+    {
+      "surface": " Sue",
+      "frequency": 1488,
+      "v0_7_ids": [
+        527,
+        667
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1488
+    },
+    {
+      "surface": " Mommy",
+      "frequency": 1417,
+      "v0_7_ids": [
+        925,
+        295,
+        81,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1417
+    },
+    {
+      "surface": " Spot",
+      "frequency": 1385,
+      "v0_7_ids": [
+        527,
+        84,
+        308
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 1385
+    },
+    {
+      "surface": " Sarah",
+      "frequency": 1357,
+      "v0_7_ids": [
+        527,
+        285,
+        69,
+        76
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1357
+    },
+    {
+      "surface": "After",
+      "frequency": 1313,
+      "v0_7_ids": [
+        37,
+        500
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1313
+    },
+    {
+      "surface": "Her",
+      "frequency": 1309,
+      "v0_7_ids": [
+        44,
+        270
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1309
+    },
+    {
+      "surface": " Bob",
+      "frequency": 1298,
+      "v0_7_ids": [
+        532,
+        83,
+        70
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 1298
+    },
+    {
+      "surface": " Jane",
+      "frequency": 1285,
+      "v0_7_ids": [
+        225,
+        46,
+        275,
+        73
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1285
+    },
+    {
+      "surface": " Everyone",
+      "frequency": 1274,
+      "v0_7_ids": [
+        225,
+        41,
+        430,
+        93,
+        484
+      ],
+      "v0_7_n_pieces": 5,
+      "score": 1274
+    },
+    {
+      "surface": "Look",
+      "frequency": 1267,
+      "v0_7_ids": [
+        48,
+        485
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1267
+    },
+    {
+      "surface": "Anna",
+      "frequency": 1248,
+      "v0_7_ids": [
+        37,
+        82,
+        82,
+        69
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1248
+    },
+    {
+      "surface": " Let",
+      "frequency": 1156,
+      "v0_7_ids": [
+        225,
+        48,
+        310
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 1156
+    },
+    {
+      "surface": "Can",
+      "frequency": 1155,
+      "v0_7_ids": [
+        39,
+        275
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1155
+    },
+    {
+      "surface": "Timmy",
+      "frequency": 1153,
+      "v0_7_ids": [
+        56,
+        337,
+        81,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1153
+    },
+    {
+      "surface": "Mommy",
+      "frequency": 1150,
+      "v0_7_ids": [
+        49,
+        295,
+        81,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1150
+    },
+    {
+      "surface": " John",
+      "frequency": 1144,
+      "v0_7_ids": [
+        225,
+        46,
+        83,
+        76,
+        82
+      ],
+      "v0_7_n_pieces": 5,
+      "score": 1144
+    },
+    {
+      "surface": " Dad",
+      "frequency": 1098,
+      "v0_7_ids": [
+        225,
+        40,
+        348
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 1098
+    },
+    {
+      "surface": " Can",
+      "frequency": 1073,
+      "v0_7_ids": [
+        651,
+        275
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1073
+    },
+    {
+      "surface": "John",
+      "frequency": 1063,
+      "v0_7_ids": [
+        46,
+        83,
+        76,
+        82
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1063
+    },
+    {
+      "surface": "Tim",
+      "frequency": 1060,
+      "v0_7_ids": [
+        56,
+        337
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1060
+    },
+    {
+      "surface": " Benny",
+      "frequency": 1047,
+      "v0_7_ids": [
+        532,
+        274,
+        82,
+        93
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 1047
+    },
+    {
+      "surface": "Wow",
+      "frequency": 1033,
+      "v0_7_ids": [
+        59,
+        355
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1033
+    },
+    {
+      "surface": "Don",
+      "frequency": 1023,
+      "v0_7_ids": [
+        40,
+        266
+      ],
+      "v0_7_n_pieces": 2,
+      "score": 1023
+    },
+    {
+      "surface": "Sara",
+      "frequency": 989,
+      "v0_7_ids": [
+        55,
+        285,
+        69
+      ],
+      "v0_7_n_pieces": 3,
+      "score": 989
+    },
+    {
+      "surface": " Joe",
+      "frequency": 965,
+      "v0_7_ids": [
+        225,
+        46,
+        83,
+        73
+      ],
+      "v0_7_n_pieces": 4,
+      "score": 965
+    }
+  ]
+}

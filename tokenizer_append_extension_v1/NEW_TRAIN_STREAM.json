@@ -1,0 +1,7 @@
+{
+  "path": "C:\\DaveLM-CADAVER\\tokenizer_append_extension_v1\\data\\LANGUAGE_TRAIN_STREAM_V08.u16",
+  "sha256": "a2700f308c39a66074659293a229b4208081bdb50de029394bc4dd7babd5e879",
+  "n_tokens": 8001794,
+  "n_new_token_occurrences": 282399,
+  "token_max": 1087
+}
