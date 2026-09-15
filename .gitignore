@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated data, metrics, and model artifacts
+runs/*
+checkpoints/*
+evaluations/generated/*
+data/generated/*
+*.pt
+*.pth
+*.npz
+*.u16
+*.u32
+*.safetensors
+*.bin
+
+# Keep directory placeholders and frozen protocol receipts tracked
+!runs/.gitkeep
+!checkpoints/.gitkeep
+!evaluations/generated/.gitkeep
+!data/generated/.gitkeep
+
+# Local machine / editor
+.venv/
+*.log
+.DS_Store
+Thumbs.db

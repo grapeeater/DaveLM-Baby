@@ -1,0 +1,15 @@
+{
+  "panel_path": "data\\generated\\foundation_v1\\panels.json",
+  "n_items": 480,
+  "duplicate_contexts": 0,
+  "duplicate_targets": 9,
+  "duplicate_keyed_targets": 0,
+  "induction_target_token_inventory": 87,
+  "target_span_exact_language_hits": 0,
+  "target_internal_bigrams_supported_by_language": 0,
+  "marker_sets_disjoint": true,
+  "markers_disjoint_from_span_bank": true,
+  "heldout_markers_seen_in_train_marker_set": 0,
+  "protected_material_opened": false,
+  "status": "PASS"
+}

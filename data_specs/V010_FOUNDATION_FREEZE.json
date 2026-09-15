@@ -1,0 +1,23 @@
+{
+  "protocol": "BABY_V010_FOUNDATION_V1",
+  "lineage": "Baby v0.10",
+  "frozen_at": "2026-09-15",
+  "parent_checkpoint": null,
+  "protected_material_opened": false,
+  "files": {
+    "configs/foundation_v1.json": "466fae168ea5a67fa1835f2d91b21cb4cee915740f38d32a32d4253ceec34252",
+    "data_specs/V010_FOUNDATION_PROTOCOL.json": "f2121e33b9fc8bd8b0617e9d644d815ef222c70a28a5bc9f9c2095ca84b6ba17",
+    "design/V010_ARCHITECTURE.md": "35c86cfba5aeef1f162feadea3b0d68acd12463ea4ed54ff4a59172843e884cd",
+    "design/V010_CURRICULUM.md": "44b3354b08643d84068686763a3ce96d38aecfc799e12d5c512c7d4bc09f78ea",
+    "design/V010_CAPABILITY_GATES.md": "a152e231d2e7a8c3e1949d5036b84f1a0e696ab2348787ca9e719e2c50362f3d",
+    "src/baby_v010/model.py": "2b4968efa253251eed7ffce51992c3dcf85d2918eb60cc1cfc976d78e4d5a66a",
+    "src/baby_v010/config.py": "7ca311332816c8223aa641fa8ed2ce802b58670f7c16c4161fa1f976df55123d",
+    "src/baby_v010/data.py": "86f09fbc4b03ab2d6252d902080aee68b32203543fbd4d78da2dbaa10433901a",
+    "src/baby_v010/audit.py": "721025bc7e7392f33f7b51b37b66c5569020ca318c926f305f11a8178f7bfbbb",
+    "src/baby_v010/evaluate.py": "f1aa58446857249ac869e61bbafefa0ca4f55851fe6d7ec08d14753f750aff11",
+    "src/baby_v010/train.py": "a3b72baa01b535802778b0c3a8199acedcfee4bddb8ec5e657a6e6af52f38ce3",
+    "data/generated/foundation_v1/panels.json": "a86d711db97229c37cb58f5c4a5081d632ff51d9860c64a5862d46e2a2685040",
+    "data/generated/foundation_v1/AUDIT_RECHECK.json": "0fc92cc85c3f793ea676ab2d536decf400d293bfe105d64a2f9fe3786da8a007",
+    "data/generated/foundation_v1/MANIFEST.json": "c0beba746a2991f37f340594ec017010a36cea15d314859e650a47b3b38322cf"
+  }
+}
