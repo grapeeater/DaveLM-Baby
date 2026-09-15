@@ -1,0 +1,26 @@
+{
+  "protocol": "BABY_V010_FOUNDATION_V2",
+  "lineage": "Baby v0.10",
+  "parent_checkpoint": null,
+  "tokenizer": "data/tokenizer/davelm_tokenizer_v0_7.json",
+  "architecture": "design/V010_ARCHITECTURE.md",
+  "curriculum": "design/V010_CURRICULUM_V2.md",
+  "gates": "design/V010_CAPABILITY_GATES.md",
+  "panel_path": "data/generated/foundation_v2/panels.json",
+  "panel_seed": 102000,
+  "seeds": [102001, 102002],
+  "updates": 6000,
+  "eval_interval": 250,
+  "batch_size": 16,
+  "learning_rate": 0.00015,
+  "language_probability_after_warmup": 0.2,
+  "protected_material_opened": false,
+  "checkpoint_reuse": false,
+  "stages": {
+    "language_warmup": [0, 499],
+    "primitive_induction": [500, 1799],
+    "short_retrieval": [1800, 3499],
+    "full_foundation": [3500, 5999]
+  },
+  "notes": "Fresh staged curriculum after the replicated V1R2 terminal failure. Thresholds remain those preregistered in V010_CAPABILITY_GATES.md."
+}
