@@ -1,0 +1,17 @@
+{
+  "protocol": "BABY_V010_FOUNDATION_V2R4",
+  "lineage": "Baby v0.10",
+  "seed": 106001,
+  "start_update": 6000,
+  "updates": 16000,
+  "eval_interval": 500,
+  "device": "cuda",
+  "parent_checkpoint": "C:\\DaveLM-v0.10\\runs\\diagnostic_v2r4_seed106001_8000\\checkpoint_06000.pt",
+  "parent_checkpoint_update": 6000,
+  "protected_material_opened": false,
+  "continuation_stochastic_state": "new_after_owner_handoff",
+  "lower_scope_params": 35270400,
+  "upper_scope_params": 25265664,
+  "lower_scope_lr": 1.5e-05,
+  "upper_scope_lr": 3.75e-05
+}
