@@ -1,0 +1,16 @@
+{
+  "status": "SMOKE_OK",
+  "seconds_for_two_qa_updates": 19.494518199993763,
+  "seconds_per_qa_update": 9.747259099996882,
+  "losses": [
+    4.7026896476745605,
+    2.7534022331237793
+  ],
+  "fork_rows_in_first_batch": 23,
+  "batch_size": 32,
+  "device": "cuda",
+  "cuda": true,
+  "t3_test_loaded": false,
+  "extra_forward_policy": "persistent source-memory prefix reuses one base hidden; no generated-prefix rollout",
+  "memory_parameters": 640
+}

@@ -1,0 +1,29 @@
+{
+  "study": "T32_CAUSAL_ORDERED_SOURCE_MEMORY_PREFIX_V1",
+  "status": "SEALED_PROSPECTIVE",
+  "sealed_utc": "2026-09-14T00:00:00Z",
+  "protocol_sha256": "b4b440278c9beb817c275c23c7ae362ca70e17b5ec1eef5b8a51e2d8b78d1ff1",
+  "files": {
+    "PROTOCOL.json": "b4b440278c9beb817c275c23c7ae362ca70e17b5ec1eef5b8a51e2d8b78d1ff1",
+    "PROTOCOL.md": "25cce5775078cd188c2bee50c227385ad4580e7c1551f2f22acad81b134d897a",
+    "T32_MEMORY.py": "42012381215a31980da02d2b8a30d750d68abb1ed180a419b9fefbe3274e542d",
+    "T32_RUNNER.py": "4b6256db9faa6be4a070a7af60fe10d25cff57ea6cd2ba5044ce8b020adbf7dd",
+    "T32_CHECK.py": "66caec6666dfd49cd46a1c173b2b2a4691bd78c54b8b9d79b29786f7eedb6daa",
+    "qa_schedules.json": "7f3b4c61839ac7b0d0445c10472c68fb401dcae17995a0793cbb9fb590c2e6ee",
+    "update_kinds.json": "0ff1583949a72e8f57d2825ebb504406446add687fe6104e0a09c22deda259a1",
+    "rehearsal_index.json": "3d4b3da39770f7d50e27279fb91a0e406c8a0d4f533ea03f7a51536e19b10c25",
+    "name_inventory.json": "8f206951d2a0582e7b63d1557857b8d195ba6dbb05f2c9689b7fd079756051b6"
+  },
+  "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+  "tokenizer_sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b",
+  "seeds": [
+    890001,
+    890002,
+    890003
+  ],
+  "protected": {
+    "T3_TEST": "SEALED_UNOPENED",
+    "FINAL": "LOCKED",
+    "sacred": "LOCKED"
+  }
+}

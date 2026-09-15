@@ -1,0 +1,212 @@
+{
+  "study": "T32_CAUSAL_ORDERED_SOURCE_MEMORY_PREFIX_V1",
+  "classification": "T32_EXPLICIT_ORDERED_SOURCE_MEMORY_INSUFFICIENT",
+  "runs": {
+    "890001": {
+      "seed": 890001,
+      "update": 1000,
+      "classification": "T32_REPRESENTATION_SUCCESS_OUTPUT_FAIL",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 112,
+      "dev_native": 79,
+      "dev_exact": 35,
+      "dev_ce": 1.254763062298298,
+      "dev_fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 25,
+        "first_disambiguating_token_accuracy": 0.390625,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 0,
+        "shared_prefix_exact_rate": 0.0,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 35,
+        "unique_prefix_exact_rate": 0.546875,
+        "first_token_correct_then_diverge": 41,
+        "first_token_correct_then_diverge_shared": 27,
+        "first_token_correct_then_diverge_rate": 0.3203125,
+        "post_fork_free_completion_n": 25,
+        "post_fork_free_completion": 0,
+        "post_fork_free_completion_rate": 0.0
+      },
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "checkpoint_sha256": "0ce380d5326b0de202f54d1f068f8fa6ba8292ccef8038ab2ff09015117fb12c",
+      "checkpoint_path": "C:\\DaveLM-CADAVER\\phase2a_t32_causal_ordered_source_memory_v1\\run_seed890001\\checkpoints\\checkpoint_1000.pt"
+    },
+    "890002": {
+      "seed": 890002,
+      "update": 1000,
+      "classification": "T32_FAIL_NO_REPRESENTATION",
+      "stop_code": null,
+      "test_opened": false,
+      "dev_pointer": 110,
+      "dev_native": 82,
+      "dev_exact": 35,
+      "dev_ce": 1.2543085291981697,
+      "dev_fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 17,
+        "first_disambiguating_token_accuracy": 0.265625,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 2,
+        "shared_prefix_exact_rate": 0.03125,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 33,
+        "unique_prefix_exact_rate": 0.515625,
+        "first_token_correct_then_diverge": 35,
+        "first_token_correct_then_diverge_shared": 22,
+        "first_token_correct_then_diverge_rate": 0.2734375,
+        "post_fork_free_completion_n": 17,
+        "post_fork_free_completion": 2,
+        "post_fork_free_completion_rate": 0.11764705882352941
+      },
+      "binding_intact": true,
+      "early_intact": true,
+      "parent_sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1",
+      "locks": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "T2_EVAL_TEST": "LOCKED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      },
+      "t3_test_loaded": false,
+      "checkpoint_sha256": "fc55d80303d2e037436ffbf27665b8fd158725490fb574eed9228539a20ee2bd",
+      "checkpoint_path": "C:\\DaveLM-CADAVER\\phase2a_t32_causal_ordered_source_memory_v1\\run_seed890002\\checkpoints\\checkpoint_1000.pt"
+    }
+  },
+  "seed_890003": "NOT_REQUIRED",
+  "memory_ablation": [
+    {
+      "seed": 890001,
+      "checkpoint": "C:\\DaveLM-CADAVER\\phase2a_t32_causal_ordered_source_memory_v1\\run_seed890001\\checkpoints\\checkpoint_1000.pt",
+      "memory_on": {
+        "n": 128,
+        "pointer_retrieval": 112,
+        "native_forced_choice": 79,
+        "exact_answer_eos": 35,
+        "mean_margin": 0.9465337031251693,
+        "fork_metrics": {
+          "first_disambiguating_token_n": 64,
+          "first_disambiguating_token_correct": 25,
+          "first_disambiguating_token_accuracy": 0.390625,
+          "shared_prefix_n": 64,
+          "shared_prefix_exact": 0,
+          "shared_prefix_exact_rate": 0.0,
+          "unique_prefix_n": 64,
+          "unique_prefix_exact": 35,
+          "unique_prefix_exact_rate": 0.546875,
+          "first_token_correct_then_diverge": 41,
+          "first_token_correct_then_diverge_shared": 27,
+          "first_token_correct_then_diverge_rate": 0.3203125,
+          "post_fork_free_completion_n": 25,
+          "post_fork_free_completion": 0,
+          "post_fork_free_completion_rate": 0.0
+        }
+      },
+      "memory_off": {
+        "n": 128,
+        "pointer_retrieval": 112,
+        "native_forced_choice": 79,
+        "exact_answer_eos": 35,
+        "mean_margin": 0.9428009663461125,
+        "fork_metrics": {
+          "first_disambiguating_token_n": 64,
+          "first_disambiguating_token_correct": 25,
+          "first_disambiguating_token_accuracy": 0.390625,
+          "shared_prefix_n": 64,
+          "shared_prefix_exact": 0,
+          "shared_prefix_exact_rate": 0.0,
+          "unique_prefix_n": 64,
+          "unique_prefix_exact": 35,
+          "unique_prefix_exact_rate": 0.546875,
+          "first_token_correct_then_diverge": 40,
+          "first_token_correct_then_diverge_shared": 27,
+          "first_token_correct_then_diverge_rate": 0.3125,
+          "post_fork_free_completion_n": 25,
+          "post_fork_free_completion": 0,
+          "post_fork_free_completion_rate": 0.0
+        }
+      },
+      "language_ce_on": 1.254763062298298,
+      "language_ce_off": 1.254763062298298,
+      "protected": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    },
+    {
+      "seed": 890002,
+      "checkpoint": "C:\\DaveLM-CADAVER\\phase2a_t32_causal_ordered_source_memory_v1\\run_seed890002\\checkpoints\\checkpoint_1000.pt",
+      "memory_on": {
+        "n": 128,
+        "pointer_retrieval": 110,
+        "native_forced_choice": 82,
+        "exact_answer_eos": 35,
+        "mean_margin": 0.879888769963145,
+        "fork_metrics": {
+          "first_disambiguating_token_n": 64,
+          "first_disambiguating_token_correct": 17,
+          "first_disambiguating_token_accuracy": 0.265625,
+          "shared_prefix_n": 64,
+          "shared_prefix_exact": 2,
+          "shared_prefix_exact_rate": 0.03125,
+          "unique_prefix_n": 64,
+          "unique_prefix_exact": 33,
+          "unique_prefix_exact_rate": 0.515625,
+          "first_token_correct_then_diverge": 35,
+          "first_token_correct_then_diverge_shared": 22,
+          "first_token_correct_then_diverge_rate": 0.2734375,
+          "post_fork_free_completion_n": 17,
+          "post_fork_free_completion": 2,
+          "post_fork_free_completion_rate": 0.11764705882352941
+        }
+      },
+      "memory_off": {
+        "n": 128,
+        "pointer_retrieval": 110,
+        "native_forced_choice": 82,
+        "exact_answer_eos": 35,
+        "mean_margin": 0.8757441534544341,
+        "fork_metrics": {
+          "first_disambiguating_token_n": 64,
+          "first_disambiguating_token_correct": 17,
+          "first_disambiguating_token_accuracy": 0.265625,
+          "shared_prefix_n": 64,
+          "shared_prefix_exact": 2,
+          "shared_prefix_exact_rate": 0.03125,
+          "unique_prefix_n": 64,
+          "unique_prefix_exact": 33,
+          "unique_prefix_exact_rate": 0.515625,
+          "first_token_correct_then_diverge": 35,
+          "first_token_correct_then_diverge_shared": 22,
+          "first_token_correct_then_diverge_rate": 0.2734375,
+          "post_fork_free_completion_n": 17,
+          "post_fork_free_completion": 2,
+          "post_fork_free_completion_rate": 0.11764705882352941
+        }
+      },
+      "language_ce_on": 1.2543085291981697,
+      "language_ce_off": 1.2543085291981697,
+      "protected": {
+        "T3_TEST": "SEALED_UNOPENED",
+        "FINAL": "LOCKED",
+        "sacred": "LOCKED"
+      }
+    }
+  ],
+  "protected": {
+    "T3_TEST": "SEALED_UNOPENED",
+    "FINAL": "LOCKED",
+    "sacred": "LOCKED"
+  }
+}

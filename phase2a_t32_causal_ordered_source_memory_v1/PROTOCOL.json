@@ -1,0 +1,15 @@
+{
+  "study": "BABY_VNEXT_PHASE2A_T32_CAUSAL_ORDERED_SOURCE_MEMORY_PREFIX_V1",
+  "status": "SEALED_PROSPECTIVE",
+  "scientific_variable": "ordered source-token K/V memory exposed to the final Transformer block answer-position attention",
+  "parent": {"path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1_run_seed610001\\checkpoints\\best.pt", "sha256": "c5406f8053ec836c099fb5a1cd3497fb5a0f7397ff366433ec63161dea0eefb1", "completed_update": 6000},
+  "tokenizer": {"path": "C:\\DaveLM-v0.9\\tokenizer\\v0_7\\davelm_tokenizer.json", "sha256": "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b", "version": "v0_7"},
+  "architecture": {"module": "T32_MEMORY.py", "base_parameters": 61520385, "new_parameters": 640, "total_parameters": 61521025, "memory": "ordered mention-token states from block 10; soft fact-clause pointer weights; auxiliary K/V attention branch in block 11"},
+  "initialization": {"memory_gate": "zeros", "neutrality": "exact parent path at gate zero", "gradient_check": "nonzero gate gradient on TRAIN QA batch"},
+  "objective": {"lambda_ptr": 1.0, "lambda_ans": 1.0, "lambda_unl": 1.0, "margin": 1.0, "fork_hinge": 0.0, "suffix_margin": 0.0},
+  "schedule": {"total_updates": 1000, "qa_updates": 900, "language_updates": 100, "eval_points": [0,100,300,500,750,1000], "phase_a": "blocks0-3 frozen through U750", "phase_b": "blocks8-11 restored/frozen after U750", "lr": 3.75e-5, "clip_norm": 2.0, "batch": "32 QA via microbatch 8"},
+  "seeds": [890001, 890002, 890003],
+  "futility": {"checkpoint": 750, "memory_gate_l2_gt": 0.01, "exact_lte": 20, "shared_exact_eq": 0, "diverge_gte": 55, "false_kill_check": "inherited conservative T31 criterion; no known completed seed satisfying all conditions"},
+  "replication": {"rule": "run sequentially; if first two terminal scientific failures, seed3 NOT_REQUIRED; if disagreement, run seed3"},
+  "protected": {"T3_TEST": "SEALED_UNOPENED", "T2_EVAL_TEST": "LOCKED_UNOPENED", "FINAL": "LOCKED", "sacred": "LOCKED"}
+}

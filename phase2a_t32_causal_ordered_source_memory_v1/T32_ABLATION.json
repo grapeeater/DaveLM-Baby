@@ -1,0 +1,120 @@
+[
+  {
+    "seed": 890001,
+    "checkpoint": "C:\\DaveLM-CADAVER\\phase2a_t32_causal_ordered_source_memory_v1\\run_seed890001\\checkpoints\\checkpoint_1000.pt",
+    "memory_on": {
+      "n": 128,
+      "pointer_retrieval": 112,
+      "native_forced_choice": 79,
+      "exact_answer_eos": 35,
+      "mean_margin": 0.9465337031251693,
+      "fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 25,
+        "first_disambiguating_token_accuracy": 0.390625,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 0,
+        "shared_prefix_exact_rate": 0.0,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 35,
+        "unique_prefix_exact_rate": 0.546875,
+        "first_token_correct_then_diverge": 41,
+        "first_token_correct_then_diverge_shared": 27,
+        "first_token_correct_then_diverge_rate": 0.3203125,
+        "post_fork_free_completion_n": 25,
+        "post_fork_free_completion": 0,
+        "post_fork_free_completion_rate": 0.0
+      }
+    },
+    "memory_off": {
+      "n": 128,
+      "pointer_retrieval": 112,
+      "native_forced_choice": 79,
+      "exact_answer_eos": 35,
+      "mean_margin": 0.9428009663461125,
+      "fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 25,
+        "first_disambiguating_token_accuracy": 0.390625,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 0,
+        "shared_prefix_exact_rate": 0.0,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 35,
+        "unique_prefix_exact_rate": 0.546875,
+        "first_token_correct_then_diverge": 40,
+        "first_token_correct_then_diverge_shared": 27,
+        "first_token_correct_then_diverge_rate": 0.3125,
+        "post_fork_free_completion_n": 25,
+        "post_fork_free_completion": 0,
+        "post_fork_free_completion_rate": 0.0
+      }
+    },
+    "language_ce_on": 1.254763062298298,
+    "language_ce_off": 1.254763062298298,
+    "protected": {
+      "T3_TEST": "SEALED_UNOPENED",
+      "FINAL": "LOCKED",
+      "sacred": "LOCKED"
+    }
+  },
+  {
+    "seed": 890002,
+    "checkpoint": "C:\\DaveLM-CADAVER\\phase2a_t32_causal_ordered_source_memory_v1\\run_seed890002\\checkpoints\\checkpoint_1000.pt",
+    "memory_on": {
+      "n": 128,
+      "pointer_retrieval": 110,
+      "native_forced_choice": 82,
+      "exact_answer_eos": 35,
+      "mean_margin": 0.879888769963145,
+      "fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 17,
+        "first_disambiguating_token_accuracy": 0.265625,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 2,
+        "shared_prefix_exact_rate": 0.03125,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 33,
+        "unique_prefix_exact_rate": 0.515625,
+        "first_token_correct_then_diverge": 35,
+        "first_token_correct_then_diverge_shared": 22,
+        "first_token_correct_then_diverge_rate": 0.2734375,
+        "post_fork_free_completion_n": 17,
+        "post_fork_free_completion": 2,
+        "post_fork_free_completion_rate": 0.11764705882352941
+      }
+    },
+    "memory_off": {
+      "n": 128,
+      "pointer_retrieval": 110,
+      "native_forced_choice": 82,
+      "exact_answer_eos": 35,
+      "mean_margin": 0.8757441534544341,
+      "fork_metrics": {
+        "first_disambiguating_token_n": 64,
+        "first_disambiguating_token_correct": 17,
+        "first_disambiguating_token_accuracy": 0.265625,
+        "shared_prefix_n": 64,
+        "shared_prefix_exact": 2,
+        "shared_prefix_exact_rate": 0.03125,
+        "unique_prefix_n": 64,
+        "unique_prefix_exact": 33,
+        "unique_prefix_exact_rate": 0.515625,
+        "first_token_correct_then_diverge": 35,
+        "first_token_correct_then_diverge_shared": 22,
+        "first_token_correct_then_diverge_rate": 0.2734375,
+        "post_fork_free_completion_n": 17,
+        "post_fork_free_completion": 2,
+        "post_fork_free_completion_rate": 0.11764705882352941
+      }
+    },
+    "language_ce_on": 1.2543085291981697,
+    "language_ce_off": 1.2543085291981697,
+    "protected": {
+      "T3_TEST": "SEALED_UNOPENED",
+      "FINAL": "LOCKED",
+      "sacred": "LOCKED"
+    }
+  }
+]
