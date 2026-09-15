@@ -17,7 +17,7 @@ from .evaluate import evaluate_panels, language_ce
 
 ROOT = Path(__file__).resolve().parents[2]
 DEV_STREAM = Path(r"C:\DaveLM-CADAVER\baby_vnext_phase1g_language_v1\data\LANGUAGE_DEV_STREAM.u16")
-PANEL_PATH = ROOT / "data" / "generated" / "foundation_v1" / "panels.json"
+PANEL_PATH = ROOT / "data" / "generated" / "foundation_v1r2" / "panels.json"
 CONFIG_PATH = ROOT / "configs" / "foundation_v1.json"
 
 
@@ -87,7 +87,7 @@ def save_checkpoint(path: Path, model, optimizer, config, update: int, seed: int
     tmp = path.with_suffix(path.suffix + ".tmp")
     torch.save(
         {
-            "protocol": "BABY_V010_FOUNDATION_V1",
+            "protocol": "BABY_V010_FOUNDATION_V1R2",
             "lineage": "Baby v0.10",
             "update": update,
             "seed": seed,
@@ -120,7 +120,7 @@ def run(seed: int, out: Path, updates: int, eval_interval: int, device: torch.de
     out.mkdir(parents=True, exist_ok=True)
     if any(out.iterdir()):
         raise RuntimeError(f"output directory is not empty: {out}")
-    (out / "RUN_CONFIG.json").write_text(json.dumps({"seed": seed, "updates": updates, "eval_interval": eval_interval, "device": str(device), "protocol": "BABY_V010_FOUNDATION_V1", "parent_checkpoint": None, "protected_material_opened": False}, indent=2) + "\n", encoding="utf-8")
+    (out / "RUN_CONFIG.json").write_text(json.dumps({"seed": seed, "updates": updates, "eval_interval": eval_interval, "device": str(device), "protocol": "BABY_V010_FOUNDATION_V1R2", "parent_checkpoint": None, "protected_material_opened": False}, indent=2) + "\n", encoding="utf-8")
     baseline = language_ce(model, dev_stream, list(range(0, min(64 * 256, dev_stream.numel() - 257), 256)), device, limit=32)
     metrics_path = out / "metrics.jsonl"
     with metrics_path.open("w", encoding="utf-8") as metrics:
@@ -178,3 +178,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

@@ -269,15 +269,17 @@ def make_item(
 def build_panels(banks: Banks, seed: int = 101000) -> dict[str, list[dict]]:
     rng = random.Random(seed)
     panels: dict[str, list[dict]] = {}
-    panels["novel"] = [make_item(rng, banks, mode="heldout_surface", kind="keyed") for _ in range(96)]
-    panels["induction"] = [make_item(rng, banks, mode="heldout_surface", kind="induction") for _ in range(96)]
+    panels["same_surface_novel"] = [make_item(rng, banks, mode="train", kind="keyed") for _ in range(96)]
+    panels["same_surface_induction"] = [make_item(rng, banks, mode="train", kind="induction") for _ in range(96)]
+    panels["novel"] = panels["same_surface_novel"]
+    panels["induction"] = panels["same_surface_induction"]
     panels["heldout_surface"] = [make_item(rng, banks, mode="heldout_surface", kind="keyed") for _ in range(96)]
     panels["unseen_length"] = [make_item(rng, banks, mode="unseen_length", length=127, kind="keyed") for _ in range(64)]
     panels["low_prior"] = [make_item(rng, banks, mode="heldout_surface", kind="keyed", low_prior=True) for _ in range(64)]
     panels["distractor"] = [make_item(rng, banks, mode="distractor", kind="keyed") for _ in range(64)]
     panels["broken_context"] = [make_item(rng, banks, mode="heldout_surface", kind="keyed", broken="context") for _ in range(64)]
     panels["broken_order"] = [make_item(rng, banks, mode="heldout_surface", kind="keyed", broken="order") for _ in range(64)]
-    panels["all_intact"] = panels["novel"] + panels["induction"] + panels["heldout_surface"] + panels["unseen_length"] + panels["low_prior"] + panels["distractor"]
+    panels["all_intact"] = panels["same_surface_novel"] + panels["same_surface_induction"] + panels["heldout_surface"] + panels["unseen_length"] + panels["low_prior"] + panels["distractor"]
     return panels
 
 
@@ -320,7 +322,7 @@ def save_panels(out: Path, seed: int = 101000) -> None:
     (out / "panels.json").write_text(json.dumps(panels, indent=2) + "\n", encoding="utf-8")
     (out / "AUDIT.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
     manifest = {
-        "protocol": "BABY_V010_FOUNDATION_V1",
+        "protocol": "BABY_V010_FOUNDATION_V1R2",
         "panel_seed": seed,
         "language_stream": str(LANG_TRAIN),
         "language_sha256": audit["language_sha256"],
@@ -337,3 +339,5 @@ if __name__ == "__main__":
     parser.add_argument("--seed", type=int, default=101000)
     args = parser.parse_args()
     save_panels(args.out, args.seed)
+
+
