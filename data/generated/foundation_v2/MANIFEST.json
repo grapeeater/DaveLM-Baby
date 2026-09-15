@@ -1,0 +1,8 @@
+{
+  "protocol": "BABY_V010_FOUNDATION_V2",
+  "panel_seed": 102000,
+  "language_stream": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_TRAIN_STREAM.u16",
+  "language_sha256": "5f36b283cebe00d88445383166257fbb9831b759657a28c745f3d888f9626a41",
+  "protected_material_opened": false,
+  "panels_sha256": "5f0d1d2c59c5d9ac07cd93460a59f542d1c65b9a10f130e61a28388b52342bb3"
+}
