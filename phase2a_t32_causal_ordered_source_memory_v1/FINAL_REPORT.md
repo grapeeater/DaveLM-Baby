@@ -39,6 +39,12 @@ shared-prefix native generation. The result is a valid negative test of this
 final-block ordered K/V memory interface, not evidence that all source-memory
 architectures fail. Per the frozen failure branch, no T32b or T33 is run.
 
+The frozen descriptive telemetry pass measured mean answer-position memory
+attention mass of 1.0 per head (10.0 summed across ten heads) and mean
+correct-source pointer weights of 0.661 (890001) and 0.669 (890002). The
+branch was populated and selected source weights were nontrivial, yet
+neutralizing it did not change native behavior.
+
 **NEXT_OWNER_PLANNED_ACTION = TARGETED_EXTERNAL_MODEL_ARCHAEOLOGY_EXACTLY_3_MODELS**
 
 T3 TEST remains `SEALED_UNOPENED`.

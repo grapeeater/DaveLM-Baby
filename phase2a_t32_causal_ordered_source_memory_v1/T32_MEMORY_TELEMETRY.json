@@ -1,0 +1,14 @@
+[
+  {
+    "seed": 890001,
+    "mean_answer_memory_attention_mass": 10.0,
+    "mean_correct_source_pointer_weight": 0.6605796320363879,
+    "n": 128
+  },
+  {
+    "seed": 890002,
+    "mean_answer_memory_attention_mass": 10.0,
+    "mean_correct_source_pointer_weight": 0.6686292137019336,
+    "n": 128
+  }
+]
