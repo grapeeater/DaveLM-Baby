@@ -300,4 +300,43 @@ Generate hashed S2 data, preflight, control then treatment seed 120001, adjudica
 
 Gates and the extra term are committed before seeing S2 numbers.
 
+---
+
+## Milestone 2026-09-16 — S2 paired query-contrast: REGRESSION, functional moved, greedy did not
+
+### CURRENT BEST DIAGNOSIS
+
+Paired query-contrast is a *trainable* bind-direction functional: it raised `query_logit_effect` from 0.78 to 1.55 in 400 updates without the S1 induction smash. Greedy selection is still a query-invariant attractor (collapse 0.83→0.72, still far from 0.50; K=2 diagnostic glued at 0.542; mean margin still negative). Teacher-forced full-span CE likely keeps locking the favorite. S2 also nicked primitive 1-pair first-token (1.00→0.94) and short-keyed exact.
+
+### EVIDENCE FOR IT
+
+Matched seed 120001, parent `94b3a9da…17827`, manifest `006b3889…7d9e01`. Treatment effect 1.551 vs control 0.875 vs parent 0.784. Collapse 0.833→0.715 (control 0.799). Query-swap follow 36/32/40; stuck-old 33/36/24; 2-pair follow 16/17/21 of 31. Induction 0.297→0.312. Adjudication `REGRESSION` (primitive_keyed first_top1, short_keyed free_exact). Bootstrap treatment−control body-macro 95% CI [0.003, 0.072] with tiny absolute gain. See `research/V010_SELECTION_REPAIR_S2_TERMINAL.md`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- Diagnostic K=2 accuracy identical to parent; isolation 2-pair follow is the only greedy-ish lift.
+- 3/4-pair query-swap still at chance.
+- Single seed. Contrast loss ~4 vs CE ~1; dose is large.
+- +200 barely missed futility on collapse drop 0.056 vs 0.05.
+
+### WHAT WAS FALSIFIED
+
+- "Query-logit-effect cannot be trained with a paired contrast extra term." Falsified.
+- "Any extra first-position keyed term will regress induction like S1." Falsified here.
+- "All-K packing, not contrast, produces the +0.77 effect jump." Falsified by the matched control.
+- "S2 m=2 all-K contrast is a sufficient +400 greedy-selection remedy." Falsified.
+
+### WHAT REMAINS UNKNOWN
+
+- Whether masking first-token CE (remainder-only copy) lets the already-trained flip win the argmax.
+- Whether a 1-pair retention mix restores primitive keyed without undoing the flip.
+
+### NEXT EXPERIMENT
+
+Do not raise S2 λ/m/duration or launch 120002. Next protocol, if any: remainder-masked CE + paired contrast + small primitive-keyed retention, new matched control, futility on greedy rank-1 / K=2 collapse. Not launched in this milestone.
+
+### WHY HIGH INFORMATION
+
+The extra term moved its target and not induction. The remaining miss is "logits flip, greedy does not," which a λ bump will not diagnose.
+
 
