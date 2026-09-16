@@ -29,4 +29,8 @@ Greedy emissions on same-surface novel are 41 queried-pair copies, 52 competitor
 
 Teacher-forced gold continuation after the first token locks on 51/52 train-novel competitor-copy rows: she can finish the queried span if the first token is forced. Queried-copy at 2/3/4 pairs is not above 1/K at p<0.05; the 2-pair "binding signal" is withdrawn. Interim evals used probe_limit=16; matched first-16 novel queried copy is 6/16 at U15500 and 5/16 at U16000, so the terminal 41/96 is not a late jump. All 22 unique induction immediate-EOS rows occur iff the last context token is that item's own separator. Held-out off-inventory 41/41 contain a train separator. No training. See `research/V010_V2R4_MECHANISM_CENSUS.md`.
 
+## v2R4 Fan Diesel isolation probe (weights, still no training)
+
+Read-only score of hashed U16000 on Fan Diesel CUDA/ROCm. Query-swap does not follow the new query (novel 36/96; 2/3/4-pair 16/31, 8/21, 12/44, all chance). Stuck-old 33, other-competitor 23. New-gold rest_value_tf_lock 94/96. Marker-swap copy holds (47/96). Sep-swap exact 0 and inventory copy drops to 54/96. Value-absent original-span copy 0. Body-reorder query-first 36/65 vs matched parent 22/65. No training, no gate change, no v2R5 open. See `research/V010_V2R4_ISOLATION_PROBE.md`. Proposed unlaunched protocol: `design/V010_V2R4_FIRST_TOKEN_SELECTION_PROTOCOL.md`.
+
 

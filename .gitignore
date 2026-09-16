@@ -23,6 +23,14 @@ data/generated/*
 !evaluations/generated/.gitkeep
 !data/generated/.gitkeep
 
+# v2R4 isolation diagnostic receipts (JSON/MD only; not checkpoints)
+!runs/v2r4_isolation_autopsy/
+!runs/v2r4_isolation_autopsy/**
+!runs/v2r4_isolation_probe/
+!runs/v2r4_isolation_probe/**
+!runs/v2r4_isolation_panels/
+!runs/v2r4_isolation_panels/ISOLATION_META.json
+
 # Local machine / editor
 .venv/
 *.log

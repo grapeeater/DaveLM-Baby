@@ -148,3 +148,51 @@ Body-reorder, marker/sep swap, and value-absent remain on the same Fan Diesel co
 
 Every data-only test still leaves open "maybe a hidden query cue we did not swap." Query-swap is the cleanest causal intervention on B that does not update weights. Chance tests already removed the excuse that 2-pair is solved.
 
+---
+
+## Milestone 2026-09-16 — Fan Diesel U16000 isolation probe (weights, no training)
+
+### CURRENT BEST DIAGNOSIS
+
+Baby copies in-context value spans. She does **not** bind the query to the correct first token. Changing only the query leaves first-token selection at 1/K. Teacher-forced continuation of the *new* gold value still locks. A first-slot prior is real but does not explain query-swap. Train-surface copy does not need marker identity; separator identity is entangled with copy, not only suffix OOD.
+
+### EVIDENCE FOR IT
+
+Verified U16000 SHA `94b3a9da…17827` on Fan Diesel `cuda` / RX 9060 XT. `trained=false`. Frozen panels unmodified.
+
+Query-swap novel: follow 36 / stuck-old 33 / other-competitor 23 / off 4; inventory 92/96; new-gold `rest_value_tf_lock` 94/96. By K: 16/31, 8/21, 12/44, all p>0.8 vs 1/K. Short 2-pair follow 12/28 stuck-old 16/28. On novel misses, queried first token is never rank-1 (0/60); 30 runner-up, 30 not competitive. Median queried rank 2.
+
+Body-reorder query-first 36/65 vs matched parent 22/65 (2-pair 15/16 vs parent 10/16). Query-last 22/61 vs parent 27/61. Marker-swap value_ok 47/96 (holds). Sep-swap value_ok 20/96, exact 0/96, inventory 54/96. Value-absent original-span copy 0; remaining-competitor 55/96; replacement-span 37/96.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- Query-first 2-pair 15/16 shows a slot prior strong enough that a naive first-token loss could be cheated by “copy body-first.”
+- Query-last 2-pair barely drops (9/15 → 8/15), so first-slot is not the whole 2-pair recipe.
+- Sep-swap also wrecks inventory copy, so A′ is not suffix-only.
+- Single seed. v2R5 unresolved and not opened.
+- Mixed-panel 1/K p-values are invalid; use the K-stratified tests above.
+
+### WHAT WAS FALSIFIED
+
+- “Query-swap will follow the new query, so first-token binding is already present.” Falsified.
+- “2-pair parent copy is query-conditioned.” Falsified: swap is 16/31 vs 15 stuck-old.
+- “Marker identity is the train-surface copy cue.” Falsified: marker-swap 47/96 value copy.
+- “Sep-swap only kills exact.” Falsified as exclusive: exact dies **and** inventory copy drops 93%→56%.
+- “Broken-context 16/64 measures retrieval without the value.” Falsified: value-absent original copy is 0.
+
+### WHAT REMAINS UNKNOWN
+
+- Why the queried first token is rank-2 so often on 2-pair (attention, recency, residual of the pre-swap query, or undifferentiated inventory head).
+- Why held-out long values lose even remaining-competitor copy.
+- Induction offset binding after trailing-sep glue.
+- v2R5.
+
+### NEXT EXPERIMENT
+
+Do **not** train yet unless a later explicit launch is approved. Highest-information *unlaunched* treatment is a multi-pair first-token contrastive / query-swap objective with randomized body order: [`design/V010_V2R4_FIRST_TOKEN_SELECTION_PROTOCOL.md`](../design/V010_V2R4_FIRST_TOKEN_SELECTION_PROTOCOL.md). Highest-information *read-only* leftover is a 2-pair attention/logit dump of queried vs original first-token heads on the swap misses (already know ranks; do not know which layer).
+
+### WHY HIGH INFORMATION
+
+Query-swap is the causal test that data-only census could not run. Follow-at-chance plus new-gold lock isolates B from C/D. Marker/sep/value-absent/body-reorder prevent treating B as “just markers” or “just first slot.”
+
+
