@@ -1,0 +1,49 @@
+{
+  "data_py_working_sha256": "5831bdae95d00a62ccd54a56eed21fcfce550f824591048f14ee02f7d2ec4a61",
+  "data_py_lf_sha256": "710dac4d154446e8f225840a5e173b05ad5b8ba154385b4e648cf31878265f72",
+  "data_py_manifest_sha256": "7c0f9bde17aab4d3084a3f9502674bb40dd2b3ca3d9ff10f14ef3cdce7f85ca4",
+  "data_v2_working_sha256": "37b6044c6d745947c2ea69a8c00d55e2d78a3dd5383cb7cef26eee1dd709dde4",
+  "data_v2_lf_sha256": "22377ecfc88010a891120e7e3a9058f3eeed34a63c5aa4ca452bc60f705d24c5",
+  "data_v2_manifest_sha256": "11d431aed05795466208919aabaced132130fc20822ab14edc9b79de66d6f5b0",
+  "lang_train": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_TRAIN_STREAM.u16",
+  "lang_train_exists": true,
+  "reason": "MANIFEST copies V2/V2R4 freeze hashes for data.py and data_v2.py. Those hashes never matched the committed git blobs. Control verify() passed against now-lost working-tree bytes (destroyed by checkout to main). Current files are bytecode-identical to the 2026-09-15 pyc compiled from the freeze-era sources; LANG_TRAIN path is unchanged. Treatment uses frozen hashed schedules, not data generators.",
+  "data_pyc_co_code_equal": true,
+  "data_v2_pyc_co_code_equal": true,
+  "data_pyc_fingerprint_equal": true,
+  "restored_lf_files": [
+    "design\\V010_SELECTION_REPAIR_S1.md",
+    "src\\baby_v010\\selection_s1.py",
+    "src\\baby_v010\\model.py",
+    "src\\baby_v010\\config.py",
+    "src\\baby_v010\\evaluate.py",
+    "src\\baby_v010\\train_v2r4.py"
+  ],
+  "newline_or_exact_ok": [
+    "data\\generated\\foundation_v2\\panels.json",
+    "design\\V010_SELECTION_REPAIR_S1.md",
+    "runs\\selection_s1\\DIAGNOSTIC.json",
+    "runs\\selection_s1\\SCHEDULE_110001.json",
+    "runs\\selection_s1\\SCHEDULE_110002.json",
+    "src\\baby_v010\\config.py",
+    "src\\baby_v010\\evaluate.py",
+    "src\\baby_v010\\isolation_transforms.py",
+    "src\\baby_v010\\model.py",
+    "src\\baby_v010\\selection_s1.py",
+    "src\\baby_v010\\train_v2r4.py"
+  ],
+  "exceptions": {
+    "src\\baby_v010\\data.py": {
+      "working": "5831bdae95d00a62ccd54a56eed21fcfce550f824591048f14ee02f7d2ec4a61",
+      "lf": "710dac4d154446e8f225840a5e173b05ad5b8ba154385b4e648cf31878265f72",
+      "expected": "7c0f9bde17aab4d3084a3f9502674bb40dd2b3ca3d9ff10f14ef3cdce7f85ca4"
+    },
+    "src\\baby_v010\\data_v2.py": {
+      "working": "37b6044c6d745947c2ea69a8c00d55e2d78a3dd5383cb7cef26eee1dd709dde4",
+      "lf": "22377ecfc88010a891120e7e3a9058f3eeed34a63c5aa4ca452bc60f705d24c5",
+      "expected": "11d431aed05795466208919aabaced132130fc20822ab14edc9b79de66d6f5b0"
+    }
+  },
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "manifest_sha256": "7e7a96bfb39fa8e19bdbcff15ec928a6eb3e90e8fb9ae97bf9622554e9d1aac5"
+}
