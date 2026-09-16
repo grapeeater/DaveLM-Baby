@@ -1,0 +1,15 @@
+{
+  "reason": "futility",
+  "last_step": 400,
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "manifest_sha256": "7e7a96bfb39fa8e19bdbcff15ec928a6eb3e90e8fb9ae97bf9622554e9d1aac5",
+  "elapsed_s": 802.7350000000006,
+  "artifacts": {
+    "checkpoint_16200.pt": "50d7625c8b518aee7154588929df2588b1df6bf21bdaaa98af00fa20b05734ca",
+    "checkpoint_16400.pt": "8f15abfac050ed943b1b01ef117aded2edcc4f3ad6cf8a409603a8637df4a0c2",
+    "eval_0000.json": "74373b67ddd695bd7a73527133c6f7a0924dee7b5c9ebf9961faad4247ba7f06",
+    "eval_0200.json": "db066ab754b852b85f35b4986392f549104e7f29fcb054b7604802d6202915c6",
+    "eval_0400.json": "5526a1287e935fad88f8d8d1269abbb32bcd5bf7a1707e37ca8153e484d55106",
+    "events.jsonl": "7feed946461f270e550cc33df98c5fdb5d247e71f2fab001700451a9e1e834b2"
+  }
+}
