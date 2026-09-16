@@ -231,4 +231,73 @@ Do not extend S1 or launch 110002. New preregistration required. Do not open TES
 
 The matched control existed; futility is pairwise, not “treatment looked disappointing.”
 
+---
+
+## Milestone 2026-09-16 — Independent S1 autopsy revises the amplification diagnosis
+
+### CURRENT BEST DIAGNOSIS
+
+A query-conditioned logit residue is real, but it is **not** a first-token-CE amplification problem. Independent gold NLL on counterfactual twins did not move queried inventory rank-2 into rank-1, lowered `query_logit_effect`, and increased query-invariant collapse. The extra term was live: it stole from primitive induction. The missing operator is a loss whose minimum requires the inventory preference to **flip with the query**.
+
+### EVIDENCE FOR IT
+
+Recomputed from hashed S1 evals (21/21 SHA256SUMS match). Queried inventory rank-1 0.377→0.387; rank-2 stuck at 0.338. Collapse 118/144→123/144. K=2 body-macro glued at 0.53125. Query-swap follow 36→35. Induction 0.297→0.172 on treatment vs 0.266 on control. First-slot is only 0.30 of diagnostic copies; 39/118 collapsed bodies match the first rendered head. See `research/V010_S1_INDEPENDENT_AUTOPSY.md`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- Rank-2 residue still exists; some other first-position loss could still use it.
+- All-K packing for K=3,4 was not tested in S1 (only 2-of-K).
+- Single S1 seed.
+
+### WHAT WAS FALSIFIED
+
+- “S1 failed because first-token CE was too weak to move the network.” Induction moved.
+- “S1 failed because rank-2 just needed more gold NLL.” Rank-2 did not become rank-1.
+- Inventory-restricted softmax as a *near* next step: 95% inventory copy makes it ~the same gradient as full-vocab CE when the winner is in-set.
+
+### WHAT REMAINS UNKNOWN
+
+- Whether paired query-contrast (S1's `query_logit_effect` as a training loss) creates a bind operator.
+- Whether all-K packing alone would move K=3,4 (hence S2's matched control).
+
+### NEXT EXPERIMENT
+
+S2: `design/V010_SELECTION_REPAIR_S2.md`. Paired query-contrast vs matched all-K full-answer CE. Futility at +200 on the mechanism triad. Do not raise S1's λ.
+
+### WHY HIGH INFORMATION
+
+It tests a different functional than the failed recipe, with a control that isolates the new data packing from the new loss.
+
+---
+
+## Milestone 2026-09-16 — S2 protocol frozen (pre-train)
+
+### CURRENT BEST DIAGNOSIS
+
+Unchanged from the independent S1 autopsy above. Protocol frozen before generate/train.
+
+### EVIDENCE FOR IT
+
+Protocol file `design/V010_SELECTION_REPAIR_S2.md`. Extra term is `softplus(2.0 - effect_ij)` on all-K query groups, not first-token CE.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+Launch still required. Attention dump deferred: would not change this functional.
+
+### WHAT WAS FALSIFIED
+
+Nothing new at freeze time.
+
+### WHAT REMAINS UNKNOWN
+
+Whether S2's extra term moves `query_logit_effect` / collapse / inventory rank-1 by +200.
+
+### NEXT EXPERIMENT
+
+Generate hashed S2 data, preflight, control then treatment seed 120001, adjudicate against frozen S2 gates.
+
+### WHY HIGH INFORMATION
+
+Gates and the extra term are committed before seeing S2 numbers.
+
 
