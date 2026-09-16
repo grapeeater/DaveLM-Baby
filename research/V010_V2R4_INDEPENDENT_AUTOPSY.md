@@ -104,3 +104,8 @@ v2R5 is not in this repository. Do not treat it as pass or fail.
 This autopsy cannot score query-swap, marker-swap, or value-absent items. Those require the local U16000 checkpoint on Fan Diesel via `python -B -m src.baby_v010.diagnose_checkpoint`.
 
 Do not change Gate C after seeing separator OOD. Do not launch v2R6 from this report alone.
+
+## Refinement (emission source)
+
+A later join of greedy `emitted` tokens to reconstructed body pairs showed that same-surface novel **inventory copy is 93/96** (41 queried + 52 competitor + 3 off-inventory). Chance-level 3-pair queried accuracy is therefore a **selection** failure among successfully copied payloads, not a failure to copy. See [`V010_V2R4_EMISSION_SOURCE.md`](V010_V2R4_EMISSION_SOURCE.md) and [`V010_RESEARCH_LOG.md`](V010_RESEARCH_LOG.md).
+

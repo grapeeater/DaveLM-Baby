@@ -82,6 +82,49 @@ def find_body_range(item: dict) -> tuple[int, int] | None:
     return min(start for start, _ in ranges), max(end for _, end in ranges)
 
 
+def recover_rendered_pairs(item: dict) -> list[dict]:
+    """Return body pairs in *rendered* order, with input start offsets."""
+    inp = [int(x) for x in item["input"]]
+    sep = int(item["target"][-2])
+    found: list[dict] = []
+    occupied: set[int] = set()
+    for source_index, (key, value) in enumerate(parse_records(item)):
+        pattern = [int(key), *[int(x) for x in value], sep]
+        start = None
+        for index in range(0, len(inp) - len(pattern) + 1):
+            if index in occupied:
+                continue
+            if inp[index : index + len(pattern)] == pattern:
+                start = index
+                break
+        displayed_key = int(key)
+        if start is None:
+            value_pattern = [*[int(x) for x in value], sep]
+            for index in range(1, len(inp) - len(value_pattern) + 1):
+                if (index - 1) in occupied:
+                    continue
+                if inp[index : index + len(value_pattern)] == value_pattern:
+                    start = index - 1
+                    displayed_key = inp[start]
+                    break
+        if start is None:
+            continue
+        end = start + 1 + len(value) + 1
+        occupied.update(range(start, end))
+        found.append({
+            "start": start,
+            "end": end,
+            "key": displayed_key,
+            "original_key": int(key),
+            "value": [int(x) for x in value],
+            "source_index": source_index,
+        })
+    found.sort(key=lambda row: row["start"])
+    for render_index, row in enumerate(found):
+        row["render_index"] = render_index
+    return found
+
+
 def extract_marker_tokens(item: dict) -> tuple[int, int]:
     if item.get("kind") != "keyed":
         raise RuntimeError("marker extraction is defined for keyed rows")
@@ -294,6 +337,50 @@ def value_absent(item: dict) -> dict:
     )
 
 
+def body_reorder(item: dict, place: str) -> dict:
+    """Move the queried pair to the first or last body slot. Target unchanged."""
+    if place not in {"query_first", "query_last"}:
+        raise RuntimeError(f"unknown body reorder {place}")
+    if item.get("kind") != "keyed" or item.get("broken"):
+        raise RuntimeError("body_reorder is defined on intact keyed items")
+    rendered = recover_rendered_pairs(item)
+    if len(rendered) < 2:
+        raise RuntimeError("body_reorder requires pair_count >= 2")
+    query_key = int(item["query_key"])
+    queried = [row for row in rendered if row["original_key"] == query_key]
+    others = [row for row in rendered if row["original_key"] != query_key]
+    if len(queried) != 1:
+        raise RuntimeError("could not uniquely locate queried pair in the body")
+    original_pos = queried[0]["render_index"]
+    if place == "query_first":
+        if original_pos == 0:
+            raise RuntimeError("queried pair is already first")
+        new_order = queried + others
+    else:
+        if original_pos == len(rendered) - 1:
+            raise RuntimeError("queried pair is already last")
+        new_order = others + queried
+    sep = int(item["target"][-2])
+    body: list[int] = []
+    for row in new_order:
+        body.extend([row["key"], *row["value"], sep])
+    body_range = find_body_range(item)
+    if body_range is None:
+        raise RuntimeError("could not locate body range")
+    start, end = body_range
+    if end - start != len(body):
+        raise RuntimeError(("body length mismatch", end - start, len(body)))
+    inp = [int(x) for x in item["input"]]
+    inp[start:end] = body
+    return _copy_item(
+        item,
+        input=inp,
+        isolation_transform=f"body_reorder_{place}",
+        original_render_index=original_pos,
+        original_input=list(item["input"]),
+    )
+
+
 def pair_count_slice(items: list[dict], pair_count: int) -> list[dict]:
     return [
         _copy_item(item, isolation_transform=f"pair_count_{pair_count}")
@@ -336,6 +423,15 @@ def build_isolation_panels(panels: dict) -> dict[str, list[dict]]:
         "same_surface_novel_pair_count_4": pair_count_slice(novel, 4),
         "short_keyed_pair_count_1": pair_count_slice(short, 1),
         "short_keyed_pair_count_2": pair_count_slice(short, 2),
+        "body_reorder_query_first_same_surface_novel": _safe_map(
+            [item for item in novel if int(item["pair_count"]) >= 2], body_reorder, place="query_first"
+        ),
+        "body_reorder_query_last_same_surface_novel": _safe_map(
+            [item for item in novel if int(item["pair_count"]) >= 2], body_reorder, place="query_last"
+        ),
+        "body_reorder_query_first_heldout_surface": _safe_map(
+            [item for item in heldout if int(item["pair_count"]) >= 2], body_reorder, place="query_first"
+        ),
     }
     isolation["meta"] = {
         "train_markers": list(train_markers),

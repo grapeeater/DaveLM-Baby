@@ -21,3 +21,8 @@ v2R4 seed `106001` U16000 remains a frozen terminal failure (Gate L pass, C/R fa
 
 A data-only join of the committed metrics to frozen `foundation_v2` panels found: primitive keyed is entirely `pair_count=1`; same-surface 3-pair value copy is 7/21 (chance); held-out full exact 0/96 hides 23/96 value-span copies that fail on held-out separators; held-out value copy matches broken-context (value still present under a replaced key). v2R5 is absent in GitHub and stays unresolved. No training was launched. Isolation transforms and a checkpoint probe are in `src/baby_v010/`; Fan Diesel commands are in `docs/FAN_DIESEL_HANDOFF_ISOLATION.md`. Frozen Gate L/C/R were not changed.
 
+## v2R4 emission-source refinement (still no training)
+
+Greedy emissions on same-surface novel are 41 queried-pair copies, 52 competitor-pair copies, and 3 off-inventory (inventory copy 93/96). The 3-pair "chance" queried rate is a selection failure, not a copy failure. Competitor copies have median queried-token rank 2 and never rank 1. Body-reorder query-first/last transforms were added for a Fan Diesel causal slot test. See `research/V010_RESEARCH_LOG.md`.
+
+

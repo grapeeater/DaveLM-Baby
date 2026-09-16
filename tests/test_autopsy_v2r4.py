@@ -94,3 +94,28 @@ def test_autopsy_refuses_wrong_hash(tmp_path: Path):
         raise AssertionError("expected hash refusal")
     for name in UNIQUE_SCORED_PANELS:
         assert name in json.loads((ROOT / "data" / "generated" / "foundation_v2" / "AUDIT.json").read_text())["panel_counts"]
+
+
+def test_autopsy_emission_source_splits_copy_from_selection():
+    report = run_autopsy(METRICS, PANELS)
+    source = report["emission_source"]["panels"]
+    novel = source["same_surface_novel"]
+    assert novel["queried"] == 41
+    assert novel["competitor"] == 52
+    assert novel["off_inventory"] == 3
+    assert novel["inventory_copy_rate"] == 93 / 96
+    assert novel["rank1_when_competitor_copy"] == 0.0
+    assert novel["median_target_rank_when_queried_copy"] == 1.0
+    assert novel["median_target_rank_when_competitor_copy"] == 2.0
+    short = source["short_keyed"]
+    assert short["queried"] == 54
+    assert short["competitor"] == 10
+    assert short["off_inventory"] == 0
+    hold = source["heldout_surface"]
+    assert hold["queried"] == 23
+    assert hold["competitor"] == 32
+    assert hold["off_inventory"] == 41
+    primitive = source["primitive_keyed"]
+    assert primitive["queried"] == 64
+    assert report["hypothesis_read"]["B_query_binding"] == "failed_competitor_copy_is_the_dominant_train_error"
+    assert report["hypothesis_read"]["C_payload_copy"] == "supported_train_novel_inventory_copy_93_of_96"

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 
 from src.baby_v010.isolation_transforms import (
+    body_reorder,
     build_isolation_panels,
     extract_marker_tokens,
     harvest_markers,
@@ -12,6 +13,7 @@ from src.baby_v010.isolation_transforms import (
     locate_query,
     parse_records,
     query_swap,
+    recover_rendered_pairs,
     sep_swap_keep_markers,
     value_absent,
     write_isolation_panels,
@@ -117,3 +119,23 @@ def test_isolation_bundle_counts_and_query_swap_coverage():
     assert len(isolation["value_absent_broken_context"]) == 64
     assert isolation["meta"]["frozen_panels_mutated"] is False
     assert isolation["meta"]["diagnostic_only"] is True
+    assert isolation["body_reorder_query_first_same_surface_novel"]
+    assert isolation["body_reorder_query_last_same_surface_novel"]
+
+
+def test_body_reorder_moves_queried_pair_only():
+    panels = _load_panels()
+    item = next(
+        row
+        for row in panels["same_surface_novel"]
+        if row["pair_count"] >= 2 and recover_rendered_pairs(row)[0]["original_key"] != row["query_key"]
+    )
+    moved = body_reorder(item, "query_first")
+    rendered = recover_rendered_pairs(moved)
+    assert rendered[0]["original_key"] == item["query_key"]
+    assert moved["target_span"] == item["target_span"]
+    assert moved["query_key"] == item["query_key"]
+    assert moved["input"] != item["input"]
+    original_values = sorted(tuple(pair["value"]) for pair in recover_rendered_pairs(item))
+    moved_values = sorted(tuple(pair["value"]) for pair in rendered)
+    assert original_values == moved_values

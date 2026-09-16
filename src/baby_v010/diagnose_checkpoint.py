@@ -37,6 +37,9 @@ SCORE_PANEL_NAMES = (
     "same_surface_novel_pair_count_4",
     "short_keyed_pair_count_1",
     "short_keyed_pair_count_2",
+    "body_reorder_query_first_same_surface_novel",
+    "body_reorder_query_last_same_surface_novel",
+    "body_reorder_query_first_heldout_surface",
 )
 
 

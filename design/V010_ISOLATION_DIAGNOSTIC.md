@@ -71,3 +71,10 @@ Local-only, required on Fan Diesel for the probe:
 ## Information gained even if it fails
 
 A null query-swap still tells us 2-pair “success” is not query-conditioned. A null marker-swap still tells us wrappers are not the active cue. A null value-absent still tells us the current broken-context control is not measuring causal retrieval. Those are usable negative results. They do not authorize a threshold change.
+
+## Refinement after emission-source census
+
+Data-only analysis (no weights) showed train-novel inventory copy 93/96, with 52/96 competitor copies. Fan Diesel probes should be read as selection tests, not copy-capacity tests.
+
+Additional causal transform: `body_reorder_query_first` / `query_last`. If queried-copy rises when the queried pair is moved to body-first, part of B is a slot prior. If it does not, B is not explained by first-slot bias.
+

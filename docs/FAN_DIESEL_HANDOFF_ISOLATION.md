@@ -59,8 +59,15 @@ From `runs\v2r4_isolation_probe\PROBE.json`:
 - `marker_swap_keep_sep_same_surface_novel` `value_ok_rate` vs parent novel 41/96
 - `sep_swap_keep_markers_same_surface_novel` `value_ok_rate` and `free_exact_rate`
 - `value_absent_*` `value_ok_rate` versus broken-context 16/64
+- `body_reorder_query_first_same_surface_novel` / `query_last` `value_ok_rate`
 
 Also confirm: no training occurred; frozen panels hash unchanged; v2R5 still marked pending unless you attach a real sealed receipt.
+
+### How to read the new fields
+
+- `inventory copy` / competitor vs queried: already computable from the data-only autopsy `emission_source` block; expect novel 41/52/3.
+- Body-reorder: compare `body_reorder_query_first_same_surface_novel.value_ok_rate` to parent novel 41/96 restricted to the same moved items. A large lift supports a first-slot prior. A null supports missing query-key binding rather than slot bias.
+- Query-swap: follow-new-value is the binding test. Stuck-on-old-value is copy-without-query.
 
 ## Do not do
 

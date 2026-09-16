@@ -14,6 +14,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any
 
+from .emission_source import emission_source_report
 from .v2r4_provenance import (
     EOS_TOKEN,
     FROZEN_PANELS_SHA256,
@@ -278,14 +279,17 @@ def run_autopsy(metrics_path: Path, panels_path: Path) -> dict:
         },
         "panels": censuses,
         "heldout_first_ok_examples": heldout_rank1_suffix_examples(join_panel(panels, term, "heldout_surface")),
+        "emission_source": emission_source_report(panels, term),
         "trajectory": trajectory(records),
         "hypothesis_read": {
-            "A_value_emission": "falsified_tf_value_equals_free_value",
+            "A_internal_identification": "partial_train_surface_queried_rank_1_or_2",
             "A_prime_heldout_separator": "supported_value_ok_without_exact",
-            "B_binding": "supported_for_ge3_pairs_and_induction",
-            "C_surface": "supported_heldout_value_rate_matches_broken_key",
-            "D_curriculum": "plausible_1pair_attractor",
-            "E_architecture": "not_justified_as_next_claim",
+            "B_query_binding": "failed_competitor_copy_is_the_dominant_train_error",
+            "C_payload_copy": "supported_train_novel_inventory_copy_93_of_96",
+            "D_free_emission_of_selected_span": "supported_tf_equals_free",
+            "E_separator_eos": "heldout_exact_is_separator_ood",
+            "F_surface": "heldout_inventory_copy_drops",
+            "architecture": "not_justified_as_next_claim",
         },
     }
 
@@ -318,7 +322,10 @@ def render_markdown(report: dict) -> str:
         )
     lines.extend([
         "",
-        "## Pair-count slices",
+        "## Emission source (queried vs competitor vs off-inventory)",
+        "",
+        json.dumps(report.get("emission_source", {}).get("headline"), indent=2),
+        "",
         "",
     ])
     for name in ("primitive_keyed", "short_keyed", "same_surface_novel", "heldout_surface", "broken_context"):
