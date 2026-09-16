@@ -14,7 +14,9 @@ from pathlib import Path
 
 from .autopsy_v2r4 import classify_item_row
 from .config import BabyVNextConfig
+from .emission_source import classify_emission
 from .isolation_transforms import assert_frozen_panels, build_isolation_panels
+from .mechanism_census import full_after_first_tf_lock, rest_value_tf_lock
 from .v2r4_provenance import (
     TERMINAL_CHECKPOINT_SHA256,
     TERMINAL_UPDATE,
@@ -106,6 +108,8 @@ def summarize_scored(items: list[dict], rows: list[dict]) -> dict:
     classified = [classify_item_row(item, row) for item, row in zip(items, rows)]
     follow = 0
     stuck_old = 0
+    queried = competitor = off_inventory = 0
+    rest_defined = rest_lock = full_lock = 0
     for item, row, info in zip(items, rows, classified):
         original = item.get("original_target_span")
         emitted = [int(tok) for tok in row.get("emitted", [])]
@@ -113,6 +117,16 @@ def summarize_scored(items: list[dict], rows: list[dict]) -> dict:
             stuck_old += 1
         if item.get("isolation_transform") == "query_swap" and info["value_ok"]:
             follow += 1
+        if item.get("kind") == "keyed":
+            source = classify_emission(item, row)["source"]
+            queried += int(source == "queried")
+            competitor += int(source == "competitor")
+            off_inventory += int(source == "off_inventory")
+            rest = rest_value_tf_lock(item, row)
+            if rest is not None:
+                rest_defined += 1
+                rest_lock += int(rest)
+            full_lock += int(full_after_first_tf_lock(item, row))
     n = len(classified)
     return {
         "n": n,
@@ -124,6 +138,13 @@ def summarize_scored(items: list[dict], rows: list[dict]) -> dict:
         "fail": {key: sum(info["fail"] == key for info in classified) for key in sorted({info["fail"] for info in classified})},
         "query_swap_follow_new_value": follow if any(item.get("isolation_transform") == "query_swap" for item in items) else None,
         "emitted_original_value_span": stuck_old if any(item.get("original_target_span") for item in items) else None,
+        "queried_copy": queried,
+        "competitor_copy": competitor,
+        "off_inventory": off_inventory,
+        "inventory_copy_rate": ((queried + competitor) / n) if n else None,
+        "rest_value_tf_lock": rest_lock,
+        "rest_value_tf_lock_defined": rest_defined,
+        "full_after_first_tf_lock": full_lock,
         "chance_1_over_k": (
             1.0 / int(items[0]["pair_count"])
             if items and items[0].get("kind") == "keyed" and items[0].get("pair_count")

@@ -117,5 +117,5 @@ def test_autopsy_emission_source_splits_copy_from_selection():
     assert hold["off_inventory"] == 41
     primitive = source["primitive_keyed"]
     assert primitive["queried"] == 64
-    assert report["hypothesis_read"]["B_query_binding"] == "failed_competitor_copy_is_the_dominant_train_error"
+    assert report["hypothesis_read"]["B_query_binding"] == "failed_queried_copy_not_above_1_over_k_including_2_pair"
     assert report["hypothesis_read"]["C_payload_copy"] == "supported_train_novel_inventory_copy_93_of_96"

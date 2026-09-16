@@ -78,3 +78,12 @@ Data-only analysis (no weights) showed train-novel inventory copy 93/96, with 52
 
 Additional causal transform: `body_reorder_query_first` / `query_last`. If queried-copy rises when the queried pair is moved to body-first, part of B is a slot prior. If it does not, B is not explained by first-slot bias.
 
+## Refinement after mechanism census
+
+Data-only chance tests withdrew the 2-pair binding-signal claim (19/31, two-sided p=0.281). Fan Diesel query-swap is now even more important: there is no remaining train-panel statistical excuse that 2-pair already binds.
+
+Read probe `rest_value_tf_lock` on query-swap's **new** gold span. A high lock with low follow means she can continue the new value if forced and still will not select it. That is A without B.
+
+Do not compare interim n=16 headlines from the original metrics.jsonl to the probe's full isolation panels without a matched slice.
+
+

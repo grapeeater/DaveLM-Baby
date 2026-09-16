@@ -72,3 +72,79 @@ Fan Diesel body-reorder is the highest-information *causal* positional test: if 
 ### WHY HIGH INFORMATION
 
 It distinguishes B (wrong pair chosen among copied candidates) from C (cannot copy) without another training run, and it makes the checkpoint probes about *selection* rather than generic accuracy.
+
+---
+
+## Milestone 2026-09-16 — TF lock, chance tests, probe-limit, induction EOS glue
+
+### CURRENT BEST DIAGNOSIS
+
+Baby has a **copy-a-present-value-span** skill on the train surface. The remaining keyed bottleneck is **first-token selection among in-context values**, not span tracking and not free-generation of a selected span.
+
+Once the gold first token is teacher-forced, the rest of the queried value **and** the train separator/EOS are rank-1 almost always, even on rows where greedy copied a competitor. She can identify and copy the queried payload internally. She does not reliably **choose** it.
+
+Queried-copy rates at 2/3/4 pairs are **not** above 1/K at p<0.05. The earlier "2-pair binding signal" is withdrawn.
+
+Held-out failure is a mixture of weaker inventory copy (especially long values), first-token selection failure, and **train-separator glue** (all 41 off-inventory held-out emissions contain a train sep). Induction immediate-EOS is **not** generic collapse: 22/22 cases are "context already ends with this item's separator → emit EOS."
+
+Curriculum: 1-pair copy saturates first; multi-pair inventory copy saturates at U12000 on the n=16 probe; selection never lifts on the matched slice. Architecture is still not the next claim.
+
+### EVIDENCE FOR IT
+
+- Train novel TF continuation: queried 41/41 full lock; competitor 51/52 rest-value lock and 51/52 full lock.
+- Held-out queried: 23/23 rest-value lock, **0/23** full lock (sep/EOS OOD).
+- Greedy first token ∈ inventory first tokens: 95/96 train novel; first tokens unique 96/96.
+- Chance tests: 2-pair 19/31 two-sided p=0.281; 3-pair 7/21 p=1.0 vs 1/3; 4-pair 15/44 p=0.222 vs 1/4; short 2-pair 18/28 p=0.185.
+- Probe limit: U6000–U15500 scored n=16; U16000 scored full panels. Matched first-16 novel queried 6→5 from U15500→U16000. Inventory copy 16/16 from U12000.
+- Held-out off-inventory 41/41 contain a train separator; value_length=10 inventory copy 0/12.
+- Induction EOS: last token == own separator in 22/22 immediate-EOS rows; 0/64 full-induction EOS when last token is not that separator.
+- Query-before-body (`keyed_5`) queried rate 5/12 vs 36/84 after-body. Not the main recipe.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- 4-pair first-slot queried copy 7/11 vs ~0.25 on other slots is a possible body-slot prior. n is small; body-reorder still needs weights.
+- Held-out 2-pair first-slot 12/21 vs 2/17 is stronger than train 2-pair (which is ~0.60 in both slots). Surface change may engage a first-slot heuristic that train 2-pair does not need.
+- TF lock is gold-teacher-forcing, a state greedy often never visits after a wrong first token. It measures A, not B.
+- Competitor rank distribution on train is not always 2 (hist includes 3, 4, 5, and a few large ranks). "Runner-up" is typical, not universal.
+- Single seed. v2R5 unknown. Query-swap still unscored.
+
+### WHAT WAS FALSIFIED
+
+- This branch's earlier claim that 2-pair queried copy is a real binding signal.
+- Reading U16000 41/96 as a late capability jump versus U15500 (confounded by probe_limit=16 vs full panel).
+- "Immediate EOS on induction = generic collapse / language death." It is trailing-separator suffix glue.
+- "3-pair at chance means she cannot copy" (already falsified by emission source; restated).
+- Query-must-follow-body as the train-surface recipe (`keyed_5` is statistically the same, n=12).
+
+### WHAT REMAINS UNKNOWN
+
+- Query-swap: follow new value vs stuck on old vs copy some other inventory value.
+- Whether body-reorder **causes** the 4-pair first-slot tilt.
+- Marker identity vs separator identity as the held-out copy drop.
+- Value-absent knockout (train-novel copy of novel spans almost has to be from context, but it is still the right causal control).
+- Why held-out long values lose even inventory copy.
+- Induction offset binding when the trailing-sep trap is removed (3/64 correct among last≠sep full induction).
+- v2R5.
+
+### NEXT EXPERIMENT
+
+Highest-information remaining test that needs weights: **query-swap** on same-surface novel and short 2-pair, read as:
+
+- `query_swap_follow_new_value`
+- `emitted_original_value_span` (stuck-on-old)
+- `competitor_copy` of a third value
+- `rest_value_tf_lock` on the **new** gold span
+
+Predictions:
+
+- Follow high, stuck-old low → some query-conditioned selection exists; then body-reorder and pair-count pressure matter.
+- Follow low, stuck-old high → first-token selection ignores the query; copies a previously highlighted span.
+- Follow low, stuck-old low, inventory copy stays high → copies *a* span, not the old one and not the new one; still not binding.
+- New-gold `rest_value_tf_lock` high with follow low → A holds for the swapped target; B is still the bottleneck.
+
+Body-reorder, marker/sep swap, and value-absent remain on the same Fan Diesel command. Do not train yet.
+
+### WHY THAT EXPERIMENT HAS HIGH INFORMATION
+
+Every data-only test still leaves open "maybe a hidden query cue we did not swap." Query-swap is the cleanest causal intervention on B that does not update weights. Chance tests already removed the excuse that 2-pair is solved.
+

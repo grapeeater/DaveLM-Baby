@@ -18,14 +18,16 @@ When the emission is a competitor span, the queried first token has median rank 
 
 Held-out: queried 23, competitor 32, off-inventory 41. The copy-a-span recipe itself is weaker off-surface, *and* exact match is still killed by held-out separators.
 
+**Correction:** 2-pair queried copy 19/31 is not above chance at p<0.05. Do not treat it as demonstrated query binding. See [`V010_V2R4_MECHANISM_CENSUS.md`](V010_V2R4_MECHANISM_CENSUS.md).
+
 ## Metric split to keep
 
 Do not collapse these:
 
 | question | diagnostic |
 |---|---|
-| A identify | target rank of queried first token, especially when a competitor is emitted |
-| B select/bind | queried-copy vs competitor-copy |
+| A identify | target rank of queried first token, **and** TF lock of remaining gold tokens after that first token |
+| B select/bind | queried-copy vs competitor-copy **and** 1/K chance tests |
 | C/D copy+emit payload | inventory copy (queried+competitor) |
 | E syntax | value_ok but not free_exact (sep/EOS) |
 | F surface | same split on held-out vs train markers |

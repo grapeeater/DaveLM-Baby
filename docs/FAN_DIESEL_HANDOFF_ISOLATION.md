@@ -60,14 +60,30 @@ From `runs\v2r4_isolation_probe\PROBE.json`:
 - `sep_swap_keep_markers_same_surface_novel` `value_ok_rate` and `free_exact_rate`
 - `value_absent_*` `value_ok_rate` versus broken-context 16/64
 - `body_reorder_query_first_same_surface_novel` / `query_last` `value_ok_rate`
+- `queried_copy` / `competitor_copy` / `off_inventory` / `inventory_copy_rate`
+- `rest_value_tf_lock` / `rest_value_tf_lock_defined` / `full_after_first_tf_lock`
 
 Also confirm: no training occurred; frozen panels hash unchanged; v2R5 still marked pending unless you attach a real sealed receipt.
 
+Do **not** compare this probe to U15500 headlines from `metrics.jsonl` without a matched n=16 slice. Interim evals used `probe_limit=16`. Only U16000 scored full panels. Data-only matched slice: novel queried 6/16 at U15500 vs 5/16 at U16000.
+
 ### How to read the new fields
 
-- `inventory copy` / competitor vs queried: already computable from the data-only autopsy `emission_source` block; expect novel 41/52/3.
-- Body-reorder: compare `body_reorder_query_first_same_surface_novel.value_ok_rate` to parent novel 41/96 restricted to the same moved items. A large lift supports a first-slot prior. A null supports missing query-key binding rather than slot bias.
-- Query-swap: follow-new-value is the binding test. Stuck-on-old-value is copy-without-query.
+- `inventory copy` / competitor vs queried: already computed in the data-only autopsy `emission_source` block; expect novel 41/52/3.
+- `rest_value_tf_lock`: gold remaining-value tokens all rank-1 under teacher forcing. On frozen U16000 train-novel competitor copies this is 51/52. If query-swap follow is low but new-gold lock is high, A holds and B fails.
+- Body-reorder: compare `body_reorder_query_first_same_surface_novel.value_ok_rate` to parent novel queried-copy restricted to the same moved items. A large lift supports a first-slot prior. A null supports missing query-key binding rather than slot bias.
+- Query-swap: `query_swap_follow_new_value` is the binding test. `emitted_original_value_span` is stuck-on-old. Also report `competitor_copy` of a third inventory value. 2-pair queried copy 19/31 is **not** above chance (two-sided p=0.281); do not treat parent 2-pair as a solved bind.
+
+### Predictions before you run
+
+| result | means |
+|---|---|
+| follow high, stuck-old low | some query-conditioned selection exists |
+| follow low, stuck-old high | copies a previously highlighted span; query is not causal |
+| follow low, stuck-old low, inventory copy high | copies *a* in-context span, neither old nor new; still not binding |
+| new-gold rest_value_tf_lock high, follow low | continuation works for the swapped target; selection is the bottleneck |
+| marker-swap kills value copy, sep-swap only kills exact | held-out exact=0 is mostly A′ plus marker glue |
+| value-absent original-span copy ~0 | copy-from-context confirmed (already likely on novel unique spans) |
 
 ## Do not do
 

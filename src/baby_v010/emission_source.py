@@ -161,7 +161,7 @@ def emission_source_report(panels: dict, term: dict) -> dict:
         "panels": out,
         "hypothesis_read": {
             "A_internal_identification": "partial_queried_token_is_rank1_or_runner_up_on_train_surface",
-            "B_query_binding": "failed_competitor_copy_is_the_dominant_train_error",
+            "B_query_binding": "failed_queried_copy_not_above_1_over_k_including_2_pair",
             "C_payload_copy": "supported_inventory_copy_93_of_96_train_novel",
             "D_free_emission_of_selected_span": "supported_tf_equals_free_on_selected_span",
             "E_separator_eos": "heldout_exact_still_separator_ood",

@@ -34,11 +34,14 @@ Still require two-seed graduation. Do not graduate from one seed. Do not open pr
 
 These are design constraints for a later preregistration, not authorization to train now.
 
-**If query-swap does not follow and 3–4 pair stay at chance.**
-The next treatment, if any, must put multi-pair query-conditioned items in the *training* stream (minimum two pairs; no 1-pair attractor), with query-swap pairs as optimization targets, and must score value-span separately from separator/EOS. Do not add more 1-pair primitive keyed.
+**If query-swap does not follow.**
+The 2-pair parent rate is not above chance. Treat B as unsolved at every K≥2. The next treatment, if any, must put multi-pair query-conditioned items in the *training* stream (minimum two pairs; **no 1-pair attractor**), with query-swap pairs as optimization targets, and must score first-token selection / value-span separately from separator/EOS. Do not add more 1-pair primitive keyed. Do not train "more copy." Copy is already 93/96.
 
-**If query-swap follows on 2-pair but 3–4 pair stay weak.**
-Binding exists and is not dominant. Curriculum/optimization (D), not architecture (E). Later work can increase pair-count pressure and distractors on the *train* surface before touching held-out markers.
+**If query-swap follows on 2-pair but 3–4 pair stay at 1/K.**
+Binding exists and is not dominant. Curriculum/optimization (D), not architecture (E). Increase pair-count pressure on the train surface before touching held-out markers.
+
+**If query-swap follow is low and `rest_value_tf_lock` on the new gold span stays high.**
+This is the current leading prediction. Treat first-token selection, not span decoding. A forced-choice / contrastive first-token objective is more targeted than another generation-only copy loss.
 
 **If marker-swap kills value copy and sep-swap only kills exact.**
 Keep train separators on held-out-*marker* tests for mechanism, or train separator diversity, but do not quietly drop Gate C held-out exact. Any future held-out exact metric must state whether the separator is OOD.
@@ -46,11 +49,14 @@ Keep train separators on held-out-*marker* tests for mechanism, or train separat
 **If value-absent collapses original-answer copy.**
 Replace the current broken-context control in *future* diagnostic panels with a value-absent control. Do not edit the frozen v2 panel.
 
-**If induction remains ~0 while 2-pair keyed binds.**
-Treat induction as a separate unsolved operation, not as “the same copy skill.” Do not average it away inside keyed headlines.
+**If induction remaining errors after stripping trailing-sep items are still ~0.**
+Treat induction offset-binding as a separate unsolved operation. The 22 immediate-EOS rows are suffix glue (context already ends with the item separator), not the whole induction failure. Among full-induction items whose last token is not that separator, first-token correct is 3/64.
+
+**If body-reorder query-first lifts 4-pair a lot.**
+Part of the apparent chance rate is a first-slot prior. Randomize render order and/or train query-last items; do not confuse that with query-key binding.
 
 **If nothing moves and even 2-pair is chance after query-swap.**
-Still do not jump to E. The next diagnostic would be a minimal same-surface 2-pair forced-choice / teacher-forced ranking audit on the checkpoint, not a 60M architecture rewrite.
+Still do not jump to E. The next diagnostic would be a same-surface 2-pair forced-choice ranking audit on the checkpoint (which token of which pair is rank-1 at the first generate step), not a 60M architecture rewrite.
 
 ## Explicitly not authorized here
 

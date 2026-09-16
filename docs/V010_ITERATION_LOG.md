@@ -25,4 +25,8 @@ A data-only join of the committed metrics to frozen `foundation_v2` panels found
 
 Greedy emissions on same-surface novel are 41 queried-pair copies, 52 competitor-pair copies, and 3 off-inventory (inventory copy 93/96). The 3-pair "chance" queried rate is a selection failure, not a copy failure. Competitor copies have median queried-token rank 2 and never rank 1. Body-reorder query-first/last transforms were added for a Fan Diesel causal slot test. See `research/V010_RESEARCH_LOG.md`.
 
+## v2R4 mechanism census (still no training)
+
+Teacher-forced gold continuation after the first token locks on 51/52 train-novel competitor-copy rows: she can finish the queried span if the first token is forced. Queried-copy at 2/3/4 pairs is not above 1/K at p<0.05; the 2-pair "binding signal" is withdrawn. Interim evals used probe_limit=16; matched first-16 novel queried copy is 6/16 at U15500 and 5/16 at U16000, so the terminal 41/96 is not a late jump. All 22 unique induction immediate-EOS rows occur iff the last context token is that item's own separator. Held-out off-inventory 41/41 contain a train separator. No training. See `research/V010_V2R4_MECHANISM_CENSUS.md`.
+
 

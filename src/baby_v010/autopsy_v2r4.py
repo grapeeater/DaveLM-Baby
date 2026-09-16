@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from .emission_source import emission_source_report
+from .mechanism_census import mechanism_census, mechanism_headlines
 from .v2r4_provenance import (
     EOS_TOKEN,
     FROZEN_PANELS_SHA256,
@@ -239,6 +240,8 @@ def run_autopsy(metrics_path: Path, panels_path: Path) -> dict:
     hold = censuses["heldout_surface"]
     broken = censuses["broken_context"]
     novel = censuses["same_surface_novel"]
+    emission = emission_source_report(panels, term)
+    mechanism = mechanism_census(panels, records, term, emission)
     return {
         "status": "V2R4_INDEPENDENT_AUTOPSY",
         "protocol": "BABY_V010_FOUNDATION_V2R4",
@@ -279,16 +282,20 @@ def run_autopsy(metrics_path: Path, panels_path: Path) -> dict:
         },
         "panels": censuses,
         "heldout_first_ok_examples": heldout_rank1_suffix_examples(join_panel(panels, term, "heldout_surface")),
-        "emission_source": emission_source_report(panels, term),
+        "emission_source": emission,
+        "mechanism": mechanism,
+        "mechanism_headlines": mechanism_headlines(mechanism),
         "trajectory": trajectory(records),
         "hypothesis_read": {
-            "A_internal_identification": "partial_train_surface_queried_rank_1_or_2",
+            "A_internal_identification": "supported_tf_continuation_lock_on_train_gold_span",
             "A_prime_heldout_separator": "supported_value_ok_without_exact",
-            "B_query_binding": "failed_competitor_copy_is_the_dominant_train_error",
+            "B_query_binding": "failed_queried_copy_not_above_1_over_k_including_2_pair",
             "C_payload_copy": "supported_train_novel_inventory_copy_93_of_96",
+            "D_curriculum": "supported_copy_saturates_then_selection_does_not_lift",
             "D_free_emission_of_selected_span": "supported_tf_equals_free",
-            "E_separator_eos": "heldout_exact_is_separator_ood",
-            "F_surface": "heldout_inventory_copy_drops",
+            "E_separator_eos": "heldout_exact_is_separator_ood_and_induction_eos_is_trailing_sep",
+            "F_surface": "heldout_inventory_copy_collapses_at_long_values",
+            "probe_limit_confound": "interim_evals_n_16_only_terminal_full_panel",
             "architecture": "not_justified_as_next_claim",
         },
     }
@@ -325,6 +332,10 @@ def render_markdown(report: dict) -> str:
         "## Emission source (queried vs competitor vs off-inventory)",
         "",
         json.dumps(report.get("emission_source", {}).get("headline"), indent=2),
+        "",
+        "## Mechanism headlines",
+        "",
+        json.dumps(report.get("mechanism_headlines"), indent=2),
         "",
         "",
     ])

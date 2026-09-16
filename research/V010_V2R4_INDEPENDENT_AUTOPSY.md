@@ -47,6 +47,8 @@ Same-surface novel (train markers, full difficulty):
 
 The 96.9% primitive-keyed headline is degenerate copy of the only payload. Three-pair same-surface value copy is exactly chance. Four-pair is only modestly above chance. Two-pair is the first place a binding signal appears.
 
+**Correction (mechanism census):** two-pair 19/31 is **not** a statistically supported binding signal (exact two-sided p = 0.281 versus 1/2). Short 2-pair 18/28, p = 0.185. See [`V010_V2R4_MECHANISM_CENSUS.md`](V010_V2R4_MECHANISM_CENSUS.md). The table above remains the locked counts. The interpretation of 2-pair as "binding appears" is withdrawn.
+
 ## Finding 2. Held-out exact = 0 is separator OOD, not “no copy”
 
 Held-out targets use separators `{82,83,84,85}`. Train-surface targets use `{76,77,78,79,80,81}`. Training never emits held-out separators.
@@ -74,11 +76,11 @@ The terminal report noted that held-out first-token (`0.34375`) equaled broken-c
 
 ## Finding 4. Gate C axes are nested under held-out markers
 
-Frozen `build_panels` calls `_unique_keyed(..., heldout=True)` for `heldout_surface`, `unseen_length`, `low_prior`, `distractor`, `broken_context`, and `broken_order`. Length, prior, and distractor failures cannot be isolated from held-out markers and held-out separators. Gate C lists a positive changed-position/order panel; the generator never created one. Immediate-EOS unique rows are 22/800, all induction, not language collapse. The terminal Gate L count `41/992` double-counts `novel`/`induction` aliases.
+Frozen `build_panels` calls `_unique_keyed(..., heldout=True)` for `heldout_surface`, `unseen_length`, `low_prior`, `distractor`, `broken_context`, and `broken_order`. Length, prior, and distractor failures cannot be isolated from held-out markers and held-out separators. Gate C lists a positive changed-position/order panel; the generator never created one. Immediate-EOS unique rows are 22/800, all induction, not language collapse. **Later census:** those 22/22 occur iff the last context token is that item's own separator. The terminal Gate L count `41/992` double-counts `novel`/`induction` aliases.
 
 ## Finding 5. Hypothesis A vs B for the value
 
-Teacher-forced value-span equals free-running value-span on every unique keyed panel (zero disagreements). Once the first value token is selected, the rest of the span is copied. **A is false for value emission.** **A′ is true for held-out separator/EOS.** **B is the dominant failure for ≥3 pairs and for induction** (full induction 6/96 first-token, 5/96 exact, median rank 69 in the terminal table).
+Teacher-forced value-span equals free-running value-span on every unique keyed panel (zero disagreements). Once the first value token is selected, the rest of the span is copied. **A is false for greedy value emission** (she emits whatever first token she picked). **A is supported for gold continuation**: competitor-copy rows still lock the remaining gold value under teacher forcing (51/52). **A′ is true for held-out separator/EOS.** **B is the dominant failure at all pair counts ≥2, including 2-pair**, and for induction (full induction 6/96 first-token, 5/96 exact, median rank 69 in the terminal table).
 
 ## Finding 6. Curriculum attractor
 
@@ -88,11 +90,12 @@ Primitive mix is 80% induction / 20% keyed, but keyed is one-pair and wins. Afte
 
 | Hypothesis | Verdict from v2R4 evidence | Confidence |
 |---|---|---|
-| A. Knows value, cannot emit value | Falsified (TF value = free value) | High |
+| A. Knows value, cannot emit the *selected* value | Falsified (TF value = free value) | High |
+| A. Cannot continue the gold span after a forced first token | Falsified on train novel (51/52 competitor rows lock) | High |
 | A′. Copies value, cannot emit held-out sep/EOS | Supported; inflates Gate C held-out exact=0 | High |
-| B. Never reliably binds the queried pair | Supported for ≥3 pairs and induction; 1-pair is degenerate | Medium-high |
-| C. Operation glued to train markers/seps | Supported; held-out value copy ≈ broken-key copy | Medium-high |
-| D. Mechanism exists, curriculum does not make binding dominant | Plausible (2-pair > chance; 1-pair ceiling; induction starved) | Medium |
+| B. Never reliably binds the queried pair | Supported at 2/3/4 pairs (none above 1/K at 0.05); 1-pair is degenerate | High |
+| C. Operation glued to train markers/seps | Supported; held-out inventory copy collapses on long values; off-inventory is train-sep glue | Medium-high |
+| D. Curriculum teaches copy-span, not bind | Supported on probe-limit-matched trajectory (copy saturates U12000; selection never lifts) | Medium-high |
 | E. Architecture/scale prevents acquisition | Not justified as the next claim | Low |
 
 The previous bottleneck sentence (surface-invariant structural copying, especially induction and distractors) is directionally right and mechanistically underspecified.
@@ -108,4 +111,8 @@ Do not change Gate C after seeing separator OOD. Do not launch v2R6 from this re
 ## Refinement (emission source)
 
 A later join of greedy `emitted` tokens to reconstructed body pairs showed that same-surface novel **inventory copy is 93/96** (41 queried + 52 competitor + 3 off-inventory). Chance-level 3-pair queried accuracy is therefore a **selection** failure among successfully copied payloads, not a failure to copy. See [`V010_V2R4_EMISSION_SOURCE.md`](V010_V2R4_EMISSION_SOURCE.md) and [`V010_RESEARCH_LOG.md`](V010_RESEARCH_LOG.md).
+
+## Refinement (mechanism census)
+
+Teacher-forced gold continuation after the first token is rank-1 on 51/52 train-novel competitor-copy rows. The bottleneck is first-token selection, not payload tracking. Interim metrics used `probe_limit=16`; the apparent U16000 queried-copy jump is a full-panel measurement, not a matched-slice improvement (6/16 → 5/16). All 22 unique induction immediate-EOS rows occur iff the last context token is that item's own separator. See [`V010_V2R4_MECHANISM_CENSUS.md`](V010_V2R4_MECHANISM_CENSUS.md).
 
