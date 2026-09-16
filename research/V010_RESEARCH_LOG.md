@@ -195,4 +195,40 @@ Do **not** train yet unless a later explicit launch is approved. Highest-informa
 
 Query-swap is the causal test that data-only census could not run. Follow-at-chance plus new-gold lock isolates B from C/D. Marker/sep/value-absent/body-reorder prevent treating B as “just markers” or “just first slot.”
 
+---
+
+## Milestone 2026-09-16 — S1 first-token CE vs matched control: futility + regression
+
+### CURRENT BEST DIAGNOSIS
+
+Weak query-conditioned first-token signal is real and still too weak to win. Adding weight-1.0 first-token vocabulary CE on keyed counterfactual rows, with unchanged full-answer CE, did not move body-macro selection enough to beat continued training on the same frozen counterfactual schedule. Copy/language mostly held; primitive induction first-token/exact dropped past the 0.05 regression line on the treatment arm.
+
+### EVIDENCE FOR IT
+
+Matched seed 110001, parent `94b3a9da…17827`, manifest `7e7a96bf…1aac5`. Control +400 body-macro 0.4074 (+0.0052). Treatment +400 body-macro 0.4097 (+0.0075). Treatment margin −0.817 vs parent −0.792. Bootstrap treatment−control 95% CI [−0.019, +0.024]. Adjudication `REGRESSION` + `futility=true`. See `research/V010_SELECTION_REPAIR_S1_TERMINAL.md`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- Single seed; replicate 110002 is forbidden by S1 success-then-replicate rule.
+- `data.py`/`data_v2.py` freeze-JSON hashes never matched git blobs; treatment used bytecode-identical committed sources after a checkout destroyed the extra working-tree bytes. Schedules were already frozen.
+- Control query-swap first top-1 also dropped (0.375→0.302) without the extra first-token loss.
+
+### WHAT WAS FALSIFIED
+
+- “S1 first-token CE is a sufficient +400 remedy for query-conditioned selection vs matched full-answer CE.” Falsified.
+- “The interrupt left control mid-+200 eval.” Falsified: control had finished +400.
+
+### WHAT REMAINS UNKNOWN
+
+- Whether a contrastive / query-swap objective with randomized body order would move selection without regressing induction.
+- Which layer holds the rank-2 queried-token residue.
+
+### NEXT EXPERIMENT
+
+Do not extend S1 or launch 110002. New preregistration required. Do not open TEST. Do not merge to main.
+
+### WHY HIGH INFORMATION
+
+The matched control existed; futility is pairwise, not “treatment looked disappointing.”
+
 
