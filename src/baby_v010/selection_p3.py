@@ -265,51 +265,72 @@ def generate() -> None:
     if (OUT / "MANIFEST.json").exists():
         raise RuntimeError("P3 already frozen")
     banks = build_banks(read_u16(LANG_TRAIN))
-    denied_inputs, denied_spans = denials()
+    base_inputs, base_spans = denials()
     audits = {}
     for seed in (TRAIN_SEED, TRAIN_SEED + 1):
+        dest = OUT / f"SCHEDULE_{seed}.json"
+        denied_inputs = set(base_inputs)
+        denied_spans = set(base_spans)
+        for earlier in range(TRAIN_SEED, seed):
+            earlier_path = OUT / f"SCHEDULE_{earlier}.json"
+            if earlier_path.exists():
+                for spec in json.loads(earlier_path.read_text(encoding="utf-8")):
+                    if spec.get("task") != "structured":
+                        continue
+                    for row in spec["items"]:
+                        denied_inputs.add(tuple(row["input"]))
         rng = random.Random(DATA_SEED + seed - TRAIN_SEED)
-        schedule: list[dict] = []
-        gap_hist: dict[str, int] = defaultdict(int)
-        bindable = 0
-        for update in range(1, MAX_UPDATES + 1):
-            if rng.random() < LANGUAGE_PROBABILITY:
-                schedule.append({"task": "language", "rng_seed": rng.randrange(2**31)})
-                continue
-            items: list[dict] = []
-            for _ in range(KEYED_PER_BATCH):
-                item = annotate_keys(
-                    _draw(rng, banks, denied_inputs, denied_spans, kind="keyed", difficulty="full")
-                )
-                gap = len(item["input"]) - 1 - int(item["query_position"])
-                gap_hist[str(gap)] += 1
-                if gap >= MIN_GAP:
-                    bindable += 1
-                absorb_keyed_row(denied_inputs, denied_spans, item)
-                items.append(item)
-            for _ in range(PRIMITIVE_PER_BATCH):
-                prim = annotate_keys(
-                    _draw(
-                        rng, banks, denied_inputs, denied_spans,
-                        kind="keyed", difficulty="primitive",
+        if dest.exists():
+            schedule = json.loads(dest.read_text(encoding="utf-8"))
+        else:
+            schedule = []
+            gap_hist: dict[str, int] = defaultdict(int)
+            bindable = 0
+            for update in range(1, MAX_UPDATES + 1):
+                if rng.random() < LANGUAGE_PROBABILITY:
+                    schedule.append({"task": "language", "rng_seed": rng.randrange(2**31)})
+                    continue
+                items: list[dict] = []
+                for _ in range(KEYED_PER_BATCH):
+                    item = annotate_keys(
+                        _draw(rng, banks, denied_inputs, denied_spans, kind="keyed", difficulty="full")
                     )
-                )
-                absorb_keyed_row(denied_inputs, denied_spans, prim)
-                items.append(prim)
-            for _ in range(INDUCTION_PER_BATCH):
-                ind = _draw(
-                    rng, banks, denied_inputs, denied_spans,
-                    kind="induction", difficulty="full",
-                )
-                denied_inputs.add(tuple(ind["input"]))
-                items.append(ind)
-            assert len(items) == BATCH
-            schedule.append({"task": "structured", "update": update, "items": items})
-            if update % 100 == 0:
-                print(json.dumps({"generate_seed": seed, "update": update}), flush=True)
-        write(OUT / f"SCHEDULE_{seed}.json", schedule)
+                    gap = len(item["input"]) - 1 - int(item["query_position"])
+                    gap_hist[str(gap)] += 1
+                    if gap >= MIN_GAP:
+                        bindable += 1
+                    absorb_keyed_row(denied_inputs, denied_spans, item)
+                    items.append(item)
+                for _ in range(PRIMITIVE_PER_BATCH):
+                    prim = annotate_keys(
+                        _draw(
+                            rng, banks, denied_inputs, denied_spans,
+                            kind="keyed", difficulty="primitive",
+                        )
+                    )
+                    absorb_keyed_row(denied_inputs, denied_spans, prim)
+                    items.append(prim)
+                for _ in range(INDUCTION_PER_BATCH):
+                    ind = _draw(
+                        rng, banks, denied_inputs, denied_spans,
+                        kind="induction", difficulty="full",
+                    )
+                    denied_inputs.add(tuple(ind["input"]))
+                    items.append(ind)
+                assert len(items) == BATCH
+                schedule.append({"task": "structured", "update": update, "items": items})
+                if update % 100 == 0:
+                    print(json.dumps({"generate_seed": seed, "update": update}), flush=True)
+            write(dest, schedule)
         rows = [r for s in schedule if s["task"] == "structured" for r in s["items"]]
         keyed_full = [r for r in rows if r["kind"] == "keyed" and r["difficulty"] == "full"]
+        gap_hist = defaultdict(int)
+        bindable = 0
+        for row in keyed_full:
+            gap = len(row["input"]) - 1 - int(row["query_position"])
+            gap_hist[str(gap)] += 1
+            if gap >= MIN_GAP:
+                bindable += 1
         audits[str(seed)] = {
             "updates": len(schedule),
             "language_updates": sum(s["task"] == "language" for s in schedule),
