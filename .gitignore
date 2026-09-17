@@ -120,6 +120,13 @@ runs/selection_p6/SCHEDULE_*.json
 runs/selection_p6/*/
 !runs/selection_p6/ADJUDICATION_*.json
 
+# P7 frozen-Baby overwrite (manifest + adjudication git; schedules/checkpoints local)
+!runs/selection_p7/
+!runs/selection_p7/MANIFEST.json
+runs/selection_p7/SCHEDULE_*.json
+runs/selection_p7/*/
+!runs/selection_p7/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
