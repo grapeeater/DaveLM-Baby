@@ -650,4 +650,52 @@ None until the owner authorizes a new protocol. Do not train. Do not open TEST.
 
 Splits "weights only" from "tiny unused write" without lowering D1b bars.
 
+---
+
+## Milestone 2026-09-17 — D3 residual splice: MIXED
+
+### CURRENT BEST DIAGNOSIS
+
+P1's pointer is a **layer-10** head (median query mass 0.81), not an early
+write. The working short-gap twin difference still peaks at L1. Splicing
+query or matching-key residuals into `gen_pos` at L0 raises long-gap gold
+from 74/215 to 127–132/215, and adding `E[query]` at L0 does the same
+(121/215). That is **not** a licensed repair: the frozen L11 competitor-key
+control also lifted gold (+0.186), so D3 is **MIXED**. Late matching-key
+replace is actively anti-gold (34/215). Authoritative Baby remains v2R4
+U16000 SHA `94b3a9da…17827`. P2 not launched.
+
+### EVIDENCE FOR IT
+
+STEER 141/141. Parent long-gap query mass ≤ 0.027 every layer. P1 L10 mass
+0.808. See `research/V010_QUERY_SPLICE_D3.md`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+C11R gold lift means "early query splice helps" is not isolated from
+"overwrite `gen_pos` with some other key residual at some layer."
+`pick_competitor` was source-order, not spliced-key identity. Single parent.
+
+### WHAT WAS FALSIFIED
+
+- "P1 pointer is an early-layer read." Falsified (layer 10).
+- "Matching-key residual at L11 unembeds as that pair's value[0]." Falsified
+  (K11R 0.158, below chance).
+- Software "hooks do not reach logits." Falsified (STEER 1.0).
+
+### WHAT REMAINS UNKNOWN
+
+Whether the L0 lift is **query identity**, **any key subspace**, or **any
+overwrite**. That is D3b, with C0R and a filler-position replace at L0, and
+with spliced-key value scoring.
+
+### NEXT EXPERIMENT
+
+D3b control decomposition. No training. No P2.
+
+### WHY HIGH INFORMATION
+
+D3's missing cell is competitor/filler at the **same layer as the putative
+effect** (L0), not L11.
+
 
