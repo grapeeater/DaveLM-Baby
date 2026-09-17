@@ -67,6 +67,13 @@ runs/selection_p1/SCHEDULE_*.json
 runs/selection_p1/*/
 !runs/selection_p1/ADJUDICATION_*.json
 
+# P2 residual-bind (manifest + adjudication git; schedules/checkpoints local)
+!runs/selection_p2/
+!runs/selection_p2/MANIFEST.json
+runs/selection_p2/SCHEDULE_*.json
+runs/selection_p2/*/
+!runs/selection_p2/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
