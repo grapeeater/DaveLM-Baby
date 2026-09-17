@@ -742,4 +742,34 @@ negatives. Not P1-all-layers. Not P2 final-residual.
 It trains the exact write D3b proved is causally sufficient and identity-
 specific.
 
+---
+
+## Milestone 2026-09-17 — P3 L0 InfoNCE: REGRESSION, write did not install
+
+### CURRENT BEST DIAGNOSIS
+
+The D3b splice is still the sufficient mechanism. P3's competitor-contrast
+InfoNCE at block 0 did **not** create it. Long-gap gold 74→73/215 (control
+74). L0 query-gen cosine 0.040→0.052. Futility at 400. Induction dropped in
+**both** arms (0.297→0.203 / 0.188). Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p3/ADJUDICATION_170001_400.json`. Bind did not halve.
+Treatment−control CI [−0.014, 0.0].
+
+### WHAT WAS FALSIFIED
+
+"InfoNCE ranking of query vs competitor keys at L0, λ=0.25, is a sufficient
++400 implementation of the D3b replace."
+
+### NEXT EXPERIMENT
+
+P4: direct `1 - cosine(h0[gen], sg(h0[query]))`, more induction in both
+arms. Not P3 λ. Not P2.
+
+### WHY HIGH INFORMATION
+
+It trains the splice itself, which P3 never asked for.
+
 

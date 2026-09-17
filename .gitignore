@@ -93,6 +93,13 @@ runs/selection_p3/SCHEDULE_*.json
 runs/selection_p3/*/
 !runs/selection_p3/ADJUDICATION_*.json
 
+# P4 direct L0 copy (manifest + adjudication git; schedules/checkpoints local)
+!runs/selection_p4/
+!runs/selection_p4/MANIFEST.json
+runs/selection_p4/SCHEDULE_*.json
+runs/selection_p4/*/
+!runs/selection_p4/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
