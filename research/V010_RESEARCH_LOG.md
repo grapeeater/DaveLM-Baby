@@ -462,4 +462,54 @@ vs absent at generation position when gap > 1).
 Same as T1 milestone. Work is **paused per user request**; no further training or
 experiments in this line until explicitly reopened.
 
+---
+
+## Milestone 2026-09-16 — D1 query-presence localization: INVALID
+
+### CURRENT BEST DIAGNOSIS
+
+The frozen D1 instrument did **not** pass its positive-control bar, so it does
+not license A, B, or COMPOSITION. Descriptive pattern is unchanged and sharper:
+a near-hard prev-token head (mass ≈ 0.98 in every stratum) copies the query when
+the query is the previous token and copies filler otherwise. At gap ≥ 31,
+patching the other twin's gen residual into the generation position changed
+**0/346** candidate argmaxes; full-vocab logits are injective-unembed identical
+(cosine 0.99998). Official verdict remains INVALID (short-gap
+`flip_toward_donor` 0.243 < 0.25). Authoritative Baby remains v2R4 U16000
+SHA `94b3a9da…17827`.
+
+### EVIDENCE FOR IT
+
+Parent SHA matched. Diagnostic SHA matched. Twins differed only at the query
+token. SDPA vs reference 7.6e-6. `W_U` rank 640/640. Protocol hash
+`ba181fe1…1ea35` recorded in preflight. See
+`research/V010_QUERY_PRESENCE_D1.md` and
+`runs/query_presence_d1/ADJUDICATION.json`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+Positive-control miss is three pairs (88/362 vs 91). Post-hoc eligible-only
+short-gap flip is 0.317; that definition was not frozen. Git freeze commit
+failed (no user identity; config not changed).
+
+### WHAT WAS FALSIFIED
+
+Nothing at the frozen-adjudication level. Informally, hidden-A at gap ≥ 31 is
+hard to square with 0/346 patched argmax changes on an injective unembed.
+
+### WHAT REMAINS UNKNOWN
+
+Whether a successor protocol with a pre-registered eligible-flip positive
+control would validate and then return B. Not run.
+
+### NEXT EXPERIMENT
+
+None until the owner authorizes D1b or another protocol. Do not lower the 0.25
+bar on this run. Do not train. Do not open TEST.
+
+### WHY HIGH INFORMATION
+
+D1 was the presence-vs-use split. Its frozen bar was missed by three pairs; the
+long-gap table is still the highest-resolution picture of the residual we have.
+
 
