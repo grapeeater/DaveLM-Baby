@@ -60,9 +60,10 @@ Replication and first-step greedy are in. Remaining for mission-complete
 (not P11 SUCCESS): stronger pair-bind, overwrite-on frozen-panel
 retention, owner authorization before TEST, no promotion of U16000.
 
-Retention protocol frozen as
-[`design/V010_SELECTION_REPAIR_P11_RETENTION.md`](../design/V010_SELECTION_REPAIR_P11_RETENTION.md).
-Current receipt: **PREFLIGHT_BLOCKED** (hashed checkpoints / S2
-diagnostic / language DEV stream not in this checkout). Not a PASS, not
-a REGRESSION, not a promotion.
+Primary runtime retention protocol (corrected model state):
+[`design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md`](../design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md).
+Receipt: **PREFLIGHT_BLOCKED** on cloud VM. The earlier three-arm draft
+(`V010_SELECTION_REPAIR_P11_RETENTION`) mixed P11 checkpoint Baby
+weights and is not the primary experiment. Not a PASS, not a REGRESSION,
+not a promotion.
 

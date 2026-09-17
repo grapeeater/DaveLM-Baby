@@ -176,6 +176,14 @@ runs/selection_p11/*/
 !runs/selection_p11_retention/OFF.json
 !runs/selection_p11_retention/ON.json
 
+# P11 U16000 runtime overwrite retention (summaries git; checkpoints stay local)
+!runs/selection_p11_u16000_runtime/
+!runs/selection_p11_u16000_runtime/MANIFEST.json
+!runs/selection_p11_u16000_runtime/PREFLIGHT.json
+!runs/selection_p11_u16000_runtime/ADJUDICATION.json
+!runs/selection_p11_u16000_runtime/OFF.json
+!runs/selection_p11_u16000_runtime/ON.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json

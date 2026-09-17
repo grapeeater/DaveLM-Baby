@@ -1095,9 +1095,11 @@ fail of first-step overwrite.
 
 ### NEXT EXPERIMENT
 
-On the machine that holds those hashed files: `python -m
-src.baby_v010.selection_p11_retention run`. Do not train. Do not open
-TEST.
+Superseded for the primary causal question by
+`V010_SELECTION_REPAIR_P11_U16000_RUNTIME` (same U16000 Baby in both
+arms; only overwrite activation differs). On Fan Diesel:
+`python -m src.baby_v010.selection_p11_u16000_runtime run --device cuda`.
+Do not train. Do not open TEST.
 
 ### WHY HIGH INFORMATION
 
