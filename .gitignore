@@ -74,6 +74,12 @@ runs/selection_p2/SCHEDULE_*.json
 runs/selection_p2/*/
 !runs/selection_p2/ADJUDICATION_*.json
 
+# D3 residual splice (summaries git)
+!runs/query_splice_d3/
+!runs/query_splice_d3/MANIFEST.json
+!runs/query_splice_d3/QUERY_SPLICE.json
+!runs/query_splice_d3/ADJUDICATION.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
