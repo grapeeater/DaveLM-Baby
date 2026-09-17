@@ -35,6 +35,27 @@ def test_pointer_aux_peaked_and_gate_one() -> None:
     assert float(g) == 0.0
 
 
+def test_zero_qk_pointer_grad_vanishes() -> None:
+    module = IdentityResidualOverwrite(8, gate_bias=-4.0, qk_init="zero")
+    hidden = torch.randn(1, 6, 8)
+    module(hidden)
+    ptr = -torch.log(module.last_attn[0, 5, 1] + 1e-8)
+    ptr.backward()
+    assert float(module.q.weight.grad.abs().sum()) == 0.0
+    assert float(module.k.weight.grad.abs().sum()) == 0.0
+
+
+def test_xavier_qk_pointer_grad_flows() -> None:
+    torch.manual_seed(0)
+    module = IdentityResidualOverwrite(8, gate_bias=-4.0, qk_init="xavier")
+    hidden = torch.randn(1, 6, 8)
+    module(hidden)
+    ptr = -torch.log(module.last_attn[0, 5, 1] + 1e-8)
+    ptr.backward()
+    assert float(module.q.weight.grad.abs().sum()) > 0.0
+    assert float(module.k.weight.grad.abs().sum()) > 0.0
+
+
 def test_pointer_aux_empty_specs_zero() -> None:
     attn = torch.zeros(1, 3, 3)
     gate = torch.zeros(1, 3)

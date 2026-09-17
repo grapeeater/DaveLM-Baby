@@ -9,13 +9,19 @@ import torch.nn.functional as F
 class IdentityResidualOverwrite(nn.Module):
     """read = attn @ x (identity V); x <- x + gate * (read - x)."""
 
-    def __init__(self, d_model: int, gate_bias: float = -4.0) -> None:
+    def __init__(self, d_model: int, gate_bias: float = -4.0, qk_init: str = "zero") -> None:
         super().__init__()
         self.q = nn.Linear(d_model, d_model, bias=False)
         self.k = nn.Linear(d_model, d_model, bias=False)
         self.gate = nn.Linear(d_model, 1)
-        nn.init.zeros_(self.q.weight)
-        nn.init.zeros_(self.k.weight)
+        if qk_init == "zero":
+            nn.init.zeros_(self.q.weight)
+            nn.init.zeros_(self.k.weight)
+        elif qk_init == "xavier":
+            nn.init.xavier_uniform_(self.q.weight)
+            nn.init.xavier_uniform_(self.k.weight)
+        else:
+            raise ValueError(f"unknown qk_init {qk_init}")
         nn.init.zeros_(self.gate.weight)
         nn.init.constant_(self.gate.bias, float(gate_bias))
         self.last_attn: torch.Tensor | None = None
