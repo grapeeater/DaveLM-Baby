@@ -104,7 +104,9 @@ def denials() -> tuple[set[tuple], set[tuple]]:
             if spec.get("task") != "structured":
                 continue
             for row in spec["items"]:
-                absorb_keyed_row(denied_inputs, denied_spans, row)
+                denied_inputs.add(tuple(row["input"]))
+                if row.get("kind") == "keyed":
+                    absorb_keyed_row(denied_inputs, denied_spans, row)
     return denied_inputs, denied_spans
 
 
@@ -301,7 +303,7 @@ def generate() -> None:
                     rng, banks, denied_inputs, denied_spans,
                     kind="induction", difficulty="full",
                 )
-                absorb_keyed_row(denied_inputs, denied_spans, ind)
+                denied_inputs.add(tuple(ind["input"]))
                 items.append(ind)
             assert len(items) == BATCH
             schedule.append({"task": "structured", "update": update, "items": items})
