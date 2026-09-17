@@ -161,6 +161,12 @@ runs/selection_p11/*/
 !runs/selection_p11_decode/TREATMENT.json
 !runs/selection_p11_decode/INIT.json
 
+# P11 first-step-only decode
+!runs/selection_p11_decode_firststep/
+!runs/selection_p11_decode_firststep/ADJUDICATION.json
+!runs/selection_p11_decode_firststep/TREATMENT.json
+!runs/selection_p11_decode_firststep/INIT.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json

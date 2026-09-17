@@ -72,12 +72,15 @@ def load_arm(arm: str):
     return model, overwrite, handle
 
 
-def greedy_span(model, overwrite, item: dict, device, n_tokens: int) -> list[int]:
+def greedy_span(model, overwrite, item: dict, device, n_tokens: int, first_step_only: bool = False) -> list[int]:
     generated = [int(t) for t in item["input"]]
     emitted: list[int] = []
     with torch.no_grad():
-        for _ in range(n_tokens):
-            overwrite.gen_index = torch.tensor([len(generated) - 1], device=device, dtype=torch.long)
+        for step in range(n_tokens):
+            if first_step_only and step > 0:
+                overwrite.gen_index = None
+            else:
+                overwrite.gen_index = torch.tensor([len(generated) - 1], device=device, dtype=torch.long)
             x = torch.tensor([generated[-256:]], dtype=torch.long, device=device)
             logits = model(x)
             token = int(logits[0, -1].argmax().item())
@@ -86,14 +89,14 @@ def greedy_span(model, overwrite, item: dict, device, n_tokens: int) -> list[int
     return emitted
 
 
-def score_arm(arm: str, items: list[dict]) -> dict:
+def score_arm(arm: str, items: list[dict], first_step_only: bool = False) -> dict:
     model, overwrite, handle = load_arm(arm)
     device = next(model.parameters()).device
     rows = []
     try:
         for item in items:
             target = [int(t) for t in item["target"]]
-            emitted = greedy_span(model, overwrite, item, device, len(target))
+            emitted = greedy_span(model, overwrite, item, device, len(target), first_step_only=first_step_only)
             pred_head = emitted[0] if emitted else None
             gold_head = target[0]
             rows.append(
@@ -121,7 +124,7 @@ def score_arm(arm: str, items: list[dict]) -> dict:
         "H1",
         "selection_p11_decode.py:score_arm",
         "arm_summary",
-        {"arm": arm, "n": n, "first_correct": first, "free_exact": free, "pred_in_inventory": inv},
+        {"arm": arm, "n": n, "first_correct": first, "free_exact": free, "pred_in_inventory": inv, "first_step_only": first_step_only},
     )
     return {
         "arm": arm,
@@ -184,23 +187,40 @@ def decide_h1(treat: dict, init: dict, ci: tuple[float, float]) -> str:
     return "H1_MIXED"
 
 
-def run() -> dict:
+def _evaluate(first_step_only: bool, protocol: str, dest: Path) -> dict:
     if digest(PARENT) != PARENT_SHA:
         raise RuntimeError("parent mismatch")
     if not TREATMENT_CKPT.exists():
         raise RuntimeError("missing P11 treatment checkpoint")
     items = long_items(json.loads(S2_DIAGNOSTIC.read_text(encoding="utf-8")))
-    OUT.mkdir(parents=True, exist_ok=True)
-    treat = score_arm("treatment", items)
-    init = score_arm("init", items)
-    treat_flags = [{"inventory_correct": r["free_exact"]} for r in treat["rows"]]
-    init_flags = [{"inventory_correct": r["free_exact"]} for r in init["rows"]]
+    dest.mkdir(parents=True, exist_ok=True)
+    treat = score_arm("treatment", items, first_step_only=first_step_only)
+    init = score_arm("init", items, first_step_only=first_step_only)
+    treat_flags = [
+        {"body_id": r["body_id"], "K": r["K"], "inventory_correct": r["free_exact"]}
+        for r in treat["rows"]
+    ]
+    init_flags = [
+        {"body_id": r["body_id"], "K": r["K"], "inventory_correct": r["free_exact"]}
+        for r in init["rows"]
+    ]
     ci = bootstrap_delta(treat_flags, init_flags, seed=BOOTSTRAP_SEED)
     h1 = decide_h1(treat, init, ci)
     h2 = {"treatment": query_follow(treat["rows"]), "init": query_follow(init["rows"])}
+    first_delta = treat["first_accuracy"] - init["first_accuracy"]
+    first_flags_t = [
+        {"body_id": r["body_id"], "K": r["K"], "inventory_correct": r["first_correct"]}
+        for r in treat["rows"]
+    ]
+    first_flags_i = [
+        {"body_id": r["body_id"], "K": r["K"], "inventory_correct": r["first_correct"]}
+        for r in init["rows"]
+    ]
+    first_ci = bootstrap_delta(first_flags_t, first_flags_i, seed=BOOTSTRAP_SEED)
     decision = {
-        "protocol": "V010_SELECTION_REPAIR_P11_DECODE",
-        "licensed_by": "V010_SELECTION_REPAIR_P11_GEN_ONLY",
+        "protocol": protocol,
+        "licensed_by": "V010_SELECTION_REPAIR_P11_DECODE" if first_step_only else "V010_SELECTION_REPAIR_P11_GEN_ONLY",
+        "first_step_only": first_step_only,
         "parent_sha256": PARENT_SHA,
         "treatment_checkpoint": posix(TREATMENT_CKPT),
         "treatment_checkpoint_sha256": digest(TREATMENT_CKPT),
@@ -212,7 +232,9 @@ def run() -> dict:
             "treatment_first_correct": treat["first_correct"],
             "init_first_correct": init["first_correct"],
             "free_delta": treat["free_accuracy"] - init["free_accuracy"],
+            "first_delta": first_delta,
             "bootstrap_ci95": list(ci),
+            "first_bootstrap_ci95": list(first_ci),
         },
         "h2_query_follow": h2,
         "h3_pair_bind_delta": h2["treatment"]["pair_bind_rate"] - h2["init"]["pair_bind_rate"],
@@ -220,19 +242,33 @@ def run() -> dict:
         "authoritative_parent_unchanged": True,
         "p11_gates_reopened": False,
     }
-    write(OUT / "ADJUDICATION.json", decision)
-    write(OUT / "TREATMENT.json", {k: v for k, v in treat.items() if k != "rows"})
-    write(OUT / "INIT.json", {k: v for k, v in init.items() if k != "rows"})
-    print(json.dumps({"h1": h1, "primary": decision["primary"], "h2": h2}), flush=True)
+    write(dest / "ADJUDICATION.json", decision)
+    write(dest / "TREATMENT.json", {k: v for k, v in treat.items() if k != "rows"})
+    write(dest / "INIT.json", {k: v for k, v in init.items() if k != "rows"})
+    print(json.dumps({"h1": h1, "primary": decision["primary"], "h2": h2, "first_step_only": first_step_only}), flush=True)
     return decision
+
+
+def run() -> dict:
+    return _evaluate(False, "V010_SELECTION_REPAIR_P11_DECODE", OUT)
+
+
+def run_firststep() -> dict:
+    return _evaluate(
+        True,
+        "V010_SELECTION_REPAIR_P11_DECODE_FIRSTSTEP",
+        ROOT / "runs/selection_p11_decode_firststep",
+    )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("action", choices=["run"])
+    parser.add_argument("action", choices=["run", "run_firststep"])
     args = parser.parse_args()
     if args.action == "run":
         run()
+    else:
+        run_firststep()
 
 
 if __name__ == "__main__":
