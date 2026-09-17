@@ -1,0 +1,38 @@
+{
+  "protocol": "V010_QUERY_PRESENCE_D1B",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "diagnostic_seed": 140200,
+  "protocol_sha256": "4b889dd0fb64988a3f0b9f06b6888bf3013697e0e00c50ad036252318e2953fe",
+  "files": {
+    "design/V010_QUERY_PRESENCE_D1B.md": "4b889dd0fb64988a3f0b9f06b6888bf3013697e0e00c50ad036252318e2953fe",
+    "src/baby_v010/query_presence_d1b.py": "eed26caf91c1c17704dec9d2381c2d2f2cff740b92562733ca6705f637a9b79a",
+    "data/generated/foundation_v2/panels.json": "5f0d1d2c59c5d9ac07cd93460a59f542d1c65b9a10f130e61a28388b52342bb3",
+    "runs/query_presence_d1b/DIAGNOSTIC.json": "b7260e6761bbedecacc6f26801b54141d6539b9ecfe76ff72c34c2e32ce76c57",
+    "runs/selection_s1/DIAGNOSTIC.json": "af4fb07aad57e2ca2af1f47d796a54848b7f7e2d5043c714f10be84dcbe3cbed",
+    "runs/selection_s2/DIAGNOSTIC.json": "5b63533f7eb7feef65a5254deae735b43e2904bff30deeebcf81bb32913dc446",
+    "runs/query_presence_d1/ADJUDICATION.json": "eb6766f604da5f1d14a274cb84a2468ac5e57e49926b2cd3ee5713f06f0c2489",
+    "src/baby_v010/query_presence.py": "996939ea6f5b8e019019362699c2a4fb9f6d2301f0c051ed485fa354a2de72ed",
+    "src/baby_v010/query_presence_trace.py": "bb917ed5ca5c52e8f3bb3921e78a8672b9ef1d7ccda10b3c374d49a32375cc2c",
+    "scripts/probe_query_presence.py": "49e10dbf96fa36a337bb88db97b180133b660bd3c98fe2655c8a54c61454c42f",
+    "src/baby_v010/data_v2.py": "37b6044c6d745947c2ea69a8c00d55e2d78a3dd5383cb7cef26eee1dd709dde4",
+    "src/baby_v010/selection_s1.py": "8801e4319c0eda66595acc2466625dbe406178278af31b0ff5e60a830e3d7838",
+    "src/baby_v010/selection_s2.py": "9d13a216e4d302c6dce52d7be1a7c357aac613a59111976c1d7e253c6ec92f33"
+  },
+  "diagnostic_rows": 432,
+  "diagnostic_bodies": 144,
+  "keyed_row_count": {
+    "2": 96,
+    "3": 144,
+    "4": 192
+  },
+  "denied_prior_eval_sets": [
+    "panels",
+    "selection_s1",
+    "selection_s2",
+    "d1_scored_inputs=selection_s2"
+  ],
+  "d1_verdict": "INVALID",
+  "d1_reopened": false,
+  "protected_material_opened": false,
+  "trained": false
+}

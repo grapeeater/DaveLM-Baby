@@ -512,4 +512,51 @@ bar on this run. Do not train. Do not open TEST.
 D1 was the presence-vs-use split. Its frozen bar was missed by three pairs; the
 long-gap table is still the highest-resolution picture of the residual we have.
 
+---
+
+## Milestone 2026-09-16 — D1b query-presence on fresh bodies: valid B
+
+### CURRENT BEST DIAGNOSIS
+
+On a new 144-body diagnostic (seed 140200), denied against panels/S1/S2/D1
+inputs, the hashed parent has a **query-invariant generation residual** whenever
+the query is not the previous token. A near-hard prev-token head (mass ≈ 0.98)
+is the working circuit; it is not a query pointer. D1 stays INVALID. D1b is
+**valid B** under the frozen eligible-flip instrument. Authoritative Baby
+remains v2R4 U16000 SHA `94b3a9da…17827`.
+
+### EVIDENCE FOR IT
+
+Instrument: eligible short-gap flip 0.294 (n=265), residual cosine 0.958, prev
+track 1.0. Long gap: residual cosine 0.99956, logit cosine 0.99994, final flip
+0.0078, g31 changed 0.022, query-track 0.225. See
+`research/V010_QUERY_PRESENCE_D1B.md`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+g31 changed is 0.022, not 0; patches are not a complete no-op, but under the
+B bar. Long-gap residual cosine 0.99956 is close to the 0.999 floor. Single
+seed, single parent.
+
+### WHAT WAS FALSIFIED
+
+Hidden long-gap A on this parent (query identity already at gen_pos, unused).
+D1's INVALID is not a reason to treat the residual as unidentified.
+
+### WHAT REMAINS UNKNOWN
+
+Whether a pointer-attention auxiliary on natural-gap keyed rows can write query
+identity into the gen residual without destroying prev-token copy or language.
+Not yet run.
+
+### NEXT EXPERIMENT
+
+P1 pointer-attention aux vs matched λ=0 control, licensed by this B. Not a T1
+resume. Not a lowered D1 bar.
+
+### WHY HIGH INFORMATION
+
+B names the missing write: attention from generation position to a non-adjacent
+query token. T1 already showed CE-at-short-gap does not create that write.
+
 

@@ -1,0 +1,24 @@
+{
+  "protocol": "V010_QUERY_PRESENCE_D1B",
+  "valid": true,
+  "invalid_reasons": [],
+  "positive_control": {
+    "median_final_residual_cosine_ok": true,
+    "prev_track_ok": true,
+    "eligible_flip_ok": true,
+    "eligible_flip_used": 0.2943396226415094,
+    "eligible_n_used": 265,
+    "raw_flip_reported_not_gated": 0.22514619883040934
+  },
+  "verdict": "B",
+  "hypothesis": {
+    "H_B": true,
+    "H_A": false,
+    "H_C": false
+  },
+  "trained": false,
+  "gates_changed": false,
+  "d1_reopened": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}
