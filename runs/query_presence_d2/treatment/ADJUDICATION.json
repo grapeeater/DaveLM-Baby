@@ -1,0 +1,27 @@
+{
+  "protocol": "V010_QUERY_PRESENCE_D2",
+  "valid": true,
+  "invalid_reasons": [],
+  "positive_control": {
+    "median_final_residual_cosine_ok": true,
+    "prev_track_ok": true,
+    "eligible_flip_ok": true,
+    "eligible_flip_used": 0.34074074074074073,
+    "eligible_n_used": 270,
+    "raw_flip_reported_not_gated": 0.26900584795321636
+  },
+  "verdict": "MIXED",
+  "hypothesis": {
+    "H_B": false,
+    "H_A": false,
+    "H_C": false
+  },
+  "trained": false,
+  "gates_changed": false,
+  "d1_reopened": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true,
+  "checkpoint_sha256": "5c8296ef759543dd608c18b8048ccce4bd4fcf8de7a6183b2d84e5f53d4fbafa",
+  "arm": "treatment",
+  "d1b_reopened": false
+}

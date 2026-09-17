@@ -607,4 +607,47 @@ control, same frozen D1b rules. Do not train. Do not open TEST.
 Splits "attention pointed, residual still query-invariant" from "residual now
 carries the query and the decoder still ignores it."
 
+---
+
+## Milestone 2026-09-17 — D2 on P1 checkpoints: MIXED
+
+### CURRENT BEST DIAGNOSIS
+
+The P1 pointer does **both** less and more than a clean COMPOSITION story.
+On frozen D1b twins, treatment long-gap query-track is 0.814 (control 0.233)
+and residual cosine is 0.9972 (control 0.9996). That is below the 0.999
+COMPOSITION/B band and far from the 0.20 A flip bar (observed 0.024). Official
+headline **MIXED**. Control remains **B**, matching the parent. Authoritative
+Baby remains v2R4 U16000 SHA `94b3a9da…17827`.
+
+### EVIDENCE FOR IT
+
+See `research/V010_QUERY_PRESENCE_D2.md`. Instruments valid on both arms
+(eligible flip 0.34 / 0.32). Unembed still injective.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+0.9972 is only 0.0018 under 0.999; a different cosine bar would reclassify.
+The frozen bar is not moved. Single seed. D1b twins ≠ S2 diagnostic (P1
+mass 0.93 there vs 0.49 median max here).
+
+### WHAT WAS FALSIFIED
+
+H_WEIGHTS (treatment COMPOSITION): residual is no longer query-invariant at
+the frozen 0.999 line. H_RESIDUAL (treatment A): patch still does not flip
+greedy. H_STILL_B: tracking transferred.
+
+### WHAT REMAINS UNKNOWN
+
+Why a slightly query-dependent gen residual still does not move candidate
+argmax. That is a decoder / OV-write question, not another pointer λ.
+
+### NEXT EXPERIMENT
+
+None until the owner authorizes a new protocol. Do not train. Do not open TEST.
+
+### WHY HIGH INFORMATION
+
+Splits "weights only" from "tiny unused write" without lowering D1b bars.
+
 
