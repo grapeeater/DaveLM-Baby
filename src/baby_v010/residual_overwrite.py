@@ -46,7 +46,7 @@ class IdentityResidualOverwrite(nn.Module):
 class LocalSlotOverwrite(nn.Module):
     """Causal softmax over a local (h_t, h_{t+1}) slot score; identity V overwrite."""
 
-    def __init__(self, d_model: int, gate_bias: float = -4.0) -> None:
+    def __init__(self, d_model: int, gate_bias: float = -4.0, gen_only: bool = False) -> None:
         super().__init__()
         self.scorer = nn.Linear(d_model * 2, 1)
         nn.init.xavier_uniform_(self.scorer.weight)
@@ -54,9 +54,14 @@ class LocalSlotOverwrite(nn.Module):
         self.gate = nn.Linear(d_model, 1)
         nn.init.zeros_(self.gate.weight)
         nn.init.constant_(self.gate.bias, float(gate_bias))
+        self.gen_only = gen_only
+        self.gen_index: torch.Tensor | None = None
         self.last_attn: torch.Tensor | None = None
         self.last_gate: torch.Tensor | None = None
         self.last_hidden: torch.Tensor | None = None
+
+    def set_gen_index(self, items, device) -> None:
+        self.gen_index = torch.tensor([len(item["input"]) - 1 for item in items], device=device, dtype=torch.long)
 
     def forward(self, hidden: torch.Tensor) -> torch.Tensor:
         batch, time, width = hidden.shape
@@ -66,7 +71,17 @@ class LocalSlotOverwrite(nn.Module):
         scores = slot.unsqueeze(1).expand(batch, time, time).masked_fill(~causal, float("-inf"))
         attn = F.softmax(scores, dim=-1)
         read = torch.matmul(attn, hidden)
-        gate = torch.sigmoid(self.gate(hidden))
+        raw_gate = torch.sigmoid(self.gate(hidden))
+        index = self.gen_index
+        self.gen_index = None
+        if self.gen_only:
+            mask = hidden.new_zeros(batch, time, 1)
+            if index is not None and int(index.shape[0]) == batch:
+                clamped = index.clamp(0, time - 1)
+                mask[torch.arange(batch, device=hidden.device), clamped] = 1.0
+            gate = raw_gate * mask
+        else:
+            gate = raw_gate
         self.last_attn = attn
         self.last_gate = gate.squeeze(-1)
         rewritten = hidden + gate * (read - hidden)

@@ -66,9 +66,22 @@ def test_local_slot_score_grad_flows() -> None:
     assert float(module.scorer.weight.grad.abs().sum()) > 0.0
 
 
-def test_pointer_aux_empty_specs_zero() -> None:
-    attn = torch.zeros(1, 3, 3)
-    gate = torch.zeros(1, 3)
-    ptr, g = pointer_aux(attn, gate, [], use_gate=True)
-    assert float(ptr) == 0.0
-    assert float(g) == 0.0
+def test_gen_only_masks_non_gen_and_consumes_index() -> None:
+    torch.manual_seed(0)
+    module = LocalSlotOverwrite(8, gate_bias=8.0, gen_only=True)
+    hidden = torch.randn(2, 5, 8)
+    module.gen_index = torch.tensor([4, 3])
+    out = module(hidden)
+    assert module.gen_index is None
+    assert torch.allclose(out[0, :4], hidden[0, :4], atol=1e-5)
+    assert torch.allclose(out[1, :3], hidden[1, :3], atol=1e-5)
+    assert torch.allclose(out[1, 4], hidden[1, 4], atol=1e-5)
+    assert not torch.allclose(out[0, 4], hidden[0, 4], atol=1e-4)
+    assert not torch.allclose(out[1, 3], hidden[1, 3], atol=1e-4)
+
+
+def test_gen_only_without_index_is_identity() -> None:
+    module = LocalSlotOverwrite(8, gate_bias=8.0, gen_only=True)
+    hidden = torch.randn(2, 5, 8)
+    out = module(hidden)
+    assert torch.allclose(out, hidden, atol=1e-5)

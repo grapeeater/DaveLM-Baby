@@ -123,6 +123,8 @@ def verify():
     if digest(PARENT)!=PARENT_SHA: raise RuntimeError('parent mismatch')
     return m
 
+PACK_HOOK = None
+
 def pack(items,device):
     import torch
     n=max(len(x['input'])+len(x['target'])-1 for x in items)
@@ -134,6 +136,8 @@ def pack(items,device):
         x[i,:l]=torch.tensor(seq[:-1],device=device);y[i,:l]=torch.tensor(seq[1:],device=device)
         mask[i,s:l]=True
         if row['kind']=='keyed': first.append((i,s,row['target'][0]))
+    if PACK_HOOK is not None:
+        PACK_HOOK(items, x)
     return x,y,mask,first
 
 def model_load():

@@ -148,6 +148,13 @@ runs/selection_p10/SCHEDULE_*.json
 runs/selection_p10/*/
 !runs/selection_p10/ADJUDICATION_*.json
 
+# P11 gen-only aux overwrite
+!runs/selection_p11/
+!runs/selection_p11/MANIFEST.json
+runs/selection_p11/SCHEDULE_*.json
+runs/selection_p11/*/
+!runs/selection_p11/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
