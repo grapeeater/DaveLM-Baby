@@ -141,6 +141,13 @@ runs/selection_p9/SCHEDULE_*.json
 runs/selection_p9/*/
 !runs/selection_p9/ADJUDICATION_*.json
 
+# P10 aux-only overwrite (CE stop-grad)
+!runs/selection_p10/
+!runs/selection_p10/MANIFEST.json
+runs/selection_p10/SCHEDULE_*.json
+runs/selection_p10/*/
+!runs/selection_p10/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
