@@ -865,4 +865,33 @@ P6: same overwrite, Xavier Q/K, matched λ=0. Not P5 λ. Not P4 matching.
 
 It is the same licensed operator with a Jacobian that actually exists.
 
+---
+
+## Milestone 2026-09-17 — P6 Xavier overwrite: REGRESSION, LR too small and diet still drops induction
+
+### CURRENT BEST DIAGNOSIS
+
+Identity overwrite is still the licensed operator. Xavier Q/K unsticks the
+P5 saddle, but 200 updates at 3.75e-5 leave mass at 0.006. Every
+continued-training control since P3 drops `primitive_induction`. Authoritative
+Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p6/ADJUDICATION_200001_200.json`. `L_ptr` 5.04→4.80.
+
+### WHAT WAS FALSIFIED
+
+"Xavier Q/K plus v2R4 HIGH_LR is enough for overwrite-head mass ≥ 0.20 in
++200." Also: "more induction in the diet prevents the 200-update induction
+drop" (still 0.297→0.20).
+
+### NEXT EXPERIMENT
+
+P7: freeze Baby weights; train only the overwrite module at 1e-3. Not P6 λ.
+
+### WHY HIGH INFORMATION
+
+It separates the new write operator from the diet/retention confounder.
+
 
