@@ -105,8 +105,6 @@ def denials() -> tuple[set[tuple], set[tuple]]:
                 continue
             for row in spec["items"]:
                 denied_inputs.add(tuple(row["input"]))
-                if row.get("kind") == "keyed":
-                    absorb_keyed_row(denied_inputs, denied_spans, row)
     return denied_inputs, denied_spans
 
 
