@@ -559,4 +559,52 @@ resume. Not a lowered D1 bar.
 B names the missing write: attention from generation position to a non-adjacent
 query token. T1 already showed CE-at-short-gap does not create that write.
 
+---
+
+## Milestone 2026-09-17 — P1 pointer aux: REGRESSION; pointer transferred, selection did not
+
+### CURRENT BEST DIAGNOSIS
+
+A generation-position pointer can be trained. On the frozen S2 diagnostic,
+long-gap max-head query mass went 0.041 → 0.935 and query-tracking-head
+fraction 0.377 → 0.851, only in the λ=0.25 arm (λ=0 control stayed at 0.04 /
+0.37). Long-gap candidate selection stayed at chance (73/215 vs parent 74/215;
+treatment−control CI includes 0). Official verdict **REGRESSION** because
+`primitive_induction` first-top1 dropped 0.109 (control dropped 0.078 too).
+Authoritative Baby remains v2R4 U16000 SHA `94b3a9da…17827`.
+
+### EVIDENCE FOR IT
+
+See `research/V010_SELECTION_REPAIR_P1_TERMINAL.md` and
+`runs/selection_p1/ADJUDICATION_150001_800.json`. Language CE and `rest_lock`
+held. `value_absent` stayed 0.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+Induction regression is shared with the control, so it may be the 800-update
+structured diet rather than the aux. `append_unused_key` post-hoc probe was
+not run. Residual identity after the pointer write was not re-measured (D1b
+was on the parent).
+
+### WHAT WAS FALSIFIED
+
+H1 as stated: pointer mass at gen_pos is sufficient for long-gap keyed
+selection on this parent. It is not. T1's "need a skip-2 read" is incomplete;
+the read can be installed and greedy selection still fails.
+
+### WHAT REMAINS UNKNOWN
+
+Whether the trained pointer actually changes the gen residual (vs attention
+that does not mix into the unembed). That is D2, not another λ.
+
+### NEXT EXPERIMENT
+
+Read-only D2 query-presence on the P1 treatment checkpoint versus its matched
+control, same frozen D1b rules. Do not train. Do not open TEST.
+
+### WHY HIGH INFORMATION
+
+Splits "attention pointed, residual still query-invariant" from "residual now
+carries the query and the decoder still ignores it."
+
 
