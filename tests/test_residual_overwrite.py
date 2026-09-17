@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import torch
 
-from src.baby_v010.residual_overwrite import IdentityResidualOverwrite, pointer_aux
+from src.baby_v010.residual_overwrite import IdentityResidualOverwrite, LocalSlotOverwrite, pointer_aux
 
 
 def test_gate_zero_is_identity() -> None:
@@ -54,6 +54,16 @@ def test_xavier_qk_pointer_grad_flows() -> None:
     ptr.backward()
     assert float(module.q.weight.grad.abs().sum()) > 0.0
     assert float(module.k.weight.grad.abs().sum()) > 0.0
+
+
+def test_local_slot_score_grad_flows() -> None:
+    torch.manual_seed(0)
+    module = LocalSlotOverwrite(8, gate_bias=-4.0)
+    hidden = torch.randn(1, 6, 8)
+    module(hidden)
+    ptr = -torch.log(module.last_attn[0, 5, 1] + 1e-8)
+    ptr.backward()
+    assert float(module.scorer.weight.grad.abs().sum()) > 0.0
 
 
 def test_pointer_aux_empty_specs_zero() -> None:

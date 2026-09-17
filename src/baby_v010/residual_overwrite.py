@@ -43,7 +43,38 @@ class IdentityResidualOverwrite(nn.Module):
         return rewritten
 
 
-def attach_overwrite(model, module: IdentityResidualOverwrite):
+class LocalSlotOverwrite(nn.Module):
+    """Causal softmax over a local (h_t, h_{t+1}) slot score; identity V overwrite."""
+
+    def __init__(self, d_model: int, gate_bias: float = -4.0) -> None:
+        super().__init__()
+        self.scorer = nn.Linear(d_model * 2, 1)
+        nn.init.xavier_uniform_(self.scorer.weight)
+        nn.init.zeros_(self.scorer.bias)
+        self.gate = nn.Linear(d_model, 1)
+        nn.init.zeros_(self.gate.weight)
+        nn.init.constant_(self.gate.bias, float(gate_bias))
+        self.last_attn: torch.Tensor | None = None
+        self.last_gate: torch.Tensor | None = None
+        self.last_hidden: torch.Tensor | None = None
+
+    def forward(self, hidden: torch.Tensor) -> torch.Tensor:
+        batch, time, width = hidden.shape
+        nxt = torch.cat([hidden[:, 1:], hidden[:, -1:]], dim=1)
+        slot = self.scorer(torch.cat([hidden, nxt], dim=-1)).squeeze(-1)
+        causal = torch.ones((time, time), dtype=torch.bool, device=hidden.device).tril()
+        scores = slot.unsqueeze(1).expand(batch, time, time).masked_fill(~causal, float("-inf"))
+        attn = F.softmax(scores, dim=-1)
+        read = torch.matmul(attn, hidden)
+        gate = torch.sigmoid(self.gate(hidden))
+        self.last_attn = attn
+        self.last_gate = gate.squeeze(-1)
+        rewritten = hidden + gate * (read - hidden)
+        self.last_hidden = rewritten
+        return rewritten
+
+
+def attach_overwrite(model, module: nn.Module):
     bucket: dict = {}
 
     def hook(_block, _inputs, output):
