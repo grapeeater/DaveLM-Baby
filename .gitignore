@@ -155,6 +155,12 @@ runs/selection_p11/SCHEDULE_*.json
 runs/selection_p11/*/
 !runs/selection_p11/ADJUDICATION_*.json
 
+# P11 decode-time gen-index diagnostic
+!runs/selection_p11_decode/
+!runs/selection_p11_decode/ADJUDICATION.json
+!runs/selection_p11_decode/TREATMENT.json
+!runs/selection_p11_decode/INIT.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
