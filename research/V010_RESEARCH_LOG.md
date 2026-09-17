@@ -772,4 +772,37 @@ arms. Not P3 λ. Not P2.
 
 It trains the splice itself, which P3 never asked for.
 
+---
+
+## Milestone 2026-09-17 — P4 L0 cosine copy: REGRESSION, splice still not installed
+
+### CURRENT BEST DIAGNOSIS
+
+The D3b splice remains the sufficient eval-time write. Neither P3 InfoNCE
+nor P4 direct cosine copy can install it by changing shared L0 weights.
+Train `L_copy` 0.962→0.933. Eval cosine 0.040→0.067. Gold 74→75/215
+(control 74). Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p4/ADJUDICATION_180001_400.json`. Copy specs fired (6–9 per
+batch). Treatment−control CI [0.0, +0.014]. Induction dropped in both arms
+again (0.297→0.188 / 0.219) despite 5 induction rows/batch.
+
+### WHAT WAS FALSIFIED
+
+"Direct `1-cosine(h0[gen], sg(h0[query]))` at λ=1.0 for +400 is a sufficient
+implementation of the D3b replace." Also falsified: "P3's induction drop was
+only the 3-row induction diet."
+
+### NEXT EXPERIMENT
+
+D4: read-only one-hot L0 attention patch at `gen` → query vs competitor vs
+previous token. Not another matching loss.
+
+### WHY HIGH INFORMATION
+
+It asks whether L0 OV can implement the splice if attention is forced, which
+P1 never tested (P1 pointer was gamed at L10) and P3/P4 never forced.
+
 
