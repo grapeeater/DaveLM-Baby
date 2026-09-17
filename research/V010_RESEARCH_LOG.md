@@ -1026,5 +1026,42 @@ Not unfreezing.
 It installs the D3b write locality P10 lacked while keeping the only
 update rule that actually opened the gate.
 
+---
+
+## Milestone 2026-09-17 — P11 gen-only: SUCCESS on frozen inventory endpoint
+
+### CURRENT BEST DIAGNOSIS
+
+The causal bottleneck was the missing D3b write: query identity never
+entered the L0 generation residual, and existing OV could not replace.
+A local unpaired-key pointer plus a **gen-only** identity overwrite,
+trained aux-only, installs that write (cosine 0.95, gate 0.98, mass
+0.58) and lifts long-gap inventory-restricted selection 74→106/215 vs
+control 74, CI [+0.105, +0.194], with CE and induction held.
+Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p11/ADJUDICATION_250001_800.json`. Official **SUCCESS**.
+Checkpoint SHA-256
+`369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157`.
+
+### WHAT WAS FALSIFIED
+
+P10's global gate-on. "Attention to the query is sufficient" (P1). "CE
+must train the overwrite." Frozen greedy `free_exact` was **not** shown
+to move, because decode does not set `gen_index`.
+
+### NEXT EXPERIMENT
+
+Replication `250002`. Then decode-time gen-index greedy/binding
+diagnostic. No TEST. No promotion.
+
+### WHY HIGH INFORMATION
+
+A successful frozen gate still has to earn mission greedy generation and
+a second seed.
+
+
 
 
