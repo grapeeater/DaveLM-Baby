@@ -60,6 +60,13 @@ runs/query_presence_d1b/ROWS_*.json
 runs/selection_t1/SCHEDULE_*.json
 runs/selection_t1/*/
 
+# P1 pointer-attention (manifest + adjudication git; schedules/checkpoints local)
+!runs/selection_p1/
+!runs/selection_p1/MANIFEST.json
+runs/selection_p1/SCHEDULE_*.json
+runs/selection_p1/*/
+!runs/selection_p1/ADJUDICATION_*.json
+
 # Local machine / editor
 .venv/
 *.log
