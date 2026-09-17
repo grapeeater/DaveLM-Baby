@@ -37,6 +37,12 @@ CHECKPOINTS = {
     "s1_treatment_u16400": ROOT / "runs/selection_s1/treatment_110001/checkpoint_16400.pt",
     "s2_treatment_u16400": ROOT / "runs/selection_s2/treatment_120001/checkpoint_16400.pt",
     "s2_control_u16400": ROOT / "runs/selection_s2/control_120001/checkpoint_16400.pt",
+    # Local-only, undocumented v2R5/v2R6 terminals. Diagnostic contrast only:
+    # these are NOT candidates to replace the authoritative parent here.
+    "v2r5_s107001_u16000": ROOT / "runs/structured_v2r5_seed107001_from6000/checkpoint_16000.pt",
+    "v2r5_s107002_u16000": ROOT / "runs/structured_v2r5_seed107002_from6000/checkpoint_16000.pt",
+    "v2r6_s108001_u16000": ROOT / "runs/structured_v2r6_seed108001_from6000/checkpoint_16000.pt",
+    "v2r6_s108002_u16000": ROOT / "runs/structured_v2r6_seed108002_from6000/checkpoint_16000.pt",
 }
 
 
