@@ -45,6 +45,14 @@ runs/query_locality_t1/ROWS_*.json
 !runs/query_presence_d1/ADJUDICATION.json
 runs/query_presence_d1/ROWS_*.json
 
+# D1b query-presence (manifest + diagnostic + summaries git; pair dumps local)
+!runs/query_presence_d1b/
+!runs/query_presence_d1b/MANIFEST.json
+!runs/query_presence_d1b/DIAGNOSTIC.json
+!runs/query_presence_d1b/QUERY_PRESENCE.json
+!runs/query_presence_d1b/ADJUDICATION.json
+runs/query_presence_d1b/ROWS_*.json
+
 # T1 receipts (manifest + adjudication only; schedules and checkpoints stay local)
 !runs/selection_t1/
 !runs/selection_t1/MANIFEST.json

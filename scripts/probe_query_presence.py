@@ -1,9 +1,10 @@
-"""Run frozen D1 query-presence localization on the hashed parent.
+"""Run frozen D1 / D1b query-presence localization on the hashed parent.
 
 Usage:
-    python -B scripts/probe_query_presence.py --out runs/query_presence_d1
+    python -B scripts/probe_query_presence.py --protocol d1 --out runs/query_presence_d1
+    python -B scripts/probe_query_presence.py --protocol d1b --out runs/query_presence_d1b
 
-No optimizer is constructed. Frozen S2 artifacts are read, never rewritten.
+No optimizer is constructed. Frozen S1/S2/D1 artifacts are read, never rewritten.
 """
 from __future__ import annotations
 
@@ -16,12 +17,31 @@ import sys
 
 sys.path.insert(0, str(ROOT))
 
-from src.baby_v010.query_presence import adjudicate, assert_query_only_twins  # noqa: E402
+from src.baby_v010.query_presence import (  # noqa: E402
+    adjudicate,
+    adjudicate_d1b,
+    assert_query_only_twins,
+)
 from src.baby_v010.selection_s1 import PARENT, PARENT_SHA, digest  # noqa: E402
 
-DIAGNOSTIC = ROOT / "runs/selection_s2/DIAGNOSTIC.json"
-S2_MANIFEST = ROOT / "runs/selection_s2/MANIFEST.json"
-PROTOCOL = ROOT / "design/V010_QUERY_PRESENCE_D1.md"
+PROTOCOLS = {
+    "d1": {
+        "id": "V010_QUERY_PRESENCE_D1",
+        "diagnostic": ROOT / "runs/selection_s2/DIAGNOSTIC.json",
+        "manifest": ROOT / "runs/selection_s2/MANIFEST.json",
+        "protocol": ROOT / "design/V010_QUERY_PRESENCE_D1.md",
+        "out": ROOT / "runs/query_presence_d1",
+        "diagnostic_key": "runs/selection_s2/DIAGNOSTIC.json",
+    },
+    "d1b": {
+        "id": "V010_QUERY_PRESENCE_D1B",
+        "diagnostic": ROOT / "runs/query_presence_d1b/DIAGNOSTIC.json",
+        "manifest": ROOT / "runs/query_presence_d1b/MANIFEST.json",
+        "protocol": ROOT / "design/V010_QUERY_PRESENCE_D1B.md",
+        "out": ROOT / "runs/query_presence_d1b",
+        "diagnostic_key": "runs/query_presence_d1b/DIAGNOSTIC.json",
+    },
+}
 
 
 def write(path: Path, obj) -> None:
@@ -29,12 +49,26 @@ def write(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, indent=2) + "\n", encoding="utf-8")
 
 
+def _manifest_hash(manifest: dict, key: str) -> str:
+    files = manifest["files"]
+    if key in files:
+        return files[key]
+    alt = key.replace("/", "\\")
+    if alt in files:
+        return files[alt]
+    raise KeyError(key)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--out", type=Path, default=ROOT / "runs/query_presence_d1")
+    parser.add_argument("--protocol", choices=sorted(PROTOCOLS), default="d1")
+    parser.add_argument("--out", type=Path, default=None)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--batch", type=int, default=4)
     args = parser.parse_args()
+    spec = PROTOCOLS[args.protocol]
+    if args.out is None:
+        args.out = spec["out"]
 
     from src.baby_v010.query_presence_trace import (
         load_parent,
@@ -46,10 +80,15 @@ def main() -> None:
         unembed_rank,
     )
 
+    if args.protocol == "d1b":
+        from src.baby_v010.query_presence_d1b import verify
+
+        verify()
+
     parent_sha = digest(PARENT)
-    manifest = json.loads(S2_MANIFEST.read_text(encoding="utf-8"))
-    diagnostic_sha = digest(DIAGNOSTIC)
-    items = json.loads(DIAGNOSTIC.read_text(encoding="utf-8"))
+    manifest = json.loads(spec["manifest"].read_text(encoding="utf-8"))
+    diagnostic_sha = digest(spec["diagnostic"])
+    items = json.loads(spec["diagnostic"].read_text(encoding="utf-8"))
     twins_ok = True
     try:
         assert_query_only_twins(items)
@@ -65,15 +104,15 @@ def main() -> None:
     preflight = {
         "parent_sha_match": parent_sha == PARENT_SHA,
         "parent_sha256": parent_sha,
-        "diagnostic_sha_match": diagnostic_sha
-        == manifest["files"]["runs/selection_s2/DIAGNOSTIC.json"],
+        "diagnostic_sha_match": diagnostic_sha == _manifest_hash(manifest, spec["diagnostic_key"]),
         "diagnostic_sha256": diagnostic_sha,
         "protected_material_opened": bool(blob.get("protected_material_opened")),
         "twins_query_only": twins_ok,
         "sdpa_reference_max_abs": sdpa_max,
         "unembed": rank,
-        "protocol_sha256": digest(PROTOCOL),
+        "protocol_sha256": digest(spec["protocol"]),
         "update": int(blob["update"]),
+        "d1_reopened": False,
     }
     print(json.dumps({"preflight": {k: v for k, v in preflight.items() if k != "unembed"}}), flush=True)
     if not preflight["parent_sha_match"] or not preflight["diagnostic_sha_match"]:
@@ -91,7 +130,7 @@ def main() -> None:
     summary = summarize(traces, identity, patches)
     summary["preflight"] = preflight
     report = {
-        "protocol": "V010_QUERY_PRESENCE_D1",
+        "protocol": spec["id"],
         "trained": False,
         "gates_changed": False,
         "frozen_panels_mutated": False,
@@ -107,7 +146,7 @@ def main() -> None:
         "n_identity_pairs": summary["n_identity_pairs"],
         "n_patch_pairs": summary["n_patch_pairs"],
     }
-    decision = adjudicate(report)
+    decision = adjudicate_d1b(report) if args.protocol == "d1b" else adjudicate(report)
     args.out.mkdir(parents=True, exist_ok=True)
     write(args.out / "QUERY_PRESENCE.json", report)
     write(args.out / "ADJUDICATION.json", decision)

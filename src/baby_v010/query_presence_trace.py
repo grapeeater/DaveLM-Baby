@@ -393,6 +393,30 @@ def _flip_rate(pairs: list[dict], site: str, layer: int | None) -> float:
     return hits / n if n else float("nan")
 
 
+def eligible_flip_rate(pairs: list[dict], site: str, layer: int | None) -> tuple[float, int]:
+    hits = 0
+    n = 0
+    for pair in pairs:
+        for record in pair["sites"]:
+            if record["site"] == site and record["layer"] == layer:
+                if int(record["before"]) == int(record["donor_gold"]):
+                    continue
+                hits += int(record["flip_toward_donor"])
+                n += 1
+    return (hits / n if n else float("nan"), n)
+
+
+def changed_rate(pairs: list[dict], site: str, layer: int | None) -> float:
+    hits = 0
+    n = 0
+    for pair in pairs:
+        for record in pair["sites"]:
+            if record["site"] == site and record["layer"] == layer:
+                hits += int(record.get("changed", record.get("after") != record.get("before")))
+                n += 1
+    return hits / n if n else float("nan")
+
+
 def summarize(
     traces: list[dict],
     identity: list[dict],
@@ -442,6 +466,25 @@ def summarize(
     best_short_layer, best_short_rate = best_block_flip(short_p) if short_p else (0, float("nan"))
     long_block = [_flip_rate(long_p, "block_out", layer) for layer in range(N_LAYERS)]
     long_attn = [_flip_rate(long_p, "attn_out", layer) for layer in range(N_LAYERS)]
+    g31_p = _subset(patches, lambda row: row["bucket"] == "g31p")
+    eligible_final, eligible_n_final = eligible_flip_rate(short_p, "final", None)
+    eligible_block_rates = []
+    eligible_block_ns = []
+    for layer in range(N_LAYERS):
+        rate, n = eligible_flip_rate(short_p, "block_out", layer)
+        eligible_block_rates.append(rate)
+        eligible_block_ns.append(n)
+    if short_p:
+        best_eligible_layer = max(
+            range(N_LAYERS),
+            key=lambda layer: eligible_block_rates[layer]
+            if eligible_block_rates[layer] == eligible_block_rates[layer]
+            else -1.0,
+        )
+        best_eligible_rate = eligible_block_rates[best_eligible_layer]
+        best_eligible_n = eligible_block_ns[best_eligible_layer]
+    else:
+        best_eligible_layer, best_eligible_rate, best_eligible_n = 0, float("nan"), 0
 
     def attn_summary(pred) -> dict:
         rows = [row for row in traces if pred(row)]
@@ -488,15 +531,26 @@ def summarize(
         "positive_control": {
             "n_pairs": len(short_p),
             "median_full_logit_cosine": pack_identity(short_id)["median_full_logit_cosine"],
+            "median_final_residual_cosine": pack_identity(short_id)["median_final_residual_cosine"],
             "flip_toward_donor_final": _flip_rate(short_p, "final", None),
             "flip_toward_donor_best_block": best_short_rate,
             "best_block_layer": best_short_layer,
+            "eligible_flip_toward_donor_final": eligible_final,
+            "eligible_n_final": eligible_n_final,
+            "eligible_flip_toward_donor_best_block": best_eligible_rate,
+            "eligible_n_best_block": best_eligible_n,
+            "eligible_best_block_layer": best_eligible_layer,
             "flip_toward_donor_block": [
                 _flip_rate(short_p, "block_out", layer) for layer in range(N_LAYERS)
             ],
             "flip_toward_donor_attn": [
                 _flip_rate(short_p, "attn_out", layer) for layer in range(N_LAYERS)
             ],
+            "fraction_any_prev_tracking_head": attn_summary(lambda r: r["gap"] <= 1)[
+                "fraction_any_prev_tracking_head"
+            ]
+            if traces
+            else float("nan"),
             "instrument_prev_or_query_track_rate": attn_summary(lambda r: r["gap"] <= 1)[
                 "fraction_any_prev_tracking_head"
             ]
@@ -510,6 +564,9 @@ def summarize(
             "flip_toward_donor_final": _flip_rate(long_p, "final", None),
             "flip_toward_donor_block": long_block,
             "flip_toward_donor_attn": long_attn,
+            "changed_final": changed_rate(long_p, "final", None),
+            "g31_n_pairs": len(g31_p),
+            "g31_changed_final": changed_rate(g31_p, "final", None),
             "fraction_rows_any_query_tracking_head": attn_summary(lambda r: r["gap"] >= 13)[
                 "fraction_any_query_tracking_head"
             ],

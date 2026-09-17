@@ -4,6 +4,7 @@ import pytest
 
 from src.baby_v010.query_presence import (
     adjudicate,
+    adjudicate_d1b,
     assert_query_only_twins,
     attention_index_masses,
     cosine_l2,
@@ -188,3 +189,128 @@ def test_adjudicate_invalid_without_positive_control() -> None:
     assert decision["valid"] is False
     assert decision["verdict"] == "INVALID"
     assert "positive_flip" in decision["invalid_reasons"]
+
+
+def _d1b_report(**overrides) -> dict:
+    report = {
+        "preflight": {
+            "parent_sha_match": True,
+            "diagnostic_sha_match": True,
+            "protected_material_opened": False,
+            "twins_query_only": True,
+            "sdpa_reference_max_abs": 1e-5,
+        },
+        "positive_control": {
+            "median_final_residual_cosine": 0.96,
+            "fraction_any_prev_tracking_head": 1.0,
+            "eligible_flip_toward_donor_final": 0.32,
+            "eligible_n_final": 270,
+            "eligible_flip_toward_donor_best_block": 0.32,
+            "eligible_n_best_block": 270,
+            "flip_toward_donor_final": 0.24,
+        },
+        "long_gap": {
+            "median_final_residual_cosine": 0.9999,
+            "median_full_logit_cosine": 0.9995,
+            "flip_toward_donor_final": 0.0,
+            "flip_toward_donor_block": [0.0] * 12,
+            "flip_toward_donor_attn": [0.0] * 12,
+            "fraction_rows_any_query_tracking_head": 0.0,
+            "g31_changed_final": 0.0,
+        },
+    }
+    report.update(overrides)
+    return report
+
+
+def test_adjudicate_d1b_supports_B() -> None:
+    decision = adjudicate_d1b(_d1b_report())
+    assert decision["valid"] is True
+    assert decision["verdict"] == "B"
+    assert decision["protocol"] == "V010_QUERY_PRESENCE_D1B"
+    assert decision["d1_reopened"] is False
+
+
+def test_adjudicate_d1b_invalid_without_eligible_n() -> None:
+    report = _d1b_report()
+    report["positive_control"]["eligible_n_final"] = 20
+    report["positive_control"]["eligible_n_best_block"] = 20
+    decision = adjudicate_d1b(report)
+    assert decision["valid"] is False
+    assert "positive_eligible_flip" in decision["invalid_reasons"]
+
+
+def test_adjudicate_d1b_does_not_use_raw_flip_as_gate() -> None:
+    report = _d1b_report()
+    report["positive_control"]["flip_toward_donor_final"] = 0.01
+    decision = adjudicate_d1b(report)
+    assert decision["valid"] is True
+    assert decision["verdict"] == "B"
+
+
+def test_adjudicate_d1b_g31_changed_blocks_B() -> None:
+    report = _d1b_report()
+    report["long_gap"]["g31_changed_final"] = 0.20
+    decision = adjudicate_d1b(report)
+    assert decision["valid"] is True
+    assert decision["verdict"] == "MIXED"
+
+
+def test_adjudicate_d1b_invalid_prev_track() -> None:
+    report = _d1b_report()
+    report["positive_control"]["fraction_any_prev_tracking_head"] = 0.10
+    decision = adjudicate_d1b(report)
+    assert decision["valid"] is False
+    assert "positive_prev_track" in decision["invalid_reasons"]
+
+
+def test_adjudicate_d1b_invalid_residual_cosine() -> None:
+    report = _d1b_report()
+    report["positive_control"]["median_final_residual_cosine"] = 0.9999
+    decision = adjudicate_d1b(report)
+    assert decision["valid"] is False
+    assert "positive_residual_cosine" in decision["invalid_reasons"]
+
+
+def test_adjudicate_d1b_A_takes_precedence() -> None:
+    report = _d1b_report()
+    report["long_gap"]["flip_toward_donor_final"] = 0.40
+    decision = adjudicate_d1b(report)
+    assert decision["verdict"] == "A"
+
+
+def test_eligible_flip_excludes_already_donor() -> None:
+    from src.baby_v010.query_presence_trace import changed_rate, eligible_flip_rate
+
+    pairs = [
+        {
+            "sites": [
+                {
+                    "site": "final",
+                    "layer": None,
+                    "before": 0,
+                    "donor_gold": 0,
+                    "flip_toward_donor": False,
+                    "changed": False,
+                    "after": 0,
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "site": "final",
+                    "layer": None,
+                    "before": 1,
+                    "donor_gold": 0,
+                    "flip_toward_donor": True,
+                    "changed": True,
+                    "after": 0,
+                }
+            ]
+        },
+    ]
+    rate, n = eligible_flip_rate(pairs, "final", None)
+    assert n == 1
+    assert rate == pytest.approx(1.0)
+    assert changed_rate(pairs, "final", None) == pytest.approx(0.5)

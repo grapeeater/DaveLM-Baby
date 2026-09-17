@@ -23,6 +23,11 @@ LONG_LOGIT_COSINE_MIN = 0.995
 LONG_FLIP_B_MAX = 0.05
 LONG_FLIP_A_MIN = 0.20
 COMPOSITION_TRACK_MIN = 0.50
+D1B_POS_RESID_COSINE_MAX = 0.99
+D1B_POS_PREV_TRACK_MIN = 0.90
+D1B_ELIGIBLE_FLIP_MIN = 0.25
+D1B_ELIGIBLE_N_MIN = 50
+D1B_G31_CHANGED_MAX = 0.05
 
 
 def loc_class(item: dict) -> str:
@@ -248,6 +253,117 @@ def adjudicate(report: dict) -> dict:
         },
         "trained": False,
         "gates_changed": False,
+        "protected_material_opened": False,
+        "authoritative_parent_unchanged": True,
+    }
+
+
+def _finite(value) -> bool:
+    return isinstance(value, (int, float)) and value == value
+
+
+def adjudicate_d1b(report: dict) -> dict:
+    """Apply the frozen D1b rules. Does not rewrite D1 adjudication."""
+    invalid_reasons = []
+    preflight = report.get("preflight", {})
+    if not preflight.get("parent_sha_match"):
+        invalid_reasons.append("parent_sha")
+    if not preflight.get("diagnostic_sha_match"):
+        invalid_reasons.append("diagnostic_sha")
+    if preflight.get("protected_material_opened"):
+        invalid_reasons.append("protected")
+    if not preflight.get("twins_query_only"):
+        invalid_reasons.append("twins")
+    sdpa = preflight.get("sdpa_reference_max_abs")
+    if sdpa is None or sdpa >= SMOKE_SDPA_MAX_ABS:
+        invalid_reasons.append("sdpa_reference")
+
+    pos = report["positive_control"]
+    resid = pos.get("median_final_residual_cosine")
+    pos_resid_ok = _finite(resid) and resid <= D1B_POS_RESID_COSINE_MAX
+    prev_track = pos.get("fraction_any_prev_tracking_head")
+    if prev_track is None:
+        prev_track = pos.get("instrument_prev_or_query_track_rate")
+    pos_prev_ok = _finite(prev_track) and prev_track >= D1B_POS_PREV_TRACK_MIN
+    eligible_final = pos.get("eligible_flip_toward_donor_final")
+    eligible_block = pos.get("eligible_flip_toward_donor_best_block")
+    eligible_n = pos.get("eligible_n_final")
+    eligible_n_block = pos.get("eligible_n_best_block")
+    eligible_flip = None
+    for rate in (eligible_final, eligible_block):
+        if _finite(rate):
+            eligible_flip = rate if eligible_flip is None else max(eligible_flip, rate)
+    eligible_n_used = 0
+    if _finite(eligible_final) and _finite(eligible_block):
+        if eligible_final >= eligible_block:
+            eligible_n_used = int(eligible_n or 0)
+        else:
+            eligible_n_used = int(eligible_n_block or 0)
+    elif _finite(eligible_final):
+        eligible_n_used = int(eligible_n or 0)
+    elif _finite(eligible_block):
+        eligible_n_used = int(eligible_n_block or 0)
+    pos_flip_ok = (
+        eligible_flip is not None
+        and eligible_flip >= D1B_ELIGIBLE_FLIP_MIN
+        and eligible_n_used >= D1B_ELIGIBLE_N_MIN
+    )
+    if not pos_resid_ok:
+        invalid_reasons.append("positive_residual_cosine")
+    if not pos_prev_ok:
+        invalid_reasons.append("positive_prev_track")
+    if not pos_flip_ok:
+        invalid_reasons.append("positive_eligible_flip")
+    valid = not invalid_reasons
+
+    long = report["long_gap"]
+    flip_sites = [long["flip_toward_donor_final"], *long["flip_toward_donor_block"], *long["flip_toward_donor_attn"]]
+    g31_changed = long.get("g31_changed_final")
+    b = (
+        long["median_final_residual_cosine"] >= LONG_RESID_COSINE_MIN
+        and long["median_full_logit_cosine"] >= LONG_LOGIT_COSINE_MIN
+        and all(_finite(rate) and rate <= LONG_FLIP_B_MAX for rate in flip_sites)
+        and _finite(g31_changed)
+        and g31_changed <= D1B_G31_CHANGED_MAX
+    )
+    a = long["flip_toward_donor_final"] >= LONG_FLIP_A_MIN
+    composition = (
+        (not a)
+        and long["fraction_rows_any_query_tracking_head"] >= COMPOSITION_TRACK_MIN
+        and long["median_final_residual_cosine"] >= LONG_RESID_COSINE_MIN
+    )
+    if not valid:
+        verdict = "INVALID"
+    elif a:
+        verdict = "A"
+    elif composition:
+        verdict = "COMPOSITION"
+    elif b:
+        verdict = "B"
+    else:
+        verdict = "MIXED"
+
+    return {
+        "protocol": "V010_QUERY_PRESENCE_D1B",
+        "valid": valid,
+        "invalid_reasons": invalid_reasons,
+        "positive_control": {
+            "median_final_residual_cosine_ok": pos_resid_ok,
+            "prev_track_ok": pos_prev_ok,
+            "eligible_flip_ok": pos_flip_ok,
+            "eligible_flip_used": eligible_flip,
+            "eligible_n_used": eligible_n_used,
+            "raw_flip_reported_not_gated": pos.get("flip_toward_donor_final"),
+        },
+        "verdict": verdict,
+        "hypothesis": {
+            "H_B": verdict == "B",
+            "H_A": verdict == "A",
+            "H_C": verdict == "COMPOSITION",
+        },
+        "trained": False,
+        "gates_changed": False,
+        "d1_reopened": False,
         "protected_material_opened": False,
         "authoritative_parent_unchanged": True,
     }
