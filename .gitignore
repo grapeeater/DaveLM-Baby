@@ -106,6 +106,13 @@ runs/selection_p4/*/
 !runs/query_attn_patch_d4/QUERY_ATTN.json
 !runs/query_attn_patch_d4/ADJUDICATION.json
 
+# P5 identity overwrite (manifest + adjudication git; schedules/checkpoints local)
+!runs/selection_p5/
+!runs/selection_p5/MANIFEST.json
+runs/selection_p5/SCHEDULE_*.json
+runs/selection_p5/*/
+!runs/selection_p5/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
