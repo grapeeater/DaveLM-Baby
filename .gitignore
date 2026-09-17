@@ -67,6 +67,18 @@ runs/selection_p1/SCHEDULE_*.json
 runs/selection_p1/*/
 !runs/selection_p1/ADJUDICATION_*.json
 
+# D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
+!runs/query_presence_d2/
+!runs/query_presence_d2/MANIFEST.json
+!runs/query_presence_d2/ADJUDICATION.json
+!runs/query_presence_d2/treatment/
+!runs/query_presence_d2/treatment/QUERY_PRESENCE.json
+!runs/query_presence_d2/treatment/ADJUDICATION.json
+!runs/query_presence_d2/control/
+!runs/query_presence_d2/control/QUERY_PRESENCE.json
+!runs/query_presence_d2/control/ADJUDICATION.json
+runs/query_presence_d2/**/ROWS_*.json
+
 # Local machine / editor
 .venv/
 *.log
