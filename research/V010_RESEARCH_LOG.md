@@ -894,4 +894,36 @@ P7: freeze Baby weights; train only the overwrite module at 1e-3. Not P6 λ.
 
 It separates the new write operator from the diet/retention confounder.
 
+---
+
+## Milestone 2026-09-17 — P7 overwrite-only: NULL, induction retained, bilinear pointer failed
+
+### CURRENT BEST DIAGNOSIS
+
+D3b replace remains sufficient. Freeze-backbone preserves
+`primitive_induction` (0.297 held). Long-gap gen is a filler token; bilinear
+Q/K from that residual does not localize the query slot. Authoritative Baby
+remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p7/ADJUDICATION_210001_200.json`. Official **NULL** (not
+REGRESSION). Mass 0.004→0.002.
+
+### WHAT WAS FALSIFIED
+
+"L0 bilinear Q(gen)·K(t) at 1e-3 in +200 finds the query slot." Also: "the
+induction drop is unavoidable in any +200 keyed diet" — it is the backbone
+update, not the diet rows.
+
+### NEXT EXPERIMENT
+
+P8: local `(h0[t], h0[t+1])` slot scorer + identity overwrite, Baby frozen.
+Not P7 bilinear. Not unfreezing.
+
+### WHY HIGH INFORMATION
+
+The query occurrence is the unpaired key; the body key is followed by a
+value. That is a local discriminator bilinear-from-gen does not see.
+
 
