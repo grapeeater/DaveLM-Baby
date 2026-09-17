@@ -1054,13 +1054,16 @@ to move, because decode does not set `gen_index`.
 
 ### NEXT EXPERIMENT
 
-Replication `250002`. Then decode-time gen-index greedy/binding
-diagnostic. No TEST. No promotion.
+Replication `250002` **SUCCESS** (103 vs 74, CI [+0.089, +0.183]).
+P11_DECODE every-step greedy **H1_FAIL** (free_exact 0). First-step-only
+decode **H1_PASS** (free_exact 102 vs 71, CI [+0.093, +0.197]). No TEST.
+No promotion.
 
 ### WHY HIGH INFORMATION
 
 A successful frozen gate still has to earn mission greedy generation and
-a second seed.
+a second seed. Both now exist for the inventory/first-token write; full
+mission promotion does not.
 
 
 

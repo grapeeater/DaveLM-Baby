@@ -12,6 +12,11 @@ Protocol:
 [`design/V010_SELECTION_REPAIR_P11_GEN_ONLY.md`](../design/V010_SELECTION_REPAIR_P11_GEN_ONLY.md)
 Adjudication: `runs/selection_p11/ADJUDICATION_250001_800.json`
 Checkpoint: `runs/selection_p11/treatment_250001/checkpoint_16800.pt`
+SHA-256: `369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157`
+
+Replication `250002` also **SUCCESS**: 103/215 vs control 74, CI
+**[+0.089, +0.183]**, cosine 0.976, mass 0.653. Checkpoint SHA-256
+`ac49bf4138b3bda125cd989392e46ee70fbf3d80362dae8323c56fe2ace19629`.
 
 ## Primary (gap ≥ 13, n=215, inventory-restricted argmax)
 
@@ -42,18 +47,15 @@ inventory argmax varies: 2→**30**.
 
 ## What this is not yet
 
-Frozen `free_exact` / greedy decode on the same long-gap rows stayed
-**71/215**. `score_items` generation does not call `pack()`, so
-`PACK_HOOK` never sets `gen_index` and gen-only overwrite is identity
-during greedy. Isolation panels via `evaluate_panels` have the same hole,
-which is why they match parent to floating-point identity. The SUCCESS
-endpoint is real (diagnostic pack path). Mission-level greedy generation
-and overwrite-on retention still need a decode-time gen-index diagnostic
-and the preregistered replicate seed `250002`.
+Every-step decode-time overwrite (P11_DECODE) made first-token gold
+73→105 but free_exact 71→**0** (later value tokens were overwritten).
+First-step-only decode (P11_DECODE_FIRSTSTEP) recovered greedy
+free_exact **102**/215 vs init 71, Δ **+0.144**, CI **[+0.093, +0.197]**.
+Multi-query pair-bind 0→**0.157**. TEST closed. Not a promotion.
+
 
 ## Licensed next
 
-1. Replication seed 250002 under the same frozen protocol.
-2. Decode-time gen-index diagnostic for greedy / query-swap / binding
-   counterfactuals (does not reopen P11 gates).
-3. No TEST. No promotion until replicate + greedy/binding pass.
+Replication and first-step greedy are in. Remaining for mission-complete
+(not P11 SUCCESS): stronger pair-bind, overwrite-on frozen-panel
+retention, owner authorization before TEST, no promotion of U16000.
