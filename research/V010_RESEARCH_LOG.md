@@ -837,4 +837,32 @@ P5: identity-value gated overwrite after block 0, pointer+gate aux, matched
 
 It is the operator D3b used (replace) and D4 showed attention-add is not.
 
+---
+
+## Milestone 2026-09-17 — P5 identity overwrite: REGRESSION, zero Q/K saddle
+
+### CURRENT BEST DIAGNOSIS
+
+The D3b replace still requires an identity overwrite, but P5's zero Q/K
+init made pointer gradients vanish. Mass stuck at uniform 0.011. Treatment
+and control evals were identical. Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p5/ADJUDICATION_190001_200.json`. `L_ptr` ~4.0. Unit test:
+zero Q/K pointer grad is exactly 0; Xavier is not.
+
+### WHAT WAS FALSIFIED
+
+"Zero-initialized Q/K identity overwrite can learn a query pointer in +200
+updates." The operator class is not falsified.
+
+### NEXT EXPERIMENT
+
+P6: same overwrite, Xavier Q/K, matched λ=0. Not P5 λ. Not P4 matching.
+
+### WHY HIGH INFORMATION
+
+It is the same licensed operator with a Jacobian that actually exists.
+
 
