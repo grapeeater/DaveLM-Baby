@@ -31,6 +31,11 @@ data/generated/*
 !runs/v2r4_isolation_panels/
 !runs/v2r4_isolation_panels/ISOLATION_META.json
 
+# Query-locality probe summary (JSON only; per-row dumps stay local and hashed)
+!runs/query_locality/
+!runs/query_locality/QUERY_LOCALITY.json
+runs/query_locality/ROWS_*.json
+
 # Local machine / editor
 .venv/
 *.log
