@@ -926,4 +926,33 @@ Not P7 bilinear. Not unfreezing.
 The query occurrence is the unpaired key; the body key is followed by a
 value. That is a local discriminator bilinear-from-gen does not see.
 
+---
+
+## Milestone 2026-09-17 — P8 slot overwrite: NULL, first pointer that moves
+
+### CURRENT BEST DIAGNOSIS
+
+Local unpaired-key scoring is the right pointer class. Mass 0.002→0.133
+(control 0.0006) in 200 updates; the frozen 0.20 futility bar stopped the
+run before gate-on. Induction held. Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p8/ADJUDICATION_220001_200.json`. `L_ptr` 5.6→1.98 by step
+150.
+
+### WHAT WAS FALSIFIED
+
+"Local slot scoring cannot move query mass at all." Not falsified: the
+operator class. The 200-update 0.20 bar was too tight for this curve.
+
+### NEXT EXPERIMENT
+
+P9: same slot overwrite and freeze, futility at 200 only if mass < 0.05,
+else continue through gate-on to 800.
+
+### WHY HIGH INFORMATION
+
+It lets the only pointer that has ever moved actually turn the D3b write on.
+
 
