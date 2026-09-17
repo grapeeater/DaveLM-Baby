@@ -1,0 +1,65 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P9_SLOT_GATEON",
+  "licensed_by": "V010_SELECTION_REPAIR_P8_SLOT_OVERWRITE",
+  "p8_verdict": "NULL",
+  "step": 800,
+  "reason": "terminal",
+  "verdict": "MECHANISM SUPPORTED, DOSE INSUFFICIENT",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "primary_endpoint": {
+    "parent_hit": 74,
+    "treatment_hit": 84,
+    "control_hit": 74,
+    "parent_excess": -5.551115123125783e-16,
+    "treatment_excess": 0.04651162790697616,
+    "control_excess": -5.551115123125783e-16,
+    "treatment_minus_control": 0.046511627906976716,
+    "bootstrap_ci95": [
+      0.022935779816513735,
+      0.07272727272727275
+    ]
+  },
+  "mechanism": {
+    "parent_l0_cosine": 0.0422997772693634,
+    "treatment_l0_cosine": 0.22757330536842346,
+    "control_l0_cosine": 0.044085513800382614,
+    "cosine_gain": 0.18527352809906006,
+    "treatment_overwrite_mass": 0.5676942467689514,
+    "control_overwrite_mass": 6.563332863152027e-05
+  },
+  "regressions": [],
+  "retention_other": {
+    "language_dev_ce": {
+      "parent": 1.243666660040617,
+      "treatment": 1.2647934164851904,
+      "control": 1.2451109606772661
+    },
+    "primitive_induction_first_top1": {
+      "parent": 0.296875,
+      "treatment": 0.296875,
+      "control": 0.296875
+    }
+  },
+  "negative_controls": {
+    "value_absent_same_surface_novel.free_exact": {
+      "value": 0.0,
+      "bar": 0.0,
+      "pass": true
+    },
+    "broken_context.free_exact": {
+      "value": 0.0,
+      "bar": 0.05,
+      "pass": true
+    },
+    "broken_order.first_top1": {
+      "value": 0.0,
+      "bar": 0.2,
+      "pass": true
+    }
+  },
+  "trained": true,
+  "p2_launched": false,
+  "gates_changed": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}

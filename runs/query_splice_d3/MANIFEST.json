@@ -1,0 +1,19 @@
+{
+  "protocol": "V010_QUERY_SPLICE_D3",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "licensed_by": "V010_QUERY_PRESENCE_D2",
+  "d2_headline": "MIXED",
+  "p2_launched": false,
+  "protected_material_opened": false,
+  "files": {
+    "design/V010_QUERY_SPLICE_D3.md": "fe6459fa03aa57fc798814d7ae13ec1ff76e8fd824e2843d67937ce85ff2b089",
+    "src/baby_v010/query_splice_d3.py": "4375e1b6af5c84cdfc7146dcf27f3b092b2f4df403f05fa104f052b1998f6f3f",
+    "runs/selection_s2/DIAGNOSTIC.json": "5b63533f7eb7feef65a5254deae735b43e2904bff30deeebcf81bb32913dc446",
+    "runs/query_presence_d2/ADJUDICATION.json": "07334c644e394cf9acb1b57da6b30094419c838a2667706f259172f61d82e590",
+    "runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+    "src/baby_v010/model.py": "18024c4d2e47c67d22a63ca5e428b5e6b171593a12d49cc00a86a6cac31b9760",
+    "src/baby_v010/query_presence.py": "996939ea6f5b8e019019362699c2a4fb9f6d2301f0c051ed485fa354a2de72ed",
+    "src/baby_v010/selection_s1.py": "8801e4319c0eda66595acc2466625dbe406178278af31b0ff5e60a830e3d7838"
+  },
+  "p1_treatment_sha256": "5c8296ef759543dd608c18b8048ccce4bd4fcf8de7a6183b2d84e5f53d4fbafa"
+}
