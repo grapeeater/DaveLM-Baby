@@ -134,6 +134,13 @@ runs/selection_p8/SCHEDULE_*.json
 runs/selection_p8/*/
 !runs/selection_p8/ADJUDICATION_*.json
 
+# P9 slot overwrite through gate-on
+!runs/selection_p9/
+!runs/selection_p9/MANIFEST.json
+runs/selection_p9/SCHEDULE_*.json
+runs/selection_p9/*/
+!runs/selection_p9/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
