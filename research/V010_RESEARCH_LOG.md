@@ -805,4 +805,36 @@ previous token. Not another matching loss.
 It asks whether L0 OV can implement the splice if attention is forced, which
 P1 never tested (P1 pointer was gamed at L10) and P3/P4 never forced.
 
+---
+
+## Milestone 2026-09-17 — D4 L0 attention patch: OV_DEAD
+
+### CURRENT BEST DIAGNOSIS
+
+The sufficient write is a **residual replace** `h0[gen] ← h0[query]`. The
+existing L0 attention OV cannot do that even with oracle one-hot query
+attention (gold 74→90, below +0.10; cosine 0.040→0.070). Residual skip plus
+W_V/W_O keep gen on the prev-token attractor. Authoritative Baby remains
+v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/query_attn_patch_d4/ADJUDICATION.json`. Q0R still 127. A0P flat at 74.
+Copy/CE grad ratio 0.077.
+
+### WHAT WAS FALSIFIED
+
+"Forcing L0 attention onto the query is a sufficient implementation of the
+D3b splice." Also: further P1/P3/P4-class matching or all-layer pointer
+losses as the repair.
+
+### NEXT EXPERIMENT
+
+P5: identity-value gated overwrite after block 0, pointer+gate aux, matched
+λ=0 control, gate init ≈ 0 so the parent forward is preserved at step 0.
+
+### WHY HIGH INFORMATION
+
+It is the operator D3b used (replace) and D4 showed attention-add is not.
+
 
