@@ -167,6 +167,15 @@ runs/selection_p11/*/
 !runs/selection_p11_decode_firststep/TREATMENT.json
 !runs/selection_p11_decode_firststep/INIT.json
 
+# P11 active-overwrite retention (summaries git; checkpoints stay local)
+!runs/selection_p11_retention/
+!runs/selection_p11_retention/MANIFEST.json
+!runs/selection_p11_retention/PREFLIGHT.json
+!runs/selection_p11_retention/ADJUDICATION.json
+!runs/selection_p11_retention/PARENT.json
+!runs/selection_p11_retention/OFF.json
+!runs/selection_p11_retention/ON.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json

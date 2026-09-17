@@ -1065,6 +1065,47 @@ A successful frozen gate still has to earn mission greedy generation and
 a second seed. Both now exist for the inventory/first-token write; full
 mission promotion does not.
 
+---
+
+## Milestone 2026-09-17 — P11 active-overwrite retention: PREFLIGHT_BLOCKED
+
+### CURRENT BEST DIAGNOSIS
+
+P11 first-step-only overwrite is the licensed deployed intervention
+(greedy long-gap 71→102/215). Training-time retention receipts were
+overwrite-OFF because `score_items` did not set `gen_index`. The next
+measurement is parent vs P11-OFF vs P11-ON (first answer-token only)
+against frozen retention bars. This checkout does not contain the hashed
+checkpoints, S2 diagnostic, or language DEV stream, so the scorer
+stopped at preflight rather than inventing a PASS/REGRESSION.
+
+### EVIDENCE FOR IT
+
+Verified tracked receipts: P11 SUCCESS, decode H1_FAIL, first-step
+H1_PASS 102/215. Protocol
+`design/V010_SELECTION_REPAIR_P11_RETENTION.md`. Adjudication
+`runs/selection_p11_retention/ADJUDICATION.json` = **PREFLIGHT_BLOCKED**.
+Missing: U16000 `94b3a9da…`, P11 `369d95c5…`, S2 diagnostic `5b63533f…`,
+language DEV stream. No TEST. No promotion.
+
+### WHAT WAS FALSIFIED
+
+Nothing scored. This is an environment identity stop, not a scientific
+fail of first-step overwrite.
+
+### NEXT EXPERIMENT
+
+On the machine that holds those hashed files: `python -m
+src.baby_v010.selection_p11_retention run`. Do not train. Do not open
+TEST.
+
+### WHY HIGH INFORMATION
+
+A PASS here would license the next validation stage. A REGRESSION would
+stop deployment of the overwrite even if the long-gap lift remains.
+Neither verdict exists until the weights are scored.
+
+
 
 
 

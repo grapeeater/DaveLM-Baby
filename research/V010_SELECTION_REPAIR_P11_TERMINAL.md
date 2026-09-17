@@ -59,3 +59,10 @@ Multi-query pair-bind 0→**0.157**. TEST closed. Not a promotion.
 Replication and first-step greedy are in. Remaining for mission-complete
 (not P11 SUCCESS): stronger pair-bind, overwrite-on frozen-panel
 retention, owner authorization before TEST, no promotion of U16000.
+
+Retention protocol frozen as
+[`design/V010_SELECTION_REPAIR_P11_RETENTION.md`](../design/V010_SELECTION_REPAIR_P11_RETENTION.md).
+Current receipt: **PREFLIGHT_BLOCKED** (hashed checkpoints / S2
+diagnostic / language DEV stream not in this checkout). Not a PASS, not
+a REGRESSION, not a promotion.
+
