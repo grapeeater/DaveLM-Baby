@@ -43,6 +43,8 @@ CHECKPOINTS = {
     "v2r5_s107002_u16000": ROOT / "runs/structured_v2r5_seed107002_from6000/checkpoint_16000.pt",
     "v2r6_s108001_u16000": ROOT / "runs/structured_v2r6_seed108001_from6000/checkpoint_16000.pt",
     "v2r6_s108002_u16000": ROOT / "runs/structured_v2r6_seed108002_from6000/checkpoint_16000.pt",
+    "t1_treatment_u16400": ROOT / "runs/selection_t1/treatment_130001/checkpoint_16400.pt",
+    "t1_control_u16400": ROOT / "runs/selection_t1/control_130001/checkpoint_16400.pt",
 }
 
 
@@ -103,7 +105,18 @@ def score(model, requests: list[dict], batch: int = 16) -> list[dict]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", type=Path, default=ROOT / "runs/query_locality")
+    parser.add_argument(
+        "--only",
+        nargs="*",
+        default=None,
+        help="score only these checkpoint labels (default: all)",
+    )
     args = parser.parse_args()
+    selected = (
+        CHECKPOINTS
+        if not args.only
+        else {k: v for k, v in CHECKPOINTS.items() if k in set(args.only)}
+    )
 
     from src.baby_v010.data import LANG_TRAIN, build_banks, read_u16
     from src.baby_v010.data_v2 import _reserved_surface_tokens
@@ -163,7 +176,7 @@ def main() -> None:
         "checkpoints": {},
     }
 
-    for name, path in CHECKPOINTS.items():
+    for name, path in selected.items():
         if not path.exists():
             report["checkpoints"][name] = {"status": "missing", "path": str(path)}
             continue

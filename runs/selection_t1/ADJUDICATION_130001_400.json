@@ -1,0 +1,92 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_T1_GAP",
+  "protocol_freeze_commit": "8892545",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "futility_fired_at_400": true,
+  "primary_endpoint": {
+    "stratum": "frozen diagnostic rows with query->generation gap >= 13",
+    "n": 215,
+    "parent_accuracy": 0.34418604651162793,
+    "parent_excess": -5.551115123125783e-16,
+    "treatment_accuracy": 0.3488372093023256,
+    "treatment_excess": 0.004651162790697105,
+    "control_accuracy": 0.3488372093023256,
+    "control_excess": 0.004651162790697105,
+    "treatment_minus_control": 0.0,
+    "bootstrap_ci95": [
+      -0.01388888888888884,
+      0.013513513513513542
+    ]
+  },
+  "short_range_stratum_gap_0_1": {
+    "parent": 0.46835443037974683,
+    "treatment": 0.4936708860759494,
+    "control": 0.379746835443038,
+    "parent_excess": 0.1455696202531649,
+    "treatment_excess": 0.17088607594936744,
+    "control_excess": 0.056962025316456055
+  },
+  "transport_range_probe": {
+    "t1_treatment_u16400": {
+      "as_is": 0.39814814814814814,
+      "append_query": 0.6481481481481481,
+      "append_query_then_filler_1": 0.46296296296296297,
+      "append_query_then_filler_2": 0.3402777777777778,
+      "append_query_then_filler_4": 0.3263888888888889,
+      "append_query_then_filler_8": 0.34953703703703703,
+      "append_other_key": 0.6203703703703703,
+      "append_unused_key": 0.3541666666666667
+    },
+    "t1_control_u16400": {
+      "as_is": 0.35648148148148145,
+      "append_query": 0.5138888888888888,
+      "append_query_then_filler_1": 0.39351851851851855,
+      "append_query_then_filler_2": 0.32175925925925924,
+      "append_query_then_filler_4": 0.34953703703703703,
+      "append_query_then_filler_8": 0.33101851851851855,
+      "append_other_key": 0.5069444444444444,
+      "append_unused_key": 0.32175925925925924
+    }
+  },
+  "regressions": [
+    {
+      "panel": "primitive_induction",
+      "metric": "first_top1",
+      "parent": 0.296875,
+      "treatment": 0.203125
+    },
+    {
+      "panel": "short_keyed",
+      "metric": "free_exact",
+      "parent": 0.84375,
+      "treatment": 0.765625
+    }
+  ],
+  "negative_controls": {
+    "broken_context.free_exact": {
+      "value": 0.0,
+      "bar": 0.05,
+      "pass": true
+    },
+    "broken_order.first_top1": {
+      "value": 0.015625,
+      "bar": 0.08958,
+      "pass": true
+    },
+    "append_unused_key_excess": {
+      "value": 0.020833333333334147,
+      "bar": 0.05,
+      "pass": true
+    },
+    "append_other_key_not_collapsed": {
+      "value": 0.6203703703703703,
+      "bar": 0.4,
+      "pass": true
+    }
+  },
+  "primary_verdict": "NULL",
+  "verdict": "REGRESSION",
+  "protected_material_opened": false,
+  "gates_changed": false,
+  "authoritative_parent_unchanged": true
+}

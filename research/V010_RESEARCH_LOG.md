@@ -339,4 +339,92 @@ Do not raise S2 λ/m/duration or launch 120002. Next protocol, if any: remainder
 
 The extra term moved its target and not induction. The remaining miss is "logits flip, greedy does not," which a λ bump will not diagnose.
 
+---
+
+## Milestone 2026-09-16 — the defect is a one-token query-transport range, not selection
+
+### CURRENT BEST DIAGNOSIS
+
+Baby **already has** a working query→key→value bind-and-copy circuit. Its effective reach is about **one token**. Queried selection fails whenever the query key sits two or more tokens before the generation position, because the query key's *identity is never transported* to where the answer is emitted. Copy, candidate representation, continuation, and first-token logit strength are all intact. See `research/V010_QUERY_TRANSPORT_AUTOPSY.md`.
+
+### EVIDENCE FOR IT
+
+Read-only probe on the hashed U16000 parent (`scripts/probe_query_locality.py`), every arm append-only so the inventory is never disturbed. Candidate-restricted argmax, chance ≈ 0.336: `as_is` 0.394; `append_query` **0.607**; `append_other_key` (a different pair's key, scored as "did she pick that pair") **0.556**; `append_unused_key` 0.336; `append_filler_key_8` 0.352; `append_filler_span_8` 0.361.
+
+Dose-response on distance from a known-good start: 0 → 0.607, 1 → 0.433, 2 → 0.340, 4 → 0.340, 8 → 0.368. On the rows that sit at **exact** chance (gap ≥ 31, n=159), `append_query` excess is **+0.258** and `append_other_key` **+0.233**. K=4 goes 0.344 → 0.552. Adding 32 filler tokens after a *working* gap-1 query drops it 0.468 → 0.297.
+
+Logit decomposition from the frozen evals: query-invariant candidate salience spread median **2.776 nats**, query-dependent spread median **0.237 nats**. S2's contrast functional is algebraically invariant to the salience term, so it could only move the 0.24 and never the 2.78; it did exactly that (0.237 → 0.341).
+
+The cliff reproduces on **eight** checkpoints: v2R4 parent, S1 treatment, S2 control, S2 treatment, and the local-only v2R5 (107001/107002) and v2R6 (108001/108002) terminals.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- Gap and rendering variant are nearly collinear in the frozen panels; the causal claim rests on the append probe, not on the variant table.
+- `append_query` duplicates the query key, so it tests reach, not the full indirection task.
+- Single frozen diagnostic (432 rows, 144 bodies).
+
+### WHAT WAS FALSIFIED
+
+- "First-token selection failure" / "query blindness" as descriptions of the defect.
+- "Query-swap does not follow at any K." It follows at 0.556 when swapped *adjacently*; the frozen result swapped in place, i.e. out of reach.
+- "Persistent multi-candidate K≥3 failure" as intrinsic.
+- "The query signal merely needs to be stronger."
+- "S2 was a regression." S2 strengthened the adjacent circuit and was scored by a metric in which ~63% of rows are structurally unreachable.
+- "Key-bank filler jams the key channel" (span-bank filler is equivalent) and "appending anything perturbs the choice" (`append_unused_key` is flat).
+- A prior positional reading: `parse_records` returns **pre-shuffle** record order, so candidate indices are not body slots.
+
+### WHAT REMAINS UNKNOWN
+
+- Whether the range limit is curricular or architectural/representational.
+- Whether any head attends to the query position at gap > 1.
+- v2R5/v2R6 were fully trained locally (2 seeds each) with deleted source; they are at chance on this instrument.
+
+### NEXT EXPERIMENT
+
+T1 gap curriculum, frozen in `design/V010_SELECTION_REPAIR_T1_GAP.md`.
+
+### WHY HIGH INFORMATION
+
+It is the one causal factor no curriculum in the repository has ever manipulated, and it targets the only replicated structural bottleneck.
+
+---
+
+## Milestone 2026-09-16 — T1 gap curriculum: NULL on transport, REGRESSION on retention
+
+### CURRENT BEST DIAGNOSIS
+
+Unchanged mechanism, with the curricular repair now disfavoured. Four hundred updates of a gap 0–3 curriculum, with **no loss change**, against a perfectly matched control sharing the same items in the same order, raised amplitude inside the one-token reach and widened the reach by **zero** tokens.
+
+### EVIDENCE FOR IT
+
+Primary endpoint (frozen diagnostic, gap ≥ 13, n=215): parent 0.3442 (+0.000 excess), treatment 0.3488 (+0.005), control 0.3488 (+0.005). Treatment − control **exactly 0.0**; paired body bootstrap 95% CI **[−0.0139, +0.0135]**. Gap 0–1: parent +0.146, treatment **+0.171**, control +0.057. Post-hoc probe distance 2/4/8 unchanged at chance in both arms. `append_query` 0.607 → 0.648 treatment, 0.514 control. See `research/V010_SELECTION_REPAIR_T1_TERMINAL.md` and `runs/selection_t1/ADJUDICATION_130001_400.json`.
+
+Frozen panels, parent → treatment → control: `same_surface_novel` free exact 0.4271 → **0.5104** → 0.4375; body-macro 0.4115 → 0.4201 → 0.3848; K=4 0.339 → 0.323 → 0.266. The treatment beats the matched control on every capability measure and is simply orthogonal to the bottleneck.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+- **Protocol error:** the frozen futility gate sat at update 400, but the schedule's long-gap blocks start at 301/451/601. Futility fired, so gaps > 3 were never really trained. The rule was not changed after seeing results; the full schedule is untested.
+- Single seed; 130002 generated and not launched.
+- The secondary prediction failed: salience spread **grew** in both arms (2.78 → 3.30 treatment, 3.51 control).
+
+### WHAT WAS FALSIFIED
+
+- "Scaffolding at gaps 0–3 for 400 updates extends the transport range."
+- "A gain on `same_surface_novel` implies selection improved" — the panel moved +0.07 while long-gap selection moved 0.000.
+- "Training at gap 0 will teach an attend-to-the-last-token shortcut" — `append_unused_key` excess +0.021.
+- "A primitive-keyed retention stream cannot protect 1-pair copy" — it held at 1.000 where S2 lost it.
+
+### WHAT REMAINS UNKNOWN
+
+- The full T1 schedule (updates 401–800, gaps to 20 and natural).
+- Whether the query key's identity is present at all in the residual stream at the generation position when gap > 1.
+
+### NEXT EXPERIMENT
+
+No further weight updates. Read-only attention/composition localization on the hashed parent: does any head attend to the query position at gap > 1, and is the query key linearly decodable at the generation position as a function of gap? Present-but-unused ⇒ downstream composition defect. Absent ⇒ the transport pathway does not exist and an architecture claim is justified for the first time.
+
+### WHY HIGH INFORMATION
+
+Three intervention classes (first-token CE, paired contrast, gap curriculum) now share one signature: amplitude inside the reach, nothing outside it. The remaining split is representational presence versus use, and that is a read-only question.
+
 

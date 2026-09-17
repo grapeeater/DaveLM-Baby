@@ -35,6 +35,16 @@ data/generated/*
 !runs/query_locality/
 !runs/query_locality/QUERY_LOCALITY.json
 runs/query_locality/ROWS_*.json
+!runs/query_locality_t1/
+!runs/query_locality_t1/QUERY_LOCALITY.json
+runs/query_locality_t1/ROWS_*.json
+
+# T1 receipts (manifest + adjudication only; schedules and checkpoints stay local)
+!runs/selection_t1/
+!runs/selection_t1/MANIFEST.json
+!runs/selection_t1/ADJUDICATION_130001_400.json
+runs/selection_t1/SCHEDULE_*.json
+runs/selection_t1/*/
 
 # Local machine / editor
 .venv/
