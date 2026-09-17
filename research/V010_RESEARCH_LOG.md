@@ -955,4 +955,42 @@ else continue through gate-on to 800.
 
 It lets the only pointer that has ever moved actually turn the D3b write on.
 
+---
+
+## Milestone 2026-09-17 — P9 gate-on: MECHANISM SUPPORTED, DOSE INSUFFICIENT
+
+### CURRENT BEST DIAGNOSIS
+
+Local slot overwrite can move query identity into the L0 generation
+residual and that write **does** lift long-gap keyed selection. The write
+is incomplete: gate[gen] stalls ~0.29 vs CE, cosine 0.23 vs replace-level
+~1, hits 84/215 vs D3b Q0R 127/215. Authoritative Baby remains v2R4
+U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p9/ADJUDICATION_230001_800.json`. Official **MECHANISM
+SUPPORTED, DOSE INSUFFICIENT**. Parent 74 / treatment **84** / control 74.
+CI **[+0.023, +0.073]**. Cosine 0.042→**0.228** (control 0.044). Mass
+0.003→**0.568** (control ~0). Induction **0.297 held**. Hits and cosine
+moved only after λ_gate turned on at 201; gate then stalled 400→800.
+
+### WHAT WAS FALSIFIED
+
+"Attending to / scoring the distant query cannot change selection" — P1
+attention-only failed; P9 L0 overwrite-with-mass selects. Not SUCCESS:
+excess 0.047 < 0.10. Not "gate-on reaches replace."
+
+### NEXT EXPERIMENT
+
+P10: same operator, freeze Baby, **stop CE gradients into overwrite**
+(train pointer+gate aux only). Language steps do not update overwrite.
+Not raising P9 λ. Not unfreezing.
+
+### WHY HIGH INFORMATION
+
+P9 language-only batches are pure CE through overwrite and want gate→0.
+That is the leading explanation of the 0.29 stall. Removing CE from the
+overwrite update isolates it.
+
 
