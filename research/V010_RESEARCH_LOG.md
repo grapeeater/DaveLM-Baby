@@ -427,4 +427,39 @@ No further weight updates. Read-only attention/composition localization on the h
 
 Three intervention classes (first-token CE, paired contrast, gap curriculum) now share one signature: amplitude inside the reach, nothing outside it. The remaining split is representational presence versus use, and that is a read-only question.
 
+---
+
+## Milestone 2026-09-16 — query-transport investigation complete (paused)
+
+### CURRENT BEST DIAGNOSIS
+
+Unchanged from the two milestones above. Baby has a working query→key→value
+bind-and-copy circuit with about a one-token reach; queried selection fails when
+the query key sits two or more tokens before generation because its identity is
+never transported. T1 gap curriculum (no loss change) raised amplitude inside
+that reach and widened it by zero tokens. Authoritative Baby remains v2R4 U16000
+SHA `94b3a9da…17827`.
+
+### DURABLE RECORD
+
+- Localization + causal probe: `research/V010_QUERY_TRANSPORT_AUTOPSY.md`
+  (commit `ab93021`)
+- T1 preregistration: `design/V010_SELECTION_REPAIR_T1_GAP.md` (commit `8892545`)
+- T1 pipeline freeze: commit `0ea5299`
+- T1 adjudication: `research/V010_SELECTION_REPAIR_T1_TERMINAL.md` (commit `b714e28`)
+
+Branch `cursor/query-transport-range-t1` / [PR #4](https://github.com/grapeeater/DaveLM-Baby/pull/4)
+vs `v0.10`. Open; not merged.
+
+### NEXT EXPERIMENT
+
+None until resumed. Highest-information read-only follow-up if resumed:
+attention/composition localization on the hashed parent (query identity present
+vs absent at generation position when gap > 1).
+
+### WHY HIGH INFORMATION
+
+Same as T1 milestone. Work is **paused per user request**; no further training or
+experiments in this line until explicitly reopened.
+
 

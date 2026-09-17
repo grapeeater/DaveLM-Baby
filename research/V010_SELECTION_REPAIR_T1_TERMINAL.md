@@ -6,6 +6,10 @@ Isolated diagnostic fork of v2R4 U16000. Not foundation graduation. No merge to
 `main`. Protected TEST was not opened. Frozen Gate L/C/R were not changed. S1 and
 S2 receipts were not rewritten. The authoritative Baby is unchanged.
 
+Branch `cursor/query-transport-range-t1` / [PR #4](https://github.com/grapeeater/DaveLM-Baby/pull/4)
+vs `v0.10`. **Investigation paused per user request (2026-09-16).** No further
+training, weight updates, or experiments until explicitly resumed.
+
 Protocol (frozen at `8892545`, before data generation and before any optimizer
 update): [`design/V010_SELECTION_REPAIR_T1_GAP.md`](../design/V010_SELECTION_REPAIR_T1_GAP.md)
 Prior autopsy: [`research/V010_QUERY_TRANSPORT_AUTOPSY.md`](V010_QUERY_TRANSPORT_AUTOPSY.md)
