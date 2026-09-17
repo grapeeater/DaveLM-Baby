@@ -86,6 +86,13 @@ runs/selection_p2/*/
 !runs/query_splice_d3b/QUERY_SPLICE.json
 !runs/query_splice_d3b/ADJUDICATION.json
 
+# P3 early residual-bind (manifest + adjudication git; schedules/checkpoints local)
+!runs/selection_p3/
+!runs/selection_p3/MANIFEST.json
+runs/selection_p3/SCHEDULE_*.json
+runs/selection_p3/*/
+!runs/selection_p3/ADJUDICATION_*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json

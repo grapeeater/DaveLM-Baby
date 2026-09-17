@@ -1,0 +1,26 @@
+{
+  "protocol": "V010_QUERY_SPLICE_D3B",
+  "verdict": "SPLICED_IDENTITY",
+  "dg_q0r": 0.24651162790697673,
+  "dg_c0r": -0.1674418604651163,
+  "dg_r0r": -0.004651162790697716,
+  "ds_c0r": 0.27441860465116275,
+  "licenses_next": "early_query_pointer_layers_0_2_not_p2_not_p1_all_layers",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "full_as_hits": 74,
+  "full_q0r_hits": 127,
+  "n_shared": 215,
+  "shared": {
+    "as_is_gold": 0.34418604651162793,
+    "Q0R_gold": 0.5906976744186047,
+    "C0R_gold": 0.17674418604651163,
+    "R0R_gold": 0.3395348837209302,
+    "as_is_competitor_spliced": 0.37209302325581395,
+    "C0R_spliced": 0.6465116279069767
+  },
+  "trained": false,
+  "p2_launched": false,
+  "protected_material_opened": false,
+  "gates_changed": false,
+  "authoritative_parent_unchanged": true
+}

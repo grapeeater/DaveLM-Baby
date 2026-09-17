@@ -698,4 +698,48 @@ D3b control decomposition. No training. No P2.
 D3's missing cell is competitor/filler at the **same layer as the putative
 effect** (L0), not L11.
 
+---
+
+## Milestone 2026-09-17 — D3b L0 controls: SPLICED_IDENTITY
+
+### CURRENT BEST DIAGNOSIS
+
+The generation-position residual at **block 0** is the retrieval query.
+Putting the query residual there makes later layers emit the gold value
+(+0.247). Putting a competitor-key residual there makes them emit that
+competitor's value (+0.274 spliced, gold −0.167). Putting a filler residual
+there does nothing (−0.005). P1 wrote at layer 10; P2 would write at the
+unembed. Both are the wrong site. Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+Replication exact: as-is 74/215, Q0R 127/215. n_shared 215. See
+`research/V010_QUERY_SPLICE_D3B.md`.
+
+### EVIDENCE AGAINST IT / CAVEATS
+
+Causal splice ≠ a trained write. OV path may still fail to implement the
+splice. Single parent. D3 MIXED is unchanged.
+
+### WHAT WAS FALSIFIED
+
+- "Any L0 overwrite of gen helps" (R0R flat).
+- "Any key-like residual at L0 raises gold" (C0R follows the competitor).
+- P2-as-written as the D2-licensed next training class.
+
+### WHAT REMAINS UNKNOWN
+
+Whether an L0 InfoNCE bind can install the splice without breaking
+retention.
+
+### NEXT EXPERIMENT
+
+P3 early residual query-bind vs matched λ=0, block-0 only, competitor-key
+negatives. Not P1-all-layers. Not P2 final-residual.
+
+### WHY HIGH INFORMATION
+
+It trains the exact write D3b proved is causally sufficient and identity-
+specific.
+
 
