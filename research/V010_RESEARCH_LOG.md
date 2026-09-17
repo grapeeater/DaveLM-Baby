@@ -993,4 +993,38 @@ P9 language-only batches are pure CE through overwrite and want gate→0.
 That is the leading explanation of the 0.29 stall. Removing CE from the
 overwrite update isolates it.
 
+---
+
+## Milestone 2026-09-17 — P10 aux-only: REGRESSION, CE was the gate pin
+
+### CURRENT BEST DIAGNOSIS
+
+CE-through-overwrite is why P9's gate stalled at 0.29. Removing it opens
+the gate (0.93) and inflates post-overwrite cosine (0.89), but a
+content-based gate generalizes off the gen token and rewrites the whole
+stream. Hits stay 74. Authoritative Baby remains v2R4 U16000.
+
+### EVIDENCE FOR IT
+
+`runs/selection_p10/ADJUDICATION_240001_400.json`. Official **REGRESSION**
+(hard_stop_language). Hits 74/74/74. Cosine 0.042→**0.886**. Gate
+0.018→**0.934**. CE 1.24→**4.76**. Induction 0.297→0.047.
+
+### WHAT WAS FALSIFIED
+
+"P9's stall is an optimizer/λ problem rather than CE fight." Also:
+"raising post-overwrite cosine is the same as D3b replace." Global
+rewrite ≠ gen replace.
+
+### NEXT EXPERIMENT
+
+P11: aux-only slot overwrite with a **hard gen-index mask**. Not P10 λ.
+Not unfreezing.
+
+### WHY HIGH INFORMATION
+
+It installs the D3b write locality P10 lacked while keeping the only
+update rule that actually opened the gate.
+
+
 
