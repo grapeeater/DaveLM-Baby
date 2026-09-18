@@ -162,3 +162,31 @@ Induction-exempt first-step overwrite restores `primitive_induction` 19/64 while
 - A duplicate `b1_hard_replace` 112/215 ledger heading above is the replica canary (filename `b1_hard_replace_stage4_250002.json`); primary remains 109
 - TEST closed. U16000 not replaced. A1 gated path still the fallback
 
+## b4_step200_hard
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; B1 hard replace h0[gen]:=h0[argmax causal slot scores] (not query_position)
+- long-gap: ON 110/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **ADVANCE**
+- lesson: long-gap 110/215 CI-worthy vs A1 102; pointer_match=0.707 mass_q=0.6871070861816406; qswap=None
+
+## b4_step200_hard
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; B1 hard replace h0[gen]:=h0[argmax causal slot scores] (not query_position)
+- long-gap: ON 109/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.9375 n=64
+- verdict: **KILL**
+- lesson: primitive_keyed negative control failed; pointer_match=0.693 mass_q=0.7377356290817261; qswap=None
+
+## note_b4_and_queue
+
+- B4 +200 steps from P11 weights, A1 PACK_HOOK, hard-replace eval: 110/215, pointer match 0.707 (no lift vs 0.712), keyed 0.953. Early-stopped because canary ADVANCE vs A1; not better than B1 109
+- B4b pointer aux gap≥13: at 200, long-gap 109, pointer 0.693 (down), keyed **0.9375** (below 0.95). Killed
+- Remaining Q0R gap (~18 hits) sits on ~29% wrong-pointer rows (miss peak mass 0.14). Same slot scorer + more aux did not move it
+- B5 block-1 skipped (B1 survived; sidecar is L0-trained)
+- TEST closed. U16000 not replaced. A1 gated fallback preserved. Deploy candidate is B1 hard replace + A1 routing, not kind-blind P11
+

@@ -883,7 +883,7 @@ def run_b4(model, overwrite: TreatedOverwrite, device) -> dict:
         ledger_append(report)
         return report
 
-    dest = OUT / "b4_scorer_260001"
+    dest = OUT / "b4b_longgap_ptr"
     dest.mkdir(parents=True, exist_ok=True)
     schedule = json.loads(schedule_path.read_text(encoding="utf-8"))
     for parameter in model.parameters():
@@ -896,7 +896,7 @@ def run_b4(model, overwrite: TreatedOverwrite, device) -> dict:
     handle, _ = attach_overwrite(model, trained)
     previous_hook = selection_s1.PACK_HOOK
     selection_s1.PACK_HOOK = lambda items, x, module=trained: module.set_gen_index_routed(items, x.device, POLICY_A1)
-    until = 800
+    until = 400
     t0 = time.time()
     try:
         last_step = 0
@@ -915,7 +915,7 @@ def run_b4(model, overwrite: TreatedOverwrite, device) -> dict:
                 hidden = model.forward_hidden(x)
                 logits = model.language_head(hidden.detach())
                 loss = F.cross_entropy(logits[mask], y[mask])
-                specs = copy_specs(items)
+                specs = copy_specs(items, min_gap=13)
                 gate_lam = GATE_LAMBDA if step > GATE_ON_AFTER else 0.0
                 extra_ptr, extra_gate = pointer_aux(trained.last_attn, trained.last_gate, specs, use_gate=gate_lam > 0)
                 loss = loss + PTR_LAMBDA * extra_ptr
@@ -972,19 +972,17 @@ def run_b4(model, overwrite: TreatedOverwrite, device) -> dict:
                         dest / f"checkpoint_{step}.pt",
                     )
                     return canary
-                if canary.get("verdict") == "ADVANCE":
-                    torch.save(
-                        {"overwrite_state_dict": trained.state_dict(), "step": step},
-                        dest / f"checkpoint_{step}.pt",
-                    )
-                    return canary
+                torch.save(
+                    {"overwrite_state_dict": trained.state_dict(), "step": step},
+                    dest / f"checkpoint_{step}.pt",
+                )
         model.eval()
         trained.eval()
         trained.set_eval_write(WRITE_HARD, 1.0, 0.0)
         final = run_candidate(
-            model, trained, device, mode=WRITE_HARD, pretest=False, id_override="b4_stronger_scorer"
+            model, trained, device, mode=WRITE_HARD, pretest=False, id_override="b4b_longgap_ptr"
         )
-        final["change"] = "B4 overwrite-only scorer, A1 PACK_HOOK, hard-replace eval"
+        final["change"] = "B4b overwrite-only, A1 PACK_HOOK, pointer aux gap>=13, hard-replace eval"
         final["train_steps"] = last_step
         final["elapsed_s"] = time.time() - t0
         write(dest / "FINAL.json", _strip(final))
