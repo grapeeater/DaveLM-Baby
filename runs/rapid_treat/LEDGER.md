@@ -322,3 +322,105 @@ Induction-exempt first-step overwrite restores `primitive_induction` 19/64 while
 - TEST closed. U16000 not replaced. A1 gated and B1 hard-replace remain reproducible (`operator=a1|b1|c2`)
 - Owner milestone: 122 with retention. Remaining 5 vs Q0R 127 is not a pointer miss
 
+## d_miss_split
+
+- ID: `a1_induction_exempt`
+- Change: C2 ON miss-row split: first_correct/rank/inventory/transfer/Q0R sample
+- long-gap: ON 122/215 vs OFF 71/215 (kind-blind ON 102/215); armed=None
+- induction: first_top1 None n=None armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 None n=None
+- verdict: **DIAG**
+- lesson: bottleneck=write/transfer dominant=readout_wrong_inventory miss=93 first_correct=126/215 free=122/215 inv_argmax=127 matched=215 cos_l0=1.0 cos_final=0.22450172901153564 q0r_also_miss=4/20
+
+## d2_later_final
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D2 also replace final-norm gen with L0 C2 src vector
+- long-gap: ON 0/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.0 n=64
+- verdict: **KILL**
+- lesson: primitive_keyed negative control failed; first_correct=0; qswap=0.0
+
+## d2_later_b1
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D2 also replace block-1 gen with L0 C2 src vector
+- long-gap: ON 120/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **KILL**
+- lesson: long-gap 120/215 no bind gain vs C2 122/126; first_correct=124; qswap=0.6354166666666666
+
+## d1_inv_mask
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D1 first-token mask to tiling value heads (not gold target)
+- long-gap: ON 123/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **KILL**
+- lesson: long-gap 123/215 first=127 did not move the C2 bottleneck; first_correct=127; qswap=0.6666666666666666
+
+## d3_match_mask
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D3 first-token mask to key-matched tiling value head (not gold)
+- long-gap: ON 210/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **GRAD**
+- lesson: long-gap 210/215 phase-graduation strength vs C2 122; first_correct=215; qswap=0.96875
+
+## d3_match_mask_stage2
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D3 first-token mask to key-matched tiling value head (not gold)
+- long-gap: ON 210/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **ADVANCE**
+- lesson: retention bars held
+
+## d3_match_mask_stage3
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D3 first-token mask to key-matched tiling value head (not gold) ; full P11-runtime battery
+- long-gap: ON 210/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **PASS**
+- lesson: cause=none; benefit_ok=True; on_retention=True; ci=[0.6176470588235294, 0.6724890829694323]
+
+## d3_match_mask
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D3 first-token mask to key-matched tiling value head (not gold)
+- long-gap: ON 210/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **GRAD**
+- lesson: long-gap 210/215 phase-graduation strength vs C2 122; first_correct=215; qswap=0.96875
+
+## d3_match_mask_stage4_250002
+
+- ID: `a1_induction_exempt`
+- Change: A1+C2 frozen locator; D3 first-token mask to key-matched tiling value head (not gold)
+- long-gap: ON 210/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **GRAD**
+- lesson: long-gap 210/215 phase-graduation strength vs C2 122; first_correct=215; qswap=0.96875
+
+## note_d3_grad
+
+- C2 stays frozen (SHA `06e2e613…`, pointer 215/215). U16000 not replaced. TEST closed. Not promoted.
+- Miss split on C2 93 misses: **89 first-token errors**, 4 continuation. Gold always in tiling inventory. Pred already in-inventory on 99% of misses. Inventory argmax (D1) 127/215. Key-matched tiling head is gold on **215/215**.
+- Cosine L0 after C2 replace is 1.0; final-gen vs L0-src ~0.22 on **both hits and misses**. Blind later-layer copy is not the discriminator. D2 final **0/215** kill. D2 block1 **120/215** kill. D1 **123/215** kill.
+- Q0R splice on 20 C2 misses: 16 inventory hits / 4 also-miss. Do not chase C2 122→Q0R 127. Remaining bottleneck is **readout among inventory**, not locator.
+- **D3** (eval-only, parameter-free): first-token argmax restricted to the unique tiling value whose key equals the C2 query site. Native continuation after that. Never gold `query_position` / gold target.
+- Primary 250001: **210/215** free_exact, first_correct **215/215**, induction 0.297, keyed 0.969, query-swap **0.969**, rest_lock held, value_absent 0, broken_context 0, broken_order 0, language CE unchanged. Stage 2 ADVANCE, Stage 3 PASS, bootstrap Δ vs OFF 71 CI [0.618, 0.672].
+- Replica 250002: **210/215**, induction 0.297, keyed 0.953, query-swap 0.969.
+- Remaining 5/215 are span misses after a correct first token. Operator flags remain `a1|b1|c2|d3`.
+- **RECOMMEND phase graduation (nonprotected).** Owner decision. Do not open TEST/FINAL/SACRED.
+
