@@ -25,6 +25,83 @@ VALUES = ("red", "green", "yellow", "pink", "white", "blue")
 SIZES = ("small", "short", "wide", "thin", "tiny", "huge")
 # First-token IDs of " {word}" must be unique and disjoint from VALUES and SIZES.
 PLACES = ("nest", "lake", "cave", "town", "park", "farm")
+# Who/event answers use this subset: unique spaced first-tokens, disjoint from
+# VALUES/SIZES (cat/cow, frog/fox, bird/blue, pig/pink collide on first token).
+WHO_ENTITIES = ("dog", "hen", "duck", "bear", "cat", "frog")
+TRAIN_EVENTS = ("sat down", "ran by", "looked up", "came out")
+HOLDOUT_EVENTS = ("went home", "came by", "walked along", "went out")
+TRAIN_STORY_FRAMES = (
+    "Once upon a time a {e1} {a1}. The {e1} was {v1}. Then a {e2} {a2}. The {e2} was {v2}.",
+    "One day a {e1} {a1}. The {e1} was {v1}. A {e2} {a2}. The {e2} was {v2}.",
+    "A {e1} {a1}. The {e1} was {v1}. Then a {e2} {a2}. The {e2} was {v2}.",
+    "There was a {e1} in the sun. The {e1} {a1}. The {e1} was {v1}. A {e2} {a2}. The {e2} was {v2}.",
+    "Once upon a time there was a {e1}. The {e1} {a1}. The {e1} was {v1}. Then a {e2} {a2}. The {e2} was {v2}.",
+)
+HOLDOUT_STORY_FRAMES = (
+    "Long ago a {e1} {a1}. That {e1} was {v1}. A {e2} {a2}. That {e2} was {v2}.",
+    "A {e1} {a1}. Remember: the {e1} is {v1}. Then a {e2} {a2}. Remember: the {e2} is {v2}.",
+    "In the yard a {e1} {a1}. The {e1} looks {v1}. A {e2} {a2}. The {e2} looks {v2}.",
+)
+TRAIN_WHO_QUERIES = (
+    "Who is {v}?",
+    "Who was {v}?",
+)
+HOLDOUT_WHO_QUERIES = (
+    "Which one is {v}?",
+    "Tell me who is {v}.",
+    "Who looks {v}?",
+)
+TRAIN_EVENT_QUERIES = (
+    "Who {act}?",
+    "What {act}?",
+)
+HOLDOUT_EVENT_QUERIES = (
+    "Tell me who {act}.",
+    "Which one {act}?",
+)
+TRAIN_STORY_FRAMES_3 = tuple(
+    frame + " Then a {e3} {a3}. The {e3} was {v3}." for frame in TRAIN_STORY_FRAMES
+)
+HOLDOUT_STORY_FRAMES_3 = (
+    HOLDOUT_STORY_FRAMES[0] + " A {e3} {a3}. That {e3} was {v3}.",
+    HOLDOUT_STORY_FRAMES[1] + " Then a {e3} {a3}. Remember: the {e3} is {v3}.",
+    HOLDOUT_STORY_FRAMES[2] + " A {e3} {a3}. The {e3} looks {v3}.",
+)
+TRAIN_STORY_FRAMES_4 = tuple(
+    frame + " Then a {e4} {a4}. The {e4} was {v4}." for frame in TRAIN_STORY_FRAMES_3
+)
+HOLDOUT_STORY_FRAMES_4 = (
+    HOLDOUT_STORY_FRAMES_3[0] + " A {e4} {a4}. That {e4} was {v4}.",
+    HOLDOUT_STORY_FRAMES_3[1] + " Then a {e4} {a4}. Remember: the {e4} is {v4}.",
+    HOLDOUT_STORY_FRAMES_3[2] + " A {e4} {a4}. The {e4} looks {v4}.",
+)
+TRAIN_MIXED_STORY_FRAMES = (
+    "Once upon a time a {s1} {e1} {a1}. The {e1} was {c1}. Then a {s2} {e2} {a2}. The {e2} was {c2}.",
+    "One day a {e1} {a1}. The {e1} was {s1} in size. The {e1} was {c1}. A {e2} {a2}. The {e2} was {s2} in size. The {e2} was {c2}.",
+    "A {s1} {e1} {a1}. The {e1} was {c1}. Then a {s2} {e2} {a2}. The {e2} was {c2}.",
+    "Once upon a time a {e1} {a1}. The {e1} was {s1} in size. The {e1} was {c1}. Then a {e2} {a2}. The {e2} was {s2} in size. The {e2} was {c2}.",
+)
+HOLDOUT_MIXED_STORY_FRAMES = (
+    "Long ago a {s1} {e1} {a1}. That {e1} was {c1}. A {s2} {e2} {a2}. That {e2} was {c2}.",
+    "A {s1} {e1} {a1}. Remember: the {e1} is {c1}. Then a {s2} {e2} {a2}. Remember: the {e2} is {c2}.",
+    "In the yard a {s1} {e1} {a1}. The {e1} looks {c1}. A {s2} {e2} {a2}. The {e2} looks {c2}.",
+)
+TRAIN_COMBINE_QUERIES_COLOR = (
+    "What color is the {s} one?",
+    "Name the color of the {s} one.",
+)
+HOLDOUT_COMBINE_QUERIES_COLOR = (
+    "Which color is the {s} one?",
+    "Tell me the color of the {s} one.",
+)
+TRAIN_COMBINE_QUERIES_SIZE = (
+    "What size is the {c} one?",
+    "Name the size of the {c} one.",
+)
+HOLDOUT_COMBINE_QUERIES_SIZE = (
+    "Which size is the {c} one?",
+    "Tell me the size of the {c} one.",
+)
 
 TRAIN_FACTS = (
     "The color of the {e} is {v}.",
@@ -279,6 +356,7 @@ def make_size_item(
     n_facts: int = 2,
     surface: str = "train",
     family: str = "qa",
+    period: bool = False,
 ) -> dict:
     if n_facts < 1 or n_facts > len(ENTITIES):
         raise ValueError(n_facts)
@@ -296,14 +374,19 @@ def make_size_item(
         query_pool=query_pool,
         value_bank=SIZES,
     )
+    if period and not answer.endswith("."):
+        answer = answer + "."
     prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    variant = f"size_{family}_{n_facts}f"
+    if period:
+        variant += "_stop"
     return _item(
         prompt_ids=prompt_ids,
         answer_ids=answer_ids,
         kind="keyed",
         family="english_size",
         surface=surface,
-        variant=f"size_{family}_{n_facts}f",
+        variant=variant,
         extra={"entity": entity, "value_text": value, "prompt_text": prompt, "answer_text": answer, "attr": "size"},
     )
 
@@ -580,6 +663,93 @@ def make_multiturn_item(
     )
 
 
+def make_longturn_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    n_turns: int = 3,
+    surface: str = "heldout",
+) -> dict:
+    """Three or four Human/Baby color turns; last answer is scored."""
+    if n_turns < 3 or n_turns > 5:
+        raise ValueError(n_turns)
+    if n_turns > len(VALUES):
+        raise ValueError("not enough colors for longturn")
+    entities = list(_sample(rng, ENTITIES, n_turns))
+    colors = list(_sample(rng, VALUES, n_turns))
+    pairs = list(zip(entities, colors))
+    rng.shuffle(pairs)
+    fact_pool = TRAIN_FACTS if surface == "train" else HOLDOUT_FACTS
+    fact_t = rng.choice(fact_pool)
+    facts = " ".join(fact_t.format(e=e, v=v) for e, v in pairs)
+    train_qs = (
+        "what color is the {e}?",
+        "what is {e}'s color?",
+        "please tell the color of the {e}.",
+        "name the color of the {e}.",
+    )
+    hold_qs = (
+        "which color is the {e}?",
+        "tell me the color of the {e}.",
+        "what is the color of the {e}?",
+        "which color is {e}?",
+    )
+    qpool = train_qs if surface == "train" else hold_qs
+    chunks = [facts]
+    for i, (entity, value) in enumerate(pairs[:-1]):
+        chunks.append(f"Human: {qpool[i % len(qpool)].format(e=entity)}")
+        chunks.append(f"Baby: {value}")
+    last_e, last_v = pairs[-1]
+    chunks.append(f"Human: {qpool[(n_turns - 1) % len(qpool)].format(e=last_e)}")
+    chunks.append("Baby:")
+    prompt = "\n".join(chunks)
+    answer = " " + last_v
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family="longturn",
+        surface=surface,
+        variant=f"longturn_{n_turns}",
+        extra={"entity": last_e, "value_text": last_v, "prompt_text": prompt, "answer_text": answer},
+    )
+
+
+def make_roleplay_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    n_facts: int = 2,
+    surface: str = "heldout",
+) -> dict:
+    """Same bind as dialogue, but Kid/Mom instead of Human/Baby."""
+    entities = list(_sample(rng, ENTITIES, n_facts))
+    colors = list(_sample(rng, VALUES, n_facts))
+    pairs = list(zip(entities, colors))
+    rng.shuffle(pairs)
+    query_e, query_v = rng.choice(pairs)
+    fact_pool = TRAIN_FACTS if surface == "train" else HOLDOUT_FACTS
+    fact_t = rng.choice(fact_pool)
+    facts = " ".join(fact_t.format(e=e, v=v) for e, v in pairs)
+    if surface == "train":
+        kid = f"what color is the {query_e}?"
+    else:
+        kid = f"which color is the {query_e}?"
+    prompt = f"{facts}\nKid: {kid}\nMom:"
+    answer = " " + query_v
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family="roleplay",
+        surface=surface,
+        variant=f"roleplay_{n_facts}f",
+        extra={"entity": query_e, "value_text": query_v, "prompt_text": prompt, "answer_text": answer},
+    )
+
+
 def make_attr_followup_item(
     rng: random.Random,
     tokenizer,
@@ -690,6 +860,251 @@ def build_e7_panels(tokenizer, seed: int = 310701, n: int = 32) -> dict[str, lis
     }
 
 
+def _humanize_query(query: str) -> str:
+    if not query:
+        return query
+    return query[0].lower() + query[1:]
+
+
+def make_story_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    surface: str = "heldout",
+    ask: str = "color",
+    dialogue: bool = False,
+    n_chars: int = 2,
+    pronoun: bool = False,
+) -> dict:
+    """Short TinyStories-ish scene. Color/size answers keep first-token scoring clean."""
+    if ask not in {"color", "who", "event", "size"}:
+        raise ValueError(ask)
+    if pronoun and ask != "color":
+        raise ValueError("pronoun stories are color-answer only")
+    if ask in {"who", "event"}:
+        n_chars = 2
+        ent_pool = WHO_ENTITIES
+        val_pool = VALUES
+    else:
+        n_chars = max(2, min(int(n_chars), 4))
+        ent_pool = ENTITIES
+        val_pool = SIZES if ask == "size" else VALUES
+    ents = _sample(rng, ent_pool, n_chars)
+    vals = _sample(rng, val_pool, n_chars)
+    events = TRAIN_EVENTS if surface == "train" else HOLDOUT_EVENTS
+    acts = _sample(rng, events, n_chars)
+    if n_chars == 4:
+        frames = TRAIN_STORY_FRAMES_4 if surface == "train" else HOLDOUT_STORY_FRAMES_4
+    elif n_chars == 3:
+        frames = TRAIN_STORY_FRAMES_3 if surface == "train" else HOLDOUT_STORY_FRAMES_3
+    else:
+        frames = TRAIN_STORY_FRAMES if surface == "train" else HOLDOUT_STORY_FRAMES
+    fmt = {}
+    for i, (ent, val, act) in enumerate(zip(ents, vals, acts), start=1):
+        fmt[f"e{i}"] = ent
+        fmt[f"v{i}"] = val
+        fmt[f"a{i}"] = act
+    story = rng.choice(frames).format(**fmt)
+    pairs = list(zip(ents, vals, acts))
+    if pronoun:
+        query_e, query_v, _act = pairs[-1]
+        query = "What color is it?" if surface == "train" else rng.choice(("What color is it?", "Which color is it?"))
+        answer_word = query_v
+        extra_entity = query_e
+        ask_label = "pronoun"
+    elif ask == "color":
+        query_e, query_v, _act = rng.choice(pairs)
+        query_pool = TRAIN_QUERIES if surface == "train" else HOLDOUT_QUERIES
+        query = rng.choice(query_pool).format(e=query_e)
+        answer_word = query_v
+        extra_entity = query_e
+        ask_label = "color"
+    elif ask == "size":
+        query_e, query_v, _act = rng.choice(pairs)
+        query_pool = TRAIN_SIZE_QUERIES if surface == "train" else HOLDOUT_SIZE_QUERIES
+        query = rng.choice(query_pool).format(e=query_e)
+        answer_word = query_v
+        extra_entity = query_e
+        ask_label = "size"
+    elif ask == "who":
+        query_e, query_v, _act = rng.choice(pairs)
+        query_pool = TRAIN_WHO_QUERIES if surface == "train" else HOLDOUT_WHO_QUERIES
+        query = rng.choice(query_pool).format(v=query_v)
+        answer_word = query_e
+        extra_entity = query_e
+        ask_label = "who"
+    else:
+        query_e, _query_v, query_act = rng.choice(pairs)
+        query_pool = TRAIN_EVENT_QUERIES if surface == "train" else HOLDOUT_EVENT_QUERIES
+        query = rng.choice(query_pool).format(act=query_act)
+        answer_word = query_e
+        extra_entity = query_e
+        ask_label = "event"
+    if dialogue:
+        prompt = f"{story}\nHuman: {_humanize_query(query)}\nBaby:"
+        family = "story_dialogue"
+        variant = f"story_dialogue_{ask_label}_{n_chars}e"
+    else:
+        prompt = story + " " + query
+        family = f"story_{ask_label}"
+        variant = f"story_{ask_label}_{n_chars}e"
+    answer = " " + answer_word
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family=family,
+        surface=surface,
+        variant=variant,
+        extra={
+            "entity": extra_entity,
+            "value_text": answer_word,
+            "prompt_text": prompt,
+            "answer_text": answer,
+            "attr": ask_label,
+            "story_text": story,
+        },
+    )
+
+
+def make_story_mixed_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    surface: str = "heldout",
+    combine: bool = False,
+    dialogue: bool = False,
+) -> dict:
+    """Story with color and size; query one attribute, optionally via the other."""
+    e1, e2 = _sample(rng, ENTITIES, 2)
+    c1, c2 = _sample(rng, VALUES, 2)
+    s1, s2 = _sample(rng, SIZES, 2)
+    events = TRAIN_EVENTS if surface == "train" else HOLDOUT_EVENTS
+    a1, a2 = _sample(rng, events, 2)
+    frames = TRAIN_MIXED_STORY_FRAMES if surface == "train" else HOLDOUT_MIXED_STORY_FRAMES
+    story = rng.choice(frames).format(e1=e1, e2=e2, c1=c1, c2=c2, s1=s1, s2=s2, a1=a1, a2=a2)
+    rows = ((e1, c1, s1), (e2, c2, s2))
+    query_e, query_c, query_s = rng.choice(rows)
+    ask_color = rng.random() < 0.5
+    if combine:
+        if ask_color:
+            query_pool = TRAIN_COMBINE_QUERIES_COLOR if surface == "train" else HOLDOUT_COMBINE_QUERIES_COLOR
+            query = rng.choice(query_pool).format(s=query_s)
+            answer_word = query_c
+            attr = "color"
+        else:
+            query_pool = TRAIN_COMBINE_QUERIES_SIZE if surface == "train" else HOLDOUT_COMBINE_QUERIES_SIZE
+            query = rng.choice(query_pool).format(c=query_c)
+            answer_word = query_s
+            attr = "size"
+        family = "story_combine"
+    else:
+        if ask_color:
+            query_pool = TRAIN_QUERIES if surface == "train" else HOLDOUT_QUERIES
+            query = rng.choice(query_pool).format(e=query_e)
+            answer_word = query_c
+            attr = "color"
+        else:
+            query_pool = TRAIN_SIZE_QUERIES if surface == "train" else HOLDOUT_SIZE_QUERIES
+            query = rng.choice(query_pool).format(e=query_e)
+            answer_word = query_s
+            attr = "size"
+        family = "story_mixed"
+    if dialogue:
+        prompt = f"{story}\nHuman: {_humanize_query(query)}\nBaby:"
+        family = family + "_dialogue"
+    else:
+        prompt = story + " " + query
+    answer = " " + answer_word
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family=family,
+        surface=surface,
+        variant=f"{family}_2e",
+        extra={
+            "entity": query_e,
+            "value_text": answer_word,
+            "prompt_text": prompt,
+            "answer_text": answer,
+            "attr": attr,
+            "story_text": story,
+        },
+    )
+
+
+def build_e8_panels(tokenizer, seed: int = 310801, n: int = 32) -> dict[str, list[dict]]:
+    rng = random.Random(seed)
+    return {
+        "qa_2fact_heldout": [make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout") for _ in range(n)],
+        "story_color_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color") for _ in range(n)],
+        "story_who_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="who") for _ in range(n)],
+        "story_event_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="event") for _ in range(n)],
+        "story_dialogue_heldout": [
+            make_story_item(rng, tokenizer, surface="heldout", ask="color", dialogue=True) for _ in range(n)
+        ],
+        "dialogue_2fact_heldout": [make_dialogue_item(rng, tokenizer, n_facts=2, surface="heldout") for _ in range(n)],
+    }
+
+
+def build_e9_panels(tokenizer, seed: int = 310901, n: int = 32) -> dict[str, list[dict]]:
+    rng = random.Random(seed)
+    return {
+        "qa_2fact_heldout": [make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout") for _ in range(n)],
+        "story_color_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color") for _ in range(n)],
+        "story_color_3e_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color", n_chars=3) for _ in range(n)],
+        "story_pronoun_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color", pronoun=True) for _ in range(n)],
+        "story_size_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="size") for _ in range(n)],
+        "mixed_2e_heldout": [make_mixed_item(rng, tokenizer, n_entities=2, surface="heldout") for _ in range(n)],
+        "dialogue_2fact_heldout": [make_dialogue_item(rng, tokenizer, n_facts=2, surface="heldout") for _ in range(n)],
+    }
+
+
+def build_e10_panels(tokenizer, seed: int = 311001, n: int = 32) -> dict[str, list[dict]]:
+    rng = random.Random(seed)
+    return {
+        "qa_2fact_heldout": [make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout") for _ in range(n)],
+        "story_color_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color") for _ in range(n)],
+        "story_color_4e_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color", n_chars=4) for _ in range(n)],
+        "story_mixed_heldout": [make_story_mixed_item(rng, tokenizer, surface="heldout", combine=False) for _ in range(n)],
+        "story_combine_heldout": [make_story_mixed_item(rng, tokenizer, surface="heldout", combine=True) for _ in range(n)],
+        "mixed_2e_heldout": [make_mixed_item(rng, tokenizer, n_entities=2, surface="heldout") for _ in range(n)],
+        "dialogue_2fact_heldout": [make_dialogue_item(rng, tokenizer, n_facts=2, surface="heldout") for _ in range(n)],
+    }
+
+
+def build_e11_panels(tokenizer, seed: int = 311101, n: int = 32) -> dict[str, list[dict]]:
+    rng = random.Random(seed)
+    return {
+        "qa_2fact_heldout": [make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout") for _ in range(n)],
+        "story_color_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color") for _ in range(n)],
+        "longturn_3_heldout": [make_longturn_item(rng, tokenizer, n_turns=3, surface="heldout") for _ in range(n)],
+        "longturn_4_heldout": [make_longturn_item(rng, tokenizer, n_turns=4, surface="heldout") for _ in range(n)],
+        "roleplay_2fact_heldout": [make_roleplay_item(rng, tokenizer, n_facts=2, surface="heldout") for _ in range(n)],
+        "dialogue_2fact_heldout": [make_dialogue_item(rng, tokenizer, n_facts=2, surface="heldout") for _ in range(n)],
+        "instr_2fact_heldout": [
+            make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout", instruction=True)
+            for _ in range(n)
+        ],
+    }
+
+
+def build_e12_panels(tokenizer, seed: int = 311201, n: int = 32) -> dict[str, list[dict]]:
+    rng = random.Random(seed)
+    return {
+        "qa_2fact_heldout": [make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout") for _ in range(n)],
+        "size_2fact_heldout": [make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout") for _ in range(n)],
+        "size_stop_heldout": [make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout", period=True) for _ in range(n)],
+        "longturn_4_heldout": [make_longturn_item(rng, tokenizer, n_turns=4, surface="heldout") for _ in range(n)],
+        "longturn_5_heldout": [make_longturn_item(rng, tokenizer, n_turns=5, surface="heldout") for _ in range(n)],
+        "story_color_heldout": [make_story_item(rng, tokenizer, surface="heldout", ask="color") for _ in range(n)],
+        "dialogue_2fact_heldout": [make_dialogue_item(rng, tokenizer, n_facts=2, surface="heldout") for _ in range(n)],
+    }
+
+
 def sample_train_item(
     rng: random.Random,
     banks: Banks,
@@ -791,6 +1206,97 @@ def sample_train_item(
         if roll < 0.90:
             return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train", instruction=True)
         return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train", pronoun=True)
+    if phase == "e8":
+        # Inverted who/event bind spends D3 if it dominates the bridge mix
+        # (e8_story_310801: 52% inverted, D3 196). Keep most mass on E5 skills.
+        if roll < 0.14:
+            return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.24:
+            return make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.34:
+            return make_mixed_item(rng, tokenizer, n_entities=2, surface="train")
+        if roll < 0.44:
+            return make_dialogue_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.54:
+            return make_multiturn_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.66:
+            return make_story_item(rng, tokenizer, surface="train", ask="color")
+        if roll < 0.82:
+            return make_story_item(rng, tokenizer, surface="train", ask="who")
+        if roll < 0.96:
+            return make_story_item(rng, tokenizer, surface="train", ask="event")
+        return make_story_item(rng, tokenizer, surface="train", ask="who", dialogue=True)
+    if phase == "e9":
+        if roll < 0.12:
+            return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.20:
+            return make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.30:
+            return make_mixed_item(rng, tokenizer, n_entities=2, surface="train")
+        if roll < 0.40:
+            return make_dialogue_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.50:
+            return make_multiturn_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.60:
+            return make_story_item(rng, tokenizer, surface="train", ask="color")
+        if roll < 0.78:
+            return make_story_item(rng, tokenizer, surface="train", ask="color", n_chars=3)
+        if roll < 0.92:
+            return make_story_item(rng, tokenizer, surface="train", ask="color", pronoun=True)
+        return make_story_item(rng, tokenizer, surface="train", ask="color", dialogue=True)
+    if phase == "e10":
+        if roll < 0.12:
+            return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.22:
+            return make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.30:
+            return make_mixed_item(rng, tokenizer, n_entities=2, surface="train")
+        if roll < 0.38:
+            return make_dialogue_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.46:
+            return make_multiturn_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.58:
+            return make_story_item(rng, tokenizer, surface="train", ask="color")
+        if roll < 0.82:
+            return make_story_mixed_item(rng, tokenizer, surface="train", combine=False)
+        if roll < 0.94:
+            return make_story_mixed_item(rng, tokenizer, surface="train", combine=True)
+        return make_story_item(rng, tokenizer, surface="train", ask="color", dialogue=True)
+    if phase == "e11":
+        if roll < 0.12:
+            return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.20:
+            return make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.28:
+            return make_dialogue_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.36:
+            return make_multiturn_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.44:
+            return make_story_item(rng, tokenizer, surface="train", ask="color")
+        if roll < 0.54:
+            return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train", instruction=True)
+        if roll < 0.70:
+            return make_longturn_item(rng, tokenizer, n_turns=3, surface="train")
+        if roll < 0.86:
+            return make_longturn_item(rng, tokenizer, n_turns=4, surface="train")
+        if roll < 0.94:
+            return make_roleplay_item(rng, tokenizer, n_facts=2, surface="train")
+        return make_multiturn_item(rng, tokenizer, n_facts=3, surface="train")
+    if phase == "e12":
+        # e12_stop_311201 mixed size-stop + 5-turn and D3 183. Size-stop only from E5.
+        if roll < 0.14:
+            return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.26:
+            return make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
+        if roll < 0.36:
+            return make_dialogue_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.46:
+            return make_multiturn_item(rng, tokenizer, n_facts=2, surface="train")
+        if roll < 0.56:
+            return make_story_item(rng, tokenizer, surface="train", ask="color")
+        if roll < 0.88:
+            return make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="train", period=True)
+        return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train", instruction=True)
     if roll < 0.12:
         return make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="train")
     if roll < 0.22:

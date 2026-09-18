@@ -4,9 +4,14 @@ import random
 
 from src.baby_v010.data_language_bridge import (
     ENTITIES,
+    HOLDOUT_EVENTS,
+    HOLDOUT_STORY_FRAMES,
     SIZES,
     PLACES,
+    TRAIN_EVENTS,
+    TRAIN_STORY_FRAMES,
     VALUES,
+    WHO_ENTITIES,
     encode_split,
     load_tokenizer,
     make_aperiodic_item,
@@ -16,6 +21,10 @@ from src.baby_v010.data_language_bridge import (
     make_place_item,
     make_attr_followup_item,
     make_size_item,
+    make_story_item,
+    make_story_mixed_item,
+    make_longturn_item,
+    make_roleplay_item,
     make_syntax_item,
     period_token_id,
     spaced_first_id,
@@ -141,9 +150,116 @@ def test_attr_followup_is_gold_free() -> None:
     assert item["value_text"] in SIZES
 
 
+def test_e8_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e8_gate
+
+    fail = {
+        "story_color_heldout": {"first_top1": 0.1},
+        "story_who_heldout": {"first_top1": 0.1},
+        "story_event_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.9},
+    }
+    assert e8_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["story_color_heldout"] = {"first_top1": 0.45}
+    assert e8_gate(advance)[0] == "ADVANCE"
+    grad = {
+        "story_color_heldout": {"first_top1": 0.85},
+        "story_who_heldout": {"first_top1": 0.55},
+        "story_event_heldout": {"first_top1": 0.55},
+        "qa_2fact_heldout": {"first_top1": 0.80},
+    }
+    assert e8_gate(grad)[0] == "GRAD"
+
+
+def test_e9_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e9_gate
+
+    fail = {
+        "story_color_heldout": {"first_top1": 0.9},
+        "story_color_3e_heldout": {"first_top1": 0.1},
+        "story_pronoun_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.9},
+    }
+    assert e9_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["story_pronoun_heldout"] = {"first_top1": 0.45}
+    assert e9_gate(advance)[0] == "ADVANCE"
+    grad = {
+        "story_color_heldout": {"first_top1": 0.90},
+        "story_color_3e_heldout": {"first_top1": 0.75},
+        "story_pronoun_heldout": {"first_top1": 0.60},
+        "qa_2fact_heldout": {"first_top1": 0.80},
+    }
+    assert e9_gate(grad)[0] == "GRAD"
+
+
 def test_period_stop_first_word() -> None:
     from src.baby_v010.selection_language_bridge import first_word_match
 
     assert first_word_match(" red.", "red")
     assert first_word_match("red. red.", "red")
     assert not first_word_match(" blue", "red")
+
+
+def test_who_entities_first_tokens_unique_and_disjoint() -> None:
+    tokenizer = load_tokenizer()
+    who_ids = [spaced_first_id(tokenizer, word) for word in WHO_ENTITIES]
+    color_ids = [spaced_first_id(tokenizer, word) for word in VALUES]
+    size_ids = [spaced_first_id(tokenizer, word) for word in SIZES]
+    assert len(set(who_ids)) == len(WHO_ENTITIES)
+    assert set(who_ids).isdisjoint(color_ids)
+    assert set(who_ids).isdisjoint(size_ids)
+    assert set(TRAIN_STORY_FRAMES).isdisjoint(HOLDOUT_STORY_FRAMES)
+    assert set(TRAIN_EVENTS).isdisjoint(HOLDOUT_EVENTS)
+    assert set(WHO_ENTITIES).issubset(ENTITIES)
+
+
+def test_story_items_are_gold_free() -> None:
+    tokenizer = load_tokenizer()
+    rng = random.Random(31)
+    for ask in ("color", "who", "event"):
+        for surface in ("train", "heldout"):
+            item = make_story_item(rng, tokenizer, surface=surface, ask=ask)
+            dialogue = make_story_item(rng, tokenizer, surface=surface, ask=ask, dialogue=True)
+            for row in (item, dialogue):
+                assert row.get("query_position") is None
+                assert row["target"]
+                assert 2 <= len(row["input"]) < 256
+                assert row["answer_text"] == " " + row["value_text"]
+                if ask == "color":
+                    assert row["value_text"] in VALUES
+                else:
+                    assert row["value_text"] in WHO_ENTITIES
+            assert "Baby:" in dialogue["prompt_text"]
+            assert item["prompt_text"] != dialogue["prompt_text"]
+    train = make_story_item(random.Random(41), tokenizer, surface="train", ask="color")
+    hold = make_story_item(random.Random(41), tokenizer, surface="heldout", ask="color")
+    assert train["prompt_text"] != hold["prompt_text"]
+    assert "Remember:" not in train["story_text"]
+    assert "Long ago" not in train["story_text"]
+    assert any(marker in hold["story_text"] for marker in ("Long ago", "Remember:", "In the yard"))
+    three = make_story_item(random.Random(43), tokenizer, surface="heldout", ask="color", n_chars=3)
+    pronoun = make_story_item(random.Random(47), tokenizer, surface="heldout", ask="color", pronoun=True)
+    size = make_story_item(random.Random(53), tokenizer, surface="heldout", ask="size")
+    assert three.get("query_position") is None
+    assert three["value_text"] in VALUES
+    assert "What color is it?" in pronoun["prompt_text"] or "Which color is it?" in pronoun["prompt_text"]
+    assert pronoun["value_text"] in VALUES
+    assert size["value_text"] in SIZES
+    assert size["attr"] == "size"
+    four = make_story_item(random.Random(59), tokenizer, surface="heldout", ask="color", n_chars=4)
+    mixed_story = make_story_mixed_item(random.Random(61), tokenizer, surface="heldout", combine=False)
+    combine = make_story_mixed_item(random.Random(67), tokenizer, surface="heldout", combine=True)
+    assert four.get("query_position") is None
+    assert four["value_text"] in VALUES
+    assert mixed_story["value_text"] in (*VALUES, *SIZES)
+    assert combine["value_text"] in (*VALUES, *SIZES)
+    assert "one?" in combine["prompt_text"] or "one." in combine["prompt_text"]
+    long3 = make_longturn_item(random.Random(71), tokenizer, n_turns=3, surface="heldout")
+    role = make_roleplay_item(random.Random(73), tokenizer, surface="heldout")
+    assert long3["prompt_text"].count("Human:") == 3
+    assert long3["prompt_text"].count("Baby:") == 3
+    assert long3["value_text"] in VALUES
+    assert "Kid:" in role["prompt_text"] and "Mom:" in role["prompt_text"]
+    assert role["value_text"] in VALUES

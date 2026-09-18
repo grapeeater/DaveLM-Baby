@@ -25,6 +25,11 @@ from .data_language_bridge import (
     build_e4_panels,
     build_e6_panels,
     build_e7_panels,
+    build_e8_panels,
+    build_e9_panels,
+    build_e10_panels,
+    build_e11_panels,
+    build_e12_panels,
     build_probe_panels,
     load_tokenizer,
     make_english_item,
@@ -32,6 +37,7 @@ from .data_language_bridge import (
     period_token_id,
     sample_train_item,
     make_size_item,
+    make_story_item,
 )
 from .data_v2 import make_item
 from .evaluate import language_ce, score_items, summarize
@@ -77,6 +83,16 @@ E4_MIXED_GATE = 0.50
 E4_DECODE_GATE = 0.70
 E6_PLACE_GATE = 0.60
 E7_FOLLOW_GATE = 0.55
+E8_STORY_COLOR_GATE = 0.80
+E8_STORY_WHO_GATE = 0.50
+E8_STORY_EVENT_GATE = 0.50
+E9_STORY_3E_GATE = 0.70
+E9_STORY_PRONOUN_GATE = 0.50
+E10_COMBINE_GATE = 0.50
+E10_MIXED_STORY_GATE = 0.60
+E11_LONG3_GATE = 0.55
+E11_LONG4_GATE = 0.50
+E12_SIZE_STOP_GATE = 0.60
 D3_LONG_MIN = 200
 CANARY_UPDATES = 200
 CANARY_EVAL = 50
@@ -344,6 +360,72 @@ def e7_gate(native: dict) -> tuple[str, str]:
     return "FAIL", f"E7 cold follow={follow:.3f} color={color:.3f} size={size:.3f} instr={instr:.3f}"
 
 
+def e8_gate(native: dict) -> tuple[str, str]:
+    story_c = float(native.get("story_color_heldout", {}).get("first_top1") or 0.0)
+    story_who = float(native.get("story_who_heldout", {}).get("first_top1") or 0.0)
+    story_ev = float(native.get("story_event_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    if (
+        story_c >= E8_STORY_COLOR_GATE
+        and story_who >= E8_STORY_WHO_GATE
+        and story_ev >= E8_STORY_EVENT_GATE
+        and color >= E4_COLOR_KEEP
+    ):
+        return "GRAD", f"E8 story_c={story_c:.3f} who={story_who:.3f} event={story_ev:.3f} color={color:.3f}"
+    if max(story_c, story_who, story_ev) >= 0.40:
+        return "ADVANCE", f"E8 partial story_c={story_c:.3f} who={story_who:.3f} event={story_ev:.3f} color={color:.3f}"
+    return "FAIL", f"E8 cold story_c={story_c:.3f} who={story_who:.3f} event={story_ev:.3f} color={color:.3f}"
+
+
+def e9_gate(native: dict) -> tuple[str, str]:
+    story2 = float(native.get("story_color_heldout", {}).get("first_top1") or 0.0)
+    story3 = float(native.get("story_color_3e_heldout", {}).get("first_top1") or 0.0)
+    pronoun = float(native.get("story_pronoun_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    if story3 >= E9_STORY_3E_GATE and pronoun >= E9_STORY_PRONOUN_GATE and color >= E4_COLOR_KEEP and story2 >= E8_STORY_COLOR_GATE:
+        return "GRAD", f"E9 3e={story3:.3f} pronoun={pronoun:.3f} story2={story2:.3f} color={color:.3f}"
+    if max(story3, pronoun) >= 0.40:
+        return "ADVANCE", f"E9 partial 3e={story3:.3f} pronoun={pronoun:.3f} story2={story2:.3f} color={color:.3f}"
+    return "FAIL", f"E9 cold 3e={story3:.3f} pronoun={pronoun:.3f} story2={story2:.3f} color={color:.3f}"
+
+
+def e10_gate(native: dict) -> tuple[str, str]:
+    combine = float(native.get("story_combine_heldout", {}).get("first_top1") or 0.0)
+    mixed_story = float(native.get("story_mixed_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    story2 = float(native.get("story_color_heldout", {}).get("first_top1") or 0.0)
+    if combine >= E10_COMBINE_GATE and mixed_story >= E10_MIXED_STORY_GATE and color >= E4_COLOR_KEEP and story2 >= E8_STORY_COLOR_GATE:
+        return "GRAD", f"E10 combine={combine:.3f} mixed_story={mixed_story:.3f} story2={story2:.3f} color={color:.3f}"
+    if max(combine, mixed_story) >= 0.40:
+        return "ADVANCE", f"E10 partial combine={combine:.3f} mixed_story={mixed_story:.3f} story2={story2:.3f} color={color:.3f}"
+    return "FAIL", f"E10 cold combine={combine:.3f} mixed_story={mixed_story:.3f} story2={story2:.3f} color={color:.3f}"
+
+
+def e11_gate(native: dict) -> tuple[str, str]:
+    long3 = float(native.get("longturn_3_heldout", {}).get("first_top1") or 0.0)
+    long4 = float(native.get("longturn_4_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    dialogue = float(native.get("dialogue_2fact_heldout", {}).get("first_top1") or 0.0)
+    if long3 >= E11_LONG3_GATE and long4 >= E11_LONG4_GATE and color >= E4_COLOR_KEEP and dialogue >= E2_DIALOGUE_GATE:
+        return "GRAD", f"E11 long3={long3:.3f} long4={long4:.3f} color={color:.3f} dialogue={dialogue:.3f}"
+    if max(long3, long4) >= 0.40:
+        return "ADVANCE", f"E11 partial long3={long3:.3f} long4={long4:.3f} color={color:.3f} dialogue={dialogue:.3f}"
+    return "FAIL", f"E11 cold long3={long3:.3f} long4={long4:.3f} color={color:.3f} dialogue={dialogue:.3f}"
+
+
+def e12_gate(native: dict) -> tuple[str, str]:
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    size = float(native.get("size_2fact_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    story = float(native.get("story_color_heldout", {}).get("first_top1") or 0.0)
+    if stop >= E12_SIZE_STOP_GATE and size >= E4_SIZE_GATE and color >= E4_COLOR_KEEP:
+        extra = f" story={story:.3f}" if story else ""
+        return "GRAD", f"E12 size_stop={stop:.3f} size={size:.3f} color={color:.3f}{extra}"
+    if stop >= 0.40:
+        return "ADVANCE", f"E12 partial size_stop={stop:.3f} size={size:.3f} color={color:.3f}"
+    return "FAIL", f"E12 cold size_stop={stop:.3f} size={size:.3f} color={color:.3f}"
+
+
 def first_word_match(decoded: str, gold: str) -> bool:
     text = decoded.strip().lower()
     want = gold.strip().lower()
@@ -381,9 +463,11 @@ def run_decode_canary(model, tokenizer, device, *, n: int = 8, seed: int = 31051
     makers = (
         lambda: make_english_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout"),
         lambda: make_size_item(rng, tokenizer, n_facts=2, family="qa", surface="heldout"),
+        lambda: make_story_item(rng, tokenizer, surface="heldout", ask="color"),
+        lambda: make_story_item(rng, tokenizer, surface="heldout", ask="who"),
     )
     for i in range(n):
-        item = makers[i % 2]()
+        item = makers[i % len(makers)]()
         emitted, stopped = greedy_decode_until_stop(model, item["input"], device, tokenizer)
         decoded = tokenizer.decode(emitted, skip_special_tokens=True)
         gold = str(item["value_text"])
@@ -624,6 +708,16 @@ def train_phase(
                 verdict, lesson = e6_gate(row["native"])
             elif phase == "e7":
                 verdict, lesson = e7_gate(row["native"])
+            elif phase == "e8":
+                verdict, lesson = e8_gate(row["native"])
+            elif phase == "e9":
+                verdict, lesson = e9_gate(row["native"])
+            elif phase == "e10":
+                verdict, lesson = e10_gate(row["native"])
+            elif phase == "e11":
+                verdict, lesson = e11_gate(row["native"])
+            elif phase == "e12":
+                verdict, lesson = e12_gate(row["native"])
             else:
                 verdict, lesson = e2_gate(row["native"])
             row["verdict"] = verdict
@@ -815,6 +909,21 @@ def run_probe(device, resume: Path, *, phase: str = "e4") -> dict:
     elif phase == "e7":
         panels = build_e7_panels(tokenizer, n=PROBE_N)
         gate = e7_gate
+    elif phase == "e8":
+        panels = build_e8_panels(tokenizer, n=PROBE_N)
+        gate = e8_gate
+    elif phase == "e9":
+        panels = build_e9_panels(tokenizer, n=PROBE_N)
+        gate = e9_gate
+    elif phase == "e10":
+        panels = build_e10_panels(tokenizer, n=PROBE_N)
+        gate = e10_gate
+    elif phase == "e11":
+        panels = build_e11_panels(tokenizer, n=PROBE_N)
+        gate = e11_gate
+    elif phase == "e12":
+        panels = build_e12_panels(tokenizer, n=PROBE_N)
+        gate = e12_gate
     else:
         panels = build_e4_panels(tokenizer, n=PROBE_N)
         gate = e4_gate
@@ -898,6 +1007,16 @@ def main() -> None:
             panels = build_e6_panels(tokenizer, n=PROBE_N)
         elif args.phase == "e7":
             panels = build_e7_panels(tokenizer, n=PROBE_N)
+        elif args.phase == "e8":
+            panels = build_e8_panels(tokenizer, n=PROBE_N)
+        elif args.phase == "e9":
+            panels = build_e9_panels(tokenizer, n=PROBE_N)
+        elif args.phase == "e10":
+            panels = build_e10_panels(tokenizer, n=PROBE_N)
+        elif args.phase == "e11":
+            panels = build_e11_panels(tokenizer, n=PROBE_N)
+        elif args.phase == "e12":
+            panels = build_e12_panels(tokenizer, n=PROBE_N)
         else:
             panels = build_e2_panels(tokenizer, n=PROBE_N)
         out_dir = args.out or (OUT / f"{args.phase}_bridge_{args.seed}")

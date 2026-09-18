@@ -210,3 +210,115 @@ U16000 remains authoritative. C2/D3 stay fallbacks. TEST closed. Not promoted.
 - verdict: **HOLD**
 - lesson: U16000 not replaced. TEST closed. D3 commit `1d0467f` pushed. Experimental survivor `e5_turn3_310511/checkpoint_00050.pt` SHA `aba1ca58…`. Color/size/instruction/dialogue/2-3-turn color context graduate. Period-stop color answers are usable. D3 204/215 first-token 215/215 induction 0.422. Place (E6 199) and color-then-size follow-up (E7 184) buy English and spend D3. Next is open TinyStories QA/dialogue on E5, not coding, not U16000 promotion.
 
+## e8_probe
+
+- Change: Zero-shot e8 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E8 partial story_c=0.969 who=0.000 event=0.000 color=1.000; decode usable=0.750 stop=0.750
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e8_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 196/215 below 200
+- retention: {'n': 215, 'free_exact': 196, 'first_correct': 215, 'free_accuracy': 0.9116279069767442, 'first_accuracy': 1.0}
+
+## e8b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 195/215 below 200
+- retention: {'n': 215, 'free_exact': 195, 'first_correct': 215, 'free_accuracy': 0.9069767441860465, 'first_accuracy': 1.0}
+
+## e9_probe
+
+- Change: Zero-shot e9 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E9 3e=0.938 pronoun=0.906 story2=0.969 color=0.906; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e10_probe
+
+- Change: Zero-shot e10 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E10 cold combine=0.094 mixed_story=0.375 story2=0.906 color=0.938; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e10_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 200/215 induction 0.438
+- retention: {'n': 215, 'free_exact': 200, 'first_correct': 215, 'free_accuracy': 0.9302325581395349, 'first_accuracy': 1.0}
+
+## e10b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 200/215 induction 0.469
+- retention: {'n': 215, 'free_exact': 200, 'first_correct': 215, 'free_accuracy': 0.9302325581395349, 'first_accuracy': 1.0}
+
+## e11_probe
+
+- Change: Zero-shot e11 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E11 long3=0.812 long4=0.594 color=0.875 dialogue=0.875; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e12_probe
+
+- Change: Zero-shot e12 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E12 cold size_stop=0.094 long5=0.281 size=0.844 color=0.875; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e12_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 183/215 below 200
+- retention: {'n': 215, 'free_exact': 183, 'first_correct': 215, 'free_accuracy': 0.8511627906976744, 'first_accuracy': 1.0}
+
+## e12b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 202/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 202, 'first_correct': 215, 'free_accuracy': 0.9395348837209302, 'first_accuracy': 1.0}
+
+## e12_probe
+
+- Change: Zero-shot e12 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E12 size_stop=0.906 size=0.875 color=0.969 story=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e10_probe
+
+- Change: Zero-shot e10 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E10 cold combine=0.250 mixed_story=0.375 story2=0.938 color=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e9_probe
+
+- Change: Zero-shot e9 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E9 3e=0.969 pronoun=0.844 story2=0.938 color=0.906; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e11_probe
+
+- Change: Zero-shot e11 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E11 long3=0.906 long4=0.719 color=0.938 dialogue=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## campaign_status_e12b_2026-09-18
+
+- Change: Language-bridge continued past E5 into open story QA; D3-safe experimental survivor is now E12b size-stop
+- verdict: **HOLD**
+- lesson: U16000 not replaced. TEST closed. Experimental survivor `e12_stoponly_311211/checkpoint_00050.pt` SHA `6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1`. Open TinyStories color QA/dialogue/3-entity/pronouns/roleplay/3-4-turn already worked on E5 zeroshot. Size answers now stop (`tiny.` not `tiny blue blue`). D3 202/215 first-token 215/215 induction 0.422 keyed 0.969. Color 0.969, story color 0.938, story 3e 0.969, pronoun 0.844, dialogue 0.938-1.0, instruction 1.0, long3/4 0.906/0.719, size-stop 0.906, decode stop 1.0. Killed: who/event (D3 196/195), size-stop+5-turn together (D3 183). Combine fork `e10_more_311011` D3 200 combine 0.438 mixed_story 0.406 — stalled, not primary. Still not Actual Baby: no who/event, mixed ~0.53, combine 0.25 on this ckpt, not open chat, not coding.
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
