@@ -1,64 +1,62 @@
-# P11 U16000 runtime overwrite retention: PREFLIGHT_BLOCKED
+# P11 U16000 runtime overwrite retention: REGRESSION
 
-Status: **PREFLIGHT_BLOCKED**. The corrected primary protocol is frozen.
-The U16000 OFF-vs-ON evaluation was **not scored** on this machine because
-required local artifacts are absent. No PASS, REGRESSION, or promotion claim.
+Status: **REGRESSION**. Same-U16000 OFF-vs-ON was scored on Fan Diesel.
+First-step-only activation of the learned P11 overwrite reproduced the
+frozen long-gap lift (71→102/215) and then failed a mandatory
+active-overwrite retention gate. Not a promotion. Not mission complete.
 
 Protocol:
 [`design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md`](../design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md)
 
-Preflight: `runs/selection_p11_u16000_runtime/PREFLIGHT.json`  
-Adjudication: `runs/selection_p11_u16000_runtime/ADJUDICATION.json`
+Preflight: `runs/selection_p11_u16000_runtime/PREFLIGHT.json` = **PREFLIGHT_OK**  
+Adjudication: `runs/selection_p11_u16000_runtime/ADJUDICATION.json` = **REGRESSION**  
+Arms: `runs/selection_p11_u16000_runtime/OFF.json`, `ON.json`
 
-## Why this protocol exists
-
-The earlier three-arm retention draft (`V010_SELECTION_REPAIR_P11_RETENTION`)
-loaded the full P11 checkpoint `model_state_dict`, conflating runtime overwrite
-activation with the separate P11 checkpoint bundle. The licensed 71→102/215
-first-step decode result used **authoritative U16000 Baby weights** plus the
-learned overwrite only (`selection_p11_decode.load_arm`).
-
-This protocol holds Baby at U16000 in both arms and changes only overwrite
-activation. It refuses to load P11 `model_state_dict` if it differs from U16000.
-
-## Model states (explicit)
+## Model states (scored)
 
 | state | path | SHA-256 | loaded? |
 |---|---|---|---|
 | U16000 Baby | `runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt` | `94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827` | both arms |
 | learned overwrite | `overwrite_state_dict` in `runs/selection_p11/treatment_250001/checkpoint_16800.pt` | file `369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157` | both arms |
-| P11 Baby bundle | same `.pt` `model_state_dict` | — | **refused** if ≠ U16000 |
+| P11 Baby bundle | same `.pt` `model_state_dict` | identical to U16000 (max abs 0; `baby_weights_frozen: true`) | **not loaded** |
 
-## Arms (not yet scored)
+Device: `cuda` (AMD Radeon RX 9060 XT). No CPU fallback. Complete=true.
 
-1. **OFF** — U16000 + learned overwrite attached, `gen_index` never set.
-2. **ON** — same U16000 + same overwrite, first answer-token only.
+## Long-gap (greedy, n=215, gap ≥ 13)
 
-Long-gap behavioral endpoint uses **greedy decode** (not teacher-forced), same
-population as firststep decode (S2 diagnostic, gap ≥ 13, n=215).
+| | OFF | ON |
+|---|---:|---:|
+| free_exact | 71 | **102** |
+| first_correct | 73 | **105** |
+| ON − OFF | | **+0.144** |
+| bootstrap 95% CI | | **[+0.093, +0.197]** |
 
-Frozen firststep anchor (diagnostic only): init 71/215, treatment 102/215.
-OFF here is **not** init overwrite; do not require OFF == 71 for validity.
+Benefit bar held (`Δ ≥ 0.10` and CI lo > 0). Diagnostic firststep anchor
+71/102 matched; that match is **not** required for validity. Pair-bind
+was not an endpoint of this protocol.
 
-## Missing local identities
+## Mandatory active-overwrite retention (ON vs OFF)
 
-| role | path |
-|---|---|
-| parent checkpoint | `runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt` |
-| overwrite checkpoint | `runs/selection_p11/treatment_250001/checkpoint_16800.pt` |
-| S2 diagnostic | `runs/selection_s2/DIAGNOSTIC.json` |
-| language DEV stream | `C:\DaveLM-CADAVER\baby_vnext_phase1g_language_v1\data\LANGUAGE_DEV_STREAM.u16` |
+| gate | OFF | ON | bar | result |
+|---|---:|---:|---|---|
+| primitive_induction.first_top1 | 0.296875 | 0.156250 | drop ≤ 0.05 | **FAIL** (drop 0.141) |
+| primitive_keyed.first_top1 | 1.000000 | 0.984375 | drop ≤ 0.05 | PASS |
+| short_keyed.free_exact | 0.843750 | 0.828125 | drop ≤ 0.05 | PASS |
+| diagnostic rest_lock | 0.976852 | 0.979167 | drop ≤ 0.05 | PASS |
+| language DEV CE | 1.243005 | 1.243005 | ON−OFF ≤ 0.20 | PASS (overwrite inert; no answer-token) |
+| value_absent_same_surface_novel.free_exact | 0 | 0 | == 0 | PASS |
+| broken_context.free_exact | 0 | 0 | ≤ 0.05 | PASS |
+| broken_order.first_top1 | 0.015625 | 0.015625 | ≤ 0.20 | PASS |
 
-## Fan Diesel command (when artifacts present)
+ON was active on panels with a first answer-token decision
+(primitive_induction first_top1 and free_exact both moved). Language DEV
+CE is labeled inert.
 
-```text
-python -m src.baby_v010.selection_p11_u16000_runtime run --device cuda
-```
+## Verdict
 
-Do **not** use `selection_p11_retention run` for tonight's primary experiment;
-that draft mixed P11 checkpoint Baby weights.
+**B / REGRESSION / STOP.** The runtime overwrite is causally sufficient
+for the long-gap greedy lift and is not safe against frozen induction
+retention when it is actually on. Do not deploy. Do not promote U16000.
+Do not train. Do not invent P12. TEST / FINAL / SACRED stayed closed.
 
-## What this is not
-
-Not a PASS. Not a REGRESSION. Not a promotion. TEST / FINAL / SACRED closed.
-The separate P11-trained-checkpoint question is explicitly deferred.
+The three-arm draft `V010_SELECTION_REPAIR_P11_RETENTION` was not run.

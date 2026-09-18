@@ -65,7 +65,7 @@
   ],
   "files": {
     "design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md": "87fdbb017696513c20cd59d1dda1a34b0ba1c074224a041b29e8fe1a7b1871ac",
-    "src/baby_v010/selection_p11_u16000_runtime.py": "3f5f4e48289ca39a492e11413ab1cfa5673eb47872b8251d64fa5b4e50c5f8aa",
+    "src/baby_v010/selection_p11_u16000_runtime.py": "1ae7b32b01b0911680381953017ab62f5b7af08ca9658208fc8c022a559357ea",
     "src/baby_v010/evaluate.py": "f8ceae6e7fd22b06f6f67789bf7fd818b4b5463b1f93f8474d5212d02aa1ea71",
     "src/baby_v010/residual_overwrite.py": "4ee70df6c7ece6920f25727962c1b4e8a0d4a7a60203af3290e1411bb751929c",
     "src/baby_v010/selection_p11_decode.py": "dbc92f2c78f53b1ffa5d19198a242060ae6401f48facec4d514f5f806dce3ee9",
@@ -74,5 +74,10 @@
     "src/baby_v010/selection_p2.py": "4f10e6f36af24701be9f4d2c6528d463ca2528c000c1c10b74b5b37ec88cce8c"
   },
   "protected_material_opened": false,
-  "authoritative_parent_unchanged": true
+  "authoritative_parent_unchanged": true,
+  "windows_newline_amendment": {
+    "reason": "Cloud freeze hashed POSIX LF protocol files; Fan Diesel checkout is CRLF of the same git blobs. verify_manifest_files now uses identify_frozen_file (exact or newline-normalized). Gates, arms, and endpoints unchanged.",
+    "prior_runtime_py_sha256_lf": "3f5f4e48289ca39a492e11413ab1cfa5673eb47872b8251d64fa5b4e50c5f8aa",
+    "amended_runtime_py_sha256_lf": "1ae7b32b01b0911680381953017ab62f5b7af08ca9658208fc8c022a559357ea"
+  }
 }

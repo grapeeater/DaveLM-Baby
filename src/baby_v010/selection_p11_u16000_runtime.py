@@ -139,13 +139,23 @@ def hash_if_exists(path: Path, expected: str | None, *, newline_normalized: bool
 
 
 def verify_manifest_files() -> None:
+    """Accept exact or newline-normalized identity of frozen protocol files.
+
+    Cloud freeze hashed POSIX LF bytes. A Windows checkout of the same git
+    blobs may be CRLF. This matches `v2r4_provenance.identify_frozen_file`
+    and must not rewrite tracked files.
+    """
     manifest_path = OUT / "MANIFEST.json"
     if not manifest_path.exists():
         return
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     for rel, expected in manifest.get("files", {}).items():
-        if digest(ROOT / rel) != expected:
-            raise RuntimeError(f"manifest hash mismatch: {rel}")
+        identity = identify_frozen_file(ROOT / rel, expected)
+        if not identity["match"]:
+            raise RuntimeError(
+                f"manifest hash mismatch: {rel} working={identity['working_tree_sha256']} "
+                f"expected={expected} mode={identity['match_mode']}"
+            )
 
 
 def freeze() -> dict:

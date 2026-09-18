@@ -1107,6 +1107,54 @@ A PASS here would license the next validation stage. A REGRESSION would
 stop deployment of the overwrite even if the long-gap lift remains.
 Neither verdict exists until the weights are scored.
 
+---
+
+## Milestone 2026-09-17 — P11 U16000 runtime: REGRESSION
+
+### CURRENT BEST DIAGNOSIS
+
+On authoritative v2R4 U16000, first-step-only activation of the learned
+P11 overwrite is causally sufficient for the frozen long-gap greedy lift
+and is not retention-safe. OFF (same U16000 + same learned sidecar,
+overwrite inert) scored 71/215 free_exact. ON (identical weights,
+overwrite at the first answer-token only) scored 102/215. That is the
+historical firststep 71→102, now isolated to runtime activation.
+`primitive_induction.first_top1` fell 0.297→0.156 (drop 0.141 > 0.05).
+Official verdict **REGRESSION**. Not a promotion.
+
+### EVIDENCE FOR IT
+
+Protocol `design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md`.
+Adjudication `runs/selection_p11_u16000_runtime/ADJUDICATION.json`.
+U16000 SHA `94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827`.
+Sidecar `369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157`
+(`overwrite_state_dict` only; P11 `model_state_dict` not loaded).
+n=215. Device cuda (AMD Radeon RX 9060 XT). complete=true.
+ON−OFF +0.144, CI [+0.093, +0.197]. Language CE identical 1.243
+(overwrite inert on CE). rest_lock, primitive_keyed, short_keyed, and
+negative controls passed. primitive_induction failed.
+
+### WHAT WAS FALSIFIED
+
+"The licensed 71→102 first-step write can be deployed as a runtime
+switch without moving frozen retention bars." Training-time P11
+retention receipts that never set `gen_index` do not speak to the
+deployed form. The earlier three-arm draft that loaded P11
+`model_state_dict` was not this experiment and was not run.
+
+### NEXT EXPERIMENT
+
+**STOP.** Do not rescue P11. Do not train. Do not invent P12. Do not
+open TEST. Do not promote U16000. Any later overwrite that tries to
+keep the long-gap lift without dropping primitive induction requires a
+new owner-licensed protocol.
+
+### WHY HIGH INFORMATION
+
+The long-gap benefit is real and isolated to runtime activation. The
+deployment question is answered: first-step P11 overwrite is not
+retention-safe on U16000.
+
 
 
 

@@ -62,8 +62,8 @@ retention, owner authorization before TEST, no promotion of U16000.
 
 Primary runtime retention protocol (corrected model state):
 [`design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md`](../design/V010_SELECTION_REPAIR_P11_U16000_RUNTIME.md).
-Receipt: **PREFLIGHT_BLOCKED** on cloud VM. The earlier three-arm draft
-(`V010_SELECTION_REPAIR_P11_RETENTION`) mixed P11 checkpoint Baby
-weights and is not the primary experiment. Not a PASS, not a REGRESSION,
-not a promotion.
+Fan Diesel receipt: **REGRESSION**. Long-gap 71→102/215 reproduced;
+`primitive_induction.first_top1` 0.297→0.156 failed the 0.05 drop bar.
+STOP. The earlier three-arm draft (`V010_SELECTION_REPAIR_P11_RETENTION`)
+was not run. Not a promotion.
 
