@@ -1,0 +1,63 @@
+{
+  "update": 50,
+  "native": {
+    "qa_4fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8818189734593034,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.874000668525696,
+      "mean_first_margin": 3.6375711113214493,
+      "mean_first_error": 2.625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.90625
+    },
+    "instr_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.9187716143205762,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.052003413438797,
+      "mean_first_margin": 4.681112632155418,
+      "mean_first_error": 2.53125,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 1.0
+    },
+    "pronoun_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8969116122461855,
+      "median_target_rank": 1,
+      "mean_target_logit": 15.404829263687134,
+      "mean_first_margin": 3.6555211395025253,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.25
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.8797861574275885,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.91875246167183,
+      "mean_first_margin": 4.064352199435234,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.65625
+    }
+  },
+  "language_dev_ce": 1.3409370444715023,
+  "language_baseline_ce": 1.3401544243097305,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e2_retain_310311\\checkpoint_00050.pt",
+  "checkpoint_sha256": "fd31bc72b3ad3b02ab5792477f7a8cd70c2575263ec63eefde718d0f5db1a8a8",
+  "verdict": "GRAD",
+  "lesson": "E2 qa4=0.969 instr=0.969 pronoun=0.969 dialogue=0.938"
+}

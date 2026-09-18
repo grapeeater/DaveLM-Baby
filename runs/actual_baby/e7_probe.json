@@ -1,0 +1,162 @@
+{
+  "id": "e7_probe",
+  "resume": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e5_turn3_310511\\checkpoint_00050.pt",
+  "checkpoint_sha256": "aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139",
+  "authoritative": false,
+  "protected_material_opened": false,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8858126350678504,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.503127574920654,
+      "mean_first_margin": 4.466260150074959,
+      "mean_first_error": 2.375,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.78125
+    },
+    "size_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.8125,
+      "tf_exact": 0.8125,
+      "free_exact": 0.8125,
+      "mean_target_prob": 0.7490037468451192,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.796252399682999,
+      "mean_first_margin": 3.5896655917167664,
+      "mean_first_error": 1.78125,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.875
+    },
+    "instr_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.8722415659576654,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.212562531232834,
+      "mean_first_margin": 3.9814213514328003,
+      "mean_first_error": 2.40625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.96875
+    },
+    "attr_followup_heldout": {
+      "n": 32,
+      "first_top1": 0.03125,
+      "tf_exact": 0.03125,
+      "free_exact": 0.03125,
+      "mean_target_prob": 0.06875618202570877,
+      "median_target_rank": 3,
+      "mean_target_logit": 9.08383908867836,
+      "mean_first_margin": -4.552974700927734,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.875,
+      "tf_exact": 0.875,
+      "free_exact": 0.875,
+      "mean_target_prob": 0.8574033736949787,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.695328772068024,
+      "mean_first_margin": 3.8255758434534073,
+      "mean_first_error": 2.34375,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.6875
+    },
+    "multiturn_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.78125,
+      "tf_exact": 0.78125,
+      "free_exact": 0.78125,
+      "mean_target_prob": 0.7591277428000467,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.100800901651382,
+      "mean_first_margin": 2.6616521030664444,
+      "mean_first_error": 2.0,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 1.0
+    }
+  },
+  "decode": {
+    "n": 8,
+    "first_word_match": 1.0,
+    "stopped_at_period_or_eos": 0.875,
+    "usable": 0.875
+  },
+  "decode_rows": [
+    {
+      "prompt": "fox looks white. pig looks red. Which color is the fox?",
+      "gold": "white",
+      "decoded": " white.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4
+    },
+    {
+      "prompt": "frog looks yellow. bird looks white. Tell me the color of the bird.",
+      "gold": "white",
+      "decoded": " white.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4
+    },
+    {
+      "prompt": "pig looks yellow. frog looks blue. Which color is the frog?",
+      "gold": "blue",
+      "decoded": " blue.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4
+    },
+    {
+      "prompt": "hen looks green. bear looks yellow. What is the color of the hen?",
+      "gold": "green",
+      "decoded": " green.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4
+    },
+    {
+      "prompt": "That pig is pink. That cat is red. What is the color of the cat?",
+      "gold": "red",
+      "decoded": " red.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 3
+    },
+    {
+      "prompt": "That bear is green. That pig is white. Tell me the color of the pig.",
+      "gold": "white",
+      "decoded": " white pig white pig",
+      "stopped": false,
+      "first_word_ok": true,
+      "n_tokens": 12
+    },
+    {
+      "prompt": "That hen is pink. That frog is white. What is the color of the frog?",
+      "gold": "white",
+      "decoded": " white.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4
+    },
+    {
+      "prompt": "frog looks yellow. bear looks green. What is the color of the bear?",
+      "gold": "green",
+      "decoded": " green.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4
+    }
+  ],
+  "verdict": "FAIL",
+  "lesson": "E7 cold follow=0.031 color=0.906 size=0.812 instr=0.938",
+  "decode_usable_ok": true
+}

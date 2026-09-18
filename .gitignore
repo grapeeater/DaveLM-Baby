@@ -189,6 +189,13 @@ runs/selection_p11/*/
 !runs/rapid_treat/LEDGER.md
 !runs/rapid_treat/*.json
 
+# Actual Baby campaign receipts (JSON/MD git; checkpoints stay local)
+!runs/actual_baby/
+!runs/actual_baby/**
+runs/actual_baby/**/*.pt
+runs/actual_baby/**/*.pth
+runs/actual_baby/**/*.tmp
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json

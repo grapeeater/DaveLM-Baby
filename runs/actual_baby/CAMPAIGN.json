@@ -1,0 +1,96 @@
+{
+  "campaign": "actual_baby_language_bridge",
+  "status": "E5 is the D3-safe experimental survivor. Closed-vocab English QA, size, instruction, dialogue, and 2-3 turn color context graduate. E6 place and E7 color-then-size follow-up graduate English but drop D3 below 200.",
+  "test_closed": true,
+  "u16000_replaced": false,
+  "git": {
+    "branch": "cursor/query-transport-range-t1",
+    "d3_commit": "1d0467fd4faf6faae9745ee3c17ba87f0c047ef9",
+    "d3_pushed": true
+  },
+  "authoritative_baby": {
+    "path": "runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt",
+    "sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827"
+  },
+  "operators": "a1|b1|c2|d3",
+  "c2_sha256": "06e2e6139a134ef84edd0924184f3efb79cf2a8c93c4fedf500617d154cf2dd2",
+  "d3_sha256": "8d9e3e209f3449e4bdb5ad6bfeb3592dc1afe57bb10958bad3d7e1b94c40c9fb",
+  "survivor_experimental": {
+    "path": "runs/actual_baby/e5_turn3_310511/checkpoint_00050.pt",
+    "sha256": "aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139",
+    "authoritative": false,
+    "parent": "runs/actual_baby/e4_size_310501/checkpoint_00050.pt",
+    "english": {
+      "qa_2fact_heldout": 0.875,
+      "size_2fact_heldout": 0.875,
+      "size_3fact_heldout": 0.84375,
+      "mixed_color_size": 0.5625,
+      "instr_2fact_heldout": 0.9375,
+      "dialogue_2fact_heldout": 0.84375,
+      "multiturn_2fact_heldout": 0.75,
+      "multiturn_3fact_heldout": 0.625,
+      "pronoun_2fact_heldout": 0.96875
+    },
+    "decode": {
+      "color_first_word": 1.0,
+      "period_stop_mixed_color_size": 0.75,
+      "story_once_upon": "He was very big and blue.",
+      "story_hen": "He was walking down the street."
+    },
+    "d3_retention": {
+      "long_gap_free_exact": 204,
+      "n": 215,
+      "first_correct": 215,
+      "induction": 0.421875,
+      "keyed": 0.9375
+    }
+  },
+  "lineage": {
+    "e1_qaheavy": {
+      "path": "runs/actual_baby/e1_qaheavy_310221/checkpoint_00050.pt",
+      "sha256": "4eee63b2b6fc78e869fcce3cbf27772337f53cb3038fe598e20f4e6961034307",
+      "d3": 202
+    },
+    "e2_gentle": {
+      "path": "runs/actual_baby/e2_gentle_310321/checkpoint_00050.pt",
+      "sha256": "019656d5804862c41595cfa0497696cf9aba68f97940bd4767b235fa51052361",
+      "d3": 201
+    },
+    "e4_size": {
+      "path": "runs/actual_baby/e4_size_310501/checkpoint_00050.pt",
+      "sha256": "006caa58f2cc858538cdbafbc915de2a7de8c66e8b7ac17c2c5a8aa1383a92c6",
+      "d3": 204,
+      "size_2fact": 0.875
+    },
+    "e5_turn3": {
+      "path": "runs/actual_baby/e5_turn3_310511/checkpoint_00050.pt",
+      "sha256": "aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139",
+      "d3": 204
+    }
+  },
+  "english_only_not_d3_safe": {
+    "e3_heavy_multiturn": {
+      "path": "runs/actual_baby/e3_multiturn_310401/checkpoint_00100.pt",
+      "sha256": "848762b7e783df52c19d8150315f01befbff2c07e8d39aa900620cea5019bf70",
+      "d3": 195
+    },
+    "e6_place": {
+      "path": "runs/actual_baby/e6_place_310601/checkpoint_00050.pt",
+      "sha256": "f2fa26e04d8f2fae8a56e75467a7a8ef6341c006442eaff79d93828e32c60602",
+      "place_2fact": 0.8125,
+      "d3": 199
+    },
+    "e6_recover": {
+      "path": "runs/actual_baby/e6_recover_310611/checkpoint_00050.pt",
+      "sha256": "15b40a436a3ee34e497b5a7860436205ecbb490c2557c0489e4c055c4da204cb",
+      "d3": 196
+    },
+    "e7_follow": {
+      "path": "runs/actual_baby/e7_follow_310701/checkpoint_00050.pt",
+      "sha256": "934e1570800594447022b24ebd016fa11314b04c5dd3059999aea8e8feb8a372",
+      "attr_followup": 0.6875,
+      "d3": 184
+    }
+  },
+  "next": "Open TinyStories question/dialogue on the E5 survivor, or a D3-safe place mix. Do not promote U16000. TEST stays closed. Coding waits."
+}

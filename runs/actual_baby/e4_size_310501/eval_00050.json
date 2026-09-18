@@ -1,0 +1,89 @@
+{
+  "update": 50,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.834096523525659,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.749548226594925,
+      "mean_first_margin": 3.7631389051675797,
+      "mean_first_error": 2.3125,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.84375
+    },
+    "size_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.875,
+      "tf_exact": 0.875,
+      "free_exact": 0.875,
+      "mean_target_prob": 0.8308176297796308,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.583383962512016,
+      "mean_first_margin": 3.9649565517902374,
+      "mean_first_error": 2.21875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.84375
+    },
+    "size_3fact_heldout": {
+      "n": 32,
+      "first_top1": 0.78125,
+      "tf_exact": 0.78125,
+      "free_exact": 0.78125,
+      "mean_target_prob": 0.6674404154464355,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.082648634910583,
+      "mean_first_margin": 1.9848229438066483,
+      "mean_first_error": 2.03125,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.78125
+    },
+    "mixed_2e_heldout": {
+      "n": 32,
+      "first_top1": 0.59375,
+      "tf_exact": 0.59375,
+      "free_exact": 0.59375,
+      "mean_target_prob": 0.5374129487918253,
+      "median_target_rank": 1,
+      "mean_target_logit": 10.894948229193687,
+      "mean_first_margin": 0.8221703618764877,
+      "mean_first_error": 1.4375,
+      "distinct_emitted_tokens": 30,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.875,
+      "tf_exact": 0.875,
+      "free_exact": 0.875,
+      "mean_target_prob": 0.7867093156091869,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.975823074579239,
+      "mean_first_margin": 2.5447318255901337,
+      "mean_first_error": 2.28125,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.78125
+    },
+    "multiturn_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.71875,
+      "tf_exact": 0.71875,
+      "free_exact": 0.71875,
+      "mean_target_prob": 0.6240333315799944,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.292043000459671,
+      "mean_first_margin": 1.137295812368393,
+      "mean_first_error": 1.84375,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 1.0
+    }
+  },
+  "language_dev_ce": 1.3416363969445229,
+  "language_baseline_ce": 1.3377200290560722,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e4_size_310501\\checkpoint_00050.pt",
+  "checkpoint_sha256": "006caa58f2cc858538cdbafbc915de2a7de8c66e8b7ac17c2c5a8aa1383a92c6",
+  "verdict": "GRAD",
+  "lesson": "E4 size=0.875 color=0.906 mixed=0.594"
+}
