@@ -1,0 +1,38 @@
+{
+  "query_swap_same_surface_novel": {
+    "off_first_top1": 0.375,
+    "on_first_top1": 0.4270833333333333,
+    "off_free_exact": 0.375,
+    "on_free_exact": 0.40625
+  },
+  "query_swap_short_keyed": {
+    "off_first_top1": 0.4642857142857143,
+    "on_first_top1": 0.5,
+    "off_free_exact": 0.42857142857142855,
+    "on_free_exact": 0.4642857142857143
+  },
+  "body_reorder_query_first_same_surface_novel": {
+    "off_first_top1": 0.5692307692307692,
+    "on_first_top1": 0.5076923076923077,
+    "off_free_exact": 0.5538461538461539,
+    "on_free_exact": 0.5076923076923077
+  },
+  "body_reorder_query_last_same_surface_novel": {
+    "off_first_top1": 0.36065573770491804,
+    "on_first_top1": 0.32786885245901637,
+    "off_free_exact": 0.36065573770491804,
+    "on_free_exact": 0.36065573770491804
+  },
+  "body_reorder_query_first_heldout_surface": {
+    "off_first_top1": 0.43103448275862066,
+    "on_first_top1": 0.46551724137931033,
+    "off_free_exact": 0.0,
+    "on_free_exact": 0.0
+  },
+  "heldout_surface": {
+    "off_first_top1": 0.34375,
+    "on_first_top1": 0.23958333333333334,
+    "off_free_exact": 0.0,
+    "on_free_exact": 0.0
+  }
+}

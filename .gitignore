@@ -184,6 +184,11 @@ runs/selection_p11/*/
 !runs/selection_p11_u16000_runtime/OFF.json
 !runs/selection_p11_u16000_runtime/ON.json
 
+# Rapid treat eval-time routing (summaries git; no checkpoints)
+!runs/rapid_treat/
+!runs/rapid_treat/LEDGER.md
+!runs/rapid_treat/*.json
+
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/
 !runs/query_presence_d2/MANIFEST.json
