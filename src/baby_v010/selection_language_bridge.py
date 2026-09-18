@@ -30,6 +30,14 @@ from .data_language_bridge import (
     build_e10_panels,
     build_e11_panels,
     build_e12_panels,
+    build_e13_panels,
+    build_e14_panels,
+    build_e15_panels,
+    build_e16_panels,
+    build_e17_panels,
+    build_e18_panels,
+    build_e19_panels,
+    build_e20_panels,
     build_probe_panels,
     load_tokenizer,
     make_english_item,
@@ -93,6 +101,21 @@ E10_MIXED_STORY_GATE = 0.60
 E11_LONG3_GATE = 0.55
 E11_LONG4_GATE = 0.50
 E12_SIZE_STOP_GATE = 0.60
+E13_MIXED_GATE = 0.60
+E13_COMBINE_GATE = 0.50
+E13_MIXED_STORY_GATE = 0.50
+E13_FACT_COMBINE_GATE = 0.50
+E14_PHRASE_GATE = 0.45
+E15_OPEN_GATE = 0.55
+E16_ABOUT_GATE = 0.55
+E17_COPY_GATE = 0.50
+E17_NEW_GATE = 0.50
+E17_FORMAT_SENT_GATE = 0.40
+E18_CHAT_GATE = 0.55
+E18_YESNO_GATE = 0.50
+E18_LONG_GATE = 0.50
+E19_HAPPENED_GATE = 0.50
+E20_LOOP_GATE = 0.50
 D3_LONG_MIN = 200
 CANARY_UPDATES = 200
 CANARY_EVAL = 50
@@ -426,6 +449,147 @@ def e12_gate(native: dict) -> tuple[str, str]:
     return "FAIL", f"E12 cold size_stop={stop:.3f} size={size:.3f} color={color:.3f}"
 
 
+def e13_gate(native: dict) -> tuple[str, str]:
+    mixed = float(native.get("mixed_2e_heldout", {}).get("first_top1") or 0.0)
+    combine = float(native.get("story_combine_heldout", {}).get("first_top1") or 0.0)
+    mixed_story = float(native.get("story_mixed_heldout", {}).get("first_top1") or 0.0)
+    fact_combine = float(native.get("fact_combine_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    combine_ok = combine >= E13_COMBINE_GATE or fact_combine >= E13_FACT_COMBINE_GATE
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if mixed >= E13_MIXED_GATE and combine_ok and mixed_story >= E13_MIXED_STORY_GATE and color >= E4_COLOR_KEEP and stop_ok:
+        return (
+            "GRAD",
+            f"E13 mixed={mixed:.3f} combine={combine:.3f} fact_combine={fact_combine:.3f} mixed_story={mixed_story:.3f}",
+        )
+    if max(mixed, combine, mixed_story, fact_combine) >= 0.50:
+        return (
+            "ADVANCE",
+            f"E13 partial mixed={mixed:.3f} combine={combine:.3f} fact_combine={fact_combine:.3f} mixed_story={mixed_story:.3f}",
+        )
+    return (
+        "FAIL",
+        f"E13 cold mixed={mixed:.3f} combine={combine:.3f} fact_combine={fact_combine:.3f} mixed_story={mixed_story:.3f}",
+    )
+
+
+def e14_gate(native: dict) -> tuple[str, str]:
+    phrase = float(native.get("phrase_2fact_heldout", {}).get("free_exact") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if phrase >= E14_PHRASE_GATE and color >= E4_COLOR_KEEP and stop_ok:
+        return "GRAD", f"E14 phrase={phrase:.3f} color={color:.3f} size_stop={stop:.3f}"
+    if phrase >= 0.20:
+        return "ADVANCE", f"E14 partial phrase={phrase:.3f} color={color:.3f} size_stop={stop:.3f}"
+    return "FAIL", f"E14 cold phrase={phrase:.3f} color={color:.3f} size_stop={stop:.3f}"
+
+
+def e15_gate(native: dict) -> tuple[str, str]:
+    open_qa = float(native.get("open_2fact_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    dialogue = float(native.get("dialogue_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if open_qa >= E15_OPEN_GATE and color >= E4_COLOR_KEEP and stop_ok and dialogue >= E2_DIALOGUE_GATE:
+        return "GRAD", f"E15 open={open_qa:.3f} color={color:.3f} dialogue={dialogue:.3f}"
+    if open_qa >= 0.30:
+        return "ADVANCE", f"E15 partial open={open_qa:.3f} color={color:.3f} dialogue={dialogue:.3f}"
+    return "FAIL", f"E15 cold open={open_qa:.3f} color={color:.3f} dialogue={dialogue:.3f}"
+
+
+def e16_gate(native: dict) -> tuple[str, str]:
+    about = float(native.get("about_2fact_heldout", {}).get("first_top1") or 0.0)
+    open_qa = float(native.get("open_2fact_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if about >= E16_ABOUT_GATE and open_qa >= E15_OPEN_GATE and color >= E4_COLOR_KEEP and stop_ok:
+        return "GRAD", f"E16 about={about:.3f} open={open_qa:.3f} color={color:.3f}"
+    if about >= 0.30:
+        return "ADVANCE", f"E16 partial about={about:.3f} open={open_qa:.3f} color={color:.3f}"
+    return "FAIL", f"E16 cold about={about:.3f} open={open_qa:.3f} color={color:.3f}"
+
+
+def e17_gate(native: dict) -> tuple[str, str]:
+    copy = float(native.get("copy_2fact_heldout", {}).get("first_top1") or 0.0)
+    saystop = float(native.get("saystop_2fact_heldout", {}).get("first_top1") or 0.0)
+    field = float(native.get("field_2e_heldout", {}).get("first_top1") or 0.0)
+    nostory = float(native.get("nostory_heldout", {}).get("first_top1") or 0.0)
+    fmt_word = float(native.get("format_word_heldout", {}).get("first_top1") or 0.0)
+    fmt_sent = float(native.get("format_sent_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    keep_ok = color >= E4_COLOR_KEEP and stop_ok
+    hard = copy >= E17_COPY_GATE or field >= E17_NEW_GATE or fmt_sent >= E17_FORMAT_SENT_GATE
+    easy = saystop >= E17_NEW_GATE or nostory >= E17_NEW_GATE or fmt_word >= E2_INSTR_GATE
+    if keep_ok and hard and easy:
+        return (
+            "GRAD",
+            f"E17 copy={copy:.3f} saystop={saystop:.3f} field={field:.3f} nostory={nostory:.3f} sent={fmt_sent:.3f}",
+        )
+    if max(copy, saystop, field, nostory, fmt_sent, fmt_word) >= 0.30:
+        return (
+            "ADVANCE",
+            f"E17 partial copy={copy:.3f} saystop={saystop:.3f} field={field:.3f} nostory={nostory:.3f} sent={fmt_sent:.3f}",
+        )
+    return (
+        "FAIL",
+        f"E17 cold copy={copy:.3f} saystop={saystop:.3f} field={field:.3f} nostory={nostory:.3f} sent={fmt_sent:.3f}",
+    )
+
+
+def e18_gate(native: dict) -> tuple[str, str]:
+    chat = float(native.get("chat_open_heldout", {}).get("first_top1") or 0.0)
+    role = float(native.get("chat_role_heldout", {}).get("first_top1") or 0.0)
+    reuse = float(native.get("chat_reuse_heldout", {}).get("first_top1") or 0.0)
+    long3 = float(native.get("chat_long3_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if (
+        chat >= E18_CHAT_GATE
+        and max(role, long3) >= E18_LONG_GATE
+        and reuse >= E18_LONG_GATE
+        and color >= E4_COLOR_KEEP
+        and stop_ok
+    ):
+        return "GRAD", f"E18 chat={chat:.3f} role={role:.3f} reuse={reuse:.3f} long3={long3:.3f}"
+    if max(chat, role, reuse, long3) >= 0.30:
+        return "ADVANCE", f"E18 partial chat={chat:.3f} role={role:.3f} reuse={reuse:.3f} long3={long3:.3f}"
+    return "FAIL", f"E18 cold chat={chat:.3f} role={role:.3f} reuse={reuse:.3f} long3={long3:.3f}"
+
+
+def e19_gate(native: dict) -> tuple[str, str]:
+    happened = float(native.get("happened_heldout", {}).get("first_top1") or 0.0)
+    yesno = float(native.get("yesno_2fact_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if happened >= E19_HAPPENED_GATE and yesno >= E18_YESNO_GATE and color >= E4_COLOR_KEEP and stop_ok:
+        return "GRAD", f"E19 happened={happened:.3f} yesno={yesno:.3f} color={color:.3f}"
+    if max(happened, yesno) >= 0.30:
+        return "ADVANCE", f"E19 partial happened={happened:.3f} yesno={yesno:.3f} color={color:.3f}"
+    return "FAIL", f"E19 cold happened={happened:.3f} yesno={yesno:.3f} color={color:.3f}"
+
+
+def e20_gate(native: dict) -> tuple[str, str]:
+    loop_c = float(native.get("chat_loop_color_heldout", {}).get("first_top1") or 0.0)
+    loop_f = float(native.get("chat_loop_fact_heldout", {}).get("first_top1") or 0.0)
+    chat = float(native.get("chat_open_heldout", {}).get("first_top1") or 0.0)
+    color = float(native.get("qa_2fact_heldout", {}).get("first_top1") or 0.0)
+    stop = float(native.get("size_stop_heldout", {}).get("free_exact") or 0.0)
+    stop_ok = ("size_stop_heldout" not in native) or stop >= E12_SIZE_STOP_GATE
+    if loop_c >= E20_LOOP_GATE and chat >= E18_CHAT_GATE and color >= E4_COLOR_KEEP and stop_ok:
+        extra = f" loop_fact={loop_f:.3f}" if loop_f else ""
+        return "GRAD", f"E20 loop_color={loop_c:.3f}{extra} color={color:.3f}"
+    if max(loop_c, loop_f, chat) >= 0.30:
+        return "ADVANCE", f"E20 partial loop_color={loop_c:.3f} loop_fact={loop_f:.3f} color={color:.3f}"
+    return "FAIL", f"E20 cold loop_color={loop_c:.3f} loop_fact={loop_f:.3f} color={color:.3f}"
+
+
 def first_word_match(decoded: str, gold: str) -> bool:
     text = decoded.strip().lower()
     want = gold.strip().lower()
@@ -718,6 +882,22 @@ def train_phase(
                 verdict, lesson = e11_gate(row["native"])
             elif phase == "e12":
                 verdict, lesson = e12_gate(row["native"])
+            elif phase.startswith("e13"):
+                verdict, lesson = e13_gate(row["native"])
+            elif phase.startswith("e14"):
+                verdict, lesson = e14_gate(row["native"])
+            elif phase.startswith("e15"):
+                verdict, lesson = e15_gate(row["native"])
+            elif phase.startswith("e16"):
+                verdict, lesson = e16_gate(row["native"])
+            elif phase.startswith("e17"):
+                verdict, lesson = e17_gate(row["native"])
+            elif phase.startswith("e18"):
+                verdict, lesson = e18_gate(row["native"])
+            elif phase.startswith("e19"):
+                verdict, lesson = e19_gate(row["native"])
+            elif phase.startswith("e20"):
+                verdict, lesson = e20_gate(row["native"])
             else:
                 verdict, lesson = e2_gate(row["native"])
             row["verdict"] = verdict
@@ -924,6 +1104,30 @@ def run_probe(device, resume: Path, *, phase: str = "e4") -> dict:
     elif phase == "e12":
         panels = build_e12_panels(tokenizer, n=PROBE_N)
         gate = e12_gate
+    elif phase.startswith("e13"):
+        panels = build_e13_panels(tokenizer, n=PROBE_N)
+        gate = e13_gate
+    elif phase.startswith("e14"):
+        panels = build_e14_panels(tokenizer, n=PROBE_N)
+        gate = e14_gate
+    elif phase.startswith("e15"):
+        panels = build_e15_panels(tokenizer, n=PROBE_N)
+        gate = e15_gate
+    elif phase.startswith("e16"):
+        panels = build_e16_panels(tokenizer, n=PROBE_N)
+        gate = e16_gate
+    elif phase.startswith("e17"):
+        panels = build_e17_panels(tokenizer, n=PROBE_N)
+        gate = e17_gate
+    elif phase.startswith("e18"):
+        panels = build_e18_panels(tokenizer, n=PROBE_N)
+        gate = e18_gate
+    elif phase.startswith("e19"):
+        panels = build_e19_panels(tokenizer, n=PROBE_N)
+        gate = e19_gate
+    elif phase.startswith("e20"):
+        panels = build_e20_panels(tokenizer, n=PROBE_N)
+        gate = e20_gate
     else:
         panels = build_e4_panels(tokenizer, n=PROBE_N)
         gate = e4_gate
@@ -1017,6 +1221,22 @@ def main() -> None:
             panels = build_e11_panels(tokenizer, n=PROBE_N)
         elif args.phase == "e12":
             panels = build_e12_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e13"):
+            panels = build_e13_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e14"):
+            panels = build_e14_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e15"):
+            panels = build_e15_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e16"):
+            panels = build_e16_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e17"):
+            panels = build_e17_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e18"):
+            panels = build_e18_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e19"):
+            panels = build_e19_panels(tokenizer, n=PROBE_N)
+        elif args.phase.startswith("e20"):
+            panels = build_e20_panels(tokenizer, n=PROBE_N)
         else:
             panels = build_e2_panels(tokenizer, n=PROBE_N)
         out_dir = args.out or (OUT / f"{args.phase}_bridge_{args.seed}")

@@ -20,6 +20,8 @@ from src.baby_v010.data_language_bridge import (
     make_mixed_item,
     make_place_item,
     make_attr_followup_item,
+    make_phrase_item,
+    make_open_item,
     make_size_item,
     make_story_item,
     make_story_mixed_item,
@@ -28,6 +30,12 @@ from src.baby_v010.data_language_bridge import (
     make_syntax_item,
     period_token_id,
     spaced_first_id,
+    TRAIN_PHRASE_ANSWERS,
+    HOLDOUT_PHRASE_ANSWERS,
+    TRAIN_PHRASE_QUERIES,
+    HOLDOUT_PHRASE_QUERIES,
+    TRAIN_OPEN_QUERIES,
+    HOLDOUT_OPEN_QUERIES,
 )
 from src.baby_v010.selection_rapid_treat_d import production_d_uses_query_position, tiling_parse
 
@@ -194,6 +202,160 @@ def test_e9_gate_thresholds() -> None:
     assert e9_gate(grad)[0] == "GRAD"
 
 
+def test_e13_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e13_gate
+
+    fail = {
+        "mixed_2e_heldout": {"first_top1": 0.47},
+        "story_combine_heldout": {"first_top1": 0.25},
+        "story_mixed_heldout": {"first_top1": 0.38},
+        "fact_combine_heldout": {"first_top1": 0.22},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e13_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["mixed_2e_heldout"] = {"first_top1": 0.56}
+    assert e13_gate(advance)[0] == "ADVANCE"
+    grad = {
+        "mixed_2e_heldout": {"first_top1": 0.72},
+        "story_combine_heldout": {"first_top1": 0.34},
+        "story_mixed_heldout": {"first_top1": 0.56},
+        "fact_combine_heldout": {"first_top1": 0.62},
+        "qa_2fact_heldout": {"first_top1": 0.90},
+        "size_stop_heldout": {"free_exact": 0.88},
+    }
+    assert e13_gate(grad)[0] == "GRAD"
+    lost_stop = dict(grad)
+    lost_stop["size_stop_heldout"] = {"free_exact": 0.40}
+    assert e13_gate(lost_stop)[0] == "ADVANCE"
+
+
+def test_e14_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e14_gate
+
+    fail = {
+        "phrase_2fact_heldout": {"free_exact": 0.0},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e14_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["phrase_2fact_heldout"] = {"free_exact": 0.25}
+    assert e14_gate(advance)[0] == "ADVANCE"
+    grad = dict(fail)
+    grad["phrase_2fact_heldout"] = {"free_exact": 0.50}
+    assert e14_gate(grad)[0] == "GRAD"
+
+
+def test_e15_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e15_gate
+
+    fail = {
+        "open_2fact_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+        "dialogue_2fact_heldout": {"first_top1": 0.90},
+    }
+    assert e15_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["open_2fact_heldout"] = {"first_top1": 0.35}
+    assert e15_gate(advance)[0] == "ADVANCE"
+    grad = dict(fail)
+    grad["open_2fact_heldout"] = {"first_top1": 0.62}
+    assert e15_gate(grad)[0] == "GRAD"
+
+
+def test_e16_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e16_gate
+
+    fail = {
+        "about_2fact_heldout": {"first_top1": 0.1},
+        "open_2fact_heldout": {"first_top1": 0.62},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e16_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["about_2fact_heldout"] = {"first_top1": 0.35}
+    assert e16_gate(advance)[0] == "ADVANCE"
+    grad = dict(advance)
+    grad["about_2fact_heldout"] = {"first_top1": 0.62}
+    assert e16_gate(grad)[0] == "GRAD"
+
+
+def test_e17_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e17_gate
+
+    fail = {
+        "copy_2fact_heldout": {"first_top1": 0.1},
+        "saystop_2fact_heldout": {"first_top1": 0.1},
+        "field_2e_heldout": {"first_top1": 0.1},
+        "nostory_heldout": {"first_top1": 0.1},
+        "format_word_heldout": {"first_top1": 0.1},
+        "format_sent_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e17_gate(fail)[0] == "FAIL"
+    advance = dict(fail)
+    advance["saystop_2fact_heldout"] = {"first_top1": 0.72}
+    assert e17_gate(advance)[0] == "ADVANCE"
+    paraphrase_only = dict(advance)
+    paraphrase_only["nostory_heldout"] = {"first_top1": 0.81}
+    paraphrase_only["format_word_heldout"] = {"first_top1": 0.90}
+    assert e17_gate(paraphrase_only)[0] == "ADVANCE"
+    grad = dict(paraphrase_only)
+    grad["copy_2fact_heldout"] = {"first_top1": 0.56}
+    assert e17_gate(grad)[0] == "GRAD"
+
+
+def test_e18_and_e19_gate_thresholds() -> None:
+    from src.baby_v010.selection_language_bridge import e18_gate, e19_gate, e20_gate
+
+    e18_fail = {
+        "chat_open_heldout": {"first_top1": 0.1},
+        "chat_role_heldout": {"first_top1": 0.1},
+        "chat_reuse_heldout": {"first_top1": 0.1},
+        "chat_long3_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e18_gate(e18_fail)[0] == "FAIL"
+    e18_grad = {
+        "chat_open_heldout": {"first_top1": 0.72},
+        "chat_role_heldout": {"first_top1": 0.62},
+        "chat_reuse_heldout": {"first_top1": 0.56},
+        "chat_long3_heldout": {"first_top1": 0.50},
+        "qa_2fact_heldout": {"first_top1": 0.90},
+        "size_stop_heldout": {"free_exact": 0.88},
+    }
+    assert e18_gate(e18_grad)[0] == "GRAD"
+    e19_fail = {
+        "happened_heldout": {"first_top1": 0.1},
+        "yesno_2fact_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e19_gate(e19_fail)[0] == "FAIL"
+    e19_grad = dict(e19_fail)
+    e19_grad["happened_heldout"] = {"first_top1": 0.56}
+    e19_grad["yesno_2fact_heldout"] = {"first_top1": 0.56}
+    assert e19_gate(e19_grad)[0] == "GRAD"
+    e20_fail = {
+        "chat_loop_color_heldout": {"first_top1": 0.1},
+        "chat_loop_fact_heldout": {"first_top1": 0.1},
+        "chat_open_heldout": {"first_top1": 0.1},
+        "qa_2fact_heldout": {"first_top1": 0.94},
+        "size_stop_heldout": {"free_exact": 0.91},
+    }
+    assert e20_gate(e20_fail)[0] == "FAIL"
+    e20_grad = dict(e20_fail)
+    e20_grad["chat_loop_color_heldout"] = {"first_top1": 0.62}
+    e20_grad["chat_open_heldout"] = {"first_top1": 0.72}
+    assert e20_gate(e20_grad)[0] == "GRAD"
+
+
 def test_period_stop_first_word() -> None:
     from src.baby_v010.selection_language_bridge import first_word_match
 
@@ -256,6 +418,39 @@ def test_story_items_are_gold_free() -> None:
     assert mixed_story["value_text"] in (*VALUES, *SIZES)
     assert combine["value_text"] in (*VALUES, *SIZES)
     assert "one?" in combine["prompt_text"] or "one." in combine["prompt_text"]
+    fact_combine = make_mixed_item(random.Random(69), tokenizer, n_entities=2, surface="heldout", combine=True)
+    mixed_stop = make_mixed_item(random.Random(71), tokenizer, n_entities=2, surface="heldout", period=True)
+    assert fact_combine.get("query_position") is None
+    assert fact_combine["family"] == "fact_combine"
+    assert "one?" in fact_combine["prompt_text"] or "one." in fact_combine["prompt_text"]
+    assert fact_combine["value_text"] in (*VALUES, *SIZES)
+    assert mixed_stop["answer_text"].endswith(".")
+    assert mixed_stop["value_text"] in (*VALUES, *SIZES)
+    grouped = make_mixed_item(random.Random(77), tokenizer, n_entities=2, surface="train", grouped=True)
+    assert grouped.get("query_position") is None
+    assert grouped["target"]
+    phrase = make_phrase_item(random.Random(79), tokenizer, n_facts=2, surface="heldout")
+    train_phrase = make_phrase_item(random.Random(79), tokenizer, n_facts=2, surface="train")
+    assert phrase.get("query_position") is None
+    assert len(phrase["target"]) >= 3
+    assert phrase["answer_text"].endswith(".")
+    assert phrase["value_text"] in VALUES
+    assert phrase["prompt_text"] != train_phrase["prompt_text"]
+    assert "sentence" in phrase["prompt_text"].lower() or "Sentence" in phrase["prompt_text"]
+    assert set(TRAIN_PHRASE_QUERIES).isdisjoint(HOLDOUT_PHRASE_QUERIES)
+    assert set(TRAIN_PHRASE_ANSWERS).isdisjoint(HOLDOUT_PHRASE_ANSWERS)
+    assert " looks " not in "".join(TRAIN_PHRASE_ANSWERS + HOLDOUT_PHRASE_ANSWERS)
+    open_item = make_open_item(random.Random(83), tokenizer, n_facts=2, surface="heldout")
+    train_open = make_open_item(random.Random(83), tokenizer, n_facts=2, surface="train")
+    assert open_item.get("query_position") is None
+    assert open_item["value_text"] in VALUES
+    assert open_item["answer_text"].endswith(".")
+    assert open_item["prompt_text"] != train_open["prompt_text"]
+    assert set(TRAIN_OPEN_QUERIES).isdisjoint(HOLDOUT_OPEN_QUERIES)
+    about = make_open_item(random.Random(89), tokenizer, n_facts=2, surface="heldout", about=True)
+    assert about.get("query_position") is None
+    assert about["family"] == "english_about"
+    assert about["value_text"] in VALUES
     long3 = make_longturn_item(random.Random(71), tokenizer, n_turns=3, surface="heldout")
     role = make_roleplay_item(random.Random(73), tokenizer, surface="heldout")
     assert long3["prompt_text"].count("Human:") == 3
@@ -263,3 +458,84 @@ def test_story_items_are_gold_free() -> None:
     assert long3["value_text"] in VALUES
     assert "Kid:" in role["prompt_text"] and "Mom:" in role["prompt_text"]
     assert role["value_text"] in VALUES
+
+
+def test_e17_instruction_items_are_gold_free() -> None:
+    from src.baby_v010.data_language_bridge import (
+        HOLDOUT_COPY_QUERIES,
+        HOLDOUT_FORMAT_SENT_ANSWERS,
+        HOLDOUT_SAYSTOP_QUERIES,
+        TRAIN_COPY_QUERIES,
+        TRAIN_FORMAT_SENT_ANSWERS,
+        TRAIN_SAYSTOP_QUERIES,
+        YES_WORD,
+        NO_WORD,
+        make_chat_loop_item,
+        make_copy_item,
+        make_factreuse_item,
+        make_field_item,
+        make_format_item,
+        make_happened_item,
+        make_nostory_item,
+        make_saystop_item,
+        make_varied_dialogue_item,
+        make_varied_longturn_item,
+        make_yesno_item,
+    )
+
+    tokenizer = load_tokenizer()
+    copy_hold = make_copy_item(random.Random(101), tokenizer, n_facts=2, surface="heldout")
+    copy_train = make_copy_item(random.Random(101), tokenizer, n_facts=2, surface="train")
+    assert copy_hold.get("query_position") is None
+    assert copy_hold["prompt_text"] != copy_train["prompt_text"]
+    assert copy_hold["value_text"] in VALUES
+    assert copy_hold["answer_text"].endswith(".")
+    assert set(TRAIN_COPY_QUERIES).isdisjoint(HOLDOUT_COPY_QUERIES)
+    say = make_saystop_item(random.Random(103), tokenizer, n_facts=2, surface="heldout")
+    assert say["value_text"] in VALUES
+    assert "stop" in say["prompt_text"].lower()
+    assert set(TRAIN_SAYSTOP_QUERIES).isdisjoint(HOLDOUT_SAYSTOP_QUERIES)
+    field = make_field_item(random.Random(107), tokenizer, n_entities=2, surface="heldout")
+    assert field["value_text"] in (*VALUES, *SIZES)
+    assert field["attr"] in {"color", "size"}
+    nostory = make_nostory_item(random.Random(109), tokenizer, surface="heldout")
+    assert nostory["value_text"] in VALUES
+    assert "story" in nostory["prompt_text"].lower() or "continue" in nostory["prompt_text"].lower() or "go on" in nostory["prompt_text"].lower()
+    word = make_format_item(random.Random(113), tokenizer, n_facts=2, surface="heldout", sentence=False)
+    sent = make_format_item(random.Random(113), tokenizer, n_facts=2, surface="heldout", sentence=True)
+    sent_train = make_format_item(random.Random(113), tokenizer, n_facts=2, surface="train", sentence=True)
+    assert word["value_text"] in VALUES
+    assert sent["answer_text"].startswith(" That is ") or sent["answer_text"].startswith(" It is ")
+    assert sent["prompt_text"] != sent_train["prompt_text"]
+    assert set(TRAIN_FORMAT_SENT_ANSWERS).isdisjoint(HOLDOUT_FORMAT_SENT_ANSWERS)
+    yes_ids = [spaced_first_id(tokenizer, YES_WORD)]
+    no_ids = [spaced_first_id(tokenizer, NO_WORD)]
+    color_ids = [spaced_first_id(tokenizer, word) for word in VALUES]
+    size_ids = [spaced_first_id(tokenizer, word) for word in SIZES]
+    assert yes_ids != no_ids
+    assert set(yes_ids).isdisjoint(color_ids)
+    assert set(no_ids).isdisjoint(color_ids)
+    assert set(yes_ids).isdisjoint(size_ids)
+    assert set(no_ids).isdisjoint(size_ids)
+    chat = make_varied_dialogue_item(random.Random(127), tokenizer, n_facts=2, surface="heldout")
+    role = make_varied_dialogue_item(random.Random(127), tokenizer, n_facts=2, surface="heldout", roleplay=True)
+    assert "Human:" in chat["prompt_text"]
+    assert "Kid:" in role["prompt_text"]
+    yn = make_yesno_item(random.Random(131), tokenizer, n_facts=2, surface="heldout")
+    assert yn["value_text"] in {YES_WORD, NO_WORD}
+    long3 = make_varied_longturn_item(random.Random(137), tokenizer, n_turns=3, surface="heldout")
+    assert long3["prompt_text"].count("Human:") == 3
+    happened = make_happened_item(random.Random(139), tokenizer, surface="heldout")
+    assert happened["value_text"] in {YES_WORD, NO_WORD}
+    reuse = make_factreuse_item(random.Random(141), tokenizer, surface="heldout")
+    assert reuse["value_text"] in VALUES
+    assert reuse["prompt_text"].count("Human:") == 3
+    loop = make_chat_loop_item(random.Random(149), tokenizer, n_turns=4, surface="heldout", score="color")
+    fact = make_chat_loop_item(random.Random(151), tokenizer, n_turns=4, surface="heldout", score="yesno")
+    assert loop["value_text"] in VALUES
+    assert fact["value_text"] == YES_WORD
+    assert loop["prompt_text"].count("Human:") == 3
+    for row in (copy_hold, say, field, nostory, word, sent, chat, yn, long3, happened, reuse, loop, fact):
+        assert 2 <= len(row["input"]) < 256
+        assert row["target"]
+        assert row.get("query_position") is None

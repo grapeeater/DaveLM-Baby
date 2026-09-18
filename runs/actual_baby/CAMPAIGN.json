@@ -1,11 +1,12 @@
 {
   "campaign": "actual_baby_language_bridge",
-  "status": "E5 is the D3-safe experimental survivor. Closed-vocab English QA, size, instruction, dialogue, and 2-3 turn color context graduate. E6 place and E7 color-then-size follow-up graduate English but drop D3 below 200.",
+  "status": "E12b size-stop remains the D3-safe experimental survivor. E18 varied dialogue, E20 color chat-loop, E15/E16 open/about graduate zeroshot on E12. Copy and happened/true-wrong spend D3 at the dose that learns. U16000 not replaced. TEST closed.",
   "test_closed": true,
   "u16000_replaced": false,
   "git": {
     "branch": "cursor/query-transport-range-t1",
     "d3_commit": "1d0467fd4faf6faae9745ee3c17ba87f0c047ef9",
+    "campaign_commit": "c0f9a768483899da281e9eab6fe0a03f9e708a30",
     "d3_pushed": true
   },
   "authoritative_baby": {
@@ -16,81 +17,73 @@
   "c2_sha256": "06e2e6139a134ef84edd0924184f3efb79cf2a8c93c4fedf500617d154cf2dd2",
   "d3_sha256": "8d9e3e209f3449e4bdb5ad6bfeb3592dc1afe57bb10958bad3d7e1b94c40c9fb",
   "survivor_experimental": {
-    "path": "runs/actual_baby/e5_turn3_310511/checkpoint_00050.pt",
-    "sha256": "aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139",
+    "path": "runs/actual_baby/e12_stoponly_311211/checkpoint_00050.pt",
+    "sha256": "6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1",
     "authoritative": false,
-    "parent": "runs/actual_baby/e4_size_310501/checkpoint_00050.pt",
+    "parent": "runs/actual_baby/e5_turn3_310511/checkpoint_00050.pt",
     "english": {
-      "qa_2fact_heldout": 0.875,
-      "size_2fact_heldout": 0.875,
-      "size_3fact_heldout": 0.84375,
-      "mixed_color_size": 0.5625,
-      "instr_2fact_heldout": 0.9375,
-      "dialogue_2fact_heldout": 0.84375,
-      "multiturn_2fact_heldout": 0.75,
-      "multiturn_3fact_heldout": 0.625,
-      "pronoun_2fact_heldout": 0.96875
-    },
-    "decode": {
-      "color_first_word": 1.0,
-      "period_stop_mixed_color_size": 0.75,
-      "story_once_upon": "He was very big and blue.",
-      "story_hen": "He was walking down the street."
+      "qa_2fact_heldout": 0.96875,
+      "size_stop_heldout": 0.90625,
+      "story_color_heldout": 0.9375,
+      "dialogue_2fact_heldout": 0.96875,
+      "open_2fact_heldout": 0.71875,
+      "about_2fact_heldout": 0.96875,
+      "chat_open_heldout": 0.8125,
+      "chat_role_heldout": 0.8125,
+      "chat_reuse_heldout": 0.8125,
+      "chat_long3_heldout": 0.84375,
+      "chat_loop_color_heldout": 0.84375,
+      "saystop_2fact_heldout": 0.90625,
+      "nostory_heldout": 0.9375,
+      "copy_2fact_heldout": 0.125,
+      "format_sent_heldout": 0.0,
+      "happened_heldout": 0.0,
+      "mixed_2e_heldout": 0.5625,
+      "story_combine_heldout": 0.3125,
+      "fact_combine_heldout": 0.21875,
+      "story_mixed_heldout": 0.375
     },
     "d3_retention": {
-      "long_gap_free_exact": 204,
+      "long_gap_free_exact": 202,
       "n": 215,
       "first_correct": 215,
       "induction": 0.421875,
-      "keyed": 0.9375
+      "keyed": 0.96875
     }
   },
-  "lineage": {
-    "e1_qaheavy": {
-      "path": "runs/actual_baby/e1_qaheavy_310221/checkpoint_00050.pt",
-      "sha256": "4eee63b2b6fc78e869fcce3cbf27772337f53cb3038fe598e20f4e6961034307",
-      "d3": 202
+  "fallback_experimental": {
+    "path": "runs/actual_baby/e5_turn3_310511/checkpoint_00050.pt",
+    "sha256": "aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139",
+    "d3": 204
+  },
+  "d3_safe_forks_not_primary": {
+    "e13c_light_mix": {
+      "path": "runs/actual_baby/e13c_light_311321/checkpoint_00050.pt",
+      "d3": 200,
+      "note": "light grouped mix; English mix unchanged"
     },
-    "e2_gentle": {
-      "path": "runs/actual_baby/e2_gentle_310321/checkpoint_00050.pt",
-      "sha256": "019656d5804862c41595cfa0497696cf9aba68f97940bd4767b235fa51052361",
-      "d3": 201
+    "e14b_sentence_cue": {
+      "path": "runs/actual_baby/e14b_sent_311411/checkpoint_00050.pt",
+      "sha256": "b928925e9bcdb25835aaef44d9a890ee3e0d3baea6383de956d74d32b8abe954",
+      "d3": 200,
+      "phrase_free_exact": 0.1875,
+      "note": "sentence-cued color replies sometimes '{e} is {v}.'; one-word QA kept; more phrase mass overfit"
     },
-    "e4_size": {
-      "path": "runs/actual_baby/e4_size_310501/checkpoint_00050.pt",
-      "sha256": "006caa58f2cc858538cdbafbc915de2a7de8c66e8b7ac17c2c5a8aa1383a92c6",
-      "d3": 204,
-      "size_2fact": 0.875
-    },
-    "e5_turn3": {
-      "path": "runs/actual_baby/e5_turn3_310511/checkpoint_00050.pt",
-      "sha256": "aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139",
-      "d3": 204
+    "e17b_light_copy": {
+      "path": "runs/actual_baby/e17b_copy_311711/checkpoint_00050.pt",
+      "sha256": "7fadcd92ebf8e4149c2f43425a0415979f7e1a1519dc6b2ec1b90f722b075ed6",
+      "d3": 202,
+      "induction": 0.422,
+      "copy_first_top1": 0.40625,
+      "note": "14% copy + structured 0.48 holds D3; copy below GRAD"
     }
   },
-  "english_only_not_d3_safe": {
-    "e3_heavy_multiturn": {
-      "path": "runs/actual_baby/e3_multiturn_310401/checkpoint_00100.pt",
-      "sha256": "848762b7e783df52c19d8150315f01befbff2c07e8d39aa900620cea5019bf70",
-      "d3": 195
-    },
-    "e6_place": {
-      "path": "runs/actual_baby/e6_place_310601/checkpoint_00050.pt",
-      "sha256": "f2fa26e04d8f2fae8a56e75467a7a8ef6341c006442eaff79d93828e32c60602",
-      "place_2fact": 0.8125,
-      "d3": 199
-    },
-    "e6_recover": {
-      "path": "runs/actual_baby/e6_recover_310611/checkpoint_00050.pt",
-      "sha256": "15b40a436a3ee34e497b5a7860436205ecbb490c2557c0489e4c055c4da204cb",
-      "d3": 196
-    },
-    "e7_follow": {
-      "path": "runs/actual_baby/e7_follow_310701/checkpoint_00050.pt",
-      "sha256": "934e1570800594447022b24ebd016fa11314b04c5dd3059999aea8e8feb8a372",
-      "attr_followup": 0.6875,
-      "d3": 184
-    }
+  "killed_from_e12": {
+    "e13_fact_combine": {"d3": 199, "fact_combine": 0.531},
+    "e13b_mixonly": {"d3": 193, "mixed_2e": 0.562},
+    "e17_copy": {"d3": 199, "copy": 0.719},
+    "e17c_copy": {"d3": 197, "copy": 0.562},
+    "e19_happened": {"d3": 168, "happened": 0.375}
   },
-  "next": "Open TinyStories question/dialogue on the E5 survivor, or a D3-safe place mix. Do not promote U16000. TEST stays closed. Coding waits."
+  "next": "Do not promote U16000. TEST stays closed. Primary remains E12. Park mix/combine/who/place/5-turn/copy-at-GRAD-dose/happened-true-wrong/sentence-format. Coding waits. Remaining wall is new lexemes (true/wrong, sentence starts) and override-copy vs D3."
 }
