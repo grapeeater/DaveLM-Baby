@@ -190,3 +190,135 @@ Induction-exempt first-step overwrite restores `primitive_induction` 19/64 while
 - B5 block-1 skipped (B1 survived; sidecar is L0-trained)
 - TEST closed. U16000 not replaced. A1 gated fallback preserved. Deploy candidate is B1 hard replace + A1 routing, not kind-blind P11
 
+## b4_step400_hard
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; B1 hard replace h0[gen]:=h0[argmax causal slot scores] (not query_position)
+- long-gap: ON 110/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **ADVANCE**
+- lesson: long-gap 110/215 CI-worthy vs A1 102; pointer_match=0.721 mass_q=0.8003851175308228; qswap=None
+
+## b4b_longgap_ptr
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; B1 hard replace h0[gen]:=h0[argmax causal slot scores] (not query_position)
+- long-gap: ON 110/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **ADVANCE**
+- lesson: long-gap 110/215 CI-worthy vs A1 102; pointer_match=0.721 mass_q=0.8003851175308228; qswap=0.40625
+
+## b4b_longgap_ptr
+
+- ID: `a1_induction_exempt`
+- Change: B4b overwrite-only, A1 PACK_HOOK, pointer aux gap>=13, hard-replace eval
+- long-gap: ON 110/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **ADVANCE**
+- lesson: long-gap 110/215 CI-worthy vs A1 102
+
+## c_locator_diag
+
+- ID: `a1_induction_exempt`
+- Change: eval-only locator pointer diagnostic (query_position labels only)
+- long-gap: ON None/215 vs OFF 71/215 (kind-blind ON 102/215); armed=None
+- induction: first_top1 None n=None armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 None n=None
+- verdict: **DIAG**
+- lesson: slot=0.712 l0=0.000 l0_on_miss=0.000 hybrid=0.595 c2=1.000 cover=1.000 agree=0.000 layer_miss=[0.0, 0.0, 0.0, 0.016129032258064516, 0.0, 0.0, 0.016129032258064516, 0.03225806451612903, 0.0, 0.0, 0.0, 0.0]
+
+## c1d
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C1d hard replace iff B1 slot argmax agrees with L0 attn argmax; else A1 gated
+- long-gap: ON 102/215 vs OFF 71/215 (kind-blind ON 102/215); armed=None
+- induction: first_top1 None n=None armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 None n=None
+- verdict: **KILL**
+- lesson: C1d agree_rate=0 so write is A1 gated on every row; not a new locator
+
+## c1b
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C1b hard replace h0[gen]:=h0[mean-head L0 attn argmax] (not query_position)
+- long-gap: ON None/215 vs OFF 71/215 (kind-blind ON 102/215); armed=None
+- induction: first_top1 None n=0 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 None n=0
+- verdict: **KILL**
+- lesson: pointer_match=0.000 below 0.65 vs B1 0.712; skip full 215
+
+## c1c_0p3
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C1c hard replace; L0 attn argmax if slot mass<0.3 else B1 slot argmax
+- long-gap: ON None/215 vs OFF 71/215 (kind-blind ON 102/215); armed=None
+- induction: first_top1 None n=0 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 None n=0
+- verdict: **KILL**
+- lesson: pointer_match=0.595 below 0.65 vs B1 0.712; skip full 215
+
+## c1c_0p5
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C1c hard replace; L0 attn argmax if slot mass<0.5 else B1 slot argmax
+- long-gap: ON None/215 vs OFF 71/215 (kind-blind ON 102/215); armed=None
+- induction: first_top1 None n=0 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 None n=0
+- verdict: **KILL**
+- lesson: pointer_match=0.512 below 0.65 vs B1 0.712; skip full 215
+
+## c2
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C2 structural (key,value,SEP) query site; else B1 slot; hard replace
+- long-gap: ON 122/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **OWNER**
+- lesson: long-gap 122/215 past owner bar ~115; pointer_match=1.000; qswap=0.6666666666666666
+
+## c2_stage2
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C2 structural (key,value,SEP) query site; else B1 slot; hard replace
+- long-gap: ON 122/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **ADVANCE**
+- lesson: retention bars held
+
+## c2_stage3
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C2 structural (key,value,SEP) query site; else B1 slot; hard replace ; full P11-runtime battery
+- long-gap: ON 122/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=None (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.96875 n=64
+- verdict: **PASS**
+- lesson: cause=none; benefit_ok=True; on_retention=True; ci=[0.18181818181818182, 0.29257641921397376]
+
+## c2_stage4_250002
+
+- ID: `a1_induction_exempt`
+- Change: A1 induction-exempt first-step; C2 structural (key,value,SEP) query site; else B1 slot; hard replace
+- long-gap: ON 122/215 vs OFF 71/215 (kind-blind ON 102/215); armed=215
+- induction: first_top1 0.296875 n=64 armed=0 (OFF 0.297; kind-blind ON 0.156)
+- primitive_keyed: first_top1 0.953125 n=64
+- verdict: **OWNER**
+- lesson: long-gap 122/215 past owner bar ~115; pointer_match=1.000; qswap=0.6666666666666666
+
+## note_c2_owner
+
+- C1b L0 attn argmax: pointer **0/215**. Baby L0 does not point at the query. Pretest 19/40; killed
+- C1c hybrid τ=0.3/0.5: pointer 0.595/0.512 (L0 fallback stomps B1 matches). Killed
+- C1d agree: **0%** agreement; would be A1 gated 102. Killed
+- Later-layer attn: max 3.2% on the 62 B1-miss rows. Not a locator
+- **C2 structural locator** (parameter-free `(key, value, SEP)` tiling; unpaired key occurrence; never `query_position`): pointer **215/215**
+- Primary 250001: **122/215** long-gap (B1 109, A1 102, Q0R 127), induction 0.297, keyed 0.969, query-swap 0.667. Stage 2 ADVANCE, Stage 3 PASS, bootstrap Δ vs OFF 71 CI [0.182, 0.293]
+- Replica 250002: **122/215**, induction 0.297, keyed 0.953, query-swap 0.667
+- TEST closed. U16000 not replaced. A1 gated and B1 hard-replace remain reproducible (`operator=a1|b1|c2`)
+- Owner milestone: 122 with retention. Remaining 5 vs Q0R 127 is not a pointer miss
+
