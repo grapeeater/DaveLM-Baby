@@ -470,3 +470,17 @@ U16000 remains authoritative. C2/D3 stay fallbacks. TEST closed. Not promoted.
 - checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
 
 
+## usable_chat
+
+- Change: Eval-only held-out 4-5 turn usable-chat pack + no-train sentence decode on E12 (U16000 not replaced)
+- verdict: **STRONG**
+- lesson: usable-chat 4+5 usable=0.857 reuse=1.0 stop=1.000; sentence PARK: park sentence decode; best light bare=0.000; heavy force_entity_is=0.875
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## campaign_status_usable_chat_2026-09-18
+
+- Change: Eval-only usable-chat canary on E12; no-train sentence decode; no language finetune (no ramble gap)
+- verdict: **STOP**
+- lesson: U16000 not replaced. TEST closed. Survivor still `e12_stoponly_311211/checkpoint_00050.pt` SHA `6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1`. D3 202/215 induction 0.422. Held-out 4-5 turn usable-chat (color/size/how-about/about/say-stop/refuse-story/come-back only): 42-turn usable 0.857, 4-turn 0.906 (6/8 chats full), 5-turn 0.700, fact-reuse 1.0, period-stop 1.0, rambling 0.0. Misses are size+color in one context and 5-turn/3-entity, not generic continuation. Sentence light prefixes stay one-word (0.000); `{e} is` cloze 0.875 is not an operator to keep. Park mix/combine/who/place/5-turn-train/copy-at-learn/happened/sentence-format. Actual Baby-in-closed-vocab milestone. Do not promote. Do not open TEST.
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+

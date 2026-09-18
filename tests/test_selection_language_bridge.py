@@ -539,3 +539,109 @@ def test_e17_instruction_items_are_gold_free() -> None:
         assert 2 <= len(row["input"]) < 256
         assert row["target"]
         assert row.get("query_position") is None
+
+
+def test_usable_chat_pack_is_heldout_existing_skills_only() -> None:
+    from src.baby_v010.data_language_bridge import (
+        ALLOWED_USABLE_SKILLS,
+        FORBIDDEN_USABLE_MARKERS,
+        HOLDOUT_ABOUT_QUERIES,
+        HOLDOUT_OPEN_QUERIES,
+        HOLDOUT_SAYSTOP_QUERIES,
+        build_sentence_decode_pack,
+        build_usable_chat_pack,
+        score_sentence_answer,
+        score_usable_turn,
+    )
+
+    pack = build_usable_chat_pack()
+    assert 8 <= len(pack) <= 12
+    assert {int(script["n_turns"]) for script in pack} <= {4, 5}
+    assert sum(int(script["n_turns"] == 4) for script in pack) >= 6
+    blob = []
+    for script in pack:
+        assert len(script["turns"]) == script["n_turns"]
+        blob.append(script["facts"].lower())
+        for turn in script["turns"]:
+            assert set(turn["skills"]) <= ALLOWED_USABLE_SKILLS
+            blob.append(turn["human"].lower())
+            assert turn["gold"]
+            assert turn["entity"]
+    text = "\n".join(blob)
+    for marker in FORBIDDEN_USABLE_MARKERS:
+        assert marker not in text, marker
+    assert "what color is the" not in text
+    assert "copy this word" not in text
+    held = " ".join(HOLDOUT_OPEN_QUERIES + HOLDOUT_ABOUT_QUERIES + HOLDOUT_SAYSTOP_QUERIES).lower()
+    assert "how about the" in text
+    assert "what do you know about the" in text
+    assert "stop" in text
+    assert held
+    terse = score_usable_turn(
+        decoded=" white.",
+        stopped=True,
+        gold="white",
+        distractors=("red",),
+        skills=["color"],
+        n_tokens=2,
+    )
+    assert terse["usable"] and not terse["rambling"]
+    ramble = score_usable_turn(
+        decoded=" The cat went home. He was very tired.",
+        stopped=True,
+        gold="white",
+        distractors=("red",),
+        skills=["refuse-story", "color"],
+        n_tokens=12,
+    )
+    assert ramble["rambling"] and ramble["generic_continuation"] and not ramble["usable"]
+    reuse = score_usable_turn(
+        decoded=" red.",
+        stopped=True,
+        gold="white",
+        distractors=("red",),
+        skills=["come-back", "color"],
+        n_tokens=2,
+    )
+    assert reuse["fact_reuse"] is False
+    assert reuse["distractor_hits"] == ["red"]
+    sent = score_sentence_answer(full_text=" cat is red.", entity="cat", color="red", stopped=True)
+    assert sent["sentence_ok"]
+    one = score_sentence_answer(full_text=" red.", entity="cat", color="red", stopped=True)
+    assert one["one_word_color"] and not one["sentence_ok"]
+    sentences = build_sentence_decode_pack()
+    assert 6 <= len(sentences) <= 12
+
+
+def test_usable_chat_verdict_parks_five_turn() -> None:
+    from src.baby_v010.selection_language_bridge import usable_chat_verdict
+
+    strong4 = {
+        "usable_turn": 0.81,
+        "fact_reuse": 0.75,
+        "period_stop": 1.0,
+        "rambling": 0.06,
+        "generic_continuation": 0.0,
+        "fact_hit": 0.84,
+    }
+    weak5 = {
+        "usable_turn": 0.40,
+        "fact_reuse": 0.30,
+        "period_stop": 0.90,
+        "rambling": 0.10,
+        "generic_continuation": 0.05,
+        "fact_hit": 0.40,
+    }
+    verdict, lesson, ramble = usable_chat_verdict(weak5, strong4, weak5)
+    assert verdict == "MIXED"
+    assert ramble is False
+    assert "parked" in lesson
+    weak4 = dict(strong4, usable_turn=0.40, fact_hit=0.40, rambling=0.10, generic_continuation=0.05)
+    verdict, lesson, ramble = usable_chat_verdict(weak4, weak4, weak5)
+    assert verdict == "WEAK"
+    assert ramble is False
+    ramble4 = dict(strong4, usable_turn=0.40, rambling=0.45, generic_continuation=0.40, period_stop=0.5)
+    verdict, lesson, ramble = usable_chat_verdict(ramble4, ramble4, weak5)
+    assert verdict == "WEAK"
+    assert ramble is True
+    assert "rambling" in lesson

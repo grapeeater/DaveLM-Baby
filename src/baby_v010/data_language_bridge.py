@@ -2348,6 +2348,253 @@ def sample_train_item(
     return make_aperiodic_item(rng, banks, pair_count=4, surface="train")
 
 
+ALLOWED_USABLE_SKILLS = frozenset(
+    {
+        "color",
+        "size",
+        "how-about",
+        "about",
+        "say-stop",
+        "refuse-story",
+        "come-back",
+    }
+)
+STORY_CONTINUATION_MARKERS = (
+    "once upon",
+    "long ago",
+    "went home",
+    "came by",
+    "walked along",
+    "went out",
+    "sat down",
+    "ran by",
+    "looked up",
+    "came out",
+    "one day",
+    "in the yard",
+    "very tired",
+    "the little",
+)
+FORBIDDEN_USABLE_MARKERS = (
+    "who is",
+    "who was",
+    "who looks",
+    "which one",
+    "who sat",
+    "who went",
+    "copy this",
+    "write the word",
+    "true",
+    "wrong",
+    "did the",
+    "the tiny one",
+    "the huge one",
+    "the red one",
+    "lives at",
+    "where does",
+    "please answer in a sentence",
+    "give a short sentence",
+    "give a sentence",
+)
+
+
+def _usable_words(text: str) -> list[str]:
+    return [part.strip(".,!?;:\"'").lower() for part in text.split() if part.strip(".,!?;:\"'")]
+
+
+def score_usable_turn(
+    *,
+    decoded: str,
+    stopped: bool,
+    gold: str,
+    distractors: tuple[str, ...] | list[str],
+    skills: list[str],
+    n_tokens: int,
+) -> dict:
+    """Fact hit, on-topic, period-stop, rambling. One-word color/size is on-topic, not rambling."""
+    words = _usable_words(decoded)
+    gold_l = gold.strip().lower()
+    fact_hit = gold_l in words
+    distractor_hits = sorted(
+        {item.strip().lower() for item in distractors if item.strip().lower() in words and item.strip().lower() != gold_l}
+    )
+    lower = decoded.lower()
+    storyish = any(marker in lower for marker in STORY_CONTINUATION_MARKERS)
+    n_periods = decoded.count(".")
+    rambling = bool(
+        storyish
+        or n_periods > 1
+        or (len(words) >= 10 and not fact_hit)
+        or (not stopped and n_tokens >= 12)
+    )
+    on_topic = fact_hit and not distractor_hits
+    if "refuse-story" in skills:
+        on_topic = fact_hit and not storyish
+        rambling = rambling or storyish
+    period_stop = bool(stopped) and ("." in decoded)
+    usable = bool(on_topic and period_stop and fact_hit)
+    return {
+        "fact_hit": fact_hit,
+        "fact_reuse": fact_hit if "come-back" in skills else None,
+        "on_topic": on_topic,
+        "period_stop": period_stop,
+        "rambling": rambling,
+        "usable": usable,
+        "distractor_hits": distractor_hits,
+        "n_words": len(words),
+        "generic_continuation": (not fact_hit) and (storyish or len(words) >= 6),
+    }
+
+
+def score_sentence_answer(*, full_text: str, entity: str, color: str, stopped: bool) -> dict:
+    words = _usable_words(full_text)
+    has_entity = entity.strip().lower() in words
+    has_color = color.strip().lower() in words
+    period = "." in full_text
+    sentence_like = has_entity and has_color and period and len(words) >= 3 and ("is" in words or "looks" in words)
+    return {
+        "has_entity": has_entity,
+        "has_color": has_color,
+        "period": period,
+        "stopped": bool(stopped),
+        "n_words": len(words),
+        "sentence_ok": sentence_like,
+        "one_word_color": has_color and not has_entity and len(words) <= 2,
+    }
+
+
+def build_usable_chat_pack() -> list[dict]:
+    """Held-out 4–5 turn chats mixing only skills E12 already has. Eval-only; never trained."""
+    return [
+        {
+            "id": "color_howabout_reuse",
+            "n_turns": 4,
+            "facts": "fox looks white. pig looks red.",
+            "turns": [
+                {"human": "Which color is the fox?", "gold": "white", "entity": "fox", "skills": ["color"], "distractors": ["red"]},
+                {"human": "How about the pig?", "gold": "red", "entity": "pig", "skills": ["how-about"], "distractors": ["white"]},
+                {"human": "Tell me the color of the fox.", "gold": "white", "entity": "fox", "skills": ["color", "come-back"], "distractors": ["red"]},
+                {"human": "The pig then?", "gold": "red", "entity": "pig", "skills": ["how-about", "come-back"], "distractors": ["white"]},
+            ],
+        },
+        {
+            "id": "size_then_color",
+            "n_turns": 4,
+            "facts": "Remember: the frog is wide in size. That bird is tiny in size. fox looks white. pig looks red.",
+            "turns": [
+                {"human": "Which size is the frog?", "gold": "wide", "entity": "frog", "skills": ["size"], "distractors": ["tiny", "white", "red"]},
+                {"human": "Tell me the size of the bird.", "gold": "tiny", "entity": "bird", "skills": ["size"], "distractors": ["wide", "white", "red"]},
+                {"human": "Which color is the fox?", "gold": "white", "entity": "fox", "skills": ["color"], "distractors": ["red", "wide", "tiny"]},
+                {"human": "How about the pig?", "gold": "red", "entity": "pig", "skills": ["how-about"], "distractors": ["white", "wide", "tiny"]},
+            ],
+        },
+        {
+            "id": "about_saystop_reuse",
+            "n_turns": 4,
+            "facts": "That cow is pink. That duck is green.",
+            "turns": [
+                {"human": "What do you know about the cow?", "gold": "pink", "entity": "cow", "skills": ["about"], "distractors": ["green"]},
+                {"human": "Please say the color of the duck and stop.", "gold": "green", "entity": "duck", "skills": ["say-stop"], "distractors": ["pink"]},
+                {"human": "Talk about the cow.", "gold": "pink", "entity": "cow", "skills": ["about", "come-back"], "distractors": ["green"]},
+                {"human": "How about the duck?", "gold": "green", "entity": "duck", "skills": ["how-about", "come-back"], "distractors": ["pink"]},
+            ],
+        },
+        {
+            "id": "refuse_story_color",
+            "n_turns": 4,
+            "facts": "Long ago a hen went home. That hen was yellow. A dog came by. That dog was blue.",
+            "turns": [
+                {"human": "Stop the story. Which color is the hen?", "gold": "yellow", "entity": "hen", "skills": ["refuse-story", "color"], "distractors": ["blue"]},
+                {"human": "Tell me the color of the dog.", "gold": "blue", "entity": "dog", "skills": ["color"], "distractors": ["yellow"]},
+                {"human": "How about the hen?", "gold": "yellow", "entity": "hen", "skills": ["how-about", "come-back"], "distractors": ["blue"]},
+                {"human": "Give the color of the dog then stop.", "gold": "blue", "entity": "dog", "skills": ["say-stop", "come-back"], "distractors": ["yellow"]},
+            ],
+        },
+        {
+            "id": "chat_varied_4",
+            "n_turns": 4,
+            "facts": "cat looks red. bear looks white.",
+            "turns": [
+                {"human": "which color is the cat?", "gold": "red", "entity": "cat", "skills": ["color"], "distractors": ["white"]},
+                {"human": "the bear then?", "gold": "white", "entity": "bear", "skills": ["how-about"], "distractors": ["red"]},
+                {"human": "tell me about the cat.", "gold": "red", "entity": "cat", "skills": ["about", "come-back"], "distractors": ["white"]},
+                {"human": "how is the bear?", "gold": "white", "entity": "bear", "skills": ["how-about", "come-back"], "distractors": ["red"]},
+            ],
+        },
+        {
+            "id": "size_howabout_reuse",
+            "n_turns": 4,
+            "facts": "That pig is tiny in size. That duck is huge in size.",
+            "turns": [
+                {"human": "What is the size of the pig?", "gold": "tiny", "entity": "pig", "skills": ["size"], "distractors": ["huge"]},
+                {"human": "How about the duck?", "gold": "huge", "entity": "duck", "skills": ["how-about", "size"], "distractors": ["tiny"]},
+                {"human": "Tell me the size of the pig.", "gold": "tiny", "entity": "pig", "skills": ["size", "come-back"], "distractors": ["huge"]},
+                {"human": "Which size is the duck?", "gold": "huge", "entity": "duck", "skills": ["size", "come-back"], "distractors": ["tiny"]},
+            ],
+        },
+        {
+            "id": "five_turn_color",
+            "n_turns": 5,
+            "facts": "fox looks blue. hen looks pink. cow looks white.",
+            "turns": [
+                {"human": "Which color is the fox?", "gold": "blue", "entity": "fox", "skills": ["color"], "distractors": ["pink", "white"]},
+                {"human": "How about the hen?", "gold": "pink", "entity": "hen", "skills": ["how-about"], "distractors": ["blue", "white"]},
+                {"human": "What do you know about the cow?", "gold": "white", "entity": "cow", "skills": ["about"], "distractors": ["blue", "pink"]},
+                {"human": "The fox then?", "gold": "blue", "entity": "fox", "skills": ["how-about", "come-back"], "distractors": ["pink", "white"]},
+                {"human": "Talk about the hen.", "gold": "pink", "entity": "hen", "skills": ["about", "come-back"], "distractors": ["blue", "white"]},
+            ],
+        },
+        {
+            "id": "refuse_then_about",
+            "n_turns": 4,
+            "facts": "In the yard a cat went out. The cat looks green. A bear walked along. The bear looks red.",
+            "turns": [
+                {"human": "Do not continue. What is the color of the cat?", "gold": "green", "entity": "cat", "skills": ["refuse-story", "color"], "distractors": ["red"]},
+                {"human": "How about the bear?", "gold": "red", "entity": "bear", "skills": ["how-about"], "distractors": ["green"]},
+                {"human": "What do you know about the cat?", "gold": "green", "entity": "cat", "skills": ["about", "come-back"], "distractors": ["red"]},
+                {"human": "Please say the color of the bear and stop.", "gold": "red", "entity": "bear", "skills": ["say-stop", "come-back"], "distractors": ["green"]},
+            ],
+        },
+        {
+            "id": "five_turn_size_color",
+            "n_turns": 5,
+            "facts": "Remember: the hen is short in size. That fox is huge in size. duck looks yellow. cow looks blue.",
+            "turns": [
+                {"human": "Which size is the hen?", "gold": "short", "entity": "hen", "skills": ["size"], "distractors": ["huge", "yellow", "blue"]},
+                {"human": "Tell me the size of the fox.", "gold": "huge", "entity": "fox", "skills": ["size"], "distractors": ["short", "yellow", "blue"]},
+                {"human": "Which color is the duck?", "gold": "yellow", "entity": "duck", "skills": ["color"], "distractors": ["blue", "short", "huge"]},
+                {"human": "How about the cow?", "gold": "blue", "entity": "cow", "skills": ["how-about"], "distractors": ["yellow", "short", "huge"]},
+                {"human": "What is the size of the hen?", "gold": "short", "entity": "hen", "skills": ["size", "come-back"], "distractors": ["huge", "yellow", "blue"]},
+            ],
+        },
+        {
+            "id": "saystop_about_howabout",
+            "n_turns": 4,
+            "facts": "Remember: the bird is pink. That frog is white.",
+            "turns": [
+                {"human": "Give the color of the bird then stop.", "gold": "pink", "entity": "bird", "skills": ["say-stop"], "distractors": ["white"]},
+                {"human": "What do you know about the frog?", "gold": "white", "entity": "frog", "skills": ["about"], "distractors": ["pink"]},
+                {"human": "How about the bird?", "gold": "pink", "entity": "bird", "skills": ["how-about", "come-back"], "distractors": ["white"]},
+                {"human": "Tell me the color of the frog.", "gold": "white", "entity": "frog", "skills": ["color", "come-back"], "distractors": ["pink"]},
+            ],
+        },
+    ]
+
+
+def build_sentence_decode_pack() -> list[dict]:
+    """Held-out color prompts for no-train sentence operators. Not a train family."""
+    return [
+        {"id": "fox_white", "facts": "fox looks white. pig looks red.", "entity": "fox", "color": "white", "query": "Which color is the fox?"},
+        {"id": "pig_red", "facts": "fox looks white. pig looks red.", "entity": "pig", "color": "red", "query": "Tell me the color of the pig."},
+        {"id": "frog_blue", "facts": "Remember: the frog is blue. Remember: the bird is yellow.", "entity": "frog", "color": "blue", "query": "What is the color of the frog?"},
+        {"id": "cow_pink", "facts": "That cow is pink. That duck is green.", "entity": "cow", "color": "pink", "query": "Which color is the cow?"},
+        {"id": "hen_yellow", "facts": "That hen is yellow. That dog is blue.", "entity": "hen", "color": "yellow", "query": "Tell me the color of the hen."},
+        {"id": "cat_green", "facts": "cat looks green. bear looks red.", "entity": "cat", "color": "green", "query": "What is the color of the cat?"},
+        {"id": "bird_pink", "facts": "Remember: the bird is pink. That frog is white.", "entity": "bird", "color": "pink", "query": "Which color is the bird?"},
+        {"id": "duck_yellow", "facts": "duck looks yellow. cow looks blue.", "entity": "duck", "color": "yellow", "query": "Tell me the color of the duck."},
+    ]
+
+
 def banks_from_language() -> Banks:
     from .data import read_u16
 

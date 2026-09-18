@@ -1,6 +1,6 @@
 {
   "campaign": "actual_baby_language_bridge",
-  "status": "E12b size-stop remains the D3-safe experimental survivor. E18 varied dialogue, E20 color chat-loop, E15/E16 open/about graduate zeroshot on E12. Copy and happened/true-wrong spend D3 at the dose that learns. U16000 not replaced. TEST closed.",
+  "status": "STOP. Actual Baby-in-closed-vocab milestone on E12 usable-chat canary. One-word period-stopped chat works. Sentence decode parked. U16000 not replaced. TEST closed.",
   "test_closed": true,
   "u16000_replaced": false,
   "git": {
@@ -41,7 +41,13 @@
       "mixed_2e_heldout": 0.5625,
       "story_combine_heldout": 0.3125,
       "fact_combine_heldout": 0.21875,
-      "story_mixed_heldout": 0.375
+      "story_mixed_heldout": 0.375,
+      "usable_chat_turn": 0.857,
+      "usable_chat_4turn": 0.906,
+      "usable_chat_5turn": 0.7,
+      "usable_chat_reuse": 1.0,
+      "usable_chat_stop": 1.0,
+      "usable_chat_rambling": 0.0
     },
     "d3_retention": {
       "long_gap_free_exact": 202,
@@ -85,5 +91,23 @@
     "e17c_copy": {"d3": 197, "copy": 0.562},
     "e19_happened": {"d3": 168, "happened": 0.375}
   },
-  "next": "Do not promote U16000. TEST stays closed. Primary remains E12. Park mix/combine/who/place/5-turn/copy-at-GRAD-dose/happened-true-wrong/sentence-format. Coding waits. Remaining wall is new lexemes (true/wrong, sentence starts) and override-copy vs D3."
+  "usable_chat": {
+    "receipt": "runs/actual_baby/usable_chat.json",
+    "verdict": "STRONG",
+    "ramble_gap": false,
+    "language_finetune": "skipped",
+    "autoregressive_turn": 0.857,
+    "autoregressive_4turn": 0.906,
+    "autoregressive_5turn": 0.7,
+    "fact_reuse": 1.0,
+    "period_stop": 1.0,
+    "rambling": 0.0
+  },
+  "sentence_decode": {
+    "verdict": "PARK",
+    "keep_operator": null,
+    "light_best": "bare=0.000 (one-word color instead)",
+    "heavy_cloze": "force_entity_is=0.875 is prompt-fed '{e} is', not a sentence speaker"
+  },
+  "next": "STOP as true blocker / Actual Baby-in-closed-vocab. Do not promote U16000. Do not open TEST. Do not train parked D3 killers (mix/combine/who/place/5-turn/copy-at-learn/happened/sentence-format). Remaining wall is new lexemes and D3-forbidden skills, not usable closed-vocab chat."
 }

@@ -39,6 +39,8 @@ from .data_language_bridge import (
     build_e19_panels,
     build_e20_panels,
     build_probe_panels,
+    build_sentence_decode_pack,
+    build_usable_chat_pack,
     load_tokenizer,
     make_english_item,
     encode_ids,
@@ -46,6 +48,8 @@ from .data_language_bridge import (
     sample_train_item,
     make_size_item,
     make_story_item,
+    score_sentence_answer,
+    score_usable_turn,
 )
 from .data_v2 import make_item
 from .evaluate import language_ce, score_items, summarize
@@ -74,6 +78,13 @@ from .train_v2r4 import DEV_STREAM, capability_optimizer, language_batch, set_se
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "runs" / "actual_baby"
 LEDGER = OUT / "LEDGER.md"
+E12_SURVIVOR = OUT / "e12_stoponly_311211" / "checkpoint_00050.pt"
+E12_SURVIVOR_SHA = "6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1"
+USABLE_TURN_GATE = 0.70
+USABLE_REUSE_GATE = 0.60
+USABLE_STOP_GATE = 0.80
+USABLE_RAMBLE_MAX = 0.30
+SENTENCE_LIGHT_GATE = 0.40
 PROTOCOL = "BABY_V010_LANGUAGE_BRIDGE"
 EXPECTED_D3_SHA = "8d9e3e209f3449e4bdb5ad6bfeb3592dc1afe57bb10958bad3d7e1b94c40c9fb"
 D3_PATH = ROOT / "src" / "baby_v010" / "selection_rapid_treat_d.py"
@@ -671,6 +682,283 @@ def run_decode_canary(model, tokenizer, device, *, n: int = 8, seed: int = 31051
     }
 
 
+def _rate(flags: list[bool]) -> float:
+    if not flags:
+        return 0.0
+    return sum(int(flag) for flag in flags) / len(flags)
+
+
+def _gold_answer(gold: str) -> str:
+    text = gold if gold.startswith(" ") else " " + gold
+    return text if text.endswith(".") else text + "."
+
+
+def play_usable_chat(model, tokenizer, device, script: dict, *, teacher_force: bool) -> dict:
+    facts = str(script["facts"])
+    transcript = facts
+    turn_rows = []
+    ramble_gap = False
+    for index, turn in enumerate(script["turns"]):
+        prompt = f"{transcript}\nHuman: {turn['human']}\nBaby:"
+        prompt_ids = [BOS, *encode_ids(tokenizer, prompt)]
+        emitted, stopped = greedy_decode_until_stop(model, prompt_ids, device, tokenizer, max_new=16)
+        decoded = tokenizer.decode(emitted, skip_special_tokens=True)
+        scored = score_usable_turn(
+            decoded=decoded,
+            stopped=stopped,
+            gold=str(turn["gold"]),
+            distractors=tuple(turn["distractors"]),
+            skills=list(turn["skills"]),
+            n_tokens=len(emitted),
+        )
+        turn_rows.append(
+            {
+                "i": index,
+                "human": turn["human"],
+                "gold": turn["gold"],
+                "entity": turn["entity"],
+                "skills": turn["skills"],
+                "prompt": prompt,
+                "decoded": decoded,
+                "stopped": stopped,
+                "n_tokens": len(emitted),
+                **scored,
+            }
+        )
+        if scored["rambling"] or scored["generic_continuation"]:
+            ramble_gap = True
+        baby = _gold_answer(str(turn["gold"])) if teacher_force else (decoded if decoded else _gold_answer(str(turn["gold"])))
+        transcript = prompt + baby
+    reuse_flags = [bool(row["fact_reuse"]) for row in turn_rows if row["fact_reuse"] is not None]
+    return {
+        "id": script["id"],
+        "n_turns": int(script["n_turns"]),
+        "teacher_force": teacher_force,
+        "turns": turn_rows,
+        "usable_turn": _rate([row["usable"] for row in turn_rows]),
+        "fact_hit": _rate([row["fact_hit"] for row in turn_rows]),
+        "on_topic": _rate([row["on_topic"] for row in turn_rows]),
+        "period_stop": _rate([row["period_stop"] for row in turn_rows]),
+        "rambling": _rate([row["rambling"] for row in turn_rows]),
+        "generic_continuation": _rate([row["generic_continuation"] for row in turn_rows]),
+        "fact_reuse": _rate(reuse_flags) if reuse_flags else None,
+        "chat_usable": all(row["usable"] for row in turn_rows),
+        "ramble_gap": ramble_gap,
+    }
+
+
+def _slice_summary(rows: list[dict]) -> dict:
+    reuse = [float(row["fact_reuse"]) for row in rows if row.get("fact_reuse") is not None]
+    n_turns = max(1, sum(int(row["n_turns"]) for row in rows))
+    return {
+        "n_chats": len(rows),
+        "n_turns": sum(int(row["n_turns"]) for row in rows),
+        "usable_turn": sum(row["usable_turn"] * row["n_turns"] for row in rows) / n_turns,
+        "fact_hit": sum(row["fact_hit"] * row["n_turns"] for row in rows) / n_turns,
+        "on_topic": sum(row["on_topic"] * row["n_turns"] for row in rows) / n_turns,
+        "period_stop": sum(row["period_stop"] * row["n_turns"] for row in rows) / n_turns,
+        "rambling": sum(row["rambling"] * row["n_turns"] for row in rows) / n_turns,
+        "generic_continuation": sum(row["generic_continuation"] * row["n_turns"] for row in rows) / n_turns,
+        "fact_reuse": (sum(reuse) / len(reuse)) if reuse else None,
+        "chat_usable": _rate([bool(row["chat_usable"]) for row in rows]),
+        "ramble_gap_chats": _rate([bool(row["ramble_gap"]) for row in rows]),
+    }
+
+
+def usable_chat_verdict(auto_all: dict, auto_4: dict, auto_5: dict) -> tuple[str, str, bool]:
+    """STRONG / MIXED / WEAK. MIXED = 4-turn strong, 5-turn weak (do not train 5-turn)."""
+    four_strong = (
+        float(auto_4["usable_turn"]) >= USABLE_TURN_GATE
+        and float(auto_4.get("fact_reuse") or 0.0) >= USABLE_REUSE_GATE
+        and float(auto_4["period_stop"]) >= USABLE_STOP_GATE
+        and float(auto_4["rambling"]) <= USABLE_RAMBLE_MAX
+    )
+    five_strong = (
+        float(auto_5["usable_turn"]) >= USABLE_TURN_GATE
+        and float(auto_5.get("fact_reuse") or 0.0) >= USABLE_REUSE_GATE
+        and float(auto_5["period_stop"]) >= USABLE_STOP_GATE
+        and float(auto_5["rambling"]) <= USABLE_RAMBLE_MAX
+    )
+    ramble_is_gap = float(auto_4["rambling"]) > USABLE_RAMBLE_MAX or float(auto_4["generic_continuation"]) > 0.25
+    wrong_fact = float(auto_4["fact_hit"]) < 0.60 and float(auto_4["rambling"]) <= USABLE_RAMBLE_MAX
+    if four_strong and five_strong:
+        return "STRONG", f"usable-chat 4+5 usable={auto_all['usable_turn']:.3f} reuse={auto_all.get('fact_reuse')} stop={auto_all['period_stop']:.3f}", False
+    if four_strong and not five_strong:
+        return (
+            "MIXED",
+            f"4-turn usable={auto_4['usable_turn']:.3f} reuse={auto_4.get('fact_reuse')} stop={auto_4['period_stop']:.3f}; 5-turn usable={auto_5['usable_turn']:.3f} parked",
+            False,
+        )
+    gap = "rambling/generic continuation" if ramble_is_gap else ("wrong-fact" if wrong_fact else "mixed skill drop")
+    return "WEAK", f"4-turn usable={auto_4['usable_turn']:.3f} stop={auto_4['period_stop']:.3f} ramble={auto_4['rambling']:.3f} gap={gap}", ramble_is_gap
+
+
+def run_usable_chat(model, tokenizer, device) -> dict:
+    pack = build_usable_chat_pack()
+    auto_rows = [play_usable_chat(model, tokenizer, device, script, teacher_force=False) for script in pack]
+    gold_rows = [play_usable_chat(model, tokenizer, device, script, teacher_force=True) for script in pack]
+    auto_4 = [row for row in auto_rows if row["n_turns"] == 4]
+    auto_5 = [row for row in auto_rows if row["n_turns"] == 5]
+    summary_auto = _slice_summary(auto_rows)
+    summary_4 = _slice_summary(auto_4)
+    summary_5 = _slice_summary(auto_5)
+    summary_gold = _slice_summary(gold_rows)
+    verdict, lesson, ramble_gap = usable_chat_verdict(summary_auto, summary_4, summary_5)
+    return {
+        "id": "usable_chat",
+        "n": len(pack),
+        "autoregressive": summary_auto,
+        "autoregressive_4turn": summary_4,
+        "autoregressive_5turn": summary_5,
+        "teacher_force": summary_gold,
+        "chats_auto": auto_rows,
+        "chats_teacher": gold_rows,
+        "verdict": verdict,
+        "lesson": lesson,
+        "ramble_gap": ramble_gap,
+    }
+
+
+SENTENCE_OPERATORS = (
+    ("bare", "{facts} {query}", ""),
+    ("sent_prefix", "Please answer in a sentence. {facts} {query}", ""),
+    ("short_prefix", "Give a short sentence. {facts} {query}", ""),
+    ("baby", "{facts}\nHuman: {query}\nBaby:", ""),
+    ("force_the", "{facts} {query} The", " The"),
+    ("force_entity_is", "{facts} {query} {entity} is", None),
+    ("force_the_entity_is", "{facts} {query} The {entity} is", None),
+)
+LIGHT_SENTENCE_OPS = frozenset({"bare", "sent_prefix", "short_prefix", "baby", "force_the"})
+
+
+def run_sentence_decode(model, tokenizer, device) -> dict:
+    pack = build_sentence_decode_pack()
+    by_op: dict[str, list[dict]] = {name: [] for name, _template, _lead in SENTENCE_OPERATORS}
+    for item in pack:
+        for name, template, lead in SENTENCE_OPERATORS:
+            prompt = template.format(facts=item["facts"], query=item["query"], entity=item["entity"])
+            if name == "force_entity_is":
+                lead_text = f" {item['entity']} is"
+            elif name == "force_the_entity_is":
+                lead_text = f" The {item['entity']} is"
+            else:
+                lead_text = lead
+            prompt_ids = [BOS, *encode_ids(tokenizer, prompt)]
+            emitted, stopped = greedy_decode_until_stop(model, prompt_ids, device, tokenizer, max_new=16)
+            decoded = tokenizer.decode(emitted, skip_special_tokens=True)
+            full = (lead_text or "") + decoded
+            scored = score_sentence_answer(full_text=full, entity=item["entity"], color=item["color"], stopped=stopped)
+            by_op[name].append(
+                {
+                    "id": item["id"],
+                    "prompt": prompt,
+                    "decoded": decoded,
+                    "full": full,
+                    "gold": item["color"],
+                    "entity": item["entity"],
+                    "stopped": stopped,
+                    "n_tokens": len(emitted),
+                    **scored,
+                }
+            )
+    operators = {}
+    for name, rows in by_op.items():
+        operators[name] = {
+            "sentence_ok": _rate([bool(row["sentence_ok"]) for row in rows]),
+            "one_word_color": _rate([bool(row["one_word_color"]) for row in rows]),
+            "has_color": _rate([bool(row["has_color"]) for row in rows]),
+            "has_entity": _rate([bool(row["has_entity"]) for row in rows]),
+            "period": _rate([bool(row["period"]) for row in rows]),
+            "stopped": _rate([bool(row["stopped"]) for row in rows]),
+            "light": name in LIGHT_SENTENCE_OPS,
+            "rows": rows,
+        }
+    light_best = max((name for name in operators if operators[name]["light"]), key=lambda name: operators[name]["sentence_ok"])
+    light_rate = float(operators[light_best]["sentence_ok"])
+    keep = light_rate >= SENTENCE_LIGHT_GATE
+    heavy_best = max((name for name in operators if not operators[name]["light"]), key=lambda name: operators[name]["sentence_ok"])
+    if keep:
+        lesson = f"keep operator {light_best} sentence_ok={light_rate:.3f}"
+        verdict = "KEEP"
+    else:
+        lesson = (
+            f"park sentence decode; best light {light_best}={light_rate:.3f}; "
+            f"heavy {heavy_best}={operators[heavy_best]['sentence_ok']:.3f}"
+        )
+        verdict = "PARK"
+    return {
+        "id": "sentence_decode",
+        "verdict": verdict,
+        "lesson": lesson,
+        "keep_operator": light_best if keep else None,
+        "operators": operators,
+    }
+
+
+def load_e12_survivor(device, resume: Path | None = None):
+    path = resume or E12_SURVIVOR
+    sha = digest(path)
+    if sha != E12_SURVIVOR_SHA:
+        raise RuntimeError(f"E12 survivor hash mismatch: {sha}")
+    model, config, ckpt = load_experimental_baby(path, device)
+    return path, sha, model, config, ckpt
+
+
+def run_canary(device, resume: Path | None = None) -> dict:
+    tokenizer = load_tokenizer()
+    path, sha, model, _config, ckpt = load_e12_survivor(device, resume)
+    t0 = time.time()
+    usable = run_usable_chat(model, tokenizer, device)
+    sentence = run_sentence_decode(model, tokenizer, device)
+    report = {
+        "id": "usable_chat_canary",
+        "resume": str(path),
+        "checkpoint_sha256": sha,
+        "authoritative": False,
+        "protected_material_opened": bool(ckpt.get("protected_material_opened")),
+        "elapsed_s": time.time() - t0,
+        "usable_chat": {k: v for k, v in usable.items() if k not in {"chats_auto", "chats_teacher"}},
+        "usable_chat_chats_auto": usable["chats_auto"],
+        "usable_chat_chats_teacher": usable["chats_teacher"],
+        "sentence_decode": {k: v for k, v in sentence.items() if k != "operators"},
+        "sentence_operators": {
+            name: {kk: vv for kk, vv in row.items() if kk != "rows"}
+            for name, row in sentence["operators"].items()
+        },
+        "sentence_rows": {name: row["rows"] for name, row in sentence["operators"].items()},
+        "verdict": usable["verdict"],
+        "lesson": f"{usable['lesson']}; sentence {sentence['verdict']}: {sentence['lesson']}",
+        "ramble_gap": usable["ramble_gap"],
+        "sentence_keep_operator": sentence.get("keep_operator"),
+    }
+    write(OUT / "usable_chat.json", report)
+    ledger_append(
+        {
+            "id": "usable_chat",
+            "change": "Eval-only held-out 4-5 turn usable-chat pack + no-train sentence decode on E12 (U16000 not replaced)",
+            "verdict": usable["verdict"],
+            "lesson": report["lesson"],
+            "checkpoint_sha256": sha,
+        }
+    )
+    print(
+        json.dumps(
+            {
+                "phase": "usable_chat",
+                "verdict": usable["verdict"],
+                "lesson": report["lesson"],
+                "auto": usable["autoregressive"],
+                "auto4": usable["autoregressive_4turn"],
+                "auto5": usable["autoregressive_5turn"],
+                "sentence": report["sentence_decode"],
+            },
+            default=str,
+        ),
+        flush=True,
+    )
+    return report
+
+
 def retention_ok(stage1: dict) -> tuple[bool, str]:
     long_on = int(stage1["long_gap"]["free_exact"])
     n_long = int(stage1["long_gap"]["n"])
@@ -1165,7 +1453,7 @@ def run_probe(device, resume: Path, *, phase: str = "e4") -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=("zeroshot", "campaign", "train", "retention", "probe"), default="campaign")
+    parser.add_argument("--mode", choices=("zeroshot", "campaign", "train", "retention", "probe", "canary"), default="campaign")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--phase", default="e1")
     parser.add_argument("--resume", type=Path)
@@ -1178,6 +1466,9 @@ def main() -> None:
     parser.add_argument("--no-early-stop", action="store_true")
     args = parser.parse_args()
     device = resolve_device(args.device)
+    if args.mode == "canary":
+        run_canary(device, args.resume)
+        return
     if args.mode == "probe":
         if args.resume is None:
             raise SystemExit("--resume is required for probe")
