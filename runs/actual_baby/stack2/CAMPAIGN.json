@@ -1,0 +1,42 @@
+{
+  "status": "MAJOR s2a: mix GRAD mixed=0.875 fact_combine=0.656 story_combine=0.438 mixed_story=0.500; E12 English hold color=0.969 size_stop=1.000 story=1.000; usable-chat hold usable4=0.969 usable=0.952 stop=1.000 reuse=1.0 D3 169/215 induction 0.469",
+  "retention": "english-first; D3 logged not auto-killed",
+  "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
+  "campaign": "actual_baby_stack2",
+  "test_closed": true,
+  "u16000_replaced": false,
+  "authoritative_baby": {
+    "path": "C:\\DaveLM-v0.10\\runs\\structured_v2r4_seed106001_from6000_terminal\\checkpoint_16000.pt",
+    "sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827"
+  },
+  "parent_experimental": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e12_stoponly_311211\\checkpoint_00050.pt",
+    "sha256": "6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1",
+    "authoritative": false
+  },
+  "last": {
+    "id": "s2a",
+    "verdict": "SURVIVE",
+    "major": true,
+    "lesson": "mix GRAD mixed=0.875 fact_combine=0.656 story_combine=0.438 mixed_story=0.500; E12 English hold color=0.969 size_stop=1.000 story=1.000; usable-chat hold usable4=0.969 usable=0.952 stop=1.000 reuse=1.0 D3 169/215 induction 0.469"
+  },
+  "s2a": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
+    "sha256": "0642a2f2a4044d9936cc3f930fa096ef55fc69c5e7cfe6f7c539a3c47b5fd959",
+    "verdict": "SURVIVE",
+    "major": true,
+    "mix": {
+      "mixed_2e": 0.875,
+      "fact_combine": 0.65625,
+      "story_combine": 0.4375,
+      "story_mixed": 0.5,
+      "color": 0.96875,
+      "size_stop": 1.0,
+      "story_color": 1.0,
+      "dialogue": 1.0
+    },
+    "d3": 169,
+    "induction": 0.46875
+  },
+  "survivor": "s2a"
+}
