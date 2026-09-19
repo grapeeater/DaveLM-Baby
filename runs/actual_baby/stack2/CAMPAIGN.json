@@ -1,5 +1,5 @@
 {
-  "status": "MAJOR s2a: mix GRAD mixed=0.875 fact_combine=0.656 story_combine=0.438 mixed_story=0.500; E12 English hold color=0.969 size_stop=1.000 story=1.000; usable-chat hold usable4=0.969 usable=0.952 stop=1.000 reuse=1.0 D3 169/215 induction 0.469",
+  "status": "D3 recover MILESTONE",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -38,5 +38,87 @@
     "d3": 169,
     "induction": 0.46875
   },
-  "survivor": "s2a"
+  "survivor": "s2m",
+  "s2m": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2m_protect40_combine_323091\\checkpoint_00025.pt",
+    "sha256": "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9",
+    "verdict": "SURVIVE",
+    "major": true,
+    "authoritative": false,
+    "promoted": false,
+    "parent": "s2a",
+    "mix": {
+      "mixed_2e": 0.875,
+      "fact_combine": 0.71875,
+      "story_combine": 0.5625,
+      "story_mixed": 0.625,
+      "color": 0.96875,
+      "size_stop": 1.0,
+      "story_color": 1.0,
+      "dialogue": 1.0
+    },
+    "usable": {
+      "turn": 0.9285714285714286,
+      "turn4": 0.96875,
+      "stop": 1.0,
+      "reuse": 1.0
+    },
+    "d3": 197,
+    "induction": 0.453125
+  },
+  "s2a_parent": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
+    "sha256": "0642a2f2a4044d9936cc3f930fa096ef55fc69c5e7cfe6f7c539a3c47b5fd959"
+  },
+  "hypothesis": "s2a D3 hole is greedy span. Mix-off pulse (s2i) restores span: u25 keeps mix, u50 reaches slice 0.95 then kills combine. Do not cut mix to 5\u201310%. Lock mix from s2i pulses; independently steal structured not mix remainder.",
+  "parent_slice": {
+    "n": 40,
+    "first_top1": 1.0,
+    "free_exact": 0.825,
+    "tf_exact": 0.85
+  },
+  "baseline_slice": 0.825,
+  "recover_winner": {
+    "recipe": "s2m",
+    "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2m_protect40_combine_323091\\checkpoint_00025.pt",
+    "sha256": "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9",
+    "d3_full": 197,
+    "mix_ok": true,
+    "eng_ok": true,
+    "use_ok": true,
+    "milestone": true,
+    "lesson": "s2a mix hold mixed=0.875 fact_combine=0.719; E12 English hold color=0.969 size_stop=1.000 story=1.000; s2a usable hold usable4=0.969 usable=0.929 stop=1.000 reuse=1.0; D3 197/215",
+    "native": {
+      "mixed_2e": 0.875,
+      "fact_combine": 0.71875,
+      "story_combine": 0.5625,
+      "story_mixed": 0.625,
+      "color": 0.96875,
+      "size_stop": 1.0,
+      "story_color": 1.0,
+      "dialogue": 1.0
+    },
+    "usable": {
+      "turn": 0.9285714285714286,
+      "turn4": 0.96875,
+      "stop": 1.0,
+      "reuse": 1.0
+    },
+    "d3": {
+      "n": 215,
+      "free_exact": 197,
+      "first_correct": 215,
+      "free_accuracy": 0.9162790697674419,
+      "first_accuracy": 1.0
+    },
+    "induction": 0.453125
+  },
+  "last_verify": {
+    "recipe": "s2m",
+    "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2m_protect40_combine_323091\\checkpoint_00025.pt",
+    "sha256": "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9",
+    "d3_full": 197,
+    "milestone": true,
+    "lesson": "s2a mix hold mixed=0.875 fact_combine=0.719; E12 English hold color=0.969 size_stop=1.000 story=1.000; s2a usable hold usable4=0.969 usable=0.929 stop=1.000 reuse=1.0; D3 197/215"
+  }
 }

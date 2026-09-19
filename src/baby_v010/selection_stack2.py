@@ -61,6 +61,33 @@ CAMPAIGN = OUT / "CAMPAIGN.json"
 D3_PATH = ROOT / "src" / "baby_v010" / "selection_rapid_treat_d.py"
 HIST_E13 = ROOT / "runs" / "actual_baby" / "e13_mix_311301" / "checkpoint_00050.pt"
 HIST_E13_SHA = "4fa5060de08076458416d660429bdfed9fec989e292a36472b3278ecbdae2838"
+S2A_SURVIVOR = OUT / "s2a_protect40_combine_322001" / "checkpoint_00200.pt"
+S2A_SURVIVOR_SHA = "0642a2f2a4044d9936cc3f930fa096ef55fc69c5e7cfe6f7c539a3c47b5fd959"
+S2I25_SURVIVOR = OUT / "s2i_protect40_combine_323051" / "checkpoint_00025.pt"
+S2I25_SURVIVOR_SHA = "664e8ead0f922f1ee937f4e1ef12c8f1f85d196fa03f7b9a6ec48bd905229bb3"
+S2I50_SURVIVOR = OUT / "s2i_protect40_combine_323051" / "checkpoint_00050.pt"
+S2I50_SURVIVOR_SHA = "c2137471f1d53adce3fd272794380b140f6cd12606ed706f6bffc0d95e1e1659"
+S2A_D3_SLICE = 0.825
+S2A_D3_FULL = 169
+S2A_MIXED = 0.875
+S2A_COMBINE = 0.65625
+S2A_USABLE = 0.952
+S2A_USABLE4 = 0.969
+S2A_STOP = 1.0
+S2A_REUSE = 1.0
+RECOVER_UPDATES = 50
+RECOVER_EVAL = 25
+LOCK_UPDATES = 20
+LOCK_EVAL = 10
+D3_SLICE_SIGNAL = 0.05
+D3_SLICE_HOLDPLUS = 0.05
+D3_SLICE_ADVANCE = 0.075
+D3_SLICE_KILL = 0.125
+RECOVER_ORDER = ("s2g", "s2d", "s2h", "s2j", "s2i", "s2f", "s2k", "s2e")
+# Mix-starved 5–10% remainder arms (s2g/s2h/s2j) lift D3 slice but kill combine.
+# s2i pulse: u25 mix still holds at D3 slice 0.875; u50 D3 slice 0.950, combine 0.562.
+# Next: lock mix from those pulses; independently steal structured not mix.
+RECOVER_MIXHOLD_ORDER = ("s2o", "s2q", "s2n", "s2p", "s2l", "s2m")
 
 DROP_BAR = 0.05
 E12_COLOR = 0.96875
@@ -108,7 +135,181 @@ RECIPES = {
         "eval_every": CANARY_EVAL,
         "note": "Heavier fact-combine dose if s2a/s2b keep English but mix stays cold.",
     },
+    "s2d": {
+        "seed": 323001,
+        "mix": "protect40_combine",
+        "language_p": 0.55,
+        "structured_p": 0.35,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: language-heavy restore of D3 greedy span (first-token already 215/215).",
+    },
+    "s2e": {
+        "seed": 323011,
+        "mix": "protect40_combine",
+        "language_p": 0.20,
+        "structured_p": 0.70,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: structured keyed-span CE restore. Mix hold 10%.",
+    },
+    "s2f": {
+        "seed": 323021,
+        "mix": "protect40_combine",
+        "language_p": 0.40,
+        "structured_p": 0.50,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: language+structured span restore, 10% mix hold.",
+    },
+    "s2g": {
+        "seed": 323031,
+        "mix": "protect40_combine",
+        "language_p": 0.70,
+        "structured_p": 0.20,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: cut mix 45%→10% and structured 40%→20%; language restores greedy span. Prior lesson: skip extra structured.",
+    },
+    "s2h": {
+        "seed": 323041,
+        "mix": "protect40_combine",
+        "language_p": 0.45,
+        "structured_p": 0.45,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "note": "From s2a: remainder-masked keyed/induction CE (skip first answer token) + 10% mix hold.",
+    },
+    "s2i": {
+        "seed": 323051,
+        "mix": "protect40_combine",
+        "language_p": 0.90,
+        "structured_p": 0.10,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: mix-off diagnostic. If D3 lifts and mix dies, mix dose is the span tax.",
+    },
+    "s2j": {
+        "seed": 323061,
+        "mix": "protect40_combine",
+        "language_p": 0.80,
+        "structured_p": 0.15,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: 5% mix hold, language-heavy span restore.",
+    },
+    "s2k": {
+        "seed": 323071,
+        "mix": "protect40_combine",
+        "language_p": 0.70,
+        "structured_p": 0.20,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "lr_scale": 0.5,
+        "note": "s2g mix at half LR.",
+    },
+    "s2l": {
+        "seed": 323081,
+        "mix": "protect40_combine",
+        "language_p": 0.45,
+        "structured_p": 0.10,
+        "updates": RECOVER_EVAL,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "note": "From s2a: keep 45% mix; steal structured→language for span restore.",
+    },
+    "s2m": {
+        "seed": 323091,
+        "mix": "protect40_combine",
+        "language_p": 0.30,
+        "structured_p": 0.25,
+        "updates": RECOVER_EVAL,
+        "eval_every": RECOVER_EVAL,
+        "parent": "s2a",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "note": "From s2a: keep 45% mix; remainder-span structured + modest language.",
+    },
+    "s2n": {
+        "seed": 323101,
+        "mix": "protect40_combine",
+        "language_p": 0.15,
+        "structured_p": 0.40,
+        "updates": LOCK_UPDATES,
+        "eval_every": LOCK_EVAL,
+        "parent": "s2i25",
+        "cheap_d3": True,
+        "note": "Lock s2i@25 (mix still at s2a, D3 slice 0.875) with the original s2a diet.",
+    },
+    "s2o": {
+        "seed": 323111,
+        "mix": "combine_heavy",
+        "language_p": 0.0,
+        "structured_p": 0.0,
+        "updates": LOCK_UPDATES,
+        "eval_every": LOCK_EVAL,
+        "parent": "s2i50",
+        "cheap_d3": True,
+        "lock_from_drop": True,
+        "note": "Pure combine-heavy lock from s2i@50 (D3 slice 0.950, combine 0.562). Isolates whether mix restores combine without erasing the span.",
+    },
+    "s2p": {
+        "seed": 323121,
+        "mix": "protect40_combine",
+        "language_p": 0.05,
+        "structured_p": 0.15,
+        "updates": LOCK_UPDATES,
+        "eval_every": LOCK_EVAL,
+        "parent": "s2i50",
+        "cheap_d3": True,
+        "lock_from_drop": True,
+        "remainder_span": True,
+        "mix_remainder_span": True,
+        "lr_scale": 0.5,
+        "note": "Gentle half-LR lock from s2i@50; remainder-span on structured and mix answers.",
+    },
+    "s2q": {
+        "seed": 323131,
+        "mix": "combine_heavy",
+        "language_p": 0.10,
+        "structured_p": 0.20,
+        "updates": LOCK_UPDATES,
+        "eval_every": LOCK_EVAL,
+        "parent": "s2i50",
+        "cheap_d3": True,
+        "lock_from_drop": True,
+        "note": "From s2i@50: 70% combine-heavy mix + 10% language + 20% structured.",
+    },
 }
+
+
+def parent_checkpoint(recipe: dict) -> Path:
+    parent = recipe.get("parent")
+    if parent == "s2a":
+        return S2A_SURVIVOR
+    if parent == "s2i25":
+        return S2I25_SURVIVOR
+    if parent == "s2i50":
+        return S2I50_SURVIVOR
+    return E12_SURVIVOR
 
 
 def ledger_init() -> None:
@@ -367,13 +568,76 @@ def save_stack2_checkpoint(path: Path, model, optimizer, config, update: int, se
     return digest(path)
 
 
-def require_identities() -> None:
+def require_identities(*, require_s2a: bool = False) -> None:
     if digest(PARENT) != PARENT_SHA:
         raise RuntimeError("U16000 hash mismatch")
     if digest(E12_SURVIVOR) != E12_SURVIVOR_SHA:
         raise RuntimeError("E12 survivor hash mismatch")
     if digest(D3_PATH) != EXPECTED_D3_SHA:
         raise RuntimeError(f"D3 sha mismatch: {digest(D3_PATH)}")
+    if require_s2a:
+        if not S2A_SURVIVOR.exists():
+            raise RuntimeError(f"missing s2a parent {S2A_SURVIVOR}")
+        if digest(S2A_SURVIVOR) != S2A_SURVIVOR_SHA:
+            raise RuntimeError("s2a survivor hash mismatch")
+
+
+def cheap_d3_slice(model, device) -> dict:
+    overwrite, hooks = attach_d3_for_retention(model, device)
+    try:
+        return cheap_d3_retention(model, overwrite, device)
+    finally:
+        uninstall_c2_d3(*hooks)
+        overwrite.gen_index = None
+
+
+def mix_holds_s2a(native: dict) -> tuple[bool, str]:
+    scores = mix_scores(native)
+    mixed_ok = scores["mixed_2e"] + 1e-12 >= S2A_MIXED - DROP_BAR
+    combine_ok = scores["fact_combine"] + 1e-12 >= S2A_COMBINE - DROP_BAR
+    lesson = f"mixed={scores['mixed_2e']:.3f} fact_combine={scores['fact_combine']:.3f}"
+    if mixed_ok and combine_ok:
+        return True, f"s2a mix hold {lesson}"
+    return False, f"s2a mix drop {lesson}"
+
+
+def usable_holds_s2a(usable: dict | None) -> tuple[bool, str]:
+    ok, lesson, collapsed = usable_holds(usable)
+    if usable is None:
+        return False, "usable-chat missing"
+    if collapsed or not ok:
+        return False, lesson
+    auto = usable.get("autoregressive") or {}
+    auto4 = usable.get("autoregressive_4turn") or auto
+    turn = float(auto.get("usable_turn") or 0.0)
+    turn4 = float(auto4.get("usable_turn") or 0.0)
+    stop = float(auto4.get("period_stop") or auto.get("period_stop") or 0.0)
+    reuse = float(auto4.get("fact_reuse") or auto.get("fact_reuse") or 0.0)
+    hold = (
+        turn4 + 1e-12 >= S2A_USABLE4 - DROP_BAR
+        and turn + 1e-12 >= S2A_USABLE - DROP_BAR
+        and stop + 1e-12 >= S2A_STOP - DROP_BAR
+        and reuse + 1e-12 >= S2A_REUSE - DROP_BAR
+    )
+    note = f"usable4={turn4:.3f} usable={turn:.3f} stop={stop:.3f} reuse={reuse}"
+    if hold:
+        return True, f"s2a usable hold {note}"
+    return False, f"s2a usable drop {note}"
+
+
+def remainder_span_mask(mask: torch.Tensor) -> torch.Tensor:
+    """Drop the first target token from CE so training matches D3 first-step overwrite."""
+    if mask.ndim != 2:
+        raise ValueError("remainder_span_mask expects [batch, time]")
+    out = mask.clone()
+    counts = out.sum(dim=1)
+    has_remainder = counts > 1
+    if not bool(has_remainder.any()):
+        return out
+    first = out.to(dtype=torch.int64).argmax(dim=1)
+    rows = torch.nonzero(has_remainder, as_tuple=False).squeeze(1)
+    out[rows, first[rows]] = False
+    return out
 
 
 def slim_usable(usable: dict) -> dict:
@@ -433,12 +697,22 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
     banks = banks_from_language()
     train_stream = torch.tensor(read_u16(LANG_TRAIN), dtype=torch.long)
     dev_stream = torch.tensor(read_u16(DEV_STREAM), dtype=torch.long)
-    start = resume or E12_SURVIVOR
-    if start == E12_SURVIVOR and digest(start) != E12_SURVIVOR_SHA:
-        raise RuntimeError("E12 survivor hash mismatch")
+    start = resume or parent_checkpoint(recipe)
+    expected = {
+        E12_SURVIVOR: E12_SURVIVOR_SHA,
+        S2A_SURVIVOR: S2A_SURVIVOR_SHA,
+        S2I25_SURVIVOR: S2I25_SURVIVOR_SHA,
+        S2I50_SURVIVOR: S2I50_SURVIVOR_SHA,
+    }.get(start)
+    if expected is not None and digest(start) != expected:
+        raise RuntimeError(f"parent hash mismatch for {start}")
     model, config, _ckpt = load_experimental_baby(start, device)
     print(json.dumps({"phase": "resume", "checkpoint": str(start), "sha256": digest(start), "recipe": recipe_id}), flush=True)
     optimizer, _low, _high = capability_optimizer(model)
+    lr_scale = float(recipe.get("lr_scale", 1.0))
+    if lr_scale != 1.0:
+        for group in optimizer.param_groups:
+            group["lr"] = float(group["lr"]) * lr_scale
     out_dir = OUT / f"{recipe_id}_{recipe['mix']}_{recipe['seed']}"
     out_dir.mkdir(parents=True, exist_ok=True)
     panels = build_e13_panels(tokenizer, n=32)
@@ -461,15 +735,23 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
             task = "language"
         elif draw < language_p + structured_p:
             x, y, mask = structured_retention_batch(banks, rng, BATCH, device)
+            if recipe.get("remainder_span"):
+                rem = remainder_span_mask(mask)
+                if bool(rem.any()):
+                    mask = rem
             logits = model(x)
             loss = F.cross_entropy(logits[mask], y[mask])
-            task = "structured"
+            task = "structured_remainder" if recipe.get("remainder_span") else "structured"
         else:
             items = [sample_s2_item(rng, tokenizer, mix) for _ in range(BATCH)]
             x, y, mask = pack_bridge_batch(items, device)
+            if recipe.get("mix_remainder_span"):
+                rem = remainder_span_mask(mask)
+                if bool(rem.any()):
+                    mask = rem
             logits = model(x)
             loss = F.cross_entropy(logits[mask], y[mask])
-            task = "bridge"
+            task = "bridge_remainder" if recipe.get("mix_remainder_span") else "bridge"
         loss.backward()
         grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 2.0)
         optimizer.step()
@@ -506,12 +788,26 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
                 "collapsed": collapsed,
                 "lesson": f"{mix_lesson}; {eng_lesson}",
             }
+            if recipe.get("cheap_d3"):
+                slice_row = cheap_d3_slice(model, device)
+                row["d3_slice"] = {k: slice_row.get(k) for k in ("n", "first_top1", "free_exact", "tf_exact")}
+                row["lesson"] = f"{row['lesson']}; D3 slice free_exact={slice_row.get('free_exact')}"
             history.append(row)
             write(out_dir / f"eval_{update:05d}.json", row)
-            print(json.dumps({"phase": f"{recipe_id}_eval", "update": update, **{k: row[k] for k in ("mix_verdict", "english_ok", "collapsed", "lesson")}}, default=str), flush=True)
+            extra = {k: row[k] for k in ("mix_verdict", "english_ok", "collapsed", "lesson")}
+            if "d3_slice" in row:
+                extra["d3_slice"] = row["d3_slice"]
+            print(json.dumps({"phase": f"{recipe_id}_eval", "update": update, **extra}, default=str), flush=True)
             best = row
-            if collapsed:
-                print(json.dumps({"phase": "kill_english", "recipe": recipe_id, "update": update}), flush=True)
+            slice_exact = float((row.get("d3_slice") or {}).get("free_exact") or 0.0)
+            mix_ok_s2a, _mix_hold = mix_holds_s2a(native)
+            mix_kill = (not mix_ok_s2a) and (not recipe.get("lock_from_drop"))
+            kill_canary = collapsed or (
+                bool(recipe.get("cheap_d3"))
+                and (mix_kill or slice_exact + 1e-12 < S2A_D3_SLICE - D3_SLICE_KILL)
+            )
+            if kill_canary:
+                print(json.dumps({"phase": "kill_canary", "recipe": recipe_id, "update": update, "lesson": row["lesson"]}, default=str), flush=True)
                 break
     return {"history": history, "best": best, "model": model, "config": config, "out_dir": out_dir, "recipe": recipe}
 
@@ -640,6 +936,288 @@ def run_recipe(device, recipe_id: str) -> dict:
     return report
 
 
+def adjudicate_recover(row: dict, *, baseline_slice: float = S2A_D3_SLICE) -> tuple[str, str]:
+    native = row.get("native") or {}
+    eng_ok, eng_lesson, collapsed = english_native_holds(native)
+    mix_ok, mix_lesson = mix_holds_s2a(native)
+    slice_exact = float((row.get("d3_slice") or {}).get("free_exact") or 0.0)
+    first = float((row.get("d3_slice") or {}).get("first_top1") or 0.0)
+    delta = slice_exact - float(baseline_slice)
+    d3_note = f"D3 slice {slice_exact:.3f} (parent {float(baseline_slice):.3f}) first={first:.3f}"
+    if collapsed or not eng_ok:
+        return "KILL", f"{eng_lesson}; {mix_lesson}; {d3_note}"
+    if not mix_ok:
+        return "KILL", f"{mix_lesson}; {eng_lesson}; {d3_note}"
+    if delta <= -D3_SLICE_KILL:
+        return "KILL", f"{d3_note} delta={delta:+.3f}; {mix_lesson}; {eng_lesson}"
+    if delta >= D3_SLICE_ADVANCE or slice_exact >= 0.90:
+        return "ADVANCE", f"{d3_note} delta={delta:+.3f}; {mix_lesson}; {eng_lesson}"
+    if delta >= D3_SLICE_HOLDPLUS:
+        return "HOLD+", f"{d3_note} delta={delta:+.3f}; {mix_lesson}; {eng_lesson}"
+    return "HOLD", f"{d3_note} delta={delta:+.3f}; {mix_lesson}; {eng_lesson}"
+
+
+def _slice_exact(row: dict | None) -> float:
+    if not row:
+        return -1.0
+    return float((row.get("d3_slice") or {}).get("free_exact") or 0.0)
+
+
+def _drop_cuda(model=None) -> None:
+    del model
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+
+
+def slim_recover_row(row: dict) -> dict:
+    return {k: v for k, v in row.items() if k != "native"} | {"native": mix_scores(row["native"])}
+
+
+def measure_s2a_slice(device) -> dict:
+    model, _config, _ckpt = load_experimental_baby(S2A_SURVIVOR, device)
+    try:
+        return cheap_d3_slice(model, device)
+    finally:
+        _drop_cuda(model)
+
+
+def _score_history(recipe_id: str, history: list, *, baseline_slice: float) -> dict:
+    best_row = None
+    best_key = (-1.0, -1)
+    rank = {"KILL": -1, "HOLD": 0, "HOLD+": 1, "ADVANCE": 2}
+    scored = []
+    for row in history:
+        verdict, lesson = adjudicate_recover(row, baseline_slice=baseline_slice)
+        slice_exact = _slice_exact(row)
+        ledger_append(
+            {
+                "id": f"{recipe_id}_u{int(row['update']):05d}",
+                "change": RECIPES[recipe_id]["note"],
+                "verdict": verdict,
+                "lesson": lesson,
+                "native": mix_scores(row["native"]),
+                "d3": row.get("d3_slice"),
+                "checkpoint_sha256": row.get("checkpoint_sha256"),
+                "recipe": recipe_id,
+                "update": row.get("update"),
+            }
+        )
+        print(
+            json.dumps(
+                {"phase": "recover_canary", "recipe": recipe_id, "update": row["update"], "verdict": verdict, "lesson": lesson},
+                default=str,
+            ),
+            flush=True,
+        )
+        scored.append({**slim_recover_row(row), "recover_verdict": verdict, "recover_lesson": lesson})
+        if verdict == "KILL":
+            continue
+        key = (slice_exact, rank.get(verdict, 0))
+        if key > best_key:
+            best_key = key
+            best_row = {**row, "recover_verdict": verdict, "recover_lesson": lesson}
+    return {
+        "history": scored,
+        "best": None
+        if best_row is None
+        else {
+            "update": best_row["update"],
+            "checkpoint": best_row["checkpoint"],
+            "checkpoint_sha256": best_row["checkpoint_sha256"],
+            "d3_slice": best_row.get("d3_slice"),
+            "verdict": best_row.get("recover_verdict"),
+            "lesson": best_row.get("recover_lesson"),
+            "native": mix_scores(best_row["native"]),
+        },
+        "best_row": best_row,
+    }
+
+
+def run_canary(device, recipe_id: str, *, resume: Path | None = None, baseline_slice: float) -> dict:
+    trained = train_recipe(device, recipe_id, resume=resume)
+    scored = _score_history(recipe_id, trained.get("history") or [], baseline_slice=baseline_slice)
+    scored["out_dir"] = str(trained.get("out_dir"))
+    _drop_cuda(trained.pop("model", None))
+    return scored
+
+
+def register_extend(base_id: str) -> str:
+    ext_id = f"{base_id}x"
+    n = 1
+    while ext_id in RECIPES:
+        n += 1
+        ext_id = f"{base_id}x{n}"
+    src = RECIPES[base_id]
+    RECIPES[ext_id] = {
+        **src,
+        "seed": int(src["seed"]) + 17 * n,
+        "updates": RECOVER_UPDATES,
+        "eval_every": RECOVER_EVAL,
+        "cheap_d3": True,
+        "note": f"Extend {base_id} +{RECOVER_UPDATES} from its canary checkpoint",
+    }
+    return ext_id
+
+
+def recover_milestone(d3_free, native, usable) -> bool:
+    mix_ok, _ = mix_holds_s2a(native)
+    eng_ok, _, _ = english_native_holds(native)
+    use_ok, _ = usable_holds_s2a(usable)
+    return bool(
+        d3_free is not None
+        and d3_free >= 190
+        and mix_ok
+        and eng_ok
+        and use_ok
+        and d3_free - S2A_D3_FULL >= 15
+    )
+
+
+def verify_candidate(device, recipe_id: str, best_row: dict, results: dict) -> dict:
+    ckpt = Path(best_row["checkpoint"])
+    print(json.dumps({"phase": "recover_verify", "recipe": recipe_id, "checkpoint": str(ckpt)}, default=str), flush=True)
+    report = evaluate_checkpoint(device, ckpt, f"{recipe_id}_verify", with_usable=True, with_d3=True)
+    d3_free = None if report.get("d3") is None else int(report["d3"]["long_gap"]["free_exact"])
+    mix_ok, mix_lesson = mix_holds_s2a(report["native"])
+    eng_ok, eng_lesson, _ = english_native_holds(report["native"])
+    use_ok, use_lesson = usable_holds_s2a(report.get("usable"))
+    milestone = recover_milestone(d3_free, report["native"], report.get("usable"))
+    payload = {
+        "recipe": recipe_id,
+        "checkpoint": str(ckpt),
+        "sha256": best_row.get("checkpoint_sha256"),
+        "d3_full": d3_free,
+        "mix_ok": mix_ok,
+        "eng_ok": eng_ok,
+        "use_ok": use_ok,
+        "milestone": milestone,
+        "lesson": f"{mix_lesson}; {eng_lesson}; {use_lesson}; D3 {d3_free}/215",
+        "native": mix_scores(report["native"]),
+        "usable": None
+        if report.get("usable") is None
+        else {
+            "turn": report["usable"]["autoregressive"]["usable_turn"],
+            "turn4": report["usable"]["autoregressive_4turn"]["usable_turn"],
+            "stop": report["usable"]["autoregressive_4turn"]["period_stop"],
+            "reuse": report["usable"]["autoregressive_4turn"]["fact_reuse"],
+        },
+        "d3": None if report.get("d3") is None else report["d3"].get("long_gap"),
+        "induction": None if report.get("d3") is None else report["d3"].get("primitive_induction", {}).get("first_top1"),
+    }
+    results.setdefault("verifies", []).append(payload)
+    results["last_verify"] = payload
+    results["milestone"] = bool(results.get("milestone")) or milestone
+    if milestone:
+        results["winner"] = payload
+    campaign_update(
+        {
+            "status": "D3 recover MILESTONE" if milestone else f"D3 recover verify {recipe_id} d3={d3_free}",
+            "recover_winner": payload if milestone else results.get("winner"),
+            "last_verify": {k: payload[k] for k in ("recipe", "checkpoint", "sha256", "d3_full", "milestone", "lesson") if k in payload},
+        }
+    )
+    write(OUT / "RECOVER.json", {k: v for k, v in results.items() if k != "promising_row"})
+    return payload
+
+
+def run_d3_recover_loop(device) -> dict:
+    require_identities(require_s2a=True)
+    ledger_init()
+    parent = measure_s2a_slice(device)
+    baseline_slice = float(parent.get("free_exact") or S2A_D3_SLICE)
+    campaign_update(
+        {
+            "status": "D3 span-recover canaries from s2a",
+            "s2a_parent": {"path": str(S2A_SURVIVOR), "sha256": S2A_SURVIVOR_SHA},
+            "hypothesis": "s2a D3 hole is greedy span. Mix-off pulse (s2i) restores span: u25 keeps mix, u50 reaches slice 0.95 then kills combine. Do not cut mix to 5–10%. Lock mix from s2i pulses; independently steal structured not mix remainder.",
+            "parent_slice": {k: parent.get(k) for k in ("n", "first_top1", "free_exact", "tf_exact")},
+            "baseline_slice": baseline_slice,
+        }
+    )
+    print(json.dumps({"phase": "s2a_parent_slice", "slice": parent, "baseline_slice": baseline_slice}, default=str), flush=True)
+    prior_arms = {}
+    recover_path = OUT / "RECOVER.json"
+    if recover_path.exists():
+        try:
+            prior_arms = json.loads(recover_path.read_text(encoding="utf-8")).get("arms") or {}
+        except json.JSONDecodeError:
+            prior_arms = {}
+    results = {
+        "parent_slice": {k: parent.get(k) for k in ("n", "first_top1", "free_exact", "tf_exact")},
+        "baseline_slice": baseline_slice,
+        "arms": dict(prior_arms),
+        "verifies": [],
+        "milestone": False,
+    }
+    promising = None
+
+    def consider(recipe_id: str, scored: dict):
+        nonlocal promising
+        results["arms"][recipe_id] = {k: v for k, v in scored.items() if k != "best_row"}
+        write(OUT / "RECOVER.json", {k: v for k, v in results.items() if k != "promising_row"})
+        best_row = scored.get("best_row")
+        if best_row is None:
+            return None
+        if promising is None or _slice_exact(best_row) > _slice_exact(promising[1]):
+            if best_row.get("recover_verdict") in {"HOLD+", "ADVANCE"}:
+                promising = (recipe_id, best_row)
+        return best_row
+
+    for recipe_id in RECOVER_MIXHOLD_ORDER:
+        print(json.dumps({"phase": "recover_arm", "recipe": recipe_id, "note": RECIPES[recipe_id]["note"]}, default=str), flush=True)
+        scored = run_canary(device, recipe_id, baseline_slice=baseline_slice)
+        best_row = consider(recipe_id, scored)
+        if best_row is None:
+            continue
+        verdict = best_row.get("recover_verdict")
+        if verdict == "HOLD+":
+            ext_id = register_extend(recipe_id)
+            print(json.dumps({"phase": "recover_extend", "from": recipe_id, "to": ext_id}, default=str), flush=True)
+            ext = run_canary(device, ext_id, resume=Path(best_row["checkpoint"]), baseline_slice=baseline_slice)
+            ext_row = consider(ext_id, ext)
+            if ext_row is not None:
+                best_row, recipe_id, verdict = ext_row, ext_id, ext_row.get("recover_verdict")
+        if verdict == "ADVANCE":
+            verified = verify_candidate(device, recipe_id, best_row, results)
+            if verified.get("milestone"):
+                print(json.dumps({"phase": "recover_done", "milestone": True, "winner": results.get("winner")}, default=str), flush=True)
+                return results
+            d3_free = verified.get("d3_full")
+            if (
+                d3_free is not None
+                and d3_free >= 180
+                and verified.get("mix_ok")
+                and verified.get("use_ok")
+            ):
+                ext_id = register_extend(recipe_id)
+                print(json.dumps({"phase": "recover_extend_signal", "from": recipe_id, "to": ext_id, "d3_full": d3_free}, default=str), flush=True)
+                ext = run_canary(device, ext_id, resume=Path(best_row["checkpoint"]), baseline_slice=baseline_slice)
+                ext_row = consider(ext_id, ext)
+                if ext_row is not None and ext_row.get("recover_verdict") in {"HOLD+", "ADVANCE"}:
+                    verified = verify_candidate(device, ext_id, ext_row, results)
+                    if verified.get("milestone"):
+                        print(json.dumps({"phase": "recover_done", "milestone": True, "winner": results.get("winner")}, default=str), flush=True)
+                        return results
+
+    if promising is not None and not results.get("milestone"):
+        recipe_id, best_row = promising
+        if _slice_exact(best_row) >= baseline_slice + D3_SLICE_HOLDPLUS:
+            verified = verify_candidate(device, recipe_id, best_row, results)
+            if verified.get("milestone"):
+                print(json.dumps({"phase": "recover_done", "milestone": True, "winner": results.get("winner")}, default=str), flush=True)
+                return results
+    campaign_update(
+        {
+            "status": "D3 recover canaries finished without milestone",
+            "recover": {k: v.get("best") for k, v in results.get("arms", {}).items()},
+            "last_verify": results.get("last_verify"),
+        }
+    )
+    write(OUT / "RECOVER.json", {k: v for k, v in results.items() if k != "promising_row"})
+    print(json.dumps({"phase": "recover_done", "milestone": False, "last_verify": results.get("last_verify")}, default=str), flush=True)
+    return results
+
+
 def run_loop(device) -> dict:
     require_identities()
     ledger_init()
@@ -671,21 +1249,27 @@ def run_loop(device) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3"), default="run")
+    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover"), default="run")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--recipe", default="s2a", choices=tuple(RECIPES))
     parser.add_argument("--resume", type=Path)
     parser.add_argument("--tag", default="eval")
     args = parser.parse_args()
     device = resolve_device(args.device)
-    require_identities()
+    require_identities(require_s2a=args.mode == "recover" or RECIPES.get(args.recipe, {}).get("parent") == "s2a")
     ledger_init()
     if args.mode == "probe":
         path = args.resume or E12_SURVIVOR
         evaluate_checkpoint(device, path, args.tag, with_usable=True, with_d3=False)
         return
     if args.mode == "train":
-        run_recipe(device, args.recipe)
+        if args.resume is not None:
+            train_recipe(device, args.recipe, resume=args.resume)
+        else:
+            run_recipe(device, args.recipe)
+        return
+    if args.mode == "recover":
+        run_d3_recover_loop(device)
         return
     if args.mode == "usable":
         if args.resume is None:
