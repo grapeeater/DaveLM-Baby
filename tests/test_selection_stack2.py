@@ -321,3 +321,77 @@ def test_s4_direct_fact_sentence_milestone_allows_style_mix() -> None:
     dead = dict(native)
     dead["qa_2fact_heldout"] = {"first_top1": 0.40}
     assert sentence_milestone(185, dead, usable, compose, sentence)[0] is False
+
+
+def test_s5_parent_sampler_and_milestones() -> None:
+    from src.baby_v010.selection_stack2 import S4M_SURVIVOR
+    from src.baby_v010.selection_stack2_s5 import milestone_a, milestone_b, sample_s5_item
+
+    assert parent_checkpoint(RECIPES["s5a"]) == S4M_SURVIVOR
+    assert RECIPES["s5a"]["parent"] == "s4m"
+    assert RECIPES["s5a"]["sent_sampler"] == "s5"
+    assert RECIPES["s5a"]["sentence_p"] == 0.25
+    assert RECIPES["s5b"]["relate"] is True
+    tokenizer = load_tokenizer()
+    rng = random.Random(326001)
+    who = sample_s5_item(rng, tokenizer, "who_pulse")
+    assert who.get("query_position") is None
+    assert who["family"] in {"who_sent", "compose_sent"}
+    select = sample_s5_item(random.Random(326221), tokenizer, "who_select")
+    assert select.get("query_position") is None
+    assert select["family"] == "who_bind"
+    assert RECIPES["s5w"]["entity_margin"] is True
+    assert RECIPES["s5ws"]["parent"] == "s5m"
+    assert RECIPES["s5ws"]["sent_kind"] == "who_select_sent"
+    assert RECIPES["s5x"]["sent_kind"] == "who_select_uniform"
+    assert RECIPES["s5x"]["margin_scale"] == 0.3
+    uniform = sample_s5_item(random.Random(326241), tokenizer, "who_select_uniform")
+    assert uniform.get("query_position") is None
+    assert uniform["family"] == "who_bind"
+    a_pulse = sample_s5_item(random.Random(326261), tokenizer, "who_a_pulse")
+    assert a_pulse.get("query_position") is None
+    assert a_pulse["family"] in {"who_sent", "who_bind", "compose_sent"}
+    assert RECIPES["s5z"]["parent"] == "s5m"
+    assert RECIPES["s5pp"]["sent_kind"] == "who_pair"
+    pair_item = sample_s5_item(random.Random(326271), tokenizer, "who_pair")
+    assert pair_item.get("query_position") is None
+    assert pair_item["family"] in {"who_sent", "who_bind"}
+    rel = sample_s5_item(random.Random(1), tokenizer, "rel_pulse")
+    assert rel.get("query_position") is None
+    assert rel["family"] in {"has_object", "beside", "who_sent", "compose_sent"}
+    fwd = sample_s5_item(random.Random(328001), tokenizer, "rel_forward")
+    assert fwd.get("query_position") is None
+    assert fwd["family"] in {"has_object", "beside", "who_sent", "compose_sent"}
+    assert RECIPES["r2c"]["parent"] == "s5b3"
+    assert RECIPES["r2c"]["sent_kind"] == "rel_forward"
+    native = {
+        "qa_2fact_heldout": {"first_top1": 0.75},
+        "size_stop_heldout": {"free_exact": 1.0},
+        "story_color_heldout": {"first_top1": 0.91},
+        "mixed_2e_heldout": {"first_top1": 0.8125},
+        "fact_combine_heldout": {"first_top1": 0.6875},
+        "story_combine_heldout": {"first_top1": 0.50},
+    }
+    compose = {
+        "who_bind_2e_heldout": {"first_top1": 0.50},
+        "who_bind_3e_heldout": {"first_top1": 0.50},
+        "mixed_3e_heldout": {"first_top1": 0.94},
+        "compose_sent_heldout": {"free_exact": 0.0},
+        "compose_sent_1e_heldout": {"free_exact": 0.0},
+    }
+    sentence = {"operators": {"bare": {"sentence_ok": 0.375, "one_word_color": 0.375}, "sent_prefix": {"sentence_ok": 0.125}}}
+    usable = {
+        "autoregressive": {"usable_turn": 0.857, "period_stop": 1.0, "fact_reuse": 1.0, "rambling": 0.0},
+        "autoregressive_4turn": {"usable_turn": 0.906, "period_stop": 1.0, "fact_reuse": 1.0, "rambling": 0.0},
+    }
+    who_scores = {"bare": 0.75, "prefix": 0.625, "by_kind": {"who_color": 0.75, "who_size": 0.75}}
+    assert milestone_a(native, usable, compose, sentence, who_scores, d3_free=185) == (True, "who-sentence")
+    weak = dict(who_scores, bare=0.25)
+    assert milestone_a(native, usable, compose, sentence, weak, d3_free=185)[0] is False
+    has_scores = {"bare": 0.75, "prefix": 0.75, "by_kind": {"has_who": 0.75, "has_what": 0.75}}
+    beside_scores = {"bare": 0.75, "prefix": 0.75, "by_kind": {"beside_where": 0.75, "beside_who": 0.75}}
+    assert milestone_b(native, usable, compose, sentence, who_scores, has_scores, beside_scores, d3_free=185)[0] is True
+    dead_a = dict(who_scores, bare=0.0)
+    assert milestone_b(native, usable, compose, sentence, dead_a, has_scores, beside_scores, d3_free=185)[0] is False
+    one_dir = {"bare": 0.75, "prefix": 0.75, "by_kind": {"has_who": 1.0, "has_what": 0.0}}
+    assert milestone_b(native, usable, compose, sentence, who_scores, one_dir, beside_scores, d3_free=185)[0] is False

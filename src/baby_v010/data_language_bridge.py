@@ -28,6 +28,26 @@ PLACES = ("nest", "lake", "cave", "town", "park", "farm")
 # Who/event answers use this subset: unique spaced first-tokens, disjoint from
 # VALUES/SIZES (cat/cow, frog/fox, bird/blue, pig/pink collide on first token).
 WHO_ENTITIES = ("dog", "hen", "duck", "bear", "cat", "frog")
+
+
+def mentioned_who(text: str) -> list[str]:
+    """WHO entity names in left-to-right mention order."""
+    tokens: list[str] = []
+    buf: list[str] = []
+    for ch in text.lower():
+        if ch.isalpha():
+            buf.append(ch)
+        elif buf:
+            tokens.append("".join(buf))
+            buf = []
+    if buf:
+        tokens.append("".join(buf))
+    return [tok for tok in tokens if tok in WHO_ENTITIES]
+
+
+def last_mentioned_who(text: str) -> str | None:
+    mentions = mentioned_who(text)
+    return mentions[-1] if mentions else None
 TRAIN_EVENTS = ("sat down", "ran by", "looked up", "came out")
 HOLDOUT_EVENTS = ("went home", "came by", "walked along", "went out")
 TRAIN_STORY_FRAMES = (
@@ -119,6 +139,35 @@ HOLDOUT_WHO_BIND_COLOR = (
     "Which one is {c}?",
     "Tell me who is {c}.",
 )
+# WHO-sentence queries stay bare and keep a WHO trigger, but they are
+# disjoint from one-word Who-is / Which-one-is. Do not put a dummy noun
+# like "animal" in the question: s5f answered "The animal is white."
+TRAIN_WHO_SENT_COLOR = (
+    "Which one looks {c}?",
+    "Name who looks {c}.",
+)
+HOLDOUT_WHO_SENT_COLOR = (
+    "Who looks {c}?",
+    "Tell me who looks {c}.",
+)
+TRAIN_WHO_SENT_SIZE = (
+    "Which one looks {s}?",
+    "Name who looks {s}.",
+)
+HOLDOUT_WHO_SENT_SIZE = (
+    "Who looks {s}?",
+    "Tell me who looks {s}.",
+)
+# Entity-first answers so CE hits the retrieved name, not "The".
+# Direct-fact sentences can start with The because the entity is in the question.
+TRAIN_WHO_SENT_ANSWERS = (
+    " {e} is {v}.",
+    " {e} looks {v}.",
+)
+HOLDOUT_WHO_SENT_ANSWERS = (
+    " {e} appears {v}.",
+    " {e} was {v}.",
+)
 # Short sentence answers. Queries stay ordinary color/size questions (not
 # "answer in a sentence") so the model has to generate the syntax. Train/hold
 # answer templates differ to block worksheet copy.
@@ -137,6 +186,73 @@ TRAIN_COMPOSE_COMBINE_SENT_ANSWERS = (
 )
 HOLDOUT_COMPOSE_COMBINE_SENT_ANSWERS = (
     " That {s} one is {c}.",
+)
+# Possession: entity has a colored/sized object. "has" is mid-sentence (first
+# token of " has" collides with huge). " object" is a single unused token.
+TRAIN_HAS_FACTS = (
+    "The {e} has the {v} object.",
+    "{e} has the {v} object.",
+)
+HOLDOUT_HAS_FACTS = (
+    "That {e} has the {v} object.",
+    "Remember: the {e} has the {v} object.",
+)
+TRAIN_HAS_WHO = (
+    "Who has the {v} object?",
+    "Name who has the {v} object.",
+)
+HOLDOUT_HAS_WHO = (
+    "Which one has the {v} object?",
+    "Tell me who has the {v} object.",
+)
+TRAIN_HAS_WHAT = (
+    "What does the {e} have?",
+    "What has the {e}?",
+)
+HOLDOUT_HAS_WHAT = (
+    "What does {e} have?",
+    "Tell me what the {e} has.",
+)
+TRAIN_HAS_ANSWERS = (
+    " The {e} has the {v} object.",
+    " {e} has the {v} object.",
+)
+HOLDOUT_HAS_ANSWERS = (
+    " That {e} has the {v} object.",
+    " This {e} has the {v} object.",
+)
+# Spatial: " beside" is a single unused token.
+TRAIN_BESIDE_FACTS = (
+    "The {e1} is beside the {e2}.",
+    "{e1} is beside the {e2}.",
+)
+HOLDOUT_BESIDE_FACTS = (
+    "That {e1} is beside the {e2}.",
+    "Remember: the {e1} is beside the {e2}.",
+)
+TRAIN_BESIDE_WHERE = (
+    "Where is the {e1}?",
+    "Who is the {e1} beside?",
+)
+HOLDOUT_BESIDE_WHERE = (
+    "Where is {e1}?",
+    "Tell me where the {e1} is.",
+)
+TRAIN_BESIDE_WHO = (
+    "Who is beside the {e2}?",
+    "Name who is beside the {e2}.",
+)
+HOLDOUT_BESIDE_WHO = (
+    "Which one is beside the {e2}?",
+    "Tell me who is beside the {e2}.",
+)
+TRAIN_BESIDE_ANSWERS = (
+    " The {e1} is beside the {e2}.",
+    " {e1} is beside the {e2}.",
+)
+HOLDOUT_BESIDE_ANSWERS = (
+    " That {e1} is beside the {e2}.",
+    " This {e1} is beside the {e2}.",
 )
 
 TRAIN_FACTS = (
@@ -1224,6 +1340,8 @@ def make_who_bind_item(
     n_entities: int = 2,
     surface: str = "train",
     period: bool = True,
+    asked_attr_only: bool = False,
+    anti_recency: bool = False,
 ) -> dict:
     """Two+ entities with color and size; query asks *who* has a property."""
     n_entities = max(2, min(n_entities, len(WHO_ENTITIES)))
@@ -1234,14 +1352,26 @@ def make_who_bind_item(
     size_facts = TRAIN_SIZE_FACTS if surface == "train" else HOLDOUT_SIZE_FACTS
     rows = list(zip(entities, colors, sizes))
     rng.shuffle(rows)
-    query_e, query_c, query_s = rng.choice(rows)
+    ask_size = rng.random() < 0.5
     parts: list[str] = []
     for entity, color, size in rows:
-        parts.append(rng.choice(color_facts).format(e=entity, v=color))
-        parts.append(rng.choice(size_facts).format(e=entity, v=size))
+        if asked_attr_only:
+            if ask_size:
+                parts.append(rng.choice(size_facts).format(e=entity, v=size))
+            else:
+                parts.append(rng.choice(color_facts).format(e=entity, v=color))
+        else:
+            parts.append(rng.choice(color_facts).format(e=entity, v=color))
+            parts.append(rng.choice(size_facts).format(e=entity, v=size))
     rng.shuffle(parts)
     fact_text = " ".join(parts)
-    ask_size = rng.random() < 0.5
+    last_e = last_mentioned_who(fact_text)
+    candidates = list(rows)
+    if anti_recency and last_e is not None:
+        narrowed = [row for row in rows if row[0] != last_e]
+        if narrowed:
+            candidates = narrowed
+    query_e, query_c, query_s = rng.choice(candidates)
     if ask_size:
         query_pool = TRAIN_WHO_BIND_SIZE if surface == "train" else HOLDOUT_WHO_BIND_SIZE
         query = rng.choice(query_pool).format(s=query_s)
@@ -1257,6 +1387,10 @@ def make_who_bind_item(
     variant = f"who_bind_{n_entities}e"
     if period:
         variant += "_stop"
+    if asked_attr_only:
+        variant += "_asked"
+    if anti_recency:
+        variant += "_norecent"
     prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
     return _item(
         prompt_ids=prompt_ids,
@@ -1272,6 +1406,9 @@ def make_who_bind_item(
             "prompt_text": prompt,
             "answer_text": answer,
             "attr": attr,
+            "distractors": [ent for ent in entities if ent != query_e],
+            "last_entity": last_e,
+            "n_entities": n_entities,
         },
     )
 
@@ -1368,9 +1505,13 @@ def make_who_sentence_item(
     *,
     n_entities: int = 2,
     surface: str = "train",
+    ask: str | None = None,
+    anti_recency: bool = False,
 ) -> dict:
     """WHO question; gold is a short sentence, not the one-word entity."""
-    n_entities = max(2, min(n_entities, len(WHO_ENTITIES)))
+    n_entities = max(1, min(n_entities, len(WHO_ENTITIES)))
+    if ask not in {"color", "size"}:
+        ask = "size" if rng.random() < 0.5 else "color"
     entities = list(_sample(rng, WHO_ENTITIES, n_entities))
     colors = list(_sample(rng, VALUES, n_entities))
     sizes = list(_sample(rng, SIZES, n_entities))
@@ -1378,17 +1519,33 @@ def make_who_sentence_item(
     size_facts = TRAIN_SIZE_FACTS if surface == "train" else HOLDOUT_SIZE_FACTS
     rows = list(zip(entities, colors, sizes))
     rng.shuffle(rows)
-    query_e, query_c, query_s = rng.choice(rows)
     parts: list[str] = []
     for entity, color, size in rows:
-        parts.append(rng.choice(color_facts).format(e=entity, v=color))
-        parts.append(rng.choice(size_facts).format(e=entity, v=size))
+        if ask == "size":
+            parts.append(rng.choice(size_facts).format(e=entity, v=size))
+        else:
+            parts.append(rng.choice(color_facts).format(e=entity, v=color))
     rng.shuffle(parts)
     fact_text = " ".join(parts)
-    query_pool = TRAIN_WHO_BIND_COLOR if surface == "train" else HOLDOUT_WHO_BIND_COLOR
-    query = rng.choice(query_pool).format(c=query_c)
-    answer = rng.choice(TRAIN_COMPOSE_SENT_ANSWERS if surface == "train" else HOLDOUT_COMPOSE_SENT_ANSWERS).format(
-        e=query_e, v=query_c
+    last_e = last_mentioned_who(fact_text)
+    candidates = list(rows)
+    if anti_recency and last_e is not None and n_entities > 1:
+        narrowed = [row for row in rows if row[0] != last_e]
+        if narrowed:
+            candidates = narrowed
+    query_e, query_c, query_s = rng.choice(candidates)
+    if ask == "size":
+        query_pool = TRAIN_WHO_SENT_SIZE if surface == "train" else HOLDOUT_WHO_SENT_SIZE
+        query = rng.choice(query_pool).format(s=query_s)
+        value = query_s
+        attr = "who_size"
+    else:
+        query_pool = TRAIN_WHO_SENT_COLOR if surface == "train" else HOLDOUT_WHO_SENT_COLOR
+        query = rng.choice(query_pool).format(c=query_c)
+        value = query_c
+        attr = "who_color"
+    answer = rng.choice(TRAIN_WHO_SENT_ANSWERS if surface == "train" else HOLDOUT_WHO_SENT_ANSWERS).format(
+        e=query_e, v=value
     )
     if not answer.startswith(" "):
         answer = " " + answer
@@ -1402,15 +1559,185 @@ def make_who_sentence_item(
         kind="keyed",
         family="who_sent",
         surface=surface,
-        variant=f"who_sent_{n_entities}e",
+        variant=f"who_sent_{ask}_{n_entities}e",
+        extra={
+            "entity": query_e,
+            "value_text": value,
+            "cue_text": value,
+            "prompt_text": prompt,
+            "answer_text": answer,
+            "attr": attr,
+            "n_entities": n_entities,
+            "distractors": [ent for ent in entities if ent != query_e],
+            "last_entity": last_e,
+        },
+    )
+
+
+def make_who_pair_items(
+    rng: random.Random,
+    tokenizer,
+    *,
+    surface: str = "train",
+    as_sentence: bool = True,
+) -> list[dict]:
+    """Same 2e asked-attr scene, both inverse questions. Train both answers together."""
+    entities = list(_sample(rng, WHO_ENTITIES, 2))
+    ask = "size" if rng.random() < 0.5 else "color"
+    values = list(_sample(rng, SIZES if ask == "size" else VALUES, 2))
+    rows = list(zip(entities, values))
+    rng.shuffle(rows)
+    if ask == "size":
+        fact_pool = TRAIN_SIZE_FACTS if surface == "train" else HOLDOUT_SIZE_FACTS
+        query_pool = TRAIN_WHO_SENT_SIZE if surface == "train" else HOLDOUT_WHO_SENT_SIZE
+        if not as_sentence:
+            query_pool = TRAIN_WHO_BIND_SIZE if surface == "train" else HOLDOUT_WHO_BIND_SIZE
+    else:
+        fact_pool = TRAIN_FACTS if surface == "train" else HOLDOUT_FACTS
+        query_pool = TRAIN_WHO_SENT_COLOR if surface == "train" else HOLDOUT_WHO_SENT_COLOR
+        if not as_sentence:
+            query_pool = TRAIN_WHO_BIND_COLOR if surface == "train" else HOLDOUT_WHO_BIND_COLOR
+    parts = [rng.choice(fact_pool).format(e=entity, v=value) for entity, value in rows]
+    rng.shuffle(parts)
+    fact_text = " ".join(parts)
+    last_e = last_mentioned_who(fact_text)
+    items = []
+    for query_e, query_v in rows:
+        query = rng.choice(query_pool).format(**({"s": query_v} if ask == "size" else {"c": query_v}))
+        if as_sentence:
+            answer = rng.choice(TRAIN_WHO_SENT_ANSWERS if surface == "train" else HOLDOUT_WHO_SENT_ANSWERS).format(
+                e=query_e, v=query_v
+            )
+            family = "who_sent"
+        else:
+            answer = _period(query_e)
+            family = "who_bind"
+        if not answer.startswith(" "):
+            answer = " " + answer
+        if not answer.endswith("."):
+            answer = answer + "."
+        prompt = fact_text + " " + query
+        prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+        items.append(
+            _item(
+                prompt_ids=prompt_ids,
+                answer_ids=answer_ids,
+                kind="keyed",
+                family=family,
+                surface=surface,
+                variant=f"who_pair_{ask}_{'sent' if as_sentence else 'bind'}",
+                extra={
+                    "entity": query_e,
+                    "value_text": query_v if as_sentence else query_e,
+                    "cue_text": query_v,
+                    "prompt_text": prompt,
+                    "answer_text": answer,
+                    "attr": f"who_{ask}",
+                    "n_entities": 2,
+                    "distractors": [ent for ent, _val in rows if ent != query_e],
+                    "last_entity": last_e,
+                },
+            )
+        )
+    rng.shuffle(items)
+    return items
+
+
+def make_has_object_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    n_entities: int = 2,
+    surface: str = "train",
+    direction: str | None = None,
+) -> dict:
+    """Possession: entity has a colored object. Forward=what, inverse=who."""
+    n_entities = max(2, min(n_entities, len(WHO_ENTITIES)))
+    if direction not in {"who", "what"}:
+        direction = "who" if rng.random() < 0.5 else "what"
+    entities = list(_sample(rng, WHO_ENTITIES, n_entities))
+    colors = list(_sample(rng, VALUES, n_entities))
+    rows = list(zip(entities, colors))
+    rng.shuffle(rows)
+    query_e, query_c = rng.choice(rows)
+    facts = TRAIN_HAS_FACTS if surface == "train" else HOLDOUT_HAS_FACTS
+    parts = [rng.choice(facts).format(e=entity, v=color) for entity, color in rows]
+    rng.shuffle(parts)
+    fact_text = " ".join(parts)
+    if direction == "who":
+        query_pool = TRAIN_HAS_WHO if surface == "train" else HOLDOUT_HAS_WHO
+        query = rng.choice(query_pool).format(v=query_c)
+    else:
+        query_pool = TRAIN_HAS_WHAT if surface == "train" else HOLDOUT_HAS_WHAT
+        query = rng.choice(query_pool).format(e=query_e)
+    answer = rng.choice(TRAIN_HAS_ANSWERS if surface == "train" else HOLDOUT_HAS_ANSWERS).format(e=query_e, v=query_c)
+    if not answer.startswith(" "):
+        answer = " " + answer
+    if not answer.endswith("."):
+        answer = answer + "."
+    prompt = fact_text + " " + query
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family="has_object",
+        surface=surface,
+        variant=f"has_{direction}_{n_entities}e",
         extra={
             "entity": query_e,
             "value_text": query_c,
-            "cue_text": query_c,
+            "other_entity": "",
             "prompt_text": prompt,
             "answer_text": answer,
-            "attr": "who_color",
+            "attr": f"has_{direction}",
             "n_entities": n_entities,
+            "direction": direction,
+        },
+    )
+
+
+def make_beside_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    surface: str = "train",
+    direction: str | None = None,
+) -> dict:
+    """Spatial: e1 is beside e2. Forward=where e1, inverse=who beside e2."""
+    e1, e2 = list(_sample(rng, WHO_ENTITIES, 2))
+    if direction not in {"where", "who"}:
+        direction = "where" if rng.random() < 0.5 else "who"
+    facts = TRAIN_BESIDE_FACTS if surface == "train" else HOLDOUT_BESIDE_FACTS
+    fact_text = rng.choice(facts).format(e1=e1, e2=e2)
+    if direction == "where":
+        query_pool = TRAIN_BESIDE_WHERE if surface == "train" else HOLDOUT_BESIDE_WHERE
+        query = rng.choice(query_pool).format(e1=e1)
+    else:
+        query_pool = TRAIN_BESIDE_WHO if surface == "train" else HOLDOUT_BESIDE_WHO
+        query = rng.choice(query_pool).format(e2=e2)
+    answer = rng.choice(TRAIN_BESIDE_ANSWERS if surface == "train" else HOLDOUT_BESIDE_ANSWERS).format(e1=e1, e2=e2)
+    if not answer.startswith(" "):
+        answer = " " + answer
+    if not answer.endswith("."):
+        answer = answer + "."
+    prompt = fact_text + " " + query
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family="beside",
+        surface=surface,
+        variant=f"beside_{direction}",
+        extra={
+            "entity": e1,
+            "value_text": e2,
+            "other_entity": e2,
+            "prompt_text": prompt,
+            "answer_text": answer,
+            "attr": f"beside_{direction}",
+            "direction": direction,
         },
     )
 
@@ -2723,21 +3050,59 @@ def score_usable_turn(
     }
 
 
-def score_sentence_answer(*, full_text: str, entity: str, color: str, stopped: bool) -> dict:
+def score_bind_sentence(
+    *,
+    full_text: str,
+    entity: str,
+    value: str,
+    stopped: bool,
+    predicates: tuple[str, ...] = ("is", "looks"),
+) -> dict:
     words = _usable_words(full_text)
-    has_entity = entity.strip().lower() in words
-    has_color = color.strip().lower() in words
+    entity_l = entity.strip().lower()
+    value_l = value.strip().lower()
+    has_entity = entity_l in words
+    has_value = value_l in words
     period = "." in full_text
-    sentence_like = has_entity and has_color and period and len(words) >= 3 and ("is" in words or "looks" in words)
+    predicate_ok = any(pred in words for pred in predicates)
+    first = words[0] if words else ""
+    first_entity = first == entity_l or (first in {"the", "that", "this"} and len(words) > 1 and words[1] == entity_l)
+    sentence_ok = has_entity and has_value and period and len(words) >= 3 and predicate_ok
     return {
         "has_entity": has_entity,
-        "has_color": has_color,
+        "has_value": has_value,
+        "has_color": has_value,
         "period": period,
         "stopped": bool(stopped),
         "n_words": len(words),
-        "sentence_ok": sentence_like,
-        "one_word_color": has_color and not has_entity and len(words) <= 2,
+        "predicate_ok": predicate_ok,
+        "first_entity": first_entity,
+        "sentence_ok": sentence_ok,
+        "one_word_entity": has_entity and not has_value and len(words) <= 2,
+        "one_word_color": has_value and not has_entity and len(words) <= 2,
     }
+
+
+def score_sentence_answer(*, full_text: str, entity: str, color: str, stopped: bool) -> dict:
+    return score_bind_sentence(full_text=full_text, entity=entity, value=color, stopped=stopped)
+
+
+def score_has_sentence(*, full_text: str, entity: str, value: str, stopped: bool) -> dict:
+    """Possession sentence. Require 'object' so 'has the color X' does not count."""
+    scored = score_bind_sentence(
+        full_text=full_text,
+        entity=entity,
+        value=value,
+        stopped=stopped,
+        predicates=("has",),
+    )
+    words = _usable_words(full_text)
+    has_object = "object" in words
+    color_shortcut = "color" in words and not has_object
+    scored["has_object"] = has_object
+    scored["color_shortcut"] = color_shortcut
+    scored["sentence_ok"] = bool(scored["sentence_ok"] and has_object and not color_shortcut)
+    return scored
 
 
 def build_usable_chat_pack() -> list[dict]:
@@ -2869,6 +3234,64 @@ def build_sentence_decode_pack() -> list[dict]:
         {"id": "cat_green", "facts": "cat looks green. bear looks red.", "entity": "cat", "color": "green", "query": "What is the color of the cat?"},
         {"id": "bird_pink", "facts": "Remember: the bird is pink. That frog is white.", "entity": "bird", "color": "pink", "query": "Which color is the bird?"},
         {"id": "duck_yellow", "facts": "duck looks yellow. cow looks blue.", "entity": "duck", "color": "yellow", "query": "Tell me the color of the duck."},
+    ]
+
+
+def build_who_sentence_decode_pack() -> list[dict]:
+    """Held-out WHO questions whose gold is a short sentence. Eval-only."""
+    return [
+        {"id": "who_dog_white", "facts": "dog looks white. hen looks red.", "entity": "dog", "value": "white", "query": "Who looks white?", "kind": "who_color"},
+        {"id": "who_hen_red", "facts": "dog looks white. hen looks red.", "entity": "hen", "value": "red", "query": "Tell me who looks red.", "kind": "who_color"},
+        {"id": "who_bear_blue", "facts": "Remember: the bear is blue. Remember: the cat is yellow.", "entity": "bear", "value": "blue", "query": "Who looks blue?", "kind": "who_color"},
+        {"id": "who_cat_yellow", "facts": "Remember: the bear is blue. Remember: the cat is yellow.", "entity": "cat", "value": "yellow", "query": "Tell me who looks yellow.", "kind": "who_color"},
+        {"id": "who_duck_green", "facts": "That duck is green. That frog is pink.", "entity": "duck", "value": "green", "query": "Who looks green?", "kind": "who_color"},
+        {"id": "who_frog_pink", "facts": "That duck is green. That frog is pink.", "entity": "frog", "value": "pink", "query": "Tell me who looks pink.", "kind": "who_color"},
+        {"id": "who_hen_white", "facts": "hen looks white. dog looks red.", "entity": "hen", "value": "white", "query": "Who looks white?", "kind": "who_color"},
+        {"id": "who_cat_blue", "facts": "cat looks blue. bear looks yellow.", "entity": "cat", "value": "blue", "query": "Tell me who looks blue.", "kind": "who_color"},
+        {"id": "who_dog_huge", "facts": "Remember: the dog is huge in size. That hen is tiny in size.", "entity": "dog", "value": "huge", "query": "Who looks huge?", "kind": "who_size"},
+        {"id": "who_hen_tiny", "facts": "Remember: the dog is huge in size. That hen is tiny in size.", "entity": "hen", "value": "tiny", "query": "Tell me who looks tiny.", "kind": "who_size"},
+        {"id": "who_bear_wide", "facts": "bear looks wide in size. cat looks thin in size.", "entity": "bear", "value": "wide", "query": "Who looks wide?", "kind": "who_size"},
+        {"id": "who_cat_thin", "facts": "bear looks wide in size. cat looks thin in size.", "entity": "cat", "value": "thin", "query": "Tell me who looks thin.", "kind": "who_size"},
+        {"id": "who_duck_small", "facts": "That duck is small in size. That frog is short in size.", "entity": "duck", "value": "small", "query": "Who looks small?", "kind": "who_size"},
+        {"id": "who_frog_short", "facts": "That duck is small in size. That frog is short in size.", "entity": "frog", "value": "short", "query": "Tell me who looks short.", "kind": "who_size"},
+        {"id": "who_dog_thin", "facts": "dog looks thin in size. hen looks wide in size.", "entity": "dog", "value": "thin", "query": "Who looks thin?", "kind": "who_size"},
+        {"id": "who_bear_tiny", "facts": "Remember: the bear is tiny in size. That cat is huge in size.", "entity": "bear", "value": "tiny", "query": "Tell me who looks tiny.", "kind": "who_size"},
+    ]
+
+
+def build_has_decode_pack() -> list[dict]:
+    """Held-out possession questions. Eval-only. 4 inverse + 4 forward."""
+    return [
+        {"id": "has_who_dog_white", "facts": "That dog has the white object. Remember: the hen has the red object.", "entity": "dog", "value": "white", "query": "Which one has the white object?", "kind": "has_who"},
+        {"id": "has_who_hen_red", "facts": "That dog has the white object. Remember: the hen has the red object.", "entity": "hen", "value": "red", "query": "Tell me who has the red object.", "kind": "has_who"},
+        {"id": "has_who_bear_blue", "facts": "That bear has the blue object. Remember: the cat has the yellow object.", "entity": "bear", "value": "blue", "query": "Which one has the blue object?", "kind": "has_who"},
+        {"id": "has_who_cat_green", "facts": "That duck has the pink object. Remember: the cat has the green object.", "entity": "cat", "value": "green", "query": "Tell me who has the green object.", "kind": "has_who"},
+        {"id": "has_what_dog_white", "facts": "That dog has the white object. Remember: the hen has the red object.", "entity": "dog", "value": "white", "query": "What does dog have?", "kind": "has_what"},
+        {"id": "has_what_hen_red", "facts": "That dog has the white object. Remember: the hen has the red object.", "entity": "hen", "value": "red", "query": "Tell me what the hen has.", "kind": "has_what"},
+        {"id": "has_what_bear_blue", "facts": "That bear has the blue object. Remember: the cat has the yellow object.", "entity": "bear", "value": "blue", "query": "What does bear have?", "kind": "has_what"},
+        {"id": "has_what_frog_pink", "facts": "That frog has the pink object. Remember: the duck has the green object.", "entity": "frog", "value": "pink", "query": "Tell me what the frog has.", "kind": "has_what"},
+        {"id": "has_who_duck_pink", "facts": "That frog has the yellow object. Remember: the duck has the pink object.", "entity": "duck", "value": "pink", "query": "Which one has the pink object?", "kind": "has_who"},
+        {"id": "has_who_frog_yellow", "facts": "That frog has the yellow object. Remember: the duck has the pink object.", "entity": "frog", "value": "yellow", "query": "Tell me who has the yellow object.", "kind": "has_who"},
+        {"id": "has_what_cat_green", "facts": "That duck has the pink object. Remember: the cat has the green object.", "entity": "cat", "value": "green", "query": "What does cat have?", "kind": "has_what"},
+        {"id": "has_what_duck_pink", "facts": "That frog has the yellow object. Remember: the duck has the pink object.", "entity": "duck", "value": "pink", "query": "Tell me what the duck has.", "kind": "has_what"},
+    ]
+
+
+def build_beside_decode_pack() -> list[dict]:
+    """Held-out spatial questions. Eval-only. 4 where + 4 who."""
+    return [
+        {"id": "beside_where_dog", "facts": "That dog is beside the hen.", "entity": "dog", "value": "hen", "query": "Where is dog?", "kind": "beside_where"},
+        {"id": "beside_where_bear", "facts": "Remember: the bear is beside the cat.", "entity": "bear", "value": "cat", "query": "Tell me where the bear is.", "kind": "beside_where"},
+        {"id": "beside_where_duck", "facts": "That duck is beside the frog.", "entity": "duck", "value": "frog", "query": "Where is duck?", "kind": "beside_where"},
+        {"id": "beside_where_cat", "facts": "Remember: the cat is beside the dog.", "entity": "cat", "value": "dog", "query": "Tell me where the cat is.", "kind": "beside_where"},
+        {"id": "beside_who_hen", "facts": "That dog is beside the hen.", "entity": "dog", "value": "hen", "query": "Which one is beside the hen?", "kind": "beside_who"},
+        {"id": "beside_who_cat", "facts": "Remember: the bear is beside the cat.", "entity": "bear", "value": "cat", "query": "Tell me who is beside the cat.", "kind": "beside_who"},
+        {"id": "beside_who_frog", "facts": "That duck is beside the frog.", "entity": "duck", "value": "frog", "query": "Which one is beside the frog?", "kind": "beside_who"},
+        {"id": "beside_who_dog", "facts": "Remember: the cat is beside the dog.", "entity": "cat", "value": "dog", "query": "Tell me who is beside the dog.", "kind": "beside_who"},
+        {"id": "beside_where_hen", "facts": "That hen is beside the duck.", "entity": "hen", "value": "duck", "query": "Where is hen?", "kind": "beside_where"},
+        {"id": "beside_where_frog", "facts": "Remember: the frog is beside the bear.", "entity": "frog", "value": "bear", "query": "Tell me where the frog is.", "kind": "beside_where"},
+        {"id": "beside_who_duck", "facts": "That hen is beside the duck.", "entity": "hen", "value": "duck", "query": "Which one is beside the duck?", "kind": "beside_who"},
+        {"id": "beside_who_bear", "facts": "Remember: the frog is beside the bear.", "entity": "frog", "value": "bear", "query": "Tell me who is beside the bear.", "kind": "beside_who"},
     ]
 
 

@@ -71,6 +71,12 @@ S2M_SURVIVOR = OUT / "s2m_protect40_combine_323091" / "checkpoint_00025.pt"
 S2M_SURVIVOR_SHA = "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9"
 S3S_SURVIVOR = OUT / "s3s_compose_lock_324121" / "checkpoint_00025.pt"
 S3S_SURVIVOR_SHA = "8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d"
+S4M_SURVIVOR = OUT / "s4m_compose_lock_325231" / "checkpoint_00025.pt"
+S4M_SURVIVOR_SHA = "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5"
+S5M_SURVIVOR = OUT / "s5m_compose_lock_326121" / "checkpoint_00025.pt"
+S5M_SURVIVOR_SHA = "dd2584a5b6252adae70dc1729666b937c41dd0686af347d0b2ee2a0bbe30ec0e"
+S5B3_SURVIVOR = OUT / "s5b3_compose_lock_326191" / "checkpoint_00025.pt"
+S5B3_SURVIVOR_SHA = "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd"
 S2A_D3_SLICE = 0.825
 S2A_D3_FULL = 169
 S2A_MIXED = 0.875
@@ -636,6 +642,598 @@ RECIPES = {
         "lr_scale": 0.5,
         "note": "From s4l: raise sentence rehearsal to 12% so bare does not freeze at 2/8 while English is returning.",
     },
+    "s5a": {
+        "seed": 326001,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Mix-protected 25% WHO-sentence pulse from s4m. Steal language/structured, keep compose_lock.",
+    },
+    "s5c": {
+        "seed": 326021,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s4m after s5a query-fight. WHO-sentence uses animal queries, disjoint from one-word Who-is.",
+    },
+    "s5d": {
+        "seed": 326031,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "s5c was accidentally trained from E12. Repeat disjoint-query 25% pulse from s4m.",
+    },
+    "s5e": {
+        "seed": 326041,
+        "mix": "compose_lock_who",
+        "language_p": 0.35,
+        "structured_p": 0.28,
+        "sentence_p": 0.10,
+        "sent_kind": "who_lock",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5d: STOP 25% pulse. Restore color/WHO one-word while rehearsing 10% animal WHO-sentences.",
+    },
+    "s5f": {
+        "seed": 326051,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.12,
+        "sent_kind": "who_focus",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5e: keep lock dose, raise who_sent share inside the 12% bucket. Restore combine.",
+    },
+    "s5g": {
+        "seed": 326061,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s4m: 25% WHO-sentence pulse on looks-queries. No dummy noun. Disjoint from Who-is.",
+    },
+    "s5h": {
+        "seed": 326071,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.12,
+        "sent_kind": "who_focus",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5g: STOP pulse. Syntax is real; 5/16 correct, many wrong-fact sentences. Rehearse 2e WHO-sentences + mix.",
+    },
+    "s5i": {
+        "seed": 326081,
+        "mix": "compose_lock",
+        "language_p": 0.28,
+        "structured_p": 0.24,
+        "sentence_p": 0.18,
+        "sent_kind": "who_focus",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5h: entity-first WHO-sentence CE so the retrieved name is the first token. Keep 1e sentences.",
+    },
+    "s5k": {
+        "seed": 326091,
+        "mix": "compose_lock",
+        "language_p": 0.22,
+        "structured_p": 0.22,
+        "sentence_p": 0.20,
+        "sent_kind": "who_entity",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5i: 20% entity-first WHO-sentences, half 3e, to break last-fact recency.",
+    },
+    "s5m": {
+        "seed": 326121,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s4m: 1e then 2e WHO-sentences, asked-attribute facts only, entity-first answers.",
+    },
+    "s5n": {
+        "seed": 326131,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.12,
+        "sent_kind": "who_focus",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: STOP pulse. Lock 1e+2e WHO-sentences with compose_lock. who_bind held at 0.50.",
+    },
+    "s5p": {
+        "seed": 326141,
+        "mix": "compose_lock",
+        "language_p": 0.26,
+        "structured_p": 0.24,
+        "sentence_p": 0.18,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: 12% lock faded who_sent to 0.125. Medium 18% 1e+2e WHO-sentence dose.",
+    },
+    "s5q": {
+        "seed": 326151,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_2e",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: second 25% pulse, 2e WHO-sentences only. Target who_sent matching who_bind 0.50.",
+    },
+    "s5r": {
+        "seed": 326161,
+        "mix": "compose_lock_who",
+        "language_p": 0.22,
+        "structured_p": 0.22,
+        "sentence_p": 0.20,
+        "sent_kind": "who_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: 20% 1e+2e WHO-sentences plus compose_lock_who so one-word WHO stays at 0.50.",
+    },
+    "s5l": {
+        "seed": 326011,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.12,
+        "sent_kind": "who_lock",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Lock after WHO-sentence pulse: rehearse old + new together at 12%.",
+    },
+    "s5b": {
+        "seed": 326101,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "rel_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Mix-protected 25% has-object + beside pulse. Keep WHO sentences alive.",
+    },
+    "s5bl": {
+        "seed": 326111,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.12,
+        "sent_kind": "rel_lock",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Lock after relation pulse: rehearse A + has/beside + old skills.",
+    },
+    "s5bx": {
+        "seed": 326171,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "rel_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5b: 12% lock faded has. One more mix-protected 25% has+beside pulse.",
+    },
+    "s5bz": {
+        "seed": 326181,
+        "mix": "compose_lock",
+        "language_p": 0.26,
+        "structured_p": 0.24,
+        "sentence_p": 0.18,
+        "sent_kind": "rel_balance",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5bx: has 0.667 both dirs. STOP pulse. Rehearse has+beside+WHO-sentences together.",
+    },
+    "s5b3": {
+        "seed": 326191,
+        "mix": "compose_lock",
+        "language_p": 0.24,
+        "structured_p": 0.22,
+        "sentence_p": 0.20,
+        "sent_kind": "rel_balance",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5bz: A restored to 0.375. Keep balance, 20% dose so has does not fade below 0.50.",
+    },
+    "s5b4": {
+        "seed": 326201,
+        "mix": "compose_lock",
+        "language_p": 0.24,
+        "structured_p": 0.22,
+        "sentence_p": 0.20,
+        "sent_kind": "rel_balance",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5b3: beside 0.75. Keep balance to lift has and beside_where without losing A.",
+    },
+    "s5b5": {
+        "seed": 326211,
+        "mix": "compose_lock",
+        "language_p": 0.28,
+        "structured_p": 0.26,
+        "sentence_p": 0.15,
+        "sent_kind": "rel_balance",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "updates": 50,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5b3: longer 15% balance. 25u swings were stealing A vs has vs beside.",
+    },
+    "r2c": {
+        "seed": 328001,
+        "mix": "compose_lock",
+        "language_p": 0.24,
+        "structured_p": 0.22,
+        "sentence_p": 0.22,
+        "sent_kind": "rel_forward",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "relate": True,
+        "router": True,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s5b3",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From verified s5b3 + WhoPropRouter: pulse forward has/beside while locking A.",
+    },
+    "s5w": {
+        "seed": 326221,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_select",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "entity_margin": True,
+        "margin_scale": 1.0,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s4m: anti-recency one-word WHO selection + entity-vs-distractor margin. Raise who_2e above 0.50.",
+    },
+    "s5ws": {
+        "seed": 326231,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_select_sent",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "entity_margin": True,
+        "margin_scale": 1.0,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s5m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: anti-recency WHO-sentences plus one-word select + entity margin. Target who_sent matching who_2e.",
+    },
+    "s5x": {
+        "seed": 326241,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_select_uniform",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "entity_margin": True,
+        "margin_scale": 0.3,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s4m: s5w anti-recency overcorrected who_2e to 0.31. Uniform 4-fact WHO + light first-token margin only.",
+    },
+    "s5xx": {
+        "seed": 326251,
+        "mix": "compose_lock",
+        "language_p": 0.22,
+        "structured_p": 0.22,
+        "sentence_p": 0.20,
+        "sent_kind": "who_select_uniform",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "entity_margin": True,
+        "margin_scale": 0.3,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5x: last-not-gold 0.29→0.41. Continue light margin; slightly more mix so story_combine can recover.",
+    },
+    "s5z": {
+        "seed": 326261,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_a_pulse",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "entity_margin": True,
+        "margin_scale": 0.5,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s5m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: A-shaped 2-fact asked-attr WHO-sentences + one-word bind + first-token margin. 4-fact select did not transfer.",
+    },
+    "s5pp": {
+        "seed": 326271,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "who_pair",
+        "sent_sampler": "s5",
+        "who_sent": True,
+        "entity_margin": True,
+        "margin_scale": 0.5,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s5m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s5m: same-scene pair WHO questions (both entities) + margin. Eval pack is paired; unpaired CE plateaued at 0.375.",
+    },
+    "r2a": {
+        "seed": 327001,
+        "mix": "compose_lock",
+        "language_p": 0.22,
+        "structured_p": 0.22,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "note": "Retrieval-school-2 who-select pointer. Use --mode r2, not --mode train.",
+    },
+    "r2b": {
+        "seed": 327011,
+        "mix": "compose_lock",
+        "language_p": 0.22,
+        "structured_p": 0.22,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s4m",
+        "note": "Retrieval-school-2 stronger copy. Use --mode r2.",
+    },
 }
 
 
@@ -651,6 +1249,12 @@ def parent_checkpoint(recipe: dict) -> Path:
         return S2M_SURVIVOR
     if parent == "s3s":
         return S3S_SURVIVOR
+    if parent == "s4m":
+        return S4M_SURVIVOR
+    if parent == "s5m":
+        return S5M_SURVIVOR
+    if parent == "s5b3":
+        return S5B3_SURVIVOR
     return E12_SURVIVOR
 
 
@@ -914,7 +1518,7 @@ def save_stack2_checkpoint(path: Path, model, optimizer, config, update: int, se
     return digest(path)
 
 
-def require_identities(*, require_s2a: bool = False, require_s2m: bool = False, require_s3s: bool = False) -> None:
+def require_identities(*, require_s2a: bool = False, require_s2m: bool = False, require_s3s: bool = False, require_s4m: bool = False) -> None:
     if digest(PARENT) != PARENT_SHA:
         raise RuntimeError("U16000 hash mismatch")
     if digest(E12_SURVIVOR) != E12_SURVIVOR_SHA:
@@ -936,6 +1540,11 @@ def require_identities(*, require_s2a: bool = False, require_s2m: bool = False, 
             raise RuntimeError(f"missing s3s parent {S3S_SURVIVOR}")
         if digest(S3S_SURVIVOR) != S3S_SURVIVOR_SHA:
             raise RuntimeError("s3s survivor hash mismatch")
+    if require_s4m:
+        if not S4M_SURVIVOR.exists():
+            raise RuntimeError(f"missing s4m parent {S4M_SURVIVOR}")
+        if digest(S4M_SURVIVOR) != S4M_SURVIVOR_SHA:
+            raise RuntimeError("s4m survivor hash mismatch")
 
 
 def cheap_d3_slice(model, device) -> dict:
@@ -1061,6 +1670,9 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
         S2I50_SURVIVOR: S2I50_SURVIVOR_SHA,
         S2M_SURVIVOR: S2M_SURVIVOR_SHA,
         S3S_SURVIVOR: S3S_SURVIVOR_SHA,
+        S4M_SURVIVOR: S4M_SURVIVOR_SHA,
+        S5M_SURVIVOR: S5M_SURVIVOR_SHA,
+        S5B3_SURVIVOR: S5B3_SURVIVOR_SHA,
     }.get(start)
     if expected is not None and digest(start) != expected:
         raise RuntimeError(f"parent hash mismatch for {start}")
@@ -1103,12 +1715,24 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
             loss = F.cross_entropy(logits[mask], y[mask])
             task = "structured_remainder" if recipe.get("remainder_span") else "structured"
         elif sentence_p > 0 and draw < language_p + structured_p + sentence_p:
-            from .selection_stack2_s4 import sample_s4_item
+            sent_sampler = str(recipe.get("sent_sampler") or "s4")
+            if sent_sampler == "s5":
+                from .selection_stack2_s5 import sample_s5_item
 
-            items = [sample_s4_item(rng, tokenizer, sent_kind) for _ in range(BATCH)]
+                items = [sample_s5_item(rng, tokenizer, sent_kind) for _ in range(BATCH)]
+            else:
+                from .selection_stack2_s4 import sample_s4_item
+
+                items = [sample_s4_item(rng, tokenizer, sent_kind) for _ in range(BATCH)]
             x, y, mask = pack_bridge_batch(items, device)
             logits = model(x)
             loss = F.cross_entropy(logits[mask], y[mask])
+            if recipe.get("entity_margin"):
+                from .selection_stack2_s5 import entity_select_margin
+
+                extra = entity_select_margin(logits, mask, items, tokenizer)
+                if extra is not None:
+                    loss = loss + float(recipe.get("margin_scale") or 1.0) * extra
             task = "sentence"
         else:
             items = [sample_s2_item(rng, tokenizer, mix) for _ in range(BATCH)]
@@ -1119,6 +1743,12 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
                     mask = rem
             logits = model(x)
             loss = F.cross_entropy(logits[mask], y[mask])
+            if recipe.get("entity_margin") and recipe.get("entity_margin_bridge"):
+                from .selection_stack2_s5 import entity_select_margin
+
+                extra = entity_select_margin(logits, mask, items, tokenizer)
+                if extra is not None:
+                    loss = loss + float(recipe.get("margin_scale") or 1.0) * extra
             task = "bridge_remainder" if recipe.get("mix_remainder_span") else "bridge"
         loss.backward()
         grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 2.0)
@@ -1175,6 +1805,10 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
                     f"sent={_exact(compose_native, 'compose_sent_heldout'):.3f} "
                     f"bare={float(extra_sent.get('sentence_ok') or 0.0):.3f}"
                 )
+                if recipe.get("who_sent") or recipe.get("relate") or str(recipe.get("sent_sampler") or "") == "s5":
+                    from .selection_stack2_s5 import attach_s5_eval
+
+                    attach_s5_eval(row, model, tokenizer, device, recipe)
             history.append(row)
             write(out_dir / f"eval_{update:05d}.json", row)
             extra = {k: row[k] for k in ("mix_verdict", "english_ok", "collapsed", "lesson")}
@@ -1188,7 +1822,12 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
             print(json.dumps({"phase": f"{recipe_id}_eval", "update": update, **extra}, default=str), flush=True)
             best = row
             slice_exact = float((row.get("d3_slice") or {}).get("free_exact") or 0.0)
-            if recipe.get("parent") == "s3s":
+            if recipe.get("parent") == "s4m":
+                from .selection_stack2_s5 import S4M_D3_SLICE, mix_holds_s4m
+
+                mix_ok_hold, _mix_hold = mix_holds_s4m(native)
+                d3_floor = S4M_D3_SLICE - D3_SLICE_KILL
+            elif recipe.get("parent") == "s3s":
                 from .selection_stack2_s4 import S3S_D3_SLICE, mix_holds_s3s
 
                 mix_ok_hold, _mix_hold = mix_holds_s3s(native)
@@ -1648,7 +2287,7 @@ def run_loop(device) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover", "compose", "sentence"), default="run")
+    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover", "compose", "sentence", "s5", "r2"), default="run")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--recipe", default="s2a", choices=tuple(RECIPES))
     parser.add_argument("--resume", type=Path)
@@ -1656,10 +2295,11 @@ def main() -> None:
     args = parser.parse_args()
     device = resolve_device(args.device)
     require_identities(
-        require_s2a=args.mode in {"recover", "compose", "sentence"}
-        or RECIPES.get(args.recipe, {}).get("parent") in {"s2a", "s2m", "s3s"},
-        require_s2m=args.mode in {"compose", "sentence"} or RECIPES.get(args.recipe, {}).get("parent") in {"s2m", "s3s"},
-        require_s3s=args.mode == "sentence" or RECIPES.get(args.recipe, {}).get("parent") == "s3s",
+        require_s2a=args.mode in {"recover", "compose", "sentence", "s5"}
+        or RECIPES.get(args.recipe, {}).get("parent") in {"s2a", "s2m", "s3s", "s4m"},
+        require_s2m=args.mode in {"compose", "sentence", "s5"} or RECIPES.get(args.recipe, {}).get("parent") in {"s2m", "s3s", "s4m"},
+        require_s3s=args.mode in {"sentence", "s5"} or RECIPES.get(args.recipe, {}).get("parent") in {"s3s", "s4m"},
+        require_s4m=args.mode in {"s5", "r2"} or RECIPES.get(args.recipe, {}).get("parent") == "s4m",
     )
     ledger_init()
     if args.mode == "probe":
@@ -1667,10 +2307,7 @@ def main() -> None:
         evaluate_checkpoint(device, path, args.tag, with_usable=True, with_d3=False)
         return
     if args.mode == "train":
-        if args.resume is not None:
-            train_recipe(device, args.recipe, resume=args.resume)
-        else:
-            run_recipe(device, args.recipe)
+        train_recipe(device, args.recipe, resume=args.resume)
         return
     if args.mode == "recover":
         run_d3_recover_loop(device)
@@ -1684,6 +2321,19 @@ def main() -> None:
         from .selection_stack2_s4 import run_sentence_loop
 
         run_sentence_loop(device)
+        return
+    if args.mode == "s5":
+        from .selection_stack2_s5 import run_s5_loop
+
+        run_s5_loop(device)
+        return
+    if args.mode == "r2":
+        from .selection_stack2_r2 import run_r2_probe, train_r2
+
+        if args.recipe in {"r2a", "r2b"}:
+            train_r2(device, recipe_id=args.recipe, resume=args.resume)
+            return
+        run_r2_probe(device, args.resume)
         return
     if args.mode == "usable":
         if args.resume is None:

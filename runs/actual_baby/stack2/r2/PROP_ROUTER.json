@@ -1,0 +1,51 @@
+{
+  "id": "r2_prop_router",
+  "loaded_checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4m_compose_lock_325231\\checkpoint_00025.pt",
+  "loaded_sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5",
+  "requested_parent": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4m_compose_lock_325231\\checkpoint_00025.pt",
+  "requested_parent_sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5",
+  "parent_match": true,
+  "authoritative": false,
+  "copy_scale": 8.0,
+  "bare": {
+    "n": 32,
+    "acc": 0.46875,
+    "pred_is_last": 0.65625,
+    "acc_last_gold": 0.6666666666666666,
+    "acc_last_not": 0.29411764705882354,
+    "by_gap": {
+      "1": 0.5,
+      "3": 0.47368421052631576,
+      "2": 0.5714285714285714,
+      "4": 0.25
+    }
+  },
+  "routed": {
+    "n": 32,
+    "acc": 1.0,
+    "pred_is_last": 0.46875,
+    "acc_last_gold": 1.0,
+    "acc_last_not": 1.0,
+    "by_gap": {
+      "1": 1.0,
+      "3": 1.0,
+      "2": 1.0,
+      "4": 1.0
+    }
+  },
+  "routed_seed324777": {
+    "n": 32,
+    "acc": 0.96875,
+    "pred_is_last": 0.65625,
+    "acc_last_gold": 1.0,
+    "acc_last_not": 0.9166666666666666,
+    "by_gap": {
+      "3": 0.9473684210526315,
+      "1": 1.0,
+      "2": 1.0,
+      "4": 1.0
+    }
+  },
+  "gate": 0.7,
+  "passed": true
+}

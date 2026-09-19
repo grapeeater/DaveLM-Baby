@@ -4,6 +4,7 @@ import random
 
 from src.baby_v010.data_language_bridge import (
     ENTITIES,
+    last_mentioned_who,
     HOLDOUT_EVENTS,
     HOLDOUT_STORY_FRAMES,
     SIZES,
@@ -27,7 +28,24 @@ from src.baby_v010.data_language_bridge import (
     make_story_item,
     make_story_mixed_item,
     make_who_bind_item,
+    make_who_pair_items,
     make_who_sentence_item,
+    make_has_object_item,
+    make_beside_item,
+    score_bind_sentence,
+    score_has_sentence,
+    TRAIN_HAS_WHO,
+    HOLDOUT_HAS_WHO,
+    TRAIN_HAS_WHAT,
+    HOLDOUT_HAS_WHAT,
+    TRAIN_HAS_ANSWERS,
+    HOLDOUT_HAS_ANSWERS,
+    TRAIN_BESIDE_WHERE,
+    HOLDOUT_BESIDE_WHERE,
+    TRAIN_BESIDE_WHO,
+    HOLDOUT_BESIDE_WHO,
+    TRAIN_BESIDE_ANSWERS,
+    HOLDOUT_BESIDE_ANSWERS,
     make_longturn_item,
     make_roleplay_item,
     make_syntax_item,
@@ -41,6 +59,14 @@ from src.baby_v010.data_language_bridge import (
     HOLDOUT_OPEN_QUERIES,
     TRAIN_WHO_BIND_SIZE,
     HOLDOUT_WHO_BIND_SIZE,
+    TRAIN_WHO_BIND_COLOR,
+    HOLDOUT_WHO_BIND_COLOR,
+    TRAIN_WHO_SENT_COLOR,
+    HOLDOUT_WHO_SENT_COLOR,
+    TRAIN_WHO_SENT_SIZE,
+    HOLDOUT_WHO_SENT_SIZE,
+    TRAIN_WHO_SENT_ANSWERS,
+    HOLDOUT_WHO_SENT_ANSWERS,
     TRAIN_COMPOSE_SENT_ANSWERS,
     HOLDOUT_COMPOSE_SENT_ANSWERS,
     TRAIN_FORMAT_SENT_PREFIXES,
@@ -677,6 +703,13 @@ def test_who_bind_and_compose_sentence_are_gold_free() -> None:
     assert "sentence" not in sent["prompt_text"].lower()
     assert any(prefix.strip() in instr["prompt_text"] for prefix in HOLDOUT_FORMAT_SENT_PREFIXES) or "sentence" in instr["prompt_text"].lower()
     assert set(TRAIN_WHO_BIND_SIZE).isdisjoint(HOLDOUT_WHO_BIND_SIZE)
+    assert set(TRAIN_WHO_SENT_COLOR).isdisjoint(HOLDOUT_WHO_SENT_COLOR)
+    assert set(TRAIN_WHO_SENT_SIZE).isdisjoint(HOLDOUT_WHO_SENT_SIZE)
+    assert set(TRAIN_WHO_SENT_COLOR).isdisjoint(TRAIN_WHO_BIND_COLOR)
+    assert set(HOLDOUT_WHO_SENT_COLOR).isdisjoint(HOLDOUT_WHO_BIND_COLOR)
+    assert set(TRAIN_WHO_SENT_SIZE).isdisjoint(TRAIN_WHO_BIND_SIZE)
+    assert set(HOLDOUT_WHO_SENT_SIZE).isdisjoint(HOLDOUT_WHO_BIND_SIZE)
+    assert set(TRAIN_WHO_SENT_ANSWERS).isdisjoint(HOLDOUT_WHO_SENT_ANSWERS)
     assert set(TRAIN_COMPOSE_SENT_ANSWERS).isdisjoint(HOLDOUT_COMPOSE_SENT_ANSWERS)
     train_forms = {
         tmpl.format(e=train_sent["entity"], v=train_sent["value_text"]).strip() for tmpl in TRAIN_COMPOSE_SENT_ANSWERS
@@ -692,6 +725,89 @@ def test_who_bind_and_compose_sentence_are_gold_free() -> None:
     assert who_sent.get("query_position") is None
     assert who_sent["family"] == "who_sent"
     assert who_sent["answer_text"].endswith(".")
+    who_size = make_who_sentence_item(rng, tokenizer, n_entities=2, surface="train", ask="size")
+    assert who_size["attr"] == "who_size"
+    assert who_size["value_text"] in SIZES
+    who_color = make_who_sentence_item(rng, tokenizer, n_entities=2, surface="train", ask="color")
+    assert who_color["attr"] == "who_color"
+    assert who_color["value_text"] in VALUES
     mixed3 = make_mixed_item(rng, tokenizer, n_entities=3, surface="heldout", combine=True)
     assert mixed3.get("query_position") is None
     assert mixed3["family"] == "fact_combine"
+    for seed in range(20):
+        anti = make_who_bind_item(
+            random.Random(seed), tokenizer, n_entities=2, surface="train", asked_attr_only=True, anti_recency=True
+        )
+        assert anti.get("query_position") is None
+        assert anti["entity"] != anti.get("last_entity")
+        assert last_mentioned_who(anti["prompt_text"]) == anti.get("last_entity")
+        sent_anti = make_who_sentence_item(
+            random.Random(100 + seed), tokenizer, n_entities=2, surface="train", anti_recency=True
+        )
+        assert sent_anti["entity"] != sent_anti.get("last_entity")
+        assert sent_anti["entity"] in sent_anti["answer_text"]
+    pair = make_who_pair_items(random.Random(13), tokenizer, surface="train", as_sentence=True)
+    assert len(pair) == 2
+    assert pair[0]["entity"] != pair[1]["entity"]
+    assert pair[0].get("query_position") is None
+    e0, e1 = pair[0]["entity"], pair[1]["entity"]
+    assert e0 in pair[0]["prompt_text"] and e1 in pair[0]["prompt_text"]
+    assert e0 in pair[1]["prompt_text"] and e1 in pair[1]["prompt_text"]
+    assert e0 in pair[0]["answer_text"]
+    assert e1 in pair[1]["answer_text"]
+
+
+def test_has_and_beside_are_gold_free_and_disjoint() -> None:
+    tokenizer = load_tokenizer()
+    rng = random.Random(326001)
+    has_who = make_has_object_item(rng, tokenizer, n_entities=2, surface="train", direction="who")
+    has_what = make_has_object_item(rng, tokenizer, n_entities=2, surface="heldout", direction="what")
+    beside_where = make_beside_item(rng, tokenizer, surface="train", direction="where")
+    beside_who = make_beside_item(rng, tokenizer, surface="heldout", direction="who")
+    for item in (has_who, has_what, beside_where, beside_who):
+        assert item.get("query_position") is None
+        gen = len(item["input"]) - 1
+        tiling_parse(item["input"], gen)
+        assert item["answer_text"].endswith(".")
+        assert len(item["target"]) >= 3
+    assert has_who["family"] == "has_object"
+    assert has_what["family"] == "has_object"
+    assert beside_where["family"] == "beside"
+    assert "object" in has_who["answer_text"]
+    assert "beside" in beside_who["answer_text"]
+    assert set(TRAIN_HAS_WHO).isdisjoint(HOLDOUT_HAS_WHO)
+    assert set(TRAIN_HAS_WHAT).isdisjoint(HOLDOUT_HAS_WHAT)
+    assert set(TRAIN_HAS_ANSWERS).isdisjoint(HOLDOUT_HAS_ANSWERS)
+    assert set(TRAIN_BESIDE_WHERE).isdisjoint(HOLDOUT_BESIDE_WHERE)
+    assert set(TRAIN_BESIDE_WHO).isdisjoint(HOLDOUT_BESIDE_WHO)
+    assert set(TRAIN_BESIDE_ANSWERS).isdisjoint(HOLDOUT_BESIDE_ANSWERS)
+    obj_ids = encode_split(tokenizer, "x", " object")[1]
+    beside_ids = encode_split(tokenizer, "x", " beside")[1]
+    assert len(obj_ids) == 1
+    assert len(beside_ids) == 1
+    scored = score_bind_sentence(full_text="The dog is white.", entity="dog", value="white", stopped=True)
+    assert scored["sentence_ok"] is True
+    assert scored["first_entity"] is True
+    one = score_bind_sentence(full_text="dog.", entity="dog", value="white", stopped=True)
+    assert one["sentence_ok"] is False
+    assert one["one_word_entity"] is True
+    has_ok = score_has_sentence(full_text="The dog has the white object.", entity="dog", value="white", stopped=True)
+    assert has_ok["sentence_ok"] is True
+    shortcut = score_has_sentence(full_text="The dog has the color white.", entity="dog", value="white", stopped=True)
+    assert shortcut["sentence_ok"] is False
+    beside_ok = score_bind_sentence(
+        full_text="The dog is beside the hen.",
+        entity="dog",
+        value="hen",
+        stopped=True,
+        predicates=("beside",),
+    )
+    assert beside_ok["sentence_ok"] is True
+    beside_wrong = score_bind_sentence(
+        full_text="The dog is hen.",
+        entity="dog",
+        value="hen",
+        stopped=True,
+        predicates=("beside",),
+    )
+    assert beside_wrong["sentence_ok"] is False

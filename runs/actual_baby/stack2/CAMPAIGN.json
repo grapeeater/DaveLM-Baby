@@ -1,5 +1,5 @@
 {
-  "status": "s4 direct-fact-sentence MILESTONE (s4m). Not promoted.",
+  "status": "R2 experimental dual milestone on s5b3+WhoProp+RelAssist. Not promoted. U16000 authoritative.",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -15,10 +15,10 @@
     "authoritative": false
   },
   "last": {
-    "id": "s2a",
+    "id": "s5c",
     "verdict": "SURVIVE",
-    "major": true,
-    "lesson": "mix GRAD mixed=0.875 fact_combine=0.656 story_combine=0.438 mixed_story=0.500; E12 English hold color=0.969 size_stop=1.000 story=1.000; usable-chat hold usable4=0.969 usable=0.952 stop=1.000 reuse=1.0 D3 169/215 induction 0.469"
+    "major": false,
+    "lesson": "mix ADVANCE mixed=0.500 fact_combine=0.125 story_combine=0.125 mixed_story=0.344; E12 English hold color=0.969 size_stop=1.000 story=0.969; usable-chat hold usable4=0.906 usable=0.857 stop=1.000 reuse=1.0 D3 199/215 induction 0.406"
   },
   "s2a": {
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
@@ -70,7 +70,7 @@
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
     "sha256": "0642a2f2a4044d9936cc3f930fa096ef55fc69c5e7cfe6f7c539a3c47b5fd959"
   },
-  "hypothesis": "s3s retrieves/composes but answers one word. A light 1-entity sentence dose with varied surfaces can teach expression without repeating s3b-e overwrite.",
+  "hypothesis": "s4m has inverse WHO (one word) and direct-fact sentences separately. A strong brief WHO-sentence pulse, then lock, should combine them. B then adds has-object and beside using existing tokens.",
   "parent_slice": {
     "n": 40,
     "first_top1": 1.0,
@@ -253,5 +253,914 @@
     "sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5",
     "authoritative": false,
     "promoted": false
+  },
+  "s4m_parent": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4m_compose_lock_325231\\checkpoint_00025.pt",
+    "sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5"
+  },
+  "authoritative": false,
+  "promoted": false,
+  "s5c": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5c_compose_lock_326021\\checkpoint_00025.pt",
+    "sha256": "8edde9a5092fcf47ea60945c6e1b6ea16330a11544c80b1a8dfa8173d88ea89b",
+    "verdict": "SURVIVE",
+    "major": false,
+    "mix": {
+      "mixed_2e": 0.5,
+      "fact_combine": 0.125,
+      "story_combine": 0.125,
+      "story_mixed": 0.34375,
+      "color": 0.96875,
+      "size_stop": 1.0,
+      "story_color": 0.96875,
+      "dialogue": 0.90625
+    },
+    "d3": 199,
+    "induction": 0.40625
+  },
+  "s5": {
+    "arms": {
+      "s5a": {
+        "history": [
+          {
+            "update": 25,
+            "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a_compose_lock_326001\\checkpoint_00025.pt",
+            "checkpoint_sha256": "4ee76dc8ad2687e859c21ea77089c96f1825417d00810274323fc6c0876a8d7f",
+            "verdict": "HOLD",
+            "lesson": "scaffold-only WHO sentence s4m mix hold mixed=0.938 fact_combine=0.625 story_combine=0.469; s4m english hold color=0.812 size_stop=0.969 story=1.000; s3s who drop who2=0.156 who3=0.219; direct_bare=0.250 D3 slice 0.900; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}",
+            "native": {
+              "mixed_2e": 0.9375,
+              "fact_combine": 0.625,
+              "story_combine": 0.46875,
+              "story_mixed": 0.5,
+              "color": 0.8125,
+              "size_stop": 0.96875,
+              "story_color": 1.0,
+              "dialogue": 1.0
+            },
+            "sentence": {
+              "who_2e": 0.15625,
+              "who_3e": 0.21875,
+              "mixed_3e": 0.96875,
+              "combine_3e": 0.375,
+              "sent_exact": 0.0,
+              "combine_sent_exact": 0.0,
+              "instr_exact": 0.0,
+              "phrase_exact": 0.0,
+              "bare_sentence": 0.25,
+              "bare_one_word": 0.5,
+              "prefix_sentence": 0.0,
+              "sent_1e_exact": 0.0,
+              "baby_sentence": 0.0
+            },
+            "who_sent": {
+              "bare": 0.125,
+              "prefix": 0.375,
+              "first_entity": 0.25,
+              "has_entity": 0.25,
+              "has_value": 0.375,
+              "predicate": 0.75,
+              "one_word_entity": 0.0625,
+              "by_kind": {
+                "who_color": 0.0,
+                "who_size": 0.25
+              }
+            },
+            "has": null,
+            "beside": null,
+            "d3_slice": {
+              "n": 40,
+              "first_top1": 1.0,
+              "free_exact": 0.9,
+              "tf_exact": 0.9
+            }
+          }
+        ],
+        "best": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a_compose_lock_326001\\checkpoint_00025.pt",
+          "checkpoint_sha256": "4ee76dc8ad2687e859c21ea77089c96f1825417d00810274323fc6c0876a8d7f",
+          "verdict": "HOLD",
+          "lesson": "scaffold-only WHO sentence s4m mix hold mixed=0.938 fact_combine=0.625 story_combine=0.469; s4m english hold color=0.812 size_stop=0.969 story=1.000; s3s who drop who2=0.156 who3=0.219; direct_bare=0.250 D3 slice 0.900; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}",
+          "native": {
+            "mixed_2e": 0.9375,
+            "fact_combine": 0.625,
+            "story_combine": 0.46875,
+            "story_mixed": 0.5,
+            "color": 0.8125,
+            "size_stop": 0.96875,
+            "story_color": 1.0,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.15625,
+            "who_3e": 0.21875,
+            "mixed_3e": 0.96875,
+            "combine_3e": 0.375,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.25,
+            "bare_one_word": 0.5,
+            "prefix_sentence": 0.0,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.125,
+            "prefix": 0.375,
+            "first_entity": 0.25,
+            "has_entity": 0.25,
+            "has_value": 0.375,
+            "predicate": 0.75,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.0,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.9,
+            "tf_exact": 0.9
+          }
+        },
+        "last": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a_compose_lock_326001\\checkpoint_00025.pt",
+          "checkpoint_sha256": "4ee76dc8ad2687e859c21ea77089c96f1825417d00810274323fc6c0876a8d7f",
+          "verdict": "HOLD",
+          "lesson": "scaffold-only WHO sentence s4m mix hold mixed=0.938 fact_combine=0.625 story_combine=0.469; s4m english hold color=0.812 size_stop=0.969 story=1.000; s3s who drop who2=0.156 who3=0.219; direct_bare=0.250 D3 slice 0.900; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}",
+          "native": {
+            "mixed_2e": 0.9375,
+            "fact_combine": 0.625,
+            "story_combine": 0.46875,
+            "story_mixed": 0.5,
+            "color": 0.8125,
+            "size_stop": 0.96875,
+            "story_color": 1.0,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.15625,
+            "who_3e": 0.21875,
+            "mixed_3e": 0.96875,
+            "combine_3e": 0.375,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.25,
+            "bare_one_word": 0.5,
+            "prefix_sentence": 0.0,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.125,
+            "prefix": 0.375,
+            "first_entity": 0.25,
+            "has_entity": 0.25,
+            "has_value": 0.375,
+            "predicate": 0.75,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.0,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.9,
+            "tf_exact": 0.9
+          }
+        },
+        "out_dir": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a_compose_lock_326001"
+      },
+      "s5ax": {
+        "history": [
+          {
+            "update": 25,
+            "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5ax_compose_lock_326011\\checkpoint_00025.pt",
+            "checkpoint_sha256": "adfa8b8d8f21621c5822d7bd5b290f79fca3d05b5c8afd218097da97715ecc9f",
+            "verdict": "KILL",
+            "lesson": "s4m mix drop mixed=0.844 fact_combine=0.562 story_combine=0.531; s4m collapse color=0.656 size_stop=1.000 story=1.000; s3s who drop who2=0.156 who3=0.188; direct_bare=0.250 D3 slice 0.875; who_sent=0.250 prefix=0.312 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25}",
+            "native": {
+              "mixed_2e": 0.84375,
+              "fact_combine": 0.5625,
+              "story_combine": 0.53125,
+              "story_mixed": 0.53125,
+              "color": 0.65625,
+              "size_stop": 1.0,
+              "story_color": 1.0,
+              "dialogue": 0.96875
+            },
+            "sentence": {
+              "who_2e": 0.15625,
+              "who_3e": 0.1875,
+              "mixed_3e": 0.9375,
+              "combine_3e": 0.3125,
+              "sent_exact": 0.0,
+              "combine_sent_exact": 0.0,
+              "instr_exact": 0.0,
+              "phrase_exact": 0.0,
+              "bare_sentence": 0.25,
+              "bare_one_word": 0.5,
+              "prefix_sentence": 0.0,
+              "sent_1e_exact": 0.0,
+              "baby_sentence": 0.0
+            },
+            "who_sent": {
+              "bare": 0.25,
+              "prefix": 0.3125,
+              "first_entity": 0.3125,
+              "has_entity": 0.3125,
+              "has_value": 0.4375,
+              "predicate": 0.875,
+              "one_word_entity": 0.0625,
+              "by_kind": {
+                "who_color": 0.25,
+                "who_size": 0.25
+              }
+            },
+            "has": null,
+            "beside": null,
+            "d3_slice": {
+              "n": 40,
+              "first_top1": 1.0,
+              "free_exact": 0.875,
+              "tf_exact": 0.875
+            }
+          }
+        ],
+        "best": null,
+        "last": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5ax_compose_lock_326011\\checkpoint_00025.pt",
+          "checkpoint_sha256": "adfa8b8d8f21621c5822d7bd5b290f79fca3d05b5c8afd218097da97715ecc9f",
+          "verdict": "KILL",
+          "lesson": "s4m mix drop mixed=0.844 fact_combine=0.562 story_combine=0.531; s4m collapse color=0.656 size_stop=1.000 story=1.000; s3s who drop who2=0.156 who3=0.188; direct_bare=0.250 D3 slice 0.875; who_sent=0.250 prefix=0.312 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25}",
+          "native": {
+            "mixed_2e": 0.84375,
+            "fact_combine": 0.5625,
+            "story_combine": 0.53125,
+            "story_mixed": 0.53125,
+            "color": 0.65625,
+            "size_stop": 1.0,
+            "story_color": 1.0,
+            "dialogue": 0.96875
+          },
+          "sentence": {
+            "who_2e": 0.15625,
+            "who_3e": 0.1875,
+            "mixed_3e": 0.9375,
+            "combine_3e": 0.3125,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.25,
+            "bare_one_word": 0.5,
+            "prefix_sentence": 0.0,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.25,
+            "prefix": 0.3125,
+            "first_entity": 0.3125,
+            "has_entity": 0.3125,
+            "has_value": 0.4375,
+            "predicate": 0.875,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.25,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.875,
+            "tf_exact": 0.875
+          }
+        },
+        "out_dir": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5ax_compose_lock_326011"
+      },
+      "s5a3": {
+        "history": [
+          {
+            "update": 25,
+            "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3_compose_lock_326021\\checkpoint_00025.pt",
+            "checkpoint_sha256": "5f43892832f8fe2d7a7e8212334f840002a812dd4a435ae44d4c0d1cc754ba6a",
+            "verdict": "HOLD+",
+            "lesson": "WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.781 story_combine=0.500; s4m english hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.375 who3=0.406; direct_bare=0.000 D3 slice 0.850; who_sent=0.250 prefix=0.250 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} \u0394=+0.250",
+            "native": {
+              "mixed_2e": 0.90625,
+              "fact_combine": 0.78125,
+              "story_combine": 0.5,
+              "story_mixed": 0.5625,
+              "color": 0.96875,
+              "size_stop": 1.0,
+              "story_color": 1.0,
+              "dialogue": 1.0
+            },
+            "sentence": {
+              "who_2e": 0.375,
+              "who_3e": 0.40625,
+              "mixed_3e": 0.9375,
+              "combine_3e": 0.375,
+              "sent_exact": 0.0,
+              "combine_sent_exact": 0.0,
+              "instr_exact": 0.0,
+              "phrase_exact": 0.0,
+              "bare_sentence": 0.0,
+              "bare_one_word": 0.875,
+              "prefix_sentence": 0.0,
+              "sent_1e_exact": 0.0,
+              "baby_sentence": 0.0
+            },
+            "who_sent": {
+              "bare": 0.25,
+              "prefix": 0.25,
+              "first_entity": 0.3125,
+              "has_entity": 0.3125,
+              "has_value": 0.4375,
+              "predicate": 0.6875,
+              "one_word_entity": 0.0625,
+              "by_kind": {
+                "who_color": 0.25,
+                "who_size": 0.25
+              }
+            },
+            "has": null,
+            "beside": null,
+            "d3_slice": {
+              "n": 40,
+              "first_top1": 1.0,
+              "free_exact": 0.85,
+              "tf_exact": 0.85
+            }
+          }
+        ],
+        "best": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3_compose_lock_326021\\checkpoint_00025.pt",
+          "checkpoint_sha256": "5f43892832f8fe2d7a7e8212334f840002a812dd4a435ae44d4c0d1cc754ba6a",
+          "verdict": "HOLD+",
+          "lesson": "WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.781 story_combine=0.500; s4m english hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.375 who3=0.406; direct_bare=0.000 D3 slice 0.850; who_sent=0.250 prefix=0.250 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} \u0394=+0.250",
+          "native": {
+            "mixed_2e": 0.90625,
+            "fact_combine": 0.78125,
+            "story_combine": 0.5,
+            "story_mixed": 0.5625,
+            "color": 0.96875,
+            "size_stop": 1.0,
+            "story_color": 1.0,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.375,
+            "who_3e": 0.40625,
+            "mixed_3e": 0.9375,
+            "combine_3e": 0.375,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.0,
+            "bare_one_word": 0.875,
+            "prefix_sentence": 0.0,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.25,
+            "prefix": 0.25,
+            "first_entity": 0.3125,
+            "has_entity": 0.3125,
+            "has_value": 0.4375,
+            "predicate": 0.6875,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.25,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.85,
+            "tf_exact": 0.85
+          }
+        },
+        "last": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3_compose_lock_326021\\checkpoint_00025.pt",
+          "checkpoint_sha256": "5f43892832f8fe2d7a7e8212334f840002a812dd4a435ae44d4c0d1cc754ba6a",
+          "verdict": "HOLD+",
+          "lesson": "WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.781 story_combine=0.500; s4m english hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.375 who3=0.406; direct_bare=0.000 D3 slice 0.850; who_sent=0.250 prefix=0.250 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} \u0394=+0.250",
+          "native": {
+            "mixed_2e": 0.90625,
+            "fact_combine": 0.78125,
+            "story_combine": 0.5,
+            "story_mixed": 0.5625,
+            "color": 0.96875,
+            "size_stop": 1.0,
+            "story_color": 1.0,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.375,
+            "who_3e": 0.40625,
+            "mixed_3e": 0.9375,
+            "combine_3e": 0.375,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.0,
+            "bare_one_word": 0.875,
+            "prefix_sentence": 0.0,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.25,
+            "prefix": 0.25,
+            "first_entity": 0.3125,
+            "has_entity": 0.3125,
+            "has_value": 0.4375,
+            "predicate": 0.6875,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.25,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.85,
+            "tf_exact": 0.85
+          }
+        },
+        "out_dir": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3_compose_lock_326021"
+      },
+      "s5a3l0": {
+        "history": [
+          {
+            "update": 25,
+            "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0_compose_lock_326031\\checkpoint_00025.pt",
+            "checkpoint_sha256": "d6feeb35ad45649c23103fac255584cf00a7ad5bc8770a57463d91c97bc26259",
+            "verdict": "HOLD+",
+            "lesson": "WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.750 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.781; s3s who drop who2=0.250 who3=0.250; direct_bare=0.500 D3 slice 0.850; who_sent=0.250 prefix=0.375 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} \u0394=+0.250",
+            "native": {
+              "mixed_2e": 0.90625,
+              "fact_combine": 0.75,
+              "story_combine": 0.4375,
+              "story_mixed": 0.46875,
+              "color": 0.71875,
+              "size_stop": 1.0,
+              "story_color": 0.78125,
+              "dialogue": 1.0
+            },
+            "sentence": {
+              "who_2e": 0.25,
+              "who_3e": 0.25,
+              "mixed_3e": 0.96875,
+              "combine_3e": 0.3125,
+              "sent_exact": 0.0,
+              "combine_sent_exact": 0.0,
+              "instr_exact": 0.0,
+              "phrase_exact": 0.0,
+              "bare_sentence": 0.5,
+              "bare_one_word": 0.375,
+              "prefix_sentence": 0.125,
+              "sent_1e_exact": 0.0,
+              "baby_sentence": 0.0
+            },
+            "who_sent": {
+              "bare": 0.25,
+              "prefix": 0.375,
+              "first_entity": 0.3125,
+              "has_entity": 0.3125,
+              "has_value": 0.4375,
+              "predicate": 0.75,
+              "one_word_entity": 0.0625,
+              "by_kind": {
+                "who_color": 0.25,
+                "who_size": 0.25
+              }
+            },
+            "has": null,
+            "beside": null,
+            "d3_slice": {
+              "n": 40,
+              "first_top1": 1.0,
+              "free_exact": 0.85,
+              "tf_exact": 0.85
+            }
+          }
+        ],
+        "best": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0_compose_lock_326031\\checkpoint_00025.pt",
+          "checkpoint_sha256": "d6feeb35ad45649c23103fac255584cf00a7ad5bc8770a57463d91c97bc26259",
+          "verdict": "HOLD+",
+          "lesson": "WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.750 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.781; s3s who drop who2=0.250 who3=0.250; direct_bare=0.500 D3 slice 0.850; who_sent=0.250 prefix=0.375 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} \u0394=+0.250",
+          "native": {
+            "mixed_2e": 0.90625,
+            "fact_combine": 0.75,
+            "story_combine": 0.4375,
+            "story_mixed": 0.46875,
+            "color": 0.71875,
+            "size_stop": 1.0,
+            "story_color": 0.78125,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.25,
+            "who_3e": 0.25,
+            "mixed_3e": 0.96875,
+            "combine_3e": 0.3125,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.5,
+            "bare_one_word": 0.375,
+            "prefix_sentence": 0.125,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.25,
+            "prefix": 0.375,
+            "first_entity": 0.3125,
+            "has_entity": 0.3125,
+            "has_value": 0.4375,
+            "predicate": 0.75,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.25,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.85,
+            "tf_exact": 0.85
+          }
+        },
+        "last": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0_compose_lock_326031\\checkpoint_00025.pt",
+          "checkpoint_sha256": "d6feeb35ad45649c23103fac255584cf00a7ad5bc8770a57463d91c97bc26259",
+          "verdict": "HOLD+",
+          "lesson": "WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.750 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.781; s3s who drop who2=0.250 who3=0.250; direct_bare=0.500 D3 slice 0.850; who_sent=0.250 prefix=0.375 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} \u0394=+0.250",
+          "native": {
+            "mixed_2e": 0.90625,
+            "fact_combine": 0.75,
+            "story_combine": 0.4375,
+            "story_mixed": 0.46875,
+            "color": 0.71875,
+            "size_stop": 1.0,
+            "story_color": 0.78125,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.25,
+            "who_3e": 0.25,
+            "mixed_3e": 0.96875,
+            "combine_3e": 0.3125,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.5,
+            "bare_one_word": 0.375,
+            "prefix_sentence": 0.125,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.25,
+            "prefix": 0.375,
+            "first_entity": 0.3125,
+            "has_entity": 0.3125,
+            "has_value": 0.4375,
+            "predicate": 0.75,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.25,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.85,
+            "tf_exact": 0.85
+          }
+        },
+        "out_dir": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0_compose_lock_326031"
+      },
+      "s5a3l0l1": {
+        "history": [
+          {
+            "update": 25,
+            "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1_compose_lock_326041\\checkpoint_00025.pt",
+            "checkpoint_sha256": "1041e86b7effb41df075e5964ffa19a455b4358a0a75d1aad3951fe4d3c2c334",
+            "verdict": "HOLD+",
+            "lesson": "WHO sentence signal s4m mix hold mixed=0.875 fact_combine=0.625 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.844; s3s who drop who2=0.219 who3=0.344; direct_bare=0.375 D3 slice 0.875; who_sent=0.375 prefix=0.312 first=0.438 kinds={'who_color': 0.375, 'who_size': 0.375} \u0394=+0.375",
+            "native": {
+              "mixed_2e": 0.875,
+              "fact_combine": 0.625,
+              "story_combine": 0.4375,
+              "story_mixed": 0.46875,
+              "color": 0.71875,
+              "size_stop": 1.0,
+              "story_color": 0.84375,
+              "dialogue": 1.0
+            },
+            "sentence": {
+              "who_2e": 0.21875,
+              "who_3e": 0.34375,
+              "mixed_3e": 1.0,
+              "combine_3e": 0.21875,
+              "sent_exact": 0.0,
+              "combine_sent_exact": 0.0,
+              "instr_exact": 0.0,
+              "phrase_exact": 0.0,
+              "bare_sentence": 0.375,
+              "bare_one_word": 0.5,
+              "prefix_sentence": 0.125,
+              "sent_1e_exact": 0.0,
+              "baby_sentence": 0.0
+            },
+            "who_sent": {
+              "bare": 0.375,
+              "prefix": 0.3125,
+              "first_entity": 0.4375,
+              "has_entity": 0.4375,
+              "has_value": 0.625,
+              "predicate": 0.8125,
+              "one_word_entity": 0.0625,
+              "by_kind": {
+                "who_color": 0.375,
+                "who_size": 0.375
+              }
+            },
+            "has": null,
+            "beside": null,
+            "d3_slice": {
+              "n": 40,
+              "first_top1": 1.0,
+              "free_exact": 0.875,
+              "tf_exact": 0.875
+            }
+          }
+        ],
+        "best": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1_compose_lock_326041\\checkpoint_00025.pt",
+          "checkpoint_sha256": "1041e86b7effb41df075e5964ffa19a455b4358a0a75d1aad3951fe4d3c2c334",
+          "verdict": "HOLD+",
+          "lesson": "WHO sentence signal s4m mix hold mixed=0.875 fact_combine=0.625 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.844; s3s who drop who2=0.219 who3=0.344; direct_bare=0.375 D3 slice 0.875; who_sent=0.375 prefix=0.312 first=0.438 kinds={'who_color': 0.375, 'who_size': 0.375} \u0394=+0.375",
+          "native": {
+            "mixed_2e": 0.875,
+            "fact_combine": 0.625,
+            "story_combine": 0.4375,
+            "story_mixed": 0.46875,
+            "color": 0.71875,
+            "size_stop": 1.0,
+            "story_color": 0.84375,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.21875,
+            "who_3e": 0.34375,
+            "mixed_3e": 1.0,
+            "combine_3e": 0.21875,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.375,
+            "bare_one_word": 0.5,
+            "prefix_sentence": 0.125,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.375,
+            "prefix": 0.3125,
+            "first_entity": 0.4375,
+            "has_entity": 0.4375,
+            "has_value": 0.625,
+            "predicate": 0.8125,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.375,
+              "who_size": 0.375
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.875,
+            "tf_exact": 0.875
+          }
+        },
+        "last": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1_compose_lock_326041\\checkpoint_00025.pt",
+          "checkpoint_sha256": "1041e86b7effb41df075e5964ffa19a455b4358a0a75d1aad3951fe4d3c2c334",
+          "verdict": "HOLD+",
+          "lesson": "WHO sentence signal s4m mix hold mixed=0.875 fact_combine=0.625 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.844; s3s who drop who2=0.219 who3=0.344; direct_bare=0.375 D3 slice 0.875; who_sent=0.375 prefix=0.312 first=0.438 kinds={'who_color': 0.375, 'who_size': 0.375} \u0394=+0.375",
+          "native": {
+            "mixed_2e": 0.875,
+            "fact_combine": 0.625,
+            "story_combine": 0.4375,
+            "story_mixed": 0.46875,
+            "color": 0.71875,
+            "size_stop": 1.0,
+            "story_color": 0.84375,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.21875,
+            "who_3e": 0.34375,
+            "mixed_3e": 1.0,
+            "combine_3e": 0.21875,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.375,
+            "bare_one_word": 0.5,
+            "prefix_sentence": 0.125,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.375,
+            "prefix": 0.3125,
+            "first_entity": 0.4375,
+            "has_entity": 0.4375,
+            "has_value": 0.625,
+            "predicate": 0.8125,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.375,
+              "who_size": 0.375
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.875,
+            "tf_exact": 0.875
+          }
+        },
+        "out_dir": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1_compose_lock_326041"
+      },
+      "s5a3l0l1l2": {
+        "history": [
+          {
+            "update": 25,
+            "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1l2_compose_lock_326051\\checkpoint_00025.pt",
+            "checkpoint_sha256": "be4cc9f39e4d89fd5a93b0095e28fdafd8ba8695082885b46c48eeb75ff019c9",
+            "verdict": "KILL",
+            "lesson": "s4m mix hold mixed=0.875 fact_combine=0.719 story_combine=0.500; s4m collapse color=0.594 size_stop=1.000 story=0.938; s3s who drop who2=0.156 who3=0.344; direct_bare=0.500 D3 slice 0.850; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}",
+            "native": {
+              "mixed_2e": 0.875,
+              "fact_combine": 0.71875,
+              "story_combine": 0.5,
+              "story_mixed": 0.40625,
+              "color": 0.59375,
+              "size_stop": 1.0,
+              "story_color": 0.9375,
+              "dialogue": 1.0
+            },
+            "sentence": {
+              "who_2e": 0.15625,
+              "who_3e": 0.34375,
+              "mixed_3e": 0.96875,
+              "combine_3e": 0.28125,
+              "sent_exact": 0.0,
+              "combine_sent_exact": 0.0,
+              "instr_exact": 0.0,
+              "phrase_exact": 0.0,
+              "bare_sentence": 0.5,
+              "bare_one_word": 0.25,
+              "prefix_sentence": 0.25,
+              "sent_1e_exact": 0.0,
+              "baby_sentence": 0.0
+            },
+            "who_sent": {
+              "bare": 0.125,
+              "prefix": 0.375,
+              "first_entity": 0.25,
+              "has_entity": 0.25,
+              "has_value": 0.3125,
+              "predicate": 0.75,
+              "one_word_entity": 0.0625,
+              "by_kind": {
+                "who_color": 0.0,
+                "who_size": 0.25
+              }
+            },
+            "has": null,
+            "beside": null,
+            "d3_slice": {
+              "n": 40,
+              "first_top1": 1.0,
+              "free_exact": 0.85,
+              "tf_exact": 0.85
+            }
+          }
+        ],
+        "best": null,
+        "last": {
+          "update": 25,
+          "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1l2_compose_lock_326051\\checkpoint_00025.pt",
+          "checkpoint_sha256": "be4cc9f39e4d89fd5a93b0095e28fdafd8ba8695082885b46c48eeb75ff019c9",
+          "verdict": "KILL",
+          "lesson": "s4m mix hold mixed=0.875 fact_combine=0.719 story_combine=0.500; s4m collapse color=0.594 size_stop=1.000 story=0.938; s3s who drop who2=0.156 who3=0.344; direct_bare=0.500 D3 slice 0.850; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}",
+          "native": {
+            "mixed_2e": 0.875,
+            "fact_combine": 0.71875,
+            "story_combine": 0.5,
+            "story_mixed": 0.40625,
+            "color": 0.59375,
+            "size_stop": 1.0,
+            "story_color": 0.9375,
+            "dialogue": 1.0
+          },
+          "sentence": {
+            "who_2e": 0.15625,
+            "who_3e": 0.34375,
+            "mixed_3e": 0.96875,
+            "combine_3e": 0.28125,
+            "sent_exact": 0.0,
+            "combine_sent_exact": 0.0,
+            "instr_exact": 0.0,
+            "phrase_exact": 0.0,
+            "bare_sentence": 0.5,
+            "bare_one_word": 0.25,
+            "prefix_sentence": 0.25,
+            "sent_1e_exact": 0.0,
+            "baby_sentence": 0.0
+          },
+          "who_sent": {
+            "bare": 0.125,
+            "prefix": 0.375,
+            "first_entity": 0.25,
+            "has_entity": 0.25,
+            "has_value": 0.3125,
+            "predicate": 0.75,
+            "one_word_entity": 0.0625,
+            "by_kind": {
+              "who_color": 0.0,
+              "who_size": 0.25
+            }
+          },
+          "has": null,
+          "beside": null,
+          "d3_slice": {
+            "n": 40,
+            "first_top1": 1.0,
+            "free_exact": 0.85,
+            "tf_exact": 0.85
+          }
+        },
+        "out_dir": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5a3l0l1l2_compose_lock_326051"
+      }
+    },
+    "verifies": []
   }
 }

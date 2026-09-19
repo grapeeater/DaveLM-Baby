@@ -687,3 +687,201 @@ not a sole kill switch.
 - recipe: s4m
 - update: 25
 
+## s5a_u00025
+
+- Change: Mix-protected 25% WHO-sentence pulse from s4m. Steal language/structured, keep compose_lock.
+- verdict: **HOLD**
+- lesson: scaffold-only WHO sentence s4m mix hold mixed=0.938 fact_combine=0.625 story_combine=0.469; s4m english hold color=0.812 size_stop=0.969 story=1.000; s3s who drop who2=0.156 who3=0.219; direct_bare=0.250 D3 slice 0.900; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}
+- native: {'mixed_2e': 0.9375, 'fact_combine': 0.625, 'story_combine': 0.46875, 'story_mixed': 0.5, 'color': 0.8125, 'size_stop': 0.96875, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 4ee76dc8ad2687e859c21ea77089c96f1825417d00810274323fc6c0876a8d7f
+- recipe: s5a
+- update: 25
+
+## s5ax_u00025
+
+- Change: s5a stayed at zero. One more mix-protected 25% pulse, then lock.
+- verdict: **KILL**
+- lesson: s4m mix drop mixed=0.844 fact_combine=0.562 story_combine=0.531; s4m collapse color=0.656 size_stop=1.000 story=1.000; s3s who drop who2=0.156 who3=0.188; direct_bare=0.250 D3 slice 0.875; who_sent=0.250 prefix=0.312 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25}
+- native: {'mixed_2e': 0.84375, 'fact_combine': 0.5625, 'story_combine': 0.53125, 'story_mixed': 0.53125, 'color': 0.65625, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 0.96875}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: adfa8b8d8f21621c5822d7bd5b290f79fca3d05b5c8afd218097da97715ecc9f
+- recipe: s5ax
+- update: 25
+
+## s5a3_u00025
+
+- Change: s5ax killed retention. Lower pulse 15%, steal language/structured only.
+- verdict: **HOLD+**
+- lesson: WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.781 story_combine=0.500; s4m english hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.375 who3=0.406; direct_bare=0.000 D3 slice 0.850; who_sent=0.250 prefix=0.250 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} Δ=+0.250
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.78125, 'story_combine': 0.5, 'story_mixed': 0.5625, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.85}
+- checkpoint_sha256: 5f43892832f8fe2d7a7e8212334f840002a812dd4a435ae44d4c0d1cc754ba6a
+- recipe: s5a3
+- update: 25
+
+## s5a3l0_u00025
+
+- Change: Capability appeared on s5a3. STOP pulse. Lock old+new.
+- verdict: **HOLD+**
+- lesson: WHO sentence signal s4m mix hold mixed=0.906 fact_combine=0.750 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.781; s3s who drop who2=0.250 who3=0.250; direct_bare=0.500 D3 slice 0.850; who_sent=0.250 prefix=0.375 first=0.312 kinds={'who_color': 0.25, 'who_size': 0.25} Δ=+0.250
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.75, 'story_combine': 0.4375, 'story_mixed': 0.46875, 'color': 0.71875, 'size_stop': 1.0, 'story_color': 0.78125, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.85}
+- checkpoint_sha256: d6feeb35ad45649c23103fac255584cf00a7ad5bc8770a57463d91c97bc26259
+- recipe: s5a3l0
+- update: 25
+
+## s5a3l0l1_u00025
+
+- Change: Capability appeared on s5a3l0. STOP pulse. Lock old+new.
+- verdict: **HOLD+**
+- lesson: WHO sentence signal s4m mix hold mixed=0.875 fact_combine=0.625 story_combine=0.438; s4m english hold color=0.719 size_stop=1.000 story=0.844; s3s who drop who2=0.219 who3=0.344; direct_bare=0.375 D3 slice 0.875; who_sent=0.375 prefix=0.312 first=0.438 kinds={'who_color': 0.375, 'who_size': 0.375} Δ=+0.375
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.625, 'story_combine': 0.4375, 'story_mixed': 0.46875, 'color': 0.71875, 'size_stop': 1.0, 'story_color': 0.84375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: 1041e86b7effb41df075e5964ffa19a455b4358a0a75d1aad3951fe4d3c2c334
+- recipe: s5a3l0l1
+- update: 25
+
+## s5c_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 199/215 induction 0.406 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 199, 'first_correct': 215, 'free_accuracy': 0.9255813953488372, 'first_accuracy': 1.0}
+- induction: 0.40625
+
+## s5c
+
+- Change: From s4m after s5a query-fight. WHO-sentence uses animal queries, disjoint from one-word Who-is.
+- verdict: **SURVIVE**
+- lesson: mix ADVANCE mixed=0.500 fact_combine=0.125 story_combine=0.125 mixed_story=0.344; E12 English hold color=0.969 size_stop=1.000 story=0.969; usable-chat hold usable4=0.906 usable=0.857 stop=1.000 reuse=1.0 D3 199/215 induction 0.406
+- native: {'mixed_2e': 0.5, 'fact_combine': 0.125, 'story_combine': 0.125, 'story_mixed': 0.34375, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 0.96875, 'dialogue': 0.90625}
+- checkpoint_sha256: 8edde9a5092fcf47ea60945c6e1b6ea16330a11544c80b1a8dfa8173d88ea89b
+- recipe: s5c
+- update: 25
+
+## s5a3l0l1l2_u00025
+
+- Change: Capability appeared on s5a3l0l1. STOP pulse. Lock old+new.
+- verdict: **KILL**
+- lesson: s4m mix hold mixed=0.875 fact_combine=0.719 story_combine=0.500; s4m collapse color=0.594 size_stop=1.000 story=0.938; s3s who drop who2=0.156 who3=0.344; direct_bare=0.500 D3 slice 0.850; who_sent=0.125 prefix=0.375 first=0.250 kinds={'who_color': 0.0, 'who_size': 0.25}
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.71875, 'story_combine': 0.5, 'story_mixed': 0.40625, 'color': 0.59375, 'size_stop': 1.0, 'story_color': 0.9375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.85}
+- checkpoint_sha256: be4cc9f39e4d89fd5a93b0095e28fdafd8ba8695082885b46c48eeb75ff019c9
+- recipe: s5a3l0l1l2
+- update: 25
+
+## s5b3_verify_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 181/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 181, 'first_correct': 215, 'free_accuracy': 0.8418604651162791, 'first_accuracy': 1.0}
+- induction: 0.5
+
+## s5_campaign
+
+- Change: A+B from s4m. Pulse→lock. Disjoint looks-queries, entity-first WHO-sentences, has-object + beside.
+- verdict: **HOLD**
+- lesson: A who_sent peaked at 0.375 (s5m) with who_2e 0.50 held. B beside reached 0.75 (s5b3) and has 0.667 both dirs (s5bx) but not jointly with A at 0.75. 2e inverse retrieval ~0.50 is the ceiling; syntax is already present. Not promoted.
+- native: s5b3 mix 0.969 combine 0.656 color 0.969
+- usable: usable=0.857 usable4=0.844 stop=1.0 reuse=0.86
+- d3: 181/215 first_correct 215/215
+- checkpoint_sha256: 0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd
+- recipe: s5b3
+
+## s5w
+
+- Change: From s4m. Anti-recency one-word WHO + entity margin. Hypothesis: last-entity recency is the 0.50 who_2e ceiling.
+- verdict: **KILL**
+- lesson: Overcorrected. who2 0.50→0.312. Diagnostic was real (acc last-gold 0.67 vs last-not 0.29) but forcing non-last gold taught never-last. color 0.906 mix held. Next: uniform 4-fact + light margin.
+- native: who2=0.312 mix 0.875 combine 0.656
+- recipe: s5w
+- update: 25
+
+## s5x
+
+- Change: From s4m. Uniform 4-fact WHO + light first-token margin 0.3. No anti-recency.
+- verdict: **HOLD**
+- lesson: last-not-gold 0.29→0.41; who2 0.531. story_combine 0.375. Direction, not a lift.
+- recipe: s5x
+- update: 25
+
+## s5xx
+
+- Change: Continue s5x 25u, more mix.
+- verdict: **HOLD**
+- lesson: who2 stuck 0.531; who3 0.531; story_combine recovered 0.594. Plateau.
+- recipe: s5xx
+- update: 25
+
+## s5z
+
+- Change: From s5m. A-shaped asked-attr WHO-sentences + bind + margin 0.5.
+- verdict: **HOLD**
+- lesson: who_sent stuck 0.375; who2 0.438; mix 0.938; direct bare 0. Same A, no lift.
+- recipe: s5z
+- update: 25
+
+## s5pp
+
+- Change: From s5m. Same-scene pair WHO questions (both entities) + margin.
+- verdict: **KILL**
+- lesson: who_sent 0.375→0.250. Paired CE did not teach selection.
+- recipe: s5pp
+- update: 25
+
+## r2_s5m_phase2_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 188/215 induction 0.516 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 188, 'first_correct': 215, 'free_accuracy': 0.8744186046511628, 'first_accuracy': 1.0}
+- induction: 0.515625
+
+## r2_s5b3_phase3_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 177/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 177, 'first_correct': 215, 'free_accuracy': 0.8232558139534883, 'first_accuracy': 1.0}
+- induction: 0.5
+
+## r2_prop_router
+
+- Change: Hidden property-match → entity first-token boost. No new CE. s4m SHA-checked.
+- verdict: **SURVIVE**
+- lesson: who_2e official 0.469→1.000; seed324777 0.969; last≠gold 1.000. Gate 0.70 passed.
+- checkpoint_sha256: 4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5
+
+## r2a
+
+- Change: Learned query-conditioned entity pointer from s4m.
+- verdict: **KILL**
+- lesson: pointer copied recency (who_2e 0.406 / ptr 0.406).
+- recipe: r2a
+
+## r2c
+
+- Change: 25u forward has/beside CE from verified s5b3.
+- verdict: **KILL**
+- lesson: dirs stuck at 0.667; direct bare 0.625→0.125. Do not use as parent.
+- checkpoint_sha256: c72db3bf8cfc4bbed2b6d7f292260255355c5a7ff23e4868fe6d13ff0746e1ea
+- recipe: r2c
+
+## r2_s5b3_final
+
+- Change: s5b3 weights + WhoProp + RelAssist. A and B held-out packs.
+- verdict: **SURVIVE**
+- lesson: who_sent 1.000; has 0.917 (who 1.000 / what 0.833); beside 0.917 (where 0.833 / who 1.000); A survived; D3 177/215; mix 0.938; not promoted.
+- checkpoint_sha256: 0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd
+
+
+## r2_s5b3_final_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 177/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 177, 'first_correct': 215, 'free_accuracy': 0.8232558139534883, 'first_accuracy': 1.0}
+- induction: 0.5
+
