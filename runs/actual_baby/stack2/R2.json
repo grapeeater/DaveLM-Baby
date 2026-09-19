@@ -1,0 +1,37 @@
+{
+  "id": "r2",
+  "status": "experimental_dual_milestone_not_promoted",
+  "authoritative": false,
+  "protected_material_opened": false,
+  "u16000_replaced": false,
+  "parent_s4m_sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5",
+  "survivor_weights": "runs/actual_baby/stack2/s5b3_compose_lock_326191/checkpoint_00025.pt",
+  "survivor_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "loaded_parent_match": true,
+  "mechanism": ["WhoPropRuntime", "RelAssistRuntime"],
+  "phase1_who_2e": {"official": 1.0, "seed324777": 0.96875, "last_not_official": 1.0},
+  "phase2_who_sent": {"official_s5b3": 1.0, "official_s5m": 0.875, "seed324777": 0.8125, "seed324888": 1.0},
+  "phase3": {
+    "has_bare": 0.9166666666666666,
+    "has_who": 1.0,
+    "has_what": 0.8333333333333334,
+    "beside_bare": 0.9166666666666666,
+    "beside_where": 0.8333333333333334,
+    "beside_who": 1.0,
+    "a_survived": true
+  },
+  "retention": {
+    "color": 0.96875,
+    "size_stop": 0.90625,
+    "mixed_2e": 0.9375,
+    "fact_combine": 0.65625,
+    "d3_free": 177,
+    "usable4": 0.84375
+  },
+  "killed": ["r2a_learned_pointer", "r2c_forward_ce"],
+  "receipts": [
+    "research/V010_STACK2_R2.md",
+    "runs/actual_baby/stack2/r2_s5b3_final.json",
+    "runs/actual_baby/stack2/r2/PROP_ROUTER.json"
+  ]
+}

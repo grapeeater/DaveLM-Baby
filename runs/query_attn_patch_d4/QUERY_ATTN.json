@@ -1,0 +1,38 @@
+{
+  "protocol": "V010_QUERY_ATTN_PATCH_D4",
+  "n": 215,
+  "as_is_hits": 74,
+  "q0r_hits": 127,
+  "a0q_hits": 90,
+  "a0c_hits": 68,
+  "a0p_hits": 74,
+  "a0c_spliced": 92,
+  "as_spliced": 80,
+  "steer_on_miss": 1.0,
+  "steer_n": 141,
+  "median_cosine": {
+    "as_is": 0.040374621748924255,
+    "a0q": 0.0704948678612709,
+    "a0c": 0.04865831881761551,
+    "a0p": 0.027816563844680786
+  },
+  "delta_gold": {
+    "a0q": 0.07441860465116279,
+    "a0c": -0.027906976744186074,
+    "a0p": 0.0
+  },
+  "delta_spliced_a0c": 0.05581395348837209,
+  "grad_census": {
+    "ce": 0.20145857334136963,
+    "copy": 0.8938652276992798,
+    "ce_grad_l2": 12.172608296452598,
+    "copy_grad_l2": 0.9421324830344373,
+    "copy_over_ce_grad": 0.07739774911750001,
+    "n_copy_specs": 1
+  },
+  "verdict": "OV_DEAD",
+  "licenses": "architectural_l0_write_not_matching_loss",
+  "p2_launched": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}

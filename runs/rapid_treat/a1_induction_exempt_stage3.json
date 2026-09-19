@@ -1,0 +1,90 @@
+{
+  "protocol": "RAPID_TREAT_STAGE3_P11_RUNTIME_ADAPTED",
+  "licensed_by": "V010_SELECTION_REPAIR_P11_DECODE_FIRSTSTEP",
+  "verdict": "PASS",
+  "cause": "none",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "baby_weights": "authoritative_u16000_only",
+  "p11_model_state_dict_loaded": false,
+  "overwrite_checkpoint": "runs/selection_p11/treatment_250001/checkpoint_16800.pt",
+  "overwrite_checkpoint_sha256": "369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157",
+  "n_long": 215,
+  "long_gap": {
+    "off_free_exact": 71,
+    "on_free_exact": 102,
+    "off_first_correct": 73,
+    "on_first_correct": 105,
+    "on_minus_off": 0.14418604651162792,
+    "bootstrap_ci95_on_minus_off": [
+      0.09313725490196079,
+      0.19724770642201833
+    ],
+    "benefit_ok": true
+  },
+  "frozen_firststep_reproduction": {
+    "expected_off_anchor_init": 71,
+    "expected_on_anchor_treatment": 102,
+    "actual_off_free_exact": 71,
+    "actual_on_free_exact": 102,
+    "off_matches_frozen_init": true,
+    "on_matches_frozen_treatment": true,
+    "note": "OFF uses trained overwrite inert; frozen init 71 used untrained overwrite step-0."
+  },
+  "retention": {
+    "drop_bar": 0.05,
+    "language_ce_hard": 0.2,
+    "off_baseline": {
+      "regressions": [],
+      "negative_controls": {
+        "value_absent_same_surface_novel.free_exact": {
+          "value": 0.0,
+          "bar": 0.0,
+          "pass": true
+        },
+        "broken_context.free_exact": {
+          "value": 0.0,
+          "bar": 0.05,
+          "pass": true
+        },
+        "broken_order.first_top1": {
+          "value": 0.015625,
+          "bar": 0.2,
+          "pass": true
+        }
+      },
+      "language_ce_hard_fail": false,
+      "pass": true
+    },
+    "on_arm": {
+      "regressions": [],
+      "negative_controls": {
+        "value_absent_same_surface_novel.free_exact": {
+          "value": 0.0,
+          "bar": 0.0,
+          "pass": true
+        },
+        "broken_context.free_exact": {
+          "value": 0.0,
+          "bar": 0.05,
+          "pass": true
+        },
+        "broken_order.first_top1": {
+          "value": 0.015625,
+          "bar": 0.2,
+          "pass": true
+        }
+      },
+      "language_ce_hard_fail": false,
+      "pass": true
+    }
+  },
+  "benefit_ok": true,
+  "off_retention_pass": true,
+  "on_retention_pass": true,
+  "promoted": false,
+  "training": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true,
+  "policy": "a1_induction_exempt",
+  "routing": "induction-exempt gen_index: kind==induction identity; else first-step write"
+}

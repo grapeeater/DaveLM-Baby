@@ -1,0 +1,65 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P11_GEN_ONLY",
+  "replication_of": 250001,
+  "seed": 250002,
+  "step": 800,
+  "reason": "terminal",
+  "verdict": "SUCCESS",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "primary_endpoint": {
+    "parent_hit": 74,
+    "treatment_hit": 103,
+    "control_hit": 74,
+    "parent_excess": -5.551115123125783e-16,
+    "treatment_excess": 0.134883720930232,
+    "control_excess": -5.551115123125783e-16,
+    "treatment_minus_control": 0.13488372093023254,
+    "bootstrap_ci95": [
+      0.08878504672897197,
+      0.182648401826484
+    ]
+  },
+  "mechanism": {
+    "parent_l0_cosine": 0.041320063173770905,
+    "treatment_l0_cosine": 0.9755243062973022,
+    "control_l0_cosine": 0.041320063173770905,
+    "cosine_gain": 0.9342042431235313,
+    "treatment_overwrite_mass": 0.6530770659446716,
+    "control_overwrite_mass": 0.0023297767620533705
+  },
+  "regressions": [],
+  "retention_other": {
+    "language_dev_ce": {
+      "parent": 1.2430045083165169,
+      "treatment": 1.2430045083165169,
+      "control": 1.2430045083165169
+    },
+    "primitive_induction_first_top1": {
+      "parent": 0.296875,
+      "treatment": 0.296875,
+      "control": 0.296875
+    }
+  },
+  "negative_controls": {
+    "value_absent_same_surface_novel.free_exact": {
+      "value": 0.0,
+      "bar": 0.0,
+      "pass": true
+    },
+    "broken_context.free_exact": {
+      "value": 0.0,
+      "bar": 0.05,
+      "pass": true
+    },
+    "broken_order.first_top1": {
+      "value": 0.015625,
+      "bar": 0.2,
+      "pass": true
+    }
+  },
+  "trained": true,
+  "p2_launched": false,
+  "gates_changed": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}

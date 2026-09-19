@@ -1,0 +1,105 @@
+{
+  "id": "d2_later_b1",
+  "policy": "a1_induction_exempt",
+  "change": "A1+C2 frozen locator; D2 also replace block-1 gen with L0 C2 src vector",
+  "baby_weights": "authoritative_u16000",
+  "p11_model_state_dict_loaded": false,
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "overwrite_checkpoint_sha256": "369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157",
+  "first_answer_only": true,
+  "long_gap": {
+    "n": 215,
+    "free_exact": 120,
+    "free_accuracy": 0.5581395348837209,
+    "first_correct": 124,
+    "first_accuracy": 0.5767441860465117,
+    "n_overwrite_armed": 215
+  },
+  "primitive_induction": {
+    "n": 64,
+    "first_top1": 0.296875,
+    "tf_exact": 0.21875,
+    "free_exact": 0.21875,
+    "mean_target_prob": 0.11639835659389064,
+    "median_target_rank": 6,
+    "mean_target_logit": 5.274122383852955,
+    "mean_first_margin": -1.4812933057546616,
+    "mean_first_error": 0.734375,
+    "distinct_emitted_tokens": 63,
+    "n_overwrite_armed": 0
+  },
+  "primitive_keyed": {
+    "n": 64,
+    "first_top1": 0.96875,
+    "tf_exact": 0.953125,
+    "free_exact": 0.9375,
+    "mean_target_prob": 0.938597971305648,
+    "median_target_rank": 1,
+    "mean_target_logit": 13.396240234375,
+    "mean_first_margin": 6.186662390828133,
+    "mean_first_error": 3.375,
+    "distinct_emitted_tokens": 97,
+    "n_overwrite_armed": 64
+  },
+  "mechanism": {
+    "long_gap": {
+      "kind": "keyed",
+      "armed": true,
+      "wrote": true,
+      "gate_at_gen": 0.978646457195282,
+      "pred": 399,
+      "target0": 399
+    },
+    "induction": {
+      "kind": "induction",
+      "armed": false,
+      "wrote": false,
+      "gate_at_gen": 0.0,
+      "pred": 22,
+      "target0": 438
+    },
+    "keyed": {
+      "kind": "keyed",
+      "armed": true,
+      "wrote": true,
+      "gate_at_gen": 0.9584417343139648,
+      "pred": 498,
+      "target0": 498
+    }
+  },
+  "baselines": {
+    "long_gap_off_free_exact": 71,
+    "long_gap_kindblind_on_free_exact": 102,
+    "induction_off_first_top1": 0.296875,
+    "induction_kindblind_on_first_top1": 0.15625
+  },
+  "elapsed_s": 60.97937035560608,
+  "protected_material_opened": false,
+  "promoted": false,
+  "test_opened": false,
+  "verdict": "KILL",
+  "lesson": "long-gap 120/215 no bind gain vs C2 122/126",
+  "operator": "d2_later_b1",
+  "write_mode": "hard_replace",
+  "locator": "token",
+  "mask_mode": "off",
+  "write_src": "query",
+  "later_site": "block1",
+  "query_swap_same_surface_novel": {
+    "n": 96,
+    "first_top1": 0.6354166666666666,
+    "tf_exact": 0.6145833333333334,
+    "free_exact": 0.625,
+    "mean_target_prob": 0.47478981393517944,
+    "median_target_rank": 1,
+    "mean_target_logit": 9.689997551341852,
+    "mean_first_margin": 0.8732878863811493,
+    "mean_first_error": 5.020833333333333,
+    "distinct_emitted_tokens": 328,
+    "n_overwrite_armed": 96,
+    "a1_first_top1": 0.4270833333333333,
+    "delta_vs_a1": 0.20833333333333331
+  },
+  "c2_long_gap_free_exact": 122,
+  "used_gold_query_position_as_source": false
+}

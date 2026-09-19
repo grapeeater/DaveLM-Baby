@@ -10,11 +10,35 @@ import torch
 import torch.nn.functional as F
 
 
+def _set_gen_index(overwrite, index, device: torch.device) -> None:
+    """Drive gen-only overwrite. None leaves the write inert (identity)."""
+    if overwrite is None:
+        return
+    if index is None:
+        overwrite.gen_index = None
+        return
+    overwrite.gen_index = torch.as_tensor(index, device=device, dtype=torch.long)
+
+
 @torch.no_grad()
-def score_items(model, items: list[dict], device: torch.device) -> list[dict]:
-    """Score a batch of items with batched teacher forcing and generation."""
+def score_items(
+    model,
+    items: list[dict],
+    device: torch.device,
+    overwrite=None,
+    first_answer_only: bool = False,
+) -> list[dict]:
+    """Score a batch of items with batched teacher forcing and generation.
+
+    ``overwrite`` / ``first_answer_only`` are optional. Defaults preserve the
+    historical scorer (no gen-index). When ``first_answer_only`` is true, the
+    gen-only overwrite is applied at the first answer-token position and then
+    left off for later greedy steps.
+    """
     if not items:
         return []
+    if first_answer_only and overwrite is None:
+        raise ValueError("first_answer_only requires an overwrite module")
     contexts = [[int(x) for x in item["input"]] for item in items]
     targets = [[int(x) for x in item["target"]] for item in items]
     sequences = [context + target[:-1] for context, target in zip(contexts, targets)]
@@ -22,6 +46,10 @@ def score_items(model, items: list[dict], device: torch.device) -> list[dict]:
     x = torch.zeros((len(items), max_len), dtype=torch.long, device=device)
     for i, seq in enumerate(sequences):
         x[i, : len(seq)] = torch.tensor(seq, dtype=torch.long, device=device)
+    if first_answer_only:
+        _set_gen_index(overwrite, [len(context) - 1 for context in contexts], device)
+    else:
+        _set_gen_index(overwrite, None, device)
     batch_logits = model(x)
     result: list[dict] = []
     first_step_rows = []
@@ -69,6 +97,10 @@ def score_items(model, items: list[dict], device: torch.device) -> list[dict]:
             current = generated[i][-256:]
             lengths.append(len(current))
             gx[row, : len(current)] = torch.tensor(current, dtype=torch.long, device=device)
+        if first_answer_only and step_idx == 0:
+            _set_gen_index(overwrite, [length - 1 for length in lengths], device)
+        else:
+            _set_gen_index(overwrite, None, device)
         z = model(gx)
         for row, i in enumerate(active):
             token = int(z[row, lengths[row] - 1].argmax().item())
@@ -82,8 +114,20 @@ def score_items(model, items: list[dict], device: torch.device) -> list[dict]:
 
 
 @torch.no_grad()
-def score_item(model, item: dict, device: torch.device) -> dict:
-    return score_items(model, [item], device)[0]
+def score_item(
+    model,
+    item: dict,
+    device: torch.device,
+    overwrite=None,
+    first_answer_only: bool = False,
+) -> dict:
+    return score_items(
+        model,
+        [item],
+        device,
+        overwrite=overwrite,
+        first_answer_only=first_answer_only,
+    )[0]
 
 
 def summarize(rows: list[dict]) -> dict:
@@ -121,7 +165,14 @@ def language_ce(model, stream: torch.Tensor, starts: list[int], device: torch.de
     return total / max(1, count)
 
 
-def evaluate_panels(model, panels: dict, device: torch.device, limit: int | None = None) -> dict:
+def evaluate_panels(
+    model,
+    panels: dict,
+    device: torch.device,
+    limit: int | None = None,
+    overwrite=None,
+    first_answer_only: bool = False,
+) -> dict:
     model.eval()
     summaries: dict[str, dict] = {}
     rows: dict[str, list[dict]] = {}
@@ -131,7 +182,15 @@ def evaluate_panels(model, panels: dict, device: torch.device, limit: int | None
         selected = items if limit is None else items[:limit]
         scored = []
         for start in range(0, len(selected), 16):
-            scored.extend(score_items(model, selected[start : start + 16], device))
+            scored.extend(
+                score_items(
+                    model,
+                    selected[start : start + 16],
+                    device,
+                    overwrite=overwrite,
+                    first_answer_only=first_answer_only,
+                )
+            )
         rows[name] = scored
         summaries[name] = summarize(scored)
     if "novel" in summaries and "broken_context" in summaries:

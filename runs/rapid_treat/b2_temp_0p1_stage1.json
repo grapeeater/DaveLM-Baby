@@ -1,0 +1,112 @@
+{
+  "id": "b2_temp_0p1",
+  "policy": "a1_induction_exempt",
+  "change": "A1 induction-exempt first-step; B2 temperature-sharpened P11 write T=0.1",
+  "baby_weights": "authoritative_u16000",
+  "p11_model_state_dict_loaded": false,
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "overwrite_checkpoint_sha256": "369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157",
+  "first_answer_only": true,
+  "long_gap": {
+    "n": 215,
+    "free_exact": 106,
+    "free_accuracy": 0.4930232558139535,
+    "first_correct": 109,
+    "first_accuracy": 0.5069767441860465,
+    "n_overwrite_armed": 215
+  },
+  "primitive_induction": {
+    "n": 64,
+    "first_top1": 0.296875,
+    "tf_exact": 0.21875,
+    "free_exact": 0.21875,
+    "mean_target_prob": 0.11639835659389064,
+    "median_target_rank": 6,
+    "mean_target_logit": 5.274122383852955,
+    "mean_first_margin": -1.4812933057546616,
+    "mean_first_error": 0.734375,
+    "distinct_emitted_tokens": 63,
+    "n_overwrite_armed": 0
+  },
+  "primitive_keyed": {
+    "n": 64,
+    "first_top1": 0.96875,
+    "tf_exact": 0.953125,
+    "free_exact": 0.9375,
+    "mean_target_prob": 0.9382345359298725,
+    "median_target_rank": 1,
+    "mean_target_logit": 13.413689715787768,
+    "mean_first_margin": 6.134331069886684,
+    "mean_first_error": 3.375,
+    "distinct_emitted_tokens": 97,
+    "n_overwrite_armed": 64
+  },
+  "mechanism": {
+    "long_gap": {
+      "kind": "keyed",
+      "armed": true,
+      "wrote": true,
+      "gate_at_gen": 0.978646457195282,
+      "pred": 399,
+      "target0": 399
+    },
+    "induction": {
+      "kind": "induction",
+      "armed": false,
+      "wrote": false,
+      "gate_at_gen": 0.0,
+      "pred": 22,
+      "target0": 438
+    },
+    "keyed": {
+      "kind": "keyed",
+      "armed": true,
+      "wrote": true,
+      "gate_at_gen": 0.9584417343139648,
+      "pred": 498,
+      "target0": 498
+    }
+  },
+  "baselines": {
+    "long_gap_off_free_exact": 71,
+    "long_gap_kindblind_on_free_exact": 102,
+    "induction_off_first_top1": 0.296875,
+    "induction_kindblind_on_first_top1": 0.15625
+  },
+  "elapsed_s": 51.53345012664795,
+  "protected_material_opened": false,
+  "promoted": false,
+  "test_opened": false,
+  "verdict": "ADVANCE",
+  "lesson": "long-gap 106/215 exceeds A1 102",
+  "write_mode": "temperature",
+  "score_temperature": 0.1,
+  "mix_beta": 0.0,
+  "pointer": {
+    "n": 215,
+    "n_armed": 215,
+    "n_match_query": 153,
+    "match_rate": 0.7116279069767442,
+    "median_mass_query": 1.0,
+    "median_mass_src": 1.0,
+    "median_gate": 0.982595682144165
+  },
+  "query_swap_same_surface_novel": {
+    "n": 96,
+    "first_top1": 0.4270833333333333,
+    "tf_exact": 0.3958333333333333,
+    "free_exact": 0.40625,
+    "mean_target_prob": 0.32001117390681405,
+    "median_target_rank": 2,
+    "mean_target_logit": 8.26276714168489,
+    "mean_first_margin": -1.0782294993599255,
+    "mean_first_error": 3.1458333333333335,
+    "distinct_emitted_tokens": 337,
+    "n_overwrite_armed": 96,
+    "a1_first_top1": 0.4270833333333333,
+    "delta_vs_a1": 0.0
+  },
+  "used_gold_query_position_as_source": false,
+  "a1_long_gap_free_exact": 102,
+  "q0r_ceiling": 127
+}

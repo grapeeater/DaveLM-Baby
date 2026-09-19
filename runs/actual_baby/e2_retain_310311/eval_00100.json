@@ -1,0 +1,63 @@
+{
+  "update": 100,
+  "native": {
+    "qa_4fact_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.9191971598193049,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.22173735499382,
+      "mean_first_margin": 4.657310888171196,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.90625
+    },
+    "instr_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.924608925357461,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.923744678497314,
+      "mean_first_margin": 5.271173655986786,
+      "mean_first_error": 2.6875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 1.0
+    },
+    "pronoun_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.9376563420519233,
+      "median_target_rank": 1,
+      "mean_target_logit": 15.82368141412735,
+      "mean_first_margin": 4.976829260587692,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.25
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.9174722244497389,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.951054602861404,
+      "mean_first_margin": 4.935642689466476,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.65625
+    }
+  },
+  "language_dev_ce": 1.3358627259731293,
+  "language_baseline_ce": 1.3401544243097305,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e2_retain_310311\\checkpoint_00100.pt",
+  "checkpoint_sha256": "c5436cc4a74fbea56405d7ba935a1341d964070842f8c2f800f125594ddfb062",
+  "verdict": "GRAD",
+  "lesson": "E2 qa4=0.938 instr=1.000 pronoun=0.969 dialogue=0.938"
+}

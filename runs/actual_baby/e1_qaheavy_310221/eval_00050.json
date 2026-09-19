@@ -1,0 +1,102 @@
+{
+  "update": 50,
+  "native": {
+    "aperiodic": {
+      "n": 32,
+      "first_top1": 0.3125,
+      "tf_exact": 0.28125,
+      "free_exact": 0.28125,
+      "mean_target_prob": 0.17750222880749789,
+      "median_target_rank": 3,
+      "mean_target_logit": 7.0583125948905945,
+      "mean_first_margin": -1.8561487197875977,
+      "mean_first_error": 0.59375,
+      "distinct_emitted_tokens": 57,
+      "tiling_parse_rate": 0.03125
+    },
+    "syntax_wrap": {
+      "n": 32,
+      "first_top1": 0.375,
+      "tf_exact": 0.375,
+      "free_exact": 0.375,
+      "mean_target_prob": 0.21158597070677843,
+      "median_target_rank": 4,
+      "mean_target_logit": 6.590675065293908,
+      "mean_first_margin": -1.419244036078453,
+      "mean_first_error": 0.375,
+      "distinct_emitted_tokens": 24,
+      "tiling_parse_rate": 0.96875
+    },
+    "cloze_1fact": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9919030871242285,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.85036352276802,
+      "mean_first_margin": 6.650478571653366,
+      "mean_first_error": 3.65625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.25
+    },
+    "cloze_2fact": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8778427746146917,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.098226457834244,
+      "mean_first_margin": 3.44052492082119,
+      "mean_first_error": 3.53125,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.6875
+    },
+    "qa_2fact_train": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8818198223598301,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.249346762895584,
+      "mean_first_margin": 3.9432566314935684,
+      "mean_first_error": 2.4375,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.75
+    },
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.84375,
+      "tf_exact": 0.84375,
+      "free_exact": 0.84375,
+      "mean_target_prob": 0.7456204448244534,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.69868703186512,
+      "mean_first_margin": 2.6749574840068817,
+      "mean_first_error": 2.1875,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.71875
+    },
+    "qa_3fact_heldout": {
+      "n": 32,
+      "first_top1": 0.75,
+      "tf_exact": 0.75,
+      "free_exact": 0.75,
+      "mean_target_prob": 0.7043538047000766,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.669815495610237,
+      "mean_first_margin": 2.319294437766075,
+      "mean_first_error": 2.09375,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.90625
+    }
+  },
+  "language_dev_ce": 1.3369609862565994,
+  "language_baseline_ce": 1.3414506763219833,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e1_qaheavy_310221\\checkpoint_00050.pt",
+  "checkpoint_sha256": "4eee63b2b6fc78e869fcce3cbf27772337f53cb3038fe598e20f4e6961034307",
+  "verdict": "GRAD",
+  "lesson": "heldout QA 0.844 and cloze2 0.969 clear the E1 bind gate"
+}

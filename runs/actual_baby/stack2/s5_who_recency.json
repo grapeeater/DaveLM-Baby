@@ -1,0 +1,140 @@
+{
+  "s4m": {
+    "n": 32,
+    "acc": 0.46875,
+    "last_is_gold": 0.46875,
+    "pred_is_last": 0.65625,
+    "acc_when_last_gold": 0.6666666666666666,
+    "acc_when_last_not_gold": 0.29411764705882354,
+    "wrong": 17,
+    "wrong_pred_last": 11,
+    "wrong_pred_last_rate": 0.6470588235294118,
+    "examples": [
+      {
+        "gold": "duck",
+        "last": "duck",
+        "pred": "duck",
+        "ok": true,
+        "last_is_gold": true
+      },
+      {
+        "gold": "cat",
+        "last": "cat",
+        "pred": "frog",
+        "ok": false,
+        "last_is_gold": true
+      },
+      {
+        "gold": "cat",
+        "last": "cat",
+        "pred": "cat",
+        "ok": true,
+        "last_is_gold": true
+      },
+      {
+        "gold": "duck",
+        "last": "cat",
+        "pred": "bear",
+        "ok": false,
+        "last_is_gold": false
+      },
+      {
+        "gold": "frog",
+        "last": "dog",
+        "pred": "dog",
+        "ok": false,
+        "last_is_gold": false
+      },
+      {
+        "gold": "duck",
+        "last": "bear",
+        "pred": "duck",
+        "ok": true,
+        "last_is_gold": false
+      },
+      {
+        "gold": "bear",
+        "last": "duck",
+        "pred": "bear",
+        "ok": true,
+        "last_is_gold": false
+      },
+      {
+        "gold": "frog",
+        "last": "cat",
+        "pred": "cat",
+        "ok": false,
+        "last_is_gold": false
+      }
+    ]
+  },
+  "s5m": {
+    "n": 32,
+    "acc": 0.5,
+    "last_is_gold": 0.46875,
+    "pred_is_last": 0.59375,
+    "acc_when_last_gold": 0.6,
+    "acc_when_last_not_gold": 0.4117647058823529,
+    "wrong": 16,
+    "wrong_pred_last": 10,
+    "wrong_pred_last_rate": 0.625,
+    "examples": [
+      {
+        "gold": "duck",
+        "last": "duck",
+        "pred": "duck",
+        "ok": true,
+        "last_is_gold": true
+      },
+      {
+        "gold": "cat",
+        "last": "cat",
+        "pred": "frog",
+        "ok": false,
+        "last_is_gold": true
+      },
+      {
+        "gold": "cat",
+        "last": "cat",
+        "pred": "cat",
+        "ok": true,
+        "last_is_gold": true
+      },
+      {
+        "gold": "duck",
+        "last": "cat",
+        "pred": "duck",
+        "ok": true,
+        "last_is_gold": false
+      },
+      {
+        "gold": "frog",
+        "last": "dog",
+        "pred": "dog",
+        "ok": false,
+        "last_is_gold": false
+      },
+      {
+        "gold": "duck",
+        "last": "bear",
+        "pred": "duck",
+        "ok": true,
+        "last_is_gold": false
+      },
+      {
+        "gold": "bear",
+        "last": "duck",
+        "pred": "bear",
+        "ok": true,
+        "last_is_gold": false
+      },
+      {
+        "gold": "frog",
+        "last": "cat",
+        "pred": "cat",
+        "ok": false,
+        "last_is_gold": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P7_OVERWRITE_ONLY",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "ptr_lambda_treatment": 1.0,
+  "gate_lambda_treatment_after_200": 1.0,
+  "lambda_control": 0.0,
+  "licensed_by": "V010_SELECTION_REPAIR_P6_OVERWRITE_XAVIER",
+  "p6_verdict": "REGRESSION",
+  "qk_init": "xavier",
+  "overwrite_lr": 0.001,
+  "baby_weights_frozen": true,
+  "gate_bias_init": -4.0,
+  "batch": {
+    "keyed_full": 8,
+    "primitive_keyed": 3,
+    "induction_full": 5
+  },
+  "p2_launched": false,
+  "files": {
+    "design/V010_SELECTION_REPAIR_P7_OVERWRITE_ONLY.md": "161eb10be1bdde2653f2b1a10c0adfa938fd5c5a7a130fd0603936ee474fa208",
+    "src/baby_v010/selection_p7.py": "3f5057ed9e4b4da9b70707a892d98e83c1fb13bfb7a3c4de5f80339f08297cc4",
+    "data/generated/foundation_v2/panels.json": "5f0d1d2c59c5d9ac07cd93460a59f542d1c65b9a10f130e61a28388b52342bb3",
+    "runs/selection_p7/SCHEDULE_210001.json": "904c24d50307e7cae0fea3e6010c5b5c64454a72588e92bef9aee69b238d5f60",
+    "runs/selection_p7/SCHEDULE_210002.json": "c7793ed43180e28d9a6ea006c8981312b5b7e3dfa26186a0b8f59a1f7dcf34e5",
+    "runs/selection_s2/DIAGNOSTIC.json": "5b63533f7eb7feef65a5254deae735b43e2904bff30deeebcf81bb32913dc446",
+    "runs/selection_p6/ADJUDICATION_200001_200.json": "accc972095bc43f74e3feb6a64670c93a76fa33d5834fbcc0faae0237035d846",
+    "runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+    "src/baby_v010/residual_overwrite.py": "f08bf42494f3c6ba815e276aad289f8a83f765b5e30126d722c046631d20b33e",
+    "src/baby_v010/model.py": "18024c4d2e47c67d22a63ca5e428b5e6b171593a12d49cc00a86a6cac31b9760"
+  },
+  "audits": {
+    "210001": {
+      "updates": 800,
+      "language_updates": 174,
+      "keyed_full_rows": 5008,
+      "induction_rows": 3130
+    },
+    "210002": {
+      "updates": 800,
+      "language_updates": 180,
+      "keyed_full_rows": 4960,
+      "induction_rows": 3100
+    }
+  },
+  "protected_material_opened": false
+}

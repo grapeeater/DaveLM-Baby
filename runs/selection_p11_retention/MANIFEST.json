@@ -1,0 +1,75 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P11_RETENTION",
+  "licensed_by": "V010_SELECTION_REPAIR_P11_DECODE_FIRSTSTEP",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "treatment_checkpoint_sha256": "369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157",
+  "s2_diagnostic_sha256": "5b63533f7eb7feef65a5254deae735b43e2904bff30deeebcf81bb32913dc446",
+  "retention_drop": 0.05,
+  "language_ce_hard": 0.2,
+  "long_gap_success_delta": 0.1,
+  "min_gap": 13,
+  "bootstrap_seed": 250300,
+  "first_answer_only": true,
+  "every_step_overwrite": false,
+  "training": false,
+  "p11_receipts": {
+    "p11_verdict": "SUCCESS",
+    "firststep_h1": "H1_PASS",
+    "decode_h1": "H1_FAIL",
+    "firststep_free_exact": 102,
+    "firststep_init_free_exact": 71,
+    "protected_material_opened": false
+  },
+  "required": [
+    {
+      "path": "runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt",
+      "role": "authoritative_parent",
+      "sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+      "exists": false
+    },
+    {
+      "path": "runs/selection_p11/treatment_250001/checkpoint_16800.pt",
+      "role": "p11_treatment_checkpoint",
+      "sha256": "369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157",
+      "exists": false
+    },
+    {
+      "path": "runs/selection_s2/DIAGNOSTIC.json",
+      "role": "s2_long_gap_and_rest_lock",
+      "sha256": "5b63533f7eb7feef65a5254deae735b43e2904bff30deeebcf81bb32913dc446",
+      "exists": false
+    },
+    {
+      "path": "data/generated/foundation_v2/panels.json",
+      "role": "frozen_retention_panels",
+      "sha256": "5f0d1d2c59c5d9ac07cd93460a59f542d1c65b9a10f130e61a28388b52342bb3",
+      "exists": true
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_DEV_STREAM.u16",
+      "role": "language_dev_stream",
+      "sha256": null,
+      "exists": false
+    },
+    {
+      "path": "runs/v2r4_isolation_panels/ISOLATION_PANELS.json",
+      "role": "isolation_negative_controls",
+      "sha256": null,
+      "exists": true
+    }
+  ],
+  "files": {
+    "design/V010_SELECTION_REPAIR_P11_RETENTION.md": "bf2debb062aa0a9f607958a60ca11f54685a924e188c17e969efa79bf2b68075",
+    "src/baby_v010/selection_p11_retention.py": "2ada6327da8144425a478cea26122ebdfe0b8f022e633a63b87de3273d180757",
+    "src/baby_v010/evaluate.py": "f8ceae6e7fd22b06f6f67789bf7fd818b4b5463b1f93f8474d5212d02aa1ea71",
+    "src/baby_v010/residual_overwrite.py": "4ee70df6c7ece6920f25727962c1b4e8a0d4a7a60203af3290e1411bb751929c",
+    "data/generated/foundation_v2/panels.json": "ba54410ebdcba56b1e9f0b46ac17a1da54f6cee3030ef91046e14878764bb99c",
+    "runs/selection_p11/ADJUDICATION_250001_800.json": "bec6f41650673faefb2a38972d5d616f66fe5937b1b5642b61d8af0949874cbf",
+    "runs/selection_p11_decode_firststep/ADJUDICATION.json": "fce62dce4625a9a5978b60742183c8d424af75f260cc3b0a2948de376a0cef8b",
+    "runs/selection_p11_decode/ADJUDICATION.json": "fbd65accb7230549abce77d968e8144181ceb625e89a12be6c8bc47d6329f1fb",
+    "src/baby_v010/selection_p2.py": "4f10e6f36af24701be9f4d2c6528d463ca2528c000c1c10b74b5b37ec88cce8c"
+  },
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true,
+  "p11_gates_reopened": false
+}

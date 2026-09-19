@@ -1,0 +1,71 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P4_EARLY_COPY",
+  "licensed_by": "V010_SELECTION_REPAIR_P3_EARLY_BIND",
+  "p3_verdict": "REGRESSION",
+  "step": 400,
+  "reason": "futility",
+  "verdict": "REGRESSION",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "primary_endpoint": {
+    "parent_hit": 74,
+    "treatment_hit": 75,
+    "control_hit": 74,
+    "parent_excess": -5.551115123125783e-16,
+    "treatment_excess": 0.004651162790697105,
+    "control_excess": -5.551115123125783e-16,
+    "treatment_minus_control": 0.0046511627906976605,
+    "bootstrap_ci95": [
+      0.0,
+      0.014423076923076927
+    ]
+  },
+  "mechanism": {
+    "parent_l0_cosine": 0.040374595671892166,
+    "treatment_l0_cosine": 0.0669756829738617,
+    "control_l0_cosine": 0.0435311384499073,
+    "cosine_gain": 0.026601087301969528
+  },
+  "regressions": [
+    {
+      "panel": "primitive_induction",
+      "metric": "first_top1",
+      "parent": 0.296875,
+      "treatment": 0.1875,
+      "bar_drop": 0.05
+    }
+  ],
+  "retention_other": {
+    "language_dev_ce": {
+      "parent": 1.2430045083165169,
+      "treatment": 1.248137641698122,
+      "control": 1.2468524109572172
+    },
+    "primitive_induction_first_top1": {
+      "parent": 0.296875,
+      "treatment": 0.1875,
+      "control": 0.21875
+    }
+  },
+  "negative_controls": {
+    "value_absent_same_surface_novel.free_exact": {
+      "value": 0.0,
+      "bar": 0.0,
+      "pass": true
+    },
+    "broken_context.free_exact": {
+      "value": 0.0,
+      "bar": 0.05,
+      "pass": true
+    },
+    "broken_order.first_top1": {
+      "value": 0.03125,
+      "bar": 0.2,
+      "pass": true
+    }
+  },
+  "trained": true,
+  "p2_launched": false,
+  "gates_changed": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}

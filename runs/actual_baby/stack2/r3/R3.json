@@ -1,0 +1,73 @@
+{
+  "id": "r3b",
+  "status": "EXPERIMENTAL HYBRID, NOT PROMOTED",
+  "authoritative": false,
+  "promoted": false,
+  "u16000_authoritative": true,
+  "test_final_sacred": "sealed",
+  "loaded_parent": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+  "loaded_parent_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "parent_match": true,
+  "head_path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\r3\\r3b_329011\\prop_match_head_00050.pt",
+  "head_sha256": "8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9",
+  "mechanism": "prop_match_cue_cosine_entityness",
+  "label_legend": {
+    "weights_only": "s5b3 checkpoint, no runtime module",
+    "native_head": "s5b3 + learned PropMatchHead; no Python cue scanner",
+    "external_router": "s5b3 + WhoPropRouter (R2 ceiling; Python scanner)",
+    "native_relassist": "s5b3 + PropMatchHead + RelAssist",
+    "batched_eval_panels": "teacher-forced batched logits; may bypass last-token routing"
+  },
+  "lesson1": {
+    "verdict": "SURVIVE",
+    "who_2e_native": {
+      "official": 0.96875,
+      "seed324777": 0.90625,
+      "seed324888": 0.75
+    },
+    "who_2e_last_not": {
+      "official": 0.9411764705882353,
+      "seed324777": 0.9166666666666666,
+      "seed324888": 0.6666666666666666
+    },
+    "who_2e_weights_only": {
+      "official": 0.53125,
+      "seed324777": 0.5625,
+      "seed324888": 0.46875
+    },
+    "who_2e_external_router": {
+      "official": 1.0,
+      "seed324777": 0.96875
+    },
+    "who_sent_native_bare": 0.5625,
+    "gate_who_2e_two_panels": true,
+    "gate_who_sent_0p80": false
+  },
+  "lesson2": {
+    "verdict": "PARTIAL",
+    "mechanism": "entity_piece_finish + question-turn copy + bind_piece_map",
+    "has_native_relassist": 0.8333333333333334,
+    "beside_native_relassist": 1.0,
+    "hen_first_piece": "he/ he + n; finish n on answer suffix",
+    "remaining": "has_what still malformed (redog / duplicated has)"
+  },
+  "lesson3": {
+    "verdict": "DEFERRED"
+  },
+  "retention": {
+    "color": 0.96875,
+    "size_stop": 1.0,
+    "mixed_2e_first_top1": 0.96875,
+    "fact_combine": 0.65625,
+    "usable4": 0.84375,
+    "stop": 1.0,
+    "reuse": 0.8571428571428571,
+    "d3": 181,
+    "first_correct": 215,
+    "induction": 0.5
+  },
+  "killed": [
+    "r3a_suffix_attn",
+    "r3c_local_hop"
+  ]
+}

@@ -35,6 +35,7 @@ class CausalSelfAttention(nn.Module):
         self.projection = nn.Linear(
             config.d_model, config.d_model, bias=config.attention_output_bias
         )
+        self._capture: list[torch.Tensor] | None = None
 
     def _split(self, x: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
         batch, time, _ = x.shape
@@ -53,12 +54,14 @@ class CausalSelfAttention(nn.Module):
         causal = torch.ones((time, time), dtype=torch.bool, device=q.device).tril()
         scores = scores.masked_fill(~causal, float("-inf"))
         weights = F.softmax(scores, dim=-1)
+        if self._capture is not None:
+            self._capture.append(weights)
         weights = F.dropout(weights, p=self.dropout, training=self.training)
         return torch.matmul(weights, v)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         q, k, v = self._split(x)
-        if self.backend == "sdpa":
+        if self.backend == "sdpa" and self._capture is None:
             attended = F.scaled_dot_product_attention(
                 q,
                 k,
@@ -138,4 +141,12 @@ class BabyVNextLM(nn.Module):
             raise ValueError("unsupported attention backend")
         for block in self.blocks:
             block.attention.backend = backend
+
+    def set_attention_capture(self, bucket: list[torch.Tensor] | None) -> None:
+        """When ``bucket`` is a list, each layer appends pre-dropout weights.
+
+        Off by default. Does not change ``forward`` when ``bucket is None``.
+        """
+        for block in self.blocks:
+            block.attention._capture = bucket
 

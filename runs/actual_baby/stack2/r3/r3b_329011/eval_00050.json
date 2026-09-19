@@ -1,0 +1,61 @@
+{
+  "step": 50,
+  "loaded_parent": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+  "loaded_parent_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "parent_match": true,
+  "authoritative": false,
+  "mechanism": "prop_match_cue_cosine_entityness",
+  "weights_only": {
+    "n": 32,
+    "acc": 0.53125,
+    "pred_is_last": 0.5625,
+    "acc_last_gold": 0.6,
+    "acc_last_not": 0.47058823529411764,
+    "by_gap": {
+      "1": 0.5,
+      "3": 0.5263157894736842,
+      "2": 0.5714285714285714,
+      "4": 0.5
+    }
+  },
+  "native_head": {
+    "n": 32,
+    "acc": 0.96875,
+    "pred_is_last": 0.5,
+    "acc_last_gold": 1.0,
+    "acc_last_not": 0.9411764705882353,
+    "by_gap": {
+      "1": 1.0,
+      "3": 1.0,
+      "2": 1.0,
+      "4": 0.75
+    }
+  },
+  "native_head_seed324777": {
+    "n": 32,
+    "acc": 0.90625,
+    "pred_is_last": 0.59375,
+    "acc_last_gold": 0.9,
+    "acc_last_not": 0.9166666666666666,
+    "by_gap": {
+      "3": 0.9473684210526315,
+      "1": 0.6666666666666666,
+      "2": 1.0,
+      "4": 0.5
+    }
+  },
+  "diag": {
+    "n": 32,
+    "cue_locate": 0.96875,
+    "property_match": 0.9375,
+    "entity_hop_gold": 0.9375,
+    "entity_hop_last": 0.4375
+  },
+  "diag_seed324777": {
+    "n": 32,
+    "cue_locate": 1.0,
+    "property_match": 0.9375,
+    "entity_hop_gold": 0.90625,
+    "entity_hop_last": 0.59375
+  }
+}

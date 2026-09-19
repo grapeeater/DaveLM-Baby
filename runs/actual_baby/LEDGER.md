@@ -1,0 +1,486 @@
+# Actual Baby campaign ledger
+
+U16000 remains authoritative. C2/D3 stay fallbacks. TEST closed. Not promoted.
+
+## e1_zeroshot
+
+- Change: U16000 native vs C2+D3 vs tiling-gated D3 on less-rigid bind probes
+- verdict: **FAIL**
+- lesson: no English bind yet: heldout 0.000 cloze2 0.000
+- native: {'rigid_primitive': {'first_top1': 1.0, 'free_exact': 1.0, 'tiling': 0.0}, 'aperiodic': {'first_top1': 0.15625, 'free_exact': 0.0625, 'tiling': 0.03125}, 'syntax_wrap': {'first_top1': 0.03125, 'free_exact': 0.03125, 'tiling': 0.96875}, 'cloze_1fact': {'first_top1': 0.09375, 'free_exact': 0.0, 'tiling': 0.25}, 'cloze_2fact': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.6875}, 'qa_2fact_train': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.6875}, 'qa_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.71875}, 'qa_3fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.84375}, 'qa_4fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.90625}, 'instr_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 1.0}, 'pronoun_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.25}, 'dialogue_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.65625}}
+- d3: {'rigid_primitive': {'first_top1': 1.0, 'free_exact': 1.0}, 'aperiodic': {'first_top1': 0.125, 'free_exact': 0.125}, 'syntax_wrap': {'first_top1': 0.0, 'free_exact': 0.0}, 'cloze_1fact': {'first_top1': 0.0, 'free_exact': 0.0}, 'cloze_2fact': {'first_top1': 0.125, 'free_exact': 0.0}, 'qa_2fact_train': {'first_top1': 0.0, 'free_exact': 0.0}, 'qa_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'qa_3fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'qa_4fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'instr_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'pronoun_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'dialogue_2fact_heldout': {'first_top1': 0.15625, 'free_exact': 0.0625}}
+
+## e1_zeroshot
+
+- Change: U16000 native vs C2+D3 vs tiling-gated D3 on less-rigid bind probes
+- verdict: **FAIL**
+- lesson: no English bind yet: heldout 0.000 cloze2 0.000
+- native: {'rigid_primitive': {'first_top1': 1.0, 'free_exact': 1.0, 'tiling': 0.0}, 'aperiodic': {'first_top1': 0.15625, 'free_exact': 0.0625, 'tiling': 0.03125}, 'syntax_wrap': {'first_top1': 0.03125, 'free_exact': 0.03125, 'tiling': 0.96875}, 'cloze_1fact': {'first_top1': 0.09375, 'free_exact': 0.0, 'tiling': 0.25}, 'cloze_2fact': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.6875}, 'qa_2fact_train': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.6875}, 'qa_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.71875}, 'qa_3fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.84375}, 'qa_4fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.90625}, 'instr_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 1.0}, 'pronoun_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.25}, 'dialogue_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0, 'tiling': 0.65625}}
+- d3: {'rigid_primitive': {'first_top1': 1.0, 'free_exact': 1.0}, 'aperiodic': {'first_top1': 0.125, 'free_exact': 0.125}, 'syntax_wrap': {'first_top1': 0.0, 'free_exact': 0.0}, 'cloze_1fact': {'first_top1': 0.0, 'free_exact': 0.0}, 'cloze_2fact': {'first_top1': 0.125, 'free_exact': 0.0}, 'qa_2fact_train': {'first_top1': 0.0, 'free_exact': 0.0}, 'qa_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'qa_3fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'qa_4fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'instr_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'pronoun_2fact_heldout': {'first_top1': 0.0, 'free_exact': 0.0}, 'dialogue_2fact_heldout': {'first_top1': 0.15625, 'free_exact': 0.0625}}
+
+## e1_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 204/215 induction 0.312
+- retention: {'n': 215, 'free_exact': 204, 'first_correct': 215, 'free_accuracy': 0.9488372093023256, 'first_accuracy': 1.0}
+
+## e1_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 188/215 below 200
+- retention: {'n': 215, 'free_exact': 188, 'first_correct': 215, 'free_accuracy': 0.8744186046511628, 'first_accuracy': 1.0}
+
+## e1_stop
+
+- Change: E1 language-bridge did not hit held-out QA/cloze gates
+- verdict: **ADVANCE**
+- lesson: signal but below gate: heldout 0.594 cloze2 0.969
+
+## e2_retention
+
+- Change: 
+- verdict: **KILL**
+- lesson: cheap D3 slice free_exact 0.775
+
+## campaign_e2
+
+- Change: E2 instruction/pronoun/dialogue/4-fact after E1
+- verdict: **GRAD**
+- lesson: E2 qa4=0.750 instr=0.625 pronoun=0.875 dialogue=0.688
+- checkpoint_sha256: a33f61e1de0faa8b9ffca9886e12f3c5f48c394ad71c75bda3174ff369297d15
+
+## e1_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 202/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 202, 'first_correct': 215, 'free_accuracy': 0.9395348837209302, 'first_accuracy': 1.0}
+
+## e1_grad
+
+- Change: QA-heavy paraphrase train from U16000; experimental ckpt only
+- verdict: **GRAD**
+- lesson: heldout QA 0.844 cloze2 0.969; D3 202/215 induction 0.422
+- checkpoint_sha256: 4eee63b2b6fc78e869fcce3cbf27772337f53cb3038fe598e20f4e6961034307
+
+## e2_zeroshot_from_e1
+
+- Change: E2 panels on E1 graduate checkpoint, native only
+- verdict: **ADVANCE**
+- lesson: E2 partial qa4=0.875 instr=0.938 pronoun=0.469 dialogue=0.062
+- native: {'qa_4fact_heldout': {'first_top1': 0.875, 'free_exact': 0.875}, 'instr_2fact_heldout': {'first_top1': 0.9375, 'free_exact': 0.90625}, 'pronoun_2fact_heldout': {'first_top1': 0.46875, 'free_exact': 0.46875}, 'dialogue_2fact_heldout': {'first_top1': 0.0625, 'free_exact': 0.0625}}
+
+## e2_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 196/215 below 200
+- retention: {'n': 215, 'free_exact': 196, 'first_correct': 215, 'free_accuracy': 0.9116279069767442, 'first_accuracy': 1.0}
+
+## e2_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 186/215 below 200
+- retention: {'n': 215, 'free_exact': 186, 'first_correct': 215, 'free_accuracy': 0.8651162790697674, 'first_accuracy': 1.0}
+
+## e2_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 201/215 induction 0.391
+- retention: {'n': 215, 'free_exact': 201, 'first_correct': 215, 'free_accuracy': 0.9348837209302325, 'first_accuracy': 1.0}
+
+## e2_gentle_grad
+
+- Change: Gentle E2 from E1 with 40% structured; experimental only
+- verdict: **GRAD**
+- lesson: dialogue 0.781 pronoun 0.906 qa4 0.844 instr 0.812; D3 201/215 induction 0.391
+- checkpoint_sha256: 019656d5804862c41595cfa0497696cf9aba68f97940bd4767b235fa51052361
+
+## e3_zeroshot
+
+- Change: multi-turn follow-up on E2 gentle survivor
+- verdict: **FAIL**
+- lesson: E3 cold turn2=0.219 turn3=0.250 dialogue=0.750
+- native: {'multiturn_2fact_heldout': {'first_top1': 0.21875, 'free_exact': 0.21875}, 'multiturn_3fact_heldout': {'first_top1': 0.25, 'free_exact': 0.25}, 'dialogue_2fact_heldout': {'first_top1': 0.75, 'free_exact': 0.75}, 'pronoun_2fact_heldout': {'first_top1': 0.90625, 'free_exact': 0.90625}}
+
+## e3_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 195/215 below 200
+- retention: {'n': 215, 'free_exact': 195, 'first_correct': 215, 'free_accuracy': 0.9069767441860465, 'first_accuracy': 1.0}
+
+## e3u50_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 193/215 below 200
+- retention: {'n': 215, 'free_exact': 193, 'first_correct': 215, 'free_accuracy': 0.8976744186046511, 'first_accuracy': 1.0}
+
+## campaign_status_2026-09-18
+
+- Change: Language-bridge campaign pause after E1+E2 D3-safe survivor; E3 follow-up trades D3
+- verdict: **HOLD**
+- lesson: U16000 not replaced. TEST closed. Experimental survivor `e2_gentle_310321/checkpoint_00050.pt` SHA `019656d5…`. She answers held-out English color questions (QA 0.875, dialogue 0.781, 4-fact 0.844, instruction 0.812, pronoun 0.906). D3 long-gap 201/215 first-token 215/215 induction 0.391 keyed 0.969. E3 multi-turn 0.94 exists at SHA `848762b7…` but D3 195/215. Next: stop-at-period decode, more attributes/entities, or multi-turn without dropping D3 below 200.
+
+## e4_probe
+
+- Change: Zero-shot e4 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E4 partial size=0.344 color=0.875 mixed=0.469; decode usable=0.875 stop=0.875
+- checkpoint_sha256: 019656d5804862c41595cfa0497696cf9aba68f97940bd4767b235fa51052361
+
+## e4_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 204/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 204, 'first_correct': 215, 'free_accuracy': 0.9488372093023256, 'first_accuracy': 1.0}
+
+## e3_probe
+
+- Change: Zero-shot e3 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E3 partial turn2=0.625 turn3=0.375 dialogue=0.844; decode usable=0.875 stop=0.875
+- checkpoint_sha256: 006caa58f2cc858538cdbafbc915de2a7de8c66e8b7ac17c2c5a8aa1383a92c6
+
+## e5_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 204/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 204, 'first_correct': 215, 'free_accuracy': 0.9488372093023256, 'first_accuracy': 1.0}
+
+## e4_probe
+
+- Change: Zero-shot e4 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E4 size=0.875 color=0.875 mixed=0.562; decode usable=0.875 stop=0.875
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e6_probe
+
+- Change: Zero-shot e6 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E6 cold place=0.031 color=0.969 size=1.000; decode usable=0.875 stop=0.875
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e6_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 199/215 below 200
+- retention: {'n': 215, 'free_exact': 199, 'first_correct': 215, 'free_accuracy': 0.9255813953488372, 'first_accuracy': 1.0}
+
+## e6_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 196/215 below 200
+- retention: {'n': 215, 'free_exact': 196, 'first_correct': 215, 'free_accuracy': 0.9116279069767442, 'first_accuracy': 1.0}
+
+## e7_probe
+
+- Change: Zero-shot e7 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E7 cold follow=0.031 color=0.906 size=0.812 instr=0.938; decode usable=0.875 stop=0.875
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e7_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 184/215 below 200
+- retention: {'n': 215, 'free_exact': 184, 'first_correct': 215, 'free_accuracy': 0.8558139534883721, 'first_accuracy': 1.0}
+
+## e4_probe
+
+- Change: Zero-shot e4 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E4 size=0.875 color=0.875 mixed=0.562; decode usable=0.750 stop=0.750
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## campaign_status_e5_2026-09-18
+
+- Change: Language-bridge campaign D3-safe survivor is E5; E6/E7 English-only
+- verdict: **HOLD**
+- lesson: U16000 not replaced. TEST closed. D3 commit `1d0467f` pushed. Experimental survivor `e5_turn3_310511/checkpoint_00050.pt` SHA `aba1ca58…`. Color/size/instruction/dialogue/2-3-turn color context graduate. Period-stop color answers are usable. D3 204/215 first-token 215/215 induction 0.422. Place (E6 199) and color-then-size follow-up (E7 184) buy English and spend D3. Next is open TinyStories QA/dialogue on E5, not coding, not U16000 promotion.
+
+## e8_probe
+
+- Change: Zero-shot e8 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E8 partial story_c=0.969 who=0.000 event=0.000 color=1.000; decode usable=0.750 stop=0.750
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e8_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 196/215 below 200
+- retention: {'n': 215, 'free_exact': 196, 'first_correct': 215, 'free_accuracy': 0.9116279069767442, 'first_accuracy': 1.0}
+
+## e8b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 195/215 below 200
+- retention: {'n': 215, 'free_exact': 195, 'first_correct': 215, 'free_accuracy': 0.9069767441860465, 'first_accuracy': 1.0}
+
+## e9_probe
+
+- Change: Zero-shot e9 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E9 3e=0.938 pronoun=0.906 story2=0.969 color=0.906; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e10_probe
+
+- Change: Zero-shot e10 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E10 cold combine=0.094 mixed_story=0.375 story2=0.906 color=0.938; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e10_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 200/215 induction 0.438
+- retention: {'n': 215, 'free_exact': 200, 'first_correct': 215, 'free_accuracy': 0.9302325581395349, 'first_accuracy': 1.0}
+
+## e10b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 200/215 induction 0.469
+- retention: {'n': 215, 'free_exact': 200, 'first_correct': 215, 'free_accuracy': 0.9302325581395349, 'first_accuracy': 1.0}
+
+## e11_probe
+
+- Change: Zero-shot e11 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E11 long3=0.812 long4=0.594 color=0.875 dialogue=0.875; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e12_probe
+
+- Change: Zero-shot e12 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E12 cold size_stop=0.094 long5=0.281 size=0.844 color=0.875; decode usable=0.500 stop=0.625
+- checkpoint_sha256: aba1ca58ff867c5a7639629e7abdf16187aa298433070bca7617a8daffd28139
+
+## e12_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 183/215 below 200
+- retention: {'n': 215, 'free_exact': 183, 'first_correct': 215, 'free_accuracy': 0.8511627906976744, 'first_accuracy': 1.0}
+
+## e12b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 202/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 202, 'first_correct': 215, 'free_accuracy': 0.9395348837209302, 'first_accuracy': 1.0}
+
+## e12_probe
+
+- Change: Zero-shot e12 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E12 size_stop=0.906 size=0.875 color=0.969 story=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e10_probe
+
+- Change: Zero-shot e10 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E10 cold combine=0.250 mixed_story=0.375 story2=0.938 color=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e9_probe
+
+- Change: Zero-shot e9 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E9 3e=0.969 pronoun=0.844 story2=0.938 color=0.906; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e11_probe
+
+- Change: Zero-shot e11 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E11 long3=0.906 long4=0.719 color=0.938 dialogue=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## campaign_status_e12b_2026-09-18
+
+- Change: Language-bridge continued past E5 into open story QA; D3-safe experimental survivor is now E12b size-stop
+- verdict: **HOLD**
+- lesson: U16000 not replaced. TEST closed. Experimental survivor `e12_stoponly_311211/checkpoint_00050.pt` SHA `6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1`. Open TinyStories color QA/dialogue/3-entity/pronouns/roleplay/3-4-turn already worked on E5 zeroshot. Size answers now stop (`tiny.` not `tiny blue blue`). D3 202/215 first-token 215/215 induction 0.422 keyed 0.969. Color 0.969, story color 0.938, story 3e 0.969, pronoun 0.844, dialogue 0.938-1.0, instruction 1.0, long3/4 0.906/0.719, size-stop 0.906, decode stop 1.0. Killed: who/event (D3 196/195), size-stop+5-turn together (D3 183). Combine fork `e10_more_311011` D3 200 combine 0.438 mixed_story 0.406 — stalled, not primary. Still not Actual Baby: no who/event, mixed ~0.53, combine 0.25 on this ckpt, not open chat, not coding.
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e13_probe
+
+- Change: Zero-shot e13 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E13 partial mixed=0.562 combine=0.312 fact_combine=0.219 mixed_story=0.375; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e13_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 199/215 below 200
+- retention: {'n': 215, 'free_exact': 199, 'first_correct': 215, 'free_accuracy': 0.9255813953488372, 'first_accuracy': 1.0}
+
+## e13b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 193/215 below 200
+- retention: {'n': 215, 'free_exact': 193, 'first_correct': 215, 'free_accuracy': 0.8976744186046511, 'first_accuracy': 1.0}
+
+## e13c_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 200/215 induction 0.469
+- retention: {'n': 215, 'free_exact': 200, 'first_correct': 215, 'free_accuracy': 0.9302325581395349, 'first_accuracy': 1.0}
+
+## e14_probe
+
+- Change: Zero-shot e14 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E14 cold phrase=0.000 color=0.969 size_stop=0.844; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e14_probe
+
+- Change: Zero-shot e14 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E14 cold phrase=0.000 color=0.969 size_stop=0.844; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e14_probe
+
+- Change: Zero-shot e14 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E14 cold phrase=0.188 color=0.875 size_stop=0.812; decode usable=0.750 stop=1.000
+- checkpoint_sha256: b928925e9bcdb25835aaef44d9a890ee3e0d3baea6383de956d74d32b8abe954
+
+## e14b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 200/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 200, 'first_correct': 215, 'free_accuracy': 0.9302325581395349, 'first_accuracy': 1.0}
+
+## e15_probe
+
+- Change: Zero-shot e15 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E15 open=0.719 color=0.969 dialogue=0.875; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e16_probe
+
+- Change: Zero-shot e16 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E16 about=0.969 open=0.625 color=0.938; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## campaign_status_e16_2026-09-18
+
+- Change: Continued past E12 into mix/combine then open follow-ups; D3-safe experimental survivor is still E12b
+- verdict: **HOLD**
+- lesson: U16000 not replaced. TEST closed. Survivor still `e12_stoponly_311211/checkpoint_00050.pt` SHA `6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1`. D3 202/215 induction 0.422. Mix from E12 is a D3 floor: fact-combine 0.219→0.531 at D3 199 (kill); 38% mixed-only D3 193 no English move; light grouped mix D3 200 but mix unchanged. Skip extra structured after those kills. Sentence-cued replies (`e14b_sent_311411`) D3 200 phrase 0.188, one-word QA kept; more phrase mass overfit to 0. E15 `How about the {e}?` / `The {e} then?` zeroshot 0.719. E16 `What do you know about the {e}?` / `Talk about the {e}.` zeroshot 0.969. Still not Actual Baby: no who/event, combine 0.25–0.31 on E12, mix ~0.56, chat still mostly templated, not coding.
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e17_probe
+
+- Change: Zero-shot e17 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E17 partial copy=0.125 saystop=0.906 field=0.406 nostory=0.938 sent=0.000; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e17_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 199/215 below 200
+- retention: {'n': 215, 'free_exact': 199, 'first_correct': 215, 'free_accuracy': 0.9255813953488372, 'first_accuracy': 1.0}
+
+## e18_probe
+
+- Change: Zero-shot e18 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **ADVANCE**
+- lesson: E18 partial chat=0.812 role=0.812 yesno=0.000 long3=0.844; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e19_probe
+
+- Change: Zero-shot e19 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **FAIL**
+- lesson: E19 cold happened=0.000 yesno=0.000 color=0.969; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e18_probe
+
+- Change: Zero-shot e18 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E18 chat=0.812 role=0.812 reuse=0.812 long3=0.844; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e20_probe
+
+- Change: Zero-shot e20 probe on experimental checkpoint (U16000 not replaced)
+- verdict: **GRAD**
+- lesson: E20 loop_color=0.844 color=0.969; decode usable=0.750 stop=1.000
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## e17b_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **PASS**
+- lesson: D3 long-gap 202/215 induction 0.422
+- retention: {'n': 215, 'free_exact': 202, 'first_correct': 215, 'free_accuracy': 0.9395348837209302, 'first_accuracy': 1.0}
+
+## e17c_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 197/215 below 200
+- retention: {'n': 215, 'free_exact': 197, 'first_correct': 215, 'free_accuracy': 0.9162790697674419, 'first_accuracy': 1.0}
+
+## e19_retention
+
+- Change: C2+D3 retention on original long-gap after language-bridge train
+- verdict: **KILL**
+- lesson: D3 long-gap 168/215 below 200
+- retention: {'n': 215, 'free_exact': 168, 'first_correct': 215, 'free_accuracy': 0.7813953488372093, 'first_accuracy': 1.0}
+
+## campaign_status_e20_2026-09-18
+
+- Change: Continued past mix/combine into instruction, less-scripted dialogue, broader language, and a synthetic chat-loop canary. D3-safe experimental survivor is still E12b.
+- verdict: **HOLD**
+- lesson: U16000 not replaced. TEST closed. Survivor still `e12_stoponly_311211/checkpoint_00050.pt` SHA `6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1`. D3 202/215 induction 0.422. Zeroshot on E12: say-then-stop 0.906, no-story QA 0.938, one-word format 0.969, varied Human/Baby 0.812, Kid/Mom 0.812, 3-turn open 0.844, color fact-reuse 0.812, 4-turn color chat-loop 0.844. Copy listed-token is a D3 floor: 0.125→0.719 at D3 199; 14% copy D3 202 at 0.406; 20% copy 0.562 at D3 197. Sentence format stays 0 (e14 overfit). true/wrong yes-no and happened spend D3 hard (168/215 at happened 0.375). Still not Actual Baby: no who/event, no combine, no sentence replies, copy not D3-safe at GRAD, not coding.
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+
+## usable_chat
+
+- Change: Eval-only held-out 4-5 turn usable-chat pack + no-train sentence decode on E12 (U16000 not replaced)
+- verdict: **STRONG**
+- lesson: usable-chat 4+5 usable=0.857 reuse=1.0 stop=1.000; sentence PARK: park sentence decode; best light bare=0.000; heavy force_entity_is=0.875
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
+## campaign_status_usable_chat_2026-09-18
+
+- Change: Eval-only usable-chat canary on E12; no-train sentence decode; no language finetune (no ramble gap)
+- verdict: **STOP**
+- lesson: U16000 not replaced. TEST closed. Survivor still `e12_stoponly_311211/checkpoint_00050.pt` SHA `6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1`. D3 202/215 induction 0.422. Held-out 4-5 turn usable-chat (color/size/how-about/about/say-stop/refuse-story/come-back only): 42-turn usable 0.857, 4-turn 0.906 (6/8 chats full), 5-turn 0.700, fact-reuse 1.0, period-stop 1.0, rambling 0.0. Misses are size+color in one context and 5-turn/3-entity, not generic continuation. Sentence light prefixes stay one-word (0.000); `{e} is` cloze 0.875 is not an operator to keep. Park mix/combine/who/place/5-turn-train/copy-at-learn/happened/sentence-format. Actual Baby-in-closed-vocab milestone. Do not promote. Do not open TEST.
+- checkpoint_sha256: 6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1
+
