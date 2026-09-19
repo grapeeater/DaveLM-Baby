@@ -1,5 +1,5 @@
 {
-  "status": "s3 composition-first MILESTONE",
+  "status": "s4 direct-fact-sentence MILESTONE (s4m). Not promoted.",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -70,7 +70,7 @@
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
     "sha256": "0642a2f2a4044d9936cc3f930fa096ef55fc69c5e7cfe6f7c539a3c47b5fd959"
   },
-  "hypothesis": "s2m one-word 2e bind is not multi-property composition or generated sentences. Attack entity-from-property (who-bind) and unprompted short sentences with held-out templates. Do not count sentence-prefix scaffolds as success.",
+  "hypothesis": "s3s retrieves/composes but answers one word. A light 1-entity sentence dose with varied surfaces can teach expression without repeating s3b-e overwrite.",
   "parent_slice": {
     "n": 40,
     "first_top1": 1.0,
@@ -114,13 +114,13 @@
     "induction": 0.453125
   },
   "last_verify": {
-    "recipe": "s3s",
-    "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3s_compose_lock_324121\\checkpoint_00025.pt",
-    "sha256": "8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d",
-    "d3_full": 190,
-    "milestone": true,
-    "milestone_kind": "composition-first",
-    "lesson": "s2m mix hold mixed=0.969 fact_combine=0.656 story_combine=0.594; E12 English hold color=0.969 size_stop=1.000 story=1.000; s2m usable hold usable4=0.938 usable=0.905; D3 190/215; {'who_2e': 0.5, 'who_3e': 0.46875, 'mixed_3e': 0.9375, 'combine_3e': 0.21875, 'sent_exact': 0.0, 'combine_sent_exact': 0.0, 'instr_exact': 0.0, 'phrase_exact': 0.0, 'bare_sentence': 0.0, 'bare_one_word': 1.0, 'prefix_sentence': 0.0}"
+    "recipe": "s4m",
+    "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4m_compose_lock_325231\\checkpoint_00025.pt",
+    "sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5",
+    "d3_full": 185,
+    "milestone": false,
+    "milestone_kind": null,
+    "lesson": "s3s mix drop mixed=0.812 fact_combine=0.688 story_combine=0.500; E12 drop color=0.750 size_stop=1.000 story=0.906; s3s usable hold usable4=0.906 usable=0.857 stop=1.000 reuse=1.000; D3 185/215; {'who_2e': 0.5, 'who_3e': 0.5, 'mixed_3e': 0.9375, 'combine_3e': 0.3125, 'sent_exact': 0.0, 'combine_sent_exact': 0.0, 'instr_exact': 0.0, 'phrase_exact': 0.03125, 'bare_sentence': 0.375, 'bare_one_word': 0.375, 'prefix_sentence': 0.125, 'sent_1e_exact': 0.0, 'baby_sentence': 0.0}"
   },
   "s2m_parent": {
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2m_protect40_combine_323091\\checkpoint_00025.pt",
@@ -162,5 +162,96 @@
     },
     "d3": 190,
     "induction": 0.484375
+  },
+  "s3s_parent": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3s_compose_lock_324121\\checkpoint_00025.pt",
+    "sha256": "8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d"
+  },
+  "who_role": "retention, not the objective",
+  "s4": {
+    "s4a": {
+      "update": 25,
+      "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4a_compose_lock_325001\\checkpoint_00025.pt",
+      "checkpoint_sha256": "0d4fa28a1796d8d328413fb43838eafdbfe475a257a26ed019b513438b282a1b",
+      "verdict": "HOLD",
+      "lesson": "s3s mix hold mixed=0.938 fact_combine=0.656 story_combine=0.625; E12 English hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.375 who3=0.375; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.900",
+      "native": {
+        "mixed_2e": 0.9375,
+        "fact_combine": 0.65625,
+        "story_combine": 0.625,
+        "story_mixed": 0.625,
+        "color": 0.96875,
+        "size_stop": 1.0,
+        "story_color": 1.0,
+        "dialogue": 1.0
+      },
+      "sentence": {
+        "who_2e": 0.375,
+        "who_3e": 0.375,
+        "mixed_3e": 0.96875,
+        "combine_3e": 0.28125,
+        "sent_exact": 0.0,
+        "combine_sent_exact": 0.0,
+        "instr_exact": 0.0,
+        "phrase_exact": 0.0,
+        "bare_sentence": 0.0,
+        "bare_one_word": 1.0,
+        "prefix_sentence": 0.0,
+        "sent_1e_exact": 0.0,
+        "baby_sentence": 0.0
+      },
+      "d3_slice": {
+        "n": 40,
+        "first_top1": 1.0,
+        "free_exact": 0.9,
+        "tf_exact": 0.9
+      }
+    },
+    "s4c": null,
+    "s4f": {
+      "update": 25,
+      "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4f_compose_lock_325041\\checkpoint_00025.pt",
+      "checkpoint_sha256": "b93e6b8a37217e9479775efb8935639fd3aea40f8b942b9b149083c409a0a49f",
+      "verdict": "HOLD",
+      "lesson": "s3s mix hold mixed=0.875 fact_combine=0.750 story_combine=0.531; E12 English hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.469 who3=0.500; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.875",
+      "native": {
+        "mixed_2e": 0.875,
+        "fact_combine": 0.75,
+        "story_combine": 0.53125,
+        "story_mixed": 0.53125,
+        "color": 0.96875,
+        "size_stop": 1.0,
+        "story_color": 1.0,
+        "dialogue": 1.0
+      },
+      "sentence": {
+        "who_2e": 0.46875,
+        "who_3e": 0.5,
+        "mixed_3e": 0.9375,
+        "combine_3e": 0.21875,
+        "sent_exact": 0.0,
+        "combine_sent_exact": 0.0,
+        "instr_exact": 0.0,
+        "phrase_exact": 0.0,
+        "bare_sentence": 0.0,
+        "bare_one_word": 1.0,
+        "prefix_sentence": 0.0,
+        "sent_1e_exact": 0.0,
+        "baby_sentence": 0.0
+      },
+      "d3_slice": {
+        "n": 40,
+        "first_top1": 1.0,
+        "free_exact": 0.875,
+        "tf_exact": 0.875
+      }
+    },
+    "s4d": null
+  },
+  "s4m_survivor": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s4m_compose_lock_325231\\checkpoint_00025.pt",
+    "sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5",
+    "authoritative": false,
+    "promoted": false
   }
 }

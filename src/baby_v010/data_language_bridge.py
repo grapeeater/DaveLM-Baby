@@ -124,9 +124,13 @@ HOLDOUT_WHO_BIND_COLOR = (
 # answer templates differ to block worksheet copy.
 TRAIN_COMPOSE_SENT_ANSWERS = (
     " The {e} is {v}.",
+    " {e} is {v}.",
+    " The {e} looks {v}.",
 )
 HOLDOUT_COMPOSE_SENT_ANSWERS = (
-    " {e} is {v}.",
+    " That {e} is {v}.",
+    " {e} looks {v}.",
+    " This {e} is {v}.",
 )
 TRAIN_COMPOSE_COMBINE_SENT_ANSWERS = (
     " The {s} one is {c}.",
@@ -1280,12 +1284,15 @@ def make_compose_sentence_item(
     surface: str = "train",
     combine: bool = False,
     instruct: bool = False,
+    chat: bool = False,
 ) -> dict:
     """Ordinary color/size question; gold is a short sentence, not one word.
 
     instruct=True adds a sentence-format prefix (scaffold control, not success).
+    n_entities=1 is the easy one-fact form (learn expression before distractors).
+    chat=True wraps the prompt in the Human/Baby decode surface (not a bare win).
     """
-    n_entities = max(2, min(n_entities, len(ENTITIES)))
+    n_entities = max(1, min(n_entities, len(ENTITIES)))
     entities = list(_sample(rng, ENTITIES, n_entities))
     colors = list(_sample(rng, VALUES, n_entities))
     sizes = list(_sample(rng, SIZES, n_entities))
@@ -1297,7 +1304,8 @@ def make_compose_sentence_item(
     parts: list[str] = []
     for entity, color, size in rows:
         parts.append(rng.choice(color_facts).format(e=entity, v=color))
-        parts.append(rng.choice(size_facts).format(e=entity, v=size))
+        if n_entities > 1:
+            parts.append(rng.choice(size_facts).format(e=entity, v=size))
     rng.shuffle(parts)
     fact_text = " ".join(parts)
     if combine:
@@ -1326,7 +1334,11 @@ def make_compose_sentence_item(
         answer = " " + answer
     if not answer.endswith("."):
         answer = answer + "."
-    prompt = fact_text + " " + query
+    if chat:
+        prompt = f"{fact_text}\nHuman: {query}\nBaby:"
+        family = family + "_chat"
+    else:
+        prompt = fact_text + " " + query
     prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
     if len(answer_ids) < 3:
         raise RuntimeError(f"compose sentence too short: {answer!r}")
@@ -1345,6 +1357,60 @@ def make_compose_sentence_item(
             "attr": attr,
             "instruct": instruct,
             "combine": combine,
+            "n_entities": n_entities,
+        },
+    )
+
+
+def make_who_sentence_item(
+    rng: random.Random,
+    tokenizer,
+    *,
+    n_entities: int = 2,
+    surface: str = "train",
+) -> dict:
+    """WHO question; gold is a short sentence, not the one-word entity."""
+    n_entities = max(2, min(n_entities, len(WHO_ENTITIES)))
+    entities = list(_sample(rng, WHO_ENTITIES, n_entities))
+    colors = list(_sample(rng, VALUES, n_entities))
+    sizes = list(_sample(rng, SIZES, n_entities))
+    color_facts = TRAIN_FACTS if surface == "train" else HOLDOUT_FACTS
+    size_facts = TRAIN_SIZE_FACTS if surface == "train" else HOLDOUT_SIZE_FACTS
+    rows = list(zip(entities, colors, sizes))
+    rng.shuffle(rows)
+    query_e, query_c, query_s = rng.choice(rows)
+    parts: list[str] = []
+    for entity, color, size in rows:
+        parts.append(rng.choice(color_facts).format(e=entity, v=color))
+        parts.append(rng.choice(size_facts).format(e=entity, v=size))
+    rng.shuffle(parts)
+    fact_text = " ".join(parts)
+    query_pool = TRAIN_WHO_BIND_COLOR if surface == "train" else HOLDOUT_WHO_BIND_COLOR
+    query = rng.choice(query_pool).format(c=query_c)
+    answer = rng.choice(TRAIN_COMPOSE_SENT_ANSWERS if surface == "train" else HOLDOUT_COMPOSE_SENT_ANSWERS).format(
+        e=query_e, v=query_c
+    )
+    if not answer.startswith(" "):
+        answer = " " + answer
+    if not answer.endswith("."):
+        answer = answer + "."
+    prompt = fact_text + " " + query
+    prompt_ids, answer_ids = encode_split(tokenizer, prompt, answer)
+    return _item(
+        prompt_ids=prompt_ids,
+        answer_ids=answer_ids,
+        kind="keyed",
+        family="who_sent",
+        surface=surface,
+        variant=f"who_sent_{n_entities}e",
+        extra={
+            "entity": query_e,
+            "value_text": query_c,
+            "cue_text": query_c,
+            "prompt_text": prompt,
+            "answer_text": answer,
+            "attr": "who_color",
+            "n_entities": n_entities,
         },
     )
 
@@ -2021,6 +2087,9 @@ def build_s3_panels(tokenizer, seed: int = 324001, n: int = 32) -> dict[str, lis
         "mixed_3e_heldout": [make_mixed_item(rng, tokenizer, n_entities=3, surface="heldout") for _ in range(n)],
         "fact_combine_3e_heldout": [
             make_mixed_item(rng, tokenizer, n_entities=3, surface="heldout", combine=True) for _ in range(n)
+        ],
+        "compose_sent_1e_heldout": [
+            make_compose_sentence_item(rng, tokenizer, n_entities=1, surface="heldout", combine=False) for _ in range(n)
         ],
         "compose_sent_heldout": [make_compose_sentence_item(rng, tokenizer, surface="heldout", combine=False) for _ in range(n)],
         "compose_combine_sent_heldout": [

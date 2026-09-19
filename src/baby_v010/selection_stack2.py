@@ -69,6 +69,8 @@ S2I50_SURVIVOR = OUT / "s2i_protect40_combine_323051" / "checkpoint_00050.pt"
 S2I50_SURVIVOR_SHA = "c2137471f1d53adce3fd272794380b140f6cd12606ed706f6bffc0d95e1e1659"
 S2M_SURVIVOR = OUT / "s2m_protect40_combine_323091" / "checkpoint_00025.pt"
 S2M_SURVIVOR_SHA = "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9"
+S3S_SURVIVOR = OUT / "s3s_compose_lock_324121" / "checkpoint_00025.pt"
+S3S_SURVIVOR_SHA = "8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d"
 S2A_D3_SLICE = 0.825
 S2A_D3_FULL = 169
 S2A_MIXED = 0.875
@@ -481,6 +483,159 @@ RECIPES = {
         "lr_scale": 0.5,
         "note": "From s3s (who2=0.50, combine 0.656): s3r-style combine/D3 lock while rehearsing who.",
     },
+    "s4a": {
+        "seed": 325001,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.08,
+        "sent_kind": "easy",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Light 8% 1-entity varied-sentence CE on the s3s diet. Expression, not overwrite.",
+    },
+    "s4b": {
+        "seed": 325011,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.08,
+        "sent_kind": "bind",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Light 8% 2-entity sentence CE. Only after 1e expression exists.",
+    },
+    "s4c": {
+        "seed": 325021,
+        "mix": "compose_lock",
+        "language_p": 0.30,
+        "structured_p": 0.25,
+        "sentence_p": 0.15,
+        "sent_kind": "easy",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "15% 1-entity sentence CE. Still far below the failed s3b/s3c dose.",
+    },
+    "s4d": {
+        "seed": 325031,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.08,
+        "sent_kind": "instr",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Diagnostic: 8% instructed 1e sentences. Prefix gain without bare is not a win.",
+    },
+    "s4j": {
+        "seed": 325101,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.08,
+        "sent_kind": "easy",
+        "updates": 75,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Longer 8% 1e sentence rehearsal from s3s. 25-update canaries were too few examples, not a mechanism fail.",
+    },
+    "s4p": {
+        "seed": 325201,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "easy",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Mix-protected 25% 1e sentence pulse. Steal language/structured, keep compose_lock. Not s3b mix replacement.",
+    },
+    "s4px": {
+        "seed": 325211,
+        "mix": "compose_lock",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "sentence_p": 0.25,
+        "sent_kind": "easy",
+        "updates": 50,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Extend s4p +50. Train-surface first token was rank 6-8, not fitted yet. English survived the first pulse.",
+    },
+    "s4l": {
+        "seed": 325221,
+        "mix": "compose_lock",
+        "language_p": 0.35,
+        "structured_p": 0.30,
+        "sentence_p": 0.08,
+        "sent_kind": "easy",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "Lock from s4px u50: restore one-word English while rehearsing 8% 1e sentences so bare expression does not vanish.",
+    },
+    "s4m": {
+        "seed": 325231,
+        "mix": "compose_lock",
+        "language_p": 0.32,
+        "structured_p": 0.28,
+        "sentence_p": 0.12,
+        "sent_kind": "easy",
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s3s",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s4l: raise sentence rehearsal to 12% so bare does not freeze at 2/8 while English is returning.",
+    },
 }
 
 
@@ -494,6 +649,8 @@ def parent_checkpoint(recipe: dict) -> Path:
         return S2I50_SURVIVOR
     if parent == "s2m":
         return S2M_SURVIVOR
+    if parent == "s3s":
+        return S3S_SURVIVOR
     return E12_SURVIVOR
 
 
@@ -757,7 +914,7 @@ def save_stack2_checkpoint(path: Path, model, optimizer, config, update: int, se
     return digest(path)
 
 
-def require_identities(*, require_s2a: bool = False, require_s2m: bool = False) -> None:
+def require_identities(*, require_s2a: bool = False, require_s2m: bool = False, require_s3s: bool = False) -> None:
     if digest(PARENT) != PARENT_SHA:
         raise RuntimeError("U16000 hash mismatch")
     if digest(E12_SURVIVOR) != E12_SURVIVOR_SHA:
@@ -774,6 +931,11 @@ def require_identities(*, require_s2a: bool = False, require_s2m: bool = False) 
             raise RuntimeError(f"missing s2m parent {S2M_SURVIVOR}")
         if digest(S2M_SURVIVOR) != S2M_SURVIVOR_SHA:
             raise RuntimeError("s2m survivor hash mismatch")
+    if require_s3s:
+        if not S3S_SURVIVOR.exists():
+            raise RuntimeError(f"missing s3s parent {S3S_SURVIVOR}")
+        if digest(S3S_SURVIVOR) != S3S_SURVIVOR_SHA:
+            raise RuntimeError("s3s survivor hash mismatch")
 
 
 def cheap_d3_slice(model, device) -> dict:
@@ -898,6 +1060,7 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
         S2I25_SURVIVOR: S2I25_SURVIVOR_SHA,
         S2I50_SURVIVOR: S2I50_SURVIVOR_SHA,
         S2M_SURVIVOR: S2M_SURVIVOR_SHA,
+        S3S_SURVIVOR: S3S_SURVIVOR_SHA,
     }.get(start)
     if expected is not None and digest(start) != expected:
         raise RuntimeError(f"parent hash mismatch for {start}")
@@ -913,6 +1076,8 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
     panels = build_e13_panels(tokenizer, n=32)
     language_p = float(recipe["language_p"])
     structured_p = float(recipe["structured_p"])
+    sentence_p = float(recipe.get("sentence_p") or 0.0)
+    sent_kind = str(recipe.get("sent_kind") or "easy")
     updates = int(recipe["updates"])
     eval_every = int(recipe["eval_every"])
     mix = str(recipe["mix"])
@@ -937,6 +1102,14 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
             logits = model(x)
             loss = F.cross_entropy(logits[mask], y[mask])
             task = "structured_remainder" if recipe.get("remainder_span") else "structured"
+        elif sentence_p > 0 and draw < language_p + structured_p + sentence_p:
+            from .selection_stack2_s4 import sample_s4_item
+
+            items = [sample_s4_item(rng, tokenizer, sent_kind) for _ in range(BATCH)]
+            x, y, mask = pack_bridge_batch(items, device)
+            logits = model(x)
+            loss = F.cross_entropy(logits[mask], y[mask])
+            task = "sentence"
         else:
             items = [sample_s2_item(rng, tokenizer, mix) for _ in range(BATCH)]
             x, y, mask = pack_bridge_batch(items, device)
@@ -1015,7 +1188,12 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
             print(json.dumps({"phase": f"{recipe_id}_eval", "update": update, **extra}, default=str), flush=True)
             best = row
             slice_exact = float((row.get("d3_slice") or {}).get("free_exact") or 0.0)
-            if recipe.get("parent") == "s2m":
+            if recipe.get("parent") == "s3s":
+                from .selection_stack2_s4 import S3S_D3_SLICE, mix_holds_s3s
+
+                mix_ok_hold, _mix_hold = mix_holds_s3s(native)
+                d3_floor = S3S_D3_SLICE - D3_SLICE_KILL
+            elif recipe.get("parent") == "s2m":
                 from .selection_stack2_s3 import S2M_D3_SLICE, mix_holds_s2m
 
                 mix_ok_hold, _mix_hold = mix_holds_s2m(native)
@@ -1470,7 +1648,7 @@ def run_loop(device) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover", "compose"), default="run")
+    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover", "compose", "sentence"), default="run")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--recipe", default="s2a", choices=tuple(RECIPES))
     parser.add_argument("--resume", type=Path)
@@ -1478,8 +1656,10 @@ def main() -> None:
     args = parser.parse_args()
     device = resolve_device(args.device)
     require_identities(
-        require_s2a=args.mode in {"recover", "compose"} or RECIPES.get(args.recipe, {}).get("parent") in {"s2a", "s2m"},
-        require_s2m=args.mode == "compose" or RECIPES.get(args.recipe, {}).get("parent") == "s2m",
+        require_s2a=args.mode in {"recover", "compose", "sentence"}
+        or RECIPES.get(args.recipe, {}).get("parent") in {"s2a", "s2m", "s3s"},
+        require_s2m=args.mode in {"compose", "sentence"} or RECIPES.get(args.recipe, {}).get("parent") in {"s2m", "s3s"},
+        require_s3s=args.mode == "sentence" or RECIPES.get(args.recipe, {}).get("parent") == "s3s",
     )
     ledger_init()
     if args.mode == "probe":
@@ -1499,6 +1679,11 @@ def main() -> None:
         from .selection_stack2_s3 import run_compose_loop
 
         run_compose_loop(device)
+        return
+    if args.mode == "sentence":
+        from .selection_stack2_s4 import run_sentence_loop
+
+        run_sentence_loop(device)
         return
     if args.mode == "usable":
         if args.resume is None:

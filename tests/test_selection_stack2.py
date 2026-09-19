@@ -13,6 +13,7 @@ from src.baby_v010.selection_stack2 import (
     S2I25_SURVIVOR,
     S2I50_SURVIVOR,
     S2M_SURVIVOR,
+    S3S_SURVIVOR,
     adjudicate_recover,
     english_native_holds,
     mix_gate,
@@ -234,3 +235,89 @@ def test_usable_holds_s2a() -> None:
         "autoregressive_4turn": {"usable_turn": 0.80, "period_stop": 1.0, "fact_reuse": 1.0, "rambling": 0.0},
     }
     assert usable_holds_s2a(drop)[0] is False
+
+
+def test_s4_sentence_parents_and_items() -> None:
+    from src.baby_v010.selection_stack2_s4 import adjudicate_sentence, sample_s4_item
+
+    assert parent_checkpoint(RECIPES["s4a"]) == S3S_SURVIVOR
+    assert parent_checkpoint(RECIPES["s4c"]) == S3S_SURVIVOR
+    assert RECIPES["s4a"]["sentence_p"] == 0.08
+    assert RECIPES["s4c"]["sentence_p"] == 0.15
+    assert RECIPES["s4a"]["sent_kind"] == "easy"
+    tokenizer = load_tokenizer()
+    rng = random.Random(325001)
+    easy = sample_s4_item(rng, tokenizer, "easy")
+    assert easy.get("query_position") is None
+    assert easy["n_entities"] == 1
+    assert easy["family"].startswith("compose_sent")
+    bind = sample_s4_item(rng, tokenizer, "bind")
+    assert bind["n_entities"] == 2
+    native = {
+        "qa_2fact_heldout": {"first_top1": 0.97},
+        "size_stop_heldout": {"free_exact": 1.0},
+        "story_color_heldout": {"first_top1": 1.0},
+        "mixed_2e_heldout": {"first_top1": 0.97},
+        "fact_combine_heldout": {"first_top1": 0.656},
+        "story_combine_heldout": {"first_top1": 0.59},
+    }
+    compose = {
+        "who_bind_2e_heldout": {"first_top1": 0.50},
+        "who_bind_3e_heldout": {"first_top1": 0.47},
+        "mixed_3e_heldout": {"first_top1": 0.94},
+        "fact_combine_3e_heldout": {"first_top1": 0.22},
+        "compose_sent_heldout": {"free_exact": 0.0},
+        "compose_sent_1e_heldout": {"free_exact": 0.0},
+    }
+    parent = {"bare_sentence": 0.0, "sent_1e_exact": 0.0, "who_2e": 0.50, "who_3e": 0.47}
+    zero = {
+        "native": native,
+        "compose": compose,
+        "sentence": {"operators": {"bare": {"sentence_ok": 0.0, "one_word_color": 1.0}, "sent_prefix": {"sentence_ok": 0.0}}},
+        "d3_slice": {"free_exact": 0.875},
+    }
+    assert adjudicate_sentence(zero, parent=parent)[0] == "HOLD"
+    signal = {
+        **zero,
+        "sentence": {"operators": {"bare": {"sentence_ok": 0.375, "one_word_color": 0.5}, "sent_prefix": {"sentence_ok": 0.375}}},
+        "compose": {**compose, "compose_sent_1e_heldout": {"free_exact": 0.31}},
+    }
+    assert adjudicate_sentence(signal, parent=parent)[0] == "ADVANCE"
+    scaffold = {
+        **zero,
+        "sentence": {"operators": {"bare": {"sentence_ok": 0.0, "one_word_color": 1.0}, "sent_prefix": {"sentence_ok": 0.50}}},
+    }
+    assert adjudicate_sentence(scaffold, parent=parent)[0] == "HOLD"
+    dead = {**zero, "native": {**native, "qa_2fact_heldout": {"first_top1": 0.40}}}
+    assert adjudicate_sentence(dead, parent=parent)[0] == "KILL"
+
+
+def test_s4_direct_fact_sentence_milestone_allows_style_mix() -> None:
+    from src.baby_v010.selection_stack2_s4 import sentence_milestone
+
+    native = {
+        "qa_2fact_heldout": {"first_top1": 0.75},
+        "size_stop_heldout": {"free_exact": 1.0},
+        "story_color_heldout": {"first_top1": 0.91},
+        "mixed_2e_heldout": {"first_top1": 0.8125},
+        "fact_combine_heldout": {"first_top1": 0.6875},
+        "story_combine_heldout": {"first_top1": 0.50},
+    }
+    compose = {
+        "who_bind_2e_heldout": {"first_top1": 0.50},
+        "who_bind_3e_heldout": {"first_top1": 0.50},
+        "mixed_3e_heldout": {"first_top1": 0.94},
+        "compose_sent_heldout": {"free_exact": 0.0},
+        "compose_sent_1e_heldout": {"free_exact": 0.0},
+    }
+    sentence = {"operators": {"bare": {"sentence_ok": 0.375, "one_word_color": 0.375}, "sent_prefix": {"sentence_ok": 0.125}}}
+    usable = {
+        "autoregressive": {"usable_turn": 0.857, "period_stop": 1.0, "fact_reuse": 1.0, "rambling": 0.0},
+        "autoregressive_4turn": {"usable_turn": 0.906, "period_stop": 1.0, "fact_reuse": 1.0, "rambling": 0.0},
+    }
+    ok, kind = sentence_milestone(185, native, usable, compose, sentence)
+    assert ok is True
+    assert kind == "direct-fact-sentence"
+    dead = dict(native)
+    dead["qa_2fact_heldout"] = {"first_top1": 0.40}
+    assert sentence_milestone(185, dead, usable, compose, sentence)[0] is False

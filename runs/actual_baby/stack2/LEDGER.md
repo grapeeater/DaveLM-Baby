@@ -528,3 +528,162 @@ not a sole kill switch.
 - recipe: s3s
 - update: 25
 
+## s4a_u00025
+
+- Change: Light 8% 1-entity varied-sentence CE on the s3s diet. Expression, not overwrite.
+- verdict: **HOLD**
+- lesson: s3s mix hold mixed=0.938 fact_combine=0.656 story_combine=0.625; E12 English hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.375 who3=0.375; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.900
+- native: {'mixed_2e': 0.9375, 'fact_combine': 0.65625, 'story_combine': 0.625, 'story_mixed': 0.625, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 0d4fa28a1796d8d328413fb43838eafdbfe475a257a26ed019b513438b282a1b
+- recipe: s4a
+- update: 25
+
+## s4c_u00025
+
+- Change: 15% 1-entity sentence CE. Still far below the failed s3b/s3c dose.
+- verdict: **KILL**
+- lesson: s3s mix drop mixed=0.875 fact_combine=0.500 story_combine=0.500; E12 English hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.469 who3=0.438; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.875
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.5, 'story_combine': 0.5, 'story_mixed': 0.5625, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 0.9375}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: d483444a646a93a2da264515b16dca2b23a537e3599c57ac397676e42a6549d6
+- recipe: s4c
+- update: 25
+
+## s4f_u00025
+
+- Change: s4a/prior killed retention. Same 8% 1e dose at quarter LR.
+- verdict: **HOLD**
+- lesson: s3s mix hold mixed=0.875 fact_combine=0.750 story_combine=0.531; E12 English hold color=0.969 size_stop=1.000 story=1.000; s3s who hold who2=0.469 who3=0.500; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.875
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.75, 'story_combine': 0.53125, 'story_mixed': 0.53125, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: b93e6b8a37217e9479775efb8935639fd3aea40f8b942b9b149083c409a0a49f
+- recipe: s4f
+- update: 25
+
+## s4d_u00025
+
+- Change: Diagnostic: 8% instructed 1e sentences. Prefix gain without bare is not a win.
+- verdict: **KILL**
+- lesson: s3s mix drop mixed=0.906 fact_combine=0.562 story_combine=0.375; E12 English hold color=1.000 size_stop=1.000 story=0.969; s3s who hold who2=0.469 who3=0.438; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.850
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.5625, 'story_combine': 0.375, 'story_mixed': 0.5, 'color': 1.0, 'size_stop': 1.0, 'story_color': 0.96875, 'dialogue': 0.96875}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.875}
+- checkpoint_sha256: 30d52ee3ec211fb3182810908cefdf9e1b6842b3753e70e0c45cee212dfec800
+- recipe: s4d
+- update: 25
+
+## s4j_u00025
+
+- Change: Longer 8% 1e sentence rehearsal from s3s. 25-update canaries were too few examples, not a mechanism fail.
+- verdict: **HOLD**
+- lesson: s3s mix hold mixed=0.938 fact_combine=0.656 story_combine=0.594; E12 English hold color=1.000 size_stop=1.000 story=1.000; s3s who hold who2=0.438 who3=0.438; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.850
+- native: {'mixed_2e': 0.9375, 'fact_combine': 0.65625, 'story_combine': 0.59375, 'story_mixed': 0.625, 'color': 1.0, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.875}
+- checkpoint_sha256: 63291cd62096f322fdce0209003b91636bd51bdc831f6aa359e70202f99d7e07
+- recipe: s4j
+- update: 25
+
+## s4j_u00050
+
+- Change: Longer 8% 1e sentence rehearsal from s3s. 25-update canaries were too few examples, not a mechanism fail.
+- verdict: **HOLD**
+- lesson: s3s mix hold mixed=0.875 fact_combine=0.781 story_combine=0.469; E12 English hold color=1.000 size_stop=1.000 story=1.000; s3s who hold who2=0.469 who3=0.344; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.875
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.78125, 'story_combine': 0.46875, 'story_mixed': 0.5625, 'color': 1.0, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: c1001079a3736ed8dec07880e073ee9e632467ebccab35f72210ca7223b753bb
+- recipe: s4j
+- update: 50
+
+## s4j_u00075
+
+- Change: Longer 8% 1e sentence rehearsal from s3s. 25-update canaries were too few examples, not a mechanism fail.
+- verdict: **KILL**
+- lesson: s3s mix hold mixed=0.875 fact_combine=0.625 story_combine=0.312; E12 English hold color=1.000 size_stop=0.969 story=1.000; s3s who drop who2=0.344 who3=0.500; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.875
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.625, 'story_combine': 0.3125, 'story_mixed': 0.5, 'color': 1.0, 'size_stop': 0.96875, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: 9c679e9a7a6218710e2f84c73e31f8f5c4809bc93cc8acd9e034425a759c2b6a
+- recipe: s4j
+- update: 75
+
+## s4p_u00025
+
+- Change: Mix-protected 25% 1e sentence pulse. Steal language/structured, keep compose_lock. Not s3b mix replacement.
+- verdict: **KILL**
+- lesson: s3s mix hold mixed=0.938 fact_combine=0.656 story_combine=0.562; E12 English hold color=1.000 size_stop=1.000 story=1.000; s3s who drop who2=0.344 who3=0.469; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.900
+- native: {'mixed_2e': 0.9375, 'fact_combine': 0.65625, 'story_combine': 0.5625, 'story_mixed': 0.59375, 'color': 1.0, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 9e21125e3f487e7050cd420bd71102c2aa299390130d2e94ffa5b7972147843b
+- recipe: s4p
+- update: 25
+
+## s4px_u00025
+
+- Change: Extend s4p +50. Train-surface first token was rank 6-8, not fitted yet. English survived the first pulse.
+- verdict: **HOLD**
+- lesson: s3s mix hold mixed=0.938 fact_combine=0.656 story_combine=0.531; E12 English hold color=1.000 size_stop=1.000 story=0.938; s3s who hold who2=0.469 who3=0.438; bare=0.000 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=1.000 D3 slice 0.875
+- native: {'mixed_2e': 0.9375, 'fact_combine': 0.65625, 'story_combine': 0.53125, 'story_mixed': 0.6875, 'color': 1.0, 'size_stop': 1.0, 'story_color': 0.9375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: 6420c7bacc48bd63aff2f03fb9b932515a60ec36a6ab2892e4fdd8cd8d2b0b0b
+- recipe: s4px
+- update: 25
+
+## s4px_u00050
+
+- Change: Extend s4p +50. Train-surface first token was rank 6-8, not fitted yet. English survived the first pulse.
+- verdict: **KILL**
+- lesson: s3s mix drop mixed=0.812 fact_combine=0.656 story_combine=0.531; E12 collapse color=0.625 size_stop=1.000 story=0.594; s3s who drop who2=0.344 who3=0.406; bare=0.500 prefix=0.125 sent_1e=0.000 sent_2e=0.000 one_word=0.125 D3 slice 0.875
+- native: {'mixed_2e': 0.8125, 'fact_combine': 0.65625, 'story_combine': 0.53125, 'story_mixed': 0.5, 'color': 0.625, 'size_stop': 1.0, 'story_color': 0.59375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.9}
+- checkpoint_sha256: 96fbd2b24f87a3e9be294b11f2ccc3176fbca48b28b061cd4da0cdf44b2b540a
+- recipe: s4px
+- update: 50
+
+## s4l_u00025
+
+- Change: Lock from s4px u50: restore one-word English while rehearsing 8% 1e sentences so bare expression does not vanish.
+- verdict: **KILL**
+- lesson: s3s mix drop mixed=0.875 fact_combine=0.594 story_combine=0.531; E12 drop color=0.844 size_stop=1.000 story=0.875; s3s who hold who2=0.406 who3=0.406; bare=0.250 prefix=0.000 sent_1e=0.000 sent_2e=0.000 one_word=0.625 D3 slice 0.900
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.59375, 'story_combine': 0.53125, 'story_mixed': 0.5625, 'color': 0.84375, 'size_stop': 1.0, 'story_color': 0.875, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 54b079ecafee3b759ce347c7144d4ac801fdc530546e79f474744555eef8cd5d
+- recipe: s4l
+- update: 25
+
+## s4l_verify_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 192/215 induction 0.547 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 192, 'first_correct': 215, 'free_accuracy': 0.8930232558139535, 'first_accuracy': 1.0}
+- induction: 0.546875
+
+## s4m_u00025
+
+- Change: From s4l: raise sentence rehearsal to 12% so bare does not freeze at 2/8 while English is returning.
+- verdict: **KILL**
+- lesson: s3s mix drop mixed=0.812 fact_combine=0.688 story_combine=0.500; E12 drop color=0.750 size_stop=1.000 story=0.906; s3s who hold who2=0.500 who3=0.500; bare=0.375 prefix=0.125 sent_1e=0.000 sent_2e=0.000 one_word=0.375 D3 slice 0.900
+- native: {'mixed_2e': 0.8125, 'fact_combine': 0.6875, 'story_combine': 0.5, 'story_mixed': 0.5625, 'color': 0.75, 'size_stop': 1.0, 'story_color': 0.90625, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5
+- recipe: s4m
+- update: 25
+
+## s4m_verify_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 185/215 induction 0.547 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 185, 'first_correct': 215, 'free_accuracy': 0.8604651162790697, 'first_accuracy': 1.0}
+- induction: 0.546875
+
+## s4m_milestone
+
+- Change: Direct-fact short English from s3s. Bare sentence_ok 0->0.375 on unscaffolded held-out questions. Not promoted.
+- verdict: **SURVIVE**
+- lesson: bare=0.375 prefix=0.125 who=0.500/0.500 combine=0.688 usable4=0.906 stop=1 reuse=1 D3 185/215 first=215. Color first_top1 0.75 is style mix. 2e/WHO sentences unsolved.
+- d3: {'n': 215, 'free_exact': 185, 'first_correct': 215}
+- induction: 0.546875
+- checkpoint_sha256: 4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5
+- recipe: s4m
+- update: 25
+

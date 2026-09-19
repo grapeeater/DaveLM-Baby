@@ -27,6 +27,7 @@ from src.baby_v010.data_language_bridge import (
     make_story_item,
     make_story_mixed_item,
     make_who_bind_item,
+    make_who_sentence_item,
     make_longturn_item,
     make_roleplay_item,
     make_syntax_item,
@@ -677,8 +678,20 @@ def test_who_bind_and_compose_sentence_are_gold_free() -> None:
     assert any(prefix.strip() in instr["prompt_text"] for prefix in HOLDOUT_FORMAT_SENT_PREFIXES) or "sentence" in instr["prompt_text"].lower()
     assert set(TRAIN_WHO_BIND_SIZE).isdisjoint(HOLDOUT_WHO_BIND_SIZE)
     assert set(TRAIN_COMPOSE_SENT_ANSWERS).isdisjoint(HOLDOUT_COMPOSE_SENT_ANSWERS)
-    assert train_sent["answer_text"].strip().startswith("The ")
-    assert not sent["answer_text"].strip().startswith("The ")
+    train_forms = {
+        tmpl.format(e=train_sent["entity"], v=train_sent["value_text"]).strip() for tmpl in TRAIN_COMPOSE_SENT_ANSWERS
+    }
+    hold_forms = {tmpl.format(e=sent["entity"], v=sent["value_text"]).strip() for tmpl in HOLDOUT_COMPOSE_SENT_ANSWERS}
+    assert train_sent["answer_text"].strip() in train_forms
+    assert sent["answer_text"].strip() in hold_forms
+    easy = make_compose_sentence_item(rng, tokenizer, n_entities=1, surface="train")
+    assert easy["n_entities"] == 1
+    assert easy.get("query_position") is None
+    assert len(easy["target"]) >= 3
+    who_sent = make_who_sentence_item(rng, tokenizer, n_entities=2, surface="heldout")
+    assert who_sent.get("query_position") is None
+    assert who_sent["family"] == "who_sent"
+    assert who_sent["answer_text"].endswith(".")
     mixed3 = make_mixed_item(rng, tokenizer, n_entities=3, surface="heldout", combine=True)
     assert mixed3.get("query_position") is None
     assert mixed3["family"] == "fact_combine"
