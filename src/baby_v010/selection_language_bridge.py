@@ -831,11 +831,14 @@ SENTENCE_OPERATORS = (
 LIGHT_SENTENCE_OPS = frozenset({"bare", "sent_prefix", "short_prefix", "baby", "force_the"})
 
 
-def run_sentence_decode(model, tokenizer, device) -> dict:
+def run_sentence_decode(model, tokenizer, device, *, include: tuple[str, ...] | None = None) -> dict:
     pack = build_sentence_decode_pack()
-    by_op: dict[str, list[dict]] = {name: [] for name, _template, _lead in SENTENCE_OPERATORS}
+    wanted = tuple(name for name, _t, _l in SENTENCE_OPERATORS if include is None or name in include)
+    by_op: dict[str, list[dict]] = {name: [] for name in wanted}
     for item in pack:
         for name, template, lead in SENTENCE_OPERATORS:
+            if name not in by_op:
+                continue
             prompt = template.format(facts=item["facts"], query=item["query"], entity=item["entity"])
             if name == "force_entity_is":
                 lead_text = f" {item['entity']} is"
@@ -873,18 +876,26 @@ def run_sentence_decode(model, tokenizer, device) -> dict:
             "light": name in LIGHT_SENTENCE_OPS,
             "rows": rows,
         }
-    light_best = max((name for name in operators if operators[name]["light"]), key=lambda name: operators[name]["sentence_ok"])
+    light_ops = [name for name in operators if operators[name]["light"]]
+    if not light_ops:
+        return {
+            "id": "sentence_decode",
+            "verdict": "PARK",
+            "lesson": "no light sentence operators scored",
+            "operators": operators,
+            "keep_operator": None,
+        }
+    light_best = max(light_ops, key=lambda name: operators[name]["sentence_ok"])
     light_rate = float(operators[light_best]["sentence_ok"])
     keep = light_rate >= SENTENCE_LIGHT_GATE
-    heavy_best = max((name for name in operators if not operators[name]["light"]), key=lambda name: operators[name]["sentence_ok"])
+    heavy_ops = [name for name in operators if not operators[name]["light"]]
+    heavy_best = max(heavy_ops, key=lambda name: operators[name]["sentence_ok"]) if heavy_ops else None
     if keep:
         lesson = f"keep operator {light_best} sentence_ok={light_rate:.3f}"
         verdict = "KEEP"
     else:
-        lesson = (
-            f"park sentence decode; best light {light_best}={light_rate:.3f}; "
-            f"heavy {heavy_best}={operators[heavy_best]['sentence_ok']:.3f}"
-        )
+        heavy_note = "" if heavy_best is None else f"; heavy {heavy_best}={operators[heavy_best]['sentence_ok']:.3f}"
+        lesson = f"park sentence decode; best light {light_best}={light_rate:.3f}{heavy_note}"
         verdict = "PARK"
     return {
         "id": "sentence_decode",

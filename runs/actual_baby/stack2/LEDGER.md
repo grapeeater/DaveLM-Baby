@@ -295,3 +295,236 @@ not a sole kill switch.
 - lesson: U16000 not replaced. TEST closed. s2a not promoted. Experimental recover survivor `runs/actual_baby/stack2/s2m_protect40_combine_323091/checkpoint_00025.pt` SHA `bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9`. Recipe s2m from s2a: 30% language + 25% remainder-span structured + 45% protect40 mix, 25 updates. D3 169→197/215 first-token 215/215 induction 0.469→0.453. Mix held mixed 0.875, fact-combine 0.656→0.719, story-combine 0.438→0.562, story-mixed 0.500→0.625. Usable-chat 4-turn 0.969 held, overall 0.952→0.929 (inside 0.05 bar), period-stop 1.0, fact-reuse 1.0, color 0.969, size-stop 1.0. Mix-off pulses (s2g/s2i/s2j) lift D3 but tax combine; locking from s2i@50 did not beat keep-mix remainder-span. Do not promote.
 - checkpoint_sha256: bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9
 
+## s3a_u00025
+
+- Change: From s2m: who-bind + 3-entity mix/combine. Keep 20/20/60 language/structured/mix.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.906 fact_combine=0.656 story_combine=0.406; E12 English hold color=1.000 size_stop=0.969 story=0.938; who2=0.438 who3=0.312 mixed3=0.875 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.850
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.65625, 'story_combine': 0.40625, 'story_mixed': 0.59375, 'color': 1.0, 'size_stop': 0.96875, 'story_color': 0.9375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.85}
+- checkpoint_sha256: d73ab2d9789a07ec3da5206fd7dbf104c48bd290c6f909d91f38372c55e6e7de
+- recipe: s3a
+- update: 25
+
+## s3b_u00025
+
+- Change: From s2m: unprompted short-sentence answers (held-out templates). No 'answer in a sentence' prefix.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.688 fact_combine=0.438 story_combine=0.406; E12 drop color=0.781 size_stop=1.000 story=0.500; who2=0.062 who3=0.000 mixed3=0.750 sent_exact=0.000 bare=0.125 prefix=0.125; D3 slice 0.950
+- native: {'mixed_2e': 0.6875, 'fact_combine': 0.4375, 'story_combine': 0.40625, 'story_mixed': 0.375, 'color': 0.78125, 'size_stop': 1.0, 'story_color': 0.5, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.95, 'tf_exact': 0.95}
+- checkpoint_sha256: 811f266a5d3746d39885ddf41a913344ac171f8778d997fb091d90ce1c902b03
+- recipe: s3b
+- update: 25
+
+## s3c_u00025
+
+- Change: From s2m: who-bind + unprompted sentences together.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.656 fact_combine=0.250 story_combine=0.312; E12 collapse color=0.531 size_stop=0.969 story=0.281; who2=0.125 who3=0.312 mixed3=0.750 sent_exact=0.000 bare=0.250 prefix=0.250; D3 slice 0.950
+- native: {'mixed_2e': 0.65625, 'fact_combine': 0.25, 'story_combine': 0.3125, 'story_mixed': 0.375, 'color': 0.53125, 'size_stop': 0.96875, 'story_color': 0.28125, 'dialogue': 0.9375}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.95, 'tf_exact': 0.95}
+- checkpoint_sha256: b4eb9dcbb9b5010698d70e97d154199b236eec1cf139aa068b3929a68c3351f3
+- recipe: s3c
+- update: 25
+
+## s3a_u00025
+
+- Change: From s2m: who-bind + 3-entity mix/combine. Keep 20/20/60 language/structured/mix.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.906 fact_combine=0.656 story_combine=0.406; E12 English hold color=1.000 size_stop=0.969 story=0.938; who2=0.438 who3=0.312 combine3=0.375 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.850
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.65625, 'story_combine': 0.40625, 'story_mixed': 0.59375, 'color': 1.0, 'size_stop': 0.96875, 'story_color': 0.9375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.85}
+- checkpoint_sha256: d73ab2d9789a07ec3da5206fd7dbf104c48bd290c6f909d91f38372c55e6e7de
+- recipe: s3a
+- update: 25
+
+## s3d_u00025
+
+- Change: Scaffold diagnostic: sentence-prefix instructions. Kill if only the prefix operator moves.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.656 fact_combine=0.500 story_combine=0.344; E12 drop color=0.844 size_stop=1.000 story=0.438; who2=0.000 who3=0.000 mixed3=0.625 sent_exact=0.000 bare=0.125 prefix=0.375; D3 slice 0.825
+- native: {'mixed_2e': 0.65625, 'fact_combine': 0.5, 'story_combine': 0.34375, 'story_mixed': 0.4375, 'color': 0.84375, 'size_stop': 1.0, 'story_color': 0.4375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.825, 'tf_exact': 0.825}
+- checkpoint_sha256: 9938a6dc1b97cb96ce6ce6de1156e66fa682d0e63f05722b775e037ee0864665
+- recipe: s3d
+- update: 25
+
+## s3b_u00025
+
+- Change: From s2m: unprompted short-sentence answers (held-out templates). No 'answer in a sentence' prefix.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.688 fact_combine=0.438 story_combine=0.406; E12 drop color=0.781 size_stop=1.000 story=0.500; who2=0.062 who3=0.000 combine3=0.250 sent_exact=0.000 bare=0.125 prefix=0.125; D3 slice 0.950
+- native: {'mixed_2e': 0.6875, 'fact_combine': 0.4375, 'story_combine': 0.40625, 'story_mixed': 0.375, 'color': 0.78125, 'size_stop': 1.0, 'story_color': 0.5, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.95, 'tf_exact': 0.95}
+- checkpoint_sha256: 811f266a5d3746d39885ddf41a913344ac171f8778d997fb091d90ce1c902b03
+- recipe: s3b
+- update: 25
+
+## s3e_u00025
+
+- Change: From s2m: existing phrase family (query asks for a sentence) vs unprompted s3b.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.469 fact_combine=0.406 story_combine=0.375; E12 collapse color=0.250 size_stop=1.000 story=0.188; who2=0.062 who3=0.125 mixed3=0.625 sent_exact=0.000 bare=0.875 prefix=0.875; D3 slice 0.925
+- native: {'mixed_2e': 0.46875, 'fact_combine': 0.40625, 'story_combine': 0.375, 'story_mixed': 0.25, 'color': 0.25, 'size_stop': 1.0, 'story_color': 0.1875, 'dialogue': 0.9375}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.925, 'tf_exact': 0.925}
+- checkpoint_sha256: 72c6ddac9218ba43b3199afb03ef1cc14f2e10b3a0e25f8f7bc0971897a02198
+- recipe: s3e
+- update: 25
+
+## s3c_u00025
+
+- Change: From s2m: who-bind + unprompted sentences together.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.656 fact_combine=0.250 story_combine=0.312; E12 collapse color=0.531 size_stop=0.969 story=0.281; who2=0.125 who3=0.312 combine3=0.125 sent_exact=0.000 bare=0.250 prefix=0.250; D3 slice 0.950
+- native: {'mixed_2e': 0.65625, 'fact_combine': 0.25, 'story_combine': 0.3125, 'story_mixed': 0.375, 'color': 0.53125, 'size_stop': 0.96875, 'story_color': 0.28125, 'dialogue': 0.9375}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.95, 'tf_exact': 0.95}
+- checkpoint_sha256: c750c13b27c87fc088ca1e931854ed1bea082055b060e0652d3388406e63e51c
+- recipe: s3c
+- update: 25
+
+## s3d_u00025
+
+- Change: Scaffold diagnostic: sentence-prefix instructions. Kill if only the prefix operator moves.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.656 fact_combine=0.500 story_combine=0.344; E12 drop color=0.844 size_stop=1.000 story=0.438; who2=0.000 who3=0.000 combine3=0.375 sent_exact=0.000 bare=0.125 prefix=0.375; D3 slice 0.825
+- native: {'mixed_2e': 0.65625, 'fact_combine': 0.5, 'story_combine': 0.34375, 'story_mixed': 0.4375, 'color': 0.84375, 'size_stop': 1.0, 'story_color': 0.4375, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.825, 'tf_exact': 0.825}
+- checkpoint_sha256: ae9380f439947f7e7376d89bcef8a5da6fcfd844ec40d883de07b1aa5d9655c8
+- recipe: s3d
+- update: 25
+
+## s3e_u00025
+
+- Change: From s2m: existing phrase family (query asks for a sentence) vs unprompted s3b.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.469 fact_combine=0.406 story_combine=0.375; E12 collapse color=0.250 size_stop=1.000 story=0.188; who2=0.062 who3=0.125 combine3=0.312 sent_exact=0.000 bare=0.875 prefix=0.875; D3 slice 0.925
+- native: {'mixed_2e': 0.46875, 'fact_combine': 0.40625, 'story_combine': 0.375, 'story_mixed': 0.25, 'color': 0.25, 'size_stop': 1.0, 'story_color': 0.1875, 'dialogue': 0.9375}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.925, 'tf_exact': 0.925}
+- checkpoint_sha256: 2e2f54b1683efedd4b09bf15f18bc962a460f4dd359de04dc08f158e4237ebb0
+- recipe: s3e
+- update: 25
+
+## s3i_u00025
+
+- Change: s3a who-bind worked (0→0.44) but combine dropped. Same who skill, more 2e combine protection.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.969 fact_combine=0.625 story_combine=0.312; E12 English hold color=0.969 size_stop=0.938 story=0.906; who2=0.250 who3=0.250 combine3=0.375 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.900
+- native: {'mixed_2e': 0.96875, 'fact_combine': 0.625, 'story_combine': 0.3125, 'story_mixed': 0.6875, 'color': 0.96875, 'size_stop': 0.9375, 'story_color': 0.90625, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.925}
+- checkpoint_sha256: 430733001c3fe54d261121b913c74542f49c618007915f25788d15ad61afd9f2
+- recipe: s3i
+- update: 25
+
+## s3k_u00025
+
+- Change: Lock s3a who-pulse onto s2m mix diet. Test whether who-bind sticks while combine recovers.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.812 fact_combine=0.594 story_combine=0.594; E12 English hold color=0.969 size_stop=0.969 story=0.969; who2=0.062 who3=0.062 combine3=0.188 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.825
+- native: {'mixed_2e': 0.8125, 'fact_combine': 0.59375, 'story_combine': 0.59375, 'story_mixed': 0.59375, 'color': 0.96875, 'size_stop': 0.96875, 'story_color': 0.96875, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.825, 'tf_exact': 0.8}
+- checkpoint_sha256: 77d6a851cfd789df226e067f6490101111cfd272fb73e5c8dbb7bd8cd3e0c777
+- recipe: s3k
+- update: 25
+
+## s3n_u00025
+
+- Change: From s3a: half-LR lock with 18% who rehearsal so who-bind does not vanish while combine returns.
+- verdict: **HOLD+**
+- lesson: composition signal s2m mix hold mixed=0.906 fact_combine=0.688 story_combine=0.562; E12 English hold color=1.000 size_stop=1.000 story=1.000; who2=0.250 who3=0.188 combine3=0.250 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.850 whoΔ=+0.250
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.6875, 'story_combine': 0.5625, 'story_mixed': 0.59375, 'color': 1.0, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.85, 'tf_exact': 0.85}
+- checkpoint_sha256: ecd983f041e90eab5178e0b9b4715f8d77141e824fb91735ba2ea9f89c227692
+- recipe: s3n
+- update: 25
+
+## s3p_u00025
+
+- Change: Extend s3n +25. who=0.25 is a real signal, not a milestone; keep mix-held lock.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.906 fact_combine=0.625 story_combine=0.594; E12 English hold color=1.000 size_stop=1.000 story=1.000; who2=0.188 who3=0.312 combine3=0.312 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.825
+- native: {'mixed_2e': 0.90625, 'fact_combine': 0.625, 'story_combine': 0.59375, 'story_mixed': 0.59375, 'color': 1.0, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.825, 'tf_exact': 0.85}
+- checkpoint_sha256: d368f8181ffa035fdf7fab2164963dbab15c2c7c5833e5110521c5c41dd5c8a6
+- recipe: s3p
+- update: 25
+
+## s3r_u00025
+
+- Change: From s3a: half-LR restore of 2e combine + story_combine with who rehearsal. Balanced who panel n=32.
+- verdict: **HOLD+**
+- lesson: composition signal s2m mix hold mixed=0.875 fact_combine=0.719 story_combine=0.438; E12 English hold color=1.000 size_stop=0.969 story=0.969; who2=0.375 who3=0.406 combine3=0.281 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.900 whoΔ=+0.375
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.71875, 'story_combine': 0.4375, 'story_mixed': 0.59375, 'color': 1.0, 'size_stop': 0.96875, 'story_color': 0.96875, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 37a66eb1b00935e3b2c62343aa013768d667274bdde751131dc8b9414997ce85
+- recipe: s3r
+- update: 25
+
+## s3n_verify_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 159/215 induction 0.453 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 159, 'first_correct': 215, 'free_accuracy': 0.7395348837209302, 'first_accuracy': 1.0}
+- induction: 0.453125
+
+## s3r_d3_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 183/215 induction 0.516 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 183, 'first_correct': 215, 'free_accuracy': 0.8511627906976744, 'first_accuracy': 1.0}
+- induction: 0.515625
+
+## s3v_u00025
+
+- Change: From s3r (D3 183, combine 0.719): more who rehearsal under s2m language/structured diet.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.875 fact_combine=0.656 story_combine=0.438; E12 English hold color=0.969 size_stop=1.000 story=0.969; who2=0.375 who3=0.375 combine3=0.281 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.900
+- native: {'mixed_2e': 0.875, 'fact_combine': 0.65625, 'story_combine': 0.4375, 'story_mixed': 0.53125, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 0.96875, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.9, 'tf_exact': 0.9}
+- checkpoint_sha256: 025ad75e189a102853b1e66703c9263aad5187f41ae2be494f98284a1682fdb9
+- recipe: s3v
+- update: 25
+
+## s3s_u00025
+
+- Change: From s3n (who3=0.50, D3 159, first=215): steal mix→language/structured remainder like s2m D3 restore, keep who rehearsal.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.969 fact_combine=0.656 story_combine=0.594; E12 English hold color=0.969 size_stop=1.000 story=1.000; who2=0.500 who3=0.469 combine3=0.219 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.875
+- native: {'mixed_2e': 0.96875, 'fact_combine': 0.65625, 'story_combine': 0.59375, 'story_mixed': 0.53125, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.875, 'tf_exact': 0.875}
+- checkpoint_sha256: 8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d
+- recipe: s3s
+- update: 25
+
+## s3w_u00025
+
+- Change: From s3s (who2=0.50, combine 0.656): s3r-style combine/D3 lock while rehearsing who.
+- verdict: **KILL**
+- lesson: s2m mix drop mixed=0.938 fact_combine=0.594 story_combine=0.562; E12 English hold color=1.000 size_stop=1.000 story=1.000; who2=0.469 who3=0.531 combine3=0.281 sent_exact=0.000 bare=0.000 prefix=0.000; D3 slice 0.800
+- native: {'mixed_2e': 0.9375, 'fact_combine': 0.59375, 'story_combine': 0.5625, 'story_mixed': 0.65625, 'color': 1.0, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- d3: {'n': 40, 'first_top1': 1.0, 'free_exact': 0.8, 'tf_exact': 0.8}
+- checkpoint_sha256: bd2510ce8ac2ac1c210122131f60eea1b820cee01e34ed9da76cf59fe2658cdb
+- recipe: s3w
+- update: 25
+
+## s3s_verify_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 190/215 induction 0.484 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 190, 'first_correct': 215, 'free_accuracy': 0.8837209302325582, 'first_accuracy': 1.0}
+- induction: 0.484375
+
+## s3s
+
+- Change: Composition-first who-bind from s2m via s3a pulse / s3n lock / s3s language+structured remainder. Not promoted.
+- verdict: **SURVIVE**
+- lesson: who2=0.500 who3=0.469 mixed3=0.938 on balanced n=32 held-out; mixed=0.969 fact_combine=0.656 (s2a floor) story_combine=0.594; English hold; usable4=0.938 usable=0.905 stop=1 reuse=1; D3 190/215 first=215 induction 0.484; sentences unsolved (bare=0, one_word=1). U16000 unchanged.
+- native: {'mixed_2e': 0.96875, 'fact_combine': 0.65625, 'story_combine': 0.59375, 'story_mixed': 0.53125, 'color': 0.96875, 'size_stop': 1.0, 'story_color': 1.0, 'dialogue': 1.0}
+- usable: {'turn': 0.9047619047619048, 'turn4': 0.9375, 'stop': 1.0, 'reuse': 1.0}
+- checkpoint_sha256: 8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d
+- recipe: s3s
+- update: 25
+

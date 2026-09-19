@@ -4,7 +4,7 @@ import random
 
 import torch
 
-from src.baby_v010.data_language_bridge import load_tokenizer
+from src.baby_v010.data_language_bridge import load_tokenizer, build_s3_panels
 from src.baby_v010.selection_rapid_treat_d import production_d_uses_query_position, tiling_parse
 from src.baby_v010.selection_stack2 import (
     RECIPES,
@@ -12,6 +12,7 @@ from src.baby_v010.selection_stack2 import (
     S2A_SURVIVOR,
     S2I25_SURVIVOR,
     S2I50_SURVIVOR,
+    S2M_SURVIVOR,
     adjudicate_recover,
     english_native_holds,
     mix_gate,
@@ -167,6 +168,59 @@ def test_mixhold_lock_parents() -> None:
     assert RECIPES["s2o"]["language_p"] == 0.0
     assert RECIPES["s2o"]["structured_p"] == 0.0
     assert RECIPES["s2p"]["mix_remainder_span"] is True
+
+
+def test_s3_compose_parents_and_items() -> None:
+    assert parent_checkpoint(RECIPES["s3a"]) == S2M_SURVIVOR
+    assert parent_checkpoint(RECIPES["s3b"]) == S2M_SURVIVOR
+    assert RECIPES["s3a"]["compose"] is True
+    tokenizer = load_tokenizer()
+    rng = random.Random(324001)
+    families = [sample_s2_item(rng, tokenizer, "compose_bind")["family"] for _ in range(40)]
+    assert "who_bind" in families
+    protect = [sample_s2_item(rng, tokenizer, "compose_bind_protect")["family"] for _ in range(50)]
+    assert "who_bind" in protect
+    lock = [sample_s2_item(rng, tokenizer, "compose_lock")["family"] for _ in range(60)]
+    assert "who_bind" in lock
+    assert parent_checkpoint(RECIPES["s3i"]) == S2M_SURVIVOR
+    panels = build_s3_panels(tokenizer, seed=324001, n=32)
+    golds = [item["value_text"] for item in panels["who_bind_2e_heldout"]]
+    assert max(golds.count(g) for g in set(golds)) <= 8
+    families_s = [sample_s2_item(rng, tokenizer, "compose_sent")["family"] for _ in range(40)]
+    assert any(name.startswith("compose_sent") or name.startswith("compose_combine") for name in families_s)
+
+
+def test_s3_mixed3_already_solved_is_not_a_win() -> None:
+    from src.baby_v010.selection_stack2_s3 import adjudicate_compose
+
+    parent = {"who_2e": 0.0, "who_3e": 0.0, "mixed_3e": 0.9375, "combine_3e": 0.25, "bare_sentence": 0.0, "sent_exact": 0.0, "prefix_sentence": 0.0}
+    native = {
+        "qa_2fact_heldout": {"first_top1": 0.97},
+        "size_stop_heldout": {"free_exact": 1.0},
+        "story_color_heldout": {"first_top1": 1.0},
+        "mixed_2e_heldout": {"first_top1": 0.875},
+        "fact_combine_heldout": {"first_top1": 0.719},
+        "story_combine_heldout": {"first_top1": 0.562},
+    }
+    compose = {
+        "who_bind_2e_heldout": {"first_top1": 0.0},
+        "who_bind_3e_heldout": {"first_top1": 0.0},
+        "mixed_3e_heldout": {"first_top1": 0.9375},
+        "fact_combine_3e_heldout": {"first_top1": 0.25},
+        "compose_sent_heldout": {"free_exact": 0.0},
+    }
+    row = {"native": native, "compose": compose, "d3_slice": {"free_exact": 0.925}}
+    verdict, lesson = adjudicate_compose(row, parent=parent)
+    assert verdict == "HOLD"
+    assert "composition signal" not in lesson
+    who_row = {
+        "native": native,
+        "compose": {**compose, "who_bind_2e_heldout": {"first_top1": 0.3125}},
+        "d3_slice": {"free_exact": 0.925},
+    }
+    who_verdict, who_lesson = adjudicate_compose(who_row, parent=parent)
+    assert who_verdict == "HOLD+"
+    assert "composition signal" in who_lesson
 
 
 def test_usable_holds_s2a() -> None:

@@ -67,6 +67,8 @@ S2I25_SURVIVOR = OUT / "s2i_protect40_combine_323051" / "checkpoint_00025.pt"
 S2I25_SURVIVOR_SHA = "664e8ead0f922f1ee937f4e1ef12c8f1f85d196fa03f7b9a6ec48bd905229bb3"
 S2I50_SURVIVOR = OUT / "s2i_protect40_combine_323051" / "checkpoint_00050.pt"
 S2I50_SURVIVOR_SHA = "c2137471f1d53adce3fd272794380b140f6cd12606ed706f6bffc0d95e1e1659"
+S2M_SURVIVOR = OUT / "s2m_protect40_combine_323091" / "checkpoint_00025.pt"
+S2M_SURVIVOR_SHA = "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9"
 S2A_D3_SLICE = 0.825
 S2A_D3_FULL = 169
 S2A_MIXED = 0.875
@@ -298,6 +300,187 @@ RECIPES = {
         "lock_from_drop": True,
         "note": "From s2i@50: 70% combine-heavy mix + 10% language + 20% structured.",
     },
+    "s3a": {
+        "seed": 324001,
+        "mix": "compose_bind",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "note": "From s2m: who-bind + 3-entity mix/combine. Keep 20/20/60 language/structured/mix.",
+    },
+    "s3b": {
+        "seed": 324011,
+        "mix": "compose_sent",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "note": "From s2m: unprompted short-sentence answers (held-out templates). No 'answer in a sentence' prefix.",
+    },
+    "s3c": {
+        "seed": 324021,
+        "mix": "compose_both",
+        "language_p": 0.15,
+        "structured_p": 0.20,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "note": "From s2m: who-bind + unprompted sentences together.",
+    },
+    "s3d": {
+        "seed": 324031,
+        "mix": "compose_sent_instr",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "note": "Scaffold diagnostic: sentence-prefix instructions. Kill if only the prefix operator moves.",
+    },
+    "s3e": {
+        "seed": 324041,
+        "mix": "compose_phrase",
+        "language_p": 0.20,
+        "structured_p": 0.20,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "note": "From s2m: existing phrase family (query asks for a sentence) vs unprompted s3b.",
+    },
+    "s3i": {
+        "seed": 324051,
+        "mix": "compose_bind_protect",
+        "language_p": 0.25,
+        "structured_p": 0.20,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "note": "s3a who-bind worked (0→0.44) but combine dropped. Same who skill, more 2e combine protection.",
+    },
+    "s3k": {
+        "seed": 324071,
+        "mix": "protect40_combine",
+        "language_p": 0.30,
+        "structured_p": 0.25,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "note": "Lock s3a who-pulse onto s2m mix diet. Test whether who-bind sticks while combine recovers.",
+    },
+    "s3n": {
+        "seed": 324081,
+        "mix": "compose_lock",
+        "language_p": 0.25,
+        "structured_p": 0.25,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s3a: half-LR lock with 18% who rehearsal so who-bind does not vanish while combine returns.",
+    },
+    "s3p": {
+        "seed": 324091,
+        "mix": "compose_lock",
+        "language_p": 0.25,
+        "structured_p": 0.25,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lr_scale": 0.5,
+        "note": "Extend s3n +25. who=0.25 is a real signal, not a milestone; keep mix-held lock.",
+    },
+    "s3r": {
+        "seed": 324101,
+        "mix": "compose_lock_story",
+        "language_p": 0.25,
+        "structured_p": 0.25,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s3a: half-LR restore of 2e combine + story_combine with who rehearsal. Balanced who panel n=32.",
+    },
+    "s3v": {
+        "seed": 324111,
+        "mix": "compose_lock_who",
+        "language_p": 0.30,
+        "structured_p": 0.25,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s3r (D3 183, combine 0.719): more who rehearsal under s2m language/structured diet.",
+    },
+    "s3s": {
+        "seed": 324121,
+        "mix": "compose_lock",
+        "language_p": 0.35,
+        "structured_p": 0.30,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s3n (who3=0.50, D3 159, first=215): steal mix→language/structured remainder like s2m D3 restore, keep who rehearsal.",
+    },
+    "s3w": {
+        "seed": 324131,
+        "mix": "compose_lock_story",
+        "language_p": 0.30,
+        "structured_p": 0.25,
+        "updates": 25,
+        "eval_every": 25,
+        "parent": "s2m",
+        "cheap_d3": True,
+        "remainder_span": True,
+        "compose": True,
+        "lock_from_drop": True,
+        "lr_scale": 0.5,
+        "note": "From s3s (who2=0.50, combine 0.656): s3r-style combine/D3 lock while rehearsing who.",
+    },
 }
 
 
@@ -309,6 +492,8 @@ def parent_checkpoint(recipe: dict) -> Path:
         return S2I25_SURVIVOR
     if parent == "s2i50":
         return S2I50_SURVIVOR
+    if parent == "s2m":
+        return S2M_SURVIVOR
     return E12_SURVIVOR
 
 
@@ -519,6 +704,10 @@ def sample_s2_item(rng: random.Random, tokenizer, mix: str) -> dict:
         if roll < 0.90:
             return make_mixed_item(rng, tokenizer, n_entities=2, surface="train", combine=True, period=True)
         return make_story_mixed_item(rng, tokenizer, surface="train", combine=True, period=True)
+    if mix.startswith("compose_"):
+        from .selection_stack2_s3 import sample_s3_item
+
+        return sample_s3_item(rng, tokenizer, mix)
     if mix != "protect40_combine":
         raise ValueError(f"unknown mix {mix}")
     if roll < 0.10:
@@ -568,7 +757,7 @@ def save_stack2_checkpoint(path: Path, model, optimizer, config, update: int, se
     return digest(path)
 
 
-def require_identities(*, require_s2a: bool = False) -> None:
+def require_identities(*, require_s2a: bool = False, require_s2m: bool = False) -> None:
     if digest(PARENT) != PARENT_SHA:
         raise RuntimeError("U16000 hash mismatch")
     if digest(E12_SURVIVOR) != E12_SURVIVOR_SHA:
@@ -580,6 +769,11 @@ def require_identities(*, require_s2a: bool = False) -> None:
             raise RuntimeError(f"missing s2a parent {S2A_SURVIVOR}")
         if digest(S2A_SURVIVOR) != S2A_SURVIVOR_SHA:
             raise RuntimeError("s2a survivor hash mismatch")
+    if require_s2m:
+        if not S2M_SURVIVOR.exists():
+            raise RuntimeError(f"missing s2m parent {S2M_SURVIVOR}")
+        if digest(S2M_SURVIVOR) != S2M_SURVIVOR_SHA:
+            raise RuntimeError("s2m survivor hash mismatch")
 
 
 def cheap_d3_slice(model, device) -> dict:
@@ -703,6 +897,7 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
         S2A_SURVIVOR: S2A_SURVIVOR_SHA,
         S2I25_SURVIVOR: S2I25_SURVIVOR_SHA,
         S2I50_SURVIVOR: S2I50_SURVIVOR_SHA,
+        S2M_SURVIVOR: S2M_SURVIVOR_SHA,
     }.get(start)
     if expected is not None and digest(start) != expected:
         raise RuntimeError(f"parent hash mismatch for {start}")
@@ -792,19 +987,45 @@ def train_recipe(device, recipe_id: str, *, resume: Path | None = None) -> dict:
                 slice_row = cheap_d3_slice(model, device)
                 row["d3_slice"] = {k: slice_row.get(k) for k in ("n", "first_top1", "free_exact", "tf_exact")}
                 row["lesson"] = f"{row['lesson']}; D3 slice free_exact={slice_row.get('free_exact')}"
+            if recipe.get("compose"):
+                from .data_language_bridge import build_s3_panels
+                from .selection_language_bridge import run_sentence_decode
+                from .selection_stack2_s3 import LIGHT_SENTENCE, slim_sentence
+
+                compose_native = eval_panels(model, build_s3_panels(tokenizer, n=32), device, overwrite=None, arms=("native",))["native"]
+                row["compose"] = slim_panels(compose_native)
+                sentence = run_sentence_decode(model, tokenizer, device, include=LIGHT_SENTENCE)
+                row["sentence"] = slim_sentence(sentence)
+                extra_sent = (row["sentence"].get("operators") or {}).get("bare") or {}
+                row["lesson"] = (
+                    f"{row['lesson']}; who2={_top1(compose_native, 'who_bind_2e_heldout'):.3f} "
+                    f"sent={_exact(compose_native, 'compose_sent_heldout'):.3f} "
+                    f"bare={float(extra_sent.get('sentence_ok') or 0.0):.3f}"
+                )
             history.append(row)
             write(out_dir / f"eval_{update:05d}.json", row)
             extra = {k: row[k] for k in ("mix_verdict", "english_ok", "collapsed", "lesson")}
             if "d3_slice" in row:
                 extra["d3_slice"] = row["d3_slice"]
+            if "compose" in row:
+                extra["compose"] = {
+                    name: {k: row["compose"][name].get(k) for k in ("first_top1", "free_exact")}
+                    for name in row["compose"]
+                }
             print(json.dumps({"phase": f"{recipe_id}_eval", "update": update, **extra}, default=str), flush=True)
             best = row
             slice_exact = float((row.get("d3_slice") or {}).get("free_exact") or 0.0)
-            mix_ok_s2a, _mix_hold = mix_holds_s2a(native)
-            mix_kill = (not mix_ok_s2a) and (not recipe.get("lock_from_drop"))
+            if recipe.get("parent") == "s2m":
+                from .selection_stack2_s3 import S2M_D3_SLICE, mix_holds_s2m
+
+                mix_ok_hold, _mix_hold = mix_holds_s2m(native)
+                d3_floor = S2M_D3_SLICE - D3_SLICE_KILL
+            else:
+                mix_ok_hold, _mix_hold = mix_holds_s2a(native)
+                d3_floor = S2A_D3_SLICE - D3_SLICE_KILL
+            mix_kill = (not mix_ok_hold) and (not recipe.get("lock_from_drop"))
             kill_canary = collapsed or (
-                bool(recipe.get("cheap_d3"))
-                and (mix_kill or slice_exact + 1e-12 < S2A_D3_SLICE - D3_SLICE_KILL)
+                bool(recipe.get("cheap_d3")) and (mix_kill or slice_exact + 1e-12 < d3_floor)
             )
             if kill_canary:
                 print(json.dumps({"phase": "kill_canary", "recipe": recipe_id, "update": update, "lesson": row["lesson"]}, default=str), flush=True)
@@ -1249,14 +1470,17 @@ def run_loop(device) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover"), default="run")
+    parser.add_argument("--mode", choices=("run", "probe", "train", "usable", "d3", "recover", "compose"), default="run")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--recipe", default="s2a", choices=tuple(RECIPES))
     parser.add_argument("--resume", type=Path)
     parser.add_argument("--tag", default="eval")
     args = parser.parse_args()
     device = resolve_device(args.device)
-    require_identities(require_s2a=args.mode == "recover" or RECIPES.get(args.recipe, {}).get("parent") == "s2a")
+    require_identities(
+        require_s2a=args.mode in {"recover", "compose"} or RECIPES.get(args.recipe, {}).get("parent") in {"s2a", "s2m"},
+        require_s2m=args.mode == "compose" or RECIPES.get(args.recipe, {}).get("parent") == "s2m",
+    )
     ledger_init()
     if args.mode == "probe":
         path = args.resume or E12_SURVIVOR
@@ -1270,6 +1494,11 @@ def main() -> None:
         return
     if args.mode == "recover":
         run_d3_recover_loop(device)
+        return
+    if args.mode == "compose":
+        from .selection_stack2_s3 import run_compose_loop
+
+        run_compose_loop(device)
         return
     if args.mode == "usable":
         if args.resume is None:

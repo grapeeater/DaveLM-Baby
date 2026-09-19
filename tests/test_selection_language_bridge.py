@@ -15,6 +15,7 @@ from src.baby_v010.data_language_bridge import (
     encode_split,
     load_tokenizer,
     make_aperiodic_item,
+    make_compose_sentence_item,
     make_dialogue_item,
     make_english_item,
     make_mixed_item,
@@ -25,6 +26,7 @@ from src.baby_v010.data_language_bridge import (
     make_size_item,
     make_story_item,
     make_story_mixed_item,
+    make_who_bind_item,
     make_longturn_item,
     make_roleplay_item,
     make_syntax_item,
@@ -36,6 +38,12 @@ from src.baby_v010.data_language_bridge import (
     HOLDOUT_PHRASE_QUERIES,
     TRAIN_OPEN_QUERIES,
     HOLDOUT_OPEN_QUERIES,
+    TRAIN_WHO_BIND_SIZE,
+    HOLDOUT_WHO_BIND_SIZE,
+    TRAIN_COMPOSE_SENT_ANSWERS,
+    HOLDOUT_COMPOSE_SENT_ANSWERS,
+    TRAIN_FORMAT_SENT_PREFIXES,
+    HOLDOUT_FORMAT_SENT_PREFIXES,
 )
 from src.baby_v010.selection_rapid_treat_d import production_d_uses_query_position, tiling_parse
 
@@ -645,3 +653,32 @@ def test_usable_chat_verdict_parks_five_turn() -> None:
     assert verdict == "WEAK"
     assert ramble is True
     assert "rambling" in lesson
+
+
+def test_who_bind_and_compose_sentence_are_gold_free() -> None:
+    tokenizer = load_tokenizer()
+    rng = random.Random(324001)
+    who = make_who_bind_item(rng, tokenizer, n_entities=2, surface="heldout")
+    who3 = make_who_bind_item(rng, tokenizer, n_entities=3, surface="train")
+    sent = make_compose_sentence_item(rng, tokenizer, surface="heldout", combine=False)
+    comb = make_compose_sentence_item(rng, tokenizer, surface="heldout", combine=True)
+    instr = make_compose_sentence_item(rng, tokenizer, surface="heldout", instruct=True)
+    train_sent = make_compose_sentence_item(random.Random(324001), tokenizer, surface="train", combine=False)
+    for item in (who, who3, sent, comb, instr):
+        assert item.get("query_position") is None
+        gen = len(item["input"]) - 1
+        tiling_parse(item["input"], gen)
+        assert item["answer_text"].endswith(".")
+        assert len(item["target"]) >= 1
+    assert who["value_text"] in WHO_ENTITIES
+    assert who3["value_text"] in WHO_ENTITIES
+    assert sent["value_text"] in VALUES
+    assert "sentence" not in sent["prompt_text"].lower()
+    assert any(prefix.strip() in instr["prompt_text"] for prefix in HOLDOUT_FORMAT_SENT_PREFIXES) or "sentence" in instr["prompt_text"].lower()
+    assert set(TRAIN_WHO_BIND_SIZE).isdisjoint(HOLDOUT_WHO_BIND_SIZE)
+    assert set(TRAIN_COMPOSE_SENT_ANSWERS).isdisjoint(HOLDOUT_COMPOSE_SENT_ANSWERS)
+    assert train_sent["answer_text"].strip().startswith("The ")
+    assert not sent["answer_text"].strip().startswith("The ")
+    mixed3 = make_mixed_item(rng, tokenizer, n_entities=3, surface="heldout", combine=True)
+    assert mixed3.get("query_position") is None
+    assert mixed3["family"] == "fact_combine"

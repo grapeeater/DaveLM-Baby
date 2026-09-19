@@ -1,5 +1,5 @@
 {
-  "status": "D3 recover MILESTONE",
+  "status": "s3 composition-first MILESTONE",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -70,7 +70,7 @@
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
     "sha256": "0642a2f2a4044d9936cc3f930fa096ef55fc69c5e7cfe6f7c539a3c47b5fd959"
   },
-  "hypothesis": "s2a D3 hole is greedy span. Mix-off pulse (s2i) restores span: u25 keeps mix, u50 reaches slice 0.95 then kills combine. Do not cut mix to 5\u201310%. Lock mix from s2i pulses; independently steal structured not mix remainder.",
+  "hypothesis": "s2m one-word 2e bind is not multi-property composition or generated sentences. Attack entity-from-property (who-bind) and unprompted short sentences with held-out templates. Do not count sentence-prefix scaffolds as success.",
   "parent_slice": {
     "n": 40,
     "first_top1": 1.0,
@@ -114,11 +114,53 @@
     "induction": 0.453125
   },
   "last_verify": {
-    "recipe": "s2m",
-    "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2m_protect40_combine_323091\\checkpoint_00025.pt",
-    "sha256": "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9",
-    "d3_full": 197,
+    "recipe": "s3s",
+    "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3s_compose_lock_324121\\checkpoint_00025.pt",
+    "sha256": "8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d",
+    "d3_full": 190,
     "milestone": true,
-    "lesson": "s2a mix hold mixed=0.875 fact_combine=0.719; E12 English hold color=0.969 size_stop=1.000 story=1.000; s2a usable hold usable4=0.969 usable=0.929 stop=1.000 reuse=1.0; D3 197/215"
+    "milestone_kind": "composition-first",
+    "lesson": "s2m mix hold mixed=0.969 fact_combine=0.656 story_combine=0.594; E12 English hold color=0.969 size_stop=1.000 story=1.000; s2m usable hold usable4=0.938 usable=0.905; D3 190/215; {'who_2e': 0.5, 'who_3e': 0.46875, 'mixed_3e': 0.9375, 'combine_3e': 0.21875, 'sent_exact': 0.0, 'combine_sent_exact': 0.0, 'instr_exact': 0.0, 'phrase_exact': 0.0, 'bare_sentence': 0.0, 'bare_one_word': 1.0, 'prefix_sentence': 0.0}"
+  },
+  "s2m_parent": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2m_protect40_combine_323091\\checkpoint_00025.pt",
+    "sha256": "bd10f0ea8239fe09bd5bec933611ba92b27c20402b24474ad287331153240ff9"
+  },
+  "d3_role": "retention, not the objective",
+  "s3s": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3s_compose_lock_324121\\checkpoint_00025.pt",
+    "sha256": "8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d",
+    "verdict": "SURVIVE",
+    "major": true,
+    "authoritative": false,
+    "promoted": false,
+    "parent": "s2m",
+    "milestone_kind": "composition-first",
+    "mix": {
+      "mixed_2e": 0.96875,
+      "fact_combine": 0.65625,
+      "story_combine": 0.59375,
+      "story_mixed": 0.53125,
+      "color": 0.96875,
+      "size_stop": 1.0,
+      "story_color": 1.0,
+      "dialogue": 1.0
+    },
+    "compose": {
+      "who_2e": 0.5,
+      "who_3e": 0.46875,
+      "mixed_3e": 0.9375,
+      "combine_3e": 0.21875,
+      "bare_sentence": 0.0,
+      "prefix_sentence": 0.0
+    },
+    "usable": {
+      "turn": 0.9047619047619048,
+      "turn4": 0.9375,
+      "stop": 1.0,
+      "reuse": 1.0
+    },
+    "d3": 190,
+    "induction": 0.484375
   }
 }

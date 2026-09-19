@@ -1,0 +1,262 @@
+{
+  "update": 25,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9707383681088686,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.717126935720444,
+      "mean_first_margin": 5.442276477813721,
+      "mean_first_error": 2.53125,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.78125
+    },
+    "size_stop_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9338534260168672,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.695453464984894,
+      "mean_first_margin": 4.880492061376572,
+      "mean_first_error": 3.15625,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.84375
+    },
+    "story_color_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9663636740297079,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.589154422283173,
+      "mean_first_margin": 5.044117212295532,
+      "mean_first_error": 2.75,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_mixed_heldout": {
+      "n": 32,
+      "first_top1": 0.59375,
+      "tf_exact": 0.59375,
+      "free_exact": 0.59375,
+      "mean_target_prob": 0.5503408394288272,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.317307025194168,
+      "mean_first_margin": 1.812263160943985,
+      "mean_first_error": 1.4375,
+      "distinct_emitted_tokens": 27,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.59375,
+      "tf_exact": 0.59375,
+      "free_exact": 0.59375,
+      "mean_target_prob": 0.40420442502363585,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.818785533308983,
+      "mean_first_margin": -0.14233966171741486,
+      "mean_first_error": 1.5,
+      "distinct_emitted_tokens": 25,
+      "tiling_parse_rate": 0.96875
+    },
+    "mixed_2e_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8430296397673374,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.641395419836044,
+      "mean_first_margin": 3.4612178802490234,
+      "mean_first_error": 2.4375,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 0.90625
+    },
+    "fact_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.625,
+      "tf_exact": 0.625,
+      "free_exact": 0.625,
+      "mean_target_prob": 0.49880951072555035,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.495849579572678,
+      "mean_first_margin": 0.7353028655052185,
+      "mean_first_error": 1.625,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9849860146641731,
+      "median_target_rank": 1,
+      "mean_target_logit": 15.150406301021576,
+      "mean_first_margin": 5.809139981865883,
+      "mean_first_error": 2.6875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.5
+    }
+  },
+  "language_dev_ce": 1.3371920883655548,
+  "language_baseline_ce": 1.3342177718877792,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3p_compose_lock_324091\\checkpoint_00025.pt",
+  "checkpoint_sha256": "d368f8181ffa035fdf7fab2164963dbab15c2c7c5833e5110521c5c41dd5c8a6",
+  "mix_verdict": "GRAD",
+  "english_ok": true,
+  "collapsed": false,
+  "lesson": "mix GRAD mixed=0.906 fact_combine=0.625 story_combine=0.594 mixed_story=0.594; E12 English hold color=1.000 size_stop=1.000 story=1.000; D3 slice free_exact=0.825; who2=0.188 sent=0.000 bare=0.000",
+  "d3_slice": {
+    "n": 40,
+    "first_top1": 1.0,
+    "free_exact": 0.825,
+    "tf_exact": 0.85
+  },
+  "compose": {
+    "who_bind_2e_heldout": {
+      "n": 16,
+      "first_top1": 0.1875,
+      "tf_exact": 0.1875,
+      "free_exact": 0.1875,
+      "mean_target_prob": 0.20509764014423126,
+      "median_target_rank": 2,
+      "mean_target_logit": 8.294504970312119,
+      "mean_first_margin": -1.0676515102386475,
+      "mean_first_error": 0.75,
+      "distinct_emitted_tokens": 21,
+      "tiling_parse_rate": 1.0
+    },
+    "who_bind_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.3125,
+      "tf_exact": 0.3125,
+      "free_exact": 0.3125,
+      "mean_target_prob": 0.2949032998003531,
+      "median_target_rank": 2,
+      "mean_target_logit": 9.426608383655548,
+      "mean_first_margin": -0.5557815432548523,
+      "mean_first_error": 1.0625,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.875
+    },
+    "mixed_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.8804984055459499,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.982978999614716,
+      "mean_first_margin": 3.7081848978996277,
+      "mean_first_error": 2.1875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.9375
+    },
+    "fact_combine_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.3125,
+      "tf_exact": 0.3125,
+      "free_exact": 0.3125,
+      "mean_target_prob": 0.2661863380926661,
+      "median_target_rank": 2,
+      "mean_target_logit": 11.074435085058212,
+      "mean_first_margin": -0.8114330470561981,
+      "mean_first_error": 0.75,
+      "distinct_emitted_tokens": 22,
+      "tiling_parse_rate": 0.9375
+    },
+    "compose_sent_heldout": {
+      "n": 16,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.002599188781630346,
+      "median_target_rank": 9,
+      "mean_target_logit": 6.6952498853206635,
+      "mean_first_margin": -7.404784291982651,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.875
+    },
+    "compose_combine_sent_heldout": {
+      "n": 16,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 1.0225427515830887e-07,
+      "median_target_rank": 477,
+      "mean_target_logit": -3.0190243534743786,
+      "mean_first_margin": -16.10883539915085,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 15,
+      "tiling_parse_rate": 0.9375
+    },
+    "compose_sent_instr_heldout": {
+      "n": 16,
+      "first_top1": 0.0625,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.06505856339859406,
+      "median_target_rank": 9,
+      "mean_target_logit": 7.133561789989471,
+      "mean_first_margin": -6.662869453430176,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.9375
+    },
+    "phrase_2fact_heldout": {
+      "n": 16,
+      "first_top1": 0.0625,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.0622279517572224,
+      "median_target_rank": 9,
+      "mean_target_logit": 6.477970361709595,
+      "mean_first_margin": -7.3643849194049835,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 15,
+      "tiling_parse_rate": 0.1875
+    }
+  },
+  "sentence": {
+    "verdict": "PARK",
+    "lesson": "park sentence decode; best light bare=0.000",
+    "operators": {
+      "bare": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      },
+      "sent_prefix": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      },
+      "baby": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      }
+    }
+  }
+}
