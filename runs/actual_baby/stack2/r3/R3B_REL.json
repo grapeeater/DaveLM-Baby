@@ -1,0 +1,100 @@
+{
+  "parent_sha": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "head": "r3b_329011",
+  "who_2e_seed324888": {
+    "n": 32,
+    "acc": 0.75,
+    "pred_is_last": 0.625,
+    "acc_last_gold": 0.8,
+    "acc_last_not": 0.6666666666666666,
+    "by_gap": {
+      "3": 0.6470588235294118,
+      "2": 0.8461538461538461,
+      "4": 1.0
+    }
+  },
+  "who_sent_native": {
+    "bare": 0.5625,
+    "prefix": 0.6875,
+    "first_entity": 0.5625,
+    "has_entity": 0.5625,
+    "has_value": 0.5625,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "who_color": 0.625,
+      "who_size": 0.5
+    }
+  },
+  "has_native_only": {
+    "bare": 0.4166666666666667,
+    "prefix": 0.4166666666666667,
+    "first_entity": 0.5833333333333334,
+    "has_entity": 0.5833333333333334,
+    "has_value": 0.5833333333333334,
+    "predicate": 0.8333333333333334,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "has_who": 0.8333333333333334,
+      "has_what": 0.0
+    }
+  },
+  "beside_native_only": {
+    "bare": 0.8333333333333334,
+    "prefix": 0.5,
+    "first_entity": 0.75,
+    "has_entity": 0.9166666666666666,
+    "has_value": 0.9166666666666666,
+    "predicate": 0.9166666666666666,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "beside_where": 0.8333333333333334,
+      "beside_who": 0.8333333333333334
+    }
+  },
+  "who_sent_native_relassist": {
+    "bare": 0.5,
+    "prefix": 0.6875,
+    "first_entity": 0.5625,
+    "has_entity": 0.5625,
+    "has_value": 0.5,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "who_color": 0.5,
+      "who_size": 0.5
+    }
+  },
+  "has_native_relassist": {
+    "bare": 0.8333333333333334,
+    "prefix": 0.6666666666666666,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 0.8333333333333334,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "has_who": 0.8333333333333334,
+      "has_what": 0.8333333333333334
+    }
+  },
+  "beside_native_relassist": {
+    "bare": 1.0,
+    "prefix": 0.8333333333333334,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "beside_where": 1.0,
+      "beside_who": 1.0
+    }
+  },
+  "ugly_hybrid": {
+    "has_what_hen_white": " hen has the redog.",
+    "beside_who_hen_duck": " hen.",
+    "who_hen_red": " hen looks redog is redog.",
+    "who_dog_white": " dog looks white."
+  }
+}

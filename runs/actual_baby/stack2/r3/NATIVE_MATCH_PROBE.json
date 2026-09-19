@@ -1,0 +1,73 @@
+{
+  "id": "r3_native_match_probe",
+  "loaded_checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+  "loaded_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "requested_parent": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+  "requested_parent_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "parent_match": true,
+  "authoritative": false,
+  "weights_only_who_2e": {
+    "n": 32,
+    "acc": 0.53125,
+    "pred_is_last": 0.5625,
+    "acc_last_gold": 0.6,
+    "acc_last_not": 0.47058823529411764,
+    "by_gap": {
+      "1": 0.5,
+      "3": 0.5263157894736842,
+      "2": 0.5714285714285714,
+      "4": 0.5
+    }
+  },
+  "external_router_who_2e": {
+    "n": 32,
+    "acc": 1.0,
+    "pred_is_last": 0.46875,
+    "acc_last_gold": 1.0,
+    "acc_last_not": 1.0,
+    "by_gap": {
+      "1": 1.0,
+      "3": 1.0,
+      "2": 1.0,
+      "4": 1.0
+    }
+  },
+  "external_router_seed324777": {
+    "n": 32,
+    "acc": 0.96875,
+    "pred_is_last": 0.65625,
+    "acc_last_gold": 1.0,
+    "acc_last_not": 0.9166666666666666,
+    "by_gap": {
+      "3": 0.9473684210526315,
+      "1": 1.0,
+      "2": 1.0,
+      "4": 1.0
+    }
+  },
+  "last_token_cosine_official": {
+    "n": 32,
+    "argmax_kind": {
+      "other": 32
+    },
+    "argmax_gold_entity": 0.0,
+    "argmax_gold_property": 0.0,
+    "argmax_last_entity": 0.0,
+    "argmax_teacher_entity": 0.0,
+    "argmax_or_prev4_gold_entity": 0.0,
+    "bare_lm_entity": 0.53125
+  },
+  "last_token_cosine_seed324777": {
+    "n": 32,
+    "argmax_kind": {
+      "other": 32
+    },
+    "argmax_gold_entity": 0.0,
+    "argmax_gold_property": 0.0,
+    "argmax_last_entity": 0.0,
+    "argmax_teacher_entity": 0.0,
+    "argmax_or_prev4_gold_entity": 0.03125,
+    "bare_lm_entity": 0.5625
+  },
+  "note": "last_token_cosine = argmax cosine(h[-1], h[:-1]) with NO property/entity ID scan. This is not yet an inference router; it only measures whether the cue already sits in the last state."
+}

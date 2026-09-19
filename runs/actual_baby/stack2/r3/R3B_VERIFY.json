@@ -1,0 +1,454 @@
+{
+  "id": "r3b_verify",
+  "loaded_parent": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+  "loaded_parent_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "parent_match": true,
+  "head_path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\r3\\r3b_329011\\prop_match_head_00050.pt",
+  "head_sha256": "8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9",
+  "authoritative": false,
+  "mechanism": "prop_match_cue_cosine_entityness",
+  "label_legend": {
+    "weights_only": "s5b3 checkpoint, no runtime module",
+    "native_head": "s5b3 + learned PropMatchHead; no Python cue scanner",
+    "external_router": "s5b3 + WhoPropRouter (R2 ceiling; Python scanner)",
+    "batched_eval_panels": "teacher-forced batched logits; may bypass last-token routing"
+  },
+  "weights_only_who_2e": {
+    "official": {
+      "n": 32,
+      "acc": 0.53125,
+      "pred_is_last": 0.5625,
+      "acc_last_gold": 0.6,
+      "acc_last_not": 0.47058823529411764,
+      "by_gap": {
+        "1": 0.5,
+        "3": 0.5263157894736842,
+        "2": 0.5714285714285714,
+        "4": 0.5
+      }
+    },
+    "seed324777": {
+      "n": 32,
+      "acc": 0.5625,
+      "pred_is_last": 0.5625,
+      "acc_last_gold": 0.6,
+      "acc_last_not": 0.5,
+      "by_gap": {
+        "3": 0.47368421052631576,
+        "1": 0.3333333333333333,
+        "2": 0.75,
+        "4": 1.0
+      }
+    },
+    "seed324888": {
+      "n": 32,
+      "acc": 0.46875,
+      "pred_is_last": 0.34375,
+      "acc_last_gold": 0.35,
+      "acc_last_not": 0.6666666666666666,
+      "by_gap": {
+        "3": 0.4117647058823529,
+        "2": 0.5384615384615384,
+        "4": 0.5
+      }
+    }
+  },
+  "native_head_who_2e": {
+    "official": {
+      "n": 32,
+      "acc": 0.96875,
+      "pred_is_last": 0.5,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 0.9411764705882353,
+      "by_gap": {
+        "1": 1.0,
+        "3": 1.0,
+        "2": 1.0,
+        "4": 0.75
+      }
+    },
+    "seed324777": {
+      "n": 32,
+      "acc": 0.90625,
+      "pred_is_last": 0.59375,
+      "acc_last_gold": 0.9,
+      "acc_last_not": 0.9166666666666666,
+      "by_gap": {
+        "3": 0.9473684210526315,
+        "1": 0.6666666666666666,
+        "2": 1.0,
+        "4": 0.5
+      }
+    },
+    "seed324888": {
+      "n": 32,
+      "acc": 0.78125,
+      "pred_is_last": 0.65625,
+      "acc_last_gold": 0.85,
+      "acc_last_not": 0.6666666666666666,
+      "by_gap": {
+        "3": 0.6470588235294118,
+        "2": 0.9230769230769231,
+        "4": 1.0
+      }
+    }
+  },
+  "external_router_who_2e": {
+    "official": {
+      "n": 32,
+      "acc": 1.0,
+      "pred_is_last": 0.46875,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 1.0,
+      "by_gap": {
+        "1": 1.0,
+        "3": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      }
+    },
+    "seed324777": {
+      "n": 32,
+      "acc": 0.96875,
+      "pred_is_last": 0.65625,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 0.9166666666666666,
+      "by_gap": {
+        "3": 0.9473684210526315,
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      }
+    }
+  },
+  "diag": {
+    "official": {
+      "n": 32,
+      "cue_locate": 0.96875,
+      "property_match": 0.9375,
+      "entity_hop_gold": 0.9375,
+      "entity_hop_last": 0.4375
+    },
+    "seed324777": {
+      "n": 32,
+      "cue_locate": 1.0,
+      "property_match": 0.9375,
+      "entity_hop_gold": 0.90625,
+      "entity_hop_last": 0.59375
+    },
+    "seed324888": {
+      "n": 32,
+      "cue_locate": 1.0,
+      "property_match": 0.9375,
+      "entity_hop_gold": 0.84375,
+      "entity_hop_last": 0.65625
+    }
+  },
+  "who_sent_native_head": {
+    "bare": 0.375,
+    "prefix": 0.5625,
+    "first_entity": 0.5625,
+    "has_entity": 0.5625,
+    "has_value": 0.4375,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "who_color": 0.625,
+      "who_size": 0.125
+    }
+  },
+  "who_sent_native_head_seeds": {
+    "seed324777": {
+      "n": 16,
+      "seed": 324777,
+      "bare": 0.5625,
+      "first_entity": 0.6875
+    },
+    "seed324888": {
+      "n": 16,
+      "seed": 324888,
+      "bare": 0.625,
+      "first_entity": 0.6875
+    }
+  },
+  "who_sent_examples": [
+    {
+      "id": "seed324888_0",
+      "decoded": " duck is red.",
+      "entity": "dog",
+      "value": "blue",
+      "has_entity": false,
+      "has_value": false,
+      "has_color": false,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": false,
+      "sentence_ok": false,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "seed324888_1",
+      "decoded": " bear looks bear.",
+      "entity": "bear",
+      "value": "huge",
+      "has_entity": true,
+      "has_value": false,
+      "has_color": false,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": false,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "seed324888_2",
+      "decoded": " dog is wide.",
+      "entity": "dog",
+      "value": "wide",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "seed324888_3",
+      "decoded": " frog looks white.",
+      "entity": "cat",
+      "value": "green",
+      "has_entity": false,
+      "has_value": false,
+      "has_color": false,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": false,
+      "sentence_ok": false,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "seed324888_4",
+      "decoded": " dog looks pink.",
+      "entity": "duck",
+      "value": "pink",
+      "has_entity": false,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": false,
+      "sentence_ok": false,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "seed324888_5",
+      "decoded": " duck is red.",
+      "entity": "duck",
+      "value": "red",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    }
+  ],
+  "batched_eval_panels_weights_only": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.7792727812193334,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.22645989060402,
+      "mean_first_margin": 2.5675614327192307,
+      "mean_first_error": 2.4375,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.78125
+    },
+    "size_stop_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9459092188626528,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.643929690122604,
+      "mean_first_margin": 4.888163238763809,
+      "mean_first_error": 3.15625,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.84375
+    },
+    "story_color_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8637558710761368,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.309691309928894,
+      "mean_first_margin": 3.411642149090767,
+      "mean_first_error": 2.65625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_mixed_heldout": {
+      "n": 32,
+      "first_top1": 0.65625,
+      "tf_exact": 0.65625,
+      "free_exact": 0.65625,
+      "mean_target_prob": 0.524799442733638,
+      "median_target_rank": 1,
+      "mean_target_logit": 10.789489388465881,
+      "mean_first_margin": 1.3090503364801407,
+      "mean_first_error": 1.6875,
+      "distinct_emitted_tokens": 31,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.4375,
+      "tf_exact": 0.4375,
+      "free_exact": 0.4375,
+      "mean_target_prob": 0.41406199087941786,
+      "median_target_rank": 2,
+      "mean_target_logit": 11.070120751857758,
+      "mean_first_margin": -0.11640390753746033,
+      "mean_first_error": 0.96875,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 0.96875
+    },
+    "mixed_2e_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8060319639043882,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.990947753190994,
+      "mean_first_margin": 2.9728508442640305,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 0.90625
+    },
+    "fact_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.65625,
+      "tf_exact": 0.65625,
+      "free_exact": 0.65625,
+      "mean_target_prob": 0.4975172860431485,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.636938840150833,
+      "mean_first_margin": 0.7002956867218018,
+      "mean_first_error": 1.6875,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.966749994084239,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.158787220716476,
+      "mean_first_margin": 5.340808555483818,
+      "mean_first_error": 2.6875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.5
+    }
+  },
+  "usable_native_head": {
+    "id": "usable_chat",
+    "n": 10,
+    "autoregressive": {
+      "n_chats": 10,
+      "n_turns": 42,
+      "usable_turn": 0.5,
+      "fact_hit": 0.5,
+      "on_topic": 0.5,
+      "period_stop": 1.0,
+      "rambling": 0.0,
+      "generic_continuation": 0.0,
+      "fact_reuse": 0.5555555555555556,
+      "chat_usable": 0.1,
+      "ramble_gap_chats": 0.0
+    },
+    "autoregressive_4turn": {
+      "n_chats": 8,
+      "n_turns": 32,
+      "usable_turn": 0.53125,
+      "fact_hit": 0.53125,
+      "on_topic": 0.53125,
+      "period_stop": 1.0,
+      "rambling": 0.0,
+      "generic_continuation": 0.0,
+      "fact_reuse": 0.5714285714285714,
+      "chat_usable": 0.125,
+      "ramble_gap_chats": 0.0
+    },
+    "autoregressive_5turn": {
+      "n_chats": 2,
+      "n_turns": 10,
+      "usable_turn": 0.4,
+      "fact_hit": 0.4,
+      "on_topic": 0.4,
+      "period_stop": 1.0,
+      "rambling": 0.0,
+      "generic_continuation": 0.0,
+      "fact_reuse": 0.5,
+      "chat_usable": 0.0,
+      "ramble_gap_chats": 0.0
+    },
+    "teacher_force": {
+      "n_chats": 10,
+      "n_turns": 42,
+      "usable_turn": 0.4523809523809524,
+      "fact_hit": 0.4523809523809524,
+      "on_topic": 0.4523809523809524,
+      "period_stop": 1.0,
+      "rambling": 0.0,
+      "generic_continuation": 0.0,
+      "fact_reuse": 0.3888888888888889,
+      "chat_usable": 0.1,
+      "ramble_gap_chats": 0.0
+    },
+    "verdict": "WEAK",
+    "lesson": "4-turn usable=0.531 stop=1.000 ramble=0.000 gap=wrong-fact",
+    "ramble_gap": false
+  },
+  "d3_weights_only": {
+    "n": 215,
+    "free_exact": 181,
+    "first_correct": 215,
+    "induction": 0.5
+  },
+  "who2_gate": 0.85,
+  "who2_ok": true,
+  "last_not_ok": true,
+  "who_sent_ok": false,
+  "passed": false
+}

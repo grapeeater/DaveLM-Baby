@@ -1,5 +1,5 @@
 {
-  "status": "R2 experimental dual milestone on s5b3+WhoProp+RelAssist. Not promoted. U16000 authoritative.",
+  "status": "R3 experimental hybrid: s5b3 + PropMatchHead + RelAssist. Not promoted. U16000 authoritative.",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -15,10 +15,10 @@
     "authoritative": false
   },
   "last": {
-    "id": "s5c",
+    "id": "r3b",
     "verdict": "SURVIVE",
-    "major": false,
-    "lesson": "mix ADVANCE mixed=0.500 fact_combine=0.125 story_combine=0.125 mixed_story=0.344; E12 English hold color=0.969 size_stop=1.000 story=0.969; usable-chat hold usable4=0.906 usable=0.857 stop=1.000 reuse=1.0 D3 199/215 induction 0.406"
+    "major": true,
+    "lesson": "native who_2e 0.969/0.906 last!=gold 0.941/0.917; WHO sentences 0.562; has/beside hybrid 0.833/1.000; usable4 0.844 stop 1 reuse 0.857 D3 181/215; RelAssist still required for relations; not promoted"
   },
   "s2a": {
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
@@ -1162,5 +1162,51 @@
       }
     },
     "verifies": []
+  },
+  "r3": {
+    "status": "experimental hybrid",
+    "promoted": false,
+    "authoritative": false,
+    "parent": "s5b3",
+    "parent_path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+    "parent_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+    "head_path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\r3\\r3b_329011\\prop_match_head_00050.pt",
+    "head_sha256": "8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9",
+    "mechanism": "prop_match_cue_cosine_entityness + entity_piece_finish; RelAssist for has/beside",
+    "weights_only_who_2e": {
+      "official": 0.53125,
+      "seed324777": 0.5625,
+      "seed324888": 0.46875
+    },
+    "native_head_who_2e": {
+      "official": 0.96875,
+      "seed324777": 0.90625,
+      "seed324888": 0.75,
+      "last_not_official": 0.9411764705882353,
+      "last_not_324777": 0.9166666666666666
+    },
+    "external_router_who_2e": {
+      "official": 1.0,
+      "seed324777": 0.96875
+    },
+    "who_sent_native_bare": 0.5625,
+    "has_native_only": 0.4166666666666667,
+    "beside_native_only": 0.8333333333333334,
+    "has_native_relassist": 0.8333333333333334,
+    "beside_native_relassist": 1.0,
+    "usable4": 0.84375,
+    "stop": 1.0,
+    "reuse": 0.8571428571428571,
+    "d3": 181,
+    "lesson3": "deferred"
+  },
+  "r3b": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\r3\\r3b_329011\\prop_match_head_00050.pt",
+    "sha256": "8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9",
+    "verdict": "SURVIVE",
+    "major": true,
+    "authoritative": false,
+    "promoted": false,
+    "parent": "s5b3"
   }
 }

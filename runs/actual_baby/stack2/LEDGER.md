@@ -885,3 +885,34 @@ not a sole kill switch.
 - d3: {'n': 215, 'free_exact': 177, 'first_correct': 215, 'free_accuracy': 0.8232558139534883, 'first_accuracy': 1.0}
 - induction: 0.5
 
+## r3b_verify_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 181/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 181, 'first_correct': 215, 'free_accuracy': 0.8418604651162791, 'first_accuracy': 1.0}
+- induction: 0.5
+
+## r3a
+
+- Change: Tiny suffix-attn query→entity head distilled from WhoProp on train who_bind; frozen s5b3.
+- verdict: **KILL**
+- lesson: copied recency (pointer_gold ~0.50 / pointer_last ~0.53). Same as r2a. Do not train another last-entity pointer.
+- recipe: r3a
+
+## r3c
+
+- Change: Local hop window on top of r3b entityness.
+- verdict: **KILL**
+- lesson: WHO sentences up (0.75 with piece map) but who_2e seed2 0.844 missed 0.85; usable 0.59. Lock: who_2e 0.906/0.875, WHO 0.625, usable 0.56. Not safest.
+- recipe: r3c
+
+## r3b
+
+- Change: Frozen s5b3 + learned PropMatchHead (cue locate + frozen cosine + entityness). No Python property scanner. RelAssist still on for has/beside. Entity-piece finish for hen/he.
+- verdict: **SURVIVE**
+- lesson: native who_2e official 0.969 seed324777 0.906 last≠gold 0.941/0.917; seed324888 0.750 labeled weak; WHO sentences native 0.562 (below 0.80); has/beside hybrid 0.833/1.000; usable4 0.844 stop 1.000 reuse 0.857; D3 181/215; not promoted
+- checkpoint_sha256: 0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd
+- head_sha256: 8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9
+- recipe: r3b
+

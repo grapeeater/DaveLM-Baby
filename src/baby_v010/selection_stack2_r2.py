@@ -66,6 +66,31 @@ def bare_entity_id_set(tokenizer) -> dict[int, str]:
     return out
 
 
+def entity_piece_seqs(tokenizer) -> list[list[int]]:
+    """Spaced and bare tokenizations of WHO entities that need more than one piece."""
+    seqs: list[list[int]] = []
+    for word in WHO_ENTITIES:
+        spaced = encode_ids(tokenizer, f" {word}")
+        if len(spaced) >= 2:
+            seqs.append([int(x) for x in spaced])
+        bare = encode_ids(tokenizer, word)
+        if len(bare) >= 2:
+            seqs.append([int(x) for x in bare])
+    return seqs
+
+
+def next_entity_finish_id(values: list[int], seqs: list[list[int]]) -> int | None:
+    """If the suffix is a proper prefix of a known entity spelling, return the next piece."""
+    best: tuple[int, int] | None = None
+    for seq in seqs:
+        for k in range(1, len(seq)):
+            if len(values) >= k and values[-k:] == seq[:k]:
+                cand = (k, seq[k])
+                if best is None or cand[0] > best[0]:
+                    best = cand
+    return None if best is None else int(best[1])
+
+
 def question_id_set(tokenizer) -> set[int]:
     return {spaced_first_id(tokenizer, word) for word in QUESTION_WORDS}
 
@@ -679,6 +704,7 @@ class RelAssistRuntime:
         self.period_id = _first_id(tokenizer, ".")
         self.has_id = _first_id(tokenizer, " has")
         self.is_id = _first_id(tokenizer, " is")
+        self.entity_seqs = entity_piece_seqs(tokenizer)
         self.article_ids = {
             _first_id(tokenizer, " The"),
             _first_id(tokenizer, " the"),
@@ -717,6 +743,10 @@ class RelAssistRuntime:
                 query = content[: qmark + 1] if qmark is not None else content
                 qtext = runtime.tokenizer.decode(query, skip_special_tokens=True).lower()
                 stext = runtime.tokenizer.decode(suffix, skip_special_tokens=True).lower() if suffix else ""
+                finish = next_entity_finish_id([int(t) for t in suffix], runtime.entity_seqs) if suffix else None
+                if finish is not None:
+                    logits[b, end - 1, finish] = logits[b, end - 1, finish] + runtime.finish_scale
+                    continue
                 if suffix and int(suffix[-1]) == runtime.object_id:
                     logits[b, end - 1, runtime.period_id] = logits[b, end - 1, runtime.period_id] + runtime.finish_scale
                     continue

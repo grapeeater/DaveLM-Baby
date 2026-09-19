@@ -195,6 +195,7 @@ runs/selection_p11/*/
 runs/actual_baby/**/*.pt
 runs/actual_baby/**/*.pth
 runs/actual_baby/**/*.tmp
+!runs/actual_baby/stack2/r3/r3b_329011/prop_match_head_00050.pt
 
 # D2 query-presence on P1 checkpoints (summaries git; pair dumps local)
 !runs/query_presence_d2/

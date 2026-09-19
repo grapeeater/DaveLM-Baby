@@ -17,7 +17,10 @@ from .selection_p11_u16000_runtime import resolve_device
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CHECKPOINT = (
-    ROOT / "runs" / "actual_baby" / "stack2" / "s2a_protect40_combine_322001" / "checkpoint_00200.pt"
+    ROOT / "runs" / "actual_baby" / "stack2" / "s5b3_compose_lock_326191" / "checkpoint_00025.pt"
+)
+DEFAULT_HEAD = (
+    ROOT / "runs" / "actual_baby" / "stack2" / "r3" / "r3b_329011" / "prop_match_head_00050.pt"
 )
 
 # Query stems used by usable-chat / dialogue eval (not fact sentences).
@@ -103,7 +106,7 @@ def decode_user_turn(model, tokenizer, device, transcript: str, user_text: str) 
 
 def run_interactive_chat(model, tokenizer, device) -> None:
     transcript = ""
-    print("s2a stack2 Baby ready (inference-only). Commands: /reset, /exit", flush=True)
+    print("stack2 Baby ready (inference-only). Commands: /reset, /exit", flush=True)
     while True:
         try:
             user_text = input("\nYou> ")
@@ -155,6 +158,13 @@ def main() -> None:
     parser.add_argument("--checkpoint", type=Path, default=DEFAULT_CHECKPOINT)
     parser.add_argument("--device", default="cuda")
     parser.add_argument(
+        "--runtime",
+        choices=("r3", "r2"),
+        default="r3",
+        help="r3: learned PropMatchHead + RelAssist; r2: WhoProp Python cue scanner + RelAssist",
+    )
+    parser.add_argument("--head", type=Path, default=DEFAULT_HEAD)
+    parser.add_argument(
         "--smoke",
         action="store_true",
         help="inference-only in-domain prompts; no interactive session",
@@ -162,14 +172,22 @@ def main() -> None:
     args = parser.parse_args()
     device = resolve_device(args.device)
     tokenizer = load_tokenizer()
-    model, _config, ckpt = load_experimental_baby(args.checkpoint, device)
+    model, config, ckpt = load_experimental_baby(args.checkpoint, device)
     from .selection_stack2_r2 import RelAssistRuntime, WhoPropRuntime
 
-    WhoPropRuntime(model, tokenizer).install().enabled = True
+    if args.runtime == "r3":
+        from .selection_stack2_r3 import load_prop_match_head, PropMatchRuntime
+
+        head = load_prop_match_head(args.head, config.d_model, device)
+        PropMatchRuntime(model, head, tokenizer).install().enabled = True
+        label = "prop_match+rel_assist"
+    else:
+        WhoPropRuntime(model, tokenizer).install().enabled = True
+        label = "who_prop+rel_assist"
     RelAssistRuntime(model, tokenizer).install().enabled = True
     print(
         f"checkpoint={args.checkpoint} update={ckpt.get('update')} "
-        f"protocol={ckpt.get('protocol')} device={device} routers=who_prop+rel_assist",
+        f"protocol={ckpt.get('protocol')} device={device} runtime={label}",
         flush=True,
     )
     if args.smoke:
