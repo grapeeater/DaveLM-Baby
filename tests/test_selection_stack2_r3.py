@@ -78,3 +78,39 @@ def test_bind_piece_map_canonicalizes_hen_first_piece():
     seqs = entity_piece_seqs(tokenizer)
     assert next_entity_finish_id([spaced], seqs) == encode_ids(tokenizer, " hen")[1]
     assert next_entity_finish_id([spaced, encode_ids(tokenizer, " hen")[1]], seqs) is None
+    dog_d = int(encode_ids(tokenizer, "dog")[0])
+    assert next_entity_finish_id([1, 2, dog_d], seqs) is None
+    from src.baby_v010.selection_stack2_r2 import canonicalize_entity_src, entity_spellings
+
+    spells = entity_spellings(tokenizer)
+    spaced_ent = {word: spaced_first_id(tokenizer, word) for word in ("dog", "hen", "duck", "bear", "cat", "frog")}
+    dog_bare = encode_ids(tokenizer, "dog")
+    assert canonicalize_entity_src(dog_bare, len(dog_bare) - 1, spells, spaced_ent) == spaced_first_id(tokenizer, "dog")
+
+
+def test_query_kind_aliases_and_who_finish_boosts_is():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer, spaced_first_id
+    from src.baby_v010.selection_stack2_r2 import entity_spellings, value_spellings
+    from src.baby_v010.data_language_bridge import SIZES, VALUES
+
+    tokenizer = load_tokenizer()
+    head = PropMatchHead(8, suffix_k=4, copy_scale=8.0)
+    head.has_seq = [int(x) for x in encode_ids(tokenizer, " has")]
+    head.have_seq = [int(x) for x in encode_ids(tokenizer, " have")]
+    head.belong_seq = [int(x) for x in encode_ids(tokenizer, " belong")]
+    head.next_seq = [int(x) for x in encode_ids(tokenizer, " next")]
+    head.beside_id = int(encode_ids(tokenizer, " beside")[0])
+    head.is_id = int(encode_ids(tokenizer, " is")[0])
+    head.period_id = int(encode_ids(tokenizer, ".")[0])
+    head.entity_spells = entity_spellings(tokenizer)
+    head.value_spells = value_spellings(tokenizer)
+    head.spaced_ent = {"dog": spaced_first_id(tokenizer, "dog")}
+    head.spaced_value = {word: spaced_first_id(tokenizer, word) for word in tuple(VALUES) + tuple(SIZES)}
+    assert head._query_kind(encode_ids(tokenizer, "What object does the dog have?")) == "has"
+    assert head._query_kind(encode_ids(tokenizer, "Which object belongs to the hen?")) == "has"
+    assert head._query_kind(encode_ids(tokenizer, "Who is next to the cat?")) == "beside"
+    assert head._query_kind(encode_ids(tokenizer, "Who is white?")) == "who"
+    dog = encode_ids(tokenizer, "dog")
+    logits = torch.zeros(1, 1, 2048)
+    head._apply_who_finish(logits, 0, 0, dog, torch.randn(6, 8), dog, None)
+    assert int(logits[0, 0].argmax()) == head.is_id

@@ -161,7 +161,7 @@ def main() -> None:
         "--runtime",
         choices=("r3", "r2"),
         default="r3",
-        help="r3: learned PropMatchHead + RelAssist; r2: WhoProp Python cue scanner + RelAssist",
+        help="r3: PropMatchHead (WHO/HAS native finish) + RelAssist for BESIDE; r2: WhoProp + RelAssist",
     )
     parser.add_argument("--head", type=Path, default=DEFAULT_HEAD)
     parser.add_argument(

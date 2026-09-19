@@ -916,3 +916,20 @@ not a sole kill switch.
 - head_sha256: 8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9
 - recipe: r3b
 
+## r4_retain_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 181/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 181, 'first_correct': 215, 'free_accuracy': 0.8418604651162791, 'first_accuracy': 1.0}
+- induction: 0.5
+
+## r4
+
+- Change: Native WHO sentence finish + native HAS finish + held-out paraphrases on frozen s5b3+r3b. No new trained weights. RelAssist remains for BESIDE only.
+- verdict: **SURVIVE**
+- lesson: who_sent 0.562→0.812 (color 1.000 / size 0.625; seeds 0.875/0.812); has native 0.417→1.000 (who/what 1.000); paraphrases native 0.950 (who 1.000 / has 1.000 / beside 0.833); who_2e 0.969/0.906 held; usable4 0.844 stop 1 reuse 0.857; D3 181/215; not promoted
+- checkpoint_sha256: 0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd
+- head_sha256: 8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9
+- recipe: r4
+

@@ -79,15 +79,82 @@ def entity_piece_seqs(tokenizer) -> list[list[int]]:
     return seqs
 
 
-def next_entity_finish_id(values: list[int], seqs: list[list[int]]) -> int | None:
-    """If the suffix is a proper prefix of a known entity spelling, return the next piece."""
+def entity_spellings(tokenizer) -> list[tuple[str, list[int]]]:
+    """Every spaced and bare spelling of WHO entities, including one-piece words."""
+    out: list[tuple[str, list[int]]] = []
+    for word in WHO_ENTITIES:
+        spaced = encode_ids(tokenizer, f" {word}")
+        if spaced:
+            out.append((word, [int(x) for x in spaced]))
+        bare = encode_ids(tokenizer, word)
+        if bare:
+            out.append((word, [int(x) for x in bare]))
+    return out
+
+
+def color_spellings(tokenizer) -> list[tuple[str, list[int]]]:
+    """Spaced and bare spellings of color words used in HAS object finish."""
+    return _word_spellings(tokenizer, VALUES)
+
+
+def value_spellings(tokenizer) -> list[tuple[str, list[int]]]:
+    """Spaced and bare spellings of color and size words used in WHO finish."""
+    return _word_spellings(tokenizer, tuple(VALUES) + tuple(SIZES))
+
+
+def _word_spellings(tokenizer, words: tuple[str, ...]) -> list[tuple[str, list[int]]]:
+    out: list[tuple[str, list[int]]] = []
+    for word in words:
+        spaced = encode_ids(tokenizer, f" {word}")
+        if spaced:
+            out.append((word, [int(x) for x in spaced]))
+        bare = encode_ids(tokenizer, word)
+        if bare:
+            out.append((word, [int(x) for x in bare]))
+    return out
+
+
+def completed_spelling(values: list[int], spells: list[tuple[str, list[int]]]) -> str | None:
+    """If values is exactly one known spelling, return the word."""
+    for word, seq in spells:
+        if values == seq:
+            return word
+    return None
+
+
+def canonicalize_entity_src(
+    values: list[int],
+    ptr: int,
+    spellings: list[tuple[str, list[int]]],
+    spaced_first: dict[str, int],
+) -> int:
+    """If ptr sits inside a known entity spelling, return that word's spaced first-token."""
     best: tuple[int, int] | None = None
-    for seq in seqs:
-        for k in range(1, len(seq)):
-            if len(values) >= k and values[-k:] == seq[:k]:
-                cand = (k, seq[k])
+    for word, seq in spellings:
+        n = len(seq)
+        for k in range(n):
+            start = ptr - k
+            if start >= 0 and values[start : start + n] == seq:
+                cand = (n, int(spaced_first[word]))
                 if best is None or cand[0] > best[0]:
                     best = cand
+    return int(best[1]) if best is not None else int(values[ptr])
+
+
+def next_entity_finish_id(values: list[int], seqs: list[list[int]]) -> int | None:
+    """Finish only when the whole suffix is a proper prefix of one entity spelling.
+
+    Trailing accidental first-pieces (the ``d`` in ``red``) must not complete ``dog``.
+    """
+    if not values:
+        return None
+    best: tuple[int, int] | None = None
+    for seq in seqs:
+        n = len(values)
+        if 0 < n < len(seq) and values == seq[:n]:
+            cand = (n, seq[n])
+            if best is None or cand[0] > best[0]:
+                best = cand
     return None if best is None else int(best[1])
 
 
@@ -743,7 +810,10 @@ class RelAssistRuntime:
                 query = content[: qmark + 1] if qmark is not None else content
                 qtext = runtime.tokenizer.decode(query, skip_special_tokens=True).lower()
                 stext = runtime.tokenizer.decode(suffix, skip_special_tokens=True).lower() if suffix else ""
-                finish = next_entity_finish_id([int(t) for t in suffix], runtime.entity_seqs) if suffix else None
+                finish_src = [int(t) for t in suffix]
+                while finish_src and finish_src[0] in runtime.article_ids:
+                    finish_src = finish_src[1:]
+                finish = next_entity_finish_id(finish_src, runtime.entity_seqs) if finish_src else None
                 if finish is not None:
                     logits[b, end - 1, finish] = logits[b, end - 1, finish] + runtime.finish_scale
                     continue

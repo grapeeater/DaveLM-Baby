@@ -1,0 +1,610 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "mechanism": "who_sentence_finish + has/have/belong aliases",
+  "who_2e": {
+    "n": 32,
+    "acc": 0.96875,
+    "pred_is_last": 0.5,
+    "acc_last_gold": 1.0,
+    "acc_last_not": 0.9411764705882353,
+    "by_gap": {
+      "1": 1.0,
+      "3": 1.0,
+      "2": 1.0,
+      "4": 0.75
+    }
+  },
+  "who_2e_324777": {
+    "n": 32,
+    "acc": 0.90625,
+    "pred_is_last": 0.59375,
+    "acc_last_gold": 0.9,
+    "acc_last_not": 0.9166666666666666,
+    "by_gap": {
+      "3": 0.9473684210526315,
+      "1": 0.6666666666666666,
+      "2": 1.0,
+      "4": 0.5
+    }
+  },
+  "who_sent": {
+    "bare": 0.8125,
+    "prefix": 0.8125,
+    "first_entity": 0.8125,
+    "has_entity": 0.8125,
+    "has_value": 0.8125,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "who_color": 1.0,
+      "who_size": 0.625
+    }
+  },
+  "has_native": {
+    "bare": 1.0,
+    "prefix": 1.0,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "has_who": 1.0,
+      "has_what": 1.0
+    }
+  },
+  "has_examples": [
+    {
+      "id": "has_who_dog_white",
+      "kind": "has_who",
+      "decoded": " dog has the white object.",
+      "full": " dog has the white object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_who_hen_red",
+      "kind": "has_who",
+      "decoded": " hen has the red object.",
+      "full": " hen has the red object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_who_bear_blue",
+      "kind": "has_who",
+      "decoded": " bear has the blue object.",
+      "full": " bear has the blue object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_who_cat_green",
+      "kind": "has_who",
+      "decoded": " cat has the green object.",
+      "full": " cat has the green object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_what_dog_white",
+      "kind": "has_what",
+      "decoded": " dog has the white object.",
+      "full": " dog has the white object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_what_hen_red",
+      "kind": "has_what",
+      "decoded": " hen has the red object.",
+      "full": " hen has the red object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_what_bear_blue",
+      "kind": "has_what",
+      "decoded": " bear has the blue object.",
+      "full": " bear has the blue object.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "has_what_frog_pink",
+      "kind": "has_what",
+      "decoded": " frog has the pink object.",
+      "full": " frog has the pink object.",
+      "sentence_ok": true,
+      "first_entity": true
+    }
+  ],
+  "who_examples": [
+    {
+      "id": "who_dog_white",
+      "kind": "who_color",
+      "decoded": " dog is white.",
+      "full": " dog is white.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_hen_red",
+      "kind": "who_color",
+      "decoded": " hen is red.",
+      "full": " hen is red.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_bear_blue",
+      "kind": "who_color",
+      "decoded": " bear is blue.",
+      "full": " bear is blue.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_cat_yellow",
+      "kind": "who_color",
+      "decoded": " cat is yellow.",
+      "full": " cat is yellow.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_duck_green",
+      "kind": "who_color",
+      "decoded": " duck is green.",
+      "full": " duck is green.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_frog_pink",
+      "kind": "who_color",
+      "decoded": " frog is pink.",
+      "full": " frog is pink.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_hen_white",
+      "kind": "who_color",
+      "decoded": " hen is white.",
+      "full": " hen is white.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_cat_blue",
+      "kind": "who_color",
+      "decoded": " cat is blue.",
+      "full": " cat is blue.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_dog_huge",
+      "kind": "who_size",
+      "decoded": " dog is huge.",
+      "full": " dog is huge.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_hen_tiny",
+      "kind": "who_size",
+      "decoded": " dog is huge.",
+      "full": " dog is huge.",
+      "sentence_ok": false,
+      "first_entity": false
+    },
+    {
+      "id": "who_bear_wide",
+      "kind": "who_size",
+      "decoded": " cat is thin.",
+      "full": " cat is thin.",
+      "sentence_ok": false,
+      "first_entity": false
+    },
+    {
+      "id": "who_cat_thin",
+      "kind": "who_size",
+      "decoded": " cat is thin.",
+      "full": " cat is thin.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_duck_small",
+      "kind": "who_size",
+      "decoded": " duck is small.",
+      "full": " duck is small.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_frog_short",
+      "kind": "who_size",
+      "decoded": " duck is small.",
+      "full": " duck is small.",
+      "sentence_ok": false,
+      "first_entity": false
+    },
+    {
+      "id": "who_dog_thin",
+      "kind": "who_size",
+      "decoded": " dog is thin.",
+      "full": " dog is thin.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "who_bear_tiny",
+      "kind": "who_size",
+      "decoded": " bear is tiny.",
+      "full": " bear is tiny.",
+      "sentence_ok": true,
+      "first_entity": true
+    }
+  ],
+  "who_para": {
+    "n": 8,
+    "bare": 1.0,
+    "first_entity": 1.0
+  },
+  "has_para": {
+    "n": 6,
+    "bare": 1.0,
+    "first_entity": 1.0
+  },
+  "beside_para_native": {
+    "n": 6,
+    "bare": 0.8333333333333334,
+    "first_entity": 0.8333333333333334
+  },
+  "beside_para_hybrid": {
+    "n": 6,
+    "bare": 1.0,
+    "first_entity": 1.0
+  },
+  "beside_canonical_hybrid": {
+    "bare": 1.0,
+    "prefix": 0.8333333333333334,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "beside_where": 1.0,
+      "beside_who": 1.0
+    }
+  },
+  "overall_para_native": 0.95,
+  "overall_para_hybrid": 1.0,
+  "who_rows": [
+    {
+      "id": "p_who_animal_white",
+      "decoded": "dog is white.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_one_red",
+      "decoded": "hen is red.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_is_blue",
+      "decoded": "bear is blue.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_animal_yellow",
+      "decoded": "cat is yellow.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_one_green",
+      "decoded": "duck is green.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_is_pink",
+      "decoded": "frog is pink.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_animal_huge",
+      "decoded": "dog is huge.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_who_one_thin",
+      "decoded": "cat is thin.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 3,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    }
+  ],
+  "has_rows": [
+    {
+      "id": "p_has_obj_dog",
+      "decoded": "dog has the white object.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false,
+      "has_object": true,
+      "color_shortcut": false
+    },
+    {
+      "id": "p_has_belong_hen",
+      "decoded": "hen has the red object.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false,
+      "has_object": true,
+      "color_shortcut": false
+    },
+    {
+      "id": "p_has_obj_bear",
+      "decoded": "bear has the blue object.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false,
+      "has_object": true,
+      "color_shortcut": false
+    },
+    {
+      "id": "p_has_belong_cat",
+      "decoded": "cat has the green object.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false,
+      "has_object": true,
+      "color_shortcut": false
+    },
+    {
+      "id": "p_has_obj_frog",
+      "decoded": "frog has the pink object.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false,
+      "has_object": true,
+      "color_shortcut": false
+    },
+    {
+      "id": "p_has_belong_duck",
+      "decoded": "duck has the pink object.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false,
+      "has_object": true,
+      "color_shortcut": false
+    }
+  ],
+  "beside_rows_native": [
+    {
+      "id": "p_bes_next_hen",
+      "decoded": "dog is beside the hen.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_animal_cat",
+      "decoded": "bear looks beside the cat.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_next_frog",
+      "decoded": "duck is beside the frog.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_animal_dog",
+      "decoded": "The dog is beside the dog.",
+      "has_entity": false,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 6,
+      "predicate_ok": true,
+      "first_entity": false,
+      "sentence_ok": false,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_next_duck",
+      "decoded": "hen is beside the duck.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_animal_bear",
+      "decoded": "frog looks beside the bear.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    }
+  ],
+  "usable": {
+    "turn4": 0.84375,
+    "stop": 1.0,
+    "reuse": 0.8571428571428571
+  }
+}

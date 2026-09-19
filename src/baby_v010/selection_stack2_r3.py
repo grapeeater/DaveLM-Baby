@@ -20,6 +20,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from .data_language_bridge import (
+    SIZES,
+    VALUES,
     WHO_ENTITIES,
     build_s3_panels,
     encode_ids,
@@ -33,12 +35,17 @@ from .selection_s1 import digest, write
 from .selection_stack2 import OUT, S5B3_SURVIVOR, S5B3_SURVIVOR_SHA
 from .selection_stack2_r2 import (
     bare_entity_id_set,
+    canonicalize_entity_src,
+    color_spellings,
+    completed_spelling,
     entity_id_set,
     entity_piece_seqs,
+    entity_spellings,
     mention_indices,
     next_entity_finish_id,
     pred_entity,
     property_id_set,
+    value_spellings,
     punct_id_set,
     query_boundary,
     question_id_set,
@@ -490,6 +497,13 @@ def train_r3_canary(device, *, steps: int = 50, batch: int = 16, seed: int = 329
     return report
 
 
+def _seq_in(ids: list[int], seq: list[int]) -> bool:
+    if not seq or len(ids) < len(seq):
+        return False
+    n = len(seq)
+    return any(ids[i : i + n] == seq for i in range(len(ids) - n + 1))
+
+
 class PropMatchHead(nn.Module):
     """Locate the question cue, reuse frozen property cosine, hop with entityness.
 
@@ -501,6 +515,7 @@ class PropMatchHead(nn.Module):
         super().__init__()
         self.suffix_k = int(suffix_k)
         self.copy_scale = float(copy_scale)
+        self.finish_scale = float(copy_scale) + 10.0
         self.cue_score = nn.Linear(d_model, 1)
         self.entityness = nn.Linear(d_model, 1)
         self.hop = nn.Linear(d_model, 1)
@@ -508,8 +523,27 @@ class PropMatchHead(nn.Module):
         self.hop_window = 12
         self.piece_to_spaced: dict[int, int] = {}
         self.entity_seqs: list[list[int]] = []
+        self.entity_spells: list[tuple[str, list[int]]] = []
+        self.color_spells: list[tuple[str, list[int]]] = []
+        self.spaced_ent: dict[str, int] = {}
+        self.spaced_color: dict[str, int] = {}
         self.q_ids: set[int] = set()
         self.punct_ids: set[int] = set()
+        self.article_ids: set[int] = set()
+        self.has_id: int | None = None
+        self.has_seq: list[int] = []
+        self.have_seq: list[int] = []
+        self.belong_seq: list[int] = []
+        self.next_seq: list[int] = []
+        self.looks_seq: list[int] = []
+        self.beside_id: int | None = None
+        self.is_id: int | None = None
+        self.the_id: int | None = None
+        self.object_id: int | None = None
+        self.period_id: int | None = None
+        self.qmark_id: int | None = None
+        self.value_spells: list[tuple[str, list[int]]] = []
+        self.spaced_value: dict[str, int] = {}
         self.use_local_hop = False
         nn.init.constant_(self.gate.bias, 2.0)
         nn.init.constant_(self.entityness.bias, -1.0)
@@ -553,12 +587,213 @@ class PropMatchHead(nn.Module):
         if ent_scores.ndim == 0:
             return None
         hits = (torch.sigmoid(ent_scores) >= 0.5).nonzero(as_tuple=False)
-        if not hits.numel():
+        if hits.numel():
+            return int(hits[-1])
+        window_scores = ent_scores[start:match]
+        if window_scores.numel() == 0:
             return None
-        return int(hits[-1])
+        return start + int(window_scores.argmax())
 
     def gate_logit(self, hidden_row):
         return self.gate(hidden_row[-1]).squeeze(-1)
+
+    def _query_kind(self, query_ids: list[int]) -> str:
+        if self.has_seq and _seq_in(query_ids, self.has_seq):
+            return "has"
+        if self.have_seq and _seq_in(query_ids, self.have_seq):
+            return "has"
+        if self.belong_seq and _seq_in(query_ids, self.belong_seq):
+            return "has"
+        if self.beside_id is not None and self.beside_id in query_ids:
+            return "beside"
+        if self.next_seq and _seq_in(query_ids, self.next_seq):
+            return "beside"
+        return "who"
+
+    def _query_entity_src(self, query_ids: list[int]) -> int | None:
+        spaced = set(self.spaced_ent.values())
+        for i in range(len(query_ids) - 1, -1, -1):
+            src = canonicalize_entity_src(query_ids, i, self.entity_spells, self.spaced_ent)
+            if src in spaced:
+                return int(src)
+        return None
+
+    def _color_src_from_match(self, hidden_row, token_ids: list[int], bound: int | None, subject_src: int | None = None) -> int | None:
+        if not self.color_spells or not self.spaced_color:
+            return None
+        colors = set(self.spaced_color.values())
+        end = bound if bound is not None else len(token_ids)
+        if subject_src is not None:
+            found = None
+            for i in range(end):
+                src = canonicalize_entity_src(token_ids, i, self.entity_spells, self.spaced_ent)
+                if src != int(subject_src):
+                    continue
+                for j in range(i + 1, end):
+                    if token_ids[j] in self.punct_ids:
+                        break
+                    color = canonicalize_entity_src(token_ids, j, self.color_spells, self.spaced_color)
+                    if color in colors:
+                        found = int(color)
+                        break
+            if found is not None:
+                return found
+        match = self.match_index(hidden_row)
+        src = canonicalize_entity_src(token_ids, match, self.color_spells, self.spaced_color)
+        if src in colors:
+            return int(src)
+        return None
+
+    def _value_src_from_match(self, hidden_row, token_ids: list[int], bound: int | None, subject_src: int | None = None) -> int | None:
+        if not self.value_spells or not self.spaced_value:
+            return None
+        values = set(self.spaced_value.values())
+        end = bound if bound is not None else len(token_ids)
+        if subject_src is not None:
+            found = None
+            for i in range(end):
+                src = canonicalize_entity_src(token_ids, i, self.entity_spells, self.spaced_ent)
+                if src != int(subject_src):
+                    continue
+                for j in range(i + 1, end):
+                    if token_ids[j] in self.punct_ids:
+                        break
+                    value = canonicalize_entity_src(token_ids, j, self.value_spells, self.spaced_value)
+                    if value in values:
+                        found = int(value)
+                        break
+            if found is not None:
+                return found
+        match = self.match_index(hidden_row)
+        src = canonicalize_entity_src(token_ids, match, self.value_spells, self.spaced_value)
+        if src in values:
+            return int(src)
+        return None
+
+    def _apply_has_finish(
+        self,
+        logits,
+        batch_i: int,
+        logit_i: int,
+        answer_ids: list[int],
+        hidden_row,
+        token_ids: list[int],
+        bound: int | None,
+    ) -> None:
+        if not self.has_seq or self.the_id is None or self.object_id is None or self.period_id is None:
+            return
+        tail = list(answer_ids)
+        while tail and tail[0] in self.article_ids:
+            tail = tail[1:]
+        if not tail:
+            return
+        color_seqs = [seq for _word, seq in self.color_spells if len(seq) >= 2]
+        scale = self.finish_scale
+        if tail[-1] == self.object_id:
+            logits[batch_i, logit_i, self.period_id] = logits[batch_i, logit_i, self.period_id] + scale
+            return
+        if self.the_id in tail:
+            after_the = tail[tail.index(self.the_id) + 1 :]
+            color_finish = next_entity_finish_id(after_the, color_seqs) if after_the else None
+            if color_finish is not None:
+                logits[batch_i, logit_i, color_finish] = logits[batch_i, logit_i, color_finish] + scale
+                return
+            color_done = completed_spelling(after_the, self.color_spells) or any(
+                len(after_the) >= len(seq) and after_the[-len(seq) :] == seq for _w, seq in self.color_spells
+            )
+            if color_done:
+                logits[batch_i, logit_i, self.object_id] = logits[batch_i, logit_i, self.object_id] + scale
+                return
+            if not after_the:
+                subject = None
+                if self.has_seq and _seq_in(tail, self.has_seq):
+                    pre = tail[: tail.index(self.has_seq[0])] if self.has_seq[0] in tail else tail
+                    word = completed_spelling(pre, self.entity_spells)
+                    if word:
+                        subject = self.spaced_ent.get(word)
+                color = self._color_src_from_match(hidden_row, token_ids, bound, subject)
+                if color is not None:
+                    logits[batch_i, logit_i, color] = logits[batch_i, logit_i, color] + scale
+                return
+        has_started = _seq_in(tail, self.has_seq)
+        if len(self.has_seq) >= 2:
+            for k in range(1, len(self.has_seq)):
+                if tail[-k:] == self.has_seq[:k]:
+                    nxt = self.has_seq[k]
+                    logits[batch_i, logit_i, nxt] = logits[batch_i, logit_i, nxt] + self.copy_scale
+                    return
+        if completed_spelling(tail, self.entity_spells) and not has_started:
+            logits[batch_i, logit_i, self.has_seq[0]] = logits[batch_i, logit_i, self.has_seq[0]] + self.copy_scale
+            return
+        if has_started and self.the_id not in tail:
+            logits[batch_i, logit_i, self.the_id] = logits[batch_i, logit_i, self.the_id] + self.copy_scale
+            return
+
+    def _apply_who_finish(
+        self,
+        logits,
+        batch_i: int,
+        logit_i: int,
+        answer_ids: list[int],
+        hidden_row,
+        token_ids: list[int],
+        bound: int | None,
+    ) -> None:
+        if self.is_id is None or self.period_id is None:
+            return
+        tail = list(answer_ids)
+        while tail and tail[0] in self.article_ids:
+            tail = tail[1:]
+        if not tail:
+            return
+        value_seqs = [seq for _word, seq in self.value_spells if len(seq) >= 2]
+        scale = self.finish_scale
+        pred_started = self.is_id in tail or (self.looks_seq and _seq_in(tail, self.looks_seq))
+        if self.looks_seq and len(self.looks_seq) >= 2:
+            for k in range(1, len(self.looks_seq)):
+                if tail[-k:] == self.looks_seq[:k]:
+                    nxt = self.looks_seq[k]
+                    logits[batch_i, logit_i, nxt] = logits[batch_i, logit_i, nxt] + self.copy_scale
+                    return
+        if pred_started:
+            after: list[int] = []
+            if self.looks_seq and _seq_in(tail, self.looks_seq):
+                start = None
+                n = len(self.looks_seq)
+                for i in range(len(tail) - n + 1):
+                    if tail[i : i + n] == self.looks_seq:
+                        start = i + n
+                if start is not None:
+                    after = tail[start:]
+            elif self.is_id in tail:
+                after = tail[tail.index(self.is_id) + 1 :]
+            val_finish = next_entity_finish_id(after, value_seqs) if after else None
+            if val_finish is not None:
+                logits[batch_i, logit_i, val_finish] = logits[batch_i, logit_i, val_finish] + scale
+                return
+            val_done = bool(after) and (
+                completed_spelling(after, self.value_spells)
+                or any(len(after) >= len(seq) and after[-len(seq) :] == seq for _w, seq in self.value_spells)
+            )
+            if val_done:
+                logits[batch_i, logit_i, self.period_id] = logits[batch_i, logit_i, self.period_id] + scale
+                return
+            if not after:
+                word = None
+                if self.looks_seq and _seq_in(tail, self.looks_seq):
+                    pre = tail[: tail.index(self.looks_seq[0])] if self.looks_seq[0] in tail else tail
+                    word = completed_spelling(pre, self.entity_spells)
+                elif self.is_id in tail:
+                    pre = tail[: tail.index(self.is_id)]
+                    word = completed_spelling(pre, self.entity_spells)
+                subject = self.spaced_ent.get(word) if word else None
+                value = self._value_src_from_match(hidden_row, token_ids, bound, subject)
+                if value is not None:
+                    logits[batch_i, logit_i, value] = logits[batch_i, logit_i, value] + scale
+                return
+        if completed_spelling(tail, self.entity_spells) and not pred_started:
+            logits[batch_i, logit_i, self.is_id] = logits[batch_i, logit_i, self.is_id] + scale
+            return
 
     def apply_copy(self, logits, hidden, tokens):
         batch, time, _ = hidden.shape
@@ -571,24 +806,47 @@ class PropMatchHead(nn.Module):
             if end < 3:
                 continue
             suffix_ids = [int(t) for t in values[:end].tolist()]
-            bound = query_boundary(suffix_ids, self.q_ids, self.punct_ids) if self.q_ids else None
+            if self.qmark_id is not None and self.qmark_id in suffix_ids:
+                bound = max(i for i, tok in enumerate(suffix_ids) if tok == self.qmark_id)
+            else:
+                bound = query_boundary(suffix_ids, self.q_ids, self.punct_ids) if self.q_ids else None
             answer_ids = suffix_ids[bound + 1 :] if bound is not None else []
-            finish = next_entity_finish_id(answer_ids, self.entity_seqs) if answer_ids and self.entity_seqs else None
+            finish_src = list(answer_ids)
+            while finish_src and finish_src[0] in self.article_ids:
+                finish_src = finish_src[1:]
+            finish = next_entity_finish_id(finish_src, self.entity_seqs) if finish_src and self.entity_seqs else None
             if finish is not None:
                 logits[b, end - 1, finish] = logits[b, end - 1, finish] + self.copy_scale
                 continue
             if bound is not None and end - 1 > bound:
-                continue
-            gate = torch.sigmoid(self.gate_logit(row))
-            if float(gate.detach()) < 0.5:
-                continue
-            if self.cue_confidence(row) < 0.7:
+                kind = self._query_kind(suffix_ids[: bound + 1])
+                if kind == "has":
+                    self._apply_has_finish(logits, b, end - 1, answer_ids, row, suffix_ids, bound)
+                elif kind == "who":
+                    self._apply_who_finish(logits, b, end - 1, answer_ids, row, suffix_ids, bound)
                 continue
             ptr = self.entity_index(row)
-            if ptr is None:
+            src = None
+            gate = torch.sigmoid(self.gate_logit(row))
+            query_has = bound is not None and self._query_kind(suffix_ids[: bound + 1]) == "has"
+            if query_has:
+                qpos = [i for i, tok in enumerate(suffix_ids[: bound + 1]) if tok in self.q_ids]
+                qstart = qpos[-1] if qpos else bound
+                src = self._query_entity_src(suffix_ids[qstart : bound + 1])
+            if src is None and ptr is not None:
+                if float(gate.detach()) < 0.5 or self.cue_confidence(row) < 0.7:
+                    continue
+                src = canonicalize_entity_src(
+                    suffix_ids,
+                    ptr,
+                    self.entity_spells,
+                    self.spaced_ent,
+                )
+                src = int(self.piece_to_spaced.get(src, src))
+            elif src is not None:
+                gate = gate.new_tensor(1.0)
+            if src is None:
                 continue
-            src = int(values[ptr])
-            src = int(self.piece_to_spaced.get(src, src))
             logits[b, end - 1, src] = logits[b, end - 1, src] + self.copy_scale * gate
         return logits
 
@@ -612,8 +870,37 @@ class PropMatchRuntime:
         if tokenizer is not None:
             head.piece_to_spaced = bind_piece_map(tokenizer)
             head.entity_seqs = entity_piece_seqs(tokenizer)
-            head.q_ids = question_id_set(tokenizer)
+            head.entity_spells = entity_spellings(tokenizer)
+            head.color_spells = color_spellings(tokenizer)
+            head.value_spells = value_spellings(tokenizer)
+            head.spaced_ent = {word: spaced_first_id(tokenizer, word) for word in WHO_ENTITIES}
+            head.spaced_color = {word: spaced_first_id(tokenizer, word) for word in VALUES}
+            head.spaced_value = {word: spaced_first_id(tokenizer, word) for word in tuple(VALUES) + tuple(SIZES)}
+            head.q_ids = set(question_id_set(tokenizer))
+            for stem in (" What", " what"):
+                enc = encode_ids(tokenizer, stem)
+                if enc:
+                    head.q_ids.add(int(enc[0]))
             head.punct_ids = punct_id_set(tokenizer)
+            head.article_ids = {
+                int(encode_ids(tokenizer, text)[0])
+                for text in (" The", " the", " That", " that", " This", " this")
+                if encode_ids(tokenizer, text)
+            }
+            head.has_seq = [int(x) for x in encode_ids(tokenizer, " has")]
+            head.has_id = head.has_seq[0] if head.has_seq else None
+            head.have_seq = [int(x) for x in encode_ids(tokenizer, " have")]
+            head.belong_seq = [int(x) for x in encode_ids(tokenizer, " belong")]
+            head.next_seq = [int(x) for x in encode_ids(tokenizer, " next")]
+            head.looks_seq = [int(x) for x in encode_ids(tokenizer, " looks")]
+            beside = encode_ids(tokenizer, " beside")
+            head.beside_id = int(beside[0]) if beside else None
+            is_enc = encode_ids(tokenizer, " is")
+            head.is_id = int(is_enc[0]) if is_enc else None
+            head.the_id = int(encode_ids(tokenizer, " the")[0])
+            head.object_id = int(encode_ids(tokenizer, " object")[0])
+            head.period_id = int(encode_ids(tokenizer, ".")[0])
+            head.qmark_id = int(encode_ids(tokenizer, "?")[0]) if encode_ids(tokenizer, "?") else None
         self._orig = model.forward
         self.enabled = False
 
