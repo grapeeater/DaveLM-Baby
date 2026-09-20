@@ -1,2 +1,8 @@
 # Graduate backbone exceeds GitHub 100 MB limit; track via Git LFS.
 runs/actual_baby/stack2/s5b3_compose_lock_326191/checkpoint_00025.pt filter=lfs diff=lfs merge=lfs -text
+
+# Hash-verified graduate artifacts: never apply CRLF normalization.
+tokenizer/** -text
+runs/actual_baby/**/*.pt filter=lfs diff=lfs merge=lfs -text
+src/baby_v010/selection_stack2_r3.py -text
+src/baby_v010/selection_stack2_r7.py -text
