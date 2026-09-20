@@ -98,6 +98,19 @@ def bridge_entity_spellings(tokenizer) -> list[tuple[str, list[int]]]:
     return _word_spellings(tokenizer, ENTITIES)
 
 
+def bridge_entity_piece_seqs(tokenizer) -> list[list[int]]:
+    """Spaced and bare tokenizations of every bridge entity that needs more than one piece."""
+    seqs: list[list[int]] = []
+    for word in ENTITIES:
+        spaced = encode_ids(tokenizer, f" {word}")
+        if len(spaced) >= 2:
+            seqs.append([int(x) for x in spaced])
+        bare = encode_ids(tokenizer, word)
+        if len(bare) >= 2:
+            seqs.append([int(x) for x in bare])
+    return seqs
+
+
 def color_spellings(tokenizer) -> list[tuple[str, list[int]]]:
     """Spaced and bare spellings of color words used in HAS object finish."""
     return _word_spellings(tokenizer, VALUES)

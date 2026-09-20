@@ -1,0 +1,38 @@
+{
+  "frozen_before_eval": true,
+  "form_a_used": false,
+  "protected_opened": false,
+  "n_integration": 40,
+  "n_reuse_scripts": 4,
+  "n_reuse_turns": 12,
+  "families": [
+    "about",
+    "beside",
+    "color",
+    "combine",
+    "direct",
+    "has_entity",
+    "has_value",
+    "size",
+    "story_combine",
+    "who",
+    "who_sent"
+  ],
+  "entities": [
+    "bear",
+    "bird",
+    "cat",
+    "cow",
+    "dog",
+    "duck",
+    "fox",
+    "hen",
+    "pig"
+  ],
+  "integration_path": "runs\\actual_baby\\stack2\\r7\\INTEGRATION_PACK.json",
+  "integration_sha256": "b1fda072e1d6c0a7ab31fda46eddce921c4344e9cd758a2c012f5529fbf2dd93",
+  "reuse_path": "runs\\actual_baby\\stack2\\r7\\REUSE_PACK.json",
+  "reuse_sha256": "696a2563b28bdf1ef65f380ae9c72dd75462f1ceda746e6b24fa9cae5c2446a4",
+  "scoring": "entity-first: inverse WHO/HAS/BESIDE fail if first bridge entity != gold entity",
+  "note": "Pack is frozen. Later failures must be diagnosed with separate canaries. Do not edit these JSON files after eval."
+}

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import torch
 
-from src.baby_v010.selection_stack2_r3 import PropMatchHead, WhoFactHead, WhoFactRuntime
+from src.baby_v010.selection_stack2_r3 import PropMatchHead, WhoFactHead, WhoFactRuntime, attach_prop_match_lexicon
 
 
 def test_position_scores_cover_only_earlier_tokens():
@@ -266,3 +266,68 @@ def test_role_only_treats_baby_cue_as_empty_answer():
     span = head._question_span(convo, bound)
     assert head._query_kind(span) == "direct_size"
     assert head._query_entity_word(span) == "bird"
+
+
+def _bind_r7_lexicon(head, tokenizer):
+    return attach_prop_match_lexicon(head, tokenizer)
+
+
+def test_inverse_bind_uses_full_bridge_and_value_before_entity():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer, spaced_first_id
+
+    tokenizer = load_tokenizer()
+    head = _bind_r7_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    leftward = encode_ids(tokenizer, "The cow is blue. The pig is red. The bird is green.")
+    assert head._subject_word_of_value("red", leftward, len(leftward)) == "pig"
+    assert head._subject_of_value(spaced_first_id(tokenizer, "red"), leftward, len(leftward)) == spaced_first_id(
+        tokenizer, "pig"
+    )
+    adj = encode_ids(tokenizer, "A pink fox hid. A tiny cow sat.")
+    assert head._subject_word_of_value("pink", adj, len(adj)) == "fox"
+    assert head._subject_word_of_value("tiny", adj, len(adj)) == "cow"
+    mid = encode_ids(tokenizer, "The cat is blue. The pig is red. The dog is white.")
+    assert head._subject_word_of_value("red", mid, len(mid)) == "pig"
+    q_who = encode_ids(tokenizer, "Who is red?")
+    assert head._query_kind(q_who) == "who"
+    assert head._answer_src("who", q_who, mid, len(mid), None) == spaced_first_id(tokenizer, "pig")
+    plan = head._who_plan(q_who, mid, len(mid))
+    decoded = tokenizer.decode(plan, skip_special_tokens=True).lower().strip()
+    assert decoded.startswith("pig")
+    assert "red" in decoded
+    assert "cat" not in decoded
+
+
+def test_has_value_vs_has_entity_and_relation_without_beside_stem():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer, spaced_first_id
+
+    tokenizer = load_tokenizer()
+    head = _bind_r7_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    facts = encode_ids(tokenizer, "The pig has the red object. The cow has the white object. The fox is beside the duck.")
+    q_has_value = encode_ids(tokenizer, "What does the pig have?")
+    q_has_entity = encode_ids(tokenizer, "Which one has the white object?")
+    q_belong = encode_ids(tokenizer, "Which object belongs to the pig?")
+    q_near = encode_ids(tokenizer, "Who is near the duck?")
+    q_about = encode_ids(tokenizer, "Talk about the fox.")
+    q_then = encode_ids(tokenizer, "the cow then?")
+    assert head._query_kind(q_has_value) == "has"
+    assert head._query_kind(q_has_entity) == "has"
+    assert head._query_kind(q_belong) == "has"
+    assert head._query_kind(q_near) == "who"
+    assert head._query_kind(q_about) == "about"
+    assert head._query_kind(q_then) == "about"
+    assert head._speech_kind("who", q_near, facts, len(facts)) == "beside"
+    assert head._answer_src("has", q_has_value, facts, len(facts), None) == spaced_first_id(tokenizer, "pig")
+    assert head._answer_src("has", q_has_entity, facts, len(facts), None) == spaced_first_id(tokenizer, "cow")
+    assert head._answer_src("has", q_belong, facts, len(facts), None) == spaced_first_id(tokenizer, "pig")
+    has_value_plan = tokenizer.decode(head._has_plan(q_has_value, facts, len(facts)), skip_special_tokens=True).lower()
+    has_entity_plan = tokenizer.decode(head._has_plan(q_has_entity, facts, len(facts)), skip_special_tokens=True).lower()
+    assert has_value_plan.strip().startswith("pig") and "red" in has_value_plan and "has" in has_value_plan
+    assert has_entity_plan.strip().startswith("cow") and "white" in has_entity_plan
+    near_plan = tokenizer.decode(head._beside_plan(q_near, facts, len(facts)), skip_special_tokens=True).lower()
+    assert near_plan.strip().startswith("fox")
+    assert "duck" in near_plan
+    assert not near_plan.startswith("duck")
+    where_q = encode_ids(tokenizer, "Where is the fox?")
+    where_plan = tokenizer.decode(head._beside_plan(where_q, facts, len(facts)), skip_special_tokens=True).lower()
+    assert where_plan.strip().startswith("fox")
+    assert "duck" in where_plan

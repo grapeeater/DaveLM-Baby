@@ -312,6 +312,10 @@ def score_integration_items(model, tokenizer, device, items: list[dict]) -> dict
             have = [word for word in needed if word in decoded.lower()]
             ok = item["entity"] in decoded.lower() and len(have) == len(needed) and bool(needed)
             scored = {"needed": needed, "have": have}
+        elif family == "who":
+            text = decoded.lower()
+            ok = item["entity"].lower() in text
+            scored = {"entity_ok": ok, "value_in": item["value"].lower() in text}
         else:
             ok = item["value"] in decoded.lower()
             scored = {}
