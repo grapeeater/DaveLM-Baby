@@ -1,0 +1,1730 @@
+CLOSED FINAL EXAM FORM B RAW TRANSCRIPT
+grading: NOT PERFORMED
+
+============================================================
+section: A
+item: A1
+session: 
+booklet_input:
+The cow is green.
+Human: What color is the cow?
+Baby:
+model_input:
+The cow is green.
+Human: What color is the cow?
+Baby:
+raw_baby_output:
+ green.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is green.
+Human: What color is the cow?
+Baby: green.
+
+============================================================
+section: A
+item: A2
+session: 
+booklet_input:
+The duck is wide.
+Human: Tell me the size of the duck.
+Baby:
+model_input:
+The duck is wide.
+Human: Tell me the size of the duck.
+Baby:
+raw_baby_output:
+ wide.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The duck is wide.
+Human: Tell me the size of the duck.
+Baby: wide.
+
+============================================================
+section: A
+item: A3
+session: 
+booklet_input:
+The fox is yellow. The bear is white.
+Human: What color is the bear?
+Baby:
+model_input:
+The fox is yellow. The bear is white.
+Human: What color is the bear?
+Baby:
+raw_baby_output:
+ white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is yellow. The bear is white.
+Human: What color is the bear?
+Baby: white.
+
+============================================================
+section: A
+item: A4
+session: 
+booklet_input:
+The bird is short. The frog is huge. The pig is tiny.
+Human: Tell me the size of the bird.
+Baby:
+model_input:
+The bird is short. The frog is huge. The pig is tiny.
+Human: Tell me the size of the bird.
+Baby:
+raw_baby_output:
+ short.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is short. The frog is huge. The pig is tiny.
+Human: Tell me the size of the bird.
+Baby: short.
+
+============================================================
+section: A
+item: A5
+session: 
+booklet_input:
+The dog is red. The cow is blue. The hen is green.
+Human: Which color does the cow have?
+Baby:
+model_input:
+The dog is red. The cow is blue. The hen is green.
+Human: Which color does the cow have?
+Baby:
+raw_baby_output:
+ cow has the blue object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The dog is red. The cow is blue. The hen is green.
+Human: Which color does the cow have?
+Baby: cow has the blue object.
+
+============================================================
+section: A
+item: A6
+session: 
+booklet_input:
+The cat is tiny. The duck is wide.
+Human: What size is the cat?
+Baby:
+model_input:
+The cat is tiny. The duck is wide.
+Human: What size is the cat?
+Baby:
+raw_baby_output:
+ tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cat is tiny. The duck is wide.
+Human: What size is the cat?
+Baby: tiny.
+
+============================================================
+section: A
+item: A7
+session: 
+booklet_input:
+The pig is white. The fox is red. The bird is yellow.
+Human: Tell me the color of the pig.
+Baby:
+model_input:
+The pig is white. The fox is red. The bird is yellow.
+Human: Tell me the color of the pig.
+Baby:
+raw_baby_output:
+ white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is white. The fox is red. The bird is yellow.
+Human: Tell me the color of the pig.
+Baby: white.
+
+============================================================
+section: A
+item: A8
+session: 
+booklet_input:
+The bear is huge. The dog is short. The cow is wide.
+Human: Which size does the cow have?
+Baby:
+model_input:
+The bear is huge. The dog is short. The cow is wide.
+Human: Which size does the cow have?
+Baby:
+raw_baby_output:
+ cat has the cow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bear is huge. The dog is short. The cow is wide.
+Human: Which size does the cow have?
+Baby: cat has the cow.
+
+============================================================
+section: B
+item: B1
+session: 
+booklet_input:
+The cow is blue. The hen is yellow.
+Human: Which animal is blue?
+Baby:
+model_input:
+The cow is blue. The hen is yellow.
+Human: Which animal is blue?
+Baby:
+raw_baby_output:
+ cow is blue.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is blue. The hen is yellow.
+Human: Which animal is blue?
+Baby: cow is blue.
+
+============================================================
+section: B
+item: B2
+session: 
+booklet_input:
+The bird is red. The dog is green. The fox is white.
+Human: Who is white?
+Baby:
+model_input:
+The bird is red. The dog is green. The fox is white.
+Human: Who is white?
+Baby:
+raw_baby_output:
+ fox is white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is red. The dog is green. The fox is white.
+Human: Who is white?
+Baby: fox is white.
+
+============================================================
+section: B
+item: B3
+session: 
+booklet_input:
+The pig is huge. The bear is tiny.
+Human: Which animal is huge?
+Baby:
+model_input:
+The pig is huge. The bear is tiny.
+Human: Which animal is huge?
+Baby:
+raw_baby_output:
+ pig is huge.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is huge. The bear is tiny.
+Human: Which animal is huge?
+Baby: pig is huge.
+
+============================================================
+section: B
+item: B4
+session: 
+booklet_input:
+The duck is short. The frog is wide. The cat is huge.
+Human: Which one is wide?
+Baby:
+model_input:
+The duck is short. The frog is wide. The cat is huge.
+Human: Which one is wide?
+Baby:
+raw_baby_output:
+ frog is wide.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The duck is short. The frog is wide. The cat is huge.
+Human: Which one is wide?
+Baby: frog is wide.
+
+============================================================
+section: B
+item: B5
+session: 
+booklet_input:
+The fox is green. The cow is red. The bird is white.
+Human: Who is green?
+Baby:
+model_input:
+The fox is green. The cow is red. The bird is white.
+Human: Who is green?
+Baby:
+raw_baby_output:
+ fox is green.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is green. The cow is red. The bird is white.
+Human: Who is green?
+Baby: fox is green.
+
+============================================================
+section: B
+item: B6
+session: 
+booklet_input:
+The pig is tiny. The dog is huge. The hen is wide.
+Human: Which animal is tiny?
+Baby:
+model_input:
+The pig is tiny. The dog is huge. The hen is wide.
+Human: Which animal is tiny?
+Baby:
+raw_baby_output:
+ pig is tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is tiny. The dog is huge. The hen is wide.
+Human: Which animal is tiny?
+Baby: pig is tiny.
+
+============================================================
+section: B
+item: B7
+session: 
+booklet_input:
+A yellow cow sat.
+Human: Which animal is yellow?
+Baby:
+model_input:
+A yellow cow sat.
+Human: Which animal is yellow?
+Baby:
+raw_baby_output:
+ cow is yellow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A yellow cow sat.
+Human: Which animal is yellow?
+Baby: cow is yellow.
+
+============================================================
+section: B
+item: B8
+session: 
+booklet_input:
+A tiny bird sat.
+Human: Who is tiny?
+Baby:
+model_input:
+A tiny bird sat.
+Human: Who is tiny?
+Baby:
+raw_baby_output:
+ bird is tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A tiny bird sat.
+Human: Who is tiny?
+Baby: bird is tiny.
+
+============================================================
+section: B
+item: B9
+session: 
+booklet_input:
+A red pig sat. A white dog sat nearby.
+Human: Which animal is red?
+Baby:
+model_input:
+A red pig sat. A white dog sat nearby.
+Human: Which animal is red?
+Baby:
+raw_baby_output:
+ pig is red.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A red pig sat. A white dog sat nearby.
+Human: Which animal is red?
+Baby: pig is red.
+
+============================================================
+section: B
+item: B10
+session: 
+booklet_input:
+A wide fox sat. A tiny hen sat nearby.
+Human: Who is wide?
+Baby:
+model_input:
+A wide fox sat. A tiny hen sat nearby.
+Human: Who is wide?
+Baby:
+raw_baby_output:
+ fox is wide.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A wide fox sat. A tiny hen sat nearby.
+Human: Who is wide?
+Baby: fox is wide.
+
+============================================================
+section: B
+item: B11
+session: 
+booklet_input:
+The duck is blue. The cow is yellow. The fox is red. The cat is white.
+Human: Which animal is yellow?
+Baby:
+model_input:
+The duck is blue. The cow is yellow. The fox is red. The cat is white.
+Human: Which animal is yellow?
+Baby:
+raw_baby_output:
+ cow is yellow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The duck is blue. The cow is yellow. The fox is red. The cat is white.
+Human: Which animal is yellow?
+Baby: cow is yellow.
+
+============================================================
+section: B
+item: B12
+session: 
+booklet_input:
+The bird is huge. The pig is short. The bear is wide. The frog is tiny.
+Human: Which one is short?
+Baby:
+model_input:
+The bird is huge. The pig is short. The bear is wide. The frog is tiny.
+Human: Which one is short?
+Baby:
+raw_baby_output:
+ pig is short.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is huge. The pig is short. The bear is wide. The frog is tiny.
+Human: Which one is short?
+Baby: pig is short.
+
+============================================================
+section: C
+item: C1
+session: 
+booklet_input:
+The cow has blue. The dog has red.
+Human: What does the cow have?
+Baby:
+model_input:
+The cow has blue. The dog has red.
+Human: What does the cow have?
+Baby:
+raw_baby_output:
+ cow has the blue object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow has blue. The dog has red.
+Human: What does the cow have?
+Baby: cow has the blue object.
+
+============================================================
+section: C
+item: C2
+session: 
+booklet_input:
+The bird has yellow. The frog has white.
+Human: What does the bird have?
+Baby:
+model_input:
+The bird has yellow. The frog has white.
+Human: What does the bird have?
+Baby:
+raw_baby_output:
+ bird has the yellow object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird has yellow. The frog has white.
+Human: What does the bird have?
+Baby: bird has the yellow object.
+
+============================================================
+section: C
+item: C3
+session: 
+booklet_input:
+The pig has green. The bear has blue.
+Human: Which animal has green?
+Baby:
+model_input:
+The pig has green. The bear has blue.
+Human: Which animal has green?
+Baby:
+raw_baby_output:
+ pig has the green object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has green. The bear has blue.
+Human: Which animal has green?
+Baby: pig has the green object.
+
+============================================================
+section: C
+item: C4
+session: 
+booklet_input:
+The fox has white. The hen has yellow. The cow has red.
+Human: Which animal has white?
+Baby:
+model_input:
+The fox has white. The hen has yellow. The cow has red.
+Human: Which animal has white?
+Baby:
+raw_baby_output:
+ fox has the white object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox has white. The hen has yellow. The cow has red.
+Human: Which animal has white?
+Baby: fox has the white object.
+
+============================================================
+section: C
+item: C5
+session: 
+booklet_input:
+The duck has blue. The bird has green. The dog has yellow.
+Human: Which one has green?
+Baby:
+model_input:
+The duck has blue. The bird has green. The dog has yellow.
+Human: Which one has green?
+Baby:
+raw_baby_output:
+ bird has the green object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The duck has blue. The bird has green. The dog has yellow.
+Human: Which one has green?
+Baby: bird has the green object.
+
+============================================================
+section: C
+item: C6
+session: 
+booklet_input:
+The cow has white. The pig has red. The frog has yellow.
+Human: Who has white?
+Baby:
+model_input:
+The cow has white. The pig has red. The frog has yellow.
+Human: Who has white?
+Baby:
+raw_baby_output:
+ cow has the white object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow has white. The pig has red. The frog has yellow.
+Human: Who has white?
+Baby: cow has the white object.
+
+============================================================
+section: C
+item: C7
+session: 
+booklet_input:
+The cat has green. The fox has blue. The bird has white. The bear has red.
+Human: Which animal has blue?
+Baby:
+model_input:
+The cat has green. The fox has blue. The bird has white. The bear has red.
+Human: Which animal has blue?
+Baby:
+raw_baby_output:
+ fox has the blue object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cat has green. The fox has blue. The bird has white. The bear has red.
+Human: Which animal has blue?
+Baby: fox has the blue object.
+
+============================================================
+section: C
+item: C8
+session: 
+booklet_input:
+The pig has yellow. The duck has white.
+Human: What does the duck have?
+Baby:
+model_input:
+The pig has yellow. The duck has white.
+Human: What does the duck have?
+Baby:
+raw_baby_output:
+ duck has the white object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has yellow. The duck has white.
+Human: What does the duck have?
+Baby: duck has the white object.
+
+============================================================
+section: C
+item: C9
+session: 
+booklet_input:
+The hen has red. The cow has blue. The fox has green.
+Human: Which one has blue?
+Baby:
+model_input:
+The hen has red. The cow has blue. The fox has green.
+Human: Which one has blue?
+Baby:
+raw_baby_output:
+ cow has the blue object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The hen has red. The cow has blue. The fox has green.
+Human: Which one has blue?
+Baby: cow has the blue object.
+
+============================================================
+section: C
+item: C10
+session: 
+booklet_input:
+The bird has white. The dog has yellow. The pig has green.
+Human: Who has green?
+Baby:
+model_input:
+The bird has white. The dog has yellow. The pig has green.
+Human: Who has green?
+Baby:
+raw_baby_output:
+ pig has the green object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird has white. The dog has yellow. The pig has green.
+Human: Who has green?
+Baby: pig has the green object.
+
+============================================================
+section: D
+item: D1
+session: 
+booklet_input:
+The cow is beside the dog.
+Human: Which animal is beside the dog?
+Baby:
+model_input:
+The cow is beside the dog.
+Human: Which animal is beside the dog?
+Baby:
+raw_baby_output:
+ cow is beside the dog.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is beside the dog.
+Human: Which animal is beside the dog?
+Baby: cow is beside the dog.
+
+============================================================
+section: D
+item: D2
+session: 
+booklet_input:
+The bird is beside the fox.
+Human: Who is beside the fox?
+Baby:
+model_input:
+The bird is beside the fox.
+Human: Who is beside the fox?
+Baby:
+raw_baby_output:
+ bird is beside the fox.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the fox.
+Human: Who is beside the fox?
+Baby: bird is beside the fox.
+
+============================================================
+section: D
+item: D3
+session: 
+booklet_input:
+The pig is beside the hen.
+Human: Where is the pig?
+Baby:
+model_input:
+The pig is beside the hen.
+Human: Where is the pig?
+Baby:
+raw_baby_output:
+ pig is beside the hen.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is beside the hen.
+Human: Where is the pig?
+Baby: pig is beside the hen.
+
+============================================================
+section: D
+item: D4
+session: 
+booklet_input:
+The duck is beside the bear.
+Human: Which animal is beside the duck?
+Baby:
+model_input:
+The duck is beside the bear.
+Human: Which animal is beside the duck?
+Baby:
+raw_baby_output:
+ bear is beside the duck.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The duck is beside the bear.
+Human: Which animal is beside the duck?
+Baby: bear is beside the duck.
+
+============================================================
+section: D
+item: D5
+session: 
+booklet_input:
+The fox is next to the cow.
+Human: Which animal is beside the cow?
+Baby:
+model_input:
+The fox is next to the cow.
+Human: Which animal is beside the cow?
+Baby:
+raw_baby_output:
+ fox is beside the cow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is next to the cow.
+Human: Which animal is beside the cow?
+Baby: fox is beside the cow.
+
+============================================================
+section: D
+item: D6
+session: 
+booklet_input:
+The bird is next to the dog.
+Human: Who is next to the dog?
+Baby:
+model_input:
+The bird is next to the dog.
+Human: Who is next to the dog?
+Baby:
+raw_baby_output:
+ bird is beside the dog.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is next to the dog.
+Human: Who is next to the dog?
+Baby: bird is beside the dog.
+
+============================================================
+section: D
+item: D7
+session: 
+booklet_input:
+The hen is beside the pig. The cow is beside the frog.
+Human: Which animal is beside the frog?
+Baby:
+model_input:
+The hen is beside the pig. The cow is beside the frog.
+Human: Which animal is beside the frog?
+Baby:
+raw_baby_output:
+ cow is beside the frog.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The hen is beside the pig. The cow is beside the frog.
+Human: Which animal is beside the frog?
+Baby: cow is beside the frog.
+
+============================================================
+section: D
+item: D8
+session: 
+booklet_input:
+The bear is next to the bird. The dog is beside the fox.
+Human: Who is beside the fox?
+Baby:
+model_input:
+The bear is next to the bird. The dog is beside the fox.
+Human: Who is beside the fox?
+Baby:
+raw_baby_output:
+ dog is beside the fox.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bear is next to the bird. The dog is beside the fox.
+Human: Who is beside the fox?
+Baby: dog is beside the fox.
+
+============================================================
+section: D
+item: D9
+session: 
+booklet_input:
+The cow is beside the duck.
+Human: Who is near the duck?
+Baby:
+model_input:
+The cow is beside the duck.
+Human: Who is near the duck?
+Baby:
+raw_baby_output:
+ cow is beside the duck.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is beside the duck.
+Human: Who is near the duck?
+Baby: cow is beside the duck.
+
+============================================================
+section: D
+item: D10
+session: 
+booklet_input:
+The pig is next to the bear.
+Human: Who is near the bear?
+Baby:
+model_input:
+The pig is next to the bear.
+Human: Who is near the bear?
+Baby:
+raw_baby_output:
+ pig is beside the bear.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is next to the bear.
+Human: Who is near the bear?
+Baby: pig is beside the bear.
+
+============================================================
+section: E
+item: E1
+session: 
+booklet_input:
+The cow is blue. The cow is huge.
+Human: What do you know about the cow?
+Baby:
+model_input:
+The cow is blue. The cow is huge.
+Human: What do you know about the cow?
+Baby:
+raw_baby_output:
+ cow is blue and huge.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is blue. The cow is huge.
+Human: What do you know about the cow?
+Baby: cow is blue and huge.
+
+============================================================
+section: E
+item: E2
+session: 
+booklet_input:
+The bird is white. The bird is short.
+Human: Tell me about the bird.
+Baby:
+model_input:
+The bird is white. The bird is short.
+Human: Tell me about the bird.
+Baby:
+raw_baby_output:
+ bird is white and short.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is white. The bird is short.
+Human: Tell me about the bird.
+Baby: bird is white and short.
+
+============================================================
+section: E
+item: E3
+session: 
+booklet_input:
+The pig is green. The pig is wide. The fox is red.
+Human: What do you know about the pig?
+Baby:
+model_input:
+The pig is green. The pig is wide. The fox is red.
+Human: What do you know about the pig?
+Baby:
+raw_baby_output:
+ pig is green and wide.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is green. The pig is wide. The fox is red.
+Human: What do you know about the pig?
+Baby: pig is green and wide.
+
+============================================================
+section: E
+item: E4
+session: 
+booklet_input:
+The duck is yellow. The bear is blue. The duck is tiny.
+Human: Tell me about the duck.
+Baby:
+model_input:
+The duck is yellow. The bear is blue. The duck is tiny.
+Human: Tell me about the duck.
+Baby:
+raw_baby_output:
+ duck is yellow and tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The duck is yellow. The bear is blue. The duck is tiny.
+Human: Tell me about the duck.
+Baby: duck is yellow and tiny.
+
+============================================================
+section: E
+item: E5
+session: 
+booklet_input:
+The cow is red. The cow is huge. The dog is white. The dog is tiny.
+Human: Which size is the red one?
+Baby:
+model_input:
+The cow is red. The cow is huge. The dog is white. The dog is tiny.
+Human: Which size is the red one?
+Baby:
+raw_baby_output:
+ huge.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is red. The cow is huge. The dog is white. The dog is tiny.
+Human: Which size is the red one?
+Baby: huge.
+
+============================================================
+section: E
+item: E6
+session: 
+booklet_input:
+The fox is short. The bird is wide. The bird is yellow. The fox is blue.
+Human: Which color is the wide one?
+Baby:
+model_input:
+The fox is short. The bird is wide. The bird is yellow. The fox is blue.
+Human: Which color is the wide one?
+Baby:
+raw_baby_output:
+ yellow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is short. The bird is wide. The bird is yellow. The fox is blue.
+Human: Which color is the wide one?
+Baby: yellow.
+
+============================================================
+section: E
+item: E7
+session: 
+booklet_input:
+A huge cow sat. That cow was white.
+Human: What color is the huge one?
+Baby:
+model_input:
+A huge cow sat. That cow was white.
+Human: What color is the huge one?
+Baby:
+raw_baby_output:
+ white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A huge cow sat. That cow was white.
+Human: What color is the huge one?
+Baby: white.
+
+============================================================
+section: E
+item: E8
+session: 
+booklet_input:
+A red bird sat. That bird was tiny.
+Human: What size is the red one?
+Baby:
+model_input:
+A red bird sat. That bird was tiny.
+Human: What size is the red one?
+Baby:
+raw_baby_output:
+ tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A red bird sat. That bird was tiny.
+Human: What size is the red one?
+Baby: tiny.
+
+============================================================
+section: E
+item: E9
+session: 
+booklet_input:
+A wide pig sat. A short dog sat nearby. The pig was green.
+Human: What color is the wide one?
+Baby:
+model_input:
+A wide pig sat. A short dog sat nearby. The pig was green.
+Human: What color is the wide one?
+Baby:
+raw_baby_output:
+ green.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A wide pig sat. A short dog sat nearby. The pig was green.
+Human: What color is the wide one?
+Baby: green.
+
+============================================================
+section: E
+item: E10
+session: 
+booklet_input:
+A blue fox sat. A white cow sat nearby. The fox was huge.
+Human: What size is the blue one?
+Baby:
+model_input:
+A blue fox sat. A white cow sat nearby. The fox was huge.
+Human: What size is the blue one?
+Baby:
+raw_baby_output:
+ huge.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A blue fox sat. A white cow sat nearby. The fox was huge.
+Human: What size is the blue one?
+Baby: huge.
+
+============================================================
+section: E
+item: E11
+session: 
+booklet_input:
+A tiny bird sat. A huge bear sat. The bird was yellow. The bear was red.
+Human: What color is the tiny one?
+Baby:
+model_input:
+A tiny bird sat. A huge bear sat. The bird was yellow. The bear was red.
+Human: What color is the tiny one?
+Baby:
+raw_baby_output:
+ yellow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A tiny bird sat. A huge bear sat. The bird was yellow. The bear was red.
+Human: What color is the tiny one?
+Baby: yellow.
+
+============================================================
+section: E
+item: E12
+session: 
+booklet_input:
+A green duck sat. A blue pig sat. The duck was short. The pig was wide.
+Human: What size is the green one?
+Baby:
+model_input:
+A green duck sat. A blue pig sat. The duck was short. The pig was wide.
+Human: What size is the green one?
+Baby:
+raw_baby_output:
+ short.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A green duck sat. A blue pig sat. The duck was short. The pig was wide.
+Human: What size is the green one?
+Baby: short.
+
+============================================================
+section: F
+item: F1
+session: 
+booklet_input:
+The cow is green. The bird is white. The pig is red.
+Human: Which animal is white?
+Baby:
+model_input:
+The cow is green. The bird is white. The pig is red.
+Human: Which animal is white?
+Baby:
+raw_baby_output:
+ bird is white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is green. The bird is white. The pig is red.
+Human: Which animal is white?
+Baby: bird is white.
+
+============================================================
+section: F
+item: F2
+session: 
+booklet_input:
+The fox has yellow. The bear is huge. The cow has green.
+Human: Which animal has yellow?
+Baby:
+model_input:
+The fox has yellow. The bear is huge. The cow has green.
+Human: Which animal has yellow?
+Baby:
+raw_baby_output:
+ fox has the yellow object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox has yellow. The bear is huge. The cow has green.
+Human: Which animal has yellow?
+Baby: fox has the yellow object.
+
+============================================================
+section: F
+item: F3
+session: 
+booklet_input:
+The bird is beside the dog. The bird is red. The cow is blue.
+Human: Who is beside the dog?
+Baby:
+model_input:
+The bird is beside the dog. The bird is red. The cow is blue.
+Human: Who is beside the dog?
+Baby:
+raw_baby_output:
+ bird is beside the dog.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the dog. The bird is red. The cow is blue.
+Human: Who is beside the dog?
+Baby: bird is beside the dog.
+
+============================================================
+section: F
+item: F4
+session: 
+booklet_input:
+The pig is short. The duck has white. The fox has green.
+Human: What does the duck have?
+Baby:
+model_input:
+The pig is short. The duck has white. The fox has green.
+Human: What does the duck have?
+Baby:
+raw_baby_output:
+ duck has the white object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is short. The duck has white. The fox has green.
+Human: What does the duck have?
+Baby: duck has the white object.
+
+============================================================
+section: F
+item: F5
+session: 
+booklet_input:
+The cow is yellow. The cow is tiny. The bird is white. The bird is huge.
+Human: Which size is the yellow one?
+Baby:
+model_input:
+The cow is yellow. The cow is tiny. The bird is white. The bird is huge.
+Human: Which size is the yellow one?
+Baby:
+raw_baby_output:
+ tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is yellow. The cow is tiny. The bird is white. The bird is huge.
+Human: Which size is the yellow one?
+Baby: tiny.
+
+============================================================
+section: F
+item: F6
+session: 
+booklet_input:
+The fox is next to the pig. The bear is green. The dog is red.
+Human: Who is near the pig?
+Baby:
+model_input:
+The fox is next to the pig. The bear is green. The dog is red.
+Human: Who is near the pig?
+Baby:
+raw_baby_output:
+ fox is beside the pig.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is next to the pig. The bear is green. The dog is red.
+Human: Who is near the pig?
+Baby: fox is beside the pig.
+
+============================================================
+section: F
+item: F7
+session: 
+booklet_input:
+The bird is blue. The bird is wide. The cow is red. The cow is short.
+Human: Tell me about the cow.
+Baby:
+model_input:
+The bird is blue. The bird is wide. The cow is red. The cow is short.
+Human: Tell me about the cow.
+Baby:
+raw_baby_output:
+ cow is red and short.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is blue. The bird is wide. The cow is red. The cow is short.
+Human: Tell me about the cow.
+Baby: cow is red and short.
+
+============================================================
+section: F
+item: F8
+session: 
+booklet_input:
+The pig has white. The duck is beside the hen. The cow has blue.
+Human: Which animal has blue?
+Baby:
+model_input:
+The pig has white. The duck is beside the hen. The cow has blue.
+Human: Which animal has blue?
+Baby:
+raw_baby_output:
+ cow has the blue object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has white. The duck is beside the hen. The cow has blue.
+Human: Which animal has blue?
+Baby: cow has the blue object.
+
+============================================================
+section: F
+item: F9
+session: 
+booklet_input:
+The fox is tiny. The cow is huge. The fox is green. The cow is yellow.
+Human: Which color is the huge one?
+Baby:
+model_input:
+The fox is tiny. The cow is huge. The fox is green. The cow is yellow.
+Human: Which color is the huge one?
+Baby:
+raw_baby_output:
+ yellow.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is tiny. The cow is huge. The fox is green. The cow is yellow.
+Human: Which color is the huge one?
+Baby: yellow.
+
+============================================================
+section: F
+item: F10
+session: 
+booklet_input:
+The bird is beside the bear. The pig has green. The bird is short.
+Human: Which animal is beside the bear?
+Baby:
+model_input:
+The bird is beside the bear. The pig has green. The bird is short.
+Human: Which animal is beside the bear?
+Baby:
+raw_baby_output:
+ bird is beside the bear.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the bear. The pig has green. The bird is short.
+Human: Which animal is beside the bear?
+Baby: bird is beside the bear.
+
+============================================================
+section: G
+item: G1.1
+session: G1
+booklet_input:
+The cow is blue. The fox is white. Which animal is blue?
+model_input:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby:
+raw_baby_output:
+ cow is blue.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+
+============================================================
+section: G
+item: G1.2
+session: G1
+booklet_input:
+What color is the fox?
+model_input:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+Human: What color is the fox?
+Baby:
+raw_baby_output:
+ white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+Human: What color is the fox?
+Baby: white.
+
+============================================================
+section: G
+item: G1.3
+session: G1
+booklet_input:
+The bird is tiny. Tell me the size of the bird.
+model_input:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+Human: What color is the fox?
+Baby: white. The bird is tiny.
+Human: Tell me the size of the bird.
+Baby:
+raw_baby_output:
+ tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+Human: What color is the fox?
+Baby: white. The bird is tiny.
+Human: Tell me the size of the bird.
+Baby: tiny.
+
+============================================================
+section: G
+item: G1.4
+session: G1
+booklet_input:
+Which animal was blue?
+model_input:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+Human: What color is the fox?
+Baby: white. The bird is tiny.
+Human: Tell me the size of the bird.
+Baby: tiny.
+Human: Which animal was blue?
+Baby:
+raw_baby_output:
+ cow is blue.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is blue. The fox is white.
+Human: Which animal is blue?
+Baby: cow is blue.
+Human: What color is the fox?
+Baby: white. The bird is tiny.
+Human: Tell me the size of the bird.
+Baby: tiny.
+Human: Which animal was blue?
+Baby: cow is blue.
+
+============================================================
+section: G
+item: G2.1
+session: G2
+booklet_input:
+The pig has green. The duck has yellow. Which animal has green?
+model_input:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby:
+raw_baby_output:
+ pig has the green object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+
+============================================================
+section: G
+item: G2.2
+session: G2
+booklet_input:
+What does the duck have?
+model_input:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+Human: What does the duck have?
+Baby:
+raw_baby_output:
+ duck has the yellow object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+Human: What does the duck have?
+Baby: duck has the yellow object.
+
+============================================================
+section: G
+item: G2.3
+session: G2
+booklet_input:
+The cow is huge. The cow is red. What do you know about the cow?
+model_input:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+Human: What does the duck have?
+Baby: duck has the yellow object. The cow is huge. The cow is red.
+Human: What do you know about the cow?
+Baby:
+raw_baby_output:
+ cow is red and huge.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+Human: What does the duck have?
+Baby: duck has the yellow object. The cow is huge. The cow is red.
+Human: What do you know about the cow?
+Baby: cow is red and huge.
+
+============================================================
+section: G
+item: G2.4
+session: G2
+booklet_input:
+Which animal had green?
+model_input:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+Human: What does the duck have?
+Baby: duck has the yellow object. The cow is huge. The cow is red.
+Human: What do you know about the cow?
+Baby: cow is red and huge.
+Human: Which animal had green?
+Baby:
+raw_baby_output:
+ pig is green.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has green. The duck has yellow.
+Human: Which animal has green?
+Baby: pig has the green object.
+Human: What does the duck have?
+Baby: duck has the yellow object. The cow is huge. The cow is red.
+Human: What do you know about the cow?
+Baby: cow is red and huge.
+Human: Which animal had green?
+Baby: pig is green.
+
+============================================================
+section: G
+item: G3.1
+session: G3
+booklet_input:
+The bird is beside the fox. Which animal is beside the fox?
+model_input:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby:
+raw_baby_output:
+ bird is beside the fox.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox.
+
+============================================================
+section: G
+item: G3.2
+session: G3
+booklet_input:
+The pig has white. What does the pig have?
+model_input:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox. The pig has white.
+Human: What does the pig have?
+Baby:
+raw_baby_output:
+ pig has the white object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox. The pig has white.
+Human: What does the pig have?
+Baby: pig has the white object.
+
+============================================================
+section: G
+item: G3.3
+session: G3
+booklet_input:
+The duck is short. The bear is wide. Which animal is wide?
+model_input:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox. The pig has white.
+Human: What does the pig have?
+Baby: pig has the white object. The duck is short. The bear is wide.
+Human: Which animal is wide?
+Baby:
+raw_baby_output:
+ bear is wide.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox. The pig has white.
+Human: What does the pig have?
+Baby: pig has the white object. The duck is short. The bear is wide.
+Human: Which animal is wide?
+Baby: bear is wide.
+
+============================================================
+section: G
+item: G3.4
+session: G3
+booklet_input:
+Which animal was beside the fox?
+model_input:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox. The pig has white.
+Human: What does the pig have?
+Baby: pig has the white object. The duck is short. The bear is wide.
+Human: Which animal is wide?
+Baby: bear is wide.
+Human: Which animal was beside the fox?
+Baby:
+raw_baby_output:
+ bird is beside the fox.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is beside the fox.
+Human: Which animal is beside the fox?
+Baby: bird is beside the fox. The pig has white.
+Human: What does the pig have?
+Baby: pig has the white object. The duck is short. The bear is wide.
+Human: Which animal is wide?
+Baby: bear is wide.
+Human: Which animal was beside the fox?
+Baby: bird is beside the fox.
+
+============================================================
+section: H
+item: H1
+session: 
+booklet_input:
+The cow is red.  The bird is green.
+Human: Which animal is red?
+Baby:
+model_input:
+The cow is red.  The bird is green.
+Human: Which animal is red?
+Baby:
+raw_baby_output:
+ cow is red.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The cow is red.  The bird is green.
+Human: Which animal is red?
+Baby: cow is red.
+
+============================================================
+section: H
+item: H2
+session: 
+booklet_input:
+The pig has blue.
+Human: Who has blue?
+Baby:
+model_input:
+The pig has blue.
+Human: Who has blue?
+Baby:
+raw_baby_output:
+ pig has the blue object.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig has blue.
+Human: Who has blue?
+Baby: pig has the blue object.
+
+============================================================
+section: H
+item: H3
+session: 
+booklet_input:
+The fox is next to the duck.
+Human: Who is near the duck?
+Baby:
+model_input:
+The fox is next to the duck.
+Human: Who is near the duck?
+Baby:
+raw_baby_output:
+ fox is beside the duck.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The fox is next to the duck.
+Human: Who is near the duck?
+Baby: fox is beside the duck.
+
+============================================================
+section: H
+item: H4
+session: 
+booklet_input:
+The bird is tiny. The bird is yellow.
+Human: Describe the bird.
+Baby:
+model_input:
+The bird is tiny. The bird is yellow.
+Human: Describe the bird.
+Baby:
+raw_baby_output:
+ bird is yellow and tiny.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The bird is tiny. The bird is yellow.
+Human: Describe the bird.
+Baby: bird is yellow and tiny.
+
+============================================================
+section: H
+item: H5
+session: 
+booklet_input:
+A white cow sat.
+Human: Which animal is white?
+Baby:
+model_input:
+A white cow sat.
+Human: Which animal is white?
+Baby:
+raw_baby_output:
+ cow is white.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+A white cow sat.
+Human: Which animal is white?
+Baby: cow is white.
+
+============================================================
+section: H
+item: H6
+session: 
+booklet_input:
+The pig is wide. The fox is short. The pig is green.
+Human: Which color is the wide one?
+Baby:
+model_input:
+The pig is wide. The fox is short. The pig is green.
+Human: Which color is the wide one?
+Baby:
+raw_baby_output:
+ green.
+generated_status: generated
+infrastructure_failure: None
+rolling_transcript:
+The pig is wide. The fox is short. The pig is green.
+Human: Which color is the wide one?
+Baby: green.

@@ -1,0 +1,33 @@
+﻿RECYCLE EXECUTION LOG - started 2026-09-19 23:56:33
+2026-09-19 23:56:33  C:\DaveLM-v0.2.1  (0.01 GB)  OK -> Recycle Bin
+2026-09-19 23:56:33  C:\DaveLM-v0.3  (0.08 GB)  OK -> Recycle Bin
+2026-09-19 23:56:34  C:\DaveLM-v0.4  (0.21 GB)  OK -> Recycle Bin
+2026-09-19 23:56:35  C:\DaveLM-v0.5  (0.36 GB)  OK -> Recycle Bin
+2026-09-19 23:56:37  C:\DaveLM-v0.6  (0.86 GB)  OK -> Recycle Bin
+2026-09-19 23:56:40  C:\DaveLM-v0.6.1  (1.6 GB)  OK -> Recycle Bin
+2026-09-19 23:56:42  C:\DaveLM-v0.7  (2.27 GB)  OK -> Recycle Bin
+2026-09-19 23:56:44  C:\DaveLM-v0.7.1  (2.84 GB)  OK -> Recycle Bin
+2026-09-19 23:56:46  C:\DaveLM-v0.8  (3.8 GB)  OK -> Recycle Bin
+2026-09-19 23:56:48  C:\DaveLM-v0.8.1  (4.69 GB)  OK -> Recycle Bin
+2026-09-19 23:56:50  C:\DaveLM-v0.8.2  (5.54 GB)  OK -> Recycle Bin
+2026-09-19 23:56:52  C:\DaveLM-v0.8.3  (5.55 GB)  OK -> Recycle Bin
+2026-09-19 23:56:54  C:\DaveLM-v0.8.4  (9.2 GB)  OK -> Recycle Bin
+2026-09-19 23:56:56  C:\DaveLM-v0.9  (4.61 GB)  OK -> Recycle Bin
+2026-09-19 23:56:56  C:\DaveLM-v0.10  (253.68 GB)  FAILED: Exception calling "DeleteDirectory" with "3" argument(s): "The process cannot access the file because it is being used by another process"
+2026-09-19 23:56:59  C:\DaveLM-CADAVER  (176.16 GB)  OK -> Recycle Bin
+2026-09-19 23:57:18  C:\DaveLM  (0 GB)  OK -> Recycle Bin
+Completed 2026-09-19 23:57:18. Recycle Bin NOT emptied.
+2026-09-19 23:57:23  C:\DaveLM-v0.10\runs  (253.34 GB)  OK -> Recycle Bin
+2026-09-19 23:57:24  C:\DaveLM-v0.10\data  (0.34 GB)  OK -> Recycle Bin
+2026-09-19 23:57:24  C:\DaveLM-v0.10\research  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:25  C:\DaveLM-v0.10\design  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:25  C:\DaveLM-v0.10\docs  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:25  C:\DaveLM-v0.10\tests  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:25  C:\DaveLM-v0.10\scripts  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:25  C:\DaveLM-v0.10\archive  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:26  C:\DaveLM-v0.10\chat_transcripts  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:30  C:\DaveLM-v0.10\src  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:30  C:\DaveLM-v0.10\configs  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:30  C:\DaveLM-v0.10\data_specs  (0 GB)  OK -> Recycle Bin
+2026-09-19 23:57:30  C:\DaveLM-v0.10\.cursor  (0 GB)  OK -> Recycle Bin
+2026-09-19 v0.10 empty shell FAILED: Exception calling "DeleteDirectory" with "3" argument(s): "The process cannot access the file because it is being used by another process"

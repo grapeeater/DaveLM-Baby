@@ -1,0 +1,59 @@
+DaveLM AGGRESSIVE RECYCLE PLAN
+Generated: 2026-09-19
+Prerequisites: v1.0 verified PASS, archive exists at C:\DaveLM_ARCHIVE\
+
+VERIFICATION STATUS (from C:\DaveLM-v1.0)
+-----------------------------------------
+All graduate SHA256 hashes: PASS (8/8)
+Canary vs v0.10 baseline: PASS (identical decoded outputs)
+Archive present: YES (~1.18 GB, git bundle + graduate copies + docs)
+
+PRESERVED (DO NOT RECYCLE)
+--------------------------
+C:\DaveLM-v1.0\                              ~0.68 GB   Self-contained graduate
+C:\DaveLM_ARCHIVE\                           ~1.18 GB   Graduation archive (verified)
+
+TO RECYCLE (SendToRecycleBin — NOT permanent delete)
+----------------------------------------------------
+C:\DaveLM-v0.2.1\                            ~0.01 GB   Superseded pre-v1 history
+C:\DaveLM-v0.3\                              ~0.08 GB   Superseded pre-v1 history
+C:\DaveLM-v0.4\                              ~0.21 GB   Superseded pre-v1 history
+C:\DaveLM-v0.5\                              ~0.36 GB   Superseded pre-v1 history
+C:\DaveLM-v0.6\                              ~0.86 GB   Superseded pre-v1 history
+C:\DaveLM-v0.6.1\                            ~1.60 GB   Superseded pre-v1 history
+C:\DaveLM-v0.7\                              ~2.27 GB   Superseded pre-v1 history
+C:\DaveLM-v0.7.1\                            ~2.84 GB   Superseded pre-v1 history
+C:\DaveLM-v0.8\                              ~3.80 GB   Superseded pre-v1 history
+C:\DaveLM-v0.8.1\                            ~4.69 GB   Superseded pre-v1 history
+C:\DaveLM-v0.8.2\                            ~5.54 GB   Superseded pre-v1 history
+C:\DaveLM-v0.8.3\                            ~5.55 GB   Superseded pre-v1 history
+C:\DaveLM-v0.8.4\                            ~9.20 GB   Superseded pre-v1 history
+C:\DaveLM-v0.9\                              ~4.61 GB   Tokenizer copied to v1.0; in archive
+C:\DaveLM-v0.10\                             ~253.68 GB Graduate weights+source in v1.0; git bundle in archive
+C:\DaveLM-CADAVER\                           ~176.16 GB Historical training cadavers/checkpoint forests
+C:\DaveLM\                                   ~0.00 GB   Empty proto stub
+
+Subtotal to recycle:                         ~471.46 GB
+
+REFUSED / KEPT DESPITE AGGRESSIVE GOAL
+--------------------------------------
+(none — all candidates have archive and/or v1.0 copies)
+
+NOTES
+-----
+- v0.10 runs/ holds ~253 GB of intermediate compose_lock checkpoints; graduate
+  backbone+head are in v1.0 and archive. Safe to recycle entire v0.10 tree.
+- CADAVER sf2_runtime (~8.9 GB) includes a working torch venv used for verification.
+  After recycle, install deps via requirements.txt or recreate venv.
+- Recycle Bin will NOT be emptied.
+- Graduate model bytes NOT modified. No training performed.
+
+ESTIMATED SPACE RECOVERED: ~471 GB (to Recycle Bin)
+
+EXECUTION NOTES (2026-09-19 23:56-23:57)
+-----------------------------------------
+- All targets recycled OK except initial whole-tree v0.10 attempt (workspace lock).
+- v0.10 subdirs recycled individually: runs (253 GB), src, data, etc. — all OK.
+- C:\DaveLM-v0.10\ may remain as an empty 0 GB shell until Cursor releases the
+  workspace root; recycle manually after switching workspace to C:\DaveLM-v1.0.
+- CADAVER sf2_runtime venv recycled with CADAVER; use pip install -r requirements.txt.

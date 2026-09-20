@@ -1,0 +1,21 @@
+DaveLM v1.0 MANIFEST
+Generated: 2026-09-19
+Git commit: 526b749eb8eca74e82e29f925048b51fd24d9ae7
+
+SELF-CONTAINED: YES (verified canary + all graduate hashes from C:\DaveLM-v1.0)
+
+Tree size: ~0.68 GB (backbone checkpoint dominates)
+
+Key paths:
+  src/baby_v010/                    Python package (68 modules)
+  runs/.../checkpoint_00025.pt      Backbone (677 MB)
+  runs/.../prop_match_head_00050.pt PropMatchHead (11 KB)
+  tokenizer/v0_7/davelm_tokenizer.json
+  runs/actual_baby/final_exam_v1/form_b/  Form B sealed evidence
+  scripts/verify_canary.py
+  run_chat.ps1
+  requirements.txt
+  VERIFY_CANARY.json
+  BASELINE_CANARY_v010.json         Baseline outputs from v0.10 before recycle
+
+Only config-layer edit vs v0.10 source: data_language_bridge.py TOKENIZER_PATH.

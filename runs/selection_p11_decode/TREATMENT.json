@@ -1,9 +1,0 @@
-{
-  "arm": "treatment",
-  "n": 215,
-  "first_correct": 105,
-  "first_accuracy": 0.4883720930232558,
-  "free_exact": 0,
-  "free_accuracy": 0.0,
-  "pred_in_inventory": 212
-}

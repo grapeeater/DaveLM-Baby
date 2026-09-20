@@ -16,7 +16,7 @@ from .data_v2 import _filler, _reserved_surface_tokens, _sample, _surface
 from .selection_s1 import digest
 
 ROOT = Path(__file__).resolve().parents[2]
-TOKENIZER_PATH = Path(r"C:\DaveLM-v0.9\tokenizer\v0_7\davelm_tokenizer.json")
+TOKENIZER_PATH = ROOT / "tokenizer" / "v0_7" / "davelm_tokenizer.json"
 EXPECTED_TOKENIZER_SHA256 = "e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b"
 
 ENTITIES = ("cat", "dog", "bird", "frog", "bear", "fox", "hen", "pig", "cow", "duck")

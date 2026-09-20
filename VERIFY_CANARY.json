@@ -1,0 +1,78 @@
+{
+  "root": "C:\\DaveLM-v1.0",
+  "runtime": "r3",
+  "relassist": false,
+  "whoprop": false,
+  "checkpoint_update": 25,
+  "color_direct": [
+    {
+      "id": "color_direct_cat",
+      "input": "The cat is blue. What color is the cat?",
+      "decoded": " blue.",
+      "ok": true
+    }
+  ],
+  "mechanism": {
+    "n": 3,
+    "overall": 1.0,
+    "by_family": {
+      "has_entity": 1.0,
+      "who": 1.0
+    },
+    "rows": [
+      {
+        "id": "r7_who_adj_fox",
+        "family": "who",
+        "decoded": "fox is pink.",
+        "stopped": true,
+        "gold_entity": "fox",
+        "entity_ok": true,
+        "first_ok": true,
+        "first_entity": "fox",
+        "value_ok": true,
+        "landmark_lead": false,
+        "ok": true
+      },
+      {
+        "id": "r7_has_entity_white",
+        "family": "has_entity",
+        "decoded": "dog has the white object.",
+        "stopped": true,
+        "gold_entity": "dog",
+        "entity_ok": true,
+        "first_ok": true,
+        "first_entity": "dog",
+        "value_ok": true,
+        "landmark_lead": false,
+        "ok": true
+      },
+      {
+        "id": "r7_who_e2_late",
+        "family": "who",
+        "decoded": "duck is pink.",
+        "stopped": true,
+        "gold_entity": "duck",
+        "entity_ok": true,
+        "first_ok": true,
+        "first_entity": "duck",
+        "value_ok": true,
+        "landmark_lead": false,
+        "ok": true
+      }
+    ]
+  },
+  "fact_combine_one": {
+    "n": 1,
+    "overall": null,
+    "row": {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    }
+  },
+  "pass": true
+}

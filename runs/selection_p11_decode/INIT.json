@@ -1,9 +1,0 @@
-{
-  "arm": "init",
-  "n": 215,
-  "first_correct": 73,
-  "first_accuracy": 0.3395348837209302,
-  "free_exact": 71,
-  "free_accuracy": 0.3302325581395349,
-  "pred_in_inventory": 213
-}
