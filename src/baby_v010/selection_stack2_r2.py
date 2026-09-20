@@ -16,6 +16,7 @@ import torch.nn.functional as F
 
 from .data_language_bridge import (
     BOS,
+    ENTITIES,
     HOLDOUT_WHO_BIND_COLOR,
     HOLDOUT_WHO_BIND_SIZE,
     SIZES,
@@ -90,6 +91,11 @@ def entity_spellings(tokenizer) -> list[tuple[str, list[int]]]:
         if bare:
             out.append((word, [int(x) for x in bare]))
     return out
+
+
+def bridge_entity_spellings(tokenizer) -> list[tuple[str, list[int]]]:
+    """Full language-bridge entity set. Identity is the word, not first-token."""
+    return _word_spellings(tokenizer, ENTITIES)
 
 
 def color_spellings(tokenizer) -> list[tuple[str, list[int]]]:

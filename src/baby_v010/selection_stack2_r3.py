@@ -35,6 +35,7 @@ from .selection_s1 import digest, write
 from .selection_stack2 import OUT, S5B3_SURVIVOR, S5B3_SURVIVOR_SHA
 from .selection_stack2_r2 import (
     bare_entity_id_set,
+    bridge_entity_spellings,
     canonicalize_entity_src,
     color_spellings,
     completed_spelling,
@@ -545,6 +546,15 @@ class PropMatchHead(nn.Module):
         self.qmark_id: int | None = None
         self.value_spells: list[tuple[str, list[int]]] = []
         self.spaced_value: dict[str, int] = {}
+        self.bridge_spells: list[tuple[str, list[int]]] = []
+        self.color_ask_seq: list[int] = []
+        self.size_ask_seq: list[int] = []
+        self.about_seqs: list[list[int]] = []
+        self.describe_seqs: list[list[int]] = []
+        self.and_seq: list[int] = []
+        self.role_ids: set[int] = set()
+        self.color_words: set[str] = set(VALUES)
+        self.size_words: set[str] = set(SIZES)
         self.use_local_hop = False
         nn.init.constant_(self.gate.bias, 2.0)
         nn.init.constant_(self.entityness.bias, -1.0)
@@ -611,6 +621,20 @@ class PropMatchHead(nn.Module):
             return "beside"
         if any(_seq_in(query_ids, seq) for seq in self.where_seqs if seq):
             return "beside"
+        if any(_seq_in(query_ids, seq) for seq in self.about_seqs if seq):
+            return "about"
+        if any(_seq_in(query_ids, seq) for seq in self.describe_seqs if seq):
+            return "about"
+        if self.color_ask_seq and _seq_in(query_ids, self.color_ask_seq) and self._query_attr_word(query_ids, self.size_words):
+            return "combine_color"
+        if self.size_ask_seq and _seq_in(query_ids, self.size_ask_seq) and self._query_attr_word(query_ids, self.color_words):
+            return "combine_size"
+        if self.color_ask_seq and _seq_in(query_ids, self.color_ask_seq) and self._query_entity_word(query_ids):
+            return "direct_color"
+        if self.size_ask_seq and _seq_in(query_ids, self.size_ask_seq) and self._query_entity_word(query_ids):
+            return "direct_size"
+        if self._query_entity_word(query_ids) and not self._query_attr_word(query_ids, self.color_words | self.size_words):
+            return "about"
         return "who"
 
     def _beside_role(self, query_ids: list[int]) -> str:
@@ -623,24 +647,45 @@ class PropMatchHead(nn.Module):
             return list(token_ids)
         start = 0
         for i in range(bound):
-            if self.period_id is not None and token_ids[i] == self.period_id:
+            if (self.period_id is not None and token_ids[i] == self.period_id) or (
+                self.qmark_id is not None and token_ids[i] == self.qmark_id
+            ):
                 start = i + 1
         return token_ids[start : bound + 1]
 
+    def _period_query_bound(self, token_ids: list[int]) -> int | None:
+        if self.period_id is None or self.period_id not in token_ids:
+            return None
+        last = max(i for i, tok in enumerate(token_ids) if tok == self.period_id)
+        start = 0
+        for i in range(last):
+            if token_ids[i] == self.period_id or (self.qmark_id is not None and token_ids[i] == self.qmark_id):
+                start = i + 1
+        span = token_ids[start : last + 1]
+        kind = self._query_kind(span)
+        if kind == "who" and not (
+            any(_seq_in(span, seq) for seq in self.where_seqs if seq) or any(tok in self.q_ids for tok in span)
+        ):
+            return None
+        if kind in {
+            "has",
+            "beside",
+            "who",
+            "combine_color",
+            "combine_size",
+            "direct_color",
+            "direct_size",
+            "about",
+        }:
+            return last
+        return None
+
     def _query_bound(self, token_ids: list[int]) -> int | None:
-        if self.qmark_id is not None and self.qmark_id in token_ids:
-            return max(i for i, tok in enumerate(token_ids) if tok == self.qmark_id)
-        if self.period_id is not None and self.period_id in token_ids:
-            last = max(i for i, tok in enumerate(token_ids) if tok == self.period_id)
-            start = 0
-            for i in range(last):
-                if token_ids[i] == self.period_id:
-                    start = i + 1
-            if self._query_kind(token_ids[start : last + 1]) in {"has", "beside", "who"}:
-                if any(_seq_in(token_ids[start : last + 1], seq) for seq in self.where_seqs if seq) or self._query_kind(
-                    token_ids[start : last + 1]
-                ) != "who" or any(tok in self.q_ids for tok in token_ids[start : last + 1]):
-                    return last
+        q_bound = max((i for i, tok in enumerate(token_ids) if tok == self.qmark_id), default=None) if self.qmark_id is not None else None
+        p_bound = self._period_query_bound(token_ids)
+        hits = [i for i in (q_bound, p_bound) if i is not None]
+        if hits:
+            return max(hits)
         return query_boundary(token_ids, self.q_ids, self.punct_ids) if self.q_ids else None
 
     def _entity_mentions(self, ids: list[int]) -> list[tuple[int, int]]:
@@ -749,6 +794,177 @@ class PropMatchHead(nn.Module):
             if src in spaced:
                 return int(src)
         return None
+
+    def _word_mentions(self, ids: list[int], spells: list[tuple[str, list[int]]]) -> list[tuple[int, str]]:
+        hits: list[tuple[int, str]] = []
+        covered: set[int] = set()
+        for word, seq in sorted(spells, key=lambda item: -len(item[1])):
+            if not seq:
+                continue
+            n = len(seq)
+            for i in range(len(ids) - n + 1):
+                if i in covered:
+                    continue
+                if ids[i : i + n] == seq:
+                    hits.append((i, word))
+                    covered.update(range(i, i + n))
+        hits.sort()
+        return hits
+
+    def _clause_window(self, facts: list[int], site: int) -> tuple[int, int]:
+        left = 0
+        right = len(facts)
+        for i, tok in enumerate(facts):
+            if tok not in self.punct_ids:
+                continue
+            if i < site:
+                left = i + 1
+            elif i > site:
+                right = i
+                break
+        return left, right
+
+    def _query_attr_word(self, query_ids: list[int], words: set[str]) -> str | None:
+        found = None
+        for pos, word in self._word_mentions(query_ids, self.value_spells):
+            if word in words:
+                found = word
+        return found
+
+    def _spaced_seq(self, word: str, spells: list[tuple[str, list[int]]]) -> list[int]:
+        for name, seq in spells:
+            if name == word and seq:
+                return list(seq)
+        return []
+
+    def _subject_word_of_value(self, value_word: str | None, token_ids: list[int], bound: int | None) -> str | None:
+        if not value_word:
+            return None
+        facts = token_ids[:bound] if bound is not None else list(token_ids)
+        mentions = self._word_mentions(facts, self.bridge_spells or self.entity_spells)
+        sites = [pos for pos, word in self._word_mentions(facts, self.value_spells) if word == value_word]
+        for site in sites:
+            left, right = self._clause_window(facts, site)
+            before = [word for i, word in mentions if left <= i < site]
+            after = [word for i, word in mentions if site < i < right]
+            if before:
+                return before[-1]
+            if after:
+                return after[0]
+        return None
+
+    def _attrs_of_entity(self, entity_word: str | None, token_ids: list[int], bound: int | None) -> dict[str, list[str]]:
+        colors: list[str] = []
+        sizes: list[str] = []
+        if not entity_word:
+            return {"colors": colors, "sizes": sizes}
+        facts = token_ids[:bound] if bound is not None else list(token_ids)
+        mentions = self._word_mentions(facts, self.bridge_spells or self.entity_spells)
+        values = self._word_mentions(facts, self.value_spells)
+        for site, word in mentions:
+            if word != entity_word:
+                continue
+            left, right = self._clause_window(facts, site)
+            for pos, val in values:
+                if not (left <= pos < right):
+                    continue
+                if val in self.color_words and val not in colors:
+                    colors.append(val)
+                if val in self.size_words and val not in sizes:
+                    sizes.append(val)
+        return {"colors": colors, "sizes": sizes}
+
+    def _query_entity_word(self, query_ids: list[int]) -> str | None:
+        found = None
+        for _pos, word in self._word_mentions(query_ids, self.bridge_spells or self.entity_spells):
+            found = word
+        return found
+
+    def _combine_target_word(self, kind: str, query_ids: list[int], token_ids: list[int], bound: int | None) -> str | None:
+        if kind == "combine_color":
+            cue = self._query_attr_word(query_ids, self.size_words)
+            entity = self._subject_word_of_value(cue, token_ids, bound)
+            colors = self._attrs_of_entity(entity, token_ids, bound)["colors"]
+            if colors:
+                return colors[-1]
+        elif kind == "combine_size":
+            cue = self._query_attr_word(query_ids, self.color_words)
+            entity = self._subject_word_of_value(cue, token_ids, bound)
+            sizes = self._attrs_of_entity(entity, token_ids, bound)["sizes"]
+            if sizes:
+                return sizes[-1]
+        return None
+
+    def _combine_target_src(self, kind: str, query_ids: list[int], token_ids: list[int], bound: int | None) -> int | None:
+        word = self._combine_target_word(kind, query_ids, token_ids, bound)
+        if word and word in self.spaced_value:
+            return int(self.spaced_value[word])
+        return None
+
+    def _value_plan(self, word: str | None) -> list[int]:
+        seq = self._spaced_seq(word, self.value_spells) if word else []
+        if seq and self.period_id is not None:
+            return seq + [int(self.period_id)]
+        return seq
+
+    def _combine_plan(self, kind: str, query_ids: list[int], token_ids: list[int], bound: int | None) -> list[int]:
+        return self._value_plan(self._combine_target_word(kind, query_ids, token_ids, bound))
+
+    def _direct_target_word(self, kind: str, query_ids: list[int], token_ids: list[int], bound: int | None) -> str | None:
+        entity = self._query_entity_word(query_ids)
+        attrs = self._attrs_of_entity(entity, token_ids, bound)
+        if kind == "direct_color" and attrs["colors"]:
+            return attrs["colors"][-1]
+        if kind == "direct_size" and attrs["sizes"]:
+            return attrs["sizes"][-1]
+        return None
+
+    def _role_only(self, answer_ids: list[int]) -> bool:
+        if not answer_ids or not self.role_ids:
+            return False
+        return all(tok in self.role_ids or tok in self.article_ids for tok in answer_ids)
+
+    def _content_tail(self, answer_ids: list[int]) -> list[int]:
+        tail = list(answer_ids)
+        while tail and (tail[0] in self.role_ids or tail[0] in self.article_ids):
+            tail = tail[1:]
+        return tail
+
+    def _about_plan(self, query_ids: list[int], token_ids: list[int], bound: int | None) -> list[int]:
+        entity = self._query_entity_word(query_ids)
+        attrs = self._attrs_of_entity(entity, token_ids, bound)
+        values = [word for word in attrs["colors"] + attrs["sizes"] if self._spaced_seq(word, self.value_spells)]
+        if not entity or not values:
+            return []
+        e_seq = self._spaced_seq(entity, self.bridge_spells or self.entity_spells)
+        if not e_seq or self.is_id is None:
+            return []
+        plan = list(e_seq) + [int(self.is_id)] + self._spaced_seq(values[0], self.value_spells)
+        for word in values[1:]:
+            if self.and_seq:
+                plan.extend(self.and_seq)
+            plan.extend(self._spaced_seq(word, self.value_spells))
+        if self.period_id is not None:
+            plan.append(int(self.period_id))
+        return plan
+
+    def _apply_plan_finish(
+        self,
+        logits,
+        batch_i: int,
+        logit_i: int,
+        answer_ids: list[int],
+        plan: list[int],
+    ) -> None:
+        if not plan:
+            return
+        tail = self._content_tail(answer_ids)
+        if not tail:
+            logits[batch_i, logit_i, plan[0]] = logits[batch_i, logit_i, plan[0]] + self.finish_scale
+            return
+        if len(tail) < len(plan) and tail == plan[: len(tail)]:
+            nxt = plan[len(tail)]
+            logits[batch_i, logit_i, nxt] = logits[batch_i, logit_i, nxt] + self.finish_scale
 
     def _color_src_from_match(self, hidden_row, token_ids: list[int], bound: int | None, subject_src: int | None = None) -> int | None:
         if not self.color_spells or not self.spaced_color:
@@ -983,6 +1199,25 @@ class PropMatchHead(nn.Module):
             logits[batch_i, logit_i, self.is_id] = logits[batch_i, logit_i, self.is_id] + scale
             return
 
+    def _answer_src(self, kind, qspan, suffix_ids, bound, row):
+        src = None
+        if kind == "has":
+            src = self._query_entity_src(qspan)
+        elif kind == "beside":
+            landmark = self._query_entity_src(qspan)
+            src = landmark if self._beside_role(qspan) == "where" else self._partner_src(landmark, suffix_ids, bound)
+        elif kind in {"combine_color", "combine_size"}:
+            src = self._combine_target_src(kind, qspan, suffix_ids, bound)
+        elif kind in {"direct_color", "direct_size"}:
+            word = self._direct_target_word(kind, qspan, suffix_ids, bound)
+            src = int(self.spaced_value[word]) if word and word in self.spaced_value else None
+        elif kind == "about":
+            plan = self._about_plan(qspan, suffix_ids, bound)
+            src = int(plan[0]) if plan else None
+        elif kind == "who":
+            src = self._subject_of_value(self._query_value_src(qspan), suffix_ids, bound)
+        return src
+
     def apply_copy(self, logits, hidden, tokens):
         batch, time, _ = hidden.shape
         for b in range(batch):
@@ -995,7 +1230,8 @@ class PropMatchHead(nn.Module):
                 continue
             suffix_ids = [int(t) for t in values[:end].tolist()]
             bound = self._query_bound(suffix_ids)
-            answer_ids = suffix_ids[bound + 1 :] if bound is not None else []
+            raw_answer = suffix_ids[bound + 1 :] if bound is not None else []
+            answer_ids = [] if self._role_only(raw_answer) else self._content_tail(raw_answer)
             finish_src = list(answer_ids)
             while finish_src and finish_src[0] in self.article_ids:
                 finish_src = finish_src[1:]
@@ -1003,35 +1239,33 @@ class PropMatchHead(nn.Module):
             if finish is not None:
                 logits[b, end - 1, finish] = logits[b, end - 1, finish] + self.copy_scale
                 continue
-            if bound is not None and end - 1 > bound:
-                kind = self._query_kind(self._question_span(suffix_ids, bound))
+            qspan = self._question_span(suffix_ids, bound) if bound is not None else []
+            kind = self._query_kind(qspan) if qspan else "who"
+            if bound is not None and end - 1 > bound and answer_ids:
                 if kind == "has":
                     self._apply_has_finish(logits, b, end - 1, answer_ids, row, suffix_ids, bound)
                 elif kind == "beside":
                     self._apply_beside_finish(logits, b, end - 1, answer_ids, suffix_ids, bound)
+                elif kind in {"combine_color", "combine_size"}:
+                    self._apply_plan_finish(logits, b, end - 1, answer_ids, self._combine_plan(kind, qspan, suffix_ids, bound))
+                elif kind in {"direct_color", "direct_size"}:
+                    self._apply_plan_finish(logits, b, end - 1, answer_ids, self._value_plan(self._direct_target_word(kind, qspan, suffix_ids, bound)))
+                elif kind == "about":
+                    self._apply_plan_finish(logits, b, end - 1, answer_ids, self._about_plan(qspan, suffix_ids, bound))
                 elif kind == "who":
                     self._apply_who_finish(logits, b, end - 1, answer_ids, row, suffix_ids, bound)
                 continue
             ptr = self.entity_index(row)
             src = None
             gate = torch.sigmoid(self.gate_logit(row))
-            qspan = self._question_span(suffix_ids, bound) if bound is not None else []
-            kind = self._query_kind(qspan) if qspan else "who"
-            if kind == "has":
-                src = self._query_entity_src(qspan)
-            elif kind == "beside":
-                landmark = self._query_entity_src(qspan)
-                if self._beside_role(qspan) == "where":
-                    src = landmark
-                else:
-                    src = self._partner_src(landmark, suffix_ids, bound)
-            elif kind == "who":
-                src = self._subject_of_value(self._query_value_src(qspan), suffix_ids, bound)
-            if src is None and kind == "has":
+            src = self._answer_src(kind, qspan, suffix_ids, bound, row)
+            if src is None and kind == "has" and bound is not None:
                 qpos = [i for i, tok in enumerate(suffix_ids[: bound + 1]) if tok in self.q_ids]
                 qstart = qpos[-1] if qpos else bound
                 src = self._query_entity_src(suffix_ids[qstart : bound + 1])
             if src is None and ptr is not None:
+                if kind in {"combine_color", "combine_size", "direct_color", "direct_size", "about"}:
+                    continue
                 if float(gate.detach()) < 0.5 or self.cue_confidence(row) < 0.7:
                     continue
                 src = canonicalize_entity_src(
@@ -1069,9 +1303,27 @@ class PropMatchRuntime:
             head.piece_to_spaced = bind_piece_map(tokenizer)
             head.entity_seqs = entity_piece_seqs(tokenizer)
             head.entity_spells = entity_spellings(tokenizer)
+            head.bridge_spells = bridge_entity_spellings(tokenizer)
             head.color_spells = color_spellings(tokenizer)
             head.value_spells = value_spellings(tokenizer)
             head.spaced_ent = {word: spaced_first_id(tokenizer, word) for word in WHO_ENTITIES}
+            head.color_ask_seq = [int(x) for x in encode_ids(tokenizer, " color")]
+            head.size_ask_seq = [int(x) for x in encode_ids(tokenizer, " size")]
+            head.about_seqs = [
+                [int(x) for x in encode_ids(tokenizer, stem)]
+                for stem in (" about", " About")
+                if encode_ids(tokenizer, stem)
+            ]
+            head.describe_seqs = [
+                [int(x) for x in encode_ids(tokenizer, stem)]
+                for stem in (" describe", " Describe", "Describe")
+                if encode_ids(tokenizer, stem)
+            ]
+            head.and_seq = [int(x) for x in encode_ids(tokenizer, " and")]
+            role_ids: set[int] = set()
+            for stem in ("\nBaby:", "Baby:", " Human:", "\nHuman:", ":", "\n", " Baby", " Human", "Baby", "Human"):
+                role_ids.update(int(x) for x in encode_ids(tokenizer, stem))
+            head.role_ids = role_ids
             head.spaced_color = {word: spaced_first_id(tokenizer, word) for word in VALUES}
             head.spaced_value = {word: spaced_first_id(tokenizer, word) for word in tuple(VALUES) + tuple(SIZES)}
             head.q_ids = set(question_id_set(tokenizer))

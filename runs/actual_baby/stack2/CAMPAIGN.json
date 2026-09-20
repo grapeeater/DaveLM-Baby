@@ -1,5 +1,5 @@
 {
-  "status": "R5 experimental: s5b3 + r3b PropMatchHead + native WHO/HAS/BESIDE finish. RelAssist not required. Not promoted. U16000 authoritative.",
+  "status": "R6 PRE-v1.0 FINAL-EXAM CANDIDATE: s5b3 + r3b PropMatchHead + native WHO/HAS/BESIDE/combine finish. RelAssist not required. NOT graduated. NOT v1.0. U16000 authoritative.",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -15,10 +15,21 @@
     "authoritative": false
   },
   "last": {
-    "id": "r5",
-    "verdict": "SURVIVE",
+    "id": "r6",
+    "verdict": "PRE-v1.0 CANDIDATE",
     "major": true,
-    "lesson": "beside native 0.833→1.000; who_2e 1.000 on 4 seeds; who_sent size 0.625→1.000; mixed-relation 1.000; RelAssist off default chat; not promoted"
+    "lesson": "fact_combine decode 0.656→1.000; story_combine decode 0.438→1.000; usable4/reuse 0.844/0.857→1.000; integration 1.000; first_top1 combine kept as noisy batched metric; NOT graduated; not promoted"
+  },
+  "r6": {
+    "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+    "sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+    "head": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\r3\\r3b_329011\\prop_match_head_00050.pt",
+    "head_sha256": "8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9",
+    "verdict": "PRE-v1.0 CANDIDATE",
+    "authoritative": false,
+    "promoted": false,
+    "graduated": false,
+    "parent": "r5"
   },
   "s2a": {
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",

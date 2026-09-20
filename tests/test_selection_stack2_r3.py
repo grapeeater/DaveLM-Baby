@@ -163,3 +163,106 @@ def test_subject_of_value_uses_clause_not_first_piece():
     assert head._query_value_src(query) == tiny
     wide_q = encode_ids(tokenizer, "Who looks wide?")
     assert head._query_value_src(wide_q) == spaced_first_id(tokenizer, "wide")
+
+
+def _bind_combine_lexicon(head, tokenizer):
+    from src.baby_v010.data_language_bridge import SIZES, VALUES, encode_ids, spaced_first_id
+    from src.baby_v010.selection_stack2_r2 import bridge_entity_spellings, entity_spellings, value_spellings
+
+    head.entity_spells = entity_spellings(tokenizer)
+    head.bridge_spells = bridge_entity_spellings(tokenizer)
+    head.value_spells = value_spellings(tokenizer)
+    head.spaced_value = {word: spaced_first_id(tokenizer, word) for word in tuple(VALUES) + tuple(SIZES)}
+    head.color_ask_seq = [int(x) for x in encode_ids(tokenizer, " color")]
+    head.size_ask_seq = [int(x) for x in encode_ids(tokenizer, " size")]
+    head.about_seqs = [[int(x) for x in encode_ids(tokenizer, " about")]]
+    head.describe_seqs = [[int(x) for x in encode_ids(tokenizer, "Describe")]]
+    head.and_seq = [int(x) for x in encode_ids(tokenizer, " and")]
+    head.period_id = int(encode_ids(tokenizer, ".")[0])
+    head.punct_ids = {head.period_id, int(encode_ids(tokenizer, "?")[0]), int(encode_ids(tokenizer, ":")[0])}
+    head.is_id = int(encode_ids(tokenizer, " is")[0])
+    return head
+
+
+def test_query_kind_combine_and_about_do_not_steal_who():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer
+
+    tokenizer = load_tokenizer()
+    head = _bind_combine_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    assert head._query_kind(encode_ids(tokenizer, "Who is white?")) == "who"
+    assert head._query_kind(encode_ids(tokenizer, "Which color is the cat?")) == "direct_color"
+    assert head._query_kind(encode_ids(tokenizer, "Tell me the size of the bird?")) == "direct_size"
+    assert head._query_kind(encode_ids(tokenizer, "Which color is the tiny one?")) == "combine_color"
+    assert head._query_kind(encode_ids(tokenizer, "Tell me the size of the red one?")) == "combine_size"
+    assert head._query_kind(encode_ids(tokenizer, "What do you know about the cat?")) == "about"
+    assert head._query_kind(encode_ids(tokenizer, "Describe the dog.")) == "about"
+    assert head._query_kind(encode_ids(tokenizer, "Tell me the color of the tiny one?")) == "combine_color"
+
+
+def test_combine_uses_other_attribute_not_cue_or_recency():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer, spaced_first_id
+
+    tokenizer = load_tokenizer()
+    head = _bind_combine_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    facts = encode_ids(tokenizer, "The dog is red. The cat is blue. The dog is huge.")
+    q_color = encode_ids(tokenizer, "Which color is the huge one?")
+    q_size = encode_ids(tokenizer, "Which size is the red one?")
+    assert head._subject_word_of_value("huge", facts, len(facts)) == "dog"
+    assert head._subject_word_of_value("red", facts, len(facts)) == "dog"
+    assert head._combine_target_src("combine_color", q_color, facts, len(facts)) == spaced_first_id(tokenizer, "red")
+    assert head._combine_target_src("combine_size", q_size, facts, len(facts)) == spaced_first_id(tokenizer, "huge")
+    adj = encode_ids(tokenizer, "Long ago a tiny pig ate. That pig was white.")
+    assert head._subject_word_of_value("tiny", adj, len(adj)) == "pig"
+    q_story = encode_ids(tokenizer, "Which color is the tiny one?")
+    assert head._combine_target_src("combine_color", q_story, adj, len(adj)) == spaced_first_id(tokenizer, "white")
+
+
+def test_about_plan_keeps_both_facts_for_requested_entity():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer
+
+    tokenizer = load_tokenizer()
+    head = _bind_combine_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    facts = encode_ids(tokenizer, "The dog is red. The cat is blue. The dog is huge.")
+    query = encode_ids(tokenizer, "Tell me about the dog.")
+    plan = head._about_plan(query, facts, len(facts))
+    decoded = tokenizer.decode(plan, skip_special_tokens=True).lower()
+    assert "dog" in decoded
+    assert "red" in decoded
+    assert "huge" in decoded
+    assert "and" in decoded
+    assert "blue" not in decoded
+    assert "cat" not in decoded
+
+
+def test_direct_size_uses_named_bridge_entity():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer
+
+    tokenizer = load_tokenizer()
+    head = _bind_combine_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    facts = encode_ids(tokenizer, "Remember: the frog is wide in size. That bird is tiny in size.")
+    query = encode_ids(tokenizer, "Tell me the size of the bird?")
+    assert head._query_kind(query) == "direct_size"
+    assert head._direct_target_word("direct_size", query, facts, len(facts)) == "tiny"
+
+
+def test_role_only_treats_baby_cue_as_empty_answer():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer
+
+    tokenizer = load_tokenizer()
+    head = _bind_combine_lexicon(PropMatchHead(8, suffix_k=4, copy_scale=8.0), tokenizer)
+    role_ids = set()
+    for stem in ("\nBaby:", "Baby:", ":", "\n", "Baby"):
+        role_ids.update(int(x) for x in encode_ids(tokenizer, stem))
+    head.role_ids = role_ids
+    assert head._role_only(encode_ids(tokenizer, "\nBaby:"))
+    assert not head._role_only(encode_ids(tokenizer, " red."))
+    role_then = encode_ids(tokenizer, "\nBaby:") + encode_ids(tokenizer, " red")
+    assert head._content_tail(role_then) == encode_ids(tokenizer, " red")
+    assert head._query_kind(encode_ids(tokenizer, "Tell me the size of the bird.")) == "direct_size"
+    head.qmark_id = int(encode_ids(tokenizer, "?")[0])
+    convo = encode_ids(tokenizer, "How about the pig? pig is red.\nHuman: Tell me the size of the bird.\nBaby:")
+    bound = head._query_bound(convo)
+    assert bound is not None
+    span = head._question_span(convo, bound)
+    assert head._query_kind(span) == "direct_size"
+    assert head._query_entity_word(span) == "bird"

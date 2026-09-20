@@ -1,0 +1,31 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "reuse": {
+    "n": 26,
+    "hit": 1.0,
+    "reuse": 1.0,
+    "stop": 1.0
+  },
+  "usable4": 1.0,
+  "stop": 1.0,
+  "usable_reuse": 1.0,
+  "fact_hold": {
+    "n": 16,
+    "gold_in": 1.0,
+    "first": 1.0,
+    "entity_lead": 0.0
+  },
+  "story_hold": {
+    "n": 16,
+    "gold_in": 1.0,
+    "first": 1.0,
+    "entity_lead": 0.0
+  },
+  "about": {
+    "n": 8,
+    "attrs_ok": 1.0,
+    "entity_ok": 1.0,
+    "clean": 1.0
+  },
+  "reuse_miss": []
+}

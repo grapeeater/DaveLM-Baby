@@ -1,0 +1,442 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "mechanism": "cross-attribute bind + about report finish",
+  "fact_combine_611001": {
+    "n": 16,
+    "gold_in": 1.0,
+    "first": 1.0,
+    "entity_lead": 0.0
+  },
+  "fact_combine_611777": {
+    "n": 16,
+    "gold_in": 1.0,
+    "first": 1.0,
+    "entity_lead": 0.0
+  },
+  "about_report": {
+    "n": 8,
+    "attrs_ok": 1.0,
+    "entity_ok": 1.0,
+    "clean": 1.0
+  },
+  "fact_a_rows": [
+    {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "short",
+      "decoded": "short.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "thin",
+      "decoded": "thin.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "white",
+      "decoded": "white.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "thin",
+      "decoded": "thin.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "thin",
+      "decoded": "thin.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "tiny",
+      "decoded": "tiny.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "green",
+      "decoded": "green.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "thin",
+      "decoded": "thin.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "red",
+      "decoded": "red.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "tiny",
+      "decoded": "tiny.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "thin",
+      "decoded": "thin.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "pink",
+      "decoded": "pink.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    }
+  ],
+  "fact_b_rows": [
+    {
+      "id": "fact_combine_2e",
+      "gold": "short",
+      "decoded": "short.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "blue",
+      "decoded": "blue.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "pink",
+      "decoded": "pink.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "small",
+      "decoded": "small.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "thin",
+      "decoded": "thin.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "pink",
+      "decoded": "pink.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "small",
+      "decoded": "small.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "red",
+      "decoded": "red.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "short",
+      "decoded": "short.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "white",
+      "decoded": "white.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "tiny",
+      "decoded": "tiny.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "yellow",
+      "decoded": "yellow.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "pink",
+      "decoded": "pink.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "huge",
+      "decoded": "huge.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    },
+    {
+      "id": "fact_combine_2e",
+      "gold": "pink",
+      "decoded": "pink.",
+      "stopped": true,
+      "gold_in": true,
+      "first": true,
+      "entity_lead": false
+    }
+  ],
+  "about_rows": [
+    {
+      "id": "ab_same_ent_size_last",
+      "decoded": "hen is yellow and short.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "yellow",
+        "short"
+      ],
+      "needed": [
+        "yellow",
+        "short"
+      ]
+    },
+    {
+      "id": "ab_same_ent_color_last",
+      "decoded": "duck is pink and wide.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "pink",
+        "wide"
+      ],
+      "needed": [
+        "pink",
+        "wide"
+      ]
+    },
+    {
+      "id": "ab_distract_last_other",
+      "decoded": "bear is green and thin.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "green",
+        "thin"
+      ],
+      "needed": [
+        "green",
+        "thin"
+      ]
+    },
+    {
+      "id": "ab_distract_first_other",
+      "decoded": "frog is white.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "white"
+      ],
+      "needed": [
+        "white"
+      ]
+    },
+    {
+      "id": "ab_nonrecent_gold",
+      "decoded": "dog is red and huge.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "red",
+        "huge"
+      ],
+      "needed": [
+        "red",
+        "huge"
+      ]
+    },
+    {
+      "id": "ab_request_first_entity",
+      "decoded": "hen is yellow and short.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "yellow",
+        "short"
+      ],
+      "needed": [
+        "yellow",
+        "short"
+      ]
+    },
+    {
+      "id": "ab_hold_looks",
+      "decoded": "frog is white and thin.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "white",
+        "thin"
+      ],
+      "needed": [
+        "white",
+        "thin"
+      ]
+    },
+    {
+      "id": "ab_hold_that",
+      "decoded": "duck is pink and small.",
+      "stopped": true,
+      "entity_ok": true,
+      "attrs_ok": true,
+      "no_other_entity": true,
+      "have": [
+        "pink",
+        "small"
+      ],
+      "needed": [
+        "pink",
+        "small"
+      ]
+    }
+  ]
+}

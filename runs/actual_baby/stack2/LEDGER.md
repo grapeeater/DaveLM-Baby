@@ -950,3 +950,28 @@ not a sole kill switch.
 - head_sha256: 8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9
 - recipe: r5
 
+## r6_retain_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 181/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 181, 'first_correct': 215, 'free_accuracy': 0.8418604651162791, 'first_accuracy': 1.0}
+- induction: 0.5
+
+## r6
+
+- Change: PRE-v1.0 candidate. Cross-attribute combine + about-report + dialogue role/bound fix on frozen s5b3+r3b. No new trained weights. RelAssist off default chat. NOT graduated. NOT v1.0.
+- verdict: **PRE-v1.0 CANDIDATE**
+- lesson: fact_combine decode 0.656→1.000 (eval first_top1 0.688 kept as batched/noisy; free_exact 1.000); story_combine decode 0.438→1.000 (first_top1 0.438 kept; free_exact 1.000); about_report 1.000; usable4/reuse/stop 0.844/0.857/1.000→1.000/1.000/1.000; integration 1.000 all families; R5 routing held; D3 181/215; not promoted
+- checkpoint_sha256: 0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd
+- head_sha256: 8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9
+- recipe: r6
+
+## r6_retain_d3
+
+- Change: C2+D3 long-gap logged (stack2: not an auto-kill)
+- verdict: **LOG**
+- lesson: D3 long-gap 181/215 induction 0.500 (not an auto-kill)
+- d3: {'n': 215, 'free_exact': 181, 'first_correct': 215, 'free_accuracy': 0.8418604651162791, 'first_accuracy': 1.0}
+- induction: 0.5
+

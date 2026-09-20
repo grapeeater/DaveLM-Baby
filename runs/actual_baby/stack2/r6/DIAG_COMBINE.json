@@ -1,0 +1,319 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "fact_combine": {
+    "n": 16,
+    "gold_in": 0.125,
+    "first": 0.0625,
+    "rows": [
+      {
+        "prompt": "That bear is blue. That cow is green. cow looks thin in size. bear looks huge in size. Which size is the blue one?",
+        "query": "Which size is the blue one?",
+        "gold": "huge",
+        "entity": "bear",
+        "attr": "size",
+        "decoded": "bear is blue.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "bird looks huge in size. That bird is yellow. Remember: the dog is thin in size. That dog is blue. Which size is the yellow one?",
+        "query": "Which size is the yellow one?",
+        "gold": "huge",
+        "entity": "bird",
+        "attr": "size",
+        "decoded": "blue.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "fox looks red. That bird is pink. Remember: the bird is wide in size. fox looks short in size. Which size is the red one?",
+        "query": "Which size is the red one?",
+        "gold": "short",
+        "entity": "fox",
+        "attr": "size",
+        "decoded": "wide.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "Remember: the frog is thin in size. Remember: the frog is pink. That bird is huge in size. bird looks red. Which size is the pink one?",
+        "query": "Which size is the pink one?",
+        "gold": "thin",
+        "entity": "frog",
+        "attr": "size",
+        "decoded": "frog is pink.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "Remember: the duck is green. bear looks small in size. That duck is wide in size. That bear is white. Which color is the small one?",
+        "query": "Which color is the small one?",
+        "gold": "white",
+        "entity": "bear",
+        "attr": "color",
+        "decoded": "bear is small.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "Remember: the dog is thin in size. That bird is pink. Remember: the bird is short in size. Remember: the dog is green. Tell me the size of the green one.",
+        "query": "reen. Tell me the size of the green one.",
+        "gold": "thin",
+        "entity": "dog",
+        "attr": "size",
+        "decoded": "dog.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "That cat is white. cat looks thin in size. frog looks short in size. That frog is red. Which size is the white one?",
+        "query": "Which size is the white one?",
+        "gold": "thin",
+        "entity": "cat",
+        "attr": "size",
+        "decoded": "cat is white.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "That frog is yellow. Remember: the bird is wide in size. bird looks pink. frog looks tiny in size. Tell me the size of the yellow one.",
+        "query": "ize. Tell me the size of the yellow one.",
+        "gold": "tiny",
+        "entity": "frog",
+        "attr": "size",
+        "decoded": "frog looks blue.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "bear looks green. Remember: the pig is huge in size. That bear is tiny in size. Remember: the pig is white. Tell me the color of the tiny one.",
+        "query": "hite. Tell me the color of the tiny one.",
+        "gold": "green",
+        "entity": "bear",
+        "attr": "color",
+        "decoded": "white.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "That bear is huge in size. fox looks white. That bear is red. fox looks small in size. Tell me the size of the red one.",
+        "query": "n size. Tell me the size of the red one.",
+        "gold": "huge",
+        "entity": "bear",
+        "attr": "size",
+        "decoded": "huge.",
+        "gold_in": true,
+        "first_is_gold": true
+      },
+      {
+        "prompt": "That dog is thin in size. bird looks huge in size. Remember: the dog is red. Remember: the bird is white. Which size is the red one?",
+        "query": "Which size is the red one?",
+        "gold": "thin",
+        "entity": "dog",
+        "attr": "size",
+        "decoded": "dog is red.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "pig looks wide in size. duck looks small in size. That duck is red. Remember: the pig is white. Tell me the color of the small one.",
+        "query": "ite. Tell me the color of the small one.",
+        "gold": "red",
+        "entity": "duck",
+        "attr": "color",
+        "decoded": "white.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "Remember: the duck is tiny in size. Remember: the duck is white. That dog is short in size. Remember: the dog is green. Which size is the white one?",
+        "query": "Which size is the white one?",
+        "gold": "tiny",
+        "entity": "duck",
+        "attr": "size",
+        "decoded": "duck is white.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "That duck is green. Remember: the bear is pink. That duck is thin in size. That bear is short in size. Which size is the green one?",
+        "query": "Which size is the green one?",
+        "gold": "thin",
+        "entity": "duck",
+        "attr": "size",
+        "decoded": "duck is green.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "bear looks red. That bear is small in size. Remember: the hen is huge in size. That hen is pink. Which size is the pink one?",
+        "query": "Which size is the pink one?",
+        "gold": "huge",
+        "entity": "hen",
+        "attr": "size",
+        "decoded": "hen is pink.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "dog looks pink. Remember: the cat is wide in size. dog looks small in size. Remember: the cat is yellow. Tell me the color of the small one.",
+        "query": "low. Tell me the color of the small one.",
+        "gold": "pink",
+        "entity": "dog",
+        "attr": "color",
+        "decoded": "dog looks pink.",
+        "gold_in": true,
+        "first_is_gold": false
+      }
+    ]
+  },
+  "story_combine": {
+    "n": 12,
+    "gold_in": 0.08333333333333333,
+    "first": 0.08333333333333333,
+    "rows": [
+      {
+        "prompt": "In the yard a thin dog walked along. The dog looks white. A tiny cow came by. The cow looks pink. Which color is the thin one?",
+        "query": "Which color is the thin one?",
+        "gold": "white",
+        "entity": "dog",
+        "attr": "color",
+        "decoded": "yellow.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "Long ago a small cat went home. That cat was red. A huge bear came by. That bear was yellow. Tell me the color of the small one.",
+        "query": "low. Tell me the color of the small one.",
+        "gold": "red",
+        "entity": "cat",
+        "attr": "color",
+        "decoded": "cat.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "In the yard a tiny hen came by. The hen looks yellow. A huge fox walked along. The fox looks white. Tell me the size of the yellow one.",
+        "query": "ite. Tell me the size of the yellow one.",
+        "gold": "tiny",
+        "entity": "hen",
+        "attr": "size",
+        "decoded": "tiny.",
+        "gold_in": true,
+        "first_is_gold": true
+      },
+      {
+        "prompt": "A small bear walked along. Remember: the bear is blue. Then a thin dog went home. Remember: the dog is pink. Which color is the thin one?",
+        "query": "Which color is the thin one?",
+        "gold": "pink",
+        "entity": "dog",
+        "attr": "color",
+        "decoded": "bear is thin.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "In the yard a wide fox went out. The fox looks pink. A small bird walked along. The bird looks green. Tell me the size of the green one.",
+        "query": "reen. Tell me the size of the green one.",
+        "gold": "small",
+        "entity": "bird",
+        "attr": "size",
+        "decoded": "fox looks pink.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "In the yard a thin dog came by. The dog looks pink. A wide cow went out. The cow looks blue. Which color is the thin one?",
+        "query": "Which color is the thin one?",
+        "gold": "pink",
+        "entity": "dog",
+        "attr": "color",
+        "decoded": "yellow.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "In the yard a huge hen went home. The hen looks red. A tiny bear walked along. The bear looks blue. Tell me the size of the blue one.",
+        "query": " blue. Tell me the size of the blue one.",
+        "gold": "tiny",
+        "entity": "bear",
+        "attr": "size",
+        "decoded": "bear looks beautiful.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "A wide dog came by. Remember: the dog is pink. Then a small bear went out. Remember: the bear is yellow. Which size is the pink one?",
+        "query": "Which size is the pink one?",
+        "gold": "wide",
+        "entity": "dog",
+        "attr": "size",
+        "decoded": "dog is pink.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "In the yard a thin bird came by. The bird looks blue. A wide hen went out. The hen looks red. Which size is the blue one?",
+        "query": "Which size is the blue one?",
+        "gold": "thin",
+        "entity": "bird",
+        "attr": "size",
+        "decoded": "cat is blue.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "A huge hen went out. Remember: the hen is blue. Then a tiny duck came by. Remember: the duck is white. Tell me the size of the white one.",
+        "query": "hite. Tell me the size of the white one.",
+        "gold": "tiny",
+        "entity": "duck",
+        "attr": "size",
+        "decoded": "duck is white.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "Long ago a tiny hen walked along. That hen was red. A thin cat went out. That cat was green. Tell me the color of the thin one.",
+        "query": "reen. Tell me the color of the thin one.",
+        "gold": "green",
+        "entity": "cat",
+        "attr": "color",
+        "decoded": "hen red.",
+        "gold_in": false,
+        "first_is_gold": false
+      },
+      {
+        "prompt": "In the yard a small bird walked along. The bird looks pink. A short fox went home. The fox looks red. Tell me the color of the small one.",
+        "query": "red. Tell me the color of the small one.",
+        "gold": "pink",
+        "entity": "bird",
+        "attr": "color",
+        "decoded": "yellow.",
+        "gold_in": false,
+        "first_is_gold": false
+      }
+    ]
+  },
+  "about": [
+    {
+      "prompt": "The cat is blue. The cat is tiny. What do you know about the cat?",
+      "query": "What do you know about the cat?",
+      "gold": "blue",
+      "entity": "cat",
+      "attr": "about",
+      "decoded": "cat is tiny.",
+      "gold_in": false,
+      "first_is_gold": false
+    },
+    {
+      "prompt": "The dog is red. The cat is blue. The dog is huge. Tell me about the dog.",
+      "query": " The dog is huge. Tell me about the dog.",
+      "gold": "red",
+      "entity": "dog",
+      "attr": "about",
+      "decoded": "dog is red.",
+      "gold_in": true,
+      "first_is_gold": false
+    }
+  ]
+}
