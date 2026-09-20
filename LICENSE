@@ -1,0 +1,223 @@
+DAVELM
+PROPRIETARY RESEARCH AND EVALUATION LICENSE
+Version 1.0 | Owner-Controlled Source-Available Terms
+
+Copyright © 2026 James David Mangiaracina
+LicenseRef-DaveLM-Research-1.0
+
+PURPOSE
+
+This license is intentionally restrictive. It preserves ownership and permits only limited internal, non-commercial research and evaluation unless James David Mangiaracina grants additional written permission or a separate commercial license.
+
+Drafting note: No license can be guaranteed "airtight" or loophole-free in every jurisdiction or fact pattern. This document is a strong owner-protective draft, not legal advice. Attorney review is recommended before public or commercial distribution, especially for click-through assent, third-party provenance, patent strategy, and jurisdiction-specific enforcement.
+
+FULL LICENSE TEXT
+
+IMPORTANT - READ CAREFULLY. By downloading, cloning, accessing, copying, executing, modifying, fine-tuning, testing, benchmarking, or otherwise using any Covered Materials, you accept and agree to this License. If you do not agree, you receive no permission under this License and must not use the Covered Materials. If you access the Covered Materials on behalf of an entity, you represent that you have authority to bind that entity.
+
+1. Parties, Ownership, and Scope
+
+1.1 Licensor. "Licensor" means James David Mangiaracina, the copyright owner and project owner, together with any successor in interest to the rights expressly covered by this License.
+
+1.2 Covered Project. "Covered Project" means DaveLM, the development codename "Baby," and any successor name, rebrand, release line, model family, or project component that is expressly distributed with this License or identified as governed by LicenseRef-DaveLM-Research-1.0.
+
+1.3 Covered Materials. "Covered Materials" means, to the extent owned or licensable by Licensor: source code, scripts, configuration, architecture files, tokenizer files and configuration, model weights, checkpoints, adapters, sidecars, training and evaluation code, documentation, model cards, manifests, evaluation artifacts, test suites, prompts created as project assets, data files created by Licensor, packaging, release artifacts, and authorized derivatives of the foregoing that are distributed under this License.
+
+1.4 Excluded Materials. Covered Materials do not include third-party materials, public-domain material, facts, ideas, methods, algorithms, interfaces, or other subject matter that Licensor does not own or is not legally entitled to license. Third-party components remain subject to their own terms, notices, and licenses.
+
+1.5 Reservation of Rights. All rights not expressly granted are reserved. No implied license arises from access, disclosure, contribution, compatibility, estoppel, exhaustion beyond applicable law, or any course of dealing. This License is not an open-source license and does not grant a general right to redistribute Covered Materials.
+
+1.6 No Transfer of Ownership. The Covered Materials are licensed, not sold. Possession of a copy does not transfer title, copyright, patent, trademark, trade secret, or other ownership rights.
+
+2. Definitions
+
+2.1 Authorized User. An "Authorized User" is a person or entity that lawfully receives access to Covered Materials from Licensor or an authorized channel and accepts this License. A person who obtains Covered Materials through an unauthorized leak, scrape, mirror, or redistribution is not an Authorized User and receives no permission under this License.
+
+2.2 Non-Commercial Purpose. "Non-Commercial Purpose" means internal personal, educational, academic, or research activity that is not intended for, incorporated into, or used to support revenue generation, paid services, commercial products, advertising, fundraising, customer delivery, employer/client deliverables, competitive commercial advantage, or other direct or indirect commercial benefit.
+
+2.3 Derivative. "Derivative" means a modification or adaptation of Covered Materials, including modified source, fine-tuned or continued-training weights, merged weights, adapters, LoRA or similar parameter deltas, converted/quantized weights, distilled versions, architecture variants derived from protected implementation expression, or a package containing a substantial portion of Covered Materials. The term is contractual and does not attempt to redefine statutory copyright law.
+
+2.4 Model Extraction. "Model Extraction" includes distillation, cloning, imitation training, teacher-student transfer, behavior cloning, systematic output harvesting, reconstruction, inversion, or other activity intended to reproduce or approximate DaveLM capabilities, weights, representations, or behavior in a separate model or system.
+
+2.5 Commercial Use. "Commercial Use" includes sale, resale, licensing, paid consulting, paid research, hosted access, cloud deployment for third parties, software-as-a-service, API access, ad-supported deployment, product integration, enterprise deployment, work-for-hire, customer-facing use, or use that materially supports a commercial organization unless Licensor provides separate written authorization.
+
+3. Limited License Grant
+
+3.1 Grant. Subject to continuous compliance with this License, Licensor grants each Authorized User a limited, worldwide, royalty-free, non-exclusive, non-transferable, non-sublicensable license to possess, execute, inspect, and internally reproduce Covered Materials solely for a Non-Commercial Purpose.
+
+3.2 Internal Research Modifications. Authorized Users may internally modify source code and may internally fine-tune or otherwise create DaveLM Derivatives solely for a Non-Commercial Purpose. Any such Derivative remains subject to this License while in the Authorized User's possession and may not be distributed, published, sublicensed, transferred, sold, or made available to any third party without separate written permission from Licensor.
+
+3.3 Necessary Internal Copies. Authorized Users may make the minimum number of internal backup and working copies reasonably necessary for permitted use, provided all copyright, license, provenance, and attribution notices are preserved.
+
+3.4 No Other Grant. No permission is granted to distribute, publicly perform, publicly display source in a manner that enables copying, sublicense, commercialize, host for third parties, or create a competing service or model based on Covered Materials except by separate written agreement.
+
+4. Prohibited Uses and Acts
+
+4.1 Commercialization. You must not use Covered Materials or DaveLM Derivatives for Commercial Use without a separate written commercial license signed or otherwise expressly issued by Licensor.
+
+4.2 Redistribution. You must not upload, publish, mirror, seed, transmit, sell, sublicense, gift, share, or otherwise distribute Covered Materials or DaveLM Derivatives to any third party, including through package registries, model hubs, torrents, repositories, cloud storage, container images, or embedded applications, except with Licensor's prior written permission.
+
+4.3 Hosted Access. You must not provide interactive or programmatic third-party access to Covered Materials or DaveLM Derivatives through an API, website, application, bot, remote desktop, managed service, inference endpoint, hosted notebook, or similar service, whether paid or free, unless separately authorized in writing.
+
+4.4 Extraction, Distillation, and Competing Models. You must not conduct Model Extraction or use Covered Materials, DaveLM Derivatives, or DaveLM-generated outputs as a dataset, teacher signal, preference signal, label source, reward signal, benchmark-training target, or synthetic-data source to train, fine-tune, align, distill, calibrate, or otherwise improve a model or model-based system other than an internal DaveLM Derivative permitted by Section 3.2.
+
+4.5 Protected Signals. Without separate written permission, you must not systematically collect or use logits, probabilities, hidden states, activations, attention maps, embeddings, gradients, intermediate tensors, model traces, or large-scale outputs for cloning, reconstruction, training, or competitive analysis.
+
+4.6 Circumvention. You must not bypass, disable, defeat, remove, or interfere with access controls, license checks, attribution mechanisms, provenance metadata, rate limits, safety controls, or technical restrictions that accompany Covered Materials, except solely as necessary for a permitted internal security or compatibility test and only if no restricted material is exposed to a third party.
+
+4.7 Misrepresentation. You must not represent yourself as Licensor, claim official affiliation or endorsement, falsely claim authorship, obscure the origin of Covered Materials, or present a Derivative as an official DaveLM release.
+
+4.8 Removal of Notices. You must not remove, hide, alter, or falsify copyright notices, license notices, provenance information, cryptographic manifests, authorship records, model cards, or third-party notices.
+
+4.9 Unlawful and Rights-Violating Use. You must not use Covered Materials to violate applicable law or the rights of another person, including intellectual-property, privacy, publicity, confidentiality, contractual, or data-protection rights.
+
+4.10 Restricted High-Risk Deployment. Without separate written authorization, you must not deploy Covered Materials as the sole or primary decision-maker in a context where an erroneous output could directly determine a person's eligibility, liberty, medical treatment, employment, credit, insurance, housing, legal rights, or physical safety. This clause does not prohibit non-deployment research or evaluation concerning such domains.
+
+5. Outputs
+
+5.1 No Blanket Ownership Claim. Licensor does not claim ownership of every output merely because it was generated by DaveLM. Ownership and protectability of outputs depend on applicable law and the content involved.
+
+5.2 Reproduced Protected Material. To the extent an output reproduces protectable portions of Covered Materials, this License does not grant rights beyond those expressly stated here.
+
+5.3 Output-Based Training Restriction. Regardless of output ownership, an Authorized User contractually agrees not to use systematic DaveLM outputs, conversations, labels, scores, or synthetic examples to train, fine-tune, distill, align, or improve a non-DaveLM model or service without Licensor's prior written permission.
+
+5.4 Incidental Personal Use of Outputs. This License does not restrict ordinary personal use of isolated outputs created during permitted Non-Commercial use, provided that such use does not disclose Covered Materials, violate Section 4, or imply endorsement by Licensor.
+
+6. Benchmarks, Research Results, and Publications
+
+6.1 Internal Evaluation. Internal benchmarking, red-team testing, error analysis, reproducibility testing, and academic study are permitted for a Non-Commercial Purpose.
+
+6.2 Public Results. You may publish factual high-level benchmark or research results without exposing Covered Materials, provided you: (a) identify the exact DaveLM release tested; (b) disclose material modifications and evaluation methodology; (c) do not publish weights, protected source, non-public evaluation items, or other Covered Materials; (d) do not misrepresent unofficial results as endorsed by Licensor; and (e) preserve required attribution.
+
+6.3 No Benchmark Laundering. You must not use published benchmark results or generated datasets as a workaround to perform Model Extraction, competitive cloning, or prohibited commercial development.
+
+7. Attribution, Names, and Marks
+
+7.1 Required Attribution. Any permitted public reference to the Covered Project must include a reasonable attribution substantially in the form: "DaveLM - Copyright © 2026 James David Mangiaracina."
+
+7.2 No Trademark License. No license is granted to any trademark, service mark, trade name, logo, project name, model name, codename, persona, or branding, including "DaveLM" or "Baby," except the limited nominative use reasonably necessary to identify the project.
+
+7.3 Successor Names. A rebrand or successor model-family name does not remove Covered Materials from this License when those materials were distributed under this License.
+
+7.4 No Endorsement. You must not state or imply that Licensor sponsors, certifies, approves, endorses, or is affiliated with your work unless Licensor expressly agrees in writing.
+
+8. Third-Party Materials and Provenance
+
+8.1 Separate Terms. Third-party libraries, dependencies, datasets, corpora, fonts, tokenizer inputs, code fragments, model components, or other third-party materials are not relicensed by this License. Their original licenses and notices control for those components.
+
+8.2 No Expansion of Rights. Nothing in this License grants rights that Licensor does not possess. If a third-party license grants you broader rights in a third-party component, this License does not reduce those rights for that component alone. If a third-party license imposes additional obligations, you must comply with them.
+
+8.3 Notices File. When a THIRD_PARTY_NOTICES or equivalent file accompanies a release, it is incorporated by reference for attribution and provenance purposes.
+
+8.4 Provenance Duty. An Authorized User who redistributes anything under a separate written authorization must preserve all applicable third-party notices and must not imply that Licensor owns third-party components.
+
+9. Security, Confidentiality, and Non-Public Materials
+
+9.1 Non-Public Access. If Covered Materials are provided through a private repository, private link, access-controlled release, or other non-public channel, you must treat access credentials, private links, unpublished weights, unpublished evaluation items, and clearly marked confidential information as non-public and must not disclose them except to persons separately authorized by Licensor.
+
+9.2 Security. You must use reasonable safeguards to prevent unauthorized access, copying, leakage, or redistribution of non-public Covered Materials.
+
+9.3 Security Research. Good-faith internal security testing is permitted within the license grant. Public disclosure of a vulnerability that would materially facilitate unauthorized access to non-public Covered Materials should be coordinated with Licensor before publication when reasonably possible and lawful.
+
+10. Contributions and Feedback
+
+10.1 No Automatic Ownership Transfer. Submitting feedback, bug reports, benchmark results, or suggestions does not transfer ownership of your pre-existing intellectual property to Licensor.
+
+10.2 Feedback License. If you voluntarily submit feedback or suggestions to Licensor without a separate written agreement, you grant Licensor a perpetual, worldwide, royalty-free, non-exclusive right to use, reproduce, adapt, and incorporate that feedback into the Covered Project, provided this does not include ownership of separately submitted source code or datasets unless expressly agreed.
+
+10.3 Code Contributions. Code, data, weights, or other substantive contributions require a separate contribution agreement or an explicit contribution license stated at the time of submission. Acceptance of a pull request alone does not override third-party rights or representations.
+
+11. Compliance, Records, and Verification
+
+11.1 Compliance Responsibility. You are responsible for ensuring that employees, contractors, agents, and systems acting under your account comply with this License. Sharing access with an unauthorized person is a breach.
+
+11.2 Reasonable Verification. If Licensor has a good-faith reason to believe that a material breach involving redistribution, commercialization, or Model Extraction has occurred, Licensor may request a written confirmation of compliance reasonably limited to the suspected breach. This clause does not authorize access to unrelated private data, systems, or trade secrets.
+
+11.3 Preservation of Evidence. Nothing in this License requires destruction of records that must be preserved by law, court order, or bona fide legal hold, but such records remain subject to applicable confidentiality and use restrictions.
+
+12. Term and Termination
+
+12.1 Term. This License begins when you first accept or exercise rights under it and continues until terminated.
+
+12.2 Automatic Termination for Material Breach. Your rights automatically terminate upon a material breach. Unauthorized commercialization, redistribution of weights or source, intentional removal of ownership notices, or Model Extraction constitutes a material breach and may result in immediate termination without a cure period.
+
+12.3 Cure for Other Breaches. For a non-willful breach that is reasonably curable and is not listed in Section 12.2, rights may be reinstated if the breach is fully cured within ten (10) calendar days after you become aware of it or receive written notice, whichever occurs first, unless Licensor states in writing that reinstatement is denied because the same or a substantially similar breach has recurred.
+
+12.4 Effect of Termination. Upon termination, you must stop using Covered Materials and, to the extent legally permitted, delete or destroy copies and Derivatives in your possession or control, except archival copies that must be retained by law. Retained archival copies may not be used.
+
+12.5 Survival. Sections concerning ownership, restrictions, outputs used for model training, attribution, confidentiality, termination effects, disclaimers, liability, indemnity, enforcement, and general legal terms survive termination to the extent necessary to give them effect.
+
+13. Remedies and Enforcement
+
+13.1 No Limitation of Statutory Remedies. This License does not limit remedies available to Licensor under copyright, trademark, patent, trade secret, contract, unfair-competition, or other applicable law.
+
+13.2 Equitable Relief. You acknowledge that unauthorized disclosure, redistribution, commercialization, or Model Extraction may cause harm that is difficult to measure in money alone. To the extent permitted by law, Licensor may seek temporary, preliminary, and permanent injunctive or other equitable relief in addition to other available remedies, without this clause determining the ultimate merits of any claim.
+
+13.3 No Waiver by Delay. A delay or failure to enforce a provision does not waive that provision or any later breach.
+
+14. Disclaimer of Warranty
+
+14.1 As-Is. TO THE MAXIMUM EXTENT PERMITTED BY LAW, COVERED MATERIALS ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITH ALL FAULTS AND WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE.
+
+14.2 Specific Disclaimers. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR DISCLAIMS WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, SECURITY, AVAILABILITY, ERROR-FREE OPERATION, AND RESULTS. LICENSOR DOES NOT WARRANT THAT OUTPUTS ARE CORRECT, SAFE, COMPLETE, OR SUITABLE FOR ANY DECISION OR USE.
+
+15. Limitation of Liability
+
+15.1 Excluded Damages. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES; LOSS OF PROFITS, REVENUE, DATA, GOODWILL, BUSINESS, OR OPPORTUNITY; OR COSTS OF SUBSTITUTE GOODS OR SERVICES, ARISING OUT OF OR RELATING TO COVERED MATERIALS OR THIS LICENSE, UNDER ANY THEORY OF LIABILITY, EVEN IF ADVISED OF THE POSSIBILITY.
+
+15.2 Liability Cap. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR'S AGGREGATE LIABILITY ARISING OUT OF OR RELATING TO THIS LICENSE OR COVERED MATERIALS WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID DIRECTLY TO LICENSOR FOR THE SPECIFIC COVERED MATERIALS DURING THE TWELVE MONTHS BEFORE THE CLAIM, OR (B) ONE HUNDRED U.S. DOLLARS (US $100).
+
+15.3 Mandatory Rights. Nothing in this License excludes or limits liability to the extent such exclusion or limitation is prohibited by applicable law.
+
+16. Indemnity
+
+16.1 User Responsibility. To the extent permitted by applicable law, you agree to defend, indemnify, and hold harmless Licensor from third-party claims, damages, penalties, liabilities, and reasonable costs arising from your unlawful use, prohibited Commercial Use, unauthorized redistribution, infringement of third-party rights, or material breach of this License, except to the extent caused by Licensor's own willful misconduct.
+
+17. Export, Sanctions, and Legal Compliance
+
+17.1 Compliance. You must comply with export-control, sanctions, embargo, and other laws applicable to your access, use, transfer, or distribution of Covered Materials. No permission is granted where the grant or exercise of rights would itself be unlawful.
+
+18. Patent and Other Intellectual-Property Rights
+
+18.1 No Implied Patent License. Except for any patent license expressly stated in a separate written agreement, this License grants no patent rights by implication, estoppel, or otherwise.
+
+18.2 Defensive Termination. If you or an entity controlling you initiates a patent claim alleging that Covered Materials, as supplied by Licensor, infringe a patent owned or controlled by you, any patent license separately granted by Licensor for those Covered Materials terminates to the extent permitted by that separate grant and applicable law.
+
+18.3 Trade Secrets. Nothing in this License requires Licensor to disclose non-public training data, methods, credentials, keys, private experiments, internal notes, or other information treated as confidential or proprietary.
+
+19. License Versioning and Future Releases
+
+19.1 Release-Specific Terms. Each DaveLM release is governed by the license version included with, referenced by, or expressly attached to that release. The presence of this License in one release does not automatically license a different release.
+
+19.2 Future License Versions. Licensor may publish revised license versions for future releases. A later license version does not automatically expand or reduce rights already granted for a prior release unless Licensor expressly offers relicensing of that prior release.
+
+19.3 Dual or Separate Licensing. Licensor may offer the same or different Covered Materials under additional terms, including commercial, academic, contributor, enterprise, or open-source licenses. Receiving rights under one license does not entitle you to rights offered under another.
+
+19.4 Immutable Release Records. A version tag, hash, manifest, or release record may be used to identify the exact Covered Materials and applicable terms. Altering a copy of the License does not change the license applicable to the original Covered Materials.
+
+20. General Legal Terms
+
+20.1 Entire Agreement. For the rights granted here, this License is the entire agreement between you and Licensor concerning Covered Materials, except for any separate written agreement that expressly supersedes or supplements it.
+
+20.2 Order of Precedence. If a separate written agreement signed or expressly issued by Licensor conflicts with this License, the separate agreement controls only to the extent of the conflict and only for the parties and materials it covers. Third-party licenses control for their own components.
+
+20.3 Severability. If a provision is held invalid or unenforceable, it will be enforced to the maximum extent permitted and the remaining provisions will remain in effect. A court may narrow an overbroad restriction only as necessary to make it enforceable where applicable law permits such narrowing.
+
+20.4 No Assignment by Licensee. You may not assign, transfer, delegate, or sublicense your rights or obligations under this License without Licensor's prior written consent. Any attempted transfer in violation of this clause is void to the extent permitted by law.
+
+20.5 Assignment by Licensor. Licensor may transfer ownership of Covered Materials or assign this License to a successor in connection with a transfer of the applicable intellectual-property rights.
+
+20.6 No Third-Party Beneficiaries. Except for persons entitled to indemnification under Section 16, this License creates no third-party beneficiary rights.
+
+20.7 Headings. Headings are for convenience only and do not limit interpretation.
+
+20.8 Interpretation. "Including" means "including without limitation." "Written" includes an electronic writing that clearly identifies Licensor or an authorized representative and the permission granted. Singular and plural forms are interchangeable where context requires.
+
+20.9 Applicable Law. This License is interpreted under applicable law. Nothing in this clause waives any non-waivable consumer, statutory, jurisdictional, or procedural right. Before a broad public or commercial release, Licensor should select a specific governing-law and forum clause with qualified counsel if desired.
+
+20.10 Contact and Written Permissions. Permissions outside this License are valid only when issued by Licensor or an authorized representative in a writing that clearly identifies the recipient, permitted materials, permitted purpose, and any additional conditions.
+
+21. Copyright Notice
+
+Copyright © 2026 James David Mangiaracina
+All rights reserved except for the limited rights expressly granted by this License.

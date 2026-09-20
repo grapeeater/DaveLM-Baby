@@ -1,13 +1,18 @@
 DaveLM v1.0 MANIFEST
-Generated: 2026-09-19
-Git commit: 526b749eb8eca74e82e29f925048b51fd24d9ae7
+Graduate snapshot: git tag v1.0 = 7ed112641b83541f6f62f5f454c5841deb9d6ca1
+This file may be updated by later documentation/license commits after that tag.
+Those later commits do not rewrite tag v1.0 or graduate hashes.
 
 SELF-CONTAINED: YES (verified canary + all graduate hashes from C:\DaveLM-v1.0)
 
 Tree size: ~0.68 GB (backbone checkpoint dominates)
 
 Key paths:
-  src/baby_v010/                    Python package (68 modules)
+  LICENSE                           Canonical LicenseRef-DaveLM-Research-1.0
+  THIRD_PARTY_NOTICES.md
+  README.md
+  ENV_SETUP.md
+  src/baby_v010/                    Python package
   runs/.../checkpoint_00025.pt      Backbone (677 MB)
   runs/.../prop_match_head_00050.pt PropMatchHead (11 KB)
   tokenizer/v0_7/davelm_tokenizer.json
@@ -17,5 +22,9 @@ Key paths:
   requirements.txt
   VERIFY_CANARY.json
   BASELINE_CANARY_v010.json         Baseline outputs from v0.10 before recycle
+  GRADUATE_SHA256SUMS.txt
+  docs/legal/                       Original license PDF
+  docs/history/                     Recycle provenance notes
 
-Only config-layer edit vs v0.10 source: data_language_bridge.py TOKENIZER_PATH.
+Only config-layer edit vs v0.10 source at graduation: data_language_bridge.py TOKENIZER_PATH.
+License/docs/cleanup after the v1.0 tag does not alter graduate weights or frozen runtime hashes.
