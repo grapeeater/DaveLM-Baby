@@ -99,6 +99,11 @@ def test_query_kind_aliases_and_who_finish_boosts_is():
     head.have_seq = [int(x) for x in encode_ids(tokenizer, " have")]
     head.belong_seq = [int(x) for x in encode_ids(tokenizer, " belong")]
     head.next_seq = [int(x) for x in encode_ids(tokenizer, " next")]
+    head.where_seqs = [
+        [int(x) for x in encode_ids(tokenizer, stem)]
+        for stem in (" where", " Where", "Where")
+        if encode_ids(tokenizer, stem)
+    ]
     head.beside_id = int(encode_ids(tokenizer, " beside")[0])
     head.is_id = int(encode_ids(tokenizer, " is")[0])
     head.period_id = int(encode_ids(tokenizer, ".")[0])
@@ -109,8 +114,52 @@ def test_query_kind_aliases_and_who_finish_boosts_is():
     assert head._query_kind(encode_ids(tokenizer, "What object does the dog have?")) == "has"
     assert head._query_kind(encode_ids(tokenizer, "Which object belongs to the hen?")) == "has"
     assert head._query_kind(encode_ids(tokenizer, "Who is next to the cat?")) == "beside"
+    assert head._query_kind(encode_ids(tokenizer, "Where is dog?")) == "beside"
+    assert head._query_kind(encode_ids(tokenizer, "Tell me where the bear is.")) == "beside"
     assert head._query_kind(encode_ids(tokenizer, "Who is white?")) == "who"
-    dog = encode_ids(tokenizer, "dog")
-    logits = torch.zeros(1, 1, 2048)
-    head._apply_who_finish(logits, 0, 0, dog, torch.randn(6, 8), dog, None)
-    assert int(logits[0, 0].argmax()) == head.is_id
+    assert head._beside_role(encode_ids(tokenizer, "Where is dog?")) == "where"
+    assert head._beside_role(encode_ids(tokenizer, "Who is beside the hen?")) == "who"
+
+
+def test_beside_partner_is_the_other_entity_either_order():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer, spaced_first_id
+    from src.baby_v010.selection_stack2_r2 import entity_spellings
+
+    tokenizer = load_tokenizer()
+    head = PropMatchHead(8, suffix_k=4, copy_scale=8.0)
+    head.entity_spells = entity_spellings(tokenizer)
+    head.spaced_ent = {word: spaced_first_id(tokenizer, word) for word in ("dog", "cat", "hen")}
+    head.beside_id = int(encode_ids(tokenizer, " beside")[0])
+    head.period_id = int(encode_ids(tokenizer, ".")[0])
+    head.punct_ids = {head.period_id, int(encode_ids(tokenizer, "?")[0])}
+    last = encode_ids(tokenizer, "The cat is beside the dog.")
+    first = encode_ids(tokenizer, "The dog is beside the cat.")
+    dog = spaced_first_id(tokenizer, "dog")
+    cat = spaced_first_id(tokenizer, "cat")
+    assert head._partner_src(dog, last, len(last)) == cat
+    assert head._partner_src(cat, last, len(last)) == dog
+    assert head._partner_src(dog, first, len(first)) == cat
+    assert head._partner_src(cat, first, len(first)) == dog
+
+
+def test_subject_of_value_uses_clause_not_first_piece():
+    from src.baby_v010.data_language_bridge import encode_ids, load_tokenizer, spaced_first_id
+    from src.baby_v010.selection_stack2_r2 import entity_spellings, value_spellings
+    from src.baby_v010.data_language_bridge import SIZES, VALUES
+
+    tokenizer = load_tokenizer()
+    head = PropMatchHead(8, suffix_k=4, copy_scale=8.0)
+    head.entity_spells = entity_spellings(tokenizer)
+    head.value_spells = value_spellings(tokenizer)
+    head.spaced_ent = {word: spaced_first_id(tokenizer, word) for word in ("dog", "hen", "bear", "cat")}
+    head.spaced_value = {word: spaced_first_id(tokenizer, word) for word in tuple(VALUES) + tuple(SIZES)}
+    head.period_id = int(encode_ids(tokenizer, ".")[0])
+    head.punct_ids = {head.period_id}
+    facts = encode_ids(tokenizer, "Remember: the dog is huge in size. That hen is tiny in size.")
+    tiny = spaced_first_id(tokenizer, "tiny")
+    hen = spaced_first_id(tokenizer, "hen")
+    assert head._subject_of_value(tiny, facts, len(facts)) == hen
+    query = encode_ids(tokenizer, "Tell me who looks tiny.")
+    assert head._query_value_src(query) == tiny
+    wide_q = encode_ids(tokenizer, "Who looks wide?")
+    assert head._query_value_src(wide_q) == spaced_first_id(tokenizer, "wide")

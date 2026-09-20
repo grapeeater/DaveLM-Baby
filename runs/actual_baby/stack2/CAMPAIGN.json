@@ -1,5 +1,5 @@
 {
-  "status": "R4 experimental hybrid: s5b3 + r3b PropMatchHead + native WHO/HAS finish. RelAssist for BESIDE. Not promoted. U16000 authoritative.",
+  "status": "R5 experimental: s5b3 + r3b PropMatchHead + native WHO/HAS/BESIDE finish. RelAssist not required. Not promoted. U16000 authoritative.",
   "retention": "english-first; D3 logged not auto-killed",
   "operators": "a1|b1|c2|d3 frozen U16000 fallbacks",
   "campaign": "actual_baby_stack2",
@@ -15,10 +15,10 @@
     "authoritative": false
   },
   "last": {
-    "id": "r4",
+    "id": "r5",
     "verdict": "SURVIVE",
     "major": true,
-    "lesson": "who_sent 0.562→0.812; has native 0.417→1.000; paraphrases native 0.950 (who/has 1.000, beside 0.833); who_2e 0.969/0.906 held; RelAssist only for BESIDE; not promoted"
+    "lesson": "beside native 0.833→1.000; who_2e 1.000 on 4 seeds; who_sent size 0.625→1.000; mixed-relation 1.000; RelAssist off default chat; not promoted"
   },
   "s2a": {
     "path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s2a_protect40_combine_322001\\checkpoint_00200.pt",
@@ -1231,5 +1231,27 @@
     "reuse": 0.8571428571428571,
     "d3": 181,
     "eval": "runs/actual_baby/stack2/r4/L3B_CANARY.json"
+  },
+  "r5": {
+    "status": "experimental",
+    "promoted": false,
+    "authoritative": false,
+    "parent": "r4",
+    "parent_path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s5b3_compose_lock_326191\\checkpoint_00025.pt",
+    "parent_sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+    "head_path": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\r3\\r3b_329011\\prop_match_head_00050.pt",
+    "head_sha256": "8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9",
+    "mechanism": "structural beside partner + subject_of_value + query-value WHO finish",
+    "beside_native": 1.0,
+    "who_2e_official": 1.0,
+    "who_2e_seeds": {"324777": 1.0, "324888": 1.0, "325001": 1.0},
+    "who_sent": 1.0,
+    "who_size": 1.0,
+    "mixed_relation": 1.0,
+    "usable4": 0.84375,
+    "stop": 1.0,
+    "reuse": 0.8571428571428571,
+    "d3": 181,
+    "eval": "runs/actual_baby/stack2/r5/L3_CANARY.json"
   }
 }

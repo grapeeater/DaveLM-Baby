@@ -161,7 +161,7 @@ def main() -> None:
         "--runtime",
         choices=("r3", "r2"),
         default="r3",
-        help="r3: PropMatchHead (WHO/HAS native finish) + RelAssist for BESIDE; r2: WhoProp + RelAssist",
+        help="r3: PropMatchHead native WHO/HAS/BESIDE finish; r2: WhoProp + RelAssist",
     )
     parser.add_argument("--head", type=Path, default=DEFAULT_HEAD)
     parser.add_argument(
@@ -180,11 +180,11 @@ def main() -> None:
 
         head = load_prop_match_head(args.head, config.d_model, device)
         PropMatchRuntime(model, head, tokenizer).install().enabled = True
-        label = "prop_match+rel_assist"
+        label = "prop_match_native"
     else:
         WhoPropRuntime(model, tokenizer).install().enabled = True
+        RelAssistRuntime(model, tokenizer).install().enabled = True
         label = "who_prop+rel_assist"
-    RelAssistRuntime(model, tokenizer).install().enabled = True
     print(
         f"checkpoint={args.checkpoint} update={ckpt.get('update')} "
         f"protocol={ckpt.get('protocol')} device={device} runtime={label}",

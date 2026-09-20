@@ -536,6 +536,7 @@ class PropMatchHead(nn.Module):
         self.belong_seq: list[int] = []
         self.next_seq: list[int] = []
         self.looks_seq: list[int] = []
+        self.where_seqs: list[list[int]] = []
         self.beside_id: int | None = None
         self.is_id: int | None = None
         self.the_id: int | None = None
@@ -608,7 +609,138 @@ class PropMatchHead(nn.Module):
             return "beside"
         if self.next_seq and _seq_in(query_ids, self.next_seq):
             return "beside"
+        if any(_seq_in(query_ids, seq) for seq in self.where_seqs if seq):
+            return "beside"
         return "who"
+
+    def _beside_role(self, query_ids: list[int]) -> str:
+        if any(_seq_in(query_ids, seq) for seq in self.where_seqs if seq):
+            return "where"
+        return "who"
+
+    def _question_span(self, token_ids: list[int], bound: int | None) -> list[int]:
+        if bound is None:
+            return list(token_ids)
+        start = 0
+        for i in range(bound):
+            if self.period_id is not None and token_ids[i] == self.period_id:
+                start = i + 1
+        return token_ids[start : bound + 1]
+
+    def _query_bound(self, token_ids: list[int]) -> int | None:
+        if self.qmark_id is not None and self.qmark_id in token_ids:
+            return max(i for i, tok in enumerate(token_ids) if tok == self.qmark_id)
+        if self.period_id is not None and self.period_id in token_ids:
+            last = max(i for i, tok in enumerate(token_ids) if tok == self.period_id)
+            start = 0
+            for i in range(last):
+                if token_ids[i] == self.period_id:
+                    start = i + 1
+            if self._query_kind(token_ids[start : last + 1]) in {"has", "beside", "who"}:
+                if any(_seq_in(token_ids[start : last + 1], seq) for seq in self.where_seqs if seq) or self._query_kind(
+                    token_ids[start : last + 1]
+                ) != "who" or any(tok in self.q_ids for tok in token_ids[start : last + 1]):
+                    return last
+        return query_boundary(token_ids, self.q_ids, self.punct_ids) if self.q_ids else None
+
+    def _entity_mentions(self, ids: list[int]) -> list[tuple[int, int]]:
+        hits: list[tuple[int, int]] = []
+        covered: set[int] = set()
+        for word, seq in sorted(self.entity_spells, key=lambda item: -len(item[1])):
+            src = self.spaced_ent.get(word)
+            if src is None or not seq:
+                continue
+            n = len(seq)
+            for i in range(len(ids) - n + 1):
+                if i in covered:
+                    continue
+                if ids[i : i + n] == seq:
+                    hits.append((i, int(src)))
+                    covered.update(range(i, i + n))
+        hits.sort()
+        return hits
+
+    def _beside_pairs(self, token_ids: list[int], bound: int | None) -> list[tuple[int, int]]:
+        facts = token_ids[:bound] if bound is not None else list(token_ids)
+        mentions = self._entity_mentions(facts)
+        sites: list[int] = []
+        if self.beside_id is not None:
+            sites.extend(i for i, tok in enumerate(facts) if tok == self.beside_id)
+        if self.next_seq:
+            n = len(self.next_seq)
+            sites.extend(i for i in range(len(facts) - n + 1) if facts[i : i + n] == self.next_seq)
+        pairs: list[tuple[int, int]] = []
+        for site in sites:
+            left = 0
+            right = len(facts)
+            for i, tok in enumerate(facts):
+                if tok not in self.punct_ids:
+                    continue
+                if i < site:
+                    left = i + 1
+                elif i > site:
+                    right = i
+                    break
+            before = [src for i, src in mentions if left <= i < site]
+            after = [src for i, src in mentions if site < i < right]
+            if before and after:
+                pairs.append((before[-1], after[0]))
+        return pairs
+
+    def _partner_src(self, landmark: int | None, token_ids: list[int], bound: int | None) -> int | None:
+        if landmark is None:
+            return None
+        for left, right in self._beside_pairs(token_ids, bound):
+            if int(landmark) == int(left):
+                return int(right)
+            if int(landmark) == int(right):
+                return int(left)
+        return None
+
+    def _query_value_src(self, query_ids: list[int]) -> int | None:
+        if not self.value_spells or not self.spaced_value:
+            return None
+        values = set(self.spaced_value.values())
+        found = None
+        covered: set[int] = set()
+        for word, seq in sorted(self.value_spells, key=lambda item: -len(item[1])):
+            src = self.spaced_value.get(word)
+            if src is None or not seq:
+                continue
+            n = len(seq)
+            for i in range(len(query_ids) - n + 1):
+                if i in covered:
+                    continue
+                if query_ids[i : i + n] == seq:
+                    found = int(src)
+                    covered.update(range(i, i + n))
+        return found
+
+    def _subject_of_value(self, value_src: int | None, token_ids: list[int], bound: int | None) -> int | None:
+        if value_src is None:
+            return None
+        facts = token_ids[:bound] if bound is not None else list(token_ids)
+        mentions = self._entity_mentions(facts)
+        sites: list[int] = []
+        for _word, seq in sorted(self.value_spells, key=lambda item: -len(item[1])):
+            src = self.spaced_value.get(_word)
+            if src != int(value_src) or not seq:
+                continue
+            n = len(seq)
+            sites.extend(i for i in range(len(facts) - n + 1) if facts[i : i + n] == seq)
+        for site in sites:
+            left = 0
+            for i, tok in enumerate(facts):
+                if tok not in self.punct_ids:
+                    continue
+                if i < site:
+                    left = i + 1
+                elif i > site:
+                    break
+            before = [src for i, src in mentions if left <= i < site]
+            if before:
+                return before[-1]
+        return None
 
     def _query_entity_src(self, query_ids: list[int]) -> int | None:
         spaced = set(self.spaced_ent.values())
@@ -779,19 +911,75 @@ class PropMatchHead(nn.Module):
                 logits[batch_i, logit_i, self.period_id] = logits[batch_i, logit_i, self.period_id] + scale
                 return
             if not after:
-                word = None
-                if self.looks_seq and _seq_in(tail, self.looks_seq):
-                    pre = tail[: tail.index(self.looks_seq[0])] if self.looks_seq[0] in tail else tail
-                    word = completed_spelling(pre, self.entity_spells)
-                elif self.is_id in tail:
-                    pre = tail[: tail.index(self.is_id)]
-                    word = completed_spelling(pre, self.entity_spells)
-                subject = self.spaced_ent.get(word) if word else None
-                value = self._value_src_from_match(hidden_row, token_ids, bound, subject)
+                qspan = self._question_span(token_ids, bound)
+                value = self._query_value_src(qspan)
+                if value is None:
+                    word = None
+                    if self.looks_seq and _seq_in(tail, self.looks_seq):
+                        pre = tail[: tail.index(self.looks_seq[0])] if self.looks_seq[0] in tail else tail
+                        word = completed_spelling(pre, self.entity_spells)
+                    elif self.is_id in tail:
+                        pre = tail[: tail.index(self.is_id)]
+                        word = completed_spelling(pre, self.entity_spells)
+                    subject = self.spaced_ent.get(word) if word else None
+                    value = self._value_src_from_match(hidden_row, token_ids, bound, subject)
                 if value is not None:
                     logits[batch_i, logit_i, value] = logits[batch_i, logit_i, value] + scale
                 return
         if completed_spelling(tail, self.entity_spells) and not pred_started:
+            logits[batch_i, logit_i, self.is_id] = logits[batch_i, logit_i, self.is_id] + scale
+            return
+
+    def _apply_beside_finish(
+        self,
+        logits,
+        batch_i: int,
+        logit_i: int,
+        answer_ids: list[int],
+        token_ids: list[int],
+        bound: int | None,
+    ) -> None:
+        if self.is_id is None or self.beside_id is None or self.the_id is None or self.period_id is None:
+            return
+        tail = list(answer_ids)
+        while tail and tail[0] in self.article_ids:
+            tail = tail[1:]
+        if not tail:
+            qspan = self._question_span(token_ids, bound)
+            landmark = self._query_entity_src(qspan)
+            src = landmark if self._beside_role(qspan) == "where" else self._partner_src(landmark, token_ids, bound)
+            if src is not None:
+                logits[batch_i, logit_i, src] = logits[batch_i, logit_i, src] + self.finish_scale
+            return
+        scale = self.finish_scale
+        entity_seqs = [seq for _word, seq in self.entity_spells if len(seq) >= 2]
+        subject_word = None
+        if self.is_id in tail:
+            subject_word = completed_spelling(tail[: tail.index(self.is_id)], self.entity_spells)
+        elif completed_spelling(tail, self.entity_spells):
+            subject_word = completed_spelling(tail, self.entity_spells)
+        subject = self.spaced_ent.get(subject_word) if subject_word else None
+        other = self._partner_src(subject, token_ids, bound) if subject is not None else None
+        if tail[-1] == self.the_id:
+            if other is not None:
+                logits[batch_i, logit_i, other] = logits[batch_i, logit_i, other] + scale
+            return
+        if self.the_id in tail:
+            after = tail[tail.index(self.the_id) + 1 :]
+            finish = next_entity_finish_id(after, entity_seqs) if after else None
+            if finish is not None:
+                logits[batch_i, logit_i, finish] = logits[batch_i, logit_i, finish] + scale
+                return
+            if after and completed_spelling(after, self.entity_spells):
+                logits[batch_i, logit_i, self.period_id] = logits[batch_i, logit_i, self.period_id] + scale
+                return
+        if tail[-1] == self.beside_id:
+            logits[batch_i, logit_i, self.the_id] = logits[batch_i, logit_i, self.the_id] + scale
+            return
+        if tail[-1] == self.is_id:
+            logits[batch_i, logit_i, self.beside_id] = logits[batch_i, logit_i, self.beside_id] + scale
+            return
+        if completed_spelling(tail, self.entity_spells) and self.is_id not in tail:
             logits[batch_i, logit_i, self.is_id] = logits[batch_i, logit_i, self.is_id] + scale
             return
 
@@ -806,10 +994,7 @@ class PropMatchHead(nn.Module):
             if end < 3:
                 continue
             suffix_ids = [int(t) for t in values[:end].tolist()]
-            if self.qmark_id is not None and self.qmark_id in suffix_ids:
-                bound = max(i for i, tok in enumerate(suffix_ids) if tok == self.qmark_id)
-            else:
-                bound = query_boundary(suffix_ids, self.q_ids, self.punct_ids) if self.q_ids else None
+            bound = self._query_bound(suffix_ids)
             answer_ids = suffix_ids[bound + 1 :] if bound is not None else []
             finish_src = list(answer_ids)
             while finish_src and finish_src[0] in self.article_ids:
@@ -819,17 +1004,30 @@ class PropMatchHead(nn.Module):
                 logits[b, end - 1, finish] = logits[b, end - 1, finish] + self.copy_scale
                 continue
             if bound is not None and end - 1 > bound:
-                kind = self._query_kind(suffix_ids[: bound + 1])
+                kind = self._query_kind(self._question_span(suffix_ids, bound))
                 if kind == "has":
                     self._apply_has_finish(logits, b, end - 1, answer_ids, row, suffix_ids, bound)
+                elif kind == "beside":
+                    self._apply_beside_finish(logits, b, end - 1, answer_ids, suffix_ids, bound)
                 elif kind == "who":
                     self._apply_who_finish(logits, b, end - 1, answer_ids, row, suffix_ids, bound)
                 continue
             ptr = self.entity_index(row)
             src = None
             gate = torch.sigmoid(self.gate_logit(row))
-            query_has = bound is not None and self._query_kind(suffix_ids[: bound + 1]) == "has"
-            if query_has:
+            qspan = self._question_span(suffix_ids, bound) if bound is not None else []
+            kind = self._query_kind(qspan) if qspan else "who"
+            if kind == "has":
+                src = self._query_entity_src(qspan)
+            elif kind == "beside":
+                landmark = self._query_entity_src(qspan)
+                if self._beside_role(qspan) == "where":
+                    src = landmark
+                else:
+                    src = self._partner_src(landmark, suffix_ids, bound)
+            elif kind == "who":
+                src = self._subject_of_value(self._query_value_src(qspan), suffix_ids, bound)
+            if src is None and kind == "has":
                 qpos = [i for i, tok in enumerate(suffix_ids[: bound + 1]) if tok in self.q_ids]
                 qstart = qpos[-1] if qpos else bound
                 src = self._query_entity_src(suffix_ids[qstart : bound + 1])
@@ -893,6 +1091,11 @@ class PropMatchRuntime:
             head.belong_seq = [int(x) for x in encode_ids(tokenizer, " belong")]
             head.next_seq = [int(x) for x in encode_ids(tokenizer, " next")]
             head.looks_seq = [int(x) for x in encode_ids(tokenizer, " looks")]
+            head.where_seqs = [
+                [int(x) for x in encode_ids(tokenizer, stem)]
+                for stem in (" where", " Where", "Where")
+                if encode_ids(tokenizer, stem)
+            ]
             beside = encode_ids(tokenizer, " beside")
             head.beside_id = int(beside[0]) if beside else None
             is_enc = encode_ids(tokenizer, " is")
