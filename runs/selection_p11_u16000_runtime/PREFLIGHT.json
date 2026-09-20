@@ -1,0 +1,66 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P11_U16000_RUNTIME",
+  "status": "PREFLIGHT_OK",
+  "p11_receipts": {
+    "firststep_h1": "H1_PASS",
+    "firststep_init_free_exact": 71,
+    "firststep_treatment_free_exact": 102,
+    "firststep_note": "Frozen init 71 used untrained init overwrite on U16000, not this protocol's OFF arm (trained overwrite attached but inert).",
+    "protected_material_opened": false
+  },
+  "identities": [
+    {
+      "path": "C:\\DaveLM-v0.10\\runs\\structured_v2r4_seed106001_from6000_terminal\\checkpoint_16000.pt",
+      "exists": true,
+      "sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+      "match": true,
+      "match_mode": "exact",
+      "role": "authoritative_parent"
+    },
+    {
+      "path": "C:\\DaveLM-v0.10\\runs\\selection_p11\\treatment_250001\\checkpoint_16800.pt",
+      "exists": true,
+      "sha256": "369d95c5fdfafea6b270afc47e5a008d17415b7efda275f1aef522d2e4821157",
+      "match": true,
+      "match_mode": "exact",
+      "role": "p11_overwrite_checkpoint"
+    },
+    {
+      "path": "C:\\DaveLM-v0.10\\runs\\selection_s2\\DIAGNOSTIC.json",
+      "exists": true,
+      "sha256": "5b63533f7eb7feef65a5254deae735b43e2904bff30deeebcf81bb32913dc446",
+      "match": true,
+      "match_mode": "exact",
+      "role": "s2_long_gap_and_rest_lock"
+    },
+    {
+      "path": "C:\\DaveLM-v0.10\\data\\generated\\foundation_v2\\panels.json",
+      "exists": true,
+      "sha256": "5f0d1d2c59c5d9ac07cd93460a59f542d1c65b9a10f130e61a28388b52342bb3",
+      "match": true,
+      "match_mode": "exact",
+      "role": "frozen_retention_panels"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_DEV_STREAM.u16",
+      "exists": true,
+      "sha256": "4e9834d43ec80a0eea5e1a5a59c284f8f76f5f84bffcf979e4686661d71b6017",
+      "match": true,
+      "match_mode": "unhashed_presence",
+      "role": "language_dev_stream"
+    },
+    {
+      "path": "C:\\DaveLM-v0.10\\runs\\v2r4_isolation_panels\\ISOLATION_PANELS.json",
+      "exists": true,
+      "sha256": "65d0864e2a12ec5771805a132a206ff7807d14e1cd7872ba2d876cceaf44e75f",
+      "match": true,
+      "match_mode": "unhashed_presence",
+      "role": "isolation_negative_controls"
+    }
+  ],
+  "missing": [],
+  "mismatch": [],
+  "training": false,
+  "protected_material_opened": false,
+  "device_cuda": true
+}

@@ -1,0 +1,52 @@
+{
+  "id": "e14b_retention",
+  "verdict": "PASS",
+  "lesson": "D3 long-gap 200/215 induction 0.422",
+  "long_gap": {
+    "n": 215,
+    "free_exact": 200,
+    "first_correct": 215,
+    "free_accuracy": 0.9302325581395349,
+    "first_accuracy": 1.0
+  },
+  "primitive_induction": {
+    "n": 64,
+    "first_top1": 0.421875,
+    "tf_exact": 0.15625,
+    "free_exact": 0.15625,
+    "mean_target_prob": 0.2764709513236028,
+    "median_target_rank": 3,
+    "mean_target_logit": 6.704774931073189,
+    "mean_first_margin": -0.46360277757048607,
+    "mean_first_error": 0.765625,
+    "distinct_emitted_tokens": 119,
+    "n_overwrite_armed": 0
+  },
+  "primitive_keyed": {
+    "n": 64,
+    "first_top1": 0.96875,
+    "tf_exact": 0.875,
+    "free_exact": 0.84375,
+    "mean_target_prob": 0.9291070211456827,
+    "median_target_rank": 1,
+    "mean_target_logit": 12.810971729457378,
+    "mean_first_margin": 6.095316171646118,
+    "mean_first_error": 3.265625,
+    "distinct_emitted_tokens": 100,
+    "n_overwrite_armed": 64
+  },
+  "slice": {
+    "n": 40,
+    "first_top1": 1.0,
+    "tf_exact": 0.95,
+    "free_exact": 0.95,
+    "mean_target_prob": 1.0,
+    "median_target_rank": 1,
+    "mean_target_logit": 10.586148715019226,
+    "mean_first_margin": Infinity,
+    "mean_first_error": 7.3,
+    "distinct_emitted_tokens": 179,
+    "tiling_parse_rate": 1.0,
+    "slice": 40
+  }
+}

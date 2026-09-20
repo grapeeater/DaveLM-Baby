@@ -1,0 +1,60 @@
+{
+  "id": "e3_zeroshot",
+  "verdict": "FAIL",
+  "lesson": "E3 cold turn2=0.219 turn3=0.250 dialogue=0.750",
+  "native": {
+    "multiturn_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.21875,
+      "tf_exact": 0.21875,
+      "free_exact": 0.21875,
+      "mean_target_prob": 0.22166459225991275,
+      "median_target_rank": 2,
+      "mean_target_logit": 11.912978440523148,
+      "mean_first_margin": -2.092838317155838,
+      "mean_first_error": 0.59375,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 1.0
+    },
+    "multiturn_3fact_heldout": {
+      "n": 32,
+      "first_top1": 0.25,
+      "tf_exact": 0.25,
+      "free_exact": 0.25,
+      "mean_target_prob": 0.2255947580706561,
+      "median_target_rank": 2,
+      "mean_target_logit": 11.726116865873337,
+      "mean_first_margin": -2.0144548416137695,
+      "mean_first_error": 0.625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.75,
+      "tf_exact": 0.75,
+      "free_exact": 0.75,
+      "mean_target_prob": 0.6567465021507815,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.533900886774063,
+      "mean_first_margin": 1.7476319819688797,
+      "mean_first_error": 2.0,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.75
+    },
+    "pronoun_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8331400323659182,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.966674119234085,
+      "mean_first_margin": 2.436626523733139,
+      "mean_first_error": 2.40625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.46875
+    }
+  },
+  "parent_sha256": "019656d5804862c41595cfa0497696cf9aba68f97940bd4767b235fa51052361"
+}

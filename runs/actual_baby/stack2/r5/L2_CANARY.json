@@ -1,0 +1,115 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "mechanism": "subject_of_query_value bind",
+  "who_2e": {
+    "official": {
+      "n": 32,
+      "acc": 1.0,
+      "pred_is_last": 0.46875,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 1.0,
+      "by_gap": {
+        "1": 1.0,
+        "3": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      }
+    },
+    "324777": {
+      "n": 32,
+      "acc": 1.0,
+      "pred_is_last": 0.625,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 1.0,
+      "by_gap": {
+        "3": 1.0,
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      }
+    },
+    "324888": {
+      "n": 32,
+      "acc": 1.0,
+      "pred_is_last": 0.625,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 1.0,
+      "by_gap": {
+        "3": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      }
+    },
+    "325001": {
+      "n": 32,
+      "acc": 1.0,
+      "pred_is_last": 0.5625,
+      "acc_last_gold": 1.0,
+      "acc_last_not": 1.0,
+      "by_gap": {
+        "2": 1.0,
+        "3": 1.0,
+        "4": 1.0,
+        "1": 1.0
+      }
+    }
+  },
+  "who_sent": {
+    "bare": 1.0,
+    "prefix": 1.0,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "who_color": 1.0,
+      "who_size": 1.0
+    }
+  },
+  "who_sent_seeds": {
+    "324777": {
+      "n": 16,
+      "seed": 324777,
+      "bare": 1.0,
+      "first_entity": 1.0
+    },
+    "324888": {
+      "n": 16,
+      "seed": 324888,
+      "bare": 1.0,
+      "first_entity": 1.0
+    }
+  },
+  "has": {
+    "bare": 1.0,
+    "prefix": 1.0,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "has_who": 1.0,
+      "has_what": 1.0
+    }
+  },
+  "beside": {
+    "bare": 1.0,
+    "prefix": 0.9166666666666666,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "beside_where": 1.0,
+      "beside_who": 1.0
+    }
+  },
+  "beside_para": {
+    "n": 6,
+    "bare": 1.0,
+    "first_entity": 1.0
+  }
+}

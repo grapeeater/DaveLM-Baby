@@ -1,0 +1,27 @@
+{
+  "protocol": "V010_QUERY_PRESENCE_D2",
+  "valid": true,
+  "invalid_reasons": [],
+  "positive_control": {
+    "median_final_residual_cosine_ok": true,
+    "prev_track_ok": true,
+    "eligible_flip_ok": true,
+    "eligible_flip_used": 0.32209737827715357,
+    "eligible_n_used": 267,
+    "raw_flip_reported_not_gated": 0.25146198830409355
+  },
+  "verdict": "B",
+  "hypothesis": {
+    "H_B": true,
+    "H_A": false,
+    "H_C": false
+  },
+  "trained": false,
+  "gates_changed": false,
+  "d1_reopened": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true,
+  "checkpoint_sha256": "3f005e19da8db071a763eb66ef0cb6f7e59ca63cf55078eeec9fad2338cd2fc1",
+  "arm": "control",
+  "d1b_reopened": false
+}

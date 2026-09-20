@@ -1,0 +1,14 @@
+# Baby v0.10 stack2 s4m direct-fact sentence hashes
+# Experimental survivor only. U16000 not replaced. TEST closed. Not promoted.
+
+# Authoritative Baby (unchanged)
+94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827  runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt
+
+# Experimental parent s3s (unchanged, not promoted)
+8101c421bedf0514bd4ad7c403557f4e72cc2cfc0626090d779eafb2343b382d  runs/actual_baby/stack2/s3s_compose_lock_324121/checkpoint_00025.pt
+
+# s4m direct-fact sentence survivor (gitignore excludes .pt; hash is the identity)
+4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5  runs/actual_baby/stack2/s4m_compose_lock_325231/checkpoint_00025.pt
+1b8ca8e39dc5c5b05f647bc18ca6731a57a083bf8a2b3ad0729e3174a8fb8aad  runs/actual_baby/stack2/s4m_compose_lock_325231/eval_00025.json
+5099b7e13d22bab040766043316deaec4374ba4722126ff03e2d83c4eb05475d  runs/actual_baby/stack2/s4m_verify.json
+2db64f6cc757fa702f0f0dee5f2bb06aff418b50bc7082a19d2e630f18e20349  runs/actual_baby/stack2/s4m_verify_d3.json

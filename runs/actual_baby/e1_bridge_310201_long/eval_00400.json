@@ -1,0 +1,89 @@
+{
+  "update": 400,
+  "native": {
+    "aperiodic": {
+      "n": 32,
+      "first_top1": 0.21875,
+      "tf_exact": 0.1875,
+      "free_exact": 0.1875,
+      "mean_target_prob": 0.1463469057189286,
+      "median_target_rank": 3,
+      "mean_target_logit": 6.715659789741039,
+      "mean_first_margin": -1.9549719840288162,
+      "mean_first_error": 0.40625,
+      "distinct_emitted_tokens": 56,
+      "tiling_parse_rate": 0.03125
+    },
+    "syntax_wrap": {
+      "n": 32,
+      "first_top1": 0.125,
+      "tf_exact": 0.125,
+      "free_exact": 0.125,
+      "mean_target_prob": 0.05900578050542293,
+      "median_target_rank": 46,
+      "mean_target_logit": 4.231212944723666,
+      "mean_first_margin": -6.041788652539253,
+      "mean_first_error": 0.125,
+      "distinct_emitted_tokens": 10,
+      "tiling_parse_rate": 0.96875
+    },
+    "cloze_1fact": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9808557070791721,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.460195630788803,
+      "mean_first_margin": 7.099127307534218,
+      "mean_first_error": 3.65625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.25
+    },
+    "cloze_2fact": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.9316719574853778,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.07875308394432,
+      "mean_first_margin": 4.898899048566818,
+      "mean_first_error": 3.53125,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.6875
+    },
+    "qa_2fact_train": {
+      "n": 32,
+      "first_top1": 0.875,
+      "tf_exact": 0.875,
+      "free_exact": 0.875,
+      "mean_target_prob": 0.8669756564777344,
+      "median_target_rank": 1,
+      "mean_target_logit": 15.099014639854431,
+      "mean_first_margin": 5.006589204072952,
+      "mean_first_error": 2.96875,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.6875
+    },
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.4375,
+      "tf_exact": 0.4375,
+      "free_exact": 0.4375,
+      "mean_target_prob": 0.4591045680489785,
+      "median_target_rank": 2,
+      "mean_target_logit": 8.803129916545004,
+      "mean_first_margin": -1.2737887054681778,
+      "mean_first_error": 1.15625,
+      "distinct_emitted_tokens": 29,
+      "tiling_parse_rate": 0.71875
+    }
+  },
+  "language_dev_ce": 1.341148130595684,
+  "language_baseline_ce": 1.3342647664248943,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e1_bridge_310201_long\\checkpoint_00400.pt",
+  "checkpoint_sha256": "86115ae22a30d846e29a52b54c2f74baaa85f7bab61a3503e9b4d9bcb505ca15",
+  "verdict": "ADVANCE",
+  "lesson": "signal but below gate: heldout 0.438 cloze2 0.969"
+}

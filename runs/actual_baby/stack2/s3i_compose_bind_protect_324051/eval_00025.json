@@ -1,0 +1,262 @@
+{
+  "update": 25,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.9277219106443226,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.642044365406036,
+      "mean_first_margin": 4.6180050522089005,
+      "mean_first_error": 2.46875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.78125
+    },
+    "size_stop_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.8810831173323095,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.16395479440689,
+      "mean_first_margin": 3.76162950694561,
+      "mean_first_error": 2.9375,
+      "distinct_emitted_tokens": 15,
+      "tiling_parse_rate": 0.84375
+    },
+    "story_color_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8302182569168508,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.629486501216888,
+      "mean_first_margin": 3.281936287879944,
+      "mean_first_error": 2.46875,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_mixed_heldout": {
+      "n": 32,
+      "first_top1": 0.6875,
+      "tf_exact": 0.6875,
+      "free_exact": 0.6875,
+      "mean_target_prob": 0.5419844964635558,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.15289057791233,
+      "mean_first_margin": 0.8745208382606506,
+      "mean_first_error": 1.75,
+      "distinct_emitted_tokens": 29,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.3125,
+      "tf_exact": 0.3125,
+      "free_exact": 0.3125,
+      "mean_target_prob": 0.28052887655212544,
+      "median_target_rank": 2,
+      "mean_target_logit": 10.165876567363739,
+      "mean_first_margin": -0.7936361730098724,
+      "mean_first_error": 0.71875,
+      "distinct_emitted_tokens": 27,
+      "tiling_parse_rate": 0.96875
+    },
+    "mixed_2e_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.7667478604416829,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.354472756385803,
+      "mean_first_margin": 2.625293403863907,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 0.90625
+    },
+    "fact_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.625,
+      "tf_exact": 0.625,
+      "free_exact": 0.625,
+      "mean_target_prob": 0.40504388949193526,
+      "median_target_rank": 1,
+      "mean_target_logit": 10.376149401068687,
+      "mean_first_margin": 0.31458669900894165,
+      "mean_first_error": 1.625,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9709946364164352,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.637790501117706,
+      "mean_first_margin": 5.1706685572862625,
+      "mean_first_error": 2.6875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.5
+    }
+  },
+  "language_dev_ce": 1.3453317433595657,
+  "language_baseline_ce": 1.3476611748337746,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3i_compose_bind_protect_324051\\checkpoint_00025.pt",
+  "checkpoint_sha256": "430733001c3fe54d261121b913c74542f49c618007915f25788d15ad61afd9f2",
+  "mix_verdict": "GRAD",
+  "english_ok": true,
+  "collapsed": false,
+  "lesson": "mix GRAD mixed=0.969 fact_combine=0.625 story_combine=0.312 mixed_story=0.688; E12 English hold color=0.969 size_stop=0.938 story=0.906; D3 slice free_exact=0.9; who2=0.250 sent=0.000 bare=0.000",
+  "d3_slice": {
+    "n": 40,
+    "first_top1": 1.0,
+    "free_exact": 0.9,
+    "tf_exact": 0.925
+  },
+  "compose": {
+    "who_bind_2e_heldout": {
+      "n": 16,
+      "first_top1": 0.25,
+      "tf_exact": 0.25,
+      "free_exact": 0.25,
+      "mean_target_prob": 0.12864468530096929,
+      "median_target_rank": 2,
+      "mean_target_logit": 6.76863169670105,
+      "mean_first_margin": -1.3867444396018982,
+      "mean_first_error": 0.875,
+      "distinct_emitted_tokens": 28,
+      "tiling_parse_rate": 1.0
+    },
+    "who_bind_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.25,
+      "tf_exact": 0.25,
+      "free_exact": 0.25,
+      "mean_target_prob": 0.16682721198594663,
+      "median_target_rank": 3,
+      "mean_target_logit": 7.570333123207092,
+      "mean_first_margin": -1.0972275137901306,
+      "mean_first_error": 0.6875,
+      "distinct_emitted_tokens": 24,
+      "tiling_parse_rate": 0.875
+    },
+    "mixed_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.8125,
+      "tf_exact": 0.8125,
+      "free_exact": 0.8125,
+      "mean_target_prob": 0.665462504606694,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.326703250408173,
+      "mean_first_margin": 1.9788563251495361,
+      "mean_first_error": 1.9375,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.9375
+    },
+    "fact_combine_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.375,
+      "tf_exact": 0.375,
+      "free_exact": 0.375,
+      "mean_target_prob": 0.22682046861154959,
+      "median_target_rank": 3,
+      "mean_target_logit": 9.366251975297928,
+      "mean_first_margin": -1.079809695482254,
+      "mean_first_error": 1.0625,
+      "distinct_emitted_tokens": 21,
+      "tiling_parse_rate": 0.9375
+    },
+    "compose_sent_heldout": {
+      "n": 16,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.0019851826307331066,
+      "median_target_rank": 9,
+      "mean_target_logit": 6.1909139752388,
+      "mean_first_margin": -7.182763189077377,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.875
+    },
+    "compose_combine_sent_heldout": {
+      "n": 16,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 1.2646906020208348e-06,
+      "median_target_rank": 488,
+      "mean_target_logit": -2.5195533726364374,
+      "mean_first_margin": -13.671295642852783,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.9375
+    },
+    "compose_sent_instr_heldout": {
+      "n": 16,
+      "first_top1": 0.0625,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.06022970132244154,
+      "median_target_rank": 9,
+      "mean_target_logit": 6.61953504383564,
+      "mean_first_margin": -5.894886165857315,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.9375
+    },
+    "phrase_2fact_heldout": {
+      "n": 16,
+      "first_top1": 0.0625,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.055648736624561934,
+      "median_target_rank": 12,
+      "mean_target_logit": 5.908058404922485,
+      "mean_first_margin": -7.306422263383865,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.1875
+    }
+  },
+  "sentence": {
+    "verdict": "PARK",
+    "lesson": "park sentence decode; best light bare=0.000",
+    "operators": {
+      "bare": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      },
+      "sent_prefix": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      },
+      "baby": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      }
+    }
+  }
+}

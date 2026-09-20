@@ -1,0 +1,139 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "fact_combine": {
+    "e13": {
+      "n": 32,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "s611888": {
+      "n": 32,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "s612001": {
+      "n": 32,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "e3": {
+      "n": 16,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    }
+  },
+  "story_combine": {
+    "e13": {
+      "n": 32,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "s611888": {
+      "n": 32,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    }
+  },
+  "story_progress": {
+    "two_facts": {
+      "n": 2,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "one_distractor": {
+      "n": 2,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "separated": {
+      "n": 2,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    },
+    "multi_entity": {
+      "n": 3,
+      "gold_in": 1.0,
+      "first": 1.0,
+      "entity_lead": 0.0
+    }
+  },
+  "about_report": {
+    "n": 8,
+    "attrs_ok": 1.0,
+    "entity_ok": 1.0,
+    "clean": 1.0
+  },
+  "retain": {
+    "who_2e": 1.0,
+    "who_sent": {
+      "bare": 1.0,
+      "prefix": 1.0,
+      "first_entity": 1.0,
+      "has_entity": 1.0,
+      "has_value": 1.0,
+      "predicate": 1.0,
+      "one_word_entity": 0.0,
+      "by_kind": {
+        "who_color": 1.0,
+        "who_size": 1.0
+      }
+    },
+    "has": {
+      "bare": 1.0,
+      "prefix": 1.0,
+      "first_entity": 1.0,
+      "has_entity": 1.0,
+      "has_value": 1.0,
+      "predicate": 1.0,
+      "one_word_entity": 0.0,
+      "by_kind": {
+        "has_who": 1.0,
+        "has_what": 1.0
+      }
+    },
+    "beside": {
+      "bare": 1.0,
+      "prefix": 0.9166666666666666,
+      "first_entity": 1.0,
+      "has_entity": 1.0,
+      "has_value": 1.0,
+      "predicate": 1.0,
+      "one_word_entity": 0.0,
+      "by_kind": {
+        "beside_where": 1.0,
+        "beside_who": 1.0
+      }
+    },
+    "beside_order": {
+      "n": 8,
+      "bare": 1.0,
+      "first_entity": 1.0
+    },
+    "mixed": {
+      "n": 16,
+      "bare": 1.0,
+      "first_entity": 1.0,
+      "by_family": {
+        "who": 1.0,
+        "has": 1.0,
+        "beside": 1.0
+      }
+    },
+    "multiturn": {
+      "n": 3,
+      "bare": 1.0
+    }
+  },
+  "fact_miss": [],
+  "story_miss": [],
+  "prog_miss": []
+}

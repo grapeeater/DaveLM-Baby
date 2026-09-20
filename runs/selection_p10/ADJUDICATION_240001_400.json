@@ -1,0 +1,95 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P10_AUX_ONLY",
+  "licensed_by": "V010_SELECTION_REPAIR_P9_SLOT_GATEON",
+  "p9_verdict": "MECHANISM SUPPORTED, DOSE INSUFFICIENT",
+  "ce_to_overwrite": false,
+  "step": 400,
+  "reason": "hard_stop_language",
+  "verdict": "REGRESSION",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "primary_endpoint": {
+    "parent_hit": 74,
+    "treatment_hit": 74,
+    "control_hit": 74,
+    "parent_excess": -5.551115123125783e-16,
+    "treatment_excess": -5.551115123125783e-16,
+    "control_excess": -5.551115123125783e-16,
+    "treatment_minus_control": 0.0,
+    "bootstrap_ci95": [
+      -0.026431718061673992,
+      0.026086956521739146
+    ]
+  },
+  "mechanism": {
+    "parent_l0_cosine": 0.042110271751880646,
+    "treatment_l0_cosine": 0.8857393264770508,
+    "control_l0_cosine": 0.042110271751880646,
+    "cosine_gain": 0.8436290547251701,
+    "treatment_overwrite_mass": 0.37140893936157227,
+    "control_overwrite_mass": 0.0028304937295615673
+  },
+  "regressions": [
+    {
+      "panel": "primitive_induction",
+      "metric": "first_top1",
+      "parent": 0.296875,
+      "treatment": 0.046875,
+      "bar_drop": 0.05
+    },
+    {
+      "panel": "primitive_keyed",
+      "metric": "first_top1",
+      "parent": 1.0,
+      "treatment": 0.46875,
+      "bar_drop": 0.05
+    },
+    {
+      "panel": "short_keyed",
+      "metric": "free_exact",
+      "parent": 0.828125,
+      "treatment": 0.0,
+      "bar_drop": 0.05
+    },
+    {
+      "panel": "diagnostic",
+      "metric": "rest_lock",
+      "parent": 0.9768518518518519,
+      "treatment": 0.034722222222222224,
+      "bar_drop": 0.05
+    }
+  ],
+  "retention_other": {
+    "language_dev_ce": {
+      "parent": 1.2432273048907518,
+      "treatment": 4.760279588401318,
+      "control": 1.2432273048907518
+    },
+    "primitive_induction_first_top1": {
+      "parent": 0.296875,
+      "treatment": 0.046875,
+      "control": 0.296875
+    }
+  },
+  "negative_controls": {
+    "value_absent_same_surface_novel.free_exact": {
+      "value": 0.0,
+      "bar": 0.0,
+      "pass": true
+    },
+    "broken_context.free_exact": {
+      "value": 0.0,
+      "bar": 0.05,
+      "pass": true
+    },
+    "broken_order.first_top1": {
+      "value": 0.015625,
+      "bar": 0.2,
+      "pass": true
+    }
+  },
+  "trained": true,
+  "p2_launched": false,
+  "gates_changed": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}

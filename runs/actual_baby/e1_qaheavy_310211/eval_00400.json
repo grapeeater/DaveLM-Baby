@@ -1,0 +1,102 @@
+{
+  "update": 400,
+  "native": {
+    "aperiodic": {
+      "n": 32,
+      "first_top1": 0.25,
+      "tf_exact": 0.15625,
+      "free_exact": 0.15625,
+      "mean_target_prob": 0.1717426428821227,
+      "median_target_rank": 7,
+      "mean_target_logit": 6.082571747712791,
+      "mean_first_margin": -2.3664594665169716,
+      "mean_first_error": 0.40625,
+      "distinct_emitted_tokens": 52,
+      "tiling_parse_rate": 0.03125
+    },
+    "syntax_wrap": {
+      "n": 32,
+      "first_top1": 0.28125,
+      "tf_exact": 0.28125,
+      "free_exact": 0.28125,
+      "mean_target_prob": 0.1383682479468007,
+      "median_target_rank": 15,
+      "mean_target_logit": 5.680402982980013,
+      "mean_first_margin": -2.343584194779396,
+      "mean_first_error": 0.28125,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.96875
+    },
+    "cloze_1fact": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.987676864489913,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.618854999542236,
+      "mean_first_margin": 6.62071692943573,
+      "mean_first_error": 3.65625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.25
+    },
+    "cloze_2fact": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8454968528822064,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.946787267923355,
+      "mean_first_margin": 3.143011152744293,
+      "mean_first_error": 3.28125,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.6875
+    },
+    "qa_2fact_train": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8997381869703531,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.406521379947662,
+      "mean_first_margin": 3.455301433801651,
+      "mean_first_error": 2.625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.75
+    },
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.5,
+      "tf_exact": 0.5,
+      "free_exact": 0.5,
+      "mean_target_prob": 0.49561410134643324,
+      "median_target_rank": 2,
+      "mean_target_logit": 10.013061996549368,
+      "mean_first_margin": -0.7499562799930573,
+      "mean_first_error": 1.34375,
+      "distinct_emitted_tokens": 25,
+      "tiling_parse_rate": 0.71875
+    },
+    "qa_3fact_heldout": {
+      "n": 32,
+      "first_top1": 0.5625,
+      "tf_exact": 0.5625,
+      "free_exact": 0.5625,
+      "mean_target_prob": 0.4786123655877361,
+      "median_target_rank": 1,
+      "mean_target_logit": 9.949093207716942,
+      "mean_first_margin": -0.8714572191238403,
+      "mean_first_error": 1.5,
+      "distinct_emitted_tokens": 28,
+      "tiling_parse_rate": 0.84375
+    }
+  },
+  "language_dev_ce": 1.3414506763219833,
+  "language_baseline_ce": 1.3474787920713425,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e1_qaheavy_310211\\checkpoint_00400.pt",
+  "checkpoint_sha256": "c18fb52936f546075b4dd1127dbe378595837442c4e8fcae8f4f8474757cdf5c",
+  "verdict": "ADVANCE",
+  "lesson": "signal but below gate: heldout 0.500 cloze2 0.906"
+}

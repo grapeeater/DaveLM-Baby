@@ -1,0 +1,39 @@
+{
+  "status": "s5 A+B not dual-passed. Retrieval ceiling + skill interference. Not promoted.",
+  "authoritative": false,
+  "promoted": false,
+  "parent": {
+    "path": "runs/actual_baby/stack2/s4m_compose_lock_325231/checkpoint_00025.pt",
+    "sha256": "4c0f142768aa57e2421a94a5214392e5c2d71e3805a2c0f6d5c9f0bc984c95e5"
+  },
+  "milestone_a": false,
+  "milestone_b": false,
+  "best_a": {
+    "recipe": "s5m",
+    "path": "runs/actual_baby/stack2/s5m_compose_lock_326121/checkpoint_00025.pt",
+    "sha256": "dd2584a5b6252adae70dc1729666b937c41dd0686af347d0b2ee2a0bbe30ec0e",
+    "who_sent_bare": 0.375,
+    "who_2e": 0.5,
+    "combine": 0.75,
+    "color": 1.0
+  },
+  "best_joint": {
+    "recipe": "s5b3",
+    "path": "runs/actual_baby/stack2/s5b3_compose_lock_326191/checkpoint_00025.pt",
+    "sha256": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+    "who_sent_bare": 0.3125,
+    "has_bare": 0.583,
+    "beside_bare": 0.75,
+    "d3_free": 181,
+    "first_correct": 215,
+    "usable": 0.857,
+    "usable4": 0.844
+  },
+  "blocker": "2e inverse WHO is last-entity recency at ~0.50. Anti-recency, margin, asked-attr, and paired-scene CE did not break it. Syntax is present. Owner-level retrieval/architecture decision.",
+  "retrieval_followup": {
+    "s5w": "KILL who2 0.31 anti-recency overcorrect",
+    "s5x": "who2 0.531 last-not 0.29->0.41 then plateau",
+    "s5z": "who_sent stuck 0.375 from s5m",
+    "s5pp": "KILL who_sent 0.25 paired-scene"
+  }
+}

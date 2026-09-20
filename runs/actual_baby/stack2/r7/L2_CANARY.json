@@ -1,0 +1,75 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "relassist": false,
+  "whoprop": false,
+  "mechanism": {
+    "n": 12,
+    "overall": 1.0,
+    "by_family": {
+      "about": 1.0,
+      "beside": 1.0,
+      "combine": 1.0,
+      "direct": 1.0,
+      "has_entity": 1.0,
+      "has_value": 1.0,
+      "who": 1.0
+    }
+  },
+  "mechanism_miss": [],
+  "who_all_entities": {
+    "n": 30,
+    "overall": 1.0,
+    "by_family": {
+      "who": 1.0
+    }
+  },
+  "who_all_miss": [],
+  "extra": {
+    "n": 8,
+    "overall": 1.0,
+    "by_family": {
+      "beside": 1.0,
+      "has_entity": 1.0,
+      "has_value": 1.0,
+      "story_combine": 1.0,
+      "who": 1.0,
+      "who_sent": 1.0
+    }
+  },
+  "extra_miss": [],
+  "reuse": {
+    "n": 12,
+    "ok": 1.0,
+    "reuse": 1.0,
+    "stop": 1.0
+  },
+  "reuse_miss": [],
+  "about": {
+    "n": 8,
+    "attrs_ok": 1.0,
+    "entity_ok": 1.0,
+    "clean": 1.0
+  },
+  "fact_combine": {
+    "n": 16,
+    "gold_in": 1.0,
+    "first": 1.0,
+    "entity_lead": 0.0
+  },
+  "story_combine": {
+    "n": 16,
+    "gold_in": 1.0,
+    "first": 1.0,
+    "entity_lead": 0.0
+  },
+  "who_2e": {
+    "n": 32,
+    "acc": 1.0,
+    "pred_is_last": 1.0,
+    "acc_last_gold": 1.0,
+    "acc_last_not": null,
+    "by_gap": {
+      "1": 1.0
+    }
+  }
+}

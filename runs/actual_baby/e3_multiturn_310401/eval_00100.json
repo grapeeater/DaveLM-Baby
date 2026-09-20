@@ -1,0 +1,63 @@
+{
+  "update": 100,
+  "native": {
+    "multiturn_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.9352947743609548,
+      "median_target_rank": 1,
+      "mean_target_logit": 15.025710314512253,
+      "mean_first_margin": 5.402974367141724,
+      "mean_first_error": 2.4375,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 1.0
+    },
+    "multiturn_3fact_heldout": {
+      "n": 32,
+      "first_top1": 0.84375,
+      "tf_exact": 0.84375,
+      "free_exact": 0.84375,
+      "mean_target_prob": 0.7879415669594891,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.822807103395462,
+      "mean_first_margin": 4.04696986079216,
+      "mean_first_error": 2.3125,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.9026582553051412,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.6060791015625,
+      "mean_first_margin": 5.7614337503910065,
+      "mean_first_error": 2.40625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.75
+    },
+    "pronoun_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9502414111047983,
+      "median_target_rank": 1,
+      "mean_target_logit": 15.818593800067902,
+      "mean_first_margin": 6.210015699267387,
+      "mean_first_error": 2.625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.46875
+    }
+  },
+  "language_dev_ce": 1.33699182420969,
+  "language_baseline_ce": 1.3377200290560722,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e3_multiturn_310401\\checkpoint_00100.pt",
+  "checkpoint_sha256": "848762b7e783df52c19d8150315f01befbff2c07e8d39aa900620cea5019bf70",
+  "verdict": "GRAD",
+  "lesson": "E3 turn2=0.938 turn3=0.844 dialogue=0.906"
+}

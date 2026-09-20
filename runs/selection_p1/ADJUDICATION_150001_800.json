@@ -1,0 +1,91 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P1_POINTER",
+  "licensed_by": "V010_QUERY_PRESENCE_D1B",
+  "d1b_verdict": "B",
+  "d1_reopened": false,
+  "step": 800,
+  "reason": "terminal",
+  "verdict": "REGRESSION",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "primary_endpoint": {
+    "stratum": "frozen diagnostic rows with query->generation gap >= 13",
+    "n": 215,
+    "parent_accuracy": 0.34418604651162793,
+    "parent_excess": -5.551115123125783e-16,
+    "treatment_accuracy": 0.3395348837209302,
+    "treatment_excess": -0.004651162790698271,
+    "control_accuracy": 0.34418604651162793,
+    "control_excess": -5.551115123125783e-16,
+    "treatment_minus_control": -0.004651162790698271,
+    "bootstrap_ci95": [
+      -0.025125628140703515,
+      0.014563106796116498
+    ]
+  },
+  "mechanism": {
+    "parent_query_track": 0.3767441860465116,
+    "treatment_query_track": 0.8511627906976744,
+    "control_query_track": 0.3674418604651163,
+    "track_gain_treatment": 0.4744186046511628,
+    "parent_median_max_query_mass": 0.04132672771811485,
+    "treatment_median_max_query_mass": 0.9345294237136841,
+    "control_median_max_query_mass": 0.04159078001976013,
+    "g31_treatment_query_track": 0.8113207547169812,
+    "g31_treatment_median_max_query_mass": 0.6147775650024414
+  },
+  "regressions": [
+    {
+      "panel": "primitive_induction",
+      "metric": "first_top1",
+      "parent": 0.296875,
+      "treatment": 0.1875,
+      "control": 0.21875,
+      "bar_drop": 0.05
+    }
+  ],
+  "retention_other": {
+    "language_dev_ce": {
+      "parent": 1.2430045008659363,
+      "treatment": 1.2359018232673407,
+      "control": 1.2342126481235027
+    },
+    "primitive_keyed_first_top1": {
+      "parent": 1.0,
+      "treatment": 1.0,
+      "control": 1.0
+    },
+    "short_keyed_free_exact": {
+      "parent": 0.84375,
+      "treatment": 0.828125,
+      "control": 0.828125
+    },
+    "rest_lock": {
+      "parent": 0.9768518518518519,
+      "treatment": 0.9768518518518519,
+      "control": 0.9768518518518519
+    }
+  },
+  "negative_controls": {
+    "value_absent_same_surface_novel.free_exact": {
+      "value": 0.0,
+      "bar": 0.0,
+      "pass": true
+    },
+    "broken_context.free_exact": {
+      "value": 0.015625,
+      "bar": 0.05,
+      "pass": true
+    },
+    "broken_order.first_top1": {
+      "value": 0.0,
+      "bar": 0.2,
+      "pass": true
+    }
+  },
+  "counterfactual_without_retention": "MECHANISM SUPPORTED, DOSE INSUFFICIENT",
+  "hypothesis_H1": false,
+  "trained": true,
+  "gates_changed": false,
+  "protected_material_opened": false,
+  "authoritative_parent_unchanged": true
+}

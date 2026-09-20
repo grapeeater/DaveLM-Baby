@@ -1,0 +1,72 @@
+{
+  "protocol": "V010_SELECTION_REPAIR_P11_RETENTION",
+  "status": "PREFLIGHT_BLOCKED",
+  "p11_receipts": {
+    "p11_verdict": "SUCCESS",
+    "firststep_h1": "H1_PASS",
+    "decode_h1": "H1_FAIL",
+    "firststep_free_exact": 102,
+    "firststep_init_free_exact": 71,
+    "protected_material_opened": false
+  },
+  "identities": [
+    {
+      "path": "/workspace/runs/structured_v2r4_seed106001_from6000_terminal/checkpoint_16000.pt",
+      "exists": false,
+      "sha256": null,
+      "match": null,
+      "match_mode": null,
+      "role": "authoritative_parent"
+    },
+    {
+      "path": "/workspace/runs/selection_p11/treatment_250001/checkpoint_16800.pt",
+      "exists": false,
+      "sha256": null,
+      "match": null,
+      "match_mode": null,
+      "role": "p11_treatment_checkpoint"
+    },
+    {
+      "path": "/workspace/runs/selection_s2/DIAGNOSTIC.json",
+      "exists": false,
+      "sha256": null,
+      "match": null,
+      "match_mode": null,
+      "role": "s2_long_gap_and_rest_lock"
+    },
+    {
+      "path": "/workspace/data/generated/foundation_v2/panels.json",
+      "exists": true,
+      "sha256": "ba54410ebdcba56b1e9f0b46ac17a1da54f6cee3030ef91046e14878764bb99c",
+      "match": true,
+      "match_mode": "newline_normalized",
+      "role": "frozen_retention_panels"
+    },
+    {
+      "path": "C:\\DaveLM-CADAVER\\baby_vnext_phase1g_language_v1\\data\\LANGUAGE_DEV_STREAM.u16",
+      "exists": false,
+      "sha256": null,
+      "match": null,
+      "match_mode": null,
+      "role": "language_dev_stream"
+    },
+    {
+      "path": "/workspace/runs/v2r4_isolation_panels/ISOLATION_PANELS.json",
+      "exists": true,
+      "sha256": "b3fc478905dbc14684ef1d69326b424d4386350c195a59f23e174d3422c9af86",
+      "match": true,
+      "match_mode": "unhashed_presence",
+      "role": "isolation_negative_controls"
+    }
+  ],
+  "missing": [
+    "authoritative_parent",
+    "p11_treatment_checkpoint",
+    "s2_long_gap_and_rest_lock",
+    "language_dev_stream"
+  ],
+  "mismatch": [],
+  "training": false,
+  "protected_material_opened": false,
+  "device_cuda": false
+}

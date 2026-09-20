@@ -1,0 +1,360 @@
+{
+  "parent": "0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd",
+  "mechanism": "structural beside partner + finish",
+  "official_native": {
+    "bare": 1.0,
+    "prefix": 0.9166666666666666,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "beside_where": 1.0,
+      "beside_who": 1.0
+    }
+  },
+  "para_native": {
+    "n": 6,
+    "bare": 1.0,
+    "first_entity": 1.0
+  },
+  "order_native": {
+    "n": 8,
+    "bare": 1.0,
+    "first_entity": 1.0
+  },
+  "has_hold": {
+    "bare": 1.0,
+    "prefix": 1.0,
+    "first_entity": 1.0,
+    "has_entity": 1.0,
+    "has_value": 1.0,
+    "predicate": 1.0,
+    "one_word_entity": 0.0,
+    "by_kind": {
+      "has_who": 1.0,
+      "has_what": 1.0
+    }
+  },
+  "official_ex": [
+    {
+      "id": "beside_where_dog",
+      "kind": "beside_where",
+      "decoded": " dog is beside the hen.",
+      "full": " dog is beside the hen.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_where_bear",
+      "kind": "beside_where",
+      "decoded": " bear is beside the cat.",
+      "full": " bear is beside the cat.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_where_duck",
+      "kind": "beside_where",
+      "decoded": " duck is beside the frog.",
+      "full": " duck is beside the frog.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_where_cat",
+      "kind": "beside_where",
+      "decoded": " cat is beside the dog.",
+      "full": " cat is beside the dog.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_who_hen",
+      "kind": "beside_who",
+      "decoded": " dog is beside the hen.",
+      "full": " dog is beside the hen.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_who_cat",
+      "kind": "beside_who",
+      "decoded": " bear is beside the cat.",
+      "full": " bear is beside the cat.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_who_frog",
+      "kind": "beside_who",
+      "decoded": " duck is beside the frog.",
+      "full": " duck is beside the frog.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_who_dog",
+      "kind": "beside_who",
+      "decoded": " cat is beside the dog.",
+      "full": " cat is beside the dog.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_where_hen",
+      "kind": "beside_where",
+      "decoded": " hen is beside the duck.",
+      "full": " hen is beside the duck.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_where_frog",
+      "kind": "beside_where",
+      "decoded": " frog is beside the bear.",
+      "full": " frog is beside the bear.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_who_duck",
+      "kind": "beside_who",
+      "decoded": " hen is beside the duck.",
+      "full": " hen is beside the duck.",
+      "sentence_ok": true,
+      "first_entity": true
+    },
+    {
+      "id": "beside_who_bear",
+      "kind": "beside_who",
+      "decoded": " frog is beside the bear.",
+      "full": " frog is beside the bear.",
+      "sentence_ok": true,
+      "first_entity": true
+    }
+  ],
+  "para_rows": [
+    {
+      "id": "p_bes_next_hen",
+      "decoded": "dog is beside the hen.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_animal_cat",
+      "decoded": "bear is beside the cat.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_next_frog",
+      "decoded": "duck is beside the frog.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_animal_dog",
+      "decoded": "cat is beside the dog.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_next_duck",
+      "decoded": "hen is beside the duck.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "p_bes_animal_bear",
+      "decoded": "frog is beside the bear.",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    }
+  ],
+  "order_rows": [
+    {
+      "id": "ord_last_dog",
+      "decoded": "cat is beside the dog.",
+      "kind": "beside_who",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_first_dog",
+      "decoded": "cat is beside the dog.",
+      "kind": "beside_who",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_last_hen",
+      "decoded": "duck is beside the hen.",
+      "kind": "beside_who",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_first_hen",
+      "decoded": "duck is beside the hen.",
+      "kind": "beside_who",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_where_last",
+      "decoded": "bear is beside the cat.",
+      "kind": "beside_where",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_where_obj",
+      "decoded": "cat is beside the bear.",
+      "kind": "beside_where",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_who_obj_first",
+      "decoded": "bear is beside the frog.",
+      "kind": "beside_who",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    },
+    {
+      "id": "ord_who_obj_last",
+      "decoded": "bear is beside the frog.",
+      "kind": "beside_who",
+      "has_entity": true,
+      "has_value": true,
+      "has_color": true,
+      "period": true,
+      "stopped": true,
+      "n_words": 5,
+      "predicate_ok": true,
+      "first_entity": true,
+      "sentence_ok": true,
+      "one_word_entity": false,
+      "one_word_color": false
+    }
+  ]
+}

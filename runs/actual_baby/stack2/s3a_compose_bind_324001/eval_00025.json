@@ -1,0 +1,262 @@
+{
+  "update": 25,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9251863975077868,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.439769715070724,
+      "mean_first_margin": 4.540406793355942,
+      "mean_first_error": 2.53125,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.78125
+    },
+    "size_stop_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.9197644228115678,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.793049454689026,
+      "mean_first_margin": 4.153072342276573,
+      "mean_first_error": 3.0625,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.84375
+    },
+    "story_color_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.8358959695324302,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.710985004901886,
+      "mean_first_margin": 3.2850169837474823,
+      "mean_first_error": 2.5625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_mixed_heldout": {
+      "n": 32,
+      "first_top1": 0.59375,
+      "tf_exact": 0.59375,
+      "free_exact": 0.59375,
+      "mean_target_prob": 0.49250069700792665,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.158016294240952,
+      "mean_first_margin": 0.6880615055561066,
+      "mean_first_error": 1.5,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 0.96875
+    },
+    "story_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.40625,
+      "tf_exact": 0.40625,
+      "free_exact": 0.40625,
+      "mean_target_prob": 0.3164081971262931,
+      "median_target_rank": 2,
+      "mean_target_logit": 10.865977212786674,
+      "mean_first_margin": -0.6153283268213272,
+      "mean_first_error": 1.03125,
+      "distinct_emitted_tokens": 28,
+      "tiling_parse_rate": 0.96875
+    },
+    "mixed_2e_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.7585707304533571,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.551358371973038,
+      "mean_first_margin": 2.8310736417770386,
+      "mean_first_error": 2.40625,
+      "distinct_emitted_tokens": 26,
+      "tiling_parse_rate": 0.90625
+    },
+    "fact_combine_heldout": {
+      "n": 32,
+      "first_top1": 0.65625,
+      "tf_exact": 0.65625,
+      "free_exact": 0.65625,
+      "mean_target_prob": 0.44800549739738926,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.473459422588348,
+      "mean_first_margin": 0.601548820734024,
+      "mean_first_error": 1.625,
+      "distinct_emitted_tokens": 28,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9387452900409698,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.033967554569244,
+      "mean_first_margin": 4.788536116480827,
+      "mean_first_error": 2.6875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.5
+    }
+  },
+  "language_dev_ce": 1.3550312891602516,
+  "language_baseline_ce": 1.3476611748337746,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\stack2\\s3a_compose_bind_324001\\checkpoint_00025.pt",
+  "checkpoint_sha256": "d73ab2d9789a07ec3da5206fd7dbf104c48bd290c6f909d91f38372c55e6e7de",
+  "mix_verdict": "GRAD",
+  "english_ok": true,
+  "collapsed": false,
+  "lesson": "mix GRAD mixed=0.906 fact_combine=0.656 story_combine=0.406 mixed_story=0.594; E12 English hold color=1.000 size_stop=0.969 story=0.938; D3 slice free_exact=0.85; who2=0.438 sent=0.000 bare=0.000",
+  "d3_slice": {
+    "n": 40,
+    "first_top1": 1.0,
+    "free_exact": 0.85,
+    "tf_exact": 0.85
+  },
+  "compose": {
+    "who_bind_2e_heldout": {
+      "n": 16,
+      "first_top1": 0.4375,
+      "tf_exact": 0.4375,
+      "free_exact": 0.4375,
+      "mean_target_prob": 0.35762552730739117,
+      "median_target_rank": 2,
+      "mean_target_logit": 8.61058521270752,
+      "mean_first_margin": 0.040195584297180176,
+      "mean_first_error": 1.5625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 1.0
+    },
+    "who_bind_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.3125,
+      "tf_exact": 0.3125,
+      "free_exact": 0.3125,
+      "mean_target_prob": 0.28745567990699783,
+      "median_target_rank": 2,
+      "mean_target_logit": 9.23967120051384,
+      "mean_first_margin": -0.6710799336433411,
+      "mean_first_error": 1.0625,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 0.875
+    },
+    "mixed_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.875,
+      "tf_exact": 0.875,
+      "free_exact": 0.875,
+      "mean_target_prob": 0.6768559576012194,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.465872168540955,
+      "mean_first_margin": 2.3327633142471313,
+      "mean_first_error": 2.1875,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.9375
+    },
+    "fact_combine_3e_heldout": {
+      "n": 16,
+      "first_top1": 0.375,
+      "tf_exact": 0.375,
+      "free_exact": 0.375,
+      "mean_target_prob": 0.22835968945582863,
+      "median_target_rank": 3,
+      "mean_target_logit": 9.812832087278366,
+      "mean_first_margin": -1.3455009758472443,
+      "mean_first_error": 0.9375,
+      "distinct_emitted_tokens": 20,
+      "tiling_parse_rate": 0.9375
+    },
+    "compose_sent_heldout": {
+      "n": 16,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.012043753706166171,
+      "median_target_rank": 8,
+      "mean_target_logit": 7.377076268196106,
+      "mean_first_margin": -5.360789716243744,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.875
+    },
+    "compose_combine_sent_heldout": {
+      "n": 16,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 3.1553760265756736e-07,
+      "median_target_rank": 468,
+      "mean_target_logit": -2.9775171279907227,
+      "mean_first_margin": -14.814662516117096,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 25,
+      "tiling_parse_rate": 0.9375
+    },
+    "compose_sent_instr_heldout": {
+      "n": 16,
+      "first_top1": 0.0625,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.06459307692784932,
+      "median_target_rank": 7,
+      "mean_target_logit": 7.7995705008506775,
+      "mean_first_margin": -4.746321737766266,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 17,
+      "tiling_parse_rate": 0.9375
+    },
+    "phrase_2fact_heldout": {
+      "n": 16,
+      "first_top1": 0.0625,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.06387167472894362,
+      "median_target_rank": 8,
+      "mean_target_logit": 7.104488044977188,
+      "mean_first_margin": -5.5997723042964935,
+      "mean_first_error": 0.0625,
+      "distinct_emitted_tokens": 20,
+      "tiling_parse_rate": 0.1875
+    }
+  },
+  "sentence": {
+    "verdict": "PARK",
+    "lesson": "park sentence decode; best light bare=0.000",
+    "operators": {
+      "bare": {
+        "sentence_ok": 0.0,
+        "one_word_color": 0.875,
+        "has_color": 0.875,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      },
+      "sent_prefix": {
+        "sentence_ok": 0.0,
+        "one_word_color": 1.0,
+        "has_color": 1.0,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      },
+      "baby": {
+        "sentence_ok": 0.0,
+        "one_word_color": 0.875,
+        "has_color": 0.875,
+        "has_entity": 0.0,
+        "period": 1.0,
+        "stopped": 1.0,
+        "light": true
+      }
+    }
+  }
+}

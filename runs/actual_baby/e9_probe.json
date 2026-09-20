@@ -1,0 +1,195 @@
+{
+  "id": "e9_probe",
+  "resume": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e12_stoponly_311211\\checkpoint_00050.pt",
+  "checkpoint_sha256": "6b000ffc4974244710c233d316b3bbbadcc45a4fa2f8f3cb5f4b561af72150d1",
+  "authoritative": false,
+  "protected_material_opened": false,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.8752485849327059,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.444694921374321,
+      "mean_first_margin": 4.904005289077759,
+      "mean_first_error": 2.40625,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.78125
+    },
+    "story_color_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.8998411210486665,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.359476208686829,
+      "mean_first_margin": 4.818157777190208,
+      "mean_first_error": 2.375,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.9375
+    },
+    "story_color_3e_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.8977965828962624,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.515797972679138,
+      "mean_first_margin": 4.023142412304878,
+      "mean_first_error": 2.46875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.9375
+    },
+    "story_pronoun_heldout": {
+      "n": 32,
+      "first_top1": 0.84375,
+      "tf_exact": 0.84375,
+      "free_exact": 0.84375,
+      "mean_target_prob": 0.7874816627881955,
+      "median_target_rank": 1,
+      "mean_target_logit": 13.868172883987427,
+      "mean_first_margin": 3.1331689059734344,
+      "mean_first_error": 2.34375,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.9375
+    },
+    "story_size_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.7694050060817972,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.048246815800667,
+      "mean_first_margin": 3.544181302189827,
+      "mean_first_error": 2.0,
+      "distinct_emitted_tokens": 14,
+      "tiling_parse_rate": 1.0
+    },
+    "mixed_2e_heldout": {
+      "n": 32,
+      "first_top1": 0.53125,
+      "tf_exact": 0.53125,
+      "free_exact": 0.53125,
+      "mean_target_prob": 0.4744358816938785,
+      "median_target_rank": 1,
+      "mean_target_logit": 10.661595851182938,
+      "mean_first_margin": -0.249514639377594,
+      "mean_first_error": 1.34375,
+      "distinct_emitted_tokens": 25,
+      "tiling_parse_rate": 0.96875
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 1.0,
+      "tf_exact": 1.0,
+      "free_exact": 1.0,
+      "mean_target_prob": 0.9659317303448915,
+      "median_target_rank": 1,
+      "mean_target_logit": 14.867258250713348,
+      "mean_first_margin": 5.254034772515297,
+      "mean_first_error": 2.6875,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.625
+    }
+  },
+  "decode": {
+    "n": 8,
+    "first_word_match": 0.75,
+    "stopped_at_period_or_eos": 1.0,
+    "usable": 0.75
+  },
+  "decode_rows": [
+    {
+      "prompt": "fox looks white. pig looks red. Which color is the fox?",
+      "gold": "white",
+      "decoded": " white.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4,
+      "attr": "color"
+    },
+    {
+      "prompt": "Remember: the frog is wide in size. Remember: the bird is tiny in size. Tell me the size of the bird.",
+      "gold": "tiny",
+      "decoded": " tiny.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4,
+      "attr": "size"
+    },
+    {
+      "prompt": "In the yard a frog went home. The frog looks blue. A pig walked along. The pig looks yellow. Which color is the pig?",
+      "gold": "yellow",
+      "decoded": " yellow.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4,
+      "attr": "color"
+    },
+    {
+      "prompt": "Long ago a dog went out. That dog was white. A duck came by. That duck was blue. Which one is white?",
+      "gold": "dog",
+      "decoded": " blue.",
+      "stopped": true,
+      "first_word_ok": false,
+      "n_tokens": 4,
+      "attr": "who"
+    },
+    {
+      "prompt": "Remember: the dog is blue. Remember: the pig is red. Tell me the color of the dog.",
+      "gold": "blue",
+      "decoded": " blue.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4,
+      "attr": "color"
+    },
+    {
+      "prompt": "That pig is tiny in size. That duck is wide in size. What is the size of the pig?",
+      "gold": "tiny",
+      "decoded": " tiny.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4,
+      "attr": "size"
+    },
+    {
+      "prompt": "A pig went out. Remember: the pig is green. Then a hen walked along. Remember: the hen is pink. What is the color of the pig?",
+      "gold": "green",
+      "decoded": " green.",
+      "stopped": true,
+      "first_word_ok": true,
+      "n_tokens": 4,
+      "attr": "color"
+    },
+    {
+      "prompt": "Long ago a duck went out. That duck was blue. A frog came by. That frog was green. Who looks blue?",
+      "gold": "duck",
+      "decoded": " green.",
+      "stopped": true,
+      "first_word_ok": false,
+      "n_tokens": 4,
+      "attr": "who"
+    }
+  ],
+  "decode_stories": [
+    {
+      "prompt": "Once upon a time there was a cat.",
+      "decoded": " The cat was a big, blue.",
+      "stopped": true
+    },
+    {
+      "prompt": "The little hen sat down.",
+      "decoded": " He was very tired.",
+      "stopped": true
+    }
+  ],
+  "verdict": "GRAD",
+  "lesson": "E9 3e=0.969 pronoun=0.844 story2=0.938 color=0.906",
+  "decode_usable_ok": true
+}

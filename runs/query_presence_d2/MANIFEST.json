@@ -1,0 +1,23 @@
+{
+  "protocol": "V010_QUERY_PRESENCE_D2",
+  "parent_sha256": "94b3a9daf051c1a0dab0272c18ca35813a78c9685057840444456db54c917827",
+  "protocol_sha256": "19787a118b4690f31a689fff9619ece0458759b209829267ca2efb2aca90466a",
+  "diagnostic_sha256": "b7260e6761bbedecacc6f26801b54141d6539b9ecfe76ff72c34c2e32ce76c57",
+  "treatment_checkpoint_sha256": "5c8296ef759543dd608c18b8048ccce4bd4fcf8de7a6183b2d84e5f53d4fbafa",
+  "control_checkpoint_sha256": "3f005e19da8db071a763eb66ef0cb6f7e59ca63cf55078eeec9fad2338cd2fc1",
+  "files": {
+    "design/V010_QUERY_PRESENCE_D2.md": "19787a118b4690f31a689fff9619ece0458759b209829267ca2efb2aca90466a",
+    "src/baby_v010/query_presence_d2.py": "26bd8605ab78c9d9152d16612c8f66e08ea4cfc023b487364338ba2e7ac08320",
+    "runs/query_presence_d1b/DIAGNOSTIC.json": "b7260e6761bbedecacc6f26801b54141d6539b9ecfe76ff72c34c2e32ce76c57",
+    "runs/query_presence_d1b/ADJUDICATION.json": "43112648e80fe3aa6e65a427b83bdd6e43c693c3a6d041f92ca1d909c8044f42",
+    "runs/selection_p1/treatment_150001/RECEIPT_0800.json": "40ebbd36921cf132e644177b8301a3f12c2659a8059b4d080e3e9d0300c68163",
+    "runs/selection_p1/control_150001/RECEIPT_0800.json": "45a3f4424d230f2bc7eb2fc6644a3140fc23607e04b665dde3f982aba0e509f3",
+    "src/baby_v010/query_presence.py": "996939ea6f5b8e019019362699c2a4fb9f6d2301f0c051ed485fa354a2de72ed",
+    "src/baby_v010/query_presence_trace.py": "bb917ed5ca5c52e8f3bb3921e78a8672b9ef1d7ccda10b3c374d49a32375cc2c",
+    "scripts/probe_query_presence_d2.py": "0b6cab98e1fdcfb78cf68169c2776a5ec9b23a08c616b4c3c9486521508fb57e"
+  },
+  "d1_reopened": false,
+  "d1b_reopened": false,
+  "trained": false,
+  "protected_material_opened": false
+}

@@ -1,0 +1,89 @@
+{
+  "update": 50,
+  "native": {
+    "qa_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.90625,
+      "tf_exact": 0.90625,
+      "free_exact": 0.90625,
+      "mean_target_prob": 0.6614594726124778,
+      "median_target_rank": 1,
+      "mean_target_logit": 10.412298634648323,
+      "mean_first_margin": 1.9806782603263855,
+      "mean_first_error": 2.40625,
+      "distinct_emitted_tokens": 20,
+      "tiling_parse_rate": 0.78125
+    },
+    "size_stop_heldout": {
+      "n": 32,
+      "first_top1": 0.8125,
+      "tf_exact": 0.8125,
+      "free_exact": 0.8125,
+      "mean_target_prob": 0.7938338398234919,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.872008487582207,
+      "mean_first_margin": 3.4631803780794144,
+      "mean_first_error": 2.84375,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 0.875
+    },
+    "phrase_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.0,
+      "tf_exact": 0.0,
+      "free_exact": 0.0,
+      "mean_target_prob": 0.0005270463728948016,
+      "median_target_rank": 90,
+      "mean_target_logit": 1.889000190421939,
+      "mean_first_margin": -8.745378494262695,
+      "mean_first_error": 0.0,
+      "distinct_emitted_tokens": 32,
+      "tiling_parse_rate": 0.8125
+    },
+    "story_color_heldout": {
+      "n": 32,
+      "first_top1": 0.875,
+      "tf_exact": 0.875,
+      "free_exact": 0.875,
+      "mean_target_prob": 0.7071233591414057,
+      "median_target_rank": 1,
+      "mean_target_logit": 10.860881134867668,
+      "mean_first_margin": 2.1449974924325943,
+      "mean_first_error": 2.46875,
+      "distinct_emitted_tokens": 18,
+      "tiling_parse_rate": 1.0
+    },
+    "dialogue_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.9375,
+      "tf_exact": 0.9375,
+      "free_exact": 0.9375,
+      "mean_target_prob": 0.7853193828486837,
+      "median_target_rank": 1,
+      "mean_target_logit": 12.658895388245583,
+      "mean_first_margin": 2.618862494826317,
+      "mean_first_error": 2.3125,
+      "distinct_emitted_tokens": 16,
+      "tiling_parse_rate": 0.71875
+    },
+    "instr_2fact_heldout": {
+      "n": 32,
+      "first_top1": 0.96875,
+      "tf_exact": 0.96875,
+      "free_exact": 0.96875,
+      "mean_target_prob": 0.7998221861198545,
+      "median_target_rank": 1,
+      "mean_target_logit": 11.181530803442001,
+      "mean_first_margin": 3.0470999777317047,
+      "mean_first_error": 2.625,
+      "distinct_emitted_tokens": 19,
+      "tiling_parse_rate": 0.96875
+    }
+  },
+  "language_dev_ce": 1.3395166583359241,
+  "language_baseline_ce": 1.3340319655835629,
+  "checkpoint": "C:\\DaveLM-v0.10\\runs\\actual_baby\\e14_phrase_311401\\checkpoint_00050.pt",
+  "checkpoint_sha256": "8cd18b8a0740a91234663fd588692036b9f04c4f386ab217c141d9c8bc291402",
+  "verdict": "FAIL",
+  "lesson": "E14 cold phrase=0.000 color=0.906 size_stop=0.812"
+}
