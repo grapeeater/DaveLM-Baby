@@ -997,3 +997,105 @@ This appendix preserves the future-school ideas already written down during the 
 - 55\. Formal logic
 
 - 56\. Analogies
+- 57\. Counterfactual reasoning
+
+- 58\. Causal reasoning
+
+## Phase 7 — Tools and external memory
+
+- 59\. Calculator
+
+- 60\. Code interpreter
+
+- 61\. Local document search
+
+- 62\. RAG
+
+- 63\. Structured databases
+
+- 64\. Persistent conversation memory
+
+- 65\. Filesystem interaction
+
+- 66\. Shell commands
+
+## Phase 8 — Assistant behavior
+
+- 67\. Base / Instruct / Chat variants
+
+- 68\. Personality tuning
+
+- 69\. Long-term conversational consistency
+
+- 70\. Ask clarifying questions
+
+- 71\. Self-correction
+
+- 72\. Source-backed answers
+
+## Phase 9 — Optional / experimental / fun
+
+- 73\. Teach Baby about Baby
+
+- 74\. Baby reads its own research reports
+
+- 75\. Baby analyzes its own failures
+
+- 76\. School grades
+
+- 77\. Report cards over time
+
+- 78\. DaveLM trivia night
+
+- 79\. Teach Baby Philly sports
+
+- 80\. UFC analyst Baby
+
+- 81\. Baby plays text adventures
+
+- 82\. Baby as Dungeon Master
+
+- 83\. Baby plays simple games
+
+- 84\. Baby gets a voice
+
+- 85\. Baby sees images
+
+- 86\. Baby understands screenshots
+
+- 87\. Baby becomes an NPC brain
+
+- 88\. Multiple Babies talk to each other
+
+- 89\. Specialized Baby personalities
+
+- 90\. Baby teaches Baby
+
+Standing rule attached to the wishlist: every future Baby is dragged back through the old exams. New language, knowledge, code, tools, or reasoning do not excuse regression on previously earned capabilities.
+
+# Appendix G. Source Corpus and Provenance Notes
+
+The paper was synthesized from the project record available in the conversation and local artifact bundle as of 30 September 2026. The sources are project-internal rather than a public peer-reviewed archive; this section makes the evidence basis explicit.
+
+| **ID** | **Source**                                                                                           | **Use**                                                                                                                                    |
+|--------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| PR-01  | Project conversation / experiment receipts, 26 Aug–30 Sep 2026                                       | Primary chronological source for late S1, naming, scaling, corrections, and preserved metrics.                                             |
+| PR-02  | BABY TALK WOOOP.txt                                                                                  | State-of-the-child history through the early binding/language era; T12, localization graduation, Pilot 0/1, P7 and report-card correction. |
+| PR-03  | DaveLM_Baby_EndOfChat_Master_Handoff_2026-09-09.docx (archived record summarized in project context) | SF14–SF21; 10M line closure; 61.52M architecture; original Phase1 training and scaling rationale.                                          |
+| PR-04  | DaveLM_Baby_Full_History_Siri_Handoff_2026-09-17.pdf (archived record summarized in project context) | Phase2A/T17–T32, v2R4/v2R5 state, S1/S2/T1 defect lineage, P11, sidecar correction.                                                        |
+| PR-05  | Baby Development Update.txt                                                                          | T17/T17X representation-vs-output status and immediate output-learning frontier.                                                           |
+| PR-06  | Baby Curriculum Planning.txt                                                                         | Full future curriculum / regression-test philosophy.                                                                                       |
+| PR-07  | Baby Treatment Gates.txt                                                                             | Late school / compute philosophy and ~118M-era curriculum principles.                                                                      |
+| PR-08  | BABY DOES A NO ❤️.txt + BABY SAYS NO ❤️.txt                                                          | External-model workflow and capacity-expansion constitution.                                                                               |
+| PR-09  | Baby Be Learning! 👶.txt                                                                             | Long-term deliberation/think-before-speaking concept.                                                                                      |
+| PR-10  | Review HR2 Diagnostics.txt + Explain API Costs.txt                                                   | Outside-model/API committee and prompt/research workflow design.                                                                           |
+| PR-11  | Final S1 certification receipt / project record, 30 Sep 2026                                         | u4700 perfect gated metrics, certification, artifact hash, evidence return, cloud cost, unresolved identity-stress panel.                  |
+| PR-12  | Post-graduation cleanup / GitHub README record, 30 Sep 2026                                          | Conservative archival cleanup, family-tree preparation, public milestone wording.                                                          |
+
+Known reconstruction limits: not every intermediate training receipt from every P/T/SF/S1v3 subrun is physically present in the local attachment directory. When a later canonical handoff preserved the conclusion but not the exact scalar trace, this paper reports the lineage-level conclusion and labels exact metrics only where they are available. No missing scalar was guessed.
+
+**Historical note**
+
+*First recorded words: “he womputeld.”  
+First certified S1 graduation: u4700, 30 September 2026.  
+The child is not finished. The child finally passed the class.*
