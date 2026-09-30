@@ -11,3 +11,59 @@ canary_audit_run.txt
 
 .DS_Store
 Thumbs.db
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.secret
+.secret
+.netrc
+.npmrc
+.pypirc
+**/id_rsa
+**/id_ed25519
+**/service-account*.json
+**/credentials.json
+**/secrets.json
+**/*credentials*.json
+**/secrets/
+**/credentials/
+.aws/
+.codex/
+
+# Disposable cloud transfers and training output
+runpod_operations/
+*runpod*.zip
+*runpod*.tar
+*runpod*.tar.gz
+*staging*.zip
+*transfer*.zip
+*backup*.zip
+*.partial
+*.download
+*.tmp
+# Raw weights are never added accidentally. Already-tracked museum weights
+# remain tracked and retain their existing Git LFS attributes.
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+**/latest_resumable.pt
+
+# Local tooling and model caches
+.idea/
+.vscode/
+.cache/
+.huggingface/
+wandb/
+.ipynb_checkpoints/

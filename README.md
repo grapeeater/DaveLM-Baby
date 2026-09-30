@@ -1,225 +1,110 @@
-# DaveLM v1.0
+# DaveLM · Mangaris · Baby
 
-DaveLM is a from-scratch language-model research project. The in-house model
-family is codenamed **Baby**. v1.0 is the frozen graduate of the v0.10 / stack2
-line: a small transformer plus a PropMatchHead runtime that can bind and
-retrieve simple in-context facts (color, size, who, has, beside, combine).
+DaveLM is a model research project. **Mangaris** is its model family, and
+**Baby** is the permanent codename for the original model line. Baby's current
+118M-parameter research line uses the **MRCN-Alpha** architecture lineage.
 
-This repository is **source-available / proprietary**, not open source.
-Copyright © 2026 James David Mangiaracina.
+> **S1 PASSED — BABY GRADUATED THIS STAGE.**
+>
+> On September 30, 2026, Baby passed the frozen S1 single-token-copy curriculum
+> and certification at update **u4700**.
 
-## What v1.0 represents
+The two gated panels each scored **128/128** on teacher-forced content, EOS,
+and exact free generation, plus **64/64** counterfactual pairs. The frozen
+certification also passed. The run stopped at u4700 under its first-pass
+graduation rule; u4701–u4800 were not run. All 12 S1v3h novel-position errors
+were resolved. The nongated identity-stress panel remains an open frontier.
 
-DaveLM Baby graduated as **v1.0** after Closed Final Exam Form B (78/80).
+**S1 is one foundational stage, not completion of Baby's curriculum. It does
+not declare Mangaris Pioneer v1.0 complete or released.** S1 demonstrates a
+narrow single-token copy capability; it does not make Baby a general
+conversational, coding, reasoning, or instruction-following assistant.
 
-| Record | Value |
+## Canonical S1 lineage
+
+```text
+S1v3g u3200 ──┬──→ S1v3h attempt 005 u4000 ──→ S1v3j revision 2 u4700 (S1 PASS)
+              └──→ S1v3i u3200–u4000 (failed sister arm; not an ancestor)
+```
+
+The graduating run continued from S1v3h. S1v3i branched separately from
+S1v3g and is retained as a failed comparison, not as a parent of the graduate.
+See [the S1 graduation record](docs/history/S1_GRADUATION.md) for the gate
+results, checkpoint provenance, and verification details.
+
+## Canonical checkpoint and reproducibility
+
+The canonical graduating checkpoint is held in the separate research lab
+workspace, not in this repository:
+
+```text
+Lab-relative path:
+rebuild/baby_reincarnation_118m_001/runs/S1v3j_single_token_copy_anneal_from_s1v3h_001/S1_single_token_copy_graduated.pt
+
+Update: 4700
+Stage: S1_single_token_copy
+Size: 1,418,883,555 bytes
+SHA256: 200e02188063885560edb4de0d6e0f05054fa75c236c0264d4a2c461ec51771b
+```
+
+Canonical release checkpoints are immutable masters: record their provenance
+and verify their hashes, then conduct experiments on separate descendants.
+Never overwrite or silently replace a master copy. The S1 checkpoint is not
+included in this Git update.
+
+## Names and scope
+
+| Name | Meaning |
 | --- | --- |
-| Immutable Git tag | `v1.0` |
-| Release commit | `7ed112641b83541f6f62f5f454c5841deb9d6ca1` |
-| Official remote | https://github.com/grapeeater/DaveLM-Baby.git |
-| License | `LicenseRef-DaveLM-Research-1.0` (`LICENSE`) |
+| DaveLM | Overall project and model ecosystem |
+| Mangaris | Model family |
+| Pioneer, Lite, Core, Forge, Atlas | Model classes; Pioneer remains a future project decision |
+| MRCN-Alpha, MRCN-Beta | Architecture generations |
+| Baby | Permanent codename for the original model and eventual Pioneer lineage |
+| Mangaris Zero | Historical graveyard for pre-Pioneer experiments; not a released model class |
+| Coder, Instruct, Reasoning, Writer | Future specialist concepts and branches; no specialist models have been trained |
 
-The `v1.0` **tag** is immutable and must stay on that commit. Later
-documentation, license, and cleanup commits may exist on branch `v1.0` *after*
-the tagged snapshot. They do not rewrite the tag, the graduate weights, or the
-frozen runtime hashes.
+S1 tests whether Baby can find a requested token in a sequence and copy that
+single-token answer across frozen heldout and novel-position panels. It is an
+experimental milestone in a larger foundational curriculum. Identity-stress
+remains unresolved. Later stages, model-class graduation, and release status
+require their own evidence and decisions.
 
-v1.0 is an inference-ready graduate snapshot. It is not a general assistant,
-not a coding model, and not a claim of open-domain language understanding.
+## Project structure
 
-## Architecture
+This Git repository preserves the earlier **61.5M-parameter DaveLM v1.0
+museum snapshot**. Its immutable `v1.0` tag records a different, earlier
+PropMatch/stack2 graduate. That historical snapshot is **not** the 118M S1
+graduate and is **not Mangaris Pioneer v1.0**. Its existing checkpoint
+publication uses Git LFS; this S1 documentation update adds no model weights.
 
-Class: `BabyVNextConfig` / `baby_vnext_capacity_successor_v1`
-(`src/baby_v010/config.py`)
+The current S1 lab and readable archive are separate local trees. The
+[project-structure guide](docs/PROJECT_STRUCTURE.md) explains which material
+belongs to this repository and which remains in the lab, archive, or pointer
+workspaces.
 
-| Setting | Value |
+| In this repository | Purpose |
 | --- | --- |
-| Parameters | ~61.5M (60,536,064 base + 984,321 binding/localizer tensors) |
-| vocab_size | 1024 |
-| context_length | 256 |
-| d_model | 640 |
-| n_heads | 10 |
-| n_layers | 12 |
-| d_mlp | 2560 |
-| activation | ReLU |
-| norm | explicit pre-norm LayerNorm |
-| positions | learned absolute |
-| LM head | untied |
-| attention | SDPA |
+| `src/baby_v010/` | Legacy museum model, runtime, evaluations, and historical helpers |
+| `runs/actual_baby/` | Earlier museum graduate weights and sealed exam evidence |
+| `tokenizer/` | Earlier museum snapshot tokenizer |
+| `scripts/` | Museum snapshot verification tools |
+| `docs/history/` | Project naming, structure, and current S1 graduation record |
+| `ENV_SETUP.md` | Environment instructions for the legacy museum snapshot in this repository |
 
-Tokenizer: DaveLM tokenizer v0.7 at `tokenizer/v0_7/davelm_tokenizer.json`.
+## License and notices
 
-Default inference path:
+This project is **source-available under the DaveLM Proprietary Research and
+Evaluation License v1.0** (`LicenseRef-DaveLM-Research-1.0`), not an
+open-source license. See [`LICENSE`](LICENSE) and
+[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). Separately identified
+third-party material remains under its own terms.
 
-- Backbone: `runs/actual_baby/stack2/s5b3_compose_lock_326191/checkpoint_00025.pt`
-- Head: `runs/actual_baby/stack2/r3/r3b_329011/prop_match_head_00050.pt`
-- Runtime: `--runtime r3` (`selection_stack2_r3.py` PropMatchRuntime)
-- RelAssist OFF, WhoProp OFF
-- Inverse WHO / HAS / BESIDE scoring: `selection_stack2_r7.py`
+## Legacy museum snapshot
 
-The binding sidecar exists in the config (orthogonal two-slot). Do not describe
-it as a proven retrieval subsystem; inverse bind is the R3/R7 runtime path.
-
-## Frozen graduate hashes
-
-These bytes must not change on official artifacts:
-
-```
-0d3e694750670996ec6053118172a499bd739274726eccea32323528cf2747cd  checkpoint_00025.pt
-8ea3dbfd4825058eea74626b07621ea8c0155a960fccf1530c9123f61f7d62d9  prop_match_head_00050.pt
-e1c18bae74f6d502c0012953b3eef63f787cefd41c9a47b94e803e665dab343b  davelm_tokenizer.json
-e7bd0b3006c22289182a4f5b9093b3c84606040f09ebfd595b747023aa852b33  selection_stack2_r3.py
-7520622c24f54c7d3aac7ed790403cff2e84b153a4593a149278ce45f3f7f1c0  selection_stack2_r7.py
-```
-
-See `GRADUATE_SHA256SUMS.txt` for the full frozen set, including Form B receipts.
-
-## Installation / environment
-
-Hardware used for the graduate: AMD Radeon RX 9060 XT (RDNA4, gfx1200).
-
-Known working stack:
-
-- Python 3.12
-- ROCm SDK 7.2
-- PyTorch `2.9.1+rocmsdk20260116`
-
-**Do not** install generic CPU-only PyTorch from PyPI. **Do not** install
-NVIDIA CUDA packages. Create a dedicated venv and follow `ENV_SETUP.md`.
-
-```powershell
-cd C:\DaveLM-v1.0
-py -3.12 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install --upgrade pip
-# then the ROCm SDK + ROCm PyTorch wheels from ENV_SETUP.md
-.\.venv\Scripts\pip.exe install "tokenizers>=0.15"
-```
-
-Verify GPU:
-
-```powershell
-.\.venv\Scripts\python.exe -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A')"
-```
-
-Expected: `2.9.1+rocmsdk20260116`, `True`, `AMD Radeon RX 9060 XT`.
-
-DaveLM uses `--device cuda`. On this ROCm Windows build, `torch.cuda.is_available()`
-is True and maps to the AMD GPU via HIP.
-
-## Run inference
-
-```powershell
-cd C:\DaveLM-v1.0
-.\run_chat.ps1 --runtime r3 --device cuda
-.\run_chat.ps1 --runtime r3 --device cuda --smoke
-```
-
-Equivalent:
-
-```powershell
-$env:PYTHONPATH = "C:\DaveLM-v1.0\src"
-.\.venv\Scripts\python.exe -m baby_v010.stack2_chat --runtime r3 --device cuda
-```
-
-Protocol notes:
-
-- Default runtime is r3. RelAssist and WhoProp stay off.
-- Usable-chat shape is facts outside `Human:`. Stuffing facts inside `Human:`
-  is off-protocol and collapses to a color prior (green).
-- This tree is the museum copy of the graduate. Do not train these weights
-  in place.
-
-## Verification / canaries
-
-```powershell
-cd C:\DaveLM-v1.0
-.\.venv\Scripts\python.exe scripts\verify_canary.py --runtime r3 --device cuda
-```
-
-`scripts/verify_canary.py` is five mechanism probes (direct color, inverse WHO,
-HAS-entity, late WHO, one fact-combine). It is **not** Form A or Form B.
-A passing run writes `VERIFY_CANARY.json` with `"pass": true`.
-
-Form B sealed evidence lives under `runs/actual_baby/final_exam_v1/form_b/`.
-Do not reopen Form A/B as a treatment set.
-
-## Known v1.0 limitations
-
-These are leftover weaknesses of the frozen graduate, not a todo list for
-editing official weights.
-
-- **Closed vocabulary.** Binding lists in `data_language_bridge.py` are a small
-  animal/color/size/place set. Unknown names and unseen adjectives are outside
-  the trained/runtime whitelist.
-- **A8 (Form B).** Size-ask on cow produced `cat has the cow.` instead of the
-  size value.
-- **G2.4 (Form B).** Pig HAD green; Baby identified pig but finished with
-  `pig is green.` (HAS-entity, IS template).
-- **Inverse bind relations.** Relation sites in memory still use `beside` /
-  `next`. Unseen fact-side relation verbs will not build a pair.
-- **Interrogative detection** still needs Who / Which / What. A follow-up like
-  `the dog then?` stays an about-report.
-- Hop weights exist in the PropMatchHead file but are unused for inverse bind.
-- Color / mixed_2e first_top1 remain 0.969, not 1.000, on official panels.
-  D3 long-gap remains 181/215.
-- Context window is 256 tokens. There is no coding, encyclopedia, tool use,
-  or open-domain chat capability.
-
-Form B score is 78/80 because of A8 and G2.4. TEST / FINAL / SACRED stay sealed.
-
-## Repository structure
-
-```
-LICENSE                         Canonical LicenseRef-DaveLM-Research-1.0 text
-THIRD_PARTY_NOTICES.md          Third-party dependency notices
-README.md                       This file
-ENV_SETUP.md                    AMD ROCm / PyTorch 3.12 setup
-GRADUATE_SHA256SUMS.txt         Frozen artifact hashes
-MANIFEST.txt                    Release inventory
-run_chat.ps1                    Inference launcher (uses .venv)
-requirements.txt                High-level Python deps (install torch via ENV_SETUP)
-VERIFY_CANARY.json              Last canary receipt
-BASELINE_CANARY_v010.*          Pre-recycle baseline canary outputs
-src/baby_v010/                  Model, runtime, eval, historical training helpers
-scripts/verify_canary.py        Graduate mechanism canary
-tokenizer/v0_7/                 Frozen tokenizer
-runs/actual_baby/stack2/...     Graduate backbone + PropMatchHead
-runs/actual_baby/final_exam_v1/ Form B sealed evidence
-docs/legal/                     Original license PDF
-docs/history/                   Local recycle provenance (not model weights)
-```
-
-`.venv/` is local and gitignored. Do not commit it.
-
-Historical training/diagnostic modules in `src/baby_v010/` are kept so the
-graduate runtime and evaluation path remain reproducible. Official v1.0 weights
-must not be overwritten.
-
-## Licensing
-
-DaveLM is Copyright © 2026 James David Mangiaracina. This repository and its
-covered source code, model weights, checkpoints, tokenizer/configuration,
-evaluation artifacts, and authorized derivatives are governed by the DaveLM
-Proprietary Research and Evaluation License v1.0
-(`LicenseRef-DaveLM-Research-1.0`), except for separately identified
-third-party materials. The default grant is limited to internal,
-non-commercial research and evaluation. Commercial use, redistribution, hosted
-third-party access, and model extraction/distillation require separate written
-permission. See `LICENSE` and `THIRD_PARTY_NOTICES.md` for complete terms.
-
-The original signed-style PDF is
-`docs/legal/DaveLM_Proprietary_Research_License_v1.0.pdf`. If summary wording
-conflicts with the full legal text, the full legal text controls.
-
-SPDX identifier for project-owned files: `LicenseRef-DaveLM-Research-1.0`.
-Do not label this repository MIT, Apache-2.0, GPL, or another standard
-open-source license.
-
-## Release status
-
-- Tag `v1.0` → commit `7ed112641b83541f6f62f5f454c5841deb9d6ca1` (immutable).
-- Post-v1.0 documentation / license / cleanup commits are allowed *after* that
-  commit on the `v1.0` branch. They must not retarget the tag, force-push, or
-  alter graduate hashes.
-- Continuing training belongs in a separate working tree, not in this museum
-  copy of the graduate.
+The earlier stack2 graduate's environment and immutable artifact details are
+recorded in [`ENV_SETUP.md`](ENV_SETUP.md),
+[`GRADUATE_SHA256SUMS.txt`](GRADUATE_SHA256SUMS.txt), and
+[`MANIFEST.txt`](MANIFEST.txt). They apply to that tagged museum snapshot, not
+to Baby's current 118M MRCN-Alpha S1 research line. The historical `v1.0` tag
+is preserved and is not moved by this documentation update.
