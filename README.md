@@ -32,6 +32,8 @@ S1v3g and is retained as a failed comparison, not as a parent of the graduate.
 See [the S1 graduation record](docs/history/S1_GRADUATION.md) for the gate
 results, checkpoint provenance, and verification details.
 
+For the complete project history from Baby's first from-scratch experiments through certified S1 graduation, see **[BABY, FROM DAY ONE](docs/history/BABY_FROM_DAY_ONE.md)**.
+
 ## Canonical checkpoint and reproducibility
 
 The canonical graduating checkpoint is held in the separate research lab
