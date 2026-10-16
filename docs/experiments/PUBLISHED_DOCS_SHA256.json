@@ -1,0 +1,56 @@
+{
+  "schema": "MANGARIS_FAMILY_DOCS_001",
+  "workspace": "C:\\DaveLM-Experiments",
+  "existing_material_preserved": "copy_goblin_227k_001",
+  "git_boundary": "No .git at experiments workspace root; none created.",
+  "files": [
+    {
+      "local_path": "C:\\DaveLM-Experiments\\README.md",
+      "published_path": "docs/experiments/README.md",
+      "bytes": 2652,
+      "sha256": "ddbc89bae6eb38506080b3f9d4bba01f6f76111db39ba8be431dc688c4ee9b31"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\README.md",
+      "published_path": "docs/experiments/RNC/README.md",
+      "bytes": 1565,
+      "sha256": "26845eea85577b9c6e13459a6f57abe8c723ee2a19a73885948a138e36ee3904"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\Instruct\\README.md",
+      "published_path": "docs/experiments/RNC/Instruct/README.md",
+      "bytes": 936,
+      "sha256": "9a4ae3eef0401092f2ed9ddad4ff1db12473ad4233c588aa960701d222ec1d20"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\Reasoning\\README.md",
+      "published_path": "docs/experiments/RNC/Reasoning/README.md",
+      "bytes": 941,
+      "sha256": "abd8bcb8b516de5bf0d888c2a4fe4a029616b08e7590ae17be7eb22b475a3d8f"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\Coder\\README.md",
+      "published_path": "docs/experiments/RNC/Coder/README.md",
+      "bytes": 915,
+      "sha256": "c245e8608454e1e38cc7c0aa6dc262fe8d80dc003a9ae28476f8e2d250581f43"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\Writer\\README.md",
+      "published_path": "docs/experiments/RNC/Writer/README.md",
+      "bytes": 920,
+      "sha256": "9b5c6fd394ec2c9d6d7efc6d56a2a6f309c94e833351c9eeb018327579923f1e"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\Personal\\README.md",
+      "published_path": "docs/experiments/RNC/Personal/README.md",
+      "bytes": 915,
+      "sha256": "1da35e9976fd4a3ff7b482f3c2ff77a4061878ced07cb7e0b5ab41fa31e1b243"
+    },
+    {
+      "local_path": "C:\\DaveLM-Experiments\\RNC\\Other\\README.md",
+      "published_path": "docs/experiments/RNC/Other/README.md",
+      "bytes": 939,
+      "sha256": "c5d4d21d20d0eca22cc7b029d6a75379b1d296788b7be5325aa1b1c7ea992479"
+    }
+  ]
+}

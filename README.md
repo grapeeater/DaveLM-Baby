@@ -26,6 +26,7 @@ The existing health-check record reports **91 tests passed**. This publication
 update reviewed saved results and file integrity; it launched no training,
 evaluation or GPU health-check jobs.
 
+- [Mangaris family tree and future specialists](docs/MANGARIS_FAMILY_TREE.md)
 - [First-run result and scope](rnc/reports/FIRST_RUN_SUMMARY.md)
 - [Saved machine-generated report](rnc/reports/run_rnc1_tinystories_shakedown_001.md)
 - [Original logs, config and checkpoint hash records](rnc/reproducibility/first_run/)

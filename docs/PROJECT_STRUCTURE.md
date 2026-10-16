@@ -48,8 +48,14 @@ Historical documents may retain pre-relocation paths; the archive's
 The experiments workspace is not contained in the Training workspace and was
 not a separate Git repository at the start of this update. Its pre-existing
 `copy_goblin_227k_001` is a separately trained toy copy model, not an RNC descendant.
-Future specialist organization will be documented there without moving or
-reclassifying that experiment.
+The completed organization adds `RNC/Instruct`, `RNC/Reasoning`, `RNC/Coder`,
+`RNC/Writer`, `RNC/Personal` and `RNC/Other`, each containing only a README.
+Copy Goblin stays in place and retains its independent purpose.
+
+The [family tree](MANGARIS_FAMILY_TREE.md) explains the lineage and future plan.
+`docs/experiments/` publishes only the eight new README files from the local
+experiments workspace, byte-identical. It contains no model files and does not
+relocate the experiments workspace into Training.
 
 Instruct, Reasoning, Coder, Writer and Personal are future descendant concepts.
 They should eventually originate from a verified common foundation. The future
