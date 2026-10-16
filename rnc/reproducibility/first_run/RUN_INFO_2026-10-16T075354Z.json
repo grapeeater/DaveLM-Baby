@@ -1,0 +1,44 @@
+{
+  "run_name": "rnc1_tinystories_shakedown_001",
+  "config_path": "configs\\rnc1_tinystories.json",
+  "num_parameters": 91246848,
+  "tokens_per_step": 32768,
+  "total_steps": 3000,
+  "planned_tokens": 98304000,
+  "gpu": {
+    "available": true,
+    "name": "AMD Radeon RX 9060 XT",
+    "arch": "gfx1200",
+    "total_memory_bytes": 17095983104,
+    "free_memory_bytes": 16553082880,
+    "torch": "2.9.1+rocmsdk20260116",
+    "hip": "7.2.26024-f6f897bd3d",
+    "bf16_supported": true,
+    "aotriton_experimental": "1"
+  },
+  "precision": "bf16",
+  "attention_backend": "auto",
+  "tokenizer_sha256": "d37360ce034918fcc2dc9be5fee17903244001eb307a1154ac662a5ee10ff6d3",
+  "data_meta": {
+    "corpus_sha256": "c5cf5e22ff13614e830afbe61a99fbcbe8bcb7dd72252b989fa1117a368d401f",
+    "stats": {
+      "train": {
+        "docs": 1781998,
+        "tokens": 375543695,
+        "bytes": 1580039692
+      },
+      "val": {
+        "docs": 17250,
+        "tokens": 3615438,
+        "bytes": 15219849
+      },
+      "duplicates_dropped": 320241,
+      "too_short_or_empty_skipped": 0,
+      "max_doc_tokens": 1479
+    },
+    "val_bytes_per_token": 4.20968,
+    "train_bytes_per_token": 4.20734
+  },
+  "start_step": 0,
+  "start_utc": "2026-10-16T07:53:54Z"
+}

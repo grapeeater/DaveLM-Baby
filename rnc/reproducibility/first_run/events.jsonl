@@ -1,0 +1,9 @@
+{"event": "baseline", "step": 0, "utc": "2026-10-16T07:53:54Z"}
+{"event": "checkpoint", "step": 0, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0000000", "reason": "baseline_untrained", "utc": "2026-10-16T07:54:08Z"}
+{"event": "checkpoint", "step": 500, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0000500", "reason": "periodic", "utc": "2026-10-16T08:07:50Z"}
+{"event": "checkpoint", "step": 1000, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0001000", "reason": "periodic", "utc": "2026-10-16T08:21:39Z"}
+{"event": "checkpoint", "step": 1500, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0001500", "reason": "periodic", "utc": "2026-10-16T08:35:28Z"}
+{"event": "checkpoint", "step": 2000, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0002000", "reason": "periodic", "utc": "2026-10-16T08:49:19Z"}
+{"event": "checkpoint", "step": 2500, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0002500", "reason": "periodic", "utc": "2026-10-16T09:03:04Z"}
+{"event": "checkpoint", "step": 3000, "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0003000", "reason": "final", "utc": "2026-10-16T09:16:47Z"}
+{"event": "completed", "step": 3000, "tokens_seen": 98304000, "elapsed_seconds": 4973.1, "memory": {"allocated_bytes": 1396708864, "max_allocated_bytes": 8072865280, "reserved_bytes": 8545894400, "max_reserved_bytes": 8545894400}, "utc": "2026-10-16T09:16:47Z"}

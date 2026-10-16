@@ -1,0 +1,66 @@
+{
+  "model": {
+    "vocab_size": 8192,
+    "d_model": 768,
+    "n_layers": 12,
+    "n_heads": 12,
+    "d_mlp": 2048,
+    "context_length": 512,
+    "rope_base": 10000.0,
+    "qk_norm": true,
+    "tie_embeddings": true,
+    "norm_eps": 1e-06,
+    "init_std": 0.02
+  },
+  "tokenizer": {
+    "path": "tokenizer/rnc_bpe_8k",
+    "vocab_size": 8192,
+    "expected_sha256": "d37360ce034918fcc2dc9be5fee17903244001eb307a1154ac662a5ee10ff6d3"
+  },
+  "data": {
+    "corpus_path": "data/raw/TinyStories-train.txt",
+    "corpus_sha256": "c5cf5e22ff13614e830afbe61a99fbcbe8bcb7dd72252b989fa1117a368d401f",
+    "document_separator": "<|endoftext|>",
+    "prepared_dir": "data/prepared/tinystories_8k",
+    "validation_fraction": 0.01,
+    "max_validation_docs": 20000,
+    "split_seed": 20261016,
+    "min_doc_chars": 20,
+    "tokenizer_train_docs": 400000
+  },
+  "train": {
+    "run_name": "rnc1_tinystories_shakedown_001",
+    "out_dir": "runs",
+    "seed": 1337,
+    "device": "cuda",
+    "precision": "bf16",
+    "attention_backend": "auto",
+    "micro_batch_size": 16,
+    "grad_accum_steps": 4,
+    "total_steps": 3000,
+    "warmup_steps": 150,
+    "lr": 0.0006,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "eps": 1e-08,
+    "grad_clip": 1.0,
+    "log_interval": 10,
+    "eval_interval": 250,
+    "eval_batches": 50,
+    "checkpoint_interval": 500,
+    "sample_interval": 250,
+    "sample_prompts": [
+      "Once upon a time, there was a little",
+      "The dog was very",
+      "One day, Lily went to the park and",
+      "Tom and his mom"
+    ],
+    "sample_max_new_tokens": 120,
+    "sample_temperature": 0.8,
+    "sample_top_k": 50,
+    "max_wall_minutes": 180.0
+  },
+  "workspace": "C:\\DaveLM-Training\\rnc"
+}

@@ -1,112 +1,78 @@
 # DaveLM · Mangaris · Baby
 
-DaveLM is a model research project. **Mangaris** is its model family, and
-**Baby** is the permanent codename for the original model line. Baby's current
-118M-parameter research line uses the **MRCN-Alpha** architecture lineage.
+**RNC — Racina Neural Core — is DaveLM's active development architecture.**
+DaveLM is the project, Mangaris is the model family, and Baby is the development
+codename. The current research model is **RNC-1: 91,246,848 parameters**.
 
-> **S1 PASSED — BABY GRADUATED THIS STAGE.**
->
-> On September 30, 2026, Baby passed the frozen S1 single-token-copy curriculum
-> and certification at update **u4700**.
+RNC begins a new weight lineage from random initialization with its own tokenizer.
+The historical MRCN-Alpha models, certified S1/S2 accomplishments, earlier 61M
+museum model, Git history and immutable `v1.0` release tag remain preserved.
 
-The two gated panels each scored **128/128** on teacher-forced content, EOS,
-and exact free generation, plus **64/64** counterfactual pairs. The frozen
-certification also passed. The run stopped at u4700 under its first-pass
-graduation rule; u4701–u4800 were not run. All 12 S1v3h novel-position errors
-were resolved. The nongated identity-stress panel remains an open frontier.
+## Current verified result
 
-**S1 is one foundational stage, not completion of Baby's curriculum. It does
-not declare Mangaris Pioneer v1.0 complete or released.** S1 demonstrates a
-narrow single-token copy capability; it does not make Baby a general
-conversational, coding, reasoning, or instruction-following assistant.
+RNC-1 completed its first fixed-budget TinyStories run on Fan Diesel's AMD Radeon
+RX 9060 XT: **3,000 optimizer steps, 98,304,000 training-input tokens**.
+Saved records show held-out loss falling from **9.1523 to 1.5221 nats/token**;
+final perplexity was approximately **4.58**. Saved samples show learned English
+sentence patterns and short story continuations, with repetition and causal
+inconsistencies still present.
 
-## Canonical S1 lineage
+This demonstrates language-model learning. General conversational competence,
+instruction following and broad factual accuracy have not been established.
+The future **Adam & Eve common-foundation checkpoint has not been created or
+graduated**. RNC-1's first-run checkpoint is not that future foundation.
 
-```text
-S1v3g u3200 ──┬──→ S1v3h attempt 005 u4000 ──→ S1v3j revision 2 u4700 (S1 PASS)
-              └──→ S1v3i u3200–u4000 (failed sister arm; not an ancestor)
-```
+The existing health-check record reports **91 tests passed**. This publication
+update reviewed saved results and file integrity; it launched no training,
+evaluation or GPU health-check jobs.
 
-The graduating run continued from S1v3h. S1v3i branched separately from
-S1v3g and is retained as a failed comparison, not as a parent of the graduate.
-See [the S1 graduation record](docs/history/S1_GRADUATION.md) for the gate
-results, checkpoint provenance, and verification details.
+- [First-run result and scope](rnc/reports/FIRST_RUN_SUMMARY.md)
+- [Saved machine-generated report](rnc/reports/run_rnc1_tinystories_shakedown_001.md)
+- [Original logs, config and checkpoint hash records](rnc/reproducibility/first_run/)
 
-For the complete project history from Baby's first from-scratch experiments through certified S1 graduation, see **[BABY, FROM DAY ONE](docs/history/BABY_FROM_DAY_ONE.md)**.
+## Active implementation
 
-## Canonical checkpoint and reproducibility
+RNC-1 is a decoder-only transformer: 12 layers, width 768, 12 attention heads,
+SwiGLU width 2048, RMSNorm, RoPE, QK normalization, tied embedding/readout,
+8,192-token byte-level BPE vocabulary and 512-token context.
 
-The canonical graduating checkpoint is held in the separate research lab
-workspace, not in this repository:
-
-```text
-Lab-relative path:
-rebuild/baby_reincarnation_118m_001/runs/S1v3j_single_token_copy_anneal_from_s1v3h_001/S1_single_token_copy_graduated.pt
-
-Update: 4700
-Stage: S1_single_token_copy
-Size: 1,418,883,555 bytes
-SHA256: 200e02188063885560edb4de0d6e0f05054fa75c236c0264d4a2c461ec51771b
-```
-
-Canonical release checkpoints are immutable masters: record their provenance
-and verify their hashes, then conduct experiments on separate descendants.
-Never overwrite or silently replace a master copy. The S1 checkpoint is not
-included in this Git update.
-
-## Names and scope
-
-| Name | Meaning |
+| Repository path | Purpose |
 | --- | --- |
-| DaveLM | Overall project and model ecosystem |
-| Mangaris | Model family |
-| Pioneer, Lite, Core, Forge, Atlas | Model classes; Pioneer remains a future project decision |
-| MRCN-Alpha, MRCN-Beta | Architecture generations |
-| Baby | Permanent codename for the original model and eventual Pioneer lineage |
-| Mangaris Zero | Historical graveyard for pre-Pioneer experiments; not a released model class |
-| Coder, Instruct, Reasoning, Writer | Future specialist concepts and branches; no specialist models have been trained |
+| [`rnc/`](rnc/) | Active RNC implementation, config, tokenizer, tests and documentation |
+| [`rnc/reproducibility/`](rnc/reproducibility/) | Small original records; datasets and checkpoints stay local |
+| [`docs/PROJECT_STRUCTURE.md`](docs/PROJECT_STRUCTURE.md) | Publication layout and local workspace boundaries |
+| [`docs/history/`](docs/history/) | Preserved Baby history and milestones |
+| `src/baby_v010/`, `tokenizer/`, `runs/actual_baby/` | Historical museum content already present in Git history |
 
-S1 tests whether Baby can find a requested token in a sequence and copy that
-single-token answer across frozen heldout and novel-position panels. It is an
-experimental milestone in a larger foundational curriculum. Identity-stress
-remains unresolved. Later stages, model-class graduation, and release status
-require their own evidence and decisions.
+The active local laboratory is `C:\DaveLM-Training\rnc`. Start with its
+[workflow guide](rnc/README.md), [architecture](rnc/docs/RNC_ARCHITECTURE.md),
+[tokenizer notes](rnc/docs/TOKENIZER.md) and [training record](rnc/docs/TRAINING.md).
+Publication details and reproducibility limits are in
+[PUBLICATION.md](rnc/docs/PUBLICATION.md).
 
-## Project structure
+The RNC workflow uses one configuration, tokenizer, trainer and GPU. S1/S2/S3
+treatment gates, Baby University, agent orchestration and their approval chains
+are retired for RNC; their historical evidence remains preserved.
 
-This Git repository preserves the earlier **61.5M-parameter DaveLM v1.0
-museum snapshot**. Its immutable `v1.0` tag records a different, earlier
-PropMatch/stack2 graduate. That historical snapshot is **not** the 118M S1
-graduate and is **not Mangaris Pioneer v1.0**. Its existing checkpoint
-publication uses Git LFS; this S1 documentation update adds no model weights.
+## Preserved historical lineage
 
-The current S1 lab and readable archive are separate local trees. The
-[project-structure guide](docs/PROJECT_STRUCTURE.md) explains which material
-belongs to this repository and which remains in the lab, archive, or pointer
-workspaces.
+- [Baby, From Day One](docs/history/BABY_FROM_DAY_ONE.md): the existing canonical
+  history through S1 graduation, retained unchanged as a dated historical record.
+- [S1 graduation](docs/history/S1_GRADUATION.md): single-token copy graduation at
+  u4700; this was a bounded copy milestone.
+- [Historical S2 accomplishments and the RNC transition](docs/history/RNC_TRANSITION.md).
+- The immutable Git **tag** `v1.0` remains the earlier PropMatch/stack2 museum
+  release. The current default **branch** also happens to be named `v1.0`;
+  adding RNC commits to that branch does not move or redefine the release tag.
+- Original museum hashes remain in [GRADUATE_SHA256SUMS.txt](GRADUATE_SHA256SUMS.txt).
 
-| In this repository | Purpose |
-| --- | --- |
-| `src/baby_v010/` | Legacy museum model, runtime, evaluations, and historical helpers |
-| `runs/actual_baby/` | Earlier museum graduate weights and sealed exam evidence |
-| `tokenizer/` | Earlier museum snapshot tokenizer |
-| `scripts/` | Museum snapshot verification tools |
-| `docs/history/` | Project naming, structure, and current S1 graduation record |
-| `ENV_SETUP.md` | Environment instructions for the legacy museum snapshot in this repository |
+Historical S1/S2 certifications belong to MRCN-Alpha. RNC inherits project history
+and engineering lessons, but no historical or third-party pretrained weights;
+those certifications are not RNC capability claims.
 
-## License and notices
+## License
 
-This project is **source-available under the DaveLM Proprietary Research and
-Evaluation License v1.0** (`LicenseRef-DaveLM-Research-1.0`), not an
-open-source license. See [`LICENSE`](LICENSE) and
-[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md). Separately identified
-third-party material remains under its own terms.
-
-## Legacy museum snapshot
-
-The earlier stack2 graduate's environment and immutable artifact details are
-recorded in [`ENV_SETUP.md`](ENV_SETUP.md),
-[`GRADUATE_SHA256SUMS.txt`](GRADUATE_SHA256SUMS.txt), and
-[`MANIFEST.txt`](MANIFEST.txt). They apply to that tagged museum snapshot, not
-to Baby's current 118M MRCN-Alpha S1 research line. The historical `v1.0` tag
-is preserved and is not moved by this documentation update.
+Source-available under the DaveLM Proprietary Research and Evaluation License
+v1.0 (`LicenseRef-DaveLM-Research-1.0`): see [LICENSE](LICENSE) and
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). TinyStories provenance identifies
+CDLA-Sharing-1.0; its dataset is not included in this update.

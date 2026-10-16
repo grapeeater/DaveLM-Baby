@@ -1,0 +1,227 @@
+[
+ {
+  "tokenizer": "tokenizer\\candidates\\rnc_bpe_8192",
+  "vocab_size": 8192,
+  "held_out_docs": 20000,
+  "tokens": 4181920,
+  "tokens_per_word": 1.1981,
+  "bytes_per_token": 4.248,
+  "ids_never_seen": 615,
+  "ids_seen_lt_10": 1635,
+  "frac_seen_lt_10": 0.1998,
+  "last_12_merges": [
+   "igger",
+   " momma",
+   "uddles",
+   " cleared",
+   "athan",
+   " vegg",
+   "ivia",
+   " scooters",
+   " vehicles",
+   " particularly",
+   "Rob",
+   " maker"
+  ],
+  "least_used_12_merges": [
+   [
+    0,
+    " Chr"
+   ],
+   [
+    0,
+    " Eva"
+   ],
+   [
+    0,
+    " Fro"
+   ],
+   [
+    0,
+    " Joan"
+   ],
+   [
+    0,
+    " Ke"
+   ],
+   [
+    0,
+    " Kevin"
+   ],
+   [
+    0,
+    " Lou"
+   ],
+   [
+    0,
+    " Maya"
+   ],
+   [
+    0,
+    " Pipp"
+   ],
+   [
+    0,
+    " Pippin"
+   ],
+   [
+    0,
+    " Somet"
+   ],
+   [
+    0,
+    " Stitch"
+   ]
+  ]
+ },
+ {
+  "tokenizer": "tokenizer\\candidates\\rnc_bpe_16384",
+  "vocab_size": 16384,
+  "held_out_docs": 20000,
+  "tokens": 4146759,
+  "tokens_per_word": 1.188,
+  "bytes_per_token": 4.2841,
+  "ids_never_seen": 3384,
+  "ids_seen_lt_10": 10111,
+  "frac_seen_lt_10": 0.6174,
+  "last_12_merges": [
+   " Dar",
+   " Dilly",
+   "axter",
+   " downwards",
+   " Fake",
+   " Feather",
+   " Fierce",
+   "rets",
+   " sunning",
+   " strate",
+   " burial",
+   " joey"
+  ],
+  "least_used_12_merges": [
+   [
+    0,
+    "  "
+   ],
+   [
+    0,
+    "    "
+   ],
+   [
+    0,
+    "        "
+   ],
+   [
+    0,
+    " ABC"
+   ],
+   [
+    0,
+    " Aaron"
+   ],
+   [
+    0,
+    " Ad"
+   ],
+   [
+    0,
+    " Ada"
+   ],
+   [
+    0,
+    " Add"
+   ],
+   [
+    0,
+    " Af"
+   ],
+   [
+    0,
+    " Ah"
+   ],
+   [
+    0,
+    " Aiden"
+   ],
+   [
+    0,
+    " Alan"
+   ]
+  ]
+ },
+ {
+  "tokenizer": "tokenizer\\candidates\\rnc_bpe_24576",
+  "vocab_size": 24576,
+  "held_out_docs": 20000,
+  "tokens": 4141324,
+  "tokens_per_word": 1.1864,
+  "bytes_per_token": 4.2897,
+  "ids_never_seen": 9921,
+  "ids_seen_lt_10": 18516,
+  "frac_seen_lt_10": 0.7537,
+  "last_12_merges": [
+   " Balls",
+   " Woolie",
+   " hairstylist",
+   " Operation",
+   " Alberta",
+   " Albertina",
+   " squiggle",
+   " unnoticed",
+   " cooperated",
+   "Harley",
+   " cyclist",
+   " salesman"
+  ],
+  "least_used_12_merges": [
+   [
+    0,
+    "  "
+   ],
+   [
+    0,
+    "    "
+   ],
+   [
+    0,
+    "    \n"
+   ],
+   [
+    0,
+    "        "
+   ],
+   [
+    0,
+    "                "
+   ],
+   [
+    0,
+    " \"."
+   ],
+   [
+    0,
+    " &"
+   ],
+   [
+    0,
+    " <"
+   ],
+   [
+    0,
+    " ABC"
+   ],
+   [
+    0,
+    " AND"
+   ],
+   [
+    0,
+    " Aaron"
+   ],
+   [
+    0,
+    " About"
+   ]
+  ]
+ }
+]

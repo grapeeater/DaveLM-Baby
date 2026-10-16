@@ -1,0 +1,25 @@
+{
+  "api_response_sha256": "c223f82df641c9c961498ec0d94c2a93e1cad9e079f3314780fdfbfba1f1678c",
+  "api_url": "https://huggingface.co/api/datasets/roneneldan/TinyStories/revision/f54c09fd23315a6f9c86f9dc80f725de7d8f9c64?blobs=true",
+  "cardData": {
+    "language": [
+      "en"
+    ],
+    "license": "cdla-sharing-1.0",
+    "task_categories": [
+      "text-generation"
+    ]
+  },
+  "id": "roneneldan/TinyStories",
+  "sha": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+  "train_file": {
+    "blobId": "8a7e9d5920f9a21a8cc8fb1a3861b833e25ffce3",
+    "lfs": {
+      "pointerSize": 135,
+      "sha256": "c5cf5e22ff13614e830afbe61a99fbcbe8bcb7dd72252b989fa1117a368d401f",
+      "size": 1924281556
+    },
+    "rfilename": "TinyStories-train.txt",
+    "size": 1924281556
+  }
+}

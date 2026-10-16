@@ -1,0 +1,307 @@
+{
+  "schema": "RNC_PUBLICATION_SOURCE_001",
+  "source_workspace": "C:\\DaveLM-Training\\rnc",
+  "note": "Exact selected existing files; publication README and new documentation are adapted/added separately.",
+  "files": [
+    {
+      "source_relative_to_rnc": "rnc/__init__.py",
+      "published_path": "rnc/rnc/__init__.py",
+      "bytes": 203,
+      "sha256": "06f3938da0b7c4ef664588c3d72e27e805f7e8e8706ec99cfa5ad4f22f75e963"
+    },
+    {
+      "source_relative_to_rnc": "rnc/checkpoint.py",
+      "published_path": "rnc/rnc/checkpoint.py",
+      "bytes": 3038,
+      "sha256": "bee5c5546b0b32a2fab673074b38f8cbb4a35c63b067e684b2a1a9129f075b4a"
+    },
+    {
+      "source_relative_to_rnc": "rnc/config.py",
+      "published_path": "rnc/rnc/config.py",
+      "bytes": 4946,
+      "sha256": "63750e1016226aaa2b663592d86fb42d64c6bede2d2d7869f16fad8a2274c61f"
+    },
+    {
+      "source_relative_to_rnc": "rnc/data.py",
+      "published_path": "rnc/rnc/data.py",
+      "bytes": 9123,
+      "sha256": "a5cbd97c472868a2749e0cbdedc104bc6ce829fbc2e82016e6bc2dabe41ea681"
+    },
+    {
+      "source_relative_to_rnc": "rnc/generate.py",
+      "published_path": "rnc/rnc/generate.py",
+      "bytes": 3372,
+      "sha256": "2f7d2d5653896e101961758db8f6578d903d0e562accc9208cc86ee5b50a20b2"
+    },
+    {
+      "source_relative_to_rnc": "rnc/gpu.py",
+      "published_path": "rnc/rnc/gpu.py",
+      "bytes": 3541,
+      "sha256": "a2944510e07632a8106f1c2435f29342df029cf0686fcbb185de768f0eedce36"
+    },
+    {
+      "source_relative_to_rnc": "rnc/model.py",
+      "published_path": "rnc/rnc/model.py",
+      "bytes": 9619,
+      "sha256": "1238e1d31fb67d0de65c490e0ae33c64bd27ad9337de89dd9dcb88f38ca5a557"
+    },
+    {
+      "source_relative_to_rnc": "rnc/tokenizer.py",
+      "published_path": "rnc/rnc/tokenizer.py",
+      "bytes": 8710,
+      "sha256": "d7a2bcfe9385843eabef6d487430f0db47da0c5e1f594bb88dc7c23b160c5208"
+    },
+    {
+      "source_relative_to_rnc": "rnc/train.py",
+      "published_path": "rnc/rnc/train.py",
+      "bytes": 13217,
+      "sha256": "cf8983e097e7bae26cd1260eb42174999410e5316afaebe3dc76a73a9dd0419b"
+    },
+    {
+      "source_relative_to_rnc": "configs/rnc1_tinystories.json",
+      "published_path": "rnc/configs/rnc1_tinystories.json",
+      "bytes": 1709,
+      "sha256": "fe165f51bffcf1d11fa239c20043dbf09f155f3f79df597d6ff77976f8a90001"
+    },
+    {
+      "source_relative_to_rnc": "tests/conftest.py",
+      "published_path": "rnc/tests/conftest.py",
+      "bytes": 4621,
+      "sha256": "955b0e43a516467855e72e85863849ae44de837c561e7d37d9c9a92eef4eafe9"
+    },
+    {
+      "source_relative_to_rnc": "tests/test_config.py",
+      "published_path": "rnc/tests/test_config.py",
+      "bytes": 1117,
+      "sha256": "4d22e4fad4e6277a6b5abdf114392f2a1c5b47d81747208e60ea96f76b686679"
+    },
+    {
+      "source_relative_to_rnc": "tests/test_data.py",
+      "published_path": "rnc/tests/test_data.py",
+      "bytes": 4367,
+      "sha256": "0ab339e8b99727edbc46769a3d4d44326473a5684b5320cef623716603e13451"
+    },
+    {
+      "source_relative_to_rnc": "tests/test_model.py",
+      "published_path": "rnc/tests/test_model.py",
+      "bytes": 6978,
+      "sha256": "7928aadcf9a6209fd4fd923b81d2fc2fe62ac5b58a6d5264816634cb3a65a3aa"
+    },
+    {
+      "source_relative_to_rnc": "tests/test_real_tokenizer.py",
+      "published_path": "rnc/tests/test_real_tokenizer.py",
+      "bytes": 1754,
+      "sha256": "c315ca4415b7eb99bfc829e0c012a8bae067dd0a2a40f326a8cdced7148da2a2"
+    },
+    {
+      "source_relative_to_rnc": "tests/test_tokenizer.py",
+      "published_path": "rnc/tests/test_tokenizer.py",
+      "bytes": 5326,
+      "sha256": "32ecf2f49545fb756e49ccff6d76cf8367b2dbc10e57654dcc7ed26835864320"
+    },
+    {
+      "source_relative_to_rnc": "tests/test_training.py",
+      "published_path": "rnc/tests/test_training.py",
+      "bytes": 8413,
+      "sha256": "91a536564e1369e81822d5c6be541d16322886ebc3fbc6c8f6805ee2bfc53077"
+    },
+    {
+      "source_relative_to_rnc": "docs/RNC_ARCHITECTURE.md",
+      "published_path": "rnc/docs/RNC_ARCHITECTURE.md",
+      "bytes": 6586,
+      "sha256": "1f87725013e5330718a3fdbc000fc459f40cee835f8fe37d1bf32b76a9318775"
+    },
+    {
+      "source_relative_to_rnc": "docs/TOKENIZER.md",
+      "published_path": "rnc/docs/TOKENIZER.md",
+      "bytes": 4043,
+      "sha256": "f26afe3a753710fef20bdb31397f73b91f5d15f55f523a26af3f18101a54506c"
+    },
+    {
+      "source_relative_to_rnc": "docs/TRAINING.md",
+      "published_path": "rnc/docs/TRAINING.md",
+      "bytes": 3488,
+      "sha256": "adba046814647aaf836f001ed8f844f3836655246e3daca79e4034a6dfa2e54b"
+    },
+    {
+      "source_relative_to_rnc": "tools/historical_integrity.py",
+      "published_path": "rnc/tools/historical_integrity.py",
+      "bytes": 7014,
+      "sha256": "a5a9821f4acb5eb240b6b6343b2eee6254315cd678eefa698894043431cfc003"
+    },
+    {
+      "source_relative_to_rnc": "tools/report_run.py",
+      "published_path": "rnc/tools/report_run.py",
+      "bytes": 5639,
+      "sha256": "18495e4cfd5b6cf0d4c93649f2cdfa29af8ba6b38d995e5f4664aa63f67e7ac5"
+    },
+    {
+      "source_relative_to_rnc": "tools/vocab_audit.py",
+      "published_path": "rnc/tools/vocab_audit.py",
+      "bytes": 2872,
+      "sha256": "8a7625d63a5076edb283bc18bd845527235619ae12ab61e1cd2b02acc348f88f"
+    },
+    {
+      "source_relative_to_rnc": "run.py",
+      "published_path": "rnc/run.py",
+      "bytes": 8771,
+      "sha256": "be843705790401f3a5342da2397ff9e274000e9dbb61c8129e80739fe31e9b01"
+    },
+    {
+      "source_relative_to_rnc": "rnc.ps1",
+      "published_path": "rnc/rnc.ps1",
+      "bytes": 407,
+      "sha256": "b69d46f26ca04f81dcd1559d1ab5a4526b5d6e3045769cd1e03cc257803ed63a"
+    },
+    {
+      "source_relative_to_rnc": "tokenizer/rnc_bpe_8k/tokenizer.json",
+      "published_path": "rnc/tokenizer/rnc_bpe_8k/tokenizer.json",
+      "bytes": 234566,
+      "sha256": "d37360ce034918fcc2dc9be5fee17903244001eb307a1154ac662a5ee10ff6d3"
+    },
+    {
+      "source_relative_to_rnc": "tokenizer/rnc_bpe_8k/TOKENIZER_CONFIG.json",
+      "published_path": "rnc/tokenizer/rnc_bpe_8k/TOKENIZER_CONFIG.json",
+      "bytes": 1013,
+      "sha256": "f4e98fa456efd65aeca38ef1091e55a8b937eb8eb8adec6d0d099d5a953b6c3d"
+    },
+    {
+      "source_relative_to_rnc": "reports/run_rnc1_tinystories_shakedown_001.md",
+      "published_path": "rnc/reports/run_rnc1_tinystories_shakedown_001.md",
+      "bytes": 33509,
+      "sha256": "6ed1452d78138e08a1be2932f5b5e203d620ae1507c7e295b979fc2d317abc85"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase5_health/pytest_run4.txt",
+      "published_path": "rnc/reports/phase5_health/pytest_run4.txt",
+      "bytes": 186,
+      "sha256": "297d6865d4daef74bec927b91ca1d4cd6ff3b06a3b80543c2adad020fe1850ee"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase5_health/final_ckpt_kernel_parity.json",
+      "published_path": "rnc/reports/phase5_health/final_ckpt_kernel_parity.json",
+      "bytes": 161,
+      "sha256": "cb9525b693938020a943b989968a85e15986acc1e20e5681fee92470997d2241"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase5_health/bench_rnc1.json",
+      "published_path": "rnc/reports/phase5_health/bench_rnc1.json",
+      "bytes": 1150,
+      "sha256": "291c24c5f7ec4d39f1f386ac5292e91f1a670bab659f9e599ccaeceb5a812d06"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase3_tokenizer/vocab_audit.json",
+      "published_path": "rnc/reports/phase3_tokenizer/vocab_audit.json",
+      "bytes": 2798,
+      "sha256": "63a2c409c43fc5b169cea07218ce5bfe4f5eff1b563ff30cc3cbf7557ddb8a33"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase3_tokenizer/stats_8192.json",
+      "published_path": "rnc/reports/phase3_tokenizer/stats_8192.json",
+      "bytes": 256,
+      "sha256": "2e4ae151569cb8cf0bf0508695c91146847eed7288f7adbc9de0771c9bbfe05a"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase3_tokenizer/stats_16384.json",
+      "published_path": "rnc/reports/phase3_tokenizer/stats_16384.json",
+      "bytes": 258,
+      "sha256": "78283224c993cb8a7b1242b03b0288fe92190750a6cbe1f854afac768b807552"
+    },
+    {
+      "source_relative_to_rnc": "reports/phase3_tokenizer/stats_24576.json",
+      "published_path": "rnc/reports/phase3_tokenizer/stats_24576.json",
+      "bytes": 258,
+      "sha256": "a557783cb5b96b4238911063281dd5bc22f85f8102f4cf54614a7f8f8a80e716"
+    },
+    {
+      "source_relative_to_rnc": "data/raw/SOURCE_METADATA.json",
+      "published_path": "rnc/reproducibility/data/SOURCE_METADATA.json",
+      "bytes": 767,
+      "sha256": "0290d24c2c3341048b31d9a7123ce2d7c71f51def0208c98df42aa45d135c001"
+    },
+    {
+      "source_relative_to_rnc": "data/raw/SOURCE_CARD.md",
+      "published_path": "rnc/reproducibility/data/SOURCE_CARD.md",
+      "bytes": 1061,
+      "sha256": "f67b71c3ffe761795b9428222444bfc1ec447d45cb13b00821b7e6c1ceecf7c5"
+    },
+    {
+      "source_relative_to_rnc": "data/prepared/tinystories_8k/META.json",
+      "published_path": "rnc/reproducibility/data/META.json",
+      "bytes": 1363,
+      "sha256": "8c8f92ac98a51f9276ed4cf4d1766240167241821e87861f7e210f4681112791"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/CONFIG.json",
+      "published_path": "rnc/reproducibility/first_run/CONFIG.json",
+      "bytes": 1820,
+      "sha256": "ee0b9fea178d0beedc247dc95b114682d836c9de5f6eca4fcbfbf50c03882579"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/events.jsonl",
+      "published_path": "rnc/reproducibility/first_run/events.jsonl",
+      "bytes": 1591,
+      "sha256": "4add1c188068eecf2abb15de5455d35f46a7713c198814323ded95c0464d98bf"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/log.jsonl",
+      "published_path": "rnc/reproducibility/first_run/log.jsonl",
+      "bytes": 91482,
+      "sha256": "9042f7068c0c8dd0847b0a0dcf44760fb25bdb8aed30a77c478fdf10d4420291"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/samples.jsonl",
+      "published_path": "rnc/reproducibility/first_run/samples.jsonl",
+      "bytes": 33441,
+      "sha256": "0652c37381c431c9857b7438189418f25e04f9fe2d92a7f8c6c1314d3cc02862"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/RUN_INFO_2026-10-16T075354Z.json",
+      "published_path": "rnc/reproducibility/first_run/RUN_INFO_2026-10-16T075354Z.json",
+      "bytes": 1285,
+      "sha256": "8501c406bb73be0be493f4dfa42cc18927a6c9df014ca41b0720dfc87718c8cb"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0000000/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0000000/CHECKPOINT.json",
+      "bytes": 470,
+      "sha256": "6819d41c08ca90d7e18a9ba42a79f447ad9b1f41f3117f7eb0d4ea769fff5e73"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0000500/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0000500/CHECKPOINT.json",
+      "bytes": 470,
+      "sha256": "7f2df76737d68b122b03096d8124aa13676a1032f8883a14a20647a5c232cc6e"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0001000/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0001000/CHECKPOINT.json",
+      "bytes": 471,
+      "sha256": "1d8ca37ab1bedb032918b11a67b2bde4569a2c57bce09da25bb5818b3138b40c"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0001500/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0001500/CHECKPOINT.json",
+      "bytes": 471,
+      "sha256": "a8bcaab0cba274102a70e11eef03f9ef1851a387056e90e1119abb34799f0000"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0002000/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0002000/CHECKPOINT.json",
+      "bytes": 471,
+      "sha256": "5c5f2267b1c88d6151e0535c3910c93b9e0c958224a6052689e6c84272da2bbb"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0002500/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0002500/CHECKPOINT.json",
+      "bytes": 471,
+      "sha256": "3786ea1b8b8623ef1ad34d2ecd7ca5faeb22258ab08416ddd2d50a7d715d4199"
+    },
+    {
+      "source_relative_to_rnc": "runs/rnc1_tinystories_shakedown_001/ckpt_0003000/CHECKPOINT.json",
+      "published_path": "rnc/reproducibility/first_run/ckpt_0003000/CHECKPOINT.json",
+      "bytes": 468,
+      "sha256": "e15190646dc5ac0d089f0ff61942ed8de4f878b0b9d61c2f518ca9a5aaabfcf9"
+    }
+  ]
+}

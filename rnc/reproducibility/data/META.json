@@ -1,0 +1,43 @@
+{
+  "corpus_path": "C:\\DaveLM-Training\\rnc\\data\\raw\\TinyStories-train.txt",
+  "corpus_sha256": "c5cf5e22ff13614e830afbe61a99fbcbe8bcb7dd72252b989fa1117a368d401f",
+  "document_separator": "<|endoftext|>",
+  "split_seed": 20261016,
+  "validation_fraction": 0.01,
+  "max_validation_docs": 20000,
+  "min_doc_chars": 20,
+  "tokenizer_sha256": "d37360ce034918fcc2dc9be5fee17903244001eb307a1154ac662a5ee10ff6d3",
+  "vocab_size": 8192,
+  "dtype": "uint16",
+  "stats": {
+    "train": {
+      "docs": 1781998,
+      "tokens": 375543695,
+      "bytes": 1580039692
+    },
+    "val": {
+      "docs": 17250,
+      "tokens": 3615438,
+      "bytes": 15219849
+    },
+    "duplicates_dropped": 320241,
+    "too_short_or_empty_skipped": 0,
+    "max_doc_tokens": 1479
+  },
+  "val_bytes_per_token": 4.20968,
+  "train_bytes_per_token": 4.20734,
+  "files": {
+    "train": {
+      "path": "C:\\DaveLM-Training\\rnc\\data\\prepared\\tinystories_8k\\train.bin",
+      "sha256": "ecac6de21bb2bd9044b29f01b56d1205434968a6aa54e35ce4c0f8c2fe1549be",
+      "bytes": 751087390
+    },
+    "val": {
+      "path": "C:\\DaveLM-Training\\rnc\\data\\prepared\\tinystories_8k\\val.bin",
+      "sha256": "c01759b1af9eb8fb89256c7e748d660bbb19ad8055e36466fff2e44688d72115",
+      "bytes": 7230876
+    }
+  },
+  "seconds": 96,
+  "utc": "2026-10-16T07:35:47Z"
+}

@@ -1,52 +1,57 @@
 # DaveLM project structure
 
-DaveLM's local project uses separate workspaces for the museum snapshot,
-active research, readable historical notes, and future descendant pointers.
-The workspaces are not all published in this Git repository.
+Project **DaveLM** · family **Mangaris** · development codename **Baby**.
+Active architecture **RNC (Racina Neural Core)**; current research model
+**RNC-1, 91,246,848 parameters**. MRCN-Alpha is the preserved historical lineage.
 
-## This Git repository
+## Published repository
 
-This repository preserves the earlier 61.5M-parameter PropMatch/stack2
-graduate. The `v1.0` tag is an immutable historical tag for that snapshot. The
-tag is not the Mangaris Pioneer v1.0 release and does not identify the newer
-118M S1 graduate.
+This existing repository now publishes the RNC source alongside preserved museum
+history. Its default branch is `v1.0`; the separate immutable `v1.0` tag still
+identifies the earlier museum release.
 
-- `src/baby_v010/`: earlier museum model and supporting code.
-- `runs/actual_baby/`: earlier model weights and sealed evaluation evidence.
-- `tokenizer/`: earlier snapshot tokenizer.
-- `scripts/`: museum snapshot checks.
-- `docs/`: publication-facing project history and notes.
+```text
+rnc/
+  rnc/                  model, tokenizer codec, data, trainer, checkpoint and generation code
+  configs/              authoritative first-run configuration
+  tokenizer/rnc_bpe_8k/ exact active tokenizer and metadata
+  tests/                existing health-check source
+  docs/                 architecture, tokenizer, training and publication notes
+  reports/              selected saved results and summaries
+  reproducibility/      small dataset/run records and checkpoint hash sidecars
+  tools/                existing inspection and reporting helpers
+docs/history/           dated Baby milestones and historical research references
+src/baby_v010/           preserved museum source
+tokenizer/              preserved museum tokenizer
+runs/actual_baby/       previously published historical museum artifacts
+```
 
-The earlier repository checkpoint publication uses Git LFS. The 118M S1
-checkpoint stays in the separate lab workspace and is described by its hash
-and provenance; this documentation change publishes no new weights.
+RNC checkpoints, corpus text, prepared token streams, virtual environments,
+caches, private credentials and temporary GPU files are excluded. Original
+historical Git LFS records are retained; this update adds no model weights.
 
-## Separate local workspaces
+## Fan Diesel workspaces (2026-10-16)
 
-| Workspace | Purpose and current state |
+| Local path | Role |
 | --- | --- |
-| `DaveLM-Training/` | Active research lab. Contains the MRCN-Alpha 118M Baby source, frozen specifications, evaluations, and authoritative S1 runs. The canonical u4700 S1 checkpoint lives here. |
-| `DaveLM_ARCHIVE/` | Human-readable ecosystem index, Baby timeline, Mangaris Zero history, cleanup notes, and S1v3g/h/i/j history. |
-| `DaveLM-Clean/` | Clean-lineage and ancestry pointer documentation. |
-| `DaveLM-v1.0/` | Legacy museum workspace corresponding to this repository; retained because scripts and historical references use its path. |
-| `DaveLM-Personal/` | Personalization ancestry pointer; no S1 personalization run is claimed. |
-| `DaveLM-Experiments/Coder/`, `Instruct/`, `Reasoning/`, `Writer/` | Future specialist ancestry/pointer preparation only. No specialist weights or trained specialist models were created. |
-| `DaveLM-v0.10/` | Legacy stripped workspace, retained for historical path references. |
-| `Mangaris Zero` records | Archive/graveyard history for pre-Pioneer experiments and failed developmental work; not a released model class. |
+| `C:\DaveLM-Training\rnc\` | Active RNC laboratory; source and original data/run records |
+| `C:\DaveLM-Experiments\` | Separate local workspace for experimental descendants; existing Copy Goblin stays independent |
+| `C:\DaveLM_ARCHIVE\MRCN-Alpha_LAB_20261016\` | Preserved historical lab, including certified S1/S2 components, failed runs and evidence |
+| `C:\DaveLM-v1.0\` | Restored historical museum checkout; existing working-tree differences preserved |
+| `C:\DaveLM_ARCHIVE\` | Archive index, museum masters, historical evidence and relocation receipts |
 
-These names describe local workspace roles, not folders bundled in this Git
-checkout. Individual machines may place them in different paths.
+The Training root's `rebuild` and `checkpoints` entries are junctions into the
+archived MRCN-Alpha lab. They do not identify active RNC training outputs.
+Historical documents may retain pre-relocation paths; the archive's
+`PATH_MAP.json` records the relocation.
 
-## Names used in project records
+The experiments workspace is not contained in the Training workspace and was
+not a separate Git repository at the start of this update. Its pre-existing
+`copy_goblin_227k_001` is a separately trained toy copy model, not an RNC descendant.
+Future specialist organization will be documented there without moving or
+reclassifying that experiment.
 
-| Name | Meaning |
-| --- | --- |
-| DaveLM | Project and model ecosystem |
-| Mangaris | Model family |
-| Pioneer, Lite, Core, Forge, Atlas | Model classes; Pioneer remains a future decision |
-| MRCN-Alpha, MRCN-Beta | Architecture generations |
-| Baby | Permanent codename for the original model and eventual Pioneer lineage |
-| Coder, Instruct, Reasoning, Writer | Future specialist concepts, not trained releases |
-
-For the current milestone and exact parent lineage, see
-[`history/S1_GRADUATION.md`](history/S1_GRADUATION.md).
+Instruct, Reasoning, Coder, Writer and Personal are future descendant concepts.
+They should eventually originate from a verified common foundation. The future
+Adam & Eve checkpoint has not been created or graduated. No specialist training
+or infrastructure is part of this repository update.

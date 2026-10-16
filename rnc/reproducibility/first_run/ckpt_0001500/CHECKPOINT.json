@@ -1,0 +1,13 @@
+{
+  "step": 1500,
+  "path": "C:\\DaveLM-Training\\rnc\\runs\\rnc1_tinystories_shakedown_001\\ckpt_0001500\\checkpoint.pt",
+  "bytes": 1095092555,
+  "sha256": "31238faa65dfe03cbee4599be5478bfbdace99cf210cb0a0b71b2a7807097e9b",
+  "saved_utc": "2026-10-16T08:35:27Z",
+  "num_parameters": 91246848,
+  "extra": {
+    "tokens_seen": 49152000,
+    "tokenizer_sha256": "d37360ce034918fcc2dc9be5fee17903244001eb307a1154ac662a5ee10ff6d3",
+    "reason": "periodic"
+  }
+}

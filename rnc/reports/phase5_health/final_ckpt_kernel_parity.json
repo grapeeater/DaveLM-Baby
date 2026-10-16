@@ -1,0 +1,8 @@
+{
+  "auto/bf16": 1.52208,
+  "auto/fp32": 1.52205,
+  "math/bf16": 1.5221,
+  "math/fp32": 1.52205,
+  "reference/bf16": 1.5221,
+  "reference/fp32": 1.52205
+}

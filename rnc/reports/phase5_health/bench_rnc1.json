@@ -1,0 +1,46 @@
+[
+  {
+    "precision": "bf16",
+    "attention_backend": "auto",
+    "micro_batch": 16,
+    "seq": 512,
+    "seconds_per_micro_step": 0.3947,
+    "tokens_per_second": 20755,
+    "max_mem_allocated_gb": 7.179,
+    "max_mem_reserved_gb": 7.393,
+    "num_parameters": 91246848
+  },
+  {
+    "precision": "bf16",
+    "attention_backend": "math",
+    "micro_batch": 16,
+    "seq": 512,
+    "seconds_per_micro_step": 0.8142,
+    "tokens_per_second": 10061,
+    "max_mem_allocated_gb": 9.58,
+    "max_mem_reserved_gb": 9.812,
+    "num_parameters": 91246848
+  },
+  {
+    "precision": "fp32",
+    "attention_backend": "auto",
+    "micro_batch": 16,
+    "seq": 512,
+    "seconds_per_micro_step": 3.6703,
+    "tokens_per_second": 2232,
+    "max_mem_allocated_gb": 9.197,
+    "max_mem_reserved_gb": 9.506,
+    "num_parameters": 91246848
+  },
+  {
+    "precision": "fp32",
+    "attention_backend": "math",
+    "micro_batch": 16,
+    "seq": 512,
+    "seconds_per_micro_step": 4.4002,
+    "tokens_per_second": 1862,
+    "max_mem_allocated_gb": 11.724,
+    "max_mem_reserved_gb": 12.164,
+    "num_parameters": 91246848
+  }
+]

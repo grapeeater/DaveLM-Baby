@@ -1,0 +1,10 @@
+﻿{
+  "documents": 5000,
+  "bytes": 4475455,
+  "tokens": 1047587,
+  "bytes_per_token": 4.2722,
+  "tokens_per_word": 1.1893,
+  "single_token_word_rate_first50": 0.8385,
+  "tokenizer": "tokenizer\\candidates\\rnc_bpe_16384",
+  "vocab_size": 16384
+}
