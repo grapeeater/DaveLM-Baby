@@ -11,8 +11,21 @@ one tokenizer, one trainer, one GPU. No cloud orchestration, no multi-agent univ
 
 RNC-1 has **91,246,848 parameters**. Its first **3,000-step TinyStories run**
 completed on Fan Diesel's AMD GPU. See [the saved first-run summary](reports/FIRST_RUN_SUMMARY.md)
-for measured learning and limits. General conversational competence is not established.
-The future Adam & Eve checkpoint has not been created or graduated.
+for measured learning and limits.
+
+Baby then completed seven 100-update curriculum sessions. Saved dev results
+show progress on generated Chapter 1 object binding, Chapter 2 event memory,
+Chapter 3 grounded answers, and Chapter 4 short dialogue. In the Session 007
+in-session sample, Chapter 4 rose from 18/86 to 83/86 checked turns. Each reply
+was evaluated with the reference earlier conversation turns supplied, and the
+sample is not a full post-session dev evaluation. Session 006 also missed its
+Chapter 1 binding forced-choice target (83.1% vs 85%) and over-caution limit
+(3.59% vs 3%); Session 007 did not repeat those measures.
+
+The Session 007 checkpoint is the frozen common ancestor for four independent
+local starting copies. No specialist branch has trained. See [the session
+report](../docs/RNC_CURRICULUM_PROGRESS.md), [checkpoint provenance](../docs/SESSION_007_COMMON_ANCESTOR.md),
+and [the family tree](../docs/MANGARIS_FAMILY_TREE.md).
 
 This is a lightweight publication of the existing laboratory. Checkpoints,
 datasets and prepared streams stay local. Copied source, tests, configuration

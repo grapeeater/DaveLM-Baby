@@ -1,19 +1,11 @@
 # Mangaris / RNC / Instruct
 
-**Status: future development placeholder.**
+**Status: frozen Session 007 starting copy; no branch training has started.**
 
-Intended direction: Instruction following and useful question answering.
+Intended direction: instruction following and useful question answering.
 
-DaveLM is the project, Mangaris the family, RNC the architecture lineage and
-Baby the development codename. Current research model: RNC-1, 91,246,848
-parameters. Its first 3,000-step TinyStories run demonstrates language-model
-learning; general conversational competence has not been established.
+The independent local copy is C:\DaveLM-Experiments\RNC\Instruct\StartingCopy_Session007. It comes from Baby’s completed Session 007 checkpoint at C:\DaveLM-Training\rnc\runs\curriculum_ch4_007\ckpt_0000100\checkpoint.pt, SHA-256 dc0c60766460c57db52f1bfcc0ab58c449b3a36fda3bee66db8c7861efe4832a. The source config SHA-256 is f27145bf5ee1192ead0df5d0092eef9317ad93b96b610ce63be158d0567254de; tokenizer SHA-256 is d37360ce034918fcc2dc9be5fee17903244001eb307a1154ac662a5ee10ff6d3.
 
-The future Adam & Eve common foundation has not been created or graduated.
-This directory has no selected parent checkpoint, model weights, training
-configuration, data or evaluation results. When development begins, record a
-verified common-foundation parent and tokenizer, then maintain independent
-training configurations, checkpoints and evaluations here.
+Fan Diesel’s PROVENANCE.json records matching checkpoint, config, and tokenizer hashes and a read-only CPU load pass. The copy remains local; this repository contains no model weights. Session 007’s curriculum scores do not establish instruction-following capability.
 
-Active laboratory: `C:\DaveLM-Training\rnc\`.
-See [the RNC family plan](../README.md) and [workspace overview](../../README.md).
+See the [RNC starting-copy overview](../README.md) and [verified common ancestor](../../../SESSION_007_COMMON_ANCESTOR.md).

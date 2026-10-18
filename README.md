@@ -19,14 +19,26 @@ inconsistencies still present.
 
 This demonstrates language-model learning. General conversational competence,
 instruction following and broad factual accuracy have not been established.
-The future **Adam & Eve common-foundation checkpoint has not been created or
-graduated**. RNC-1's first-run checkpoint is not that future foundation.
+
+Baby has since completed seven bounded RNC curriculum sessions. The saved
+results show progress on generated object binding, event memory, grounded
+answers, and short conversations. Chapter 4 reached 83/86 checked turns in the
+Session 007 in-session sample, up from 18/86 at step 0. The evaluator supplies
+the reference earlier conversation turns, and this is not a full post-session
+dev evaluation. See [the full session report](docs/RNC_CURRICULUM_PROGRESS.md).
+
+The Session 007 checkpoint is the frozen common ancestor for the Instruct,
+Reasoning, Coder, and Writer starting copies. The copies are local, hash-verified,
+and not trained. This lineage designation does not claim graduation or broad
+competence; see [the provenance record](docs/SESSION_007_COMMON_ANCESTOR.md).
 
 The existing health-check record reports **91 tests passed**. This publication
 update reviewed saved results and file integrity; it launched no training,
 evaluation or GPU health-check jobs.
 
-- [Mangaris family tree and future specialists](docs/MANGARIS_FAMILY_TREE.md)
+- [Mangaris family tree and specialist starting copies](docs/MANGARIS_FAMILY_TREE.md)
+- [Session 007 checkpoint and specialist provenance](docs/SESSION_007_COMMON_ANCESTOR.md)
+- [RNC curriculum results, Sessions 001–007](docs/RNC_CURRICULUM_PROGRESS.md)
 - [First-run result and scope](rnc/reports/FIRST_RUN_SUMMARY.md)
 - [Saved machine-generated report](rnc/reports/run_rnc1_tinystories_shakedown_001.md)
 - [Original logs, config and checkpoint hash records](rnc/reproducibility/first_run/)

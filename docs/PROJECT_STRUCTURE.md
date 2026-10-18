@@ -21,6 +21,9 @@ rnc/
   reproducibility/      small dataset/run records and checkpoint hash sidecars
   tools/                existing inspection and reporting helpers
 docs/history/           dated Baby milestones and historical research references
+docs/RNC_CURRICULUM_PROGRESS.md    saved RNC Sessions 001–007 summary
+docs/SESSION_007_COMMON_ANCESTOR.md verified local checkpoint provenance
+docs/experiments/RNC/              specialist starting-copy documentation only
 src/baby_v010/           preserved museum source
 tokenizer/              preserved museum tokenizer
 runs/actual_baby/       previously published historical museum artifacts
@@ -28,7 +31,8 @@ runs/actual_baby/       previously published historical museum artifacts
 
 RNC checkpoints, corpus text, prepared token streams, virtual environments,
 caches, private credentials and temporary GPU files are excluded. Original
-historical Git LFS records are retained; this update adds no model weights.
+historical Git LFS records are retained. The Session 007 ancestor and four
+specialist checkpoint copies are documented by hash but remain local.
 
 ## Fan Diesel workspaces (2026-10-16)
 
@@ -48,16 +52,18 @@ Historical documents may retain pre-relocation paths; the archive's
 The experiments workspace is not contained in the Training workspace and was
 not a separate Git repository at the start of this update. Its pre-existing
 `copy_goblin_227k_001` is a separately trained toy copy model, not an RNC descendant.
-The completed organization adds `RNC/Instruct`, `RNC/Reasoning`, `RNC/Coder`,
-`RNC/Writer`, `RNC/Personal` and `RNC/Other`, each containing only a README.
-Copy Goblin stays in place and retains its independent purpose.
+The RNC experiments workspace now contains a frozen Session 007 common
+ancestor and independent Instruct, Reasoning, Coder and Writer starting copies.
+Their checkpoint, config and tokenizer hashes were verified against the source.
+Personal and Other remain README-only future directions. Copy Goblin stays in
+place and retains its independent purpose.
 
-The [family tree](MANGARIS_FAMILY_TREE.md) explains the lineage and future plan.
-`docs/experiments/` publishes only the eight new README files from the local
-experiments workspace, byte-identical. It contains no model files and does not
-relocate the experiments workspace into Training.
+The [family tree](MANGARIS_FAMILY_TREE.md) explains the lineage. docs/experiments/
+publishes the RNC family and starting-copy documentation only; it contains no
+model files and does not relocate the experiments workspace into Training.
 
-Instruct, Reasoning, Coder, Writer and Personal are future descendant concepts.
-They should eventually originate from a verified common foundation. The future
-Adam & Eve checkpoint has not been created or graduated. No specialist training
-or infrastructure is part of this repository update.
+The four local starting copies share the frozen Session 007 checkpoint, whose
+SHA-256 and copy verification are recorded in
+[the common-ancestor document](SESSION_007_COMMON_ANCESTOR.md). No specialist
+training or weights are included in this repository. The frozen lineage is not
+a graduation or capability claim.

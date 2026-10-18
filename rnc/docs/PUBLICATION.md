@@ -55,3 +55,9 @@ document attention mask. Fused AMD attention is experimental. Exact duplicate
 documents were removed; near-duplicate separation was not established.
 The run demonstrates TinyStories language-model learning, not general
 conversation, instruction following or robust factual reasoning.
+
+## Documentation update — 2026-10-17
+
+The v1.0 branch now includes a concise report of RNC curriculum Sessions 001–007 and the verified Session 007 common-ancestor provenance. These additions are documentation only. The completed Session 007 checkpoint, the ancestor and specialist copies, curriculum lessons, prepared datasets, raw evaluation examples, and private experiments remain outside Git.
+
+The Session 007 Chapter 4 score is from 86 checked turns in the trainer’s in-session dev panel, with reference prior turns supplied at each evaluation turn. It is not a full post-run dev evaluation or an end-to-end conversation test. The two Session 006 retention misses are recorded, and Session 007 did not remeasure them. See [the curriculum progress report](../../docs/RNC_CURRICULUM_PROGRESS.md).

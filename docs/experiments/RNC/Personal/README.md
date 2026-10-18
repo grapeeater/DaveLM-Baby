@@ -1,19 +1,12 @@
 # Mangaris / RNC / Personal
 
-**Status: future development placeholder.**
+**Status: future development placeholder; no Session 007 copy or training.**
 
-Intended direction: Owner-specific personalization.
+Intended direction: owner-specific personalization.
 
-DaveLM is the project, Mangaris the family, RNC the architecture lineage and
-Baby the development codename. Current research model: RNC-1, 91,246,848
-parameters. Its first 3,000-step TinyStories run demonstrates language-model
-learning; general conversational competence has not been established.
+DaveLM is the project, Mangaris the family, RNC the architecture lineage and Baby the development codename. The frozen Session 007 common ancestor currently has separate starting copies only for Instruct, Reasoning, Coder and Writer. Personal is not one of those branches and has no selected parent checkpoint, model weights, training configuration, data or evaluation results.
 
-The future Adam & Eve common foundation has not been created or graduated.
-This directory has no selected parent checkpoint, model weights, training
-configuration, data or evaluation results. When development begins, record a
-verified common-foundation parent and tokenizer, then maintain independent
-training configurations, checkpoints and evaluations here.
+The broader Adam & Eve common foundation has not been named as graduated. If Personal development begins, its parent and tokenizer must be verified and recorded, with independent training configuration, checkpoints and evaluations.
 
-Active laboratory: `C:\DaveLM-Training\rnc\`.
+Active laboratory: C:\DaveLM-Training\rnc.
 See [the RNC family plan](../README.md) and [workspace overview](../../README.md).

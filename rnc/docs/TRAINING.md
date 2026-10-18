@@ -1,5 +1,7 @@
 # RNC-1 training system and the first experiment's budget
 
+Later curriculum results are summarized in [Baby’s RNC curriculum progress](../../docs/RNC_CURRICULUM_PROGRESS.md). This file remains the original TinyStories training record.
+
 ## Measured on Fan Diesel (RX 9060 XT, 2026-10-16, `reports/phase5_health/bench_rnc1.json`)
 
 RNC-1, 91,246,848 parameters, micro-batch 16 × 512 tokens, AdamW step included:
